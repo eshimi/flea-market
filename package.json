@@ -1,0 +1,17 @@
+{
+  "name": "flea-market-jp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "全国のフリーマーケット・蚤の市・骨董市・手作り市の開催情報を、主催者と自治体の公式情報から集めるサイト「Flea Market JP」",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "validate": "node scripts/validate-data.mjs",
+    "build": "node scripts/validate-data.mjs && node scripts/build-site.mjs && node scripts/update-sitemap.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {}
+}
