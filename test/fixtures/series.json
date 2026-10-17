@@ -1,0 +1,17 @@
+[
+ {"id":"sample-shrine-kotto","name":"見本神社 骨董市（架空）","kinds":["kotto"],"organizer":{"name":"見本骨董市の会（架空）","url":"https://example.org/kotto"},
+  "venue":{"name":"見本神社 境内","pref":"13","city":"千代田区","cityCode":"13101","address":"東京都千代田区（架空）"},
+  "recurrence":{"type":"monthly-nth","byday":[{"n":1,"wd":0},{"n":3,"wd":6}],"text":"毎月第1日曜・第3土曜"},
+  "time":{"text":"7:00頃〜15:00頃"},"visitor":{"admission":"無料","rain":"雨天中止"},
+  "exhibitor":{"fee":"5,000円（架空）","apply":"電話","notes":"骨董商の方のみ（架空）"},
+  "sources":[{"url":"https://example.org/kotto","type":"organizer","checkedAt":"2026-10-16"}]},
+ {"id":"sample-park-flea","name":"見本公園フリーマーケット（架空）","kinds":["flea"],"organizer":{"name":"見本区（架空）"},
+  "venue":{"name":"見本公園","pref":"13","city":"港区","cityCode":"13103"},
+  "recurrence":{"type":"dates","dates":["2026-10-18","2026-11-15","2026-11-23"],"text":"年に数回（日程は公式で発表）"},
+  "time":{"text":"9:00〜15:00","start":"09:00","end":"15:00"},"visitor":{"admission":"無料"},
+  "sources":[{"url":"https://example.org/park","type":"municipality","checkedAt":"2026-10-16"}]},
+ {"id":"sample-old-check","name":"見本手づくり市（架空）","kinds":["handmade","marche"],"organizer":{"name":"見本商店会（架空）"},
+  "venue":{"name":"見本広場","pref":"13"},
+  "recurrence":{"type":"monthly-day","days":[18,28],"text":"毎月18日・28日"},
+  "sources":[{"url":"https://example.org/hand","type":"organizer","checkedAt":"2026-09-01"}]}
+]

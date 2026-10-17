@@ -1,0 +1,96 @@
+// ページの共通の枠（ヘッダー・フッター・免責）と、HTML の小さな部品
+import { FOOTER_GROUPS, SITE, TOP_LINKS } from './nav.mjs';
+import { KINDS } from './kinds.mjs';
+import { label } from './dates.mjs';
+
+export function esc(s) {
+  return String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+}
+
+export const DISCLAIMER = '開催の有無・内容は、変わることがあります。お出かけ・お申込みの前に、必ず主催者の公式情報でご確認ください。';
+
+export function layout({ path, title, description, body, head = '', scripts = [] }) {
+  const full = path === '/' ? `${SITE.name}｜${SITE.tagline}の開催情報` : `${title}｜${SITE.name}`;
+  const nav = TOP_LINKS.map((l) => `<a href="${l.href}"${path.startsWith(l.href) ? ' aria-current="page"' : ''}>${esc(l.label)}</a>`).join('');
+  const foot = FOOTER_GROUPS.map((g) => `<div><h2>${esc(g.title)}</h2><ul>${g.links.map((l) => `<li><a href="${l.href}">${esc(l.label)}</a></li>`).join('')}</ul></div>`).join('');
+  return `<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${esc(full)}</title>
+<meta name="description" content="${esc(description)}">
+<link rel="canonical" href="${SITE.url}${path}">
+<meta property="og:title" content="${esc(full)}">
+<meta property="og:description" content="${esc(description)}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="${SITE.url}${path}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;700&display=swap">
+<link rel="stylesheet" href="/style.css">
+${head}</head>
+<body>
+<header class="site-head"><div class="in"><a class="logo" href="/">Flea Market <b>JP</b></a><nav aria-label="メイン">${nav}</nav></div></header>
+<main id="main">
+${body}
+</main>
+<footer class="site-foot"><div class="in">
+<p class="disclaimer">${esc(DISCLAIMER)}</p>
+<div class="foot-groups">${foot}</div>
+<p class="copy">© ${esc(SITE.name)}　主催者・自治体の公式情報と公開データをもとに掲載しています。</p>
+</div></footer>
+${scripts.map((s) => `<script src="${s}" defer></script>`).join('\n')}
+</body>
+</html>
+`;
+}
+
+export function breadcrumb(items) {
+  return `<nav class="crumbs" aria-label="現在地"><a href="/">トップ</a>${items.map((i) => (i.href ? ` › <a href="${i.href}">${esc(i.label)}</a>` : ` › <span>${esc(i.label)}</span>`)).join('')}</nav>`;
+}
+
+export const STATUS_LABEL = {
+  confirmed: '公式で確認',
+  scheduled: '予定（きまりから算出）',
+  cancelled: '中止',
+  postponed: '延期',
+  unknown: '開催は要確認',
+};
+
+const STATUS_CLASS = { confirmed: 'ok', scheduled: 'plan', cancelled: 'stop', postponed: 'stop', unknown: 'warn' };
+
+export function md(s) {
+  const [, m, d] = s.split('-');
+  return `${+m}/${+d}`;
+}
+
+export function statusTag(o) {
+  const when = o.status === 'confirmed' ? `${md(o.checkedAt)} ` : '';
+  return `<span class="tag ${STATUS_CLASS[o.status]}" title="最終確認：${esc(o.checkedAt)}">${esc(when + STATUS_LABEL[o.status])}</span>`;
+}
+
+export function kindTags(kinds) {
+  return kinds.map((k) => `<a class="tag" href="/kind/${k}/">${esc(KINDS[k].short)}</a>`).join('');
+}
+
+// 一覧の1件（案Aのカード）
+export function eventCard(o) {
+  const s = o.series;
+  const [, , d] = o.date.split('-');
+  const wd = label(o.date).slice(-2, -1);
+  const place = [s.venue.city, s.venue.name].filter(Boolean).join('・');
+  const meta = [place, s.time?.text].filter(Boolean).map(esc).join(' ／ ');
+  const cls = o.status === 'cancelled' || o.status === 'postponed' ? ' off' : '';
+  return `<article class="ev${cls}">
+<div class="ev-date"><small>${md(o.date).split('/')[0]}月</small><b>${+d}</b><small>${wd}</small></div>
+<div class="ev-body"><h3><a href="/e/${s.id}/">${esc(s.name)}</a></h3>
+<p class="meta">${meta}</p>
+<div class="tags">${kindTags(s.kinds)}${s.recurrence.type !== 'dates' ? `<span class="tag">${esc(s.recurrence.text)}</span>` : ''}${statusTag(o)}</div>
+${o.note ? `<p class="ev-note">${esc(o.note)}</p>` : ''}</div>
+</article>`;
+}
+
+export function eventList(list, empty = 'この条件の掲載は、まだありません。') {
+  return list.length ? `<div class="ev-list">${list.map(eventCard).join('\n')}</div>` : `<p class="empty">${esc(empty)}</p>`;
+}
