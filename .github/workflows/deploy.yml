@@ -1,0 +1,70 @@
+name: 毎日の更新（Cloudflare Workers へデプロイ）
+
+# 毎朝 5:17（日本時間）＝ 20:17 UTC と、手動実行で動く。
+# 公式ページの確認（scripts/check-sources.mjs）→ 確認結果を data/ に保存してコミット → ページ生成 → デプロイ。
+# ページは日付で中身が変わる（「今週末」・過ぎた開催の除外）ので、データに変更がなくても、毎日デプロイする。
+# 必要な GitHub Secrets: CLOUDFLARE_API_TOKEN（Workers の編集権限）, CLOUDFLARE_ACCOUNT_ID。未設定ならデプロイを飛ばす。
+# 任意の Variables: SITE_URL（本番の URL。ドメインが決まったら設定）
+on:
+  schedule:
+    - cron: '17 20 * * *'
+  workflow_dispatch:
+    inputs:
+      all:
+        description: 'すべての情報源を確認する（7日ごとの間隔を無視）'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      SITE_URL: ${{ vars.SITE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test
+      - name: 公式ページの確認
+        continue-on-error: true
+        run: node scripts/check-sources.mjs ${{ inputs.all && '--all' || '' }}
+      - name: ページ生成（データの検証・サイトマップを含む）
+        run: npm run build
+      - name: 確認結果をリポジトリに保存
+        continue-on-error: true
+        run: |
+          files="data/series.json data/source-state.json data/sitemap-lastmod.json"
+          if git diff --quiet -- $files; then echo "変更はありません"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in $files; do cp "$f" "$RUNNER_TEMP/$(basename $f)"; done
+          # 実行中にブランチが進んでいたら、最新の上に、確認結果だけを載せ直す（最大3回）
+          for i in 1 2 3; do
+            git fetch -q --depth=1 origin "${GITHUB_REF_NAME}"
+            git reset -q --hard "origin/${GITHUB_REF_NAME}"
+            for f in $files; do cp "$RUNNER_TEMP/$(basename $f)" "$f"; done
+            git add $files
+            git diff --cached --quiet && { echo "変更はありません"; exit 0; }
+            git commit -q -m "公式ページの確認結果とサイトマップの更新日を保存 [skip ci]"
+            git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep 5
+          done
+          echo "::error::確認結果を保存できませんでした"; exit 1
+      - name: デプロイ
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::warning::Cloudflare の Secrets が未設定のため、デプロイを飛ばしました"; exit 0
+          fi
+          # build.command（npm run build）は、デプロイの直前にもう一度走る（冪等）
+          npx --yes wrangler@4 deploy

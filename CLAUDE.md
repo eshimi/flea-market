@@ -28,7 +28,20 @@
 - 表示の状態（`scripts/lib/events.mjs` の buildOccurrences）：公式で確認した回＝「公式で確認」、きまりから算出した回＝「予定（きまりから算出）」、中止・延期は消さずに表示、最終確認から14日（`STALE_DAYS`）を超えたら「要確認」。一覧に出すのは今日から120日（`WINDOW_DAYS`）。
 - 種類は `scripts/lib/kinds.mjs`（flea / nomi / kotto / handmade / marche）、都道府県コードは `scripts/lib/areas.mjs`。市区町村は、データに書いた `cityCode`（5桁）と `city` を使う。
 
+- ページ生成：`scripts/build-site.mjs` が `data/` から `dist/` を作る（`dist/` はコミットしない。毎日、日本時間の今日を基準に作り直す。`--today=` `--data=` `--out=` で指定可）。`static/`（style.css・home.js・search.js）をそのまま写す。部品は `scripts/lib/html.mjs`（layout・開催カード・状態の札）、ナビは `scripts/lib/nav.mjs` の1か所。
+  - ページ：`/` `/weekend/` `/calendar/` `/date/<日付>/`（開催がある日だけ） `/area/` `/area/<都道府県>/` `/area/<都道府県>/<市区町村コード>/` `/kind/` `/kind/<種類>/` `/e/<id>/`（詳細・Event の構造化データ） `/shuten/` `/search/`（/events.json を読む） `/about/` `/404.html`。
+  - 書いていない項目は「要確認」と表示する。サイトの URL は環境変数 `SITE_URL`（未定の間は example のドメイン）。
+- サイトマップ：`scripts/update-sitemap.mjs`。更新日は本文（`<main>`）のハッシュが変わった日（`data/sitemap-lastmod.json`。毎日変わる「更新日」の表示は除いて比べる）。robots.txt もここで作る。**ローカルで build すると sitemap-lastmod.json が変わるので、コミットしない**（`git checkout data/sitemap-lastmod.json`）。
+- 情報源：台帳 `data/sources.json`（`{url, series:[id], terms:{ok:true|false|null, checkedAt, note}}`。利用規約を確認して取得してよいものだけ `ok: true`）。シリーズの出典 `sources[].evidence` に、公式の本文にそのまま書いてある短い語句（開催のきまり・会場名など）を入れる。
+- 公式ページの確認：`scripts/check-sources.mjs`（毎日の自動更新で実行）。規約未確認は取らない／robots.txt で禁止・届かないなら取らない／同じ URL は1日1回、開催が7日以内なら毎日・それ以外は7日ごと／同じサイトへは5秒（または Crawl-delay）以上あける／ETag・Last-Modified。本文に evidence がすべてあれば、その出典の checkedAt を今日にする（合わなければ進めず、14日で「要確認」）。状態は `data/source-state.json`。結果は Actions の概要に出る。
+- データの検証：`scripts/validate-data.mjs`（`npm run build` の最初に走る。シリーズ・開催回・台帳の形と、出典が台帳にあるか）。
+- テストの見本データ：`test/fixtures/`（**架空**。本番の `data/` に「架空」「example.org」が入っていないことをテストで確かめる）。
+- 毎日の自動更新：`.github/workflows/deploy.yml`（毎朝 5:17 JST ＝ 20:17 UTC と手動）。npm test → check-sources → npm run build → `data/` の確認結果をコミット `[skip ci]` → `wrangler deploy`（`wrangler.jsonc`。build.command は `npm run build`、静的ファイルは `dist/`、`/api/*` は `src/worker.js`）。必要な Secrets：`CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID`（未設定ならデプロイを飛ばす）。Variables：`SITE_URL`。
+- この作業環境から Node の fetch で外へ出るときは `NODE_USE_ENV_PROXY=1` が要る（補助金ネットと同じ）。
+- 画面の確認：Playwright（`/opt/node-tools/node_modules/playwright`）で、PC 1280px とスマホ 390px。横のはみ出しとコンソールのエラーも見る。
+
 ## 未対応・次にやること
-- GitHub のリポジトリ `eshimi/flea-market` への接続（2026-10-17 時点で、まだ見つからない）。
-- ページ生成（案A）、情報源の台帳と取得（robots.txt・利用規約・頻度）、毎日の自動更新（GitHub Actions → Cloudflare Workers）。
-- 東京都の定期市の洗い出しと書き起こし。
+- GitHub のリポジトリ `eshimi/flea-market` への接続（2026-10-17 時点で、まだ見つからない。ユーザーが作成したら add_repo で接続してプッシュ）。
+- 東京都の定期市の洗い出し → 利用規約・robots.txt の確認 → 公式ページから書き起こし（evidence 付き）→ 検証 → 掲載。
+- 掲載の修正・削除の依頼の窓口（`/about/#remove`。いまは「準備中（要確認）」）。
+- ドメイン（要確認）、Cloudflare の Secrets の登録。

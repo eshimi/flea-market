@@ -65,6 +65,29 @@ export function validateOccurrences(list, seriesIds) {
   return errs;
 }
 
+// 情報源の台帳（data/sources.json）：シリーズの出典はすべて台帳にあること。terms は利用規約の確認結果
+export function validateSources(sources, series) {
+  const errs = [];
+  if (!Array.isArray(sources)) return ['sources.json は配列にしてください'];
+  const urls = new Map(sources.map((s) => [s.url, s]));
+  if (urls.size !== sources.length) errs.push('sources.json に同じ URL が重複');
+  const ids = new Set(series.map((s) => s.id));
+  for (const src of sources) {
+    const e = (m) => errs.push(`sources[${src.url}]: ${m}`);
+    if (!HTTP_RE.test(src.url || '')) e('url が不正');
+    if (!Array.isArray(src.series) || !src.series.length) e('series（この出典を使うシリーズ）がありません');
+    else for (const id of src.series) if (!ids.has(id)) e(`series に ${id} がありません`);
+    if (!src.terms || ![true, false, null].includes(src.terms.ok)) e('terms.ok は true / false / null（未確認）');
+    else if (src.terms.ok !== null) try { parseYmd(src.terms.checkedAt); } catch { e('terms.checkedAt（利用規約を確認した日）が不正'); }
+  }
+  for (const s of series) for (const x of s.sources || []) {
+    const src = urls.get(x.url);
+    if (!src) errs.push(`series[${s.id}]: 出典 ${x.url} が sources.json にありません`);
+    else if (!src.series?.includes(s.id)) errs.push(`sources[${x.url}]: series に ${s.id} を足してください`);
+  }
+  return errs;
+}
+
 // シリーズの最終確認日（出典のうち、いちばん新しい日）
 export function lastChecked(series) {
   return series.sources.map((s) => s.checkedAt).sort().at(-1);
