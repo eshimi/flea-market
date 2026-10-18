@@ -458,5 +458,118 @@
    "checkedAt": "2026-10-18",
    "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
   }
+ },
+ {
+  "url": "https://7fukuadachi.com/%E9%AA%A8%E8%91%A3%E5%B8%82/",
+  "series": [
+   "nishiarai-daishi-ennichi-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt は /wp-admin/ のみ禁止（2026-10-18）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://7fukuadachi.com/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/",
+  "series": [
+   "nishiarai-daishi-ennichi-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "同上（7fukuadachi.com）"
+  }
+ },
+ {
+  "url": "https://7fukuadachi.com/%e4%b8%bb%e5%82%ac%e8%80%85%e6%83%85%e5%a0%b1/",
+  "series": [
+   "nishiarai-daishi-ennichi-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "同上（7fukuadachi.com）"
+  }
+ },
+ {
+  "url": "https://kanagawa-antique-market.crayonsite.net/",
+  "series": [
+   "machida-tenmangu-garakuta-kottoichi",
+   "musashi-itsukaichi-furumono-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（robots.txt は 404＝制限なし）。「当サイトの記事・写真の無断転載を禁じます」とあるため、事実の項目（日時・場所・出店数など）だけを掲載し、文章・写真は転載しない（2026-10-18 のユーザー決定の方針）"
+  }
+ },
+ {
+  "url": "https://kottou-rakuichi.com/about.html",
+  "series": [
+   "tomioka-hachimangu-kottoichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で全体を許可（2026-10-18）。主催者の電話番号は載せない"
+  }
+ },
+ {
+  "url": "https://www.teshigoro.com/",
+  "series": [
+   "nishiogi-teshigoto-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "Google サイト。利用規約のページなし、robots.txt は 404（制限なし）（2026-10-18）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://www.mottainai.info/jp/event/",
+  "series": [
+   "mottainai-flea-nakano-central-park",
+   "mottainai-flea-kichijoji-parco",
+   "mottainai-flea-shinjuku-chuo-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "「サイトのご利用について」（/terms/）で、事前の許可なく情報を使用（複製・改変・配布等）することを禁止。事実の項目（開催日・会場）だけを掲載し、文章は転載しない（ユーザー決定の方針）。robots.txt は /wp/wp-admin/ のみ禁止（2026-10-18）"
+  }
+ },
+ {
+  "url": "https://www.eko-hirobakan.jp/fujimibashi/",
+  "series": [
+   "kita-fujimibashi-echo-hirobakan-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt は 404（制限なし）（2026-10-18）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://www.tama-seisokojo.or.jp/econico/market",
+  "series": [
+   "tama-econico-market"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "多摩ニュータウン環境組合（一部事務組合）の公式サイト。robots.txt は管理用のパスのみ禁止（2026-10-18）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://www.tama-seisokojo.or.jp/center_top",
+  "series": [
+   "tama-econico-market"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "同上（tama-seisokojo.or.jp）"
+  }
  }
 ]

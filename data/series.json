@@ -1933,5 +1933,505 @@
     ]
    }
   ]
+ },
+ {
+  "id": "nishiarai-daishi-ennichi-flea",
+  "name": "西新井大師 縁日フリマ（毎月21日）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "株式会社 ヨシダ",
+   "url": "https://7fukuadachi.com/"
+  },
+  "venue": {
+   "name": "西新井大師 境内",
+   "pref": "13",
+   "city": "足立区",
+   "cityCode": "13121",
+   "address": "東京都足立区西新井1-15-1",
+   "access": "東武大師線 大師前駅下車 徒歩5分"
+  },
+  "recurrence": {
+   "type": "monthly-day",
+   "days": [
+    21
+   ],
+   "text": "毎月21日"
+  },
+  "time": {
+   "text": "9:00〜15:30",
+   "start": "09:00",
+   "end": "15:30"
+  },
+  "exhibitor": {
+   "fee": "通常出店 4,000円、手持ち出店 2,500円",
+   "notes": "公式ページでは、縁日フリマ・正月フリマの出店募集は行っていないと案内"
+  },
+  "sources": [
+   {
+    "url": "https://7fukuadachi.com/%E9%AA%A8%E8%91%A3%E5%B8%82/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "毎月21日 縁日フリマ開催",
+     "開催時間：9時～15時30分",
+     "出店場所：西新井大師境内",
+     "通常出店 4,000円",
+     "手持ち出店 2,500円",
+     "縁日フリマ、正月フリマの募集は行っておりません"
+    ]
+   },
+   {
+    "url": "https://7fukuadachi.com/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "東武伊勢崎線 西新井駅で東武大師線に乗り換え 大師前駅下車 徒歩5分",
+     "〒123-0841 東京都足立区西新井１丁目１５−１"
+    ]
+   },
+   {
+    "url": "https://7fukuadachi.com/%e4%b8%bb%e5%82%ac%e8%80%85%e6%83%85%e5%a0%b1/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "主催者情報",
+     "株式会社 ヨシダ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "machida-tenmangu-garakuta-kottoichi",
+  "name": "町田天満宮がらくた骨董市",
+  "kinds": [
+   "kotto"
+  ],
+  "organizer": {
+   "name": "かながわ骨董市",
+   "url": "https://kanagawa-antique-market.crayonsite.net/"
+  },
+  "venue": {
+   "name": "町田天満宮 境内",
+   "pref": "13",
+   "city": "町田市",
+   "cityCode": "13209",
+   "address": "町田市原町田1-21-5",
+   "access": "小田急線町田駅下車 徒歩8分／JR横浜線町田駅下車 徒歩5分"
+  },
+  "recurrence": {
+   "type": "monthly-day",
+   "days": [
+    1
+   ],
+   "exceptMonths": [
+    1,
+    11
+   ],
+   "text": "毎月1日（1月と11月は、会場の都合で開催日が変わる）"
+  },
+  "time": {
+   "text": "7:00〜15:00（天候により予告なく変更の場合あり）",
+   "start": "07:00",
+   "end": "15:00"
+  },
+  "exhibitor": {
+   "notes": "出店には古物商の許可が必要。出店数 80店（公式の記載）"
+  },
+  "sources": [
+   {
+    "url": "https://kanagawa-antique-market.crayonsite.net/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "●開催日：毎月1日",
+     "（1月と11月は、会場の都合により開催日が変更になります。ご確認ください。）",
+     "●会場：町田天満宮境内（町田市原町田1-21-5）",
+     "●交通：小田急線町田駅下車 徒歩8分 / JR横浜線町田駅下車 徒歩5分",
+     "●時間：7時〜15時",
+     "●出店：80店",
+     "出店に際しては古物商の許可が必要となります",
+     "町田天満宮がらくた骨董市は11月2日（月）になります。"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "musashi-itsukaichi-furumono-ichi",
+  "name": "武蔵五日市ふるもの市",
+  "kinds": [
+   "kotto"
+  ],
+  "organizer": {
+   "name": "かながわ骨董市",
+   "url": "https://kanagawa-antique-market.crayonsite.net/"
+  },
+  "venue": {
+   "name": "五日市広場",
+   "pref": "13",
+   "city": "あきる野市",
+   "cityCode": "13228",
+   "address": "東京都あきる野市五日市110-1",
+   "access": "JR武蔵五日市駅下車 徒歩5分"
+  },
+  "recurrence": {
+   "type": "monthly-day",
+   "days": [
+    5
+   ],
+   "exceptMonths": [
+    8
+   ],
+   "text": "毎月5日（毎年8月は休会）"
+  },
+  "time": {
+   "text": "7:00〜14:00（天候により予告なく変更の場合あり）",
+   "start": "07:00",
+   "end": "14:00"
+  },
+  "exhibitor": {
+   "notes": "出店には古物商の許可が必要。出店数 30店（公式の記載）"
+  },
+  "sources": [
+   {
+    "url": "https://kanagawa-antique-market.crayonsite.net/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "●開催日：毎月5日（毎年8月は休会です。）",
+     "●会場：五日市広場（東京都あきる野市五日市110-1)",
+     "●交通：JR武蔵五日市駅下車 徒歩5分",
+     "●時間：7時～14時",
+     "●出店：30店"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tomioka-hachimangu-kottoichi",
+  "name": "富岡八幡宮骨董市",
+  "kinds": [
+   "kotto"
+  ],
+  "organizer": {
+   "name": "楽市楽座骨董市",
+   "url": "https://kottou-rakuichi.com/",
+   "label": "運営サイト"
+  },
+  "venue": {
+   "name": "富岡八幡宮 境内",
+   "pref": "13",
+   "city": "江東区",
+   "cityCode": "13108",
+   "address": "東京都江東区富岡1-20-30",
+   "access": "東西線・都営大江戸線 門前仲町駅下車 5分（駐車場なし）"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-25",
+    "2026-12-06",
+    "2026-12-13",
+    "2027-01-24",
+    "2027-01-31"
+   ],
+   "text": "毎月第1（1月を除く）・第2・第4・第5日曜日（15日・28日に当たる日は休会）。公式の開催予定日（11月は休会）"
+  },
+  "time": {
+   "text": "7:00〜14:00",
+   "start": "07:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "rain": "雨の場合は中止"
+  },
+  "sources": [
+   {
+    "url": "https://kottou-rakuichi.com/about.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "開催予定日10月25日 11月休み 12月6日.13日 1月24日.31日",
+     "開催時間 朝 7時から14時まで",
+     "東京都江東区富岡1-20-30 富岡八幡宮境内",
+     "毎月第１（1月は除く）第２.第４.第５日曜日に開催しています。",
+     "＊15日28日に当たる場合は、休会",
+     "東西線・都営大江戸線 門前仲町駅下車５分",
+     "＊雨の場合は、中止です。",
+     "＊駐車場は ありません"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "nishiogi-teshigoto-ichi",
+  "name": "西荻手しごと市",
+  "kinds": [
+   "handmade"
+  ],
+  "organizer": {
+   "name": "手しごと市事務局（木土藍楽）",
+   "url": "https://www.teshigoro.com/"
+  },
+  "venue": {
+   "name": "井荻会館",
+   "pref": "13",
+   "city": "杉並区",
+   "cityCode": "13115",
+   "address": "東京都杉並区西荻北4-35-9",
+   "access": "JR中央線 西荻窪駅から徒歩12分（休日は中央・総武線各駅停車で）"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 4,
+     "wd": 0
+    }
+   ],
+   "exceptMonths": [
+    12
+   ],
+   "text": "毎月第4日曜日（12月は休み）"
+  },
+  "time": {
+   "text": "10:00〜17:00",
+   "start": "10:00",
+   "end": "17:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.teshigoro.com/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "西荻窪 井荻會舘にて毎月第４日曜日開催",
+     "AM10:00 ~ PM17:00",
+     "※12月はお休みです",
+     "〒167-0042 東京都杉並区西荻北４丁目３５−９ 井荻会館",
+     "西荻窪駅から徒歩12分",
+     "10月25日、11月22日"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mottainai-flea-nakano-central-park",
+  "name": "MOTTAINAIフリーマーケット（中野セントラルパーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "MOTTAINAIキャンペーン事務局",
+   "url": "https://www.mottainai.info/jp/event/"
+  },
+  "venue": {
+   "name": "中野セントラルパーク",
+   "pref": "13",
+   "city": "中野区",
+   "cityCode": "13114"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-10-25",
+    "2026-11-03"
+   ],
+   "text": "主催者のイベントカレンダーの開催日"
+  },
+  "sources": [
+   {
+    "url": "https://www.mottainai.info/jp/event/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "10月24日(土)中野セントラルパーク（中野区）",
+     "10月25日(日)中野セントラルパーク（中野区）",
+     "11月3日(火)中野セントラルパーク（中野区）"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mottainai-flea-kichijoji-parco",
+  "name": "MOTTAINAIフリーマーケット（吉祥寺パルコ屋上）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "MOTTAINAIキャンペーン事務局",
+   "url": "https://www.mottainai.info/jp/event/"
+  },
+  "venue": {
+   "name": "吉祥寺パルコ 屋上",
+   "pref": "13",
+   "city": "武蔵野市",
+   "cityCode": "13203"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-01",
+    "2026-11-14",
+    "2026-12-06"
+   ],
+   "text": "主催者のイベントカレンダーの開催日"
+  },
+  "sources": [
+   {
+    "url": "https://www.mottainai.info/jp/event/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11月1日(日)吉祥寺パルコ屋上（武蔵野市）",
+     "11月14日(土)吉祥寺パルコ屋上（武蔵野市）",
+     "12月6日(日)吉祥寺パルコ屋上（武蔵野市）"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mottainai-flea-shinjuku-chuo-park",
+  "name": "MOTTAINAIフリーマーケット（新宿中央公園）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "MOTTAINAIキャンペーン事務局",
+   "url": "https://www.mottainai.info/jp/event/"
+  },
+  "venue": {
+   "name": "新宿中央公園",
+   "pref": "13",
+   "city": "新宿区",
+   "cityCode": "13104"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21"
+   ],
+   "text": "主催者のイベントカレンダーの開催日"
+  },
+  "sources": [
+   {
+    "url": "https://www.mottainai.info/jp/event/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11月21日(土)新宿中央公園（新宿区）"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kita-fujimibashi-echo-hirobakan-flea",
+  "name": "富士見橋エコー広場館 フリーマーケット（北区）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "富士見橋エコー広場館",
+   "url": "https://www.eko-hirobakan.jp/fujimibashi/"
+  },
+  "venue": {
+   "name": "富士見橋エコー広場館",
+   "pref": "13",
+   "city": "北区",
+   "cityCode": "13117",
+   "address": "東京都北区田端5-16-1",
+   "access": "JR田端駅 北口より徒歩8分／JR駒込駅 東口より徒歩10分"
+  },
+  "recurrence": {
+   "type": "weekly",
+   "weekdays": [
+    0
+   ],
+   "text": "毎週日曜日"
+  },
+  "sources": [
+   {
+    "url": "https://www.eko-hirobakan.jp/fujimibashi/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "◇フリーマーケット毎週日曜日開催。",
+     "東京都北区田端5-16-1",
+     "JR 田端駅 北口より 徒歩8分",
+     "JR 駒込駅 東口より 徒歩10分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tama-econico-market",
+  "name": "エコにこマーケット（多摩市・エコにこセンター）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "多摩ニュータウン環境組合 エコにこセンター",
+   "url": "https://www.tama-seisokojo.or.jp/econico/market"
+  },
+  "venue": {
+   "name": "エコにこセンター（多摩ニュータウン環境組合リサイクルセンター）館内",
+   "pref": "13",
+   "city": "多摩市",
+   "cityCode": "13224",
+   "address": "東京都多摩市唐木田2-1-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-10-25",
+    "2026-11-28",
+    "2026-11-29",
+    "2026-12-19",
+    "2026-12-20",
+    "2027-01-30",
+    "2027-01-31",
+    "2027-02-27",
+    "2027-02-28",
+    "2027-03-28"
+   ],
+   "text": "公式の開催スケジュール（月1回の土・日）。2027年3月は公式の表記が「3月28日・29日」で、29日は月曜のため、28日だけを載せている"
+  },
+  "time": {
+   "text": "10:00〜13:00（ブースにより早く閉店の場合あり）",
+   "start": "10:00",
+   "end": "13:00"
+  },
+  "exhibitor": {
+   "notes": "テーブル出店（館内）6ブース。申込受付期間は公式の表のとおり"
+  },
+  "sources": [
+   {
+    "url": "https://www.tama-seisokojo.or.jp/econico/market",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "小さなフリマ、エコにこマーケット。出店スタイルはテーブル出店(館内)６ブースです。",
+     "１０時～１３時開催",
+     "10月24日・25日",
+     "11月28日・29日",
+     "12月19日・20日",
+     "1月30日・31日",
+     "2月27日・28日",
+     "3月28日・29日"
+    ]
+   },
+   {
+    "url": "https://www.tama-seisokojo.or.jp/center_top",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "多摩ニュータウン環境組合リサイクルセンター",
+     "〒206-0035 東京都多摩市唐木田二丁目1番地１"
+    ]
+   }
+  ]
  }
 ]
