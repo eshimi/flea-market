@@ -165,6 +165,12 @@ function seriesPage(s, ctx, lang) {
     ? `<ul class="sources">${list.slice(0, 12).map((o) => `<li>${esc(dlabel(o.date, lang, { year: true }))}　${statusTag(o, lang)}${o.note ? `　<span class="tbd">${esc(noteL(o, lang))}</span>` : ''}</li>`).join('')}</ul>`
     : `<p class="empty">${esc(p.noDates)}</p>`;
   const row = (k, x) => `<div><dt>${esc(k)}</dt><dd>${x}</dd></div>`;
+  // 公式に記載がない項目の「目安」（会場の名前・市区町村・一般的な傾向だけから。札を付けて区別する。住所の番地・徒歩時間は作らない）
+  const est = (text, pp) => `<span class="est" title="${esc(pp.estTitle)}">${esc(pp.est)}</span> ${esc(text)}`;
+  const station = /^([^\s・（(駅]+駅)前/.exec(v.name)?.[1];
+  const stationEn = /^(.+? Station)\b/.exec(venueEn(s))?.[1];
+  const estAddress = p.estAddr(lang === 'ja' ? `${PREFS[v.pref]}${v.city || ''}` : [cityL(v.city, lang), pn].filter(Boolean).join(', '));
+  const estAccess = station && (lang === 'ja' || stationEn) ? p.estStation(lang === 'ja' ? station : stationEn) : p.estRoute;
   const ex = s.exhibitor;
   const t = (x) => val(x, lang);
   const checked = lang === 'ja' ? '最終確認 ' : 'last checked ';
@@ -188,9 +194,9 @@ ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
 ${row(p.when, rule)}
 ${row(p.time, lang === 'en' && timeEn(s) ? (s.time.text === timeEn(s).replace('–', '〜') ? esc(timeEn(s)) : orig(timeEn(s), s.time.text)) : t(s.time?.text))}
 ${row(p.venue, lang === 'en' && venueL(s, lang) !== v.name ? orig(venueL(s, lang), v.name) : esc(v.name))}
-${row(p.address, tv(s, 'address', v.address, lang))}
-${row(p.access, tv(s, 'access', v.access, lang))}
-${row(p.admission, tv(s, 'admission', s.visitor?.admission, lang))}
+${row(p.address, v.address ? tv(s, 'address', v.address, lang) : est(estAddress, p))}
+${row(p.access, v.access ? tv(s, 'access', v.access, lang) : est(estAccess, p))}
+${row(p.admission, s.visitor?.admission ? tv(s, 'admission', s.visitor.admission, lang) : est(p.estFree, p))}
 ${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang))}
 ${row(s.organizer.label ? (lang === 'en' ? labelEn(s.organizer.label) || p.orgLabel(s.organizer.label) : p.orgLabel(s.organizer.label)) : p.org, orgName)}
 </dl>

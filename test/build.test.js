@@ -43,7 +43,8 @@ test('今週末（10/17 土・10/18 日）の一覧と、要確認・中止の�
   assert.match(detail, /中止/);
   assert.match(detail, /境内の行事のため/);
   // 書いていない項目は「要確認」
-  assert.match(detail, /アクセス<\/dt><dd><span class="tbd">要確認/);
+  // 公式に記載のない項目は、「目安」の札つきで、会場の名前・市区町村・一般的な傾向だけから出す（番地・徒歩時間は作らない）
+  assert.match(detail, /アクセス<\/dt><dd><span class="est"[^>]*>目安<\/span> 右の「ここへの経路を調べる」/);
   assert.match(jp('/e/sample-park-flea/').body, /出店の募集について、公式の情報で確認できていません/);
 });
 
@@ -324,6 +325,13 @@ test('地図・経路のリンクと当日の天気（気象庁）', async () =>
   const en = pages.find((p) => p.path === '/e/oedo-antique-market-tokyo-international-forum/');
   assert.match(en.body, /Open in Google Maps/);
   assert.match(en.body, /<div class="wx" data-office="130000" data-area="130010" data-date="2026-10-31" data-lang="en" data-region="Tokyo">/);
+  // 公式に記載のない項目の「目安」：入場料の既定、市区町村までの所在地、会場名から分かる駅前
+  const ja = (id) => pages.find((p) => p.path === `/ja/e/${id}/`).body;
+  assert.match(ja('takahata-fudoson-gozareichi'), /入場料<\/dt><dd><span class="est"[^>]*>目安<\/span> 多くのフリーマーケット・市は入場無料です/);
+  assert.match(ja('mizuho-aozora-ichi'), /所在地<\/dt><dd><span class="est"[^>]*>目安<\/span> 東京都瑞穂町（番地は要確認）/);
+  assert.match(ja('setagaya-funabashi-nomi-no-ichi-2026-autumn'), /アクセス<\/dt><dd><span class="est"[^>]*>目安<\/span> 千歳船橋駅の駅前（会場名から/);
+  assert.match(pages.find((p) => p.path === '/e/setagaya-funabashi-nomi-no-ichi-2026-autumn/').body, /In front of Chitose-Funabashi Station \(from the venue name/);
+  assert.ok(!ja('oedo-antique-market-tokyo-international-forum').includes('多くのフリーマーケット・市は入場無料'), '公式の入場料があるものには、目安を出さない');
   assert.deepEqual(en.scripts, ['/weather.js', '/map.js']);
   assert.match(en.body, /<aside class="ev-side"/);
   assert.match(en.body, /class="ev-map" data-src="https:\/\/maps\.google\.com\/maps\?q=/);

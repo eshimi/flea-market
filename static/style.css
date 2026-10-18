@@ -110,3 +110,6 @@ aside h2{font-size:15px;margin-bottom:10px}
 .ev-card .map-btn{text-align:center}
 .ev-card .wx{border:0;padding:0;max-width:none}
 @media (max-width:900px){.ev-split{grid-template-columns:1fr}.ev-side{position:static}}
+
+/* 公式に記載のない項目の「目安」札 */
+.est{display:inline-block;font-size:11px;font-weight:700;color:#8a6a1c;background:#fbefc9;border:1px solid #ecd48a;border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:1px}
