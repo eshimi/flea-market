@@ -12,6 +12,8 @@ export default {
       if (url.pathname === '/api/health') return Response.json({ ok: true });
       return Response.json({ error: 'not found' }, { status: 404 });
     }
+    // 以前の英語のトップ（/en/）は、英語が既定になったので / へ
+    if (url.pathname === '/en/' || url.pathname === '/en') return Response.redirect(`${url.origin}/${url.search}`, 301);
     const res = await env.ASSETS.fetch(request);
     const out = new Response(res.body, res);
     for (const [k, v] of Object.entries(SECURITY_HEADERS)) out.headers.set(k, v);

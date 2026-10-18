@@ -6,6 +6,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { todayJst } from './lib/dates.mjs';
 import { INDEXABLE, SITE } from './lib/nav.mjs';
+import { langPath, splitPath } from './lib/l10n.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const arg = (k) => process.argv.find((a) => a.startsWith(`--${k}=`))?.split('=')[1];
@@ -13,7 +14,7 @@ const arg = (k) => process.argv.find((a) => a.startsWith(`--${k}=`))?.split('=')
 export function mainHash(html) {
   const m = /<main[^>]*>([\s\S]*?)<\/main>/.exec(html);
   // 「○日 更新」のような、毎日変わる表示は除いて比べる
-  const body = (m ? m[1] : html).replace(/\d{4}[/-]\d{2}[/-]\d{2} 更新|最終更新：\d{4}-\d{2}-\d{2}/g, '').replace(/\s+/g, ' ');
+  const body = (m ? m[1] : html).replace(/\d{4}[/-]\d{2}[/-]\d{2} 更新|最終更新：\d{4}-\d{2}-\d{2}|Last updated: \d{4}-\d{2}-\d{2}|Last updated: [A-Z][a-z]{2} \d{1,2}, \d{4}|最終更新日：\d{4}年\d{1,2}月\d{1,2}日/g, '').replace(/\s+/g, ' ');
   return 'v1:' + createHash('sha256').update(body).digest('hex').slice(0, 16);
 }
 
@@ -34,8 +35,13 @@ function main() {
   const paths = JSON.parse(readFileSync(join(out, 'pages.json'), 'utf8'));
   const next = updateLastmod(state, paths.map((p) => [p, mainHash(readFileSync(join(out, p, 'index.html'), 'utf8'))]), today);
   writeFileSync(stateFile, JSON.stringify(next, null, 1) + '\n');
-  const urls = paths.map((p) => `<url><loc>${SITE.url}${p}</loc><lastmod>${next[p].lastmod}</lastmod></url>`).join('\n');
-  writeFileSync(join(out, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
+  // 英語（既定）と日本語は、お互いを hreflang で示す
+  const urls = paths.map((p) => {
+    const { base } = splitPath(p);
+    const alt = [['en', langPath(base, 'en')], ['ja', langPath(base, 'ja')], ['x-default', langPath(base, 'en')]].map(([l, h]) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE.url}${h}"/>`).join('');
+    return `<url><loc>${SITE.url}${p}</loc><lastmod>${next[p].lastmod}</lastmod>${alt}</url>`;
+  }).join('\n');
+  writeFileSync(join(out, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls}\n</urlset>\n`);
   writeFileSync(join(out, 'robots.txt'), INDEXABLE ? `User-agent: *\nAllow: /\nSitemap: ${SITE.url}/sitemap.xml\n` : 'User-agent: *\nDisallow: /\n');
   console.log(`sitemap.xml：${paths.length} ページ`);
 }

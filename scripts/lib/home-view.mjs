@@ -6,7 +6,7 @@ import { S, T, WD_EN, WD_JA, MON_EN } from './i18n.mjs';
 import { addDays, holidayName, isDayOff, upcomingWeekend, weekday } from './dates.mjs';
 import { isActive } from './events.mjs';
 import { KINDS } from './kinds.mjs';
-import { PREFS } from './areas.mjs';
+import { prefLabel } from './l10n.mjs';
 import { MAP_PREFS, renderMap } from './japan-map.mjs';
 import { skylineSvg } from './illustrations.mjs';
 
@@ -91,7 +91,7 @@ export function renderCard(o, lang = 'ja') {
   const badge = lang === 'en'
     ? `<span class="mc-m">${MON_EN[+m - 1]}</span><b>${+d}</b><span class="mc-w">${WD_EN[wd].toUpperCase()}</span>`
     : `<span class="mc-m">${+m}月</span><b>${+d}</b><span class="mc-w">${WD_JA[wd]}</span>`;
-  const place = [s.venue.city || PREFS[s.venue.pref], s.venue.name].filter(Boolean).join('・');
+  const place = [s.venue.city || prefLabel(s.venue.pref, lang), s.venue.name].filter(Boolean).join('・');
   const time = s.time?.text || S[lang].featured.tbc;
   const official = o.source || s.sources[0].url;
   const kinds = s.kinds.map((x) => `<a class="mkind" href="/kind/${x}/">${esc(S[lang].kinds[x])}</a>`).join('');
@@ -169,7 +169,7 @@ export function renderArea(ctx, lang = 'ja') {
   const t = S[lang].area;
   const counts = areaCounts(ctx.occ);
   const chips = [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-    .map(([c, n]) => `<li><a class="achip" href="/area/${c}/">${esc(lang === 'en' ? MAP_PREFS[c].en : MAP_PREFS[c].name)}<small>${esc(t.count(n))}</small></a></li>`).join('');
+    .map(([c, n]) => `<li><a class="achip" href="/area/${c}/">${esc(prefLabel(c, lang))}<small>${esc(t.count(n))}</small></a></li>`).join('');
   return `<section class="hm-area" aria-labelledby="area-h">
 <div class="hm-head">${heading(t, 'area-h')}<a class="hm-more" href="/area/">${esc(t.all)}${icon('arrow', 16)}</a></div>
 <div class="area-box"><div class="area-map">${renderMap(counts, { aria: t.map, countText: t.count, lang })}</div>

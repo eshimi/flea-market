@@ -12,7 +12,14 @@
   "license": "運営者が用意した画像",
   "licenseUrl": "",
   "note": "撮影者・作成方法（撮影／画像生成など）・権利の確認は未記入（要確認）。サンプル画像から、文字・日付の部分を除いて使用",
-  "checkedAt": "2026-10-18"
+  "checkedAt": "2026-10-18",
+  "en": {
+   "use": "Top page photo",
+   "title": "Image provided by the site operator",
+   "photographer": "Provided by the site operator",
+   "source": "Site operator",
+   "license": "Provided by the site operator (rights to be confirmed)"
+  }
  },
  {
   "id": "cards",
@@ -30,7 +37,14 @@
   "license": "運営者が用意した画像",
   "licenseUrl": "",
   "note": "撮影者・作成方法（撮影／画像生成など）・権利の確認は未記入（要確認）。サンプル画像から、文字・日付の部分を除いて使用",
-  "checkedAt": "2026-10-18"
+  "checkedAt": "2026-10-18",
+  "en": {
+   "use": "Photos for event cards and types (flea market, fair, nomi-no-ichi, antique fair)",
+   "title": "Image provided by the site operator",
+   "photographer": "Provided by the site operator",
+   "source": "Site operator",
+   "license": "Provided by the site operator (rights to be confirmed)"
+  }
  },
  {
   "id": "flea-2",
@@ -46,7 +60,14 @@
   "license": "Pexels License（無料で商用利用できる写真）",
   "licenseUrl": "https://www.pexels.com/license/",
   "note": "Pexelsのページに記載の場所：岡崎。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
-  "checkedAt": "2026-10-18"
+  "checkedAt": "2026-10-18",
+  "en": {
+   "use": "Flea market photo",
+   "title": "Clothes Market on Street in Japan",
+   "photographer": "Huu Huynh",
+   "source": "Pexels",
+   "license": "Pexels License (free to use, including commercially)"
+  }
  },
  {
   "id": "flea-3",
@@ -62,7 +83,14 @@
   "license": "Pexels License（無料で商用利用できる写真）",
   "licenseUrl": "https://www.pexels.com/license/",
   "note": "Pexelsのページに記載の場所：撮影地は記載なし。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
-  "checkedAt": "2026-10-18"
+  "checkedAt": "2026-10-18",
+  "en": {
+   "use": "Flea market photo",
+   "title": "Vibrant Vintage Clothes Hanging at Flea Market",
+   "photographer": "Muhamad Guruh Budi Hartono",
+   "source": "Pexels",
+   "license": "Pexels License (free to use, including commercially)"
+  }
  },
  {
   "id": "handmade",
@@ -78,7 +106,14 @@
   "license": "Pexels License（無料で商用利用できる写真）",
   "licenseUrl": "https://www.pexels.com/license/",
   "note": "Pexelsのページに記載の場所：撮影地は記載なし。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
-  "checkedAt": "2026-10-18"
+  "checkedAt": "2026-10-18",
+  "en": {
+   "use": "Handmade market photo",
+   "title": "Close-up of Colorful, Handmade Items at the Market",
+   "photographer": "Marek Piwnicki",
+   "source": "Pexels",
+   "license": "Pexels License (free to use, including commercially)"
+  }
  },
  {
   "id": "marche",
@@ -94,7 +129,14 @@
   "license": "Pexels License（無料で商用利用できる写真）",
   "licenseUrl": "https://www.pexels.com/license/",
   "note": "Pexelsのページに記載の場所：東京。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
-  "checkedAt": "2026-10-18"
+  "checkedAt": "2026-10-18",
+  "en": {
+   "use": "Marché photo",
+   "title": "Charming Street Vendor in Tokyo's Urban Corner",
+   "photographer": "Iban Lopez Luna",
+   "source": "Pexels",
+   "license": "Pexels License (free to use, including commercially)"
+  }
  },
  {
   "id": "vendors",
@@ -110,7 +152,14 @@
   "license": "Pexels License（無料で商用利用できる写真）",
   "licenseUrl": "https://www.pexels.com/license/",
   "note": "ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
-  "checkedAt": "2026-10-18"
+  "checkedAt": "2026-10-18",
+  "en": {
+   "use": "For Vendors section photo",
+   "title": "Japanese street vendor selling strawberry daifuku",
+   "photographer": "Faheem Ahamad",
+   "source": "Pexels",
+   "license": "Pexels License (free to use, including commercially)"
+  }
  },
  {
   "id": "about",
@@ -126,6 +175,13 @@
   "license": "Pexels License（無料で商用利用できる写真）",
   "licenseUrl": "https://www.pexels.com/license/",
   "note": "Pexelsのページに記載の場所：東京。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
-  "checkedAt": "2026-10-18"
+  "checkedAt": "2026-10-18",
+  "en": {
+   "use": "About section photo",
+   "title": "Bustling Outdoor Market near Japanese Temple",
+   "photographer": "Eileen Gao",
+   "source": "Pexels",
+   "license": "Pexels License (free to use, including commercially)"
+  }
  }
 ]
