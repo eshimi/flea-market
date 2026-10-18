@@ -579,6 +579,34 @@
   "hash": "v1:7e6c76049dc80519",
   "lastmod": "2026-10-18"
  },
+ "/guide/": {
+  "hash": "v1:95c2a02e0099996d",
+  "lastmod": "2026-10-18"
+ },
+ "/faq/": {
+  "hash": "v1:f8adf5451bfd610c",
+  "lastmod": "2026-10-18"
+ },
+ "/blog/": {
+  "hash": "v1:d49931efa2c96aa2",
+  "lastmod": "2026-10-18"
+ },
+ "/blog/welcome/": {
+  "hash": "v1:e62877148644d360",
+  "lastmod": "2026-10-18"
+ },
+ "/blog/reading-the-labels/": {
+  "hash": "v1:f0b57d2359499931",
+  "lastmod": "2026-10-18"
+ },
+ "/blog/rain-and-cancellations/": {
+  "hash": "v1:67cae629dac0c0b6",
+  "lastmod": "2026-10-18"
+ },
+ "/blog/getting-there-by-car/": {
+  "hash": "v1:1cec3210cfbed6fa",
+  "lastmod": "2026-10-18"
+ },
  "/ja/": {
   "hash": "v1:7459c8edb0a263c4",
   "lastmod": "2026-10-18"
@@ -1157,6 +1185,34 @@
  },
  "/ja/about/": {
   "hash": "v1:4a12c2e145865851",
+  "lastmod": "2026-10-18"
+ },
+ "/ja/guide/": {
+  "hash": "v1:943366fc727775ff",
+  "lastmod": "2026-10-18"
+ },
+ "/ja/faq/": {
+  "hash": "v1:f290c6aedba9368e",
+  "lastmod": "2026-10-18"
+ },
+ "/ja/blog/": {
+  "hash": "v1:fb82ee6b8687e741",
+  "lastmod": "2026-10-18"
+ },
+ "/ja/blog/welcome/": {
+  "hash": "v1:be26ec577ad80841",
+  "lastmod": "2026-10-18"
+ },
+ "/ja/blog/reading-the-labels/": {
+  "hash": "v1:0910e28a52799b4c",
+  "lastmod": "2026-10-18"
+ },
+ "/ja/blog/rain-and-cancellations/": {
+  "hash": "v1:2ab635348a2cb257",
+  "lastmod": "2026-10-18"
+ },
+ "/ja/blog/getting-there-by-car/": {
+  "hash": "v1:8ee41cf6926cafcc",
   "lastmod": "2026-10-18"
  }
 }
