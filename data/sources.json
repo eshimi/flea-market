@@ -737,5 +737,768 @@
    "checkedAt": "2026-10-18",
    "note": "自治体の公式サイト。robots.txt は200 で許可（2026-10-18 確認）。掲載は事実の項目（日時・場所・申込み方法など）だけで、文章・画像は転載しない"
   }
+ },
+ {
+  "url": "https://www.recyclefmd.gr.jp/",
+  "series": [
+   "recyclefmd-sapporo-plaza-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト。利用規約のページなし。robots.txt は 404（制限なし）。事実の項目だけ載せる。料金・電話・メールは載せない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://cultune.org/",
+  "series": [
+   "cultune-fukuoka-maizuru-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は許可。利用規約のページなし（「出店者規約」は出店者向けで取得を禁じる記載なし）。事実の項目だけ載せる（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.earth-garden.jp/festival/83598/",
+  "series": [
+   "earthgarden-gearloop-market-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は許可。サイトの利用規約は確認できず（要確認）。事実の項目（日時・会場）だけ載せ、文章・画像は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://trx.jp/schejule",
+  "series": [
+   "trx-oi-keibajo-tokyo-city-flea",
+   "trx-ike-sunpark-flea",
+   "trx-funabashi-keibajo-flea",
+   "trx-kitaku-minsho-matsuri-flea",
+   "trx-musamura-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は許可。サイト利用の規約はなく、「出店規約」「プレミアム会員規約」は出店者向け。事実の項目（開催日・開催地・会場名）だけ載せ、文章・画像は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=040",
+  "series": [
+   "recycler-sumida-live-fes-2026-winter-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は 404（制限なし）。「ご利用ガイド」はあるが取得を禁じる記載は確認できず。事実の項目だけ載せ、文章・電話番号・メールは載せない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/",
+  "series": [
+   "yuyu-marche-inazawa-kinro-fukushi-kaikan",
+   "yuyu-marche-ichinomiya-riverside-ono-gokurakuji",
+   "yuyu-marche-motohama-park",
+   "yuyu-marche-plant6",
+   "yuyu-marche-ja-genki-no-sato",
+   "yuyu-marche-sobue-ryokuchi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト。robots.txt は許可。利用規約のページは確認できず。事実の項目（日付・会場名・時間・出店料）だけ掲載し、文章は転載しない。電話・メールは載せない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://rpa.flima.net/%e5%87%ba%e5%ba%97%e3%81%ae%e3%83%ab%e3%83%bc%e3%83%ab/",
+  "series": [
+   "yuyu-marche-inazawa-kinro-fukushi-kaikan",
+   "yuyu-marche-ichinomiya-riverside-ono-gokurakuji",
+   "yuyu-marche-motohama-park",
+   "yuyu-marche-plant6",
+   "yuyu-marche-ja-genki-no-sato",
+   "yuyu-marche-sobue-ryokuchi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト。robots.txt は許可。利用規約のページは確認できず。事実の項目（日付・会場名・時間・出店料）だけ掲載し、文章は転載しない。電話・メールは載せない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.tedukuri-ichi.com/",
+  "series": [
+   "hyakumanben-tedukuri-ichi",
+   "umekoji-park-tedukuri-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず。事実の項目（開催日・時間・会場・アクセス）だけ掲載し、文章は転載しない。電話番号は載せない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.tedukuri-ichi.com/about",
+  "series": [
+   "hyakumanben-tedukuri-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず。事実の項目（開催日・時間・会場・アクセス）だけ掲載し、文章は転載しない。電話番号は載せない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.tedukuri-ichi.com/access_hyakumanben/",
+  "series": [
+   "hyakumanben-tedukuri-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず。事実の項目（開催日・時間・会場・アクセス）だけ掲載し、文章は転載しない。電話番号は載せない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.tedukuri-ichi.com/access_umekoji/",
+  "series": [
+   "umekoji-park-tedukuri-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず。事実の項目（開催日・時間・会場・アクセス）だけ掲載し、文章は転載しない。電話番号は載せない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "http://freemarket-go.com/shousai-osaka-028.html",
+  "series": [
+   "jfma-nakaku-kumin-festa-flea-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "http://freemarket-go.com/shousai_hyogo_001.html",
+  "series": [
+   "jfma-kobe-harborland-seaside-market"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "http://freemarket-go.com/shousai_hyogo_003.html",
+  "series": [
+   "jfma-nishikita-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "http://freemarket-go.com/shousai_osaka_013.html",
+  "series": [
+   "jfma-ikea-tsuruhama-loppis"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "http://freemarket-go.com/shousai_osaka_001.html",
+  "series": [
+   "jfma-minatomachi-river-place-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "http://freemarket-go.com/shousai-siga-004.html",
+  "series": [
+   "jfma-wanwan-marche-shiga-ryuo-vol17"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "http://freemarket-go.com/shousai_hyogo_006.html",
+  "series": [
+   "jfma-wanwan-marche-kobe-port-island-vol53"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "http://freemarket-go.com/shousai-hyogo-009.html",
+  "series": [
+   "jfma-wanwan-marche-kobe-meriken-park-vol8"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "http://freemarket-go.com/shousai-hyogo-010.html",
+  "series": [
+   "jfma-ikea-kobe-loppis"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/ama12-12/",
+  "series": [
+   "fmj-amagasaki-chuo-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/amaiseki12-26/",
+  "series": [
+   "fmj-amaiseki-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/amaiseki12-27/",
+  "series": [
+   "fmj-amaiseki-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/enama11-14/",
+  "series": [
+   "fmj-amaiseki-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/apia10-31/",
+  "series": [
+   "fmj-apia-higashiomi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/kirarie10-18/",
+  "series": [
+   "fmj-kirarie-kusatsu"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/enmino10-25/",
+  "series": [
+   "fmj-minoh-cues-mall"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/mino11-22/",
+  "series": [
+   "fmj-minoh-cues-mall"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/mino12-13/",
+  "series": [
+   "fmj-minoh-cues-mall"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/ennara10-31-1/",
+  "series": [
+   "fmj-nara-city-hall-lawn"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/fukakita10-24/",
+  "series": [
+   "fmj-fukakita-ryokuchi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/fuka11-8/",
+  "series": [
+   "fmj-fukakita-ryokuchi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/fukakita11-23/",
+  "series": [
+   "fmj-fukakita-ryokuchi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/fukakitamaturi12-19-20/",
+  "series": [
+   "fmj-fukakita-ryokuchi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/higashi10-20/",
+  "series": [
+   "fmj-ohigashi-hiroba"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/fukuhigashi11-10/",
+  "series": [
+   "fmj-ohigashi-hiroba"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/ohigashi11-16/",
+  "series": [
+   "fmj-ohigashi-hiroba"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/ohigashi12-23/",
+  "series": [
+   "fmj-ohigashi-hiroba"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/ohigashi1-5/",
+  "series": [
+   "fmj-ohigashi-hiroba"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/fukuoka11-4/",
+  "series": [
+   "fmj-okazaki-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/okazaki12-29-30/",
+  "series": [
+   "fmj-okazaki-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/turu11-4/",
+  "series": [
+   "fmj-tsurumi-ryokuchi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/hana11-18/",
+  "series": [
+   "fmj-tsurumi-ryokuchi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/turu12-9/",
+  "series": [
+   "fmj-tsurumi-ryokuchi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/turu12-23/",
+  "series": [
+   "fmj-tsurumi-ryokuchi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/turimi1-5/",
+  "series": [
+   "fmj-tsurumi-ryokuchi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/hikone11-7-8/",
+  "series": [
+   "fmj-cainz-hikone"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/kenbunmaturi12-26-27/",
+  "series": [
+   "fmj-mie-sogo-bunka-center"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/kidugawa10-31-1/",
+  "series": [
+   "fmj-plant-kizugawa"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/notogawa10-25/",
+  "series": [
+   "fmj-notogawa-community-center"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/odekake11-21/",
+  "series": [
+   "fmj-a-square-kusatsu"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/saidaiji10-25/",
+  "series": [
+   "fmj-yamato-saidaiji-ekimae"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/saidaiji11-7/",
+  "series": [
+   "fmj-yamato-saidaiji-ekimae"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/saidaiji11-22/",
+  "series": [
+   "fmj-yamato-saidaiji-ekimae"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/saidaiji12-12/",
+  "series": [
+   "fmj-yamato-saidaiji-ekimae"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/saidaiji12-20/",
+  "series": [
+   "fmj-yamato-saidaiji-ekimae"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/sakira11-14-15/",
+  "series": [
+   "fmj-ritto-sakira"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/sakura11-21-22-23/",
+  "series": [
+   "fmj-suzuka-sakura-no-mori"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/suzuka12-5-6/",
+  "series": [
+   "fmj-suzuka-sakura-no-mori"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/shinsui12-19-20/",
+  "series": [
+   "fmj-yasugawa-shinsui-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/yamada12-19-20/",
+  "series": [
+   "fmj-yamada-ike-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/yasu11-22/",
+  "series": [
+   "fmj-alplaza-yasu"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/yasu12-6/",
+  "series": [
+   "fmj-alplaza-yasu"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/yoxtukaichi10-24/",
+  "series": [
+   "fmj-yokkaichi-shimin-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/yoxtukaichi11-8/",
+  "series": [
+   "fmj-yokkaichi-shimin-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/yoxtukaichi11-21/",
+  "series": [
+   "fmj-yokkaichi-shimin-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/yoxtukaichi12-12/",
+  "series": [
+   "fmj-yokkaichi-shimin-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.fmfm-king.com/yoxtukaichi12-30/",
+  "series": [
+   "fmj-yokkaichi-shimin-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
  }
 ]

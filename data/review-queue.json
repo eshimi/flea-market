@@ -6,7 +6,8 @@
   "detectedAt": "2026-10-19",
   "reason": "new",
   "hash": "0476ca0b72ea726c",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-10-18"
  },
  {
   "id": "tvh-golma",
@@ -15,7 +16,8 @@
   "detectedAt": "2026-10-19",
   "reason": "new",
   "hash": "637673033ad469ca",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-10-18"
  },
  {
   "id": "trx-tokyo-recycle",
@@ -24,7 +26,8 @@
   "detectedAt": "2026-10-19",
   "reason": "new",
   "hash": "1e6d1113712340e9",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-10-18"
  },
  {
   "id": "recycler-jp",
@@ -33,7 +36,8 @@
   "detectedAt": "2026-10-19",
   "reason": "new",
   "hash": "0391163940219f9f",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-10-18"
  },
  {
   "id": "tezukuriichi",
@@ -42,7 +46,8 @@
   "detectedAt": "2026-10-19",
   "reason": "new",
   "hash": "97f9218f26bc7bb2",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-10-18"
  },
  {
   "id": "earth-garden",
@@ -51,7 +56,8 @@
   "detectedAt": "2026-10-19",
   "reason": "new",
   "hash": "cd8a6a3255acef85",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-10-18"
  },
  {
   "id": "rpa-yuyu-marche",
@@ -60,7 +66,8 @@
   "detectedAt": "2026-10-19",
   "reason": "new",
   "hash": "ff5f877f74b19d62",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-10-18"
  },
  {
   "id": "nihon-freemarket-kyokai",
@@ -69,7 +76,8 @@
   "detectedAt": "2026-10-19",
   "reason": "new",
   "hash": "e213b39cd88466d0",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-10-18"
  },
  {
   "id": "furima-japan",
@@ -78,7 +86,8 @@
   "detectedAt": "2026-10-19",
   "reason": "new",
   "hash": "d392028a7444b792",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-10-18"
  },
  {
   "id": "hyakumanben-tedukuri-ichi",
@@ -87,7 +96,8 @@
   "detectedAt": "2026-10-19",
   "reason": "new",
   "hash": "3d0980cd6068f63e",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-10-18"
  },
  {
   "id": "cultune",
@@ -96,6 +106,7 @@
   "detectedAt": "2026-10-19",
   "reason": "new",
   "hash": "467025b9a547119f",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-10-18"
  }
 ]

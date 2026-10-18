@@ -3373,5 +3373,2804 @@
     ]
    }
   ]
+ },
+ {
+  "id": "recyclefmd-sapporo-plaza-flea",
+  "name": "フリーマーケット in 札幌サンプラザ（リサイクル運動市民の会 北海道本部）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動市民の会＜北海道本部＞",
+   "url": "https://www.recyclefmd.gr.jp/"
+  },
+  "venue": {
+   "name": "札幌サンプラザ",
+   "pref": "01",
+   "city": "札幌市北区",
+   "cityCode": "01102",
+   "address": "北区北24条西5丁目"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-03",
+    "2026-12-13"
+   ],
+   "text": "公式サイトに掲載の開催日"
+  },
+  "time": {
+   "text": "10:00〜13:30",
+   "start": "10:00",
+   "end": "13:30"
+  },
+  "visitor": {
+   "rain": "屋内会場のため悪天候でも開催"
+  },
+  "exhibitor": {
+   "notes": "家庭の不用品（ハンドメイド・新品類の販売も可能：申込時確認を）。出店は公式サイトから申込み",
+   "applyUrl": "https://www.recyclefmd.gr.jp/register/"
+  },
+  "sources": [
+   {
+    "url": "https://www.recyclefmd.gr.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026/11/3(火祝) 10:00～13:30",
+     "2026/12/13(日) 10:00～13:30",
+     "札幌サンプラザ(北区北24条西5丁目)",
+     "屋内会場のため悪天候でも開催",
+     "家庭の不用品(ハンドメイド"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cultune-fukuoka-maizuru-flea",
+  "name": "CULTUNE フリマin舞鶴",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "CULTUNE",
+   "url": "https://cultune.org/"
+  },
+  "venue": {
+   "name": "舞鶴公園 三ノ丸広場",
+   "pref": "40",
+   "city": "福岡市中央区",
+   "cityCode": "40133"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-20",
+    "2027-02-21"
+   ],
+   "text": "公式サイトの次回開催予定"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "fee": "無料",
+   "rain": "小雨決行・荒天時は中止（当日朝にHP・SNSでお知らせ）",
+   "access": "地下鉄空港線「大濠公園」駅 徒歩約8分"
+  },
+  "exhibitor": {
+   "notes": "出店ジャンル：古着・雑貨・ハンドメイド・キッチンカー・体験ブース ほか。募集200組（抽選制）。申込みは公式サイトの募集ページから"
+  },
+  "sources": [
+   {
+    "url": "https://cultune.org/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026.12.20 (日)",
+     "2027.02.21 (日)",
+     "舞鶴公園 三ノ丸広場",
+     "10:00 — 16:00",
+     "入場料 無料",
+     "小雨決行",
+     "荒天時は中止",
+     "地下鉄空港線「大濠公園」駅",
+     "徒歩約8分",
+     "200組（抽選制）"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "earthgarden-gearloop-market-2026",
+  "name": "GEARLOOP MARKET（アースガーデン“秋”2026 内のアウトドアギアのフリーマーケット）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "アースガーデン",
+   "url": "https://www.earth-garden.jp/"
+  },
+  "venue": {
+   "name": "代々木公園（EARTH GARDEN 秋 内）",
+   "pref": "13",
+   "city": "渋谷区",
+   "cityCode": "13113"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-10-25"
+   ],
+   "text": "公式記事に掲載の開催日"
+  },
+  "time": {
+   "text": "10:00〜17:00",
+   "start": "10:00",
+   "end": "17:00"
+  },
+  "visitor": {
+   "rain": "雨天決行"
+  },
+  "sources": [
+   {
+    "url": "https://www.earth-garden.jp/festival/83598/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "アウトドアギアだけを集めたフリーマーケット",
+     "日程：2026年10月24日（土）・25日（日）",
+     "時間：10:00〜17:00",
+     "会場：代々木公園（EARTH GARDEN 秋 内）",
+     "※雨天決行です。"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "trx-oi-keibajo-tokyo-city-flea",
+  "name": "大井競馬場 Tokyo City Flea Market（東京リサイクル）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "東京リサイクル",
+   "url": "https://trx.jp/"
+  },
+  "venue": {
+   "name": "大井競馬場TokyoCityFleaMarket",
+   "pref": "13",
+   "city": "品川区",
+   "cityCode": "13109"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-10-25",
+    "2026-10-31",
+    "2026-11-01",
+    "2026-11-07",
+    "2026-11-08",
+    "2026-11-14",
+    "2026-11-15",
+    "2026-11-21",
+    "2026-11-22",
+    "2026-11-23",
+    "2026-11-28",
+    "2026-11-29",
+    "2026-12-05",
+    "2026-12-06",
+    "2026-12-12",
+    "2026-12-13",
+    "2026-12-19",
+    "2026-12-20",
+    "2026-12-26",
+    "2026-12-27"
+   ],
+   "text": "東京リサイクルの開催スケジュール"
+  },
+  "sources": [
+   {
+    "url": "https://trx.jp/schejule",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "10/24（土）品川区大井競馬場TokyoCityFleaMarket",
+     "10/25（日）品川区大井競馬場TokyoCityFleaMarket",
+     "10/31（土）品川区大井競馬場TokyoCityFleaMarket",
+     "11/01（日）品川区大井競馬場TokyoCityFleaMarket",
+     "11/07（土）品川区大井競馬場TokyoCityFleaMarket",
+     "11/08（日）品川区大井競馬場TokyoCityFleaMarket",
+     "11/14（土）品川区大井競馬場TokyoCityFleaMarket",
+     "11/15（日）品川区大井競馬場TokyoCityFleaMarket",
+     "11/21（土）品川区大井競馬場TokyoCityFleaMarket",
+     "11/22（日）品川区大井競馬場TokyoCityFleaMarket",
+     "11/23（月）品川区大井競馬場TokyoCityFleaMarket",
+     "11/28（土）品川区大井競馬場TokyoCityFleaMarket",
+     "11/29（日）品川区大井競馬場TokyoCityFleaMarket",
+     "12/05（土）品川区大井競馬場TokyoCityFleaMarket",
+     "12/06（日）品川区大井競馬場TokyoCityFleaMarket",
+     "12/12（土）品川区大井競馬場TokyoCityFleaMarket",
+     "12/13（日）品川区大井競馬場TokyoCityFleaMarket",
+     "12/19（土）品川区大井競馬場TokyoCityFleaMarket",
+     "12/20（日）品川区大井競馬場TokyoCityFleaMarket",
+     "12/26（土）品川区大井競馬場TokyoCityFleaMarket",
+     "12/27（日）品川区大井競馬場TokyoCityFleaMarket"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "trx-ike-sunpark-flea",
+  "name": "イケ・サンパーク フリーマーケット（東京リサイクル）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "東京リサイクル",
+   "url": "https://trx.jp/"
+  },
+  "venue": {
+   "name": "イケ・サンパーク",
+   "pref": "13",
+   "city": "豊島区",
+   "cityCode": "13116"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-14",
+    "2026-11-15",
+    "2026-12-13"
+   ],
+   "text": "東京リサイクルの開催スケジュール"
+  },
+  "sources": [
+   {
+    "url": "https://trx.jp/schejule",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/14（土）豊島区イケ・サンパーク",
+     "11/15（日）豊島区イケ・サンパーク",
+     "12/13（日）豊島区イケ・サンパーク"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "trx-funabashi-keibajo-flea",
+  "name": "船橋競馬場フリーマーケット（東京リサイクル）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "東京リサイクル",
+   "url": "https://trx.jp/"
+  },
+  "venue": {
+   "name": "船橋競馬場フリーマーケット",
+   "pref": "12",
+   "city": "船橋市",
+   "cityCode": "12204"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-31"
+   ],
+   "text": "東京リサイクルの開催スケジュール"
+  },
+  "sources": [
+   {
+    "url": "https://trx.jp/schejule",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "10/31（土）船橋市船橋競馬場フリーマーケット"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "trx-kitaku-minsho-matsuri-flea",
+  "name": "北区民商まつり（東京リサイクルの開催スケジュールに掲載）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "東京リサイクル",
+   "url": "https://trx.jp/"
+  },
+  "venue": {
+   "name": "北区民商まつり",
+   "pref": "13",
+   "city": "北区",
+   "cityCode": "13117"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-01"
+   ],
+   "text": "東京リサイクルの開催スケジュール"
+  },
+  "sources": [
+   {
+    "url": "https://trx.jp/schejule",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/01（日）北区北区民商まつり"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "trx-musamura-flea",
+  "name": "むさ村フリーマーケット（東京リサイクル）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "東京リサイクル",
+   "url": "https://trx.jp/"
+  },
+  "venue": {
+   "name": "むさ村フリーマーケット",
+   "pref": "13",
+   "city": "武蔵村山市",
+   "cityCode": "13220"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21"
+   ],
+   "text": "東京リサイクルの開催スケジュール"
+  },
+  "sources": [
+   {
+    "url": "https://trx.jp/schejule",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/21（土）武蔵村山市むさ村フリーマーケット"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "recycler-sumida-live-fes-2026-winter-flea",
+  "name": "すみだライブフェス2026冬 フリーマーケット（錦糸公園・リサイクル運動市民の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動市民の会",
+   "url": "https://www2.recycler.jp/"
+  },
+  "venue": {
+   "name": "錦糸公園",
+   "pref": "13",
+   "city": "墨田区",
+   "cityCode": "13107",
+   "address": "東京都墨田区錦糸4"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-12",
+    "2026-12-13"
+   ],
+   "text": "12/12(土)＆12/13(日)の2日間のみ"
+  },
+  "time": {
+   "text": "11:00〜18:00（集合時間 10:30〜11:30）",
+   "start": "11:00",
+   "end": "18:00"
+  },
+  "visitor": {
+   "admission": "入場料無し",
+   "rain": "フリーマーケットは雨天中止。中止の発表は前日〜当日朝7:00まで"
+  },
+  "exhibitor": {
+   "apply": "主催団体のサイトの会場ページから申し込み（約40店・手持ち出店のみ・早いもの順）",
+   "applyUrl": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=040"
+  },
+  "sources": [
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=040",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "12/12(土)＆12/13(日)の2日間のみ",
+     "40店限定フリーマーケット開催",
+     "東京都墨田区錦糸4",
+     "11:00～18:00",
+     "入場料無し",
+     "※フリーマーケットは雨天中止となります",
+     "雨天中止の発表は前日～当日朝7:00までに発表いたします",
+     "手持ち出店のみ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "yuyu-marche-inazawa-kinro-fukushi-kaikan",
+  "name": "稲沢勤労福祉会館 フリーマーケット（友遊マルシェ）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動推進の会・友遊（ゆうゆう）マルシェ",
+   "url": "https://rpa.flima.net/"
+  },
+  "venue": {
+   "name": "稲沢勤労福祉会館",
+   "pref": "23"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-07"
+   ],
+   "text": "主催団体の「開催日程」ページ"
+  },
+  "time": {
+   "text": "9:30〜12:00（室内開催）",
+   "start": "09:30",
+   "end": "12:00"
+  },
+  "visitor": {
+   "rain": "開催か中止かの判断は、会場によって違いがあるが、当日6:00にホームページ上に更新される。室内開催"
+  },
+  "exhibitor": {
+   "apply": "公式サイトの「出店の申込み」ページから申込み",
+   "applyUrl": "https://rpa.flima.net/%e7%94%b3%e8%be%bc/",
+   "notes": "出店の位置は指定できない。キャンセル料の決まりあり（出店のルールのページ）",
+   "fee": "手持ち 1ブース（1.8m×1.8m）1,500円・2ブース（3.6m×1.8m）2,500円"
+  },
+  "sources": [
+   {
+    "url": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/7(土)",
+     "稲沢勤労福祉会館",
+     "9:30〜12:00",
+     "1ブース1500円",
+     "2ブース2500円",
+     "室内開催"
+    ]
+   },
+   {
+    "url": "https://rpa.flima.net/%e5%87%ba%e5%ba%97%e3%81%ae%e3%83%ab%e3%83%bc%e3%83%ab/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "6：0０にＨＰ上に更新します"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "yuyu-marche-ichinomiya-riverside-ono-gokurakuji",
+  "name": "一宮リバーサイドフリマ（大野極楽寺公園・友遊マルシェ）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動推進の会・友遊（ゆうゆう）マルシェ",
+   "url": "https://rpa.flima.net/"
+  },
+  "venue": {
+   "name": "大野極楽寺公園（一宮リバーサイドフリマ）",
+   "pref": "23"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-25",
+    "2026-11-29"
+   ],
+   "text": "主催団体の「開催日程」ページ"
+  },
+  "time": {
+   "text": "9:00〜14:00",
+   "start": "09:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "rain": "開催か中止かの判断は、会場によって違いがあるが、当日6:00にホームページ上に更新される"
+  },
+  "exhibitor": {
+   "apply": "公式サイトの「出店の申込み」ページから申込み",
+   "applyUrl": "https://rpa.flima.net/%e7%94%b3%e8%be%bc/",
+   "notes": "出店の位置は指定できない。キャンセル料の決まりあり（出店のルールのページ）",
+   "fee": "車出店（車横置き）2,500円・手持ち出店（2.5m×2.5m）1,500円"
+  },
+  "sources": [
+   {
+    "url": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "10/25(日)",
+     "11/29(日)",
+     "一宮リバーサイドフリマ",
+     "大野極楽寺公園",
+     "9:00～14:00",
+     "(車横置き)2500円",
+     "1500円"
+    ]
+   },
+   {
+    "url": "https://rpa.flima.net/%e5%87%ba%e5%ba%97%e3%81%ae%e3%83%ab%e3%83%bc%e3%83%ab/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "6：0０にＨＰ上に更新します"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "yuyu-marche-motohama-park",
+  "name": "元浜公園 フリーマーケット（友遊マルシェ）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動推進の会・友遊（ゆうゆう）マルシェ",
+   "url": "https://rpa.flima.net/"
+  },
+  "venue": {
+   "name": "元浜公園",
+   "pref": "23"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-01",
+    "2026-11-22"
+   ],
+   "text": "主催団体の「開催日程」ページ"
+  },
+  "time": {
+   "text": "9:00〜14:00",
+   "start": "09:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "rain": "開催か中止かの判断は、会場によって違いがあるが、当日6:00にホームページ上に更新される"
+  },
+  "exhibitor": {
+   "apply": "公式サイトの「出店の申込み」ページから申込み",
+   "applyUrl": "https://rpa.flima.net/%e7%94%b3%e8%be%bc/",
+   "notes": "出店の位置は指定できない。キャンセル料の決まりあり（出店のルールのページ）",
+   "fee": "車出店 横置き3,000円・手持ち出店（2.5m×2.5m）2,000円（東海市民は500円引き）"
+  },
+  "sources": [
+   {
+    "url": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/1(日)",
+     "11/22(日)",
+     "元浜公園",
+     "9:00～14:00",
+     "横置き3000円",
+     "東海市民は500円引き",
+     "手持ち出店2.5m×2.5m2000円"
+    ]
+   },
+   {
+    "url": "https://rpa.flima.net/%e5%87%ba%e5%ba%97%e3%81%ae%e3%83%ab%e3%83%bc%e3%83%ab/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "6：0０にＨＰ上に更新します"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "yuyu-marche-plant6",
+  "name": "プラント６ フリーマーケット（友遊マルシェ）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動推進の会・友遊（ゆうゆう）マルシェ",
+   "url": "https://rpa.flima.net/"
+  },
+  "venue": {
+   "name": "プラント６",
+   "pref": "23"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-03"
+   ],
+   "text": "主催団体の「開催日程」ページ"
+  },
+  "time": {
+   "text": "9:00〜14:00",
+   "start": "09:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "rain": "開催か中止かの判断は、会場によって違いがあるが、当日6:00にホームページ上に更新される。延期日は11月14日（土）または11月15日（日）"
+  },
+  "exhibitor": {
+   "apply": "公式サイトの「出店の申込み」ページから申込み",
+   "applyUrl": "https://rpa.flima.net/%e7%94%b3%e8%be%bc/",
+   "notes": "出店の位置は指定できない。キャンセル料の決まりあり（出店のルールのページ）",
+   "fee": "車出店（5m×2.5m・車含まず）3,000円"
+  },
+  "sources": [
+   {
+    "url": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/3(祝火)",
+     "プラント６",
+     "9:00～14:00",
+     "5ｍ×2.5ｍ(車含まず)",
+     "延期日11/14(土)",
+     "又は11/15(日)"
+    ]
+   },
+   {
+    "url": "https://rpa.flima.net/%e5%87%ba%e5%ba%97%e3%81%ae%e3%83%ab%e3%83%bc%e3%83%ab/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "6：0０にＨＰ上に更新します"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "yuyu-marche-ja-genki-no-sato",
+  "name": "ＪＡげんきの郷 フリーマーケット（友遊マルシェ）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動推進の会・友遊（ゆうゆう）マルシェ",
+   "url": "https://rpa.flima.net/"
+  },
+  "venue": {
+   "name": "ＪＡげんきの郷",
+   "pref": "23"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08"
+   ],
+   "text": "主催団体の「開催日程」ページ"
+  },
+  "time": {
+   "text": "10:00〜15:00（屋根下開催）",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "開催か中止かの判断は、会場によって違いがあるが、当日6:00にホームページ上に更新される。屋根下開催"
+  },
+  "exhibitor": {
+   "apply": "公式サイトの「出店の申込み」ページから申込み",
+   "applyUrl": "https://rpa.flima.net/%e7%94%b3%e8%be%bc/",
+   "notes": "出店の位置は指定できない。キャンセル料の決まりあり（出店のルールのページ）",
+   "fee": "手持ち（2.2m×1.8m）2,500円（500円のお買物券付き）"
+  },
+  "sources": [
+   {
+    "url": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/8(日)",
+     "ＪＡげんきの郷",
+     "10:00〜15:00",
+     "2.2ｍ×1.8ｍ2500円",
+     "屋根下開催"
+    ]
+   },
+   {
+    "url": "https://rpa.flima.net/%e5%87%ba%e5%ba%97%e3%81%ae%e3%83%ab%e3%83%bc%e3%83%ab/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "6：0０にＨＰ上に更新します"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "yuyu-marche-sobue-ryokuchi",
+  "name": "祖父江緑地 フリーマーケット（友遊マルシェ）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動推進の会・友遊（ゆうゆう）マルシェ",
+   "url": "https://rpa.flima.net/"
+  },
+  "venue": {
+   "name": "祖父江緑地",
+   "pref": "23"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-15"
+   ],
+   "text": "主催団体の「開催日程」ページ"
+  },
+  "time": {
+   "text": "9:00〜14:00",
+   "start": "09:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "rain": "開催か中止かの判断は、会場によって違いがあるが、当日6:00にホームページ上に更新される"
+  },
+  "exhibitor": {
+   "apply": "公式サイトの「出店の申込み」ページから申込み",
+   "applyUrl": "https://rpa.flima.net/%e7%94%b3%e8%be%bc/",
+   "notes": "出店の位置は指定できない。キャンセル料の決まりあり（出店のルールのページ）",
+   "fee": "車出店 横置き（5m×5m・車含む）2,500円・縦置き（2.5m×7m・車含む）2,000円"
+  },
+  "sources": [
+   {
+    "url": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/15(日)",
+     "祖父江緑地",
+     "9:00～14:00",
+     "車横置き(5ｍ×5ｍ車含む)2500円",
+     "車縦置き(2.5ｍ×7ｍ車含む)2000円"
+    ]
+   },
+   {
+    "url": "https://rpa.flima.net/%e5%87%ba%e5%ba%97%e3%81%ae%e3%83%ab%e3%83%bc%e3%83%ab/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "6：0０にＨＰ上に更新します"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hyakumanben-tedukuri-ichi",
+  "name": "百万遍さんの手づくり市（京都）",
+  "kinds": [
+   "handmade"
+  ],
+  "organizer": {
+   "name": "手づくり市事務局",
+   "url": "https://www.tedukuri-ichi.com/"
+  },
+  "venue": {
+   "name": "百萬遍知恩寺境内",
+   "pref": "26",
+   "city": "京都市左京区",
+   "access": "京阪電車京都線「出町柳駅」下車 徒歩10分"
+  },
+  "recurrence": {
+   "type": "monthly-day",
+   "days": [
+    15
+   ],
+   "exceptMonths": [
+    8
+   ],
+   "text": "毎月15日開催（8月は休み）"
+  },
+  "time": {
+   "text": "午前8時〜午後4時（雨天決行）",
+   "start": "08:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天決行"
+  },
+  "exhibitor": {
+   "apply": "公式サイトの応募フォーム（応募要項あり）",
+   "applyUrl": "https://www.tedukuri-ichi.com/entry"
+  },
+  "sources": [
+   {
+    "url": "https://www.tedukuri-ichi.com/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "次回 11月15日(日) 開催",
+     "毎月15日開催(8月は休み)",
+     "午前8時 〜 午後4時 雨天決行"
+    ]
+   },
+   {
+    "url": "https://www.tedukuri-ichi.com/about",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "京都市左京区の百萬遍知恩寺境内"
+    ]
+   },
+   {
+    "url": "https://www.tedukuri-ichi.com/access_hyakumanben/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "京阪電車京都線「出町柳駅」下車 徒歩１０分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "umekoji-park-tedukuri-ichi",
+  "name": "梅小路公園手づくり市（京都）",
+  "kinds": [
+   "handmade"
+  ],
+  "organizer": {
+   "name": "手づくり市事務局",
+   "url": "https://www.tedukuri-ichi.com/"
+  },
+  "venue": {
+   "name": "梅小路公園",
+   "pref": "26",
+   "access": "JR嵯峨野線「梅小路京都西駅」下車すぐ"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 1,
+     "wd": 6
+    }
+   ],
+   "exceptMonths": [
+    1,
+    5,
+    8
+   ],
+   "text": "毎月第1土曜日開催（1月・5月・8月は休み）"
+  },
+  "time": {
+   "text": "午前9時〜午後4時（雨天決行）",
+   "start": "09:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天決行"
+  },
+  "exhibitor": {
+   "apply": "公式サイトの応募フォーム（応募要項あり）",
+   "applyUrl": "https://www.tedukuri-ichi.com/entry"
+  },
+  "sources": [
+   {
+    "url": "https://www.tedukuri-ichi.com/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "次回 11月7日(土) 開催",
+     "毎月第1土曜日開催(1月・5月・8月は休み)",
+     "午前9時 〜 午後4時 雨天決行"
+    ]
+   },
+   {
+    "url": "https://www.tedukuri-ichi.com/access_umekoji/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "JR嵯峨野線「梅小路京都西駅」下車すぐ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "jfma-nakaku-kumin-festa-flea-2026",
+  "name": "中区区民フェスタ フリーマーケットエリア（堺市・原池公園）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "中区区民フェスタ実行委員会"
+  },
+  "venue": {
+   "name": "原池公園 芝生広場",
+   "pref": "27",
+   "city": "堺市中区",
+   "address": "堺市中区八田寺町320"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-25"
+   ],
+   "text": "主催者の開催詳細ページ"
+  },
+  "time": {
+   "text": "10:00〜15:30（予定）",
+   "start": "10:00",
+   "end": "15:30"
+  },
+  "visitor": {
+   "admission": "無料",
+   "rain": "雨天決行"
+  },
+  "exhibitor": {
+   "fee": "1ブース（間口2.5m×奥行2.5m）2,500円（税込）",
+   "notes": "フリーマーケットエリアの出店者事務局は日本フリーマーケット協会"
+  },
+  "sources": [
+   {
+    "url": "http://freemarket-go.com/shousai-osaka-028.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "10月25日（日）",
+     "原池公園（堺市中区八田寺町320）",
+     "10:00〜15:30予定",
+     "間口2.5m×奥行2.5m：¥2,500/1ブース（税込）",
+     "雨天決行です",
+     "フリーマーケットは、原池公園 芝生広場で開催"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "jfma-kobe-harborland-seaside-market",
+  "name": "神戸ハーバーランドシーサイドマーケット",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "日本フリーマーケット協会",
+   "url": "http://freemarket-go.com/"
+  },
+  "venue": {
+   "name": "神戸ハーバーランド オリーブ広場及びはね橋周辺",
+   "pref": "28",
+   "access": "JR神戸線「神戸駅」下車、徒歩5分／地下鉄海岸線「ハーバーランド駅」下車、徒歩5分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-01",
+    "2026-12-06"
+   ],
+   "text": "主催者の開催詳細ページ"
+  },
+  "time": {
+   "text": "10:00〜16:00（予定）",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "admission": "無料"
+  },
+  "exhibitor": {
+   "fee": "手荷物（間口3m×奥行2m）3,500円（税込）",
+   "notes": "家庭の不要品（リサイクル品）のみ。仕入れた新品は不可"
+  },
+  "sources": [
+   {
+    "url": "http://freemarket-go.com/shousai_hyogo_001.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11月1日（日）",
+     "12月6日（日）",
+     "オリーブ広場及びはね橋周辺",
+     "10:00〜16:00予定",
+     "神戸ハーバーランドで定期開催のフリマ！",
+     "JR神戸線「神戸駅」下車、徒歩5分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "jfma-nishikita-flea",
+  "name": "にしきたフリーマーケット（西宮）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "日本フリーマーケット協会",
+   "url": "http://freemarket-go.com/"
+  },
+  "venue": {
+   "name": "兵庫県自動車学校 西宮本校教習コース",
+   "pref": "28",
+   "city": "西宮市",
+   "address": "西宮市深津町4−30",
+   "access": "阪急神戸線「西宮北口駅」下車、南へ徒歩5分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-03"
+   ],
+   "text": "主催者の開催詳細ページ"
+  },
+  "time": {
+   "text": "10:30〜16:30（予定）",
+   "start": "10:30",
+   "end": "16:30"
+  },
+  "visitor": {
+   "admission": "大人300円・小学生100円"
+  },
+  "exhibitor": {
+   "fee": "手荷物（間口3m×奥行3m）3,500円、クルマ（間口6m×奥行4m）6,800円（税込）"
+  },
+  "sources": [
+   {
+    "url": "http://freemarket-go.com/shousai_hyogo_003.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11月3日（火祝）",
+     "兵庫県自動車学校 西宮本校教習コース（西宮市深津町4−30）",
+     "10:30〜16:30予定",
+     "大人￥300/小学生￥100",
+     "阪急神戸線「西宮北口駅」下車、南へ徒歩5分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "jfma-ikea-tsuruhama-loppis",
+  "name": "IKEA鶴浜 Loppis（フリーマーケット）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "日本フリーマーケット協会",
+   "url": "http://freemarket-go.com/"
+  },
+  "venue": {
+   "name": "IKEA鶴浜 5F駐車場内 特設会場",
+   "pref": "27",
+   "city": "大阪市大正区",
+   "address": "大阪市大正区鶴町2-24-55"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-07"
+   ],
+   "text": "主催者の開催詳細ページ"
+  },
+  "time": {
+   "text": "10:00〜16:00（予定）",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "admission": "無料"
+  },
+  "exhibitor": {
+   "fee": "1ブース（クルマブース 間口5m×奥行4.5m）3,500円（税込）"
+  },
+  "sources": [
+   {
+    "url": "http://freemarket-go.com/shousai_osaka_013.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11月7日（土）",
+     "IKEA鶴浜 5F駐車場内 特設会場（大阪市大正区鶴町2-24-55）",
+     "10:00〜16:00予定",
+     "IKEA 鶴浜駐車場無料"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "jfma-minatomachi-river-place-flea",
+  "name": "湊町リバープレイスフリーマーケット（大阪・難波）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "日本フリーマーケット協会",
+   "url": "http://freemarket-go.com/"
+  },
+  "venue": {
+   "name": "湊町リバープレイス プラザ部分（屋外）",
+   "pref": "27",
+   "city": "大阪市浪速区",
+   "address": "大阪市浪速区湊町1-3-1",
+   "access": "大阪メトロ四ツ橋線・近鉄線「難波駅」下車すぐ"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-29",
+    "2026-12-20"
+   ],
+   "text": "主催者の開催詳細ページ"
+  },
+  "time": {
+   "text": "10:00〜16:00（予定）",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "admission": "無料"
+  },
+  "exhibitor": {
+   "fee": "手荷物（間口3m×奥行2m）3,500円（税込）"
+  },
+  "sources": [
+   {
+    "url": "http://freemarket-go.com/shousai_osaka_001.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11月29日（日）",
+     "12月20日（日）",
+     "湊町リバープレイス プラザ部分(屋外)( 大阪市浪速区湊町1-3-1 )",
+     "10:00〜16:00予定",
+     "大阪メトロ四ツ橋線・近鉄線「難波駅」下車すぐ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "jfma-wanwan-marche-shiga-ryuo-vol17",
+  "name": "わんわんマルシェ in 三井アウトレットパーク 滋賀竜王 vol.17",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "わんわんマルシェ実行委員会"
+  },
+  "venue": {
+   "name": "三井アウトレットパーク 滋賀竜王 P７駐車場内特設会場",
+   "pref": "25",
+   "city": "蒲生郡竜王町",
+   "address": "滋賀県蒲生郡竜王町大字薬師字砂山1178-694"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-07"
+   ],
+   "text": "主催者の開催詳細ページ"
+  },
+  "time": {
+   "text": "10:00〜16:00（予定）",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "admission": "無料"
+  },
+  "sources": [
+   {
+    "url": "http://freemarket-go.com/shousai-siga-004.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11月7日（土）",
+     "滋賀県蒲生郡竜王町大字薬師字砂山1178-694",
+     "10:00〜16:00予定",
+     "わんわんマルシェ実行委員会"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "jfma-wanwan-marche-kobe-port-island-vol53",
+  "name": "わんわんマルシェ vol.53（神戸ポートアイランド）",
+  "kinds": [
+   "marche",
+   "handmade"
+  ],
+  "organizer": {
+   "name": "わんわんマルシェ実行委員会"
+  },
+  "venue": {
+   "name": "神戸ポートアイランド内・市民広場",
+   "pref": "28",
+   "city": "神戸市中央区",
+   "address": "神戸市中央区港島中町6-9-2",
+   "access": "JR・阪急・阪神「三宮駅」からポートライナーに乗り換え「市民広場駅」下車すぐ"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-13"
+   ],
+   "text": "主催者の開催詳細ページ"
+  },
+  "time": {
+   "text": "10:00〜16:00（予定）",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "admission": "無料"
+  },
+  "sources": [
+   {
+    "url": "http://freemarket-go.com/shousai_hyogo_006.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "12月13日（日）",
+     "神戸ポートアイランド内・市民広場（神戸市中央区港島中町6-9-2）",
+     "10:00〜16:00予定",
+     "「手づくり」に特化したマーケット",
+     "市民広場駅」下車すぐ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "jfma-wanwan-marche-kobe-meriken-park-vol8",
+  "name": "わんわんマルシェ in KOBEメリケンパーク vol.8",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "神戸港”U”パークマネジメント共同事業体"
+  },
+  "venue": {
+   "name": "メリケンパーク イベント広場",
+   "pref": "28",
+   "city": "神戸市中央区",
+   "address": "神戸市中央区波止場町2",
+   "access": "神戸市営地下鉄海岸線「みなと元町駅」より徒歩5分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-31",
+    "2026-11-01"
+   ],
+   "text": "主催者の開催詳細ページ"
+  },
+  "time": {
+   "text": "10:00〜17:00",
+   "start": "10:00",
+   "end": "17:00"
+  },
+  "visitor": {
+   "admission": "無料"
+  },
+  "sources": [
+   {
+    "url": "http://freemarket-go.com/shousai-hyogo-009.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "10月31日（土）",
+     "11月1日（日）",
+     "メリケンパーク イベント広場",
+     "波止場町2）",
+     "10:00-17:00",
+     "「みなと元町駅」より徒歩5分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "jfma-ikea-kobe-loppis",
+  "name": "IKEA神戸 Loppis（フリーマーケット）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "日本フリーマーケット協会",
+   "url": "http://freemarket-go.com/"
+  },
+  "venue": {
+   "name": "IKEA神戸 5F駐車場内 特設会場",
+   "pref": "28",
+   "city": "神戸市中央区",
+   "address": "神戸市中央区港島中町8-7-1",
+   "access": "三宮駅よりポートライナーに乗車「南公園駅」下車、南側出口すぐ"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-14"
+   ],
+   "text": "主催者の開催詳細ページ"
+  },
+  "time": {
+   "text": "10:00〜16:00（予定）",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "admission": "無料"
+  },
+  "exhibitor": {
+   "fee": "1ブース（クルマブース 間口5m×奥行4.5m）3,500円（税込）"
+  },
+  "sources": [
+   {
+    "url": "http://freemarket-go.com/shousai-hyogo-010.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11月14日（土）",
+     "IKEA神戸 5F駐車場内 特設会場（神戸市中央区港島中町8-7-1）",
+     "10:00〜16:00予定",
+     "三宮駅よりポートライナーに乗車「南公園駅」下車、南側出口すぐ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fmj-amagasaki-chuo-park",
+  "name": "尼崎中央公園 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "尼崎中央公園",
+   "pref": "28",
+   "city": "尼崎市",
+   "address": "兵庫県尼崎市神田中通1丁目4"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-12"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/ama12-12/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/ama12-12/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月12日（土）",
+     "11：00～16：00",
+     "兵庫県尼崎市神田中通1丁目4",
+     "※雨天開催決行",
+     "尼崎中央公園"
+    ]
+   }
+  ],
+  "time": {
+   "text": "11:00〜16:00",
+   "start": "11:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天開催決行"
+  }
+ },
+ {
+  "id": "fmj-amaiseki-park",
+  "name": "安満遺跡公園 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "安満遺跡公園",
+   "pref": "27",
+   "city": "高槻市",
+   "address": "大阪府高槻市八丁畷町12-3"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-14",
+    "2026-12-26",
+    "2026-12-27"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/amaiseki12-26/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/amaiseki12-26/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月26日（土）",
+     "10：00～16：00",
+     "大阪府高槻市八丁畷町12-3",
+     "※雨天開催決行",
+     "安満遺跡公園"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/amaiseki12-27/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月27日（日）",
+     "10：00～15：30",
+     "大阪府高槻市八丁畷町12-3",
+     "※雨天開催決行",
+     "安満遺跡公園"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/enama11-14/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月14日（土）",
+     "11：00～17：00",
+     "大阪府高槻市八丁畷町12-3",
+     "※雨天開催決行",
+     "安満遺跡公園"
+    ]
+   }
+  ],
+  "visitor": {
+   "rain": "雨天開催決行"
+  }
+ },
+ {
+  "id": "fmj-apia-higashiomi",
+  "name": "ショッピングプラザアピア マルシェ（フリマジャパン）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "ショッピングプラザアピア アピアホール（室内）",
+   "pref": "25",
+   "city": "東近江市",
+   "address": "滋賀県東近江市八日市浜野町3-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-31"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/apia10-31/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/apia10-31/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年10月31日（土）",
+     "11：00～16：00",
+     "滋賀県東近江市八日市浜野町3-1",
+     "※室内の為、雨天決行です",
+     "ショッピングプラザアピア アピアホール"
+    ]
+   }
+  ],
+  "time": {
+   "text": "11:00〜16:00",
+   "start": "11:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "室内の為、雨天決行です"
+  }
+ },
+ {
+  "id": "fmj-kirarie-kusatsu",
+  "name": "キラリエ草津 マルシェ（フリマジャパン）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "キラリエ草津 市民総合交流センター 多目的室（室内）",
+   "pref": "25",
+   "city": "草津市",
+   "address": "滋賀県草津市大路2丁目1-35"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-18"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/kirarie10-18/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/kirarie10-18/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年10月18日（日）",
+     "11：00～16：00",
+     "滋賀県草津市大路2丁目1-35",
+     "※室内の為、雨天決行です",
+     "キラリエ草津 市民総合交流センター"
+    ]
+   }
+  ],
+  "time": {
+   "text": "11:00〜16:00",
+   "start": "11:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "室内の為、雨天決行です"
+  }
+ },
+ {
+  "id": "fmj-minoh-cues-mall",
+  "name": "みのおキューズモール フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "みのおキューズモール（かやの広場）",
+   "pref": "27",
+   "city": "箕面市",
+   "address": "大阪府箕面市西宿1丁目15-30"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-25",
+    "2026-11-22",
+    "2026-12-13"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/enmino10-25/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/enmino10-25/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年10月25日（日）",
+     "11：00～16：00",
+     "大阪府箕面市西宿1丁目15-30",
+     "※雨天開催決行",
+     "みのおキューズモール"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/mino11-22/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月22日（日）",
+     "11：00～16：00",
+     "大阪府箕面市西宿1丁目15-30",
+     "※雨天開催決行",
+     "みのおキューズモール"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/mino12-13/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月13日（日）",
+     "11：00～16：00",
+     "大阪府箕面市西宿1丁目15-30",
+     "※雨天開催決行",
+     "みのおキューズモール"
+    ]
+   }
+  ],
+  "time": {
+   "text": "11:00〜16:00",
+   "start": "11:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天開催決行"
+  }
+ },
+ {
+  "id": "fmj-nara-city-hall-lawn",
+  "name": "奈良市役所芝生エリア フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "奈良市役所（芝生エリア）",
+   "pref": "29",
+   "city": "奈良市",
+   "address": "奈良県奈良市二条大路南一丁目1番1号"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-31",
+    "2026-11-01"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/ennara10-31-1/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/ennara10-31-1/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年10月31日（土）・11月1日（日）",
+     "11：00～20：00",
+     "奈良県奈良市二条大路南一丁目1番1号",
+     "※雨天開催（荒天中止）",
+     "奈良市役所"
+    ]
+   }
+  ],
+  "time": {
+   "text": "11:00〜20:00",
+   "start": "11:00",
+   "end": "20:00"
+  },
+  "visitor": {
+   "rain": "雨天開催（荒天中止）"
+  }
+ },
+ {
+  "id": "fmj-fukakita-ryokuchi",
+  "name": "深北緑地公園 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "大東市・深北緑地公園（第一駐車場横テニスコート前広場）",
+   "pref": "27",
+   "city": "大東市",
+   "address": "大阪府大東市深野北4丁目284"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-11-08",
+    "2026-11-23",
+    "2026-12-19",
+    "2026-12-20"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/fukakita10-24/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/fukakita10-24/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年10月24日（土）",
+     "11：00～16：00",
+     "大阪府大東市深野北4丁目284",
+     "※雨天開催決行",
+     "大東市・深北緑地公園"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/fuka11-8/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月08日（日）",
+     "11：00～16：00",
+     "大阪府大東市深野北4丁目284",
+     "※雨天開催決行",
+     "大東市・深北緑地公園"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/fukakita11-23/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月23日（祝月）",
+     "11：00～16：00",
+     "大阪府大東市深野北4丁目284",
+     "※雨天開催決行",
+     "大東市・深北緑地公園"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/fukakitamaturi12-19-20/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月19日（土）・20日（日）",
+     "10：00～15：30",
+     "大阪府大東市深野北4丁目284",
+     "※雨天開催決行",
+     "大東市・深北緑地公園"
+    ]
+   }
+  ],
+  "visitor": {
+   "rain": "雨天開催決行"
+  }
+ },
+ {
+  "id": "fmj-ohigashi-hiroba",
+  "name": "お東さん広場 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "東本願寺前・お東さん広場（東本願寺前市民緑地）",
+   "pref": "26",
+   "city": "京都市",
+   "address": "京都市下京区常葉町他"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-20",
+    "2026-11-10",
+    "2026-11-16",
+    "2026-12-23",
+    "2027-01-05"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/higashi10-20/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/higashi10-20/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年10月20日（火）",
+     "10：00～16：00",
+     "京都市下京区常葉町他",
+     "※雨天開催決行",
+     "東本願寺前・お東さん広場"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/fukuhigashi11-10/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月10日（火）",
+     "9：00～17：00",
+     "京都市下京区常葉町他",
+     "※雨天開催決行",
+     "東本願寺前・お東さん広場"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/ohigashi11-16/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月16日（月）",
+     "10：00～16：00",
+     "京都市下京区常葉町他",
+     "※雨天開催決行",
+     "東本願寺前・お東さん広場"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/ohigashi12-23/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月23日（水）",
+     "10：00～16：00",
+     "京都市下京区常葉町他",
+     "※雨天開催決行",
+     "東本願寺前・お東さん広場"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/ohigashi1-5/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2027年01月05日（火）",
+     "10：00～16：00",
+     "京都市下京区常葉町他",
+     "※雨天開催決行",
+     "東本願寺前・お東さん広場"
+    ]
+   }
+  ],
+  "visitor": {
+   "rain": "雨天開催決行"
+  }
+ },
+ {
+  "id": "fmj-okazaki-park",
+  "name": "岡崎公園 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "岡崎公園",
+   "pref": "26",
+   "city": "京都市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-04",
+    "2026-12-29",
+    "2026-12-30"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/fukuoka11-4/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/fukuoka11-4/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月04日（水）",
+     "9：00～17：00",
+     "京都市左京区岡崎最勝町",
+     "※雨天開催決行",
+     "岡崎公園（平安神宮前・神宮道・芝生エリア）"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/okazaki12-29-30/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月29日（火）・30日（水）",
+     "10：00～16：00",
+     "京都市左京区岡崎最勝寺町",
+     "※雨天開催決行",
+     "岡崎公園（平安神宮前・神宮道）"
+    ]
+   }
+  ],
+  "visitor": {
+   "rain": "雨天開催決行"
+  }
+ },
+ {
+  "id": "fmj-tsurumi-ryokuchi",
+  "name": "花博記念公園 鶴見緑地 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "花博記念公園 鶴見緑地内 水の館（ハナミズキホール）付属展示場 屋外",
+   "pref": "27",
+   "city": "大阪市",
+   "address": "大阪府大阪市鶴見区緑地公園2-2"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-04",
+    "2026-11-18",
+    "2026-12-09",
+    "2026-12-23",
+    "2027-01-05"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/turu11-4/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/turu11-4/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月04日（水）",
+     "10：30～15：30",
+     "大阪府大阪市鶴見区緑地公園2-2",
+     "※雨天開催決行",
+     "花博記念公園｜鶴見緑地内"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/hana11-18/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月18日（水）",
+     "10：30～15：30",
+     "大阪府大阪市鶴見区緑地公園2-2",
+     "※雨天開催決行",
+     "花博記念公園｜鶴見緑地内"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/turu12-9/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月09日（水）",
+     "10：30～15：30",
+     "大阪府大阪市鶴見区緑地公園2-2",
+     "※雨天開催決行",
+     "花博記念公園｜鶴見緑地内"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/turu12-23/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月23日（水）",
+     "10：30～15：30",
+     "大阪府大阪市鶴見区緑地公園2-2",
+     "※雨天開催決行",
+     "花博記念公園｜鶴見緑地内"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/turimi1-5/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2027年01月05日（火）",
+     "10：30～15：30",
+     "大阪府大阪市鶴見区緑地公園2-2",
+     "※雨天開催決行",
+     "花博記念公園｜鶴見緑地内"
+    ]
+   }
+  ],
+  "time": {
+   "text": "10:30〜15:30",
+   "start": "10:30",
+   "end": "15:30"
+  },
+  "visitor": {
+   "rain": "雨天開催決行"
+  }
+ },
+ {
+  "id": "fmj-cainz-hikone",
+  "name": "カインズ彦根店 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "カインズ彦根店 駐車場",
+   "pref": "25",
+   "city": "彦根市",
+   "address": "滋賀県彦根市馬場2丁目1-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-07",
+    "2026-11-08"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/hikone11-7-8/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/hikone11-7-8/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月07日（土）・08日（日）",
+     "10：00～15：30",
+     "滋賀県彦根市馬場2丁目1-1",
+     "※雨天開催（荒天中止）",
+     "カインズ彦根店 駐車場"
+    ]
+   }
+  ],
+  "time": {
+   "text": "10:00〜15:30",
+   "start": "10:00",
+   "end": "15:30"
+  },
+  "visitor": {
+   "rain": "雨天開催（荒天中止）"
+  }
+ },
+ {
+  "id": "fmj-mie-sogo-bunka-center",
+  "name": "三重県総合文化センター フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "三重県総合文化センター 祝祭広場",
+   "pref": "24",
+   "city": "津市",
+   "address": "三重県津市一身田上津部田1234"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-26",
+    "2026-12-27"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/kenbunmaturi12-26-27/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/kenbunmaturi12-26-27/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月26日（土）・27日（日）",
+     "10：30～15：30",
+     "三重県津市一身田上津部田1234",
+     "※雨天開催（荒天中止）",
+     "三重県総合文化センター"
+    ]
+   }
+  ],
+  "time": {
+   "text": "10:30〜15:30",
+   "start": "10:30",
+   "end": "15:30"
+  },
+  "visitor": {
+   "rain": "雨天開催（荒天中止）"
+  }
+ },
+ {
+  "id": "fmj-plant-kizugawa",
+  "name": "スーパーセンタープラント木津川 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "スーパーセンタープラント木津川",
+   "pref": "26",
+   "city": "木津川市",
+   "address": "京都府木津川市城山台2丁目1番地メイン駐車場"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-31",
+    "2026-11-01"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/kidugawa10-31-1/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/kidugawa10-31-1/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年10月31日（土）・11月01日（日）",
+     "10：00～15：30",
+     "京都府木津川市城山台2丁目1番地メイン駐車場",
+     "※雨天中止（小雨開催）",
+     "スーパーセンタープラント木津川"
+    ]
+   }
+  ],
+  "time": {
+   "text": "10:00〜15:30",
+   "start": "10:00",
+   "end": "15:30"
+  },
+  "visitor": {
+   "rain": "雨天中止（小雨開催）"
+  }
+ },
+ {
+  "id": "fmj-notogawa-community-center",
+  "name": "能登川コミュニティセンター フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "東近江市立能登川コミュニティセンター 敷地内",
+   "pref": "25",
+   "city": "東近江市",
+   "address": "滋賀県東近江市躰光寺町262番地"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-25"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/notogawa10-25/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/notogawa10-25/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年10月25日（日）",
+     "10：00～15：00",
+     "滋賀県東近江市躰光寺町262番地",
+     "※小雨決行（台風等の荒天の場合は中止）",
+     "東近江市立能登川コミュニティセンター 敷地内"
+    ]
+   }
+  ],
+  "time": {
+   "text": "10:00〜15:00",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "小雨決行（台風等の荒天の場合は中止）"
+  }
+ },
+ {
+  "id": "fmj-a-square-kusatsu",
+  "name": "エイスクエア マルシェ（フリマジャパン）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "エイスクエア アヤカ広場前通路",
+   "pref": "25",
+   "city": "草津市",
+   "address": "滋賀県草津市西渋川1丁目23-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/odekake11-21/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/odekake11-21/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月21日（土）",
+     "11：00～16：00",
+     "滋賀県草津市西渋川1丁目23-1",
+     "※雨天中止（小雨開催）",
+     "エイスクエア"
+    ]
+   }
+  ],
+  "time": {
+   "text": "11:00〜16:00",
+   "start": "11:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天中止（小雨開催）"
+  }
+ },
+ {
+  "id": "fmj-yamato-saidaiji-ekimae",
+  "name": "大和西大寺駅前 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "大和西大寺駅前北側芝生広場（サンワシティ前芝生エリア）",
+   "pref": "29",
+   "city": "奈良市",
+   "address": "奈良県奈良市西大寺東町2丁目1-63"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-25",
+    "2026-11-07",
+    "2026-11-22",
+    "2026-12-12",
+    "2026-12-20"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/saidaiji10-25/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/saidaiji10-25/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年10月25日（日）",
+     "10：00～15：00",
+     "奈良県奈良市西大寺東町2丁目1-63",
+     "※雨天開催（荒天中止）",
+     "大和西大寺駅前北側芝生広場"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/saidaiji11-7/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月07日（土）",
+     "10：00～15：00",
+     "奈良県奈良市西大寺東町2丁目1-63",
+     "※雨天開催（荒天中止）",
+     "大和西大寺駅前北側芝生広場"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/saidaiji11-22/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月22日（日）",
+     "10：00～15：00",
+     "奈良県奈良市西大寺東町2丁目1-63",
+     "※雨天開催（荒天中止）",
+     "大和西大寺駅前北側芝生広場"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/saidaiji12-12/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月12日（土）",
+     "10：00～15：00",
+     "奈良県奈良市西大寺東町2丁目1-63",
+     "※雨天開催（荒天中止）",
+     "大和西大寺駅前北側芝生広場"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/saidaiji12-20/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月20日（日）",
+     "10：00～15：00",
+     "奈良県奈良市西大寺東町2丁目1-63",
+     "※雨天開催（荒天中止）",
+     "大和西大寺駅前北側芝生広場"
+    ]
+   }
+  ],
+  "time": {
+   "text": "10:00〜15:00",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天開催（荒天中止）"
+  }
+ },
+ {
+  "id": "fmj-ritto-sakira",
+  "name": "栗東さきら フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "栗東芸術文化会館さきら シンボル広場",
+   "pref": "25",
+   "city": "栗東市",
+   "address": "滋賀県栗東市綣二丁目1番28号"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-14",
+    "2026-11-15"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/sakira11-14-15/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/sakira11-14-15/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月14日（土）・11月15日（日）",
+     "10：30～15：30",
+     "滋賀県栗東市綣二丁目1番28号",
+     "※雨天中止（小雨開催）",
+     "栗東芸術文化会館さきら"
+    ]
+   }
+  ],
+  "time": {
+   "text": "10:30〜15:30",
+   "start": "10:30",
+   "end": "15:30"
+  },
+  "visitor": {
+   "rain": "雨天中止（小雨開催）"
+  }
+ },
+ {
+  "id": "fmj-suzuka-sakura-no-mori",
+  "name": "鈴鹿市桜の森公園 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "鈴鹿市桜の森公園 芝生広場",
+   "pref": "24",
+   "city": "鈴鹿市",
+   "address": "三重県鈴鹿市南玉垣町3500-5"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21",
+    "2026-11-22",
+    "2026-11-23",
+    "2026-12-05",
+    "2026-12-06"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/sakura11-21-22-23/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/sakura11-21-22-23/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月21日（土）・22日（日）・23日（祝月）",
+     "10：00～15：30",
+     "三重県鈴鹿市南玉垣町3500-5",
+     "※雨天中止（小雨開催）",
+     "鈴鹿市桜の森公園"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/suzuka12-5-6/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月5日（土）・6日（日）",
+     "10：00～15：30",
+     "三重県鈴鹿市南玉垣町3500-5",
+     "※雨天中止（小雨開催）",
+     "鈴鹿市桜の森公園"
+    ]
+   }
+  ],
+  "time": {
+   "text": "10:00〜15:30",
+   "start": "10:00",
+   "end": "15:30"
+  },
+  "visitor": {
+   "rain": "雨天中止（小雨開催）"
+  }
+ },
+ {
+  "id": "fmj-yasugawa-shinsui-park",
+  "name": "野洲川親水公園 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "野洲川親水公園",
+   "pref": "25",
+   "city": "湖南市",
+   "address": "滋賀県湖南市夏見589"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-19",
+    "2026-12-20"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/shinsui12-19-20/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/shinsui12-19-20/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月19日（土）・20日（日）",
+     "10：00～15：30",
+     "滋賀県湖南市夏見589",
+     "※雨天中止（小雨開催）",
+     "野洲川親水公園"
+    ]
+   }
+  ],
+  "time": {
+   "text": "10:00〜15:30",
+   "start": "10:00",
+   "end": "15:30"
+  },
+  "visitor": {
+   "rain": "雨天中止（小雨開催）"
+  }
+ },
+ {
+  "id": "fmj-yamada-ike-park",
+  "name": "山田池公園 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "枚方市・山田池公園（多目的広場）",
+   "pref": "27",
+   "city": "枚方市",
+   "address": "大阪府枚方市山田池公園1-1 多目的広場"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-19",
+    "2026-12-20"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/yamada12-19-20/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/yamada12-19-20/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月19日（土）・20日（日）",
+     "10：00～15：30",
+     "大阪府枚方市山田池公園1-1 多目的広場",
+     "※雨天開催決行",
+     "枚方市・山田池公園"
+    ]
+   }
+  ],
+  "time": {
+   "text": "10:00〜15:30",
+   "start": "10:00",
+   "end": "15:30"
+  },
+  "visitor": {
+   "rain": "雨天開催決行"
+  }
+ },
+ {
+  "id": "fmj-alplaza-yasu",
+  "name": "アル・プラザ野洲 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "アル・プラザ野洲 南駐車場（宝くじ販売所側）",
+   "pref": "25",
+   "city": "野洲市",
+   "address": "滋賀県野洲市小篠原1000"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-22",
+    "2026-12-06"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/yasu11-22/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/yasu11-22/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月22日（日）",
+     "10：00～15：00",
+     "滋賀県野洲市小篠原1000",
+     "※雨天開催",
+     "アル・プラザ野洲"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/yasu12-6/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月06日（日）",
+     "10：00～15：00",
+     "滋賀県野洲市小篠原1000",
+     "※雨天開催",
+     "アル・プラザ野洲"
+    ]
+   }
+  ],
+  "time": {
+   "text": "10:00〜15:00",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天開催"
+  }
+ },
+ {
+  "id": "fmj-yokkaichi-shimin-park",
+  "name": "四日市市民公園 フリマ・マルシェ（フリマジャパン）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "フリマジャパン",
+   "url": "https://www.fmfm-king.com/"
+  },
+  "venue": {
+   "name": "四日市市民公園",
+   "pref": "24",
+   "city": "四日市市",
+   "address": "三重県四日市市安島1丁目3"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-11-08",
+    "2026-11-21",
+    "2026-12-12",
+    "2026-12-30"
+   ],
+   "text": "主催者の各開催ページ"
+  },
+  "exhibitor": {
+   "apply": "各開催の公式ページ（ページ下部）または LINE から申込み",
+   "applyUrl": "https://www.fmfm-king.com/yoxtukaichi10-24/"
+  },
+  "sources": [
+   {
+    "url": "https://www.fmfm-king.com/yoxtukaichi10-24/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年10月24日（土）",
+     "11：00～16：00",
+     "三重県四日市市安島1丁目3",
+     "※雨天中止（小雨開催）",
+     "四日市市民公園"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/yoxtukaichi11-8/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月08日（日）",
+     "11：00～16：00",
+     "三重県四日市市安島1丁目3",
+     "※雨天中止（小雨開催）",
+     "四日市市民公園"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/yoxtukaichi11-21/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月21日（土）",
+     "11：00～16：00",
+     "三重県四日市市安島1丁目3",
+     "※雨天中止（小雨開催）",
+     "四日市市民公園"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/yoxtukaichi12-12/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月12日（土）",
+     "11：00～16：00",
+     "三重県四日市市安島1丁目3",
+     "※雨天中止（小雨開催）",
+     "四日市市民公園"
+    ]
+   },
+   {
+    "url": "https://www.fmfm-king.com/yoxtukaichi12-30/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月30日（水）",
+     "11：00～16：00",
+     "三重県四日市市安島1丁目3",
+     "※雨天中止（小雨開催）",
+     "四日市市民公園"
+    ]
+   }
+  ],
+  "time": {
+   "text": "11:00〜16:00",
+   "start": "11:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天中止（小雨開催）"
+  }
  }
 ]

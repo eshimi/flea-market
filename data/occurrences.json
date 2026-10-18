@@ -378,5 +378,347 @@
   "reason": "雨天の場合は10月25日（日）に延期",
   "checkedAt": "2026-10-18",
   "source": "https://www.city.kita.lg.jp/living/bins/1002093/1026571.html"
+ },
+ {
+  "series": "recycler-sumida-live-fes-2026-winter-flea",
+  "date": "2026-12-12",
+  "status": "confirmed",
+  "reason": "すみだライブフェス（一般社団法人ピースライブ主催・墨田区後援）とのコラボ企画。定例の錦糸公園のフリマとは別",
+  "checkedAt": "2026-10-18",
+  "source": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=040"
+ },
+ {
+  "series": "yuyu-marche-plant6",
+  "date": "2026-11-03",
+  "status": "confirmed",
+  "reason": "10/18の予定から11/3に変更（公式のお知らせ）。延期日は11/14（土）または11/15（日）",
+  "checkedAt": "2026-10-18",
+  "source": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/"
+ },
+ {
+  "series": "hyakumanben-tedukuri-ichi",
+  "date": "2026-11-15",
+  "status": "confirmed",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.tedukuri-ichi.com/"
+ },
+ {
+  "series": "umekoji-park-tedukuri-ichi",
+  "date": "2026-11-07",
+  "status": "confirmed",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.tedukuri-ichi.com/"
+ },
+ {
+  "series": "fmj-amaiseki-park",
+  "date": "2026-12-26",
+  "status": "confirmed",
+  "reason": "10:00〜16:00・にぎわい祭り（フリマ＆マルシェ＆キッチンカ―イベント）",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/amaiseki12-26/"
+ },
+ {
+  "series": "fmj-amaiseki-park",
+  "date": "2026-12-27",
+  "status": "confirmed",
+  "reason": "10:00〜15:30・にぎわい祭り（フリマ＆マルシェ＆キッチンカ―イベント）",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/amaiseki12-27/"
+ },
+ {
+  "series": "fmj-amaiseki-park",
+  "date": "2026-11-14",
+  "status": "confirmed",
+  "reason": "11:00〜17:00",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/enama11-14/"
+ },
+ {
+  "series": "fmj-apia-higashiomi",
+  "date": "2026-10-31",
+  "status": "confirmed",
+  "reason": "みんなのファミリーフェスタ",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/apia10-31/"
+ },
+ {
+  "series": "fmj-kirarie-kusatsu",
+  "date": "2026-10-18",
+  "status": "confirmed",
+  "reason": "みんなのファミリーフェスタ",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/kirarie10-18/"
+ },
+ {
+  "series": "fmj-nara-city-hall-lawn",
+  "date": "2026-10-31",
+  "status": "confirmed",
+  "reason": "ランタンナイト・フリーマーケット・マルシェ・キッチンカ―",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/ennara10-31-1/"
+ },
+ {
+  "series": "fmj-nara-city-hall-lawn",
+  "date": "2026-11-01",
+  "status": "confirmed",
+  "reason": "ランタンナイト・フリーマーケット・マルシェ・キッチンカ―",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/ennara10-31-1/"
+ },
+ {
+  "series": "fmj-fukakita-ryokuchi",
+  "date": "2026-10-24",
+  "status": "confirmed",
+  "reason": "11:00〜16:00",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/fukakita10-24/"
+ },
+ {
+  "series": "fmj-fukakita-ryokuchi",
+  "date": "2026-11-08",
+  "status": "confirmed",
+  "reason": "11:00〜16:00",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/fuka11-8/"
+ },
+ {
+  "series": "fmj-fukakita-ryokuchi",
+  "date": "2026-11-23",
+  "status": "confirmed",
+  "reason": "11:00〜16:00",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/fukakita11-23/"
+ },
+ {
+  "series": "fmj-fukakita-ryokuchi",
+  "date": "2026-12-19",
+  "status": "confirmed",
+  "reason": "10:00〜15:30・【にぎわい祭り】フリマ＆マルシェイベント＆グルメキッチンカー",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/fukakitamaturi12-19-20/"
+ },
+ {
+  "series": "fmj-fukakita-ryokuchi",
+  "date": "2026-12-20",
+  "status": "confirmed",
+  "reason": "10:00〜15:30・【にぎわい祭り】フリマ＆マルシェイベント＆グルメキッチンカー",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/fukakitamaturi12-19-20/"
+ },
+ {
+  "series": "fmj-ohigashi-hiroba",
+  "date": "2026-10-20",
+  "status": "confirmed",
+  "reason": "10:00〜16:00",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/higashi10-20/"
+ },
+ {
+  "series": "fmj-ohigashi-hiroba",
+  "date": "2026-11-10",
+  "status": "confirmed",
+  "reason": "9:00〜17:00",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/fukuhigashi11-10/"
+ },
+ {
+  "series": "fmj-ohigashi-hiroba",
+  "date": "2026-11-16",
+  "status": "confirmed",
+  "reason": "10:00〜16:00",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/ohigashi11-16/"
+ },
+ {
+  "series": "fmj-ohigashi-hiroba",
+  "date": "2026-12-23",
+  "status": "confirmed",
+  "reason": "10:00〜16:00",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/ohigashi12-23/"
+ },
+ {
+  "series": "fmj-ohigashi-hiroba",
+  "date": "2027-01-05",
+  "status": "confirmed",
+  "reason": "10:00〜16:00",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/ohigashi1-5/"
+ },
+ {
+  "series": "fmj-okazaki-park",
+  "date": "2026-11-04",
+  "status": "confirmed",
+  "reason": "9:00〜17:00・フリマ＆マルシェイベント（福猫マルシェコラボ企画）",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/fukuoka11-4/"
+ },
+ {
+  "series": "fmj-okazaki-park",
+  "date": "2026-12-29",
+  "status": "confirmed",
+  "reason": "10:00〜16:00",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/okazaki12-29-30/"
+ },
+ {
+  "series": "fmj-okazaki-park",
+  "date": "2026-12-30",
+  "status": "confirmed",
+  "reason": "10:00〜16:00",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/okazaki12-29-30/"
+ },
+ {
+  "series": "fmj-cainz-hikone",
+  "date": "2026-11-07",
+  "status": "confirmed",
+  "reason": "彦根・にぎわい秋まつり",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/hikone11-7-8/"
+ },
+ {
+  "series": "fmj-cainz-hikone",
+  "date": "2026-11-08",
+  "status": "confirmed",
+  "reason": "彦根・にぎわい秋まつり",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/hikone11-7-8/"
+ },
+ {
+  "series": "fmj-mie-sogo-bunka-center",
+  "date": "2026-12-26",
+  "status": "confirmed",
+  "reason": "にぎわいまつり",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/kenbunmaturi12-26-27/"
+ },
+ {
+  "series": "fmj-mie-sogo-bunka-center",
+  "date": "2026-12-27",
+  "status": "confirmed",
+  "reason": "にぎわいまつり",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/kenbunmaturi12-26-27/"
+ },
+ {
+  "series": "fmj-plant-kizugawa",
+  "date": "2026-10-31",
+  "status": "confirmed",
+  "reason": "木津川にぎわい祭り",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/kidugawa10-31-1/"
+ },
+ {
+  "series": "fmj-plant-kizugawa",
+  "date": "2026-11-01",
+  "status": "confirmed",
+  "reason": "木津川にぎわい祭り",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/kidugawa10-31-1/"
+ },
+ {
+  "series": "fmj-notogawa-community-center",
+  "date": "2026-10-25",
+  "status": "confirmed",
+  "reason": "能登川ふれあいフェスタ2026",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/notogawa10-25/"
+ },
+ {
+  "series": "fmj-a-square-kusatsu",
+  "date": "2026-11-21",
+  "status": "confirmed",
+  "reason": "おでかけマルシェ",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/odekake11-21/"
+ },
+ {
+  "series": "fmj-ritto-sakira",
+  "date": "2026-11-14",
+  "status": "confirmed",
+  "reason": "栗東にぎわいまつり",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/sakira11-14-15/"
+ },
+ {
+  "series": "fmj-ritto-sakira",
+  "date": "2026-11-15",
+  "status": "confirmed",
+  "reason": "栗東にぎわいまつり",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/sakira11-14-15/"
+ },
+ {
+  "series": "fmj-suzuka-sakura-no-mori",
+  "date": "2026-11-21",
+  "status": "confirmed",
+  "reason": "にぎわい祭り",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/sakura11-21-22-23/"
+ },
+ {
+  "series": "fmj-suzuka-sakura-no-mori",
+  "date": "2026-11-22",
+  "status": "confirmed",
+  "reason": "にぎわい祭り",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/sakura11-21-22-23/"
+ },
+ {
+  "series": "fmj-suzuka-sakura-no-mori",
+  "date": "2026-11-23",
+  "status": "confirmed",
+  "reason": "にぎわい祭り",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/sakura11-21-22-23/"
+ },
+ {
+  "series": "fmj-suzuka-sakura-no-mori",
+  "date": "2026-12-05",
+  "status": "confirmed",
+  "reason": "にぎわい祭り",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/suzuka12-5-6/"
+ },
+ {
+  "series": "fmj-suzuka-sakura-no-mori",
+  "date": "2026-12-06",
+  "status": "confirmed",
+  "reason": "にぎわい祭り",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/suzuka12-5-6/"
+ },
+ {
+  "series": "fmj-yasugawa-shinsui-park",
+  "date": "2026-12-19",
+  "status": "confirmed",
+  "reason": "親水公園・にぎわいまつり",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/shinsui12-19-20/"
+ },
+ {
+  "series": "fmj-yasugawa-shinsui-park",
+  "date": "2026-12-20",
+  "status": "confirmed",
+  "reason": "親水公園・にぎわいまつり",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/shinsui12-19-20/"
+ },
+ {
+  "series": "fmj-yamada-ike-park",
+  "date": "2026-12-19",
+  "status": "confirmed",
+  "reason": "にぎわい祭り（フリマ＆マルシェ＆キッチンカ―イベント）",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/yamada12-19-20/"
+ },
+ {
+  "series": "fmj-yamada-ike-park",
+  "date": "2026-12-20",
+  "status": "confirmed",
+  "reason": "にぎわい祭り（フリマ＆マルシェ＆キッチンカ―イベント）",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.fmfm-king.com/yamada12-19-20/"
  }
 ]
