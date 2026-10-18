@@ -12,12 +12,13 @@ export const CONTACT_EMAIL = /^[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"']+$/.test(proce
 // SITE_URL が未設定（仮のドメイン）、または依頼の窓口（CONTACT_EMAIL）が未設定の間は、検索エンジンに載せない（noindex・robots.txt で全体を拒否）
 export const INDEXABLE = Boolean(process.env.SITE_URL) && !/\.example(\/|$)/.test(SITE.url) && Boolean(CONTACT_EMAIL);
 
+// ヘッダーのナビ。ラベルは scripts/lib/i18n.mjs（日本語・英語）。行き先は、これまでと同じ
 export const TOP_LINKS = [
-  { href: '/weekend/', label: '今週末' },
-  { href: '/area/', label: '地域から' },
-  { href: '/kind/', label: '種類から' },
-  { href: '/shuten/', label: '出店したい方' },
-  { href: '/about/', label: 'サイトについて' },
+  { key: 'weekend', href: '/weekend/', icon: 'calendar' },
+  { key: 'area', href: '/area/', icon: 'pin' },
+  { key: 'types', href: '/kind/', icon: 'grid' },
+  { key: 'vendors', href: '/shuten/', icon: 'store' },
+  { key: 'about', href: '/about/', icon: 'info' },
 ];
 
 export const FOOTER_GROUPS = [

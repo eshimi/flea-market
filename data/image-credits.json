@@ -1,0 +1,15 @@
+[
+ {
+  "id": "hero",
+  "file": "static/img/hero.webp",
+  "use": "トップページの写真（仮の素材。差し替え予定）",
+  "title": "Antiques in a Market Stall",
+  "photographer": "Huu Huynh",
+  "source": "Pexels",
+  "sourceUrl": "https://www.pexels.com/photo/antiques-in-a-market-stall-18961551/",
+  "license": "Pexels License（無料で商用利用できる写真）",
+  "licenseUrl": "https://www.pexels.com/license/",
+  "note": "名古屋の市場の露店の写真を、横長に切り出して使用。ライセンスの全文は、自動取得ができなかったため、ブラウザでの確認が必要",
+  "checkedAt": "2026-10-18"
+ }
+]

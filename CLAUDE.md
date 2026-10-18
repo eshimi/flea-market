@@ -84,6 +84,13 @@
 - 計画：新規 `scripts/lib/home-view.mjs`・`scripts/lib/i18n.mjs`・`static/home.css`・`static/home.js`・`static/img/`・`/en/`、変更 `build-site.mjs`・`html.mjs`・`test/build.test.js`。トップ専用の CSS は `home.css` に分けて、他ページの `style.css` を壊さない。
 - 注意（素材）：日本のフリマ・蚤の市の写真（旅行者が陶器を手に取る構図）は、フリー素材では見つかりにくい（2026-10-18 に Unsplash・Pexels・Pixabay を検索）。見つからない場合は、ユーザーが用意する写真か、自作のイラストに切り替える。CC BY の写真は出典表示が要る。主催者が撮影に条件を付けている市（大江戸骨董市など）の写真は、使わない。
 
+### リニューアルの進み具合（ブランチ `design/top-renewal`。`main` へは、ユーザーの確認後に入れる）
+- Step 3（HERO）：2026-10-18 に実装。新ヘッダー（全ページ。`siteHeader()`、`static/chrome.css`。スマホはチェックボックス式のメニュー）、HERO（`scripts/lib/home-view.mjs`、`static/home.css`）、英語トップ `/en/`（`scripts/lib/i18n.mjs`。ヘッダーの EN | 日本語で切替。hreflang つき）、アイコン・ロゴ・日本列島のシルエットは自作の SVG（`scripts/lib/icons.mjs`）。「行きたい／出店したい」の切り替えと `static/home.js` は廃止。
+- HERO の写真は**仮の素材**：Pexels「Antiques in a Market Stall」（Huu Huynh、名古屋の露店）を横長に切り出した `static/img/hero.webp`（153KB）。出典は `data/image-credits.json` →「掲載のきまり」に表示（内部メモの `note` は出さない）。Pexels License の全文は Cloudflare の確認画面で取得できなかった（ブラウザで確認が必要）。写真が差し替わるときは、`static/img/hero.webp`（1800×900）と image-credits.json を更新する。
+- HERO の下の日付の帯・今週末の一覧・出店者・都道府県・種類・掲載の数は、Step 4 で順に作り直すまでの**暫定**（機能と実データはそのまま）。カテゴリーの入口の4つ目（Local Food & More → /kind/marche/）は、マルシェが0件。
+- 日本語の HERO の見出し（「日本の、市場の宝物を見つけよう。」）は、英語コピーに合わせた私の訳。装飾の手書き風の英語と円形のスタンプは、日本語トップでもそのまま。
+- 後でそろえる：ヘッダーの横幅（1240px）と本文の幅（1120px）が少しずれている（Step 5）。フッターは Step 4 で作り直す。
+
 ## 未対応・次にやること
 - 東京都の定期市の洗い出し → 利用規約・robots.txt の確認 → 公式ページから書き起こし（evidence 付き）→ 検証 → 掲載。
 - 掲載の修正・削除の依頼の窓口（`/about/#remove`。いまは「準備中（要確認）」）。

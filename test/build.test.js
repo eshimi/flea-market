@@ -89,3 +89,49 @@ test('依頼の窓口：メールアドレスの形でなければ使わない',
   assert.equal(run('<script>x</script>').trim(), '["",false]');
   assert.equal(run('').trim(), '["",false]');
 });
+
+const credits = [{ id: 'hero', use: 'トップページの写真', title: 'Test Photo', photographer: 'Test Person', source: 'Pexels', sourceUrl: 'https://www.pexels.com/photo/x/', license: 'Pexels License', note: '内部メモ（公開しない）' }];
+
+test('トップ（新デザイン）：HERO・検索・種類の入口・ヘッダー・言語切替', () => {
+  const ja = page('/');
+  const en = page('/en/');
+  assert.ok(en, '/en/ がありません');
+  assert.equal(ja.lang, 'ja');
+  assert.equal(en.lang, 'en');
+  assert.match(en.body, /<h1[^>]*><span>Find Japan’s<\/span><span>hidden market<\/span><em>treasures\.<\/em><\/h1>/);
+  assert.match(en.body, /Flea markets, antique fairs &amp; handmade markets — happening near you\./);
+  for (const p of [ja, en]) {
+    // 既存の検索（/search/?q=）へ送る
+    assert.match(p.body, /<form class="hsearch" action="\/search\/" role="search">[\s\S]*?<input name="q" type="search"/);
+    // 種類の入口は、既存の /kind/<種類>/
+    for (const k of ['kotto', 'handmade', 'flea', 'marche']) assert.ok(p.body.includes(`href="/kind/${k}/"`), `${k}`);
+    assert.ok(!p.body.includes('data-aud'), '旧「行きたい／出店したい」の切り替えは廃止');
+    assert.ok(p.head.includes('hreflang="en"') && p.head.includes('hreflang="ja"'));
+  }
+  const html = layout(en);
+  assert.match(html, /<html lang="en">/);
+  assert.ok(html.includes('<link rel="stylesheet" href="/home.css">'));
+  // ヘッダーの5つのリンクは、既存の行き先のまま。言語切替は /en/ と /
+  for (const h of ['/weekend/', '/area/', '/kind/', '/shuten/', '/about/', '/search/', '/en/']) assert.ok(html.includes(`href="${h}"`), h);
+  assert.match(html, /<a href="\/" hreflang="ja" lang="ja">日本語<\/a>/);
+  assert.match(layout(page('/about/')), /class="site-head2"/, '全ページに新ヘッダー');
+});
+
+test('画像の出典は「掲載のきまり」に表示し、内部メモは出さない', () => {
+  const { pages } = buildPages({ ...data, credits }, '2026-10-17');
+  const about = pages.find((x) => x.path === '/about/').body;
+  assert.match(about, /画像の出典/);
+  assert.match(about, /Test Photo/);
+  assert.ok(!about.includes('内部メモ'));
+  assert.ok(!page('/about/').body.includes('画像の出典'), '出典がなければ見出しも出さない');
+});
+
+test('トップの写真・出典は、リポジトリにそろっている', async () => {
+  const { existsSync, readFileSync } = await import('node:fs');
+  const root = join(fileURLToPath(new URL('.', import.meta.url)), '..');
+  const real = JSON.parse(readFileSync(join(root, 'data/image-credits.json'), 'utf8'));
+  for (const c of real) {
+    assert.ok(existsSync(join(root, c.file)), `${c.file} がありません`);
+    for (const k of ['title', 'photographer', 'source', 'sourceUrl', 'license', 'use']) assert.ok(c[k], `${c.id}: ${k}`);
+  }
+});

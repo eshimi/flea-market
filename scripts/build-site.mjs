@@ -8,6 +8,8 @@ import { buildOccurrences, isActive, lastChecked } from './lib/events.mjs';
 import { KINDS } from './lib/kinds.mjs';
 import { PREFS } from './lib/areas.mjs';
 import { CONTACT_EMAIL, SITE } from './lib/nav.mjs';
+import { renderHero } from './lib/home-view.mjs';
+import { T } from './lib/i18n.mjs';
 import { breadcrumb, DISCLAIMER, esc, eventList, eventListByMonth, kindTags, layout, md, STATUS_LABEL, statusTag } from './lib/html.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -15,7 +17,9 @@ const arg = (k) => process.argv.find((a) => a.startsWith(`--${k}=`))?.split('=')
 
 export function loadData(dir = join(ROOT, 'data')) {
   const read = (f) => JSON.parse(readFileSync(join(dir, f), 'utf8'));
-  return { series: read('series.json'), occurrences: read('occurrences.json') };
+  let credits = [];
+  try { credits = read('image-credits.json'); } catch { /* 画像の出典がないデータ（テストの見本など）は空 */ }
+  return { series: read('series.json'), occurrences: read('occurrences.json'), credits };
 }
 
 const TBD = '<span class="tbd">要確認</span>';
@@ -51,28 +55,24 @@ function exhibitorList(seriesList) {
   return `<ul class="grid-links">${rows.map((s) => `<li><a href="/e/${s.id}/#shuten">${esc(s.name)}<small>出店料：${esc(s.exhibitor.fee || '要確認')}／申込み：${esc(s.exhibitor.apply || '要確認')}</small></a></li>`).join('')}</ul>`;
 }
 
-function home(ctx) {
+// トップ。HERO は新デザイン（Step 3）。その下の一覧などは、Step 4 で順に作り直すまでの暫定（機能は維持）
+function home(ctx, lang = 'ja') {
   const { occ, today, series } = ctx;
   const weekend = upcomingWeekend(today);
   const first = weekend[0];
   const wkList = occ.filter((o) => weekend.includes(o.date));
   const upcoming = occ.filter((o) => isActive(o)).slice(0, 10);
   const active = occ.filter(isActive);
-  const body = `<div class="in">
-<section class="hero">
-<h1>今週末、近くでやっている<br>フリマ・蚤の市を探す</h1>
-<p class="lead">主催者・自治体の公式情報だけを掲載。毎朝更新、最終確認日つき。</p>
-<div class="seg" role="group" aria-label="目的"><button type="button" data-aud="visit" aria-pressed="true">行きたい</button><button type="button" data-aud="shop" aria-pressed="false">出店したい</button></div>
-<form class="search" action="/search/" role="search"><input name="q" type="search" placeholder="地名・会場名・種類（例：骨董市、千代田区）" aria-label="キーワード"><button>探す</button></form>
+  const body = `${renderHero(lang)}
+<div class="in home-rest">
 ${dayStrip(occ, today)}
-</section>
 <div class="cols"><div>
-<section data-for="visit">
+<section>
 <h2 class="sec-h">${weekend.length > 1 ? `今週末（${label(first)}〜${label(weekend.at(-1))}）` : `今週末（${label(first)}）`}の開催 <a href="/weekend/">すべて見る →</a></h2>
 ${eventList(wkList, '今週末の掲載は、まだありません。')}
 ${wkList.length ? '' : `<h2 class="sec-h">これからの開催 <a href="/calendar/">カレンダー →</a></h2>${eventList(upcoming, '掲載の準備中です。')}`}
 </section>
-<section data-for="shop" hidden>
+<section>
 <h2 class="sec-h">出店者向けの情報 <a href="/shuten/">すべて見る →</a></h2>
 ${exhibitorList(series)}
 </section>
@@ -83,7 +83,9 @@ ${exhibitorList(series)}
 <div class="box"><h2>掲載の数</h2><div class="nums"><div><b>${active.length}</b>今後${ctx.days}日の開催</div><div><b>${series.length}</b>市・主催</div></div><p class="note" style="margin-top:8px">${esc(today.replace(/-/g, '/'))} 更新</p></div>
 <div class="box"><h2>掲載のきまり</h2><p class="note">主催者・自治体の公式ページと公開データだけを使います。${esc(DISCLAIMER)} <a href="/about/">くわしく</a></p></div>
 </aside></div></div>`;
-  return { path: '/', title: SITE.name, description: '全国のフリーマーケット・蚤の市・骨董市・手作り市の開催情報を、主催者と自治体の公式情報からまとめています。今週末の開催・地域・種類から探せます。毎朝更新。', body, scripts: ['/home.js'] };
+  const alt = `<link rel="alternate" hreflang="ja" href="${SITE.url}/">\n<link rel="alternate" hreflang="en" href="${SITE.url}/en/">\n<link rel="alternate" hreflang="x-default" href="${SITE.url}/">\n`;
+  const fonts = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Noto+Serif+JP:wght@900&family=Caveat:wght@600&display=swap">\n<link rel="preload" as="image" href="/img/hero.webp" type="image/webp" fetchpriority="high">\n';
+  return { path: lang === 'en' ? '/en/' : '/', lang, title: SITE.name, description: T[lang].description, body, css: ['/home.css'], head: alt + fonts };
 }
 
 function listPage(path, crumbs, h1, lead, list, ctx, extra = '') {
@@ -229,6 +231,8 @@ function aboutPage(ctx) {
 <p>公式ページの取得は、robots.txt と各サイトの利用規約に従い、同じサイトへは1日1回までに抑えています。取得が認められていないページは、リンクだけを掲載します。</p>
 <h2 id="remove">掲載の修正・削除の依頼</h2>
 <p>主催者の方からの、掲載内容の修正・削除のご依頼を受け付けています。${CONTACT_EMAIL ? `次のメールアドレスへ、主催者名・該当ページのURL・ご希望の内容をお送りください：<a href="mailto:${esc(CONTACT_EMAIL)}">${esc(CONTACT_EMAIL)}</a>` : '窓口は準備中です（要確認）。'}</p>
+${ctx.credits?.length ? `<h2>画像の出典</h2>
+<ul>${ctx.credits.map((c) => `<li>${esc(c.use)}：「${esc(c.title)}」${esc(c.photographer)}（<a href="${esc(c.sourceUrl)}" rel="noopener">${esc(c.source)}</a>。${esc(c.license)}）</li>`).join('')}</ul>` : ''}
 <h2>更新</h2>
 <p>毎朝、自動で更新しています。最終更新：${esc(ctx.today)}</p>
 </div>`;
@@ -241,11 +245,11 @@ function notFound() {
 
 // ---- 全体 ----
 
-export function buildPages({ series, occurrences }, today, days = 120) {
+export function buildPages({ series, occurrences, credits = [] }, today, days = 120) {
   const occ = buildOccurrences(series, occurrences, today, days);
-  const ctx = { series, occ, today, days };
+  const ctx = { series, occ, today, days, credits };
   return {
-    pages: [home(ctx), weekendPage(ctx), calendarPage(ctx), ...datePages(ctx), ...areaPages(ctx), ...kindPages(ctx), ...series.map((s) => seriesPage(s, ctx)), shutenPage(ctx), searchPage(), aboutPage(ctx), notFound()],
+    pages: [home(ctx), home(ctx, 'en'), weekendPage(ctx), calendarPage(ctx), ...datePages(ctx), ...areaPages(ctx), ...kindPages(ctx), ...series.map((s) => seriesPage(s, ctx)), shutenPage(ctx), searchPage(), aboutPage(ctx), notFound()],
     occ,
   };
 }

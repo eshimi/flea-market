@@ -5,23 +5,12 @@ html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;font-size:15px;line-height:1.7}
 a{color:var(--acc2)}
 h1,h2,h3{line-height:1.4;margin:0}
-h1,h2,.logo{font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif}
+h1,h2{font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif}
 .in{max-width:1120px;margin:auto;padding:0 32px}
 /* ヘッダー */
-.site-head{background:#fff;border-bottom:1px solid var(--line)}
-.site-head .in{display:flex;align-items:center;justify-content:space-between;min-height:60px;gap:16px}
-.logo{font-weight:700;font-size:22px;color:var(--ink);text-decoration:none;white-space:nowrap}.logo b{color:var(--acc)}
-.site-head nav{display:flex;gap:20px;overflow-x:auto}
-.site-head nav a{color:var(--sub);text-decoration:none;font-size:14px;white-space:nowrap}
-.site-head nav a[aria-current]{color:var(--ink);font-weight:700}
 main{display:block;min-height:50vh}
 /* トップ */
-.hero{padding:36px 0 8px}
-.hero h1{font-size:32px}
 .lead{color:var(--sub);margin:6px 0 0}
-.seg{display:inline-flex;margin-top:18px;background:#efe5d6;border-radius:999px;padding:4px}
-.seg button{border:0;background:none;font:inherit;padding:7px 18px;border-radius:999px;font-weight:700;font-size:14px;color:var(--sub);cursor:pointer}
-.seg button[aria-pressed=true]{background:#fff;color:var(--ink);box-shadow:0 1px 3px #0002}
 .search{display:flex;gap:8px;margin-top:16px}
 .search input{flex:1;min-width:0;background:#fff;border:2px solid var(--ink);border-radius:12px;padding:12px 16px;font:inherit}
 .search button{background:var(--acc);color:#fff;border:0;border-radius:12px;padding:0 26px;font:inherit;font-weight:700;font-size:16px;cursor:pointer}
@@ -88,9 +77,6 @@ aside h2{font-size:15px;margin-bottom:10px}
 [hidden]{display:none!important}
 @media (max-width:760px){
   .in{padding:0 16px}
-  .site-head .in{flex-wrap:wrap;padding-top:8px;padding-bottom:6px;min-height:0}
-  .site-head nav{width:100%;gap:16px}
-  .hero{padding:22px 0 6px}.hero h1{font-size:24px}
   .search button{padding:0 16px}
   .cols{grid-template-columns:1fr;gap:0}
   .page h1{font-size:23px}
