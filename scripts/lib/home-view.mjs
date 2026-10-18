@@ -29,7 +29,7 @@ export function renderHero(lang = 'ja', photo = '/img/hero.webp') {
   const t = T[lang].hero;
   const [l1, l2, accent] = t.title;
   const cats = t.cats
-    .map((c) => `<li><a href="${c.href}">${icon(c.icon, 30)}<span>${esc(c.label[0])}<br>${esc(c.label[1])}</span></a></li>`)
+    .map((c) => `<li><a href="${c.href}">${icon(c.icon, 30)}<span>${esc(c.label[0])} <br>${esc(c.label[1])}</span></a></li>`)
     .join('');
   const stampText = `${t.stamp} • ${t.stamp} •`;
   return `<section class="hero2 is-${lang}" aria-labelledby="hero-h">
