@@ -98,3 +98,10 @@ test('文字コード：宣言が Shift_JIS でも、中身が UTF-8 なら UTF-
   assert.match(decodeBody(html, 'text/html'), /フリーマーケット/);
   assert.match(decodeBody(new Uint8Array([0xef, 0xbb, 0xbf, ...new TextEncoder().encode('骨董市')]), ''), /骨董市/);
 });
+
+test('文字コード：宣言がなく UTF-8 でもないバイト列（Shift_JIS の市報テキストなど）は Shift_JIS で読む', () => {
+  // 「押立公園」を Shift_JIS にしたバイト列
+  const sjis = new Uint8Array([0x89, 0x9f, 0x97, 0xa7, 0x8c, 0xf6, 0x89, 0x80]);
+  assert.equal(decodeBody(sjis, 'text/plain'), '押立公園');
+  assert.equal(decodeBody(new TextEncoder().encode('押立公園'), 'text/plain'), '押立公園');
+});

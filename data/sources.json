@@ -682,5 +682,60 @@
    "checkedAt": "2026-10-18",
    "note": "足立区公式サイトの「このサイトの考え方」に、私的使用・引用などを除き無断で転載・改変はできないとの記載。robots.txt は取得許可。事実の項目だけ掲載し、文章・画像は転載しない。問い合わせ先の電話は載せない。2026-10-18 確認"
   }
+ },
+ {
+  "url": "https://www.city.fuchu.tokyo.jp/gyosei/johokokai/koho/kohoshi/koho/reiwa8nenhakkou/r081001.html",
+  "series": [
+   "fuchu-oshitate-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "自治体の公式サイト。「このサイトの考え方」に『無断転載はご遠慮ください』とあるため事実の項目だけ載せる。robots.txt は404（制限なし）（2026-10-18 確認）。掲載は事実の項目（日時・場所・申込み方法など）だけで、文章・画像は転載しない"
+  }
+ },
+ {
+  "url": "https://www.city.fuchu.tokyo.jp/gyosei/johokokai/koho/kohoshi/koho/reiwa8nenhakkou/r081001.files/261001kouho_11P.txt",
+  "series": [
+   "fuchu-oshitate-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "自治体の公式サイト。市報の本文テキスト（Shift_JIS）。「このサイトの考え方」に『無断転載はご遠慮ください』とあるため事実の項目だけ載せる。主催団体の担当者名・電話は載せない。robots.txt は404（制限なし）（2026-10-18 確認）。掲載は事実の項目（日時・場所・申込み方法など）だけで、文章・画像は転載しない"
+  }
+ },
+ {
+  "url": "https://www.city.akishima.lg.jp/kurashi/gomi/1008272/1001598.html",
+  "series": [
+   "akishima-recycle-center-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "自治体の公式サイト。「ホームページの利用案内」に転載・自動取得の禁止の記載は確認できなかった。robots.txt は200 で許可（2026-10-18 確認）。掲載は事実の項目（日時・場所・申込み方法など）だけで、文章・画像は転載しない"
+  }
+ },
+ {
+  "url": "https://hino-artfestival.com/",
+  "series": [
+   "hino-art-festival-flea-craft"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催（実行委員会）の公式サイト。利用規約のページはなく、robots.txt は 200 で許可（2026-10-18 確認）。掲載は事実の項目だけ。フリマ＆クラフトの個別ページは画像で、本文に時間・出店条件の記載なし"
+  }
+ },
+ {
+  "url": "https://www.city.hino.lg.jp/kouminkan/1015477/1016167.html",
+  "series": [
+   "hino-art-festival-flea-craft"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "自治体の公式サイト。robots.txt は200 で許可（2026-10-18 確認）。掲載は事実の項目（日時・場所・申込み方法など）だけで、文章・画像は転載しない"
+  }
  }
 ]

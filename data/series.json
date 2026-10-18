@@ -3202,5 +3202,176 @@
     ]
    }
   ]
+ },
+ {
+  "id": "fuchu-oshitate-park-flea",
+  "name": "押立公園フリーマーケット（府中市）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "車返地域のリサイクルを考える会"
+  },
+  "venue": {
+   "name": "押立公園",
+   "pref": "13",
+   "city": "府中市",
+   "cityCode": "13206"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-01"
+   ],
+   "text": "府中市の広報紙（令和8年10月1日号）に掲載された開催日"
+  },
+  "time": {
+   "text": "10:00〜14:00",
+   "start": "10:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "rain": "雨天の場合は11月8日（日）"
+  },
+  "exhibitor": {
+   "notes": "出店品は生活用品雑貨、衣類ほか"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.fuchu.tokyo.jp/gyosei/johokokai/koho/kohoshi/koho/reiwa8nenhakkou/r081001.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "押立公園フリーマーケット"
+    ]
+   },
+   {
+    "url": "https://www.city.fuchu.tokyo.jp/gyosei/johokokai/koho/kohoshi/koho/reiwa8nenhakkou/r081001.files/261001kouho_11P.txt",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "■押立公園フリーマーケット",
+     "日時：11月1日（日）午前10時～午後2時／雨天の場合は8日（日）",
+     "場所：同公園",
+     "内容：出店品は生活用品雑貨、衣類ほか"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "akishima-recycle-center-flea",
+  "name": "昭島市 フリーマーケット（環境コミュニケーションセンター）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "昭島市 環境部 ごみ対策課"
+  },
+  "venue": {
+   "name": "環境コミュニケーションセンター リサイクル棟外周通路",
+   "pref": "13",
+   "city": "昭島市",
+   "cityCode": "13207"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08",
+    "2026-12-13",
+    "2027-02-14",
+    "2027-03-14"
+   ],
+   "text": "第2日曜日（6月・7月・8月・9月・1月は開催しません）"
+  },
+  "time": {
+   "text": "9:00〜12:00",
+   "start": "09:00",
+   "end": "12:00"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "exhibitor": {
+   "fee": "無料",
+   "apply": "専用フォーム（Logoフォーム）で申し込み。窓口・メール・電話は不可。申し込み期間は開催月の前月1日から15日まで（12月開催分は11月1日から15日、2月開催分は1月1日から15日、3月開催分は2月1日から15日）",
+   "applyUrl": "https://www.city.akishima.lg.jp/kurashi/gomi/1008272/1001598.html",
+   "notes": "市内在住・在勤で18歳以上のかた（営業目的のかたを除く）。募集27店舗（応募者多数の場合は抽選）。雑貨、衣類、玩具など家庭内のリサイクル品のみ出品可。手作り品は出品できません"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.akishima.lg.jp/kurashi/gomi/1008272/1001598.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "、11月8日（日曜日）",
+     "、12月13日（日曜日）",
+     "2027年2月14日（日曜日）",
+     "、3月14日（日曜日）",
+     "第2日曜日",
+     "6月・7月・8月・9月・1月は開催しません。",
+     "開催時間午前9時から正午まで",
+     "雨天中止",
+     "環境コミュニケーションセンターリサイクル棟外周通路",
+     "市内在住・在勤で18歳以上のかた",
+     "27店舗（応募者多数の場合は抽選）",
+     "出店料無料",
+     "雑貨、衣類、玩具など家庭内のリサイクル品のみ出品できます。",
+     "手作り品、電気製品",
+     "Logoフォームでの申し込みとなります。（窓口、メール、電話は不可）",
+     "12月開催：11月1日から15日まで",
+     "2月開催：1月1日から15日まで",
+     "3月開催：2月1日から15日まで"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hino-art-festival-flea-craft",
+  "name": "ひのアートフェスティバル フリマ＆クラフト",
+  "kinds": [
+   "flea",
+   "handmade"
+  ],
+  "organizer": {
+   "name": "ひのアートフェスティバル実行委員会（日野市中央公民館）",
+   "url": "https://hino-artfestival.com/"
+  },
+  "venue": {
+   "name": "仲田の森 蚕糸公園（市民の森ふれあいホールとなり）",
+   "pref": "13",
+   "city": "日野市",
+   "cityCode": "13212",
+   "access": "JR中央線「日野駅」より徒歩15分／多摩モノレール「甲州街道駅」より徒歩15分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-10-25"
+   ],
+   "text": "ひのアートフェスティバル2026の開催日（10月24日・25日）"
+  },
+  "sources": [
+   {
+    "url": "https://hino-artfestival.com/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "フリマ＆クラフト",
+     "2026年 10月24日 (土) ・25日 (日)",
+     "会場：仲田の森 蚕糸公園（市民の森ふれあいホールとなり）",
+     "JR中央線「日野駅」より徒歩15分／多摩モノレール「甲州街道駅」より徒歩15分",
+     "ひのアートフェスティバル実行委員会"
+    ]
+   },
+   {
+    "url": "https://www.city.hino.lg.jp/kouminkan/1015477/1016167.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "開催日 10月24日（土曜日）、10月25日（日曜日）"
+    ]
+   }
+  ]
  }
 ]

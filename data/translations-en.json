@@ -497,6 +497,28 @@
    "rule": "Oct 23 (Fri), 2026",
    "rain": "Cancelled in rain",
    "notes": "To run a stall you need experience such as past participation in Guruguru Haku. Food trucks have no conditions (recruitment for the October event has closed)"
+  },
+  "fuchu-oshitate-park-flea": {
+   "name": "Oshitate Park Flea Market (Fuchu City)",
+   "venue": "Oshitate Park",
+   "rule": "Date listed in the Fuchu City bulletin (Oct 1, 2026 issue)",
+   "rain": "If it rains, held on Nov 8 (Sun)",
+   "notes": "Items for sale: household goods, miscellaneous goods, clothing and more"
+  },
+  "akishima-recycle-center-flea": {
+   "name": "Akishima City Flea Market (Environmental Communication Center)",
+   "venue": "Environmental Communication Center, walkway around the recycling building",
+   "rule": "2nd Sunday (not held in June, July, August, September and January)",
+   "rain": "Cancelled in rain",
+   "fee": "Free",
+   "apply": "Apply with the dedicated form (Logo Form). Counter, e-mail and phone are not accepted. The application period is from the 1st to the 15th of the month before the event (for December events, Nov 1 to 15; for February events, Jan 1 to 15; for March events, Feb 1 to 15)",
+   "notes": "Open to people aged 18 or over who live or work in the city (excluding those selling for business). 27 stalls recruited (lottery if there are many applicants). Only household recyclable items such as miscellaneous goods, clothing and toys may be sold. Handmade items cannot be sold"
+  },
+  "hino-art-festival-flea-craft": {
+   "name": "Hino Art Festival Flea Market & Craft",
+   "venue": "Nakata no Mori, Sanshi Park (next to Shimin-no-Mori Fureai Hall)",
+   "rule": "Dates of Hino Art Festival 2026 (Oct 24 and 25)",
+   "access": "15 min. on foot from Hino Station (JR Chuo Line) / 15 min. from Koshu-Kaido Station (Tama Monorail)"
   }
  },
  "organizers": {
@@ -541,7 +563,10 @@
   "池上地区商店会連合会 池上日和実行委員会": "Ikegami District Shopping Street Federation, Ikegami Biyori Executive Committee",
   "日本橋恵比寿講べったら市保存会": "Nihonbashi Ebisu-ko Bettara-ichi Preservation Society",
   "スマイル": "Smile",
-  "足立区 あだち未来創造室 SDGs・協創推進課 コミュニティ創出担当": "Adachi Ward, Future Creation Office, SDGs and Co-creation Promotion Division, Community Creation Staff"
+  "足立区 あだち未来創造室 SDGs・協創推進課 コミュニティ創出担当": "Adachi Ward, Future Creation Office, SDGs and Co-creation Promotion Division, Community Creation Staff",
+  "車返地域のリサイクルを考える会": "Group for Thinking about Recycling in the Kurumagaeshi Area",
+  "昭島市 環境部 ごみ対策課": "Akishima City, Environment Department, Waste Reduction Division",
+  "ひのアートフェスティバル実行委員会（日野市中央公民館）": "Hino Art Festival Executive Committee (Hino City Central Community Center)"
  },
  "labels": {
   "問い合わせ先": "Contact",
@@ -603,7 +628,9 @@
   "戸田市": "Toda City",
   "流山市": "Nagareyama City",
   "板橋区": "Itabashi Ward",
-  "中央区": "Chuo Ward"
+  "中央区": "Chuo Ward",
+  "府中市": "Fuchu City",
+  "昭島市": "Akishima City"
  },
  "notes": {
   "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",

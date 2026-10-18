@@ -60,7 +60,8 @@ export function decodeBody(bytes, contentType = '') {
   const fromHeader = /charset=["']?([\w-]+)/i.exec(contentType)?.[1];
   const head = new TextDecoder('latin1').decode(buf.subarray(0, 4096));
   const fromMeta = /<meta[^>]+charset=["']?([\w-]+)/i.exec(head)?.[1];
-  const label = (fromHeader || fromMeta || 'utf-8').toLowerCase().replace(/^(x-)?(sjis|shift-jis|windows-31j|cp932|ms932)$/, 'shift_jis');
+  // 宣言がなく、UTF-8 としても読めないものは、Shift_JIS（市報のテキストなど）として読む
+  const label = (fromHeader || fromMeta || 'shift_jis').toLowerCase().replace(/^(x-)?(sjis|shift-jis|windows-31j|cp932|ms932)$/, 'shift_jis');
   // 宣言が Shift_JIS などでも、バイト列が正しい UTF-8 として読めるなら UTF-8（宣言が実際と違うサイトがある）
   try {
     return new TextDecoder('utf-8', { fatal: true }).decode(buf);
