@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url';
 import { addDays, diffDays, todayJst } from './lib/dates.mjs';
 import { buildOccurrences } from './lib/events.mjs';
 import { crawlDelay, isAllowed, UA_TOKEN } from './lib/robots.mjs';
-import { checkEvidence, htmlToText } from './lib/text.mjs';
+import { checkEvidence, decodeBody, htmlToText } from './lib/text.mjs';
 import { SITE } from './lib/nav.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -77,7 +77,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 async function get(url, headers = {}) {
   try {
     const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, ...headers }, redirect: 'follow', signal: AbortSignal.timeout(30000) });
-    const text = res.status === 200 ? await res.text() : '';
+    const text = res.status === 200 ? decodeBody(await res.arrayBuffer(), res.headers.get('content-type') || '') : '';
     return { status: res.status, text, etag: res.headers.get('etag'), lastModified: res.headers.get('last-modified') };
   } catch (e) {
     return { status: 0, error: e.cause?.code || e.name };

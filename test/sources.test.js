@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { crawlDelay, isAllowed } from '../scripts/lib/robots.mjs';
-import { checkEvidence, htmlToText } from '../scripts/lib/text.mjs';
+import { checkEvidence, decodeBody, htmlToText } from '../scripts/lib/text.mjs';
 import { applyResult, planChecks } from '../scripts/check-sources.mjs';
 import { validateSources } from '../scripts/lib/events.mjs';
 
@@ -56,4 +56,12 @@ test('台帳の検証：出典はすべて台帳に', () => {
   assert.deepEqual(validateSources([src], series()), []);
   assert.ok(validateSources([], series()).some((e) => e.includes('sources.json にありません')));
   assert.ok(validateSources([{ ...src, terms: { ok: 'yes' } }], series()).length);
+});
+
+test('文字コード：Shift_JIS のページも読める', () => {
+  const sjis = Uint8Array.from([0x8d, 0x9c, 0x93, 0x9f, 0x8e, 0x73]); // 「骨董市」
+  assert.equal(decodeBody(sjis, 'text/html; charset=Shift_JIS'), '骨董市');
+  const html = new Uint8Array([...new TextEncoder().encode('<meta charset="x-sjis">'), ...sjis]);
+  assert.match(decodeBody(html, 'text/html'), /骨董市/);
+  assert.equal(decodeBody(new TextEncoder().encode('骨董市'), ''), '骨董市');
 });
