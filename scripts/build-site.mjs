@@ -10,6 +10,7 @@ import { PREFS } from './lib/areas.mjs';
 import { CONTACT_EMAIL, SITE } from './lib/nav.mjs';
 import { renderHomeBody } from './lib/home-view.mjs';
 import { S, T, WD_EN } from './lib/i18n.mjs';
+import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
 import { breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, statusTag } from './lib/html.mjs';
 
@@ -249,6 +250,51 @@ ${upd}
   return pg(lang, '/about/', { title: lang === 'ja' ? '掲載のきまり・出典' : 'Listing Policy & Sources', description: lang === 'ja' ? 'Flea Market JP の情報の集め方・表示のきまり・出典・削除依頼について。' : 'How Flea Market JP collects information, how listings are shown, sources, and removal requests.', body });
 }
 
+
+// ---- 使い方・よくある質問・ブログ（本文は scripts/lib/content.mjs） ----
+const inline = (t) => esc(t).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\[([^\]]+)\]\((\/[^)\s]*)\)/g, '<a href="$2">$1</a>');
+const blocks = (list) => list.map((b) => (b.h2 ? `<h2>${esc(b.h2)}</h2>` : b.p ? `<p>${inline(b.p)}</p>` : `<ul>${b.ul.map((x) => `<li>${inline(x)}</li>`).join('')}</ul>`)).join('\n');
+const crumb = (lang, label) => breadcrumb([{ label }], lang);
+
+function guidePage(lang) {
+  const g = GUIDE[lang];
+  return pg(lang, '/guide/', { title: g.title, description: g.lead, body: `<div class="in page prose">${crumb(lang, g.title)}<h1>${esc(g.title)}</h1><p class="lead">${esc(g.lead)}</p>\n${blocks(g.blocks)}</div>` });
+}
+
+function faqPage(lang) {
+  const f = FAQ[lang];
+  const ld = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: f.items.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1') } })) };
+  const items = f.items.map(([q, a]) => `<h2>${esc(q)}</h2><p>${inline(a)}</p>`).join('\n');
+  return pg(lang, '/faq/', { title: f.title, description: f.lead, body: `<div class="in page prose">${crumb(lang, f.title)}<h1>${esc(f.title)}</h1><p class="lead">${esc(f.lead)}</p>\n${items}</div>`, head: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n` });
+}
+
+const blogTitle = (lang) => (lang === 'ja' ? 'ブログ' : 'Blog');
+const feedLink = (lang) => `<link rel="alternate" type="application/rss+xml" title="${esc(`${SITE.name} ${blogTitle(lang)}`)}" href="${langPath('/blog/feed.xml', lang)}">\n`;
+const posts = () => [...BLOG].sort((a, b) => b.date.localeCompare(a.date));
+
+function blogIndex(lang) {
+  const lead = lang === 'ja' ? 'マーケットの探し方・読み方・お出かけの前の確認について。公式ページの記載に基づいて書いています。' : 'How to find markets, read listings and check before you go, based on what official pages say.';
+  const list = posts().map((p) => `<li><a href="/blog/${p.slug}/"><b>${esc(p[lang].title)}</b><small>${esc(dateLong(p.date, lang))}　${esc(p[lang].summary)}</small></a></li>`).join('');
+  return pg(lang, '/blog/', { title: blogTitle(lang), description: lead, body: `<div class="in page">${crumb(lang, blogTitle(lang))}<h1>${esc(blogTitle(lang))}</h1><p class="lead">${esc(lead)}</p><ul class="grid-links">${list}</ul><p class="note"><a href="${langPath('/blog/feed.xml', lang)}">RSS</a></p></div>`, head: feedLink(lang) });
+}
+
+function blogPost(post, lang) {
+  const c = post[lang];
+  const body = `<div class="in page prose">${breadcrumb([{ href: '/blog/', label: blogTitle(lang) }, { label: c.title }], lang)}<h1>${esc(c.title)}</h1><p class="note">${esc(dateLong(post.date, lang))}</p>\n${blocks(c.blocks)}<p class="note">${esc(disclaimer(lang))}</p></div>`;
+  const ld = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: c.title, datePublished: post.date, inLanguage: lang, url: `${SITE.url}${langPath(`/blog/${post.slug}/`, lang)}` };
+  return pg(lang, `/blog/${post.slug}/`, { title: c.title, description: c.summary, body, head: `${feedLink(lang)}<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n` });
+}
+
+const dateLong = (iso, lang) => S[lang].dateLong(iso);
+
+// RSS（/blog/feed.xml、/ja/blog/feed.xml）
+function feedXml(lang) {
+  const x = (t) => esc(t).replace(/&#39;/g, "&apos;");
+  const items = posts().map((p) => `<item><title>${x(p[lang].title)}</title><link>${SITE.url}${langPath(`/blog/${p.slug}/`, lang)}</link><guid>${SITE.url}${langPath(`/blog/${p.slug}/`, lang)}</guid><pubDate>${new Date(`${p.date}T00:00:00+09:00`).toUTCString()}</pubDate><description>${x(p[lang].summary)}</description></item>`).join('\n');
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>${x(`${SITE.name} ${blogTitle(lang)}`)}</title><link>${SITE.url}${langPath('/blog/', lang)}</link><description>${x(blogIndexLead(lang))}</description><language>${lang}</language>\n${items}\n</channel></rss>\n`;
+}
+const blogIndexLead = (lang) => (lang === 'ja' ? 'マーケットの探し方・読み方・お出かけの前の確認について。' : 'How to find markets, read listings and check before you go.');
+
 function notFound(lang) {
   const p = P[lang].nf;
   return pg(lang, '/404.html', { title: p.title, description: p.title, body: `<div class="in page"><h1>${esc(p.title)}</h1><p class="lead">${esc(p.lead)}<a href="/">${esc(p.back)}</a></p></div>` });
@@ -260,8 +306,10 @@ export function buildPages({ series, occurrences, credits = [] }, today, days = 
   const occ = buildOccurrences(series, occurrences, today, days);
   const ctx = { series, occ, today, days, credits };
   // 英語が既定（/）。日本語は /ja/
-  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), notFound(lang)]);
-  return { pages, occ };
+  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), faqPage(lang), blogIndex(lang), ...BLOG.map((b) => blogPost(b, lang)), notFound(lang)]);
+  // ページではないファイル（RSS）
+  const files = LANGS_ORDER.map((lang) => ({ path: langPath('/blog/feed.xml', lang), content: feedXml(lang) }));
+  return { pages, occ, files };
 }
 
 export function searchIndex(occ) {
@@ -279,11 +327,15 @@ function main() {
   rmSync(out, { recursive: true, force: true });
   mkdirSync(out, { recursive: true });
   cpSync(join(ROOT, 'static'), out, { recursive: true });
-  const { pages, occ } = buildPages(loadData(arg('data') ? resolve(ROOT, arg('data')) : undefined), today);
+  const { pages, occ, files } = buildPages(loadData(arg('data') ? resolve(ROOT, arg('data')) : undefined), today);
   for (const p of pages) {
     const file = p.path.endsWith('.html') ? join(out, p.path) : join(out, p.path, 'index.html');
     mkdirSync(dirname(file), { recursive: true });
     writeFileSync(file, layout(p));
+  }
+  for (const f of files) {
+    mkdirSync(dirname(join(out, f.path)), { recursive: true });
+    writeFileSync(join(out, f.path), f.content);
   }
   writeFileSync(join(out, 'events.json'), JSON.stringify({ today, events: searchIndex(occ) }));
   writeFileSync(join(out, 'pages.json'), JSON.stringify(pages.filter((p) => !p.path.endsWith('.html')).map((p) => p.path)));

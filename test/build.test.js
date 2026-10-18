@@ -214,3 +214,35 @@ test('日本語のリンク書き換え：ページのリンクだけを /ja/ �
   assert.equal(out, '<a href="/ja/">a</a><a href="/ja/weekend/">b</a><a href="/ja/e/x/#shuten">c</a><form action="/ja/search/"></form><link href="/style.css"><img src="/img/hero.webp"><a href="https://x.jp/weekend/">d</a>');
   assert.equal(localize(h, 'en'), h);
 });
+
+test('使い方・よくある質問・ブログ：両言語のページ・RSS・サイトマップ・リンク', async () => {
+  const { BLOG } = await import('../scripts/lib/content.mjs');
+  const { buildPages: bp } = await import('../scripts/build-site.mjs');
+  const real = loadData();
+  const built = bp(real, '2026-10-18');
+  const has = (p) => built.pages.find((x) => x.path === p);
+  for (const base of ['/guide/', '/faq/', '/blog/', ...BLOG.map((b) => `/blog/${b.slug}/`)]) {
+    assert.ok(has(base), base);
+    assert.ok(has(`/ja${base}`), `/ja${base}`);
+  }
+  assert.deepEqual(built.files.map((f) => f.path).sort(), ['/blog/feed.xml', '/ja/blog/feed.xml']);
+  for (const f of built.files) {
+    assert.match(f.content, /^<\?xml/);
+    for (const b of BLOG) assert.ok(f.content.includes(`/blog/${b.slug}/`));
+  }
+  // 本文の内部リンクは、すべて作ったページにある（両言語・本番のデータ）
+  const paths = new Set(built.pages.map((p) => p.path));
+  for (const p of built.pages) {
+    const html = layout(p);
+    for (const m of html.matchAll(/href="(\/[^"#?]*)/g)) {
+      if (/\.(css|js|webp|json|txt|xml)$/.test(m[1])) continue;
+      assert.ok(paths.has(m[1]), `${p.path} → ${m[1]} がありません`);
+    }
+  }
+  // 日本語のページには英語の内部リンクが残らない
+  assert.ok(!layout(has('/ja/guide/')).includes('href="/weekend/"'));
+  assert.match(layout(has('/ja/guide/')), /href="\/ja\/weekend\/"/);
+  assert.match(layout(has('/faq/')), /"@type":"FAQPage"/);
+  // フッターに出る
+  for (const h of ['/guide/', '/faq/', '/blog/']) assert.ok(layout(page('/')).includes(`href="${h}"`) && layout(page('/ja/')).includes(`href="/ja${h}"`), h);
+});

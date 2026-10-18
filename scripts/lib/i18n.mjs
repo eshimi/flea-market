@@ -74,7 +74,7 @@ export const S = {
     kinds: { flea: 'フリーマーケット', kotto: '骨董市', nomi: '蚤の市', handmade: '手作り市', engi: '縁日・露店市', marche: 'マルシェ・朝市' },
     kindAlt: { flea: '古着や雑貨が並ぶフリーマーケットの露店', kotto: '陶器や急須が並ぶ骨董市の露店', nomi: '骨董や雑貨が並ぶ店', handmade: '色とりどりの折り鶴が並ぶ手作り品の露店', engi: '神社の境内に並ぶ縁日の露店', marche: '青果が並ぶ、東京の街角の露店' },
     footer: {
-      links: [['/weekend/', '今週末の開催'], ['/calendar/', 'イベントカレンダー'], ['/area/', '地域から探す'], ['/kind/', '種類から探す'], ['/search/', 'キーワード検索'], ['/shuten/', '出店したい方へ'], ['/about/', 'サイトについて'], ['/about/#remove', '掲載情報の修正・削除依頼']],
+      links: [['/weekend/', '今週末の開催'], ['/calendar/', 'イベントカレンダー'], ['/area/', '地域から探す'], ['/kind/', '種類から探す'], ['/search/', 'キーワード検索'], ['/shuten/', '出店したい方へ'], ['/guide/', '使い方'], ['/faq/', 'よくある質問'], ['/blog/', 'ブログ'], ['/about/', 'サイトについて'], ['/about/#remove', '掲載情報の修正・削除依頼']],
       nav: 'フッター',
       copy: '主催者・自治体の公式情報と公開データをもとに掲載しています。',
     },
@@ -92,7 +92,7 @@ export const S = {
     kinds: { flea: 'Flea Markets', kotto: 'Antique Fairs', nomi: 'Nomi-no-Ichi (Flea)', handmade: 'Handmade Markets', engi: 'Temple & Shrine Fairs', marche: 'Marchés & Morning Markets' },
     kindAlt: { flea: 'A flea market stall with vintage clothes and goods', kotto: 'An antique fair stall with ceramics and a teapot', nomi: 'A shop with antiques and curios', handmade: 'Colorful origami cranes at a handmade goods stall', engi: 'Festival stalls in the grounds of a shrine', marche: 'A produce stall on a Tokyo street corner' },
     footer: {
-      links: [['/weekend/', 'This Weekend'], ['/calendar/', 'Event Calendar'], ['/area/', 'Explore by Area'], ['/kind/', 'Market Types'], ['/search/', 'Keyword Search'], ['/shuten/', 'For Vendors'], ['/about/', 'About'], ['/about/#remove', 'Correction / Removal Requests']],
+      links: [['/weekend/', 'This Weekend'], ['/calendar/', 'Event Calendar'], ['/area/', 'Explore by Area'], ['/kind/', 'Market Types'], ['/search/', 'Keyword Search'], ['/shuten/', 'For Vendors'], ['/guide/', 'How to Use'], ['/faq/', 'FAQ'], ['/blog/', 'Blog'], ['/about/', 'About'], ['/about/#remove', 'Correction / Removal Requests']],
       nav: 'Footer',
       copy: 'Based on official information from organizers and municipalities, and open data.',
     },
