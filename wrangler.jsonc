@@ -11,6 +11,6 @@
     "not_found_handling": "404-page",
     "run_worker_first": ["/api/*"]
   },
-  "observability": { "enabled": true }
-  // ドメインが決まったら routes を足す（要確認）。例: "routes": [{ "pattern": "example.jp", "custom_domain": true }]
+  "observability": { "enabled": true },
+  "routes": [{ "pattern": "streetbazaars.jp", "custom_domain": true }]
 }
