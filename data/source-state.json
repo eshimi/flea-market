@@ -639,5 +639,634 @@
   "evidenceOk": {
    "hino-art-festival-flea-craft": true
   }
+ },
+ "https://www.recyclefmd.gr.jp/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6103-65d9e35d9fb9c\"",
+  "lastModified": "Mon, 12 Oct 2026 05:45:49 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "recyclefmd-sapporo-plaza-flea": true
+  }
+ },
+ "https://cultune.org/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "cultune-fukuoka-maizuru-flea": true
+  }
+ },
+ "https://www.earth-garden.jp/festival/83598/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "earthgarden-gearloop-market-2026": true
+  }
+ },
+ "https://trx.jp/schejule": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "trx-oi-keibajo-tokyo-city-flea": true,
+   "trx-ike-sunpark-flea": true,
+   "trx-funabashi-keibajo-flea": true,
+   "trx-kitaku-minsho-matsuri-flea": true,
+   "trx-musamura-flea": true
+  }
+ },
+ "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=040": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "recycler-sumida-live-fes-2026-winter-flea": true
+  }
+ },
+ "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "yuyu-marche-inazawa-kinro-fukushi-kaikan": true,
+   "yuyu-marche-ichinomiya-riverside-ono-gokurakuji": true,
+   "yuyu-marche-motohama-park": true,
+   "yuyu-marche-plant6": true,
+   "yuyu-marche-ja-genki-no-sato": true,
+   "yuyu-marche-sobue-ryokuchi": true
+  }
+ },
+ "https://rpa.flima.net/%e5%87%ba%e5%ba%97%e3%81%ae%e3%83%ab%e3%83%bc%e3%83%ab/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "yuyu-marche-inazawa-kinro-fukushi-kaikan": true,
+   "yuyu-marche-ichinomiya-riverside-ono-gokurakuji": true,
+   "yuyu-marche-motohama-park": true,
+   "yuyu-marche-plant6": true,
+   "yuyu-marche-ja-genki-no-sato": true,
+   "yuyu-marche-sobue-ryokuchi": true
+  }
+ },
+ "https://www.tedukuri-ichi.com/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "hyakumanben-tedukuri-ichi": true,
+   "umekoji-park-tedukuri-ichi": true
+  }
+ },
+ "https://www.tedukuri-ichi.com/about": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "hyakumanben-tedukuri-ichi": true
+  }
+ },
+ "https://www.tedukuri-ichi.com/access_hyakumanben/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "hyakumanben-tedukuri-ichi": true
+  }
+ },
+ "https://www.tedukuri-ichi.com/access_umekoji/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "umekoji-park-tedukuri-ichi": true
+  }
+ },
+ "http://freemarket-go.com/shousai-osaka-028.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "jfma-nakaku-kumin-festa-flea-2026": true
+  }
+ },
+ "http://freemarket-go.com/shousai_hyogo_001.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "jfma-kobe-harborland-seaside-market": true
+  }
+ },
+ "http://freemarket-go.com/shousai_hyogo_003.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "jfma-nishikita-flea": true
+  }
+ },
+ "http://freemarket-go.com/shousai_osaka_013.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "jfma-ikea-tsuruhama-loppis": true
+  }
+ },
+ "http://freemarket-go.com/shousai_osaka_001.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "jfma-minatomachi-river-place-flea": true
+  }
+ },
+ "http://freemarket-go.com/shousai-siga-004.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "jfma-wanwan-marche-shiga-ryuo-vol17": true
+  }
+ },
+ "http://freemarket-go.com/shousai_hyogo_006.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "jfma-wanwan-marche-kobe-port-island-vol53": true
+  }
+ },
+ "http://freemarket-go.com/shousai-hyogo-009.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "jfma-wanwan-marche-kobe-meriken-park-vol8": true
+  }
+ },
+ "http://freemarket-go.com/shousai-hyogo-010.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "jfma-ikea-kobe-loppis": true
+  }
+ },
+ "https://www.fmfm-king.com/ama12-12/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-amagasaki-chuo-park": true
+  }
+ },
+ "https://www.fmfm-king.com/amaiseki12-26/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-amaiseki-park": true
+  }
+ },
+ "https://www.fmfm-king.com/amaiseki12-27/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-amaiseki-park": true
+  }
+ },
+ "https://www.fmfm-king.com/enama11-14/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-amaiseki-park": true
+  }
+ },
+ "https://www.fmfm-king.com/apia10-31/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-apia-higashiomi": true
+  }
+ },
+ "https://www.fmfm-king.com/kirarie10-18/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-kirarie-kusatsu": true
+  }
+ },
+ "https://www.fmfm-king.com/enmino10-25/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-minoh-cues-mall": true
+  }
+ },
+ "https://www.fmfm-king.com/mino11-22/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-minoh-cues-mall": true
+  }
+ },
+ "https://www.fmfm-king.com/mino12-13/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-minoh-cues-mall": true
+  }
+ },
+ "https://www.fmfm-king.com/ennara10-31-1/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-nara-city-hall-lawn": true
+  }
+ },
+ "https://www.fmfm-king.com/fukakita10-24/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-fukakita-ryokuchi": true
+  }
+ },
+ "https://www.fmfm-king.com/fuka11-8/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-fukakita-ryokuchi": true
+  }
+ },
+ "https://www.fmfm-king.com/fukakita11-23/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-fukakita-ryokuchi": true
+  }
+ },
+ "https://www.fmfm-king.com/fukakitamaturi12-19-20/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-fukakita-ryokuchi": true
+  }
+ },
+ "https://www.fmfm-king.com/higashi10-20/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-ohigashi-hiroba": true
+  }
+ },
+ "https://www.fmfm-king.com/fukuhigashi11-10/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-ohigashi-hiroba": true
+  }
+ },
+ "https://www.fmfm-king.com/ohigashi11-16/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-ohigashi-hiroba": true
+  }
+ },
+ "https://www.fmfm-king.com/ohigashi12-23/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-ohigashi-hiroba": true
+  }
+ },
+ "https://www.fmfm-king.com/ohigashi1-5/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-ohigashi-hiroba": true
+  }
+ },
+ "https://www.fmfm-king.com/fukuoka11-4/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-okazaki-park": true
+  }
+ },
+ "https://www.fmfm-king.com/okazaki12-29-30/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-okazaki-park": true
+  }
+ },
+ "https://www.fmfm-king.com/turu11-4/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-tsurumi-ryokuchi": true
+  }
+ },
+ "https://www.fmfm-king.com/hana11-18/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-tsurumi-ryokuchi": true
+  }
+ },
+ "https://www.fmfm-king.com/turu12-9/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-tsurumi-ryokuchi": true
+  }
+ },
+ "https://www.fmfm-king.com/turu12-23/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-tsurumi-ryokuchi": true
+  }
+ },
+ "https://www.fmfm-king.com/turimi1-5/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-tsurumi-ryokuchi": true
+  }
+ },
+ "https://www.fmfm-king.com/hikone11-7-8/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-cainz-hikone": true
+  }
+ },
+ "https://www.fmfm-king.com/kenbunmaturi12-26-27/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-mie-sogo-bunka-center": true
+  }
+ },
+ "https://www.fmfm-king.com/kidugawa10-31-1/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-plant-kizugawa": true
+  }
+ },
+ "https://www.fmfm-king.com/notogawa10-25/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-notogawa-community-center": true
+  }
+ },
+ "https://www.fmfm-king.com/odekake11-21/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-a-square-kusatsu": true
+  }
+ },
+ "https://www.fmfm-king.com/saidaiji10-25/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-yamato-saidaiji-ekimae": true
+  }
+ },
+ "https://www.fmfm-king.com/saidaiji11-7/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-yamato-saidaiji-ekimae": true
+  }
+ },
+ "https://www.fmfm-king.com/saidaiji11-22/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-yamato-saidaiji-ekimae": true
+  }
+ },
+ "https://www.fmfm-king.com/saidaiji12-12/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-yamato-saidaiji-ekimae": true
+  }
+ },
+ "https://www.fmfm-king.com/saidaiji12-20/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-yamato-saidaiji-ekimae": true
+  }
+ },
+ "https://www.fmfm-king.com/sakira11-14-15/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-ritto-sakira": true
+  }
+ },
+ "https://www.fmfm-king.com/sakura11-21-22-23/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-suzuka-sakura-no-mori": true
+  }
+ },
+ "https://www.fmfm-king.com/suzuka12-5-6/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-suzuka-sakura-no-mori": true
+  }
+ },
+ "https://www.fmfm-king.com/shinsui12-19-20/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-yasugawa-shinsui-park": true
+  }
+ },
+ "https://www.fmfm-king.com/yamada12-19-20/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-yamada-ike-park": true
+  }
+ },
+ "https://www.fmfm-king.com/yasu11-22/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-alplaza-yasu": true
+  }
+ },
+ "https://www.fmfm-king.com/yasu12-6/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-alplaza-yasu": true
+  }
+ },
+ "https://www.fmfm-king.com/yoxtukaichi10-24/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-yokkaichi-shimin-park": true
+  }
+ },
+ "https://www.fmfm-king.com/yoxtukaichi11-8/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-yokkaichi-shimin-park": true
+  }
+ },
+ "https://www.fmfm-king.com/yoxtukaichi11-21/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-yokkaichi-shimin-park": true
+  }
+ },
+ "https://www.fmfm-king.com/yoxtukaichi12-12/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-yokkaichi-shimin-park": true
+  }
+ },
+ "https://www.fmfm-king.com/yoxtukaichi12-30/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-yokkaichi-shimin-park": true
+  }
  }
 }
