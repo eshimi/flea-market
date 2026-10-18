@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildPages, loadData, searchIndex } from '../scripts/build-site.mjs';
-import { layout } from '../scripts/lib/html.mjs';
+import { eventListByMonth, layout } from '../scripts/lib/html.mjs';
 import { mainHash, updateLastmod } from '../scripts/update-sitemap.mjs';
 
 const FIX = join(fileURLToPath(new URL('.', import.meta.url)), 'fixtures');
@@ -60,4 +60,15 @@ test('サイトマップの更新日は、本文が変わったページだけ�
   const s2 = updateLastmod(s1, [['/', a], ['/new/', 'v1:z']], '2026-10-18');
   assert.equal(s2['/'].lastmod, '2026-10-17');
   assert.equal(s2['/new/'].lastmod, '2026-10-18');
+});
+
+test('件数が多い一覧は、月ごとに分ける（最初の月だけ開く）', () => {
+  const base = occ[0];
+  const many = Array.from({ length: 25 }, (_, i) => ({ ...base, date: i < 5 ? '2026-10-18' : '2026-11-0' + (1 + (i % 9)) }));
+  const html = eventListByMonth(many);
+  assert.equal((html.match(/<details/g) || []).length, 1);
+  assert.match(html, /<section class="month-block"><h3 class="month-h">2026年10月（5件）/);
+  assert.match(html, /<summary class="month-h">2026年11月（20件）/);
+  assert.equal((html.match(/<article class="ev/g) || []).length, 25, '全件が HTML に入る');
+  assert.ok(!eventListByMonth(many.slice(0, 20)).includes('<details'), '20件以下は分けない');
 });

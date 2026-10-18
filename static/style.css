@@ -50,6 +50,11 @@ main{display:block;min-height:50vh}
 .tag.stop{background:#f8dcd6;color:#9b2c17;font-weight:700}
 .ev-note{font-size:13px;color:#9a4a14;margin:6px 0 0}
 .empty{background:#fff;border:1px dashed var(--line);border-radius:14px;padding:18px;color:var(--sub)}
+/* 月ごとの一覧 */
+.month-block{margin:6px 0 14px}
+.month-h{font-size:16px;font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif;font-weight:700;margin:14px 0 8px}
+summary.month-h{cursor:pointer;padding:10px 14px;background:#fff;border:1px solid var(--line);border-radius:12px;list-style-position:inside}
+details[open]>summary.month-h{margin-bottom:10px}
 /* 右の列 */
 aside .box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:22px}
 aside h2{font-size:15px;margin-bottom:10px}

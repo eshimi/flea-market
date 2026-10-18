@@ -274,5 +274,65 @@
   "evidenceOk": {
    "katsushika-recycle-corner-flea": true
   }
+ },
+ "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"6d64-65c4af5ba05c6\"",
+  "lastModified": "Fri, 25 Sep 2026 09:01:20 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "taito-hanakawado-park-flea": true
+  }
+ },
+ "https://www.city.arakawa.tokyo.jp/a025/recycle/shigen/fleamarket.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 0,
+  "failCount": 1
+ },
+ "https://www.city.setagaya.lg.jp/01026/25051.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"65c2-65dce35ed9da6\"",
+  "lastModified": "Wed, 14 Oct 2026 15:01:49 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "setagaya-soshigaya-furusato-festival-flea-2026": true
+  }
+ },
+ "https://www.city.setagaya.lg.jp/01028/36021.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"5672-65dee3f37992d\"",
+  "lastModified": "Fri, 16 Oct 2026 05:15:04 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "setagaya-funabashi-fureai-matsuri-flea-2026": true
+  }
+ },
+ "https://www.city.setagaya.lg.jp/01028/19856.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"5ba2-65d3a3eecdf7a\"",
+  "lastModified": "Wed, 07 Oct 2026 06:30:05 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "setagaya-funabashi-fureai-matsuri-flea-2026": true
+  }
+ },
+ "https://www.city.setagaya.lg.jp/01028/19126.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"55bc-65d192565959d\"",
+  "lastModified": "Mon, 05 Oct 2026 15:00:43 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "setagaya-funabashi-nomi-no-ichi-2026-autumn": true
+  }
  }
 }

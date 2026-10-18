@@ -94,3 +94,22 @@ ${o.note ? `<p class="ev-note">${esc(o.note)}</p>` : ''}</div>
 export function eventList(list, empty = 'この条件の掲載は、まだありません。') {
   return list.length ? `<div class="ev-list">${list.map(eventCard).join('\n')}</div>` : `<p class="empty">${esc(empty)}</p>`;
 }
+
+// 件数が多い一覧は、月ごとに分ける（最初の月だけ開く。それ以降は <details> で折りたたむ。HTML には全件が入る）
+export const MONTH_SPLIT_MIN = 20;
+
+export function eventListByMonth(list, empty) {
+  if (list.length <= MONTH_SPLIT_MIN) return eventList(list, empty);
+  const groups = new Map();
+  for (const o of list) {
+    const m = o.date.slice(0, 7);
+    if (!groups.has(m)) groups.set(m, []);
+    groups.get(m).push(o);
+  }
+  return [...groups].map(([m, items], i) => {
+    const head = `${+m.slice(0, 4)}年${+m.slice(5)}月（${items.length}件）`;
+    return i === 0
+      ? `<section class="month-block"><h3 class="month-h">${head}</h3>${eventList(items)}</section>`
+      : `<details class="month-block"><summary class="month-h">${head}</summary>${eventList(items)}</details>`;
+  }).join('\n');
+}

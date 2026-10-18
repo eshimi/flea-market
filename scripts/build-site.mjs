@@ -8,7 +8,7 @@ import { buildOccurrences, isActive, lastChecked } from './lib/events.mjs';
 import { KINDS } from './lib/kinds.mjs';
 import { PREFS } from './lib/areas.mjs';
 import { SITE } from './lib/nav.mjs';
-import { breadcrumb, DISCLAIMER, esc, eventList, kindTags, layout, md, STATUS_LABEL, statusTag } from './lib/html.mjs';
+import { breadcrumb, DISCLAIMER, esc, eventList, eventListByMonth, kindTags, layout, md, STATUS_LABEL, statusTag } from './lib/html.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const arg = (k) => process.argv.find((a) => a.startsWith(`--${k}=`))?.split('=')[1];
@@ -87,7 +87,7 @@ ${exhibitorList(series)}
 }
 
 function listPage(path, crumbs, h1, lead, list, ctx, extra = '') {
-  const body = `<div class="in page">${breadcrumb(crumbs)}<h1>${esc(h1)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}${extra}${eventList(list)}</div>`;
+  const body = `<div class="in page">${breadcrumb(crumbs)}<h1>${esc(h1)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}${extra}${eventListByMonth(list)}</div>`;
   return { path, title: h1, description: `${h1}。主催者・自治体の公式情報をもとに、毎朝更新しています。`, body };
 }
 

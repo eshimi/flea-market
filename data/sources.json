@@ -298,5 +298,71 @@
    "checkedAt": "2026-10-18",
    "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体・問い合わせ先の電話番号は載せない"
   }
+ },
+ {
+  "url": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html",
+  "series": [
+   "taito-hanakawado-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体の電話番号・メールは載せない"
+  }
+ },
+ {
+  "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/shigen/fleamarket.html",
+  "series": [
+   "arakawa-park-flea-2027-03"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体の電話番号・メールは載せない"
+  }
+ },
+ {
+  "url": "https://www.city.setagaya.lg.jp/01026/25051.html",
+  "series": [
+   "setagaya-soshigaya-furusato-festival-flea-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない（世田谷区の「著作権・リンク・免責事項」に基づく）。robots.txt はなし（404）。主催団体・問い合わせ先の電話番号は載せない"
+  }
+ },
+ {
+  "url": "https://www.city.setagaya.lg.jp/01028/36021.html",
+  "series": [
+   "setagaya-funabashi-fureai-matsuri-flea-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない（世田谷区の「著作権・リンク・免責事項」に基づく）。robots.txt はなし（404）。主催団体・問い合わせ先の電話番号は載せない"
+  }
+ },
+ {
+  "url": "https://www.city.setagaya.lg.jp/01028/19856.html",
+  "series": [
+   "setagaya-funabashi-fureai-matsuri-flea-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない（世田谷区の「著作権・リンク・免責事項」に基づく）。robots.txt はなし（404）。主催団体・問い合わせ先の電話番号は載せない"
+  }
+ },
+ {
+  "url": "https://www.city.setagaya.lg.jp/01028/19126.html",
+  "series": [
+   "setagaya-funabashi-nomi-no-ichi-2026-autumn"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない（世田谷区の「著作権・リンク・免責事項」に基づく）。robots.txt はなし（404）。主催団体・問い合わせ先の電話番号は載せない"
+  }
  }
 ]
