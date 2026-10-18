@@ -1,0 +1,83 @@
+{
+ "recycle-undo-hokkaido": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6103-65d9e35d9fb9c\"",
+  "lastModified": "Mon, 12 Oct 2026 05:45:49 GMT",
+  "len": 9448,
+  "hash": "0476ca0b72ea726c"
+ },
+ "tvh-golma": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 2447,
+  "hash": "637673033ad469ca"
+ },
+ "trx-tokyo-recycle": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 22743,
+  "hash": "1e6d1113712340e9"
+ },
+ "recycler-jp": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 5768,
+  "hash": "0391163940219f9f"
+ },
+ "tezukuriichi": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"1042-5e19c4c8cd8c0-gzip\"",
+  "lastModified": "Fri, 17 Jun 2022 03:24:59 GMT",
+  "len": 612,
+  "hash": "97f9218f26bc7bb2"
+ },
+ "earth-garden": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 7346,
+  "hash": "cd8a6a3255acef85"
+ },
+ "rpa-yuyu-marche": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 2568,
+  "hash": "ff5f877f74b19d62"
+ },
+ "nihon-freemarket-kyokai": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 1489,
+  "hash": "e213b39cd88466d0"
+ },
+ "furima-japan": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 21961,
+  "hash": "d392028a7444b792"
+ },
+ "hyakumanben-tedukuri-ichi": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 15008,
+  "hash": "3d0980cd6068f63e"
+ },
+ "cultune": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 8512,
+  "hash": "467025b9a547119f"
+ }
+}

@@ -72,9 +72,9 @@ export function applyResult({ src, result, series, state, today }) {
   return notes;
 }
 
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function get(url, headers = {}) {
+export async function get(url, headers = {}) {
   try {
     const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, ...headers }, redirect: 'follow', signal: AbortSignal.timeout(30000) });
     const type = res.headers.get('content-type') || '';

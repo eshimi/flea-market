@@ -1,0 +1,183 @@
+[
+ {
+  "id": "recycle-undo-hokkaido",
+  "url": "https://www.recyclefmd.gr.jp/",
+  "name": "リサイクル運動市民の会 北海道本部（フリーマーケット北海道）",
+  "kind": "organizer",
+  "pref": "01",
+  "note": "札幌市内（中島公園・厚別ふれあい広場など）の定期開催。開催期間と会場がトップにある。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt は 404（制限なし）。事実の項目だけ載せる（2026-10-18 確認）"
+  },
+  "addedAt": "2026-10-18"
+ },
+ {
+  "id": "tvh-golma",
+  "url": "https://www.tv-hokkaido.co.jp/golma/",
+  "name": "テレビ北海道 ゴールデンマーケット（ゴルマ）",
+  "kind": "organizer",
+  "pref": "01",
+  "note": "主催はテレビ北海道。次回は未定と公式に記載（2026-10-18）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は許可。サイトに「権利者の許諾なく私的使用の範囲を越えて複製…はお断り」とあるため、事実の項目（日時・場所・出店条件）だけ載せ、文章・画像は転載しない（2026-10-18 確認）"
+  },
+  "addedAt": "2026-10-18"
+ },
+ {
+  "id": "trx-tokyo-recycle",
+  "url": "https://trx.jp/",
+  "name": "東京リサイクル（フリーマーケット情報。大井競馬場フリマなど）",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "東京・関東のフリマの運営サイト。出店は抽選・予約。大井競馬場 Tokyo City Flea Market の日程が出ている（これまで日程は Instagram のみだった）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は許可。サイト利用の規約はなく、「出店規約」「プレミアム会員規約」は出店者向け。事実の項目だけ載せる（2026-10-18 確認）"
+  },
+  "addedAt": "2026-10-18"
+ },
+ {
+  "id": "recycler-jp",
+  "url": "https://www2.recycler.jp/",
+  "name": "リサイクル運動市民の会（フリーマーケット情報）",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "すでに都内7会場を掲載済み（日付は日が過ぎると消える）。http://www.recycler.org/ は www2.recycler.jp へ転送される。ニュース欄に料金改定などが出る。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は 404（制限なし）。「ご利用ガイド」はあるが取得を禁じる記載は確認できず。事実の項目だけ載せる（2026-10-18 確認）"
+  },
+  "addedAt": "2026-10-18",
+  "everyDays": 3
+ },
+ {
+  "id": "tezukuriichi",
+  "url": "https://tezukuriichi.com/",
+  "name": "手創り市（雑司ヶ谷 鬼子母神・大鳥神社／静岡）",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "雑司ヶ谷は掲載済み。静岡手創り市（護国神社）は未掲載。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt は 404（制限なし）。事実の項目だけ載せる（2026-10-18 確認）"
+  },
+  "addedAt": "2026-10-18"
+ },
+ {
+  "id": "earth-garden",
+  "url": "https://www.earth-garden.jp/",
+  "name": "アースガーデン（ウェブマガジン・フェスカレンダー）",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "コミュニティフェス earth garden の運営サイト。フェスの中のフリマ・クラフト出店は対象。ウェブマガジンの記事は対象外。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は許可。サイトの利用規約は確認できず。フェスカレンダーの日付・会場などの事実だけを対象にする（2026-10-18 確認。規約の全文は要確認）"
+  },
+  "addedAt": "2026-10-18"
+ },
+ {
+  "id": "rpa-yuyu-marche",
+  "url": "https://rpa.flima.net/",
+  "name": "リサイクル運動推進の会・友遊（ゆうゆう）マルシェ（愛知）",
+  "kind": "organizer",
+  "pref": "23",
+  "note": "愛知県を中心にフリマを開催。「開催日程」のページがある。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は許可。利用規約のページは確認できず。事実の項目だけ載せる（2026-10-18 確認）"
+  },
+  "addedAt": "2026-10-18"
+ },
+ {
+  "id": "flima-soken",
+  "url": "https://www.flima.jp/",
+  "name": "フリマ総研（東海三県のフリマ情報）",
+  "kind": "organizer",
+  "pref": "23",
+  "note": "【対象外】開催情報を集めて載せる情報サイト（まとめサイト）。情報源にしない決まり。",
+  "active": false,
+  "terms": {
+   "ok": null,
+   "checkedAt": "2026-10-18",
+   "note": ""
+  },
+  "addedAt": "2026-10-18"
+ },
+ {
+  "id": "nihon-freemarket-kyokai",
+  "url": "http://freemarket-go.com/",
+  "name": "日本フリーマーケット協会（関西）",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "関西でフリマを開催（IKEA 神戸・ハーバーランドなど）。トップに直近の日程が並ぶ。公式 Twitter は対象外。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は許可。利用規約のページは確認できず。事実の項目だけ載せる（2026-10-18 確認）"
+  },
+  "addedAt": "2026-10-18"
+ },
+ {
+  "id": "furima-japan",
+  "url": "https://www.fmfm-king.com/",
+  "name": "フリマジャパン（滋賀・京都・大阪・三重など）",
+  "kind": "organizer",
+  "pref": "25",
+  "note": "運営会社が自分のイベント（フリマ・マルシェ）を開催。エリアごとの開催情報。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は許可。「利用規約」は出店者向け（取得を禁じる記載なし）。事実の項目だけ載せる（2026-10-18 確認）"
+  },
+  "addedAt": "2026-10-18"
+ },
+ {
+  "id": "hyakumanben-tedukuri-ichi",
+  "url": "https://www.tedukuri-ichi.com/",
+  "name": "手づくり市.com（京都 百万遍さんの手づくり市・梅小路公園手づくり市）",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "毎月15日（8月休み）などの定期市。トップに次回の日程。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は許可。利用規約のページは確認できず。事実の項目だけ載せる（2026-10-18 確認）"
+  },
+  "addedAt": "2026-10-18"
+ },
+ {
+  "id": "cultune",
+  "url": "https://cultune.org/",
+  "name": "CULTUNE（福岡のフリーマーケット＆コミュニティイベント）",
+  "kind": "organizer",
+  "pref": "40",
+  "note": "舞鶴公園で開催。次回 2026-12-20、2027-02-21 と出ている。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は許可。「出店者規約」は出店者向け（取得を禁じる記載なし）。事実の項目だけ載せる（2026-10-18 確認）"
+  },
+  "addedAt": "2026-10-18"
+ }
+]

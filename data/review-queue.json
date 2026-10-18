@@ -1,0 +1,101 @@
+[
+ {
+  "id": "recycle-undo-hokkaido",
+  "url": "https://www.recyclefmd.gr.jp/",
+  "name": "リサイクル運動市民の会 北海道本部（フリーマーケット北海道）",
+  "detectedAt": "2026-10-19",
+  "reason": "new",
+  "hash": "0476ca0b72ea726c",
+  "status": "pending"
+ },
+ {
+  "id": "tvh-golma",
+  "url": "https://www.tv-hokkaido.co.jp/golma/",
+  "name": "テレビ北海道 ゴールデンマーケット（ゴルマ）",
+  "detectedAt": "2026-10-19",
+  "reason": "new",
+  "hash": "637673033ad469ca",
+  "status": "pending"
+ },
+ {
+  "id": "trx-tokyo-recycle",
+  "url": "https://trx.jp/",
+  "name": "東京リサイクル（フリーマーケット情報。大井競馬場フリマなど）",
+  "detectedAt": "2026-10-19",
+  "reason": "new",
+  "hash": "1e6d1113712340e9",
+  "status": "pending"
+ },
+ {
+  "id": "recycler-jp",
+  "url": "https://www2.recycler.jp/",
+  "name": "リサイクル運動市民の会（フリーマーケット情報）",
+  "detectedAt": "2026-10-19",
+  "reason": "new",
+  "hash": "0391163940219f9f",
+  "status": "pending"
+ },
+ {
+  "id": "tezukuriichi",
+  "url": "https://tezukuriichi.com/",
+  "name": "手創り市（雑司ヶ谷 鬼子母神・大鳥神社／静岡）",
+  "detectedAt": "2026-10-19",
+  "reason": "new",
+  "hash": "97f9218f26bc7bb2",
+  "status": "pending"
+ },
+ {
+  "id": "earth-garden",
+  "url": "https://www.earth-garden.jp/",
+  "name": "アースガーデン（ウェブマガジン・フェスカレンダー）",
+  "detectedAt": "2026-10-19",
+  "reason": "new",
+  "hash": "cd8a6a3255acef85",
+  "status": "pending"
+ },
+ {
+  "id": "rpa-yuyu-marche",
+  "url": "https://rpa.flima.net/",
+  "name": "リサイクル運動推進の会・友遊（ゆうゆう）マルシェ（愛知）",
+  "detectedAt": "2026-10-19",
+  "reason": "new",
+  "hash": "ff5f877f74b19d62",
+  "status": "pending"
+ },
+ {
+  "id": "nihon-freemarket-kyokai",
+  "url": "http://freemarket-go.com/",
+  "name": "日本フリーマーケット協会（関西）",
+  "detectedAt": "2026-10-19",
+  "reason": "new",
+  "hash": "e213b39cd88466d0",
+  "status": "pending"
+ },
+ {
+  "id": "furima-japan",
+  "url": "https://www.fmfm-king.com/",
+  "name": "フリマジャパン（滋賀・京都・大阪・三重など）",
+  "detectedAt": "2026-10-19",
+  "reason": "new",
+  "hash": "d392028a7444b792",
+  "status": "pending"
+ },
+ {
+  "id": "hyakumanben-tedukuri-ichi",
+  "url": "https://www.tedukuri-ichi.com/",
+  "name": "手づくり市.com（京都 百万遍さんの手づくり市・梅小路公園手づくり市）",
+  "detectedAt": "2026-10-19",
+  "reason": "new",
+  "hash": "3d0980cd6068f63e",
+  "status": "pending"
+ },
+ {
+  "id": "cultune",
+  "url": "https://cultune.org/",
+  "name": "CULTUNE（福岡のフリーマーケット＆コミュニティイベント）",
+  "detectedAt": "2026-10-19",
+  "reason": "new",
+  "hash": "467025b9a547119f",
+  "status": "pending"
+ }
+]
