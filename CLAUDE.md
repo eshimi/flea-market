@@ -77,6 +77,13 @@
 
 - 公開前の安全装置：環境変数 `SITE_URL`（未設定や `.example` は不可）と `CONTACT_EMAIL`（掲載の修正・削除の依頼を受ける、サイト専用のメールアドレス。メールの形でなければ無効）の**両方**が揃うまでは、全ページに `noindex,nofollow`、robots.txt は `Disallow: /`（`INDEXABLE`。`scripts/lib/nav.mjs`）。`CONTACT_EMAIL` があると、掲載のきまりのページ（#remove）に mailto で表示される（なければ「準備中（要確認）」）。両方とも GitHub の Variables に設定する（deploy.yml が渡す）。ローカルの確認は `wrangler dev`（`npx wrangler@4 dev --port 8799`）で、トップ・詳細・/api/health・404・events.json・robots.txt が返ることを確認済み（2026-10-18）。
 
+## トップページ全面リニューアル（2026-10-18 に依頼。計画の確認待ち・実装前）
+- 依頼の要点：外国人旅行者向けに、写真中心の HERO（英語コピー「Find Japan's hidden market treasures.」）・開催カレンダー・注目マーケットのカード・出店者区画・地域（日本地図）・種類・サイト情報・フッターに作り直す。既存の機能・URL・データの取得処理は変えない。ダミーの数字・日付・イベント名は入れない（件数・更新日などは実データから作る）。進め方は Step 1 調査 → Step 2 計画（**ユーザーの確認まで実装しない**）→ Step 3 HERO だけ実装して画像で確認 → Step 4 下部セクションを順に → Step 5 全体調整。
+- 調査結果：トップは `scripts/build-site.mjs` の `home()`。ヘッダー・フッターは `scripts/lib/html.mjs` の `layout()`（全ページ共通）。画像・英語ページ・言語切替は**まだない**（日本語のみ）。データに画像の項目はない（公式サイトの画像は転載しない決まり）。種類は flea・kotto・nomi・engi・handmade・marche の6つ（marche は0件）。
+- 決定（ユーザー）：写真は**フリー素材から探して使う**（利用条件と出典を `data/image-credits.json` に記録し、「掲載のきまり」に表示）／英語は**トップページだけ**（`/en/`。一覧・詳細は日本語のまま）／新しいヘッダー・フッターは**全ページに適用**／「行きたい／出店したい」の切り替えは**廃止**して出店者区画に置き換える。
+- 計画：新規 `scripts/lib/home-view.mjs`・`scripts/lib/i18n.mjs`・`static/home.css`・`static/home.js`・`static/img/`・`/en/`、変更 `build-site.mjs`・`html.mjs`・`test/build.test.js`。トップ専用の CSS は `home.css` に分けて、他ページの `style.css` を壊さない。
+- 注意（素材）：日本のフリマ・蚤の市の写真（旅行者が陶器を手に取る構図）は、フリー素材では見つかりにくい（2026-10-18 に Unsplash・Pexels・Pixabay を検索）。見つからない場合は、ユーザーが用意する写真か、自作のイラストに切り替える。CC BY の写真は出典表示が要る。主催者が撮影に条件を付けている市（大江戸骨董市など）の写真は、使わない。
+
 ## 未対応・次にやること
 - 東京都の定期市の洗い出し → 利用規約・robots.txt の確認 → 公式ページから書き起こし（evidence 付き）→ 検証 → 掲載。
 - 掲載の修正・削除の依頼の窓口（`/about/#remove`。いまは「準備中（要確認）」）。
