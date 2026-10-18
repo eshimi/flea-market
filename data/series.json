@@ -2433,5 +2433,404 @@
     ]
    }
   ]
+ },
+ {
+  "id": "fmpn-tokorozawa-shimin-fes",
+  "name": "所沢市民フェス（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "所沢市民フェス",
+   "pref": "11",
+   "city": "所沢市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-10-25"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18"
+   }
+  ]
+ },
+ {
+  "id": "fmpn-kawagoe-suijo-park",
+  "name": "川越水上公園フリーマーケット（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "川越水上公園",
+   "pref": "11",
+   "city": "川越市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-03",
+    "2026-11-07"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18"
+   }
+  ]
+ },
+ {
+  "id": "fmpn-koshigaya-laketown-plaza",
+  "name": "越谷レイクタウン駅前広場フリーマーケット（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "越谷レイクタウン駅前広場",
+   "pref": "11",
+   "city": "越谷市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18"
+   }
+  ]
+ },
+ {
+  "id": "fmpn-hanyu-aeon-noniwa",
+  "name": "イオンモール羽生 nONIWA芝生の広場フリーマーケット（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "イオンモール羽生 nONIWA芝生の広場",
+   "pref": "11",
+   "city": "羽生市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08",
+    "2026-12-13"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18"
+   }
+  ]
+ },
+ {
+  "id": "fmpn-koshigaya-shirakobato-park",
+  "name": "越谷しらこばと水上公園フリーマーケット（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "越谷しらこばと水上公園",
+   "pref": "11",
+   "city": "越谷市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-14"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18"
+   }
+  ]
+ },
+ {
+  "id": "fmpn-kawaguchi-jissoji-omatsuri",
+  "name": "川口実相寺おまつりフリマ（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "川口実相寺おまつりフリマ",
+   "pref": "11",
+   "city": "川口市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-15"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18"
+   }
+  ]
+ },
+ {
+  "id": "fmpn-soka-acos-plaza",
+  "name": "草加駅前アコス広場フリーマーケット（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "草加駅前アコス広場",
+   "pref": "11",
+   "city": "草加市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-15",
+    "2026-12-13"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18"
+   }
+  ]
+ },
+ {
+  "id": "fmpn-tokorozawa-aviation-park",
+  "name": "所沢航空記念公園フリーマーケット（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "所沢航空記念公園",
+   "pref": "11",
+   "city": "所沢市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21",
+    "2026-12-12"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18"
+   }
+  ]
+ },
+ {
+  "id": "fmpn-toda-sakura-pal",
+  "name": "戸田市さくらパルフリーマーケット（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "戸田市さくらパル",
+   "pref": "11",
+   "city": "戸田市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-22"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18"
+   }
+  ]
+ },
+ {
+  "id": "fmpn-nagareyama-otakanomori",
+  "name": "流山おおたかの森駅前広場フリーマーケット（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "流山おおたかの森駅前広場",
+   "pref": "12",
+   "city": "流山市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-23",
+    "2026-12-06"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18"
+   }
+  ]
+ },
+ {
+  "id": "fmpn-takashimadaira-danchi-park",
+  "name": "高島平団地 噴水公園フリーマーケット（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "高島平団地 噴水公園",
+   "pref": "13",
+   "city": "板橋区",
+   "cityCode": "13119"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-29"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18"
+   }
+  ]
+ },
+ {
+  "id": "fmpn-kameari-lilio-park",
+  "name": "亀有駅前リリオパークフリーマーケット（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "亀有駅前リリオパーク",
+   "pref": "13",
+   "city": "葛飾区",
+   "cityCode": "13122"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-05"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18"
+   }
+  ]
+ },
+ {
+  "id": "fmpn-akabane-park",
+  "name": "赤羽公園フリーマーケット（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "赤羽公園",
+   "pref": "13",
+   "city": "北区",
+   "cityCode": "13117"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-20"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18"
+   }
+  ]
  }
 ]

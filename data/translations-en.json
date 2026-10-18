@@ -376,6 +376,71 @@
    "rule": "Official event schedule (once a month, Saturday or Sunday). In March 2027 the official page says “28th and 29th”; the 29th is a Monday, so only the 28th is listed",
    "notes": "6 table booths (indoors). The application period is as shown in the official table",
    "address": "2-1-1 Karakida, Tama-shi, Tokyo"
+  },
+  "fmpn-tokorozawa-shimin-fes": {
+   "name": "Tokorozawa Citizens’ Festival (Flea Market Promotion Network)",
+   "venue": "Tokorozawa Citizens’ Festival",
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+  },
+  "fmpn-kawagoe-suijo-park": {
+   "name": "Kawagoe Suijo Park Flea Market (Flea Market Promotion Network)",
+   "venue": "Kawagoe Suijo Park",
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+  },
+  "fmpn-koshigaya-laketown-plaza": {
+   "name": "Koshigaya Lake Town Station Plaza Flea Market (Flea Market Promotion Network)",
+   "venue": "Koshigaya Lake Town Station plaza",
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+  },
+  "fmpn-hanyu-aeon-noniwa": {
+   "name": "AEON Mall Hanyu, nONIWA Lawn Plaza Flea Market (Flea Market Promotion Network)",
+   "venue": "AEON Mall Hanyu, nONIWA lawn plaza",
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+  },
+  "fmpn-koshigaya-shirakobato-park": {
+   "name": "Koshigaya Shirakobato Water Park Flea Market (Flea Market Promotion Network)",
+   "venue": "Koshigaya Shirakobato Water Park",
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+  },
+  "fmpn-kawaguchi-jissoji-omatsuri": {
+   "name": "Kawaguchi Jissoji Festival Flea Market (Flea Market Promotion Network)",
+   "venue": "Kawaguchi Jissoji Festival",
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+  },
+  "fmpn-soka-acos-plaza": {
+   "name": "Soka Station Acos Plaza Flea Market (Flea Market Promotion Network)",
+   "venue": "Soka Station Acos Plaza",
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+  },
+  "fmpn-tokorozawa-aviation-park": {
+   "name": "Tokorozawa Aviation Memorial Park Flea Market (Flea Market Promotion Network)",
+   "venue": "Tokorozawa Aviation Memorial Park",
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+  },
+  "fmpn-toda-sakura-pal": {
+   "name": "Toda City Sakura Pal Flea Market (Flea Market Promotion Network)",
+   "venue": "Toda City Sakura Pal",
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+  },
+  "fmpn-nagareyama-otakanomori": {
+   "name": "Nagareyama-Otakanomori Station Plaza Flea Market (Flea Market Promotion Network)",
+   "venue": "Nagareyama-Otakanomori Station plaza",
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+  },
+  "fmpn-takashimadaira-danchi-park": {
+   "name": "Takashimadaira Danchi Fountain Park Flea Market (Flea Market Promotion Network)",
+   "venue": "Takashimadaira Danchi, Fountain Park",
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+  },
+  "fmpn-kameari-lilio-park": {
+   "name": "Kameari Station Lilio Park Flea Market (Flea Market Promotion Network)",
+   "venue": "Kameari Station Lilio Park",
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+  },
+  "fmpn-akabane-park": {
+   "name": "Akabane Park Flea Market (Flea Market Promotion Network)",
+   "venue": "Akabane Park",
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
   }
  },
  "organizers": {
@@ -413,7 +478,8 @@
   "楽市楽座骨董市": "Rakuichi Rakuza Antique Market",
   "手しごと市事務局（木土藍楽）": "Teshigoto-ichi Secretariat (Kidoairaku)",
   "富士見橋エコー広場館": "Fujimibashi Echo Hiroba-kan",
-  "多摩ニュータウン環境組合 エコにこセンター": "Tama New Town Environmental Association, Eco-Nico Center"
+  "多摩ニュータウン環境組合 エコにこセンター": "Tama New Town Environmental Association, Eco-Nico Center",
+  "フリーマーケット推進ネットワーク": "Flea Market Promotion Network"
  },
  "labels": {
   "問い合わせ先": "Contact",
@@ -463,7 +529,16 @@
   "京都市南区": "Minami Ward, Kyoto",
   "京都市上京区": "Kamigyo Ward, Kyoto",
   "大阪市天王寺区": "Tennoji Ward, Osaka",
-  "札幌市中央区": "Chuo Ward, Sapporo"
+  "札幌市中央区": "Chuo Ward, Sapporo",
+  "所沢市": "Tokorozawa City",
+  "川越市": "Kawagoe City",
+  "越谷市": "Koshigaya City",
+  "羽生市": "Hanyu City",
+  "川口市": "Kawaguchi City",
+  "草加市": "Soka City",
+  "戸田市": "Toda City",
+  "流山市": "Nagareyama City",
+  "板橋区": "Itabashi Ward"
  },
  "notes": {
   "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",

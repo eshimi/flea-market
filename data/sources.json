@@ -571,5 +571,28 @@
    "checkedAt": "2026-10-18",
    "note": "同上（tama-seisokojo.or.jp）"
   }
+ },
+ {
+  "url": "https://recycle-man.or.jp/",
+  "series": [
+   "fmpn-tokorozawa-shimin-fes",
+   "fmpn-kawagoe-suijo-park",
+   "fmpn-koshigaya-laketown-plaza",
+   "fmpn-hanyu-aeon-noniwa",
+   "fmpn-koshigaya-shirakobato-park",
+   "fmpn-kawaguchi-jissoji-omatsuri",
+   "fmpn-soka-acos-plaza",
+   "fmpn-tokorozawa-aviation-park",
+   "fmpn-toda-sakura-pal",
+   "fmpn-nagareyama-otakanomori",
+   "fmpn-takashimadaira-danchi-park",
+   "fmpn-kameari-lilio-park",
+   "fmpn-akabane-park"
+  ],
+  "terms": {
+   "ok": null,
+   "checkedAt": "2026-10-18",
+   "note": "フリーマーケット推進ネットワークの公開ページを、ユーザーが読んで日付と会場を伝えた（2026-10-18）。この環境から自動取得はできない（403。回避しない）ため、取得・本文の突き合わせはしない。利用規約は要確認。掲載は事実の項目（日付・会場）だけ。最終確認日が14日を超えると「要確認」の表示になるので、再確認が要る"
+  }
  }
 ]
