@@ -178,5 +178,101 @@
   "evidenceOk": {
    "mizuho-aozora-ichi": true
   }
+ },
+ "https://www.city.suginami.tokyo.jp/s103/event/28212.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"4239-65cb49841f892\"",
+  "lastModified": "Wed, 30 Sep 2026 15:02:58 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "suginami-furima-in-takaido-2026-11": true
+  }
+ },
+ "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/recycleworld.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"431f-65cad6e8a67d6\"",
+  "lastModified": "Wed, 30 Sep 2026 06:30:13 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "edogawa-recycle-world-in-tobu-2026": true
+  }
+ },
+ "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Sun, 18 Oct 2026 01:01:10 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "sumida-kinshi-park-flea": true,
+   "sumida-yokojikkawa-kinshicho-flea": true
+  }
+ },
+ "https://www.city.bunkyo.lg.jp/b038/p007538.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"4937-65dea79d5bee7\"",
+  "lastModified": "Fri, 16 Oct 2026 00:45:08 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "bunkyo-stage-eco-flea-2026-11": true
+  }
+ },
+ "https://www.city.toshima.lg.jp/150/2607271704.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"3c2f-65a609af607ef\"",
+  "lastModified": "Tue, 01 Sep 2026 00:00:23 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "toshima-nakaikebukuro-park-flea-2026-12": true
+  }
+ },
+ "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/event/tamakoufea.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Fri, 16 Oct 2026 05:35:00 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "ota-tamagawa-eco-fair-2026": true
+  }
+ },
+ "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/funaborimatsuri.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"4c26-65cae7a2c4de0\"",
+  "lastModified": "Wed, 30 Sep 2026 07:45:04 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "edogawa-funabori-matsuri-2026": true
+  }
+ },
+ "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "shibuya-recycle-bazaar": true
+  }
+ },
+ "https://www.city.katsushika.lg.jp/kurashi/1004028/1030175/1003400/1010245.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"8a8c-65e1158af6a0e\"",
+  "lastModified": "Sat, 17 Oct 2026 23:07:35 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "katsushika-recycle-corner-flea": true
+  }
  }
 }

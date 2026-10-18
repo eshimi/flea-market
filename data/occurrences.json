@@ -162,5 +162,93 @@
   "reason": "10時〜13時／主催団体：日本リサイクルネットワーク北海道",
   "checkedAt": "2026-10-18",
   "source": "https://www.city.sapporo.jp/seiso/hurima.html"
+ },
+ {
+  "series": "sumida-yokojikkawa-kinshicho-flea",
+  "date": "2026-10-25",
+  "status": "confirmed",
+  "reason": "雨天予備日：11月8日（日）",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+ },
+ {
+  "series": "sumida-yokojikkawa-kinshicho-flea",
+  "date": "2026-11-15",
+  "status": "confirmed",
+  "reason": "雨天予備日：11月29日（日）",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+ },
+ {
+  "series": "sumida-yokojikkawa-kinshicho-flea",
+  "date": "2026-12-13",
+  "status": "confirmed",
+  "reason": "雨天予備日：12月20日（日）",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+ },
+ {
+  "series": "sumida-yokojikkawa-kinshicho-flea",
+  "date": "2027-01-24",
+  "status": "confirmed",
+  "reason": "雨天予備日：1月31日（日）",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+ },
+ {
+  "series": "sumida-yokojikkawa-kinshicho-flea",
+  "date": "2027-02-14",
+  "status": "confirmed",
+  "reason": "雨天予備日：2月28日（日）",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+ },
+ {
+  "series": "sumida-yokojikkawa-kinshicho-flea",
+  "date": "2027-03-14",
+  "status": "confirmed",
+  "reason": "雨天予備日：3月28日（日）",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+ },
+ {
+  "series": "shibuya-recycle-bazaar",
+  "date": "2026-10-25",
+  "status": "confirmed",
+  "reason": "会場：初台区民会館・初台青年館／10:00〜14:00／出店25店",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+ },
+ {
+  "series": "shibuya-recycle-bazaar",
+  "date": "2026-11-15",
+  "status": "confirmed",
+  "reason": "会場：上原社会教育館／11:00〜14:00／出店20店",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+ },
+ {
+  "series": "shibuya-recycle-bazaar",
+  "date": "2026-11-22",
+  "status": "confirmed",
+  "reason": "会場：リフレッシュ氷川／10:00〜13:30／出店24店",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+ },
+ {
+  "series": "shibuya-recycle-bazaar",
+  "date": "2027-02-28",
+  "status": "confirmed",
+  "reason": "会場：幡ヶ谷区民会館／10:00〜14:00／出店28店",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+ },
+ {
+  "series": "shibuya-recycle-bazaar",
+  "date": "2027-03-14",
+  "status": "confirmed",
+  "reason": "会場：初台区民会館・初台青年館／10:00〜14:00／出店25店",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
  }
 ]

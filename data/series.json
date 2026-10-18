@@ -706,5 +706,539 @@
     ]
    }
   ]
+ },
+ {
+  "id": "suginami-furima-in-takaido-2026-11",
+  "name": "フリーマーケット in 高井戸（環境活動推進センター）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "杉並区 環境部環境課 環境活動推進センター",
+   "url": "https://www.city.suginami.tokyo.jp/s103/event/28212.html"
+  },
+  "venue": {
+   "name": "環境活動推進センター 3階 講座室",
+   "pref": "13",
+   "city": "杉並区",
+   "cityCode": "13115",
+   "address": "杉並区高井戸東3丁目7番4号"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08"
+   ],
+   "text": "2026年11月8日（日）"
+  },
+  "time": {
+   "text": "10:00〜11:30",
+   "start": "10:00",
+   "end": "11:30"
+  },
+  "visitor": {
+   "admission": "無料（当日直接会場へ。対象はどなたでも）",
+   "rain": "屋内（センター3階の講座室）。車での来場はできません"
+  },
+  "exhibitor": {
+   "fee": "無料",
+   "apply": "お申込みフォーム（区のページのリンク先）。抽選",
+   "applyUrl": "https://www.city.suginami.tokyo.jp/s103/event/28212.html",
+   "notes": "対象は区内在住・在勤の方（業者出店不可）。8区画。申し込み締め切りは2026年10月20日。出品物は衣類・アクセサリー・雑貨。車での搬出入はできません"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.suginami.tokyo.jp/s103/event/28212.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月8日（日曜日）",
+     "午前10時 から 午前11時30分 まで",
+     "環境活動推進センター3階 講座室",
+     "杉並区高井戸東3丁目7番4号",
+     "区内在住・在勤の方（業者出店不可）",
+     "8区画（抽選）",
+     "2026年10月20日（火曜日）",
+     "出品物は衣類・アクセサリー・雑貨です",
+     "車での搬出入・来場はできません"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "edogawa-recycle-world-in-tobu-2026",
+  "name": "第36回 リサイクルワールド・IN・東部",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "江戸川区 生活振興部東部事務所",
+   "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/recycleworld.html"
+  },
+  "venue": {
+   "name": "東部区民館 駐車場・周辺道路",
+   "pref": "13",
+   "city": "江戸川区",
+   "cityCode": "13123"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-29"
+   ],
+   "text": "令和8年11月29日（日）"
+  },
+  "time": {
+   "text": "10:00〜14:00",
+   "start": "10:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "rain": "気象条件（雨天など）による中止の判断は、当日午前8時の予定。車での来場はご遠慮ください"
+  },
+  "exhibitor": {
+   "fee": "1,000円（当日に現金で支払い）",
+   "apply": "申込書を東部事務所地域サービス係へ提出、または申込みフォーム。申込者多数の場合は抽選",
+   "applyUrl": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/recycleworld.html",
+   "notes": "対象は江戸川区内在住の方"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/recycleworld.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "令和8年11月29日（日曜日）午前10時から午後2時",
+     "気象条件（雨天など）による中止の判断は、当日午前8時を予定",
+     "東部区民館 駐車場・周辺道路",
+     "出店料：1,000円",
+     "江戸川区内在住の方（申込者多数の場合は抽選"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sumida-kinshi-park-flea",
+  "name": "錦糸公園フリーマーケット",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動市民の会（墨田区の開催日程ページより）",
+   "label": "主催団体",
+   "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+  },
+  "venue": {
+   "name": "錦糸公園",
+   "pref": "13",
+   "city": "墨田区",
+   "cityCode": "13107",
+   "address": "墨田区錦糸四丁目15番"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-25",
+    "2026-11-22",
+    "2026-12-20",
+    "2027-01-24",
+    "2027-02-28",
+    "2027-03-14"
+   ],
+   "text": "墨田区の発表した令和8年度の開催日程"
+  },
+  "time": {
+   "text": "10:00〜15:00",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天等により中止になる場合あり（主催者に問い合わせ）。会場付近での路上駐車はご遠慮ください"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "令和8年9月27日（日曜日）令和8年10月25日（日曜日）令和8年11月22日（日曜日）令和8年12月20日（日曜日）令和9年1月24日（日曜日）令和9年2月28日（日曜日）令和9年3月14日（日曜日）開催時間午前10時から午後3時まで会場住所墨田区錦糸四丁目15番主催団体リサイクル運動市民の会",
+     "雨天等により、中止になる場合があります"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sumida-yokojikkawa-kinshicho-flea",
+  "name": "大横川親水公園 錦糸町イベント広場 フリーマーケット",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "環境を考える市民の会（墨田区の開催日程ページより）",
+   "label": "主催団体",
+   "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+  },
+  "venue": {
+   "name": "大横川親水公園 錦糸町イベント広場",
+   "pref": "13",
+   "city": "墨田区",
+   "cityCode": "13107",
+   "address": "墨田区錦糸一丁目17番"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-25",
+    "2026-11-15",
+    "2026-12-13",
+    "2027-01-24",
+    "2027-02-14",
+    "2027-03-14"
+   ],
+   "text": "墨田区の発表した令和8年度の開催日程（雨天予備日あり）"
+  },
+  "time": {
+   "text": "10:00〜15:00",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天予備日あり（各開催日の欄に記載）。会場付近での路上駐車はご遠慮ください"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "令和8年10月25日（日曜日）※雨天予備日令和8年11月8日（日曜日）令和8年11月15日（日曜日）※雨天予備日令和8年11月29日（日曜日）令和8年12月13日（日曜日）※雨天予備日令和8年12月20日（日曜日）令和9年1月24日（日曜日）※雨天予備日令和9年1月31日（日曜日）令和9年2月14日（日曜日）※雨天予備日令和9年2月28日（日曜日）令和9年3月14日（日曜日）※雨天予備日令和9年3月28日（日曜日）開催時間午前10時から午後3時まで会場住所墨田区錦糸一丁目17番主催団体環境を考える市民の会"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bunkyo-stage-eco-flea-2026-11",
+  "name": "ステージ・エコ フリーマーケット（文京区）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "文京区 資源環境部リサイクル清掃課",
+   "url": "https://www.city.bunkyo.lg.jp/b038/p007538.html"
+  },
+  "venue": {
+   "name": "区民ひろば（文京シビックセンター地下2階）",
+   "pref": "13",
+   "city": "文京区",
+   "cityCode": "13105",
+   "address": "文京区春日1丁目16番21号"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-07"
+   ],
+   "text": "令和8年11月7日（土）"
+  },
+  "time": {
+   "text": "10:00〜15:00",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "都合により中止・変更となる場合あり"
+  },
+  "exhibitor": {
+   "fee": "1ブース2,000円（面積1.5m×1.8m）",
+   "apply": "申込みフォーム。抽選（定員20組）。申込み締切は2026年10月6日で、受付終了と区のページに記載",
+   "applyUrl": "https://www.city.bunkyo.lg.jp/b038/p007538.html",
+   "notes": "出店できるのは18歳以上の区内在住者。家庭で不用となった生活用品に限る（営利目的の出品は不可）"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.bunkyo.lg.jp/b038/p007538.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "令和8年11月7日（土曜日）午前10時～午後3時",
+     "区民ひろば（文京シビックセンター地下2階）",
+     "出店料：1ブース2,000円（面積1.5m×1.8m）",
+     "出店対象者：18歳以上の区内在住者",
+     "定員：20組（抽選）",
+     "申込み締切：10月6日（火曜日 ）受付終了",
+     "都合により中止・変更となる場合があります",
+     "〒112-8555東京都文京区春日1丁目16番21号"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "toshima-nakaikebukuro-park-flea-2026-12",
+  "name": "中池袋公園フリーマーケット",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "NPO法人MINOKURA地域共創・創生機構",
+   "url": "https://www.city.toshima.lg.jp/150/2607271704.html"
+  },
+  "venue": {
+   "name": "中池袋公園",
+   "pref": "13",
+   "city": "豊島区",
+   "cityCode": "13116",
+   "address": "豊島区東池袋1-16-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-20"
+   ],
+   "text": "令和8年12月20日（日）"
+  },
+  "time": {
+   "text": "10:00〜18:00",
+   "start": "10:00",
+   "end": "18:00"
+  },
+  "visitor": {
+   "admission": "入場無料（ワークショップコーナーやハンドメイドマーケットもあり）"
+  },
+  "exhibitor": {
+   "fee": "3,000円",
+   "apply": "主催団体のホームページから申込み。先着で、定員に達し次第終了",
+   "notes": "区内外どなたでも参加できる"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.toshima.lg.jp/150/2607271704.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "令和8年12月20日",
+     "午前10時から午後6時",
+     "中池袋公園（豊島区東池袋1-16-1）",
+     "入場無料。出店のお申込みをする場合は3,000円",
+     "主催…NPO法人MINOKURA地域共創・創生機構",
+     "お申込みは先着になります",
+     "区内外どなたでも参加できます"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ota-tamagawa-eco-fair-2026",
+  "name": "多摩川清掃工場環境フェア2026（フリーマーケットあり）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大田区",
+   "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/event/tamakoufea.html"
+  },
+  "venue": {
+   "name": "多摩川清掃工場",
+   "pref": "13",
+   "city": "大田区",
+   "cityCode": "13111"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-18"
+   ],
+   "text": "令和8年10月18日（日）"
+  },
+  "time": {
+   "text": "10:00〜14:30",
+   "start": "10:00",
+   "end": "14:30"
+  },
+  "visitor": {
+   "rain": "雨天でも開催（荒天中止）。自動車での来場はご遠慮ください"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/event/tamakoufea.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "日時：令和8年10月18日（日曜日） 午前10時～午後2時30分",
+     "会場：多摩川清掃工場",
+     "・フリーマーケット",
+     "雨天でも開催します。(荒天中止)",
+     "自動車での来場はご遠慮ください"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "edogawa-funabori-matsuri-2026",
+  "name": "第51回船堀まつり（フリーマーケットあり）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "船堀まつり実行委員会・江戸川区",
+   "url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/funaborimatsuri.html"
+  },
+  "venue": {
+   "name": "船堀コミュニティ会館周辺（都営船堀一丁目アパート前広場）",
+   "pref": "13",
+   "city": "江戸川区",
+   "cityCode": "13123"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-01"
+   ],
+   "text": "令和8年11月1日（日）"
+  },
+  "time": {
+   "text": "まつり全体は 9:00〜15:00",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天一部中止"
+  },
+  "exhibitor": {
+   "fee": "1,000円（当日現金で集金）",
+   "apply": "申し込みフォーム（募集期間は2026年9月1日〜9月16日）",
+   "applyUrl": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/funaborimatsuri.html",
+   "notes": "募集は20店舗程度"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/funaborimatsuri.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "令和8年11月1日（日曜日） 雨天一部中止",
+     "午前9時から午後3時まで",
+     "会場：船堀コミュニティ会館周辺（都営船堀一丁目アパート前広場）",
+     "募集数：20店舗程度",
+     "出店料：1,000円（当日現金にて集金いたします。）",
+     "主催船堀まつり実行委員会・江戸川区"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "shibuya-recycle-bazaar",
+  "name": "渋谷区 リサイクルバザール",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクルバザール実行委員会（区民の自主運営団体）",
+   "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+  },
+  "venue": {
+   "name": "区内の会場（開催日ごとに異なる。各日の欄に記載）",
+   "pref": "13",
+   "city": "渋谷区",
+   "cityCode": "13113"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-25",
+    "2026-11-15",
+    "2026-11-22",
+    "2027-02-28",
+    "2027-03-14"
+   ],
+   "text": "渋谷区の発表した令和8年度の会場および日程予定"
+  },
+  "visitor": {
+   "rain": "都合により日程など変更の場合あり（直近の情報を確認）"
+  },
+  "exhibitor": {
+   "apply": "すべて先着順。申込先は各会場責任者（実行委員）。受付日・受付方法は開催日ごとに異なる（区のページ参照）",
+   "applyUrl": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "令和8年10月25日（日曜日）10時～14時初台区民会館・初台青年館25店",
+     "令和8年11月15日（日曜日）11時～14時上原社会教育館20店",
+     "令和8年11月22日（日曜日）10時～13時30分リフレッシュ氷川24店",
+     "令和9年2月28日（日曜日）10時～14時幡ヶ谷区民会館28店",
+     "令和9年3月14日（日曜日）10時～14時初台区民会館・初台青年館25店",
+     "区民の自主運営団体（リサイクルバザール実行委員会）がリサイクルバザールを開催し",
+     "都合により日程など変更の場合があります",
+     "申し込みはすべて先着順です",
+     "申込先は各会場責任者（実行委員）になります"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "katsushika-recycle-corner-flea",
+  "name": "葛飾区 消費生活センター リサイクルコーナー（フリーマーケット同時開催）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "葛飾区 産業経済課 消費生活センター",
+   "url": "https://www.city.katsushika.lg.jp/kurashi/1004028/1030175/1003400/1010245.html"
+  },
+  "venue": {
+   "name": "ウィメンズパル 1階 展示室",
+   "pref": "13",
+   "city": "葛飾区",
+   "cityCode": "13122",
+   "address": "葛飾区立石5-27-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21",
+    "2026-12-12",
+    "2027-01-09",
+    "2027-02-13",
+    "2027-03-13"
+   ],
+   "text": "毎月1回・原則第二土曜日（令和8年度開設予定表の販売日）"
+  },
+  "time": {
+   "text": "10:00〜14:00",
+   "start": "10:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "admission": "購入はどなたでもできる（手数料は無料）",
+   "rain": "行事などで変更になる場合あり"
+  },
+  "exhibitor": {
+   "apply": "フリーマーケットの出店登録の募集は、別途「広報かつしか」に掲載（出店は6店舗程度）",
+   "notes": "リサイクルコーナーに出品できるのは区内在住で営利を目的としない方に限る"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.katsushika.lg.jp/kurashi/1004028/1030175/1003400/1010245.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "毎月1回・原則第二土曜日の午前10時から午後2時までです",
+     "フリーマーケットも同時に開催しています",
+     "フリーマーケット出店は6店舗程度です",
+     "葛飾区立石5-27-1 ウィメンズパル",
+     "1階・展示室",
+     "11月21日（土曜日）",
+     "12月12日（土曜日）",
+     "1月9日（土曜日）",
+     "2月13日（土曜日）",
+     "3月13日（土曜日）",
+     "出品できる方は葛飾区内にお住まいの方で、営利を目的としない方に限ります",
+     "購入はどなたでもしていただけます"
+    ]
+   }
+  ]
  }
 ]

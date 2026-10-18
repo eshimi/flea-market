@@ -1,7 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { crawlDelay, isAllowed } from '../scripts/lib/robots.mjs';
-import { checkEvidence, decodeBody, htmlToText, pdfToText } from '../scripts/lib/text.mjs';
+import { checkEvidence, decodeBody, htmlToText, normalize, pdfToText } from '../scripts/lib/text.mjs';
+const normalizeText = (h) => normalize(htmlToText(h));
 import { execFileSync } from 'node:child_process';
 import { applyResult, planChecks } from '../scripts/check-sources.mjs';
 import { validateSources } from '../scripts/lib/events.mjs';
@@ -86,4 +87,8 @@ trailer<</Root 1 0 R/Size 6>>
 
 test('PDF でないものを渡すと、読めない旨の例外', { skip: !hasPdftotext && 'pdftotext がない環境' }, () => {
   assert.throws(() => pdfToText(new TextEncoder().encode('not a pdf')), /PDF を読めません/);
+});
+
+test('本文化：記号の表記（&times; など）を戻す', () => {
+  assert.equal(normalizeText('1.5m&times;1.8m&nbsp;&emsp;A'), '1.5m×1.8mA');
 });
