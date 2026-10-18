@@ -594,5 +594,93 @@
    "checkedAt": "2026-10-18",
    "note": "フリーマーケット推進ネットワークの公開ページを、ユーザーが読んで日付と会場を伝えた（2026-10-18）。この環境から自動取得はできない（403。回避しない）ため、取得・本文の突き合わせはしない。利用規約は要確認。掲載は事実の項目（日付・会場）だけ。最終確認日が14日を超えると「要確認」の表示になるので、再確認が要る"
   }
+ },
+ {
+  "url": "https://ikeshoren.jp/ikegamibiyori/",
+  "series": [
+   "ikegami-biyori-marche"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "池上地区商店会連合会の公式サイト。利用規約のページはなく、robots.txt は許可。事実の項目（日時・場所・出店料・申込み方法）だけ掲載し、文章・画像は転載しない。2026-10-18 確認"
+  }
+ },
+ {
+  "url": "https://ikeshoren.jp/8193/",
+  "series": [
+   "ikegami-biyori-marche"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "同上（池上地区商店会連合会の公式サイト）。2026-10-18 確認"
+  }
+ },
+ {
+  "url": "https://www.chuo-kanko.or.jp/blogs/event/202609141846",
+  "series": [
+   "nihonbashi-bettara-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "一般社団法人中央区観光協会のサイトポリシーに「コンテンツの著作権は協会が保有」とあるが、取得を禁じる記載はなく robots.txt は許可。事実の項目（日時・場所・主催）だけ掲載し、文章・画像は転載しない（ユーザー決定の方針）。2026-10-18 確認"
+  }
+ },
+ {
+  "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/annai/omatsuri/chikusai/20260616103208700.html",
+  "series": [
+   "nerima-sakuradai-chikusai-flea-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "練馬区サイトポリシーに「無断での転載・複製を禁じます」とあるため、事実の項目（日時・場所・内容）だけ掲載し、文章は転載しない。robots.txt は許可（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.suginami.tokyo.jp/s033/event/29570.html",
+  "series": [
+   "koenji-fes-2026-aozora-tezukuri-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "杉並区サイトの「このサイトについて」に転載・著作の記載を確認できず。robots.txt は 404（制限なし）。事実の項目だけ掲載（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.toshima.lg.jp/150/2607271700.html",
+  "series": [
+   "toshima-nakaikebukuro-park-flea-2026-11"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "豊島区公式サイトの「このサイトについて」に、文書や画像等は私的使用・引用などを除き無断で複製・転用できないとの記載。robots.txt は 404（制限なし）。事実の項目（日時・場所・料金・申込み方法）だけ掲載し、文章・画像は転載しない。主催団体の電話番号は載せない。2026-10-18 確認"
+  }
+ },
+ {
+  "url": "https://www.city.kita.lg.jp/living/bins/1002093/1026571.html",
+  "series": [
+   "kita-akabane-park-flea-smile-2026-10"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "北区公式サイトの「著作権・免責」に、私的使用・引用などを除き無断で転載・複製・改変等はできないとの記載。robots.txt は取得許可。事実の項目だけ掲載し、文章・画像は転載しない。主催団体の住所・電話は載せない。2026-10-18 確認"
+  }
+ },
+ {
+  "url": "https://www.city.adachi.tokyo.jp/kyoso/ku/kuse/guruguru-kiosk080424.html",
+  "series": [
+   "adachi-guruguru-kiosk-ayase-2026-10"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "足立区公式サイトの「このサイトの考え方」に、私的使用・引用などを除き無断で転載・改変はできないとの記載。robots.txt は取得許可。事実の項目だけ掲載し、文章・画像は転載しない。問い合わせ先の電話は載せない。2026-10-18 確認"
+  }
  }
 ]

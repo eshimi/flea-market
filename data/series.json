@@ -2832,5 +2832,375 @@
     "checkedAt": "2026-10-18"
    }
   ]
+ },
+ {
+  "id": "ikegami-biyori-marche",
+  "name": "池上日和（池上本門寺 総門内広場）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "池上地区商店会連合会 池上日和実行委員会",
+   "url": "https://ikeshoren.jp/ikegamibiyori/"
+  },
+  "venue": {
+   "name": "池上本門寺 総門内広場",
+   "pref": "13",
+   "city": "大田区",
+   "cityCode": "13111",
+   "address": "東京都大田区池上1-1-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-20"
+   ],
+   "text": "3、6、9、12月の第三日曜日（公式の開催概要）。次回は2026年12月20日（第14回）"
+  },
+  "time": {
+   "text": "10:00〜15:00",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "exhibitor": {
+   "apply": "出店者募集のページから申込み（2026年12月20日開催分は10月23日締切）",
+   "applyUrl": "https://ikeshoren.jp/8193/",
+   "fee": "5,000円",
+   "notes": "家庭の不用品販売の出店はお断り。キッチンカーの募集なし"
+  },
+  "sources": [
+   {
+    "url": "https://ikeshoren.jp/ikegamibiyori/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "3、6、9、12月の第三日曜日",
+     "10：00〜15：00",
+     "池上本門寺 総門内広場（屋外）",
+     "東京都大田区 池上1-1 -1",
+     "雨天中止",
+     "出店料5,000円",
+     "池上地区商店会連合会 池上日和実行委員会"
+    ]
+   },
+   {
+    "url": "https://ikeshoren.jp/8193/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年12月20日（日）開催「第14回池上日和」",
+     "家庭の不用品販売の出店はお断りしております"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "nihonbashi-bettara-ichi",
+  "name": "日本橋恵比寿講「べったら市」",
+  "kinds": [
+   "engi"
+  ],
+  "organizer": {
+   "name": "日本橋恵比寿講べったら市保存会"
+  },
+  "venue": {
+   "name": "寶田恵比寿神社を中心とした日本橋大伝馬町・日本橋本町界隈",
+   "pref": "13",
+   "city": "中央区",
+   "cityCode": "13102",
+   "address": "中央区日本橋本町3-10-11"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-19",
+    "2026-10-20"
+   ],
+   "text": "2026年10月19日（月）～20日（火）"
+  },
+  "time": {
+   "text": "10:00〜21:00",
+   "start": "10:00",
+   "end": "21:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.chuo-kanko.or.jp/blogs/event/202609141846",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年10月19日（月）～20日（火）",
+     "10:00～21:00",
+     "約500店の露店で賑わいます",
+     "寶田恵比寿神社を中心とした日本橋大伝馬町・日本橋本町界隈",
+     "中央区日本橋本町3-10-11",
+     "日本橋恵比寿講べったら市保存会"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "nerima-sakuradai-chikusai-flea-2026",
+  "name": "桜台地区祭（フリーマーケットを含む・練馬区）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "練馬区の地区祭日程に掲載（主催者名は公式ページになし）",
+   "label": "掲載元",
+   "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/annai/omatsuri/chikusai/20260616103208700.html"
+  },
+  "venue": {
+   "name": "開進第四小学校",
+   "pref": "13",
+   "city": "練馬区",
+   "cityCode": "13120",
+   "address": "東京都練馬区羽沢2-33-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-31"
+   ],
+   "text": "練馬区の令和8年度 地区祭開催日程（フリーマーケットは地区祭の内容の一つ）"
+  },
+  "time": {
+   "text": "10:00〜14:00",
+   "start": "10:00",
+   "end": "14:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/annai/omatsuri/chikusai/20260616103208700.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "桜台地区祭",
+     "10月31日（土）",
+     "10時～14時",
+     "開進第四小学校",
+     "羽沢2-33-1",
+     "フリーマーケット等"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "koenji-fes-2026-aozora-tezukuri-ichi",
+  "name": "高円寺フェス2026 青空個展てづくり市（秋の大文化祭）",
+  "kinds": [
+   "handmade"
+  ],
+  "organizer": {
+   "name": "高円寺フェス実行委員会",
+   "label": "問い合わせ先",
+   "url": "https://www.city.suginami.tokyo.jp/s033/event/29570.html"
+  },
+  "venue": {
+   "name": "JR高円寺南北広場・座・高円寺・高円寺中央公園・参加店舗ほか（てづくり市の会場は公式サイトで要確認）",
+   "pref": "13",
+   "city": "杉並区",
+   "cityCode": "13115"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-10-25"
+   ],
+   "text": "高円寺フェス2026 秋の大文化祭の開催日（てづくり市の開催日・時間は公式サイトで要確認）"
+  },
+  "time": {
+   "text": "11:00〜16:00（大文化祭の開催時間）",
+   "start": "11:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "admission": "費用 無料（大文化祭）"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.suginami.tokyo.jp/s033/event/29570.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "高円寺フェス2026＠青空個展てづくり市",
+     "2026年10月24日（土曜日） から2026年10月25日（日曜日）",
+     "午前11時 から 午後4時 まで",
+     "JR高円寺南北広場",
+     "高円寺中央公園",
+     "費用 無料"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "toshima-nakaikebukuro-park-flea-2026-11",
+  "name": "中池袋公園フリーマーケット（11月）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "NPO法人MINOKURA地域共創・創生機構",
+   "url": "https://www.city.toshima.lg.jp/150/2607271700.html"
+  },
+  "venue": {
+   "name": "中池袋公園",
+   "pref": "13",
+   "city": "豊島区",
+   "cityCode": "13116",
+   "address": "豊島区東池袋1-16-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-12"
+   ],
+   "text": "令和8年11月12日（木）"
+  },
+  "time": {
+   "text": "10:00〜18:00",
+   "start": "10:00",
+   "end": "18:00"
+  },
+  "visitor": {
+   "admission": "入場無料（ワークショップコーナーやハンドメイドマーケットもあり）"
+  },
+  "exhibitor": {
+   "fee": "3,000円",
+   "apply": "主催団体のホームページから申込み。先着で、定員に達し次第終了",
+   "notes": "区内外どなたでも参加できる"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.toshima.lg.jp/150/2607271700.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "令和8年11月12日",
+     "午前10時から午後6時",
+     "中池袋公園（豊島区東池袋1-16-1）",
+     "入場無料。出店のお申込みをする場合は3,000円",
+     "主催…NPO法人MINOKURA地域共創・創生機構",
+     "お申込みは先着になります",
+     "区内外どなたでも参加できます"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kita-akabane-park-flea-smile-2026-10",
+  "name": "赤羽公園フリーマーケット（区後援・10月）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "スマイル"
+  },
+  "venue": {
+   "name": "赤羽公園",
+   "pref": "13",
+   "city": "北区",
+   "cityCode": "13117",
+   "address": "赤羽南1-14-17"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-18"
+   ],
+   "text": "令和8年10月18日（日）"
+  },
+  "time": {
+   "text": "9:00〜15:00",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天の場合は10月25日（日曜日）に延期",
+   "notes": "販売品は家庭で出た不用品に限る。マイバッグ持参"
+  },
+  "exhibitor": {
+   "fee": "2,000円（2m×2.5m）",
+   "apply": "主催団体へ電話で申込み（出店予定数50店・抽選。申込締切は9月30日で終了）"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.kita.lg.jp/living/bins/1002093/1026571.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年10月18日（日曜日）",
+     "雨天の場合は10月25日（日曜日）に延期",
+     "午前9時",
+     "午後3時",
+     "赤羽公園（赤羽南1-14-17）",
+     "出店予定数：50店（抽選）",
+     "出店料：2,000円（2m×2.5m）",
+     "申込締切：9月30日（水曜日）まで",
+     "主催",
+     "スマイル",
+     "販売品はご家庭で出た不用品に限ります"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "adachi-guruguru-kiosk-ayase-2026-10",
+  "name": "ぐるぐるKIOSK（綾瀬駅前ナイトマルシェ・10月）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "足立区 あだち未来創造室 SDGs・協創推進課 コミュニティ創出担当",
+   "url": "https://www.city.adachi.tokyo.jp/kyoso/ku/kuse/guruguru-kiosk080424.html",
+   "label": "掲載元（区の担当課）"
+  },
+  "venue": {
+   "name": "綾瀬駅東口駅前交通広場",
+   "pref": "13",
+   "city": "足立区",
+   "cityCode": "13121"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-23"
+   ],
+   "text": "令和8年10月23日（金）"
+  },
+  "time": {
+   "text": "17:00〜20:00（天候や販売状況等により終了時間が変わる場合あり）",
+   "start": "17:00",
+   "end": "20:00"
+  },
+  "visitor": {
+   "rain": "雨天中止",
+   "notes": "キッチンカー・焼きそば・シフォンケーキなどの飲食、ハンドメイド・天然石・己書のワークショップ。駐輪場・駐車場なし"
+  },
+  "exhibitor": {
+   "notes": "屋台出店はぐるぐる博の出店実績などの参加経験が必要。キッチンカーは条件なし（10月開催分の募集は終了）"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.adachi.tokyo.jp/kyoso/ku/kuse/guruguru-kiosk080424.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "令和8年10月23日（金曜日）午後5時から8時",
+     "※雨天中止",
+     "綾瀬駅東口駅前交通広場",
+     "ナイトマルシェ",
+     "キッチンカー（チャーシュー丼、ホットドック、チョコバナナ など4店舗）",
+     "ハンドメイドワークショップ（ホイップデコ、キーホルダー）",
+     "駐輪場・駐車場はございません",
+     "キッチンカーの出店を希望される場合は、上記のような条件はありません",
+     "ぐるぐるKIOSK 10月開催における キッチンカー出店募集は終了 しました"
+    ]
+   }
+  ]
  }
 ]

@@ -441,6 +441,62 @@
    "name": "Akabane Park Flea Market (Flea Market Promotion Network)",
    "venue": "Akabane Park",
    "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+  },
+  "nerima-sakuradai-chikusai-flea-2026": {
+   "name": "Sakuradai District Festival (includes a flea market, Nerima)",
+   "venue": "Kaishin No. 4 Elementary School",
+   "rule": "Nerima Ward’s fiscal 2026 district festival schedule (the flea market is one of the festival’s attractions)",
+   "address": "2-33-1 Hanezawa, Nerima-ku, Tokyo"
+  },
+  "koenji-fes-2026-aozora-tezukuri-ichi": {
+   "name": "Koenji Fes 2026 Open-Air Solo Exhibition Tezukuri-ichi (Autumn Grand Culture Festival)",
+   "venue": "JR Koenji North-South Plaza, Za-Koenji, Koenji Chuo Park, participating shops and other places (the venue of the tezukuri-ichi is TBC on the official site)",
+   "time": "11:00–16:00 (opening hours of the Grand Culture Festival)",
+   "rule": "Dates of the Koenji Fes 2026 Autumn Grand Culture Festival (the dates and times of the tezukuri-ichi are TBC on the official site)",
+   "admission": "Free (Grand Culture Festival)"
+  },
+  "ikegami-biyori-marche": {
+   "name": "Ikegami Biyori (Ikegami Honmonji Temple, plaza inside the main gate)",
+   "venue": "Ikegami Honmonji Temple, plaza inside the main gate",
+   "rule": "3rd Sunday of March, June, September and December (official overview). Next: Dec 20, 2026 (the 14th)",
+   "rain": "Cancelled in rain",
+   "fee": "5,000 yen",
+   "apply": "Apply from the vendor recruitment page (for the Dec 20, 2026 event, the deadline is Oct 23)",
+   "notes": "Sales of household unwanted items are not accepted. No food trucks are recruited",
+   "address": "1-1-1 Ikegami, Ota-ku, Tokyo"
+  },
+  "nihonbashi-bettara-ichi": {
+   "name": "Nihonbashi Ebisu-ko “Bettara-ichi”",
+   "venue": "Around Nihonbashi Odenmacho and Nihonbashi Honcho, centered on Takarada Ebisu Shrine",
+   "rule": "Oct 19 (Mon) – Oct 20 (Tue), 2026",
+   "address": "3-10-11 Nihonbashi-Honcho, Chuo-ku, Tokyo"
+  },
+  "toshima-nakaikebukuro-park-flea-2026-11": {
+   "name": "Naka-Ikebukuro Park Flea Market (November)",
+   "venue": "Naka-Ikebukuro Park",
+   "rule": "Nov 12 (Thu), 2026",
+   "admission": "Free admission (a workshop corner and a handmade market are also held)",
+   "fee": "3,000 yen",
+   "apply": "Apply from the organizer’s website. First come, first served; closes when capacity is reached",
+   "notes": "Open to everyone, inside or outside the ward",
+   "address": "1-16-1 Higashi-Ikebukuro, Toshima-ku, Tokyo"
+  },
+  "kita-akabane-park-flea-smile-2026-10": {
+   "name": "Akabane Park Flea Market (ward-sponsored, October)",
+   "venue": "Akabane Park",
+   "rule": "Oct 18 (Sun), 2026",
+   "rain": "If it rains, postponed to Oct 25 (Sun)",
+   "fee": "2,000 yen (2 m × 2.5 m)",
+   "apply": "Apply to the organizer by phone (50 stalls planned, by lottery; the application deadline was Sep 30 and has passed)",
+   "address": "1-14-17 Akabaminami, Kita-ku, Tokyo"
+  },
+  "adachi-guruguru-kiosk-ayase-2026-10": {
+   "name": "Guruguru KIOSK (Ayase Station Night Marché, October)",
+   "venue": "Ayase Station East Exit, station-front transport plaza",
+   "time": "17:00–20:00 (the end time may change depending on weather and sales)",
+   "rule": "Oct 23 (Fri), 2026",
+   "rain": "Cancelled in rain",
+   "notes": "To run a stall you need experience such as past participation in Guruguru Haku. Food trucks have no conditions (recruitment for the October event has closed)"
   }
  },
  "organizers": {
@@ -479,13 +535,21 @@
   "手しごと市事務局（木土藍楽）": "Teshigoto-ichi Secretariat (Kidoairaku)",
   "富士見橋エコー広場館": "Fujimibashi Echo Hiroba-kan",
   "多摩ニュータウン環境組合 エコにこセンター": "Tama New Town Environmental Association, Eco-Nico Center",
-  "フリーマーケット推進ネットワーク": "Flea Market Promotion Network"
+  "フリーマーケット推進ネットワーク": "Flea Market Promotion Network",
+  "練馬区の地区祭日程に掲載（主催者名は公式ページになし）": "Listed in Nerima Ward’s district festival schedule (the organizer is not named on the official page)",
+  "高円寺フェス実行委員会": "Koenji Fes Executive Committee",
+  "池上地区商店会連合会 池上日和実行委員会": "Ikegami District Shopping Street Federation, Ikegami Biyori Executive Committee",
+  "日本橋恵比寿講べったら市保存会": "Nihonbashi Ebisu-ko Bettara-ichi Preservation Society",
+  "スマイル": "Smile",
+  "足立区 あだち未来創造室 SDGs・協創推進課 コミュニティ創出担当": "Adachi Ward, Future Creation Office, SDGs and Co-creation Promotion Division, Community Creation Staff"
  },
  "labels": {
   "問い合わせ先": "Contact",
   "主催団体・問い合わせ先": "Organizer / contact",
   "主催団体": "Organizer",
-  "運営サイト": "Operating site"
+  "運営サイト": "Operating site",
+  "掲載元": "Listed by",
+  "掲載元（区の担当課）": "Listed by (ward department)"
  },
  "official": {
   "note": "公式サイトに英語の表記があり、それに合わせたもの（2026-10-18 に確認）。ほかは、このサイトの訳（非公式）",
@@ -538,7 +602,8 @@
   "草加市": "Soka City",
   "戸田市": "Toda City",
   "流山市": "Nagareyama City",
-  "板橋区": "Itabashi Ward"
+  "板橋区": "Itabashi Ward",
+  "中央区": "Chuo Ward"
  },
  "notes": {
   "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",
@@ -583,6 +648,7 @@
   "taito-hanakawado-park-flea|2027-02-07": "Organizer: Flea Market Promotion Network / 10:00–15:00",
   "taito-hanakawado-park-flea|2027-02-27": "Organizer: Recycle Suishin Tomo-no-Kai / 9:00–15:00 / Residents of the ward can reserve by bank transfer from the group’s website for 2,000 yen",
   "taito-hanakawado-park-flea|2027-03-07": "Organizer: Flea Market Promotion Network / 10:00–15:00",
-  "taito-hanakawado-park-flea|2027-03-27": "Organizer: Recycle Suishin Tomo-no-Kai / 9:00–15:00 / Residents of the ward can reserve by bank transfer from the group’s website for 2,000 yen"
+  "taito-hanakawado-park-flea|2027-03-27": "Organizer: Recycle Suishin Tomo-no-Kai / 9:00–15:00 / Residents of the ward can reserve by bank transfer from the group’s website for 2,000 yen",
+  "kita-akabane-park-flea-smile-2026-10|2026-10-18": "If it rains, postponed to Oct 25 (Sun)"
  }
 }
