@@ -1,1 +1,312 @@
-[]
+[
+ {
+  "id": "oedo-antique-market-tokyo-international-forum",
+  "name": "大江戸骨董市（東京国際フォーラム）",
+  "kinds": [
+   "kotto"
+  ],
+  "organizer": {
+   "name": "大江戸骨董市実行委員会",
+   "url": "https://www.antique-market.jp/"
+  },
+  "venue": {
+   "name": "東京国際フォーラム 地上広場",
+   "pref": "13",
+   "city": "千代田区",
+   "cityCode": "13101",
+   "address": "東京都千代田区丸の内3-5-1",
+   "access": "JR有楽町駅前"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "月に2回（日程は公式の開催スケジュールで発表）",
+   "dates": [
+    "2026-10-31",
+    "2026-11-07",
+    "2026-11-23",
+    "2026-12-12",
+    "2026-12-20",
+    "2027-01-09",
+    "2027-01-17",
+    "2027-02-07",
+    "2027-02-21",
+    "2027-03-21",
+    "2027-03-28"
+   ]
+  },
+  "time": {
+   "text": "9:00〜16:00（天候や他の催事の都合で、終了が繰り上がる場合あり）",
+   "start": "09:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "admission": "入場無料",
+   "rain": "雨天中止（前日17時の天気予報で、東京地方の6時〜12時の降水確率が80%以上なら中止。ほかは事務局が判断）"
+  },
+  "exhibitor": {
+   "fee": "1ブース 12,000円（半ブース 8,000円、1.5ブース 14,000円、2ブース 17,000円）。当日徴収",
+   "apply": "事務局規定の申し込み用紙（2回目以降は電話・FAX・e-mail）。審査あり",
+   "applyUrl": "https://www.antique-market.jp/%E5%87%BA%E5%BA%97%E3%81%8A%E7%94%B3%E8%BE%BC%E3%81%BF/%E5%87%BA%E5%BA%97%E8%A6%8F%E7%B4%84/",
+   "notes": "骨董品の販売が目的の方。古物商許可証（行商をする条項入りのもの）の携帯が必要"
+  },
+  "sources": [
+   {
+    "url": "https://www.antique-market.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "10月31日(土)",
+     "11月7日(土)・23日(月曜祝日)",
+     "12月12日(土)・20日(日)",
+     "1月9日(土)・17日(日)",
+     "2月7日(日)・21日(日)",
+     "3月21日(日)・28日(日)",
+     "月に２回開催",
+     "入場無料。雨天中止。開催時間9:00～16:00",
+     "東京都千代田区丸の内3-5-1"
+    ]
+   },
+   {
+    "url": "https://www.antique-market.jp/%E5%87%BA%E5%BA%97%E3%81%8A%E7%94%B3%E8%BE%BC%E3%81%BF/%E5%87%BA%E5%BA%97%E8%A6%8F%E7%B4%84/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "¥ 8,000",
+     "¥ 12,000",
+     "¥ 14,000",
+     "¥ 17,000",
+     "出店料は、当日徴収です",
+     "古物商許可証",
+     "降水確率が80パーセント以上の場合、開催中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "takahata-fudoson-gozareichi",
+  "name": "高幡不動尊 ござれ市（がらくた市）",
+  "kinds": [
+   "nomi"
+  ],
+  "organizer": {
+   "name": "高幡不動尊金剛寺",
+   "url": "https://www.takahatafudoson.or.jp/"
+  },
+  "venue": {
+   "name": "高幡不動尊金剛寺",
+   "pref": "13",
+   "city": "日野市",
+   "cityCode": "13212",
+   "address": "東京都日野市高幡733",
+   "access": "京王線・多摩都市モノレール 高幡不動駅下車 徒歩5分"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 3,
+     "wd": 0
+    }
+   ],
+   "text": "毎月第3日曜日"
+  },
+  "sources": [
+   {
+    "url": "https://www.takahatafudoson.or.jp/?page_id=9",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "第3日曜日",
+     "ござれ市（がらくた市）"
+    ]
+   },
+   {
+    "url": "https://www.takahatafudoson.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "18日（日）",
+     "15日（日）",
+     "ござれ市（がらくた市）",
+     "東京都日野市高幡733"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "takahata-fudoson-recycle-market",
+  "name": "高幡不動尊 リサイクル市（フリーマーケット）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "高幡不動尊金剛寺",
+   "url": "https://www.takahatafudoson.or.jp/"
+  },
+  "venue": {
+   "name": "高幡不動尊金剛寺",
+   "pref": "13",
+   "city": "日野市",
+   "cityCode": "13212",
+   "address": "東京都日野市高幡733",
+   "access": "京王線・多摩都市モノレール 高幡不動駅下車 徒歩5分"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 2,
+     "wd": 0
+    }
+   ],
+   "text": "毎月第2日曜日"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "sources": [
+   {
+    "url": "https://www.takahatafudoson.or.jp/?page_id=9",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "第2日曜日",
+     "リサイクル市 ※雨天中止"
+    ]
+   },
+   {
+    "url": "https://www.takahatafudoson.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "8日（日）",
+     "フリーマーケット",
+     "東京都日野市高幡733"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tokyo-nominoichi-2026-autumn",
+  "name": "東京蚤の市’26 AUTUMN",
+  "kinds": [
+   "nomi"
+  ],
+  "organizer": {
+   "name": "手紙社",
+   "url": "https://tokyonominoichi.com/"
+  },
+  "venue": {
+   "name": "国営昭和記念公園 みどりの文化ゾーン ゆめひろば",
+   "pref": "13",
+   "city": "立川市",
+   "cityCode": "13202",
+   "address": "東京都立川市緑町3173",
+   "access": "JR中央線「立川駅」下車 徒歩10分／多摩モノレール「立川北駅」下車 徒歩8分／国営昭和記念公園「あけぼの口」より徒歩1分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "2026年10月31日（土）〜11月3日（火・祝）の4日間",
+   "dates": [
+    "2026-10-31",
+    "2026-11-01",
+    "2026-11-02",
+    "2026-11-03"
+   ]
+  },
+  "time": {
+   "text": "9:30〜16:30",
+   "start": "09:30",
+   "end": "16:30"
+  },
+  "visitor": {
+   "admission": "前売り券 1,800円／当日券 2,300円（税込。中学生以下は入場無料、保護者の同伴が必要）",
+   "rain": "荒天の場合をのぞき、雨天決行（中止の場合は当日の午前7時までに公式サイト・SNSで告知）"
+  },
+  "sources": [
+   {
+    "url": "https://tokyonominoichi.com/2026_autumn/outline/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年10月31日（土）、11月1日（日）、2日（月）、3日（火）",
+     "9:30〜16:30",
+     "前売り券（オンライン販売チケット）／¥1,800",
+     "当日券（会場販売チケット）／¥2,300",
+     "荒天の場合をのぞき、雨天決行です"
+    ]
+   },
+   {
+    "url": "https://tokyonominoichi.com/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "東京都立川市緑町3173",
+     "10月31日（土）,11月1日（日）,2日(月),3日（火祝）"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zoshigaya-tezukuriichi",
+  "name": "雑司ヶ谷 手創り市",
+  "kinds": [
+   "handmade"
+  ],
+  "organizer": {
+   "name": "手創り市",
+   "url": "https://tezukuriichi.com/home.html"
+  },
+  "venue": {
+   "name": "鬼子母神と大鳥神社",
+   "pref": "13",
+   "city": "豊島区",
+   "cityCode": "13116",
+   "address": "東京都豊島区雑司ヶ谷",
+   "access": "東京メトロ副都心線「雑司ヶ谷駅」より徒歩5分／都電荒川線「鬼子母神前」駅より徒歩5分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "第3日曜日の開催が基本（お寺の行事によって前後する場合あり）。日程は公式のスケジュールで発表",
+   "dates": [
+    "2026-11-15",
+    "2026-12-20"
+   ]
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天の場合は中止（開催・中止は開催日の朝7時までに X・ブログで告知）"
+  },
+  "exhibitor": {
+   "fee": "3,000円/日（1ブース概ね1.8m×1.8m・2名まで）",
+   "apply": "申込書を郵送（開催ごとに申込期間あり。出展者は締め切りから1週間以内に発表予定）",
+   "applyUrl": "https://tezukuriichi.com/entry.html"
+  },
+  "sources": [
+   {
+    "url": "https://tezukuriichi.com/home.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11月15日(日)",
+     "12月20日(日)",
+     "10:00～16:00 雨天の場合は中止",
+     "第3日曜日の開催を基本としております",
+     "大鳥神社は酉の市の為、お休みです"
+    ]
+   },
+   {
+    "url": "https://tezukuriichi.com/entry.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "3000円/日・2名までご参加頂けます"
+    ]
+   }
+  ]
+ }
+]

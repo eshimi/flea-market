@@ -25,7 +25,7 @@
 - データは2段：
   - `data/series.json`：シリーズ（定期市・主催者ごと）。繰り返しのきまり `recurrence`（monthly-nth / monthly-day / weekly / dates。`exceptMonths`・`from`・`until`）、会場、来場者向け・出店者向けの項目、出典 `sources[{url,type,checkedAt}]`。確認できない項目は書かない（ページでは「要確認」）。
   - `data/occurrences.json`：開催回ごとの、公式での確認結果（confirmed / cancelled / postponed / unknown。`checkedAt` と `source` 必須）。きまりの外の臨時開催もここに書く。
-- 表示の状態（`scripts/lib/events.mjs` の buildOccurrences）：公式で確認した回＝「公式で確認」、きまりから算出した回＝「予定（きまりから算出）」、中止・延期は消さずに表示、最終確認から14日（`STALE_DAYS`）を超えたら「要確認」。一覧に出すのは今日から120日（`WINDOW_DAYS`）。
+- 表示の状態（`scripts/lib/events.mjs` の buildOccurrences）：公式で確認した回＝「公式で確認」（日付を列挙したきまり `dates` は、出典で日付そのものを突き合わせているので、これも「公式で確認」）、きまりから算出した回＝「予定（きまりから算出）」、中止・延期は消さずに表示、最終確認から14日（`STALE_DAYS`）を超えたら「要確認」。一覧に出すのは今日から120日（`WINDOW_DAYS`）。
 - 種類は `scripts/lib/kinds.mjs`（flea / nomi / kotto / handmade / marche）、都道府県コードは `scripts/lib/areas.mjs`。市区町村は、データに書いた `cityCode`（5桁）と `city` を使う。
 
 - ページ生成：`scripts/build-site.mjs` が `data/` から `dist/` を作る（`dist/` はコミットしない。毎日、日本時間の今日を基準に作り直す。`--today=` `--data=` `--out=` で指定可）。`static/`（style.css・home.js・search.js）をそのまま写す。部品は `scripts/lib/html.mjs`（layout・開催カード・状態の札）、ナビは `scripts/lib/nav.mjs` の1か所。
@@ -39,6 +39,18 @@
 - 毎日の自動更新：`.github/workflows/deploy.yml`（毎朝 5:17 JST ＝ 20:17 UTC と手動）。npm test → check-sources → npm run build → `data/` の確認結果をコミット `[skip ci]` → `wrangler deploy`（`wrangler.jsonc`。build.command は `npm run build`、静的ファイルは `dist/`、`/api/*` は `src/worker.js`）。必要な Secrets：`CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID`（未設定ならデプロイを飛ばす）。Variables：`SITE_URL`。
 - この作業環境から Node の fetch で外へ出るときは `NODE_USE_ENV_PROXY=1` が要る（補助金ネットと同じ）。
 - 画面の確認：Playwright（`/opt/node-tools/node_modules/playwright`）で、PC 1280px とスマホ 390px。横のはみ出しとコンソールのエラーも見る。
+
+## 掲載の進め方（段階1：東京都の定期市）
+- 手順：公式ページを読む（robots.txt を確かめてから。作業用の取得は1ページずつ数秒あける）→ 利用規約・免責のページを確かめる → 公式の本文にある事実だけを `data/` に書く（evidence も）→ `npm run validate` → `NODE_USE_ENV_PROXY=1 node scripts/check-sources.mjs --all`（evidence が本文にすべてあるかを確かめる。合わないものは直すか、書かない）→ build して画面を確認。
+- 利用規約の扱い（2026-10-18）：利用規約のページがなく、robots.txt で許可されていれば `terms.ok: true`（note にその旨）。**規約で「無断での使用・転載、二次利用を禁じます」とあるサイトは `ok: null` のまま掲載しない**（ユーザーの判断待ち）。
+- 他のまとめ・一覧サイト（例：kottouichi.jp の「骨董市サイト」）は、情報源にしない。
+- 掲載済み（2026-10-18、5件）：大江戸骨董市（東京国際フォーラム）、高幡不動尊 ござれ市・リサイクル市、東京蚤の市’26 AUTUMN、雑司ヶ谷 手創り市。
+- 候補と状態（2026-10-18）：
+  - 世田谷のボロ市：世田谷区の「著作権・リンク・免責事項」に、オープンデータ以外の二次利用を禁じる記載 → 掲載保留（区のオープンデータに載っていないか要確認）。
+  - 富岡八幡宮・花園神社：この作業環境から公式サイトに接続できない（ECONNRESET・タイムアウト）→ 本番の Actions から、または別の日に再試行。
+  - 新井薬師・東郷神社・乃木神社：公式サイトのトップに市の情報がない（下層ページは要確認）。
+  - 青山のファーマーズマーケット（farmersmarkets.jp）：「毎週土日 10時-16時」は公式にあるが、会場名が本文にない（地図リンクの住所だけ）→ 要確認。
+  - 高幡不動尊：2027年1月は「迎春期間の諸行事休止のお知らせ」（内容が画像）があるため、1月の回は occurrences で「要確認」。
 
 ## 未対応・次にやること
 - 東京都の定期市の洗い出し → 利用規約・robots.txt の確認 → 公式ページから書き起こし（evidence 付き）→ 検証 → 掲載。

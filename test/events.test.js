@@ -65,3 +65,10 @@ test('最終確認が古いものは要確認', () => {
   assert.equal(o.status, 'unknown');
   assert.match(o.note, /14日/);
 });
+
+test('日付を列挙したきまりは、公式で確認（古くなれば要確認）', () => {
+  const s = series({ recurrence: { type: 'dates', dates: ['2026-10-31'], text: '日程は公式で発表' } });
+  assert.equal(buildOccurrences([s], [], '2026-10-17', 30)[0].status, 'confirmed');
+  const old = { ...s, sources: [{ ...s.sources[0], checkedAt: '2026-09-01' }] };
+  assert.equal(buildOccurrences([old], [], '2026-10-17', 30)[0].status, 'unknown');
+});

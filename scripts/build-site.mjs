@@ -191,10 +191,10 @@ ${row('主催', s.organizer.url ? `<a href="${esc(s.organizer.url)}" rel="noopen
 <h2 class="sec-h">これからの開催日</h2>
 ${dates}
 <h2 class="sec-h" id="shuten">出店したい方へ</h2>
-${ex ? `<dl class="facts">${row('出店料', val(ex.fee))}${row('申込み方法', val(ex.apply))}${row('申込み先', ex.applyUrl ? `<a href="${esc(ex.applyUrl)}" rel="noopener">${esc(ex.applyUrl)}</a>` : TBD)}${ex.notes ? row('注意', esc(ex.notes)) : ''}</dl>` : '<p class="empty">出店の募集について、公式の情報で確認できていません（要確認）。</p>'}
+${ex ? `<dl class="facts">${row('出店料', val(ex.fee))}${row('申込み方法', val(ex.apply))}${row('申込み先', ex.applyUrl ? `<a href="${esc(ex.applyUrl)}" rel="noopener">主催者の案内（公式）</a>` : TBD)}${ex.notes ? row('注意', esc(ex.notes)) : ''}</dl>` : '<p class="empty">出店の募集について、公式の情報で確認できていません（要確認）。</p>'}
 <h2 class="sec-h">出典</h2>
 <ul class="sources">${s.sources.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x.url)}</a>（最終確認 ${esc(x.checkedAt)}）</li>`).join('')}</ul>
-<p class="note">「予定（きまりから算出）」は、公式に書かれた開催のきまり（${esc(s.recurrence.text)}）から計算した日です。${esc(DISCLAIMER)}</p>
+<p class="note">${s.recurrence.type === 'dates' ? '' : `「予定（きまりから算出）」は、公式に書かれた開催のきまり（${esc(s.recurrence.text)}）から計算した日です。`}${esc(DISCLAIMER)}</p>
 </div>`;
   return { path: `/e/${s.id}/`, title: `${s.name}（${PREFS[v.pref]}${v.city || ''}）`, description: `${s.name}の開催日（${s.recurrence.text}）・時間・会場・出店の情報。主催者の公式情報をもとに掲載（最終確認 ${lastChecked(s)}）。`, body, head: eventLd(s, list) };
 }

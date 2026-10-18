@@ -1,1 +1,54 @@
-[]
+[
+ {
+  "series": "takahata-fudoson-gozareichi",
+  "date": "2026-10-18",
+  "status": "confirmed",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.takahatafudoson.or.jp/"
+ },
+ {
+  "series": "takahata-fudoson-gozareichi",
+  "date": "2026-11-15",
+  "status": "confirmed",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.takahatafudoson.or.jp/"
+ },
+ {
+  "series": "takahata-fudoson-recycle-market",
+  "date": "2026-11-08",
+  "status": "confirmed",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.takahatafudoson.or.jp/"
+ },
+ {
+  "series": "takahata-fudoson-gozareichi",
+  "date": "2027-01-17",
+  "status": "unknown",
+  "reason": "「迎春期間（令和８年末から令和９年）諸行事休止のお知らせ」あり。休止する行事は公式の画像で案内されているため要確認",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.takahatafudoson.or.jp/?p=10545"
+ },
+ {
+  "series": "takahata-fudoson-recycle-market",
+  "date": "2027-01-10",
+  "status": "unknown",
+  "reason": "「迎春期間（令和８年末から令和９年）諸行事休止のお知らせ」あり。休止する行事は公式の画像で案内されているため要確認",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.takahatafudoson.or.jp/?p=10545"
+ },
+ {
+  "series": "zoshigaya-tezukuriichi",
+  "date": "2026-11-15",
+  "status": "confirmed",
+  "reason": "大鳥神社の会場はお休み（酉の市のため）",
+  "checkedAt": "2026-10-18",
+  "source": "https://tezukuriichi.com/home.html"
+ },
+ {
+  "series": "zoshigaya-tezukuriichi",
+  "date": "2026-12-20",
+  "status": "confirmed",
+  "checkedAt": "2026-10-18",
+  "source": "https://tezukuriichi.com/home.html"
+ }
+]

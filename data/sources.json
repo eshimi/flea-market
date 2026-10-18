@@ -1,1 +1,92 @@
-[]
+[
+ {
+  "url": "https://www.antique-market.jp/",
+  "series": [
+   "oedo-antique-market-tokyo-international-forum"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ（フッターは概要・プライバシーポリシー・サイトマップ）"
+  }
+ },
+ {
+  "url": "https://www.antique-market.jp/%E5%87%BA%E5%BA%97%E3%81%8A%E7%94%B3%E8%BE%BC%E3%81%BF/%E5%87%BA%E5%BA%97%E8%A6%8F%E7%B4%84/",
+  "series": [
+   "oedo-antique-market-tokyo-international-forum"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://www.takahatafudoson.or.jp/?page_id=9",
+  "series": [
+   "takahata-fudoson-gozareichi",
+   "takahata-fudoson-recycle-market"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ（フッターは個人情報保護方針のみ）"
+  }
+ },
+ {
+  "url": "https://www.takahatafudoson.or.jp/",
+  "series": [
+   "takahata-fudoson-gozareichi",
+   "takahata-fudoson-recycle-market"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://tokyonominoichi.com/2026_autumn/outline/",
+  "series": [
+   "tokyo-nominoichi-2026-autumn"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://tezukuriichi.com/home.html",
+  "series": [
+   "zoshigaya-tezukuriichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ（「All contents copyright」の表示のみ）"
+  }
+ },
+ {
+  "url": "https://tezukuriichi.com/entry.html",
+  "series": [
+   "zoshigaya-tezukuriichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://tokyonominoichi.com/",
+  "series": [
+   "tokyo-nominoichi-2026-autumn"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
+  }
+ }
+]

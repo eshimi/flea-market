@@ -95,7 +95,7 @@ export function lastChecked(series) {
 
 // 表示用の状態:
 //   confirmed … その回を公式で確認した
-//   scheduled … 繰り返しのきまりから算出（きまり自体は最終確認日に公式で確認）
+//   scheduled … 繰り返しのきまり（毎月第n曜日など）から算出（きまり自体は最終確認日に公式で確認）
 //   cancelled / postponed … 中止・延期（消さずに出す）
 //   unknown   … 要確認（公式で確認できない、または最終確認が古い）
 export function buildOccurrences(seriesList, overrides, today, days = WINDOW_DAYS) {
@@ -123,7 +123,8 @@ export function buildOccurrences(seriesList, overrides, today, days = WINDOW_DAY
           note = `最終確認から${STALE_DAYS}日を超えています`;
         }
       } else {
-        status = stale ? 'unknown' : 'scheduled';
+        // 日付を列挙したきまり（dates）は、公式の日程表の日付そのものを出典で確認しているので「公式で確認」
+        status = stale ? 'unknown' : s.recurrence.type === 'dates' ? 'confirmed' : 'scheduled';
         checkedAt = checked;
         if (stale) note = `最終確認から${STALE_DAYS}日を超えています`;
       }

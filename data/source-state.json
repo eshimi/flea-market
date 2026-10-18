@@ -1,1 +1,80 @@
-{}
+{
+ "https://www.antique-market.jp/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "oedo-antique-market-tokyo-international-forum": true
+  }
+ },
+ "https://www.antique-market.jp/%E5%87%BA%E5%BA%97%E3%81%8A%E7%94%B3%E8%BE%BC%E3%81%BF/%E5%87%BA%E5%BA%97%E8%A6%8F%E7%B4%84/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "oedo-antique-market-tokyo-international-forum": true
+  }
+ },
+ "https://www.takahatafudoson.or.jp/?page_id=9": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "takahata-fudoson-gozareichi": true,
+   "takahata-fudoson-recycle-market": true
+  }
+ },
+ "https://www.takahatafudoson.or.jp/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "takahata-fudoson-gozareichi": true,
+   "takahata-fudoson-recycle-market": true
+  }
+ },
+ "https://tokyonominoichi.com/2026_autumn/outline/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "tokyo-nominoichi-2026-autumn": true
+  }
+ },
+ "https://tezukuriichi.com/home.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"36d1-65ace778176c0-gzip\"",
+  "lastModified": "Sun, 06 Sep 2026 11:04:35 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "zoshigaya-tezukuriichi": true
+  }
+ },
+ "https://tezukuriichi.com/entry.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"609b-65ace793bf800-gzip\"",
+  "lastModified": "Sun, 06 Sep 2026 11:05:04 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "zoshigaya-tezukuriichi": true
+  }
+ },
+ "https://tokyonominoichi.com/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "tokyo-nominoichi-2026-autumn": true
+  }
+ }
+}

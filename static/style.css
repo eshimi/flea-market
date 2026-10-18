@@ -65,10 +65,10 @@ aside h2{font-size:15px;margin-bottom:10px}
 .facts{background:#fff;border:1px solid var(--line);border-radius:14px;padding:6px 18px;margin:12px 0}
 .facts div{display:grid;grid-template-columns:9em 1fr;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
 .facts div:first-child{border-top:0}
-.facts dt{color:var(--sub);font-size:13.5px}.facts dd{margin:0}
+.facts dt{color:var(--sub);font-size:13.5px}.facts dd{margin:0;overflow-wrap:anywhere}
 .tbd{color:#9a4a14;font-size:13px}
 .prose{max-width:760px}.prose h2{font-size:20px;margin:26px 0 8px}.prose p,.prose li{margin:6px 0}
-.sources{font-size:13.5px;padding-left:1.2em}
+.sources{font-size:13.5px;padding-left:1.2em;overflow-wrap:anywhere}
 .banner{background:#fdecdc;border-radius:12px;padding:12px 14px;font-size:14px;margin:12px 0}
 .grid-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;padding:0;list-style:none}
 .grid-links a{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--ink);text-decoration:none}
