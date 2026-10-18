@@ -82,3 +82,14 @@ aside h2{font-size:15px;margin-bottom:10px}
 .orig{display:block;font-size:12.5px;color:var(--sub);margin-top:2px;line-height:1.5}
 .orig-h,.orig-n{margin:2px 0 0;font-size:13px;color:var(--sub)}
 .orig-h{margin:-6px 0 10px}
+
+/* 地図・行き方、当日の天気 */
+.map-btns{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0}
+.map-btn{display:inline-block;padding:11px 18px;border-radius:10px;background:var(--acc);color:#fff;font-weight:700;text-decoration:none;font-size:14.5px}
+.map-btn:hover{background:var(--acc-d)}
+.map-btn.s{background:#fff;color:var(--acc);border:2px solid var(--acc);padding:9px 16px}
+.wx{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px;max-width:640px}
+.wx-st{margin:0;color:var(--sub)}
+.wx-main{display:flex;align-items:center;gap:14px;margin-bottom:10px;font-size:18px}
+.wx-ic{font-size:34px;line-height:1}
+.wx-dl{margin:0;display:grid;gap:6px}.wx-dl div{display:flex;gap:14px}.wx-dl dt{flex:0 0 7.5em;color:var(--sub);font-size:13.5px}.wx-dl dd{margin:0;font-size:14.5px}

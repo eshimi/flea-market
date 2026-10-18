@@ -12,6 +12,7 @@ import { renderHomeBody } from './lib/home-view.mjs';
 import { S, T, WD_EN } from './lib/i18n.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
+import { mapUrls, weatherTarget } from './lib/weather.mjs';
 import { cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
 import { breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, statusTag } from './lib/html.mjs';
@@ -187,6 +188,12 @@ ${row(p.admission, tv(s, 'admission', s.visitor?.admission, lang))}
 ${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang))}
 ${row(s.organizer.label ? (lang === 'en' ? labelEn(s.organizer.label) || p.orgLabel(s.organizer.label) : p.orgLabel(s.organizer.label)) : p.org, orgName)}
 </dl>
+${(() => {
+  const m = mapUrls(s, lang);
+  const wt = weatherTarget(s);
+  const wx = next && wt ? `<h2 class="sec-h">${esc(p.secWx)}</h2><div class="wx" data-office="${wt.office}" data-area="${wt.area || ''}" data-date="${next.date}" data-lang="${lang}" data-region="${esc(prefLabel(v.pref, 'en'))}"><p class="wx-st">${esc(p.wxLoading)}</p></div><p class="note">${esc(p.wxNote)} ${esc(p.wxSrc)}<a href="https://www.jma.go.jp/bosai/forecast/" rel="noopener">${esc(p.wxJma)}</a>${lang === 'ja' ? '' : ' (気象庁)'}</p>` : '';
+  return `<h2 class="sec-h">${esc(p.secMap)}</h2><p class="map-btns"><a class="map-btn" href="${esc(m.open)}" target="_blank" rel="noopener nofollow">${esc(p.mapOpen)} ↗</a><a class="map-btn s" href="${esc(m.route)}" target="_blank" rel="noopener nofollow">${esc(p.mapRoute)} ↗</a></p><p class="note">${esc(m.exact ? p.mapExact : p.mapLoose)}</p>${wx}`;
+})()}
 <h2 class="sec-h">${esc(p.secDates)}</h2>
 ${dates}
 <h2 class="sec-h" id="shuten">${esc(p.secVendor)}</h2>
@@ -195,7 +202,7 @@ ${ex ? `<dl class="facts">${row(p.fee, tv(s, 'fee', ex.fee, lang))}${row(p.apply
 <ul class="sources">${s.sources.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x.url)}</a>（${checked}${esc(x.checkedAt)}）</li>`).join('')}</ul>
 <p class="note">${s.recurrence.type === 'dates' ? '' : esc(p.rule(lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence)))} ${esc(disclaimer(lang))}</p>
 </div>`;
-  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list) });
+  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list), scripts: ['/weather.js'] });
 }
 
 function shutenPage(ctx, lang) {
@@ -230,6 +237,8 @@ function aboutPage(ctx, lang) {
 <li><b>${esc(st.unknown)}</b>：公式の情報で確認できない、または最終確認から日数がたっています。</li>
 </ul>
 <p>${esc(disclaimer('ja'))}</p>
+<h2>地図・天気</h2>
+<p>開催詳細の地図・経路は、Google マップへのリンクです（住所がなければ会場名で検索するため、位置は要確認）。天気予報は気象庁が公開している予報を、開催日の約7日前から表示します（地域の単位の予報で、会場ごとではありません。出典：気象庁）。</p>
 <h2>情報の取得</h2>
 <p>公式ページの取得は、robots.txt と各サイトの利用規約に従い、同じサイトへは1日1回までに抑えています。取得が認められていないページは、リンクだけを掲載します。</p>
 <h2 id="remove">掲載の修正・削除の依頼</h2>
@@ -247,6 +256,8 @@ function aboutPage(ctx, lang) {
 <li><b>${esc(st.unknown)}</b>: not confirmed from official information, or it has been a while since the last check.</li>
 </ul>
 <p>${esc(disclaimer('en'))}</p>
+<h2>Maps and weather</h2>
+<p>The map and directions on each listing are links to Google Maps (if the official page gives no address, the link searches by venue name, so the location is TBC). Weather forecasts come from the Japan Meteorological Agency and are shown from about 7 days before the event (a forecast for the JMA regional unit, not for the venue).</p>
 <h2>How we fetch pages</h2>
 <p>We follow robots.txt and each site’s terms of use, and fetch from the same site at most once a day. For pages we are not allowed to fetch, we only link to them.</p>
 <h2 id="remove">Correction / removal requests</h2>

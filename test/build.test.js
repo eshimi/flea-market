@@ -306,3 +306,41 @@ test('英語の訳：すべての掲載に訳があり、数字が日本語の�
   assert.match(area, /Chiyoda Ward/);
   assert.ok(!/千代田区<small/.test(area), '英語の市区町村一覧に日本語が残る');
 });
+
+test('地図・経路のリンクと当日の天気（気象庁）', async () => {
+  const { mapUrls, weatherTarget } = await import('../scripts/lib/weather.mjs');
+  const real = loadData();
+  const oedo = real.series.find((s) => s.id === 'oedo-antique-market-tokyo-international-forum');
+  const m = mapUrls(oedo, 'en');
+  assert.equal(m.exact, true);
+  assert.ok(m.open.startsWith('https://www.google.com/maps/search/?api=1&query=') && m.open.includes(encodeURIComponent('東京都千代田区丸の内3-5-1')));
+  assert.ok(m.route.startsWith('https://www.google.com/maps/dir/?api=1&destination=') && m.route.includes('travelmode=transit'));
+  const noAddr = real.series.find((s) => !s.venue.address);
+  assert.equal(mapUrls(noAddr, 'ja').exact, false);
+  assert.deepEqual(weatherTarget(oedo), { office: '130000', area: '130010' });
+  assert.deepEqual(weatherTarget(real.series.find((s) => s.venue.city === '羽生市')), { office: '110000', area: '110020' });
+  assert.equal(weatherTarget({ venue: { pref: '47' } }), null);
+  const { pages } = buildPages(real, '2026-10-18');
+  const en = pages.find((p) => p.path === '/e/oedo-antique-market-tokyo-international-forum/');
+  assert.match(en.body, /Open in Google Maps/);
+  assert.match(en.body, /<div class="wx" data-office="130000" data-area="130010" data-date="2026-10-31" data-lang="en" data-region="Tokyo">/);
+  assert.deepEqual(en.scripts, ['/weather.js']);
+  assert.match(pages.find((p) => p.path === '/ja/e/oedo-antique-market-tokyo-international-forum/').body, /Google マップで開く/);
+});
+
+test('天気の中継（Worker）：6桁のコードだけ受け、気象庁の JSON を返してキャッシュする', async () => {
+  const { weather } = await import('../src/worker.js');
+  const calls = [];
+  const fetchImpl = async (url) => { calls.push(url); return new Response('[{"x":1}]', { status: 200 }); };
+  const store = new Map();
+  const cache = { match: async (k) => store.get(k.url)?.clone(), put: async (k, v) => store.set(k.url, v) };
+  assert.equal((await weather('abc', fetchImpl, cache)).status, 400);
+  const r = await weather('130000', fetchImpl, cache);
+  assert.equal(r.status, 200);
+  assert.equal(await r.text(), '[{"x":1}]');
+  assert.equal(r.headers.get('Cache-Control'), 'public, max-age=1800');
+  await weather('130000', fetchImpl, cache);
+  assert.deepEqual(calls, ['https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json'], '2回目はキャッシュ');
+  assert.equal((await weather('130000', async () => new Response('', { status: 500 }), null)).status, 502);
+  assert.equal((await weather('999999', async () => new Response('', { status: 404 }), null)).status, 404);
+});

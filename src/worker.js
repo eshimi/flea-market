@@ -5,11 +5,28 @@ const SECURITY_HEADERS = {
   'X-Frame-Options': 'DENY',
 };
 
+// 気象庁の予報 JSON を、府県予報区コード（6桁）で中継する。出典は気象庁。30分キャッシュ
+export async function weather(code, fetchImpl = fetch, cache = typeof caches !== 'undefined' ? caches.default : null) {
+  if (!/^\d{6}$/.test(code)) return Response.json({ error: 'bad code' }, { status: 400 });
+  const url = `https://www.jma.go.jp/bosai/forecast/data/forecast/${code}.json`;
+  const key = new Request(url);
+  const hit = cache && (await cache.match(key));
+  if (hit) return hit;
+  let res;
+  try { res = await fetchImpl(url, { headers: { 'User-Agent': 'FleaMarketJP/1.0 (+https://streetbazaars.jp)' } }); } catch { return Response.json({ error: 'upstream' }, { status: 502 }); }
+  if (!res.ok) return Response.json({ error: 'upstream' }, { status: res.status === 404 ? 404 : 502 });
+  const out = new Response(await res.text(), { headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'public, max-age=1800' } });
+  if (cache) await cache.put(key, out.clone());
+  return out;
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     if (url.pathname.startsWith('/api/')) {
       if (url.pathname === '/api/health') return Response.json({ ok: true });
+      const m = /^\/api\/weather\/(\d+)$/.exec(url.pathname);
+      if (m) return weather(m[1]);
       return Response.json({ error: 'not found' }, { status: 404 });
     }
     // 以前の英語のトップ（/en/）は、英語が既定になったので / へ
