@@ -72,3 +72,7 @@ test('件数が多い一覧は、月ごとに分ける（最初の月だけ開�
   assert.equal((html.match(/<article class="ev/g) || []).length, 25, '全件が HTML に入る');
   assert.ok(!eventListByMonth(many.slice(0, 20)).includes('<details'), '20件以下は分けない');
 });
+
+test('SITE_URL が未設定の間は、検索に載せない（noindex）', () => {
+  assert.match(layout({ path: '/', title: 'x', description: 'y', body: '' }), /<meta name="robots" content="noindex,nofollow">/);
+});

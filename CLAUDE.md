@@ -70,6 +70,8 @@
   - 青山のファーマーズマーケット（farmersmarkets.jp）：「毎週土日 10時-16時」は公式にあるが、会場名が本文にない（地図リンクの住所だけ）→ 要確認。
   - 高幡不動尊：2027年1月は「迎春期間の諸行事休止のお知らせ」（内容が画像）があるため、1月の回は occurrences で「要確認」。
 
+- 公開前の安全装置：環境変数 `SITE_URL` が未設定（または `.example`）の間は、全ページに `noindex,nofollow`、robots.txt は `Disallow: /`（`INDEXABLE`。`scripts/lib/nav.mjs`）。公開するときは GitHub の Variables に `SITE_URL`（例 https://〇〇）を設定すると、自動で解除され、canonical・サイトマップが正しい URL になる。ローカルの確認は `wrangler dev`（`npx wrangler@4 dev --port 8799`）で、トップ・詳細・/api/health・404・events.json・robots.txt が返ることを確認済み（2026-10-18）。
+
 ## 未対応・次にやること
 - 東京都の定期市の洗い出し → 利用規約・robots.txt の確認 → 公式ページから書き起こし（evidence 付き）→ 検証 → 掲載。
 - 掲載の修正・削除の依頼の窓口（`/about/#remove`。いまは「準備中（要確認）」）。

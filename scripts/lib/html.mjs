@@ -1,5 +1,5 @@
 // ページの共通の枠（ヘッダー・フッター・免責）と、HTML の小さな部品
-import { FOOTER_GROUPS, SITE, TOP_LINKS } from './nav.mjs';
+import { FOOTER_GROUPS, INDEXABLE, SITE, TOP_LINKS } from './nav.mjs';
 import { KINDS } from './kinds.mjs';
 import { label } from './dates.mjs';
 
@@ -20,7 +20,7 @@ export function layout({ path, title, description, body, head = '', scripts = []
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(full)}</title>
 <meta name="description" content="${esc(description)}">
-<link rel="canonical" href="${SITE.url}${path}">
+${INDEXABLE ? '' : '<meta name="robots" content="noindex,nofollow">\n'}<link rel="canonical" href="${SITE.url}${path}">
 <meta property="og:title" content="${esc(full)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">

@@ -5,7 +5,7 @@ import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { todayJst } from './lib/dates.mjs';
-import { SITE } from './lib/nav.mjs';
+import { INDEXABLE, SITE } from './lib/nav.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const arg = (k) => process.argv.find((a) => a.startsWith(`--${k}=`))?.split('=')[1];
@@ -36,7 +36,7 @@ function main() {
   writeFileSync(stateFile, JSON.stringify(next, null, 1) + '\n');
   const urls = paths.map((p) => `<url><loc>${SITE.url}${p}</loc><lastmod>${next[p].lastmod}</lastmod></url>`).join('\n');
   writeFileSync(join(out, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
-  writeFileSync(join(out, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE.url}/sitemap.xml\n`);
+  writeFileSync(join(out, 'robots.txt'), INDEXABLE ? `User-agent: *\nAllow: /\nSitemap: ${SITE.url}/sitemap.xml\n` : 'User-agent: *\nDisallow: /\n');
   console.log(`sitemap.xml：${paths.length} ページ`);
 }
 

@@ -6,6 +6,9 @@ export const SITE = {
   url: (process.env.SITE_URL || 'https://flea-market.example').replace(/\/$/, ''),
 };
 
+// SITE_URL が未設定（仮のドメイン）の間は、検索エンジンに載せない（noindex・robots.txt で全体を拒否）
+export const INDEXABLE = Boolean(process.env.SITE_URL) && !/\.example(\/|$)/.test(SITE.url);
+
 export const TOP_LINKS = [
   { href: '/weekend/', label: '今週末' },
   { href: '/area/', label: '地域から' },
