@@ -13,7 +13,7 @@ export function renderMap(counts, { aria, countText, lang = 'ja' }) {
   const entries = Object.entries(MAP_PREFS);
   const off = entries.filter(([c]) => !counts.has(c)).map(([c, v]) => `<path class="pm-off" d="${v.d}"/>`).join('');
   const on = entries.filter(([c]) => counts.has(c)).map(([c, v]) => {
-    const name = lang === 'en' ? v.en : v.name;
+    const name = lang === 'en' ? v.en.normalize('NFD').replace(/[\u0300-\u036f]/g, '') : v.name;
     return `<a href="/area/${c}/" aria-label="${esc(name)}（${esc(countText(counts.get(c)))}）"><title>${esc(name)}　${esc(countText(counts.get(c)))}</title><path class="pm-on" d="${v.d}"/></a>`;
   }).join('');
   return `<svg class="jmap" viewBox="${DATA.viewBox}" role="group" aria-label="${esc(aria)}" focusable="false">${off}${on}</svg>`;
