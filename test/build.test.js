@@ -76,3 +76,11 @@ test('件数が多い一覧は、月ごとに分ける（最初の月だけ開�
 test('SITE_URL が未設定の間は、検索に載せない（noindex）', () => {
   assert.match(layout({ path: '/', title: 'x', description: 'y', body: '' }), /<meta name="robots" content="noindex,nofollow">/);
 });
+
+test('依頼の窓口：メールアドレスの形でなければ使わない', async () => {
+  const { execFileSync } = await import('node:child_process');
+  const run = (email) => execFileSync(process.execPath, ['--input-type=module', '-e', "import('./scripts/lib/nav.mjs').then((m) => console.log(JSON.stringify([m.CONTACT_EMAIL, m.INDEXABLE])))"], { env: { ...process.env, SITE_URL: 'https://flea.example.jp', CONTACT_EMAIL: email }, encoding: 'utf8', cwd: new URL('..', import.meta.url).pathname });
+  assert.equal(run('info@flea.example.jp').trim(), '["info@flea.example.jp",true]');
+  assert.equal(run('<script>x</script>').trim(), '["",false]');
+  assert.equal(run('').trim(), '["",false]');
+});

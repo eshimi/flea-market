@@ -70,9 +70,13 @@
   - 青山のファーマーズマーケット（farmersmarkets.jp）：「毎週土日 10時-16時」は公式にあるが、会場名が本文にない（地図リンクの住所だけ）→ 要確認。
   - 高幡不動尊：2027年1月は「迎春期間の諸行事休止のお知らせ」（内容が画像）があるため、1月の回は occurrences で「要確認」。
 
-- 公開前の安全装置：環境変数 `SITE_URL` が未設定（または `.example`）の間は、全ページに `noindex,nofollow`、robots.txt は `Disallow: /`（`INDEXABLE`。`scripts/lib/nav.mjs`）。公開するときは GitHub の Variables に `SITE_URL`（例 https://〇〇）を設定すると、自動で解除され、canonical・サイトマップが正しい URL になる。ローカルの確認は `wrangler dev`（`npx wrangler@4 dev --port 8799`）で、トップ・詳細・/api/health・404・events.json・robots.txt が返ることを確認済み（2026-10-18）。
+- 公開前の安全装置：環境変数 `SITE_URL`（未設定や `.example` は不可）と `CONTACT_EMAIL`（掲載の修正・削除の依頼を受ける、サイト専用のメールアドレス。メールの形でなければ無効）の**両方**が揃うまでは、全ページに `noindex,nofollow`、robots.txt は `Disallow: /`（`INDEXABLE`。`scripts/lib/nav.mjs`）。`CONTACT_EMAIL` があると、掲載のきまりのページ（#remove）に mailto で表示される（なければ「準備中（要確認）」）。両方とも GitHub の Variables に設定する（deploy.yml が渡す）。ローカルの確認は `wrangler dev`（`npx wrangler@4 dev --port 8799`）で、トップ・詳細・/api/health・404・events.json・robots.txt が返ることを確認済み（2026-10-18）。
 
 ## 未対応・次にやること
 - 東京都の定期市の洗い出し → 利用規約・robots.txt の確認 → 公式ページから書き起こし（evidence 付き）→ 検証 → 掲載。
 - 掲載の修正・削除の依頼の窓口（`/about/#remove`。いまは「準備中（要確認）」）。
-- ドメイン（要確認）、Cloudflare の Secrets の登録。
+- 公開の手順（2026-10-18 に、ユーザーが「まず workers.dev で確認」を選択。窓口は「サイト専用のメールアドレス」を選択）：
+  1. Cloudflare でAPIトークン（テンプレート「Edit Cloudflare Workers」）とアカウントIDを用意 → GitHub の Secrets に `CLOUDFLARE_API_TOKEN`・`CLOUDFLARE_ACCOUNT_ID`。
+  2. Actions の「毎日の更新」を手動実行 → デプロイされた URL（`https://flea-market.<サブドメイン>.workers.dev`）をログで確認。この間は noindex。
+  3. ドメイン・メールアドレスが決まったら Variables に `SITE_URL`・`CONTACT_EMAIL` → 再実行で noindex が外れる。Cloudflare でカスタムドメインを `wrangler.jsonc` の routes に足す。
+  4. 初回の Actions で、公式サイトが GitHub のサーバーからの取得を拒否していないか（概要の「公式ページの確認」）を見る。

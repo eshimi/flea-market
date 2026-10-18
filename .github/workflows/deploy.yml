@@ -4,7 +4,7 @@ name: 毎日の更新（Cloudflare Workers へデプロイ）
 # 公式ページの確認（scripts/check-sources.mjs）→ 確認結果を data/ に保存してコミット → ページ生成 → デプロイ。
 # ページは日付で中身が変わる（「今週末」・過ぎた開催の除外）ので、データに変更がなくても、毎日デプロイする。
 # 必要な GitHub Secrets: CLOUDFLARE_API_TOKEN（Workers の編集権限）, CLOUDFLARE_ACCOUNT_ID。未設定ならデプロイを飛ばす。
-# 任意の Variables: SITE_URL（本番の URL。ドメインが決まったら設定）
+# Variables: SITE_URL（本番の URL）、CONTACT_EMAIL（掲載の修正・削除の依頼を受けるメールアドレス）。どちらかが未設定の間は、検索に載せない（noindex）
 on:
   schedule:
     - cron: '17 20 * * *'
@@ -27,6 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SITE_URL: ${{ vars.SITE_URL }}
+      CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

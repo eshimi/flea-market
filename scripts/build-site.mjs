@@ -7,7 +7,7 @@ import { addDays, holidayName, isDayOff, label, parseYmd, todayJst, upcomingWeek
 import { buildOccurrences, isActive, lastChecked } from './lib/events.mjs';
 import { KINDS } from './lib/kinds.mjs';
 import { PREFS } from './lib/areas.mjs';
-import { SITE } from './lib/nav.mjs';
+import { CONTACT_EMAIL, SITE } from './lib/nav.mjs';
 import { breadcrumb, DISCLAIMER, esc, eventList, eventListByMonth, kindTags, layout, md, STATUS_LABEL, statusTag } from './lib/html.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -228,7 +228,7 @@ function aboutPage(ctx) {
 <h2>情報の取得</h2>
 <p>公式ページの取得は、robots.txt と各サイトの利用規約に従い、同じサイトへは1日1回までに抑えています。取得が認められていないページは、リンクだけを掲載します。</p>
 <h2 id="remove">掲載の修正・削除の依頼</h2>
-<p>主催者の方からの、掲載内容の修正・削除のご依頼を受け付けています。窓口は準備中です（要確認）。</p>
+<p>主催者の方からの、掲載内容の修正・削除のご依頼を受け付けています。${CONTACT_EMAIL ? `次のメールアドレスへ、主催者名・該当ページのURL・ご希望の内容をお送りください：<a href="mailto:${esc(CONTACT_EMAIL)}">${esc(CONTACT_EMAIL)}</a>` : '窓口は準備中です（要確認）。'}</p>
 <h2>更新</h2>
 <p>毎朝、自動で更新しています。最終更新：${esc(ctx.today)}</p>
 </div>`;

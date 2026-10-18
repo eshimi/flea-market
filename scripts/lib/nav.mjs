@@ -6,8 +6,11 @@ export const SITE = {
   url: (process.env.SITE_URL || 'https://flea-market.example').replace(/\/$/, ''),
 };
 
-// SITE_URL が未設定（仮のドメイン）の間は、検索エンジンに載せない（noindex・robots.txt で全体を拒否）
-export const INDEXABLE = Boolean(process.env.SITE_URL) && !/\.example(\/|$)/.test(SITE.url);
+// 掲載の修正・削除の依頼を受ける、サイト専用のメールアドレス（環境変数 CONTACT_EMAIL。未設定なら「準備中」と表示）
+export const CONTACT_EMAIL = /^[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"']+$/.test(process.env.CONTACT_EMAIL || '') ? process.env.CONTACT_EMAIL : '';
+
+// SITE_URL が未設定（仮のドメイン）、または依頼の窓口（CONTACT_EMAIL）が未設定の間は、検索エンジンに載せない（noindex・robots.txt で全体を拒否）
+export const INDEXABLE = Boolean(process.env.SITE_URL) && !/\.example(\/|$)/.test(SITE.url) && Boolean(CONTACT_EMAIL);
 
 export const TOP_LINKS = [
   { href: '/weekend/', label: '今週末' },
