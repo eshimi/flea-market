@@ -200,3 +200,5 @@ a:hover .pm-on,a:focus-visible .pm-on{fill:#a93120}
   .about-nums dd{font-size:36px}
   .about-photo{display:block;margin:0 -16px -18px;min-height:150px;aspect-ratio:16/9}
 }
+
+.mc-orig{margin:2px 0 0;font-size:12px;color:#6f6a60;line-height:1.4}

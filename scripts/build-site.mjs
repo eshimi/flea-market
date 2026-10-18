@@ -11,6 +11,7 @@ import { CONTACT_EMAIL, SITE } from './lib/nav.mjs';
 import { renderHomeBody } from './lib/home-view.mjs';
 import { S, T, WD_EN } from './lib/i18n.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
+import { cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
 import { breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, statusTag } from './lib/html.mjs';
 
@@ -23,7 +24,9 @@ export function loadData(dir = join(ROOT, 'data')) {
   const read = (f) => JSON.parse(readFileSync(join(dir, f), 'utf8'));
   let credits = [];
   try { credits = read('image-credits.json'); } catch { /* 画像の出典がないデータ（テストの見本など）は空 */ }
-  return { series: read('series.json'), occurrences: read('occurrences.json'), credits };
+  let translations = {};
+  try { translations = read('translations-en.json'); } catch { /* 英語の訳がないデータ（テストの見本など）は、日本語のまま出す */ }
+  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations };
 }
 
 // ---- 各ページ ----
@@ -31,6 +34,9 @@ export function loadData(dir = join(ROOT, 'data')) {
 // 各ページは lang（'en' が既定、'ja'）ごとに作り、path は出力先の URL（日本語は /ja/ 以下）。
 
 const val = (v, lang) => (v ? esc(v) : TBC(lang));
+// 英語のページでは、訳があれば「英語＋公式の日本語（小さく）」で出す。訳がなければ日本語のまま
+const orig = (en, ja) => `${esc(en)}<small class="orig" lang="ja">${esc(ja)}</small>`;
+const tv = (s, key, ja, lang) => (!ja ? TBC(lang) : lang === 'en' && fieldEn(s, key) ? orig(fieldEn(s, key), ja) : esc(ja));
 const pg = (lang, base, x) => ({ path: langPath(base, lang), lang, ...x });
 
 function dayStrip(occ, today, current, lang) {
@@ -53,7 +59,7 @@ function exhibitorList(seriesList, lang) {
   const p = P[lang].shuten;
   if (!rows.length) return `<p class="empty">${esc(p.empty)}</p>`;
   const tbc = lang === 'ja' ? '要確認' : 'TBC';
-  return `<ul class="grid-links">${rows.map((s) => `<li><a href="/e/${s.id}/#shuten">${esc(s.name)}<small>${esc(p.fee)}${esc(s.exhibitor.fee || tbc)}${lang === 'ja' ? '／' : ' / '}${esc(p.apply)}${esc(s.exhibitor.apply || tbc)}</small></a></li>`).join('')}</ul>`;
+  return `<ul class="grid-links">${rows.map((s) => `<li><a href="/e/${s.id}/#shuten">${esc(nameL(s, lang))}<small>${esc(p.fee)}${esc((lang === 'en' && fieldEn(s, 'fee')) || s.exhibitor.fee || tbc)}${lang === 'ja' ? '／' : ' / '}${esc(p.apply)}${esc((lang === 'en' && fieldEn(s, 'apply')) || s.exhibitor.apply || tbc)}</small></a></li>`).join('')}</ul>`;
 }
 
 // トップ。構成は scripts/lib/home-view.mjs（HERO → カレンダー → 注目マーケット → 出店者 → 地域・種類 → サイト情報）
@@ -107,11 +113,11 @@ function areaPages(ctx, lang) {
   pages.push(pg(lang, '/area/', { title: A.h1, description: A.desc, body: `<div class="in page">${breadcrumb([{ label: A.h1 }], lang)}<h1>${esc(A.h1)}</h1><p class="lead">${esc(A.lead)}</p>${idx ? `<ul class="grid-links">${idx}</ul>` : `<p class="empty">${esc(P[lang].soon)}</p>`}</div>` }));
   for (const [p, cities] of prefs) {
     const pn = prefLabel(p, lang);
-    const cityLinks = [...cities].sort().map(([c, name]) => `<li><a href="/area/${p}/${c}/">${esc(name)}<small>${esc(P[lang].cnt(count((s) => s.venue.cityCode === c)))}</small></a></li>`).join('');
+    const cityLinks = [...cities].sort().map(([c, name]) => `<li><a href="/area/${p}/${c}/">${esc(cityL(name, lang))}<small>${esc(P[lang].cnt(count((s) => s.venue.cityCode === c)))}</small></a></li>`).join('');
     const extra = cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '';
     pages.push(listPage(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), '', ctx.occ.filter((o) => o.series.venue.pref === p), extra));
     for (const [c, name] of cities) {
-      pages.push(listPage(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: name }], A.cityH1(name, pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c)));
+      pages.push(listPage(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c)));
     }
   }
   return pages;
@@ -154,39 +160,41 @@ function seriesPage(s, ctx, lang) {
   const pn = prefLabel(v.pref, lang);
   const next = list.find(isActive);
   const dates = list.length
-    ? `<ul class="sources">${list.slice(0, 12).map((o) => `<li>${esc(dlabel(o.date, lang, { year: true }))}　${statusTag(o, lang)}${o.note ? `　<span class="tbd">${esc(o.note)}</span>` : ''}</li>`).join('')}</ul>`
+    ? `<ul class="sources">${list.slice(0, 12).map((o) => `<li>${esc(dlabel(o.date, lang, { year: true }))}　${statusTag(o, lang)}${o.note ? `　<span class="tbd">${esc(noteL(o, lang))}</span>` : ''}</li>`).join('')}</ul>`
     : `<p class="empty">${esc(p.noDates)}</p>`;
   const row = (k, x) => `<div><dt>${esc(k)}</dt><dd>${x}</dd></div>`;
   const ex = s.exhibitor;
   const t = (x) => val(x, lang);
   const checked = lang === 'ja' ? '最終確認 ' : 'last checked ';
-  const rule = lang === 'ja' ? esc(s.recurrence.text) : `${esc(recurEn(s.recurrence) || (s.recurrence.type === 'dates' ? 'Selected dates (see below)' : ''))}<br><small>${esc(s.recurrence.text)}</small>`;
-  const orgName = s.organizer.url ? `<a href="${esc(s.organizer.url)}" rel="noopener">${esc(s.organizer.name)}</a>` : esc(s.organizer.name);
-  const body = `<div class="in page">${breadcrumb([{ href: `/area/${v.pref}/`, label: pn }, ...(v.cityCode ? [{ href: `/area/${v.pref}/${v.cityCode}/`, label: v.city }] : []), { label: s.name }], lang)}
-<h1>${esc(s.name)}</h1>
+  const rule = lang === 'ja' ? esc(s.recurrence.text) : fieldEn(s, 'rule') ? orig(fieldEn(s, 'rule'), s.recurrence.text) : `${esc(recurEn(s.recurrence) || 'Selected dates (see below)')}<small class="orig" lang="ja">${esc(s.recurrence.text)}</small>`;
+  const oen = lang === 'en' ? orgEn(s.organizer.name) : '';
+  const oShown = oen ? orig(oen, s.organizer.name) : esc(s.organizer.name);
+  const orgName = s.organizer.url ? `<a href="${esc(s.organizer.url)}" rel="noopener">${oShown}</a>` : oShown;
+  const body = `<div class="in page">${breadcrumb([{ href: `/area/${v.pref}/`, label: pn }, ...(v.cityCode ? [{ href: `/area/${v.pref}/${v.cityCode}/`, label: cityL(v.city, lang) }] : []), { label: nameL(s, lang) }], lang)}
+<h1>${esc(nameL(s, lang))}</h1>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-h" lang="ja">${esc(s.name)}</p>` : ''}
 <div class="tags">${kindTags(s.kinds, lang)}</div>
 ${next ? `<p class="banner">${esc(p.next)}${lang === 'ja' ? '：' : ': '}<b>${esc(dlabel(next.date, lang, { year: true }))}</b>　${esc(S[lang].status[next.status])}${lang === 'ja' ? '（' : ' ('}${checked}${esc(next.checkedAt)}${lang === 'ja' ? '）' : ')'}</p>` : ''}
 ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
 <h2 class="sec-h">${esc(p.secInfo)}</h2>
 <dl class="facts">
 ${row(p.when, rule)}
-${row(p.time, t(s.time?.text))}
-${row(p.venue, esc(v.name))}
+${row(p.time, lang === 'en' && timeEn(s) ? (s.time.text === timeEn(s).replace('–', '〜') ? esc(timeEn(s)) : orig(timeEn(s), s.time.text)) : t(s.time?.text))}
+${row(p.venue, lang === 'en' && venueL(s, lang) !== v.name ? orig(venueL(s, lang), v.name) : esc(v.name))}
 ${row(p.address, t(v.address))}
-${row(p.access, t(v.access))}
-${row(p.admission, t(s.visitor?.admission))}
-${row(p.rain, t(s.visitor?.rain))}
-${row(s.organizer.label ? p.orgLabel(s.organizer.label) : p.org, orgName)}
+${row(p.access, tv(s, 'access', v.access, lang))}
+${row(p.admission, tv(s, 'admission', s.visitor?.admission, lang))}
+${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang))}
+${row(s.organizer.label ? (lang === 'en' ? labelEn(s.organizer.label) || p.orgLabel(s.organizer.label) : p.orgLabel(s.organizer.label)) : p.org, orgName)}
 </dl>
 <h2 class="sec-h">${esc(p.secDates)}</h2>
 ${dates}
 <h2 class="sec-h" id="shuten">${esc(p.secVendor)}</h2>
-${ex ? `<dl class="facts">${row(p.fee, t(ex.fee))}${row(p.apply, t(ex.apply))}${row(p.applyAt, ex.applyUrl ? `<a href="${esc(ex.applyUrl)}" rel="noopener">${esc(p.applyLink)}</a>` : TBC(lang))}${ex.notes ? row(p.notes, esc(ex.notes)) : ''}</dl>` : `<p class="empty">${esc(p.noVendor)}</p>`}
+${ex ? `<dl class="facts">${row(p.fee, tv(s, 'fee', ex.fee, lang))}${row(p.apply, tv(s, 'apply', ex.apply, lang))}${row(p.applyAt, ex.applyUrl ? `<a href="${esc(ex.applyUrl)}" rel="noopener">${esc(p.applyLink)}</a>` : TBC(lang))}${ex.notes ? row(p.notes, tv(s, 'notes', ex.notes, lang)) : ''}</dl>` : `<p class="empty">${esc(p.noVendor)}</p>`}
 <h2 class="sec-h">${esc(p.secSrc)}</h2>
 <ul class="sources">${s.sources.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x.url)}</a>（${checked}${esc(x.checkedAt)}）</li>`).join('')}</ul>
 <p class="note">${s.recurrence.type === 'dates' ? '' : esc(p.rule(lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence)))} ${esc(disclaimer(lang))}</p>
 </div>`;
-  return pg(lang, `/e/${s.id}/`, { title: p.title(s.name, pn, v.city), description: p.desc(s.name, lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list) });
+  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list) });
 }
 
 function shutenPage(ctx, lang) {
@@ -229,7 +237,7 @@ function aboutPage(ctx, lang) {
 <h2>What we collect</h2>
 <p>We use only the official pages of organizers, the official pages of local governments, and open data published by local governments. We do not use listings from other event-information sites, aggregator sites or social media.</p>
 <p>We list only facts: dates, times, venues, admission, stall fees and how to apply. We do not copy text or photos from official pages. Every listing carries a source (a link to the official page) and the date it was last checked.</p>
-<p>Names, venues, times, fees and similar details are quoted from the official pages in Japanese and are not translated.</p>
+<p>Names, venues, times, fees and similar details are this site’s unofficial English translations of the official Japanese wording. The Japanese original is shown in small type beside each item, and the official Japanese page applies if the two differ. Items without a translation are shown in Japanese.</p>
 <h2>How dates are shown</h2>
 <ul>
 <li><b>${esc(st.confirmed)}</b>: this occurrence was confirmed from official information.</li>
@@ -302,7 +310,8 @@ function notFound(lang) {
 
 // ---- 全体 ----
 
-export function buildPages({ series, occurrences, credits = [] }, today, days = 120) {
+export function buildPages({ series, occurrences, credits = [], translations = {} }, today, days = 120) {
+  setTranslations(translations);
   const occ = buildOccurrences(series, occurrences, today, days);
   const ctx = { series, occ, today, days, credits };
   // 英語が既定（/）。日本語は /ja/
@@ -315,8 +324,8 @@ export function buildPages({ series, occurrences, credits = [] }, today, days = 
 export function searchIndex(occ) {
   // 検索用：開催回ごとの小さな JSON（/events.json）
   return occ.map((o) => ({
-    d: o.date, st: o.status, c: o.checkedAt, id: o.series.id, n: o.series.name, k: o.series.kinds,
-    p: PREFS[o.series.venue.pref], pe: prefLabel(o.series.venue.pref, 'en'), ci: o.series.venue.city || '', v: o.series.venue.name, t: o.series.time?.text || '', r: o.series.recurrence.text, re: recurEn(o.series.recurrence),
+    d: o.date, st: o.status, c: o.checkedAt, id: o.series.id, n: o.series.name, ne: nameEn(o.series), k: o.series.kinds,
+    p: PREFS[o.series.venue.pref], pe: prefLabel(o.series.venue.pref, 'en'), ci: o.series.venue.city || '', cie: cityEn(o.series.venue.city), v: o.series.venue.name, ve: venueEn(o.series), t: o.series.time?.text || '', te: timeEn(o.series), r: o.series.recurrence.text, re: recurEn(o.series.recurrence),
   }));
 }
 

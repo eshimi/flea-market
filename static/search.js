@@ -19,14 +19,14 @@
     const { events } = await (await fetch('/events.json')).json();
     const words = q.toLowerCase().split(/[\s　]+/).filter(Boolean);
     const hit = events.filter((e) => {
-      const text = [e.n, e.p, e.pe || '', e.re || '', e.ci, e.v, e.r, ...e.k.map((k) => KIND[k] || '')].join(' ').toLowerCase();
+      const text = [e.n, e.ne || '', e.p, e.pe || '', e.cie || '', e.ve || '', e.re || '', e.ci, e.v, e.r, ...e.k.map((k) => KIND[k] || '')].join(' ').toLowerCase();
       return words.every((w) => text.includes(w));
     });
     status.textContent = ja ? `「${q}」の開催：${hit.length}件` : `${hit.length} result${hit.length === 1 ? '' : 's'} for “${q}”`;
     out.innerHTML = hit.slice(0, 200).map((e) => {
       const d = new Date(e.d + 'T00:00:00Z');
       const off = e.st === 'cancelled' || e.st === 'postponed';
-      return `<article class="ev${off ? ' off' : ''}"><div class="ev-date"><small>${ja ? d.getUTCMonth() + 1 + '月' : MON[d.getUTCMonth()]}</small><b>${d.getUTCDate()}</b><small>${ja ? WD[d.getUTCDay()] : WDE[d.getUTCDay()]}</small></div><div class="ev-body"><h3><a href="${pre}/e/${esc(e.id)}/">${esc(e.n)}</a></h3><p class="meta">${esc([e.ci || (ja ? e.p : e.pe), e.v].filter(Boolean).join('・'))}${e.t ? ' ／ ' + esc(e.t) : ''}</p><div class="tags">${(ja ? e.r : e.re) ? `<span class="tag">${esc(ja ? e.r : e.re)}</span>` : ''}<span class="tag ${CLS[e.st]}">${esc(LABEL[e.st])}</span></div></div></article>`;
+      return `<article class="ev${off ? ' off' : ''}"><div class="ev-date"><small>${ja ? d.getUTCMonth() + 1 + '月' : MON[d.getUTCMonth()]}</small><b>${d.getUTCDate()}</b><small>${ja ? WD[d.getUTCDay()] : WDE[d.getUTCDay()]}</small></div><div class="ev-body"><h3><a href="${pre}/e/${esc(e.id)}/">${esc(!ja && e.ne ? e.ne : e.n)}</a></h3>${!ja && e.ne ? `<p class="orig-n" lang="ja">${esc(e.n)}</p>` : ''}<p class="meta">${esc((ja ? [e.ci || e.p, e.v].join('・') : [e.cie || e.ci || e.pe, e.ve || e.v].filter(Boolean).join(', ')))}${(ja ? e.t : e.te || e.t) ? (ja ? ' ／ ' : ' / ') + esc(ja ? e.t : e.te || e.t) : ''}</p><div class="tags">${(ja ? e.r : e.re) ? `<span class="tag">${esc(ja ? e.r : e.re)}</span>` : ''}<span class="tag ${CLS[e.st]}">${esc(LABEL[e.st])}</span></div></div></article>`;
     }).join('') || (ja ? '<p class="empty">見つかりませんでした。言葉を短くするか、地域・種類から探してください。</p>' : '<p class="empty">Nothing found. Try a shorter word, or browse by area or type.</p>');
   } catch {
     status.textContent = ja ? '読み込みに失敗しました。時間をおいて、もう一度お試しください。' : 'Failed to load. Please try again later.';

@@ -58,7 +58,7 @@ test('HTML のエスケープと、検索用の索引', () => {
   assert.ok(!html.includes('<title><a>'));
   const idx = searchIndex(occ);
   assert.equal(idx.length, occ.length);
-  assert.deepEqual(Object.keys(idx[0]).sort(), ['c', 'ci', 'd', 'id', 'k', 'n', 'p', 'pe', 'r', 're', 'st', 't', 'v']);
+  assert.deepEqual(Object.keys(idx[0]).sort(), ['c', 'ci', 'cie', 'd', 'id', 'k', 'n', 'ne', 'p', 'pe', 'r', 're', 'st', 't', 'te', 'v', 've']);
 });
 
 test('サイトマップの更新日は、本文が変わったページだけ進む', () => {
@@ -245,4 +245,51 @@ test('使い方・よくある質問・ブログ：両言語のページ・RSS�
   assert.match(layout(has('/faq/')), /"@type":"FAQPage"/);
   // フッターに出る
   for (const h of ['/guide/', '/faq/', '/blog/']) assert.ok(layout(page('/')).includes(`href="${h}"`) && layout(page('/ja/')).includes(`href="/ja${h}"`), h);
+});
+
+test('英語の訳：すべての掲載に訳があり、数字が日本語の原文と一致する', () => {
+  const real = loadData();
+  const T = real.translations;
+  const WORDS = { once: 1, twice: 2, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, first: 1, second: 2, third: 3, fourth: 4, fifth: 5, jan: 1, feb: 2, mar: 3, apr: 4, jun: 6, jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12, january: 1, february: 2, march: 3, april: 4, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12 };
+  const nums = (t) => new Set([...(String(t).replace(/(\d),(\d)/g, '$1$2').match(/\d+/g) || []).map(Number), ...(String(t).toLowerCase().match(/[a-z]+/g) || []).map((w) => WORDS[w])].filter((n) => n > 0));
+  const same = (ja, en, where) => {
+    // 「第36回」→「36th」、「令和8年」など、年号・序数の数字は訳で言い換えることがあるので、原文の数字がすべて訳にあるかを見る
+    const e = nums(en);
+    for (const n of nums(ja)) {
+      if (e.has(n) || n === 1) continue; // 1 は「a」「each」などに言い換わるので見ない
+      // 令和の年（8→2026、9→2027）だけは、西暦への言い換えを許す
+      if ((n === 8 && e.has(2026)) || (n === 9 && e.has(2027))) continue;
+      assert.fail(`${where}: 原文の数字 ${n} が訳にありません\n  ja: ${ja}\n  en: ${en}`);
+    }
+  };
+  for (const s of real.series) {
+    const t = T.series[s.id];
+    assert.ok(t?.name && t?.venue, `${s.id}: 訳（name・venue）がありません`);
+    same(s.name, t.name, `${s.id} name`);
+    same(s.venue.name, t.venue, `${s.id} venue`);
+    if (s.time?.text && !/^\d{1,2}:\d{2}〜\d{1,2}:\d{2}$/.test(s.time.text)) { assert.ok(t.time, `${s.id}: time の訳`); same(s.time.text, t.time, `${s.id} time`); }
+    const pairs = [['rule', s.recurrence.text], ['admission', s.visitor?.admission], ['rain', s.visitor?.rain], ['access', s.venue.access], ['fee', s.exhibitor?.fee], ['apply', s.exhibitor?.apply], ['notes', s.exhibitor?.notes]];
+    for (const [k, ja] of pairs) {
+      if (!ja) continue;
+      if (k === 'rule' && !t.rule) continue; // きまりは構造から英語を作る
+      assert.ok(t[k], `${s.id}: ${k} の訳がありません`);
+      same(ja, t[k], `${s.id} ${k}`);
+    }
+    assert.ok(!s.venue.city || T.cities[s.venue.city], `${s.id}: 市区町村の訳 ${s.venue.city}`);
+    assert.ok(T.organizers[s.organizer.name], `${s.id}: 主催者の訳 ${s.organizer.name}`);
+    if (s.organizer.label) assert.ok(T.labels[s.organizer.label], `${s.id}: 見出しの訳 ${s.organizer.label}`);
+  }
+  for (const o of real.occurrences) {
+    const n = o.reason || o.note;
+    if (n) { const en = T.notes[`${o.series}|${o.date}`]; assert.ok(en, `${o.series} ${o.date}: 注記の訳`); same(n, en, `${o.series} ${o.date} note`); }
+  }
+  // 英語のページには、訳が出る（日本語の原文は小さく添える）
+  const { pages } = buildPages(real, '2026-10-18');
+  const d = pages.find((p) => p.path === '/e/oedo-antique-market-tokyo-international-forum/').body;
+  assert.match(d, /<h1>Oedo Antique Market \(Tokyo International Forum\)<\/h1>/);
+  assert.match(d, /class="orig" lang="ja">東京国際フォーラム 地上広場/);
+  assert.match(d, /Free admission/);
+  const area = pages.find((p) => p.path === '/area/13/').body;
+  assert.match(area, /Chiyoda Ward/);
+  assert.ok(!/千代田区<small/.test(area), '英語の市区町村一覧に日本語が残る');
 });

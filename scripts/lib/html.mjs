@@ -2,6 +2,7 @@
 import { INDEXABLE, SITE, TOP_LINKS } from './nav.mjs';
 import { KINDS } from './kinds.mjs';
 import { weekday } from './dates.mjs';
+import { cityL, nameL, noteL, timeEn, venueL } from './tr-en.mjs';
 import { icon, logoSvg } from './icons.mjs';
 import { MON_EN, S, T, WD_EN, WD_JA } from './i18n.mjs';
 import { disclaimer, DISCLAIMER_JA, KIND_SHORT_EN, langPath, localize, P, prefLabel, recurTag, splitPath, monthHead } from './l10n.mjs';
@@ -112,16 +113,16 @@ export function eventCard(o, lang = 'en') {
   const s = o.series;
   const [, m, d] = o.date.split('-');
   const wd = lang === 'ja' ? WD_JA[weekday(o.date)] : WD_EN[weekday(o.date)];
-  const place = [s.venue.city || prefLabel(s.venue.pref, lang), s.venue.name].filter(Boolean).join('・');
-  const meta = [place, s.time?.text].filter(Boolean).map(esc).join(' ／ ');
+  const place = [cityL(s.venue.city, lang) || prefLabel(s.venue.pref, lang), venueL(s, lang)].filter(Boolean).join(lang === 'en' ? ', ' : '・');
+  const meta = [place, (lang === 'en' && timeEn(s)) || s.time?.text].filter(Boolean).map(esc).join(lang === 'en' ? ' / ' : ' ／ ');
   const cls = o.status === 'cancelled' || o.status === 'postponed' ? ' off' : '';
   const rule = recurTag(s.recurrence, lang);
   return `<article class="ev${cls}">
 <div class="ev-date"><small>${lang === 'ja' ? `${+m}月` : MON_EN[+m - 1]}</small><b>${+d}</b><small>${wd}</small></div>
-<div class="ev-body"><h3><a href="/e/${s.id}/">${esc(s.name)}</a></h3>
+<div class="ev-body"><h3><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a></h3>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-n" lang="ja">${esc(s.name)}</p>` : ''}
 <p class="meta">${meta}</p>
 <div class="tags">${kindTags(s.kinds, lang)}${rule ? `<span class="tag">${esc(rule)}</span>` : ''}${statusTag(o, lang)}</div>
-${o.note ? `<p class="ev-note">${esc(o.note)}</p>` : ''}</div>
+${o.note ? `<p class="ev-note">${esc(noteL(o, lang))}</p>` : ''}</div>
 </article>`;
 }
 

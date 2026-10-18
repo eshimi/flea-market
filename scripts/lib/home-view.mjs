@@ -7,6 +7,7 @@ import { addDays, holidayName, isDayOff, upcomingWeekend, weekday } from './date
 import { isActive } from './events.mjs';
 import { KINDS } from './kinds.mjs';
 import { prefLabel } from './l10n.mjs';
+import { cityL, fieldEn, nameL, noteL, timeEn, venueL } from './tr-en.mjs';
 import { MAP_PREFS, renderMap } from './japan-map.mjs';
 import { skylineSvg } from './illustrations.mjs';
 
@@ -20,7 +21,7 @@ const kindImg = (k, id = '') => {
   for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
   return ['/img/kinds/flea.webp', '/img/kinds/flea-2.webp', '/img/kinds/flea-3.webp'][h % 3];
 };
-const heading = (t, id) => `<h2 class="hm-h"${id ? ` id="${id}"` : ''}><span>${esc(t.title)}</span><small>${esc(t.sub)}</small></h2>`;
+const heading = (t, id) => `<h2 class="hm-h"${id ? ` id="${id}"` : ''}><span>${esc(t.title)}</span>${t.sub ? `<small>${esc(t.sub)}</small>` : ''}</h2>`;
 
 // ---- HERO ----
 // 日本語・英語どちらのトップでも、同じ検索（/search/?q=）へ送る。既存の検索の動きは変えない
@@ -69,7 +70,7 @@ export function renderCalendar(ctx, lang = 'ja') {
     return `<li>${d.n ? `<a class="${cls}" href="/date/${d.iso}/"${d.current ? ' aria-current="date"' : ''}>${inner}</a>` : `<span class="${cls}"${d.current ? ' aria-current="date"' : ''}>${inner}</span>`}</li>`;
   }).join('');
   return `<section class="hm-cal" aria-label="${esc(t.aria)}"><div class="hm-in hm-cal-in">
-<div class="cal-label">${icon('calendar', 34)}<div><strong>${esc(t.title)}</strong><small>${esc(t.sub)}</small></div></div>
+<div class="cal-label">${icon('calendar', 34)}<div><strong>${esc(t.title)}</strong>${t.sub ? `<small>${esc(t.sub)}</small>` : ''}</div></div>
 <ol class="cal-days" tabindex="0" aria-label="${esc(t.aria)}">${chips}</ol>
 <a class="cal-view" href="/calendar/">${icon('calendar', 26)}<span>${esc(t.view)}</span>${icon('arrow', 16)}</a>
 </div></section>`;
@@ -91,19 +92,19 @@ export function renderCard(o, lang = 'ja') {
   const badge = lang === 'en'
     ? `<span class="mc-m">${MON_EN[+m - 1]}</span><b>${+d}</b><span class="mc-w">${WD_EN[wd].toUpperCase()}</span>`
     : `<span class="mc-m">${+m}月</span><b>${+d}</b><span class="mc-w">${WD_JA[wd]}</span>`;
-  const place = [s.venue.city || prefLabel(s.venue.pref, lang), s.venue.name].filter(Boolean).join('・');
-  const time = s.time?.text || S[lang].featured.tbc;
+  const place = [cityL(s.venue.city, lang) || prefLabel(s.venue.pref, lang), venueL(s, lang)].filter(Boolean).join(lang === 'en' ? ', ' : '・');
+  const time = (lang === 'en' && timeEn(s)) || s.time?.text || S[lang].featured.tbc;
   const official = o.source || s.sources[0].url;
   const kinds = s.kinds.map((x) => `<a class="mkind" href="/kind/${x}/">${esc(S[lang].kinds[x])}</a>`).join('');
   const off = o.status === 'cancelled' || o.status === 'postponed' ? ' is-off' : '';
   return `<article class="mcard${off}">
 <a class="mc-img" href="/e/${s.id}/" tabindex="-1" aria-hidden="true"><img src="${kindImg(k, s.id)}" alt="" width="800" height="600" loading="lazy" decoding="async"><span class="mc-date">${badge}</span></a>
 <div class="mc-body">
-<h3><a href="/e/${s.id}/">${esc(s.name)}</a></h3>
+<h3><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a></h3>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="mc-orig" lang="ja">${esc(s.name)}</p>` : ''}
 <p class="mc-line">${icon('pin', 16)}<span>${esc(place)}</span></p>
 <p class="mc-line">${icon('clock', 16)}<span>${esc(time)}</span></p>
 <div class="mc-tags">${kinds}${tagFor(o, lang)}</div>
-${o.note ? `<p class="mc-note">${esc(o.note)}</p>` : ''}
+${o.note ? `<p class="mc-note">${esc(noteL(o, lang))}</p>` : ''}
 <a class="mc-off" href="${esc(official)}" target="_blank" rel="noopener">${esc(S[lang].featured.official)}${icon('ext', 15)}</a>
 </div>
 </article>`;
@@ -131,7 +132,7 @@ ${body}
 }
 
 // ---- 出店者向け ----
-const first = (x) => String(x || '').split(/[（(。]/)[0].trim();
+const first = (x) => String(x || '').split(/[（(。]|\.\s|\s\(/)[0].trim();
 
 export function vendorRows(ctx) {
   const next = new Map();
@@ -144,7 +145,7 @@ export function vendorRows(ctx) {
 
 export function renderVendors(ctx, lang = 'ja') {
   const t = S[lang].vendors;
-  const rows = vendorRows(ctx).map((s) => `<li><a href="/e/${s.id}/#shuten"><img src="${kindImg(s.kinds[0], s.id)}" alt="" width="96" height="72" loading="lazy" decoding="async"><span><b>${esc(s.name)}</b><em>${esc(t.fee)}${esc(first(s.exhibitor.fee))}</em><em>${esc(t.apply)}${esc(first(s.exhibitor.apply) || S[lang].featured.tbc)}</em></span></a></li>`).join('');
+  const rows = vendorRows(ctx).map((s) => `<li><a href="/e/${s.id}/#shuten"><img src="${kindImg(s.kinds[0], s.id)}" alt="" width="96" height="72" loading="lazy" decoding="async"><span><b>${esc(nameL(s, lang))}</b><em>${esc(t.fee)}${esc(first((lang === 'en' && fieldEn(s, 'fee')) || s.exhibitor.fee))}</em><em>${esc(t.apply)}${esc(first((lang === 'en' && fieldEn(s, 'apply')) || s.exhibitor.apply) || S[lang].featured.tbc)}</em></span></a></li>`).join('');
   return `<section class="hm-sec hm-vendors" aria-labelledby="vendors-h"><div class="hm-in"><div class="vend-box">
 <div class="vend-copy"><div class="vend-ic">${icon('store', 34)}</div>${heading(t, 'vendors-h')}<p>${esc(t.desc)}</p><a class="vend-btn" href="/shuten/">${esc(t.button)}${icon('arrow', 18)}</a></div>
 <ul class="vend-list">${rows || `<li class="hm-empty">${esc(t.empty)}</li>`}</ul>
