@@ -505,5 +505,139 @@
   "evidenceOk": {
    "tama-econico-market": true
   }
+ },
+ "https://ikeshoren.jp/ikegamibiyori/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "ikegami-biyori-marche": true
+  }
+ },
+ "https://ikeshoren.jp/8193/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "ikegami-biyori-marche": true
+  }
+ },
+ "https://www.chuo-kanko.or.jp/blogs/event/202609141846": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"page_cache:71195427060:BlogArticleDetailsController:7c48af8b8acc584a7894b9018292eadf:9db6d508ac41b26df56a5d83a84337c1\"",
+  "mismatch": {},
+  "evidenceOk": {
+   "nihonbashi-bettara-ichi": true
+  }
+ },
+ "https://www.city.nerima.tokyo.jp/kankomoyoshi/annai/omatsuri/chikusai/20260616103208700.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Sun, 18 Oct 2026 03:00:29 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "nerima-sakuradai-chikusai-flea-2026": true
+  }
+ },
+ "https://www.city.suginami.tokyo.jp/s033/event/29570.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"41f2-65dce3b27bd4b\"",
+  "lastModified": "Wed, 14 Oct 2026 15:03:17 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "koenji-fes-2026-aozora-tezukuri-ichi": true
+  }
+ },
+ "https://www.city.toshima.lg.jp/150/2607271700.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"3c2f-65a609ae352e5\"",
+  "lastModified": "Tue, 01 Sep 2026 00:00:22 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "toshima-nakaikebukuro-park-flea-2026-11": true
+  }
+ },
+ "https://www.city.kita.lg.jp/living/bins/1002093/1026571.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"c0be-65e1d0e0335e4\"",
+  "lastModified": "Sun, 18 Oct 2026 13:05:42 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "kita-akabane-park-flea-smile-2026-10": true
+  }
+ },
+ "https://www.city.adachi.tokyo.jp/kyoso/ku/kuse/guruguru-kiosk080424.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"4cb5-65deb85cef6aa\"",
+  "lastModified": "Fri, 16 Oct 2026 02:00:03 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "adachi-guruguru-kiosk-ayase-2026-10": true
+  }
+ },
+ "https://www.city.fuchu.tokyo.jp/gyosei/johokokai/koho/kohoshi/koho/reiwa8nenhakkou/r081001.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Sat, 17 Oct 2026 15:01:54 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "fuchu-oshitate-park-flea": true
+  }
+ },
+ "https://www.city.fuchu.tokyo.jp/gyosei/johokokai/koho/kohoshi/koho/reiwa8nenhakkou/r081001.files/261001kouho_11P.txt": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 29 Sep 2026 08:09:44 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "fuchu-oshitate-park-flea": true
+  }
+ },
+ "https://www.city.akishima.lg.jp/kurashi/gomi/1008272/1001598.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"92b6-65e1cfb607381\"",
+  "lastModified": "Sun, 18 Oct 2026 13:00:29 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "akishima-recycle-center-flea": true
+  }
+ },
+ "https://hino-artfestival.com/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"1-1792043052;br\"",
+  "mismatch": {},
+  "evidenceOk": {
+   "hino-art-festival-flea-craft": true
+  }
+ },
+ "https://www.city.hino.lg.jp/kouminkan/1015477/1016167.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"4819-65e19bedfc6c6\"",
+  "lastModified": "Sun, 18 Oct 2026 09:08:49 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "hino-art-festival-flea-craft": true
+  }
  }
 }
