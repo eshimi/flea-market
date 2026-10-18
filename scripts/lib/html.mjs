@@ -1,9 +1,9 @@
 // ページの共通の枠（ヘッダー・フッター・免責）と、HTML の小さな部品
-import { FOOTER_GROUPS, INDEXABLE, SITE, TOP_LINKS } from './nav.mjs';
+import { INDEXABLE, SITE, TOP_LINKS } from './nav.mjs';
 import { KINDS } from './kinds.mjs';
 import { label } from './dates.mjs';
 import { icon, logoSvg } from './icons.mjs';
-import { T } from './i18n.mjs';
+import { EN_DISCLAIMER, S, T } from './i18n.mjs';
 
 export function esc(s) {
   return String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -25,10 +25,23 @@ export function siteHeader(path, lang = 'ja') {
 </div></header>`;
 }
 
+// フッター（全ページ共通）。リンクは、これまでのフッターのリンクをすべて含む
+export function siteFooter(lang = 'ja') {
+  const f = S[lang].footer;
+  const links = f.links.map(([href, text]) => `<a href="${href}">${esc(text)}</a>`).join('<i aria-hidden="true">|</i>');
+  return `<footer class="site-foot2">
+<div class="ft-in">
+<a class="brand ft-brand" href="${lang === 'en' ? '/en/' : '/'}" aria-label="Flea Market JP">${logoSvg()}<span class="brand-t"><b>FLEA MARKET JP</b><small>${esc(T[lang].tagline)}</small></span></a>
+<nav class="ft-nav" aria-label="${esc(f.nav)}">${links}</nav>
+<div class="langsw" role="group" aria-label="${esc(T[lang].langLabel)}">${icon('globe', 18)}<a href="/en/" hreflang="en" lang="en"${lang === 'en' ? ' aria-current="true"' : ''}>EN</a><i aria-hidden="true">|</i><a href="/" hreflang="ja" lang="ja"${lang === 'ja' ? ' aria-current="true"' : ''}>日本語</a></div>
+</div>
+<div class="ft-note"><p>${esc(lang === 'en' ? EN_DISCLAIMER : DISCLAIMER)}</p><p>© ${esc(SITE.name)}　${esc(f.copy)}</p></div>
+</footer>`;
+}
+
 export function layout({ path, title, description, body, head = '', scripts = [], lang = 'ja', css = [] }) {
   const t = T[lang];
   const full = path === '/' || path === '/en/' ? `${SITE.name}｜${lang === 'en' ? 'Flea markets, antique fairs & handmade markets in Japan' : `${SITE.tagline}の開催情報`}` : `${title}｜${SITE.name}`;
-  const foot = FOOTER_GROUPS.map((g) => `<div><h2>${esc(g.title)}</h2><ul>${g.links.map((l) => `<li><a href="${l.href}">${esc(l.label)}</a></li>`).join('')}</ul></div>`).join('');
   return `<!doctype html>
 <html lang="${t.htmlLang}">
 <head>
@@ -52,11 +65,7 @@ ${siteHeader(path, lang)}
 <main id="main">
 ${body}
 </main>
-<footer class="site-foot"><div class="in">
-<p class="disclaimer">${esc(DISCLAIMER)}</p>
-<div class="foot-groups">${foot}</div>
-<p class="copy">© ${esc(SITE.name)}　主催者・自治体の公式情報と公開データをもとに掲載しています。</p>
-</div></footer>
+${siteFooter(lang)}
 ${scripts.map((s) => `<script src="${s}" defer></script>`).join('\n')}
 </body>
 </html>

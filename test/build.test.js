@@ -27,7 +27,9 @@ test('作るページ：トップ・今週末・日別・地域・市区町村�
 
 test('今週末（10/17 土・10/18 日）の一覧と、要確認・中止の表示', () => {
   const home = page('/').body;
-  assert.match(home, /10月17日（土）〜10月18日（日）/);
+  // 今週末の開催は、写真つきカードとして並ぶ（日付のバッジは、実データの 10/17 と 10/18）
+  assert.match(home, /<span class="mc-m">10月<\/span><b>17<\/b><span class="mc-w">土<\/span>/);
+  assert.match(home, /<span class="mc-m">10月<\/span><b>18<\/b><span class="mc-w">日<\/span>/);
   assert.match(home, /見本手づくり市/);
   assert.match(home, /開催は要確認/);
   const detail = page('/e/sample-shrine-kotto/').body;
@@ -131,7 +133,33 @@ test('トップの写真・出典は、リポジトリにそろっている', as
   const root = join(fileURLToPath(new URL('.', import.meta.url)), '..');
   const real = JSON.parse(readFileSync(join(root, 'data/image-credits.json'), 'utf8'));
   for (const c of real) {
-    assert.ok(existsSync(join(root, c.file)), `${c.file} がありません`);
+    assert.ok(c.files?.length, `${c.id}: files`);
+    for (const f of c.files) assert.ok(existsSync(join(root, f)), `${f} がありません`);
     for (const k of ['title', 'photographer', 'source', 'sourceUrl', 'license', 'use']) assert.ok(c[k], `${c.id}: ${k}`);
   }
+});
+
+test('トップの下部：カレンダー・注目・出店者・地域・種類・サイト情報・フッター', () => {
+  for (const p of [page('/'), page('/en/')]) {
+    const b = p.body;
+    // カレンダーの件数は、日別ページと同じ実データ
+    const chips = [...b.matchAll(/href="\/date\/(\d{4}-\d\d-\d\d)\/"/g)].map((m) => m[1]);
+    assert.ok(chips.length > 0);
+    for (const d of chips) assert.ok(page(`/date/${d}/`), d);
+    assert.ok(b.includes('href="/calendar/"'));
+    // 種類のカードは、開催がある種類だけ
+    const have = new Set(occ.flatMap((o) => o.series.kinds));
+    for (const m of b.matchAll(/class="tcard" href="\/kind\/(\w+)\//g)) assert.ok(have.has(m[1]), m[1]);
+    // 内部リンクは、すべて作ったページにある
+    for (const m of b.matchAll(/href="(\/[^"#?]*)/g)) {
+      const h = m[1];
+      if (/\.(css|js|webp|json|txt|xml)$/.test(h)) continue;
+      assert.ok(page(h), `${h} がありません`);
+    }
+    assert.ok(!/12,345|1,234|99\+/.test(b), 'ダミーの数字');
+  }
+  assert.ok(!page('/en/').body.includes('ofdata'));
+  // フッターには、これまでのリンクが残る
+  const foot = layout(page('/'));
+  for (const h of ['/weekend/', '/calendar/', '/area/', '/kind/', '/shuten/', '/about/', '/about/#remove']) assert.ok(foot.includes(`href="${h}"`), h);
 });

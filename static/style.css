@@ -69,11 +69,6 @@ aside h2{font-size:15px;margin-bottom:10px}
 .grid-links a small{display:block;color:var(--sub);font-size:12.5px}
 .month{margin:22px 0}.month h2{font-size:18px;margin-bottom:8px}
 /* フッター */
-.site-foot{background:#fff;border-top:1px solid var(--line);padding:24px 0 30px;font-size:13.5px}
-.disclaimer{background:var(--soft);border-radius:10px;padding:10px 14px;margin:0 0 18px}
-.foot-groups{display:flex;flex-wrap:wrap;gap:36px}.foot-groups h2{font-size:14px;margin-bottom:4px}
-.foot-groups ul{list-style:none;padding:0;margin:0}.foot-groups a{color:var(--sub)}
-.copy{color:var(--sub);font-size:12px;margin-top:18px}
 [hidden]{display:none!important}
 @media (max-width:760px){
   .in{padding:0 16px}

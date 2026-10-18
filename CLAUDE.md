@@ -89,6 +89,9 @@
 - HERO の写真は**仮の素材**：Pexels「Antiques in a Market Stall」（Huu Huynh、名古屋の露店）を横長に切り出した `static/img/hero.webp`（153KB）。出典は `data/image-credits.json` →「掲載のきまり」に表示（内部メモの `note` は出さない）。Pexels License の全文は Cloudflare の確認画面で取得できなかった（ブラウザで確認が必要）。写真が差し替わるときは、`static/img/hero.webp`（1800×900）と image-credits.json を更新する。
 - HERO の下の日付の帯・今週末の一覧・出店者・都道府県・種類・掲載の数は、Step 4 で順に作り直すまでの**暫定**（機能と実データはそのまま）。カテゴリーの入口の4つ目（Local Food & More → /kind/marche/）は、マルシェが0件。
 - 日本語の HERO の見出し（「日本の、市場の宝物を見つけよう。」）は、英語コピーに合わせた私の訳。装飾の手書き風の英語と円形のスタンプは、日本語トップでもそのまま。
+- Step 4（下部セクション）：2026-10-18 に実装。日付の帯（今日から14日。件数は実データ）・今週末の注目マーケット（写真つきカード。今週末がなければ直近）・出店者区画（出店料のあるシリーズ3件）・地域（日本地図＋開催のある都道府県だけ）・種類（開催のある種類だけ。マルシェは0件なので出ない）・掲載情報について（件数・最終更新日は実データ）・フッター（既存のリンクすべて＋言語切替）。部品は `scripts/lib/home-view.mjs`、地図は `scripts/lib/japan-map.mjs` ＋ `data/japan-prefs.json`（Natural Earth・パブリックドメイン。簡略化。沖縄は枠内に移動）、街並みのイラストは自作（`illustrations.mjs`）。
+- 写真は Pexels の**仮素材**（種類ごと `static/img/kinds/`、フリマは3種類から、シリーズ id で決める。`vendors.webp`・`about.webp`）。出典は `data/image-credits.json`（`files` の配列）→「掲載のきまり」に表示。Pexels License の全文は未確認（ブラウザで確認が必要）。「Clothes at Bazaar」「Clothes Market…」「Vibrant Vintage…」「Close-up of Colorful…」は撮影地が日本と確認できない（要確認）。
+- 地域の「地方」ボタンは作っていない（地方ごとのページ・データがないため）。要確認：ヘッダー幅（1240px）と他ページの本文幅（1120px）のずれは Step 5 で。
 - 後でそろえる：ヘッダーの横幅（1240px）と本文の幅（1120px）が少しずれている（Step 5）。フッターは Step 4 で作り直す。
 
 ## 未対応・次にやること

@@ -50,3 +50,153 @@
   .hd-stamp{display:none}
 }
 @media (max-width:360px){.hsearch button{font-size:11.5px;padding:0 12px}}
+
+/* ---- 共通の部品 ---- */
+.hm-in{max-width:1240px;margin:auto;padding:0 28px}
+.hm-sec{padding:44px 0}
+.hm-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:18px}
+.hm-h{margin:0;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.hm-h span{font-family:"Playfair Display","Noto Serif JP",Georgia,serif;font-weight:800;font-size:27px;color:var(--hm-ink);line-height:1.25}
+.hm-h small{font-size:12.5px;color:var(--hm-sub);font-weight:400}
+.hm-more{display:inline-flex;align-items:center;gap:6px;color:#1f5fa8;font-size:13.5px;text-decoration:none;white-space:nowrap;padding:6px 0}
+.hm-more:hover{text-decoration:underline}
+.hm-empty{background:#fff;border:1px dashed #e0d4c0;border-radius:12px;padding:18px;color:var(--hm-sub);margin:0}
+/* ---- 開催カレンダー ---- */
+.hm-cal{background:#fff;border-bottom:1px solid #efe6d8}
+.hm-cal-in{display:flex;align-items:center;gap:22px;padding-top:14px;padding-bottom:14px}
+.cal-label{display:flex;align-items:center;gap:12px;color:var(--hm-red);flex:0 0 auto}
+.cal-label strong{display:block;color:var(--hm-ink);font-size:15.5px;line-height:1.3}
+.cal-label small{display:block;color:var(--hm-sub);font-size:11.5px}
+.cal-days{list-style:none;display:flex;gap:8px;margin:0;padding:4px 2px;overflow-x:auto;flex:1 1 auto;min-width:0;scroll-snap-type:x proximity;scrollbar-width:thin}
+.cal-days li{flex:0 0 auto}
+.cd{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-width:76px;padding:8px 8px;border:1px solid #e6dccd;border-radius:8px;background:#fff;color:var(--hm-ink);text-decoration:none;line-height:1.3;scroll-snap-align:start}
+.cd b{font-size:15px}
+.cd em{font-style:normal;color:var(--hm-sub);font-size:11px}
+.cd i{font-style:normal;color:#2f6f5e;font-weight:700;font-size:12px}
+.cd.sat b{color:#2b62b8}
+.cd.off b{color:var(--hm-red)}
+.cd.none{opacity:.6}.cd.none i{color:var(--hm-sub);font-weight:400}
+.cd.cur{border:2px solid var(--hm-red);background:#fff8f5;padding:7px 7px}
+a.cd:hover{border-color:var(--hm-red)}
+.cal-view{display:inline-flex;align-items:center;gap:8px;flex:0 0 auto;color:var(--hm-ink);text-decoration:none;font-size:13px;line-height:1.3;padding:8px 4px}
+.cal-view .ic:first-child{color:var(--hm-red)}
+.cal-view:hover span{text-decoration:underline}
+/* ---- 今週末の注目マーケット ---- */
+.hm-featured{background:#fbf7ef}
+.mc-wrap{position:relative}
+.mc-row{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 64px)/5);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 14px;scrollbar-width:thin}
+.mcard{display:flex;flex-direction:column;background:#fff;border:1px solid #ece2d2;border-radius:12px;overflow:hidden;scroll-snap-align:start;min-width:0}
+.mc-img{position:relative;display:block;aspect-ratio:4/3;background:#eadfce}
+.mc-img img{display:block;width:100%;height:100%;object-fit:cover}
+.mc-date{position:absolute;left:10px;top:10px;background:#fff;border-radius:6px;min-width:44px;padding:4px 6px 3px;text-align:center;line-height:1.1;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.mc-date .mc-m,.mc-date .mc-w{display:block;font-size:10px;letter-spacing:.06em;color:var(--hm-sub);font-weight:700}
+.mc-date b{display:block;font-size:20px;color:var(--hm-ink)}
+.mc-body{display:flex;flex-direction:column;gap:6px;padding:14px;flex:1}
+.mcard h3{margin:0;font-size:15.5px;line-height:1.4;min-height:2.8em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.mcard h3 a{color:var(--hm-ink);text-decoration:none}
+.mcard h3 a:hover{text-decoration:underline}
+.mc-line{display:flex;gap:6px;align-items:flex-start;margin:0;font-size:13px;color:#3a3a46;line-height:1.45}
+.mc-line .ic{color:var(--hm-red);flex:0 0 auto;margin-top:2px}
+.mc-line span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:1.45em}
+.mc-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:2px}
+.mkind{border:1px solid #e3b9ae;color:#b5412f;background:#fff4f0;border-radius:6px;padding:1px 8px;font-size:12px;text-decoration:none;line-height:1.7}
+.mtag{font-size:12px;border-radius:6px;padding:1px 8px;line-height:1.7}
+.mtag.ok{background:#e3f1ea;color:#2f6f5e;font-weight:700}
+.mtag.plan{background:#eef0f5;color:#3d4a66}
+.mtag.warn{background:#fdecdc;color:#9a4a14;font-weight:700}
+.mtag.stop{background:#f8dcd6;color:#9b2c17;font-weight:700}
+.mc-note{margin:0;font-size:12.5px;color:#9a4a14}
+.mc-off{margin-top:auto;padding-top:8px;display:inline-flex;align-items:center;gap:5px;color:#1f5fa8;font-size:13px;text-decoration:underline}
+.mcard.is-off{opacity:.8}.mcard.is-off h3 a{text-decoration:line-through}
+.mc-next{position:absolute;right:-14px;top:28%;width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid #e3d8c6;box-shadow:0 4px 12px rgba(0,0,0,.16);cursor:pointer;color:var(--hm-ink);display:flex;align-items:center;justify-content:center}
+.mc-next:hover{border-color:var(--hm-red);color:var(--hm-red)}
+.mc-next[hidden]{display:none}
+/* ---- 出店者向け ---- */
+.hm-vendors{background:#fff;padding:14px 0 44px}
+.vend-box{display:grid;grid-template-columns:minmax(240px,.95fr) minmax(0,1.35fr) minmax(0,1.1fr);gap:24px;background:#fbeee9;border-radius:14px;padding:26px;align-items:center}
+.vend-ic{color:var(--hm-red);margin-bottom:6px}
+.vend-box .hm-h span{font-size:26px}
+.vend-copy p{margin:12px 0 18px;color:#3a3a46;font-size:14.5px;line-height:1.7}
+.vend-btn{display:inline-flex;align-items:center;gap:10px;background:var(--hm-red);color:#fff;padding:0 24px;min-height:50px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px}
+.vend-btn:hover{background:var(--hm-red-d)}
+.vend-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.vend-list a{display:flex;gap:12px;align-items:center;background:#fff;border-radius:8px;padding:8px;text-decoration:none;color:var(--hm-ink);box-shadow:0 1px 4px rgba(0,0,0,.07)}
+.vend-list img{width:96px;height:72px;object-fit:cover;border-radius:6px;flex:0 0 auto}
+.vend-list span{min-width:0}
+.vend-list b{display:block;font-size:14.5px;line-height:1.35;margin-bottom:2px}
+.vend-list em{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-style:normal;font-size:12.5px;color:#4a4a58;line-height:1.4}
+.vend-photo{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3}
+.vend-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.vend-script{position:absolute;left:14px;top:12px;margin:0;font-family:"Caveat","Segoe Script",cursive;font-weight:600;font-size:clamp(24px,2.4vw,34px);color:#fff;transform:rotate(-7deg);text-shadow:0 2px 10px rgba(0,0,0,.6);line-height:1.1}
+/* ---- 地域から探す・種類から探す ---- */
+.hm-explore{background:#fff;padding:18px 0 44px}
+.hm-two{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.3fr);gap:36px;align-items:start}
+.area-box{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:14px;background:#fbf7ef;border-radius:14px;padding:18px 18px 0;overflow:hidden}
+.jmap{display:block;width:100%;height:auto}
+.pm-off{fill:#efd3c8;stroke:#fbf7ef;stroke-width:.8}
+.pm-on{fill:#d9533b;stroke:#fff;stroke-width:1;cursor:pointer;transition:fill .15s}
+a:hover .pm-on,a:focus-visible .pm-on{fill:#a93120}
+.area-side{align-self:center}
+.area-lead{margin:0 0 10px;font-size:13px;color:var(--hm-sub)}
+.achips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0}
+.achip{display:inline-flex;align-items:center;gap:7px;border:1px solid #e3b9ae;border-radius:8px;background:#fff4f0;color:#a93120;padding:0 12px;min-height:42px;text-decoration:none;font-weight:700;font-size:14px}
+.achip small{font-weight:400;color:#6b5a55;font-size:11.5px}
+.achip:hover{border-color:var(--hm-red)}
+.area-sky{grid-column:1 / -1;margin:0 -18px;line-height:0}
+.skyline{display:block;width:100%;height:96px}
+.tcards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.tcard{display:flex;flex-direction:column;align-items:center;text-align:center;text-decoration:none;color:var(--hm-ink);background:#fff;border:1px solid #ece2d2;border-radius:10px;overflow:hidden;padding-bottom:12px;height:100%}
+.tcard:hover{border-color:var(--hm-red)}
+.tc-img{display:block;aspect-ratio:4/3;width:100%;overflow:hidden}
+.tc-img img{display:block;width:100%;height:100%;object-fit:cover}
+.tc-ic{position:relative;margin-top:-22px;width:44px;height:44px;border-radius:50%;background:#fff;color:var(--hm-red);box-shadow:0 2px 8px rgba(0,0,0,.16);display:flex;align-items:center;justify-content:center}
+.tcard b{margin-top:8px;font-size:13px;line-height:1.35;padding:0 4px;word-break:auto-phrase;text-wrap:balance}
+.tcard small{color:var(--hm-sub);font-size:12.5px;margin-top:2px}
+/* ---- サイト情報 ---- */
+.hm-about{background:#fbf7ef;padding:30px 0 44px}
+.about-box{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(220px,.62fr);gap:30px;align-items:center;background:#fff;border:1px solid #ece2d2;border-radius:14px;padding:20px 0 20px 24px;overflow:hidden}
+.about-left{display:flex;flex-direction:column;gap:16px}
+.about-title{display:flex;gap:12px;align-items:center;color:var(--hm-red)}
+.about-box .hm-h span{font-size:23px}
+.about-nums{display:flex;gap:28px;margin:0}
+.about-nums div{display:flex;flex-direction:column-reverse}
+.about-nums dd{margin:0;font-family:"Playfair Display","Noto Serif JP",Georgia,serif;font-size:42px;font-weight:800;color:var(--hm-red);line-height:1.05}
+.about-nums dt{font-size:12.5px;color:var(--hm-sub);line-height:1.35}
+.about-nums dt small{display:block;font-size:11px}
+.about-text{font-size:13px;color:#3a3a46;line-height:1.7}
+.about-text p{margin:0 0 4px}
+.about-text .about-up{font-weight:700;color:var(--hm-ink)}
+.about-text a{display:inline-flex;align-items:center;gap:5px;color:#1f5fa8;margin-top:4px}
+.about-photo{position:relative;align-self:stretch;min-height:170px;margin:-20px 0}
+.about-photo img{display:block;width:100%;height:100%;object-fit:cover}
+/* ---- タブレット・スマホ ---- */
+@media (max-width:1100px){
+  .mc-row{grid-auto-columns:calc((100% - 48px)/4)}
+  .hm-two{grid-template-columns:1fr;gap:28px}
+  .about-box{grid-template-columns:1fr 1fr;padding-right:24px}
+  .about-photo{display:none}
+  .vend-box{grid-template-columns:1fr 1fr}
+  .vend-photo{display:none}
+}
+@media (max-width:900px){
+  .hm-in{padding:0 16px}
+  .mc-row{grid-auto-columns:calc((100% - 32px)/3)}
+  .mc-next{display:none}
+  .hm-cal-in{flex-wrap:wrap;gap:8px 14px;padding-top:12px;padding-bottom:12px}
+  .cal-days{order:3;flex:1 1 100%}
+  .cal-view{margin-left:auto}
+}
+@media (max-width:720px){
+  .hm-sec{padding:32px 0}
+  .hm-h span{font-size:23px}
+  .hm-head{flex-wrap:wrap;gap:4px 12px}
+  .mc-row{grid-auto-columns:78%;gap:12px}
+  .vend-box{grid-template-columns:1fr;padding:20px 16px;gap:18px}
+  .vend-photo{display:block;order:3}
+  .area-box{grid-template-columns:1fr}
+  .tcards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .about-box{grid-template-columns:1fr;padding:18px 16px;gap:16px}
+  .about-nums{gap:20px;flex-wrap:wrap}
+  .about-nums dd{font-size:36px}
+  .about-photo{display:block;margin:0 -16px -18px;min-height:150px;aspect-ratio:16/9}
+}

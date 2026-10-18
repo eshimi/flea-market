@@ -8,8 +8,8 @@ import { buildOccurrences, isActive, lastChecked } from './lib/events.mjs';
 import { KINDS } from './lib/kinds.mjs';
 import { PREFS } from './lib/areas.mjs';
 import { CONTACT_EMAIL, SITE } from './lib/nav.mjs';
-import { renderHero } from './lib/home-view.mjs';
-import { T } from './lib/i18n.mjs';
+import { renderHomeBody } from './lib/home-view.mjs';
+import { EN_DISCLAIMER, T } from './lib/i18n.mjs';
 import { breadcrumb, DISCLAIMER, esc, eventList, eventListByMonth, kindTags, layout, md, STATUS_LABEL, statusTag } from './lib/html.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -42,50 +42,18 @@ function dayStrip(occ, today, current) {
   return `<nav class="days" aria-label="日付から探す">${cells.join('')}</nav>`;
 }
 
-function prefChips(occ) {
-  const counts = new Map();
-  for (const o of occ) if (isActive(o)) counts.set(o.series.venue.pref, (counts.get(o.series.venue.pref) || 0) + 1);
-  if (!counts.size) return '<p class="note">掲載の準備中です。</p>';
-  return `<ul class="chips">${[...counts].sort((a, b) => a[0].localeCompare(b[0])).map(([p, n]) => `<li><a href="/area/${p}/">${esc(PREFS[p])} ${n}</a></li>`).join('')}<li><a href="/area/">すべて</a></li></ul>`;
-}
-
 function exhibitorList(seriesList) {
   const rows = seriesList.filter((s) => s.exhibitor);
   if (!rows.length) return '<p class="empty">出店者向けの情報は、準備中です。</p>';
   return `<ul class="grid-links">${rows.map((s) => `<li><a href="/e/${s.id}/#shuten">${esc(s.name)}<small>出店料：${esc(s.exhibitor.fee || '要確認')}／申込み：${esc(s.exhibitor.apply || '要確認')}</small></a></li>`).join('')}</ul>`;
 }
 
-// トップ。HERO は新デザイン（Step 3）。その下の一覧などは、Step 4 で順に作り直すまでの暫定（機能は維持）
+// トップ。構成は scripts/lib/home-view.mjs（HERO → カレンダー → 注目マーケット → 出店者 → 地域・種類 → サイト情報）
 function home(ctx, lang = 'ja') {
-  const { occ, today, series } = ctx;
-  const weekend = upcomingWeekend(today);
-  const first = weekend[0];
-  const wkList = occ.filter((o) => weekend.includes(o.date));
-  const upcoming = occ.filter((o) => isActive(o)).slice(0, 10);
-  const active = occ.filter(isActive);
-  const body = `${renderHero(lang)}
-<div class="in home-rest">
-${dayStrip(occ, today)}
-<div class="cols"><div>
-<section>
-<h2 class="sec-h">${weekend.length > 1 ? `今週末（${label(first)}〜${label(weekend.at(-1))}）` : `今週末（${label(first)}）`}の開催 <a href="/weekend/">すべて見る →</a></h2>
-${eventList(wkList, '今週末の掲載は、まだありません。')}
-${wkList.length ? '' : `<h2 class="sec-h">これからの開催 <a href="/calendar/">カレンダー →</a></h2>${eventList(upcoming, '掲載の準備中です。')}`}
-</section>
-<section>
-<h2 class="sec-h">出店者向けの情報 <a href="/shuten/">すべて見る →</a></h2>
-${exhibitorList(series)}
-</section>
-</div>
-<aside>
-<div class="box"><h2>都道府県から</h2>${prefChips(occ)}</div>
-<div class="box"><h2>種類から</h2><ul class="chips">${Object.entries(KINDS).map(([k, v]) => `<li><a href="/kind/${k}/">${esc(v.short)}</a></li>`).join('')}</ul></div>
-<div class="box"><h2>掲載の数</h2><div class="nums"><div><b>${active.length}</b>今後${ctx.days}日の開催</div><div><b>${series.length}</b>市・主催</div></div><p class="note" style="margin-top:8px">${esc(today.replace(/-/g, '/'))} 更新</p></div>
-<div class="box"><h2>掲載のきまり</h2><p class="note">主催者・自治体の公式ページと公開データだけを使います。${esc(DISCLAIMER)} <a href="/about/">くわしく</a></p></div>
-</aside></div></div>`;
+  const body = renderHomeBody(ctx, lang, lang === 'en' ? EN_DISCLAIMER : DISCLAIMER);
   const alt = `<link rel="alternate" hreflang="ja" href="${SITE.url}/">\n<link rel="alternate" hreflang="en" href="${SITE.url}/en/">\n<link rel="alternate" hreflang="x-default" href="${SITE.url}/">\n`;
   const fonts = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Noto+Serif+JP:wght@900&family=Caveat:wght@600&display=swap">\n<link rel="preload" as="image" href="/img/hero.webp" type="image/webp" fetchpriority="high">\n';
-  return { path: lang === 'en' ? '/en/' : '/', lang, title: SITE.name, description: T[lang].description, body, css: ['/home.css'], head: alt + fonts };
+  return { path: lang === 'en' ? '/en/' : '/', lang, title: SITE.name, description: T[lang].description, body, css: ['/home.css'], scripts: ['/home.js'], head: alt + fonts };
 }
 
 function listPage(path, crumbs, h1, lead, list, ctx, extra = '') {

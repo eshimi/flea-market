@@ -21,17 +21,3 @@ export const TOP_LINKS = [
   { key: 'about', href: '/about/', icon: 'info' },
 ];
 
-export const FOOTER_GROUPS = [
-  { title: '探す', links: [
-    { href: '/weekend/', label: '今週末の開催' },
-    { href: '/calendar/', label: '開催カレンダー' },
-    { href: '/area/', label: '地域から探す' },
-    { href: '/kind/', label: '種類から探す' },
-    { href: '/search/', label: 'キーワードで探す' },
-  ] },
-  { title: '出店する', links: [{ href: '/shuten/', label: '出店者向けの情報' }] },
-  { title: 'サイトについて', links: [
-    { href: '/about/', label: '掲載のきまり・出典' },
-    { href: '/about/#remove', label: '掲載の修正・削除の依頼' },
-  ] },
-];

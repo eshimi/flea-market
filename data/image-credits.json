@@ -1,15 +1,162 @@
 [
  {
   "id": "hero",
-  "file": "static/img/hero.webp",
-  "use": "トップページの写真（仮の素材。差し替え予定）",
+  "use": "トップページの写真（HERO・骨董市の写真。仮の素材。差し替え予定）",
   "title": "Antiques in a Market Stall",
   "photographer": "Huu Huynh",
   "source": "Pexels",
-  "sourceUrl": "https://www.pexels.com/photo/antiques-in-a-market-stall-18961551/",
+  "sourceUrl": "https://www.pexels.com/photo/18961551/",
   "license": "Pexels License（無料で商用利用できる写真）",
   "licenseUrl": "https://www.pexels.com/license/",
   "note": "名古屋の市場の露店の写真を、横長に切り出して使用。ライセンスの全文は、自動取得ができなかったため、ブラウザでの確認が必要",
+  "checkedAt": "2026-10-18",
+  "files": [
+   "static/img/hero.webp",
+   "static/img/kinds/kotto.webp"
+  ]
+ },
+ {
+  "id": "flea",
+  "files": [
+   "static/img/kinds/flea.webp"
+  ],
+  "use": "フリマの写真",
+  "title": "Clothes at Bazaar",
+  "photographer": "Anastasiya Badun",
+  "photographerUrl": "",
+  "source": "Pexels",
+  "sourceUrl": "https://www.pexels.com/photo/16729588/",
+  "license": "Pexels License（無料で商用利用できる写真）",
+  "licenseUrl": "https://www.pexels.com/license/",
+  "note": "Pexelsのページに記載の場所：撮影地は記載なし。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
+  "checkedAt": "2026-10-18"
+ },
+ {
+  "id": "flea-2",
+  "files": [
+   "static/img/kinds/flea-2.webp"
+  ],
+  "use": "フリマの写真",
+  "title": "Clothes Market on Street in Japan",
+  "photographer": "Huu Huynh",
+  "photographerUrl": "",
+  "source": "Pexels",
+  "sourceUrl": "https://www.pexels.com/photo/20383710/",
+  "license": "Pexels License（無料で商用利用できる写真）",
+  "licenseUrl": "https://www.pexels.com/license/",
+  "note": "Pexelsのページに記載の場所：岡崎。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
+  "checkedAt": "2026-10-18"
+ },
+ {
+  "id": "flea-3",
+  "files": [
+   "static/img/kinds/flea-3.webp"
+  ],
+  "use": "フリマの写真",
+  "title": "Vibrant Vintage Clothes Hanging at Flea Market",
+  "photographer": "Muhamad Guruh Budi Hartono",
+  "photographerUrl": "https://www.pexels.com/@muhamad-guruh-budi-hartono-430167744/",
+  "source": "Pexels",
+  "sourceUrl": "https://www.pexels.com/photo/30202432/",
+  "license": "Pexels License（無料で商用利用できる写真）",
+  "licenseUrl": "https://www.pexels.com/license/",
+  "note": "Pexelsのページに記載の場所：撮影地は記載なし。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
+  "checkedAt": "2026-10-18"
+ },
+ {
+  "id": "nomi",
+  "files": [
+   "static/img/kinds/nomi.webp"
+  ],
+  "use": "蚤の市の写真",
+  "title": "Japanese Trinket Shop with Ceramic Figures",
+  "photographer": "Gu Ko",
+  "photographerUrl": "",
+  "source": "Pexels",
+  "sourceUrl": "https://www.pexels.com/photo/31858800/",
+  "license": "Pexels License（無料で商用利用できる写真）",
+  "licenseUrl": "https://www.pexels.com/license/",
+  "note": "ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
+  "checkedAt": "2026-10-18"
+ },
+ {
+  "id": "handmade",
+  "files": [
+   "static/img/kinds/handmade.webp"
+  ],
+  "use": "手作り市の写真",
+  "title": "Close-up of Colorful, Handmade Items at the Market",
+  "photographer": "Marek Piwnicki",
+  "photographerUrl": "",
+  "source": "Pexels",
+  "sourceUrl": "https://www.pexels.com/photo/26558812/",
+  "license": "Pexels License（無料で商用利用できる写真）",
+  "licenseUrl": "https://www.pexels.com/license/",
+  "note": "Pexelsのページに記載の場所：撮影地は記載なし。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
+  "checkedAt": "2026-10-18"
+ },
+ {
+  "id": "engi",
+  "files": [
+   "static/img/kinds/engi.webp"
+  ],
+  "use": "縁日・露店市の写真",
+  "title": "Winter Temple Market with People and Food Stalls",
+  "photographer": "Guohua Song",
+  "photographerUrl": "",
+  "source": "Pexels",
+  "sourceUrl": "https://www.pexels.com/photo/30590868/",
+  "license": "Pexels License（無料で商用利用できる写真）",
+  "licenseUrl": "https://www.pexels.com/license/",
+  "note": "Pexelsのページに記載の場所：京都。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
+  "checkedAt": "2026-10-18"
+ },
+ {
+  "id": "marche",
+  "files": [
+   "static/img/kinds/marche.webp"
+  ],
+  "use": "マルシェの写真",
+  "title": "Charming Street Vendor in Tokyo's Urban Corner",
+  "photographer": "Iban Lopez Luna",
+  "photographerUrl": "",
+  "source": "Pexels",
+  "sourceUrl": "https://www.pexels.com/photo/37767450/",
+  "license": "Pexels License（無料で商用利用できる写真）",
+  "licenseUrl": "https://www.pexels.com/license/",
+  "note": "Pexelsのページに記載の場所：東京。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
+  "checkedAt": "2026-10-18"
+ },
+ {
+  "id": "vendors",
+  "files": [
+   "static/img/vendors.webp"
+  ],
+  "use": "出店者の区画の写真",
+  "title": "Japanese street vendor selling strawberry daifuku",
+  "photographer": "Faheem Ahamad",
+  "photographerUrl": "",
+  "source": "Pexels",
+  "sourceUrl": "https://www.pexels.com/photo/40248786/",
+  "license": "Pexels License（無料で商用利用できる写真）",
+  "licenseUrl": "https://www.pexels.com/license/",
+  "note": "ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
+  "checkedAt": "2026-10-18"
+ },
+ {
+  "id": "about",
+  "files": [
+   "static/img/about.webp"
+  ],
+  "use": "サイト情報の写真",
+  "title": "Bustling Outdoor Market near Japanese Temple",
+  "photographer": "Eileen Gao",
+  "photographerUrl": "",
+  "source": "Pexels",
+  "sourceUrl": "https://www.pexels.com/photo/31328588/",
+  "license": "Pexels License（無料で商用利用できる写真）",
+  "licenseUrl": "https://www.pexels.com/license/",
+  "note": "Pexelsのページに記載の場所：東京。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
   "checkedAt": "2026-10-18"
  }
 ]
