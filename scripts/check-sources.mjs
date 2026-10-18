@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url';
 import { addDays, diffDays, todayJst } from './lib/dates.mjs';
 import { buildOccurrences } from './lib/events.mjs';
 import { crawlDelay, isAllowed, UA_TOKEN } from './lib/robots.mjs';
-import { checkEvidence, decodeBody, htmlToText } from './lib/text.mjs';
+import { checkEvidence, decodeBody, htmlToText, pdfToText } from './lib/text.mjs';
 import { SITE } from './lib/nav.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -77,10 +77,19 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 async function get(url, headers = {}) {
   try {
     const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, ...headers }, redirect: 'follow', signal: AbortSignal.timeout(30000) });
-    const text = res.status === 200 ? decodeBody(await res.arrayBuffer(), res.headers.get('content-type') || '') : '';
-    return { status: res.status, text, etag: res.headers.get('etag'), lastModified: res.headers.get('last-modified') };
+    const type = res.headers.get('content-type') || '';
+    let text = '';
+    let pdf = false;
+    if (res.status === 200) {
+      const body = await res.arrayBuffer();
+      if (/pdf/i.test(type) || new URL(url).pathname.toLowerCase().endsWith('.pdf')) {
+        pdf = true;
+        text = pdfToText(body);
+      } else text = decodeBody(body, type);
+    }
+    return { status: res.status, text, pdf, etag: res.headers.get('etag'), lastModified: res.headers.get('last-modified') };
   } catch (e) {
-    return { status: 0, error: e.cause?.code || e.name };
+    return { status: 0, error: e.cause?.code || e.message || e.name };
   }
 }
 
@@ -121,7 +130,7 @@ async function main() {
     if (prev.lastModified) headers['If-Modified-Since'] = prev.lastModified;
     const res = await get(src.url, headers);
     lastHit.set(u.origin, Date.now());
-    if (res.status === 200) res.text = htmlToText(res.text);
+    if (res.status === 200 && !res.pdf) res.text = htmlToText(res.text);
     const notes = applyResult({ src, result: res, series, state, today });
     lines.push(`- ${src.url}：${res.status || res.error}${notes.length ? '\n  - ' + notes.join('\n  - ') : '（一致）'}`);
   }

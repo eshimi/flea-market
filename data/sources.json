@@ -165,5 +165,38 @@
    "checkedAt": "2026-10-18",
    "note": "札幌市の「リンク・著作権・免責事項」は、掲載コンテンツの複製・転用は事前に担当課へ相談とする。事実の項目（日付・場所・主催団体名）だけ掲載し、主催団体の電話番号は載せない。robots.txt は取得を許可（2026-10-18 確認）"
   }
+ },
+ {
+  "url": "https://www.city.shinjuku.lg.jp/seikatsu/file10_06_00001.html",
+  "series": [
+   "shinjuku-recycle-center-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://www.town.mizuho.tokyo.jp/event/e011/p002837_d/fil/R8yoteihyo.pdf",
+  "series": [
+   "mizuho-aozora-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）（PDF。pdftotext で本文化）"
+  }
+ },
+ {
+  "url": "https://www.town.mizuho.tokyo.jp/event/e011/p002837.html",
+  "series": [
+   "mizuho-aozora-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）"
+  }
  }
 ]

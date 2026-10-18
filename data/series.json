@@ -596,5 +596,115 @@
     ]
    }
   ]
+ },
+ {
+  "id": "shinjuku-recycle-center-flea",
+  "name": "新宿リサイクル活動センター フリーマーケット",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "新宿リサイクル活動センター（新宿区）",
+   "url": "https://www.city.shinjuku.lg.jp/seikatsu/file10_06_00001.html"
+  },
+  "venue": {
+   "name": "新宿リサイクル活動センター",
+   "pref": "13",
+   "city": "新宿区",
+   "cityCode": "13104",
+   "address": "新宿区高田馬場4-10-2",
+   "access": "JR・西武新宿線・東京メトロ東西線 高田馬場駅から徒歩3分"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 1,
+     "wd": 0
+    },
+    {
+     "n": 3,
+     "wd": 0
+    }
+   ],
+   "text": "毎月第1・第3日曜日"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.shinjuku.lg.jp/seikatsu/file10_06_00001.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "フリーマーケット（第1・第3日曜日）",
+     "所在地：新宿区高田馬場4-10-2",
+     "JR、西武新宿線、東京メトロ東西線高田馬場駅から徒歩3分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mizuho-aozora-ichi",
+  "name": "みずほエコパークフリーマーケット「みずほ青空市」",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "瑞穂町 環境課",
+   "url": "https://www.town.mizuho.tokyo.jp/event/e011/p002837.html"
+  },
+  "venue": {
+   "name": "みずほエコパーク 管理棟前広場",
+   "pref": "13",
+   "city": "瑞穂町",
+   "cityCode": "13303"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-18",
+    "2026-11-15",
+    "2026-12-20",
+    "2027-02-21",
+    "2027-03-21"
+   ],
+   "text": "瑞穂町の発表した令和8年度の開催予定日（7〜8月・1月は開催なし）"
+  },
+  "time": {
+   "text": "8:30〜12:00",
+   "start": "08:30",
+   "end": "12:00"
+  },
+  "exhibitor": {
+   "apply": "電話申込み（先着順）。開催当日、受付で抽選をして許可書を交付",
+   "applyUrl": "https://www.town.mizuho.tokyo.jp/event/e011/p002837.html",
+   "notes": "出店できるのは町内在住の方のみ。最大40区画"
+  },
+  "sources": [
+   {
+    "url": "https://www.town.mizuho.tokyo.jp/event/e011/p002837_d/fil/R8yoteihyo.pdf",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "10月18日（日） 8：30～12：00",
+     "11月15日（日） 8：30～12：00",
+     "12月20日（日） 8：30～12：00",
+     "2月21日（日） 8：30～12：00",
+     "3月21日（日） 8：30～12：00",
+     "開催なし"
+    ]
+   },
+   {
+    "url": "https://www.town.mizuho.tokyo.jp/event/e011/p002837.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "環境課主催のフリーマーケット「みずほ青空市」",
+     "出店者 町内在住の方のみ",
+     "最大出店数 40区画",
+     "出店場所 エコパーク管理棟前広場",
+     "申込法 電話申込み（先着順）"
+    ]
+   }
+  ]
  }
 ]

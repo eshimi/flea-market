@@ -32,6 +32,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: PDF の読み取り用（poppler）
+        run: command -v pdftotext >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils)
       - run: npm test
       - name: 公式ページの確認
         continue-on-error: true

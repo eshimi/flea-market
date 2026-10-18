@@ -1,7 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { crawlDelay, isAllowed } from '../scripts/lib/robots.mjs';
-import { checkEvidence, decodeBody, htmlToText } from '../scripts/lib/text.mjs';
+import { checkEvidence, decodeBody, htmlToText, pdfToText } from '../scripts/lib/text.mjs';
+import { execFileSync } from 'node:child_process';
 import { applyResult, planChecks } from '../scripts/check-sources.mjs';
 import { validateSources } from '../scripts/lib/events.mjs';
 
@@ -64,4 +65,25 @@ test('文字コード：Shift_JIS のページも読める', () => {
   const html = new Uint8Array([...new TextEncoder().encode('<meta charset="x-sjis">'), ...sjis]);
   assert.match(decodeBody(html, 'text/html'), /骨董市/);
   assert.equal(decodeBody(new TextEncoder().encode('骨董市'), ''), '骨董市');
+});
+
+const hasPdftotext = (() => { try { execFileSync('pdftotext', ['-v'], { stdio: 'ignore' }); return true; } catch (e) { return e.status !== undefined; } })();
+
+test('PDF の本文を読んで、突き合わせに使える', { skip: !hasPdftotext && 'pdftotext がない環境' }, () => {
+  const stream = 'BT /F1 18 Tf 50 700 Td (Date 10/18 8:30-12:00 Mizuho) Tj ET';
+  const pdf = `%PDF-1.4
+1 0 obj<</Type/Catalog/Pages 2 0 R>>endobj
+2 0 obj<</Type/Pages/Kids[3 0 R]/Count 1>>endobj
+3 0 obj<</Type/Page/Parent 2 0 R/MediaBox[0 0 612 792]/Contents 4 0 R/Resources<</Font<</F1 5 0 R>>>>>>endobj
+4 0 obj<</Length ${stream.length}>>stream
+${stream}
+endstream endobj
+5 0 obj<</Type/Font/Subtype/Type1/BaseFont/Helvetica>>endobj
+trailer<</Root 1 0 R/Size 6>>
+%%EOF`;
+  assert.deepEqual(checkEvidence(pdfToText(new TextEncoder().encode(pdf)), ['Date 10/18 8:30-12:00 Mizuho']), { ok: true, missing: [] });
+});
+
+test('PDF でないものを渡すと、読めない旨の例外', { skip: !hasPdftotext && 'pdftotext がない環境' }, () => {
+  assert.throws(() => pdfToText(new TextEncoder().encode('not a pdf')), /PDF を読めません/);
 });

@@ -145,5 +145,38 @@
   "evidenceOk": {
    "sapporo-nakajima-park-flea": true
   }
+ },
+ "https://www.city.shinjuku.lg.jp/seikatsu/file10_06_00001.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6aaa3e38-127e1\"",
+  "lastModified": "Wed, 16 Sep 2026 06:59:04 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "shinjuku-recycle-center-flea": true
+  }
+ },
+ "https://www.town.mizuho.tokyo.jp/event/e011/p002837_d/fil/R8yoteihyo.pdf": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"37f9f6-d539-64e5ac9bb963f\"",
+  "lastModified": "Wed, 01 Apr 2026 00:01:38 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "mizuho-aozora-ichi": true
+  }
+ },
+ "https://www.town.mizuho.tokyo.jp/event/e011/p002837.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"37f2f3-16af9-64e5ac9b98ac9\"",
+  "lastModified": "Wed, 01 Apr 2026 00:01:38 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "mizuho-aozora-ichi": true
+  }
  }
 }

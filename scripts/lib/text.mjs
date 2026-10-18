@@ -1,3 +1,8 @@
+import { execFileSync } from 'node:child_process';
+import { mkdtempSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+
 // 取得した公式ページの本文を、突き合わせ用の文字列にする
 export function htmlToText(html) {
   return String(html)
@@ -12,6 +17,20 @@ export function htmlToText(html) {
     .replace(/&quot;/g, '"')
     .replace(/&#39;|&apos;/g, "'")
     .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n));
+}
+
+// PDF の本文（poppler の pdftotext を使う。なければ例外）
+export function pdfToText(bytes) {
+  const dir = mkdtempSync(join(tmpdir(), 'fmjp-'));
+  const file = join(dir, 'in.pdf');
+  try {
+    writeFileSync(file, bytes instanceof Uint8Array ? bytes : new Uint8Array(bytes));
+    return execFileSync('pdftotext', ['-layout', file, '-'], { encoding: 'utf8', maxBuffer: 20 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] });
+  } catch (e) {
+    throw new Error(e.code === 'ENOENT' ? 'pdftotext がありません（poppler-utils が必要）' : 'PDF を読めません');
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
 }
 
 // 全角英数・空白の違い、〜/～ の違いを吸収する
