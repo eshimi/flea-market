@@ -126,7 +126,7 @@ export const P = {
       title: (n, p, c) => `${n} (${p}${c ? `, ${c}` : ''})`,
       desc: (n, t, d) => `Dates (${t}), time, venue and vendor information for ${n}, from the organizer’s official information (last checked ${d}).`,
       orgLabel: (l) => (l === '問い合わせ先' ? 'Contact' : l),
-      quoted: 'English text on this page is this site’s unofficial translation. The official Japanese wording is shown in small type under each item; the address is in Japanese only. If they differ, the official Japanese page applies.',
+      quoted: 'English text on this page is this site’s unofficial translation. The official Japanese wording is shown in small type under each item. Where an official English name exists, we use it. If they differ, the official Japanese page applies.',
     },
     shuten: { h1: 'For Vendors', crumb: 'For Vendors', lead: 'Stall fees and how to apply, taken from organizers’ official information. Recruitment can change, so please check the organizer’s notice.', desc: 'Stall fees and how to apply for flea markets and antique fairs, from organizers’ official information.', title: 'For Vendors', fee: 'Fee: ', apply: 'How to apply: ', empty: 'Vendor information is coming soon.' },
     search: { h1: 'Keyword Search', ph: 'Place, venue or type (e.g. antique, Chiyoda)', kw: 'Keyword', btn: 'Search', desc: 'Find flea markets, antique fairs and handmade markets by place, venue or type.' },

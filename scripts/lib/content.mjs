@@ -83,7 +83,7 @@ export const FAQ = {
       ['What does “Scheduled (from recurring rule)” mean?', 'The date is calculated from the recurrence rule stated officially (for example, every 1st Sunday). That specific day has not been individually confirmed, so please check the official page.'],
       ['How often is the site updated?', 'Automatically every morning. We check each official page at most once a day, following robots.txt and each site’s terms of use. Pages for events within the next 7 days are checked daily; others about once a week.'],
       ['Why do I see “TBC”?', 'It means the item is not confirmed from official sources. We leave it as TBC rather than guess.'],
-      ['Is the English official?', 'No. The facts are taken from the official Japanese pages. In English, we show an unofficial translation with the official Japanese wording in small type next to it; addresses stay in Japanese. If the two differ, the official Japanese page applies.'],
+      ['Is the English official?', 'No. The facts are taken from the official Japanese pages. In English, we show an unofficial translation with the official Japanese wording in small type next to it, and use the official English name where the official site has one. If the two differ, the official Japanese page applies.'],
       ['Which areas are covered?', 'We started with regular markets in Tokyo and have begun adding other prefectures. See [Explore by Area](/area/) for what is listed now.'],
       ['Can I book a stall or buy tickets here?', 'No. This site only links to the official information. Stall applications go to the organizer.'],
       ['How do I ask for a correction or removal?', 'See [Listing Policy & Sources](/about/#remove). Organizers can ask us to correct or remove a listing.'],

@@ -275,6 +275,12 @@ test('英語の訳：すべての掲載に訳があり、数字が日本語の�
       assert.ok(t[k], `${s.id}: ${k} の訳がありません`);
       same(ja, t[k], `${s.id} ${k}`);
     }
+    if (s.venue.address) {
+      assert.ok(t.address, `${s.id}: 住所の訳がありません`);
+      // 住所の番地は、順番も含めて原文と同じ（「四丁目」は 4 として数える）
+      const adr = (x) => (String(x).replace(/([一二三四五六七八九])丁目/g, (_, k) => '一二三四五六七八九'.indexOf(k) + 1 + '-').match(/\d+/g) || []).join(',');
+      assert.equal(adr(t.address), adr(s.venue.address), `${s.id}: 住所の数字\n  ja: ${s.venue.address}\n  en: ${t.address}`);
+    }
     assert.ok(!s.venue.city || T.cities[s.venue.city], `${s.id}: 市区町村の訳 ${s.venue.city}`);
     assert.ok(T.organizers[s.organizer.name], `${s.id}: 主催者の訳 ${s.organizer.name}`);
     if (s.organizer.label) assert.ok(T.labels[s.organizer.label], `${s.id}: 見出しの訳 ${s.organizer.label}`);

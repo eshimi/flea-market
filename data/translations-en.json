@@ -3,7 +3,7 @@
  "series": {
   "oedo-antique-market-tokyo-international-forum": {
    "name": "Oedo Antique Market (Tokyo International Forum)",
-   "venue": "Tokyo International Forum, outdoor plaza",
+   "venue": "Tokyo International Forum, Plaza",
    "time": "9:00–16:00 (may end earlier depending on the weather or other events)",
    "rule": "Twice a month (dates are announced in the official event schedule)",
    "admission": "Free admission",
@@ -11,29 +11,33 @@
    "access": "In front of JR Yurakucho Station",
    "fee": "12,000 yen per booth (half booth 8,000 yen, 1.5 booths 14,000 yen, 2 booths 17,000 yen). Collected on the day",
    "apply": "Application form set by the secretariat (from the 2nd time, by phone, fax or e-mail). There is a screening",
-   "notes": "For those who sell antiques. You must carry a second-hand dealer’s license (the type that includes the peddling clause)"
+   "notes": "For those who sell antiques. You must carry a second-hand dealer’s license (the type that includes the peddling clause)",
+   "address": "3-5-1 Marunouchi, Chiyoda-ku, Tokyo"
   },
   "takahata-fudoson-gozareichi": {
    "name": "Takahata Fudoson Gozare-ichi (Garakuta Market)",
-   "venue": "Takahata Fudoson Kongoji Temple",
+   "venue": "Takahata-Fudoson Kongoji",
    "rule": "3rd Sunday of every month",
-   "access": "5 min. on foot from Takahata-Fudo Station (Keio Line / Tama Monorail)"
+   "access": "5 min. on foot from Takahata-Fudo Station (Keio Line / Tama Monorail)",
+   "address": "733 Takahata, Hino-shi, Tokyo"
   },
   "takahata-fudoson-recycle-market": {
    "name": "Takahata Fudoson Recycle Market (Flea Market)",
-   "venue": "Takahata Fudoson Kongoji Temple",
+   "venue": "Takahata-Fudoson Kongoji",
    "rule": "2nd Sunday of every month",
    "rain": "Cancelled in rain",
-   "access": "5 min. on foot from Takahata-Fudo Station (Keio Line / Tama Monorail)"
+   "access": "5 min. on foot from Takahata-Fudo Station (Keio Line / Tama Monorail)",
+   "address": "733 Takahata, Hino-shi, Tokyo"
   },
   "tokyo-nominoichi-2026-autumn": {
-   "name": "Tokyo Nomi-no-Ichi ’26 AUTUMN",
-   "venue": "Showa Kinen Park (national government park), Midori no Bunka Zone, Yume-hiroba",
+   "name": "Tokyo Nominoichi ’26 AUTUMN",
+   "venue": "Showa Kinen Park, Midori no Bunka Zone, Yume-hiroba",
    "time": "9:30–16:30",
    "rule": "4 days, Oct 31 (Sat) – Nov 3 (Tue, holiday), 2026",
    "admission": "Advance ticket 1,800 yen / day ticket 2,300 yen (tax included; free for junior high school students and younger, who must be accompanied by a guardian)",
    "rain": "Held in rain, except in severe weather (if cancelled, announced on the official site and social media by 7:00 on the day)",
-   "access": "10 min. on foot from Tachikawa Station (JR Chuo Line) / 8 min. from Tachikawa-Kita Station (Tama Monorail) / 1 min. on foot from Akebono Gate of Showa Kinen Park"
+   "access": "10 min. on foot from Tachikawa Station (JR Chuo Line) / 8 min. from Tachikawa-Kita Station (Tama Monorail) / 1 min. on foot from Akebono Gate of Showa Kinen Park",
+   "address": "3173 Midoricho, Tachikawa-shi, Tokyo"
   },
   "zoshigaya-tezukuriichi": {
    "name": "Zoshigaya Tezukuri-ichi (Handmade Market)",
@@ -43,7 +47,8 @@
    "access": "5 min. on foot from Zoshigaya Station (Tokyo Metro Fukutoshin Line) / 5 min. from Kishimojin-mae Station (Toden Arakawa Line)",
    "fee": "3,000 yen per day (1 booth is about 1.8 m × 1.8 m, up to 2 people)",
    "apply": "Send the application form by post (an application period is set for each event; exhibitors are to be announced within 1 week after the deadline)",
-   "organizer": "Tezukuri-ichi"
+   "organizer": "Tezukuri-ichi",
+   "address": "Zoshigaya, Toshima-ku, Tokyo"
   },
   "setagaya-boroichi": {
    "name": "Setagaya Boro-ichi",
@@ -51,7 +56,8 @@
    "time": "9:00–20:00 (may change depending on the weather)",
    "rule": "4 days every year: Dec 15 and 16, and Jan 15 and 16",
    "rain": "May be cancelled in severe weather (changes and cancellations are announced on the ward website and on the X account of the Setagaya General Branch Office)",
-   "access": "3 min. on foot from Setagaya and Kamimachi stations (Tokyu Setagaya Line)"
+   "access": "3 min. on foot from Setagaya and Kamimachi stations (Tokyu Setagaya Line)",
+   "address": "Setagaya 1-chome, Setagaya-ku, Tokyo"
   },
   "setagaya-park-flea": {
    "name": "Setagaya Park Flea Market",
@@ -60,33 +66,38 @@
    "rain": "Whether it is held on the day: ask each organizing group (per the ward’s notice)"
   },
   "toji-kobo-ichi": {
-   "name": "Toji Kobo-ichi (Toji Temple fair)",
-   "venue": "Toji Temple, grounds",
+   "name": "To-ji Kobo-ichi market",
+   "venue": "To-ji Temple, grounds",
    "rule": "21st of every month",
-   "access": "15 min. on foot from the Hachijo exit of Kyoto Station / 10 min. from Toji Station"
+   "access": "15 min. on foot from the Hachijo exit of Kyoto Station / 10 min. from Toji Station",
+   "address": "1 Kujocho, Minami-ku, Kyoto-shi, Kyoto"
   },
   "kitano-tenjin-ennichi": {
    "name": "Kitano Tenmangu “Tenjin-san” (monthly fair on the 25th)",
    "venue": "Kitano Tenmangu Shrine, approach",
    "time": "Stalls are open all day (the grounds are lit up from sunset)",
-   "rule": "25th of every month"
+   "rule": "25th of every month",
+   "address": "Bakurocho, Kamigyo-ku, Kyoto-shi, Kyoto"
   },
   "shitennoji-daishie": {
    "name": "Shitennoji Daishi-e (monthly on the 21st, “Odaishi-san”)",
    "venue": "Shitennoji Temple, throughout the grounds",
-   "rule": "21st of every month"
+   "rule": "21st of every month",
+   "address": "1-11-18 Shitennoji, Tennoji-ku, Osaka-shi, Osaka"
   },
   "sapporo-nakajima-park-flea": {
    "name": "Nakajima Park Flea Market (Sapporo)",
    "venue": "Nakajima Park (Free Plaza)",
    "rule": "Dates for fiscal 2026 announced by Sapporo City (see the city’s list)",
-   "rain": "May be cancelled depending on the weather (ask each organizing group for the status)"
+   "rain": "May be cancelled depending on the weather (ask each organizing group for the status)",
+   "address": "1 Nakajima-koen, Chuo-ku, Sapporo-shi, Hokkaido"
   },
   "shinjuku-recycle-center-flea": {
    "name": "Shinjuku Recycle Activity Center Flea Market",
    "venue": "Shinjuku Recycle Activity Center",
    "rule": "1st and 3rd Sunday of every month",
-   "access": "3 min. on foot from Takadanobaba Station (JR, Seibu Shinjuku Line, Tokyo Metro Tozai Line)"
+   "access": "3 min. on foot from Takadanobaba Station (JR, Seibu Shinjuku Line, Tokyo Metro Tozai Line)",
+   "address": "4-10-2 Takadanobaba, Shinjuku-ku, Tokyo"
   },
   "mizuho-aozora-ichi": {
    "name": "Mizuho Eco Park Flea Market “Mizuho Aozora-ichi”",
@@ -103,7 +114,8 @@
    "rain": "Indoors (lecture room on the 3rd floor of the center). Visitors cannot come by car",
    "fee": "Free",
    "apply": "Application form (linked from the ward page). Lottery",
-   "notes": "Open to people who live or work in the ward (no business sellers). 8 spaces. The application deadline is Oct 20, 2026. Items: clothing, accessories and miscellaneous goods. Carrying items in or out by car is not possible"
+   "notes": "Open to people who live or work in the ward (no business sellers). 8 spaces. The application deadline is Oct 20, 2026. Items: clothing, accessories and miscellaneous goods. Carrying items in or out by car is not possible",
+   "address": "3-7-4 Takaido-higashi, Suginami-ku, Tokyo"
   },
   "edogawa-recycle-world-in-tobu-2026": {
    "name": "The 36th Recycle World IN Tobu",
@@ -118,13 +130,15 @@
    "name": "Kinshi Park Flea Market",
    "venue": "Kinshi Park",
    "rule": "Schedule for fiscal 2026 announced by Sumida Ward",
-   "rain": "May be cancelled in rain, etc. (ask the organizer). Please refrain from parking on the street near the venue"
+   "rain": "May be cancelled in rain, etc. (ask the organizer). Please refrain from parking on the street near the venue",
+   "address": "4-15 Kinshi, Sumida-ku, Tokyo"
   },
   "sumida-yokojikkawa-kinshicho-flea": {
    "name": "Oyokogawa Shinsui Park, Kinshicho Event Plaza Flea Market",
    "venue": "Oyokogawa Shinsui Park, Kinshicho Event Plaza",
    "rule": "Schedule for fiscal 2026 announced by Sumida Ward (with rain dates)",
-   "rain": "Rain dates are available (listed in the entry for each date). Please refrain from parking on the street near the venue"
+   "rain": "Rain dates are available (listed in the entry for each date). Please refrain from parking on the street near the venue",
+   "address": "1-17 Kinshi, Sumida-ku, Tokyo"
   },
   "bunkyo-stage-eco-flea-2026-11": {
    "name": "Stage Eco Flea Market (Bunkyo)",
@@ -133,7 +147,8 @@
    "rain": "May be cancelled or changed for various reasons",
    "fee": "2,000 yen per booth (1.5 m × 1.8 m)",
    "apply": "Application form. Lottery (capacity: 20 groups). The deadline was Oct 6, 2026, and the ward page says applications are closed",
-   "notes": "Exhibitors must be residents of the ward aged 18 or over. Limited to household goods no longer needed (items sold for profit are not allowed)"
+   "notes": "Exhibitors must be residents of the ward aged 18 or over. Limited to household goods no longer needed (items sold for profit are not allowed)",
+   "address": "1-16-21 Kasuga, Bunkyo-ku, Tokyo"
   },
   "toshima-nakaikebukuro-park-flea-2026-12": {
    "name": "Naka-Ikebukuro Park Flea Market",
@@ -142,7 +157,8 @@
    "admission": "Free admission (a workshop corner and a handmade market are also held)",
    "fee": "3,000 yen",
    "apply": "Apply from the organizer’s website. First come, first served; closes when capacity is reached",
-   "notes": "Open to everyone, inside or outside the ward"
+   "notes": "Open to everyone, inside or outside the ward",
+   "address": "1-16-1 Higashi-Ikebukuro, Toshima-ku, Tokyo"
   },
   "ota-tamagawa-eco-fair-2026": {
    "name": "Tamagawa Cleaning Plant Environment Fair 2026 (with a flea market)",
@@ -174,7 +190,8 @@
    "admission": "Anyone can buy (no handling fee)",
    "rain": "May change because of other events",
    "apply": "Applications for exhibitor registration for the flea market are published separately in “Koho Katsushika” (about 6 stalls)",
-   "notes": "Only residents of the ward who are not seeking profit can put items in the Recycle Corner"
+   "notes": "Only residents of the ward who are not seeking profit can put items in the Recycle Corner",
+   "address": "5-27-1 Tateishi, Katsushika-ku, Tokyo"
   },
   "taito-hanakawado-park-flea": {
    "name": "Hanakawado Park Flea Market (Taito)",
@@ -201,7 +218,8 @@
    "access": "About 10 min. on foot from Soshigaya-Okura Station (Odakyu Line)",
    "fee": "500 yen (paid at reception on the day)",
    "apply": "Online application (application period: Jun 25 – Jul 31, 2026). A lottery was held when there were many applicants; the results are already posted on the ward page",
-   "notes": "28 stalls recruited. Residents of the Soshigaya area are given priority. Each stall is about 2 m × 2 m. Those in the business of selling goods are not allowed"
+   "notes": "28 stalls recruited. Residents of the Soshigaya area are given priority. Each stall is about 2 m × 2 m. Those in the business of selling goods are not allowed",
+   "address": "2-5 Soshigaya, Setagaya-ku, Tokyo"
   },
   "setagaya-funabashi-fureai-matsuri-flea-2026": {
    "name": "The 37th Funabashi Fureai Festival Flea Market",
@@ -290,7 +308,8 @@
    "rule": "21st of every month",
    "access": "5 min. on foot from Daishimae Station (Tobu Daishi Line)",
    "fee": "Regular stall 4,000 yen, hand-held stall 2,500 yen",
-   "notes": "The official page says it is not recruiting stalls for the ennichi flea market or the New Year flea market"
+   "notes": "The official page says it is not recruiting stalls for the ennichi flea market or the New Year flea market",
+   "address": "1-15-1 Nishiarai, Adachi-ku, Tokyo"
   },
   "machida-tenmangu-garakuta-kottoichi": {
    "name": "Machida Tenmangu Garakuta Antique Market",
@@ -299,7 +318,8 @@
    "rule": "1st of every month (in January and November the date changes because of the venue)",
    "access": "8 min. on foot from Machida Station (Odakyu Line) / 5 min. from Machida Station (JR Yokohama Line)",
    "notes": "A second-hand dealer’s license is required to exhibit. 80 stalls (per the official page)",
-   "organizer": "Kanagawa Kottoichi"
+   "organizer": "Kanagawa Kottoichi",
+   "address": "1-21-5 Haramachida, Machida-shi, Tokyo"
   },
   "musashi-itsukaichi-furumono-ichi": {
    "name": "Musashi-Itsukaichi Furumono-ichi (Old Goods Market)",
@@ -307,7 +327,8 @@
    "time": "7:00–14:00 (may change without notice depending on the weather)",
    "rule": "5th of every month (closed every August)",
    "access": "5 min. on foot from Musashi-Itsukaichi Station (JR)",
-   "notes": "A second-hand dealer’s license is required to exhibit. 30 stalls (per the official page)"
+   "notes": "A second-hand dealer’s license is required to exhibit. 30 stalls (per the official page)",
+   "address": "110-1 Itsukaichi, Akiruno-shi, Tokyo"
   },
   "tomioka-hachimangu-kottoichi": {
    "name": "Tomioka Hachimangu Antique Market",
@@ -315,14 +336,16 @@
    "time": "7:00–14:00",
    "rule": "1st (except January), 2nd, 4th and 5th Sundays of every month (closed on days that fall on the 15th or 28th). Per the official schedule (closed in November)",
    "rain": "Cancelled in rain",
-   "access": "5 min. from Monzen-Nakacho Station (Tozai Line, Toei Oedo Line) (no parking)"
+   "access": "5 min. from Monzen-Nakacho Station (Tozai Line, Toei Oedo Line) (no parking)",
+   "address": "1-20-30 Tomioka, Koto-ku, Tokyo"
   },
   "nishiogi-teshigoto-ichi": {
    "name": "Nishiogi Teshigoto-ichi (Handcraft Market)",
    "venue": "Igusa Kaikan",
    "time": "10:00–17:00",
    "rule": "4th Sunday of every month (closed in December)",
-   "access": "12 min. on foot from Nishi-Ogikubo Station (JR Chuo Line) (on holidays, take the Chuo-Sobu Line local)"
+   "access": "12 min. on foot from Nishi-Ogikubo Station (JR Chuo Line) (on holidays, take the Chuo-Sobu Line local)",
+   "address": "4-35-9 Nishiogi-kita, Suginami-ku, Tokyo"
   },
   "mottainai-flea-nakano-central-park": {
    "name": "MOTTAINAI Flea Market (Nakano Central Park)",
@@ -343,20 +366,22 @@
    "name": "Fujimibashi Echo Hiroba-kan Flea Market (Kita Ward)",
    "venue": "Fujimibashi Echo Hiroba-kan",
    "rule": "Every Sunday",
-   "access": "8 min. on foot from the north exit of JR Tabata Station / 10 min. from the east exit of JR Komagome Station"
+   "access": "8 min. on foot from the north exit of JR Tabata Station / 10 min. from the east exit of JR Komagome Station",
+   "address": "5-16-1 Tabata, Kita-ku, Tokyo"
   },
   "tama-econico-market": {
    "name": "Eco-Nico Market (Tama City, Eco-Nico Center)",
    "venue": "Eco-Nico Center (Tama New Town Environmental Association recycling center), inside the building",
    "time": "10:00–13:00 (some booths may close earlier)",
    "rule": "Official event schedule (once a month, Saturday or Sunday). In March 2027 the official page says “28th and 29th”; the 29th is a Monday, so only the 28th is listed",
-   "notes": "6 table booths (indoors). The application period is as shown in the official table"
+   "notes": "6 table booths (indoors). The application period is as shown in the official table",
+   "address": "2-1-1 Karakida, Tama-shi, Tokyo"
   }
  },
  "organizers": {
   "リサイクル推進友の会": "Recycle Suishin Tomo-no-Kai",
   "MOTTAINAIキャンペーン事務局": "MOTTAINAI Campaign Secretariat",
-  "高幡不動尊金剛寺": "Takahata Fudoson Kongoji Temple",
+  "高幡不動尊金剛寺": "Takahata-Fudoson Kongoji",
   "かながわ骨董市": "Kanagawa Kottoichi",
   "大江戸骨董市実行委員会": "Oedo Antique Market Executive Committee",
   "手紙社": "Tegamisha",
@@ -395,6 +420,17 @@
   "主催団体・問い合わせ先": "Organizer / contact",
   "主催団体": "Organizer",
   "運営サイト": "Operating site"
+ },
+ "official": {
+  "note": "公式サイトに英語の表記があり、それに合わせたもの（2026-10-18 に確認）。ほかは、このサイトの訳（非公式）",
+  "items": {
+   "Oedo Antique Market / Tokyo International Forum / 3-5-1 Marunouchi, Chiyoda-ku, Tokyo": "https://www.antique-market.jp/",
+   "To-ji Temple / Kobo-ichi market": "https://www.toji.or.jp/en/",
+   "Takahata-Fudoson Kongoji": "https://www.takahatafudoson.or.jp/",
+   "Showa Kinen Park": "https://www.showakinen-koen.jp/",
+   "Tokyo Nominoichi": "https://tokyonominoichi.com/",
+   "Tokyo International Forum": "https://www.t-i-forum.co.jp/en/"
+  }
  },
  "cities": {
   "千代田区": "Chiyoda Ward",

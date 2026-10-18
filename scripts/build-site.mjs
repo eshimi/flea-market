@@ -180,7 +180,7 @@ ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
 ${row(p.when, rule)}
 ${row(p.time, lang === 'en' && timeEn(s) ? (s.time.text === timeEn(s).replace('–', '〜') ? esc(timeEn(s)) : orig(timeEn(s), s.time.text)) : t(s.time?.text))}
 ${row(p.venue, lang === 'en' && venueL(s, lang) !== v.name ? orig(venueL(s, lang), v.name) : esc(v.name))}
-${row(p.address, t(v.address))}
+${row(p.address, tv(s, 'address', v.address, lang))}
 ${row(p.access, tv(s, 'access', v.access, lang))}
 ${row(p.admission, tv(s, 'admission', s.visitor?.admission, lang))}
 ${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang))}
