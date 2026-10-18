@@ -410,5 +410,100 @@
   "evidenceOk": {
    "frma-nakameguro-funeiriba-flea": true
   }
+ },
+ "https://7fukuadachi.com/%E9%AA%A8%E8%91%A3%E5%B8%82/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "nishiarai-daishi-ennichi-flea": true
+  }
+ },
+ "https://7fukuadachi.com/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "nishiarai-daishi-ennichi-flea": true
+  }
+ },
+ "https://7fukuadachi.com/%e4%b8%bb%e5%82%ac%e8%80%85%e6%83%85%e5%a0%b1/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "nishiarai-daishi-ennichi-flea": true
+  }
+ },
+ "https://kanagawa-antique-market.crayonsite.net/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "machida-tenmangu-garakuta-kottoichi": true,
+   "musashi-itsukaichi-furumono-ichi": true
+  }
+ },
+ "https://kottou-rakuichi.com/about.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"3fa5-65d9f23831daf\"",
+  "lastModified": "Mon, 12 Oct 2026 06:52:17 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "tomioka-hachimangu-kottoichi": true
+  }
+ },
+ "https://www.teshigoro.com/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "nishiogi-teshigoto-ichi": true
+  }
+ },
+ "https://www.mottainai.info/jp/event/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "mottainai-flea-nakano-central-park": true,
+   "mottainai-flea-kichijoji-parco": true,
+   "mottainai-flea-shinjuku-chuo-park": true
+  }
+ },
+ "https://www.eko-hirobakan.jp/fujimibashi/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "kita-fujimibashi-echo-hirobakan-flea": true
+  }
+ },
+ "https://www.tama-seisokojo.or.jp/econico/market": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "tama-econico-market": true
+  }
+ },
+ "https://www.tama-seisokojo.or.jp/center_top": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "tama-econico-market": true
+  }
  }
 }
