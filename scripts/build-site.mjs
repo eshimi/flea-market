@@ -158,7 +158,8 @@ function eventLd(s, list) {
     eventStatus: `https://schema.org/${map[o.status]}`,
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: { '@type': 'Place', name: s.venue.name, address: s.venue.address || `${PREFS[s.venue.pref]}${s.venue.city || ''}` },
-    organizer: { '@type': 'Organization', name: s.organizer.name, ...(s.organizer.url ? { url: s.organizer.url } : {}) },
+    // organizer.label があるもの（主催者ではなく問い合わせ先など）は、主催者として出さない
+    ...(s.organizer.label ? {} : { organizer: { '@type': 'Organization', name: s.organizer.name, ...(s.organizer.url ? { url: s.organizer.url } : {}) } }),
     url: `${SITE.url}/e/${s.id}/`,
   }));
   return items.length ? `<script type="application/ld+json">${JSON.stringify(items).replace(/</g, '\\u003c')}</script>\n` : '';
@@ -186,7 +187,7 @@ ${row('所在地', val(v.address))}
 ${row('アクセス', val(v.access))}
 ${row('入場料', val(s.visitor?.admission))}
 ${row('雨天のとき', val(s.visitor?.rain))}
-${row('主催', s.organizer.url ? `<a href="${esc(s.organizer.url)}" rel="noopener">${esc(s.organizer.name)}</a>` : esc(s.organizer.name))}
+${row(s.organizer.label || '主催', s.organizer.url ? `<a href="${esc(s.organizer.url)}" rel="noopener">${esc(s.organizer.name)}</a>` : esc(s.organizer.name))}
 </dl>
 <h2 class="sec-h">これからの開催日</h2>
 ${dates}

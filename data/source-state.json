@@ -76,5 +76,16 @@
   "evidenceOk": {
    "tokyo-nominoichi-2026-autumn": true
   }
+ },
+ "https://www.city.setagaya.lg.jp/02072/10108.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"62d8-6506dd7727b51\"",
+  "lastModified": "Mon, 27 Apr 2026 09:35:56 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "setagaya-boroichi": true
+  }
  }
 }
