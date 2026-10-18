@@ -124,3 +124,6 @@ aside h2{font-size:15px;margin-bottom:10px}
 .sn-list a[aria-current] i{color:var(--acc)}
 .ev-main{min-width:0}
 .ev-side{max-height:calc(100vh - 32px);overflow-y:auto}@media (max-width:900px){.ev-side{max-height:none;overflow:visible}}
+.ev-mapimg{display:block;border-radius:10px;overflow:hidden;border:1px solid var(--line);line-height:0}
+.ev-mapimg img{width:100%;height:auto;display:block}
+.ev-mapimg:hover{border-color:var(--acc)}

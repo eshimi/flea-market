@@ -334,8 +334,11 @@ test('地図・経路のリンクと当日の天気（気象庁）', async () =>
   assert.ok(!ja('oedo-antique-market-tokyo-international-forum').includes('多くのフリーマーケット・市は入場無料'), '公式の入場料があるものには、目安を出さない');
   assert.deepEqual(en.scripts, ['/weather.js', '/map.js']);
   assert.match(en.body, /<aside class="ev-side"/);
-  assert.match(en.body, /class="ev-map" data-src="https:\/\/maps\.google\.com\/maps\?q=/);
-  assert.match(en.body, /<button type="button" class="map-show">Show map<\/button>/);
+  // 位置のない会場は、押すと Google マップの埋め込みを読み込むボタン
+  const noGeo = real.series.find((s) => !real.geo[s.id]);
+  const ng = pages.find((p) => p.path === `/e/${noGeo.id}/`).body;
+  assert.match(ng, /class="ev-map" data-src="https:\/\/maps\.google\.com\/maps\?q=/);
+  assert.match(ng, /<button type="button" class="map-show">Show map<\/button>/);
   assert.match(pages.find((p) => p.path === '/ja/e/oedo-antique-market-tokyo-international-forum/').body, /Google マップで開く/);
 });
 
@@ -424,4 +427,27 @@ test('自動のブログ記事：今週末・来月のまとめ・新着の掲�
       assert.ok(paths.has(m[1]), `${p.path} → ${m[1]}`);
     }
   }
+});
+
+test('地図の画像（OpenStreetMap）：位置のある会場だけ。ない会場は、押すと開く Google マップ', async () => {
+  const { existsSync } = await import('node:fs');
+  const real = loadData();
+  const ids = Object.keys(real.geo);
+  assert.ok(ids.length >= 20);
+  for (const id of ids) {
+    assert.ok(real.series.some((s) => s.id === id), `${id}: シリーズがありません`);
+    assert.ok(existsSync(new URL(`../static/img/maps/${id}.webp`, import.meta.url)), `${id}: 地図の画像がありません`);
+    const g = real.geo[id];
+    assert.ok(g.lat > 24 && g.lat < 46 && g.lon > 122 && g.lon < 146, `${id}: 日本の外の位置`);
+  }
+  const { pages } = buildPages(real, '2026-10-18');
+  const body = (p) => pages.find((x) => x.path === p).body;
+  const oedo = body('/e/oedo-antique-market-tokyo-international-forum/');
+  assert.match(oedo, /<a class="ev-mapimg" href="https:\/\/www\.google\.com\/maps\/search\/\?api=1&amp;query=/);
+  assert.ok(oedo.includes('src="/img/maps/oedo-antique-market-tokyo-international-forum.webp"'));
+  assert.ok(!oedo.includes('class="map-show"'), '画像がある会場は、押して開くボタンを出さない');
+  assert.match(oedo, /© OpenStreetMap contributors/);
+  const noGeo = real.series.find((s) => !real.geo[s.id]);
+  assert.match(body(`/e/${noGeo.id}/`), /class="map-show"/);
+  assert.match(body('/about/'), /OpenStreetMap/);
 });

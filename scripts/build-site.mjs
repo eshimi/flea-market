@@ -31,7 +31,9 @@ export function loadData(dir = join(ROOT, 'data')) {
   // 自動で作ったブログ記事（scripts/generate-blog.mjs が data/blog-auto/ に保存する）
   const autoDir = join(dir, 'blog-auto');
   const autoPosts = existsSync(autoDir) ? readdirSync(autoDir).filter((f) => f.endsWith('.json') && f !== 'state.json').map((f) => JSON.parse(readFileSync(join(autoDir, f), 'utf8'))) : [];
-  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts };
+  let geo = {};
+  try { geo = read('geo.json'); } catch { /* 位置のデータがないもの（テストの見本など）は、地図の画像なし */ }
+  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts, geo };
 }
 
 // ---- 各ページ ----
@@ -185,7 +187,7 @@ function seriesPage(s, ctx, lang) {
   const wt = weatherTarget(s);
   const wxBox = next && wt ? `<section class="ev-card"><h2>${esc(p.secWx)}</h2><div class="wx" data-office="${wt.office}" data-area="${wt.area || ''}" data-date="${next.date}" data-lang="${lang}" data-region="${esc(prefLabel(v.pref, 'en'))}"><p class="wx-st">${esc(p.wxLoading)}</p></div><p class="note">${esc(p.wxNote)} ${esc(p.wxSrc)}<a href="https://www.jma.go.jp/bosai/forecast/" rel="noopener">${esc(p.wxJma)}</a>${lang === 'ja' ? '' : ' (気象庁)'}</p></section>` : '';
   const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(mapQuery(s).q)}&hl=${lang === 'ja' ? 'ja' : 'en'}&z=16&output=embed`;
-  const side = `<aside class="ev-side" aria-label="${esc(p.secMap)}"><section class="ev-card"><h2>${esc(p.secMap)}</h2><div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(p.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(lang === 'en' ? venueL(s, lang) : v.name)}</b><button type="button" class="map-show">${esc(p.mapShow)}</button><small>${esc(p.mapPrivacy)}</small></div></div><p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(p.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(p.mapRoute)} ↗</a></p><p class="note">${esc(mu.exact ? p.mapExact : p.mapLoose)}</p></section>${wxBox}</aside>`;
+  const side = `<aside class="ev-side" aria-label="${esc(p.secMap)}"><section class="ev-card"><h2>${esc(p.secMap)}</h2>${hasMapImg(s.id) ? `<a class="ev-mapimg" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow" title="${esc(p.mapOpen)}"><img src="/img/maps/${s.id}.webp" alt="${esc(p.mapImgAlt(lang === 'en' ? venueL(s, lang) : v.name))}" width="640" height="400" loading="lazy" decoding="async"></a><p class="note">${esc(p.mapApprox)}</p>` : `<div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(p.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(lang === 'en' ? venueL(s, lang) : v.name)}</b><button type="button" class="map-show">${esc(p.mapShow)}</button><small>${esc(p.mapPrivacy)}</small></div></div>`}<p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(p.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(p.mapRoute)} ↗</a></p><p class="note">${esc(mu.exact ? p.mapExact : p.mapLoose)}</p></section>${wxBox}</aside>`;
   const body = `<div class="in page">${breadcrumb([{ href: `/area/${v.pref}/`, label: pn }, ...(v.cityCode ? [{ href: `/area/${v.pref}/${v.cityCode}/`, label: cityL(v.city, lang) }] : []), { label: nameL(s, lang) }], lang)}
 <h1>${esc(nameL(s, lang))}</h1>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-h" lang="ja">${esc(s.name)}</p>` : ''}
 <div class="tags">${kindTags(s.kinds, lang)}</div>
@@ -248,7 +250,7 @@ function aboutPage(ctx, lang) {
 </ul>
 <p>${esc(disclaimer('ja'))}</p>
 <h2>地図・天気</h2>
-<p>開催詳細の地図・経路は、Google マップへのリンクです（住所がなければ会場名で検索するため、位置は要確認）。天気予報は気象庁が公開している予報を、開催日の約7日前から表示します（地域の単位の予報で、会場ごとではありません。出典：気象庁）。</p>
+<p>開催詳細の地図・経路は、Google マップへのリンクです（住所がなければ会場名で検索するため、位置は要確認）。公式の所在地が分かる会場の地図の画像は、OpenStreetMap（© OpenStreetMap contributors。ODbL）から作り、位置は国土地理院の住所検索で求めた目安です。天気予報は気象庁が公開している予報を、開催日の約7日前から表示します（地域の単位の予報で、会場ごとではありません。出典：気象庁）。</p>
 <h2>情報の取得</h2>
 <p>公式ページの取得は、robots.txt と各サイトの利用規約に従い、同じサイトへは1日1回までに抑えています。取得が認められていないページは、リンクだけを掲載します。</p>
 <h2 id="remove">掲載の修正・削除の依頼</h2>
@@ -267,7 +269,7 @@ function aboutPage(ctx, lang) {
 </ul>
 <p>${esc(disclaimer('en'))}</p>
 <h2>Maps and weather</h2>
-<p>The map and directions on each listing are links to Google Maps (if the official page gives no address, the link searches by venue name, so the location is TBC). Weather forecasts come from the Japan Meteorological Agency and are shown from about 7 days before the event (a forecast for the JMA regional unit, not for the venue).</p>
+<p>The map and directions on each listing are links to Google Maps (if the official page gives no address, the link searches by venue name, so the location is TBC). Where the official address is known, the map image is made from OpenStreetMap (© OpenStreetMap contributors, ODbL), with the position looked up by the Geospatial Information Authority of Japan address search; it is an estimate. Weather forecasts come from the Japan Meteorological Agency and are shown from about 7 days before the event (a forecast for the JMA regional unit, not for the venue).</p>
 <h2>How we fetch pages</h2>
 <p>We follow robots.txt and each site’s terms of use, and fetch from the same site at most once a day. For pages we are not allowed to fetch, we only link to them.</p>
 <h2 id="remove">Correction / removal requests</h2>
@@ -300,6 +302,9 @@ const blogTitle = (lang) => (lang === 'ja' ? 'ブログ' : 'Blog');
 const feedLink = (lang) => `<link rel="alternate" type="application/rss+xml" title="${esc(`${SITE.name} ${blogTitle(lang)}`)}" href="${langPath('/blog/feed.xml', lang)}">\n`;
 // 手で書いた記事（content.mjs）＋自動で作った記事（data/blog-auto）。新しい順
 let ALL_POSTS = [...BLOG];
+// 地図の画像（static/img/maps/<id>.webp）がある会場の位置（data/geo.json）
+let GEO = {};
+const hasMapImg = (id) => Boolean(GEO[id]) && existsSync(join(ROOT, 'static', 'img', 'maps', `${id}.webp`));
 const posts = () => [...ALL_POSTS].sort((a, b) => b.date.localeCompare(a.date) || b.slug.localeCompare(a.slug));
 // 自動の記事の本文にある開催詳細へのリンクは、その開催がもうなければ、リンクにしない
 const cleanLinks = (post, ids) => {
@@ -379,8 +384,9 @@ function withSide(page, ctx, lang) {
 
 // ---- 全体 ----
 
-export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [] }, today, days = 120) {
+export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {} }, today, days = 120) {
   setTranslations(translations);
+  GEO = geo;
   const ids = new Set(series.map((x) => x.id));
   ALL_POSTS = [...BLOG, ...autoPosts.map((a) => cleanLinks(a, ids))];
   const occ = buildOccurrences(series, occurrences, today, days);
