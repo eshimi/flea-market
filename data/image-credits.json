@@ -1,34 +1,35 @@
 [
  {
   "id": "hero",
-  "use": "トップページの写真（HERO・骨董市の写真。仮の素材。差し替え予定）",
-  "title": "Antiques in a Market Stall",
-  "photographer": "Huu Huynh",
-  "source": "Pexels",
-  "sourceUrl": "https://www.pexels.com/photo/18961551/",
-  "license": "Pexels License（無料で商用利用できる写真）",
-  "licenseUrl": "https://www.pexels.com/license/",
-  "note": "名古屋の市場の露店の写真を、横長に切り出して使用。ライセンスの全文は、自動取得ができなかったため、ブラウザでの確認が必要",
-  "checkedAt": "2026-10-18",
   "files": [
-   "static/img/hero.webp",
-   "static/img/kinds/kotto.webp"
-  ]
+   "static/img/hero.webp"
+  ],
+  "use": "トップページの写真",
+  "title": "ユーザー提供の画像",
+  "photographer": "サイト運営者が用意",
+  "source": "サイト運営者",
+  "sourceUrl": "/about/",
+  "license": "運営者が用意した画像",
+  "licenseUrl": "",
+  "note": "撮影者・作成方法（撮影／画像生成など）・権利の確認は未記入（要確認）。サンプル画像から、文字・日付の部分を除いて使用",
+  "checkedAt": "2026-10-18"
  },
  {
-  "id": "flea",
+  "id": "cards",
   "files": [
-   "static/img/kinds/flea.webp"
+   "static/img/kinds/flea.webp",
+   "static/img/kinds/engi.webp",
+   "static/img/kinds/nomi.webp",
+   "static/img/kinds/kotto.webp"
   ],
-  "use": "フリマの写真",
-  "title": "Clothes at Bazaar",
-  "photographer": "Anastasiya Badun",
-  "photographerUrl": "",
-  "source": "Pexels",
-  "sourceUrl": "https://www.pexels.com/photo/16729588/",
-  "license": "Pexels License（無料で商用利用できる写真）",
-  "licenseUrl": "https://www.pexels.com/license/",
-  "note": "Pexelsのページに記載の場所：撮影地は記載なし。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
+  "use": "開催カード・種類の写真（フリマ・縁日・蚤の市・骨董市）",
+  "title": "ユーザー提供の画像",
+  "photographer": "サイト運営者が用意",
+  "source": "サイト運営者",
+  "sourceUrl": "/about/",
+  "license": "運営者が用意した画像",
+  "licenseUrl": "",
+  "note": "撮影者・作成方法（撮影／画像生成など）・権利の確認は未記入（要確認）。サンプル画像から、文字・日付の部分を除いて使用",
   "checkedAt": "2026-10-18"
  },
  {
@@ -64,22 +65,6 @@
   "checkedAt": "2026-10-18"
  },
  {
-  "id": "nomi",
-  "files": [
-   "static/img/kinds/nomi.webp"
-  ],
-  "use": "蚤の市の写真",
-  "title": "Japanese Trinket Shop with Ceramic Figures",
-  "photographer": "Gu Ko",
-  "photographerUrl": "",
-  "source": "Pexels",
-  "sourceUrl": "https://www.pexels.com/photo/31858800/",
-  "license": "Pexels License（無料で商用利用できる写真）",
-  "licenseUrl": "https://www.pexels.com/license/",
-  "note": "ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
-  "checkedAt": "2026-10-18"
- },
- {
   "id": "handmade",
   "files": [
    "static/img/kinds/handmade.webp"
@@ -93,22 +78,6 @@
   "license": "Pexels License（無料で商用利用できる写真）",
   "licenseUrl": "https://www.pexels.com/license/",
   "note": "Pexelsのページに記載の場所：撮影地は記載なし。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
-  "checkedAt": "2026-10-18"
- },
- {
-  "id": "engi",
-  "files": [
-   "static/img/kinds/engi.webp"
-  ],
-  "use": "縁日・露店市の写真",
-  "title": "Winter Temple Market with People and Food Stalls",
-  "photographer": "Guohua Song",
-  "photographerUrl": "",
-  "source": "Pexels",
-  "sourceUrl": "https://www.pexels.com/photo/30590868/",
-  "license": "Pexels License（無料で商用利用できる写真）",
-  "licenseUrl": "https://www.pexels.com/license/",
-  "note": "Pexelsのページに記載の場所：京都。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
   "checkedAt": "2026-10-18"
  },
  {
