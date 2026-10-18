@@ -92,3 +92,9 @@ test('PDF でないものを渡すと、読めない旨の例外', { skip: !hasP
 test('本文化：記号の表記（&times; など）を戻す', () => {
   assert.equal(normalizeText('1.5m&times;1.8m&nbsp;&emsp;A'), '1.5m×1.8mA');
 });
+
+test('文字コード：宣言が Shift_JIS でも、中身が UTF-8 なら UTF-8 で読む', () => {
+  const html = new TextEncoder().encode('<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">フリーマーケット');
+  assert.match(decodeBody(html, 'text/html'), /フリーマーケット/);
+  assert.match(decodeBody(new Uint8Array([0xef, 0xbb, 0xbf, ...new TextEncoder().encode('骨董市')]), ''), /骨董市/);
+});

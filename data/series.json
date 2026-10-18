@@ -1537,5 +1537,401 @@
     ]
    }
   ]
+ },
+ {
+  "id": "frma-akatsuka-park-flea",
+  "name": "高島平 赤塚公園フリーマーケット（リサイクル推進友の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル推進友の会",
+   "url": "http://www.frma.jp/"
+  },
+  "venue": {
+   "name": "赤塚公園 噴水前",
+   "pref": "13"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-03"
+   ],
+   "text": "主催団体の開催日程（トップページの日程）"
+  },
+  "time": {
+   "text": "10:00〜15:00（受付9:00）",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "予報の小雨や猛暑も中止"
+  },
+  "exhibitor": {
+   "apply": "主催団体のホームページの会場ページから予約（料金は会員かどうか・申込方法で異なる。料金表は同ページ）",
+   "applyUrl": "http://www.frma.jp/akatuka.html",
+   "notes": "家庭の不用品のみ。プロ（業者）の出店は不可"
+  },
+  "sources": [
+   {
+    "url": "http://www.frma.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/3(火・祝)高島平赤塚公園(お祭り同時開催)"
+    ]
+   },
+   {
+    "url": "http://www.frma.jp/akatuka.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "開催10時～15時",
+     "約30店プロ不可",
+     "家庭の不用品のみ",
+     "予報の小雨や猛暑も中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "frma-komatsugawa-park-flea",
+  "name": "小松川公園フリーマーケット（リサイクル推進友の会・期間限定トライアル）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル推進友の会",
+   "url": "http://www.frma.jp/"
+  },
+  "venue": {
+   "name": "大島小松川公園 駐車場脇",
+   "pref": "13"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-07"
+   ],
+   "text": "主催団体の開催日程（トップページの日程）"
+  },
+  "time": {
+   "text": "9:00〜15:00（受付8:00）",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "予報の小雨や猛暑も中止"
+  },
+  "exhibitor": {
+   "apply": "主催団体のホームページの会場ページから予約（料金は会員かどうか・申込方法で異なる。料金表は同ページ）",
+   "applyUrl": "http://www.frma.jp/komatu.html",
+   "notes": "家庭の不用品のみ。プロ（業者）の出店は不可"
+  },
+  "sources": [
+   {
+    "url": "http://www.frma.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/7(土)大島小松川公園駐車場脇"
+    ]
+   },
+   {
+    "url": "http://www.frma.jp/komatu.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "開催9時～15時",
+     "最大50店プロ不可",
+     "期間限定トライアル",
+     "予報の小雨や猛暑も中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "frma-akabane-park-flea",
+  "name": "北区 赤羽公園フリーマーケット（リサイクル推進友の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル推進友の会",
+   "url": "http://www.frma.jp/"
+  },
+  "venue": {
+   "name": "赤羽公園 噴水広場",
+   "pref": "13",
+   "city": "北区",
+   "cityCode": "13117"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-15"
+   ],
+   "text": "主催団体の開催日程（トップページの日程）"
+  },
+  "time": {
+   "text": "10:00〜15:00（受付9:00）",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "中止の場合の振替日は11月21日（土）"
+  },
+  "exhibitor": {
+   "apply": "主催団体のホームページの会場ページから予約（料金は会員かどうか・申込方法で異なる。料金表は同ページ）",
+   "applyUrl": "http://www.frma.jp/kita_akabane.html",
+   "notes": "家庭の不用品のみ。プロ（業者）の出店は不可"
+  },
+  "sources": [
+   {
+    "url": "http://www.frma.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/15(日)北区赤羽公園",
+     "振替日は､11/21(土)"
+    ]
+   },
+   {
+    "url": "http://www.frma.jp/kita_akabane.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "開催10時～15時",
+     "約50店プロ不可",
+     "中止の振替指定日は、1日です（中止後に決定）"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "frma-ukima-park-flea",
+  "name": "浮間公園 駅前広場フリーマーケット（リサイクル推進友の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル推進友の会",
+   "url": "http://www.frma.jp/"
+  },
+  "venue": {
+   "name": "浮間公園 駅前広場",
+   "pref": "13"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-22"
+   ],
+   "text": "主催団体の開催日程（トップページの日程）"
+  },
+  "time": {
+   "text": "10:00〜15:00（受付9:00）",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "小雨や猛暑の中止あり"
+  },
+  "exhibitor": {
+   "apply": "主催団体のホームページの会場ページから予約（料金は会員かどうか・申込方法で異なる。料金表は同ページ）",
+   "applyUrl": "http://www.frma.jp/ukima.html",
+   "notes": "家庭の不用品のみ。プロ（業者）の出店は不可"
+  },
+  "sources": [
+   {
+    "url": "http://www.frma.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/22(日)浮間公園駅前広場"
+    ]
+   },
+   {
+    "url": "http://www.frma.jp/ukima.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "開催10時～15時",
+     "約50店プロ不可",
+     "小雨や猛暑の中止有り"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "frma-koganei-park-flea",
+  "name": "小金井公園フリーマーケット（リサイクル推進友の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル推進友の会",
+   "url": "http://www.frma.jp/"
+  },
+  "venue": {
+   "name": "小金井公園 いこいの広場",
+   "pref": "13",
+   "city": "小金井市",
+   "cityCode": "13210"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-29"
+   ],
+   "text": "主催団体の開催日程（トップページの日程）"
+  },
+  "time": {
+   "text": "9:00〜15:00（受付8:30）",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "中止が決まった場合は、天気が変わっても変更なし"
+  },
+  "exhibitor": {
+   "apply": "主催団体のホームページの会場ページから予約（料金は会員かどうか・申込方法で異なる。料金表は同ページ）",
+   "applyUrl": "http://www.frma.jp/koganei.html",
+   "notes": "家庭の不用品のみ。プロ（業者）の出店は不可"
+  },
+  "sources": [
+   {
+    "url": "http://www.frma.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/29(日)小金井公園いこいの広場"
+    ]
+   },
+   {
+    "url": "http://www.frma.jp/koganei.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "開催9時～15時",
+     "約94店プロ不可",
+     "中止の決定した場合、天気が変わっても変更なし"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "frma-hikarigaoka-park-flea",
+  "name": "練馬区 光が丘公園 体育館前フリーマーケット（リサイクル推進友の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル推進友の会",
+   "url": "http://www.frma.jp/"
+  },
+  "venue": {
+   "name": "光が丘公園 図書館前（体育館前）",
+   "pref": "13",
+   "city": "練馬区",
+   "cityCode": "13120"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-06"
+   ],
+   "text": "主催団体の開催日程（トップページの日程）"
+  },
+  "time": {
+   "text": "9:00〜15:00（受付8:30）",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "中止が決まった場合は、天気が変わっても変更なし"
+  },
+  "exhibitor": {
+   "apply": "主催団体のホームページの会場ページから予約（料金は会員かどうか・申込方法で異なる。料金表は同ページ）",
+   "applyUrl": "http://www.frma.jp/hikarigaoka.html",
+   "notes": "家庭の不用品のみ。プロ（業者）の出店は不可"
+  },
+  "sources": [
+   {
+    "url": "http://www.frma.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "光が丘公園図書館前12/6(日)"
+    ]
+   },
+   {
+    "url": "http://www.frma.jp/hikarigaoka.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "開催9時～15時",
+     "約200店プロ不可",
+     "中止の決定した場合、天気が変わっても変更なし"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "frma-nakameguro-funeiriba-flea",
+  "name": "中目黒 船入場フリーマーケット（リサイクル推進友の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル推進友の会",
+   "url": "http://www.frma.jp/"
+  },
+  "venue": {
+   "name": "中目黒 船入場（山手通り脇）",
+   "pref": "13",
+   "city": "目黒区",
+   "cityCode": "13110"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-29"
+   ],
+   "text": "主催団体の開催日程（トップページの日程）"
+  },
+  "time": {
+   "text": "9:00〜15:00（受付8:30）",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "小雨や猛暑の中止あり"
+  },
+  "exhibitor": {
+   "apply": "主催団体のホームページの会場ページから予約（料金は会員かどうか・申込方法で異なる。料金表は同ページ）",
+   "applyUrl": "http://www.frma.jp/hunairiba.html",
+   "notes": "家庭の不用品のみ。プロ（業者）の出店は不可"
+  },
+  "sources": [
+   {
+    "url": "http://www.frma.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "中目黒船入場山手通り脇10/11(日)11/29(日)"
+    ]
+   },
+   {
+    "url": "http://www.frma.jp/hunairiba.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "開催9時～15時",
+     "約60店",
+     "小雨や猛暑の中止有り"
+    ]
+   }
+  ]
  }
 ]

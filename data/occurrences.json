@@ -346,5 +346,21 @@
   "reason": "順延日：3月21日（日）",
   "checkedAt": "2026-10-18",
   "source": "https://www.city.arakawa.tokyo.jp/a025/recycle/shigen/fleamarket.html"
+ },
+ {
+  "series": "frma-akatsuka-park-flea",
+  "date": "2026-11-03",
+  "status": "confirmed",
+  "reason": "お祭り同時開催",
+  "checkedAt": "2026-10-18",
+  "source": "http://www.frma.jp/"
+ },
+ {
+  "series": "frma-akabane-park-flea",
+  "date": "2026-11-15",
+  "status": "confirmed",
+  "reason": "振替日：11月21日（土）",
+  "checkedAt": "2026-10-18",
+  "source": "http://www.frma.jp/"
  }
 ]

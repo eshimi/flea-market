@@ -334,5 +334,81 @@
   "evidenceOk": {
    "setagaya-funabashi-nomi-no-ichi-2026-autumn": true
   }
+ },
+ "http://www.frma.jp/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Thu, 08 Oct 2026 10:34:12 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "frma-akatsuka-park-flea": true,
+   "frma-komatsugawa-park-flea": true,
+   "frma-akabane-park-flea": true,
+   "frma-ukima-park-flea": true,
+   "frma-koganei-park-flea": true,
+   "frma-hikarigaoka-park-flea": true,
+   "frma-nakameguro-funeiriba-flea": true
+  }
+ },
+ "http://www.frma.jp/akatuka.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 23 Jan 2024 03:25:44 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "frma-akatsuka-park-flea": true
+  }
+ },
+ "http://www.frma.jp/komatu.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Fri, 03 Jul 2026 10:34:43 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "frma-komatsugawa-park-flea": true
+  }
+ },
+ "http://www.frma.jp/kita_akabane.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 503,
+  "failCount": 1
+ },
+ "http://www.frma.jp/ukima.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 503,
+  "failCount": 1
+ },
+ "http://www.frma.jp/koganei.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Fri, 29 Aug 2025 08:36:38 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "frma-koganei-park-flea": true
+  }
+ },
+ "http://www.frma.jp/hikarigaoka.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Mon, 26 May 2025 22:08:50 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "frma-hikarigaoka-park-flea": true
+  }
+ },
+ "http://www.frma.jp/hunairiba.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 08 Sep 2026 23:34:50 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "frma-nakameguro-funeiriba-flea": true
+  }
  }
 }

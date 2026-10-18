@@ -364,5 +364,99 @@
    "checkedAt": "2026-10-18",
    "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない（世田谷区の「著作権・リンク・免責事項」に基づく）。robots.txt はなし（404）。主催団体・問い合わせ先の電話番号は載せない"
   }
+ },
+ {
+  "url": "http://www.frma.jp/",
+  "series": [
+   "frma-akatsuka-park-flea",
+   "frma-komatsugawa-park-flea",
+   "frma-akabane-park-flea",
+   "frma-ukima-park-flea",
+   "frma-koganei-park-flea",
+   "frma-hikarigaoka-park-flea",
+   "frma-nakameguro-funeiriba-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  }
+ },
+ {
+  "url": "http://www.frma.jp/akatuka.html",
+  "series": [
+   "frma-akatsuka-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  }
+ },
+ {
+  "url": "http://www.frma.jp/komatu.html",
+  "series": [
+   "frma-komatsugawa-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  }
+ },
+ {
+  "url": "http://www.frma.jp/kita_akabane.html",
+  "series": [
+   "frma-akabane-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  }
+ },
+ {
+  "url": "http://www.frma.jp/ukima.html",
+  "series": [
+   "frma-ukima-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  }
+ },
+ {
+  "url": "http://www.frma.jp/koganei.html",
+  "series": [
+   "frma-koganei-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  }
+ },
+ {
+  "url": "http://www.frma.jp/hikarigaoka.html",
+  "series": [
+   "frma-hikarigaoka-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  }
+ },
+ {
+  "url": "http://www.frma.jp/hunairiba.html",
+  "series": [
+   "frma-nakameguro-funeiriba-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  }
  }
 ]
