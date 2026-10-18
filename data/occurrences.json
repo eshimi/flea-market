@@ -138,5 +138,29 @@
   "reason": "主催団体：フリーマーケット推進ネットワーク（問い合わせ先は区の一覧に掲載）",
   "checkedAt": "2026-10-18",
   "source": "https://www.city.setagaya.lg.jp/02241/375.html"
+ },
+ {
+  "series": "kitano-tenjin-ennichi",
+  "date": "2026-12-25",
+  "status": "confirmed",
+  "reason": "終い天神：例月より多い、約千軒の露店（公式の案内）",
+  "checkedAt": "2026-10-18",
+  "source": "https://kitanotenmangu.or.jp/event/"
+ },
+ {
+  "series": "kitano-tenjin-ennichi",
+  "date": "2027-01-25",
+  "status": "confirmed",
+  "reason": "初天神：例月より多い、約千軒の露店（公式の案内）",
+  "checkedAt": "2026-10-18",
+  "source": "https://kitanotenmangu.or.jp/event/"
+ },
+ {
+  "series": "sapporo-nakajima-park-flea",
+  "date": "2026-10-31",
+  "status": "confirmed",
+  "reason": "10時〜13時／主催団体：日本リサイクルネットワーク北海道",
+  "checkedAt": "2026-10-18",
+  "source": "https://www.city.sapporo.jp/seiso/hurima.html"
  }
 ]

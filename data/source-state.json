@@ -98,5 +98,52 @@
   "evidenceOk": {
    "setagaya-park-flea": true
   }
+ },
+ "https://toji.or.jp/mieku/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "toji-kobo-ichi": true
+  }
+ },
+ "https://toji.or.jp/access/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "toji-kobo-ichi": true
+  }
+ },
+ "https://kitanotenmangu.or.jp/event/": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "kitano-tenjin-ennichi": true
+  }
+ },
+ "https://www.shitennoji.or.jp/event/index.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "shitennoji-daishie": true
+  }
+ },
+ "https://www.city.sapporo.jp/seiso/hurima.html": {
+  "fetchedAt": "2026-10-18",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"ae6dab1eb856dd1:0\"",
+  "lastModified": "Thu, 08 Oct 2026 00:01:07 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "sapporo-nakajima-park-flea": true
+  }
  }
 }

@@ -110,5 +110,60 @@
    "checkedAt": "2026-10-18",
    "note": "世田谷区の「著作権・リンク・免責事項」（オープンデータ以外の無断転載・二次利用を禁じる）の方針により、日付・場所・主催団体名の事実だけを掲載。区の一覧にある主催団体の住所・電話番号・メールは掲載しない。robots.txt はなし（404）"
   }
+ },
+ {
+  "url": "https://toji.or.jp/mieku/",
+  "series": [
+   "toji-kobo-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（サイト下部に無断転載の禁止あり）。事実の項目（日付・場所・アクセスなど）だけ掲載し、文章・画像は転載しない。robots.txt は取得を許可（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://toji.or.jp/access/",
+  "series": [
+   "toji-kobo-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（サイト下部に無断転載の禁止あり）。事実の項目（日付・場所・アクセスなど）だけ掲載し、文章・画像は転載しない。robots.txt は取得を許可（2026-10-18 確認）"
+  }
+ },
+ {
+  "url": "https://kitanotenmangu.or.jp/event/",
+  "series": [
+   "kitano-tenjin-ennichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "規約のページなし。robots.txt は取得を許可（2026-10-18 確認）。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.shitennoji.or.jp/event/index.html",
+  "series": [
+   "shitennoji-daishie"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "規約のページなし。robots.txt は取得を許可（2026-10-18 確認）。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.city.sapporo.jp/seiso/hurima.html",
+  "series": [
+   "sapporo-nakajima-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "札幌市の「リンク・著作権・免責事項」は、掲載コンテンツの複製・転用は事前に担当課へ相談とする。事実の項目（日付・場所・主催団体名）だけ掲載し、主催団体の電話番号は載せない。robots.txt は取得を許可（2026-10-18 確認）"
+  }
  }
 ]

@@ -431,5 +431,170 @@
     ]
    }
   ]
+ },
+ {
+  "id": "toji-kobo-ichi",
+  "name": "東寺 弘法市",
+  "kinds": [
+   "engi"
+  ],
+  "organizer": {
+   "name": "東寺（教王護国寺）",
+   "url": "https://toji.or.jp/"
+  },
+  "venue": {
+   "name": "東寺 境内",
+   "pref": "26",
+   "city": "京都市南区",
+   "cityCode": "26106",
+   "address": "京都市南区九条町1番地",
+   "access": "京都駅八条口より徒歩15分／東寺駅より徒歩10分"
+  },
+  "recurrence": {
+   "type": "monthly-day",
+   "days": [
+    21
+   ],
+   "text": "毎月21日"
+  },
+  "sources": [
+   {
+    "url": "https://toji.or.jp/mieku/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "毎月21日、境内は1000店近くの露店で賑わい",
+     "弘法市として親しまれる"
+    ]
+   },
+   {
+    "url": "https://toji.or.jp/access/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "〒601-8473 京都市南区九条町1番地",
+     "「京都駅」八条口より徒歩15分です",
+     "「東寺駅」より徒歩10分です"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kitano-tenjin-ennichi",
+  "name": "北野天満宮 天神さん（毎月25日のご縁日）",
+  "kinds": [
+   "engi"
+  ],
+  "organizer": {
+   "name": "北野天満宮",
+   "url": "https://kitanotenmangu.or.jp/"
+  },
+  "venue": {
+   "name": "北野天満宮 参道",
+   "pref": "26",
+   "city": "京都市上京区",
+   "cityCode": "26101",
+   "address": "京都市上京区馬喰町"
+  },
+  "recurrence": {
+   "type": "monthly-day",
+   "days": [
+    25
+   ],
+   "text": "毎月25日"
+  },
+  "time": {
+   "text": "露店は終日（日没から境内ライトアップ）"
+  },
+  "sources": [
+   {
+    "url": "https://kitanotenmangu.or.jp/event/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "毎月25日は「天神さんの日」で知られる当宮のご縁日",
+     "参道には終日露天商が所狭しと立ち並び",
+     "〒602-8386 京都市上京区馬喰町"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "shitennoji-daishie",
+  "name": "四天王寺 大師会（毎月21日・お大師さん）",
+  "kinds": [
+   "engi"
+  ],
+  "organizer": {
+   "name": "四天王寺",
+   "url": "https://www.shitennoji.or.jp/"
+  },
+  "venue": {
+   "name": "四天王寺 境内一円",
+   "pref": "27",
+   "city": "大阪市天王寺区",
+   "cityCode": "27109",
+   "address": "大阪市天王寺区四天王寺1-11-18"
+  },
+  "recurrence": {
+   "type": "monthly-day",
+   "days": [
+    21
+   ],
+   "text": "毎月21日"
+  },
+  "sources": [
+   {
+    "url": "https://www.shitennoji.or.jp/event/index.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "毎月21日は俗に「お大師さん」と呼ばれ、境内に露店が並び",
+     "境内一円に食べ物のお店や日常品、アンティークなどの露店が出ます",
+     "大阪市天王寺区四天王寺1-11-18"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sapporo-nakajima-park-flea",
+  "name": "中島公園フリーマーケット（札幌市）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "主催団体は開催日ごとに異なります（札幌市の一覧を参照）",
+   "label": "主催団体・問い合わせ先",
+   "url": "https://www.city.sapporo.jp/seiso/hurima.html"
+  },
+  "venue": {
+   "name": "中島公園（自由広場）",
+   "pref": "01",
+   "city": "札幌市中央区",
+   "cityCode": "01101",
+   "address": "札幌市中央区中島公園1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-31"
+   ],
+   "text": "札幌市の発表した令和8年度の開催予定日（日程は札幌市の一覧で発表）"
+  },
+  "visitor": {
+   "rain": "天候等により中止となる場合あり（開催状況は各主催団体に確認）"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.sapporo.jp/seiso/hurima.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "10月31日(土曜日)中島公園（自由広場）10時～13時日本リサイクルネットワーク北海道",
+     "中島公園（自由広場）：札幌市中央区中島公園1",
+     "天候や感染症の流行状況等により、開催中止となる場合があります"
+    ]
+   }
+  ]
  }
 ]

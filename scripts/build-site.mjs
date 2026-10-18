@@ -127,7 +127,7 @@ function areaPages(ctx) {
   }
   const count = (f) => ctx.occ.filter((o) => isActive(o) && f(o.series)).length;
   const idx = [...prefs.keys()].sort().map((p) => `<li><a href="/area/${p}/">${esc(PREFS[p])}<small>今後${ctx.days}日に ${count((s) => s.venue.pref === p)}件</small></a></li>`).join('');
-  pages.push({ path: '/area/', title: '地域から探す', description: '都道府県・市区町村から、フリマ・蚤の市・骨董市の開催を探せます。', body: `<div class="in page">${breadcrumb([{ label: '地域から探す' }])}<h1>地域から探す</h1><p class="lead">掲載のある都道府県です。いまは東京都から掲載を始めています。</p>${idx ? `<ul class="grid-links">${idx}</ul>` : '<p class="empty">掲載の準備中です。</p>'}</div>` });
+  pages.push({ path: '/area/', title: '地域から探す', description: '都道府県・市区町村から、フリマ・蚤の市・骨董市の開催を探せます。', body: `<div class="in page">${breadcrumb([{ label: '地域から探す' }])}<h1>地域から探す</h1><p class="lead">掲載のある都道府県です。東京都から掲載を始め、少しずつ広げています。</p>${idx ? `<ul class="grid-links">${idx}</ul>` : '<p class="empty">掲載の準備中です。</p>'}</div>` });
   for (const [p, cities] of prefs) {
     const cityLinks = [...cities].sort().map(([c, name]) => `<li><a href="/area/${p}/${c}/">${esc(name)}<small>${count((s) => s.venue.cityCode === c)}件</small></a></li>`).join('');
     const extra = cityLinks ? `<h2 class="sec-h">市区町村から</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">開催の一覧</h2>` : '';
