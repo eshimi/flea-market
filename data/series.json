@@ -2433,5 +2433,469 @@
     ]
    }
   ]
+ },
+ {
+  "id": "recycler-ajinomoto-stadium-flea",
+  "name": "味の素スタジアム BIGフリーマーケット（リサイクル運動市民の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動市民の会",
+   "url": "https://www2.recycler.jp/sm/index.php"
+  },
+  "venue": {
+   "name": "味の素スタジアム",
+   "pref": "13",
+   "city": "調布市",
+   "cityCode": "13208",
+   "address": "東京都調布市西町376-3"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-22",
+    "2026-12-13"
+   ],
+   "text": "主催団体の開催スケジュール"
+  },
+  "time": {
+   "text": "10:00〜15:00（8:00〜10:00はアーリー入場）",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天中止の判断は事務局（朝7時までに中止案内がなければ開催）",
+   "admission": "お一人様300円、小学生以下無料（8時〜10時のアーリー入場は1,000円）"
+  },
+  "exhibitor": {
+   "apply": "主催団体のサイトの会場ページから申し込み（会員種別で出店料が異なる）",
+   "applyUrl": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=004"
+  },
+  "sources": [
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=004",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "住所 東京都調布市西町376-3",
+     "開催情報 毎月開催",
+     "開催時間 10時～15時",
+     "入場料 お一人様300円 小学生以下無料",
+     "開催日 : 2026-11-22",
+     "受付中の他の日程2026-12-13"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "recycler-tokyo-international-forum-flea",
+  "name": "東京国際フォーラム フリーマーケット（リサイクル運動市民の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動市民の会",
+   "url": "https://www2.recycler.jp/sm/index.php"
+  },
+  "venue": {
+   "name": "東京国際フォーラム",
+   "pref": "13",
+   "city": "千代田区",
+   "cityCode": "13101",
+   "address": "東京都千代田区丸の内3-5-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08",
+    "2026-12-19"
+   ],
+   "text": "主催団体の開催スケジュール"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天中止の判断は事務局（朝7時までに中止案内がなければ開催）"
+  },
+  "exhibitor": {
+   "apply": "主催団体のサイトの会場ページから申し込み（会員種別で出店料が異なる）",
+   "applyUrl": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=904"
+  },
+  "sources": [
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=904",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "東京都千代田区丸の内3丁目5番1号",
+     "月1回程度を予定",
+     "午前10時～午後4時"
+    ]
+   },
+   {
+    "url": "https://www2.recycler.jp/sm/index.php",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/08(日)東京国際フォーラム",
+     "12/19(土)東京国際フォーラム",
+     "朝7時までに中止案内がでなければ開催です"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "recycler-kiba-park-flea",
+  "name": "都立木場公園 フリーマーケット（リサイクル運動市民の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動市民の会",
+   "url": "https://www2.recycler.jp/sm/index.php"
+  },
+  "venue": {
+   "name": "都立木場公園",
+   "pref": "13",
+   "city": "江東区",
+   "cityCode": "13108",
+   "address": "江東区木場4-1-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-15",
+    "2026-12-20"
+   ],
+   "text": "主催団体の開催スケジュール"
+  },
+  "time": {
+   "text": "9:00〜15:00",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天中止の判断は事務局（朝7時までに中止案内がなければ開催）"
+  },
+  "exhibitor": {
+   "apply": "主催団体のサイトの会場ページから申し込み（会員種別で出店料が異なる）",
+   "applyUrl": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=045"
+  },
+  "sources": [
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=045",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "江東区木場４-１-１",
+     "9:00-15:00"
+    ]
+   },
+   {
+    "url": "https://www2.recycler.jp/sm/index.php",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/15(日)都立木場公園",
+     "12/20(日)都立木場公園",
+     "朝7時までに中止案内がでなければ開催です"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "recycler-komazawa-park-flea",
+  "name": "駒沢オリンピック公園 フリーマーケット（リサイクル運動市民の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動市民の会",
+   "url": "https://www2.recycler.jp/sm/index.php"
+  },
+  "venue": {
+   "name": "駒沢オリンピック公園",
+   "pref": "13",
+   "city": "世田谷区",
+   "cityCode": "13112",
+   "address": "世田谷区駒沢公園1-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-06"
+   ],
+   "text": "主催団体の開催スケジュール"
+  },
+  "time": {
+   "text": "9:00〜15:00",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天中止の判断は事務局（朝7時までに中止案内がなければ開催）"
+  },
+  "exhibitor": {
+   "apply": "主催団体のサイトの会場ページから申し込み（会員種別で出店料が異なる）",
+   "applyUrl": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=044"
+  },
+  "sources": [
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=044",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "〒154-0013 世田谷区駒沢公園1-1",
+     "9:00-15:00"
+    ]
+   },
+   {
+    "url": "https://www2.recycler.jp/sm/index.php",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "12/06(日)駒沢オリンピック公園",
+     "朝7時までに中止案内がでなければ開催です"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "recycler-fussa-baseside-street",
+  "name": "福生ベースサイドストリート 古着・アンティーク市（リサイクル運動市民の会）",
+  "kinds": [
+   "nomi"
+  ],
+  "organizer": {
+   "name": "リサイクル運動市民の会",
+   "url": "https://www2.recycler.jp/sm/index.php"
+  },
+  "venue": {
+   "name": "福生ベースサイドストリート（フレンドシップパーク）",
+   "pref": "13",
+   "city": "福生市",
+   "cityCode": "13218",
+   "address": "福生市福生2351-11 フレンドシップパーク"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 2,
+     "wd": 0
+    }
+   ],
+   "text": "毎月第2日曜日"
+  },
+  "time": {
+   "text": "10:00〜15:00",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天中止の判断は事務局（朝7時までに中止案内がなければ開催）"
+  },
+  "exhibitor": {
+   "apply": "主催団体のサイトの会場ページから申し込み（会員種別で出店料が異なる）",
+   "applyUrl": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=042"
+  },
+  "sources": [
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=042",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "福生市福生2351-11 フレンドシップパーク",
+     "毎月 第２日曜日",
+     "10:00-15:00"
+    ]
+   },
+   {
+    "url": "https://www2.recycler.jp/sm/index.php",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "11/08(日)福生ベースサイドストリート",
+     "12/13(日)福生ベースサイドストリート",
+     "古着・アンティーク市",
+     "朝7時までに中止案内がでなければ開催です"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "recycler-koganei-park-flea",
+  "name": "小金井公園 フリーマーケット（リサイクル運動市民の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動市民の会",
+   "url": "https://www2.recycler.jp/sm/index.php"
+  },
+  "venue": {
+   "name": "都立小金井公園",
+   "pref": "13",
+   "city": "小金井市",
+   "cityCode": "13210",
+   "address": "東京都小金井市関野町1-13-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-27"
+   ],
+   "text": "主催団体の開催スケジュール"
+  },
+  "time": {
+   "text": "9:00〜15:00",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天中止の判断は事務局（朝7時までに中止案内がなければ開催）"
+  },
+  "exhibitor": {
+   "apply": "主催団体のサイトの会場ページから申し込み（会員種別で出店料が異なる）",
+   "applyUrl": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=053"
+  },
+  "sources": [
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=053",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "〒184-0001 東京都小金井市関野町１丁目１３−１",
+     "9:00-15:00"
+    ]
+   },
+   {
+    "url": "https://www2.recycler.jp/sm/index.php",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "12/27(日)小金井公園",
+     "朝7時までに中止案内がでなければ開催です"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "recycler-hikarigaoka-pageant-festa-flea",
+  "name": "ねりま光が丘 Hikari Pageant Festa フリーマーケット（リサイクル運動市民の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動市民の会",
+   "url": "https://www2.recycler.jp/sm/index.php"
+  },
+  "venue": {
+   "name": "都立光が丘公園",
+   "pref": "13",
+   "city": "練馬区",
+   "cityCode": "13120",
+   "address": "東京都練馬区光が丘4-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-19"
+   ],
+   "text": "主催団体の開催スケジュール"
+  },
+  "time": {
+   "text": "10:00〜19:00",
+   "start": "10:00",
+   "end": "19:00"
+  },
+  "visitor": {
+   "rain": "雨天中止の判断は事務局（朝7時までに中止案内がなければ開催）"
+  },
+  "exhibitor": {
+   "apply": "主催団体のサイトの会場ページから申し込み（会員種別で出店料が異なる）",
+   "applyUrl": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=050"
+  },
+  "sources": [
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=050",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "〒179-0072 東京都練馬区光が丘４丁目１",
+     "10:00～19:00"
+    ]
+   },
+   {
+    "url": "https://www2.recycler.jp/sm/index.php",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "12/19(土)光が丘公園 Hikari Pageant Festa",
+     "朝7時までに中止案内がでなければ開催です"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sunshine-city-big-furima",
+  "name": "サンシャインシティ・ビッグフリマ（池袋）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "オタカラ・ネット",
+   "url": "https://souq.jp/"
+  },
+  "venue": {
+   "name": "サンシャインシティ サンシャイン広場",
+   "pref": "13",
+   "city": "豊島区",
+   "cityCode": "13116"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-03"
+   ],
+   "text": "会場・主催者の告知した開催日"
+  },
+  "time": {
+   "text": "9:30〜15:00",
+   "start": "09:30",
+   "end": "15:00"
+  },
+  "visitor": {
+   "admission": "入場無料",
+   "rain": "雨天中止"
+  },
+  "sources": [
+   {
+    "url": "https://sunshinecity.jp/event/entry-39014.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "開催期間2026/11/3(火)",
+     "09:30～15:00",
+     "※雨天中止",
+     "サンシャイン広場",
+     "入場無料",
+     "オタカラ・ネット"
+    ]
+   },
+   {
+    "url": "https://souq.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "2026年11月3日（祝・火）",
+     "サンシャインシティ♠︎ビッグフリマ"
+    ]
+   }
+  ]
  }
 ]
