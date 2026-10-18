@@ -12,7 +12,7 @@ import { renderHomeBody } from './lib/home-view.mjs';
 import { S, T, WD_EN } from './lib/i18n.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
-import { mapUrls, weatherTarget } from './lib/weather.mjs';
+import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
 import { breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, statusTag } from './lib/html.mjs';
@@ -172,11 +172,17 @@ function seriesPage(s, ctx, lang) {
   const oen = lang === 'en' ? orgEn(s.organizer.name) : '';
   const oShown = oen ? orig(oen, s.organizer.name) : esc(s.organizer.name);
   const orgName = s.organizer.url ? `<a href="${esc(s.organizer.url)}" rel="noopener">${oShown}</a>` : oShown;
+  const mu = mapUrls(s, lang);
+  const wt = weatherTarget(s);
+  const wxBox = next && wt ? `<section class="ev-card"><h2>${esc(p.secWx)}</h2><div class="wx" data-office="${wt.office}" data-area="${wt.area || ''}" data-date="${next.date}" data-lang="${lang}" data-region="${esc(prefLabel(v.pref, 'en'))}"><p class="wx-st">${esc(p.wxLoading)}</p></div><p class="note">${esc(p.wxNote)} ${esc(p.wxSrc)}<a href="https://www.jma.go.jp/bosai/forecast/" rel="noopener">${esc(p.wxJma)}</a>${lang === 'ja' ? '' : ' (気象庁)'}</p></section>` : '';
+  const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(mapQuery(s).q)}&hl=${lang === 'ja' ? 'ja' : 'en'}&z=16&output=embed`;
+  const side = `<aside class="ev-side" aria-label="${esc(p.secMap)}"><section class="ev-card"><h2>${esc(p.secMap)}</h2><div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(p.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(lang === 'en' ? venueL(s, lang) : v.name)}</b><button type="button" class="map-show">${esc(p.mapShow)}</button><small>${esc(p.mapPrivacy)}</small></div></div><p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(p.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(p.mapRoute)} ↗</a></p><p class="note">${esc(mu.exact ? p.mapExact : p.mapLoose)}</p></section>${wxBox}</aside>`;
   const body = `<div class="in page">${breadcrumb([{ href: `/area/${v.pref}/`, label: pn }, ...(v.cityCode ? [{ href: `/area/${v.pref}/${v.cityCode}/`, label: cityL(v.city, lang) }] : []), { label: nameL(s, lang) }], lang)}
 <h1>${esc(nameL(s, lang))}</h1>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-h" lang="ja">${esc(s.name)}</p>` : ''}
 <div class="tags">${kindTags(s.kinds, lang)}</div>
 ${next ? `<p class="banner">${esc(p.next)}${lang === 'ja' ? '：' : ': '}<b>${esc(dlabel(next.date, lang, { year: true }))}</b>　${esc(S[lang].status[next.status])}${lang === 'ja' ? '（' : ' ('}${checked}${esc(next.checkedAt)}${lang === 'ja' ? '）' : ')'}</p>` : ''}
 ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
+<div class="ev-split"><div class="ev-main">
 <h2 class="sec-h">${esc(p.secInfo)}</h2>
 <dl class="facts">
 ${row(p.when, rule)}
@@ -188,12 +194,6 @@ ${row(p.admission, tv(s, 'admission', s.visitor?.admission, lang))}
 ${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang))}
 ${row(s.organizer.label ? (lang === 'en' ? labelEn(s.organizer.label) || p.orgLabel(s.organizer.label) : p.orgLabel(s.organizer.label)) : p.org, orgName)}
 </dl>
-${(() => {
-  const m = mapUrls(s, lang);
-  const wt = weatherTarget(s);
-  const wx = next && wt ? `<h2 class="sec-h">${esc(p.secWx)}</h2><div class="wx" data-office="${wt.office}" data-area="${wt.area || ''}" data-date="${next.date}" data-lang="${lang}" data-region="${esc(prefLabel(v.pref, 'en'))}"><p class="wx-st">${esc(p.wxLoading)}</p></div><p class="note">${esc(p.wxNote)} ${esc(p.wxSrc)}<a href="https://www.jma.go.jp/bosai/forecast/" rel="noopener">${esc(p.wxJma)}</a>${lang === 'ja' ? '' : ' (気象庁)'}</p>` : '';
-  return `<h2 class="sec-h">${esc(p.secMap)}</h2><p class="map-btns"><a class="map-btn" href="${esc(m.open)}" target="_blank" rel="noopener nofollow">${esc(p.mapOpen)} ↗</a><a class="map-btn s" href="${esc(m.route)}" target="_blank" rel="noopener nofollow">${esc(p.mapRoute)} ↗</a></p><p class="note">${esc(m.exact ? p.mapExact : p.mapLoose)}</p>${wx}`;
-})()}
 <h2 class="sec-h">${esc(p.secDates)}</h2>
 ${dates}
 <h2 class="sec-h" id="shuten">${esc(p.secVendor)}</h2>
@@ -201,8 +201,9 @@ ${ex ? `<dl class="facts">${row(p.fee, tv(s, 'fee', ex.fee, lang))}${row(p.apply
 <h2 class="sec-h">${esc(p.secSrc)}</h2>
 <ul class="sources">${s.sources.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x.url)}</a>（${checked}${esc(x.checkedAt)}）</li>`).join('')}</ul>
 <p class="note">${s.recurrence.type === 'dates' ? '' : esc(p.rule(lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence)))} ${esc(disclaimer(lang))}</p>
+</div>${side}</div>
 </div>`;
-  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list), scripts: ['/weather.js'] });
+  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list), scripts: ['/weather.js', '/map.js'] });
 }
 
 function shutenPage(ctx, lang) {

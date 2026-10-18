@@ -324,7 +324,10 @@ test('地図・経路のリンクと当日の天気（気象庁）', async () =>
   const en = pages.find((p) => p.path === '/e/oedo-antique-market-tokyo-international-forum/');
   assert.match(en.body, /Open in Google Maps/);
   assert.match(en.body, /<div class="wx" data-office="130000" data-area="130010" data-date="2026-10-31" data-lang="en" data-region="Tokyo">/);
-  assert.deepEqual(en.scripts, ['/weather.js']);
+  assert.deepEqual(en.scripts, ['/weather.js', '/map.js']);
+  assert.match(en.body, /<aside class="ev-side"/);
+  assert.match(en.body, /class="ev-map" data-src="https:\/\/maps\.google\.com\/maps\?q=/);
+  assert.match(en.body, /<button type="button" class="map-show">Show map<\/button>/);
   assert.match(pages.find((p) => p.path === '/ja/e/oedo-antique-market-tokyo-international-forum/').body, /Google マップで開く/);
 });
 
