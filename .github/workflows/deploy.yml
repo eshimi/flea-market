@@ -39,24 +39,27 @@ jobs:
       - name: 公式ページの確認
         continue-on-error: true
         run: node scripts/check-sources.mjs ${{ inputs.all && '--all' || '' }}
+      - name: ブログ記事の自動作成（今週末・来月のまとめ・新着の掲載）
+        continue-on-error: true
+        run: node scripts/generate-blog.mjs
       - name: ページ生成（データの検証・サイトマップを含む）
         run: npm run build
       - name: 確認結果をリポジトリに保存
         continue-on-error: true
         run: |
-          files="data/series.json data/source-state.json data/sitemap-lastmod.json"
-          if git diff --quiet -- $files; then echo "変更はありません"; exit 0; fi
+          files="data/series.json data/source-state.json data/sitemap-lastmod.json data/blog-auto"
+          if [ -z "$(git status --porcelain -- $files)" ]; then echo "変更はありません"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in $files; do cp "$f" "$RUNNER_TEMP/$(basename $f)"; done
+          tar cf "$RUNNER_TEMP/save.tar" $files
           # 実行中にブランチが進んでいたら、最新の上に、確認結果だけを載せ直す（最大3回）
           for i in 1 2 3; do
             git fetch -q --depth=1 origin "${GITHUB_REF_NAME}"
             git reset -q --hard "origin/${GITHUB_REF_NAME}"
-            for f in $files; do cp "$RUNNER_TEMP/$(basename $f)" "$f"; done
-            git add $files
+            tar xf "$RUNNER_TEMP/save.tar"
+            git add -A $files
             git diff --cached --quiet && { echo "変更はありません"; exit 0; }
-            git commit -q -m "公式ページの確認結果とサイトマップの更新日を保存 [skip ci]"
+            git commit -q -m "公式ページの確認結果・サイトマップの更新日・自動のブログ記事を保存 [skip ci]"
             git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
             sleep 5
           done

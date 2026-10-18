@@ -375,3 +375,53 @@ test('ヘッダーのリンク先は、すべて右のナビ（主なページ�
   assert.ok(area.includes('href="/area/13/13101/"'), '市区町村への相互リンク');
   assert.match(pages.find((p) => p.path === '/kind/kotto/').body, /<a href="\/kind\/kotto\/" aria-current="page">/);
 });
+
+test('自動のブログ記事：今週末・来月のまとめ・新着の掲載（掲載データの事実だけ）', async () => {
+  const { generate } = await import('../scripts/lib/autoblog.mjs');
+  const { buildOccurrences } = await import('../scripts/lib/events.mjs');
+  const { setTranslations } = await import('../scripts/lib/tr-en.mjs');
+  const real = loadData();
+  setTranslations(real.translations);
+  const occAt = (t) => buildOccurrences(real.series, real.occurrences, t);
+  const run = (today, existing = new Set(), state = { seen: real.series.map((s) => s.id) }) => generate({ series: real.series, occ: occAt(today), today, existing, state });
+  // 週末の4日前（木）：その週末の記事ができる。件数は、実際のその週末の開催の数
+  const thu = run('2026-10-22').posts.find((p) => p.slug === 'weekend-2026-10-24');
+  assert.ok(thu);
+  const n = occAt('2026-10-22').filter((o) => ['2026-10-24', '2026-10-25'].includes(o.date) && o.status !== 'cancelled' && o.status !== 'postponed').length;
+  assert.equal(thu.en.title, `This weekend’s markets in Japan (Oct 24–25): ${n} events`);
+  assert.equal(thu.ja.title, `今週末（10月24日〜25日）のフリマ・蚤の市：${n}件`);
+  assert.equal(thu.cat, 'weekly');
+  assert.ok(thu.en.blocks.some((b) => b.ul?.some((x) => x.includes('](/e/'))), '開催詳細へのリンク');
+  // すでにあれば作らない（公開した時点の記録を変えない）。週末の最中・5日以上前は作らない
+  assert.equal(run('2026-10-22', new Set(['weekend-2026-10-24'])).posts.length, 0);
+  assert.ok(!run('2026-10-25').posts.some((p) => p.slug.startsWith('weekend-')));
+  assert.ok(!run('2026-10-19').posts.some((p) => p.slug.startsWith('weekend-')));
+  // 25日以降：来月のまとめ
+  const mon = run('2026-10-26').posts.find((p) => p.slug === 'month-2026-11');
+  assert.ok(mon);
+  assert.match(mon.en.title, /^Markets in Japan in November 2026: \d+ events$/);
+  assert.match(mon.ja.title, /^2026年11月のフリマ・蚤の市：\d+件$/);
+  assert.ok(!run('2026-10-24').posts.some((p) => p.slug.startsWith('month-')));
+  // 新着：前回までに見ていないシリーズだけ。初回（state なし）は作らない
+  const added = generate({ series: real.series, occ: occAt('2026-10-20'), today: '2026-10-20', existing: new Set(), state: { seen: real.series.slice(1).map((s) => s.id) } });
+  const nw = added.posts.find((p) => p.slug === 'new-2026-10-20');
+  assert.ok(nw && nw.en.title.includes('1 new listing') && nw.ja.title.includes('1件'));
+  assert.ok(nw.en.blocks[1].ul[0].includes(`](/e/${real.series[0].id}/)`));
+  assert.equal(generate({ series: real.series, occ: occAt('2026-10-20'), today: '2026-10-20', existing: new Set(), state: null }).posts.filter((p) => p.cat === 'new').length, 0);
+  // ページになる：一覧・記事・RSS。開催が消えた記事のリンクは、リンクにしない
+  const ghost = { ...thu, slug: 'weekend-ghost', en: { ...thu.en, blocks: [{ ul: ['[Gone](/e/no-such-series/): x'] }] }, ja: { ...thu.ja, blocks: [{ ul: ['[消えた](/e/no-such-series/)：x'] }] } };
+  const built = buildPages({ ...real, autoPosts: [thu, mon, ghost] }, '2026-10-22');
+  const page = (p) => built.pages.find((x) => x.path === p);
+  assert.match(page('/blog/')?.body || '', /Weekend picks/);
+  assert.ok(page('/blog/weekend-2026-10-24/') && page('/ja/blog/month-2026-11/'));
+  const gh = page('/blog/weekend-ghost/').body;
+  assert.ok(gh.includes('Gone') && !gh.includes('no-such-series'));
+  assert.ok(built.files.every((f) => f.content.includes('weekend-2026-10-24')));
+  const paths = new Set(built.pages.map((p) => p.path));
+  for (const p of built.pages.filter((x) => x.path.includes('/blog/'))) {
+    for (const m of layout(p).matchAll(/href="(\/[^"#?]*)/g)) {
+      if (/\.(css|js|webp|json|txt|xml)$/.test(m[1])) continue;
+      assert.ok(paths.has(m[1]), `${p.path} → ${m[1]}`);
+    }
+  }
+});

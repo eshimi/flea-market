@@ -1,6 +1,6 @@
 // data/ から、dist/ に静的サイトを作る（毎日、日本時間の今日を基準に作り直す）。
 // 使い方: node scripts/build-site.mjs [--today=YYYY-MM-DD] [--out=dist]
-import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { addDays, holidayName, isDayOff, parseYmd, todayJst, upcomingWeekend, weekday, WEEKDAYS } from './lib/dates.mjs';
@@ -28,7 +28,10 @@ export function loadData(dir = join(ROOT, 'data')) {
   try { credits = read('image-credits.json'); } catch { /* 画像の出典がないデータ（テストの見本など）は空 */ }
   let translations = {};
   try { translations = read('translations-en.json'); } catch { /* 英語の訳がないデータ（テストの見本など）は、日本語のまま出す */ }
-  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations };
+  // 自動で作ったブログ記事（scripts/generate-blog.mjs が data/blog-auto/ に保存する）
+  const autoDir = join(dir, 'blog-auto');
+  const autoPosts = existsSync(autoDir) ? readdirSync(autoDir).filter((f) => f.endsWith('.json') && f !== 'state.json').map((f) => JSON.parse(readFileSync(join(autoDir, f), 'utf8'))) : [];
+  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts };
 }
 
 // ---- 各ページ ----
@@ -295,7 +298,15 @@ function faqPage(lang) {
 
 const blogTitle = (lang) => (lang === 'ja' ? 'ブログ' : 'Blog');
 const feedLink = (lang) => `<link rel="alternate" type="application/rss+xml" title="${esc(`${SITE.name} ${blogTitle(lang)}`)}" href="${langPath('/blog/feed.xml', lang)}">\n`;
-const posts = () => [...BLOG].sort((a, b) => b.date.localeCompare(a.date));
+// 手で書いた記事（content.mjs）＋自動で作った記事（data/blog-auto）。新しい順
+let ALL_POSTS = [...BLOG];
+const posts = () => [...ALL_POSTS].sort((a, b) => b.date.localeCompare(a.date) || b.slug.localeCompare(a.slug));
+// 自動の記事の本文にある開催詳細へのリンクは、その開催がもうなければ、リンクにしない
+const cleanLinks = (post, ids) => {
+  const fix = (t) => (typeof t === 'string' ? t.replace(/\[([^\]]+)\]\(\/e\/([a-z0-9-]+)\/\)/g, (m, text, id) => (ids.has(id) ? m : text)) : t);
+  const lang = (c) => ({ ...c, blocks: c.blocks.map((b) => (b.p ? { p: fix(b.p) } : b.ul ? { ul: b.ul.map(fix) } : b)) });
+  return { ...post, en: lang(post.en), ja: lang(post.ja) };
+};
 
 function blogIndex(lang) {
   const lead = lang === 'ja' ? 'マーケットの探し方・読み方・お出かけの前の確認について。公式ページの記載に基づいて書いています。' : 'How to find markets, read listings and check before you go, based on what official pages say.';
@@ -368,12 +379,14 @@ function withSide(page, ctx, lang) {
 
 // ---- 全体 ----
 
-export function buildPages({ series, occurrences, credits = [], translations = {} }, today, days = 120) {
+export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [] }, today, days = 120) {
   setTranslations(translations);
+  const ids = new Set(series.map((x) => x.id));
+  ALL_POSTS = [...BLOG, ...autoPosts.map((a) => cleanLinks(a, ids))];
   const occ = buildOccurrences(series, occurrences, today, days);
   const ctx = { series, occ, today, days, credits };
   // 英語が既定（/）。日本語は /ja/
-  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), faqPage(lang), blogIndex(lang), ...BLOG.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
+  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）
   const files = LANGS_ORDER.map((lang) => ({ path: langPath('/blog/feed.xml', lang), content: feedXml(lang) }));
   return { pages, occ, files };
