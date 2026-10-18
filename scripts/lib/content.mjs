@@ -109,9 +109,12 @@ export const BLOG = [
   {
     slug: 'welcome',
     date: '2026-10-18',
+    cat: 'news',
+    tags: {"en": ["Tokyo", "flea market", "antique"], "ja": ["東京", "フリマ", "骨董市"]},
     en: {
       title: 'Welcome to Flea Market JP',
       summary: 'What this site is, where its information comes from, and what it does not do.',
+      points: ["A guide to flea markets, antique fairs and handmade markets in Japan, built only from official information", "We list facts and link to the official page; we do not copy text or photos", "We do not take stall applications or sell tickets"],
       blocks: [
         { p: 'Flea Market JP lists flea markets, antique fairs, nomi-no-ichi and handmade markets in Japan. Everything comes from the official pages of organizers and municipalities, and from open data.' },
         { h2: 'What we do' },
@@ -132,6 +135,7 @@ export const BLOG = [
     ja: {
       title: 'Flea Market JP へようこそ',
       summary: 'このサイトは何か、情報の出どころ、やらないこと。',
+      points: ["日本のフリマ・骨董市・手作り市を、公式情報だけから載せるサイト", "事実を載せて公式ページへリンクし、文章や写真は転載しない", "出店の申込みやチケットの販売は、このサイトではしない"],
       blocks: [
         { p: 'Flea Market JP は、日本のフリーマーケット・骨董市・蚤の市・手作り市の開催情報を載せるサイトです。主催者・自治体の公式ページと、公開データだけから集めています。' },
         { h2: 'やること' },
@@ -153,9 +157,12 @@ export const BLOG = [
   {
     slug: 'reading-the-labels',
     date: '2026-10-18',
+    cat: 'howto',
+    tags: {"en": ["flea market", "Tokyo"], "ja": ["フリマ", "東京"]},
     en: {
       title: 'How to read a listing: “Confirmed” vs. “Scheduled”',
       summary: 'Two labels look similar but mean different things. Here is the difference.',
+      points: ["“Confirmed” means this occurrence was found in official information", "“Scheduled” is calculated from the official rule and is not individually confirmed", "Check the official page before you go"],
       blocks: [
         { p: 'Many markets are held on a rule, such as “every 1st and 3rd Sunday”. The organizer states the rule officially, but does not always confirm each single day. We show the two cases differently.' },
         { h2: 'Confirmed (official)' },
@@ -173,6 +180,7 @@ export const BLOG = [
     ja: {
       title: '掲載の読み方：「公式で確認」と「予定」のちがい',
       summary: 'よく似た2つの札が、何を意味しているのかを説明します。',
+      points: ["「公式で確認」は、その回を公式情報で見つけたもの", "「予定」は、公式のきまりから計算した日で、その回の個別の確認はない", "お出かけの前に、公式ページをご確認ください"],
       blocks: [
         { p: '多くのマーケットは、「毎月第1・第3日曜」のようなきまりで開かれます。きまりは公式に書かれていても、1回ごとの確認までは書かれていないことがあります。このサイトでは、2つの場合を分けて表示しています。' },
         { h2: '公式で確認' },
@@ -191,9 +199,12 @@ export const BLOG = [
   {
     slug: 'rain-and-cancellations',
     date: '2026-10-18',
+    cat: 'goer',
+    tags: {"en": ["antique", "Tokyo"], "ja": ["骨董市", "東京"]},
     en: {
       title: 'Rain and cancellations: what official pages say',
       summary: 'Rain rules differ from market to market. Four examples, quoted from the official pages (as of 2026-10-18).',
+      points: ["Rain rules differ from market to market", "Some decide on the morning of the event and announce on the official site or social media", "The examples are as of 2026-10-18; check the current official page"],
       blocks: [
         { p: 'There is no single rule. Some markets are cancelled in rain, some go ahead except in severe weather, and some decide on the morning. These four examples are quoted from official pages as of 2026-10-18 (in Japanese on the listing). Always check the current official page.' },
         { ul: [
@@ -208,6 +219,7 @@ export const BLOG = [
     ja: {
       title: '雨天・中止：公式ページの書き方',
       summary: '雨のときの扱いは、マーケットごとに違います。公式ページの記載から4つの例（2026-10-18 時点）。',
+      points: ["雨天の扱いは、マーケットごとに違う", "当日の朝に決めて、公式サイトや SNS で知らせるものがある", "例は 2026-10-18 時点。最新の公式ページをご確認ください"],
       blocks: [
         { p: '決まったきまりはありません。雨なら中止のもの、荒天以外は開催するもの、当日の朝に決めるものがあります。次の4つは、2026-10-18 時点の公式ページの記載です。お出かけの前に、必ず最新の公式ページをご確認ください。' },
         { ul: [
@@ -223,9 +235,12 @@ export const BLOG = [
   {
     slug: 'getting-there-by-car',
     date: '2026-10-18',
+    cat: 'goer',
+    tags: {"en": ["Tokyo", "flea market"], "ja": ["東京", "フリマ"]},
     en: {
       title: 'Getting there: some city-run events ask you not to drive',
       summary: 'Several municipal events ask visitors not to come by car. Examples from the official pages (as of 2026-10-18).',
+      points: ["Several city-run events ask visitors not to come by car", "Some are indoors or have no parking", "Public transport is the safer choice"],
       blocks: [
         { p: 'Events held by wards and cities in Tokyo often take place at community facilities or parks with little parking. These listings carry a note on parking or car access in the official page, as of 2026-10-18 (in Japanese on the listing):' },
         { ul: [
@@ -240,6 +255,7 @@ export const BLOG = [
     ja: {
       title: '会場への行き方：車での来場を控えるよう求める催し',
       summary: '区・市の催しには、車での来場を控えるよう求めるものがあります。公式ページの記載から（2026-10-18 時点）。',
+      points: ["区・市の催しには、車での来場を控えるよう求めるものがある", "屋内開催や、駐車場がないものがある", "公共交通機関でのお出かけが安心です"],
       blocks: [
         { p: '東京都の区・市が開く催しは、駐車場の少ない公共施設や公園で行われることが多く、公式ページに駐車・車での来場についての記載があるものがあります（2026-10-18 時点）。' },
         { ul: [

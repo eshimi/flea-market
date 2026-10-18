@@ -11,6 +11,7 @@ import { CONTACT_EMAIL, SITE } from './lib/nav.mjs';
 import { renderHomeBody } from './lib/home-view.mjs';
 import { S, T, WD_EN } from './lib/i18n.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
+import { ART_CSS, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
 import { cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
 import { breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, statusTag } from './lib/html.mjs';
@@ -260,20 +261,18 @@ ${upd}
 
 
 // ---- 使い方・よくある質問・ブログ（本文は scripts/lib/content.mjs） ----
-const inline = (t) => esc(t).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\[([^\]]+)\]\((\/[^)\s]*)\)/g, '<a href="$2">$1</a>');
-const blocks = (list) => list.map((b) => (b.h2 ? `<h2>${esc(b.h2)}</h2>` : b.p ? `<p>${inline(b.p)}</p>` : `<ul>${b.ul.map((x) => `<li>${inline(x)}</li>`).join('')}</ul>`)).join('\n');
-const crumb = (lang, label) => breadcrumb([{ label }], lang);
 
 function guidePage(lang) {
   const g = GUIDE[lang];
-  return pg(lang, '/guide/', { title: g.title, description: g.lead, body: `<div class="in page prose">${crumb(lang, g.title)}<h1>${esc(g.title)}</h1><p class="lead">${esc(g.lead)}</p>\n${blocks(g.blocks)}</div>` });
+  const body = renderDoc({ title: g.title, lead: g.lead, secs: docSections(g.blocks, lang), lang });
+  return pg(lang, '/guide/', { title: g.title, description: g.lead, body, css: ART_CSS });
 }
 
 function faqPage(lang) {
   const f = FAQ[lang];
   const ld = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: f.items.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1') } })) };
-  const items = f.items.map(([q, a]) => `<h2>${esc(q)}</h2><p>${inline(a)}</p>`).join('\n');
-  return pg(lang, '/faq/', { title: f.title, description: f.lead, body: `<div class="in page prose">${crumb(lang, f.title)}<h1>${esc(f.title)}</h1><p class="lead">${esc(f.lead)}</p>\n${items}</div>`, head: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n` });
+  const body = renderDoc({ title: f.title, lead: f.lead, secs: faqSections(f.items, lang), lang });
+  return pg(lang, '/faq/', { title: f.title, description: f.lead, body, css: ART_CSS, head: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n` });
 }
 
 const blogTitle = (lang) => (lang === 'ja' ? 'ブログ' : 'Blog');
@@ -282,18 +281,14 @@ const posts = () => [...BLOG].sort((a, b) => b.date.localeCompare(a.date));
 
 function blogIndex(lang) {
   const lead = lang === 'ja' ? 'マーケットの探し方・読み方・お出かけの前の確認について。公式ページの記載に基づいて書いています。' : 'How to find markets, read listings and check before you go, based on what official pages say.';
-  const list = posts().map((p) => `<li><a href="/blog/${p.slug}/"><b>${esc(p[lang].title)}</b><small>${esc(dateLong(p.date, lang))}　${esc(p[lang].summary)}</small></a></li>`).join('');
-  return pg(lang, '/blog/', { title: blogTitle(lang), description: lead, body: `<div class="in page">${crumb(lang, blogTitle(lang))}<h1>${esc(blogTitle(lang))}</h1><p class="lead">${esc(lead)}</p><ul class="grid-links">${list}</ul><p class="note"><a href="${langPath('/blog/feed.xml', lang)}">RSS</a></p></div>`, head: feedLink(lang) });
+  return pg(lang, '/blog/', { title: blogTitle(lang), description: lead, body: renderBlogIndex(posts(), lang), css: ART_CSS, scripts: ['/blog.js'], head: feedLink(lang) });
 }
 
 function blogPost(post, lang) {
   const c = post[lang];
-  const body = `<div class="in page prose">${breadcrumb([{ href: '/blog/', label: blogTitle(lang) }, { label: c.title }], lang)}<h1>${esc(c.title)}</h1><p class="note">${esc(dateLong(post.date, lang))}</p>\n${blocks(c.blocks)}<p class="note">${esc(disclaimer(lang))}</p></div>`;
   const ld = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: c.title, datePublished: post.date, inLanguage: lang, url: `${SITE.url}${langPath(`/blog/${post.slug}/`, lang)}` };
-  return pg(lang, `/blog/${post.slug}/`, { title: c.title, description: c.summary, body, head: `${feedLink(lang)}<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n` });
+  return pg(lang, `/blog/${post.slug}/`, { title: c.title, description: c.summary, body: renderPost(post, posts(), lang), css: ART_CSS, head: `${feedLink(lang)}<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n` });
 }
-
-const dateLong = (iso, lang) => S[lang].dateLong(iso);
 
 // RSS（/blog/feed.xml、/ja/blog/feed.xml）
 function feedXml(lang) {
