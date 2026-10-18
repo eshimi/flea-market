@@ -73,8 +73,13 @@ test('件数が多い一覧は、月ごとに分ける（最初の月だけ開�
   assert.ok(!eventListByMonth(many.slice(0, 20)).includes('<details'), '20件以下は分けない');
 });
 
-test('SITE_URL が未設定の間は、検索に載せない（noindex）', () => {
-  assert.match(layout({ path: '/', title: 'x', description: 'y', body: '' }), /<meta name="robots" content="noindex,nofollow">/);
+test('SITE_URL が未設定の間は、検索に載せない（noindex）', async () => {
+  const { execFileSync } = await import('node:child_process');
+  const env = { ...process.env };
+  delete env.SITE_URL;
+  delete env.CONTACT_EMAIL;
+  const out = execFileSync(process.execPath, ['--input-type=module', '-e', "import('./scripts/lib/nav.mjs').then((m) => console.log(m.INDEXABLE))"], { env, encoding: 'utf8', cwd: new URL('..', import.meta.url).pathname });
+  assert.equal(out.trim(), 'false');
 });
 
 test('依頼の窓口：メールアドレスの形でなければ使わない', async () => {
