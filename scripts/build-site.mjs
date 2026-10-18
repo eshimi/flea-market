@@ -14,7 +14,7 @@ import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
-import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
+import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
 import { breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, statusTag } from './lib/html.mjs';
 
 const LANGS_ORDER = ['en', 'ja'];
@@ -321,6 +321,51 @@ function notFound(lang) {
   return pg(lang, '/404.html', { title: p.title, description: p.title, body: `<div class="in page"><h1>${esc(p.title)}</h1><p class="lead">${esc(p.lead)}<a href="/">${esc(p.back)}</a></p></div>` });
 }
 
+
+// ---- 右のナビ（ヘッダーのリンク先のページ）：サイト内の主なページへの相互リンク＋そのページに合う絞り込み ----
+function sideNav(ctx, lang, base) {
+  const sd = P[lang].side;
+  const li = (href, text, right = '→', cur = false) => `<li><a href="${href}"${cur ? ' aria-current="page"' : ''}><span>${esc(text)}</span><i aria-hidden="true">${esc(right)}</i></a></li>`;
+  const card = (title, items, aria) => `<nav class="ev-card sn" aria-label="${esc(aria || title)}"><h2>${esc(title)}</h2><ul class="sn-list">${items.join('')}</ul></nav>`;
+  const active = ctx.occ.filter(isActive);
+  const curRoot = (href) => (href === '/' ? base === '/' : base === href || (href !== '/about/' && base.startsWith(href)) || (href === '/about/' && base.startsWith('/about/')));
+  const links = S[lang].footer.links.filter(([h]) => !h.includes('#'));
+  const browse = card(sd.browse, links.map(([h, t]) => li(h, t, '→', curRoot(h))), sd.browseAria);
+  let extra = '';
+  const m = /^\/(date)\/(\d{4}-\d\d-\d\d)\/$/.exec(base);
+  if (base === '/weekend/' || base === '/calendar/' || m) {
+    const counts = new Map();
+    for (const o of active) counts.set(o.date, (counts.get(o.date) || 0) + 1);
+    const days = [];
+    for (let i = 0; i < 14; i++) { const d = addDays(ctx.today, i); if (counts.get(d)) days.push(li(`/date/${d}/`, dlabel(d, lang), P[lang].cnt(counts.get(d)), m?.[2] === d)); }
+    if (days.length) extra = card(sd.dates, days);
+  } else if (base.startsWith('/area/')) {
+    const [, , pref, city] = base.split('/');
+    const prefs = new Map();
+    for (const s of ctx.series) { if (!prefs.has(s.venue.pref)) prefs.set(s.venue.pref, new Map()); if (s.venue.cityCode) prefs.get(s.venue.pref).set(s.venue.cityCode, s.venue.city); }
+    const count = (f) => active.filter((o) => f(o.series)).length;
+    const cards = [];
+    if (pref && prefs.has(pref) && prefs.get(pref).size) cards.push(card(sd.cities, [...prefs.get(pref)].sort().map(([c, n]) => li(`/area/${pref}/${c}/`, cityL(n, lang), P[lang].cnt(count((s) => s.venue.cityCode === c)), c === city))));
+    cards.push(card(sd.pref, [...prefs.keys()].sort().map((k) => li(`/area/${k}/`, prefLabel(k, lang), P[lang].cnt(count((s) => s.venue.pref === k)), k === pref && !city))));
+    extra = cards.join('');
+  } else if (base.startsWith('/kind/') || base === '/shuten/' || base === '/search/') {
+    const cur = /^\/kind\/(\w+)\/$/.exec(base)?.[1];
+    extra = card(sd.types, Object.keys(KINDS).map((k) => li(`/kind/${k}/`, kindName(k, lang), P[lang].cnt(active.filter((o) => o.series.kinds.includes(k)).length), k === cur)));
+  } else if (base === '/about/') {
+    extra = card(sd.removeReq, [li('/about/#remove', sd.removeReq)]);
+  }
+  return `<aside class="ev-side" aria-label="${esc(sd.browse)}">${browse}${extra}</aside>`;
+}
+
+// ページの本文（パンくずのあと）を、本文＋右のナビの2列にする
+function withSide(page, ctx, lang) {
+  const base = splitPath(page.path).base;
+  if (!/^\/(weekend|calendar|date|area|kind|shuten|search|about)\//.test(base)) return page;
+  const m = /^(<div class="in page[^"]*">)(<nav class="crumbs"[\s\S]*?<\/nav>)([\s\S]*)<\/div>$/.exec(page.body);
+  if (!m) return page;
+  return { ...page, body: `${m[1]}${m[2]}<div class="ev-split"><div class="ev-main">${m[3]}</div>${sideNav(ctx, lang, base)}</div></div>` };
+}
+
 // ---- 全体 ----
 
 export function buildPages({ series, occurrences, credits = [], translations = {} }, today, days = 120) {
@@ -328,7 +373,7 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   const occ = buildOccurrences(series, occurrences, today, days);
   const ctx = { series, occ, today, days, credits };
   // 英語が既定（/）。日本語は /ja/
-  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), faqPage(lang), blogIndex(lang), ...BLOG.map((b) => blogPost(b, lang)), notFound(lang)]);
+  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), faqPage(lang), blogIndex(lang), ...BLOG.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）
   const files = LANGS_ORDER.map((lang) => ({ path: langPath('/blog/feed.xml', lang), content: feedXml(lang) }));
   return { pages, occ, files };

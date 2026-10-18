@@ -107,6 +107,7 @@ export const P = {
     },
     shuten: { h1: '出店したい方へ', crumb: '出店したい方', lead: '出店料・申込み方法を、主催者の公式情報から掲載しています。募集の状況は変わるため、必ず主催者の案内をご確認ください。', desc: 'フリマ・蚤の市・骨董市の出店料・申込み方法を、主催者の公式情報からまとめています。', title: '出店者向けの情報', fee: '出店料：', apply: '申込み：', empty: '出店者向けの情報は、準備中です。' },
     search: { h1: 'キーワードで探す', ph: '地名・会場名・種類（例：骨董市、千代田区）', kw: 'キーワード', btn: '探す', desc: '地名・会場名・種類から、フリマ・蚤の市・骨董市の開催を探せます。' },
+    side: { browse: 'サイトを見る', browseAria: 'サイト内の主なページ', dates: '開催のある日', areas: '地域から', cities: '市区町村', types: '種類から', pref: '都道府県', removeReq: '掲載の修正・削除の依頼', n: (n) => `${n}件` },
     nf: { title: 'ページが見つかりません', lead: '開催が終わったか、ページが移動した可能性があります。', back: 'トップへ' },
   },
   en: {
@@ -136,6 +137,7 @@ export const P = {
     },
     shuten: { h1: 'For Vendors', crumb: 'For Vendors', lead: 'Stall fees and how to apply, taken from organizers’ official information. Recruitment can change, so please check the organizer’s notice.', desc: 'Stall fees and how to apply for flea markets and antique fairs, from organizers’ official information.', title: 'For Vendors', fee: 'Fee: ', apply: 'How to apply: ', empty: 'Vendor information is coming soon.' },
     search: { h1: 'Keyword Search', ph: 'Place, venue or type (e.g. antique, Chiyoda)', kw: 'Keyword', btn: 'Search', desc: 'Find flea markets, antique fairs and handmade markets by place, venue or type.' },
+    side: { browse: 'Browse the site', browseAria: 'Main pages', dates: 'Dates with markets', areas: 'By area', cities: 'Cities / wards', types: 'By type', pref: 'Prefectures', removeReq: 'Correction / removal requests', n: (n) => `${n}` },
     nf: { title: 'Page not found', lead: 'The event may have ended, or the page may have moved.', back: 'Back to the top' },
   },
 };

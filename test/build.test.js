@@ -355,3 +355,23 @@ test('天気の中継（Worker）：6桁のコードだけ受け、気象庁の 
   assert.equal((await weather('130000', async () => new Response('', { status: 500 }), null)).status, 502);
   assert.equal((await weather('999999', async () => new Response('', { status: 404 }), null)).status, 404);
 });
+
+test('ヘッダーのリンク先は、すべて右のナビ（主なページへの相互リンク）がある', () => {
+  for (const lang of ['en', 'ja']) {
+    const pre = lang === 'ja' ? '/ja' : '';
+    for (const base of ['/weekend/', '/area/', '/kind/', '/shuten/', '/about/', '/search/', '/calendar/', '/area/13/', '/kind/kotto/', '/date/2026-10-18/']) {
+      const pg_ = pages.find((p) => p.path === `${pre}${base}`);
+      if (!pg_) continue;
+      const html = layout(pg_);
+      assert.match(html, /<aside class="ev-side"/, `${pre}${base}`);
+      for (const h of ['/weekend/', '/calendar/', '/area/', '/kind/', '/shuten/', '/search/', '/guide/', '/faq/', '/blog/', '/about/']) assert.ok(html.includes(`href="${pre}${h}"`), `${pre}${base} → ${h}`);
+      // いま見ているページは、目印（aria-current）つき
+      const root = '/' + base.split('/')[1] + '/';
+      assert.ok(new RegExp(`<a href="${pre}${root}" aria-current="page">`).test(html) || base.startsWith('/date/') || base.startsWith('/kind/') && root === '/kind/', `${pre}${base}: 現在地の目印`);
+    }
+  }
+  const area = pages.find((p) => p.path === '/area/13/').body;
+  assert.match(area, /sn-list/);
+  assert.ok(area.includes('href="/area/13/13101/"'), '市区町村への相互リンク');
+  assert.match(pages.find((p) => p.path === '/kind/kotto/').body, /<a href="\/kind\/kotto\/" aria-current="page">/);
+});
