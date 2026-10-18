@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildPages, loadData, searchIndex } from '../scripts/build-site.mjs';
 import { eventListByMonth, layout } from '../scripts/lib/html.mjs';
+import { SITE } from '../scripts/lib/nav.mjs';
 import { mainHash, updateLastmod } from '../scripts/update-sitemap.mjs';
 
 const FIX = join(fileURLToPath(new URL('.', import.meta.url)), 'fixtures');
@@ -120,9 +121,9 @@ test('トップ（新デザイン）：HERO・検索・種類の入口・ヘッ�
   assert.ok(eh.includes('<link rel="stylesheet" href="/home.css">'));
   // hreflang：英語が x-default
   for (const h of [eh, jh]) {
-    assert.ok(h.includes('hreflang="en" href="https://flea-market.example/"'));
-    assert.ok(h.includes('hreflang="ja" href="https://flea-market.example/ja/"'));
-    assert.ok(h.includes('hreflang="x-default" href="https://flea-market.example/"'));
+    assert.ok(h.includes(`hreflang="en" href="${SITE.url}/"`));
+    assert.ok(h.includes(`hreflang="ja" href="${SITE.url}/ja/"`));
+    assert.ok(h.includes(`hreflang="x-default" href="${SITE.url}/"`));
   }
   // 英語：リンクは / 以下。日本語：リンクは /ja/ 以下。言語切替は同じページの反対側
   for (const h of ['/weekend/', '/area/', '/kind/', '/shuten/', '/about/', '/search/']) {
