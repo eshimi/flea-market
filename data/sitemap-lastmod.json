@@ -8,7 +8,7 @@
   "lastmod": "2026-10-19"
  },
  "/calendar/": {
-  "hash": "v1:6228643e28f823f2",
+  "hash": "v1:fb7ac801bb25aca8",
   "lastmod": "2026-10-19"
  },
  "/date/2026-10-19/": {
@@ -267,6 +267,10 @@
   "hash": "v1:84f6827a66fc53e1",
   "lastmod": "2026-10-19"
  },
+ "/date/2026-10-18/": {
+  "hash": "v1:1238ac12ef9cb206",
+  "lastmod": "2026-10-19"
+ },
  "/area/": {
   "hash": "v1:5005d824d913a054",
   "lastmod": "2026-10-19"
@@ -512,7 +516,7 @@
   "lastmod": "2026-10-19"
  },
  "/e/takahata-fudoson-gozareichi/": {
-  "hash": "v1:4998920dbd34f310",
+  "hash": "v1:06493750c84b3a12",
   "lastmod": "2026-10-19"
  },
  "/e/takahata-fudoson-recycle-market/": {
@@ -556,7 +560,7 @@
   "lastmod": "2026-10-19"
  },
  "/e/mizuho-aozora-ichi/": {
-  "hash": "v1:d0741b33074c186a",
+  "hash": "v1:952dfd5ee6102d24",
   "lastmod": "2026-10-19"
  },
  "/e/suginami-furima-in-takaido-2026-11/": {
@@ -584,7 +588,7 @@
   "lastmod": "2026-10-19"
  },
  "/e/ota-tamagawa-eco-fair-2026/": {
-  "hash": "v1:9f5c827d6d3d22da",
+  "hash": "v1:4fcd9e8edfe06b6d",
   "lastmod": "2026-10-19"
  },
  "/e/edogawa-funabori-matsuri-2026/": {
@@ -616,7 +620,7 @@
   "lastmod": "2026-10-18"
  },
  "/e/setagaya-funabashi-nomi-no-ichi-2026-autumn/": {
-  "hash": "v1:fc5c41721daf14ad",
+  "hash": "v1:e1ca3a9e7b0bceae",
   "lastmod": "2026-10-19"
  },
  "/e/frma-akatsuka-park-flea/": {
@@ -760,7 +764,7 @@
   "lastmod": "2026-10-19"
  },
  "/e/kita-akabane-park-flea-smile-2026-10/": {
-  "hash": "v1:bbb22559184448b3",
+  "hash": "v1:9b2873173f2bcd27",
   "lastmod": "2026-10-19"
  },
  "/e/adachi-guruguru-kiosk-ayase-2026-10/": {
@@ -896,7 +900,7 @@
   "lastmod": "2026-10-19"
  },
  "/e/fmj-kirarie-kusatsu/": {
-  "hash": "v1:12d6158cb6ffb885",
+  "hash": "v1:7079dd4856dbb2c5",
   "lastmod": "2026-10-19"
  },
  "/e/fmj-minoh-cues-mall/": {
@@ -1024,7 +1028,7 @@
   "lastmod": "2026-10-19"
  },
  "/ja/calendar/": {
-  "hash": "v1:b6f86c86a2c1fe5b",
+  "hash": "v1:9dbb69baea9d15ce",
   "lastmod": "2026-10-19"
  },
  "/ja/date/2026-10-19/": {
@@ -1283,6 +1287,10 @@
   "hash": "v1:f2f9c9309a128330",
   "lastmod": "2026-10-19"
  },
+ "/ja/date/2026-10-18/": {
+  "hash": "v1:345b79cff2fc8ccd",
+  "lastmod": "2026-10-19"
+ },
  "/ja/area/": {
   "hash": "v1:0849f74dcdcde652",
   "lastmod": "2026-10-19"
@@ -1528,7 +1536,7 @@
   "lastmod": "2026-10-19"
  },
  "/ja/e/takahata-fudoson-gozareichi/": {
-  "hash": "v1:d66b7b2447e6cf8c",
+  "hash": "v1:2aa880800387d583",
   "lastmod": "2026-10-19"
  },
  "/ja/e/takahata-fudoson-recycle-market/": {
@@ -1572,7 +1580,7 @@
   "lastmod": "2026-10-19"
  },
  "/ja/e/mizuho-aozora-ichi/": {
-  "hash": "v1:e8d755288de5aab2",
+  "hash": "v1:509554e04b702955",
   "lastmod": "2026-10-19"
  },
  "/ja/e/suginami-furima-in-takaido-2026-11/": {
@@ -1600,7 +1608,7 @@
   "lastmod": "2026-10-19"
  },
  "/ja/e/ota-tamagawa-eco-fair-2026/": {
-  "hash": "v1:76704f417e991b76",
+  "hash": "v1:bdd8b97412435b47",
   "lastmod": "2026-10-19"
  },
  "/ja/e/edogawa-funabori-matsuri-2026/": {
@@ -1632,7 +1640,7 @@
   "lastmod": "2026-10-18"
  },
  "/ja/e/setagaya-funabashi-nomi-no-ichi-2026-autumn/": {
-  "hash": "v1:f5e5475bd2999b69",
+  "hash": "v1:d8e3d9c9817580de",
   "lastmod": "2026-10-19"
  },
  "/ja/e/frma-akatsuka-park-flea/": {
@@ -1776,7 +1784,7 @@
   "lastmod": "2026-10-19"
  },
  "/ja/e/kita-akabane-park-flea-smile-2026-10/": {
-  "hash": "v1:1f8d4535bdaf5a8e",
+  "hash": "v1:957fedd910e59b6e",
   "lastmod": "2026-10-19"
  },
  "/ja/e/adachi-guruguru-kiosk-ayase-2026-10/": {
@@ -1912,7 +1920,7 @@
   "lastmod": "2026-10-19"
  },
  "/ja/e/fmj-kirarie-kusatsu/": {
-  "hash": "v1:3cfe860341747cd9",
+  "hash": "v1:436278c3661da301",
   "lastmod": "2026-10-19"
  },
  "/ja/e/fmj-minoh-cues-mall/": {
