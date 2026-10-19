@@ -207,14 +207,42 @@ export function renderAbout(ctx, lang = 'ja', disclaimer) {
 </div></div></section>`;
 }
 
+// ---- ブログの最新3本・サイトの更新情報3本 ----
+const NEWS = {
+  ja: { blog: 'ブログの最新', blogSub: 'Latest articles', all: 'すべての記事', upd: 'サイトの更新情報', updSub: 'Site updates', empty: 'まだありません。' },
+  en: { blog: 'Latest from the blog', blogSub: '', all: 'All articles', upd: 'Site updates', updSub: '', empty: 'Nothing yet.' },
+};
+export function renderNews(ctx, lang = 'ja') {
+  const t = NEWS[lang];
+  const posts = (ctx.latestPosts || []).slice(0, 3);
+  const ups = (ctx.siteUpdates || []).slice(0, 3);
+  if (!posts.length && !ups.length) return '';
+  const dt = (iso) => S[lang].dateLong(iso);
+  const blog = posts.map((p) => `<li><a href="/blog/${p.slug}/"><time datetime="${p.date}">${esc(dt(p.date))}</time><b>${esc(p[lang].title)}</b><span>${esc(p[lang].summary)}</span></a></li>`).join('');
+  const upd = ups.map((u) => `<li>${u.link ? `<a href="${esc(u.link)}">` : '<div>'}<time datetime="${u.date}">${esc(dt(u.date))}</time><b>${esc(u[lang])}</b>${u.link ? '</a>' : '</div>'}</li>`).join('');
+  return `<section class="hm-sec hm-news" aria-labelledby="news-h"><div class="hm-in hm-news-grid">
+<div><div class="hm-head">${heading({ title: t.blog, sub: t.blogSub }, 'news-h')}<a class="hm-more" href="/blog/">${esc(t.all)}${icon('arrow', 16)}</a></div><ul class="news-list">${blog || `<li><span>${esc(t.empty)}</span></li>`}</ul></div>
+<div><div class="hm-head">${heading({ title: t.upd, sub: t.updSub }, 'upd-h')}</div><ul class="news-list upd">${upd || `<li><span>${esc(t.empty)}</span></li>`}</ul></div>
+</div></section>`;
+}
+
+// 英語のトップでは、出店者向けは下に細いバナーだけ（訪日外国人にはあまり要らない情報のため）
+export function renderVendorBanner(lang = 'en') {
+  const t = S[lang].vendors;
+  return `<section class="hm-sec hm-vbanner" aria-label="${esc(t.title)}"><div class="hm-in"><a class="vb" href="/shuten/">${icon('store', 22)}<b>${esc(t.title)}</b><span>${esc(t.bannerDesc || t.desc)}</span>${icon('arrow', 18)}</a></div></section>`;
+}
+
 // トップ全体。HERO の下は、カレンダー → 注目マーケット → 出店者 → 地域・種類 → サイト情報の順
 export function renderHomeBody(ctx, lang = 'ja', disclaimer = '') {
+  const en = lang === 'en';
   return [
     renderHero(lang),
     renderCalendar(ctx, lang),
     renderFeatured(ctx, lang),
-    renderVendors(ctx, lang),
+    renderNews(ctx, lang),
+    en ? '' : renderVendors(ctx, lang),
     `<div class="hm-sec hm-explore"><div class="hm-in hm-two">${renderArea(ctx, lang)}${renderTypes(ctx, lang)}</div></div>`,
     renderAbout(ctx, lang, disclaimer),
+    en ? renderVendorBanner(lang) : '',
   ].join('\n');
 }

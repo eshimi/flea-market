@@ -40,7 +40,9 @@ export function loadData(dir = join(ROOT, 'data')) {
   try { archive = read('archive.json'); } catch { /* 過去の記録がないデータ（テストの見本など）は、過去のページなし */ }
   let venues = [];
   try { venues = read('venues.json'); } catch { /* スポットのデータがない場合（テストの見本など）は、スポットのページなし */ }
-  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts, geo, archive, venues };
+  let siteUpdates = [];
+  try { siteUpdates = read('site-updates.json'); } catch { /* 更新情報がないデータ（テストの見本など）は、枠を出さない */ }
+  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts, geo, archive, venues, siteUpdates };
 }
 
 // ---- 各ページ ----
@@ -449,7 +451,7 @@ function withSide(page, ctx, lang) {
 
 // ---- 全体 ----
 
-export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {}, archive = { items: [] }, venues = [] }, today, days = 120) {
+export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {}, archive = { items: [] }, venues = [], siteUpdates = [] }, today, days = 120) {
   setTranslations(translations);
   GEO = geo;
   const ids = new Set(series.map((x) => x.id));
@@ -457,8 +459,9 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   const past = pastOccurrences(archive, series).filter((o) => o.date < today);
   const spots = buildSpots(venues, series, occ, today);
   const spotMapImg = (id) => Boolean(GEO[`spot-${id}`]) && existsSync(join(ROOT, 'static', 'img', 'maps', `spot-${id}.webp`));
-  const ctx = { series, occ, past, spots, spotMapImg, guideSlugs: new Set(BLOG.map((b) => b.slug)), weekend: upcomingWeekend(today), today, days, credits };
+  const ctx = { series, occ, past, spots, spotMapImg, guideSlugs: new Set(BLOG.map((b) => b.slug)), siteUpdates: [...siteUpdates].sort((a, b) => b.date.localeCompare(a.date)), weekend: upcomingWeekend(today), today, days, credits };
   ALL_POSTS = [...BLOG.map((b) => cleanLinks(resolvePost(b, ctx), ids)), ...autoPosts.map((a) => cleanLinks(a, ids))];
+  ctx.latestPosts = posts().slice(0, 3);
   // 英語が既定（/）。日本語は /ja/
   const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）

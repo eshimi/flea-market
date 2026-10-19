@@ -613,3 +613,18 @@ test('ガイド記事：両言語・要約ボックス・日本語は800〜1300�
   assert.ok(pg_.body.includes('class="bl-facts"') && pg_.body.includes('/e/takahata-fudoson-gozareichi/'));
   assert.ok(pages.find((p) => p.path === '/spot/takahata-fudoson/').body.includes('/blog/guide-takahata-fudoson/'));
 });
+
+test('トップ：英語は出店者を下の細いバナーだけにし、ブログ最新3本と更新情報3本の枠を出す（日本語は出店者区画を残す）', () => {
+  const real = loadData();
+  const { pages } = buildPages(real, '2026-10-20');
+  const en = pages.find((p) => p.path === '/').body;
+  const ja = pages.find((p) => p.path === '/ja/').body;
+  for (const b of [en, ja]) {
+    assert.ok(b.includes('hm-news'));
+    assert.equal((b.match(/<ul class="news-list">[\s\S]*?<\/ul>/)[0].match(/<li>/g) || []).length, 3, 'ブログ3本');
+    assert.equal((b.match(/<ul class="news-list upd">[\s\S]*?<\/ul>/)[0].match(/<li>/g) || []).length, 3, '更新情報3本');
+  }
+  assert.ok(!en.includes('class="hm-sec hm-vendors"') && en.includes('hm-vbanner'));
+  assert.ok(ja.includes('class="hm-sec hm-vendors"') && !ja.includes('hm-vbanner'));
+  assert.ok(en.indexOf('hm-vbanner') > en.indexOf('hm-about') || en.indexOf('hm-vbanner') > en.indexOf('about-text'), 'バナーは下');
+});
