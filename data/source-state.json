@@ -1462,5 +1462,252 @@
   "evidenceOk": {
    "venue:koganei-park": true
   }
+ },
+ "https://www.t-i-forum.co.jp/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:tokyo-international-forum": true
+  }
+ },
+ "https://www.showakinen-koen.jp/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:showa-kinen-park": true
+  }
+ },
+ "https://www.showakinen-koen.jp/access/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:showa-kinen-park": true
+  }
+ },
+ "https://www.nishiaraidaishi.or.jp/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:nishiarai-daishi": true
+  }
+ },
+ "https://www.nishiaraidaishi.or.jp/access/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"709f-64c5144e23000-gzip\"",
+  "lastModified": "Fri, 06 Mar 2026 01:49:52 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:nishiarai-daishi": true
+  }
+ },
+ "https://www.city.setagaya.lg.jp/02075/9095.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"8879-65b2238fc98ca\"",
+  "lastModified": "Thu, 10 Sep 2026 15:00:03 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:setagaya-park": true
+  }
+ },
+ "https://www.tokyo-park.or.jp/park/kiba/index.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"abbd625871c710a4b63db7399c3c09c0\"",
+  "lastModified": "Mon, 19 Oct 2026 09:09:10 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:kiba-park": true
+  }
+ },
+ "https://www.ajinomotostadium.com/corp/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:ajinomoto-stadium": true
+  }
+ },
+ "https://www.ajinomotostadium.com/access/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:ajinomoto-stadium": true
+  }
+ },
+ "https://www.city.fussa.tokyo.jp/map/kouen/1001768.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"5e07-65e2c2c650e12\"",
+  "lastModified": "Mon, 19 Oct 2026 07:07:56 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:fussa-baseside-street": true
+  }
+ },
+ "https://www.city.kita.lg.jp/city-information/facilities/1015990/1016001.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"b9d4-65e2dd8bc741a\"",
+  "lastModified": "Mon, 19 Oct 2026 09:07:43 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:akabane-park": true
+  }
+ },
+ "https://www.city.sumida.lg.jp/sisetu_info/kouen/kunai_park_annai/sumida_park/park14.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Mon, 19 Oct 2026 07:02:53 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:kinshi-park": true
+  }
+ },
+ "https://www.city.toshima.lg.jp/340/shisetsu/koen/020.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"43ec-651957f9bb123\"",
+  "lastModified": "Tue, 12 May 2026 02:19:53 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:naka-ikebukuro-park": true
+  }
+ },
+ "https://www.city.taito.lg.jp/kenchiku/hanamidori/koen/riyo.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"701c-65e2cebf67256\"",
+  "lastModified": "Mon, 19 Oct 2026 08:01:30 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:hanakawado-park": true
+  }
+ },
+ "https://www.city.arakawa.tokyo.jp/a043/shisetsuannai/koukyoushisetsu/kouenyuuen016.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"679f-63b4859e1f4e9\"",
+  "lastModified": "Fri, 01 Aug 2025 07:03:11 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:arakawa-park": true
+  }
+ },
+ "https://www.city.kita.lg.jp/culture-tourism-sports/tourism/1010756/1010759/1010765.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"c297-65e2dd58f89a1\"",
+  "lastModified": "Mon, 19 Oct 2026 09:06:49 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:ukima-park": true
+  }
+ },
+ "https://www.tokyo-park.or.jp/park/akatsuka/index.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"be6897a7f5ec76de3bf88a2df63a7ce0\"",
+  "lastModified": "Mon, 19 Oct 2026 09:03:07 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:akatsuka-park": true
+  }
+ },
+ "https://tokyo-eastpark.com/parksearch/ohjima": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:oshima-komatsugawa-park": true
+  }
+ },
+ "https://www.city.shinjuku.lg.jp/seikatsu/file15_02_00001.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6aa77bdf-13ddc\"",
+  "lastModified": "Mon, 14 Sep 2026 04:45:19 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:shinjuku-central-park": true
+  }
+ },
+ "https://kichijoji.parco.jp/info/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:kichijoji-parco": true
+  }
+ },
+ "https://www.city.toshima.lg.jp/132/miryoku/shiru/jinja/kishimojin.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"4438-651958d848b01\"",
+  "lastModified": "Tue, 12 May 2026 02:23:46 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:zoshigaya-kishimojin": true
+  }
+ },
+ "https://honmonji.jp/": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"6abcd74a-ac3f\"",
+  "lastModified": "Wed, 30 Sep 2026 09:32:58 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:ikegami-honmonji": true
+  }
+ },
+ "https://honmonji.jp/outline/access.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"6978787e-692a\"",
+  "lastModified": "Tue, 27 Jan 2026 08:34:06 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:ikegami-honmonji": true
+  }
+ },
+ "https://www.city.setagaya.lg.jp/02075/9160.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"52bd-642c20909a494\"",
+  "lastModified": "Tue, 04 Nov 2025 10:10:02 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:kibogaoka-park": true
+  }
  }
 }
