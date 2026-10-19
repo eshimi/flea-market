@@ -78,7 +78,18 @@
      "場 所: イベント広場"
     ]
    }
-  ]
+  ],
+  "image": {
+   "file": "yoyogi-park.webp",
+   "title": "Inside Yoyogi Park - 2025 May 13 various 03.jpg",
+   "author": "Nesnad",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inside_Yoyogi_Park_-_2025_May_13_various_03.jpg",
+   "altJa": "代々木公園の木立と、木陰のテーブル席。",
+   "altEn": "Trees and shaded tables inside Yoyogi Park.",
+   "note": "元画像 4032x3024 から中央を3:2に切り出し、1200x800 の webp に変換"
+  }
  },
  {
   "id": "sunshine-city",
@@ -154,7 +165,18 @@
      "フリーマーケットの出店に関するお問い合わせは、各主催団体までお願いいたします。"
     ]
    }
-  ]
+  ],
+  "image": {
+   "file": "hikarigaoka-park.webp",
+   "title": "Aki no hi park hikarigaoka nerima 2015.jpg",
+   "author": "Kentin",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aki_no_hi_park_hikarigaoka_nerima_2015.jpg",
+   "altJa": "光が丘公園（練馬区）の園内の門と広場。",
+   "altEn": "A gate and open plaza in Hikarigaoka Park, Nerima.",
+   "note": "元画像 4608x3440 から中央を3:2に切り出し、1200x800 の webp に変換"
+  }
  },
  {
   "id": "oi-racecourse",
@@ -176,7 +198,18 @@
      "12/27（日）品川区大井競馬場TokyoCityFleaMarket"
     ]
    }
-  ]
+  ],
+  "image": {
+   "file": "oi-racecourse.webp",
+   "title": "Ohi Racecourse 002.jpg",
+   "author": "Cake6 (talk)",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ohi_Racecourse_002.jpg",
+   "altJa": "大井競馬場のスタンドとコース。",
+   "altEn": "The grandstand and track at Oi Racecourse.",
+   "note": "元画像 1600x1200 から中央を3:2に切り出し、1200x800 の webp に変換"
+  }
  },
  {
   "id": "koganei-park",
@@ -202,6 +235,17 @@
      "「小金井公園入口」下車"
     ]
    }
-  ]
+  ],
+  "image": {
+   "file": "koganei-park.webp",
+   "title": "Tokyo Koganei Park.jpg",
+   "author": "Ymblanter",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Koganei_Park.jpg",
+   "altJa": "小金井公園の芝生と松の木立。",
+   "altEn": "A lawn and pine trees in Koganei Park.",
+   "note": "元画像 6000x4000 から中央を3:2に切り出し、1200x800 の webp に変換"
+  }
  }
 ]
