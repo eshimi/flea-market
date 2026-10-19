@@ -94,7 +94,6 @@ export function renderCard(o, lang = 'ja') {
     : `<span class="mc-m">${+m}月</span><b>${+d}</b><span class="mc-w">${WD_JA[wd]}</span>`;
   const place = [cityL(s.venue.city, lang) || prefLabel(s.venue.pref, lang), venueL(s, lang)].filter(Boolean).join(lang === 'en' ? ', ' : '・');
   const time = (lang === 'en' && timeEn(s)) || s.time?.text || S[lang].featured.tbc;
-  const official = o.source || s.sources[0].url;
   const kinds = s.kinds.map((x) => `<a class="mkind" href="/kind/${x}/">${esc(S[lang].kinds[x])}</a>`).join('');
   const off = o.status === 'cancelled' || o.status === 'postponed' ? ' is-off' : '';
   return `<article class="mcard${off}">
@@ -105,7 +104,6 @@ export function renderCard(o, lang = 'ja') {
 <p class="mc-line">${icon('clock', 16)}<span>${esc(time)}</span></p>
 <div class="mc-tags">${kinds}${tagFor(o, lang)}</div>
 ${o.note ? `<p class="mc-note">${esc(noteL(o, lang))}</p>` : ''}
-<a class="mc-off" href="${esc(official)}" target="_blank" rel="noopener">${esc(S[lang].featured.official)}${icon('ext', 15)}</a>
 </div>
 </article>`;
 }
