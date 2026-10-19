@@ -2172,5 +2172,16 @@
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
   }
+ },
+ {
+  "url": "http://freemarket-go.com/schedule_shop.html",
+  "series": [
+   "jfma-tsurumi-ryokuchi-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  }
  }
 ]

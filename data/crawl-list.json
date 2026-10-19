@@ -195,5 +195,53 @@
   },
   "addedAt": "2026-10-20",
   "everyDays": 1
+ },
+ {
+  "id": "bia-furima-go",
+  "url": "https://b-i-a.jp/",
+  "name": "商業インキュベータ協会「フリマへGO!」（大阪・神戸・奈良の11会場）",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "主催団体の公式サイト。会場ごとのページ（/reserve/<会場>/）に、住所・時間・出店料・開催日がある。開催スケジュールの一覧PDFは画像で本文がない。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は許可。サイトの利用規約のページはなく、「出店に関する規約・注意事項」は出店者向け。事実の項目（日付・会場・時間・住所・料金）だけ載せ、文章・画像は転載しない（2026-10-20 確認）"
+  },
+  "addedAt": "2026-10-20",
+  "everyDays": 3
+ },
+ {
+  "id": "furimatairiku",
+  "url": "http://furimatairiku.jp/Hanahaku/",
+  "name": "フリマ大陸（大阪・奈良・神戸。花博鶴見緑地ほか）",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "主催団体の公式サイト。会場ごとのページに、会場データ（時間・入場料・交通）と開催予定日がある。複数の会場ページがある。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は404（制限なし）。「出店に関する規約」は出店者向けで、取得を禁じる記載は確認できず。事実の項目だけ載せ、文章・画像は転載しない（2026-10-20 確認）"
+  },
+  "addedAt": "2026-10-20",
+  "everyDays": 3
+ },
+ {
+  "id": "nihon-freemarket-kyokai-schedule",
+  "url": "http://freemarket-go.com/schedule_shop.html",
+  "name": "日本フリーマーケット協会（出店受付スケジュール。大阪・兵庫・奈良・滋賀）",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "会場ごとの開催日・雨天振替日・受付日の一覧。詳細ページより新しい日付が出る。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "既存の freemarket-go.com の台帳と同じ（robots.txt は許可。規約は出店者向け。事実の項目だけ載せる）（2026-10-20 確認）"
+  },
+  "addedAt": "2026-10-20",
+  "everyDays": 1
  }
 ]

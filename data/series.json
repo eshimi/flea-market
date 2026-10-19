@@ -6929,5 +6929,46 @@
     ]
    }
   ]
+ },
+ {
+  "id": "jfma-tsurumi-ryokuchi-flea",
+  "name": "つるみ緑地フリーマーケット（花博記念公園鶴見緑地・大阪）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "日本フリーマーケット協会",
+   "url": "http://freemarket-go.com/"
+  },
+  "venue": {
+   "name": "花博記念公園鶴見緑地内 ハナミズキホール付属展示場",
+   "pref": "27",
+   "city": "大阪市鶴見区",
+   "address": "大阪市鶴見区緑地公園"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2027-02-28"
+   ],
+   "text": "主催者の出店受付スケジュール"
+  },
+  "exhibitor": {
+   "apply": "主催者の出店受付スケジュールに、受付日は「未定」と記載（要確認）",
+   "notes": "出店募集数は130ブース/1日（予定）"
+  },
+  "sources": [
+   {
+    "url": "http://freemarket-go.com/schedule_shop.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "つるみ緑地フリーマーケット",
+     "花博記念公園鶴見緑地内 ハナミズキホール付属展示場（大阪市鶴見区緑地公園)",
+     "2027年2月28日（日）",
+     "130ブース/1日(予定)"
+    ]
+   }
+  ]
  }
 ]

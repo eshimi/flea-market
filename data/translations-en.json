@@ -950,6 +950,13 @@
    "fee": "Carried-in stall (paid on the day): trial member 2,000 yen / amateur member (annual fee required) 1,500 yen",
    "apply": "Apply from the venue page on the organizer’s site (the stall fee differs by membership type)",
    "notes": "Only ordinary household items can be sold. New goods, specialist stock or mainly handmade works cannot be sold. This is the first time the organizer holds an event at this venue"
+  },
+  "jfma-tsurumi-ryokuchi-flea": {
+   "name": "Tsurumi Ryokuchi Flea Market (Expo ’90 Commemorative Park, Osaka)",
+   "venue": "Exhibition space attached to Hanamizuki Hall, Expo Commemorative Park Tsurumi Ryokuchi",
+   "address": "Ryokuchi-koen, Tsurumi-ku, Osaka-shi",
+   "apply": "The organizer’s stall reception schedule lists the reception date as “undecided” (TBC)",
+   "notes": "Stall capacity is 130 booths per day (planned)"
   }
  },
  "organizers": {
@@ -1113,7 +1120,8 @@
   "野洲市": "Yasu City",
   "四日市市": "Yokkaichi City",
   "調布市": "Chofu City",
-  "福生市": "Fussa City"
+  "福生市": "Fussa City",
+  "大阪市鶴見区": "Tsurumi Ward, Osaka City"
  },
  "notes": {
   "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",
