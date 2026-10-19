@@ -101,7 +101,8 @@ export function md(s) {
 
 export function statusTag(o, lang = 'en') {
   const when = o.status === 'confirmed' ? `${md(o.checkedAt)} ` : '';
-  return `<span class="tag ${STATUS_CLASS[o.status]}" title="${lang === 'ja' ? '最終確認' : 'Last checked'}: ${esc(o.checkedAt)}">${esc(when + S[lang].status[o.status])}</span>`;
+  const past = o.past && o.status === 'confirmed';
+  return `<span class="tag ${STATUS_CLASS[o.status]}" title="${lang === 'ja' ? '最終確認' : 'Last checked'}: ${esc(o.checkedAt)}">${esc(past ? S[lang].pastConfirmed : when + S[lang].status[o.status])}</span>`;
 }
 
 export function kindTags(kinds, lang = 'en') {

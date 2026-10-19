@@ -45,12 +45,15 @@ jobs:
       - name: ブログ記事の自動作成（今週末・来月のまとめ・新着の掲載）
         continue-on-error: true
         run: node scripts/generate-blog.mjs
+      - name: 過去の開催の記録を追記
+        continue-on-error: true
+        run: node scripts/update-archive.mjs
       - name: ページ生成（データの検証・サイトマップを含む）
         run: npm run build
       - name: 確認結果をリポジトリに保存
         continue-on-error: true
         run: |
-          files="data/series.json data/source-state.json data/sitemap-lastmod.json data/blog-auto data/crawl-state.json data/review-queue.json"
+          files="data/series.json data/source-state.json data/sitemap-lastmod.json data/blog-auto data/crawl-state.json data/review-queue.json data/archive.json"
           if [ -z "$(git status --porcelain -- $files)" ]; then echo "変更はありません"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

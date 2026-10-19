@@ -451,3 +451,31 @@ test('地図の画像（OpenStreetMap）：位置のある会場だけ。ない�
   assert.match(body(`/e/${noGeo.id}/`), /class="map-show"/);
   assert.match(body('/about/'), /OpenStreetMap/);
 });
+
+test('過去の開催の記録：公式で確認した回・中止・延期だけを残し、過去の日別ページとカレンダーに出す', async () => {
+  const { snapshotDay, updateArchive, pastOccurrences } = await import('../scripts/lib/archive.mjs');
+  const { buildOccurrences } = await import('../scripts/lib/events.mjs');
+  const day = '2026-11-01';
+  const snap = snapshotDay(data.series, data.occurrences, day);
+  assert.ok(snap.every((i) => ['confirmed', 'cancelled', 'postponed'].includes(i.status)));
+  // きまりから算出しただけの回（scheduled）は残さない
+  const sched = buildOccurrences(data.series, data.occurrences, day, 0).filter((o) => o.date === day && o.status === 'scheduled');
+  for (const o of sched) assert.ok(!snap.some((i) => i.series === o.series.id));
+  // 追記は重複せず、2回目は増えない
+  const a1 = updateArchive({ lastDate: null, items: [] }, data.series, data.occurrences, '2026-11-02');
+  assert.equal(a1.lastDate, '2026-11-01');
+  const a2 = updateArchive(a1, data.series, data.occurrences, '2026-11-02');
+  assert.equal(a2.items.length, a1.items.length);
+  // 自動更新が止まっても、さかのぼるのは上限まで
+  const a3 = updateArchive({ lastDate: '2020-01-01', items: [] }, data.series, data.occurrences, '2026-11-02');
+  assert.ok(a3.items.every((i) => i.date >= '2026-10-19'));
+  // 過去のページ
+  const item = { series: data.series[0].id, date: '2026-10-01', status: 'confirmed', checkedAt: '2026-10-01', source: data.series[0].sources[0].url };
+  assert.equal(pastOccurrences({ items: [item, { ...item, series: 'no-such-series' }] }, data.series).length, 1);
+  const { pages } = buildPages({ ...data, archive: { items: [item] } }, '2026-11-02');
+  const pg = pages.find((p) => p.path === '/date/2026-10-01/');
+  assert.ok(pg && pg.body.includes('past record') && pg.body.includes('Confirmed (official) before the event'));
+  assert.ok(pages.find((p) => p.path === '/ja/date/2026-10-01/').body.includes('開催前に公式で確認'));
+  assert.ok(pages.find((p) => p.path === '/calendar/').body.includes('/date/2026-10-01/'));
+  assert.ok(pages.find((p) => p.path === `/e/${item.series}/`).body.includes('/date/2026-10-01/'));
+});

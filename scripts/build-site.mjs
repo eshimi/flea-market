@@ -5,6 +5,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { addDays, holidayName, isDayOff, parseYmd, todayJst, upcomingWeekend, weekday, WEEKDAYS } from './lib/dates.mjs';
 import { buildOccurrences, isActive, lastChecked } from './lib/events.mjs';
+import { pastOccurrences } from './lib/archive.mjs';
 import { KINDS } from './lib/kinds.mjs';
 import { PREFS } from './lib/areas.mjs';
 import { CONTACT_EMAIL, SITE } from './lib/nav.mjs';
@@ -33,7 +34,9 @@ export function loadData(dir = join(ROOT, 'data')) {
   const autoPosts = existsSync(autoDir) ? readdirSync(autoDir).filter((f) => f.endsWith('.json') && f !== 'state.json').map((f) => JSON.parse(readFileSync(join(autoDir, f), 'utf8'))) : [];
   let geo = {};
   try { geo = read('geo.json'); } catch { /* 位置のデータがないもの（テストの見本など）は、地図の画像なし */ }
-  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts, geo };
+  let archive = { items: [] };
+  try { archive = read('archive.json'); } catch { /* 過去の記録がないデータ（テストの見本など）は、過去のページなし */ }
+  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts, geo, archive };
 }
 
 // ---- 各ページ ----
@@ -90,7 +93,21 @@ function weekendPage(ctx, lang) {
 
 function datePages(ctx, lang) {
   const dates = [...new Set(ctx.occ.map((o) => o.date))];
-  return dates.map((d) => listPage(lang, `/date/${d}/`, [{ href: '/calendar/', label: P[lang].date.crumb }, { label: dlabel(d, lang) }], P[lang].date.h1(dlabel(d, lang, { year: true }), holiday(d, lang)), '', ctx.occ.filter((o) => o.date === d), dayStrip(ctx.occ, ctx.today, d, lang)));
+  const upcoming = dates.map((d) => listPage(lang, `/date/${d}/`, [{ href: '/calendar/', label: P[lang].date.crumb }, { label: dlabel(d, lang) }], P[lang].date.h1(dlabel(d, lang, { year: true }), holiday(d, lang)), '', ctx.occ.filter((o) => o.date === d), dayStrip(ctx.occ, ctx.today, d, lang)));
+  // 過去の日（公式で確認した回の記録）
+  const pastDates = [...new Set(ctx.past.map((o) => o.date))];
+  const pastPages = pastDates.map((d) => listPage(lang, `/date/${d}/`, [{ href: '/calendar/', label: P[lang].date.crumb }, { label: dlabel(d, lang) }], P[lang].date.h1Past(dlabel(d, lang, { year: true }), holiday(d, lang)), P[lang].date.pastNote, ctx.past.filter((o) => o.date === d)));
+  return [...upcoming, ...pastPages];
+}
+
+// 過去の記録の日付の一覧（新しい順）
+function pastBlock(past, lang) {
+  if (!past.length) return '';
+  const counts = new Map();
+  for (const o of past) counts.set(o.date, (counts.get(o.date) || 0) + 1);
+  const p = P[lang].cal;
+  const items = [...counts].sort((a, b) => (a[0] < b[0] ? 1 : -1)).map(([d, n]) => `<li><a href="/date/${d}/">${esc(dlabel(d, lang, { year: true }))}<small>${esc(P[lang].cnt(n))}</small></a></li>`).join('');
+  return `<section class="month past"><h2>${esc(p.pastH)}</h2><p class="lead">${esc(p.pastLead)}</p><ul class="grid-links">${items}</ul></section>`;
 }
 
 function calendarPage(ctx, lang) {
@@ -102,7 +119,7 @@ function calendarPage(ctx, lang) {
   }
   const p = P[lang].cal;
   const months = [...byMonth].map(([m, list]) => `<section class="month"><h2>${esc(monthTitle(m, lang))}</h2>${eventList(list, lang)}</section>`).join('');
-  const body = `<div class="in page">${breadcrumb([{ label: p.h1 }], lang)}<h1>${esc(p.h1)}</h1><p class="lead">${esc(p.lead(ctx.days))}</p>${dayStrip(ctx.occ, ctx.today, undefined, lang)}${months || `<p class="empty">${esc(P[lang].soon)}</p>`}</div>`;
+  const body = `<div class="in page">${breadcrumb([{ label: p.h1 }], lang)}<h1>${esc(p.h1)}</h1><p class="lead">${esc(p.lead(ctx.days))}</p>${dayStrip(ctx.occ, ctx.today, undefined, lang)}${months || `<p class="empty">${esc(P[lang].soon)}</p>`}${pastBlock(ctx.past, lang)}</div>`;
   return pg(lang, '/calendar/', { title: p.h1, description: p.desc, body });
 }
 
@@ -160,6 +177,12 @@ function eventLd(s, list) {
   return items.length ? `<script type="application/ld+json">${JSON.stringify(items).replace(/</g, '\\u003c')}</script>\n` : '';
 }
 
+function pastDatesBlock(list, lang) {
+  if (!list.length) return '';
+  const p = P[lang].series;
+  return `<h2 class="sec-h">${esc(p.secPast)}</h2><p class="note">${esc(P[lang].date.pastNote)}</p><ul class="sources">${list.slice(0, 10).map((o) => `<li><a href="/date/${o.date}/">${esc(dlabel(o.date, lang, { year: true }))}</a>　${statusTag(o, lang)}${o.note ? `　<span class="tbd">${esc(noteL(o, lang))}</span>` : ''}</li>`).join('')}</ul>`;
+}
+
 function seriesPage(s, ctx, lang) {
   const p = P[lang].series;
   const list = ctx.occ.filter((o) => o.series.id === s.id);
@@ -207,6 +230,7 @@ ${row(s.organizer.label ? (lang === 'en' ? labelEn(s.organizer.label) || p.orgLa
 </dl>
 <h2 class="sec-h">${esc(p.secDates)}</h2>
 ${dates}
+${pastDatesBlock(ctx.past.filter((o) => o.series.id === s.id), lang)}
 <h2 class="sec-h" id="shuten">${esc(p.secVendor)}</h2>
 ${ex ? `<dl class="facts">${row(p.fee, tv(s, 'fee', ex.fee, lang))}${row(p.apply, tv(s, 'apply', ex.apply, lang))}${row(p.applyAt, ex.applyUrl ? `<a href="${esc(ex.applyUrl)}" rel="noopener">${esc(p.applyLink)}</a>` : TBC(lang))}${ex.notes ? row(p.notes, tv(s, 'notes', ex.notes, lang)) : ''}</dl>` : `<p class="empty">${esc(p.noVendor)}</p>`}
 <h2 class="sec-h">${esc(p.secSrc)}</h2>
@@ -384,13 +408,14 @@ function withSide(page, ctx, lang) {
 
 // ---- 全体 ----
 
-export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {} }, today, days = 120) {
+export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {}, archive = { items: [] } }, today, days = 120) {
   setTranslations(translations);
   GEO = geo;
   const ids = new Set(series.map((x) => x.id));
   ALL_POSTS = [...BLOG, ...autoPosts.map((a) => cleanLinks(a, ids))];
   const occ = buildOccurrences(series, occurrences, today, days);
-  const ctx = { series, occ, today, days, credits };
+  const past = pastOccurrences(archive, series).filter((o) => o.date < today);
+  const ctx = { series, occ, past, today, days, credits };
   // 英語が既定（/）。日本語は /ja/
   const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）

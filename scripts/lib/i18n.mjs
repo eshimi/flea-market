@@ -66,6 +66,7 @@ export const S = {
   ja: {
     cal: { title: '今週末の開催情報', sub: 'This Weekend in Japan', view: 'カレンダーを見る', n: (n) => (n ? `${n}件` : 'なし'), aria: '日付ごとの開催件数' },
     featured: { title: '今週末の注目マーケット', sub: 'Featured Markets', all: 'すべての開催情報を見る', upcoming: 'これからの開催', upcomingSub: 'Upcoming Markets', empty: '今週末の掲載は、まだありません。', next: '次へ', official: '公式情報を確認', tbc: '要確認' },
+    pastConfirmed: '開催前に公式で確認',
     status: { confirmed: '公式で確認', scheduled: '予定（きまりから算出）', cancelled: '中止', postponed: '延期', unknown: '開催は要確認' },
     vendors: { title: '出店したい方へ', sub: 'For Vendors', desc: '出店料・申込み方法を、主催者・自治体の公式情報から掲載しています。', button: '出店情報を見る', fee: '出店料：', apply: '申込み方法：', script: ['Join', 'the Market!'], photoAlt: '日本の屋台で買い物をする人たち（後ろ姿）', empty: '出店者向けの情報は、準備中です。' },
     area: { title: '地域から探す', sub: 'Explore by Area', all: 'すべての都道府県から探す', map: '日本地図。掲載のある都道府県を押すと、その一覧へ移動します', count: (n) => `${n}件`, popular: '掲載のある都道府県' },
@@ -84,6 +85,7 @@ export const S = {
   en: {
     cal: { title: 'This Weekend in Japan', sub: '', view: 'View Calendar', n: (n) => `${n} event${n === 1 ? '' : 's'}`, aria: 'Number of markets by date' },
     featured: { title: 'Featured Markets', sub: '', all: 'View all events', upcoming: 'Upcoming Markets', upcomingSub: '', empty: 'No markets listed for this weekend yet.', next: 'Next', official: 'Official info', tbc: 'TBC' },
+    pastConfirmed: 'Confirmed (official) before the event',
     status: { confirmed: 'Confirmed (official)', scheduled: 'Scheduled (from recurring rule)', cancelled: 'Cancelled', postponed: 'Postponed', unknown: 'To be confirmed' },
     vendors: { title: 'For Vendors', sub: '', desc: 'Stall fees and how to apply, taken from each organizer’s or municipality’s official information.', button: 'See vendor info', fee: 'Fee: ', apply: 'How to apply: ', script: ['Join', 'the Market!'], photoAlt: 'People shopping at a stall in Japan, seen from behind', empty: 'Vendor information is coming soon.' },
     area: { title: 'Explore by Area', sub: '', all: 'Browse all prefectures', map: 'Map of Japan. Select a highlighted prefecture to see its markets', count: (n) => `${n} event${n === 1 ? '' : 's'}`, popular: 'Areas with listings' },
