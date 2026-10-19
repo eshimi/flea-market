@@ -271,7 +271,7 @@ function aboutPage(ctx, lang) {
   const cr = (c) => (lang === 'ja' ? c : { ...c, ...c.en });
   const venuePhotos = (ctx.spots || []).filter((sp) => sp.venue.image).map((sp) => sp.venue);
   const photoCredits = venuePhotos.length ? `<h2>${lang === 'ja' ? 'スポットの写真の出典' : 'Spot photo credits'}</h2>
-<ul>${venuePhotos.map((v) => `<li>${esc(lang === 'ja' ? v.name : spotL(v, 'name', 'en'))}：「${esc(v.image.title || v.image.file)}」${esc(v.image.author)}（<a href="${esc(v.image.sourceUrl)}" rel="noopener">Wikimedia Commons</a>。${esc(v.image.license)}${v.image.note ? `。${esc(v.image.note)}` : ''}）</li>`).join('')}</ul>` : '';
+<ul>${venuePhotos.map((v) => `<li>${esc(lang === 'ja' ? v.name : spotL(v, 'name', 'en'))}：「${esc(v.image.title || v.image.file)}」${esc(v.image.author)}（<a href="${esc(v.image.sourceUrl)}" rel="noopener">Wikimedia Commons</a>。${esc(v.image.license)}${lang === 'ja' ? '。トリミング・縮小' : '. Cropped and resized'}）</li>`).join('')}</ul>` : '';
   const credits = photoCredits + (ctx.credits?.length ? `<h2>${lang === 'ja' ? '画像の出典' : 'Image credits'}</h2>
 <ul>${ctx.credits.map(cr).map((c) => (lang === 'ja' ? `<li>${esc(c.use)}：「${esc(c.title)}」${esc(c.photographer)}（<a href="${esc(c.sourceUrl)}" rel="noopener">${esc(c.source)}</a>。${esc(c.license)}）</li>` : `<li>${esc(c.use)}: “${esc(c.title)}” — ${esc(c.photographer)} (<a href="${esc(c.sourceUrl)}" rel="noopener">${esc(c.source)}</a>; ${esc(c.license)})</li>`)).join('')}</ul>` : '');
   const ja = `<h1>掲載のきまり・出典</h1>
