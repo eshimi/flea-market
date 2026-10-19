@@ -1759,5 +1759,148 @@
   "evidenceOk": {
    "recycler-fuchu-no-mori-park-flea": true
   }
+ },
+ "http://freemarket-go.com/schedule_shop.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "jfma-tsurumi-ryokuchi-flea": true
+  }
+ },
+ "https://b-i-a.jp/reserve/osaka-bay-tower/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "bia-osaka-bay-tower": true
+  }
+ },
+ "https://b-i-a.jp/reserve/sevenpark/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "bia-sevenpark": true
+  }
+ },
+ "https://b-i-a.jp/reserve/icora/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "bia-icora": true
+  }
+ },
+ "https://b-i-a.jp/reserve/iwashikincyaku/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "bia-iwashikincyaku": true
+  }
+ },
+ "https://b-i-a.jp/reserve/izumiyayao/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "bia-izumiyayao": true
+  }
+ },
+ "https://b-i-a.jp/reserve/tsurumiryokuchi/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "bia-tsurumiryokuchi": true
+  }
+ },
+ "https://b-i-a.jp/reserve/sunshine/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "bia-sunshine": true
+  }
+ },
+ "https://b-i-a.jp/reserve/hirakiiwaoka/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "bia-hirakiiwaoka": true
+  }
+ },
+ "https://b-i-a.jp/reserve/izumiyanishikobe/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "bia-izumiyanishikobe": true
+  }
+ },
+ "https://b-i-a.jp/reserve/izumiyakoryo/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "bia-izumiyakoryo": true
+  }
+ },
+ "http://furimatairiku.jp/Hanahaku/index.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6ad5b5f9-b5bd\"",
+  "lastModified": "Mon, 19 Oct 2026 06:17:29 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "furimatairiku-hanahaku-tsurumi": true
+  }
+ },
+ "http://furimatairiku.jp/Kawati/index.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6ad5b430-9f42\"",
+  "lastModified": "Mon, 19 Oct 2026 06:09:52 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "furimatairiku-kawachi-kosaka": true
+  }
+ },
+ "http://furimatairiku.jp/AEON-m/index.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6acdd77e-812a\"",
+  "lastModified": "Tue, 13 Oct 2026 07:02:22 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "furimatairiku-aeontown-matsubara": true
+  }
+ },
+ "http://furimatairiku.jp/Taharamoto/index.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6ac34c52-81bd\"",
+  "lastModified": "Mon, 05 Oct 2026 07:05:54 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "furimatairiku-karako-kagi": true
+  }
  }
 }

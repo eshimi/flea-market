@@ -117,5 +117,32 @@
   "reason": "new",
   "hash": "112be4d7523d250c",
   "status": "pending"
+ },
+ {
+  "id": "bia-furima-go",
+  "url": "https://b-i-a.jp/",
+  "name": "商業インキュベータ協会「フリマへGO!」（大阪・神戸・奈良の11会場）",
+  "detectedAt": "2026-10-20",
+  "reason": "new",
+  "hash": "cd10d7ea5bd4be6a",
+  "status": "pending"
+ },
+ {
+  "id": "furimatairiku",
+  "url": "http://furimatairiku.jp/Hanahaku/",
+  "name": "フリマ大陸（大阪・奈良・神戸。花博鶴見緑地ほか）",
+  "detectedAt": "2026-10-20",
+  "reason": "new",
+  "hash": "709c099d8d305426",
+  "status": "pending"
+ },
+ {
+  "id": "nihon-freemarket-kyokai-schedule",
+  "url": "http://freemarket-go.com/schedule_shop.html",
+  "name": "日本フリーマーケット協会（出店受付スケジュール。大阪・兵庫・奈良・滋賀）",
+  "detectedAt": "2026-10-20",
+  "reason": "new",
+  "hash": "75645303efa30fb1",
+  "status": "pending"
  }
 ]

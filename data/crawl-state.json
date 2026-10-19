@@ -86,5 +86,28 @@
   "failCount": 0,
   "len": 3938,
   "hash": "112be4d7523d250c"
+ },
+ "bia-furima-go": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 3487,
+  "hash": "cd10d7ea5bd4be6a"
+ },
+ "furimatairiku": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6ad5b5f9-b5bd\"",
+  "lastModified": "Mon, 19 Oct 2026 06:17:29 GMT",
+  "len": 16291,
+  "hash": "709c099d8d305426"
+ },
+ "nihon-freemarket-kyokai-schedule": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 3630,
+  "hash": "75645303efa30fb1"
  }
 }
