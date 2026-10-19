@@ -108,5 +108,14 @@
   "hash": "467025b9a547119f",
   "status": "done",
   "processedAt": "2026-10-18"
+ },
+ {
+  "id": "recycler-jp-schedule",
+  "url": "https://www2.recycler.jp/sm/index.php",
+  "name": "リサイクル運動市民の会（開催スケジュール）",
+  "detectedAt": "2026-10-20",
+  "reason": "new",
+  "hash": "112be4d7523d250c",
+  "status": "pending"
  }
 ]

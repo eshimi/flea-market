@@ -1750,5 +1750,14 @@
   "evidenceOk": {
    "venue:oi-racecourse": true
   }
+ },
+ "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=047": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "recycler-fuchu-no-mori-park-flea": true
+  }
  }
 }

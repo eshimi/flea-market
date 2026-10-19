@@ -79,5 +79,12 @@
   "failCount": 0,
   "len": 8512,
   "hash": "467025b9a547119f"
+ },
+ "recycler-jp-schedule": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 3938,
+  "hash": "112be4d7523d250c"
  }
 }
