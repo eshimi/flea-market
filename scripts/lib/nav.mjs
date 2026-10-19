@@ -21,3 +21,6 @@ export const TOP_LINKS = [
   { key: 'about', href: '/about/', icon: 'info' },
 ];
 
+
+// アクセス解析（Google アナリティクス）。全ページの head に入れる。GA_ID=（空）で外せる
+export const ANALYTICS_ID = process.env.GA_ID ?? 'G-BS5Q6SMHCM';

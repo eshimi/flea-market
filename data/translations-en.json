@@ -861,6 +861,63 @@
    "rain": "Cancelled in rain (held in light rain)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "Yasujima 1-chome 3, Yokkaichi City, Mie Prefecture"
+  },
+  "recycler-ajinomoto-stadium-flea": {
+   "name": "Ajinomoto Stadium BIG Flea Market (Recycle Undo Shimin-no-Kai)",
+   "venue": "Ajinomoto Stadium",
+   "time": "10:00–15:00 (early entry 8:00–10:00)",
+   "admission": "300 yen per person; free for elementary school children and younger (early entry 8:00–10:00 is 1,000 yen)",
+   "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
+   "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
+   "address": "376-3 Nishimachi, Chofu-shi, Tokyo"
+  },
+  "recycler-tokyo-international-forum-flea": {
+   "name": "Tokyo International Forum Flea Market (Recycle Undo Shimin-no-Kai)",
+   "venue": "Tokyo International Forum",
+   "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
+   "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
+   "address": "3-5-1 Marunouchi, Chiyoda-ku, Tokyo"
+  },
+  "recycler-kiba-park-flea": {
+   "name": "Tokyo Metropolitan Kiba Park Flea Market (Recycle Undo Shimin-no-Kai)",
+   "venue": "Tokyo Metropolitan Kiba Park",
+   "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
+   "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
+   "address": "4-1-1 Kiba, Koto-ku"
+  },
+  "recycler-komazawa-park-flea": {
+   "name": "Komazawa Olympic Park Flea Market (Recycle Undo Shimin-no-Kai)",
+   "venue": "Komazawa Olympic Park",
+   "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
+   "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
+   "address": "1-1 Komazawa Koen, Setagaya-ku"
+  },
+  "recycler-fussa-baseside-street": {
+   "name": "Fussa Baseside Street Vintage Clothing & Antique Market (Recycle Undo Shimin-no-Kai)",
+   "venue": "Fussa Baseside Street (Friendship Park)",
+   "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
+   "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
+   "address": "2351-11 Fussa, Fussa-shi, Friendship Park"
+  },
+  "recycler-koganei-park-flea": {
+   "name": "Koganei Park Flea Market (Recycle Undo Shimin-no-Kai)",
+   "venue": "Tokyo Metropolitan Koganei Park",
+   "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
+   "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
+   "address": "1-13-1 Sekinomachi, Koganei-shi, Tokyo"
+  },
+  "recycler-hikarigaoka-pageant-festa-flea": {
+   "name": "Nerima Hikarigaoka Hikari Pageant Festa Flea Market (Recycle Undo Shimin-no-Kai)",
+   "venue": "Tokyo Metropolitan Hikarigaoka Park",
+   "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
+   "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
+   "address": "4-1 Hikarigaoka, Nerima-ku, Tokyo"
+  },
+  "sunshine-city-big-furima": {
+   "name": "Sunshine City Big Flea Market (Ikebukuro)",
+   "venue": "Sunshine City, Sunshine Plaza",
+   "admission": "Free admission",
+   "rain": "Cancelled in case of rain"
   }
  },
  "organizers": {
@@ -920,7 +977,8 @@
   "日本フリーマーケット協会": "Japan Flea Market Association",
   "わんわんマルシェ実行委員会": "Wanwan Marche Executive Committee",
   "神戸港”U”パークマネジメント共同事業体": "Kobe Port \"U\" Park Management Joint Venture",
-  "フリマジャパン": "Furima Japan"
+  "フリマジャパン": "Furima Japan",
+  "オタカラ・ネット": "Otakara Net"
  },
  "labels": {
   "問い合わせ先": "Contact",
@@ -1014,7 +1072,9 @@
   "湖南市": "Konan City",
   "枚方市": "Hirakata City",
   "野洲市": "Yasu City",
-  "四日市市": "Yokkaichi City"
+  "四日市市": "Yokkaichi City",
+  "調布市": "Chofu City",
+  "福生市": "Fussa City"
  },
  "notes": {
   "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",

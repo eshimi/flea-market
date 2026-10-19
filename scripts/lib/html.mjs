@@ -1,5 +1,5 @@
 // ページの共通の枠（ヘッダー・フッター・免責）と、HTML の小さな部品
-import { INDEXABLE, SITE, TOP_LINKS } from './nav.mjs';
+import { INDEXABLE, SITE, TOP_LINKS, ANALYTICS_ID } from './nav.mjs';
 import { KINDS } from './kinds.mjs';
 import { weekday } from './dates.mjs';
 import { cityL, nameL, noteL, timeEn, venueL } from './tr-en.mjs';
@@ -47,6 +47,21 @@ ${langSwitch(path, lang)}
 }
 
 // path は出力先の URL（日本語は /ja/ 以下）。head の hreflang は、すべてのページに付ける
+// Google タグ（gtag.js）。ANALYTICS_ID が空なら出さない
+function analyticsTag() {
+  if (!ANALYTICS_ID) return '';
+  return `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '${ANALYTICS_ID}');
+</script>
+`;
+}
+
 export function layout({ path, title, description, body, head = '', scripts = [], lang, css = [] }) {
   const sp = splitPath(path);
   lang = lang || sp.lang;
@@ -60,7 +75,7 @@ export function layout({ path, title, description, body, head = '', scripts = []
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(full)}</title>
+${analyticsTag()}<title>${esc(full)}</title>
 <meta name="description" content="${esc(description)}">
 ${INDEXABLE ? '' : '<meta name="robots" content="noindex,nofollow">\n'}<link rel="canonical" href="${SITE.url}${path}">
 ${alt}<meta property="og:title" content="${esc(full)}">

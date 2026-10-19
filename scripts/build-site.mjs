@@ -275,6 +275,8 @@ function aboutPage(ctx, lang) {
 <p>${esc(disclaimer('ja'))}</p>
 <h2>地図・天気</h2>
 <p>開催詳細の地図・経路は、Google マップへのリンクです（住所がなければ会場名で検索するため、位置は要確認）。公式の所在地が分かる会場の地図の画像は、OpenStreetMap（© OpenStreetMap contributors。ODbL）から作り、位置は国土地理院の住所検索で求めた目安です。天気予報は気象庁が公開している予報を、開催日の約7日前から表示します（地域の単位の予報で、会場ごとではありません。出典：気象庁）。</p>
+<h2>アクセス解析</h2>
+<p>このサイトは、利用状況（閲覧されたページの数など）を把握するために、Google アナリティクスを使っています。Google が Cookie 等を用いて、個人を特定しない形でデータを集めます。</p>
 <h2>情報の取得</h2>
 <p>公式ページの取得は、robots.txt と各サイトの利用規約に従い、同じサイトへは1日1回までに抑えています。取得が認められていないページは、リンクだけを掲載します。</p>
 <h2 id="remove">掲載の修正・削除の依頼</h2>
@@ -294,6 +296,8 @@ function aboutPage(ctx, lang) {
 <p>${esc(disclaimer('en'))}</p>
 <h2>Maps and weather</h2>
 <p>The map and directions on each listing are links to Google Maps (if the official page gives no address, the link searches by venue name, so the location is TBC). Where the official address is known, the map image is made from OpenStreetMap (© OpenStreetMap contributors, ODbL), with the position looked up by the Geospatial Information Authority of Japan address search; it is an estimate. Weather forecasts come from the Japan Meteorological Agency and are shown from about 7 days before the event (a forecast for the JMA regional unit, not for the venue).</p>
+<h2>Analytics</h2>
+<p>This site uses Google Analytics to understand how it is used (for example, how many times pages are viewed). Google collects data with cookies and similar technologies, without identifying individuals.</p>
 <h2>How we fetch pages</h2>
 <p>We follow robots.txt and each site’s terms of use, and fetch from the same site at most once a day. For pages we are not allowed to fetch, we only link to them.</p>
 <h2 id="remove">Correction / removal requests</h2>

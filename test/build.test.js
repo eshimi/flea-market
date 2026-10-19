@@ -479,3 +479,11 @@ test('過去の開催の記録：公式で確認した回・中止・延期だ�
   assert.ok(pages.find((p) => p.path === '/calendar/').body.includes('/date/2026-10-01/'));
   assert.ok(pages.find((p) => p.path === `/e/${item.series}/`).body.includes('/date/2026-10-01/'));
 });
+
+test('アクセス解析のタグ（Google タグ）が、すべてのページの head に入る', () => {
+  const { pages } = buildPages(data, '2026-11-02');
+  for (const p of pages) {
+    const html = layout(p);
+    assert.ok(/googletagmanager\.com\/gtag\/js\?id=G-[A-Z0-9]+/.test(html) && html.indexOf('gtag(') < html.indexOf('</head>'), p.path);
+  }
+});
