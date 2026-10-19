@@ -90,3 +90,14 @@
   .art-box{padding:20px 18px 10px}
   .bl-meta a{margin-left:0;flex-basis:100%}
 }
+
+.bl-facts{margin:0 0 18px;background:#fff;border:1px solid var(--ar-line);border-left:4px solid var(--ar-red);border-radius:10px;padding:6px 18px}
+.bl-facts div{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:12px;padding:9px 0;border-bottom:1px solid var(--ar-line);font-size:14.5px}
+.bl-facts div:last-child{border-bottom:0}
+.bl-facts dt{color:var(--ar-sub);font-size:13px}
+.bl-facts dd{margin:0;overflow-wrap:anywhere}
+.bl-photo{margin:0 0 18px;max-width:420px}
+.bl-photo img{display:block;width:100%;height:auto;border-radius:10px}
+.bl-photo figcaption{font-size:11.5px;color:var(--ar-sub);margin-top:5px;line-height:1.4}
+.bl-photo figcaption a{color:inherit}
+@media (max-width:600px){.bl-facts div{grid-template-columns:1fr;gap:2px}}

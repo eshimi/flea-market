@@ -40,7 +40,7 @@ export const CATS = {
 
 const inline = (t) => esc(t).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\[([^\]]+)\]\((\/[^)\s]*)\)/g, '<a href="$2">$1</a>');
 export const minutes = (blocks, lang) => {
-  const text = blocks.map((b) => b.h2 || b.p || (b.ul || []).join(' ')).join(' ');
+  const text = blocks.map((b) => b.h2 || b.p || (b.ul || []).join(' ') || (b.facts || []).map((x) => x.join(' ')).join(' ')).join(' ');
   return Math.max(1, Math.round(lang === 'ja' ? text.length / 500 : text.split(/\s+/).length / 200));
 };
 const dateText = (iso, lang) => S[lang].dateLong(iso);
@@ -57,7 +57,7 @@ export function sections(blocks, lang) {
   return out.map((s, i) => ({ ...s, id: `s${i}` }));
 }
 
-const bodyHtml = (list) => list.map((b) => (b.p ? `<p>${inline(b.p)}</p>` : `<ul>${b.ul.map((x) => `<li>${inline(x)}</li>`).join('')}</ul>`)).join('\n');
+const bodyHtml = (list) => list.map((b) => ('p' in b ? (b.p ? `<p>${inline(b.p)}</p>` : '') : b.facts ? `<dl class="bl-facts">${b.facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${inline(v)}</dd></div>`).join('')}</dl>` : 'html' in b ? b.html : `<ul>${b.ul.map((x) => `<li>${inline(x)}</li>`).join('')}</ul>`)).join('\n');
 
 export function articleBox(secs) {
   return `<div class="art-box">${secs.map((s) => `<section class="art-sec" aria-labelledby="${s.id}"><h2 id="${s.id}">${esc(s.title)}</h2><div class="art-body">${bodyHtml(s.body)}</div></section>`).join('\n')}</div>`;

@@ -343,6 +343,29 @@ const blogTitle = (lang) => (lang === 'ja' ? 'ブログ' : 'Blog');
 const feedLink = (lang) => `<link rel="alternate" type="application/rss+xml" title="${esc(`${SITE.name} ${blogTitle(lang)}`)}" href="${langPath('/blog/feed.xml', lang)}">\n`;
 // 手で書いた記事（content.mjs）＋自動で作った記事（data/blog-auto）。新しい順
 let ALL_POSTS = [...BLOG];
+
+// ガイド記事の動的ブロック：{ dates: { series: [id…], limit } }＝次回の開催日（公式で確認／予定）、{ photo: <スポット id> }＝スポットの写真（出典つき）。ビルドのたびに、最新のデータから作る
+function resolvePost(post, ctx) {
+  const out = { ...post };
+  for (const lang of ['en', 'ja']) {
+    out[lang] = { ...post[lang], blocks: post[lang].blocks.map((b) => (b.dates ? datesBlock(b.dates, ctx, lang) : b.photo ? photoBlock_(b.photo, ctx, lang) : b)) };
+  }
+  return out;
+}
+function datesBlock(d, ctx, lang) {
+  const ids = new Set(d.series);
+  const list = ctx.occ.filter((o) => ids.has(o.series.id) && isActive(o)).slice(0, d.limit || 8);
+  if (!list.length) return { p: lang === 'ja' ? '今後の開催日は、公式の情報で確認できていません（要確認）。' : 'No upcoming dates are confirmed from official sources (TBC).' };
+  const checked = list.map((o) => o.checkedAt).sort().at(-1);
+  return { ul: [...list.map((o) => `**${dlabel(o.date, lang, { year: true })}** ${S[lang].status[o.status]}${o.note ? `（${noteL(o, lang)}）` : ''} — [${nameL(o.series, lang)}](/e/${o.series.id}/)`), lang === 'ja' ? `最終確認：${checked}（毎朝の自動更新で更新されます）` : `Last checked: ${checked} (updated by the daily refresh)`] };
+}
+function photoBlock_(vid, ctx, lang) {
+  const v = ctx.spots.find((x) => x.venue.id === vid)?.venue;
+  const im = v?.image;
+  if (!im) return { html: '' };
+  const cap = `${lang === 'ja' ? '写真' : 'Photo'}: ${esc(im.author)} / <a href="${esc(im.licenseUrl || im.sourceUrl)}" rel="noopener nofollow">${esc(im.license)}</a> / <a href="${esc(im.sourceUrl)}" rel="noopener nofollow">Wikimedia Commons</a>`;
+  return { html: `<figure class="bl-photo"><img src="/img/spots/${esc(im.file)}" alt="${esc(lang === 'ja' ? im.altJa : im.altEn)}" width="800" height="533" loading="lazy" decoding="async"><figcaption>${cap}</figcaption></figure>` };
+}
 // 地図の画像（static/img/maps/<id>.webp）がある会場の位置（data/geo.json）
 let GEO = {};
 const hasMapImg = (id) => Boolean(GEO[id]) && existsSync(join(ROOT, 'static', 'img', 'maps', `${id}.webp`));
@@ -430,12 +453,12 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   setTranslations(translations);
   GEO = geo;
   const ids = new Set(series.map((x) => x.id));
-  ALL_POSTS = [...BLOG, ...autoPosts.map((a) => cleanLinks(a, ids))];
   const occ = buildOccurrences(series, occurrences, today, days);
   const past = pastOccurrences(archive, series).filter((o) => o.date < today);
   const spots = buildSpots(venues, series, occ, today);
   const spotMapImg = (id) => Boolean(GEO[`spot-${id}`]) && existsSync(join(ROOT, 'static', 'img', 'maps', `spot-${id}.webp`));
-  const ctx = { series, occ, past, spots, spotMapImg, weekend: upcomingWeekend(today), today, days, credits };
+  const ctx = { series, occ, past, spots, spotMapImg, guideSlugs: new Set(BLOG.map((b) => b.slug)), weekend: upcomingWeekend(today), today, days, credits };
+  ALL_POSTS = [...BLOG.map((b) => cleanLinks(resolvePost(b, ctx), ids)), ...autoPosts.map((a) => cleanLinks(a, ids))];
   // 英語が既定（/）。日本語は /ja/
   const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）

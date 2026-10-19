@@ -105,6 +105,8 @@ export const FAQ = {
   },
 };
 
+import { GUIDES } from './content-guides.mjs';
+
 export const BLOG = [
   {
     slug: 'welcome',
@@ -268,4 +270,5 @@ export const BLOG = [
       ],
     },
   },
+  ...GUIDES,
 ];

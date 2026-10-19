@@ -586,3 +586,30 @@ test('スポットの写真：作者・ライセンスの表示と、本体・�
   assert.ok(pg_.body.includes(withImg.image.author) && pg_.body.includes('class="sp-head has-photo"'));
   assert.ok(pages.find((p) => p.path === '/spot/').body.includes(withImg.image.file.replace(/\.webp$/, '-t.webp')));
 });
+
+test('ガイド記事：両言語・要約ボックス・日本語は800〜1300字・次回の開催日のシリーズと写真が実在する', async () => {
+  const { GUIDES } = await import('../scripts/lib/content-guides.mjs');
+  const real = loadData();
+  const sids = new Set(real.series.map((s) => s.id));
+  const vids = new Set(real.venues.map((v) => v.id));
+  const len = (c) => c.blocks.map((b) => b.h2 || b.p || (b.ul || []).join('') || (b.facts || []).map((x) => x.join('')).join('')).join('').length;
+  for (const g of GUIDES) {
+    assert.ok(g.slug.startsWith('guide-') && g.date && g.cat === 'goer', g.slug);
+    for (const lang of ['en', 'ja']) {
+      const c = g[lang];
+      assert.ok(c.title && c.summary && c.points?.length === 3, `${g.slug} ${lang}`);
+      assert.ok(c.blocks.some((b) => b.dates), `${g.slug} ${lang}: 次回の開催日`);
+      if (vids.has(g.slug.replace(/^guide-/, ''))) assert.ok(c.blocks.some((b) => b.facts), `${g.slug} ${lang}: 会場ガイドは要約ボックス`);
+      for (const b of c.blocks) {
+        for (const id of b.dates?.series || []) assert.ok(sids.has(id), `${g.slug}: シリーズ ${id}`);
+        if (b.photo) assert.ok(vids.has(b.photo), `${g.slug}: スポット ${b.photo}`);
+      }
+    }
+    const n = len(g.ja);
+    assert.ok(n >= 800 && n <= 1300, `${g.slug}: 日本語 ${n} 字`);
+  }
+  const { pages } = buildPages(real, '2026-10-20');
+  const pg_ = pages.find((p) => p.path === '/blog/guide-takahata-fudoson/');
+  assert.ok(pg_.body.includes('class="bl-facts"') && pg_.body.includes('/e/takahata-fudoson-gozareichi/'));
+  assert.ok(pages.find((p) => p.path === '/spot/takahata-fudoson/').body.includes('/blog/guide-takahata-fudoson/'));
+});

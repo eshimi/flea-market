@@ -13,7 +13,7 @@ const T = {
     crumb: 'スポット', h1: 'スポット（会場）', lead: 'フリマ・蚤の市が開かれる会場ごとに、直近の開催と主催をまとめています。会場の情報は、公式ページに書かれていることだけを載せます。',
     weekend: '今週末に開催', soon: '今後30日に開催', none: '該当なし', byArea: '区・市から', th: ['会場', '直近の開催', '主催', '今後の開催'],
     times: (n) => `${n}回`, tbc: '要確認', tbcNext: '開催予定は要確認', tbcSeries: 'この会場の開催は、公式で確認できた日だけ載せます。',
-    photo: '写真', next: '次の開催', kindLabel: '種類', open: '公式サイト', upcoming: '今後の開催予定', info: '会場の情報', address: '所在地', access: 'アクセス', place: '開催場所', rules: '会場の決まり', summary: '概要',
+    photo: '写真', guide: '会場ガイドを読む →', next: '次の開催', kindLabel: '種類', open: '公式サイト', upcoming: '今後の開催予定', info: '会場の情報', address: '所在地', access: 'アクセス', place: '開催場所', rules: '会場の決まり', summary: '概要',
     sources: '出典', checked: '最終確認', series: 'この会場で開かれている市', others: '同じ区・市の他のスポット', noUpcoming: '今後の開催予定は要確認です（公式の案内が出たら載せます）。',
     desc: (n) => `${n}の会場情報と、開催予定のフリマ・蚤の市。`, listDesc: 'フリマ・蚤の市が開かれる会場の一覧。区・市ごとに、直近の開催と主催をまとめています。', note: '開催の有無・内容は変わることがあります。出かける前に、主催者・会場の公式情報でご確認ください。',
     organizerFrom: '', more: (n) => `ほか${n}回`,
@@ -22,7 +22,7 @@ const T = {
     crumb: 'Spots', h1: 'Spots (venues)', lead: 'Venues that host flea markets, by ward and city, with their next dates and organizers. Venue details are limited to what official pages state.',
     weekend: 'This weekend', soon: 'In the next 30 days', none: 'None', byArea: 'By ward / city', th: ['Venue', 'Next date', 'Organizer', 'Upcoming'],
     times: (n) => `${n}`, tbc: 'TBC', tbcNext: 'Dates TBC', tbcSeries: 'Only dates confirmed from official sources are listed for this venue.',
-    photo: 'Photo', next: 'Next', kindLabel: 'Type', open: 'Official site', upcoming: 'Upcoming dates', info: 'Venue information', address: 'Address', access: 'Access', place: 'Where on site', rules: 'Venue rules', summary: 'Overview',
+    photo: 'Photo', guide: 'Read the venue guide →', next: 'Next', kindLabel: 'Type', open: 'Official site', upcoming: 'Upcoming dates', info: 'Venue information', address: 'Address', access: 'Access', place: 'Where on site', rules: 'Venue rules', summary: 'Overview',
     sources: 'Sources', checked: 'last checked', series: 'Markets held here', others: 'Other spots in the same ward / city', noUpcoming: 'Upcoming dates are TBC (we list them once officially announced).',
     desc: (n) => `Venue information for ${n} and its upcoming flea markets.`, listDesc: 'Venues that host flea markets and antique fairs, by ward and city, with next dates and organizers.', note: 'Events can change or be cancelled. Please check official information from the organizer or venue before you go.',
     organizerFrom: '', more: (n) => `+${n} more`,
@@ -133,7 +133,7 @@ export function spotPage(sp, ctx, lang) {
 <h1>${esc(L('name'))}</h1>${lang === 'en' && L('name') !== v.name ? `<p class="orig-h" lang="ja">${esc(v.name)}</p>` : ''}
 <div class="tags"><span class="tag">${esc(kindL(v.kind, lang))}</span><span class="tag">${esc(cityName)}</span></div>
 <dl class="sp-quick">${quickRows}</dl>
-<p class="sp-cta">${v.officialUrl ? `<a class="map-btn s" href="${esc(v.officialUrl)}" rel="noopener">${esc(t.open)} ↗</a>` : ''}<a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(pp.mapOpen)} ↗</a></p>
+<p class="sp-cta">${ctx.guideSlugs?.has(`guide-${v.id}`) ? `<a class="map-btn s" href="/blog/guide-${esc(v.id)}/">${esc(t.guide)}</a>` : ''}${v.officialUrl ? `<a class="map-btn s" href="${esc(v.officialUrl)}" rel="noopener">${esc(t.open)} ↗</a>` : ''}<a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(pp.mapOpen)} ↗</a></p>
 </div></header>
 <h2 class="sec-h">${esc(t.upcoming)}</h2>
 ${sp.occ.length ? eventListByMonth(sp.occ, lang) : `<p class="empty">${esc(t.noUpcoming)}</p>`}
