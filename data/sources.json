@@ -2183,5 +2183,159 @@
    "checkedAt": "2026-10-18",
    "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
   }
+ },
+ {
+  "url": "https://b-i-a.jp/reserve/osaka-bay-tower/",
+  "series": [
+   "bia-osaka-bay-tower"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://b-i-a.jp/reserve/sevenpark/",
+  "series": [
+   "bia-sevenpark"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://b-i-a.jp/reserve/icora/",
+  "series": [
+   "bia-icora"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://b-i-a.jp/reserve/iwashikincyaku/",
+  "series": [
+   "bia-iwashikincyaku"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://b-i-a.jp/reserve/izumiyayao/",
+  "series": [
+   "bia-izumiyayao"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://b-i-a.jp/reserve/tsurumiryokuchi/",
+  "series": [
+   "bia-tsurumiryokuchi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://b-i-a.jp/reserve/sunshine/",
+  "series": [
+   "bia-sunshine"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://b-i-a.jp/reserve/hirakiiwaoka/",
+  "series": [
+   "bia-hirakiiwaoka"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://b-i-a.jp/reserve/izumiyanishikobe/",
+  "series": [
+   "bia-izumiyanishikobe"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://b-i-a.jp/reserve/izumiyakoryo/",
+  "series": [
+   "bia-izumiyakoryo"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "http://furimatairiku.jp/Hanahaku/index.html",
+  "series": [
+   "furimatairiku-hanahaku-tsurumi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は404（制限なし）。サイトに利用規約のページはなく、「出店に関する規約」（/Agreement/）は出店者向けの規約で、サイトの内容の複製・取得を禁じる記載は確認できない（2026-10-20）。掲載は事実の項目（日時・場所・料金など）だけ。"
+  }
+ },
+ {
+  "url": "http://furimatairiku.jp/Kawati/index.html",
+  "series": [
+   "furimatairiku-kawachi-kosaka"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は404（制限なし）。サイトに利用規約のページはなく、「出店に関する規約」（/Agreement/）は出店者向けの規約で、サイトの内容の複製・取得を禁じる記載は確認できない（2026-10-20）。掲載は事実の項目（日時・場所・料金など）だけ。"
+  }
+ },
+ {
+  "url": "http://furimatairiku.jp/AEON-m/index.html",
+  "series": [
+   "furimatairiku-aeontown-matsubara"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は404（制限なし）。サイトに利用規約のページはなく、「出店に関する規約」（/Agreement/）は出店者向けの規約で、サイトの内容の複製・取得を禁じる記載は確認できない（2026-10-20）。掲載は事実の項目（日時・場所・料金など）だけ。"
+  }
+ },
+ {
+  "url": "http://furimatairiku.jp/Taharamoto/index.html",
+  "series": [
+   "furimatairiku-karako-kagi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は404（制限なし）。サイトに利用規約のページはなく、「出店に関する規約」（/Agreement/）は出店者向けの規約で、サイトの内容の複製・取得を禁じる記載は確認できない（2026-10-20）。掲載は事実の項目（日時・場所・料金など）だけ。"
+  }
  }
 ]

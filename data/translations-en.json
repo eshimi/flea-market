@@ -957,6 +957,156 @@
    "address": "Ryokuchi-koen, Tsurumi-ku, Osaka-shi",
    "apply": "The organizer’s stall reception schedule lists the reception date as “undecided” (TBC)",
    "notes": "Stall capacity is 130 booths per day (planned)"
+  },
+  "bia-osaka-bay-tower": {
+   "name": "Osaka Bay Tower Flea Market",
+   "venue": "Osaka Bay Tower, 2F Atrium Plaza",
+   "time": "9:30–15:00 (planned)",
+   "rain": "Cancelled in bad weather (cut-off time for the event to go ahead: 12:00)",
+   "access": "Right next to Bentencho Station (JR Osaka Loop Line / Osaka Metro Chuo Line)",
+   "fee": "Hand-luggage booth: 3,000 yen (width 2.0 m × depth 2.0 m; 100 booths); Corporate PR booth: 30,000 yen (width 4.0 m × depth 2.0 m; 1 booths). All prices include tax",
+   "apply": "Online booth application (via the venue page)",
+   "notes": "Set-up: 8:00–9:00; take-down: 15:00–17:00. As this is an open space without enclosures, customers may arrive while you are setting up. Parking fee: up to ￥1,500 per day / ￥200 per 30 minutes. Height limit: 2.05 m. No food-truck vendors are being recruited. If you wish to sell food, please contact the secretariat. Selling character stickers is prohibited, whether genuine or not",
+   "address": "1-2-4 Benten, Minato-ku, Osaka-shi, Osaka"
+  },
+  "bia-sevenpark": {
+   "name": "Seven Park Amami Flea Market",
+   "venue": "Seven Park Amami, 1F flat parking lot",
+   "time": "9:30–15:00 (planned)",
+   "rain": "Cancelled in bad weather (cut-off time for the event to go ahead: 12:00)",
+   "access": "Kintetsu Minami-Osaka Line, Kawachi-Amami Station: 15 minutes on foot or 10 minutes by bus",
+   "fee": "Vehicle booth: 6,500 yen (width 6.0 m × depth 4.0 m; 70 booths); Hand-luggage booth: 3,500 yen (width 2.5 m × depth 2.5 m; 30 booths); Corporate PR booth: 35,000 yen (width 6.0 m × depth 4.0 m; 1 booths). All prices include tax",
+   "apply": "Online booth application (via the venue page)",
+   "notes": "Set-up: 8:00–9:00; take-down: 16:00–17:00. Free parking is available for hand-luggage booths. No food-truck vendors are being recruited. If you wish to sell food, please contact the secretariat. Selling character stickers is prohibited, whether genuine or not",
+   "address": "3-500 Amami-higashi, Matsubara-shi, Osaka"
+  },
+  "bia-icora": {
+   "name": "Ikoramoru Izumisano Flea Market",
+   "venue": "Ikoramoru Izumisano, temporary parking lot",
+   "time": "9:30–16:00 (planned)",
+   "rain": "Cancelled in bad weather (cut-off time for the event to go ahead: 12:00)",
+   "access": "Nankai Main Line, Iharanosato Station: 5 minutes on foot",
+   "fee": "Vehicle booth: 6,500 yen (width 6.0 m × depth 4.0 m; 50 booths); Hand-luggage booth: 3,000 yen (width 2.0 m × depth 2.0 m; 30 booths); Corporate PR booth: 35,000 yen (width 6.0 m × depth 4.0 m; 1 booths). All prices include tax",
+   "apply": "Online booth application (via the venue page)",
+   "notes": "Set-up: 8:00–9:00; take-down: 16:00–17:00. Free parking is available for hand-luggage booths. Depending on congestion, the opening time may be brought forward. No food-truck vendors are being recruited. If you wish to sell food, please contact the secretariat. Selling character stickers is prohibited, whether genuine or not",
+   "address": "2-2-77 Shimokawara, Izumisano-shi, Osaka"
+  },
+  "bia-iwashikincyaku": {
+   "name": "Kishiwada Jizohama Flea Market",
+   "venue": "Special venue inside Kishiwada Jogai Fish Market Minato Marche",
+   "time": "9:00–15:00 (planned)",
+   "rain": "Cancelled in bad weather (cut-off time for the event to go ahead: 12:00)",
+   "access": "Nankai Main Line, Kishiwada Station: 20 minutes on foot",
+   "fee": "Vehicle booth: 6,500 yen (width 6.0 m × depth 4.0 m; 50 booths); Hand-luggage booth: 3,000 yen (width 2.5 m × depth 2.5 m; 30 booths); Corporate PR booth: 35,000 yen (width 6.0 m × depth 4.0 m; 1 booths). All prices include tax",
+   "apply": "Online booth application (via the venue page)",
+   "notes": "Set-up: 8:00–8:45; take-down: 15:00–16:00. Free parking is available for hand-luggage booths. No food-truck vendors are being recruited. If you wish to sell food, please contact the secretariat. Selling character stickers is prohibited, whether genuine or not",
+   "address": "7-1 Jizohama-cho, Kishiwada-shi, Osaka"
+  },
+  "bia-izumiyayao": {
+   "name": "Izumiya SC Yao Flea Market",
+   "venue": "Izumiya Shopping Center Yao, rooftop parking lot",
+   "time": "9:15–15:00 (planned)",
+   "rain": "Cancelled in bad weather (cut-off time for the event to go ahead: 12:00)",
+   "access": "Shiki Station (JR Kansai Main Line) / Yaominami Station (Osaka Metro Tanimachi Line): 30 minutes on foot each",
+   "fee": "Vehicle booth: 6,000 yen (width 6.0 m × depth 4.0 m; 40 booths); Hand-luggage booth: 3,000 yen (width 2.5 m × depth 2.5 m; 40 booths); Corporate PR booth: 35,000 yen (width 6.0 m × depth 4.0 m; 1 booths). All prices include tax",
+   "apply": "Online booth application (via the venue page)",
+   "notes": "Set-up: 7:30–8:45; take-down: 15:00–17:00. Height limit: 2.3 m. Exhibitors who park all day can receive a free parking discount ticket. No food-truck vendors are being recruited. If you wish to sell food, please contact the secretariat. Selling character stickers is prohibited, whether genuine or not",
+   "address": "1-1 Numa, Yao-shi, Osaka"
+  },
+  "bia-tsurumiryokuchi": {
+   "name": "Hanahaku Tsurumi Ryokuchi Flea Market",
+   "venue": "Inside Expo Commemorative Park Tsurumi Ryokuchi, exhibition hall attached to Mizu-no-Yakata (Hanamizuki Hall)",
+   "time": "10:00–15:00 (planned)",
+   "rain": "Cancelled in bad weather (cut-off time for the event to go ahead: 12:00)",
+   "access": "Tsurumi-ryokuchi Station (Osaka Metro Nagahori Tsurumi-ryokuchi Line)",
+   "fee": "Vehicle booth: 6,000 yen (width 6.0 m × depth 4.0 m; 60 booths); Hand-luggage booth: 3,000 yen (width 3.0 m × depth 3.0 m; 50 booths); Corporate PR booth: 35,000 yen (width 6.0 m × depth 4.0 m; 1 booths). All prices include tax",
+   "apply": "Online booth application (via the venue page)",
+   "notes": "Set-up: 8:00–9:30. Supported by: Osaka City Outdoor Market Federation. Free parking is available for hand-luggage booths. No food-truck vendors are being recruited. If you wish to sell food, please contact the secretariat. Selling character stickers is prohibited, whether genuine or not",
+   "address": "2-163 Ryokuchi-koen, Tsurumi-ku, Osaka-shi",
+   "admission": "Free"
+  },
+  "bia-sunshine": {
+   "name": "Sunshine Wharf Kobe Flea Market",
+   "venue": "Sunshine Wharf Kobe, Sunshine Garden",
+   "time": "9:30–15:00 (planned). On Saturdays the gate opens at 9:00",
+   "rain": "Cancelled in bad weather (cut-off time for the event to go ahead: 12:00)",
+   "access": "Hanshin Main Line, Aoki Station: 10 minutes on foot",
+   "fee": "Vehicle booth (Sat/Sun/holidays): 6,500 yen (width 6.0 m × depth 4.0 m; 75 booths); Vehicle booth (weekdays): 5,000 yen (width 6 m × depth 4 m; 75 booths); Hand-luggage booth (Sat/Sun/holidays): 3,500 yen (width 2.5 m × depth 2.5 m; 50 booths); Hand-luggage booth (weekdays): 2,500 yen (width 2.5 m × depth 2.5 m; 50 booths); Corporate PR booth: 35,000 yen (width 6.0 m × depth 4.0 m; 1 booths). All prices include tax",
+   "apply": "Online booth application (via the venue page)",
+   "notes": "Set-up: 7:30–8:30; take-down: 15:00–17:00. Free parking is available for hand-luggage booths. Depending on congestion, the opening time may be brought forward. Food-truck applications are accepted by phone only. If you wish to sell food, please contact the secretariat. Selling character stickers is prohibited, whether genuine or not",
+   "address": "1-2-34 Aoki, Higashinada-ku, Kobe-shi, Hyogo"
+  },
+  "bia-hirakiiwaoka": {
+   "name": "Kutsu no Hiraki Iwaoka Store Flea Market",
+   "venue": "Hiraki Iwaoka Store, No. 1 parking lot (in front of Okashi-kan)",
+   "time": "9:30–15:00 (planned)",
+   "rain": "Cancelled in bad weather (cut-off time for the event to go ahead: 12:00)",
+   "access": "Right by the Fukuyoshi bus stop (Kami-Iwaoka), reached from JR Sanyo Line Okubo Station. 1.7 km from Okubo IC and 2.8 km from Akashi-nishi IC on the Daini-Shinmei Road",
+   "fee": "Vehicle booth: 6,000 yen (width 6.0 m × depth 4.0 m; 40 booths); Hand-luggage booth: 3,000 yen (width 2.5 m × depth 2.5 m; 20 booths); Corporate PR booth: 35,000 yen (width 6.0 m × depth 4.0 m; 1 booths). All prices include tax",
+   "apply": "Online booth application (via the venue page)",
+   "notes": "Set-up: 8:00–9:00. Free parking is available for hand-luggage booths. Food-truck applications are accepted by phone only. If you wish to sell food, please contact the secretariat. Selling character stickers is prohibited, whether genuine or not",
+   "address": "556 Fukuyoshi, Nonaka, Iwaoka-cho, Nishi-ku, Kobe-shi, Hyogo"
+  },
+  "bia-izumiyanishikobe": {
+   "name": "Izumiya SC Nishi-Kobe Flea Market",
+   "venue": "Izumiya Shopping Center Nishi-Kobe, 1F plaza outside the main entrance",
+   "time": "9:30–15:00 (planned)",
+   "rain": "Cancelled in stormy weather",
+   "access": "Get off at JR Sanyo Line Okubo Station and take a Shinki Bus for 15 minutes; get off at \"Tengo\" on a bus bound for Seishin-chuo or Kami-Iwaoka, then 5 minutes on foot",
+   "fee": "Hand-luggage booth: 2,500 yen (width 2.0 m × depth 2.0 m; 35 booths); Corporate PR booth: 30,000 yen (width 4.0 m × depth 2.0 m; 1 booths). All prices include tax",
+   "apply": "Online booth application (via the venue page)",
+   "notes": "Set-up: 8:00–9:00; take-down: 15:00–17:00. As this is an open space without enclosures, customers may arrive while you are setting up. Free parking is available for hand-luggage booths. Height limit: 2.1 m. No food-truck vendors are being recruited. If you wish to sell food, please contact the secretariat. Selling character stickers is prohibited, whether genuine or not",
+   "address": "1-21-1 Ryugaoka, Nishi-ku, Kobe-shi, Hyogo"
+  },
+  "bia-izumiyakoryo": {
+   "name": "Izumiya SC Koryo Store Flea Market",
+   "venue": "Izumiya Shopping Center Koryo Store, 1F flat parking lot",
+   "time": "9:30–15:00 (planned)",
+   "rain": "Cancelled in bad weather (cut-off time for the event to go ahead: 12:00)",
+   "access": "Kintetsu Line, Yamato-Takada Station: 20 minutes on foot",
+   "fee": "Vehicle booth: 6,000 yen (width 6.0 m × depth 4.0 m; 60 booths); Hand-luggage booth: 3,000 yen (width 2.5 m × depth 2.5 m; 40 booths); Corporate PR booth: 35,000 yen (width 6.0 m × depth 4.0 m; 1 booths). All prices include tax",
+   "apply": "Online booth application (via the venue page)",
+   "notes": "Set-up: 8:00–9:00; take-down: 15:00–17:00. Free parking is available for hand-luggage booths. No food-truck vendors are being recruited. If you wish to sell food, please contact the secretariat. Selling character stickers is prohibited, whether genuine or not",
+   "address": "450-1 Oaza Abe, Koryo-cho, Kitakatsuragi-gun, Nara"
+  },
+  "furimatairiku-hanahaku-tsurumi": {
+   "name": "Furima Tairiku: Hanahaku Tsurumi Ryokuchi Park Flea Market",
+   "venue": "Hanahaku Tsurumi Ryokuchi Park (Mizu-no-Yakata annex exhibition hall)",
+   "time": "10:00-16:00",
+   "access": "Subway Nagahori Tsurumi-ryokuchi Line, Tsurumi-ryokuchi Station: right outside the station",
+   "admission": "Free",
+   "notes": "Pets allowed. Paid parking nearby. About 30 paid parking spaces at the venue (1,000 yen per car; cars cannot be moved during event hours)",
+   "fee": "Hand-carry booth (3m x 3m) 3,000 yen; car booth (6m x 4m) 5,500 yen; food/event booth (6m x 4m) 6,000 yen (tax included, bank transfer fee not included; food sales not allowed at hand-carry and car booths)"
+  },
+  "furimatairiku-kawachi-kosaka": {
+   "name": "Furima Tairiku: Kintetsu Kawachi-Kosaka Station Flea Market",
+   "venue": "Kintetsu Kawachi-Kosaka Station event space",
+   "time": "10:00-16:00",
+   "access": "Kintetsu Kawachi-Kosaka Station: right outside the station (about 100 m in a straight line)",
+   "admission": "Free",
+   "address": "1-7 Kosaka, Higashiosaka-shi, Osaka",
+   "notes": "Pets allowed. Paid parking nearby (about 100 spaces; 200 yen per 30 minutes, etc.)",
+   "fee": "Hand-carry booth (2.5m x 2.5m) 2,800 yen; car booth (5.5m x 4m) 5,800 yen; food/event booth (5.5m x 4m) 6,500 yen (tax included, bank transfer fee not included)"
+  },
+  "furimatairiku-aeontown-matsubara": {
+   "name": "Furima Tairiku: AEON TOWN Matsubara (Rooftop) Flea Market",
+   "venue": "AEON TOWN Matsubara (rooftop)",
+   "time": "10:00-15:30",
+   "access": "Kintetsu Minami-Osaka Line, Kawachi-Matsubara Station: 15 min walk / Kintetsu Bus Matsubara Line No. 46 for Satsukino-higashi, get off at Shindo-cho",
+   "admission": "Free",
+   "address": "4-1154 Shindo, Matsubara-shi, Osaka",
+   "notes": "Free parking available (AEON TOWN rooftop)",
+   "fee": "Hand-carry booth (2.5m x 2.5m) 2,600 yen; car booth (5.5m x 4m) 5,300 yen; event booth (5.5m x 4m) 5,700 yen (tax included, bank transfer fee not included; no food at the event booth)"
+  },
+  "furimatairiku-karako-kagi": {
+   "name": "Furima Tairiku: Karako-Kagi Archaeological Site Park Flea Market (Tawaramoto)",
+   "venue": "Karako-Kagi Archaeological Site Park (near the Yayoi Building Plaza)",
+   "time": "9:30-15:00",
+   "access": "Kintetsu Kashihara Line, Iwami Station: about 20 min walk (about 1.5 km)",
+   "admission": "Free",
+   "address": "50-2 Karako, Tawaramoto-cho, Shiki-gun, Nara",
+   "notes": "Free parking available. A roadside station (Michi-no-Eki) is nearby",
+   "fee": "Hand-carry booth (2.5m x 2.5m) 2,500 yen; car booth (5.5m x 4m) 5,200 yen; food/event booth (5.5m x 4m) 5,600 yen (tax included, bank transfer fee not included)"
   }
  },
  "organizers": {
@@ -1023,7 +1173,9 @@
   "タイムマシーンカンパニー": "Time Machine Company",
   "東京リサイクル運動市民の会": "Tokyo Recycle Undo Shimin-no-Kai",
   "ミルクの会": "Milk-no-Kai",
-  "エコロジーネットワーク ラズベリー": "Ecology Network Raspberry"
+  "エコロジーネットワーク ラズベリー": "Ecology Network Raspberry",
+  "商業インキュベータ協会": "Commercial Incubator Association",
+  "フリマ大陸": "Furima Tairiku"
  },
  "labels": {
   "問い合わせ先": "Contact",
@@ -1121,7 +1273,17 @@
   "四日市市": "Yokkaichi City",
   "調布市": "Chofu City",
   "福生市": "Fussa City",
-  "大阪市鶴見区": "Tsurumi Ward, Osaka City"
+  "大阪市鶴見区": "Tsurumi Ward, Osaka",
+  "大阪市港区": "Minato Ward, Osaka",
+  "松原市": "Matsubara",
+  "泉佐野市": "Izumisano City",
+  "岸和田市": "Kishiwada City",
+  "八尾市": "Yao City",
+  "神戸市東灘区": "Higashinada Ward, Kobe",
+  "神戸市西区": "Nishi Ward, Kobe",
+  "広陵町": "Koryo Town",
+  "東大阪市": "Higashiosaka",
+  "田原本町": "Tawaramoto"
  },
  "notes": {
   "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",
