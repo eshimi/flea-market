@@ -1373,5 +1373,94 @@
   "evidenceOk": {
    "sunshine-city-big-furima": true
   }
+ },
+ "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"ebc03fd681d00010e7245da7f481e0b2\"",
+  "lastModified": "Mon, 31 Aug 2026 05:39:14 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:komazawa-olympic-park": true,
+   "komazawa-park-flea-tokyo-park": true
+  }
+ },
+ "https://www.tokyo-park.or.jp/park/komazawa-olympic/index.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"1dfa2b63738ffc29b5aed5be78a83ef5\"",
+  "lastModified": "Sun, 18 Oct 2026 09:06:13 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:komazawa-olympic-park": true,
+   "komazawa-park-flea-tokyo-park": true
+  }
+ },
+ "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"24c24081fec72a72a0a99994c8272826\"",
+  "lastModified": "Thu, 24 Sep 2026 00:17:07 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:hikarigaoka-park": true,
+   "hikarigaoka-park-flea-tokyo-park": true
+  }
+ },
+ "https://www.tokyo-park.or.jp/park/yoyogi/index.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"a1744d4756b1a822635760aa073ddd58\"",
+  "lastModified": "Sun, 18 Oct 2026 09:09:10 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:yoyogi-park": true
+  }
+ },
+ "https://www.tokyo-park.or.jp/park/yoyogi/news/2026/8.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"a3dfbffea3d4cfdbf8046d6d51c155bf\"",
+  "lastModified": "Mon, 31 Aug 2026 06:01:16 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:yoyogi-park": true
+  }
+ },
+ "https://sunshinecity.jp/information/access_train.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:sunshine-city": true
+  }
+ },
+ "https://www.tokyo-park.or.jp/park/hikarigaoka/index.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"51517d6b1169f2a2caa5744baf1785df\"",
+  "lastModified": "Mon, 19 Oct 2026 00:13:36 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:hikarigaoka-park": true
+  }
+ },
+ "https://www.tokyo-park.or.jp/park/koganei/index.html": {
+  "fetchedAt": "2026-10-19",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"9a594d6535b33c9c659eb48997e33394\"",
+  "lastModified": "Sun, 18 Oct 2026 09:09:15 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:koganei-park": true
+  }
  }
 }
