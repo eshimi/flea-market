@@ -6289,7 +6289,8 @@
    "type": "dates",
    "dates": [
     "2026-11-22",
-    "2026-12-13"
+    "2026-12-13",
+    "2027-01-17"
    ],
    "text": "主催団体の開催スケジュール"
   },
@@ -6319,6 +6320,14 @@
      "開催日 : 2026-11-22",
      "受付中の他の日程2026-12-13"
     ]
+   },
+   {
+    "url": "https://www2.recycler.jp/sm/index.php",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "01/17(日)味の素スタジアム"
+    ]
    }
   ],
   "venueId": "ajinomoto-stadium"
@@ -6344,7 +6353,8 @@
    "type": "dates",
    "dates": [
     "2026-11-08",
-    "2026-12-19"
+    "2026-12-19",
+    "2027-01-10"
    ],
    "text": "主催団体の開催スケジュール"
   },
@@ -6358,27 +6368,33 @@
   },
   "exhibitor": {
    "apply": "主催団体のサイトの会場ページから申し込み（会員種別で出店料が異なる）",
-   "applyUrl": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=904"
+   "applyUrl": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=904",
+   "fee": "2026年12月の開催から改定：出店料 4,500円→5,000円、5,500円→6,000円（どの会員種別・ブースかは公式の案内文には記載なし）。駐車場（8時間まで）2,500円→3,000円"
   },
   "sources": [
    {
     "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=904",
     "type": "organizer",
-    "checkedAt": "2026-10-19",
+    "checkedAt": "2026-10-20",
     "evidence": [
      "東京都千代田区丸の内3丁目5番1号",
      "月1回程度を予定",
-     "午前10時～午後4時"
+     "午前10時～午後4時",
+     "12月開催より出店料金および駐車場料金改定のお知らせ",
+     "出店料 4,500円→5,000円",
+     "5,500円→6,000円",
+     "駐車場 2,500円→3,000円"
     ]
    },
    {
     "url": "https://www2.recycler.jp/sm/index.php",
     "type": "organizer",
-    "checkedAt": "2026-10-19",
+    "checkedAt": "2026-10-20",
     "evidence": [
      "11/08(日)東京国際フォーラム",
      "12/19(土)東京国際フォーラム",
-     "朝7時までに中止案内がでなければ開催です"
+     "朝7時までに中止案内がでなければ開催です",
+     "01/10(日)東京国際フォーラム"
     ]
    }
   ],
@@ -6405,7 +6421,8 @@
    "type": "dates",
    "dates": [
     "2026-11-15",
-    "2026-12-20"
+    "2026-12-20",
+    "2027-01-31"
    ],
    "text": "主催団体の開催スケジュール"
   },
@@ -6434,11 +6451,12 @@
    {
     "url": "https://www2.recycler.jp/sm/index.php",
     "type": "organizer",
-    "checkedAt": "2026-10-19",
+    "checkedAt": "2026-10-20",
     "evidence": [
      "11/15(日)都立木場公園",
      "12/20(日)都立木場公園",
-     "朝7時までに中止案内がでなければ開催です"
+     "朝7時までに中止案内がでなければ開催です",
+     "01/31(日)都立木場公園"
     ]
    }
   ],
@@ -6845,5 +6863,71 @@
    }
   ],
   "venueId": "hikarigaoka-park"
+ },
+ {
+  "id": "recycler-fuchu-no-mori-park-flea",
+  "name": "府中の森公園 フリーマーケット（リサイクル運動市民の会）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動市民の会",
+   "url": "https://www2.recycler.jp/sm/index.php"
+  },
+  "venue": {
+   "name": "府中の森公園（花のプロムナード）",
+   "pref": "13",
+   "city": "府中市",
+   "cityCode": "13206",
+   "address": "東京都府中市浅間町1丁目3"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2027-01-23"
+   ],
+   "text": "主催団体の開催スケジュール"
+  },
+  "time": {
+   "text": "9:00〜15:00",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "admission": "入場料無料",
+   "rain": "雨天中止の判断は事務局（朝7時までに中止案内がなければ開催）"
+  },
+  "exhibitor": {
+   "fee": "手持出店（当日払い）：お試し会員 2,000円／アマチュア会員（要年会費）1,500円",
+   "apply": "主催団体のサイトの会場ページから申し込み（会員種別で出店料が異なる）",
+   "applyUrl": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=047",
+   "notes": "一般的な家庭の不用品のみ販売が可能。新品・専門的な品揃え・手作り作品が主体では出店できない。当会では初開催の会場"
+  },
+  "sources": [
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=047",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "東京都府中市浅間町１丁目３",
+     "開催時間9:00-15:00",
+     "入場料無料",
+     "開催日 : 2027-01-23",
+     "当日払いの会場です",
+     "一般的な家庭の不用品のみ販売が可能な会場となります",
+     "お試し会員2,000円",
+     "当会では初開催となる会場です"
+    ]
+   },
+   {
+    "url": "https://www2.recycler.jp/sm/index.php",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "01/23(土)府中の森公園",
+     "朝7時までに中止案内がでなければ開催です"
+    ]
+   }
+  ]
  }
 ]

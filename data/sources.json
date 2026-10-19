@@ -1636,12 +1636,14 @@
  {
   "url": "https://www2.recycler.jp/sm/index.php",
   "series": [
-   "recycler-tokyo-international-forum-flea",
-   "recycler-kiba-park-flea",
-   "recycler-komazawa-park-flea",
+   "recycler-ajinomoto-stadium-flea",
+   "recycler-fuchu-no-mori-park-flea",
    "recycler-fussa-baseside-street",
+   "recycler-hikarigaoka-pageant-festa-flea",
+   "recycler-kiba-park-flea",
    "recycler-koganei-park-flea",
-   "recycler-hikarigaoka-pageant-festa-flea"
+   "recycler-komazawa-park-flea",
+   "recycler-tokyo-international-forum-flea"
   ],
   "terms": {
    "ok": true,
@@ -2158,6 +2160,17 @@
    "ok": true,
    "checkedAt": "2026-10-20",
    "note": "東京リサイクル（trx.jp）の公式ページ。robots.txt は許可。サイトの利用規約はなく、「出店規約」「プレミアム会員規約」は出店者向け。事実の項目（雨天の判断・マナーなど）を短く言い換えて載せ、文章・画像は転載しない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=047",
+  "series": [
+   "recycler-fuchu-no-mori-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
   }
  }
 ]

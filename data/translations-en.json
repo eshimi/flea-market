@@ -881,7 +881,8 @@
    "venue": "Tokyo International Forum",
    "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
    "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
-   "address": "3-5-1 Marunouchi, Chiyoda-ku, Tokyo"
+   "address": "3-5-1 Marunouchi, Chiyoda-ku, Tokyo",
+   "fee": "Revised from the December 2026 events: stall fee 4,500 yen → 5,000 yen and 5,500 yen → 6,000 yen (the official notice does not say which membership type or booth each applies to). Parking (up to 8 hours) 2,500 yen → 3,000 yen"
   },
   "recycler-kiba-park-flea": {
    "name": "Tokyo Metropolitan Kiba Park Flea Market (Recycle Undo Shimin-no-Kai)",
@@ -939,6 +940,16 @@
    "access": "About 8 minutes on foot from Hikarigaoka Station (Toei Oedo Line) to Keyaki Plaza",
    "rule": "Upcoming flea market dates announced by the Tokyo Metropolitan Park Association (Keyaki Plaza; 2026/10 event notice)",
    "rain": "Start and end times may vary. The schedule may change or be cancelled in rain etc. The latest information is on the park’s X (formerly Twitter) account, according to the official notice"
+  },
+  "recycler-fuchu-no-mori-park-flea": {
+   "name": "Fuchu-no-Mori Park Flea Market (Recycle Undo Shimin-no-Kai)",
+   "venue": "Fuchu-no-Mori Park (Hana no Promenade)",
+   "address": "1-3 Sengencho, Fuchu City, Tokyo",
+   "admission": "Free admission",
+   "rain": "Cancelled in rain, as decided by the secretariat (it is held unless a cancellation notice is posted by 7:00 a.m.)",
+   "fee": "Carried-in stall (paid on the day): trial member 2,000 yen / amateur member (annual fee required) 1,500 yen",
+   "apply": "Apply from the venue page on the organizer’s site (the stall fee differs by membership type)",
+   "notes": "Only ordinary household items can be sold. New goods, specialist stock or mainly handmade works cannot be sold. This is the first time the organizer holds an event at this venue"
   }
  },
  "organizers": {

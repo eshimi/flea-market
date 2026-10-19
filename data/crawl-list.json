@@ -179,5 +179,21 @@
    "note": "robots.txt は許可。「出店者規約」は出店者向け（取得を禁じる記載なし）。事実の項目だけ載せる（2026-10-18 確認）"
   },
   "addedAt": "2026-10-18"
+ },
+ {
+  "id": "recycler-jp-schedule",
+  "url": "https://www2.recycler.jp/sm/index.php",
+  "name": "リサイクル運動市民の会（開催スケジュール）",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "sm/index.php。開催日・お知らせ（料金改定など）が出る。日付が増えたら、確認待ちに入る",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は 404（制限なし）。「ご利用ガイド」はあるが取得を禁じる記載は確認できず。事実の項目だけ載せる（2026-10-18 確認）"
+  },
+  "addedAt": "2026-10-20",
+  "everyDays": 1
  }
 ]
