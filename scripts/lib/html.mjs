@@ -1,5 +1,5 @@
 // ページの共通の枠（ヘッダー・フッター・免責）と、HTML の小さな部品
-import { INDEXABLE, SITE, TOP_LINKS, ANALYTICS_ID } from './nav.mjs';
+import { INDEXABLE, SITE, HEADER_NAV, FOOTER_COLS, NAV_LABELS, ANALYTICS_ID } from './nav.mjs';
 import { KINDS } from './kinds.mjs';
 import { weekday } from './dates.mjs';
 import { cityL, nameL, noteL, timeEn, venueL } from './tr-en.mjs';
@@ -21,7 +21,13 @@ export function langSwitch(path, lang) {
 
 export function siteHeader(path, lang = 'en') {
   const t = T[lang];
-  const nav = TOP_LINKS.map((l) => `<a href="${langPath(l.href, lang)}"${path.startsWith(l.href) ? ' aria-current="page"' : ''}>${icon(l.icon, 17)}<span>${esc(t.nav[l.key])}</span></a>`).join('');
+  const L = { ...t.nav, ...NAV_LABELS[lang] };
+  const here = (href) => path === href.split('#')[0] || (href !== '/' && path.startsWith(href.split('#')[0]));
+  const nav = HEADER_NAV.map((l) => {
+    if (!l.group) return `<a href="${langPath(l.href, lang)}"${here(l.href) ? ' aria-current="page"' : ''}>${icon(l.icon, 17)}<span>${esc(L[l.key])}</span></a>`;
+    const cur = l.items.some(([h]) => here(h));
+    return `<div class="dd${cur ? ' cur' : ''}"><button type="button" class="dd-b" aria-haspopup="true"${cur ? ' aria-current="true"' : ''}>${icon(l.icon, 17)}<span>${esc(L[l.group])}</span>${icon('chevdown', 14)}</button><div class="dd-m">${l.items.map(([h, k]) => `<a href="${langPath(h, lang)}"${here(h) && !h.includes('#') ? ' aria-current="page"' : ''}>${esc(L[k])}</a>`).join('')}</div></div>`;
+  }).join('');
   return `<header class="site-head2"><div class="hd-in">
 <a class="brand" href="${langPath('/', lang)}" aria-label="Flea Market JP">${logoSvg()}<span class="brand-t"><b>FLEA MARKET JP</b><small>${esc(t.tagline)}</small></span></a>
 <input type="checkbox" id="nav-t" class="nav-t" aria-hidden="true">
@@ -33,14 +39,24 @@ ${langSwitch(path, lang)}</div>
 }
 
 // フッター（全ページ共通）。リンクは、これまでのフッターのリンクをすべて含む
+// フッターの「人気の地域」。ビルドのたびに、今後の開催が多い都道府県（コード）を渡す（未設定なら「すべての都道府県」だけ）
+let FOOT_AREAS = [];
+export const setFooterAreas = (list) => { FOOT_AREAS = list; };
+
 export function siteFooter(path, lang = 'en') {
   const f = S[lang].footer;
-  const links = f.links.map(([href, text]) => `<a href="${langPath(href, lang)}">${esc(text)}</a>`).join('<i aria-hidden="true">|</i>');
+  const L = { ...T[lang].nav, ...NAV_LABELS[lang] };
+  const col = (c) => {
+    const title = L[`col${c.key[0].toUpperCase()}${c.key.slice(1)}`];
+    const li = c.areas
+      ? [...FOOT_AREAS.map((p) => `<li><a href="${langPath(`/area/${p}/`, lang)}">${esc(prefLabel(p, lang))}</a></li>`), `<li><a href="${langPath(c.more[0], lang)}">${esc(L[c.more[1]])} →</a></li>`]
+      : c.items.map(([h, k]) => `<li><a href="${langPath(h, lang)}">${esc(L[k])}</a></li>`);
+    return `<div class="ft-col"><h2>${esc(title)}</h2><ul>${li.join('')}</ul></div>`;
+  };
   return `<footer class="site-foot2">
 <div class="ft-in">
-<a class="brand ft-brand" href="${langPath('/', lang)}" aria-label="Flea Market JP">${logoSvg()}<span class="brand-t"><b>FLEA MARKET JP</b><small>${esc(T[lang].tagline)}</small></span></a>
-<nav class="ft-nav" aria-label="${esc(f.nav)}">${links}</nav>
-${langSwitch(path, lang)}
+<div class="ft-brandcol"><a class="brand ft-brand" href="${langPath('/', lang)}" aria-label="Flea Market JP">${logoSvg()}<span class="brand-t"><b>FLEA MARKET JP</b><small>${esc(T[lang].tagline)}</small></span></a>${langSwitch(path, lang)}</div>
+<nav class="ft-cols" aria-label="${esc(f.nav)}">${FOOTER_COLS.map(col).join('')}</nav>
 </div>
 <div class="ft-note"><p>${esc(disclaimer(lang))}</p><p>© ${esc(SITE.name)}　${esc(f.copy)}</p></div>
 </footer>`;

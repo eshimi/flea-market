@@ -42,3 +42,28 @@
 .ft-note{max-width:1240px;margin:auto;padding:2px 28px 26px;font-size:12px;color:var(--cx-sub)}
 .ft-note p{margin:3px 0}
 @media (max-width:900px){.ft-in{padding:18px 16px 6px}.ft-nav{flex-basis:100%;order:3}.ft-note{padding:2px 16px 22px}}
+
+/* ヘッダーのプルダウン（ガイド・サイト）と、フッターの列 */
+.hd-nav .dd{position:relative}
+.hd-nav .dd-b{display:inline-flex;align-items:center;gap:7px;background:none;border:0;border-bottom:2px solid transparent;color:var(--cx-ink);font:inherit;font-size:13.5px;padding:8px 0;cursor:pointer;white-space:nowrap}
+.hd-nav .dd-b .ic{color:var(--cx-red)}
+.hd-nav .dd:hover .dd-b,.hd-nav .dd.cur .dd-b,.hd-nav .dd:focus-within .dd-b{border-bottom-color:var(--cx-red)}
+.hd-nav .dd-m{display:none;position:absolute;top:100%;left:-14px;min-width:230px;background:#fff;border:1px solid var(--cx-line);border-radius:12px;box-shadow:0 12px 24px rgba(20,20,30,.12);padding:8px;z-index:60}
+.hd-nav .dd:hover .dd-m,.hd-nav .dd:focus-within .dd-m{display:block}
+.hd-nav .dd-m a{display:block;padding:9px 12px;border:0;border-radius:8px;font-size:13.5px;white-space:nowrap}
+.hd-nav .dd-m a:hover,.hd-nav .dd-m a[aria-current]{background:#fbeee9;border:0}
+@media (max-width:900px){
+  .hd-nav .dd-b{width:100%;padding:13px 2px 4px;font-size:12px;color:#7a6a58;cursor:default;border:0;pointer-events:none}
+  .hd-nav .dd-b .ic:last-child{display:none}
+  .hd-nav .dd-m{display:block;position:static;border:0;box-shadow:none;padding:0 0 4px;min-width:0;background:none}
+  .hd-nav .dd-m a{padding:11px 2px 11px 14px;border-bottom:1px solid #f1e9dc;border-radius:0;font-size:15px}
+}
+.ft-in{display:grid;grid-template-columns:minmax(200px,1fr) minmax(0,3.2fr);gap:28px 40px;align-items:start;padding-top:26px;padding-bottom:10px}
+.ft-brandcol{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.ft-cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 24px}
+.ft-col h2{margin:0 0 8px;font-size:12.5px;letter-spacing:.04em;color:#7a6a58;font-weight:700}
+.ft-col ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.ft-col a{color:#34343f;text-decoration:none;padding:5px 0;display:inline-block;font-size:13px}
+.ft-col a:hover{text-decoration:underline}
+@media (max-width:900px){.ft-in{grid-template-columns:1fr;gap:18px}.ft-cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:420px){.ft-cols{grid-template-columns:1fr}}

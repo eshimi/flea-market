@@ -18,7 +18,7 @@ import { ART_CSS, docSections, faqSections, renderBlogIndex, renderDoc, renderPo
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { spotL, venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
-import { breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, statusTag } from './lib/html.mjs';
+import { setFooterAreas, breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, statusTag } from './lib/html.mjs';
 
 const LANGS_ORDER = ['en', 'ja'];
 
@@ -456,6 +456,7 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   GEO = geo;
   const ids = new Set(series.map((x) => x.id));
   const occ = buildOccurrences(series, occurrences, today, days);
+  { const n = new Map(); for (const o of occ) if (isActive(o)) n.set(o.series.venue.pref, (n.get(o.series.venue.pref) || 0) + 1); setFooterAreas([...n].sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1)).slice(0, 8).map(([p]) => p)); }
   const past = pastOccurrences(archive, series).filter((o) => o.date < today);
   const spots = buildSpots(venues, series, occ, today);
   const spotMapImg = (id) => Boolean(GEO[`spot-${id}`]) && existsSync(join(ROOT, 'static', 'img', 'maps', `spot-${id}.webp`));
