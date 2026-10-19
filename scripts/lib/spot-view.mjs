@@ -44,11 +44,6 @@ const md = (d, lang) => dlabel(d, lang).replace(/^[A-Za-z]{3}, /, '');
 
 export function spotIndex(ctx, lang) {
   const t = T[lang];
-  const weekendDays = ctx.weekend || [];
-  const wk = ctx.spots.filter((sp) => sp.active.some((o) => weekendDays.includes(o.date)));
-  const soon = ctx.spots.filter((sp) => sp.soon && !wk.includes(sp));
-  const chip = (sp) => `<a href="/spot/${sp.venue.id}/">${esc(spotL(sp.venue, 'name', lang))}</a>`;
-  const hl = (title, list) => (list.length ? `<div class="sp-hl"><b>${esc(title)}</b>${list.map(chip).join('')}</div>` : '');
   const groups = new Map();
   for (const sp of ctx.spots) {
     const key = sp.venue.area.cityCode || sp.venue.area.pref;
@@ -68,7 +63,7 @@ export function spotIndex(ctx, lang) {
     }).join('');
     return `<section class="sp-area" id="${anchor(k)}"><h2>${esc(cityOf(groups.get(k)[0].venue, lang))}</h2><div class="sp-tbl"><table><thead><tr>${t.th.map((h) => `<th>${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div></section>`;
   }).join('');
-  const body = `<div class="in page">${breadcrumb([{ label: t.crumb }], lang)}<h1>${esc(t.h1)}</h1><p class="lead">${esc(t.lead)}</p>${hl(t.weekend, wk)}${hl(t.soon, soon)}<div class="sp-chips" aria-label="${esc(t.byArea)}">${chips}</div>${tables}</div>`;
+  const body = `<div class="in page">${breadcrumb([{ label: t.crumb }], lang)}<h1>${esc(t.h1)}</h1><p class="lead">${esc(t.lead)}</p><div class="sp-chips" aria-label="${esc(t.byArea)}">${chips}</div>${tables}</div>`;
   return pg(lang, '/spot/', { title: t.h1, description: t.listDesc, body, css: ['/spot.css'] });
 }
 
