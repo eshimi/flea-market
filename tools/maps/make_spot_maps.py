@@ -9,7 +9,9 @@ UA='FleaMarketJP/1.0 (+https://streetbazaars.jp; contact via site)'
 venues=json.load(open(R+'data/venues.json')); geo=json.load(open(R+'data/geo.json'))
 def query(v):
     a=re.sub(r'（[^）]*）|\([^)]*\)','',v['address']); a=a.split('、')[0].strip()
-    if not a.startswith('東京都') and v['area']['pref']=='13': a='東京都'+a
+    b=a[3:] if a.startswith('東京都') else a
+    if not re.search(r'[区市町村]',b[:6]) and v['area'].get('city'): b=v['area']['city']+b
+    a=('東京都'+b) if v['area']['pref']=='13' else b
     return a
 def tile(z,x,y):
     f=P+'tiles/%d-%d-%d.png'%(z,x,y)

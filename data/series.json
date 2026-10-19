@@ -80,7 +80,8 @@
      "降水確率が80パーセント以上の場合、開催中止"
     ]
    }
-  ]
+  ],
+  "venueId": "tokyo-international-forum"
  },
  {
   "id": "takahata-fudoson-gozareichi",
@@ -131,7 +132,8 @@
      "東京都日野市高幡733"
     ]
    }
-  ]
+  ],
+  "venueId": "takahata-fudoson"
  },
  {
   "id": "takahata-fudoson-recycle-market",
@@ -184,7 +186,8 @@
      "東京都日野市高幡733"
     ]
    }
-  ]
+  ],
+  "venueId": "takahata-fudoson"
  },
  {
   "id": "tokyo-nominoichi-2026-autumn",
@@ -245,7 +248,8 @@
      "10月31日（土）,11月1日（日）,2日(月),3日（火祝）"
     ]
    }
-  ]
+  ],
+  "venueId": "showa-kinen-park"
  },
  {
   "id": "zoshigaya-tezukuriichi",
@@ -307,7 +311,8 @@
      "3000円/日・2名までご参加頂けます"
     ]
    }
-  ]
+  ],
+  "venueId": "zoshigaya-kishimojin"
  },
  {
   "id": "setagaya-boroichi",
@@ -430,7 +435,8 @@
      "天候等の状況による当日の開催有無等についても、各主催団体へ直接お問い合わせください"
     ]
    }
-  ]
+  ],
+  "venueId": "setagaya-park"
  },
  {
   "id": "toji-kobo-ichi",
@@ -865,7 +871,8 @@
      "雨天等により、中止になる場合があります"
     ]
    }
-  ]
+  ],
+  "venueId": "kinshi-park"
  },
  {
   "id": "sumida-yokojikkawa-kinshicho-flea",
@@ -1024,7 +1031,8 @@
      "区内外どなたでも参加できます"
     ]
    }
-  ]
+  ],
+  "venueId": "naka-ikebukuro-park"
  },
  {
   "id": "ota-tamagawa-eco-fair-2026",
@@ -1304,7 +1312,8 @@
      "花川戸公園フリーマーケット開催予定日（令和8年9月～令和9年3月）"
     ]
    }
-  ]
+  ],
+  "venueId": "hanakawado-park"
  },
  {
   "id": "arakawa-park-flea-2027-03",
@@ -1358,7 +1367,8 @@
      "会場に駐車場はありません"
     ]
    }
-  ]
+  ],
+  "venueId": "arakawa-park"
  },
  {
   "id": "setagaya-soshigaya-furusato-festival-flea-2026",
@@ -1482,7 +1492,8 @@
      "フリーマーケット"
     ]
    }
-  ]
+  ],
+  "venueId": "kibogaoka-park"
  },
  {
   "id": "setagaya-funabashi-nomi-no-ichi-2026-autumn",
@@ -1592,7 +1603,8 @@
      "予報の小雨や猛暑も中止"
     ]
    }
-  ]
+  ],
+  "venueId": "akatsuka-park"
  },
  {
   "id": "frma-komatsugawa-park-flea",
@@ -1648,7 +1660,8 @@
      "予報の小雨や猛暑も中止"
     ]
    }
-  ]
+  ],
+  "venueId": "oshima-komatsugawa-park"
  },
  {
   "id": "frma-akabane-park-flea",
@@ -1706,7 +1719,8 @@
      "中止の振替指定日は、1日です（中止後に決定）"
     ]
    }
-  ]
+  ],
+  "venueId": "akabane-park"
  },
  {
   "id": "frma-ukima-park-flea",
@@ -1761,7 +1775,8 @@
      "小雨や猛暑の中止有り"
     ]
    }
-  ]
+  ],
+  "venueId": "ukima-park"
  },
  {
   "id": "frma-koganei-park-flea",
@@ -2002,7 +2017,8 @@
      "株式会社 ヨシダ"
     ]
    }
-  ]
+  ],
+  "venueId": "nishiarai-daishi"
  },
  {
   "id": "machida-tenmangu-garakuta-kottoichi",
@@ -2057,7 +2073,8 @@
      "町田天満宮がらくた骨董市は11月2日（月）になります。"
     ]
    }
-  ]
+  ],
+  "venueId": "machida-tenmangu"
  },
  {
   "id": "musashi-itsukaichi-furumono-ichi",
@@ -2164,7 +2181,8 @@
      "＊駐車場は ありません"
     ]
    }
-  ]
+  ],
+  "venueId": "tomioka-hachimangu"
  },
  {
   "id": "nishiogi-teshigoto-ichi",
@@ -2254,7 +2272,8 @@
      "11月3日(火)中野セントラルパーク（中野区）"
     ]
    }
-  ]
+  ],
+  "venueId": "nakano-central-park"
  },
  {
   "id": "mottainai-flea-kichijoji-parco",
@@ -2292,7 +2311,8 @@
      "12月6日(日)吉祥寺パルコ屋上（武蔵野市）"
     ]
    }
-  ]
+  ],
+  "venueId": "kichijoji-parco"
  },
  {
   "id": "mottainai-flea-shinjuku-chuo-park",
@@ -2326,7 +2346,8 @@
      "11月21日(土)新宿中央公園（新宿区）"
     ]
    }
-  ]
+  ],
+  "venueId": "shinjuku-central-park"
  },
  {
   "id": "kita-fujimibashi-echo-hirobakan-flea",
@@ -2833,7 +2854,8 @@
     "type": "organizer",
     "checkedAt": "2026-10-18"
    }
-  ]
+  ],
+  "venueId": "akabane-park"
  },
  {
   "id": "ikegami-biyori-marche",
@@ -2897,7 +2919,8 @@
      "家庭の不用品販売の出店はお断りしております"
     ]
    }
-  ]
+  ],
+  "venueId": "ikegami-honmonji"
  },
  {
   "id": "nihonbashi-bettara-ichi",
@@ -3091,7 +3114,8 @@
      "区内外どなたでも参加できます"
     ]
    }
-  ]
+  ],
+  "venueId": "naka-ikebukuro-park"
  },
  {
   "id": "kita-akabane-park-flea-smile-2026-10",
@@ -3148,7 +3172,8 @@
      "販売品はご家庭で出た不用品に限ります"
     ]
    }
-  ]
+  ],
+  "venueId": "akabane-park"
  },
  {
   "id": "adachi-guruguru-kiosk-ayase-2026-10",
@@ -3802,7 +3827,8 @@
      "手持ち出店のみ"
     ]
    }
-  ]
+  ],
+  "venueId": "kinshi-park"
  },
  {
   "id": "yuyu-marche-inazawa-kinro-fukushi-kaikan",
@@ -6229,7 +6255,8 @@
      "受付中の他の日程2026-12-13"
     ]
    }
-  ]
+  ],
+  "venueId": "ajinomoto-stadium"
  },
  {
   "id": "recycler-tokyo-international-forum-flea",
@@ -6289,7 +6316,8 @@
      "朝7時までに中止案内がでなければ開催です"
     ]
    }
-  ]
+  ],
+  "venueId": "tokyo-international-forum"
  },
  {
   "id": "recycler-kiba-park-flea",
@@ -6348,7 +6376,8 @@
      "朝7時までに中止案内がでなければ開催です"
     ]
    }
-  ]
+  ],
+  "venueId": "kiba-park"
  },
  {
   "id": "recycler-komazawa-park-flea",
@@ -6469,7 +6498,8 @@
      "朝7時までに中止案内がでなければ開催です"
     ]
    }
-  ]
+  ],
+  "venueId": "fussa-baseside-street"
  },
  {
   "id": "recycler-koganei-park-flea",

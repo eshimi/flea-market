@@ -1232,6 +1232,150 @@
    "address": "3-chome Sakuracho, 1-chome and 2-chome Sekinomachi (Koganei City); 3-chome Hanakoganei-minamicho (Kodaira City); 6-chome Mukaidaicho (Nishitokyo City); 3-chome Sakuratsutsumi (Musashino City)",
    "access": "Seibu Bus from Musashi-Koganei Station (JR Chuo Line) to “Koganei Koen Nishiguchi”. CoCo Bus from Higashi-Koganei Station (JR Chuo Line) to “Koganei Koen Iriguchi”. Seibu Bus from Hanakoganei Station (Seibu Shinjuku Line) to “Koganei Koen Nishiguchi”",
    "summary": "A metropolitan park. Its location spans Koganei, Kodaira, Nishitokyo and Musashino cities."
+  },
+  "tokyo-international-forum": {
+   "name": "Tokyo International Forum",
+   "address": "3-5-1 Marunouchi, Chiyoda-ku, Tokyo",
+   "access": "In front of JR Yurakucho Station",
+   "place": "Plaza",
+   "summary": "A facility with halls and conference rooms."
+  },
+  "showa-kinen-park": {
+   "name": "Showa Kinen Park (Showa Memorial Park)",
+   "address": "3173 Midoricho, Tachikawa-shi, Tokyo",
+   "access": "Akebono Gate (Midori Culture Zone): about 10 min from the north exit of Tachikawa Station (Chuo Line) / about 8 min from the Koen exit of Tachikawa-Kita Station",
+   "summary": "A national park. The Midori Culture Zone is the free area, and the paid area has 5 gates."
+  },
+  "takahata-fudoson": {
+   "name": "Takahata-Fudoson Kongoji",
+   "address": "733 Takahata, Hino-shi, Tokyo",
+   "access": "5 min walk from Takahata-Fudo Station (Keio Line / Tama Monorail)",
+   "summary": "Takahata-Fudoson Kongoji, a temple in Takahata, Hino City."
+  },
+  "nishiarai-daishi": {
+   "name": "Nishiarai Daishi Temple",
+   "address": "1-15-1 Nishiarai, Adachi-ku, Tokyo",
+   "access": "4 min walk from Daishimae Station (Tobu Daishi Line) / about 16 min walk from Nishiarai-Daishi-Nishi Station (Nippori-Toneri Liner)",
+   "place": "grounds",
+   "summary": "A temple of the Buzan school of Shingon Buddhism in Nishiarai, Adachi City. The official site says it is about a 5 min walk from the parking lot to the main hall."
+  },
+  "tomioka-hachimangu": {
+   "name": "Tomioka Hachimangu Shrine",
+   "address": "1-20-30 Tomioka, Koto-ku, Tokyo",
+   "access": "5 min. from Monzen-Nakacho Station (Tozai Line, Toei Oedo Line) (no parking)",
+   "place": "grounds"
+  },
+  "machida-tenmangu": {
+   "name": "Machida Tenmangu Shrine",
+   "address": "1-21-5 Haramachida, Machida-shi, Tokyo",
+   "access": "8 min. on foot from Machida Station (Odakyu Line) / 5 min. from Machida Station (JR Yokohama Line)",
+   "place": "grounds"
+  },
+  "setagaya-park": {
+   "name": "Setagaya Ward Park (Setagaya Park)",
+   "address": "1-5-27 Ikejiri, Setagaya-ku, Tokyo",
+   "access": "18 min walk from Ikejiri-Ohashi Station (Tokyu Den-en-toshi Line) / 18 min walk from Sangenjaya Station (Tokyu Setagaya Line / Den-en-toshi Line)",
+   "summary": "A park presented by Setagaya City. It is the largest park in the Setagaya area, with a fountain plaza, sports facilities and a play park."
+  },
+  "kiba-park": {
+   "name": "Tokyo Metropolitan Kiba Park",
+   "address": "Kiba 4-5-chome, Hirano 4-chome, Miyoshi 4-chome and Toyo 6-chome, Koto-ku, Tokyo",
+   "access": "10 min walk from Kiba Station (T13, Tokyo Metro Tozai Line) / 15 min walk from Kiyosumi-Shirakawa Station (Z11, E14, Hanzomon Line / Oedo Line) / 15 min walk from Kikukawa Station (S12, Toei Shinjuku Line)",
+   "summary": "A park presented by the Tokyo Metropolitan Park Association. Admission is free (some facilities charge a fee)."
+  },
+  "ajinomoto-stadium": {
+   "name": "Ajinomoto Stadium",
+   "address": "376-3 Nishimachi, Chofu-shi, Tokyo",
+   "access": "5 min walk from Tobitakyu Station (Keio Line), 20 min walk from Tama Station (Seibu Tamagawa Line)",
+   "summary": "A stadium in Chofu City. The parking lot cannot be used during events such as J.League matches and large concerts."
+  },
+  "fussa-baseside-street": {
+   "name": "Fussa Baseside Street (Friendship Park)",
+   "address": "2351-11 Fussa, Fussa-shi, Tokyo",
+   "summary": "Friendship Park, a park in Fussa City. Opened on 4/1 of Heisei 8 (1996); area 1463.81 square meters."
+  },
+  "akabane-park": {
+   "name": "Akabane Park",
+   "address": "1-14-17 Akabaneminami, Kita-ku, Tokyo",
+   "place": "fountain plaza"
+  },
+  "kinshi-park": {
+   "name": "Kinshi Park",
+   "address": "4-15-1 Kinshi, Sumida-ku, Tokyo",
+   "access": "Kinshicho Station (JR Sobu Line, Tokyo Metro Hanzomon Line)",
+   "summary": "A park in Sumida City. Higashin Arena (Sumida City General Gymnasium), a baseball field and tennis courts are located in the park."
+  },
+  "naka-ikebukuro-park": {
+   "name": "Naka-Ikebukuro Park",
+   "address": "1-16-1 Higashiikebukuro, Toshima-ku, Tokyo",
+   "access": "Ikebukuro Station (JR, Tokyo Metro, Tobu Tojo Line, Seibu Ikebukuro Line)",
+   "summary": "A park in Toshima City, managed by the Hareza Ikebukuro Area Management association as the designated manager."
+  },
+  "hanakawado-park": {
+   "name": "Hanakawado Park",
+   "address": "1-14-15 Hanakawado and other lots, Taito-ku, Tokyo"
+  },
+  "arakawa-park": {
+   "name": "Arakawa Park",
+   "address": "2-2-3 Arakawa, Arakawa-ku, Tokyo",
+   "access": "4 min walk from the Arakawa 2-chome or Arakawa Kuyakusho-mae stop (Toden Arakawa Line)",
+   "summary": "A park in Arakawa City, also called the Ward Office Park, with a fountain at its center."
+  },
+  "ukima-park": {
+   "name": "Ukima Park",
+   "place": "station plaza",
+   "address": "2 Ukima, Kita-ku and 2 Funado, Itabashi-ku, Tokyo",
+   "access": "1 min walk from Ukima-Funado Station (JR Saikyo Line)",
+   "summary": "A Tokyo metropolitan park spanning Kita and Itabashi wards (per the Kita City guide)."
+  },
+  "akatsuka-park": {
+   "name": "Akatsuka Park",
+   "place": "in front of the fountain",
+   "address": "Takashimadaira 3-chome, Tokumaru 7-8-chome, Yotsuba 2-chome, Daimon, Akatsuka 4, 5 and 8-chome, Itabashi-ku, Tokyo",
+   "access": "8 min walk from Takashimadaira Station (I25, Toei Mita Line) / 1 min walk from the Akatsuka-koen bus stop (Kokusai Kogyo bus from Narimasu Station, bound for Takashimadaira Depot)",
+   "summary": "A park presented by the Tokyo Metropolitan Park Association. Admission is free (some facilities charge a fee)."
+  },
+  "oshima-komatsugawa-park": {
+   "name": "Oshima Komatsugawa Park",
+   "place": "beside the parking lot",
+   "address": "Oshima 9-chome, Koto-ku (Komatsugawa 1-chome, Edogawa-ku), Tokyo",
+   "access": "3 min walk from Higashi-Ojima Station (Toei Shinjuku Line)",
+   "summary": "A park straddling Koto and Edogawa wards across the Old Nakagawa River. It serves as a disaster-prevention base and evacuation site in emergencies."
+  },
+  "shinjuku-central-park": {
+   "name": "Shinjuku Central Park",
+   "address": "2-11 Nishi-Shinjuku, Shinjuku-ku, Tokyo",
+   "access": "about 10 min walk from Shinjuku Station (JR, Odakyu, Keio) / about 5 min walk from Nishi-Shinjuku Station (Marunouchi Line) / 0 min walk from Tochomae Station (Oedo Line)",
+   "summary": "A park in Shinjuku City, with an area of 88,363.15 square meters."
+  },
+  "nakano-central-park": {
+   "name": "Nakano Central Park"
+  },
+  "kichijoji-parco": {
+   "name": "Kichijoji Parco",
+   "place": "rooftop",
+   "address": "1-5-1 Kichijoji-honcho, Musashino-shi, Tokyo",
+   "access": "2 min walk from Kichijoji Station (JR Chuo/Sobu Line, Keio Inokashira Line)",
+   "summary": "Kichijoji PARCO, a commercial facility."
+  },
+  "zoshigaya-kishimojin": {
+   "name": "Zoshigaya Kishimojin",
+   "address": "3-15-20 Zoshigaya, Toshima-ku, Tokyo",
+   "access": "5 min walk from Exit 1 of Zoshigaya Station (Tokyo Metro Fukutoshin Line) / about 15 min from the east exit of Ikebukuro Station (JR) / about 15 min from Mejiro Station (JR)",
+   "summary": "A hall of Kishimojin, enshrined at a Nichiren-sect temple. It was designated a National Important Cultural Property in Heisei 28 (2016) (per the Toshima City guide)."
+  },
+  "ikegami-honmonji": {
+   "name": "Ikegami Honmonji Temple",
+   "address": "1-1-1 Ikegami, Ota-ku, Tokyo",
+   "place": "plaza inside the main gate",
+   "access": "10 min walk from Ikegami Station (Tokyu Ikegami Line) / 12 min walk from the south exit of Nishi-Magome Station (Toei Asakusa Line) / bus (20 min) from Omori Station (JR Keihin-Tohoku Line) bound for Ikegami Station, get off at Honmonji-mae and walk 5 min",
+   "summary": "A head temple of the Nichiren sect located in Ota City, Tokyo."
+  },
+  "kibogaoka-park": {
+   "name": "Kibogaoka Park",
+   "address": "7-9-2 Funabashi, Setagaya-ku, Tokyo",
+   "access": "20 min walk from Chitose-Funabashi Station (Odakyu Line; written \"Oda Line\" in the official text) / 20 min walk from Hachimanyama Station (Keio Line) / 4 min walk from the Funabashi Kibo Junior High School or Kibogaoka Danchi bus stop (Odakyu Bus / Keio Bus)",
+   "summary": "A park in Setagaya City. It opened in 1977 (Showa 52) and has a ball-game plaza and a wall-fountain plaza."
   }
  }
 }

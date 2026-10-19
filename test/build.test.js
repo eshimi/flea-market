@@ -572,3 +572,17 @@ test('スポットの右の列：地図・天気・アンケート。画像の�
   assert.equal(last.status, 429);
   assert.equal((await handleVotes(new Request('https://x.example/api/votes/komazawa-olympic-park'), env, 'komazawa-olympic-park')).status, 200);
 });
+
+test('スポットの写真：作者・ライセンスの表示と、本体・サムネイルのファイルがある', async () => {
+  const { existsSync } = await import('node:fs');
+  const real = loadData();
+  for (const v of real.venues.filter((x) => x.image)) {
+    for (const f of [v.image.file, v.image.file.replace(/\.webp$/, '-t.webp')]) assert.ok(existsSync(new URL(`../static/img/spots/${f}`, import.meta.url)), `${v.id}: ${f} がありません`);
+    assert.ok(['CC0', 'CC BY', 'CC BY-SA', 'Public domain', 'PD'].some((l) => v.image.license.startsWith(l)), `${v.id}: ライセンス ${v.image.license}`);
+  }
+  const { pages } = buildPages(real, '2026-10-19');
+  const withImg = real.venues.find((v) => v.image);
+  const pg_ = pages.find((p) => p.path === `/spot/${withImg.id}/`);
+  assert.ok(pg_.body.includes(withImg.image.author) && pg_.body.includes('class="sp-head has-photo"'));
+  assert.ok(pages.find((p) => p.path === '/spot/').body.includes(withImg.image.file.replace(/\.webp$/, '-t.webp')));
+});

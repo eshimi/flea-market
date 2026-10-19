@@ -247,5 +247,1195 @@
    "altEn": "A lawn and pine trees in Koganei Park.",
    "note": "元画像 6000x4000 から中央を3:2に切り出し、1200x800 の webp に変換"
   }
+ },
+ {
+  "id": "tokyo-international-forum",
+  "name": "東京国際フォーラム",
+  "kind": "plaza",
+  "area": {
+   "pref": "13",
+   "city": "千代田区",
+   "cityCode": "13101"
+  },
+  "place": "地上広場",
+  "address": "東京都千代田区丸の内3丁目5番1号",
+  "access": "JR有楽町駅前",
+  "sources": [
+   {
+    "url": "https://www.antique-market.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "10月31日(土)",
+     "11月7日(土)・23日(月曜祝日)",
+     "12月12日(土)・20日(日)",
+     "1月9日(土)・17日(日)",
+     "2月7日(日)・21日(日)",
+     "3月21日(日)・28日(日)",
+     "入場無料。雨天中止。開催時間9:00～16:00",
+     "東京都千代田区丸の内3-5-1"
+    ]
+   },
+   {
+    "url": "https://www.antique-market.jp/%E5%87%BA%E5%BA%97%E3%81%8A%E7%94%B3%E8%BE%BC%E3%81%BF/%E5%87%BA%E5%BA%97%E8%A6%8F%E7%B4%84/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "¥ 12,000",
+     "¥ 14,000",
+     "¥ 17,000"
+    ]
+   },
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=904",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都千代田区丸の内3丁目5番1号",
+     "月1回程度を予定",
+     "午前10時～午後4時"
+    ]
+   },
+   {
+    "url": "https://www2.recycler.jp/sm/index.php",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "11/08(日)東京国際フォーラム",
+     "12/19(土)東京国際フォーラム"
+    ]
+   },
+   {
+    "url": "https://www.t-i-forum.co.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都千代田区丸の内3丁目5番1号",
+     "ホール・会議室"
+    ]
+   }
+  ],
+  "image": {
+   "file": "tokyo-international-forum.webp",
+   "title": "Tokyo-International-Forum Glass-Building Outside.jpg",
+   "author": "MaedaAkihiko",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo-International-Forum_Glass-Building_Outside.jpg",
+   "altJa": "東京国際フォーラム ガラス棟の外観。",
+   "altEn": "Exterior of the Glass Building at Tokyo International Forum.",
+   "note": "中央を3:2に切り出し、800×533に縮小"
+  },
+  "officialUrl": "https://www.t-i-forum.co.jp/",
+  "summary": "ホール・会議室を備える施設。"
+ },
+ {
+  "id": "showa-kinen-park",
+  "name": "国営昭和記念公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "city": "立川市",
+   "cityCode": "13202"
+  },
+  "address": "東京都立川市緑町3173",
+  "access": "あけぼの口（みどりの文化ゾーン）：中央線・立川駅 北口より約10分／立川北駅 公園口より約8分",
+  "sources": [
+   {
+    "url": "https://tokyonominoichi.com/2026_autumn/outline/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "2026年10月31日（土）、11月1日（日）、2日（月）、3日（火）"
+    ]
+   },
+   {
+    "url": "https://tokyonominoichi.com/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都立川市緑町3173"
+    ]
+   },
+   {
+    "url": "https://www.showakinen-koen.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "立川市緑町",
+     "3173"
+    ]
+   },
+   {
+    "url": "https://www.showakinen-koen.jp/access/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "あけぼの口",
+     "中央線・立川駅 北口より約10分",
+     "立川北駅 公園口より約8分",
+     "公園の有料区には5つのゲート",
+     "みどりの文化ゾーン（無料区）"
+    ]
+   }
+  ],
+  "image": {
+   "file": "showa-kinen-park.webp",
+   "title": "Showa Commemorative National Government Park 1.JPG",
+   "author": "Kakidai",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Showa_Commemorative_National_Government_Park_1.JPG",
+   "altJa": "国営昭和記念公園の広い芝生の広場。",
+   "altEn": "A wide lawn field in Showa Kinen Park.",
+   "note": "中央を3:2に切り出し、800×533に縮小"
+  },
+  "officialUrl": "https://www.showakinen-koen.jp/",
+  "summary": "国営公園。みどりの文化ゾーンは無料区で、有料区には5つのゲートがある。"
+ },
+ {
+  "id": "takahata-fudoson",
+  "name": "高幡不動尊金剛寺",
+  "kind": "shrine",
+  "area": {
+   "pref": "13",
+   "city": "日野市",
+   "cityCode": "13212"
+  },
+  "address": "東京都日野市高幡733",
+  "access": "京王線・多摩都市モノレール高幡不動駅下車 徒歩5分",
+  "sources": [
+   {
+    "url": "https://www.takahatafudoson.or.jp/?page_id=9",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "第3日曜日"
+    ]
+   },
+   {
+    "url": "https://www.takahatafudoson.or.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "京王線・多摩都市モノレール高幡不動駅下車 徒歩5分",
+     "東京都日野市高幡733",
+     "高幡不動尊金剛寺"
+    ]
+   }
+  ],
+  "image": {
+   "file": "takahata-fudoson.webp",
+   "title": "Takahata Fudo Dainichi-do 02.jpg",
+   "author": "Tak1701d",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Takahata_Fudo_Dainichi-do_02.jpg",
+   "altJa": "高幡不動尊金剛寺の大日堂の正面。",
+   "altEn": "The front of Dainichi-do hall at Takahata Fudoson Kongoji temple.",
+   "note": "中央を3:2に切り出し、800×533に縮小"
+  },
+  "officialUrl": "https://www.takahatafudoson.or.jp/",
+  "summary": "日野市高幡にある寺院、高幡不動尊金剛寺。"
+ },
+ {
+  "id": "nishiarai-daishi",
+  "name": "西新井大師",
+  "kind": "shrine",
+  "area": {
+   "pref": "13",
+   "city": "足立区",
+   "cityCode": "13121"
+  },
+  "place": "境内",
+  "address": "東京都足立区西新井1丁目15-1",
+  "access": "東武大師線「大師前駅」下車 徒歩4分／日暮里舎人ライナー「西新井大師西駅」下車 徒歩約16分",
+  "sources": [
+   {
+    "url": "https://7fukuadachi.com/%E9%AA%A8%E8%91%A3%E5%B8%82/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "毎月21日 縁日フリマ開催",
+     "開催時間：9時～15時30分",
+     "出店場所：西新井大師境内"
+    ]
+   },
+   {
+    "url": "https://7fukuadachi.com/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "〒123-0841 東京都足立区西新井１丁目１５−１"
+    ]
+   },
+   {
+    "url": "https://7fukuadachi.com/%e4%b8%bb%e5%82%ac%e8%80%85%e6%83%85%e5%a0%b1/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "主催者情報"
+    ]
+   },
+   {
+    "url": "https://www.nishiaraidaishi.or.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都足立区西新井1丁目15-1",
+     "真言宗豊山派の寺院"
+    ]
+   },
+   {
+    "url": "https://www.nishiaraidaishi.or.jp/access/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東武大師線「大師前駅」下車 徒歩4分",
+     "日暮里舎人ライナー 「西新井大師西駅」下車 徒歩約16分",
+     "駐車場から本堂まで徒歩約5分です"
+    ]
+   }
+  ],
+  "image": {
+   "file": "nishiarai-daishi.webp",
+   "title": "Sōji-ji (Nishiarai Daishi) 02.jpg",
+   "author": "Higa4",
+   "license": "CC0",
+   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sōji-ji_(Nishiarai_Daishi)_02.jpg",
+   "altJa": "西新井大師（總持寺）境内の延命水洗地蔵尊と池。",
+   "altEn": "The Enmei Mizuarai Jizo statue and pond in the grounds of Nishiarai Daishi (Soji-ji).",
+   "note": "中央を3:2に切り出し、800×533に縮小"
+  },
+  "officialUrl": "https://www.nishiaraidaishi.or.jp/",
+  "summary": "足立区西新井にある寺院（真言宗豊山派）。駐車場から本堂まで徒歩約5分と公式に案内されている。"
+ },
+ {
+  "id": "tomioka-hachimangu",
+  "name": "富岡八幡宮",
+  "kind": "shrine",
+  "area": {
+   "pref": "13",
+   "city": "江東区",
+   "cityCode": "13108"
+  },
+  "place": "境内",
+  "address": "東京都江東区富岡1-20-30",
+  "access": "東西線・都営大江戸線 門前仲町駅下車 5分（駐車場なし）",
+  "sources": [
+   {
+    "url": "https://kottou-rakuichi.com/about.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "開催予定日10月25日 11月休み 12月6日.13日 1月24日.31日",
+     "開催時間 朝 7時から14時まで",
+     "東京都江東区富岡1-20-30 富岡八幡宮境内",
+     "毎月第１（1月は除く）第２.第４.第５日曜日に開催しています。",
+     "＊15日28日に当たる場合は、休会"
+    ]
+   }
+  ],
+  "image": {
+   "file": "tomioka-hachimangu.webp",
+   "title": "Tomioka Hachiman-gu 2008 August.jpg",
+   "author": "Morio",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomioka_Hachiman-gu_2008_August.jpg",
+   "altJa": "富岡八幡宮の本殿。",
+   "altEn": "The main hall of Tomioka Hachimangu shrine.",
+   "note": "中央を3:2に切り出し、800×533に縮小"
+  }
+ },
+ {
+  "id": "machida-tenmangu",
+  "name": "町田天満宮",
+  "kind": "shrine",
+  "area": {
+   "pref": "13",
+   "city": "町田市",
+   "cityCode": "13209"
+  },
+  "place": "境内",
+  "address": "町田市原町田1-21-5",
+  "access": "小田急線町田駅下車 徒歩8分／JR横浜線町田駅下車 徒歩5分",
+  "sources": [
+   {
+    "url": "https://kanagawa-antique-market.crayonsite.net/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "●開催日：毎月1日",
+     "（1月と11月は、会場の都合により開催日が変更になります。ご確認ください。）",
+     "●会場：町田天満宮境内（町田市原町田1-21-5）",
+     "●交通：小田急線町田駅下車 徒歩8分 / JR横浜線町田駅下車 徒歩5分",
+     "●時間：7時〜15時",
+     "町田天満宮がらくた骨董市は11月2日（月）になります。"
+    ]
+   }
+  ],
+  "image": {
+   "file": "machida-tenmangu.webp",
+   "title": "Machida-Tenmangu Shrine in Machida city.jpg",
+   "author": "ブルーノ・プラス",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Machida-Tenmangu_Shrine_in_Machida_city.jpg",
+   "altJa": "町田天満宮の拝殿。",
+   "altEn": "The main hall of Machida Tenmangu Shrine.",
+   "note": "4:3を上下から3:2に切り出し"
+  }
+ },
+ {
+  "id": "setagaya-park",
+  "name": "区立世田谷公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "city": "世田谷区",
+   "cityCode": "13112"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.setagaya.lg.jp/02241/375.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "7月～8月は、区立世田谷公園でのフリーマーケットの開催はありません"
+    ]
+   },
+   {
+    "url": "https://www.city.setagaya.lg.jp/02075/9095.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都世田谷区池尻1-5-27",
+     "東急田園都市線 池尻大橋駅徒歩18分",
+     "東急世田谷線・東急田園都市線 三軒茶屋駅徒歩18分",
+     "世田谷地域で一番広い公園",
+     "噴水広場、スポーツ施設、プレーパークなどがあり"
+    ]
+   }
+  ],
+  "image": {
+   "file": "setagaya-park.webp",
+   "title": "Setagaya park Ikejiri Setagaya city Tokyo Japan 20211209 125516.jpg",
+   "author": "LERK",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Setagaya_park_Ikejiri_Setagaya_city_Tokyo_Japan_20211209_125516.jpg",
+   "altJa": "世田谷公園の噴水広場と園内の木立。",
+   "altEn": "The fountain plaza and trees in Setagaya Park.",
+   "note": "16:9のパノラマ写真を、左側を除き3:2に切り出し"
+  },
+  "officialUrl": "https://www.city.setagaya.lg.jp/02075/9095.html",
+  "address": "東京都世田谷区池尻1-5-27",
+  "access": "東急田園都市線 池尻大橋駅徒歩18分／東急世田谷線・東急田園都市線 三軒茶屋駅徒歩18分",
+  "summary": "世田谷区が案内する公園。区内の世田谷地域で一番広く、噴水広場やスポーツ施設、プレーパークなどがある。"
+ },
+ {
+  "id": "kiba-park",
+  "name": "都立木場公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "city": "江東区",
+   "cityCode": "13108"
+  },
+  "address": "江東区木場四・五丁目・平野四丁目・三好四丁目・東陽六丁目",
+  "sources": [
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=045",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "9:00-15:00"
+    ]
+   },
+   {
+    "url": "https://www2.recycler.jp/sm/index.php",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "11/15(日)都立木場公園",
+     "12/20(日)都立木場公園"
+    ]
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/park/kiba/index.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "江東区木場四・五丁目・平野四丁目・三好四丁目・東陽六丁目",
+     "東京メトロ東西線 「木場駅」（T13）下車 徒歩10分",
+     "「清澄白河駅」（Z11、E14）下車 徒歩15分",
+     "都営新宿線 「菊川駅」（S12）下車 徒歩15分",
+     "無料（一部有料施設あり）"
+    ]
+   }
+  ],
+  "image": {
+   "file": "kiba-park.webp",
+   "title": "Fountain - Kiba Park - Koto, Tokyo, Japan - DSC05250.jpg",
+   "author": "Daderot",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fountain_-_Kiba_Park_-_Koto,_Tokyo,_Japan_-_DSC05250.jpg",
+   "altJa": "都立木場公園の噴水広場。",
+   "altEn": "The fountain plaza in Kiba Park.",
+   "note": "800×533に縮小"
+  },
+  "officialUrl": "https://www.tokyo-park.or.jp/park/kiba/index.html",
+  "access": "東京メトロ東西線 「木場駅」（T13）下車 徒歩10分／東京メトロ半蔵門線、都営大江戸線 「清澄白河駅」（Z11、E14）下車 徒歩15分／都営新宿線 「菊川駅」（S12）下車 徒歩15分",
+  "summary": "東京都公園協会が案内する公園。入園は無料（一部有料施設あり）。"
+ },
+ {
+  "id": "ajinomoto-stadium",
+  "name": "味の素スタジアム",
+  "kind": "other",
+  "area": {
+   "pref": "13",
+   "city": "調布市",
+   "cityCode": "13208"
+  },
+  "address": "東京都調布市西町376番地3",
+  "sources": [
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=004",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "住所 東京都調布市西町376-3",
+     "入場料 お一人様300円 小学生以下無料",
+     "受付中の他の日程2026-12-13"
+    ]
+   },
+   {
+    "url": "https://www.ajinomotostadium.com/corp/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都調布市西町376番地3"
+    ]
+   },
+   {
+    "url": "https://www.ajinomotostadium.com/access/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "京王線飛田給駅より徒歩5分、西武多摩川線多磨駅より徒歩20分",
+     "Jリーグや大型コンサートなどのイベント開催時には駐車場がご利用いただけません"
+    ]
+   }
+  ],
+  "officialUrl": "https://www.ajinomotostadium.com/",
+  "access": "京王線飛田給駅より徒歩5分、西武多摩川線多磨駅より徒歩20分",
+  "summary": "調布市にあるスタジアム。Jリーグや大型コンサートなどのイベント開催時は駐車場が利用できない。"
+ },
+ {
+  "id": "fussa-baseside-street",
+  "name": "福生ベースサイドストリート",
+  "kind": "plaza",
+  "area": {
+   "pref": "13",
+   "city": "福生市",
+   "cityCode": "13218"
+  },
+  "address": "福生市福生2351-11",
+  "sources": [
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=042",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "福生市福生2351-11 フレンドシップパーク"
+    ]
+   },
+   {
+    "url": "https://www2.recycler.jp/sm/index.php",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "11/08(日)福生ベースサイドストリート",
+     "12/13(日)福生ベースサイドストリート"
+    ]
+   },
+   {
+    "url": "https://www.city.fussa.tokyo.jp/map/kouen/1001768.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "福生市福生2351-11",
+     "平成8年4月1日",
+     "1463.81平方メートル",
+     "フレンドシップパーク"
+    ]
+   }
+  ],
+  "officialUrl": "https://www.city.fussa.tokyo.jp/map/kouen/1001768.html",
+  "summary": "福生市の公園（フレンドシップパーク）。平成8年4月1日に開設、面積は1463.81平方メートル。"
+ },
+ {
+  "id": "akabane-park",
+  "name": "赤羽公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "city": "北区",
+   "cityCode": "13117"
+  },
+  "place": "噴水広場",
+  "address": "北区赤羽南1-14-17",
+  "sources": [
+   {
+    "url": "http://www.frma.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "11/15(日)北区赤羽公園",
+     "振替日は､11/21(土)"
+    ]
+   },
+   {
+    "url": "http://www.frma.jp/kita_akabane.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "開催10時～15時",
+     "中止の振替指定日は、1日です（中止後に決定）"
+    ]
+   },
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-18",
+    "evidence": []
+   },
+   {
+    "url": "https://www.city.kita.lg.jp/living/bins/1002093/1026571.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "2026年10月18日（日曜日）",
+     "雨天の場合は10月25日（日曜日）に延期",
+     "赤羽公園（赤羽南1-14-17）"
+    ]
+   },
+   {
+    "url": "https://www.city.kita.lg.jp/city-information/facilities/1015990/1016001.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "北区赤羽南1-14-17"
+    ]
+   }
+  ],
+  "officialUrl": "https://www.city.kita.lg.jp/city-information/facilities/1015990/1016001.html"
+ },
+ {
+  "id": "kinshi-park",
+  "name": "錦糸公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "city": "墨田区",
+   "cityCode": "13107"
+  },
+  "address": "墨田区錦糸四丁目15番1号",
+  "sources": [
+   {
+    "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "令和8年9月27日（日曜日）令和8年10月25日（日曜日）令和8年11月22日（日曜日）令和8年12月20日（日曜日）令和9年1月24日（日曜日）令和9年2月28日（日曜日）令和9年3月14日（日曜日）開催時間午前10時から午後3時まで会場住所墨田区錦糸四丁目15番主催団体リサイクル運動市民の会"
+    ]
+   },
+   {
+    "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=040",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都墨田区錦糸4"
+    ]
+   },
+   {
+    "url": "https://www.city.sumida.lg.jp/sisetu_info/kouen/kunai_park_annai/sumida_park/park14.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "〒130-0013 錦糸四丁目15番1号",
+     "JR総武線、東京メトロ半蔵門線「錦糸町駅」",
+     "ひがしんアリーナ（墨田区総合体育館）、錦糸公園野球場、錦糸公園テニスコート"
+    ]
+   }
+  ],
+  "officialUrl": "https://www.city.sumida.lg.jp/sisetu_info/kouen/kunai_park_annai/sumida_park/park14.html",
+  "access": "JR総武線、東京メトロ半蔵門線「錦糸町駅」",
+  "summary": "墨田区の公園。ひがしんアリーナ（墨田区総合体育館）、野球場、テニスコートが併設されている。"
+ },
+ {
+  "id": "naka-ikebukuro-park",
+  "name": "中池袋公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "city": "豊島区",
+   "cityCode": "13116"
+  },
+  "address": "豊島区東池袋1-16-1",
+  "sources": [
+   {
+    "url": "https://www.city.toshima.lg.jp/150/2607271704.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "令和8年12月20日",
+     "午前10時から午後6時",
+     "中池袋公園（豊島区東池袋1-16-1）"
+    ]
+   },
+   {
+    "url": "https://www.city.toshima.lg.jp/150/2607271700.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "令和8年11月12日",
+     "午前10時から午後6時",
+     "中池袋公園（豊島区東池袋1-16-1）"
+    ]
+   },
+   {
+    "url": "https://www.city.toshima.lg.jp/340/shisetsu/koen/020.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東池袋1-16-1",
+     "JR、東京メトロ、東武東上線、西武池袋線池袋駅",
+     "管理運営（指定管理者）：一般社団法人Hareza池袋エリアマネジメント"
+    ]
+   }
+  ],
+  "officialUrl": "https://www.city.toshima.lg.jp/340/shisetsu/koen/020.html",
+  "access": "JR、東京メトロ、東武東上線、西武池袋線池袋駅",
+  "summary": "豊島区の公園。一般社団法人Hareza池袋エリアマネジメントが指定管理者として管理運営している。"
+ },
+ {
+  "id": "hanakawado-park",
+  "name": "花川戸公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "city": "台東区",
+   "cityCode": "13106"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "花川戸公園フリーマーケット開催予定日（令和8年9月～令和9年3月）"
+    ]
+   },
+   {
+    "url": "https://www.city.taito.lg.jp/kenchiku/hanamidori/koen/riyo.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "花川戸公園（花川戸1丁目14番15号他）"
+    ]
+   }
+  ],
+  "officialUrl": "https://www.city.taito.lg.jp/kenchiku/hanamidori/koen/riyo.html",
+  "address": "台東区花川戸1丁目14番15号他"
+ },
+ {
+  "id": "arakawa-park",
+  "name": "荒川公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "city": "荒川区",
+   "cityCode": "13118"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/shigen/fleamarket.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-18",
+    "evidence": [
+     "第2回3月7日(日曜)午前10時～午後2時荒川公園3月21日(日曜)"
+    ]
+   },
+   {
+    "url": "https://www.city.arakawa.tokyo.jp/a043/shisetsuannai/koukyoushisetsu/kouenyuuen016.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "荒川区荒川二丁目2番3号",
+     "都電荒川線「荒川二丁目」「荒川区役所前」下車 徒歩4分",
+     "区役所公園とも呼ばれます",
+     "中央に位置する噴水"
+    ]
+   }
+  ],
+  "officialUrl": "https://www.city.arakawa.tokyo.jp/a043/shisetsuannai/koukyoushisetsu/kouenyuuen016.html",
+  "address": "荒川区荒川二丁目2番3号",
+  "access": "都電荒川線「荒川二丁目」「荒川区役所前」下車 徒歩4分",
+  "summary": "荒川区の公園。区役所公園とも呼ばれ、中央に噴水がある。"
+ },
+ {
+  "id": "ukima-park",
+  "name": "浮間公園",
+  "kind": "park",
+  "area": {
+   "pref": "13"
+  },
+  "place": "駅前広場",
+  "sources": [
+   {
+    "url": "http://www.frma.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "11/22(日)浮間公園駅前広場"
+    ]
+   },
+   {
+    "url": "http://www.frma.jp/ukima.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "開催10時～15時"
+    ]
+   },
+   {
+    "url": "https://www.city.kita.lg.jp/culture-tourism-sports/tourism/1010756/1010759/1010765.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "都立浮間公園の紹介",
+     "北区浮間2、板橋区舟渡2",
+     "JR埼京線浮間舟渡駅徒歩1分"
+    ]
+   }
+  ],
+  "image": {
+   "file": "ukima-park.webp",
+   "title": "Ukima park pond and windmill.jpg",
+   "author": "Syced",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ukima_park_pond_and_windmill.jpg",
+   "altJa": "浮間公園の池と風車を見渡した景色。",
+   "altEn": "Pond and windmill in Ukima Park.",
+   "note": "中央を3:2に切り出し、800×533に縮小"
+  },
+  "address": "北区浮間2、板橋区舟渡2",
+  "access": "JR埼京線浮間舟渡駅徒歩1分",
+  "summary": "都立公園。北区と板橋区にまたがる（北区の案内）。"
+ },
+ {
+  "id": "akatsuka-park",
+  "name": "赤塚公園",
+  "kind": "park",
+  "area": {
+   "pref": "13"
+  },
+  "place": "噴水前",
+  "sources": [
+   {
+    "url": "http://www.frma.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "11/3(火・祝)高島平赤塚公園(お祭り同時開催)"
+    ]
+   },
+   {
+    "url": "http://www.frma.jp/akatuka.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "開催10時～15時"
+    ]
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/park/akatsuka/index.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "板橋区高島平三丁目、徳丸七・八丁目、四葉二丁目、大門、赤塚四・五・八丁目",
+     "地下鉄三田線「高島平」(I25)下車 徒歩8分",
+     "「成増駅」から国際興業バス（高島平操車場行き）「赤塚公園」下車 徒歩1分",
+     "無料（一部有料施設あり）"
+    ]
+   }
+  ],
+  "image": {
+   "file": "akatsuka-park.webp",
+   "title": "Akatsuka park entrance itabashi.JPG",
+   "author": "Kamemaru2000",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akatsuka_park_entrance_itabashi.JPG",
+   "altJa": "都立赤塚公園の入口付近の広場とイチョウ並木。",
+   "altEn": "Plaza and ginkgo trees near the entrance of Akatsuka Park.",
+   "note": "中央を3:2に切り出し、800×533に縮小"
+  },
+  "officialUrl": "https://www.tokyo-park.or.jp/park/akatsuka/index.html",
+  "address": "板橋区高島平三丁目、徳丸七・八丁目、四葉二丁目、大門、赤塚四・五・八丁目",
+  "access": "地下鉄三田線「高島平」(I25)下車 徒歩8分／東武東上線「成増駅」から国際興業バス（高島平操車場行き）「赤塚公園」下車 徒歩1分",
+  "summary": "東京都公園協会が案内する公園。入園は無料（一部有料施設あり）。"
+ },
+ {
+  "id": "oshima-komatsugawa-park",
+  "name": "大島小松川公園",
+  "kind": "park",
+  "area": {
+   "pref": "13"
+  },
+  "place": "駐車場脇",
+  "sources": [
+   {
+    "url": "http://www.frma.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "11/7(土)大島小松川公園駐車場脇"
+    ]
+   },
+   {
+    "url": "http://www.frma.jp/komatu.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "開催9時～15時"
+    ]
+   },
+   {
+    "url": "https://tokyo-eastpark.com/parksearch/ohjima",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "江東区大島九丁目(江戸川区小松川一丁目）",
+     "都営新宿線 東大島駅 徒歩3分",
+     "旧中川を挟んで江東区と江戸川区にまたがり",
+     "災害時には２０万人の 避難場所となる防災拠点の公園です"
+    ]
+   }
+  ],
+  "image": {
+   "file": "oshima-komatsugawa-park.webp",
+   "title": "Ojima komatsugawa park 2009.JPG",
+   "author": "User:Kentin",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ojima_komatsugawa_park_2009.JPG",
+   "altJa": "大島小松川公園の芝生広場と遊具を高所から望む景色。",
+   "altEn": "View over the lawn and play equipment of Ojima Komatsugawa Park.",
+   "note": "中央を3:2に切り出し、800×533に縮小"
+  },
+  "officialUrl": "https://tokyo-eastpark.com/parksearch/ohjima",
+  "address": "江東区大島九丁目(江戸川区小松川一丁目）",
+  "access": "都営新宿線 東大島駅 徒歩3分",
+  "summary": "旧中川を挟んで江東区と江戸川区にまたがる公園。災害時には避難場所となる防災拠点。"
+ },
+ {
+  "id": "shinjuku-central-park",
+  "name": "新宿中央公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "city": "新宿区",
+   "cityCode": "13104"
+  },
+  "sources": [
+   {
+    "url": "https://www.mottainai.info/jp/event/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "11月21日(土)新宿中央公園（新宿区）"
+    ]
+   },
+   {
+    "url": "https://www.city.shinjuku.lg.jp/seikatsu/file15_02_00001.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都新宿区西新宿二丁目11番",
+     "新宿駅から徒歩約10分",
+     "西新宿駅から徒歩約5分",
+     "都庁前駅から徒歩0分",
+     "88,363.15m"
+    ]
+   }
+  ],
+  "image": {
+   "file": "shinjuku-central-park.webp",
+   "title": "Shinjuku Central Park.jpg",
+   "author": "Christophe95",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku_Central_Park.jpg",
+   "altJa": "東京都庁の高層階から見下ろした新宿中央公園。",
+   "altEn": "Shinjuku Central Park seen from above, from the Tokyo Metropolitan Government Building.",
+   "note": "4:3を3:2に切り出し"
+  },
+  "officialUrl": "https://www.city.shinjuku.lg.jp/seikatsu/file15_02_00001.html",
+  "address": "東京都新宿区西新宿二丁目11番",
+  "access": "JR・小田急線・京王線 新宿駅から徒歩約10分／東京メトロ丸の内線 西新宿駅から徒歩約5分／都営大江戸線 都庁前駅から徒歩0分",
+  "summary": "新宿区の公園。面積は88,363.15平方メートル。"
+ },
+ {
+  "id": "nakano-central-park",
+  "name": "中野セントラルパーク",
+  "kind": "plaza",
+  "area": {
+   "pref": "13",
+   "city": "中野区",
+   "cityCode": "13114"
+  },
+  "sources": [
+   {
+    "url": "https://www.mottainai.info/jp/event/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "10月24日(土)中野セントラルパーク（中野区）",
+     "10月25日(日)中野セントラルパーク（中野区）",
+     "11月3日(火)中野セントラルパーク（中野区）"
+    ]
+   }
+  ],
+  "image": {
+   "file": "nakano-central-park.webp",
+   "title": "Nakano Central Park East.jpg",
+   "author": "掬茶",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakano_Central_Park_East.jpg",
+   "altJa": "中野セントラルパークのイースト棟と、前に広がる芝生と歩道。",
+   "altEn": "The East Building of Nakano Central Park with its lawn and walkway.",
+   "note": "4:3を3:2に切り出し。遠景に車いすの2人が小さく写る（識別できない）"
+  }
+ },
+ {
+  "id": "kichijoji-parco",
+  "name": "吉祥寺パルコ",
+  "kind": "commercial",
+  "area": {
+   "pref": "13",
+   "city": "武蔵野市",
+   "cityCode": "13203"
+  },
+  "place": "屋上",
+  "sources": [
+   {
+    "url": "https://www.mottainai.info/jp/event/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "11月1日(日)吉祥寺パルコ屋上（武蔵野市）",
+     "11月14日(土)吉祥寺パルコ屋上（武蔵野市）",
+     "12月6日(日)吉祥寺パルコ屋上（武蔵野市）"
+    ]
+   },
+   {
+    "url": "https://kichijoji.parco.jp/info/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都武蔵野市吉祥寺本町1-5-1",
+     "JR中央線・総武線 吉祥寺駅／京王井の頭線 吉祥寺駅より徒歩2分",
+     "吉祥寺PARCO"
+    ]
+   }
+  ],
+  "officialUrl": "https://kichijoji.parco.jp/",
+  "address": "東京都武蔵野市吉祥寺本町1-5-1",
+  "access": "JR中央線・総武線 吉祥寺駅／京王井の頭線 吉祥寺駅より徒歩2分",
+  "summary": "商業施設の吉祥寺PARCO。"
+ },
+ {
+  "id": "zoshigaya-kishimojin",
+  "name": "雑司ヶ谷 鬼子母神",
+  "kind": "shrine",
+  "area": {
+   "pref": "13",
+   "city": "豊島区",
+   "cityCode": "13116"
+  },
+  "address": "豊島区雑司が谷3-15-20",
+  "access": "東京メトロ 副都心線「雑司が谷」下車 1番出口より徒歩5分／JR池袋駅東口より約15分／JR目白駅より約15分",
+  "sources": [
+   {
+    "url": "https://tezukuriichi.com/home.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "11月15日(日)"
+    ]
+   },
+   {
+    "url": "https://tezukuriichi.com/entry.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "3000円/日・2名までご参加頂けます"
+    ]
+   },
+   {
+    "url": "https://www.city.toshima.lg.jp/132/miryoku/shiru/jinja/kishimojin.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "豊島区雑司が谷3-15-20",
+     "東京メトロ 副都心線「雑司が谷」下車 1番出口より徒歩5分",
+     "明治通りを新宿方向へ歩き、「南池袋3丁目」歩道橋を左折、約15分",
+     "JR目白駅より、目白通りを東へ歩いて約15分",
+     "平成28年（2016）7月25日、国の重要文化財"
+    ]
+   }
+  ],
+  "image": {
+   "file": "zoshigaya-kishimojin.webp",
+   "title": "Homyoji Temple - Kishimojindo - Ikebukuro - 2023 Jan 13 various 02 48 09 603000.jpeg",
+   "author": "Nesnad",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Homyoji_Temple_-_Kishimojindo_-_Ikebukuro_-_2023_Jan_13_various_02_48_09_603000.jpeg",
+   "altJa": "雑司ヶ谷 鬼子母神堂の拝殿。",
+   "altEn": "The worship hall of Zoshigaya Kishimojin.",
+   "note": "中央を3:2に切り出し、800×533に縮小"
+  },
+  "officialUrl": "https://www.city.toshima.lg.jp/132/miryoku/shiru/jinja/kishimojin.html",
+  "summary": "日蓮宗寺院で祀られる鬼子母神の堂。平成28年（2016）に国の重要文化財に指定された（豊島区の案内）。"
+ },
+ {
+  "id": "ikegami-honmonji",
+  "name": "池上本門寺",
+  "kind": "shrine",
+  "area": {
+   "pref": "13",
+   "city": "大田区",
+   "cityCode": "13111"
+  },
+  "place": "総門内広場",
+  "address": "東京都大田区池上1-1-1",
+  "sources": [
+   {
+    "url": "https://ikeshoren.jp/ikegamibiyori/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "3、6、9、12月の第三日曜日",
+     "10：00〜15：00",
+     "池上本門寺 総門内広場（屋外）",
+     "東京都大田区 池上1-1 -1"
+    ]
+   },
+   {
+    "url": "https://ikeshoren.jp/8193/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "2026年12月20日（日）開催「第14回池上日和」"
+    ]
+   },
+   {
+    "url": "https://honmonji.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都大田区池上１-１-１",
+     "池上本門寺は、東京都大田区にある日蓮宗の大本山です"
+    ]
+   },
+   {
+    "url": "https://honmonji.jp/outline/access.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東急池上線「池上駅」下車徒歩10分",
+     "都営浅草線「西馬込駅」南口下車徒歩12分",
+     "「本門寺前」下車徒歩5分"
+    ]
+   }
+  ],
+  "image": {
+   "file": "ikegami-honmonji.webp",
+   "title": "Ikegami Honmonji 2022-11-24.jpg",
+   "author": "Asanagi",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ikegami_Honmonji_2022-11-24.jpg",
+   "altJa": "池上本門寺の五重塔と境内の木々。",
+   "altEn": "The five-story pagoda and trees of Ikegami Honmonji.",
+   "note": "中央を3:2に切り出し、800×533に縮小"
+  },
+  "officialUrl": "https://honmonji.jp/",
+  "access": "東急池上線「池上駅」下車徒歩10分／都営浅草線「西馬込駅」南口下車徒歩12分／JR京浜東北線「大森駅」より池上駅行きバス（20分）「本門寺前」下車徒歩5分",
+  "summary": "東京都大田区にある日蓮宗の大本山。"
+ },
+ {
+  "id": "kibogaoka-park",
+  "name": "希望丘公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "city": "世田谷区",
+   "cityCode": "13112"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.setagaya.lg.jp/01028/36021.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "会場 希望丘公園"
+    ]
+   },
+   {
+    "url": "https://www.city.setagaya.lg.jp/01028/19856.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "希望丘公園（メイン）"
+    ]
+   },
+   {
+    "url": "https://www.city.setagaya.lg.jp/02075/9160.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都世田谷区船橋7-9-2",
+     "千歳船橋駅下車徒歩20分",
+     "八幡山駅下車徒歩20分",
+     "船橋希望中学校前、希望ヶ丘団地下車徒歩4分",
+     "昭和52年に開園した",
+     "球戯広場、壁泉広場"
+    ]
+   }
+  ],
+  "image": {
+   "file": "kibogaoka-park.webp",
+   "title": "希望丘公園.jpg",
+   "author": "多摩に暇人",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:希望丘公園.jpg",
+   "altJa": "希望丘公園の、レンガの壁と像のある広場。",
+   "altEn": "The brick wall with statues and the open plaza in Kibogaoka Park.",
+   "note": "3:2のためそのまま縮小。Commons のカテゴリは Parks in Setagaya, Tokyo"
+  },
+  "officialUrl": "https://www.city.setagaya.lg.jp/02075/9160.html",
+  "address": "東京都世田谷区船橋7-9-2",
+  "access": "小田線 千歳船橋駅下車徒歩20分／京王線 八幡山駅下車徒歩20分／小田急バス・京王バス 船橋希望中学校前、希望ヶ丘団地下車徒歩4分",
+  "summary": "世田谷区の公園。昭和52年に開園。球戯広場、壁泉広場などがある。"
  }
 ]

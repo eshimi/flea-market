@@ -8,7 +8,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ（フッターは概要・プライバシーポリシー・サイトマップ）"
-  }
+  },
+  "venues": [
+   "tokyo-international-forum"
+  ]
  },
  {
   "url": "https://www.antique-market.jp/%E5%87%BA%E5%BA%97%E3%81%8A%E7%94%B3%E8%BE%BC%E3%81%BF/%E5%87%BA%E5%BA%97%E8%A6%8F%E7%B4%84/",
@@ -19,7 +22,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
-  }
+  },
+  "venues": [
+   "tokyo-international-forum"
+  ]
  },
  {
   "url": "https://www.takahatafudoson.or.jp/?page_id=9",
@@ -31,7 +37,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ（フッターは個人情報保護方針のみ）"
-  }
+  },
+  "venues": [
+   "takahata-fudoson"
+  ]
  },
  {
   "url": "https://www.takahatafudoson.or.jp/",
@@ -43,7 +52,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
-  }
+  },
+  "venues": [
+   "takahata-fudoson"
+  ]
  },
  {
   "url": "https://tokyonominoichi.com/2026_autumn/outline/",
@@ -54,7 +66,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
-  }
+  },
+  "venues": [
+   "showa-kinen-park"
+  ]
  },
  {
   "url": "https://tezukuriichi.com/home.html",
@@ -65,7 +80,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ（「All contents copyright」の表示のみ）"
-  }
+  },
+  "venues": [
+   "zoshigaya-kishimojin"
+  ]
  },
  {
   "url": "https://tezukuriichi.com/entry.html",
@@ -76,7 +94,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
-  }
+  },
+  "venues": [
+   "zoshigaya-kishimojin"
+  ]
  },
  {
   "url": "https://tokyonominoichi.com/",
@@ -87,7 +108,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
-  }
+  },
+  "venues": [
+   "showa-kinen-park"
+  ]
  },
  {
   "url": "https://www.city.setagaya.lg.jp/02072/10108.html",
@@ -109,7 +133,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "世田谷区の「著作権・リンク・免責事項」（オープンデータ以外の無断転載・二次利用を禁じる）の方針により、日付・場所・主催団体名の事実だけを掲載。区の一覧にある主催団体の住所・電話番号・メールは掲載しない。robots.txt はなし（404）"
-  }
+  },
+  "venues": [
+   "setagaya-park"
+  ]
  },
  {
   "url": "https://toji.or.jp/mieku/",
@@ -231,7 +258,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体・問い合わせ先の電話番号は載せない"
-  }
+  },
+  "venues": [
+   "kinshi-park"
+  ]
  },
  {
   "url": "https://www.city.bunkyo.lg.jp/b038/p007538.html",
@@ -253,7 +283,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体・問い合わせ先の電話番号は載せない"
-  }
+  },
+  "venues": [
+   "naka-ikebukuro-park"
+  ]
  },
  {
   "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/event/tamakoufea.html",
@@ -308,7 +341,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体の電話番号・メールは載せない"
-  }
+  },
+  "venues": [
+   "hanakawado-park"
+  ]
  },
  {
   "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/shigen/fleamarket.html",
@@ -319,7 +355,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体の電話番号・メールは載せない"
-  }
+  },
+  "venues": [
+   "arakawa-park"
+  ]
  },
  {
   "url": "https://www.city.setagaya.lg.jp/01026/25051.html",
@@ -341,7 +380,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない（世田谷区の「著作権・リンク・免責事項」に基づく）。robots.txt はなし（404）。主催団体・問い合わせ先の電話番号は載せない"
-  }
+  },
+  "venues": [
+   "kibogaoka-park"
+  ]
  },
  {
   "url": "https://www.city.setagaya.lg.jp/01028/19856.html",
@@ -352,7 +394,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない（世田谷区の「著作権・リンク・免責事項」に基づく）。robots.txt はなし（404）。主催団体・問い合わせ先の電話番号は載せない"
-  }
+  },
+  "venues": [
+   "kibogaoka-park"
+  ]
  },
  {
   "url": "https://www.city.setagaya.lg.jp/01028/19126.html",
@@ -380,7 +425,13 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
-  }
+  },
+  "venues": [
+   "akabane-park",
+   "akatsuka-park",
+   "oshima-komatsugawa-park",
+   "ukima-park"
+  ]
  },
  {
   "url": "http://www.frma.jp/akatuka.html",
@@ -391,7 +442,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
-  }
+  },
+  "venues": [
+   "akatsuka-park"
+  ]
  },
  {
   "url": "http://www.frma.jp/komatu.html",
@@ -402,7 +456,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
-  }
+  },
+  "venues": [
+   "oshima-komatsugawa-park"
+  ]
  },
  {
   "url": "http://www.frma.jp/kita_akabane.html",
@@ -413,7 +470,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
-  }
+  },
+  "venues": [
+   "akabane-park"
+  ]
  },
  {
   "url": "http://www.frma.jp/ukima.html",
@@ -424,7 +484,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
-  }
+  },
+  "venues": [
+   "ukima-park"
+  ]
  },
  {
   "url": "http://www.frma.jp/koganei.html",
@@ -468,7 +531,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし。robots.txt は /wp-admin/ のみ禁止（2026-10-18）。掲載は事実の項目だけ"
-  }
+  },
+  "venues": [
+   "nishiarai-daishi"
+  ]
  },
  {
   "url": "https://7fukuadachi.com/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/",
@@ -479,7 +545,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "同上（7fukuadachi.com）"
-  }
+  },
+  "venues": [
+   "nishiarai-daishi"
+  ]
  },
  {
   "url": "https://7fukuadachi.com/%e4%b8%bb%e5%82%ac%e8%80%85%e6%83%85%e5%a0%b1/",
@@ -490,7 +559,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "同上（7fukuadachi.com）"
-  }
+  },
+  "venues": [
+   "nishiarai-daishi"
+  ]
  },
  {
   "url": "https://kanagawa-antique-market.crayonsite.net/",
@@ -502,7 +574,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし（robots.txt は 404＝制限なし）。「当サイトの記事・写真の無断転載を禁じます」とあるため、事実の項目（日時・場所・出店数など）だけを掲載し、文章・写真は転載しない（2026-10-18 のユーザー決定の方針）"
-  }
+  },
+  "venues": [
+   "machida-tenmangu"
+  ]
  },
  {
   "url": "https://kottou-rakuichi.com/about.html",
@@ -513,7 +588,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし。robots.txt で全体を許可（2026-10-18）。主催者の電話番号は載せない"
-  }
+  },
+  "venues": [
+   "tomioka-hachimangu"
+  ]
  },
  {
   "url": "https://www.teshigoro.com/",
@@ -537,7 +615,12 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "「サイトのご利用について」（/terms/）で、事前の許可なく情報を使用（複製・改変・配布等）することを禁止。事実の項目（開催日・会場）だけを掲載し、文章は転載しない（ユーザー決定の方針）。robots.txt は /wp/wp-admin/ のみ禁止（2026-10-18）"
-  }
+  },
+  "venues": [
+   "kichijoji-parco",
+   "nakano-central-park",
+   "shinjuku-central-park"
+  ]
  },
  {
   "url": "https://www.eko-hirobakan.jp/fujimibashi/",
@@ -593,7 +676,10 @@
    "ok": null,
    "checkedAt": "2026-10-18",
    "note": "フリーマーケット推進ネットワークの公開ページを、ユーザーが読んで日付と会場を伝えた（2026-10-18）。この環境から自動取得はできない（403。回避しない）ため、取得・本文の突き合わせはしない。利用規約は要確認。掲載は事実の項目（日付・会場）だけ。最終確認日が14日を超えると「要確認」の表示になるので、再確認が要る"
-  }
+  },
+  "venues": [
+   "akabane-park"
+  ]
  },
  {
   "url": "https://ikeshoren.jp/ikegamibiyori/",
@@ -604,7 +690,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "池上地区商店会連合会の公式サイト。利用規約のページはなく、robots.txt は許可。事実の項目（日時・場所・出店料・申込み方法）だけ掲載し、文章・画像は転載しない。2026-10-18 確認"
-  }
+  },
+  "venues": [
+   "ikegami-honmonji"
+  ]
  },
  {
   "url": "https://ikeshoren.jp/8193/",
@@ -615,7 +704,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "同上（池上地区商店会連合会の公式サイト）。2026-10-18 確認"
-  }
+  },
+  "venues": [
+   "ikegami-honmonji"
+  ]
  },
  {
   "url": "https://www.chuo-kanko.or.jp/blogs/event/202609141846",
@@ -659,7 +751,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "豊島区公式サイトの「このサイトについて」に、文書や画像等は私的使用・引用などを除き無断で複製・転用できないとの記載。robots.txt は 404（制限なし）。事実の項目（日時・場所・料金・申込み方法）だけ掲載し、文章・画像は転載しない。主催団体の電話番号は載せない。2026-10-18 確認"
-  }
+  },
+  "venues": [
+   "naka-ikebukuro-park"
+  ]
  },
  {
   "url": "https://www.city.kita.lg.jp/living/bins/1002093/1026571.html",
@@ -670,7 +765,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "北区公式サイトの「著作権・免責」に、私的使用・引用などを除き無断で転載・複製・改変等はできないとの記載。robots.txt は取得許可。事実の項目だけ掲載し、文章・画像は転載しない。主催団体の住所・電話は載せない。2026-10-18 確認"
-  }
+  },
+  "venues": [
+   "akabane-park"
+  ]
  },
  {
   "url": "https://www.city.adachi.tokyo.jp/kyoso/ku/kuse/guruguru-kiosk080424.html",
@@ -798,7 +896,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "robots.txt は 404（制限なし）。「ご利用ガイド」はあるが取得を禁じる記載は確認できず。事実の項目だけ載せ、文章・電話番号・メールは載せない（2026-10-18 確認）"
-  }
+  },
+  "venues": [
+   "kinshi-park"
+  ]
  },
  {
   "url": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/",
@@ -1513,7 +1614,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
-  }
+  },
+  "venues": [
+   "ajinomoto-stadium"
+  ]
  },
  {
   "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=904",
@@ -1524,7 +1628,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
-  }
+  },
+  "venues": [
+   "tokyo-international-forum"
+  ]
  },
  {
   "url": "https://www2.recycler.jp/sm/index.php",
@@ -1540,7 +1647,12 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
-  }
+  },
+  "venues": [
+   "fussa-baseside-street",
+   "kiba-park",
+   "tokyo-international-forum"
+  ]
  },
  {
   "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=045",
@@ -1551,7 +1663,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
-  }
+  },
+  "venues": [
+   "kiba-park"
+  ]
  },
  {
   "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=044",
@@ -1573,7 +1688,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
-  }
+  },
+  "venues": [
+   "fussa-baseside-street"
+  ]
  },
  {
   "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=053",
@@ -1722,6 +1840,294 @@
    "ok": true,
    "checkedAt": "2026-10-19",
    "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  }
+ },
+ {
+  "url": "https://www.t-i-forum.co.jp/",
+  "series": [],
+  "venues": [
+   "tokyo-international-forum"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。利用規約のページは見当たらない。事実の項目だけ掲載。アクセスのページ（/access/）は 403 のため取得せず（駅からの案内は要確認）"
+  }
+ },
+ {
+  "url": "https://www.showakinen-koen.jp/",
+  "series": [],
+  "venues": [
+   "showa-kinen-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。/about/ に「記事・写真の無断転載を禁じます」とあるため、事実の項目だけ掲載（文章・写真は転載しない）"
+  }
+ },
+ {
+  "url": "https://www.showakinen-koen.jp/access/",
+  "series": [],
+  "venues": [
+   "showa-kinen-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。/about/ に「記事・写真の無断転載を禁じます」とあるため、事実の項目だけ掲載（文章・写真は転載しない）"
+  }
+ },
+ {
+  "url": "https://www.nishiaraidaishi.or.jp/",
+  "series": [],
+  "venues": [
+   "nishiarai-daishi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。プライバシーポリシーのみで利用規約のページは見当たらない。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.nishiaraidaishi.or.jp/access/",
+  "series": [],
+  "venues": [
+   "nishiarai-daishi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。プライバシーポリシーのみで利用規約のページは見当たらない。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.city.setagaya.lg.jp/02075/9095.html",
+  "series": [],
+  "venues": [
+   "setagaya-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。既に台帳にある世田谷区サイトと同じ扱い。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.tokyo-park.or.jp/park/kiba/index.html",
+  "series": [],
+  "venues": [
+   "kiba-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "既存の台帳（tokyo-park.or.jp）と同じ扱い。robots.txt は 404（制限なし）。サイトポリシーで二次利用禁止のため事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.ajinomotostadium.com/corp/",
+  "series": [],
+  "venues": [
+   "ajinomoto-stadium"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。利用規約のページは見当たらない。事実の項目だけ掲載。住所は運営会社の概要ページの所在地"
+  }
+ },
+ {
+  "url": "https://www.ajinomotostadium.com/access/",
+  "series": [],
+  "venues": [
+   "ajinomoto-stadium"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。利用規約のページは見当たらない。事実の項目だけ掲載。住所は運営会社の概要ページの所在地"
+  }
+ },
+ {
+  "url": "https://www.city.fussa.tokyo.jp/map/kouen/1001768.html",
+  "series": [],
+  "venues": [
+   "fussa-baseside-street"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。利用規約は未確認のため事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.city.kita.lg.jp/city-information/facilities/1015990/1016001.html",
+  "series": [],
+  "venues": [
+   "akabane-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。利用規約は未確認のため事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.city.sumida.lg.jp/sisetu_info/kouen/kunai_park_annai/sumida_park/park14.html",
+  "series": [],
+  "venues": [
+   "kinshi-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。既に台帳にある墨田区サイトと同じ扱い。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.city.toshima.lg.jp/340/shisetsu/koen/020.html",
+  "series": [],
+  "venues": [
+   "naka-ikebukuro-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。既に台帳にある豊島区サイトと同じ扱い。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.city.taito.lg.jp/kenchiku/hanamidori/koen/riyo.html",
+  "series": [],
+  "venues": [
+   "hanakawado-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt の確認結果は peek.mjs で許可。利用規約は未確認のため事実の項目だけ掲載。区の別ページに「花川戸2丁目5番6号」との表記もあり（要確認）"
+  }
+ },
+ {
+  "url": "https://www.city.arakawa.tokyo.jp/a043/shisetsuannai/koukyoushisetsu/kouenyuuen016.html",
+  "series": [],
+  "venues": [
+   "arakawa-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。既に台帳にある荒川区サイトと同じ扱い。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.city.kita.lg.jp/culture-tourism-sports/tourism/1010756/1010759/1010765.html",
+  "series": [],
+  "venues": [
+   "ukima-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。利用規約は未確認のため事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.tokyo-park.or.jp/park/akatsuka/index.html",
+  "series": [],
+  "venues": [
+   "akatsuka-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "既存の台帳（tokyo-park.or.jp）と同じ扱い。robots.txt は 404（制限なし）。サイトポリシーで二次利用禁止のため事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://tokyo-eastpark.com/parksearch/ohjima",
+  "series": [],
+  "venues": [
+   "oshima-komatsugawa-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。利用規約のページは見当たらない（プライバシーポリシーのみ）。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.city.shinjuku.lg.jp/seikatsu/file15_02_00001.html",
+  "series": [],
+  "venues": [
+   "shinjuku-central-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。利用規約は未確認のため事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://kichijoji.parco.jp/info/",
+  "series": [],
+  "venues": [
+   "kichijoji-parco"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。https://www.parco.co.jp/terms/ に、承諾なく複製・送信・頒布等をしてはならない旨があるため、事実の項目だけ掲載（文章・画像は転載しない）。自動取得を禁じる記載は確認できず"
+  }
+ },
+ {
+  "url": "https://www.city.toshima.lg.jp/132/miryoku/shiru/jinja/kishimojin.html",
+  "series": [],
+  "venues": [
+   "zoshigaya-kishimojin"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。既に台帳にある豊島区サイトと同じ扱い。事実の項目だけ掲載。なお、神社・寺側の公式サイトは見つけられず、豊島区の案内ページを出典にした"
+  }
+ },
+ {
+  "url": "https://honmonji.jp/",
+  "series": [],
+  "venues": [
+   "ikegami-honmonji"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。プライバシーポリシーのみで利用規約のページは見当たらない。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://honmonji.jp/outline/access.html",
+  "series": [],
+  "venues": [
+   "ikegami-honmonji"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。プライバシーポリシーのみで利用規約のページは見当たらない。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.city.setagaya.lg.jp/02075/9160.html",
+  "series": [],
+  "venues": [
+   "kibogaoka-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。既に台帳にある世田谷区サイトと同じ扱い。事実の項目だけ掲載。公式の表記は「小田線」（小田急線の誤記とみられる。原文のまま）"
   }
  }
 ]

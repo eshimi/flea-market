@@ -304,5 +304,212 @@
   "matched": "東京都小金井市桜町三丁目",
   "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
   "checkedAt": "2026-10-19"
+ },
+ "spot-tokyo-international-forum": {
+  "lat": 35.676849,
+  "lon": 139.76387,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都千代田区丸の内三丁目５番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-showa-kinen-park": {
+  "lat": 35.707981,
+  "lon": 139.397079,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都立川市緑町３１７３番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-takahata-fudoson": {
+  "lat": 35.66016,
+  "lon": 139.409576,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都日野市高幡７３３番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-nishiarai-daishi": {
+  "lat": 35.779728,
+  "lon": 139.780182,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都足立区西新井一丁目１５番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-tomioka-hachimangu": {
+  "lat": 35.671825,
+  "lon": 139.799881,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都江東区富岡一丁目２０番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-machida-tenmangu": {
+  "lat": 35.538681,
+  "lon": 139.451355,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都町田市原町田一丁目２１番５号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-setagaya-park": {
+  "lat": 35.643364,
+  "lon": 139.680664,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都世田谷区池尻一丁目５番２７号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-kiba-park": {
+  "lat": 35.674271,
+  "lon": 139.808487,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "東京都江東区木場四丁目",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-ajinomoto-stadium": {
+  "lat": 35.66367,
+  "lon": 139.5289,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都調布市西町３７６番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-fussa-baseside-street": {
+  "lat": 35.738964,
+  "lon": 139.337601,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都福生市福生２３５１番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-akabane-park": {
+  "lat": 35.778004,
+  "lon": 139.724136,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都北区赤羽南一丁目１４番１７号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-kinshi-park": {
+  "lat": 35.698021,
+  "lon": 139.815079,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都墨田区錦糸四丁目１５番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-naka-ikebukuro-park": {
+  "lat": 35.731369,
+  "lon": 139.715149,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都豊島区東池袋一丁目１６番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-hanakawado-park": {
+  "lat": 35.713947,
+  "lon": 139.799438,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都台東区花川戸一丁目１４番１５号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-arakawa-park": {
+  "lat": 35.73513,
+  "lon": 139.783615,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都荒川区荒川二丁目２番３号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-ukima-park": {
+  "lat": 35.794502,
+  "lon": 139.698013,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "東京都北区浮間二丁目",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-akatsuka-park": {
+  "lat": 35.78661,
+  "lon": 139.655609,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "東京都板橋区高島平三丁目",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-oshima-komatsugawa-park": {
+  "lat": 35.690636,
+  "lon": 139.846069,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "東京都江東区大島九丁目",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-shinjuku-central-park": {
+  "lat": 35.691105,
+  "lon": 139.687698,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都新宿区西新宿二丁目１１番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-kichijoji-parco": {
+  "lat": 35.70348,
+  "lon": 139.578171,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都武蔵野市吉祥寺本町一丁目５番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-zoshigaya-kishimojin": {
+  "lat": 35.722012,
+  "lon": 139.71405,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都豊島区雑司が谷三丁目１５番２０号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-ikegami-honmonji": {
+  "lat": 35.578838,
+  "lon": 139.705231,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都大田区池上一丁目１番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-kibogaoka-park": {
+  "lat": 35.658066,
+  "lon": 139.61824,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都世田谷区船橋七丁目９番２号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
  }
 }

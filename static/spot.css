@@ -12,10 +12,24 @@
 .sp-tbl td a{font-weight:700}
 .sp-tbl small{color:#7a6a58}
 .sp-series{padding-left:1.2em;margin:8px 0}
-.sp-photo{margin:14px 0 6px}
-.sp-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:14px;background:#efe6d6}
-.sp-photo figcaption{font-size:.78rem;color:#7a6a58;margin-top:6px}
+.sp-head{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin:4px 0 8px}
+.sp-head.has-photo{grid-template-columns:380px minmax(0,1fr);align-items:start}
+.sp-photo{margin:0}
+.sp-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px;background:#efe6d6}
+.sp-photo figcaption{font-size:.7rem;line-height:1.4;color:#7a6a58;margin-top:5px}
 .sp-photo figcaption a{color:inherit}
+.sp-head-body h1{margin:0 0 4px}
+.sp-quick{margin:10px 0;display:grid;gap:6px}
+.sp-quick div{display:grid;grid-template-columns:5.5em minmax(0,1fr);gap:10px;font-size:.92rem}
+.sp-quick dt{color:#7a6a58;font-size:.82rem}
+.sp-quick dd{margin:0;overflow-wrap:anywhere}
+.sp-quick dd .tbd{color:#8a7a68}
+.sp-cta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+.sp-cta .map-btn{width:auto;padding:7px 14px;font-size:.88rem}
+@media (max-width:640px){.sp-head.has-photo{grid-template-columns:minmax(0,1fr)}.sp-photo img{max-height:200px}}
+.sp-name{display:flex;gap:12px;align-items:center}
+.sp-th{flex:0 0 64px;width:64px;height:43px;object-fit:cover;border-radius:6px;background:#efe6d6}
+.sp-th.ph{display:block}
 .poll-btns{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
 .poll-btns button{display:inline-flex;align-items:center;gap:6px;border:1px solid #d9ccb6;background:#fff;color:inherit;border-radius:99px;padding:7px 14px;font:inherit;font-size:.9rem;cursor:pointer}
 .poll-btns button:hover{border-color:#c8553d}
@@ -25,3 +39,4 @@
 .poll-btns .n:empty{display:none}
 .poll-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 .poll-st{margin:6px 0;font-size:.85rem;color:#7a6a58}
+.sp-quick dd{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
