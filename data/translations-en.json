@@ -539,24 +539,29 @@
    "rain": "Held rain or shine"
   },
   "trx-oi-keibajo-tokyo-city-flea": {
-   "name": "Oi Racecourse Tokyo City Flea Market (Tokyo Recycle)",
-   "venue": "Oi Racecourse Tokyo City Flea Market"
+   "name": "Ohi Racecourse Tokyo City Flea Market (Tokyo Recycle)",
+   "venue": "Ohi Racecourse Tokyo City Flea Market",
+   "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)"
   },
   "trx-ike-sunpark-flea": {
    "name": "Ike Sunpark Flea Market (Tokyo Recycle)",
-   "venue": "Ike Sunpark"
+   "venue": "Ike Sunpark",
+   "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)"
   },
   "trx-funabashi-keibajo-flea": {
    "name": "Funabashi Racecourse Flea Market (Tokyo Recycle)",
-   "venue": "Funabashi Racecourse Flea Market"
+   "venue": "Funabashi Racecourse Flea Market",
+   "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)"
   },
   "trx-kitaku-minsho-matsuri-flea": {
-   "name": "Kita Ward Merchants' Festival (listed in the Tokyo Recycle event schedule)",
-   "venue": "Kita Ward Merchants' Festival"
+   "name": "Kita Ward Commerce Festival (listed in the Tokyo Recycle event schedule)",
+   "venue": "Kita Ward Commerce Festival",
+   "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)"
   },
   "trx-musamura-flea": {
    "name": "Musamura Flea Market (Tokyo Recycle)",
-   "venue": "Musamura Flea Market"
+   "venue": "Musamura Flea Market",
+   "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)"
   },
   "recycler-sumida-live-fes-2026-winter-flea": {
    "name": "Sumida Live Fes 2026 Winter Flea Market (Kinshi Park, Recycle Movement Citizens' Association)",
@@ -1225,7 +1230,8 @@
   },
   "oi-racecourse": {
    "name": "Oi Racecourse",
-   "summary": "The venue of the “Tokyo City Flea Market” run by Tokyo Recycle. Its schedule page lists 21 days from 10/24 to 12/27 in 2026."
+   "summary": "The venue of the “Tokyo City Flea Market” run by Tokyo Recycle. Its schedule page lists 21 days from 10/24 to 12/27 in 2026.",
+   "rules": "From the organizer, Tokyo Recycle (applies to its events in general): do not push price negotiation too far. Pickpocketing and bag theft are reported as frequent at the venue, so keep valuables safe. Buying counterfeit brand goods is a crime. Except for personal commemorative photos, photography needs the organizer’s prior permission. Smoking is allowed only in designated smoking areas."
   },
   "koganei-park": {
    "name": "Koganei Park",

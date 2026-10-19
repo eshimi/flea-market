@@ -3629,9 +3629,22 @@
      "12/26（土）品川区大井競馬場TokyoCityFleaMarket",
      "12/27（日）品川区大井競馬場TokyoCityFleaMarket"
     ]
+   },
+   {
+    "url": "https://trx.jp/faq",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "原則当日の判断となります",
+     "朝7時30分までに決定致します",
+     "TOPページ上部に告知をいたします"
+    ]
    }
   ],
-  "venueId": "oi-racecourse"
+  "venueId": "oi-racecourse",
+  "visitor": {
+   "rain": "開催の有無は原則当日の判断（当日朝7時30分までに決定し、公式サイトのトップページで告知）"
+  }
  },
  {
   "id": "trx-ike-sunpark-flea",
@@ -3668,8 +3681,21 @@
      "11/15（日）豊島区イケ・サンパーク",
      "12/13（日）豊島区イケ・サンパーク"
     ]
+   },
+   {
+    "url": "https://trx.jp/faq",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "原則当日の判断となります",
+     "朝7時30分までに決定致します",
+     "TOPページ上部に告知をいたします"
+    ]
    }
-  ]
+  ],
+  "visitor": {
+   "rain": "開催の有無は原則当日の判断（当日朝7時30分までに決定し、公式サイトのトップページで告知）"
+  }
  },
  {
   "id": "trx-funabashi-keibajo-flea",
@@ -3702,8 +3728,21 @@
     "evidence": [
      "10/31（土）船橋市船橋競馬場フリーマーケット"
     ]
+   },
+   {
+    "url": "https://trx.jp/faq",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "原則当日の判断となります",
+     "朝7時30分までに決定致します",
+     "TOPページ上部に告知をいたします"
+    ]
    }
-  ]
+  ],
+  "visitor": {
+   "rain": "開催の有無は原則当日の判断（当日朝7時30分までに決定し、公式サイトのトップページで告知）"
+  }
  },
  {
   "id": "trx-kitaku-minsho-matsuri-flea",
@@ -3736,8 +3775,21 @@
     "evidence": [
      "11/01（日）北区北区民商まつり"
     ]
+   },
+   {
+    "url": "https://trx.jp/faq",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "原則当日の判断となります",
+     "朝7時30分までに決定致します",
+     "TOPページ上部に告知をいたします"
+    ]
    }
-  ]
+  ],
+  "visitor": {
+   "rain": "開催の有無は原則当日の判断（当日朝7時30分までに決定し、公式サイトのトップページで告知）"
+  }
  },
  {
   "id": "trx-musamura-flea",
@@ -3770,8 +3822,21 @@
     "evidence": [
      "11/21（土）武蔵村山市むさ村フリーマーケット"
     ]
+   },
+   {
+    "url": "https://trx.jp/faq",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "原則当日の判断となります",
+     "朝7時30分までに決定致します",
+     "TOPページ上部に告知をいたします"
+    ]
    }
-  ]
+  ],
+  "visitor": {
+   "rain": "開催の有無は原則当日の判断（当日朝7時30分までに決定し、公式サイトのトップページで告知）"
+  }
  },
  {
   "id": "recycler-sumida-live-fes-2026-winter-flea",

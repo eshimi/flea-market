@@ -2129,5 +2129,35 @@
    "checkedAt": "2026-10-19",
    "note": "robots.txt は 404（制限なし）。既に台帳にある世田谷区サイトと同じ扱い。事実の項目だけ掲載。公式の表記は「小田線」（小田急線の誤記とみられる。原文のまま）"
   }
+ },
+ {
+  "url": "https://trx.jp/faq",
+  "series": [
+   "trx-oi-keibajo-tokyo-city-flea",
+   "trx-ike-sunpark-flea",
+   "trx-funabashi-keibajo-flea",
+   "trx-kitaku-minsho-matsuri-flea",
+   "trx-musamura-flea"
+  ],
+  "venues": [
+   "oi-racecourse"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "東京リサイクル（trx.jp）の公式ページ。robots.txt は許可。サイトの利用規約はなく、「出店規約」「プレミアム会員規約」は出店者向け。事実の項目（雨天の判断・マナーなど）を短く言い換えて載せ、文章・画像は転載しない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://trx.jp/shopping",
+  "series": [],
+  "venues": [
+   "oi-racecourse"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "東京リサイクル（trx.jp）の公式ページ。robots.txt は許可。サイトの利用規約はなく、「出店規約」「プレミアム会員規約」は出店者向け。事実の項目（雨天の判断・マナーなど）を短く言い換えて載せ、文章・画像は転載しない（2026-10-20 確認）"
+  }
  }
 ]
