@@ -89,18 +89,21 @@
   }
  },
  "https://www.city.setagaya.lg.jp/02241/375.html": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "W/\"6552-65da5f72b6b42\"",
   "lastModified": "Mon, 12 Oct 2026 15:00:58 GMT",
-  "mismatch": {},
+  "mismatch": {
+   "venue:setagaya-park": []
+  },
   "evidenceOk": {
-   "setagaya-park-flea": true
+   "setagaya-park-flea": true,
+   "venue:setagaya-park": false
   }
  },
  "https://toji.or.jp/mieku/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -109,7 +112,7 @@
   }
  },
  "https://toji.or.jp/access/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -118,7 +121,7 @@
   }
  },
  "https://kitanotenmangu.or.jp/event/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -127,7 +130,7 @@
   }
  },
  "https://www.shitennoji.or.jp/event/index.html": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -202,14 +205,17 @@
   }
  },
  "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html": {
-  "fetchedAt": "2026-10-19",
-  "httpStatus": 200,
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Sun, 18 Oct 2026 15:01:58 GMT",
-  "mismatch": {},
+  "mismatch": {
+   "venue:kinshi-park": []
+  },
   "evidenceOk": {
    "sumida-kinshi-park-flea": true,
-   "sumida-yokojikkawa-kinshicho-flea": true
+   "sumida-yokojikkawa-kinshicho-flea": true,
+   "venue:kinshi-park": false
   }
  },
  "https://www.city.bunkyo.lg.jp/b038/p007538.html": {
@@ -256,7 +262,7 @@
   }
  },
  "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -292,11 +298,11 @@
   "failCount": 1
  },
  "https://www.city.setagaya.lg.jp/01026/25051.html": {
-  "fetchedAt": "2026-10-19",
-  "httpStatus": 304,
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
   "failCount": 0,
-  "etag": "W/\"65c2-65dce35ed9da6\"",
-  "lastModified": "Wed, 14 Oct 2026 15:01:49 GMT",
+  "etag": "W/\"67d5-65e27a9d7633f\"",
+  "lastModified": "Mon, 19 Oct 2026 01:45:06 GMT",
   "mismatch": {},
   "evidenceOk": {
    "setagaya-soshigaya-furusato-festival-flea-2026": true
@@ -422,30 +428,33 @@
   }
  },
  "https://7fukuadachi.com/%E9%AA%A8%E8%91%A3%E5%B8%82/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
   "evidenceOk": {
-   "nishiarai-daishi-ennichi-flea": true
+   "nishiarai-daishi-ennichi-flea": true,
+   "venue:nishiarai-daishi": true
   }
  },
  "https://7fukuadachi.com/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
   "evidenceOk": {
-   "nishiarai-daishi-ennichi-flea": true
+   "nishiarai-daishi-ennichi-flea": true,
+   "venue:nishiarai-daishi": true
   }
  },
  "https://7fukuadachi.com/%e4%b8%bb%e5%82%ac%e8%80%85%e6%83%85%e5%a0%b1/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
   "evidenceOk": {
-   "nishiarai-daishi-ennichi-flea": true
+   "nishiarai-daishi-ennichi-flea": true,
+   "venue:nishiarai-daishi": true
   }
  },
  "https://kanagawa-antique-market.crayonsite.net/": {
@@ -459,18 +468,21 @@
   }
  },
  "https://kottou-rakuichi.com/about.html": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"3fa5-65d9f23831daf\"",
   "lastModified": "Mon, 12 Oct 2026 06:52:17 GMT",
-  "mismatch": {},
+  "mismatch": {
+   "venue:tomioka-hachimangu": []
+  },
   "evidenceOk": {
-   "tomioka-hachimangu-kottoichi": true
+   "tomioka-hachimangu-kottoichi": true,
+   "venue:tomioka-hachimangu": false
   }
  },
  "https://www.teshigoro.com/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -479,18 +491,21 @@
   }
  },
  "https://www.mottainai.info/jp/event/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
   "evidenceOk": {
    "mottainai-flea-nakano-central-park": true,
    "mottainai-flea-kichijoji-parco": true,
-   "mottainai-flea-shinjuku-chuo-park": true
+   "mottainai-flea-shinjuku-chuo-park": true,
+   "venue:kichijoji-parco": true,
+   "venue:nakano-central-park": true,
+   "venue:shinjuku-central-park": true
   }
  },
  "https://www.eko-hirobakan.jp/fujimibashi/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -499,7 +514,7 @@
   }
  },
  "https://www.tama-seisokojo.or.jp/econico/market": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -508,7 +523,7 @@
   }
  },
  "https://www.tama-seisokojo.or.jp/center_top": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -535,10 +550,10 @@
   }
  },
  "https://www.chuo-kanko.or.jp/blogs/event/202609141846": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"page_cache:71195427060:BlogArticleDetailsController:cc335d5b706618498cdb85c093774a19:1be98e45e99a9cc33f58a2bc5142bdee\"",
+  "etag": "\"page_cache:71195427060:BlogArticleDetailsController:dc31931fffc621764ff3001f083deb57:83158fa9e6bf97b7653cc25492122593\"",
   "mismatch": {},
   "evidenceOk": {
    "nihonbashi-bettara-ichi": true
@@ -555,7 +570,7 @@
   }
  },
  "https://www.city.suginami.tokyo.jp/s033/event/29570.html": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "W/\"41f2-65dce3b27bd4b\"",
@@ -588,7 +603,7 @@
   }
  },
  "https://www.city.adachi.tokyo.jp/kyoso/ku/kuse/guruguru-kiosk080424.html": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"4cb5-65deb85cef6aa\"",
@@ -630,7 +645,7 @@
   }
  },
  "https://hino-artfestival.com/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"1-1792043052;br\"",
@@ -640,11 +655,11 @@
   }
  },
  "https://www.city.hino.lg.jp/kouminkan/1015477/1016167.html": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "W/\"4819-65e1ed80ca0c0\"",
-  "lastModified": "Sun, 18 Oct 2026 15:13:47 GMT",
+  "etag": "W/\"4819-65e32f6f6f726\"",
+  "lastModified": "Mon, 19 Oct 2026 15:14:05 GMT",
   "mismatch": {},
   "evidenceOk": {
    "hino-art-festival-flea-craft": true
@@ -671,7 +686,7 @@
   }
  },
  "https://www.earth-garden.jp/festival/83598/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -680,7 +695,7 @@
   }
  },
  "https://trx.jp/schejule": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -689,7 +704,8 @@
    "trx-ike-sunpark-flea": true,
    "trx-funabashi-keibajo-flea": true,
    "trx-kitaku-minsho-matsuri-flea": true,
-   "trx-musamura-flea": true
+   "trx-musamura-flea": true,
+   "venue:oi-racecourse": true
   }
  },
  "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=040": {
@@ -702,7 +718,7 @@
   }
  },
  "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -716,7 +732,7 @@
   }
  },
  "https://rpa.flima.net/%e5%87%ba%e5%ba%97%e3%81%ae%e3%83%ab%e3%83%bc%e3%83%ab/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -767,7 +783,7 @@
   }
  },
  "http://freemarket-go.com/shousai-osaka-028.html": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -902,7 +918,7 @@
   }
  },
  "https://www.fmfm-king.com/enmino10-25/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -911,7 +927,7 @@
   }
  },
  "https://www.fmfm-king.com/mino11-22/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -920,7 +936,7 @@
   }
  },
  "https://www.fmfm-king.com/mino12-13/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -938,7 +954,7 @@
   }
  },
  "https://www.fmfm-king.com/fukakita10-24/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -947,7 +963,7 @@
   }
  },
  "https://www.fmfm-king.com/fuka11-8/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -956,7 +972,7 @@
   }
  },
  "https://www.fmfm-king.com/fukakita11-23/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -965,7 +981,7 @@
   }
  },
  "https://www.fmfm-king.com/fukakitamaturi12-19-20/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -974,7 +990,7 @@
   }
  },
  "https://www.fmfm-king.com/higashi10-20/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -983,7 +999,7 @@
   }
  },
  "https://www.fmfm-king.com/fukuhigashi11-10/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -992,7 +1008,7 @@
   }
  },
  "https://www.fmfm-king.com/ohigashi11-16/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1001,7 +1017,7 @@
   }
  },
  "https://www.fmfm-king.com/ohigashi12-23/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1010,7 +1026,7 @@
   }
  },
  "https://www.fmfm-king.com/ohigashi1-5/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1109,7 +1125,7 @@
   }
  },
  "https://www.fmfm-king.com/notogawa10-25/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1127,7 +1143,7 @@
   }
  },
  "https://www.fmfm-king.com/saidaiji10-25/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1136,7 +1152,7 @@
   }
  },
  "https://www.fmfm-king.com/saidaiji11-7/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1145,7 +1161,7 @@
   }
  },
  "https://www.fmfm-king.com/saidaiji11-22/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1154,7 +1170,7 @@
   }
  },
  "https://www.fmfm-king.com/saidaiji12-12/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1163,7 +1179,7 @@
   }
  },
  "https://www.fmfm-king.com/saidaiji12-20/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1235,7 +1251,7 @@
   }
  },
  "https://www.fmfm-king.com/yoxtukaichi10-24/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1244,7 +1260,7 @@
   }
  },
  "https://www.fmfm-king.com/yoxtukaichi11-8/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1253,7 +1269,7 @@
   }
  },
  "https://www.fmfm-king.com/yoxtukaichi11-21/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1262,7 +1278,7 @@
   }
  },
  "https://www.fmfm-king.com/yoxtukaichi12-12/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1271,7 +1287,7 @@
   }
  },
  "https://www.fmfm-king.com/yoxtukaichi12-30/": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-20",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
