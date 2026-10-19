@@ -33,6 +33,12 @@ export function validateVenues(venues, series, sources = []) {
     if (a.cityCode && a.pref && !a.cityCode.startsWith(a.pref)) e('area.cityCode と pref が合いません');
     if (a.cityCode && !a.city) e('area.cityCode があるのに area.city がありません');
     if (v.officialUrl && !HTTP_RE.test(v.officialUrl)) e('officialUrl が不正');
+    if (v.image) {
+      const im = v.image;
+      for (const k of ['file', 'altJa', 'altEn', 'author', 'license', 'sourceUrl']) if (!im[k]) e(`image.${k} がありません（作者・ライセンス・出典の表示が必要）`);
+      if (im.file && !/^[a-z0-9-]+\.webp$/.test(im.file)) e('image.file は英小文字・数字・ハイフンの .webp');
+      if (im.sourceUrl && !HTTP_RE.test(im.sourceUrl)) e('image.sourceUrl が不正');
+    }
     if (!Array.isArray(v.sources) || !v.sources.length) e('sources（出典）がありません');
     else for (const s of v.sources) {
       if (!HTTP_RE.test(s.url || '')) e(`sources.url が不正: ${s.url}`);

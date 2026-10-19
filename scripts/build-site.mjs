@@ -16,7 +16,7 @@ import { S, T, WD_EN } from './lib/i18n.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
-import { venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
+import { spotL, venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
 import { breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, statusTag } from './lib/html.mjs';
 
@@ -269,8 +269,11 @@ function aboutPage(ctx, lang) {
   const st = S[lang].status;
   const removeMail = CONTACT_EMAIL ? `<a href="mailto:${esc(CONTACT_EMAIL)}">${esc(CONTACT_EMAIL)}</a>` : '';
   const cr = (c) => (lang === 'ja' ? c : { ...c, ...c.en });
-  const credits = ctx.credits?.length ? `<h2>${lang === 'ja' ? '画像の出典' : 'Image credits'}</h2>
-<ul>${ctx.credits.map(cr).map((c) => (lang === 'ja' ? `<li>${esc(c.use)}：「${esc(c.title)}」${esc(c.photographer)}（<a href="${esc(c.sourceUrl)}" rel="noopener">${esc(c.source)}</a>。${esc(c.license)}）</li>` : `<li>${esc(c.use)}: “${esc(c.title)}” — ${esc(c.photographer)} (<a href="${esc(c.sourceUrl)}" rel="noopener">${esc(c.source)}</a>; ${esc(c.license)})</li>`)).join('')}</ul>` : '';
+  const venuePhotos = (ctx.spots || []).filter((sp) => sp.venue.image).map((sp) => sp.venue);
+  const photoCredits = venuePhotos.length ? `<h2>${lang === 'ja' ? 'スポットの写真の出典' : 'Spot photo credits'}</h2>
+<ul>${venuePhotos.map((v) => `<li>${esc(lang === 'ja' ? v.name : spotL(v, 'name', 'en'))}：「${esc(v.image.title || v.image.file)}」${esc(v.image.author)}（<a href="${esc(v.image.sourceUrl)}" rel="noopener">Wikimedia Commons</a>。${esc(v.image.license)}${v.image.note ? `。${esc(v.image.note)}` : ''}）</li>`).join('')}</ul>` : '';
+  const credits = photoCredits + (ctx.credits?.length ? `<h2>${lang === 'ja' ? '画像の出典' : 'Image credits'}</h2>
+<ul>${ctx.credits.map(cr).map((c) => (lang === 'ja' ? `<li>${esc(c.use)}：「${esc(c.title)}」${esc(c.photographer)}（<a href="${esc(c.sourceUrl)}" rel="noopener">${esc(c.source)}</a>。${esc(c.license)}）</li>` : `<li>${esc(c.use)}: “${esc(c.title)}” — ${esc(c.photographer)} (<a href="${esc(c.sourceUrl)}" rel="noopener">${esc(c.source)}</a>; ${esc(c.license)})</li>`)).join('')}</ul>` : '');
   const ja = `<h1>掲載のきまり・出典</h1>
 <h2>集めている情報</h2>
 <p>主催者の公式ページ、自治体の公式ページ、自治体などが公開しているオープンデータだけを使います。ほかのイベント情報サイト・まとめサイト・SNS の掲載内容は、使いません。</p>
@@ -415,6 +418,7 @@ function sideNav(ctx, lang, base) {
 function withSide(page, ctx, lang) {
   const base = splitPath(page.path).base;
   if (!/^\/(weekend|calendar|date|area|kind|spot|shuten|search|about)\//.test(base)) return page;
+  if (page.body.includes('class="ev-split"')) return page; // 個別ページ（スポットなど）は、自前の2列
   const m = /^(<div class="in page[^"]*">)(<nav class="crumbs"[\s\S]*?<\/nav>)([\s\S]*)<\/div>$/.exec(page.body);
   if (!m) return page;
   return { ...page, body: `${m[1]}${m[2]}<div class="ev-split"><div class="ev-main">${m[3]}</div>${sideNav(ctx, lang, base)}</div></div>` };
@@ -430,7 +434,8 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   const occ = buildOccurrences(series, occurrences, today, days);
   const past = pastOccurrences(archive, series).filter((o) => o.date < today);
   const spots = buildSpots(venues, series, occ, today);
-  const ctx = { series, occ, past, spots, weekend: upcomingWeekend(today), today, days, credits };
+  const spotMapImg = (id) => Boolean(GEO[`spot-${id}`]) && existsSync(join(ROOT, 'static', 'img', 'maps', `spot-${id}.webp`));
+  const ctx = { series, occ, past, spots, spotMapImg, weekend: upcomingWeekend(today), today, days, credits };
   // 英語が既定（/）。日本語は /ja/
   const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）
@@ -468,6 +473,7 @@ function main() {
     mkdirSync(dirname(join(out, f.path)), { recursive: true });
     writeFileSync(join(out, f.path), f.content);
   }
+  writeFileSync(join(out, 'spot-ids.json'), JSON.stringify(spots.map((sp) => sp.venue.id)));
   writeFileSync(join(out, 'events.json'), JSON.stringify({ today, events: searchIndex(occ), spots: spotIndexData(spots) }));
   writeFileSync(join(out, 'pages.json'), JSON.stringify(pages.filter((p) => !p.path.endsWith('.html')).map((p) => p.path)));
   console.log(`${today} 基準で ${pages.length} ページ、開催 ${occ.length} 件を ${out} に書き出しました`);

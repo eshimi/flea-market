@@ -268,5 +268,41 @@
   "matched": "東京都北区赤羽南一丁目１４番１７号",
   "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
   "checkedAt": "2026-10-18"
+ },
+ "spot-komazawa-olympic-park": {
+  "lat": 35.626083,
+  "lon": 139.657501,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都世田谷区駒沢公園１番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-yoyogi-park": {
+  "lat": 35.674454,
+  "lon": 139.697815,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "東京都渋谷区代々木神園町",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-hikarigaoka-park": {
+  "lat": 35.76881,
+  "lon": 139.630585,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都練馬区光が丘四丁目１番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
+ },
+ "spot-koganei-park": {
+  "lat": 35.71468,
+  "lon": 139.511078,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "東京都小金井市桜町三丁目",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-19"
  }
 }

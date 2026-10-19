@@ -12,3 +12,16 @@
 .sp-tbl td a{font-weight:700}
 .sp-tbl small{color:#7a6a58}
 .sp-series{padding-left:1.2em;margin:8px 0}
+.sp-photo{margin:14px 0 6px}
+.sp-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:14px;background:#efe6d6}
+.sp-photo figcaption{font-size:.78rem;color:#7a6a58;margin-top:6px}
+.sp-photo figcaption a{color:inherit}
+.poll-btns{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.poll-btns button{display:inline-flex;align-items:center;gap:6px;border:1px solid #d9ccb6;background:#fff;color:inherit;border-radius:99px;padding:7px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+.poll-btns button:hover{border-color:#c8553d}
+.poll-btns button.on{background:#c8553d;border-color:#c8553d;color:#fff}
+.poll-btns button:disabled{opacity:.6;cursor:wait}
+.poll-btns .n{font-weight:700;min-width:1ch}
+.poll-btns .n:empty{display:none}
+.poll-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.poll-st{margin:6px 0;font-size:.85rem;color:#7a6a58}

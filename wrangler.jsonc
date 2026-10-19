@@ -11,6 +11,9 @@
     "not_found_handling": "404-page",
     "run_worker_first": ["/api/*", "/en", "/en/"]
   },
+  // スポットのアンケートの保存（会場ごとに1つの Durable Object）
+  "durable_objects": { "bindings": [{ "name": "SPOT_VOTES", "class_name": "SpotVotes" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["SpotVotes"] }],
   "observability": { "enabled": true },
   "routes": [{ "pattern": "streetbazaars.jp", "custom_domain": true }]
 }

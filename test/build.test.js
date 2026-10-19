@@ -435,7 +435,8 @@ test('地図の画像（OpenStreetMap）：位置のある会場だけ。ない�
   const ids = Object.keys(real.geo);
   assert.ok(ids.length >= 20);
   for (const id of ids) {
-    assert.ok(real.series.some((s) => s.id === id), `${id}: シリーズがありません`);
+    // 'spot-<id>' はスポット（会場）の位置
+    assert.ok(id.startsWith('spot-') ? real.venues.some((v) => `spot-${v.id}` === id) : real.series.some((s) => s.id === id), `${id}: シリーズ（会場）がありません`);
     assert.ok(existsSync(new URL(`../static/img/maps/${id}.webp`, import.meta.url)), `${id}: 地図の画像がありません`);
     const g = real.geo[id];
     assert.ok(g.lat > 24 && g.lat < 46 && g.lon > 122 && g.lon < 146, `${id}: 日本の外の位置`);
@@ -530,4 +531,44 @@ test('スポットの英訳：本番の venues に、名前と、数字の一致
       for (const n of nums(v[k])) if (n !== '1' && !en.has(n)) assert.fail(`${v.id} ${k}: 原文の数字 ${n} が訳にありません`);
     }
   }
+});
+
+test('スポットの右の列：地図・天気・アンケート。画像の出典。Worker のアンケート（回数制限・取り消し・拒否）', async () => {
+  const real = loadData();
+  const { pages } = buildPages(real, '2026-10-19');
+  const pg_ = pages.find((p) => p.path === '/spot/komazawa-olympic-park/');
+  assert.ok(pg_.body.includes('class="ev-split"') && !/<div class="ev-split"[\s\S]*<div class="ev-split"/.test(pg_.body), '2列は1つだけ');
+  assert.ok(pg_.body.includes('src="/img/maps/spot-komazawa-olympic-park.webp"'));
+  assert.ok(pg_.body.includes('class="wx"') && pg_.body.includes('data-office="130000"'));
+  assert.ok(pg_.body.includes('class="ev-card poll"') && pg_.body.includes('data-choice="want"') && !pg_.body.includes('data-choice="bad"'));
+  assert.ok(pg_.scripts.includes('/vote.js'));
+  // 住所のない会場は、押すと開く地図
+  assert.ok(pages.find((p) => p.path === '/spot/oi-racecourse/').body.includes('class="map-show"'));
+  const { SpotVotes, handleVotes, resetIdsCache, CHOICES } = await import('../src/votes.js');
+  assert.ok(!CHOICES.includes('bad'));
+  const mem = new Map();
+  const state = { storage: { get: async (k) => mem.get(k), put: async (k, v) => { mem.set(k, v); } } };
+  const dobj = new SpotVotes(state);
+  const env = {
+    ASSETS: { fetch: async () => new Response(JSON.stringify(['komazawa-olympic-park'])) },
+    SPOT_VOTES: { idFromName: (n) => n, get: () => ({ fetch: (u, init) => dobj.fetch(new Request(u, init)) }) },
+  };
+  resetIdsCache();
+  const post = (body, headers = {}) => handleVotes(new Request('https://x.example/api/votes/komazawa-olympic-park', { method: 'POST', headers: { 'Content-Type': 'application/json', Origin: 'https://x.example', 'CF-Connecting-IP': '1.2.3.4', ...headers }, body: JSON.stringify(body) }), env, 'komazawa-olympic-park');
+  const ok = { choice: 'want', on: true, voter: 'a'.repeat(20), t: 3000, website: '' };
+  let r = await post(ok);
+  assert.equal(r.status, 200);
+  assert.equal((await r.json()).counts.want, 1);
+  assert.equal((await (await post(ok)).json()).counts.want, 1, '同じ人の同じ選択肢は1票');
+  assert.equal((await (await post({ ...ok, on: false })).json()).counts.want, 0, '取り消し');
+  assert.equal((await post({ ...ok, choice: 'bad' })).status, 400);
+  assert.equal((await post({ ...ok, website: 'x' })).status, 400, 'ハニーポット');
+  assert.equal((await post({ ...ok, t: 100 })).status, 400, '速すぎる');
+  assert.equal((await post(ok, { Origin: 'https://evil.example' })).status, 403);
+  assert.equal((await handleVotes(new Request('https://x.example/api/votes/nope'), env, 'nope')).status, 404, '知らない会場は作らない');
+  // 回数制限：同じ IP は、1時間に10回まで
+  let last;
+  for (let i = 0; i < 12; i++) last = await post({ ...ok, voter: String(i).padStart(2, '0').repeat(10) });
+  assert.equal(last.status, 429);
+  assert.equal((await handleVotes(new Request('https://x.example/api/votes/komazawa-olympic-park'), env, 'komazawa-olympic-park')).status, 200);
 });
