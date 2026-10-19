@@ -5,7 +5,8 @@
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--cx-ink);flex:0 0 auto}
 .logo-svg{display:block;flex:0 0 auto}
 .brand-t{display:flex;flex-direction:column;line-height:1.1}
-.brand-t b{font-family:"Noto Sans JP",system-ui,sans-serif;font-weight:800;font-size:20px;letter-spacing:.02em}
+.brand-t b{font-family:"Noto Sans JP",system-ui,sans-serif;font-weight:800;font-size:20px;letter-spacing:.01em}
+.brand-t b em{font-style:normal;color:var(--cx-red);margin-left:.1em}
 .brand-t small{font-size:8.5px;letter-spacing:.14em;color:var(--cx-sub);margin-top:4px;font-weight:700}
 .hd-nav{display:flex;gap:24px;margin:0 auto}
 .hd-nav a{display:inline-flex;align-items:center;gap:7px;color:var(--cx-ink);font-size:13.5px;text-decoration:none;white-space:nowrap;padding:8px 0;border-bottom:2px solid transparent}

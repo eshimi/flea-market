@@ -32,10 +32,10 @@ export function icon(name, size) {
   return wrap(PATHS[name], size);
 }
 
-// ロゴ（自作：赤い屋根とストライプの日よけがある、市場の露店）
+// ロゴのマーク（自作：赤いピンの中に、白い買い物袋。足元は緑の地面）。favicon も同じ形（static/favicon.svg）
+export const MARK_INNER = '<ellipse cx="32" cy="76" rx="22" ry="5" fill="#3f9a5a"/><path d="M32 74C32 74 8 50 8 28a24 24 0 0 1 48 0c0 22-24 46-24 46z" fill="#c73e2a"/><path d="M19 27h26l2.5 19H16.5z" fill="#fff" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/><path d="M25.5 27v-4.5c0-3.6 2.7-6.2 6.5-6.2s6.5 2.6 6.5 6.2V27" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>';
 export function logoSvg() {
-  const stripes = [0, 1, 2, 3, 4, 5].map((i) => `<rect x="${7 + i * 5.5}" y="14" width="5.5" height="8" fill="${i % 2 ? '#fff' : '#c73e2a'}"/>`).join('');
-  return `<svg class="logo-svg" viewBox="0 0 48 40" width="44" height="36" aria-hidden="true" focusable="false"><path d="M3 14 24 2l21 12z" fill="#c73e2a"/><g>${stripes}</g><path d="M7 22h34" stroke="#c73e2a" stroke-width="1.5"/><path d="M9 22v14M39 22v14" stroke="#2a2a35" stroke-width="2"/><rect x="9" y="28" width="30" height="8" fill="#fff" stroke="#2a2a35" stroke-width="2"/></svg>`;
+  return `<svg class="logo-svg" viewBox="0 0 64 82" width="34" height="44" aria-hidden="true" focusable="false">${MARK_INNER}</svg>`;
 }
 
 // 手描き風の、日本列島のシルエット（簡略。仮。地図の本格版は Step 4）

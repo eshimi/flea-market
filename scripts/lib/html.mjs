@@ -29,7 +29,7 @@ export function siteHeader(path, lang = 'en') {
     return `<div class="dd${cur ? ' cur' : ''}"><button type="button" class="dd-b" aria-haspopup="true"${cur ? ' aria-current="true"' : ''}>${icon(l.icon, 17)}<span>${esc(L[l.group])}</span>${icon('chevdown', 14)}</button><div class="dd-m">${l.items.map(([h, k]) => `<a href="${langPath(h, lang)}"${here(h) && !h.includes('#') ? ' aria-current="page"' : ''}>${esc(L[k])}</a>`).join('')}</div></div>`;
   }).join('');
   return `<header class="site-head2"><div class="hd-in">
-<a class="brand" href="${langPath('/', lang)}" aria-label="Flea Market JP">${logoSvg()}<span class="brand-t"><b>FLEA MARKET JP</b><small>${esc(t.tagline)}</small></span></a>
+<a class="brand" href="${langPath('/', lang)}" aria-label="Flea Market JP">${logoSvg()}<span class="brand-t"><b>Flea Market <em>JP</em></b><small>${esc(t.tagline)}</small></span></a>
 <input type="checkbox" id="nav-t" class="nav-t" aria-hidden="true">
 <label for="nav-t" class="burger" aria-label="${esc(t.menu)}">${icon('menu', 24)}</label>
 <nav class="hd-nav" aria-label="${esc(t.navLabel)}">${nav}</nav>
@@ -55,7 +55,7 @@ export function siteFooter(path, lang = 'en') {
   };
   return `<footer class="site-foot2">
 <div class="ft-in">
-<div class="ft-brandcol"><a class="brand ft-brand" href="${langPath('/', lang)}" aria-label="Flea Market JP">${logoSvg()}<span class="brand-t"><b>FLEA MARKET JP</b><small>${esc(T[lang].tagline)}</small></span></a>${langSwitch(path, lang)}</div>
+<div class="ft-brandcol"><a class="brand ft-brand" href="${langPath('/', lang)}" aria-label="Flea Market JP">${logoSvg()}<span class="brand-t"><b>Flea Market <em>JP</em></b><small>${esc(T[lang].tagline)}</small></span></a>${langSwitch(path, lang)}</div>
 <nav class="ft-cols" aria-label="${esc(f.nav)}">${FOOTER_COLS.map(col).join('')}</nav>
 </div>
 <div class="ft-note"><p>${esc(disclaimer(lang))}</p><p>© ${esc(SITE.name)}　${esc(f.copy)}</p></div>
@@ -101,6 +101,9 @@ ${alt}<meta property="og:title" content="${esc(full)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;700&display=swap">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/style.css">
 <link rel="stylesheet" href="/chrome.css">
 ${css.map((c) => `<link rel="stylesheet" href="${c}">`).join('\n')}${css.length ? '\n' : ''}${head}</head>
