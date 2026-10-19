@@ -2,12 +2,13 @@
 import { loadData } from './build-site.mjs';
 import { readFileSync } from 'node:fs';
 import { validateCrawlList } from './lib/crawl.mjs';
+import { validateVenues } from './lib/spots.mjs';
 import { validateOccurrences, validateSeries, validateSources } from './lib/events.mjs';
 
-const { series, occurrences } = loadData();
+const { series, occurrences, venues } = loadData();
 const sources = JSON.parse(readFileSync(new URL('../data/sources.json', import.meta.url), 'utf8'));
 const crawl = JSON.parse(readFileSync(new URL('../data/crawl-list.json', import.meta.url), 'utf8'));
-const errs = [...validateCrawlList(crawl), ...validateSources(sources, series), ...validateSeries(series), ...validateOccurrences(occurrences, new Set(series.map((s) => s.id)))];
+const errs = [...validateCrawlList(crawl), ...validateSources(sources, series), ...validateSeries(series), ...validateVenues(venues, series, sources), ...validateOccurrences(occurrences, new Set(series.map((s) => s.id)))];
 if (errs.length) {
   console.error(errs.map((e) => `- ${e}`).join('\n'));
   process.exit(1);

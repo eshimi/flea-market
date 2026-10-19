@@ -918,6 +918,22 @@
    "venue": "Sunshine City, Sunshine Plaza",
    "admission": "Free admission",
    "rain": "Cancelled in case of rain"
+  },
+  "komazawa-park-flea-tokyo-park": {
+   "name": "Komazawa Olympic Park Flea Market (schedule from the Tokyo Metropolitan Park Association)",
+   "venue": "Komazawa Olympic Park, Central Plaza",
+   "address": "1-1 Komazawa Koen, Setagaya-ku, Tokyo",
+   "access": "15 minutes on foot from Komazawa-Daigaku Station (Tokyu Den-en-toshi Line)",
+   "rule": "Dates for fiscal 2026 announced by the Tokyo Metropolitan Park Association (Central Plaza; Sundays)",
+   "rain": "Changes at the organizer’s discretion or cancellation in bad weather are possible. Check each organizing group’s website beforehand (per the Tokyo Metropolitan Park Association)"
+  },
+  "hikarigaoka-park-flea-tokyo-park": {
+   "name": "Hikarigaoka Park Flea Market (schedule from the Tokyo Metropolitan Park Association)",
+   "venue": "Hikarigaoka Park, Keyaki Plaza (gymnasium side)",
+   "address": "4-1-1 Hikarigaoka, Nerima-ku, Tokyo (the address of the whole park)",
+   "access": "About 8 minutes on foot from Hikarigaoka Station (Toei Oedo Line) to Keyaki Plaza",
+   "rule": "Upcoming flea market dates announced by the Tokyo Metropolitan Park Association (Keyaki Plaza; 2026/10 event notice)",
+   "rain": "Start and end times may vary. The schedule may change or be cancelled in rain etc. The latest information is on the park’s X (formerly Twitter) account, according to the official notice"
   }
  },
  "organizers": {
@@ -978,7 +994,13 @@
   "わんわんマルシェ実行委員会": "Wanwan Marche Executive Committee",
   "神戸港”U”パークマネジメント共同事業体": "Kobe Port \"U\" Park Management Joint Venture",
   "フリマジャパン": "Furima Japan",
-  "オタカラ・ネット": "Otakara Net"
+  "オタカラ・ネット": "Otakara Net",
+  "東京都公園協会": "Tokyo Metropolitan Park Association",
+  "オタカラネット": "Otakara Net",
+  "タイムマシーンカンパニー": "Time Machine Company",
+  "東京リサイクル運動市民の会": "Tokyo Recycle Undo Shimin-no-Kai",
+  "ミルクの会": "Milk-no-Kai",
+  "エコロジーネットワーク ラズベリー": "Ecology Network Raspberry"
  },
  "labels": {
   "問い合わせ先": "Contact",
@@ -986,7 +1008,8 @@
   "主催団体": "Organizer",
   "運営サイト": "Operating site",
   "掲載元": "Listed by",
-  "掲載元（区の担当課）": "Listed by (ward department)"
+  "掲載元（区の担当課）": "Listed by (ward department)",
+  "日程の公表元": "Source of the schedule"
  },
  "official": {
   "note": "公式サイトに英語の表記があり、それに合わせたもの（2026-10-18 に確認）。ほかは、このサイトの訳（非公式）",
@@ -1008,14 +1031,14 @@
   "江東区": "Koto Ward",
   "目黒区": "Meguro Ward",
   "大田区": "Ota Ward",
-  "世田谷区": "Setagaya Ward",
+  "世田谷区": "Setagaya City",
   "渋谷区": "Shibuya Ward",
   "中野区": "Nakano Ward",
   "杉並区": "Suginami Ward",
   "豊島区": "Toshima Ward",
   "北区": "Kita Ward",
   "荒川区": "Arakawa Ward",
-  "練馬区": "Nerima Ward",
+  "練馬区": "Nerima City",
   "足立区": "Adachi Ward",
   "葛飾区": "Katsushika Ward",
   "江戸川区": "Edogawa Ward",
@@ -1161,6 +1184,54 @@
   "fmj-yasugawa-shinsui-park|2026-12-19": "Shinsui Park Nigiwai Festival",
   "fmj-yasugawa-shinsui-park|2026-12-20": "Shinsui Park Nigiwai Festival",
   "fmj-yamada-ike-park|2026-12-19": "Nigiwai Festival (flea market, marche & food truck event)",
-  "fmj-yamada-ike-park|2026-12-20": "Nigiwai Festival (flea market, marche & food truck event)"
+  "fmj-yamada-ike-park|2026-12-20": "Nigiwai Festival (flea market, marche & food truck event)",
+  "komazawa-park-flea-tokyo-park|2027-01-17": "Organizer: Otakara Net",
+  "komazawa-park-flea-tokyo-park|2027-02-07": "Organizer: Time Machine Company",
+  "komazawa-park-flea-tokyo-park|2027-03-07": "Organizer: Tokyo Recycle Undo Shimin-no-Kai",
+  "hikarigaoka-park-flea-tokyo-park|2026-11-08": "Organizer: Milk-no-Kai",
+  "hikarigaoka-park-flea-tokyo-park|2026-11-29": "Organizer: Ecology Network Raspberry"
+ },
+ "venues": {
+  "komazawa-olympic-park": {
+   "name": "Komazawa Olympic Park",
+   "place": "Central Plaza",
+   "address": "1-1 Komazawa Koen, Setagaya-ku, Tokyo (location of the Komazawa Olympic Park management office)",
+   "access": "15 minutes on foot from Komazawa-Daigaku Station (Tokyu Den-en-toshi Line). Tokyu Bus from Shibuya (JR Yamanote Line) to “Komazawa Koen Higashiguchi”, or from Ebisu to “Komazawa Koen”",
+   "summary": "A metropolitan park. The Tokyo Metropolitan Park Association announces the flea market dates in the Central Plaza for each fiscal year. The organizer differs from one event to the next.",
+   "rules": "Changes at the organizer’s discretion or cancellation in bad weather are possible. Ask each organizing group for event details and stall applications."
+  },
+  "yoyogi-park": {
+   "name": "Yoyogi Park",
+   "place": "Event Plaza",
+   "address": "Yoyogi Kamizono-cho, Shibuya-ku (Area A); 1-chome and 2-chome Jinnan (Area B)",
+   "access": "3 minutes on foot from Harajuku (JR Yamanote Line) / 3 minutes on foot from Yoyogi-koen (Tokyo Metro Chiyoda Line) / 3 minutes on foot from Meiji-jingumae <Harajuku> (Chiyoda and Fukutoshin Lines) / 6 minutes on foot from Yoyogi-Hachiman (Odakyu Line)",
+   "summary": "A metropolitan park. Its monthly event information sometimes lists flea markets in the Event Plaza (on 8/22 and 8/23 in 2026). No regular schedule has been confirmed from official sources.",
+   "rules": "The Jinnan 1-chome area, which has the outdoor urban sports park and other facilities, is not managed by the Tokyo Metropolitan Park Association (per the official site)."
+  },
+  "sunshine-city": {
+   "name": "Sunshine City",
+   "place": "Sunshine Plaza",
+   "access": "About 8 minutes on foot from Exit 35 of Ikebukuro Station (JR, Tokyo Metro, Seibu and Tobu lines); about 3 minutes on foot through the underground passage from Exits 6 and 7 of Higashi-Ikebukuro Station (Tokyo Metro Yurakucho Line) (both to the Sunshine City entrance)",
+   "summary": "A commercial complex in Ikebukuro. The “Sunshine City Big Flea Market” (organizer: Otakara Net) is held in Sunshine Plaza.",
+   "rules": "The 11/3/2026 event is cancelled in case of rain (per the official event page)."
+  },
+  "hikarigaoka-park": {
+   "name": "Hikarigaoka Park",
+   "place": "Keyaki Plaza (gymnasium side)",
+   "address": "4-1-1 Hikarigaoka, Nerima-ku, Tokyo (the official site says this is the address of the whole park)",
+   "access": "About 8 minutes on foot from Hikarigaoka Station (Toei Oedo Line) to Keyaki Plaza",
+   "summary": "A metropolitan park. Its monthly event notices list flea markets planned in Keyaki Plaza (gymnasium side).",
+   "rules": "Start and end times may vary. The schedule may change or be cancelled in rain etc. Ask each organizing group for event details and stall applications."
+  },
+  "oi-racecourse": {
+   "name": "Oi Racecourse",
+   "summary": "The venue of the “Tokyo City Flea Market” run by Tokyo Recycle. Its schedule page lists 21 days from 10/24 to 12/27 in 2026."
+  },
+  "koganei-park": {
+   "name": "Koganei Park",
+   "address": "3-chome Sakuracho, 1-chome and 2-chome Sekinomachi (Koganei City); 3-chome Hanakoganei-minamicho (Kodaira City); 6-chome Mukaidaicho (Nishitokyo City); 3-chome Sakuratsutsumi (Musashino City)",
+   "access": "Seibu Bus from Musashi-Koganei Station (JR Chuo Line) to “Koganei Koen Nishiguchi”. CoCo Bus from Higashi-Koganei Station (JR Chuo Line) to “Koganei Koen Iriguchi”. Seibu Bus from Hanakoganei Station (Seibu Shinjuku Line) to “Koganei Koen Nishiguchi”",
+   "summary": "A metropolitan park. Its location spans Koganei, Kodaira, Nishitokyo and Musashino cities."
+  }
  }
 }

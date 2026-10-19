@@ -32,7 +32,7 @@ export function planChecks({ sources, state, series, occurrences, today, all = f
     const st = state[src.url] || {};
     if (src.terms?.ok !== true) { skipped.push({ url: src.url, reason: '利用規約が未確認、または取得不可（リンクだけ掲載）' }); continue; }
     if (st.fetchedAt === today) { skipped.push({ url: src.url, reason: '今日は取得済み' }); continue; }
-    const isNear = src.series.some((id) => near.has(id));
+    const isNear = (src.series || []).some((id) => near.has(id));
     if (!all && !isNear && st.fetchedAt && diffDays(st.fetchedAt, today) < WEEKLY_DAYS) { skipped.push({ url: src.url, reason: '次の確認は ' + addDays(st.fetchedAt, WEEKLY_DAYS) }); continue; }
     plan.push(src);
   }
@@ -40,7 +40,7 @@ export function planChecks({ sources, state, series, occurrences, today, all = f
 }
 
 // 取得結果を、シリーズの checkedAt と状態に反映する（純粋な関数。テストする）
-export function applyResult({ src, result, series, state, today }) {
+export function applyResult({ src, result, series, state, today, venues = [] }) {
   const prev = state[src.url] || {};
   const st = { ...prev, fetchedAt: today, httpStatus: result.status };
   const notes = [];
@@ -49,7 +49,23 @@ export function applyResult({ src, result, series, state, today }) {
     if (result.etag) st.etag = result.etag;
     if (result.lastModified) st.lastModified = result.lastModified;
     st.mismatch = {};
-    for (const id of src.series) {
+    for (const vid of src.venues || []) {
+      const v = venues.find((x) => x.id === vid);
+      const entry = v?.sources.find((x) => x.url === src.url);
+      const key = `venue:${vid}`;
+      if (!entry) { notes.push(`${key}: venues.json の sources にこの URL がありません`); continue; }
+      let ok;
+      let missing = [];
+      if (result.status === 304) ok = prev.evidenceOk?.[key] === true;
+      else ({ ok, missing } = checkEvidence(result.text, entry.evidence));
+      st.evidenceOk = { ...(st.evidenceOk || {}), [key]: ok };
+      if (ok) entry.checkedAt = today;
+      else {
+        st.mismatch[key] = missing;
+        notes.push(`${key}: 本文と合いません（見つからない語句：${missing.join('、') || '前回から不一致'}）`);
+      }
+    }
+    for (const id of src.series || []) {
       const s = series.find((x) => x.id === id);
       const entry = s?.sources.find((x) => x.url === src.url);
       if (!entry) { notes.push(`${id}: series.json の sources にこの URL がありません`); continue; }
@@ -100,6 +116,8 @@ async function main() {
   const read = (f) => JSON.parse(readFileSync(join(DATA, f), 'utf8'));
   const sources = read('sources.json');
   const series = read('series.json');
+  let venues = [];
+  try { venues = read('venues.json'); } catch { /* スポットのデータがない場合 */ }
   const occurrences = read('occurrences.json');
   const state = read('source-state.json');
   const { plan, skipped } = planChecks({ sources, state, series, occurrences, today, all: process.argv.includes('--all') });
@@ -131,11 +149,12 @@ async function main() {
     const res = await get(src.url, headers);
     lastHit.set(u.origin, Date.now());
     if (res.status === 200 && !res.pdf) res.text = htmlToText(res.text);
-    const notes = applyResult({ src, result: res, series, state, today });
+    const notes = applyResult({ src, result: res, series, state, today, venues });
     lines.push(`- ${src.url}：${res.status || res.error}${notes.length ? '\n  - ' + notes.join('\n  - ') : '（一致）'}`);
   }
   if (!dry) {
     writeFileSync(join(DATA, 'series.json'), JSON.stringify(series, null, 1) + '\n');
+    if (venues.length) writeFileSync(join(DATA, 'venues.json'), JSON.stringify(venues, null, 1) + '\n');
     writeFileSync(join(DATA, 'source-state.json'), JSON.stringify(state, null, 1) + '\n');
   }
   console.log(lines.join('\n'));

@@ -487,3 +487,47 @@ test('アクセス解析のタグ（Google タグ）が、すべてのページ�
     assert.ok(/googletagmanager\.com\/gtag\/js\?id=G-[A-Z0-9]+/.test(html) && html.indexOf('gtag(') < html.indexOf('</head>'), p.path);
   }
 });
+
+test('スポット（会場）：一覧と個別のページ、開催回の集約、要確認、Place だけの構造化データ、検索とナビ', async () => {
+  const { validateVenues, buildSpots } = await import('../scripts/lib/spots.mjs');
+  assert.deepEqual(validateVenues(data.venues, data.series), []);
+  assert.ok(validateVenues([{ ...data.venues[0], id: 'Bad Id' }], data.series).length);
+  assert.ok(validateVenues([data.venues[0], data.venues[0]], data.series).some((e) => e.includes('重複')));
+  assert.ok(validateVenues(data.venues, [{ ...data.series[0], venueId: 'no-such' }]).some((e) => e.includes('venueId')));
+  const { pages, spots } = buildPages(data, '2026-10-19');
+  const byPath = (p) => pages.find((x) => x.path === p);
+  const idx = byPath('/spot/');
+  assert.ok(idx && idx.body.includes('/spot/sample-park/') && idx.body.includes('/spot/sample-empty-venue/'));
+  assert.ok(byPath('/ja/spot/') && byPath('/ja/spot/sample-park/'));
+  // 開催回の集約：同じ venueId のシリーズの開催回が並ぶ
+  const sp = spots.find((x) => x.venue.id === 'sample-park');
+  assert.ok(sp.occ.length > 0 && sp.occ.every((o) => o.series.venueId === 'sample-park'));
+  const page = byPath('/spot/sample-park/');
+  assert.ok(page.body.includes('/e/sample-park-flea/'));
+  // 書いていない項目は「要確認」
+  assert.ok(page.body.includes('TBC'));
+  // 開催がないスポットも、個別ページができる
+  const empty = byPath('/spot/sample-empty-venue/');
+  assert.ok(empty && empty.body.includes('TBC') && empty.body.includes('Upcoming dates are TBC'));
+  assert.ok(byPath('/ja/spot/sample-empty-venue/').body.includes('要確認'));
+  // 構造化データ：Place は出るが、Event は出ない
+  assert.ok(page.head.includes('"@type":"Place"') && !page.head.includes('"@type":"Event"') && !page.body.includes('"@type":"Event"'));
+  // ヘッダーのナビ・シリーズのページからのリンク・サイトマップ用の一覧
+  assert.ok(layout(byPath('/')).includes('href="/spot/"'));
+  assert.ok(byPath('/e/sample-park-flea/').body.includes('/spot/sample-park/'));
+});
+
+test('スポットの英訳：本番の venues に、名前と、数字の一致した訳がある', () => {
+  const real = loadData();
+  const nums = (t) => String(t || '').replace(/(\d),(\d)/g, '$1$2').match(/\d+/g) || [];
+  for (const v of real.venues) {
+    const t = real.translations.venues?.[v.id];
+    assert.ok(t?.name, `${v.id}: 訳（name）がありません`);
+    for (const k of ['place', 'address', 'access', 'summary', 'rules']) {
+      if (!v[k]) continue;
+      assert.ok(t[k], `${v.id}: ${k} の訳がありません`);
+      const en = new Set(nums(t[k]));
+      for (const n of nums(v[k])) if (n !== '1' && !en.has(n)) assert.fail(`${v.id} ${k}: 原文の数字 ${n} が訳にありません`);
+    }
+  }
+});

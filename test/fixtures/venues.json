@@ -1,0 +1,44 @@
+[
+ {
+  "id": "sample-park",
+  "name": "見本公園（架空）",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "cityCode": "13101",
+   "city": "千代田区"
+  },
+  "place": "見本広場（架空）",
+  "address": "東京都千代田区（架空）",
+  "officialUrl": "https://example.org/park",
+  "summary": "架空の公園。テスト用。",
+  "sources": [
+   {
+    "url": "https://example.org/park",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "見本公園"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sample-empty-venue",
+  "name": "見本広場（架空・開催なし）",
+  "kind": "plaza",
+  "area": {
+   "pref": "13"
+  },
+  "sources": [
+   {
+    "url": "https://example.org/plaza",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "見本広場"
+    ]
+   }
+  ]
+ }
+]

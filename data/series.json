@@ -1818,7 +1818,8 @@
      "中止の決定した場合、天気が変わっても変更なし"
     ]
    }
-  ]
+  ],
+  "venueId": "koganei-park"
  },
  {
   "id": "frma-hikarigaoka-park-flea",
@@ -1875,7 +1876,8 @@
      "中止の決定した場合、天気が変わっても変更なし"
     ]
    }
-  ]
+  ],
+  "venueId": "hikarigaoka-park"
  },
  {
   "id": "frma-nakameguro-funeiriba-flea",
@@ -3528,7 +3530,8 @@
      "※雨天決行です。"
     ]
    }
-  ]
+  ],
+  "venueId": "yoyogi-park"
  },
  {
   "id": "trx-oi-keibajo-tokyo-city-flea",
@@ -3602,7 +3605,8 @@
      "12/27（日）品川区大井競馬場TokyoCityFleaMarket"
     ]
    }
-  ]
+  ],
+  "venueId": "oi-racecourse"
  },
  {
   "id": "trx-ike-sunpark-flea",
@@ -6401,7 +6405,8 @@
      "朝7時までに中止案内がでなければ開催です"
     ]
    }
-  ]
+  ],
+  "venueId": "komazawa-olympic-park"
  },
  {
   "id": "recycler-fussa-baseside-street",
@@ -6521,7 +6526,8 @@
      "朝7時までに中止案内がでなければ開催です"
     ]
    }
-  ]
+  ],
+  "venueId": "koganei-park"
  },
  {
   "id": "recycler-hikarigaoka-pageant-festa-flea",
@@ -6578,7 +6584,8 @@
      "朝7時までに中止案内がでなければ開催です"
     ]
    }
-  ]
+  ],
+  "venueId": "hikarigaoka-park"
  },
  {
   "id": "sunshine-city-big-furima",
@@ -6635,6 +6642,113 @@
      "サンシャインシティ♠︎ビッグフリマ"
     ]
    }
-  ]
+  ],
+  "venueId": "sunshine-city"
+ },
+ {
+  "id": "komazawa-park-flea-tokyo-park",
+  "name": "駒沢オリンピック公園 フリーマーケット（東京都公園協会の日程）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "東京都公園協会",
+   "label": "日程の公表元",
+   "url": "https://www.tokyo-park.or.jp/park/komazawa-olympic/index.html"
+  },
+  "venue": {
+   "name": "駒沢オリンピック公園 中央広場",
+   "pref": "13",
+   "city": "世田谷区",
+   "cityCode": "13112",
+   "address": "世田谷区駒沢公園1-1",
+   "access": "東急田園都市線「駒沢大学駅」下車 徒歩15分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2027-01-17",
+    "2027-02-07",
+    "2027-03-07"
+   ],
+   "text": "東京都公園協会が公表した2026年度の開催予定日（中央広場。日曜）"
+  },
+  "visitor": {
+   "rain": "主催者の都合による変更や、悪天候による中止等がある。事前に各主催団体のサイトで確認（東京都公園協会の案内）"
+  },
+  "sources": [
+   {
+    "url": "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "第 10 回 1月17日(日） オタカラネット",
+     "第 11 回 2月7日(日） タイムマシーンカンパニー",
+     "第 12 回 3月7日(日） 東京リサイクル運動市民の会",
+     "【2026年度フリーマーケット のご案内】",
+     "会場：中央広場",
+     "悪天候による中止等があります"
+    ]
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/park/komazawa-olympic/index.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "〒154-0013 世田谷区駒沢公園1-1",
+     "「駒沢大学駅」下車 徒歩15分"
+    ]
+   }
+  ],
+  "venueId": "komazawa-olympic-park"
+ },
+ {
+  "id": "hikarigaoka-park-flea-tokyo-park",
+  "name": "光が丘公園 フリーマーケット（東京都公園協会の日程）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "東京都公園協会",
+   "label": "日程の公表元",
+   "url": "https://www.tokyo-park.or.jp/park/hikarigaoka/index.html"
+  },
+  "venue": {
+   "name": "光が丘公園 けやき広場（体育館側）",
+   "pref": "13",
+   "city": "練馬区",
+   "cityCode": "13120",
+   "address": "東京都練馬区光が丘4-1-1（公園全体の住所）",
+   "access": "都営大江戸線光が丘駅より けやき広場まで 徒歩約8分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08",
+    "2026-11-29"
+   ],
+   "text": "東京都公園協会が公表した今後のフリーマーケット開催予定（けやき広場。2026年10月の催し物の案内）"
+  },
+  "visitor": {
+   "rain": "開始・終了時間は前後することがある。雨天等により日程変更・中止になる場合がある（東京都公園協会の案内）。最新の情報は光が丘公園のX（旧Twitter）で確認と公式に記載"
+  },
+  "sources": [
+   {
+    "url": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "11月8日(日) ミルクの会",
+     "11月29日(日) エコロジーネットワーク ラズベリー",
+     "今後のフリーマーケット開催予定",
+     "場所：けやき広場（体育館側）",
+     "東京都練馬区光が丘4-1-1",
+     "都営大江戸線光が丘駅より けやき広場まで 徒歩約8分",
+     "雨天等により、日程変更・中止になる場合がございます。",
+     "天候による中止など、最新の情報は 光が丘公園 X （旧Twitter）でご確認ください。"
+    ]
+   }
+  ],
+  "venueId": "hikarigaoka-park"
  }
 ]

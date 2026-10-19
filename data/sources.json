@@ -784,7 +784,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "robots.txt は許可。サイト利用の規約はなく、「出店規約」「プレミアム会員規約」は出店者向け。事実の項目（開催日・開催地・会場名）だけ載せ、文章・画像は転載しない（2026-10-18 確認）"
-  }
+  },
+  "venues": [
+   "oi-racecourse"
+  ]
  },
  {
   "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=040",
@@ -1603,7 +1606,10 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "サンシャインシティ（会場）の公式イベントページ。robots.txt は1つのパスのみ禁止（2026-10-18）。掲載は事実の項目だけ。問い合わせ先の電話番号は載せない"
-  }
+  },
+  "venues": [
+   "sunshine-city"
+  ]
  },
  {
   "url": "https://souq.jp/",
@@ -1614,6 +1620,108 @@
    "ok": true,
    "checkedAt": "2026-10-18",
    "note": "主催者（オタカラ・ネット）のサイト。利用規約のページなし。robots.txt は /application/ 配下などのみ禁止（2026-10-18）"
+  }
+ },
+ {
+  "url": "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html",
+  "series": [
+   "komazawa-park-flea-tokyo-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  },
+  "venues": [
+   "komazawa-olympic-park"
+  ]
+ },
+ {
+  "url": "https://www.tokyo-park.or.jp/park/komazawa-olympic/index.html",
+  "series": [
+   "komazawa-park-flea-tokyo-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  },
+  "venues": [
+   "komazawa-olympic-park"
+  ]
+ },
+ {
+  "url": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html",
+  "series": [
+   "hikarigaoka-park-flea-tokyo-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  },
+  "venues": [
+   "hikarigaoka-park"
+  ]
+ },
+ {
+  "url": "https://www.tokyo-park.or.jp/park/yoyogi/index.html",
+  "series": [],
+  "venues": [
+   "yoyogi-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  }
+ },
+ {
+  "url": "https://www.tokyo-park.or.jp/park/yoyogi/news/2026/8.html",
+  "series": [],
+  "venues": [
+   "yoyogi-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  }
+ },
+ {
+  "url": "https://sunshinecity.jp/information/access_train.html",
+  "series": [],
+  "venues": [
+   "sunshine-city"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "サンシャインシティ（会場）の公式のアクセス案内ページ。robots.txt で許可を確認（2026-10-19）。利用規約のページは確認できていない。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://www.tokyo-park.or.jp/park/hikarigaoka/index.html",
+  "series": [],
+  "venues": [
+   "hikarigaoka-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  }
+ },
+ {
+  "url": "https://www.tokyo-park.or.jp/park/koganei/index.html",
+  "series": [],
+  "venues": [
+   "koganei-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
   }
  }
 ]

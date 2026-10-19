@@ -1,0 +1,207 @@
+[
+ {
+  "id": "komazawa-olympic-park",
+  "name": "駒沢オリンピック公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "cityCode": "13112",
+   "city": "世田谷区"
+  },
+  "place": "中央広場",
+  "address": "世田谷区駒沢公園1-1（駒沢オリンピック公園管理所の所在地）",
+  "access": "東急田園都市線「駒沢大学駅」下車 徒歩15分。JR山手線「渋谷」から東急バス「駒沢公園東口」下車、「恵比寿」から東急バス「駒沢公園」下車",
+  "officialUrl": "https://www.tokyo-park.or.jp/park/komazawa-olympic/index.html",
+  "summary": "都立公園。東京都公園協会が、中央広場でのフリーマーケットの開催予定日を年度ごとに案内している。主催団体は回ごとに異なる。",
+  "rules": "主催者の都合による変更や悪天候による中止等がある。各イベントの詳細・出店の問い合わせは各主催団体へ。",
+  "sources": [
+   {
+    "url": "https://www.tokyo-park.or.jp/park/komazawa-olympic/index.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "〒154-0013 世田谷区駒沢公園1-1",
+     "「駒沢大学駅」下車 徒歩15分",
+     "「駒沢公園東口」下車",
+     "「駒沢公園」下車"
+    ]
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "中央広場でのフリーマーケット開催予定日をご案内します",
+     "会場：中央広場",
+     "悪天候による中止等があります",
+     "フリーマーケットの出店に関するお問い合わせは、各主催団体までお願いいたします"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "yoyogi-park",
+  "name": "代々木公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "cityCode": "13113",
+   "city": "渋谷区"
+  },
+  "place": "イベント広場",
+  "address": "渋谷区代々木神園町（A地区）、神南一丁目・神南二丁目（B地区）",
+  "access": "JR山手線「原宿」下車 徒歩3分／東京メトロ千代田線「代々木公園」下車 徒歩3分／千代田線・副都心線「明治神宮前（原宿）」下車 徒歩3分／小田急線「代々木八幡」下車 徒歩6分",
+  "officialUrl": "https://www.tokyo-park.or.jp/park/yoyogi/index.html",
+  "summary": "都立公園。月ごとのイベント情報に、イベント広場でのフリーマーケットが載ることがある（2026年8月は22日・23日）。開催のきまりは公式から確認できていない。",
+  "rules": "屋外アーバンスポーツパークなどがある神南一丁目地区は、東京都公園協会の管理外（公式）。",
+  "sources": [
+   {
+    "url": "https://www.tokyo-park.or.jp/park/yoyogi/index.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "所在地 渋谷区代々木神園町(A地区)、神南一丁目・神南二丁目(B地区)",
+     "「原宿」下車 徒歩3分",
+     "「代々木公園」(C02)下車 徒歩3分",
+     "「明治神宮前（原宿）」（C03、F15）下車 徒歩3分",
+     "「代々木八幡」下車 徒歩6分",
+     "神南一丁目地区）は、当協会の管理外です"
+    ]
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/park/yoyogi/news/2026/8.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "▼リサイクルマン フリーマーケット",
+     "▼原宿 代々木公園 イベント広場 フリーマーケット",
+     "場 所: イベント広場"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sunshine-city",
+  "name": "サンシャインシティ",
+  "kind": "commercial",
+  "area": {
+   "pref": "13",
+   "cityCode": "13116",
+   "city": "豊島区"
+  },
+  "place": "サンシャイン広場",
+  "access": "池袋駅（JR・東京メトロ・西武線・東武線）35番出口から徒歩約8分、東京メトロ有楽町線の東池袋駅6・7番出口から地下通路で徒歩約3分（いずれもサンシャインシティ入口まで）",
+  "officialUrl": "https://sunshinecity.jp/",
+  "summary": "池袋の商業施設。サンシャイン広場で「サンシャインシティ・ビッグフリマ」（主催：オタカラ・ネット）が開かれる。",
+  "rules": "2026年11月3日の回は雨天中止（公式のイベントページ）。",
+  "sources": [
+   {
+    "url": "https://sunshinecity.jp/event/entry-39014.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "サンシャインシティ・ビッグフリマ",
+     "開催場所 サンシャイン広場",
+     "※雨天中止"
+    ]
+   },
+   {
+    "url": "https://sunshinecity.jp/information/access_train.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "池袋駅 （JR・東京メトロ・西武線・東武線） 35番出口より 徒歩約8分",
+     "6・7番出口より地下通路で 徒歩約3分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hikarigaoka-park",
+  "name": "光が丘公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "cityCode": "13120",
+   "city": "練馬区"
+  },
+  "place": "けやき広場（体育館側）",
+  "address": "東京都練馬区光が丘4-1-1（公式に「公園全体の住所」とある）",
+  "access": "都営大江戸線「光が丘」駅から けやき広場まで徒歩約8分",
+  "officialUrl": "https://www.tokyo-park.or.jp/park/hikarigaoka/index.html",
+  "summary": "都立公園。毎月の催し物の案内に、けやき広場（体育館側）でのフリーマーケットの予定が載る。",
+  "rules": "開始・終了時間は前後することがある。雨天等により日程変更・中止になる場合がある。各イベントの詳細・出店の問い合わせは各主催団体へ。",
+  "sources": [
+   {
+    "url": "https://www.tokyo-park.or.jp/park/hikarigaoka/index.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "練馬区光が丘二・四丁目、旭町二丁目、板橋区赤塚新町三丁目"
+    ]
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都練馬区光が丘4-1-1",
+     "※公園全体の住所です",
+     "都営大江戸線光が丘駅より けやき広場まで 徒歩約8分",
+     "場所：けやき広場（体育館側）",
+     "開始時間・終了時間は前後する場合があります。",
+     "雨天等により、日程変更・中止になる場合がございます。",
+     "フリーマーケットの出店に関するお問い合わせは、各主催団体までお願いいたします。"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "oi-racecourse",
+  "name": "大井競馬場",
+  "kind": "racecourse",
+  "area": {
+   "pref": "13",
+   "cityCode": "13109",
+   "city": "品川区"
+  },
+  "summary": "東京リサイクルが運営する「Tokyo City Flea Market」の会場。同社サイトの開催スケジュールに、2026年10月24日〜12月27日の21日分が載る。",
+  "sources": [
+   {
+    "url": "https://trx.jp/schejule",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "10/24（土）品川区大井競馬場TokyoCityFleaMarket",
+     "12/27（日）品川区大井競馬場TokyoCityFleaMarket"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "koganei-park",
+  "name": "小金井公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "cityCode": "13210",
+   "city": "小金井市"
+  },
+  "address": "小金井市桜町三丁目、関野町一・二丁目、小平市花小金井南町三丁目、西東京市向台町六丁目、武蔵野市桜堤三丁目",
+  "access": "JR中央線「武蔵小金井」から西武バス「小金井公園西口」下車。JR中央線「東小金井駅」からCoCoバス「小金井公園入口」下車。西武新宿線「花小金井」から西武バス「小金井公園西口」下車",
+  "officialUrl": "https://www.tokyo-park.or.jp/park/koganei/index.html",
+  "summary": "都立公園。所在地は小金井市・小平市・西東京市・武蔵野市にまたがる。",
+  "sources": [
+   {
+    "url": "https://www.tokyo-park.or.jp/park/koganei/index.html",
+    "type": "official",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "小金井市桜町三丁目、関野町一・二丁目、小平市花小金井南町三丁目、西東京市向台町六丁目、武蔵野市桜堤三丁目",
+     "「小金井公園西口」下車",
+     "「小金井公園入口」下車"
+    ]
+   }
+  ]
+ }
+]

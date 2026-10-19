@@ -16,6 +16,7 @@ export const INDEXABLE = Boolean(process.env.SITE_URL) && !/\.example(\/|$)/.tes
 export const TOP_LINKS = [
   { key: 'weekend', href: '/weekend/', icon: 'calendar' },
   { key: 'area', href: '/area/', icon: 'pin' },
+  { key: 'spots', href: '/spot/', icon: 'store' },
   { key: 'types', href: '/kind/', icon: 'grid' },
   { key: 'vendors', href: '/shuten/', icon: 'store' },
   { key: 'about', href: '/about/', icon: 'info' },

@@ -6,6 +6,8 @@ import { fileURLToPath } from 'node:url';
 import { addDays, holidayName, isDayOff, parseYmd, todayJst, upcomingWeekend, weekday, WEEKDAYS } from './lib/dates.mjs';
 import { buildOccurrences, isActive, lastChecked } from './lib/events.mjs';
 import { pastOccurrences } from './lib/archive.mjs';
+import { buildSpots } from './lib/spots.mjs';
+import { spotIndex, spotPage } from './lib/spot-view.mjs';
 import { KINDS } from './lib/kinds.mjs';
 import { PREFS } from './lib/areas.mjs';
 import { CONTACT_EMAIL, SITE } from './lib/nav.mjs';
@@ -14,7 +16,7 @@ import { S, T, WD_EN } from './lib/i18n.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
-import { cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
+import { venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
 import { breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, statusTag } from './lib/html.mjs';
 
@@ -36,7 +38,9 @@ export function loadData(dir = join(ROOT, 'data')) {
   try { geo = read('geo.json'); } catch { /* 位置のデータがないもの（テストの見本など）は、地図の画像なし */ }
   let archive = { items: [] };
   try { archive = read('archive.json'); } catch { /* 過去の記録がないデータ（テストの見本など）は、過去のページなし */ }
-  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts, geo, archive };
+  let venues = [];
+  try { venues = read('venues.json'); } catch { /* スポットのデータがない場合（テストの見本など）は、スポットのページなし */ }
+  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts, geo, archive, venues };
 }
 
 // ---- 各ページ ----
@@ -177,6 +181,12 @@ function eventLd(s, list) {
   return items.length ? `<script type="application/ld+json">${JSON.stringify(items).replace(/</g, '\\u003c')}</script>\n` : '';
 }
 
+// この会場の「スポット」ページへのリンク（venueId があるとき）
+function spotLink(s, ctx, lang) {
+  const sp = s.venueId && ctx.spots.find((x) => x.venue.id === s.venueId);
+  return sp ? `<br><a href="/spot/${sp.venue.id}/">${esc(lang === 'ja' ? 'この会場のスポットページ' : 'Spot page for this venue')}</a>` : '';
+}
+
 function pastDatesBlock(list, lang) {
   if (!list.length) return '';
   const p = P[lang].series;
@@ -221,7 +231,7 @@ ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
 <dl class="facts">
 ${row(p.when, rule)}
 ${row(p.time, lang === 'en' && timeEn(s) ? (s.time.text === timeEn(s).replace('–', '〜') ? esc(timeEn(s)) : orig(timeEn(s), s.time.text)) : t(s.time?.text))}
-${row(p.venue, lang === 'en' && venueL(s, lang) !== v.name ? orig(venueL(s, lang), v.name) : esc(v.name))}
+${row(p.venue, (lang === 'en' && venueL(s, lang) !== v.name ? orig(venueL(s, lang), v.name) : esc(v.name)) + spotLink(s, ctx, lang))}
 ${row(p.address, v.address ? tv(s, 'address', v.address, lang) : est(estAddress, p))}
 ${row(p.access, v.access ? tv(s, 'access', v.access, lang) : est(estAccess, p))}
 ${row(p.admission, s.visitor?.admission ? tv(s, 'admission', s.visitor.admission, lang) : est(p.estFree, p))}
@@ -252,7 +262,7 @@ function searchPage(lang) {
   const body = `<div class="in page">${breadcrumb([{ label: p.h1 }], lang)}<h1>${esc(p.h1)}</h1>
 <form class="search" action="/search/" role="search"><input name="q" type="search" placeholder="${esc(p.ph)}" aria-label="${esc(p.kw)}"><button>${esc(p.btn)}</button></form>
 <p class="lead" id="search-status" aria-live="polite"></p><div id="search-results"></div></div>`;
-  return pg(lang, '/search/', { title: p.h1, description: p.desc, body, scripts: ['/search.js'] });
+  return pg(lang, '/search/', { title: p.h1, description: p.desc, body, scripts: ['/search.js'], css: ['/spot.css'] });
 }
 
 function aboutPage(ctx, lang) {
@@ -404,7 +414,7 @@ function sideNav(ctx, lang, base) {
 // ページの本文（パンくずのあと）を、本文＋右のナビの2列にする
 function withSide(page, ctx, lang) {
   const base = splitPath(page.path).base;
-  if (!/^\/(weekend|calendar|date|area|kind|shuten|search|about)\//.test(base)) return page;
+  if (!/^\/(weekend|calendar|date|area|kind|spot|shuten|search|about)\//.test(base)) return page;
   const m = /^(<div class="in page[^"]*">)(<nav class="crumbs"[\s\S]*?<\/nav>)([\s\S]*)<\/div>$/.exec(page.body);
   if (!m) return page;
   return { ...page, body: `${m[1]}${m[2]}<div class="ev-split"><div class="ev-main">${m[3]}</div>${sideNav(ctx, lang, base)}</div></div>` };
@@ -412,19 +422,20 @@ function withSide(page, ctx, lang) {
 
 // ---- 全体 ----
 
-export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {}, archive = { items: [] } }, today, days = 120) {
+export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {}, archive = { items: [] }, venues = [] }, today, days = 120) {
   setTranslations(translations);
   GEO = geo;
   const ids = new Set(series.map((x) => x.id));
   ALL_POSTS = [...BLOG, ...autoPosts.map((a) => cleanLinks(a, ids))];
   const occ = buildOccurrences(series, occurrences, today, days);
   const past = pastOccurrences(archive, series).filter((o) => o.date < today);
-  const ctx = { series, occ, past, today, days, credits };
+  const spots = buildSpots(venues, series, occ, today);
+  const ctx = { series, occ, past, spots, weekend: upcomingWeekend(today), today, days, credits };
   // 英語が既定（/）。日本語は /ja/
-  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
+  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）
   const files = LANGS_ORDER.map((lang) => ({ path: langPath('/blog/feed.xml', lang), content: feedXml(lang) }));
-  return { pages, occ, files };
+  return { pages, occ, files, spots };
 }
 
 export function searchIndex(occ) {
@@ -435,6 +446,11 @@ export function searchIndex(occ) {
   }));
 }
 
+// 検索用：スポット（会場）の小さな JSON（/events.json の spots）
+function spotIndexData(spots) {
+  return spots.map((sp) => ({ id: sp.venue.id, n: sp.venue.name, ne: venueTrEn(sp.venue.id, 'name'), ci: sp.venue.area.city || '', cie: cityEn(sp.venue.area.city), p: PREFS[sp.venue.area.pref], pe: prefLabel(sp.venue.area.pref, 'en'), k: sp.venue.kind, pl: sp.venue.place || '', c: sp.count }));
+}
+
 function main() {
   const today = arg('today') || todayJst();
   parseYmd(today);
@@ -442,7 +458,7 @@ function main() {
   rmSync(out, { recursive: true, force: true });
   mkdirSync(out, { recursive: true });
   cpSync(join(ROOT, 'static'), out, { recursive: true });
-  const { pages, occ, files } = buildPages(loadData(arg('data') ? resolve(ROOT, arg('data')) : undefined), today);
+  const { pages, occ, files, spots } = buildPages(loadData(arg('data') ? resolve(ROOT, arg('data')) : undefined), today);
   for (const p of pages) {
     const file = p.path.endsWith('.html') ? join(out, p.path) : join(out, p.path, 'index.html');
     mkdirSync(dirname(file), { recursive: true });
@@ -452,7 +468,7 @@ function main() {
     mkdirSync(dirname(join(out, f.path)), { recursive: true });
     writeFileSync(join(out, f.path), f.content);
   }
-  writeFileSync(join(out, 'events.json'), JSON.stringify({ today, events: searchIndex(occ) }));
+  writeFileSync(join(out, 'events.json'), JSON.stringify({ today, events: searchIndex(occ), spots: spotIndexData(spots) }));
   writeFileSync(join(out, 'pages.json'), JSON.stringify(pages.filter((p) => !p.path.endsWith('.html')).map((p) => p.path)));
   console.log(`${today} 基準で ${pages.length} ページ、開催 ${occ.length} 件を ${out} に書き出しました`);
 }

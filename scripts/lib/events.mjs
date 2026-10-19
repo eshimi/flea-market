@@ -75,8 +75,8 @@ export function validateSources(sources, series) {
   for (const src of sources) {
     const e = (m) => errs.push(`sources[${src.url}]: ${m}`);
     if (!HTTP_RE.test(src.url || '')) e('url が不正');
-    if (!Array.isArray(src.series) || !src.series.length) e('series（この出典を使うシリーズ）がありません');
-    else for (const id of src.series) if (!ids.has(id)) e(`series に ${id} がありません`);
+    if ((!Array.isArray(src.series) || !src.series.length) && !(src.venues || []).length) e('series（この出典を使うシリーズ）がありません');
+    else for (const id of src.series || []) if (!ids.has(id)) e(`series に ${id} がありません`);
     if (!src.terms || ![true, false, null].includes(src.terms.ok)) e('terms.ok は true / false / null（未確認）');
     else if (src.terms.ok !== null) try { parseYmd(src.terms.checkedAt); } catch { e('terms.checkedAt（利用規約を確認した日）が不正'); }
   }

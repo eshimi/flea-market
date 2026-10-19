@@ -105,3 +105,18 @@ test('文字コード：宣言がなく UTF-8 でもないバイト列（Shift_J
   assert.equal(decodeBody(sjis, 'text/plain'), '押立公園');
   assert.equal(decodeBody(new TextEncoder().encode('押立公園'), 'text/plain'), '押立公園');
 });
+
+test('スポット（venues）の出典も、本文に evidence があれば確認日が進み、合わなければ進まない', () => {
+  const venues = [{ id: 'v1', sources: [{ url: 'https://o.example/p', checkedAt: '2026-10-01', evidence: ['見本広場'] }] }];
+  const src = { url: 'https://o.example/p', series: [], venues: ['v1'], terms: { ok: true } };
+  const state = {};
+  let notes = applyResult({ src, result: { status: 200, text: '会場：見本広場' }, series: [], state, today: '2026-10-19', venues });
+  assert.equal(venues[0].sources[0].checkedAt, '2026-10-19');
+  assert.deepEqual(notes, []);
+  notes = applyResult({ src, result: { status: 200, text: '別の内容' }, series: [], state, today: '2026-10-20', venues });
+  assert.equal(venues[0].sources[0].checkedAt, '2026-10-19');
+  assert.ok(notes[0].includes('venue:v1'));
+  // 取得対象の判定：series が空でも、venues があれば計画に入る
+  const { plan } = planChecks({ sources: [src], state: {}, series: [], occurrences: [], today: '2026-10-19', all: true });
+  assert.equal(plan.length, 1);
+});

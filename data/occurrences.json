@@ -720,5 +720,45 @@
   "reason": "にぎわい祭り（フリマ＆マルシェ＆キッチンカ―イベント）",
   "checkedAt": "2026-10-18",
   "source": "https://www.fmfm-king.com/yamada12-19-20/"
+ },
+ {
+  "series": "komazawa-park-flea-tokyo-park",
+  "date": "2027-01-17",
+  "status": "confirmed",
+  "reason": "主催団体：オタカラネット",
+  "checkedAt": "2026-10-19",
+  "source": "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html"
+ },
+ {
+  "series": "komazawa-park-flea-tokyo-park",
+  "date": "2027-02-07",
+  "status": "confirmed",
+  "reason": "主催団体：タイムマシーンカンパニー",
+  "checkedAt": "2026-10-19",
+  "source": "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html"
+ },
+ {
+  "series": "komazawa-park-flea-tokyo-park",
+  "date": "2027-03-07",
+  "status": "confirmed",
+  "reason": "主催団体：東京リサイクル運動市民の会",
+  "checkedAt": "2026-10-19",
+  "source": "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html"
+ },
+ {
+  "series": "hikarigaoka-park-flea-tokyo-park",
+  "date": "2026-11-08",
+  "status": "confirmed",
+  "reason": "主催団体：ミルクの会",
+  "checkedAt": "2026-10-19",
+  "source": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html"
+ },
+ {
+  "series": "hikarigaoka-park-flea-tokyo-park",
+  "date": "2026-11-29",
+  "status": "confirmed",
+  "reason": "主催団体：エコロジーネットワーク ラズベリー",
+  "checkedAt": "2026-10-19",
+  "source": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html"
  }
 ]

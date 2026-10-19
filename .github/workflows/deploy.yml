@@ -53,7 +53,7 @@ jobs:
       - name: 確認結果をリポジトリに保存
         continue-on-error: true
         run: |
-          files="data/series.json data/source-state.json data/sitemap-lastmod.json data/blog-auto data/crawl-state.json data/review-queue.json data/archive.json"
+          files="data/series.json data/source-state.json data/sitemap-lastmod.json data/blog-auto data/crawl-state.json data/review-queue.json data/archive.json data/venues.json"
           if [ -z "$(git status --porcelain -- $files)" ]; then echo "変更はありません"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -64,7 +64,7 @@ jobs:
             git reset -q --hard "origin/${GITHUB_REF_NAME}"
             tar xf "$RUNNER_TEMP/save.tar"
             # 実行中に人（や週2回の更新）が更新したファイルは、古い版で上書きしない（次回の実行でやり直す）
-            for f in data/series.json data/review-queue.json; do
+            for f in data/series.json data/review-queue.json data/venues.json; do
               if ! git diff --quiet "${GITHUB_SHA}" "origin/${GITHUB_REF_NAME}" -- "$f"; then git checkout "origin/${GITHUB_REF_NAME}" -- "$f"; fi
             done
             git add -A $files

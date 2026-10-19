@@ -1,8 +1,8 @@
 // 英語の表示用の訳（data/translations-en.json）。公式の日本語の文を、このサイトが訳した非公式のもの。
 // 訳がないものは、日本語のまま出す（推測で訳さない）。数字は原文と一致させる（test で確認）。
-let TR = { series: {}, organizers: {}, labels: {}, cities: {}, notes: {} };
+let TR = { series: {}, organizers: {}, labels: {}, cities: {}, notes: {}, venues: {} };
 export function setTranslations(t) {
-  TR = { series: {}, organizers: {}, labels: {}, cities: {}, notes: {}, ...(t || {}) };
+  TR = { series: {}, organizers: {}, labels: {}, cities: {}, notes: {}, venues: {}, ...(t || {}) };
 }
 const S = (s) => TR.series[s.id] || {};
 
@@ -25,3 +25,7 @@ export const nameL = (s, lang) => (lang === 'en' && nameEn(s)) || s.name;
 export const venueL = (s, lang) => (lang === 'en' && venueEn(s)) || s.venue.name;
 export const cityL = (name, lang) => (lang === 'en' && cityEn(name)) || name;
 export const noteL = (o, lang) => (lang === 'en' && noteEn(o.series.id, o.date)) || o.note || '';
+
+// スポット（会場）の訳。translations-en.json の venues[id].{name,place,address,access,summary,rules}
+export const venueTrEn = (id, key) => (TR.venues?.[id] || {})[key] || '';
+export const spotL = (v, key, lang) => (lang === 'en' && venueTrEn(v.id, key)) || v[key] || '';
