@@ -4,8 +4,8 @@
 .hero2{position:relative;background:var(--hm-cream);overflow:hidden;isolation:isolate}
 .hero2-photo{position:absolute;inset:0;z-index:-1}
 .hero2-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:100% 40%}
-/* 3枚目は、幅いっぱいに合わせて（約0.77倍）右寄せで表示する */
-.hero2-photo img.hp-alt[src$="hero-3.webp"]{object-fit:cover;object-position:100% 40%}
+/* 3枚目は、約0.7倍（引き幅を半分に）で右寄せ・上下中央に表示する */
+.hero2-photo img.hp-alt[src$="hero-3.webp"]{position:absolute;right:0;top:50%;transform:translateY(-50%);width:1161px;max-width:none;height:auto;object-fit:fill}
 .hero2-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(251,247,239,.98) 0,rgba(251,247,239,.93) 28%,rgba(251,247,239,.45) 47%,rgba(251,247,239,0) 63%)}
 .hero2-in{width:100%;box-sizing:border-box;max-width:1240px;margin:0 auto;padding:44px 28px 40px;position:relative}
 .hero2-copy{max-width:680px}
@@ -39,7 +39,7 @@
   .hero2{display:flex;flex-direction:column}
   .hero2-photo{position:relative;inset:auto;height:112px;z-index:0}
   .hero2-photo img{object-position:92% 30%}
-  .hero2-photo img.hp-alt[src$="hero-3.webp"]{object-fit:cover;object-position:92% 30%}
+  .hero2-photo img.hp-alt[src$="hero-3.webp"]{position:static;transform:none;width:100%;height:100%;object-fit:cover;object-position:92% 30%}
   .hero2-photo::after{background:linear-gradient(180deg,rgba(251,247,239,0) 52%,var(--hm-cream) 100%)}
   .hero2-in{padding:0 16px 22px;margin-top:-18px;min-height:0}
   .hero2 h1{font-size:clamp(30px,8.6vw,38px)}
