@@ -162,5 +162,14 @@
   "reason": "new",
   "hash": "9139cf4e6f081015",
   "status": "pending"
+ },
+ {
+  "id": "tmc-shirakobato",
+  "url": "https://tmc-dx.org/area/shirakobato.html",
+  "name": "タイムマシーンカンパニー しらこばと水上公園フリーマーケット",
+  "detectedAt": "2026-10-20",
+  "reason": "new",
+  "hash": "1af5e9333c35df77",
+  "status": "pending"
  }
 ]

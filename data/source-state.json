@@ -1920,5 +1920,15 @@
   "evidenceOk": {
    "tokyo-romantic-shibuya": true
   }
+ },
+ "https://tmc-dx.org/area/kawagoe.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Sun, 30 Aug 2026 00:34:22 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "tmc-kawagoe-suijo-park": true
+  }
  }
 }
