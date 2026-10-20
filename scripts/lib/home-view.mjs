@@ -30,7 +30,7 @@ const heading = (t, id) => `<h2 class="hm-h"${id ? ` id="${id}"` : ''}><span>${e
 // ---- HERO ----
 // 日本語・英語どちらのトップでも、同じ検索（/search/?q=）へ送る。既存の検索の動きは変えない
 // HERO の写真。static/img/hero-2.webp があれば、トップの写真を切り替えて見られる（点を押すと入れ替わる）
-const HERO_FILES = ['/img/hero.webp', '/img/hero-2.webp'];
+const HERO_FILES = ['/img/hero.webp', '/img/hero-2.webp', '/img/hero-3.webp'];
 const heroPhotos = () => HERO_FILES.filter((p) => existsSync(join(STATIC_DIR, p)));
 export function renderHero(lang = 'ja', photo = '/img/hero.webp') {
   const t = T[lang].hero;
@@ -243,14 +243,14 @@ export function renderAreaTiles(ctx, lang = 'ja') {
 
 // ガイド帯：写真（左）と見出し・本文・ボタン（右）。写真は AI 生成（data/image-credits.json）
 const GUIDE_BAND = {
-  en: { h: ['More Than Shopping.', 'A Deeper Japan.'], p: 'Flea markets are a great way to meet local people, discover unique culture, and find one-of-a-kind items you won’t see anywhere else.', btn: 'Japan Market Guide' },
-  ja: { h: ['ショッピングだけじゃない。', 'もう一つの日本へ。'], p: 'フリーマーケットは、地元の人と出会い、その土地の文化や、ここでしか出会えない品に触れられる場所です。', btn: 'ガイドを読む' },
+  en: { h: ['More Than Shopping.', 'A Deeper Japan.'], p: 'Flea markets are a great way to meet local people, discover unique culture, and find one-of-a-kind items you won’t see anywhere else.', btn: 'Read the Tips' },
+  ja: { h: ['ショッピングだけじゃない。', 'もう一つの日本へ。'], p: 'フリーマーケットは、地元の人と出会い、その土地の文化や、ここでしか出会えない品に触れられる場所です。', btn: 'TIPSを読む' },
 };
 export function renderGuideBand(lang = 'ja') {
   const t = GUIDE_BAND[lang];
   return `<section class="hm-sec hm-gband" aria-label="${esc(t.h.join(' '))}"><div class="hm-in"><div class="gband">
 <div class="gband-ph" aria-hidden="true" style="background-image:url(/img/home/guide-band.webp)"></div>
-<div class="gband-t"><span class="sun" aria-hidden="true"></span><h2><span>${esc(t.h[0])}</span><span>${esc(t.h[1])}</span></h2><p>${esc(t.p)}</p><a class="btn" href="/blog/">${esc(t.btn)} ${icon('arrow', 16)}</a></div>
+<div class="gband-t"><span class="sun" aria-hidden="true"></span><h2><span>${esc(t.h[0])}</span><span>${esc(t.h[1])}</span></h2><p>${esc(t.p)}</p><a class="btn" href="${lang === 'ja' ? '/ja/tips/' : '/tips/'}">${esc(t.btn)} ${icon('arrow', 16)}</a></div>
 </div></div></section>`;
 }
 

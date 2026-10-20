@@ -22,6 +22,28 @@
   }
  },
  {
+  "id": "hero-3",
+  "files": [
+   "static/img/hero-3.webp"
+  ],
+  "use": "トップページの写真（切り替え用の3枚目。左を白に溶かすグラデーション入り）",
+  "title": "ユーザー提供の画像（トーキョー フリーマーケット）",
+  "photographer": "サイト運営者が用意",
+  "source": "サイト運営者",
+  "sourceUrl": "/about/",
+  "license": "運営者が用意した画像",
+  "licenseUrl": "",
+  "note": "撮影者・作成方法（撮影／画像生成など）・権利の確認は未記入（要確認）。サイト運営者が用意した画像を、横長（2:1）に切り、左側をクリーム色に溶かして使用",
+  "checkedAt": "2026-10-20",
+  "en": {
+   "use": "Top page photo (third photo in the rotation; left side faded into the background)",
+   "title": "Image provided by the site operator (Tokyo flea market)",
+   "photographer": "Provided by the site operator",
+   "source": "Site operator",
+   "license": "Provided by the site operator (rights to be confirmed)"
+  }
+ },
+ {
   "id": "cards",
   "files": [
    "static/img/kinds/flea.webp",
