@@ -141,9 +141,9 @@ aside h2{font-size:15px;margin-bottom:10px}
 
 /* 帯の中に文字を置くページ（左：パンくず・見出し・説明、右：イラスト） */
 .pg-banner.has-text{height:auto;background:#FCEFDD;border-bottom:1px solid var(--line)}
-.pg-banner-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:center;padding-top:26px;padding-bottom:26px}
+.pg-banner-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:center;padding-top:12px;padding-bottom:12px}
 .pg-banner-text .crumbs{margin:0 0 8px}
 .pg-banner-text h1{margin:0 0 8px}
 .pg-banner-text .lead{margin:0;max-width:34em}
-.pg-banner-art{height:170px;background-size:contain;background-position:center;background-repeat:no-repeat}
-@media (max-width:900px){.pg-banner-in{grid-template-columns:1fr;gap:12px;padding-top:18px;padding-bottom:12px}.pg-banner-art{height:110px}}
+.pg-banner-art{height:150px;background-size:contain;background-position:center;background-repeat:no-repeat}
+@media (max-width:900px){.pg-banner-in{grid-template-columns:1fr;gap:10px;padding-top:12px;padding-bottom:8px}.pg-banner-art{height:110px}}
