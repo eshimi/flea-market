@@ -177,4 +177,5 @@ aside h2{font-size:15px;margin-bottom:10px}
 .col-n{font-family:"DM Serif Display","Noto Sans JP",serif;font-size:26px;color:var(--acc);line-height:1}
 .col-card b{font-size:17px;line-height:1.4}
 .col-l{font-size:14px;color:var(--sub)}
+.tips-tag{display:inline-block;align-self:flex-start;font-size:12px;color:var(--acc);border:1px solid var(--acc);border-radius:999px;padding:1px 9px}
 @media (max-width:700px){.col-list{grid-template-columns:1fr}}

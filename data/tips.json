@@ -1,340 +1,290 @@
 [
   {
-    "id": "tip-01-rain",
-    "slug": "rain-day-check",
+    "slug": "before-you-go",
+    "cat": "before",
     "ja": {
-      "title": "雨の日は、開催するかどうかを先に確かめる",
-      "lead": "雨の予報の日は、出かける前にひと手間を。",
+      "title": "出かける前に確かめたいこと",
+      "lead": "会場に着いてから困らないための、行く前のひと手間です。",
       "blocks": [
         {
-          "p": "雨の日に出かけて、会場が開いていなかった、ということは少なくありません。屋外のフリーマーケットや骨董市は、天気によって中止や延期になることがあります。前日の夜と、当日の朝に、主催者のページを見る習慣をつけると安心です。"
+          "h2": "最新の情報を、出かける前に確かめる"
         },
         {
-          "p": "主催者によっては、開催の判断を当日の朝に決めて、ウェブサイトのトップで告知しています。判断の時刻や、告知の場所は、会場ごとに違います。ページの書き方をよく読んでおきましょう。"
+          "p": "日程・時間・会場は変わることがあります。開催の判断を当日の朝に行い、トップページで告知する主催者もあります。日付が近づいたら、主催者の公式ページで最新の案内を確かめましょう。このサイトの情報も、確認日を見ながら使ってください。"
         },
         {
-          "p": "雨の日に行くなら、ビニールの袋やタオルを持っていくと、品物を濡らさずに済みます。"
+          "h2": "雨の日は、開催するかどうかを先に"
+        },
+        {
+          "p": "屋外の市は、天候で中止や延期になることがあります。前日の夜と当日の朝に、主催者のページを見る習慣をつけると安心です。雨の日に行くなら、ビニール袋とタオルを持っていくと、品物を濡らさずに済みます。"
+        },
+        {
+          "h2": "終了の時間は、前後することがある"
+        },
+        {
+          "p": "「何時まで」と書かれていても、売れ行きや天候で少し早く終わることがあります。目当ての品があるなら、開場直後か早めの時間が確実です。"
+        },
+        {
+          "h2": "朝に行くか、昼に行くか"
+        },
+        {
+          "p": "朝は品物が多く並び、午後になるにつれて店じまいが始まることが多いものです。人気の品は早く売れるので、掘り出し物を探すなら朝の早い時間が向いています。昼過ぎは混雑が落ち着いて、ゆっくり見られることもあります。何を探すかで選ぶとよいでしょう。"
+        },
+        {
+          "h2": "行き方：電車と車"
+        },
+        {
+          "p": "駅から歩く会場が多く、道のりは会場ごとに違います。出発前に主催者の案内と地図の経路を見比べておくと迷いにくくなります。帰りの電車の時間も、あらかじめ決めておくと安心です。"
+        },
+        {
+          "p": "車で行くなら、会場の駐車場が使えるかを主催者のページで確かめましょう。台数に限りがあったり、利用に条件があったりすることがあります。会場に駐車場がない場合は近くの有料駐車場を探すことになり、混み合う時間は空きが少なくなります。"
         }
       ]
     },
     "en": {
-      "title": "Check whether the market is on before you go on a rainy day",
-      "lead": "A quick check before you leave can save a wasted trip.",
+      "title": "Before you go",
+      "lead": "A little preparation before you leave makes the day much easier.",
       "blocks": [
         {
-          "p": "Many outdoor flea markets and antique fairs in Japan are canceled or postponed in bad weather, so it is easy to arrive at a closed venue. Check the organizer’s page on the evening before and again in the morning."
+          "h2": "Check the latest information before you go"
         },
         {
-          "p": "Some organizers decide on the morning of the event and announce it at the top of their website. The time of the decision and the place of the notice differ by venue, so read how each one explains it."
+          "p": "Dates, times and venues can change. Some organizers decide on the day itself and announce it at the top of their website. As the date approaches, check the organizer’s official page for the latest notice. Keep the check date of any information on this site in mind too."
         },
         {
-          "p": "If you do go on a rainy day, bring plastic bags and a towel to keep your purchases dry."
+          "h2": "On a rainy day, check whether it is on"
+        },
+        {
+          "p": "Outdoor markets can be canceled or postponed in bad weather. Check the organizer’s page the evening before and again in the morning. If you do go on a rainy day, bring plastic bags and a towel to keep your purchases dry."
+        },
+        {
+          "h2": "The closing time can come earlier"
+        },
+        {
+          "p": "Even when a closing time is posted, stalls can pack up a little early if they sell out or the weather turns. If you have a particular item in mind, arriving at opening time is the safest choice."
+        },
+        {
+          "h2": "Go in the morning, or in the afternoon?"
+        },
+        {
+          "p": "In the morning, the most stock is out, and stalls begin to pack up little by little in the afternoon. Popular items sell out early, so for a bargain, the early morning is best. After lunch the crowd can thin out and you can look at things at a relaxed pace. Choose based on what you are looking for."
+        },
+        {
+          "h2": "Getting there by train or by car"
+        },
+        {
+          "p": "Many markets are a walk from the nearest station, and the walk differs by venue. Compare the directions on the organizer’s page with a map before you go, so you do not get lost. Decide on your return train in advance too."
+        },
+        {
+          "p": "If you are driving, check on the organizer’s page whether venue parking is available. The number of spaces can be limited, and there may be conditions for use. Without venue parking you will need a nearby paid lot, which fills up at busy times."
         }
       ]
     }
   },
   {
-    "id": "tip-02-hours",
-    "slug": "closing-time",
+    "slug": "shopping-and-payment",
+    "cat": "buy",
     "ja": {
-      "title": "終了の時間は、前後することがある",
-      "lead": "開始より終了のほうが、変わりやすいことがあります。",
+      "title": "買い物と支払いのコツ",
+      "lead": "小銭と支払い方法の、ちょっとした準備です。",
       "blocks": [
         {
-          "p": "フリーマーケットや骨董市には、「何時から何時まで」と書かれていても、売れ行きや天候で、少し早く終わることがあります。目当ての品があるなら、開店直後か、なるべく早めの時間に行くのが確実です。"
+          "h2": "小銭は、多めに持つのがいちばんの備え"
         },
         {
-          "p": "一方で、朝早くは出店者の準備の最中のこともあります。開場の時間と、出店の準備が整う時間は、同じとは限りません。落ち着いて見たいなら、開場から少し経った時間が向いていることもあります。"
+          "p": "フリーマーケットでは、出品している人の多くが個人です。店の人にとっては、お釣りが仕事の要になります。朝いちばんの一枚札は、そのぶん釣り銭の準備を崩す手間がかかります。だから、ちょっと早めに来た人ほど、細かいお金を持っていると喜ばれます。"
         },
         {
-          "p": "時間は、主催者のページの最新の案内を見てください。古い情報を見て出かけると、行き違いになることがあります。"
+          "p": "おすすめは、1,000円札を数枚、500円玉を数枚、100円玉を多めに用意しておくことです。財布の中が小銭だらけになっても、支払いの場面で慌てずに済みます。帰り道に使う交通費も忘れずに残しておきましょう。"
+        },
+        {
+          "h2": "カードや電子マネーは、出店者ごとに違う"
+        },
+        {
+          "p": "現金のみの出店者が多いものです。カードや電子マネーが使えるかは、会場の決まりではなく出店者の判断で決まります。買う前に一言たずねるか、現金を基本に考えておくと安心です。"
+        },
+        {
+          "h2": "売られていないもの・出店できないもの"
+        },
+        {
+          "p": "会場には、出店できる品物の決まりがあります。食べ物や生き物、危ないものなどは禁止されていることが多く、会場ごとに違います。目当てのものがあるときは思い込まず、主催者の案内で確かめましょう。"
         }
       ]
     },
     "en": {
-      "title": "The closing time can come earlier",
-      "lead": "Stalls may pack up before the posted time, so plan for the early part of the day.",
+      "title": "Shopping and payment",
+      "lead": "A few preparations for small change and payment.",
       "blocks": [
         {
-          "p": "Even when a market lists a closing time, it can end a little early if the stalls sell out or the weather turns. If you have a particular item in mind, arriving early on the day is the safest choice."
+          "h2": "Bring plenty of small change"
         },
         {
-          "p": "Early in the morning, some vendors are still setting up, so the opening time and the time when every stall is ready are not always the same. If you prefer a calmer look around, a later time after the opening can work well."
+          "p": "At most flea markets, many sellers are individuals, and giving change is part of their work. A large note takes time to break, especially early in the morning. So shoppers who arrive early with small bills and coins are often welcomed."
         },
         {
-          "p": "Always use the most recent times on the organizer’s page. An old notice can lead to a wasted trip."
+          "p": "A good idea is to bring a few 1,000-yen notes, a few 500-yen coins and plenty of 100-yen coins. Even if your wallet fills up with coins, you will not be caught out at the moment of paying. Keep money for the trip home as well."
+        },
+        {
+          "h2": "Card payment depends on each vendor"
+        },
+        {
+          "p": "Many vendors accept only cash. Whether cards or e-money are accepted is decided by each vendor, not by the venue. Ask before you buy, or plan on cash as the main way to pay."
+        },
+        {
+          "h2": "Items that are not sold"
+        },
+        {
+          "p": "Each venue has rules about what vendors may sell. Food, live animals and dangerous items are commonly banned, but the exact list differs from venue to venue. If you are looking for something specific, check the organizer’s notice rather than assuming."
         }
       ]
     }
   },
   {
-    "id": "tip-03-items",
-    "slug": "what-is-not-sold",
+    "slug": "manners-and-photos",
+    "cat": "manners",
     "ja": {
-      "title": "売られていないものを知っておく",
-      "lead": "会場によって、出店できる品物には決まりがあります。",
+      "title": "会場でのふるまい：ことばと写真",
+      "lead": "言葉が通じなくても、気持ちよく買い物をするためのコツです。",
       "blocks": [
         {
-          "p": "フリーマーケットや骨董市には、出店できない品物の決まりがあります。食べ物や生き物、危ないものなどは、会場の案内で禁止されていることが多いものです。何が出せて何が出せないのかは、会場ごとに違います。"
+          "h2": "ことばが通じなくても、買い物はできる"
         },
         {
-          "p": "買う側としては、「ここでは売っていないはず」と思い込まず、目当てのものが扱われているかを、主催者の案内で確かめておくと確実です。"
+          "p": "フリーマーケットの良いところは、売り手と話す時間が短くても、お互いに欲しいものとお金が分かれば取引が成り立つことです。品物を指差して「This one」、値段を聞くときは「How much?」の2語でほぼ足ります。「いくらですか？（Ikura desuka?）」と聞くと、通じやすい場合もあります。"
         },
         {
-          "p": "出店する側になるなら、販売できる品物の決まりを、必ず先に読んでおいてください。"
+          "p": "金額をやりとりするときは、スマートフォンの電卓が便利です。数字を打ち込んで画面を見せれば、誤解がありません。店の人も、画面に数字を打ち返してくれることがあります。"
+        },
+        {
+          "h2": "値段の交渉は、丁寧に"
+        },
+        {
+          "p": "値段の交渉は、日本でも文化の一部です。ただし、強い口調で半額を求めると、雰囲気が悪くなります。二つ以上まとめて買うときに「少し安くしてもらえますか」と丁寧に聞くと、話がまとまりやすいと感じる人が多いようです。行き過ぎた値切りは相手を困らせるので、笑顔で、無理のない範囲で話しましょう。"
+        },
+        {
+          "h2": "写真を撮る前に、一言"
+        },
+        {
+          "p": "品物には、ひとつずつ持ち主の思い出があります。店の人も、自分の店を写真に残されるのは、嬉しいこともあれば落ち着かないこともあります。撮る前に一言聞く習慣をつけると、お互いに気持ちよく過ごせます。スマートフォンを軽く指差して「Picture OK?」と聞けば、多くの場合はジェスチャーで答えてもらえます。断られたら、その場では撮らないのが基本です。"
+        },
+        {
+          "p": "陶器、漆器、骨董品、古い着物などは、とくに大切に扱われています。勝手に手に取らず、目を合わせてうなずいてもらってから触るようにしましょう。会場によっては撮影に決まりや許可が必要なこともあります。個人で楽しむ記念の写真と品物の撮影は、同じに扱えないこともあります。"
         }
       ]
     },
     "en": {
-      "title": "Items that are not sold",
-      "lead": "Each market has its own rules about what vendors may sell.",
+      "title": "Manners at the market: words and photos",
+      "lead": "Tips for a pleasant purchase, even when you do not share a language.",
       "blocks": [
         {
-          "p": "Flea markets and antique fairs have rules about what can be sold. Food, live animals and dangerous items are commonly banned, but the exact list differs from venue to venue."
+          "h2": "You can shop without a shared language"
         },
         {
-          "p": "As a shopper, do not assume what is or is not sold. Check the organizer’s notice if you are looking for something specific."
+          "p": "One nice thing about flea markets is that you do not need long conversations. If both sides know which item and which price, the deal works. Pointing at an item and saying “This one”, and asking “How much?”, covers most of it. “Ikura desuka?” (How much?) is also easy to understand."
         },
         {
-          "p": "If you plan to sell, read the rules on what may be sold before you apply."
+          "p": "A phone calculator is very handy for money. Type the number and show the screen, and there is no misunderstanding. Sellers sometimes type a number back on their own phone."
+        },
+        {
+          "h2": "Bargain politely"
+        },
+        {
+          "p": "Bargaining is part of the culture in Japan too, but demanding half price in a sharp tone will sour the mood. When buying two or more, asking politely, “Could you make it a little cheaper?”, is often a smooth way to agree. Pushing too hard makes the seller uncomfortable, so keep it friendly and within reason."
+        },
+        {
+          "h2": "One word before you take a photo"
+        },
+        {
+          "p": "Each item has its own history, and sellers can feel either happy or uneasy seeing their stall in a photo. A habit of asking first makes the day pleasant for everyone. Point to your phone and ask “Picture OK?”. In many cases you will get a gesture of yes. If the answer is no, do not take the photo."
+        },
+        {
+          "p": "Ceramics, lacquerware, antiques and old kimono are handled with particular care. Do not pick them up without a look and a nod first. Some venues have rules on photography, and permission may be required. A personal keepsake photo and a photo of goods may be treated differently."
         }
       ]
     }
   },
   {
-    "id": "tip-04-payment",
-    "slug": "card-payment",
+    "slug": "safety-and-carrying-home",
+    "cat": "safety",
     "ja": {
-      "title": "カードや電子マネーが使えるかは、出店者ごとに違う",
-      "lead": "支払い方法は、お店によって決まっています。",
+      "title": "貴重品と、持ち帰りの備え",
+      "lead": "人の多い会場で大切なものを守り、買ったものを無事に持ち帰るための話です。",
       "blocks": [
         {
-          "p": "フリーマーケットでは、現金のみの出店者が多いものです。カードや電子マネーが使えるかどうかは、会場の決まりではなく、出店者ごとの判断で決まります。"
+          "h2": "貴重品は身につけて管理する"
         },
         {
-          "p": "そのため、買う前に一言たずねるか、現金を基本に用意しておくと安心です。特に、少額の品物や、朝早くの買い物では、現金が便利です。"
+          "p": "フリーマーケットや骨董市は、人が多く集まる場所です。混み合う中では、財布やスマートフォンをかばんの奥に入れるか、身につけて守りましょう。かばんは体の前に持ち、品物を見るときも足元に置かないでください。"
         },
         {
-          "p": "会場によっては、決済の案内を公式に出していることもあります。事前に主催者のページを見て、支払いの方法を確認しておくと、当日の戸惑いが減ります。"
+          "h2": "買ったものを、無事に家まで"
+        },
+        {
+          "p": "お店の人が、新聞紙などで簡単に包んでくれることがあります。ありがたい心遣いですが、電車やバスで揺られるうちに欠けてしまうこともあります。飛行機に預ける荷物にするなら、なおさら気をつけたいところです。"
+        },
+        {
+          "p": "ホテルに戻ってから、衣類やタオルで包み直すと安心です。100円ショップで売っている気泡緩衝材（プチプチ）も、手軽な備えになります。割れやすいものは、いちばん大きな荷物の真ん中に入れると守りやすくなります。"
+        },
+        {
+          "p": "買い物の袋は、もらえないことが多いので、大きめのトートバッグやリュックを持っていくと便利です。帰りに荷物が増えても、肩や手が疲れにくくなります。"
         }
       ]
     },
     "en": {
-      "title": "Card payment depends on each vendor",
-      "lead": "Whether a stall takes cards is the vendor’s decision, so bring cash as a safe default.",
+      "title": "Valuables, and getting your purchases home",
+      "lead": "Keep your belongings safe in a crowd, and bring your purchases home in one piece.",
       "blocks": [
         {
-          "p": "At many flea markets, most vendors accept only cash. Whether cards or e-money are accepted is decided by each vendor, not by the venue."
+          "h2": "Keep valuables with you"
         },
         {
-          "p": "So ask before you buy, or simply bring cash. Cash is handy for small purchases and early-morning shopping."
+          "p": "Flea markets and antique fairs draw crowds. In a busy space, keep your wallet and phone deep in your bag or on your person. Carry your bag in front of you, and do not leave it on the ground when you look at items."
         },
         {
-          "p": "Some venues publish payment information on their official pages. Checking beforehand reduces surprises on the day."
+          "h2": "Getting your purchases home safely"
+        },
+        {
+          "p": "Sellers sometimes wrap things quickly in newspaper. It is a kind gesture, but on a train or bus it may not keep a piece from chipping. If the item is going into checked luggage, take extra care."
+        },
+        {
+          "p": "Wrap it again with clothes or a towel back at your hotel. Bubble wrap from a 100-yen shop is an easy extra layer. Put fragile items in the middle of your largest bag, where they are better protected."
+        },
+        {
+          "p": "Bags are often not given, so a large tote or a backpack is useful. Even when your purchases grow on the way back, your shoulders and hands will be less tired."
         }
       ]
     }
   },
   {
-    "id": "tip-05-parking",
-    "slug": "parking",
+    "slug": "for-vendors",
+    "cat": "vendor",
     "ja": {
-      "title": "車で行くなら、駐車場の案内を先に確かめる",
-      "lead": "会場の駐車場と、近くの駐車場は、別のものです。",
-      "blocks": [
-        {
-          "p": "車で出かける場合は、会場の駐車場が使えるかどうかを、主催者のページで確かめましょう。台数に限りがあったり、利用に条件があったりすることがあります。"
-        },
-        {
-          "p": "会場の駐車場が使えないときは、近くの有料駐車場を探すことになります。混み合う時間帯は、空きが少ないものです。荷物が多い日は、なるべく公共の交通機関を考えるのも一つの方法です。"
-        },
-        {
-          "p": "駐車場の料金や台数は、変わることがあります。出かける前に、最新の案内を見てください。"
-        }
-      ]
-    },
-    "en": {
-      "title": "Parking at the venue and nearby",
-      "lead": "Venue parking is often limited, so check the notice before you drive.",
-      "blocks": [
-        {
-          "p": "If you are driving, check the organizer’s page to see whether venue parking is available. The number of spaces can be limited, and there may be conditions for use."
-        },
-        {
-          "p": "If the venue has no parking, you will need a nearby paid lot, which fills up at busy times. On a day with lots of luggage, public transport may be easier."
-        },
-        {
-          "p": "Parking fees and spaces can change, so look at the latest notice before you set off."
-        }
-      ]
-    }
-  },
-  {
-    "id": "tip-06-access",
-    "slug": "getting-there-by-train",
-    "ja": {
-      "title": "電車で行くなら、会場の行き方を先に見ておく",
-      "lead": "最寄りの駅から歩く道のりは、会場によって大きく違います。",
-      "blocks": [
-        {
-          "p": "フリーマーケットや骨董市は、駅から歩いて行く会場が多いものです。駅からの道のりや、所要の時間は、会場ごとに違います。乗り換えが多い路線では、思ったより時間がかかることもあります。"
-        },
-        {
-          "p": "出かける前に、主催者の案内にある行き方と、地図の経路を見比べておくと迷いにくくなります。混み合う時間帯は、駅から会場までの道も混むことがあります。"
-        },
-        {
-          "p": "帰りの電車の時間も、あらかじめ決めておくと安心です。品物が増えると、荷物も重くなります。"
-        }
-      ]
-    },
-    "en": {
-      "title": "Getting there by train",
-      "lead": "Check the walk from the station and the transfers before you leave.",
-      "blocks": [
-        {
-          "p": "Many flea markets and antique fairs are a walk from the nearest station. The walk and the time it takes differ by venue, and transfers can take longer than expected."
-        },
-        {
-          "p": "Compare the directions on the organizer’s page with a map before you go, so you do not get lost. The route can also be crowded at busy times."
-        },
-        {
-          "p": "Decide on your return train in advance. Your bag gets heavier as you shop."
-        }
-      ]
-    }
-  },
-  {
-    "id": "tip-07-valuables",
-    "slug": "keep-valuables-close",
-    "ja": {
-      "title": "貴重品は、身につけて管理する",
-      "lead": "人の多い会場では、かばんの口に注意を。",
-      "blocks": [
-        {
-          "p": "フリーマーケットや骨董市は、人が多く集まる場所です。混み合うなかでは、財布やスマートフォンを、かばんの奥に入れたり、身につけたりして守りましょう。"
-        },
-        {
-          "p": "かばんは、体の前に持つと安心です。品物を見るときは、かばんを足元に置かず、目の届く場所に置いてください。"
-        },
-        {
-          "p": "会場の案内や、主催者の注意書きも読んでおくと、当日の安心につながります。"
-        }
-      ]
-    },
-    "en": {
-      "title": "Keep valuables with you",
-      "lead": "Crowds are the usual time for bag theft, so keep wallets and phones close.",
-      "blocks": [
-        {
-          "p": "Flea markets and antique fairs draw crowds. In a busy space, keep your wallet and phone deep in your bag or on your person."
-        },
-        {
-          "p": "Carry your bag in front of you. When you look at items, do not leave the bag on the ground. Keep it where you can see it."
-        },
-        {
-          "p": "Read the venue’s notices and the organizer’s warnings. Knowing them in advance helps you feel at ease on the day."
-        }
-      ]
-    }
-  },
-  {
-    "id": "tip-08-manners",
-    "slug": "photos-and-bargaining",
-    "ja": {
-      "title": "写真と値段交渉は、相手に一言たずねてから",
-      "lead": "品物も人も、大切に扱うことが、気持ちのよい買い物につながります。",
-      "blocks": [
-        {
-          "p": "出品者の品物を写真に撮るときは、一言たずねるのが礼儀です。会場によっては、撮影に決まりがあったり、許可が必要だったりします。個人で楽しむ記念の写真と、品物の撮影は、同じに扱えないこともあります。"
-        },
-        {
-          "p": "値段の交渉は、個人の出品者との間で行われることが多いものです。ただ、行き過ぎた値切りは、相手を困らせます。笑顔で、無理のない範囲で話してみましょう。"
-        },
-        {
-          "p": "会場の案内に、撮影や交渉についての決まりがあれば、先に読んでおくと安心です。"
-        }
-      ]
-    },
-    "en": {
-      "title": "Manners for photos and bargaining",
-      "lead": "Ask before taking photos of items or people, and keep bargaining friendly.",
-      "blocks": [
-        {
-          "p": "When you photograph a seller’s items, it is polite to ask first. Some venues have rules about photography, and permission may be required. A personal keepsake photo and a photo of goods may be treated differently."
-        },
-        {
-          "p": "Haggling usually happens between you and an individual seller. Pushing too hard makes the seller uncomfortable, so keep it friendly and within reason."
-        },
-        {
-          "p": "If the venue publishes rules on photography or bargaining, read them before you go."
-        }
-      ]
-    }
-  },
-  {
-    "id": "tip-09-vendors",
-    "slug": "basics-for-vendors",
-    "ja": {
-      "title": "出店したい方へ：まず、主催者の規則を読む",
+      "title": "出店したい方へ：まず主催者の規則を読む",
       "lead": "出店の申込みや品物の決まりは、回ごとに違うことがあります。",
       "blocks": [
+        {
+          "h2": "申込みの前に確かめること"
+        },
         {
           "p": "出店を考えるなら、まず主催者の案内で、申込みの方法・出店料・販売できる品物の決まりを確かめましょう。同じ主催者でも、回によって条件が変わることがあります。"
         },
         {
-          "p": "申込みは、期限と定員があることが多いものです。締め切りを過ぎると出店できないので、早めに準備するのが安心です。"
-        },
-        {
-          "p": "当日の持ち物や、釣り銭の用意なども、主催者の案内にあることがあります。わからないことは、問い合わせ先に確かめてください。"
+          "p": "申込みは、期限と定員があることが多いものです。締め切りを過ぎると出店できないので、早めに準備するのが安心です。当日の持ち物や釣り銭の用意も、案内にあることがあります。わからないことは、主催者のページにある問い合わせ先に確かめてください。"
         }
       ]
     },
     "en": {
-      "title": "Basics for vendors",
-      "lead": "Read each organizer’s rules on fees, deadlines and what may be sold.",
+      "title": "For vendors: read the organizer’s rules first",
+      "lead": "Application rules and what may be sold can differ from one event to the next.",
       "blocks": [
+        {
+          "h2": "Check these before you apply"
+        },
         {
           "p": "If you are thinking about selling, first check the organizer’s notice for how to apply, the stall fee and what may be sold. Conditions can change from one event to the next, even for the same organizer."
         },
         {
-          "p": "Applications often have deadlines and limited spaces. Missing a deadline means you cannot stall, so prepare early."
-        },
-        {
-          "p": "The notice may also list what to bring and whether to prepare change. If you are unsure, ask the contact given on the organizer’s page."
-        }
-      ]
-    }
-  },
-  {
-    "id": "tip-10-contact",
-    "slug": "check-before-you-go",
-    "ja": {
-      "title": "行く前に、最新の開催情報を確かめる",
-      "lead": "一度見た情報が、そのまま正しいとは限りません。",
-      "blocks": [
-        {
-          "p": "フリーマーケットや骨董市の日程・時間・会場は、変わることがあります。ブックマークした情報だけで出かけると、思わぬ行き違いになることがあります。"
-        },
-        {
-          "p": "出かける前に、主催者の公式ページを開いて、日付・時間・会場・中止の有無を見てください。このサイトの情報も、確認日を見ながら使ってください。"
-        },
-        {
-          "p": "変更があれば、主催者が公式ページで案内します。問い合わせ先がある場合は、直接たずねるのも確実です。"
-        }
-      ]
-    },
-    "en": {
-      "title": "Check the latest information before you go",
-      "lead": "Dates, times and venues can change, so confirm on the official page before you leave.",
-      "blocks": [
-        {
-          "p": "The dates, times and venues of flea markets and antique fairs can change. Going on information you saved long ago can lead to a wasted trip."
-        },
-        {
-          "p": "Before you leave, open the organizer’s official page and check the date, time, venue and whether it is canceled. Also keep the check date of any information you read here in mind."
-        },
-        {
-          "p": "When something changes, the organizer posts it on their official page. If a contact is listed, asking directly is the most reliable way to be sure."
+          "p": "Applications often have deadlines and limited spaces. Missing a deadline means you cannot stall, so prepare early. The notice may also list what to bring and whether to prepare change. If you are unsure, ask the contact given on the organizer’s page."
         }
       ]
     }
