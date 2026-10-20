@@ -11,11 +11,14 @@ import { cityL, fieldEn, nameL, noteL, timeEn, venueL } from './tr-en.mjs';
 export const FEATURED_MAX = 12;
 export const VENDOR_ROWS = 3;
 // フリマは写真が3種類。シリーズの id から決めるので、同じ市はいつも同じ写真になる
-const kindImg = (k, id = '') => {
+// 並びの番号（n）があるときは、番号順に3種を回す（並んだカードが同じ写真にならない）
+const FLEA_IMGS = ['/img/kinds/flea.webp', '/img/kinds/flea-2.webp', '/img/kinds/flea-3.webp'];
+const kindImg = (k, id = '', n = null) => {
   if (k !== 'flea') return `/img/kinds/${k}.webp`;
+  if (n !== null) return FLEA_IMGS[n % 3];
   let h = 0;
   for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
-  return ['/img/kinds/flea.webp', '/img/kinds/flea-2.webp', '/img/kinds/flea-3.webp'][h % 3];
+  return FLEA_IMGS[h % 3];
 };
 const heading = (t, id) => `<h2 class="hm-h"${id ? ` id="${id}"` : ''}><span>${esc(t.title)}</span>${t.sub ? `<small>${esc(t.sub)}</small>` : ''}</h2>`;
 
@@ -71,7 +74,7 @@ function tagFor(o, lang) {
   return `<span class="mtag ${cls}" title="${esc(o.checkedAt)}">${esc(when + S[lang].status[o.status])}</span>`;
 }
 
-export function renderCard(o, lang = 'ja') {
+export function renderCard(o, lang = 'ja', n = null) {
   const s = o.series;
   const k = s.kinds[0];
   const [, m, d] = o.date.split('-');
@@ -84,7 +87,7 @@ export function renderCard(o, lang = 'ja') {
   const kinds = s.kinds.map((x) => `<a class="mkind" href="/kind/${x}/">${esc(S[lang].kinds[x])}</a>`).join('');
   const off = o.status === 'cancelled' || o.status === 'postponed' ? ' is-off' : '';
   return `<article class="mcard${off}">
-<a class="mc-img" href="/e/${s.id}/" tabindex="-1" aria-hidden="true"><img src="${kindImg(k, s.id)}" alt="" width="800" height="600" loading="lazy" decoding="async"><span class="mc-date">${badge}</span></a>
+<a class="mc-img" href="/e/${s.id}/" tabindex="-1" aria-hidden="true"><img src="${kindImg(k, s.id, n)}" alt="" width="800" height="600" loading="lazy" decoding="async"><span class="mc-date">${badge}</span></a>
 <div class="mc-body">
 <h3><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a></h3>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="mc-orig" lang="ja">${esc(s.name)}</p>` : ''}
 <p class="mc-line">${icon('pin', 16)}<span>${esc(place)}</span></p>
@@ -108,7 +111,7 @@ export function renderFeatured(ctx, lang = 'ja') {
   const f = featuredList(ctx);
   const head = f.fallback ? { title: t.upcoming, sub: t.upcomingSub } : t;
   const body = f.list.length
-    ? `<div class="mc-wrap"><div class="mc-row" tabindex="0">${f.list.map((o) => renderCard(o, lang)).join('\n')}</div><button type="button" class="mc-next" aria-label="${esc(t.next)}" hidden>${icon('chev', 22)}</button></div>`
+    ? `<div class="mc-wrap"><div class="mc-row" tabindex="0">${f.list.map((o, i) => renderCard(o, lang, i)).join('\n')}</div><button type="button" class="mc-next" aria-label="${esc(t.next)}" hidden>${icon('chev', 22)}</button></div>`
     : `<p class="hm-empty">${esc(t.empty)}</p>`;
   return `<section class="hm-sec hm-featured" aria-labelledby="featured-h"><div class="hm-in">
 <div class="hm-head">${heading(head, 'featured-h')}<a class="hm-more" href="${f.fallback ? '/calendar/' : '/weekend/'}">${esc(t.all)}${icon('arrow', 16)}</a></div>
