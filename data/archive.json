@@ -1,6 +1,21 @@
 {
- "lastDate": "2026-10-19",
+ "lastDate": "2026-10-20",
  "items": [
+  {
+   "series": "fmj-ohigashi-hiroba",
+   "date": "2026-10-20",
+   "status": "confirmed",
+   "checkedAt": "2026-10-18",
+   "note": "10:00〜16:00",
+   "source": "https://www.fmfm-king.com/higashi10-20/"
+  },
+  {
+   "series": "nihonbashi-bettara-ichi",
+   "date": "2026-10-20",
+   "status": "confirmed",
+   "checkedAt": "2026-10-20",
+   "source": "https://www.chuo-kanko.or.jp/blogs/event/202609141846"
+  },
   {
    "series": "nihonbashi-bettara-ichi",
    "date": "2026-10-19",
