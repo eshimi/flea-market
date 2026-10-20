@@ -1,6 +1,6 @@
 {
  "/": {
-  "hash": "v1:f06828551d7e6c62",
+  "hash": "v1:a8f35ae07948d0bb",
   "lastmod": "2026-10-20"
  },
  "/weekend/": {
@@ -1855,6 +1855,10 @@
   "hash": "v1:37436f10bc3bd045",
   "lastmod": "2026-10-20"
  },
+ "/contact/": {
+  "hash": "v1:9f54dc8e4d81d0f2",
+  "lastmod": "2026-10-20"
+ },
  "/faq/": {
   "hash": "v1:664e913c2f2c367a",
   "lastmod": "2026-10-20"
@@ -1996,7 +2000,7 @@
   "lastmod": "2026-10-20"
  },
  "/ja/": {
-  "hash": "v1:806faaa565cc60f1",
+  "hash": "v1:136956b80411be47",
   "lastmod": "2026-10-20"
  },
  "/ja/weekend/": {
@@ -3849,6 +3853,10 @@
  },
  "/ja/tips/for-vendors/": {
   "hash": "v1:5f4d2f6cb1d418d6",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/contact/": {
+  "hash": "v1:172c6a0e0a383341",
   "lastmod": "2026-10-20"
  },
  "/ja/faq/": {
