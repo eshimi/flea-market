@@ -39,4 +39,6 @@ export const NAV_LABELS = {
 };
 
 // アクセス解析（Google アナリティクス）。全ページの head に入れる。GA_ID=（空）で外せる
+// フッターのQRコード（static/img/qr.svg）が指す URL。URL を変えたら tools/qr/make_qr.py で作り直す
+export const QR_URL = 'https://streetbazaars.jp/';
 export const ANALYTICS_ID = process.env.GA_ID ?? 'G-BS5Q6SMHCM';

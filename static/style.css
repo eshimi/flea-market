@@ -1,11 +1,11 @@
 /* Flea Market JP — 案A（日付が中心）。生成り色とテラコッタ。常に明るい配色で表示する */
-:root{--bg:#fbf6ee;--ink:#2b2420;--sub:#6b5f55;--acc:#c8553d;--acc-d:#a8432e;--acc2:#2f6f5e;--line:#e6dccd;--card:#fff;--soft:#f3ece1;--sat:#2b62b8;color-scheme:light}
+:root{--bg:#F7F3EB;--ink:#292B28;--sub:#6b6e66;--acc:#B95E43;--acc-d:#9A4C36;--acc2:#2f6f5e;--line:#e6dccd;--card:#fff;--soft:#f3ece1;--sat:#2b62b8;color-scheme:light}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;font-size:15px;line-height:1.7}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans","Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;font-size:15px;line-height:1.7}
 a{color:var(--acc2)}
 h1,h2,h3{line-height:1.4;margin:0}
-h1,h2{font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif}
+h1,h2{font-family:"DM Serif Display","Noto Sans JP",sans-serif}
 .in{max-width:1240px;margin:auto;padding:0 28px}
 /* ヘッダー */
 main{display:block;min-height:50vh}
@@ -41,7 +41,7 @@ main{display:block;min-height:50vh}
 .empty{background:#fff;border:1px dashed var(--line);border-radius:14px;padding:18px;color:var(--sub)}
 /* 月ごとの一覧 */
 .month-block{margin:6px 0 14px}
-.month-h{font-size:16px;font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif;font-weight:700;margin:14px 0 8px}
+.month-h{font-size:16px;font-family:"DM Serif Display","Noto Sans JP",sans-serif;font-weight:700;margin:14px 0 8px}
 summary.month-h{cursor:pointer;padding:10px 14px;background:#fff;border:1px solid var(--line);border-radius:12px;list-style-position:inside}
 details[open]>summary.month-h{margin-bottom:10px}
 /* 右の列 */
