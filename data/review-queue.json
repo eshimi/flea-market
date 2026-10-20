@@ -144,5 +144,23 @@
   "reason": "new",
   "hash": "75645303efa30fb1",
   "status": "pending"
+ },
+ {
+  "id": "garagesale-top",
+  "url": "https://garagesale.co.jp/",
+  "name": "日本ガレージセール協会（大阪のガレージセール）",
+  "detectedAt": "2026-10-20",
+  "reason": "new",
+  "hash": "ec715d6c9c389c30",
+  "status": "pending"
+ },
+ {
+  "id": "nadeshiko-furima-schedule",
+  "url": "https://www.nadeshikofurima.com/schedule.html",
+  "name": "なでしこふれあいマーケット協会（年間スケジュール）",
+  "detectedAt": "2026-10-20",
+  "reason": "new",
+  "hash": "9139cf4e6f081015",
+  "status": "pending"
  }
 ]

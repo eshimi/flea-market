@@ -1902,5 +1902,14 @@
   "evidenceOk": {
    "furimatairiku-karako-kagi": true
   }
+ },
+ "https://www.fmfm-king.com/osaka/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-tsurumi-ryokuchi": true
+  }
  }
 }

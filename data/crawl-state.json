@@ -109,5 +109,21 @@
   "failCount": 0,
   "len": 3630,
   "hash": "75645303efa30fb1"
+ },
+ "garagesale-top": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 5996,
+  "hash": "ec715d6c9c389c30"
+ },
+ "nadeshiko-furima-schedule": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"3810-5aeb709d8bac0\"",
+  "lastModified": "Mon, 07 Sep 2020 10:54:11 GMT",
+  "len": 2255,
+  "hash": "9139cf4e6f081015"
  }
 }
