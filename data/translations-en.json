@@ -1702,6 +1702,46 @@
   "kochi-chuo-park-tohoku-support-flea": {
    "name": "Great East Japan Earthquake Support Flea Market (Toyo Denka Central Park)",
    "venue": "Toyo Denka Central Park"
+  },
+  "gokoku-jinja-nomi-ichi": {
+   "name": "Ishikawa Gokoku Shrine Flea Market (Nomi-no-ichi)",
+   "venue": "Ishikawa Gokoku Shrine grounds",
+   "time": "8:00 a.m.–2:00 p.m. (stalls may open at any time within these hours)",
+   "access": "15 min. by car from Kanazawa Station (parking available). 20 min. by bus from bus stop 7 at the Kanazawa Station East Exit bus terminal to “Dewa-machi”, then 2 min. walk",
+   "fee": "From 1,000 yen per space (1 space = 1.8 m × 1.8 m blue sheet). A space sheet (500 yen per space) is bought at the first visit only",
+   "apply": "Apply via LINE (reception by phone only, in principle; no same-day registration in principle). Spots are assigned in order of arrival on the day",
+   "notes": "In principle, up to 2 spaces per stall. Food sales require notification to the health center. Stalls using fire need fire prevention measures. Held at a shrine, so some stalls may be declined depending on content",
+   "address": "4-18-1 Ishibiki, Kanazawa City, Ishikawa Prefecture"
+  },
+  "toyama-gokoku-nominoichi": {
+   "name": "Toyama-nomi-no-ichi (Toyama Gokoku Shrine)",
+   "venue": "Toyama Gokoku Shrine grounds",
+   "time": "Summer hours (April–October) 5:00 a.m.–12:00 p.m.; winter hours (November–March) 6:00 a.m.–12:00 p.m. May change due to shrine events or weather",
+   "rain": "Held in rain or snow (all-weather)",
+   "access": "From Toyama IC, take National Route 41 toward central Toyama (turn left at the Ichiban-cho intersection). 3 min. walk from Yasuyaya tram stop",
+   "apply": "Advance application for the following month's stalls, one month ahead (the stall holder must apply in person; no applications by phone)",
+   "address": "1-1 Isobe-machi, Toyama City, Toyama Prefecture"
+  },
+  "takaoka-asaichi": {
+   "name": "Takaoka Morning Market",
+   "venue": "Sakashita-machi-dori (from the Daibutsu-mae intersection to the Sakashita-machi intersection)",
+   "time": "5:30 a.m.–8:00 a.m.",
+   "fee": "12,000 yen per space (14 sessions per year). For one-off stalls, 2,000 yen per space per session (electricity charged separately)",
+   "apply": "Submit the application form to the Takaoka Morning Market Executive Committee Secretariat (accepted any time during the period)"
+  },
+  "tsuginote-takaoka": {
+   "name": "Sanchi no Kangyo Hakurankai Tsuginote (Takaoka)",
+   "venue": "Takaoka Municipal Central Parking Lot",
+   "time": "10:00–16:30"
+  },
+  "makoto-ichi-hoshoji-sabae": {
+   "name": "Makoto Ichi (Motoyama Seishoji Temple, Sabae City)",
+   "venue": "Motoyama Seishoji Temple (temple grounds)",
+   "address": "3-2-38 Honmachi, Sabae City, Fukui Prefecture"
+  },
+  "creatorsland-2026-sandome-fukui": {
+   "name": "Creators Land 2026 (Sandome Fukui)",
+   "venue": "Sandome Fukui"
   }
  },
  "organizers": {
@@ -1825,7 +1865,13 @@
   "宇部Cityフリーマーケット事務局": "Ube City Flea Market Secretariat",
   "都城市 地域生活課（山之口総合支所）": "Local Life Division, Miyakonojo City (Yamanokuchi Branch Office)",
   "周南市（公式ページの掲載元）": "Shunan City (source of the official page)",
-  "東日本大震災支援「絆の会」": "Great East Japan Earthquake Support \"Kizuna no Kai\""
+  "東日本大震災支援「絆の会」": "Great East Japan Earthquake Support \"Kizuna no Kai\"",
+  "石川護國神社": "Ishikawa Gokoku Shrine",
+  "富山縣護國神社（富山のみの市）": "Toyama Gokoku Shrine (Toyama-nomi-no-ichi)",
+  "たかおか朝市実行委員会": "Takaoka Morning Market Executive Committee",
+  "ツギノテ実行委員会": "Tsuginote Executive Committee",
+  "誠市（鯖江商工会議所）": "Makoto Ichi (Sabae Chamber of Commerce and Industry)",
+  "クリエイターズランド": "Creators Land"
  },
  "labels": {
   "問い合わせ先": "Contact",
@@ -1999,7 +2045,11 @@
   "宇部市": "Ube City",
   "都城市": "Miyakonojo City",
   "周南市": "Shunan City",
-  "高知市": "Kochi City"
+  "高知市": "Kochi City",
+  "金沢市": "Kanazawa City",
+  "富山市": "Toyama City",
+  "高岡市": "Takaoka City",
+  "鯖江市": "Sabae City"
  },
  "notes": {
   "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",

@@ -3240,5 +3240,82 @@
    "checkedAt": "2026-10-20",
    "note": "robots.txt は 404（許可）。『免責事項』に転載の禁止の記載は確認できず。掲載は事実の項目だけ（2026-10-20 確認）"
   }
+ },
+ {
+  "url": "https://www.ishikawagokoku.or.jp/",
+  "series": [
+   "gokoku-jinja-nomi-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約・免責のページは見当たらず（トップのリンクはGoogleのポリシーのみ）。robots.txt は全体に許可。事実の項目（日時・場所・出店料・申込み方法）だけを載せる"
+  }
+ },
+ {
+  "url": "https://www.ishikawagokoku.or.jp/images/pdf/info_13.pdf",
+  "series": [
+   "gokoku-jinja-nomi-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "同じサイトのPDF（蚤の市出店要綱）。robots.txt で許可。事実の項目だけを載せる"
+  }
+ },
+ {
+  "url": "https://www.toyama-gokoku.jp/nominoichi/",
+  "series": [
+   "toyama-gokoku-nominoichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約・免責のページは本文とリンクに見当たらず（2026-10-20 確認）。robots.txt は404で制限なし。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/3/2/4/4967.html",
+  "series": [
+   "takaoka-asaichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "フッターに Copyright (c) 2024 Takaoka City. All Rights Reserved.（著作権表示）。文章・画像は転載せず、事実の項目（日時・会場・出店料・申込み方法）だけ掲載。robots.txt は404で制限なし"
+  }
+ },
+ {
+  "url": "https://www.city.takaoka.toyama.jp/soshiki/sangyokikakuka/2/1/6/11639.html",
+  "series": [
+   "tsuginote-takaoka"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "フッターに Copyright (c) Takaoka City. All Rights Reserved.（著作権表示）。文章・画像は転載せず、事実の項目（日時・会場・入場料・問い合わせ先の団体名）だけ掲載。robots.txt は404で制限なし"
+  }
+ },
+ {
+  "url": "https://www.city.sabae.fukui.jp/kanko/sightseeing/jyousyouji.html",
+  "series": [
+   "makoto-ichi-hoshoji-sabae"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "鯖江市観光の公式ページ（市の観光サイト）。利用規約のページは本文・リンクに見当たらず。robots.txt は404（許可扱い）。掲載は事実の項目だけ（開催のきまり・会場の住所）。"
+  }
+ },
+ {
+  "url": "https://creatorsland.studio.site/",
+  "series": [
+   "creatorsland-2026-sandome-fukui"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者の公式サイト（Studio サイト）。本文は日程のタイトル行のみ（JavaScript で描画）。利用規約のページは確認できず。robots.txt は許可。掲載は事実の項目だけ（日程・会場名）。"
+  }
  }
 ]
