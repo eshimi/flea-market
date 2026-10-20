@@ -291,5 +291,4357 @@
   },
   "everyDays": 3,
   "addedAt": "2026-10-20"
+ },
+ {
+  "id": "antique-market-58fc6b",
+  "url": "https://www.antique-market.jp/",
+  "name": "大江戸骨董市実行委員会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ（フッターは概要・プライバシーポリシー・サイトマップ）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "antique-market-a5e2ab",
+  "url": "https://www.antique-market.jp/%E5%87%BA%E5%BA%97%E3%81%8A%E7%94%B3%E8%BE%BC%E3%81%BF/%E5%87%BA%E5%BA%97%E8%A6%8F%E7%B4%84/",
+  "name": "大江戸骨董市実行委員会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "takahatafudoson-622002",
+  "url": "https://www.takahatafudoson.or.jp/?page_id=9",
+  "name": "高幡不動尊金剛寺",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ（フッターは個人情報保護方針のみ）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "takahatafudoson-6e9ee1",
+  "url": "https://www.takahatafudoson.or.jp/",
+  "name": "高幡不動尊金剛寺",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tokyonominoichi-784f8b",
+  "url": "https://tokyonominoichi.com/2026_autumn/outline/",
+  "name": "手紙社",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tezukuriichi-2dfbbc",
+  "url": "https://tezukuriichi.com/home.html",
+  "name": "手創り市",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ（「All contents copyright」の表示のみ）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tezukuriichi-c9f6b5",
+  "url": "https://tezukuriichi.com/entry.html",
+  "name": "手創り市",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tokyonominoichi-89b37b",
+  "url": "https://tokyonominoichi.com/",
+  "name": "手紙社",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で取得を許可（2026-10-18 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-0cd911",
+  "url": "https://www.city.setagaya.lg.jp/02072/10108.html",
+  "name": "世田谷区（世田谷区 世田谷総合支所 地域振興課",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "区の「著作権・リンク・免責事項」に、オープンデータ以外の文書等の無断での使用・転載・二次利用を禁じる記載あり。2026-10-18 のユーザーの判断で、事実の項目（日時・場所など）だけを掲載し、文章・画像は転載しない。robots.txt はなし（404）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-3c2617",
+  "url": "https://www.city.setagaya.lg.jp/02241/375.html",
+  "name": "世田谷区（主催団体は開催日ごとに異なります（世田谷区の一覧を参照",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "世田谷区の「著作権・リンク・免責事項」（オープンデータ以外の無断転載・二次利用を禁じる）の方針により、日付・場所・主催団体名の事実だけを掲載。区の一覧にある主催団体の住所・電話番号・メールは掲載しない。robots.txt はなし（404）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "toji-a86569",
+  "url": "https://toji.or.jp/mieku/",
+  "name": "東寺（教王護国寺",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（サイト下部に無断転載の禁止あり）。事実の項目（日付・場所・アクセスなど）だけ掲載し、文章・画像は転載しない。robots.txt は取得を許可（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "toji-762abe",
+  "url": "https://toji.or.jp/access/",
+  "name": "東寺（教王護国寺",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（サイト下部に無断転載の禁止あり）。事実の項目（日付・場所・アクセスなど）だけ掲載し、文章・画像は転載しない。robots.txt は取得を許可（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "kitanotenmangu-5d3153",
+  "url": "https://kitanotenmangu.or.jp/event/",
+  "name": "北野天満宮",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "規約のページなし。robots.txt は取得を許可（2026-10-18 確認）。事実の項目だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "shitennoji-9c908f",
+  "url": "https://www.shitennoji.or.jp/event/index.html",
+  "name": "四天王寺",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "規約のページなし。robots.txt は取得を許可（2026-10-18 確認）。事実の項目だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-47908e",
+  "url": "https://www.city.sapporo.jp/seiso/hurima.html",
+  "name": "札幌市中央区（主催団体は開催日ごとに異なります（札幌市の一覧を参照",
+  "kind": "municipality",
+  "pref": "01",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "札幌市の「リンク・著作権・免責事項」は、掲載コンテンツの複製・転用は事前に担当課へ相談とする。事実の項目（日付・場所・主催団体名）だけ掲載し、主催団体の電話番号は載せない。robots.txt は取得を許可（2026-10-18 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-7ad233",
+  "url": "https://www.city.shinjuku.lg.jp/seikatsu/file10_06_00001.html",
+  "name": "新宿区（新宿リサイクル活動センター（新宿区",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "town-d396dc",
+  "url": "https://www.town.mizuho.tokyo.jp/event/e011/p002837_d/fil/R8yoteihyo.pdf",
+  "name": "瑞穂町（瑞穂町 環境課",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）（PDF。pdftotext で本文化）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "town-8f27c9",
+  "url": "https://www.town.mizuho.tokyo.jp/event/e011/p002837.html",
+  "name": "瑞穂町（瑞穂町 環境課",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-3cbcce",
+  "url": "https://www.city.suginami.tokyo.jp/s103/event/28212.html",
+  "name": "杉並区（杉並区 環境部環境課 環境活動推進センター",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-1c208f",
+  "url": "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/recycleworld.html",
+  "name": "江戸川区（江戸川区 生活振興部東部事務所",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-a3e2fa",
+  "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html",
+  "name": "墨田区（リサイクル運動市民の会（墨田区の開催日程ページより",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体・問い合わせ先の電話番号は載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-6c0322",
+  "url": "https://www.city.bunkyo.lg.jp/b038/p007538.html",
+  "name": "文京区（文京区 資源環境部リサイクル清掃課",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体・問い合わせ先の電話番号は載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-ddbbcd",
+  "url": "https://www.city.toshima.lg.jp/150/2607271704.html",
+  "name": "豊島区（NPO法人MINOKURA地域共創・創生機構",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体・問い合わせ先の電話番号は載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-ec5f68",
+  "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/event/tamakoufea.html",
+  "name": "大田区（大田区",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体・問い合わせ先の電話番号は載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-86b579",
+  "url": "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/funaborimatsuri.html",
+  "name": "江戸川区（船堀まつり実行委員会・江戸川区",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体・問い合わせ先の電話番号は載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-c09c44",
+  "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html",
+  "name": "渋谷区（リサイクルバザール実行委員会（区民の自主運営団体",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体・問い合わせ先の電話番号は載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-068c5e",
+  "url": "https://www.city.katsushika.lg.jp/kurashi/1004028/1030175/1003400/1010245.html",
+  "name": "葛飾区（葛飾区 産業経済課 消費生活センター",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体・問い合わせ先の電話番号は載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-ab4a07",
+  "url": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html",
+  "name": "台東区（主催団体は開催日ごとに異なります（台東区の一覧を参照",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体の電話番号・メールは載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-4a0464",
+  "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/shigen/fleamarket.html",
+  "name": "荒川区（荒川区",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない。robots.txt は取得を許可（2026-10-18 確認）。主催団体の電話番号・メールは載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-00f60d",
+  "url": "https://www.city.setagaya.lg.jp/01026/25051.html",
+  "name": "世田谷区（祖師谷ふるさとフェスティバル実行委員会",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない（世田谷区の「著作権・リンク・免責事項」に基づく）。robots.txt はなし（404）。主催団体・問い合わせ先の電話番号は載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-270b3c",
+  "url": "https://www.city.setagaya.lg.jp/01028/36021.html",
+  "name": "世田谷区（船橋ふれあいまつり実行委員会",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない（世田谷区の「著作権・リンク・免責事項」に基づく）。robots.txt はなし（404）。主催団体・問い合わせ先の電話番号は載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-990b09",
+  "url": "https://www.city.setagaya.lg.jp/01028/19856.html",
+  "name": "世田谷区（船橋ふれあいまつり実行委員会",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない（世田谷区の「著作権・リンク・免責事項」に基づく）。robots.txt はなし（404）。主催団体・問い合わせ先の電話番号は載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-30e337",
+  "url": "https://www.city.setagaya.lg.jp/01028/19126.html",
+  "name": "世田谷区（世田谷区 砧総合支所 船橋まちづくりセンター（船橋地区",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "事実の項目（日付・場所・時間・申込み方法）だけ掲載し、文章は転載しない（世田谷区の「著作権・リンク・免責事項」に基づく）。robots.txt はなし（404）。主催団体・問い合わせ先の電話番号は載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "frma-4cbdde",
+  "url": "http://www.frma.jp/",
+  "name": "リサイクル推進友の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "frma-541914",
+  "url": "http://www.frma.jp/akatuka.html",
+  "name": "リサイクル推進友の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "frma-4835f1",
+  "url": "http://www.frma.jp/komatu.html",
+  "name": "リサイクル推進友の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "frma-4bd22e",
+  "url": "http://www.frma.jp/kita_akabane.html",
+  "name": "リサイクル推進友の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "frma-011d16",
+  "url": "http://www.frma.jp/ukima.html",
+  "name": "リサイクル推進友の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "frma-71f34e",
+  "url": "http://www.frma.jp/koganei.html",
+  "name": "リサイクル推進友の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "frma-1224d8",
+  "url": "http://www.frma.jp/hikarigaoka.html",
+  "name": "リサイクル推進友の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "frma-cefcbe",
+  "url": "http://www.frma.jp/hunairiba.html",
+  "name": "リサイクル推進友の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト（利用規約のページはなく、あるのは会員規約のみ）。robots.txt は 404（制限なし）。事実の項目（日付・時間・場所・出店数）だけ掲載し、文章は転載しない。料金・電話番号・メールは載せない。サイトは http のみ。2026-10-18 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "7fukuadachi-27ce99",
+  "url": "https://7fukuadachi.com/%E9%AA%A8%E8%91%A3%E5%B8%82/",
+  "name": "株式会社 ヨシダ",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt は /wp-admin/ のみ禁止（2026-10-18）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "7fukuadachi-c15266",
+  "url": "https://7fukuadachi.com/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/",
+  "name": "株式会社 ヨシダ",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "同上（7fukuadachi.com）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "7fukuadachi-18a918",
+  "url": "https://7fukuadachi.com/%e4%b8%bb%e5%82%ac%e8%80%85%e6%83%85%e5%a0%b1/",
+  "name": "株式会社 ヨシダ",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "同上（7fukuadachi.com）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "kanagawa-antique-market-3ca3a0",
+  "url": "https://kanagawa-antique-market.crayonsite.net/",
+  "name": "かながわ骨董市",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（robots.txt は 404＝制限なし）。「当サイトの記事・写真の無断転載を禁じます」とあるため、事実の項目（日時・場所・出店数など）だけを掲載し、文章・写真は転載しない（2026-10-18 のユーザー決定の方針）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "kottou-rakuichi-973cde",
+  "url": "https://kottou-rakuichi.com/about.html",
+  "name": "楽市楽座骨董市",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt で全体を許可（2026-10-18）。主催者の電話番号は載せない"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "teshigoro-bc53a5",
+  "url": "https://www.teshigoro.com/",
+  "name": "手しごと市事務局（木土藍楽",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "Google サイト。利用規約のページなし、robots.txt は 404（制限なし）（2026-10-18）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "mottainai-1b3bfe",
+  "url": "https://www.mottainai.info/jp/event/",
+  "name": "MOTTAINAIキャンペーン事務局",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "「サイトのご利用について」（/terms/）で、事前の許可なく情報を使用（複製・改変・配布等）することを禁止。事実の項目（開催日・会場）だけを掲載し、文章は転載しない（ユーザー決定の方針）。robots.txt は /wp/wp-admin/ のみ禁止（2026-10-18）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "eko-hirobakan-bc3ce7",
+  "url": "https://www.eko-hirobakan.jp/fujimibashi/",
+  "name": "富士見橋エコー広場館",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし。robots.txt は 404（制限なし）（2026-10-18）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tama-seisokojo-57128b",
+  "url": "https://www.tama-seisokojo.or.jp/econico/market",
+  "name": "多摩市（多摩ニュータウン環境組合 エコにこセンター",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "多摩ニュータウン環境組合（一部事務組合）の公式サイト。robots.txt は管理用のパスのみ禁止（2026-10-18）。掲載は事実の項目だけ"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tama-seisokojo-e1c0e5",
+  "url": "https://www.tama-seisokojo.or.jp/center_top",
+  "name": "多摩市（多摩ニュータウン環境組合 エコにこセンター",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "同上（tama-seisokojo.or.jp）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "ikeshoren-c529cc",
+  "url": "https://ikeshoren.jp/ikegamibiyori/",
+  "name": "池上地区商店会連合会 池上日和実行委員会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "池上地区商店会連合会の公式サイト。利用規約のページはなく、robots.txt は許可。事実の項目（日時・場所・出店料・申込み方法）だけ掲載し、文章・画像は転載しない。2026-10-18 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "ikeshoren-939ca9",
+  "url": "https://ikeshoren.jp/8193/",
+  "name": "池上地区商店会連合会 池上日和実行委員会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "同上（池上地区商店会連合会の公式サイト）。2026-10-18 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "chuo-kanko-190b2f",
+  "url": "https://www.chuo-kanko.or.jp/blogs/event/202609141846",
+  "name": "日本橋恵比寿講べったら市保存会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "一般社団法人中央区観光協会のサイトポリシーに「コンテンツの著作権は協会が保有」とあるが、取得を禁じる記載はなく robots.txt は許可。事実の項目（日時・場所・主催）だけ掲載し、文章・画像は転載しない（ユーザー決定の方針）。2026-10-18 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-67004d",
+  "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/annai/omatsuri/chikusai/20260616103208700.html",
+  "name": "練馬区（練馬区の地区祭日程に掲載（主催者名は公式ページになし",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "練馬区サイトポリシーに「無断での転載・複製を禁じます」とあるため、事実の項目（日時・場所・内容）だけ掲載し、文章は転載しない。robots.txt は許可（2026-10-18 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-904ad0",
+  "url": "https://www.city.suginami.tokyo.jp/s033/event/29570.html",
+  "name": "杉並区（高円寺フェス実行委員会",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "杉並区サイトの「このサイトについて」に転載・著作の記載を確認できず。robots.txt は 404（制限なし）。事実の項目だけ掲載（2026-10-18 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-f554b8",
+  "url": "https://www.city.toshima.lg.jp/150/2607271700.html",
+  "name": "豊島区（NPO法人MINOKURA地域共創・創生機構",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "豊島区公式サイトの「このサイトについて」に、文書や画像等は私的使用・引用などを除き無断で複製・転用できないとの記載。robots.txt は 404（制限なし）。事実の項目（日時・場所・料金・申込み方法）だけ掲載し、文章・画像は転載しない。主催団体の電話番号は載せない。2026-10-18 確認"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-5a7655",
+  "url": "https://www.city.kita.lg.jp/living/bins/1002093/1026571.html",
+  "name": "北区（スマイル",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "北区公式サイトの「著作権・免責」に、私的使用・引用などを除き無断で転載・複製・改変等はできないとの記載。robots.txt は取得許可。事実の項目だけ掲載し、文章・画像は転載しない。主催団体の住所・電話は載せない。2026-10-18 確認"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-e6868f",
+  "url": "https://www.city.adachi.tokyo.jp/kyoso/ku/kuse/guruguru-kiosk080424.html",
+  "name": "足立区（足立区 あだち未来創造室 SDGs・協創推進課 コミュニティ創出担当",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "足立区公式サイトの「このサイトの考え方」に、私的使用・引用などを除き無断で転載・改変はできないとの記載。robots.txt は取得許可。事実の項目だけ掲載し、文章・画像は転載しない。問い合わせ先の電話は載せない。2026-10-18 確認"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-d59b68",
+  "url": "https://www.city.fuchu.tokyo.jp/gyosei/johokokai/koho/kohoshi/koho/reiwa8nenhakkou/r081001.html",
+  "name": "府中市（車返地域のリサイクルを考える会",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "自治体の公式サイト。「このサイトの考え方」に『無断転載はご遠慮ください』とあるため事実の項目だけ載せる。robots.txt は404（制限なし）（2026-10-18 確認）。掲載は事実の項目（日時・場所・申込み方法など）だけで、文章・画像は転載しない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-f0c8cf",
+  "url": "https://www.city.fuchu.tokyo.jp/gyosei/johokokai/koho/kohoshi/koho/reiwa8nenhakkou/r081001.files/261001kouho_11P.txt",
+  "name": "府中市（車返地域のリサイクルを考える会",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "自治体の公式サイト。市報の本文テキスト（Shift_JIS）。「このサイトの考え方」に『無断転載はご遠慮ください』とあるため事実の項目だけ載せる。主催団体の担当者名・電話は載せない。robots.txt は404（制限なし）（2026-10-18 確認）。掲載は事実の項目（日時・場所・申込み方法など）だけで、文章・画像は転載しない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-a18059",
+  "url": "https://www.city.akishima.lg.jp/kurashi/gomi/1008272/1001598.html",
+  "name": "昭島市（昭島市 環境部 ごみ対策課",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "自治体の公式サイト。「ホームページの利用案内」に転載・自動取得の禁止の記載は確認できなかった。robots.txt は200 で許可（2026-10-18 確認）。掲載は事実の項目（日時・場所・申込み方法など）だけで、文章・画像は転載しない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "hino-artfestival-88d6e1",
+  "url": "https://hino-artfestival.com/",
+  "name": "ひのアートフェスティバル実行委員会（日野市中央公民館",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催（実行委員会）の公式サイト。利用規約のページはなく、robots.txt は 200 で許可（2026-10-18 確認）。掲載は事実の項目だけ。フリマ＆クラフトの個別ページは画像で、本文に時間・出店条件の記載なし"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-057a60",
+  "url": "https://www.city.hino.lg.jp/kouminkan/1015477/1016167.html",
+  "name": "日野市（ひのアートフェスティバル実行委員会（日野市中央公民館",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "自治体の公式サイト。robots.txt は200 で許可（2026-10-18 確認）。掲載は事実の項目（日時・場所・申込み方法など）だけで、文章・画像は転載しない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "earth-garden-44cb54",
+  "url": "https://www.earth-garden.jp/festival/83598/",
+  "name": "アースガーデン",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は許可。サイトの利用規約は確認できず（要確認）。事実の項目（日時・会場）だけ載せ、文章・画像は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "trx-f98cdd",
+  "url": "https://trx.jp/schejule",
+  "name": "東京リサイクル",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は許可。サイト利用の規約はなく、「出店規約」「プレミアム会員規約」は出店者向け。事実の項目（開催日・開催地・会場名）だけ載せ、文章・画像は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "www2-56844d",
+  "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=040",
+  "name": "リサイクル運動市民の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "robots.txt は 404（制限なし）。「ご利用ガイド」はあるが取得を禁じる記載は確認できず。事実の項目だけ載せ、文章・電話番号・メールは載せない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "rpa-fb6d35",
+  "url": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/",
+  "name": "リサイクル運動推進の会・友遊（ゆうゆう）マルシェ",
+  "kind": "organizer",
+  "pref": "23",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト。robots.txt は許可。利用規約のページは確認できず。事実の項目（日付・会場名・時間・出店料）だけ掲載し、文章は転載しない。電話・メールは載せない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "rpa-de38ac",
+  "url": "https://rpa.flima.net/%e5%87%ba%e5%ba%97%e3%81%ae%e3%83%ab%e3%83%bc%e3%83%ab/",
+  "name": "リサイクル運動推進の会・友遊（ゆうゆう）マルシェ",
+  "kind": "organizer",
+  "pref": "23",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催団体の公式サイト。robots.txt は許可。利用規約のページは確認できず。事実の項目（日付・会場名・時間・出店料）だけ掲載し、文章は転載しない。電話・メールは載せない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tedukuri-ichi-a1094b",
+  "url": "https://www.tedukuri-ichi.com/about",
+  "name": "手づくり市事務局",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず。事実の項目（開催日・時間・会場・アクセス）だけ掲載し、文章は転載しない。電話番号は載せない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tedukuri-ichi-f25f13",
+  "url": "https://www.tedukuri-ichi.com/access_hyakumanben/",
+  "name": "手づくり市事務局",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず。事実の項目（開催日・時間・会場・アクセス）だけ掲載し、文章は転載しない。電話番号は載せない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tedukuri-ichi-958aa1",
+  "url": "https://www.tedukuri-ichi.com/access_umekoji/",
+  "name": "手づくり市事務局",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず。事実の項目（開催日・時間・会場・アクセス）だけ掲載し、文章は転載しない。電話番号は載せない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "freemarket-go-f73bf2",
+  "url": "http://freemarket-go.com/shousai-osaka-028.html",
+  "name": "中区区民フェスタ実行委員会",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "freemarket-go-c53aec",
+  "url": "http://freemarket-go.com/shousai_hyogo_001.html",
+  "name": "日本フリーマーケット協会",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "freemarket-go-a5f4fe",
+  "url": "http://freemarket-go.com/shousai_hyogo_003.html",
+  "name": "日本フリーマーケット協会",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "freemarket-go-d78a19",
+  "url": "http://freemarket-go.com/shousai_osaka_013.html",
+  "name": "日本フリーマーケット協会",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "freemarket-go-d77887",
+  "url": "http://freemarket-go.com/shousai_osaka_001.html",
+  "name": "日本フリーマーケット協会",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "freemarket-go-7a7eff",
+  "url": "http://freemarket-go.com/shousai-siga-004.html",
+  "name": "わんわんマルシェ実行委員会",
+  "kind": "organizer",
+  "pref": "25",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "freemarket-go-d2754e",
+  "url": "http://freemarket-go.com/shousai_hyogo_006.html",
+  "name": "わんわんマルシェ実行委員会",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "freemarket-go-35f243",
+  "url": "http://freemarket-go.com/shousai-hyogo-009.html",
+  "name": "神戸港”U”パークマネジメント共同事業体",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "freemarket-go-8ac437",
+  "url": "http://freemarket-go.com/shousai-hyogo-010.html",
+  "name": "日本フリーマーケット協会",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-5230af",
+  "url": "https://www.fmfm-king.com/ama12-12/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-2866b6",
+  "url": "https://www.fmfm-king.com/amaiseki12-26/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-a5eaba",
+  "url": "https://www.fmfm-king.com/amaiseki12-27/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-d4915f",
+  "url": "https://www.fmfm-king.com/enama11-14/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-89dfb1",
+  "url": "https://www.fmfm-king.com/apia10-31/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "25",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-d8c57c",
+  "url": "https://www.fmfm-king.com/kirarie10-18/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "25",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-4e9c84",
+  "url": "https://www.fmfm-king.com/enmino10-25/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-b88c8a",
+  "url": "https://www.fmfm-king.com/mino11-22/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-956224",
+  "url": "https://www.fmfm-king.com/mino12-13/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-47d123",
+  "url": "https://www.fmfm-king.com/ennara10-31-1/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "29",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-3572c9",
+  "url": "https://www.fmfm-king.com/fukakita10-24/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-27e5bc",
+  "url": "https://www.fmfm-king.com/fuka11-8/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-f947b2",
+  "url": "https://www.fmfm-king.com/fukakita11-23/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-cd46c6",
+  "url": "https://www.fmfm-king.com/fukakitamaturi12-19-20/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-697e50",
+  "url": "https://www.fmfm-king.com/higashi10-20/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-99276a",
+  "url": "https://www.fmfm-king.com/fukuhigashi11-10/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-1a59df",
+  "url": "https://www.fmfm-king.com/ohigashi11-16/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-e0d67c",
+  "url": "https://www.fmfm-king.com/ohigashi12-23/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-7aa5a0",
+  "url": "https://www.fmfm-king.com/ohigashi1-5/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-fb2ccc",
+  "url": "https://www.fmfm-king.com/fukuoka11-4/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-edc243",
+  "url": "https://www.fmfm-king.com/okazaki12-29-30/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-432871",
+  "url": "https://www.fmfm-king.com/turu11-4/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-b56cdb",
+  "url": "https://www.fmfm-king.com/hana11-18/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-6d1b41",
+  "url": "https://www.fmfm-king.com/turu12-9/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-f87c32",
+  "url": "https://www.fmfm-king.com/turu12-23/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-da9730",
+  "url": "https://www.fmfm-king.com/turimi1-5/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-1f9c9d",
+  "url": "https://www.fmfm-king.com/hikone11-7-8/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "25",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-3e53fc",
+  "url": "https://www.fmfm-king.com/kenbunmaturi12-26-27/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "24",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-3f9df8",
+  "url": "https://www.fmfm-king.com/kidugawa10-31-1/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-4bac94",
+  "url": "https://www.fmfm-king.com/notogawa10-25/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "25",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-af91f3",
+  "url": "https://www.fmfm-king.com/odekake11-21/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "25",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-86c527",
+  "url": "https://www.fmfm-king.com/saidaiji10-25/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "29",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-2b4902",
+  "url": "https://www.fmfm-king.com/saidaiji11-7/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "29",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-c1420a",
+  "url": "https://www.fmfm-king.com/saidaiji11-22/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "29",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-6a1c85",
+  "url": "https://www.fmfm-king.com/saidaiji12-12/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "29",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-0472d6",
+  "url": "https://www.fmfm-king.com/saidaiji12-20/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "29",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-70c9a2",
+  "url": "https://www.fmfm-king.com/sakira11-14-15/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "25",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-4e3101",
+  "url": "https://www.fmfm-king.com/sakura11-21-22-23/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "24",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-5a1178",
+  "url": "https://www.fmfm-king.com/suzuka12-5-6/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "24",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-8309dc",
+  "url": "https://www.fmfm-king.com/shinsui12-19-20/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "25",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-030343",
+  "url": "https://www.fmfm-king.com/yamada12-19-20/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-3ea795",
+  "url": "https://www.fmfm-king.com/yasu11-22/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "25",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-7ec99a",
+  "url": "https://www.fmfm-king.com/yasu12-6/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "25",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-5ab2a6",
+  "url": "https://www.fmfm-king.com/yoxtukaichi10-24/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "24",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-e12b3d",
+  "url": "https://www.fmfm-king.com/yoxtukaichi11-8/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "24",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-742837",
+  "url": "https://www.fmfm-king.com/yoxtukaichi11-21/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "24",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-062ab3",
+  "url": "https://www.fmfm-king.com/yoxtukaichi12-12/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "24",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-1aa1d8",
+  "url": "https://www.fmfm-king.com/yoxtukaichi12-30/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "24",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "www2-4d38aa",
+  "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=004",
+  "name": "リサイクル運動市民の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "www2-410121",
+  "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=904",
+  "name": "リサイクル運動市民の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "www2-3e63da",
+  "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=045",
+  "name": "リサイクル運動市民の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "www2-bcd746",
+  "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=044",
+  "name": "リサイクル運動市民の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "www2-b38954",
+  "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=042",
+  "name": "リサイクル運動市民の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "www2-06273e",
+  "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=053",
+  "name": "リサイクル運動市民の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "www2-6c3d26",
+  "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=050",
+  "name": "リサイクル運動市民の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "sunshinecity-51057c",
+  "url": "https://sunshinecity.jp/event/entry-39014.html",
+  "name": "豊島区（オタカラ・ネット",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "サンシャインシティ（会場）の公式イベントページ。robots.txt は1つのパスのみ禁止（2026-10-18）。掲載は事実の項目だけ。問い合わせ先の電話番号は載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "souq-319cbd",
+  "url": "https://souq.jp/",
+  "name": "オタカラ・ネット",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "主催者（オタカラ・ネット）のサイト。利用規約のページなし。robots.txt は /application/ 配下などのみ禁止（2026-10-18）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tokyo-park-69051f",
+  "url": "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html",
+  "name": "東京都公園協会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tokyo-park-b56fab",
+  "url": "https://www.tokyo-park.or.jp/park/komazawa-olympic/index.html",
+  "name": "東京都公園協会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tokyo-park-206df7",
+  "url": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html",
+  "name": "東京都公園協会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tokyo-park-b1f385",
+  "url": "https://www.tokyo-park.or.jp/park/yoyogi/index.html",
+  "name": "www.tokyo-park.or.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tokyo-park-e2b8ff",
+  "url": "https://www.tokyo-park.or.jp/park/yoyogi/news/2026/8.html",
+  "name": "www.tokyo-park.or.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "sunshinecity-b5086b",
+  "url": "https://sunshinecity.jp/information/access_train.html",
+  "name": "sunshinecity.jp",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "サンシャインシティ（会場）の公式のアクセス案内ページ。robots.txt で許可を確認（2026-10-19）。利用規約のページは確認できていない。掲載は事実の項目だけ"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tokyo-park-316038",
+  "url": "https://www.tokyo-park.or.jp/park/hikarigaoka/index.html",
+  "name": "www.tokyo-park.or.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tokyo-park-f8a56d",
+  "url": "https://www.tokyo-park.or.jp/park/koganei/index.html",
+  "name": "www.tokyo-park.or.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "t-i-forum-e350a3",
+  "url": "https://www.t-i-forum.co.jp/",
+  "name": "www.t-i-forum.co.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。利用規約のページは見当たらない。事実の項目だけ掲載。アクセスのページ（/access/）は 403 のため取得せず（駅からの案内は要確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "showakinen-koen-3bf349",
+  "url": "https://www.showakinen-koen.jp/",
+  "name": "www.showakinen-koen.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。/about/ に「記事・写真の無断転載を禁じます」とあるため、事実の項目だけ掲載（文章・写真は転載しない）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "showakinen-koen-b793c0",
+  "url": "https://www.showakinen-koen.jp/access/",
+  "name": "www.showakinen-koen.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。/about/ に「記事・写真の無断転載を禁じます」とあるため、事実の項目だけ掲載（文章・写真は転載しない）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "nishiaraidaishi-330cca",
+  "url": "https://www.nishiaraidaishi.or.jp/",
+  "name": "www.nishiaraidaishi.or.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。プライバシーポリシーのみで利用規約のページは見当たらない。事実の項目だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "nishiaraidaishi-6cae1f",
+  "url": "https://www.nishiaraidaishi.or.jp/access/",
+  "name": "www.nishiaraidaishi.or.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。プライバシーポリシーのみで利用規約のページは見当たらない。事実の項目だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-0cd618",
+  "url": "https://www.city.setagaya.lg.jp/02075/9095.html",
+  "name": "www.city.setagaya.lg.jp",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。既に台帳にある世田谷区サイトと同じ扱い。事実の項目だけ掲載"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tokyo-park-b42635",
+  "url": "https://www.tokyo-park.or.jp/park/kiba/index.html",
+  "name": "www.tokyo-park.or.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "既存の台帳（tokyo-park.or.jp）と同じ扱い。robots.txt は 404（制限なし）。サイトポリシーで二次利用禁止のため事実の項目だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "ajinomotostadium-e8889b",
+  "url": "https://www.ajinomotostadium.com/corp/",
+  "name": "www.ajinomotostadium.com",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。利用規約のページは見当たらない。事実の項目だけ掲載。住所は運営会社の概要ページの所在地"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "ajinomotostadium-b6c6bc",
+  "url": "https://www.ajinomotostadium.com/access/",
+  "name": "www.ajinomotostadium.com",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。利用規約のページは見当たらない。事実の項目だけ掲載。住所は運営会社の概要ページの所在地"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-00b220",
+  "url": "https://www.city.fussa.tokyo.jp/map/kouen/1001768.html",
+  "name": "www.city.fussa.tokyo.jp",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。利用規約は未確認のため事実の項目だけ掲載"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-795bb0",
+  "url": "https://www.city.kita.lg.jp/city-information/facilities/1015990/1016001.html",
+  "name": "www.city.kita.lg.jp",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。利用規約は未確認のため事実の項目だけ掲載"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-1630e9",
+  "url": "https://www.city.sumida.lg.jp/sisetu_info/kouen/kunai_park_annai/sumida_park/park14.html",
+  "name": "www.city.sumida.lg.jp",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。既に台帳にある墨田区サイトと同じ扱い。事実の項目だけ掲載"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-dcef54",
+  "url": "https://www.city.toshima.lg.jp/340/shisetsu/koen/020.html",
+  "name": "www.city.toshima.lg.jp",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。既に台帳にある豊島区サイトと同じ扱い。事実の項目だけ掲載"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-063bf8",
+  "url": "https://www.city.taito.lg.jp/kenchiku/hanamidori/koen/riyo.html",
+  "name": "www.city.taito.lg.jp",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt の確認結果は peek.mjs で許可。利用規約は未確認のため事実の項目だけ掲載。区の別ページに「花川戸2丁目5番6号」との表記もあり（要確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-9a223d",
+  "url": "https://www.city.arakawa.tokyo.jp/a043/shisetsuannai/koukyoushisetsu/kouenyuuen016.html",
+  "name": "www.city.arakawa.tokyo.jp",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。既に台帳にある荒川区サイトと同じ扱い。事実の項目だけ掲載"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-0a3614",
+  "url": "https://www.city.kita.lg.jp/culture-tourism-sports/tourism/1010756/1010759/1010765.html",
+  "name": "www.city.kita.lg.jp",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。利用規約は未確認のため事実の項目だけ掲載"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tokyo-park-98dd04",
+  "url": "https://www.tokyo-park.or.jp/park/akatsuka/index.html",
+  "name": "www.tokyo-park.or.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "既存の台帳（tokyo-park.or.jp）と同じ扱い。robots.txt は 404（制限なし）。サイトポリシーで二次利用禁止のため事実の項目だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tokyo-eastpark-38aa31",
+  "url": "https://tokyo-eastpark.com/parksearch/ohjima",
+  "name": "tokyo-eastpark.com",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。利用規約のページは見当たらない（プライバシーポリシーのみ）。事実の項目だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-6ca764",
+  "url": "https://www.city.shinjuku.lg.jp/seikatsu/file15_02_00001.html",
+  "name": "www.city.shinjuku.lg.jp",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。利用規約は未確認のため事実の項目だけ掲載"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "kichijoji-d7f720",
+  "url": "https://kichijoji.parco.jp/info/",
+  "name": "kichijoji.parco.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。https://www.parco.co.jp/terms/ に、承諾なく複製・送信・頒布等をしてはならない旨があるため、事実の項目だけ掲載（文章・画像は転載しない）。自動取得を禁じる記載は確認できず"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-edbe8e",
+  "url": "https://www.city.toshima.lg.jp/132/miryoku/shiru/jinja/kishimojin.html",
+  "name": "www.city.toshima.lg.jp",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。既に台帳にある豊島区サイトと同じ扱い。事実の項目だけ掲載。なお、神社・寺側の公式サイトは見つけられず、豊島区の案内ページを出典にした"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "honmonji-340821",
+  "url": "https://honmonji.jp/",
+  "name": "honmonji.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。プライバシーポリシーのみで利用規約のページは見当たらない。事実の項目だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "honmonji-a4ba1b",
+  "url": "https://honmonji.jp/outline/access.html",
+  "name": "honmonji.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt で許可。プライバシーポリシーのみで利用規約のページは見当たらない。事実の項目だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-cd10ad",
+  "url": "https://www.city.setagaya.lg.jp/02075/9160.html",
+  "name": "www.city.setagaya.lg.jp",
+  "kind": "municipality",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-19",
+   "note": "robots.txt は 404（制限なし）。既に台帳にある世田谷区サイトと同じ扱い。事実の項目だけ掲載。公式の表記は「小田線」（小田急線の誤記とみられる。原文のまま）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "trx-e0a01a",
+  "url": "https://trx.jp/faq",
+  "name": "東京リサイクル",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "東京リサイクル（trx.jp）の公式ページ。robots.txt は許可。サイトの利用規約はなく、「出店規約」「プレミアム会員規約」は出店者向け。事実の項目（雨天の判断・マナーなど）を短く言い換えて載せ、文章・画像は転載しない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "trx-5589f9",
+  "url": "https://trx.jp/shopping",
+  "name": "trx.jp",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "東京リサイクル（trx.jp）の公式ページ。robots.txt は許可。サイトの利用規約はなく、「出店規約」「プレミアム会員規約」は出店者向け。事実の項目（雨天の判断・マナーなど）を短く言い換えて載せ、文章・画像は転載しない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "www2-982505",
+  "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=047",
+  "name": "リサイクル運動市民の会",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-18",
+   "note": "利用規約のページなし（プライバシーポリシー・特定商取引法の表記のみ）。robots.txt は 404（制限なし）（2026-10-18、ブラウザで確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "b-i-a-a40795",
+  "url": "https://b-i-a.jp/reserve/osaka-bay-tower/",
+  "name": "商業インキュベータ協会",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "b-i-a-5e0067",
+  "url": "https://b-i-a.jp/reserve/sevenpark/",
+  "name": "商業インキュベータ協会",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "b-i-a-9bd731",
+  "url": "https://b-i-a.jp/reserve/icora/",
+  "name": "商業インキュベータ協会",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "b-i-a-7e255e",
+  "url": "https://b-i-a.jp/reserve/iwashikincyaku/",
+  "name": "商業インキュベータ協会",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "b-i-a-e5b0f2",
+  "url": "https://b-i-a.jp/reserve/izumiyayao/",
+  "name": "商業インキュベータ協会",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "b-i-a-625211",
+  "url": "https://b-i-a.jp/reserve/tsurumiryokuchi/",
+  "name": "商業インキュベータ協会",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "b-i-a-a3581d",
+  "url": "https://b-i-a.jp/reserve/sunshine/",
+  "name": "商業インキュベータ協会",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "b-i-a-f791e1",
+  "url": "https://b-i-a.jp/reserve/hirakiiwaoka/",
+  "name": "商業インキュベータ協会",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "b-i-a-bb472f",
+  "url": "https://b-i-a.jp/reserve/izumiyanishikobe/",
+  "name": "商業インキュベータ協会",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "b-i-a-5ad4b1",
+  "url": "https://b-i-a.jp/reserve/izumiyakoryo/",
+  "name": "商業インキュベータ協会",
+  "kind": "organizer",
+  "pref": "29",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし（「出店に関する規約・注意事項」は出店者向け）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "furimatairiku-6d8387",
+  "url": "http://furimatairiku.jp/Hanahaku/index.html",
+  "name": "フリマ大陸",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は404（制限なし）。サイトに利用規約のページはなく、「出店に関する規約」（/Agreement/）は出店者向けの規約で、サイトの内容の複製・取得を禁じる記載は確認できない（2026-10-20）。掲載は事実の項目（日時・場所・料金など）だけ。"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "furimatairiku-0c5a28",
+  "url": "http://furimatairiku.jp/Kawati/index.html",
+  "name": "フリマ大陸",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は404（制限なし）。サイトに利用規約のページはなく、「出店に関する規約」（/Agreement/）は出店者向けの規約で、サイトの内容の複製・取得を禁じる記載は確認できない（2026-10-20）。掲載は事実の項目（日時・場所・料金など）だけ。"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "furimatairiku-5b141c",
+  "url": "http://furimatairiku.jp/AEON-m/index.html",
+  "name": "フリマ大陸",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は404（制限なし）。サイトに利用規約のページはなく、「出店に関する規約」（/Agreement/）は出店者向けの規約で、サイトの内容の複製・取得を禁じる記載は確認できない（2026-10-20）。掲載は事実の項目（日時・場所・料金など）だけ。"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "furimatairiku-653c30",
+  "url": "http://furimatairiku.jp/Taharamoto/index.html",
+  "name": "フリマ大陸",
+  "kind": "organizer",
+  "pref": "29",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は404（制限なし）。サイトに利用規約のページはなく、「出店に関する規約」（/Agreement/）は出店者向けの規約で、サイトの内容の複製・取得を禁じる記載は確認できない（2026-10-20）。掲載は事実の項目（日時・場所・料金など）だけ。"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "fmfm-king-fdefb4",
+  "url": "https://www.fmfm-king.com/osaka/",
+  "name": "フリマジャパン",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tokyo-romantic-03da84",
+  "url": "https://tokyo-romantic.com/",
+  "name": "Tokyo Romantic Market（東京浪漫・渋谷蚤の市",
+  "kind": "organizer",
+  "pref": "13",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者の公式サイト。robots.txt は許可（CMSの内部パスのみ禁止）。利用規約のページは確認できず。事実の項目（日付・時間・会場）だけ掲載（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tmc-dx-9fdcd2",
+  "url": "https://tmc-dx.org/area/kawagoe.html",
+  "name": "タイムマシーンカンパニー",
+  "kind": "organizer",
+  "pref": "11",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可（/members.html・/admin/・/login/ のみ禁止）。出店規約は出店者向けで、取得・転載を禁じる記載は確認できず。事実の項目（日付・時間・場所・出店料）だけ掲載し、文章は転載しない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "rbf-5d5178",
+  "url": "https://www.rbf.jp/nittei.html",
+  "name": "エコロジーネットワーク・ラズベリー",
+  "kind": "organizer",
+  "pref": "11",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "rbf-945520",
+  "url": "https://www.rbf.jp/kaijyou.html",
+  "name": "エコロジーネットワーク・ラズベリー",
+  "kind": "organizer",
+  "pref": "11",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "rbf-0ce9de",
+  "url": "https://www.rbf.jp/laketown2.html",
+  "name": "エコロジーネットワーク・ラズベリー",
+  "kind": "organizer",
+  "pref": "11",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "rbf-17764f",
+  "url": "https://www.rbf.jp/kazo.wakuwaku.html",
+  "name": "エコロジーネットワーク・ラズベリー",
+  "kind": "organizer",
+  "pref": "11",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "rbf-3e9b61",
+  "url": "https://www.rbf.jp/chicozan.html",
+  "name": "エコロジーネットワーク・ラズベリー",
+  "kind": "organizer",
+  "pref": "11",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "rbf-e09b85",
+  "url": "https://www.rbf.jp/kashiwanoha.html",
+  "name": "エコロジーネットワーク・ラズベリー",
+  "kind": "organizer",
+  "pref": "12",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "rbf-47d7d3",
+  "url": "https://www.rbf.jp/newtown.html",
+  "name": "印西市（エコロジーネットワーク・ラズベリー",
+  "kind": "municipality",
+  "pref": "12",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "rbf-3eae42",
+  "url": "https://www.rbf.jp/makuhari.html",
+  "name": "エコロジーネットワーク・ラズベリー",
+  "kind": "organizer",
+  "pref": "12",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "rbf-c71d5d",
+  "url": "https://www.rbf.jp/apie.html",
+  "name": "エコロジーネットワーク・ラズベリー",
+  "kind": "organizer",
+  "pref": "12",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-42c339",
+  "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+  "name": "大阪市東淀川区（大阪市（担当の環境事業センター・環境局家庭ごみ減量課",
+  "kind": "municipality",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "大阪市公式サイト。robots.txt は 404（制限なし）。「著作権・免責」のページで、コンテンツは出典を記載すれば複製・翻案を含め自由に利用できる（商用利用も可）とある。出典：大阪市環境局「ごみ減量フェスティバル・各区ガレージセールについて」（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-68ee17",
+  "url": "https://www.city.daito.lg.jp/soshiki/16/61472.html",
+  "name": "大東市（大東市民まつり（大東市の案内ページ",
+  "kind": "municipality",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "大東市公式サイト。robots.txt は許可（取得は届く範囲）。ページ上に取得・転載を禁じる記載は確認できず。事実の項目（日時・場所・出店内容）だけ掲載し、文章は転載しない（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-81f0bf",
+  "url": "https://www.city.hirakata.osaka.jp/0000054150.html",
+  "name": "枚方市（枚方市 環境部 循環型社会推進課",
+  "kind": "municipality",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "枚方市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日時・場所・入場料・雨天の扱い）だけ掲載し、文章は転載しない。出店者募集は終了（締切済み）のため出店情報は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-b488ba",
+  "url": "https://www.city.kashiwara.lg.jp/docs/2026072100040",
+  "name": "柏原市（柏原市民総合フェスティバル実行委員会",
+  "kind": "municipality",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "柏原市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日時・場所・雨天の扱い）だけ掲載し、文章は転載しない（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-fa31b1",
+  "url": "https://www.city.ibaraki.osaka.jp/ibarakinikki/reiwahachinenn/4gatu/68845.html",
+  "name": "茨木市（FICベース株式会社（茨木のまちづくり会社",
+  "kind": "municipality",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "茨木市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（開催予定日・主催）だけ掲載（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "ficbase-531b7c",
+  "url": "https://ficbase.jp/project/nominoichi",
+  "name": "FICベース株式会社（茨木のまちづくり会社",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（FICベース株式会社）の公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。トップのお知らせに秋の出店募集の締切が載る。日付・会場・時間はこのページには無いため市の記載のみ掲載（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "ficbase-283fb8",
+  "url": "https://ficbase.jp/news/oX2WMwom",
+  "name": "FICベース株式会社",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（FICベース株式会社）の公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日程・時間・場所・入場料）だけ掲載し、文章は転載しない。出店料・電話番号は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "ficbase-c1ef6a",
+  "url": "https://ficbase.jp/project/ekimaemarche/32th",
+  "name": "FICベース株式会社",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（FICベース株式会社）の公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日程・時間・場所・入場料）だけ掲載し、文章は転載しない。出店料・電話番号は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "ficbase-9d3c7f",
+  "url": "https://ficbase.jp/base/ekimaebase",
+  "name": "FICベース株式会社",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（FICベース株式会社）の公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日程・時間・場所・入場料）だけ掲載し、文章は転載しない。出店料・電話番号は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-8e2612",
+  "url": "https://www.city.himeji.lg.jp/kanko/0000034474.html",
+  "name": "姫路市（姫路市",
+  "kind": "municipality",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "姫路市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日時・場所・内容）だけ掲載し、文章は転載しない（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-721d84",
+  "url": "https://www.city.kawanishi.hyogo.jp/kurashi/1017490/midori/1014067.html",
+  "name": "川西市（川西市 土木部 公園緑地課",
+  "kind": "municipality",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "川西市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日時・場所・内容）だけ掲載し、文章は転載しない。出店者募集は締切済みのため出店情報は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "kamigamo-tedukuriichi-75c1a6",
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/141/",
+  "name": "株式会社クラフト",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（株式会社クラフト）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・時間・場所・入場料・雨天の扱い）だけ掲載し、文章は転載しない。電話番号・出店者向けの情報は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "kamigamo-tedukuriichi-598310",
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/142/",
+  "name": "株式会社クラフト",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（株式会社クラフト）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・時間・場所・入場料・雨天の扱い）だけ掲載し、文章は転載しない。電話番号・出店者向けの情報は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "kamigamo-tedukuriichi-c472b2",
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/144/",
+  "name": "株式会社クラフト",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（株式会社クラフト）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・時間・場所・入場料・雨天の扱い）だけ掲載し、文章は転載しない。電話番号・出店者向けの情報は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "kamigamo-tedukuriichi-ae38cd",
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/143/",
+  "name": "株式会社クラフト",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（株式会社クラフト）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・時間・場所・入場料・雨天の扱い）だけ掲載し、文章は転載しない。電話番号・出店者向けの情報は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "kamigamo-tedukuriichi-22f597",
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/145/",
+  "name": "株式会社クラフト",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（株式会社クラフト）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（開催日程）だけ掲載し、文章は転載しない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-0443eb",
+  "url": "https://www.city.tatsuno.lg.jp/soshiki/1023/gyomu/1/11147.html",
+  "name": "たつの市（たつの市（観光振興課・たつの市民まつり運営委員会",
+  "kind": "municipality",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "たつの市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日付・場所・区画数）だけ掲載し、文章は転載しない。出店者募集の条件・料金は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "2525furima-286ccc",
+  "url": "https://2525furima.hp.peraichi.com/",
+  "name": "2525フリマ滋賀（ニコニコフリマ滋賀",
+  "kind": "organizer",
+  "pref": "25",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（2525フリマ滋賀）の公式ページ（ペライチ）。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・時間・場所・出店数）だけ掲載し、文章は転載しない。問い合わせ先の電話番号・個人名は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "pref-67fc34",
+  "url": "https://www.pref.shiga.lg.jp/gomizero/other/334917.html",
+  "name": "守山市（2525フリマ滋賀（ニコニコフリマ滋賀",
+  "kind": "municipality",
+  "pref": "25",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "滋賀県（琵琶湖環境部 循環社会推進課）の公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日時・場所）だけ掲載し、文章は転載しない。問い合わせ先は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-fa5b3c",
+  "url": "https://www.city.wakayama.wakayama.jp/kankou/event/1003232/1049848.html",
+  "name": "和歌山市（北ぶらくり丁商店街振興組合（和歌山市の案内ページ",
+  "kind": "municipality",
+  "pref": "30",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "和歌山市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日時・場所・アクセス）だけ掲載し、文章・問い合わせ先メールは転載しない（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "lohas-park-5b1062",
+  "url": "https://lohas-park.jp/event/kiji5935/",
+  "name": "ロハスパーク川西実行委員会",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "lohas-park-5f0e4c",
+  "url": "https://lohas-park.jp/event/kiji5937/",
+  "name": "ロハスパーク（公式サイト",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "lohas-park-67c7b4",
+  "url": "https://lohas-park.jp/event/kiji5944/",
+  "name": "ロハスパーク伊丹実行委員会",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "lohas-park-cfb1f9",
+  "url": "https://lohas-park.jp/event/kiji5467/",
+  "name": "ロハスパーク（公式サイト",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "lohas-park-7df715",
+  "url": "https://lohas-park.jp/event/kiji5647/",
+  "name": "ロハスパーク（公式サイト",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "lohas-park-a01c9e",
+  "url": "https://lohas-park.jp/event/kiji5630/",
+  "name": "ロハスパーク豊中実行委員会",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "lohas-park-f40263",
+  "url": "https://lohas-park.jp/event/kiji5594/",
+  "name": "ロハスパーク（公式サイト",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "lohas-park-2570dd",
+  "url": "https://lohas-park.jp/event/kiji5799/",
+  "name": "ロハスパーク実行委員会",
+  "kind": "organizer",
+  "pref": "29",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "lohas-park-40e61d",
+  "url": "https://lohas-park.jp/event/kiji6066/",
+  "name": "ロハスパーク（公式サイト",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "lohas-park-7fc1a2",
+  "url": "https://lohas-park.jp/event/kiji6160/",
+  "name": "ロハスパーク（公式サイト",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "lohas-park-6798db",
+  "url": "https://lohas-park.jp/event/kiji5931/",
+  "name": "ロハスパーク（公式サイト",
+  "kind": "organizer",
+  "pref": "28",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "nadeshikofurima-cd7d21",
+  "url": "https://nadeshikofurima.com/zyagasumaho.html",
+  "name": "なでしこふれあいマーケット協会",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（なでしこふれあいマーケット協会）の公式サイト。robots.txt は 404（制限なし）。利用規約のページは見当たらず（出店はお申込みで規約への同意とあるのは出店者向け）、取得・転載を禁じる記載は確認できず。事実の項目（開催のきまり・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出店料・電話番号は載せない。日付を並べた年間予定は年の記載がなく載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "nadeshikofurima-631b5f",
+  "url": "https://nadeshikofurima.com/apitasumaho.html",
+  "name": "なでしこふれあいマーケット協会",
+  "kind": "organizer",
+  "pref": "26",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（なでしこふれあいマーケット協会）の公式サイト。robots.txt は 404（制限なし）。利用規約のページは見当たらず（出店はお申込みで規約への同意とあるのは出店者向け）、取得・転載を禁じる記載は確認できず。事実の項目（開催のきまり・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出店料・電話番号は載せない。日付を並べた年間予定は年の記載がなく載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "nadeshikofurima-1dda8f",
+  "url": "https://nadeshikofurima.com/custom19.html",
+  "name": "なでしこふれあいマーケット協会",
+  "kind": "organizer",
+  "pref": "29",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（なでしこふれあいマーケット協会）の公式サイト。robots.txt は 404（制限なし）。利用規約のページは見当たらず（出店はお申込みで規約への同意とあるのは出店者向け）、取得・転載を禁じる記載は確認できず。事実の項目（開催のきまり・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出店料・電話番号は載せない。日付を並べた年間予定は年の記載がなく載せない（2026-10-20 確認）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "cpm-gifu-70fa70",
+  "url": "https://www.cpm-gifu.jp/rakuraku/schedule/",
+  "name": "公益財団法人セラミックパーク美濃",
+  "kind": "organizer",
+  "pref": "21",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者の公式サイト。利用規約のページは見当たらず、robots.txt は 404（制限なし）。事実の項目（日付・時間・会場・料金）だけ掲載。連絡先・個人名は載せない。2026-10-20 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "kasugai-kanko-049f1a",
+  "url": "https://kasugai-kanko.jp/recommendedspot/kachigawataikoubou/",
+  "name": "一般社団法人春日井市観光コンベンション協会",
+  "kind": "organizer",
+  "pref": "23",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "春日井市観光コンベンション協会の公式サイト。robots.txt は許可。プライバシーポリシーのみで、取得を禁じる規約は見当たらない。事実の項目だけ掲載。2026-10-20 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "nagoya-info-eb2599",
+  "url": "https://www.nagoya-info.jp/spot/detail/13/",
+  "name": "大須観音（北野山真福寺宝生院",
+  "kind": "organizer",
+  "pref": "23",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "名古屋市観光情報「名古屋コンシェルジュ」（公式）。robots.txt は許可。事実の項目（開催日・所在地・アクセス）だけ掲載し、文章は転載しない。2026-10-20 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "aichinow-ab6826",
+  "url": "https://aichinow.pref.aichi.jp/spots/detail/914/",
+  "name": "あま市（鳳凰山甚目寺",
+  "kind": "municipality",
+  "pref": "23",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "愛知県の観光サイト Aichi Now（公式）。robots.txt は許可。ソーシャルメディア利用規約のみで、取得を禁じる記載は見当たらない。事実の項目だけ掲載し、文章は転載しない。2026-10-20 確認"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "nagoya-info-de5af8",
+  "url": "https://www.nagoya-info.jp/event/detail/695/",
+  "name": "徳川園事務所",
+  "kind": "organizer",
+  "pref": "23",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "名古屋市観光情報「名古屋コンシェルジュ」（公式）。robots.txt は許可。事実の項目だけ掲載し、文章は転載しない。2026-10-20 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "suwacent-978a03",
+  "url": "https://suwacent.com/event/9-27%e3%81%aa%e3%82%93%e3%81%a7%e3%82%82%e5%9b%9b%e6%97%a5%e3%81%ae%e5%b8%82/",
+  "name": "四日市諏訪商店街",
+  "kind": "organizer",
+  "pref": "24",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "四日市諏訪商店街の公式サイト。robots.txt は許可。利用規約のページは見当たらない。事実の項目だけ掲載。2026-10-20 確認"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-4f7c4f",
+  "url": "https://www.city.obihiro.hokkaido.jp/kurashi/gomi/information/1002806.html",
+  "name": "帯広市（十勝フリマクラブ",
+  "kind": "municipality",
+  "pref": "01",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "帯広市の公式サイト。robots.txt は許可。事実の項目だけ掲載し、主催団体の電話番号は載せない。2026-10-20 確認"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-760c3a",
+  "url": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html",
+  "name": "北九州市小倉北区（MES（門司港イベントサプライ",
+  "kind": "municipality",
+  "pref": "40",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。「リンク・著作権」に無断での複製・転用不可（私的使用・引用を除く）とあるため、掲載は事実の項目（日時・会場・主催者名）だけ。電話番号は載せない"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-8f76ba",
+  "url": "https://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/kankyo/rikkuru_fleamarket.html",
+  "name": "松山市（松山市",
+  "kind": "municipality",
+  "pref": "38",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。「著作権・免責事項等」に私的使用・引用を除き無断で転用・引用できないとあるため、掲載は事実の項目（日時・会場・出店料・荒天時）だけ"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-62ccf1",
+  "url": "https://www.city.fukuoka.lg.jp/fukushi/k_sensin/charm/100fes_2026.html",
+  "name": "福岡市中央区（福岡市",
+  "kind": "municipality",
+  "pref": "40",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。「リンク・著作権等」に私的使用・引用を除き無断で複製・転用できないとあるため、掲載は事実の項目（日時・会場・入場料・雨天時）だけ"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "pearlroad-5701e3",
+  "url": "https://pearlroad.jp/2025%E5%B9%B4%E5%BA%A6%E3%80%80%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1/",
+  "name": "紅谷パールロード商店街",
+  "kind": "organizer",
+  "pref": "14",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "商店街の公式サイト。利用規約のページなし（フッターに著作権表示のみ）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "cgi-d93ee9",
+  "url": "https://cgi.city.yokohama.lg.jp/common/event2/event_detail.html?id=64965",
+  "name": "横浜市戸塚区（上矢部地区センター",
+  "kind": "municipality",
+  "pref": "14",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "横浜市の公式サイト（市民利用施設等イベント情報）。利用規約のページは未確認。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-fb032b",
+  "url": "https://www.city.yokohama.lg.jp/hodogaya/kurashi/kyodo_manabi/kyodo_shien/chiiki/r8-ho-matsuri.html",
+  "name": "横浜市保土ケ谷区（横浜市保土ケ谷区",
+  "kind": "municipality",
+  "pref": "14",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "横浜市の公式サイト。利用規約のページは未確認。robots.txt は 404（許可扱い）。掲載は事実の項目だけ"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-d9a6fd",
+  "url": "https://www.city.kawasaki.jp/500/page/0000190814.html",
+  "name": "川崎市多摩区（登戸・向ヶ丘遊園エリアプラットフォーム",
+  "kind": "municipality",
+  "pref": "14",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "川崎市の公式サイト。利用規約のページは未確認。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "midori-48b0c4",
+  "url": "https://midori.city.sagamihara.kanagawa.jp/2026/08/27/5th-shiroyama-festival-20261101/",
+  "name": "相模原市緑区（城山商工会",
+  "kind": "municipality",
+  "pref": "14",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "相模原市緑区の観光サイト（city.sagamihara.kanagawa.jp のサブドメイン）。利用規約のページは未確認。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "ichigoichie-ea5ca7",
+  "url": "http://ichigoichie.moo.jp/katori.html",
+  "name": "一期一会 香取神社骨董市実行委員会",
+  "kind": "organizer",
+  "pref": "11",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "一期一会（ichigoichie.moo.jp）。利用規約のページなし。robots.txt は 404（制限なし）。事実の項目だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "ichigoichie-693a78",
+  "url": "http://ichigoichie.moo.jp/furusato.html",
+  "name": "浦和宿ふるさと市実行委員会",
+  "kind": "organizer",
+  "pref": "11",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "一期一会（ichigoichie.moo.jp）。利用規約のページなし。robots.txt は 404（制限なし）。事実の項目だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "katorijinja-702c5e",
+  "url": "https://katorijinja.com/saiten/kottouiti/",
+  "name": "一期一会 香取神社骨董市実行委員会",
+  "kind": "organizer",
+  "pref": "11",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "越谷香取神社の公式サイト。利用規約のページなし。robots.txt で許可。事実の項目だけ掲載（主催団体の電話番号は載せない）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-e2de0d",
+  "url": "https://www.city.inzai.lg.jp/0000001565.html",
+  "name": "印西市（木下駅南骨董市実行委員会",
+  "kind": "municipality",
+  "pref": "12",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "印西市公式サイト。「著作権・リンク・免責事項について」で無断転用・複製を禁じる記載（私的使用・引用の範囲を除く）→ 事実の項目だけ掲載し、文章・画像は転載しない。robots.txt は 404（制限なし）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-cb43ec",
+  "url": "https://www.city.kiryu.lg.jp/kankou/event/1010673/1001903.html",
+  "name": "桐生市（桐生天満宮古民具骨董市事務局",
+  "kind": "municipality",
+  "pref": "10",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。「このサイトについて」に私的使用・引用を除き文書・画像の無断転載を禁じるとあるため、掲載は事実の項目（日時・場所・雨天時）だけ"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "sake3-30b3d7",
+  "url": "https://www.sake3.com/event/16210",
+  "name": "大町振興会",
+  "kind": "organizer",
+  "pref": "15",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。利用規約のページは見つからず。文章・画像は転載せず、事実の項目（日時・場所・雨天時）だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "nagano-cvb-a86a0d",
+  "url": "https://www.nagano-cvb.or.jp/modules/event/page/101",
+  "name": "善光寺びんずる市実行委員会",
+  "kind": "organizer",
+  "pref": "20",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。利用規約のページは確認できず。事実の項目（日時・場所）だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "binzuru-ichi-17b2eb",
+  "url": "https://www.binzuru-ichi.com/",
+  "name": "善光寺びんずる市実行委員会",
+  "kind": "organizer",
+  "pref": "20",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 404（制限なし）（2026-10-20 確認）。利用規約のページは見つからず。主催者名だけ掲載（お知らせは2024年で止まっており日程は載っていない）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "town-2c25d3",
+  "url": "https://www.town.fujikawa.yamanashi.jp/kanko/docs_kanko/2023090700245/",
+  "name": "富士川町（富士川町観光物産協会",
+  "kind": "municipality",
+  "pref": "19",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 404（制限なし）（2026-10-20 確認）。利用規約のページは確認できず。事実の項目だけ掲載"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "minatonichiyouasaichikai-86109c",
+  "url": "https://minatonichiyouasaichikai.com/",
+  "name": "湊日曜朝市会",
+  "kind": "organizer",
+  "pref": "02",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。利用規約のページはなく（プライバシーポリシーのみ）、事実の項目だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "minatonichiyouasaichikai-c80acb",
+  "url": "https://minatonichiyouasaichikai.com/map/",
+  "name": "湊日曜朝市会",
+  "kind": "organizer",
+  "pref": "02",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "同上"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-1cea9c",
+  "url": "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/4/117.html",
+  "name": "佐賀市（佐賀市エコプラザ",
+  "kind": "municipality",
+  "pref": "41",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 404（許可）。利用規約のページは確認できず。掲載は事実の項目だけ（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-9f64c6",
+  "url": "https://www.city.oita.oita.jp/o141/kurashi/gomi/ki.html",
+  "name": "大分市（大分エコライフプラザ（大分市",
+  "kind": "municipality",
+  "pref": "44",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 404（許可）。『著作権・免責』で無断の転載・複製を禁じる記載 → 事実の項目（日時・場所）だけ掲載し、文章・画像は転載しない（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-912d4f",
+  "url": "https://www.city.ube.yamaguchi.jp/kurashi/gomi/genryou_recycle/1002098/1002105.html",
+  "name": "宇部市（ときわ公園フリーマーケット事務局",
+  "kind": "municipality",
+  "pref": "35",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 200（許可）。利用規約のページは確認できず。掲載は事実の項目だけ（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-9a663e",
+  "url": "https://www.city.miyakonojo.miyazaki.jp/site/kanko/2764.html",
+  "name": "都城市（都城市 地域生活課（山之口総合支所",
+  "kind": "municipality",
+  "pref": "45",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "『免責事項』で無断の複製・転用を禁じる記載 → 事実の項目だけ掲載し、文章・画像は転載しない（2026-10-20 確認）。robots.txt は peek.mjs で許可を確認"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-72be40",
+  "url": "https://www.city.shunan.lg.jp/soshiki/48/103173.html",
+  "name": "周南市（周南市（公式ページの掲載元",
+  "kind": "municipality",
+  "pref": "35",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 404（許可）。『著作権・セキュリティ・免責事項』で無断使用・転載を禁じる記載 → 事実の項目だけ掲載（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-7c8fef",
+  "url": "https://www.city.kochi.kochi.jp/site/kanko/chuokoen-event.html",
+  "name": "高知市（東日本大震災支援「絆の会」",
+  "kind": "municipality",
+  "pref": "39",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 404（許可）。『免責事項』に転載の禁止の記載は確認できず。掲載は事実の項目だけ（2026-10-20 確認）"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "ishikawagokoku-783c67",
+  "url": "https://www.ishikawagokoku.or.jp/",
+  "name": "石川護國神社",
+  "kind": "organizer",
+  "pref": "17",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約・免責のページは見当たらず（トップのリンクはGoogleのポリシーのみ）。robots.txt は全体に許可。事実の項目（日時・場所・出店料・申込み方法）だけを載せる"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "ishikawagokoku-a9a695",
+  "url": "https://www.ishikawagokoku.or.jp/images/pdf/info_13.pdf",
+  "name": "石川護國神社",
+  "kind": "organizer",
+  "pref": "17",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "同じサイトのPDF（蚤の市出店要綱）。robots.txt で許可。事実の項目だけを載せる"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "toyama-gokoku-00a3e3",
+  "url": "https://www.toyama-gokoku.jp/nominoichi/",
+  "name": "富山縣護國神社（富山のみの市",
+  "kind": "organizer",
+  "pref": "16",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約・免責のページは本文とリンクに見当たらず（2026-10-20 確認）。robots.txt は404で制限なし。事実の項目だけ掲載"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-4df75c",
+  "url": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/3/2/4/4967.html",
+  "name": "高岡市（たかおか朝市実行委員会",
+  "kind": "municipality",
+  "pref": "16",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "フッターに Copyright (c) 2024 Takaoka City. All Rights Reserved.（著作権表示）。文章・画像は転載せず、事実の項目（日時・会場・出店料・申込み方法）だけ掲載。robots.txt は404で制限なし"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-8a06e4",
+  "url": "https://www.city.takaoka.toyama.jp/soshiki/sangyokikakuka/2/1/6/11639.html",
+  "name": "高岡市（ツギノテ実行委員会",
+  "kind": "municipality",
+  "pref": "16",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "フッターに Copyright (c) Takaoka City. All Rights Reserved.（著作権表示）。文章・画像は転載せず、事実の項目（日時・会場・入場料・問い合わせ先の団体名）だけ掲載。robots.txt は404で制限なし"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "city-c40d46",
+  "url": "https://www.city.sabae.fukui.jp/kanko/sightseeing/jyousyouji.html",
+  "name": "鯖江市（誠市（鯖江商工会議所",
+  "kind": "municipality",
+  "pref": "18",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "鯖江市観光の公式ページ（市の観光サイト）。利用規約のページは本文・リンクに見当たらず。robots.txt は404（許可扱い）。掲載は事実の項目だけ（開催のきまり・会場の住所）。"
+  },
+  "everyDays": 7,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "creatorsland-5144e7",
+  "url": "https://creatorsland.studio.site/",
+  "name": "クリエイターズランド",
+  "kind": "organizer",
+  "pref": "18",
+  "note": "公式ページ（台帳の出典。掲載データの元）。週1で確認（自治体は週1、主催者は3日ごと）。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者の公式サイト（Studio サイト）。本文は日程のタイトル行のみ（JavaScript で描画）。利用規約のページは確認できず。robots.txt は許可。掲載は事実の項目だけ（日程・会場名）。"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
  }
 ]
