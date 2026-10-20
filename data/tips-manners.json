@@ -1,94 +1,171 @@
 [
  {
-  "id": "payment",
+  "id": "coins",
+  "slug": "coins-before-you-go",
   "ja": {
-   "title": "決済と予算",
-   "points": [
-    "現金が基本です。出品者の多くは個人で、クレジットカードや電子マネーが使えるかは、出品者の対応によって異なります。",
-    "釣り銭が足りなくなることがあるので、1,000円札・500円玉・100円玉を多めに崩して持っていくと安心です。",
-    "1万円札での支払いは、特に早朝は嫌がられることがあります。"
+   "title": "小銭は、多めに持つのがいちばんの備え",
+   "lead": "フリマの朝、いちばん困るのは「お釣りがない」ことです。",
+   "blocks": [
+    {
+     "p": "フリーマーケットでは、出品している人の多くが個人です。店の人にとっては、お釣りが仕事の要になります。朝いちばんの一枚札は、そのぶん釣り銭の準備を崩す手間がかかります。だから、ちょっと早めに来た人ほど、細かいお金を持っていると喜ばれます。"
+    },
+    {
+     "p": "おすすめは、1,000円札を数枚、500円玉を数枚、100円玉を多めに用意しておくことです。財布の中が小銭だらけになっても、支払いの場面で慌てずに済みます。帰り道に使う交通費も忘れずに残しておきましょう。"
+    },
+    {
+     "p": "支払いのカードや電子マネーが使えるかどうかは、出品する人によって違います。だから、買う前に一言聞くか、現金を基本に考えておくと安心です。"
+    }
    ]
   },
   "en": {
-   "title": "Payment and budget",
-   "points": [
-    "Bring cash. Most sellers are individuals, and whether cards or e-money work depends on each seller.",
-    "Change can run out, so it helps to bring plenty of 1,000-yen notes, 500-yen coins and 100-yen coins.",
-    "Paying with a 10,000-yen note can be unwelcome, especially early in the morning."
+   "title": "Bring plenty of small change",
+   "lead": "The biggest problem on a flea market morning is not having change.",
+   "blocks": [
+    {
+     "p": "At most flea markets, many sellers are individuals, and giving change is part of their work. A large note takes time to break, especially early in the morning. So shoppers who arrive early and bring small bills and coins are often welcomed."
+    },
+    {
+     "p": "A good idea is to bring a few 1,000-yen notes, a few 500-yen coins and plenty of 100-yen coins. Even if your wallet fills up with coins, you will not be caught out at the moment of paying. Keep money for the trip home as well."
+    },
+    {
+     "p": "Whether a seller takes cards or e-money depends on the seller. Ask before you choose the item, or plan on cash as the main way to pay."
+    }
    ]
   }
  },
  {
   "id": "talk",
+  "slug": "talking-without-a-common-language",
   "ja": {
-   "title": "コミュニケーションと交渉",
-   "points": [
-    "金額の確認は、スマートフォンの電卓に数字を入れて見せ合うと、言葉が通じなくても確実です。",
-    "値切りは日本でも文化の一部ですが、強引な半額の要求は好まれません。2つ以上まとめて買うときに「少し安くしてもらえますか」と聞くと、話がまとまりやすい傾向があります。",
-    "「How much?」と「This one」の2語で、買い物は十分に成り立ちます。「いくらですか？（Ikura desuka?）」も通じやすい言葉です。"
+   "title": "「いくらですか？」と、電卓の一言",
+   "lead": "言葉が通じなくても、買い物は十分に成り立ちます。",
+   "blocks": [
+    {
+     "p": "フリーマーケットの良いところは、売り手と話す時間が短くても、お互いに欲しいものとお金が分かれば、取引が成り立つことです。難しい言葉は要りません。品物を指差して「This one」、値段を聞くときは「How much?」の2語でほぼ足ります。"
+    },
+    {
+     "p": "金額をやりとりするときは、スマートフォンの電卓が便利です。数字を打ち込んで画面を見せれば、誤解がありません。店の人も同じように、画面に数字を打ち返してくれることがあります。"
+    },
+    {
+     "p": "値段の交渉は、日本でも文化の一部です。ただし、強い口調で半額を求めると、雰囲気が悪くなります。二つ以上まとめて買うときに「少し安くしてもらえますか」と丁寧に聞くと、話がまとまりやすいと感じる人が多いようです。「いくらですか？（Ikura desuka?）」と聞くと、通じやすい場合もあります。"
+    }
    ]
   },
   "en": {
-   "title": "Talking and bargaining",
-   "points": [
-    "To confirm a price, type the number into your phone’s calculator and show each other. This works even without a shared language.",
-    "Bargaining is part of the culture in Japan too, but pushing for half price is not welcome. When buying two or more, asking “Could you make it a little cheaper?” tends to work well.",
-    "“How much?” and “This one” are enough to shop. “Ikura desuka?” (How much?) is also easy to understand."
+   "title": "“How much?” and a calculator",
+   "lead": "You can shop well even without a shared language.",
+   "blocks": [
+    {
+     "p": "One nice thing about flea markets is that you do not need long conversations. If both sides know which item and which price, the deal works. Pointing at an item and saying “This one”, and asking “How much?”, covers most of it."
+    },
+    {
+     "p": "A phone calculator is very handy for money. Type the number and show the screen, and there is no misunderstanding. Sellers sometimes type a number back on their own phone."
+    },
+    {
+     "p": "Bargaining is part of the culture in Japan too, but demanding half price in a sharp tone will sour the mood. When buying two or more, asking politely, “Could you make it a little cheaper?”, is often a smooth way to agree. “Ikura desuka?” (How much?) is also easy to understand."
+    }
    ]
   }
  },
  {
-  "id": "manners",
+  "id": "photos",
+  "slug": "one-word-before-the-camera",
   "ja": {
-   "title": "日本のルールとマナー",
-   "points": [
-    "写真は、商品・店主・ほかの客を無断で撮らないようにします。スマートフォンを指差して「Picture OK?」と聞くのが基本です。",
-    "陶器・漆器・骨董品・古い着物などは、デリケートです。勝手に触らず、目配せやジェスチャーで「触ってもいいですか」と確かめます。",
-    "購入品を入れる袋は、もらえないことが一般的です。大きめのトートバッグやリュックを持っていくと便利です。"
+   "title": "写真を撮る前に、一言",
+   "lead": "きれいな古道具や、店の人の表情を撮りたくなる気持ちは、よく分かります。",
+   "blocks": [
+    {
+     "p": "フリーマーケットの品物には、ひとつずつ持ち主の思い出があります。店の人も、自分の店を写真に残されるのは、嬉しいこともあれば、落ち着かないこともあります。だから、撮る前に一言聞く習慣をつけると、お互いに気持ちよく過ごせます。"
+    },
+    {
+     "p": "スマートフォンを軽く指差して「Picture OK?」と聞けば、多くの場合、ジェスチャーで答えてもらえます。断られたら、その場では撮らないのが基本です。"
+    },
+    {
+     "p": "陶器、漆器、骨董品、古い着物などは、とくに大切に扱われています。勝手に手に取らず、目を合わせてうなずいてもらってから触るようにしましょう。"
+    }
    ]
   },
   "en": {
-   "title": "Local rules and manners",
-   "points": [
-    "Do not photograph items, sellers or other shoppers without asking. Point to your phone and ask “Picture OK?”.",
-    "Ceramics, lacquerware, antiques and old kimono are delicate. Do not touch them freely; check with a glance or a gesture first.",
-    "Bags for your purchases are generally not given. A large tote bag or backpack is handy."
+   "title": "One word before you take a photo",
+   "lead": "It is natural to want to photograph lovely old things and a seller’s smile.",
+   "blocks": [
+    {
+     "p": "Each item at a flea market has its own history, and sellers can feel either happy or uneasy seeing their stall in a photo. A habit of asking first makes the day pleasant for everyone."
+    },
+    {
+     "p": "Point to your phone and ask “Picture OK?”. In many cases you will get a gesture of yes. If the answer is no, do not take the photo."
+    },
+    {
+     "p": "Ceramics, lacquerware, antiques and old kimono are handled with particular care. Do not pick them up without a look and a nod first."
+    }
    ]
   }
  },
  {
   "id": "when-where",
+  "slug": "morning-or-afternoon",
   "ja": {
-   "title": "開催情報とアクセス",
-   "points": [
-    "開催日は「毎月第1日曜日」など不規則なことが多く、雨天中止もよくあります。来る前に、主催者の公式サイトやSNSで開催を確かめます。",
-    "神社・お寺の境内や大きな公園で開かれることが多く、買い物と一緒に、日本の風景や建築も楽しめます。",
-    "人気の品は早く売れるため、午前8時〜10時頃に着くのがおすすめです。午後には店じまいを始める出店者もいます。"
+   "title": "朝に行くか、昼に行くか",
+   "lead": "いつ行くかで、出会える品物が変わります。",
+   "blocks": [
+    {
+     "p": "フリーマーケットは、朝に品物が多く並び、午後になるにつれて少しずつ店じまいが始まることが多いものです。人気の品は早く売れてしまうので、「掘り出し物」を探したいなら、朝の早い時間に着くと出会いやすくなります。"
+    },
+    {
+     "p": "一方で、昼過ぎは、混雑が落ち着いて、ゆっくり見られることもあります。値段の交渉も、時間に余裕があるほうが話しやすい場合があります。どちらを選ぶかは、何を探すかで決めると良いでしょう。"
+    },
+    {
+     "p": "神社やお寺の境内、大きな公園で開かれることが多いので、周りの景色も楽しみの一つです。開催は、天候で中止になることもあります。来る前に、主催者の案内を確かめておきましょう。"
+    }
    ]
   },
   "en": {
-   "title": "When and where",
-   "points": [
-    "Dates are often irregular, such as “the first Sunday of every month”, and rain cancellations are common. Check the organizer’s website or social media before you go.",
-    "Many markets are held in shrine or temple grounds and large parks, so you can enjoy local scenery and architecture along with shopping.",
-    "Popular items sell out early, so arriving around 8:00–10:00 a.m. is a good idea. Some sellers start packing up in the afternoon."
+   "title": "Go in the morning, or in the afternoon?",
+   "lead": "The time you go changes what you can find.",
+   "blocks": [
+    {
+     "p": "At many flea markets, the most stock is out in the morning, and stalls begin to pack up little by little in the afternoon. Popular items sell out early, so arriving early gives you a better chance of finding a bargain."
+    },
+    {
+     "p": "On the other hand, after lunch the crowd can thin out, and you can look at things at a relaxed pace. Bargaining can also be easier when there is time. Choose based on what you are looking for."
+    },
+    {
+     "p": "Many markets are held in shrine or temple grounds and large parks, so the surroundings are part of the fun. Markets can be cancelled in bad weather, so check the organizer’s information before you go."
+    }
    ]
   }
  },
  {
   "id": "carry-home",
+  "slug": "getting-it-home-safely",
   "ja": {
-   "title": "持ち帰り",
-   "points": [
-    "出品者が新聞紙などで包んでくれることがありますが、飛行機の預け入れに耐える梱包ではないことが多いです。",
-    "陶器やこけしは、ホテルに戻ってから衣類で包むか、100円ショップのプチプチ（気泡緩衝材）で包むと安心です。"
+   "title": "買ったものを、無事に家まで",
+   "lead": "陶器やこけしは、帰り道がいちばん気をつかうところです。",
+   "blocks": [
+    {
+     "p": "お店の人が、新聞紙などで簡単に包んでくれることがあります。ありがたい心遣いですが、それだけでは、電車やバスで揺られるうちに欠けてしまうこともあります。飛行機に預ける荷物として持ち帰るなら、なおさら気をつけたいところです。"
+    },
+    {
+     "p": "ホテルに戻ってから、衣類やタオルで包み直すと安心です。100円ショップで売っている気泡緩衝材（プチプチ）も、手軽な備えになります。割れやすいものは、いちばん大きな荷物の真ん中に入れると守りやすくなります。"
+    },
+    {
+     "p": "買い物の袋は、もらえないことが多いので、大きめのトートバッグやリュックを持っていくと便利です。帰りに荷物が増えても、肩や手が疲れにくくなります。"
+    }
    ]
   },
   "en": {
-   "title": "Taking purchases home",
-   "points": [
-    "Sellers sometimes wrap items in newspaper, but that is often not enough for checked luggage.",
-    "For ceramics and kokeshi dolls, wrap them in your clothes back at the hotel, or use bubble wrap from a 100-yen shop for extra protection."
+   "title": "Getting your purchases home safely",
+   "lead": "For ceramics and kokeshi dolls, the trip home is the most delicate part.",
+   "blocks": [
+    {
+     "p": "Sellers sometimes wrap things quickly in newspaper. It is a kind gesture, but on a train or bus it may not keep a piece from chipping. If the item is going into checked luggage, take extra care."
+    },
+    {
+     "p": "Wrap it again with clothes or a towel back at your hotel. Bubble wrap from a 100-yen shop is an easy extra layer. Put fragile items in the middle of your largest bag, where they are better protected."
+    },
+    {
+     "p": "Bags are often not given, so a large tote or a backpack is useful. Even when your purchases grow on the way back, your shoulders and hands will be less tired."
+    }
    ]
   }
  }
