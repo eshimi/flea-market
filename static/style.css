@@ -148,3 +148,10 @@ aside h2{font-size:15px;margin-bottom:10px}
 .pg-banner-text .lead{margin:0;max-width:34em}
 .pg-banner-art{height:140px;background-size:contain;background-position:center;background-repeat:no-repeat}
 @media (max-width:900px){.pg-banner-main{grid-template-columns:1fr;gap:6px}.pg-banner-art{height:100px}.pg-banner-in{padding-top:2px;padding-bottom:2px}}
+
+/* 地域の一覧：県ごとのイラストつきのカード */
+.grid-links .pref-card{display:flex;flex-direction:column;align-items:stretch;padding:0;overflow:hidden}
+.pref-card img{display:block;width:100%;height:auto;aspect-ratio:182/172;object-fit:contain;background:#FCEFDD}
+.pref-card .pc-t{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:10px 12px}
+/* 県のページの帯のイラスト（県別の画像） */
+.pg-banner-art[style*="/img/pref/"]{background-size:contain}

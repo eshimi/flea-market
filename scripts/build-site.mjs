@@ -140,13 +140,13 @@ function areaPages(ctx, lang) {
     if (s.venue.cityCode) prefs.get(p).set(s.venue.cityCode, s.venue.city);
   }
   const count = (f) => ctx.occ.filter((o) => isActive(o) && f(o.series)).length;
-  const idx = [...prefs.keys()].sort().map((p) => `<li><a href="/area/${p}/">${esc(prefLabel(p, lang))}<small>${esc(A.n(count((s) => s.venue.pref === p), ctx.days))}</small></a></li>`).join('');
+  const idx = [...prefs.keys()].sort().map((p) => `<li><a class="pref-card" href="/area/${p}/"><img src="/img/pref/${p}.webp" alt="" width="182" height="172" loading="lazy" decoding="async"><span class="pc-t">${esc(prefLabel(p, lang))}<small>${esc(A.n(count((s) => s.venue.pref === p), ctx.days))}</small></span></a></li>`).join('');
   pages.push(pg(lang, '/area/', { title: A.h1, description: A.desc, bannerText: `${breadcrumb([{ label: A.h1 }], lang)}<h1>${esc(A.h1)}</h1><p class="lead">${esc(A.lead)}</p>`, body: `<div class="in page">${idx ? `<ul class="grid-links">${idx}</ul>` : `<p class="empty">${esc(P[lang].soon)}</p>`}</div>` }));
   for (const [p, cities] of prefs) {
     const pn = prefLabel(p, lang);
     const cityLinks = [...cities].sort().map(([c, name]) => `<li><a href="/area/${p}/${c}/">${esc(cityL(name, lang))}<small>${esc(P[lang].cnt(count((s) => s.venue.cityCode === c)))}</small></a></li>`).join('');
     const extra = cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '';
-    pages.push(listPage(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), '', ctx.occ.filter((o) => o.series.venue.pref === p), extra));
+    pages.push({ ...listPage(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), '', ctx.occ.filter((o) => o.series.venue.pref === p), extra), bannerArt: `/img/pref/${p}.webp` });
     for (const [c, name] of cities) {
       pages.push(listPage(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c)));
     }
