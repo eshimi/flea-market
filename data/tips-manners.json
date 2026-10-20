@@ -1,0 +1,95 @@
+[
+ {
+  "id": "payment",
+  "ja": {
+   "title": "決済と予算",
+   "points": [
+    "現金が基本です。出品者の多くは個人で、クレジットカードや電子マネーが使えるかは、出品者の対応によって異なります。",
+    "釣り銭が足りなくなることがあるので、1,000円札・500円玉・100円玉を多めに崩して持っていくと安心です。",
+    "1万円札での支払いは、特に早朝は嫌がられることがあります。"
+   ]
+  },
+  "en": {
+   "title": "Payment and budget",
+   "points": [
+    "Bring cash. Most sellers are individuals, and whether cards or e-money work depends on each seller.",
+    "Change can run out, so it helps to bring plenty of 1,000-yen notes, 500-yen coins and 100-yen coins.",
+    "Paying with a 10,000-yen note can be unwelcome, especially early in the morning."
+   ]
+  }
+ },
+ {
+  "id": "talk",
+  "ja": {
+   "title": "コミュニケーションと交渉",
+   "points": [
+    "金額の確認は、スマートフォンの電卓に数字を入れて見せ合うと、言葉が通じなくても確実です。",
+    "値切りは日本でも文化の一部ですが、強引な半額の要求は好まれません。2つ以上まとめて買うときに「少し安くしてもらえますか」と聞くと、話がまとまりやすい傾向があります。",
+    "「How much?」と「This one」の2語で、買い物は十分に成り立ちます。「いくらですか？（Ikura desuka?）」も通じやすい言葉です。"
+   ]
+  },
+  "en": {
+   "title": "Talking and bargaining",
+   "points": [
+    "To confirm a price, type the number into your phone’s calculator and show each other. This works even without a shared language.",
+    "Bargaining is part of the culture in Japan too, but pushing for half price is not welcome. When buying two or more, asking “Could you make it a little cheaper?” tends to work well.",
+    "“How much?” and “This one” are enough to shop. “Ikura desuka?” (How much?) is also easy to understand."
+   ]
+  }
+ },
+ {
+  "id": "manners",
+  "ja": {
+   "title": "日本のルールとマナー",
+   "points": [
+    "写真は、商品・店主・ほかの客を無断で撮らないようにします。スマートフォンを指差して「Picture OK?」と聞くのが基本です。",
+    "陶器・漆器・骨董品・古い着物などは、デリケートです。勝手に触らず、目配せやジェスチャーで「触ってもいいですか」と確かめます。",
+    "購入品を入れる袋は、もらえないことが一般的です。大きめのトートバッグやリュックを持っていくと便利です。"
+   ]
+  },
+  "en": {
+   "title": "Local rules and manners",
+   "points": [
+    "Do not photograph items, sellers or other shoppers without asking. Point to your phone and ask “Picture OK?”.",
+    "Ceramics, lacquerware, antiques and old kimono are delicate. Do not touch them freely; check with a glance or a gesture first.",
+    "Bags for your purchases are generally not given. A large tote bag or backpack is handy."
+   ]
+  }
+ },
+ {
+  "id": "when-where",
+  "ja": {
+   "title": "開催情報とアクセス",
+   "points": [
+    "開催日は「毎月第1日曜日」など不規則なことが多く、雨天中止もよくあります。来る前に、主催者の公式サイトやSNSで開催を確かめます。",
+    "神社・お寺の境内や大きな公園で開かれることが多く、買い物と一緒に、日本の風景や建築も楽しめます。",
+    "人気の品は早く売れるため、午前8時〜10時頃に着くのがおすすめです。午後には店じまいを始める出店者もいます。"
+   ]
+  },
+  "en": {
+   "title": "When and where",
+   "points": [
+    "Dates are often irregular, such as “the first Sunday of every month”, and rain cancellations are common. Check the organizer’s website or social media before you go.",
+    "Many markets are held in shrine or temple grounds and large parks, so you can enjoy local scenery and architecture along with shopping.",
+    "Popular items sell out early, so arriving around 8:00–10:00 a.m. is a good idea. Some sellers start packing up in the afternoon."
+   ]
+  }
+ },
+ {
+  "id": "carry-home",
+  "ja": {
+   "title": "持ち帰り",
+   "points": [
+    "出品者が新聞紙などで包んでくれることがありますが、飛行機の預け入れに耐える梱包ではないことが多いです。",
+    "陶器やこけしは、ホテルに戻ってから衣類で包むか、100円ショップのプチプチ（気泡緩衝材）で包むと安心です。"
+   ]
+  },
+  "en": {
+   "title": "Taking purchases home",
+   "points": [
+    "Sellers sometimes wrap items in newspaper, but that is often not enough for checked luggage.",
+    "For ceramics and kokeshi dolls, wrap them in your clothes back at the hotel, or use bubble wrap from a 100-yen shop for extra protection."
+   ]
+  }
+ }
+]
