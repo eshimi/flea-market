@@ -135,6 +135,6 @@ aside h2{font-size:15px;margin-bottom:10px}
 .af-chip[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
 .af-chip[aria-pressed="true"] sup{color:#fbe6dc}
 
-/* 中のページの上のイラスト帯（トップ以外） */
-.pg-banner{height:160px;background-size:cover;background-position:center;background-color:#EFE7D8;border-bottom:1px solid var(--line)}
-@media (max-width:900px){.pg-banner{height:108px}}
+/* 中のページの上のイラスト帯（トップ以外）。画像は引きで全体が見えるように（余白は画像の地色と同じ色） */
+.pg-banner{height:200px;background-color:#FCEFDD;background-size:contain;background-position:center;background-repeat:no-repeat;border-bottom:1px solid var(--line)}
+@media (max-width:900px){.pg-banner{height:130px}}
