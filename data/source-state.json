@@ -2781,5 +2781,106 @@
   "evidenceOk": {
    "creatorsland-2026-sandome-fukui": true
   }
+ },
+ "https://www.koushoji.or.jp/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:koushoji-yagoto": true
+  }
+ },
+ "https://www.koushoji.or.jp/access/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:koushoji-yagoto": true
+  }
+ },
+ "https://www.koushoji.or.jp/koushoji-ichinen/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:koushoji-yagoto": true
+  }
+ },
+ "https://www.city.nagoya.jp/showa/miryoku/1021511/1021512/1021515.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"bc06-65e3d2324e76d\"",
+  "lastModified": "Tue, 20 Oct 2026 03:22:15 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:koushoji-yagoto": true
+  }
+ },
+ "https://www.city.nagoya.jp/kurashi/nougyou/1015555/1015560/1034067/1015569.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"b640-65e3cf2bbc8bf\"",
+  "lastModified": "Tue, 20 Oct 2026 03:08:43 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:arako-kannon": true
+  }
+ },
+ "https://www.city.nagoya.jp/nakagawa/miryoku/1022715/1022735/1022736.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"c9d1-65e3d2753b4cb\"",
+  "lastModified": "Tue, 20 Oct 2026 03:23:26 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:arako-kannon": true
+  }
+ },
+ "https://www.nittaiji.or.jp/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Wed, 14 Oct 2026 04:49:44 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:nittaiji-kakuozan": true
+  }
+ },
+ "https://www.nittaiji.or.jp/14acces/index.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Mon, 14 Aug 2023 13:39:26 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:nittaiji-kakuozan": true
+  }
+ },
+ "https://www.nittaiji.or.jp/15event/index.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Thu, 22 Jan 2026 07:45:09 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:nittaiji-kakuozan": true
+  }
+ },
+ "https://www.city.nagoya.jp/chikusa/miryoku/1019354/1041345/1019387/1019394.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"d62b-65e3d1b91fac1\"",
+  "lastModified": "Tue, 20 Oct 2026 03:20:08 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "venue:nittaiji-kakuozan": true
+  }
  }
 }

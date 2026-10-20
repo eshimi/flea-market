@@ -1664,7 +1664,7 @@
   "lastmod": "2026-10-20"
  },
  "/spot/": {
-  "hash": "v1:3e1fac738e7bd370",
+  "hash": "v1:c4b8f8aa66cb0c5b",
   "lastmod": "2026-10-20"
  },
  "/spot/tokyo-international-forum/": {
@@ -1775,12 +1775,40 @@
   "hash": "v1:f08e6d33eb0deb94",
   "lastmod": "2026-10-20"
  },
+ "/spot/ikea-tsuruhama/": {
+  "hash": "v1:c7433b254c3d4b99",
+  "lastmod": "2026-10-20"
+ },
+ "/spot/shitennoji/": {
+  "hash": "v1:61abfbed2db67968",
+  "lastmod": "2026-10-20"
+ },
+ "/spot/nagai-park/": {
+  "hash": "v1:8e77aaba5c3e1a47",
+  "lastmod": "2026-10-20"
+ },
+ "/spot/tsurumi-ryokuchi/": {
+  "hash": "v1:609389ff8f63667e",
+  "lastmod": "2026-10-20"
+ },
+ "/spot/nittaiji-kakuozan/": {
+  "hash": "v1:fdb2500be47005f2",
+  "lastmod": "2026-10-20"
+ },
+ "/spot/arako-kannon/": {
+  "hash": "v1:daca025e4ad6dd11",
+  "lastmod": "2026-10-20"
+ },
  "/spot/akatsuka-park/": {
   "hash": "v1:89ed82d2582e0a8d",
   "lastmod": "2026-10-20"
  },
  "/spot/oshima-komatsugawa-park/": {
   "hash": "v1:2992533252e0454c",
+  "lastmod": "2026-10-20"
+ },
+ "/spot/koushoji-yagoto/": {
+  "hash": "v1:3148c9b6cc029b60",
   "lastmod": "2026-10-20"
  },
  "/spot/ukima-park/": {
@@ -3516,7 +3544,7 @@
   "lastmod": "2026-10-20"
  },
  "/ja/spot/": {
-  "hash": "v1:c6fba355788b79be",
+  "hash": "v1:aee872a5ceab6f44",
   "lastmod": "2026-10-20"
  },
  "/ja/spot/tokyo-international-forum/": {
@@ -3627,12 +3655,40 @@
   "hash": "v1:50553254ece44f72",
   "lastmod": "2026-10-20"
  },
+ "/ja/spot/ikea-tsuruhama/": {
+  "hash": "v1:34f0b8b5847c7aca",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/spot/shitennoji/": {
+  "hash": "v1:29b6514c091616e7",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/spot/nagai-park/": {
+  "hash": "v1:a54c328ea82f0504",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/spot/tsurumi-ryokuchi/": {
+  "hash": "v1:17ed53019f53f6a3",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/spot/nittaiji-kakuozan/": {
+  "hash": "v1:3b5ea2f6f5777141",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/spot/arako-kannon/": {
+  "hash": "v1:4fc8e47a823c51df",
+  "lastmod": "2026-10-20"
+ },
  "/ja/spot/akatsuka-park/": {
   "hash": "v1:93fe4bd0ccbbcdb9",
   "lastmod": "2026-10-20"
  },
  "/ja/spot/oshima-komatsugawa-park/": {
   "hash": "v1:576633233b3daedd",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/spot/koushoji-yagoto/": {
+  "hash": "v1:af3085b04397aaa9",
   "lastmod": "2026-10-20"
  },
  "/ja/spot/ukima-park/": {
