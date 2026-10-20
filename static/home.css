@@ -264,6 +264,8 @@ a:hover .pm-on,a:focus-visible .pm-on{fill:#9A4C36}
 
 /* HERO の写真の切り替え（点）。写真が1枚だけのときは出ない */
 .hero2-photo img.hp[hidden]{display:none}
+/* 2枚目は、引いて（全体が見えるように）右寄せ */
+.hero2-photo img.hp-alt{object-fit:contain;object-position:right center;background:#F7F3EB;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%);mask-image:linear-gradient(90deg,transparent 0,#000 14%)}
 .hero2-dots{position:absolute;right:28px;bottom:18px;display:flex;gap:8px;z-index:2}
 .hero2-dots button{width:14px;height:14px;border-radius:50%;border:2px solid #fff;background:rgba(41,43,40,.45);padding:0;cursor:pointer}
 .hero2-dots button[aria-pressed="true"]{background:#B95E43;border-color:#fff}

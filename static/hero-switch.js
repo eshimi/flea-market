@@ -1,19 +1,17 @@
-// HERO の写真を切り替える。6秒ごとに次の写真へ進み、点を押したら、その写真で止める（点を押すと、その写真に入れ替わる）。写真が1枚だけのときは何もしない
+// HERO の写真。アクセスごとに、写真をランダムに選ぶ。同じ人（同じブラウザ）には、前に見た写真を出す（ブラウザに保存）。点を押すと、その写真に切り替わり、それを覚える
 (() => {
   const photos = [...document.querySelectorAll('.hero2-photo img.hp')];
   const dots = [...document.querySelectorAll('.hero2-dots button')];
   if (photos.length < 2 || dots.length !== photos.length) return;
-  let current = 0;
-  let timer = null;
+  const KEY = 'fm-hero-photo';
   const show = (i) => {
-    current = i;
     photos.forEach((p, k) => { p.hidden = k !== i; });
     dots.forEach((d, k) => d.setAttribute('aria-pressed', String(k === i)));
+    try { localStorage.setItem(KEY, String(i)); } catch { /* 保存できない環境では、このアクセスだけ */ }
   };
-  const stop = () => { clearInterval(timer); timer = null; };
-  dots.forEach((d, k) => d.addEventListener('click', () => { stop(); show(k); }));
-  // 動きを減らす設定のときは、自動では切り替えない
-  if (!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    timer = setInterval(() => show((current + 1) % photos.length), 6000);
-  }
+  let saved = null;
+  try { saved = localStorage.getItem(KEY); } catch { /* 読めない環境では、ランダムに選ぶ */ }
+  const idx = saved !== null && Number(saved) < photos.length ? Number(saved) : Math.floor(Math.random() * photos.length);
+  show(idx);
+  dots.forEach((d, k) => d.addEventListener('click', () => show(k)));
 })();
