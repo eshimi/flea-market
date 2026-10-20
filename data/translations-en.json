@@ -1107,6 +1107,14 @@
    "address": "50-2 Karako, Tawaramoto-cho, Shiki-gun, Nara",
    "notes": "Free parking available. A roadside station (Michi-no-Eki) is nearby",
    "fee": "Hand-carry booth (2.5m x 2.5m) 2,500 yen; car booth (5.5m x 4m) 5,200 yen; food/event booth (5.5m x 4m) 5,600 yen (tax included, bank transfer fee not included)"
+  },
+  "vintage-market-expo70": {
+   "name": "Vintage Market – Expo Park Flea Market (Banpaku Nominoichi)",
+   "venue": "Expo '70 Commemorative Park, East Plaza",
+   "address": "1-1 Senri Banpaku Koen, Suita, Osaka Prefecture",
+   "time": "9:30–16:30",
+   "rain": "Light rain: held. Cancelled in bad weather.",
+   "fee": "Advance tickets ¥700 / day tickets ¥1,000 (free for elementary school children and under; separate Expo Park admission fee applies)"
   }
  },
  "organizers": {
@@ -1175,7 +1183,8 @@
   "ミルクの会": "Milk-no-Kai",
   "エコロジーネットワーク ラズベリー": "Ecology Network Raspberry",
   "商業インキュベータ協会": "Commercial Incubator Association",
-  "フリマ大陸": "Furima Tairiku"
+  "フリマ大陸": "Furima Tairiku",
+  "株式会社シティライフNEW": "City Life NEW Co., Ltd."
  },
  "labels": {
   "問い合わせ先": "Contact",
@@ -1283,7 +1292,8 @@
   "神戸市西区": "Nishi Ward, Kobe",
   "広陵町": "Koryo Town",
   "東大阪市": "Higashiosaka",
-  "田原本町": "Tawaramoto"
+  "田原本町": "Tawaramoto",
+  "吹田市": "Suita City"
  },
  "notes": {
   "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",
