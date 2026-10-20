@@ -95,15 +95,20 @@ const BANNER_BY_SECTION = { weekend: 'b2-target', calendar: 'b5-binoculars', dat
 // 画像（static/img/banner/<名前>.webp）が無いときは、帯を出さない
 const STATIC_BANNER_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'static', 'img', 'banner');
 // 画像（static/img/banner/<名前>.webp）が無いときは、帯を出さない
-export function pageBanner(base) {
+// 帯の中に文字（パンくず・見出し・説明）を置くとき：左に文字、右に画像（バランスをとる）
+export function pageBanner(base, text = '') {
   if (base === '/' || base === '/404.html') return '';
   const sec = base.split('/').filter(Boolean)[0] || '';
   const name = BANNER_BY_SECTION[sec] || 'b10-relax';
-  if (!existsSync(join(STATIC_BANNER_DIR, `${name}.webp`))) return '';
-  return `<div class="pg-banner" aria-hidden="true" style="background-image:url(/img/banner/${name}.webp)"></div>\n`;
+  const art = existsSync(join(STATIC_BANNER_DIR, `${name}.webp`)) ? `/img/banner/${name}.webp` : '';
+  if (text) {
+    return `<div class="pg-banner has-text"><div class="in pg-banner-in"><div class="pg-banner-text">${text}</div>${art ? `<div class="pg-banner-art" aria-hidden="true" style="background-image:url(${art})"></div>` : ''}</div></div>\n`;
+  }
+  if (!art) return '';
+  return `<div class="pg-banner" aria-hidden="true" style="background-image:url(${art})"></div>\n`;
 }
 
-export function layout({ path, title, description, body, head = '', scripts = [], lang, css = [], keywords = [] }) {
+export function layout({ path, title, description, body, head = '', scripts = [], lang, css = [], keywords = [], bannerText = '' }) {
   const sp = splitPath(path);
   lang = lang || sp.lang;
   const base = sp.base;
@@ -138,7 +143,7 @@ ${css.map((c) => `<link rel="stylesheet" href="${c}">`).join('\n')}${css.length 
 <body>
 ${siteHeader(base, lang)}
 <main id="main">
-${pageBanner(base)}${localize(body, lang)}
+${pageBanner(base, bannerText ? localize(bannerText, lang) : '')}${localize(body, lang)}
 </main>
 ${siteFooter(base, lang)}
 ${scripts.map((s) => `<script src="${s}" defer></script>`).join('\n')}

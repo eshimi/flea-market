@@ -141,7 +141,7 @@ function areaPages(ctx, lang) {
   }
   const count = (f) => ctx.occ.filter((o) => isActive(o) && f(o.series)).length;
   const idx = [...prefs.keys()].sort().map((p) => `<li><a href="/area/${p}/">${esc(prefLabel(p, lang))}<small>${esc(A.n(count((s) => s.venue.pref === p), ctx.days))}</small></a></li>`).join('');
-  pages.push(pg(lang, '/area/', { title: A.h1, description: A.desc, body: `<div class="in page">${breadcrumb([{ label: A.h1 }], lang)}<h1>${esc(A.h1)}</h1><p class="lead">${esc(A.lead)}</p>${idx ? `<ul class="grid-links">${idx}</ul>` : `<p class="empty">${esc(P[lang].soon)}</p>`}</div>` }));
+  pages.push(pg(lang, '/area/', { title: A.h1, description: A.desc, bannerText: `${breadcrumb([{ label: A.h1 }], lang)}<h1>${esc(A.h1)}</h1><p class="lead">${esc(A.lead)}</p>`, body: `<div class="in page">${idx ? `<ul class="grid-links">${idx}</ul>` : `<p class="empty">${esc(P[lang].soon)}</p>`}</div>` }));
   for (const [p, cities] of prefs) {
     const pn = prefLabel(p, lang);
     const cityLinks = [...cities].sort().map(([c, name]) => `<li><a href="/area/${p}/${c}/">${esc(cityL(name, lang))}<small>${esc(P[lang].cnt(count((s) => s.venue.cityCode === c)))}</small></a></li>`).join('');
@@ -445,6 +445,12 @@ function withSide(page, ctx, lang) {
   const base = splitPath(page.path).base;
   if (!/^\/(weekend|calendar|date|area|kind|spot|shuten|search|about)\//.test(base)) return page;
   if (page.body.includes('class="ev-split"')) return page; // 個別ページ（スポットなど）は、自前の2列
+  // 帯に文字を置くページ（パンくずが帯の中）：本文の右に、同じ右の列を付ける
+  if (page.bannerText) {
+    const inner = /^<div class="in page[^"]*">([\s\S]*)<\/div>$/.exec(page.body);
+    if (!inner) return page;
+    return { ...page, body: `<div class="in page"><div class="ev-split"><div class="ev-main">${inner[1]}</div>${sideNav(ctx, lang, base)}</div></div>` };
+  }
   const m = /^(<div class="in page[^"]*">)(<nav class="crumbs"[\s\S]*?<\/nav>)([\s\S]*)<\/div>$/.exec(page.body);
   if (!m) return page;
   return { ...page, body: `${m[1]}${m[2]}<div class="ev-split"><div class="ev-main">${m[3]}</div>${sideNav(ctx, lang, base)}</div></div>` };
