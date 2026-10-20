@@ -1,0 +1,73 @@
+{
+ "slug": "area-01-2026-10",
+ "date": "2026-10-20",
+ "cat": "area",
+ "tags": {
+  "ja": [
+   "01",
+   "フリマ"
+  ],
+  "en": [
+   "Hokkaido",
+   "flea market"
+  ]
+ },
+ "en": {
+  "title": "Flea markets and antique fairs in Hokkaido (next 120 days: 5 events)",
+  "summary": "Markets in Hokkaido over the next 120 days, in date order, built only from the listing data and its official sources.",
+  "points": [
+   "5 events in the next 120 days (confirmed on official sources: 5; from the regular schedule: 0)",
+   "Types: Flea Markets 5",
+   "Venue pages: none yet"
+  ],
+  "blocks": [
+   {
+    "h2": "Coming up"
+   },
+   {
+    "ul": [
+     "[Wakuwaku Flea Market (Obihiro City, MEGA Don Quijote Nishi-Obihiro parking lot)](/e/obihiro-wakuwaku-flea/): Obihiro City, Inside the parking lot of MEGA Don Quijote Nishi-Obihiro / 9:00–12:30 — Confirmed (official)",
+     "[Wakuwaku Flea Market (Obihiro City, MEGA Don Quijote Nishi-Obihiro parking lot)](/e/obihiro-wakuwaku-flea/): Obihiro City, Inside the parking lot of MEGA Don Quijote Nishi-Obihiro / 9:00–12:30 — Confirmed (official)",
+     "[Nakajima Park Flea Market (Sapporo)](/e/sapporo-nakajima-park-flea/): Chuo Ward, Sapporo, Nakajima Park — Confirmed (official)",
+     "[Flea Market in Sapporo Sun Plaza (Recycle Movement Citizens' Association, Hokkaido Headquarters)](/e/recyclefmd-sapporo-plaza-flea/): Kita Ward, Sapporo, Sapporo Sun Plaza / 10:00–13:30 — Confirmed (official)",
+     "[Flea Market in Sapporo Sun Plaza (Recycle Movement Citizens' Association, Hokkaido Headquarters)](/e/recyclefmd-sapporo-plaza-flea/): Kita Ward, Sapporo, Sapporo Sun Plaza / 10:00–13:30 — Confirmed (official)"
+    ]
+   },
+   {
+    "h2": "Before you go"
+   },
+   {
+    "p": "Each listing links to its page with the official source. Rules for rain and cancellations differ from market to market: see [Rain and cancellations](/blog/rain-and-cancellations/) and the [guide](/guide/). “Scheduled” dates are calculated from an official recurring rule and have not been confirmed individually."
+   }
+  ]
+ },
+ "ja": {
+  "title": "北海道のフリマ・骨董市・マルシェ（今後120日：5件）",
+  "summary": "北海道の今後120日の開催を、近い日程から並べました。掲載データの事実だけで作っています。",
+  "points": [
+   "今後120日に5件（公式で確認した回 5件、きまりから算出した回 0件）",
+   "種類：フリーマーケット 5件",
+   "会場の案内（スポット）：まだありません"
+  ],
+  "blocks": [
+   {
+    "h2": "近い日程"
+   },
+   {
+    "ul": [
+     "[わくわくフリーマーケット（帯広市・MEGAドン・キホーテ西帯広店駐車場）](/e/obihiro-wakuwaku-flea/)：帯広市・MEGAドン・キホーテ西帯広店 駐車場内／9:00〜12:30（公式で確認）",
+     "[わくわくフリーマーケット（帯広市・MEGAドン・キホーテ西帯広店駐車場）](/e/obihiro-wakuwaku-flea/)：帯広市・MEGAドン・キホーテ西帯広店 駐車場内／9:00〜12:30（公式で確認）",
+     "[中島公園フリーマーケット（札幌市）](/e/sapporo-nakajima-park-flea/)：札幌市中央区・中島公園（公式で確認）",
+     "[フリーマーケット in 札幌サンプラザ（リサイクル運動市民の会 北海道本部）](/e/recyclefmd-sapporo-plaza-flea/)：札幌市北区・札幌サンプラザ／10:00〜13:30（公式で確認）",
+     "[フリーマーケット in 札幌サンプラザ（リサイクル運動市民の会 北海道本部）](/e/recyclefmd-sapporo-plaza-flea/)：札幌市北区・札幌サンプラザ／10:00〜13:30（公式で確認）"
+    ]
+   },
+   {
+    "h2": "お出かけの前に"
+   },
+   {
+    "p": "各開催のページに、公式の出典があります。雨天・中止の扱いはマーケットごとに違います。[雨天・中止：公式ページの書き方](/blog/rain-and-cancellations/)と[使い方](/guide/)をご覧ください。「予定」の日は、公式のきまりから計算した日で、その回の個別の確認はありません。"
+   }
+  ]
+ }
+}

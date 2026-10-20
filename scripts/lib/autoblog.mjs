@@ -127,12 +127,48 @@ export function newListingsArticle(added, today) {
 }
 
 // 今日の分を作る。existing＝すでにある記事の slug、state.seen＝前回までに見たシリーズの id
-export function generate({ series, occ, today, existing, state }) {
+
+// 地域ガイド（都道府県ごと・毎月）：今後120日の開催を、種類と近い日程でまとめる。掲載データの事実だけ
+export function areaGuideArticle(pref, { occ, venues = [], today }) {
+  const list = occ.filter((o) => o.series.venue.pref === pref && isActive(o)).sort((a, b) => a.date.localeCompare(b.date) || a.series.id.localeCompare(b.series.id));
+  if (list.length < 3) return null; // 件数が少ない県は、記事が薄くなるので作らない
+  const count = (f) => list.filter(f).length;
+  const conf = count((o) => o.status === 'confirmed');
+  const sched = count((o) => o.status === 'scheduled');
+  const kindCount = new Map();
+  for (const o of list) for (const k of o.series.kinds) kindCount.set(k, (kindCount.get(k) || 0) + 1);
+  const spots = venues.filter((v) => v.area?.pref === pref);
+  const ym = today.slice(0, 7);
+  const mk = (lang) => {
+    const pl = prefLabel(pref, lang);
+    const kinds = [...kindCount].sort((a, b) => b[1] - a[1]).map(([k, n]) => `${S[lang].kinds[k]}${lang === 'ja' ? ` ${n}件` : ` ${n}`}`);
+    const spotNames = spots.map((v) => (lang === 'en' ? (v.name_en || v.name) : v.name));
+    const title = lang === 'ja' ? `${pl}のフリマ・骨董市・マルシェ（今後120日：${list.length}件）` : `Flea markets and antique fairs in ${pl} (next 120 days: ${plural(list.length, 'event', 'events')})`;
+    return {
+      title,
+      summary: lang === 'ja' ? `${pl}の今後120日の開催を、近い日程から並べました。掲載データの事実だけで作っています。` : `Markets in ${pl} over the next 120 days, in date order, built only from the listing data and its official sources.`,
+      points: lang === 'ja'
+        ? [`今後120日に${list.length}件（公式で確認した回 ${conf}件、きまりから算出した回 ${sched}件）`, `種類：${kinds.join('、')}`, spots.length ? `会場の案内（スポット）：${spotNames.join('、')}` : '会場の案内（スポット）：まだありません']
+        : [`${plural(list.length, 'event', 'events')} in the next 120 days (confirmed on official sources: ${conf}; from the regular schedule: ${sched})`, `Types: ${kinds.join(', ')}`, spots.length ? `Venue pages: ${spotNames.join(', ')}` : 'Venue pages: none yet'],
+      blocks: [
+        { h2: lang === 'ja' ? '近い日程' : 'Coming up' },
+        { ul: list.slice(0, 12).map((o) => item(o, lang)) },
+        ...(spots.length ? [{ h2: lang === 'ja' ? '会場（スポット）' : 'Venues' }, { ul: spots.map((v) => `[${lang === 'en' ? (v.name_en || v.name) : v.name}](/spot/${v.id}/)`) }] : []),
+        ...closing[lang],
+      ],
+    };
+  };
+  return { slug: `area-${pref}-${ym}`, date: today, cat: 'area', tags: { ja: [pref, 'フリマ'], en: [prefLabel(pref, 'en'), 'flea market'] }, en: mk('en'), ja: mk('ja') };
+}
+
+export function generate({ series, occ, today, existing, state, venues = [] }) {
   const out = [];
   const seen = new Set(state?.seen || []);
   const first = !state;
   const added = first ? [] : series.filter((s) => !seen.has(s.id));
-  for (const a of [weekendArticle(occ, today), monthArticle(occ, today), newListingsArticle(added, today)]) if (a && !existing.has(a.slug)) out.push(a);
+  const prefs = [...new Set(occ.filter(isActive).map((o) => o.series.venue.pref).filter(Boolean))].sort();
+  const areas = prefs.map((p) => areaGuideArticle(p, { occ, venues, today }));
+  for (const a of [weekendArticle(occ, today), monthArticle(occ, today), newListingsArticle(added, today), ...areas]) if (a && !existing.has(a.slug)) out.push(a);
   return { posts: out, state: { seen: series.map((s) => s.id).sort(), updated: today } };
 }
 export { addDays };

@@ -21,7 +21,7 @@ export function run(dataDir, today) {
   const stateFile = join(dir, 'state.json');
   const state = existsSync(stateFile) ? JSON.parse(readFileSync(stateFile, 'utf8')) : null;
   const occ = buildOccurrences(data.series, data.occurrences, today);
-  const { posts, state: next } = generate({ series: data.series, occ, today, existing, state });
+  const { posts, state: next } = generate({ series: data.series, occ, today, existing, state, venues: (data.venues || []).map((v) => ({ ...v, name_en: data.translations?.venues?.[v.id]?.name })) });
   for (const p of posts) writeFileSync(join(dir, `${p.slug}.json`), JSON.stringify(p, null, 1) + '\n');
   writeFileSync(stateFile, JSON.stringify(next, null, 1) + '\n');
   return posts;

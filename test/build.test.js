@@ -397,7 +397,7 @@ test('自動のブログ記事：今週末・来月のまとめ・新着の掲�
   assert.equal(thu.cat, 'weekly');
   assert.ok(thu.en.blocks.some((b) => b.ul?.some((x) => x.includes('](/e/'))), '開催詳細へのリンク');
   // すでにあれば作らない（公開した時点の記録を変えない）。週末の最中・5日以上前は作らない
-  assert.equal(run('2026-10-22', new Set(['weekend-2026-10-24'])).posts.length, 0);
+  assert.equal(run('2026-10-22', new Set(['weekend-2026-10-24'])).posts.filter((p) => p.slug.startsWith('weekend-')).length, 0);
   assert.ok(!run('2026-10-25').posts.some((p) => p.slug.startsWith('weekend-')));
   assert.ok(!run('2026-10-19').posts.some((p) => p.slug.startsWith('weekend-')));
   // 25日以降：来月のまとめ

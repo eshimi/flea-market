@@ -36,6 +36,7 @@ export const CATS = {
   weekly: { ja: '今週末の特集', en: 'Weekend picks' },
   monthly: { ja: '月のまとめ', en: 'Monthly overview' },
   new: { ja: '新着の掲載', en: 'New listings' },
+  area: { ja: '地域ガイド', en: 'Area guides' },
 };
 
 const inline = (t) => esc(t).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\[([^\]]+)\]\((\/[^)\s]*)\)/g, '<a href="$2">$1</a>');
