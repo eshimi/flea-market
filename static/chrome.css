@@ -1,5 +1,5 @@
 /* 全ページ共通のヘッダー（2026-10 リニューアル）。デザイン：白に近い生成り・墨色・朱色 */
-:root{--cx-bg:#fffdf9;--cx-ink:#1b1b27;--cx-sub:#6b6b78;--cx-line:#eadfce;--cx-red:#c73e2a}
+:root{--cx-bg:#F7F3EB;--cx-ink:#292B28;--cx-sub:#6b6e66;--cx-line:#eadfce;--cx-red:#B95E43}
 .site-head2{background:var(--cx-bg);border-bottom:1px solid var(--cx-line);position:relative;z-index:30}
 .hd-in{max-width:1240px;margin:auto;padding:0 28px;min-height:70px;display:flex;align-items:center;gap:20px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--cx-ink);flex:0 0 auto}
@@ -68,3 +68,8 @@
 .ft-col a:hover{text-decoration:underline}
 @media (max-width:900px){.ft-in{grid-template-columns:1fr;gap:18px}.ft-cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:420px){.ft-cols{grid-template-columns:1fr}}
+/* フッターのQRコード（スマホで開く）。画像は tools/qr/make_qr.py で作る */
+.ft-qr{margin:6px 0 0;display:flex;gap:12px;align-items:center}
+.ft-qr img{width:104px;height:104px;border:1px solid var(--cx-line);border-radius:8px;background:#fff;padding:4px;flex:0 0 auto}
+.ft-qr figcaption{font-size:13px;color:var(--cx-ink);line-height:1.5}
+.ft-qr small{display:block;color:var(--cx-sub);font-size:12px}

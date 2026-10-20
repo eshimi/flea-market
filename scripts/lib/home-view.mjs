@@ -1,19 +1,15 @@
 // トップページの各セクション。文言は scripts/lib/i18n.mjs、データは build-site.mjs の ctx（occ・series・today・days）から渡す。
 // 数字・日付・件数は、すべて実データから計算する（見本の値は使わない）。
 import { esc } from './html.mjs';
-import { icon, japanMark } from './icons.mjs';
+import { icon } from './icons.mjs';
 import { S, T, WD_EN, WD_JA, MON_EN } from './i18n.mjs';
 import { addDays, holidayName, isDayOff, upcomingWeekend, weekday } from './dates.mjs';
 import { isActive } from './events.mjs';
-import { KINDS } from './kinds.mjs';
 import { prefLabel } from './l10n.mjs';
 import { cityL, fieldEn, nameL, noteL, timeEn, venueL } from './tr-en.mjs';
-import { MAP_PREFS, renderMap } from './japan-map.mjs';
-import { skylineSvg } from './illustrations.mjs';
 
 export const FEATURED_MAX = 12;
 export const VENDOR_ROWS = 3;
-const KIND_ICON = { flea: 'shirt', kotto: 'vase', nomi: 'chair', handmade: 'bag', engi: 'torii', marche: 'sprout' };
 // フリマは写真が3種類。シリーズの id から決めるので、同じ市はいつも同じ写真になる
 const kindImg = (k, id = '') => {
   if (k !== 'flea') return `/img/kinds/${k}.webp`;
@@ -28,10 +24,6 @@ const heading = (t, id) => `<h2 class="hm-h"${id ? ` id="${id}"` : ''}><span>${e
 export function renderHero(lang = 'ja', photo = '/img/hero.webp') {
   const t = T[lang].hero;
   const [l1, l2, accent] = t.title;
-  const cats = t.cats
-    .map((c) => `<li><a href="${c.href}">${icon(c.icon, 30)}<span>${esc(c.label[0])} <br>${esc(c.label[1])}</span></a></li>`)
-    .join('');
-  const stampText = `${t.stamp} • ${t.stamp} •`;
   return `<section class="hero2 is-${lang}" aria-labelledby="hero-h">
 <div class="hero2-photo"><img src="${photo}" alt="${esc(t.photoAlt)}" width="1800" height="900" fetchpriority="high" decoding="async"></div>
 <div class="hero2-in">
@@ -39,12 +31,7 @@ export function renderHero(lang = 'ja', photo = '/img/hero.webp') {
 <h1 id="hero-h"><span>${esc(l1)}</span><span>${esc(l2)}</span><em>${esc(accent)}</em></h1>
 <p class="hero2-sub">${esc(t.sub)}</p>
 <form class="hsearch" action="/search/" role="search"><span class="hs-ic">${icon('search', 21)}</span><input name="q" type="search" placeholder="${esc(t.placeholder)}" aria-label="${esc(t.searchLabel)}" autocomplete="off"><button type="submit">${esc(t.button)}${icon('arrow', 18)}</button></form>
-<ul class="hcats">${cats}</ul>
 </div>
-</div>
-<div class="hero2-deco" aria-hidden="true">
-<p class="hd-script">${t.script.map(esc).join('<br>')}</p>
-<svg class="hd-stamp" viewBox="0 0 120 120" focusable="false"><defs><path id="stamp-arc" d="M60 60m-45 0a45 45 0 1 1 90 0a45 45 0 1 1-90 0"/></defs><circle cx="60" cy="60" r="57" fill="rgba(20,20,30,.3)" stroke="currentColor" stroke-width="1.6"/><circle cx="60" cy="60" r="35" fill="none" stroke="currentColor" stroke-width=".8" opacity=".55"/><text font-size="8.6" font-weight="700" fill="currentColor" font-family="Noto Sans JP,sans-serif"><textPath href="#stamp-arc" textLength="278" lengthAdjust="spacing">${esc(stampText)}</textPath></text><g transform="translate(34 33) scale(.52)" color="#fff">${japanMark()}</g></svg>
 </div>
 </section>`;
 }
@@ -164,29 +151,6 @@ export function kindCounts(occ) {
   return m;
 }
 
-export function renderArea(ctx, lang = 'ja') {
-  const t = S[lang].area;
-  const counts = areaCounts(ctx.occ);
-  const chips = [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-    .map(([c, n]) => `<li><a class="achip" href="/area/${c}/">${esc(prefLabel(c, lang))}<small>${esc(t.count(n))}</small></a></li>`).join('');
-  return `<section class="hm-area" aria-labelledby="area-h">
-<div class="hm-head">${heading(t, 'area-h')}<a class="hm-more" href="/area/">${esc(t.all)}${icon('arrow', 16)}</a></div>
-<div class="area-box"><div class="area-map">${renderMap(counts, { aria: t.map, countText: t.count, lang })}</div>
-<div class="area-side"><p class="area-lead">${esc(t.popular)}</p><ul class="achips">${chips}</ul></div>
-<div class="area-sky" aria-hidden="true">${skylineSvg()}</div></div>
-</section>`;
-}
-
-export function renderTypes(ctx, lang = 'ja') {
-  const t = S[lang].types;
-  const counts = kindCounts(ctx.occ);
-  // 掲載のある種類だけ（いま 0 件の種類は、出さない）
-  const cards = Object.keys(KINDS).filter((k) => counts.get(k)).map((k) => `<li><a class="tcard" href="/kind/${k}/"><span class="tc-img"><img src="${kindImg(k)}" alt="${esc(S[lang].kindAlt[k])}" width="800" height="600" loading="lazy" decoding="async"></span><span class="tc-ic">${icon(KIND_ICON[k], 24)}</span><b>${esc(S[lang].kinds[k])}</b><small>(${esc(t.count(counts.get(k)))})</small></a></li>`).join('');
-  return `<section class="hm-types" aria-labelledby="types-h">
-<div class="hm-head">${heading(t, 'types-h')}<a class="hm-more" href="/kind/">${esc(t.all)}${icon('arrow', 16)}</a></div>
-<ul class="tcards">${cards}</ul>
-</section>`;
-}
 
 // ---- サイト情報・掲載方針 ----
 export function organizerCount(series) {
@@ -230,16 +194,66 @@ export function renderVendorBanner(lang = 'en') {
   return `<section class="hm-sec hm-vbanner" aria-label="${esc(t.title)}"><div class="hm-in"><a class="vb" href="/shuten/">${icon('store', 22)}<b>${esc(t.title)}</b><span>${esc(t.bannerDesc || t.desc)}</span>${icon('arrow', 18)}</a></div></section>`;
 }
 
-// トップ全体。HERO の下は、カレンダー → 注目マーケット → 出店者 → 地域・種類 → サイト情報の順
+// ---- 新しいトップ（写真のカテゴリー・地域の文字タイル・ガイド帯）----
+const CATS = [
+  { img: 'cat-antiques', href: '/kind/kotto/', en: 'Antiques & Vintage', ja: '骨董・ヴィンテージ' },
+  { img: 'cat-secondhand', href: '/kind/flea/', en: 'Secondhand & Fashion', ja: '古着・ファッション' },
+  { img: 'cat-handmade', href: '/kind/handmade/', en: 'Crafts & Handmade', ja: '手作り・クラフト' },
+  { img: 'cat-food', href: '/kind/marche/', en: 'Local Food', ja: 'ご当地グルメ' },
+  { img: 'cat-traditional', href: '/kind/engi/', en: 'Traditional & Cultural', ja: '縁日・伝統' },
+  { img: 'cat-markets', href: '/kind/', en: 'All Markets', ja: 'すべての市' },
+];
+export function renderCategories(lang = 'ja') {
+  const en = lang === 'en';
+  const items = CATS.map((c) => `<li><a class="ctile" href="${c.href}"><span class="ct-img"><img src="/img/home/${c.img}.webp" alt="" width="276" height="228" loading="lazy" decoding="async"></span><b>${esc(en ? c.en : c.ja)}</b></a></li>`).join('');
+  return `<section class="hm-sec hm-cats" aria-label="${en ? 'Categories' : 'カテゴリー'}"><div class="hm-in"><ul class="ctiles">${items}</ul></div></section>`;
+}
+
+// 地域の文字タイル。都道府県のページ（/area/<コード>/）へ。関西・その他は地域の一覧へ
+// 都道府県のページは、掲載がある県だけ作られるので、無い県は地域の一覧へ送る
+const AREA_TILES = [
+  { pref: '13', name: 'TOKYO', ja: '東京', cls: 't1' },
+  { pref: '26', name: 'KYOTO', ja: '京都', cls: 't2' },
+  { pref: '27', name: 'OSAKA', ja: '大阪', cls: 't3' },
+  { name: 'KANSAI', ja: '関西', cls: 't4' },
+  { name: 'OTHER AREAS', ja: 'その他の地域', cls: 't5' },
+];
+export function renderAreaTiles(ctx, lang = 'ja') {
+  const t = S[lang].area;
+  const en = lang === 'en';
+  const counts = areaCounts(ctx.occ);
+  const tiles = AREA_TILES.map((a) => `<li><a class="ar ${a.cls}" href="${a.pref && counts.get(a.pref) ? `/area/${a.pref}/` : '/area/'}"><small>${esc(a.ja)}</small><b>${esc(a.name)}</b><em>${esc(en ? 'View markets' : '掲載を見る')} ${icon('arrow', 14)}</em></a></li>`).join('');
+  return `<section class="hm-sec hm-explore" aria-labelledby="area-h"><div class="hm-in">
+<div class="hm-head">${heading(t, 'area-h')}<a class="hm-more" href="/area/">${esc(t.all)}${icon('arrow', 16)}</a></div>
+<ul class="areas">${tiles}</ul>
+</div></section>`;
+}
+
+// ガイド帯：写真（左）と見出し・本文・ボタン（右）。写真は AI 生成（data/image-credits.json）
+const GUIDE_BAND = {
+  en: { h: ['More Than Shopping.', 'A Deeper Japan.'], p: 'Flea markets are a great way to meet local people, discover unique culture, and find one-of-a-kind items you won’t see anywhere else.', btn: 'Japan Market Guide' },
+  ja: { h: ['ショッピングだけじゃない。', 'もう一つの日本へ。'], p: 'フリーマーケットは、地元の人と出会い、その土地の文化や、ここでしか出会えない品に触れられる場所です。', btn: 'ガイドを読む' },
+};
+export function renderGuideBand(lang = 'ja') {
+  const t = GUIDE_BAND[lang];
+  return `<section class="hm-sec hm-gband" aria-label="${esc(t.h.join(' '))}"><div class="hm-in"><div class="gband">
+<div class="gband-ph" aria-hidden="true" style="background-image:url(/img/home/guide-band.webp)"></div>
+<div class="gband-t"><span class="sun" aria-hidden="true"></span><h2><span>${esc(t.h[0])}</span><span>${esc(t.h[1])}</span></h2><p>${esc(t.p)}</p><a class="btn" href="/blog/">${esc(t.btn)} ${icon('arrow', 16)}</a></div>
+</div></div></section>`;
+}
+
+// トップ全体。カレンダー → カテゴリー → 今週末 → 地域 → ガイド帯 → 新着 → 出店者（日）・サイト情報
 export function renderHomeBody(ctx, lang = 'ja', disclaimer = '') {
   const en = lang === 'en';
   return [
     renderHero(lang),
     renderCalendar(ctx, lang),
+    renderCategories(lang),
     renderFeatured(ctx, lang),
+    renderAreaTiles(ctx, lang),
+    renderGuideBand(lang),
     renderNews(ctx, lang),
     en ? '' : renderVendors(ctx, lang),
-    `<div class="hm-sec hm-explore"><div class="hm-in hm-two">${renderArea(ctx, lang)}${renderTypes(ctx, lang)}</div></div>`,
     renderAbout(ctx, lang, disclaimer),
     en ? renderVendorBanner(lang) : '',
   ].join('\n');

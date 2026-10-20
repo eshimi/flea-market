@@ -1,5 +1,5 @@
 /* 記事ページ（ブログ・使い方・よくある質問）。構成は参考にした補助金ネットのブログと同じ、色はこのサイトの生成り・墨・朱 */
-:root{--ar-ink:#1b1b27;--ar-sub:#6b6458;--ar-line:#e9dfd0;--ar-red:#c73e2a;--ar-red-d:#a93120;--ar-card:#fff;--ar-soft:#f6efe3;--ar-dark:#23232f}
+:root{--ar-ink:#292B28;--ar-sub:#6b6e66;--ar-line:#e9dfd0;--ar-red:#B95E43;--ar-red-d:#9A4C36;--ar-card:#fff;--ar-soft:#f6efe3;--ar-dark:#292B28}
 .art-wrap{max-width:1240px;margin:0 auto;padding:0 28px 56px;color:var(--ar-ink)}
 .art-crumbs{padding:14px 0 6px;font-size:13px;color:var(--ar-sub)}
 .visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}

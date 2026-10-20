@@ -183,5 +183,54 @@
    "source": "Pexels",
    "license": "Pexels License (free to use, including commercially)"
   }
+ },
+ {
+  "id": "home-categories",
+  "files": [
+   "static/img/home/cat-antiques.webp",
+   "static/img/home/cat-secondhand.webp",
+   "static/img/home/cat-handmade.webp",
+   "static/img/home/cat-food.webp",
+   "static/img/home/cat-traditional.webp",
+   "static/img/home/cat-markets.webp"
+  ],
+  "use": "トップのカテゴリー（6種の写真）",
+  "title": "カテゴリー用の画像（6種）",
+  "photographer": "AI生成（運営者が用意）",
+  "source": "サイト運営者",
+  "sourceUrl": "/about/",
+  "license": "AI生成画像（運営者が用意。権利は運営者の確認による）",
+  "licenseUrl": "",
+  "note": "AI で作成した画像（運営者の確認による）。作成したツール・日付は未記入（要確認）。",
+  "checkedAt": "2026-10-20",
+  "en": {
+   "use": "Top page category photos (6)",
+   "title": "Category images (6)",
+   "photographer": "AI-generated (provided by the site operator)",
+   "source": "Site operator",
+   "license": "AI-generated images provided by the site operator (rights confirmed by the operator)"
+  }
+ },
+ {
+  "id": "guide-band",
+  "files": [
+   "static/img/home/guide-band.webp"
+  ],
+  "use": "トップのガイド帯の写真",
+  "title": "ガイド帯の画像",
+  "photographer": "AI生成（運営者が用意）",
+  "source": "サイト運営者",
+  "sourceUrl": "/about/",
+  "license": "AI生成画像（運営者が用意。権利は運営者の確認による）",
+  "licenseUrl": "",
+  "note": "AI で作成した画像（運営者の確認による）。作成したツール・日付は未記入（要確認）。",
+  "checkedAt": "2026-10-20",
+  "en": {
+   "use": "Top page guide band photo",
+   "title": "Guide band image",
+   "photographer": "AI-generated (provided by the site operator)",
+   "source": "Site operator",
+   "license": "AI-generated image provided by the site operator (rights confirmed by the operator)"
+  }
  }
 ]
