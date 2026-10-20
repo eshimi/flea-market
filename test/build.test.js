@@ -6,6 +6,7 @@ import { buildPages, loadData, searchIndex } from '../scripts/build-site.mjs';
 import { eventListByMonth, layout } from '../scripts/lib/html.mjs';
 import { SITE } from '../scripts/lib/nav.mjs';
 import { mainHash, updateLastmod } from '../scripts/update-sitemap.mjs';
+import { REVIEWS_ON } from '../scripts/lib/reviews-view.mjs';
 
 const FIX = join(fileURLToPath(new URL('.', import.meta.url)), 'fixtures');
 const data = loadData(FIX);
@@ -333,7 +334,8 @@ test('地図・経路のリンクと当日の天気（気象庁）', async () =>
   assert.match(ja('setagaya-funabashi-nomi-no-ichi-2026-autumn'), /アクセス<\/dt><dd><span class="est"[^>]*>目安<\/span> 千歳船橋駅の駅前（会場名から/);
   assert.match(pages.find((p) => p.path === '/e/setagaya-funabashi-nomi-no-ichi-2026-autumn/').body, /In front of Chitose-Funabashi Station \(from the venue name/);
   assert.ok(!ja('oedo-antique-market-tokyo-international-forum').includes('多くのフリーマーケット・市は入場無料'), '公式の入場料があるものには、目安を出さない');
-  assert.deepEqual(en.scripts, ['/weather.js', '/map.js']);
+  // 評価フォームの script は、送信先（CONTACT_EMAIL）が設定されたときだけ
+  assert.deepEqual(en.scripts, ['/weather.js', '/map.js', ...(REVIEWS_ON ? ['/review.js'] : [])]);
   assert.match(en.body, /<aside class="ev-side"/);
   // 位置のない会場は、押すと Google マップの埋め込みを読み込むボタン
   const noGeo = real.series.find((s) => !real.geo[s.id]);
