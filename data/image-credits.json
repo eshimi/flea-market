@@ -239,20 +239,20 @@
    "static/img/home/guide-band.webp"
   ],
   "use": "トップのガイド帯の写真",
-  "title": "ガイド帯の画像",
-  "photographer": "AI生成（運営者が用意）",
+  "title": "ガイド帯の画像（人が歩く市場の風景）",
+  "photographer": "サイト運営者が用意（作成方法は要確認）",
   "source": "サイト運営者",
   "sourceUrl": "/about/",
-  "license": "AI生成画像（運営者が用意。権利は運営者の確認による）",
+  "license": "運営者が用意した画像（権利の確認は未記入・要確認）",
   "licenseUrl": "",
-  "note": "AI で作成した画像（運営者の確認による）。作成したツール・日付は未記入（要確認）。",
+  "note": "運営者が用意した画像を、横長（約2.8:1）に切って使用。AI 生成かどうか、作成したツール・日付、権利は未記入（要確認）。",
   "checkedAt": "2026-10-20",
   "en": {
    "use": "Top page guide band photo",
-   "title": "Guide band image",
-   "photographer": "AI-generated (provided by the site operator)",
+   "title": "Guide band image (people walking through a market)",
+   "photographer": "Provided by the site operator (how it was made: to be confirmed)",
    "source": "Site operator",
-   "license": "AI-generated image provided by the site operator (rights confirmed by the operator)"
+   "license": "Image provided by the site operator (rights not yet confirmed)"
   }
  },
  {
