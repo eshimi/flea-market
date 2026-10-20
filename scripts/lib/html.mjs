@@ -91,14 +91,14 @@ export function keywordMeta(keywords = [], lang = 'ja') {
 }
 
 // 中のページの上のイラスト帯（添付の画像から切り出した10枚）。ページの種類ごとに決まった1枚を使う
-const BANNER_BY_SECTION = { weekend: 'b4-city', calendar: 'b4-city', date: 'b4-city', area: 'b5-mountain', kind: 'b3-paper-plane', spot: 'b10-door', e: 'b6-birds', blog: 'b8-steps-blocks', guide: 'b8-steps-blocks', faq: 'b8-steps-blocks', about: 'b7-coffee', shuten: 'b2-cliff', search: 'b9-clock' };
+const BANNER_BY_SECTION = { weekend: 'b2-target', calendar: 'b5-binoculars', date: 'b5-binoculars', area: 'b6-plan', kind: 'b8-idea', spot: 'b4-climb', e: 'b7-thinking', blog: 'b7-thinking', guide: 'b8-idea', faq: 'b1-question', about: 'b10-relax', shuten: 'b2-target', search: 'b9-tangle' };
 // 画像（static/img/banner/<名前>.webp）が無いときは、帯を出さない
 const STATIC_BANNER_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'static', 'img', 'banner');
 // 画像（static/img/banner/<名前>.webp）が無いときは、帯を出さない
 export function pageBanner(base) {
   if (base === '/' || base === '/404.html') return '';
   const sec = base.split('/').filter(Boolean)[0] || '';
-  const name = BANNER_BY_SECTION[sec] || 'b1-flower';
+  const name = BANNER_BY_SECTION[sec] || 'b10-relax';
   if (!existsSync(join(STATIC_BANNER_DIR, `${name}.webp`))) return '';
   return `<div class="pg-banner" aria-hidden="true" style="background-image:url(/img/banner/${name}.webp)"></div>\n`;
 }
