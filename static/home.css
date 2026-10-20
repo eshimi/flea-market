@@ -5,7 +5,7 @@
 .hero2-photo{position:absolute;inset:0;z-index:-1}
 .hero2-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:100% 40%}
 .hero2-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(251,247,239,.98) 0,rgba(251,247,239,.93) 28%,rgba(251,247,239,.45) 47%,rgba(251,247,239,0) 63%)}
-.hero2-in{width:100%;box-sizing:border-box;max-width:1240px;margin:0 auto;padding:34px 28px 32px;position:relative;min-height:390px}
+.hero2-in{width:100%;box-sizing:border-box;max-width:1240px;margin:0 auto;padding:44px 28px 40px;position:relative}
 .hero2-copy{max-width:680px}
 .hero2 h1{font-family:"DM Serif Display","Noto Serif JP",Georgia,"Times New Roman",serif;font-weight:800;font-size:clamp(30px,3.4vw,47px);line-height:1.1;letter-spacing:-.012em;color:var(--hm-ink);margin:0}
 .hero2 h1 span{display:inline;margin-right:.26em}
@@ -32,7 +32,7 @@
   .hero2-photo::after{background:linear-gradient(90deg,rgba(251,247,239,.98) 0,rgba(251,247,239,.94) 45%,rgba(251,247,239,.62) 64%,rgba(251,247,239,0) 86%)}
   .hero2-copy{max-width:520px}
 }
-@media (max-width:900px){.hero2-in{padding-top:30px;min-height:330px}.hcats{gap:20px}}
+@media (max-width:900px){.hero2-in{padding-top:30px;min-height:0}.hcats{gap:20px}}
 @media (max-width:720px){
   .hero2{display:flex;flex-direction:column}
   .hero2-photo{position:relative;inset:auto;height:112px;z-index:0}
