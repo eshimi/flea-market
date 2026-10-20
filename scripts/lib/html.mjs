@@ -154,13 +154,24 @@ export function eventCard(o, lang = 'en') {
   const meta = [place, (lang === 'en' && timeEn(s)) || s.time?.text].filter(Boolean).map(esc).join(lang === 'en' ? ' / ' : ' ／ ');
   const cls = o.status === 'cancelled' || o.status === 'postponed' ? ' off' : '';
   const rule = recurTag(s.recurrence, lang);
-  return `<article class="ev${cls}">
+  return `<article class="ev${cls}" data-pref="${esc(s.venue.pref)}">
 <div class="ev-date"><small>${lang === 'ja' ? `${+m}月` : MON_EN[+m - 1]}</small><b>${+d}</b><small>${wd}</small></div>
 <div class="ev-body"><h3><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a></h3>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-n" lang="ja">${esc(s.name)}</p>` : ''}
 <p class="meta">${meta}</p>
 <div class="tags">${kindTags(s.kinds, lang)}${rule ? `<span class="tag">${esc(rule)}</span>` : ''}${statusTag(o, lang)}</div>
 ${o.note ? `<p class="ev-note">${esc(noteL(o, lang))}</p>` : ''}</div>
 </article>`;
+}
+
+// 地域で絞り込む（掲載のある都道府県だけ。1つだけなら出さない）。動きは static/area-filter.js
+const AF = { ja: { label: '地域で絞り込む', all: 'すべて' }, en: { label: 'Filter by area', all: 'All' } };
+export function areaFilter(list, lang = 'ja') {
+  const counts = new Map();
+  for (const o of list) counts.set(o.series.venue.pref, (counts.get(o.series.venue.pref) || 0) + 1);
+  if (counts.size < 2) return '';
+  const chips = [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([p, n]) => `<button type="button" class="af-chip" data-pref="${esc(p)}" aria-pressed="false">${esc(prefLabel(p, lang))}<sup>${n}</sup></button>`).join('');
+  return `<nav class="af-chips" aria-label="${esc(AF[lang].label)}"><button type="button" class="af-chip" data-pref="all" aria-pressed="true">${esc(AF[lang].all)}<sup>${list.length}</sup></button>${chips}</nav>`;
 }
 
 export function eventList(list, lang = 'en', empty) {

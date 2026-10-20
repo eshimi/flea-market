@@ -127,3 +127,10 @@ aside h2{font-size:15px;margin-bottom:10px}
 .ev-mapimg{display:block;border-radius:10px;overflow:hidden;border:1px solid var(--line);line-height:0}
 .ev-mapimg img{width:100%;height:auto;display:block}
 .ev-mapimg:hover{border-color:var(--acc)}
+/* 地域で絞り込む（日付・今週末の一覧） */
+.af-chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
+.af-chip{font:inherit;font-size:13.5px;line-height:1.2;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 13px;cursor:pointer;white-space:nowrap}
+.af-chip sup{font-size:10.5px;color:var(--sub);margin-left:3px;font-weight:700}
+.af-chip:hover{border-color:var(--acc)}
+.af-chip[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
+.af-chip[aria-pressed="true"] sup{color:#fbe6dc}

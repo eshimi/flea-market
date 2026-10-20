@@ -18,7 +18,7 @@ import { ART_CSS, docSections, faqSections, renderBlogIndex, renderDoc, renderPo
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { spotL, venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
-import { setFooterAreas, breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, statusTag } from './lib/html.mjs';
+import { setFooterAreas, areaFilter, breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, statusTag } from './lib/html.mjs';
 
 const LANGS_ORDER = ['en', 'ja'];
 
@@ -85,21 +85,22 @@ function home(ctx, lang) {
   return pg(lang, '/', { title: SITE.name, description: T[lang].description, body, css: ['/home.css'], scripts: ['/home.js'], head: fonts });
 }
 
-function listPage(lang, base, crumbs, h1, lead, list, extra = '') {
-  const body = `<div class="in page">${breadcrumb(crumbs, lang)}<h1>${esc(h1)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}${extra}${eventListByMonth(list, lang)}</div>`;
-  return pg(lang, base, { title: h1, description: P[lang].listDesc(h1), body });
+function listPage(lang, base, crumbs, h1, lead, list, extra = '', filter = false) {
+  const af = filter ? areaFilter(list, lang) : '';
+  const body = `<div class="in page">${breadcrumb(crumbs, lang)}<h1>${esc(h1)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}${extra}${af}${eventListByMonth(list, lang)}</div>`;
+  return pg(lang, base, { title: h1, description: P[lang].listDesc(h1), body, scripts: af ? ['/area-filter.js'] : [] });
 }
 
 function weekendPage(ctx, lang) {
   const days = upcomingWeekend(ctx.today);
   const p = P[lang].weekend;
   const title = p.title(dlabel(days[0], lang), days.length > 1 ? dlabel(days.at(-1), lang) : '');
-  return listPage(lang, '/weekend/', [{ label: p.crumb }], title, p.lead, ctx.occ.filter((o) => days.includes(o.date)), dayStrip(ctx.occ, ctx.today, undefined, lang));
+  return listPage(lang, '/weekend/', [{ label: p.crumb }], title, p.lead, ctx.occ.filter((o) => days.includes(o.date)), dayStrip(ctx.occ, ctx.today, undefined, lang), true);
 }
 
 function datePages(ctx, lang) {
   const dates = [...new Set(ctx.occ.map((o) => o.date))];
-  const upcoming = dates.map((d) => listPage(lang, `/date/${d}/`, [{ href: '/calendar/', label: P[lang].date.crumb }, { label: dlabel(d, lang) }], P[lang].date.h1(dlabel(d, lang, { year: true }), holiday(d, lang)), '', ctx.occ.filter((o) => o.date === d), dayStrip(ctx.occ, ctx.today, d, lang)));
+  const upcoming = dates.map((d) => listPage(lang, `/date/${d}/`, [{ href: '/calendar/', label: P[lang].date.crumb }, { label: dlabel(d, lang) }], P[lang].date.h1(dlabel(d, lang, { year: true }), holiday(d, lang)), '', ctx.occ.filter((o) => o.date === d), dayStrip(ctx.occ, ctx.today, d, lang), true));
   // 過去の日（公式で確認した回の記録）
   const pastDates = [...new Set(ctx.past.map((o) => o.date))];
   const pastPages = pastDates.map((d) => listPage(lang, `/date/${d}/`, [{ href: '/calendar/', label: P[lang].date.crumb }, { label: dlabel(d, lang) }], P[lang].date.h1Past(dlabel(d, lang, { year: true }), holiday(d, lang)), P[lang].date.pastNote, ctx.past.filter((o) => o.date === d)));
