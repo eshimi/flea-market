@@ -42,3 +42,5 @@ export const NAV_LABELS = {
 // フッターのQRコード（static/img/qr.svg）が指す URL。URL を変えたら tools/qr/make_qr.py で作り直す
 export const QR_URL = 'https://streetbazaars.jp/';
 export const ANALYTICS_ID = process.env.GA_ID ?? 'G-BS5Q6SMHCM';
+// Google AdSense（広告の配信元のID。環境変数 ADSENSE_CLIENT で上書き・空にすると外れる）
+export const ADSENSE_CLIENT = process.env.ADSENSE_CLIENT ?? 'ca-pub-7811993263471350';

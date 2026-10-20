@@ -4,7 +4,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildPages, loadData, searchIndex } from '../scripts/build-site.mjs';
 import { eventListByMonth, layout } from '../scripts/lib/html.mjs';
-import { SITE } from '../scripts/lib/nav.mjs';
+import { SITE, ADSENSE_CLIENT } from '../scripts/lib/nav.mjs';
 import { mainHash, updateLastmod } from '../scripts/update-sitemap.mjs';
 import { REVIEWS_ON } from '../scripts/lib/reviews-view.mjs';
 
@@ -630,4 +630,12 @@ test('トップ：英語は出店者を下の細いバナーだけにし、ブ�
   assert.ok(!en.includes('class="hm-sec hm-vendors"') && en.includes('hm-vbanner'));
   assert.ok(ja.includes('class="hm-sec hm-vendors"') && !ja.includes('hm-vbanner'));
   assert.ok(en.indexOf('hm-vbanner') > en.indexOf('hm-about') || en.indexOf('hm-vbanner') > en.indexOf('about-text'), 'バナーは下');
+});
+
+test('AdSense の tag は、すべてのページの head に入る（ADSENSE_CLIENT が空なら入らない）', () => {
+  if (!ADSENSE_CLIENT) return;
+  const src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`;
+  for (const p of pages.filter((x) => !x.path.endsWith('.html')).slice(0, 40)) {
+    assert.ok(layout(p).includes(src), p.path);
+  }
 });

@@ -2,7 +2,7 @@ import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 // ページの共通の枠（ヘッダー・フッター・免責）と、HTML の小さな部品
-import { INDEXABLE, SITE, HEADER_NAV, FOOTER_COLS, NAV_LABELS, ANALYTICS_ID, QR_URL } from './nav.mjs';
+import { INDEXABLE, SITE, HEADER_NAV, FOOTER_COLS, NAV_LABELS, ANALYTICS_ID, ADSENSE_CLIENT, QR_URL } from './nav.mjs';
 import { KINDS } from './kinds.mjs';
 import { weekday } from './dates.mjs';
 import { cityL, nameL, noteL, timeEn, venueL } from './tr-en.mjs';
@@ -81,6 +81,14 @@ function analyticsTag() {
 `;
 }
 
+// Google AdSense（広告の自動配信のスクリプト）。ADSENSE_CLIENT が空なら出さない
+function adsenseTag() {
+  if (!ADSENSE_CLIENT) return '';
+  return `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}"
+     crossorigin="anonymous"></script>
+`;
+}
+
 // キーワード（meta keywords）。検索エンジンは順位に使わないことが多いが、ページの内容語をそろえるために出す
 const KW_SITE = {
   ja: ['フリーマーケット', 'フリマ', '蚤の市', '骨董市', '手作り市', 'マルシェ', '開催情報', '日本', '東京'],
@@ -126,7 +134,7 @@ export function layout({ path, title, description, body, head = '', scripts = []
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-${analyticsTag()}<title>${esc(full)}</title>
+${analyticsTag()}${adsenseTag()}<title>${esc(full)}</title>
 <meta name="description" content="${esc(description)}">
 <meta name="keywords" content="${esc(keywordMeta(keywords, lang))}">
 ${INDEXABLE ? '' : '<meta name="robots" content="noindex,nofollow">\n'}<link rel="canonical" href="${SITE.url}${path}">

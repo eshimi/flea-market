@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-10-20",
+    "ja": "広告（Google AdSense）の配信用のタグを、全ページに入れました。",
+    "en": "The Google AdSense tag is now on every page."
+  },
+  {
+    "date": "2026-10-20",
     "ja": "お問い合わせフォーム（/contact/）を追加しました。掲載の修正・削除、情報提供、出店、取材などの窓口です。",
     "en": "A contact form (/contact/) is now available for corrections, information, vendor questions and press enquiries.",
     "link": "/contact/"
