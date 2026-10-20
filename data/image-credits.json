@@ -33,7 +33,7 @@
   "sourceUrl": "/about/",
   "license": "運営者が AI で作成した画像（権利はサイト運営者）",
   "licenseUrl": "",
-  "note": "サイト運営者が AI で作成。権利は運営者が確認済み。横長（2:1）に切り、左側をクリーム色に溶かして使用",
+  "note": "サイト運営者が AI で作成。権利は運営者が確認済み。ネイティブの大きさ（1659×948）のまま、拡大・縮小せず等倍で表示。左側と下側をクリーム色に溶かすグラデーション入り",
   "checkedAt": "2026-10-20",
   "en": {
    "use": "Top page photo (third photo in the rotation; left side faded into the background)",
@@ -240,19 +240,19 @@
   ],
   "use": "トップのガイド帯の写真",
   "title": "ガイド帯の画像（人が歩く市場の風景）",
-  "photographer": "サイト運営者が用意（作成方法は要確認）",
+  "photographer": "サイト運営者が AI で作成（運営者の確認による）",
   "source": "サイト運営者",
   "sourceUrl": "/about/",
-  "license": "運営者が用意した画像（権利の確認は未記入・要確認）",
+  "license": "運営者が AI で作成した画像（権利は運営者の確認による）",
   "licenseUrl": "",
-  "note": "運営者が用意した画像を、横長（約2.8:1）に切って使用。AI 生成かどうか、作成したツール・日付、権利は未記入（要確認）。",
+  "note": "運営者が AI で作成した画像を、横長（約2.8:1）に切って使用。作成したツール・日付は未記入（要確認）。",
   "checkedAt": "2026-10-20",
   "en": {
    "use": "Top page guide band photo",
    "title": "Guide band image (people walking through a market)",
-   "photographer": "Provided by the site operator (how it was made: to be confirmed)",
+   "photographer": "Created with AI by the site operator",
    "source": "Site operator",
-   "license": "Image provided by the site operator (rights not yet confirmed)"
+   "license": "Created with AI by the site operator (rights held by the operator)"
   }
  },
  {
