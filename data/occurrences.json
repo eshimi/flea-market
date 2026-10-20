@@ -760,5 +760,53 @@
   "reason": "主催団体：エコロジーネットワーク ラズベリー",
   "checkedAt": "2026-10-19",
   "source": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html"
+ },
+ {
+  "series": "rbf-koshigaya-shirakobato-park",
+  "date": "2026-11-29",
+  "status": "confirmed",
+  "reason": "オタカラ主催（開催日程ページに「オタカラ」と表記）",
+  "checkedAt": "2026-10-20",
+  "source": "https://www.rbf.jp/nittei.html"
+ },
+ {
+  "series": "rbf-koshigaya-shirakobato-park",
+  "date": "2026-12-27",
+  "status": "confirmed",
+  "reason": "オタカラ主催（開催日程ページに「オタカラ」と表記）",
+  "checkedAt": "2026-10-20",
+  "source": "https://www.rbf.jp/nittei.html"
+ },
+ {
+  "series": "rbf-kawagoe-suijo-park",
+  "date": "2026-11-21",
+  "status": "confirmed",
+  "reason": "オタカラ主催（開催日程ページに「オタカラ」と表記）",
+  "checkedAt": "2026-10-20",
+  "source": "https://www.rbf.jp/nittei.html"
+ },
+ {
+  "series": "rbf-kawagoe-suijo-park",
+  "date": "2026-12-13",
+  "status": "confirmed",
+  "reason": "オタカラ主催（開催日程ページに「オタカラ」と表記）",
+  "checkedAt": "2026-10-20",
+  "source": "https://www.rbf.jp/nittei.html"
+ },
+ {
+  "series": "rbf-kazo-hanasaki-park",
+  "date": "2026-10-31",
+  "status": "confirmed",
+  "reason": "加須はなさき水上公園まつり（わくわく公園まつり）内の開催",
+  "checkedAt": "2026-10-20",
+  "source": "https://www.rbf.jp/nittei.html"
+ },
+ {
+  "series": "rbf-kazo-hanasaki-park",
+  "date": "2026-11-01",
+  "status": "confirmed",
+  "reason": "加須はなさき水上公園まつり（わくわく公園まつり）内の開催",
+  "checkedAt": "2026-10-20",
+  "source": "https://www.rbf.jp/nittei.html"
  }
 ]

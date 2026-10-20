@@ -8154,5 +8154,3344 @@
     ]
    }
   ]
+ },
+ {
+  "id": "rbf-koshigaya-shirakobato-park",
+  "name": "越谷しらこばと水上公園ビッグフリマ（ラズベリー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "エコロジーネットワーク・ラズベリー",
+   "url": "https://www.rbf.jp/"
+  },
+  "venue": {
+   "name": "越谷しらこばと水上公園",
+   "pref": "11",
+   "city": "越谷市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-11-29",
+    "2026-12-27"
+   ],
+   "text": "主催者の開催日程（開催日程ページ）"
+  },
+  "visitor": {
+   "rain": "全会場、雨荒天中止（公式の開催会場一覧）"
+  },
+  "exhibitor": {
+   "apply": "公式ページの「出店する」から申込み（開催日程ページに募集状況あり）",
+   "applyUrl": "https://www.rbf.jp/nittei.html",
+   "fee": "車横2500円（開催日程ページ）"
+  },
+  "sources": [
+   {
+    "url": "https://www.rbf.jp/nittei.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "10/24(土)越谷しらこばと水上公園ビッグフリマ",
+     "11/29(日)オタカラ越谷しらこばと水上公園ビッグフリマ",
+     "12/27(日)オタカラ越谷しらこばと水上公園ビッグフリマ"
+    ]
+   },
+   {
+    "url": "https://www.rbf.jp/kaijyou.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "全会場雨荒天中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rbf-kawagoe-suijo-park",
+  "name": "川越水上公園ビッグフリマ（ラズベリー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "エコロジーネットワーク・ラズベリー",
+   "url": "https://www.rbf.jp/"
+  },
+  "venue": {
+   "name": "川越水上公園",
+   "pref": "11",
+   "city": "川越市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-14",
+    "2026-11-21",
+    "2026-12-13"
+   ],
+   "text": "主催者の開催日程（開催日程ページ）"
+  },
+  "visitor": {
+   "rain": "全会場、雨荒天中止（公式の開催会場一覧）"
+  },
+  "exhibitor": {
+   "apply": "公式ページの「出店する」から申込み（開催日程ページに募集状況あり）",
+   "applyUrl": "https://www.rbf.jp/nittei.html",
+   "fee": "車横2500円（開催日程ページ）"
+  },
+  "sources": [
+   {
+    "url": "https://www.rbf.jp/nittei.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "11/14(土)川越水上公園ビッグフリマ",
+     "11/21(土)オタカラ川越水上公園ビッグフリマ",
+     "12/13(日)オタカラ川越水上公園ビッグフリマ"
+    ]
+   },
+   {
+    "url": "https://www.rbf.jp/kaijyou.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "全会場雨荒天中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rbf-koshigaya-laketown",
+  "name": "越谷レイクタウン ビッグフリマ（ラズベリー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "エコロジーネットワーク・ラズベリー",
+   "url": "https://www.rbf.jp/"
+  },
+  "venue": {
+   "name": "越谷レイクタウン",
+   "pref": "11",
+   "city": "越谷市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-22",
+    "2026-11-23"
+   ],
+   "text": "主催者の開催日程（開催日程ページ）"
+  },
+  "visitor": {
+   "rain": "全会場、雨荒天中止（公式の開催会場一覧）"
+  },
+  "exhibitor": {
+   "apply": "公式ページの「出店する」から申込み（開催日程ページに募集状況あり）",
+   "applyUrl": "https://www.rbf.jp/nittei.html",
+   "fee": "手持2000円（開催日程ページ）"
+  },
+  "sources": [
+   {
+    "url": "https://www.rbf.jp/laketown2.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "●11/22(日)",
+     "●11/23(祝)",
+     "開催時間 : 9時00分～15時"
+    ]
+   },
+   {
+    "url": "https://www.rbf.jp/nittei.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "11/22(日)越谷レイクタウンビッグフリマ第一日目",
+     "11/23(祝)越谷レイクタウンビッグフリマ第二日目"
+    ]
+   },
+   {
+    "url": "https://www.rbf.jp/kaijyou.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "全会場雨荒天中止"
+    ]
+   }
+  ],
+  "time": {
+   "text": "開催9:00〜15:00（搬入7:40〜9:00）",
+   "start": "09:00",
+   "end": "15:00"
+  }
+ },
+ {
+  "id": "rbf-kazo-hanasaki-park",
+  "name": "加須はなさき水上公園フリーマーケット（ラズベリー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "エコロジーネットワーク・ラズベリー",
+   "url": "https://www.rbf.jp/"
+  },
+  "venue": {
+   "name": "加須はなさき水上公園 銀杏並木の園路",
+   "pref": "11",
+   "city": "加須市",
+   "address": "埼玉県加須市水深1722"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-31",
+    "2026-11-01",
+    "2026-11-23",
+    "2026-11-29"
+   ],
+   "text": "主催者の開催日程（開催日程ページ）"
+  },
+  "visitor": {
+   "rain": "全会場、雨荒天中止（公式の開催会場一覧）"
+  },
+  "exhibitor": {
+   "apply": "公式ページの「出店する」から申込み（開催日程ページに募集状況あり）",
+   "applyUrl": "https://www.rbf.jp/nittei.html",
+   "fee": "手持出店 1区画 2000円（間口3.6m×奥行2.0m）。場所指定は別途500円"
+  },
+  "sources": [
+   {
+    "url": "https://www.rbf.jp/kazo.wakuwaku.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "●10/31(土)",
+     "●11/01(日)",
+     "加須はなさき水上公園銀杏並木の園路",
+     "埼玉県加須市水深1722",
+     "手持出店1区画2000円"
+    ]
+   },
+   {
+    "url": "https://www.rbf.jp/nittei.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "11/23(祝)加須はなさき水上公園紅葉見ごろ",
+     "11/29(日)加須はなさき水上公園"
+    ]
+   },
+   {
+    "url": "https://www.rbf.jp/kaijyou.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "全会場雨荒天中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rbf-chikozan-park-festival",
+  "name": "智光山公園まつり フリーマーケット（ラズベリー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "エコロジーネットワーク・ラズベリー",
+   "url": "https://www.rbf.jp/"
+  },
+  "venue": {
+   "name": "智光山公園 ひょうたん池周辺",
+   "pref": "11",
+   "city": "狭山市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-31",
+    "2026-11-01"
+   ],
+   "text": "主催者の開催日程（開催日程ページ）"
+  },
+  "visitor": {
+   "rain": "雨荒天中止"
+  },
+  "exhibitor": {
+   "apply": "公式ページの「出店する」から申込み（開催日程ページに募集状況あり）",
+   "applyUrl": "https://www.rbf.jp/nittei.html",
+   "fee": "車両出店 1区画 2000円（横出し）"
+  },
+  "sources": [
+   {
+    "url": "https://www.rbf.jp/chicozan.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "10/31(土)第一日目",
+     "11/01(日)第二日目",
+     "智光山公園ひょうたん池周辺",
+     "◆10時～15時30分",
+     "車両出店1区画2000円(横だし)",
+     "雨荒天中止"
+    ]
+   }
+  ],
+  "time": {
+   "text": "10:00〜15:30（搬入8:00〜9:30頃）",
+   "start": "10:00",
+   "end": "15:30"
+  }
+ },
+ {
+  "id": "rbf-kashiwanoha-park",
+  "name": "柏の葉公園ビッグフリマ（ラズベリー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "エコロジーネットワーク・ラズベリー",
+   "url": "https://www.rbf.jp/"
+  },
+  "venue": {
+   "name": "柏の葉公園 第一駐車場",
+   "pref": "12",
+   "city": "柏市",
+   "address": "千葉県柏市柏の葉4-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-25",
+    "2026-11-15",
+    "2026-12-06"
+   ],
+   "text": "主催者の開催日程（開催日程ページ）"
+  },
+  "visitor": {
+   "rain": "雨荒天中止"
+  },
+  "exhibitor": {
+   "apply": "公式ページの「出店する」から申込み（開催日程ページに募集状況あり）",
+   "applyUrl": "https://www.rbf.jp/nittei.html",
+   "fee": "手持 2000円（2m×2m）"
+  },
+  "sources": [
+   {
+    "url": "https://www.rbf.jp/kashiwanoha.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "●10月25日(日)",
+     "●11月15日(日)",
+     "●12月06日(日)",
+     "県立柏の葉公園第一駐車場",
+     "千葉県柏市柏の葉4-1",
+     "手持2000円(２m×２m)",
+     "搬入時間8時～9時開催時間9時～15時",
+     "雨荒天中止"
+    ]
+   }
+  ],
+  "time": {
+   "text": "開催9:00〜15:00（搬入8:00〜9:00）",
+   "start": "09:00",
+   "end": "15:00"
+  }
+ },
+ {
+  "id": "rbf-aeon-chiba-newtown",
+  "name": "AEONモール千葉ニュータウン屋上 ビッグフリマ（ラズベリー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "エコロジーネットワーク・ラズベリー",
+   "url": "https://www.rbf.jp/"
+  },
+  "venue": {
+   "name": "AEONモール千葉ニュータウン モール棟 屋上",
+   "pref": "12",
+   "city": "印西市",
+   "address": "千葉県印西市中央北3-2",
+   "access": "北総線 千葉ニュータウン中央駅より徒歩5分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08",
+    "2026-12-13"
+   ],
+   "text": "主催者の開催日程（開催日程ページ）"
+  },
+  "visitor": {
+   "rain": "雨荒天中止（荒天・雨天の場合は開催時間でも状況により終了となる場合あり）"
+  },
+  "exhibitor": {
+   "apply": "公式ページの「出店する」から申込み（開催日程ページに募集状況あり）",
+   "applyUrl": "https://www.rbf.jp/nittei.html",
+   "fee": "車縦2000円（間口2.5m×奥行約7.5m）／車横2500円（間口5.0m×奥行約4.8m）"
+  },
+  "sources": [
+   {
+    "url": "https://www.rbf.jp/newtown.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "11月08日(日)",
+     "12月13日(日)",
+     "千葉県印西市中央北３－２",
+     "北総線千葉ニュータウン中央駅より徒歩5分",
+     "10時00分～15時00分",
+     "車縦2000円",
+     "車横2500円",
+     "雨荒天中止"
+    ]
+   }
+  ],
+  "time": {
+   "text": "開催10:00〜15:00（搬入7:30頃〜9:00頃）",
+   "start": "10:00",
+   "end": "15:00"
+  }
+ },
+ {
+  "id": "rbf-makuhari-ito-yokado",
+  "name": "幕張イトーヨーカドー ビッグフリマ（ラズベリー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "エコロジーネットワーク・ラズベリー",
+   "url": "https://www.rbf.jp/"
+  },
+  "venue": {
+   "name": "イトーヨーカドー幕張店 立体駐車場 屋上",
+   "pref": "12",
+   "city": "千葉市",
+   "address": "千葉県千葉市花見川区幕張町4丁目417-25",
+   "access": "京成千葉線「京成幕張駅」より徒歩10分／総武線「幕張駅」より徒歩11分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21"
+   ],
+   "text": "主催者の開催日程（開催日程ページ）"
+  },
+  "visitor": {
+   "rain": "全会場、雨荒天中止（公式の開催会場一覧）"
+  },
+  "exhibitor": {
+   "apply": "公式ページの「出店する」から申込み（開催日程ページに募集状況あり）",
+   "applyUrl": "https://www.rbf.jp/nittei.html",
+   "fee": "車横出し 2500円（間口5.0m×奥行約5.0m以上）"
+  },
+  "sources": [
+   {
+    "url": "https://www.rbf.jp/makuhari.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "●11月21日( 土 )",
+     "イトーヨーカドー幕張店立体駐車場屋上",
+     "千葉県千葉市花見川区幕張町4丁目417-25",
+     "京成千葉線「京成幕張駅」より徒歩10分",
+     "09時00分～15時00分",
+     "車横出し・・2500円"
+    ]
+   },
+   {
+    "url": "https://www.rbf.jp/kaijyou.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "全会場雨荒天中止"
+    ]
+   }
+  ],
+  "time": {
+   "text": "開催9:00〜15:00（搬入7:00〜8:00）",
+   "start": "09:00",
+   "end": "15:00"
+  }
+ },
+ {
+  "id": "rbf-mem-kashiwa-apie",
+  "name": "M.E.M. 柏アピエ 屋内フリマ（ラズベリー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "エコロジーネットワーク・ラズベリー",
+   "url": "https://www.rbf.jp/"
+  },
+  "venue": {
+   "name": "M.E.M. 柏アピエ 屋内1階ホール",
+   "pref": "12",
+   "city": "柏市",
+   "address": "千葉県柏市十余二249-5"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-03",
+    "2026-12-19"
+   ],
+   "text": "主催者の開催日程（開催日程ページ）"
+  },
+  "visitor": {
+   "rain": "屋内開催（公式に「雨荒天でも安心の冷房屋内開催」）",
+   "admission": "無料"
+  },
+  "exhibitor": {
+   "apply": "公式ページの「出店する」から申込み（開催日程ページに募集状況あり）",
+   "applyUrl": "https://www.rbf.jp/nittei.html",
+   "fee": "通常 A搬入2000円・B搬入1500円（公式LINEお友だち参加費 A搬入1500円・B搬入1000円）。入場無料"
+  },
+  "sources": [
+   {
+    "url": "https://www.rbf.jp/apie.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "●11月03日(祝)",
+     "●12月19日(土)",
+     "◆開催場所屋内1階ホール",
+     "柏市十余二249-5",
+     "◆入場料金無料",
+     "A搬入:8時45分頃～15時",
+     "B搬入:10時30分頃～15時"
+    ]
+   }
+  ],
+  "time": {
+   "text": "A搬入 8:45頃〜15:00／B搬入 10:30頃〜15:00",
+   "start": "08:45",
+   "end": "15:00"
+  }
+ },
+ {
+  "id": "rbf-ikea-tokyo-bay-loppis",
+  "name": "IKEA Tokyo-Bay LOPPISフリーマーケット（ラズベリー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "エコロジーネットワーク・ラズベリー",
+   "url": "https://www.rbf.jp/"
+  },
+  "venue": {
+   "name": "IKEA Tokyo-Bay",
+   "pref": "12"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-25",
+    "2026-11-08"
+   ],
+   "text": "主催者の開催日程（開催日程ページ）"
+  },
+  "visitor": {
+   "rain": "全会場、雨荒天中止（公式の開催会場一覧）"
+  },
+  "exhibitor": {
+   "apply": "公式ページの「出店する」から申込み（開催日程ページに募集状況あり）",
+   "applyUrl": "https://www.rbf.jp/nittei.html",
+   "fee": "手持2500円（開催日程ページ）"
+  },
+  "sources": [
+   {
+    "url": "https://www.rbf.jp/nittei.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "10/25(日)IKEATokyo-BayLOPPISフリーマーケット",
+     "11/08(日)IKEATokyo-BayLOPPISフリーマーケット"
+    ]
+   },
+   {
+    "url": "https://www.rbf.jp/kaijyou.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "全会場雨荒天中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-higashiyodogawa",
+  "name": "第15回東淀川区ガレージセール",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "東北環境事業センター",
+   "pref": "27",
+   "city": "大阪市東淀川区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-25"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "11時から15時まで",
+   "start": "11:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第15回東淀川区ガレージセール令和8年10月25日(日曜日)東北環境事業センター11時から15時まで雨天中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-nishi",
+  "name": "第14回 西区ガレージセール",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "靭公園（東園けやき並木）",
+   "pref": "27",
+   "city": "大阪市西区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "11時から15時まで",
+   "start": "11:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第14回 西区ガレージセール令和8年11月8日(日曜日)靭公園（東園けやき並木）11時から15時まで雨天中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-yodogawa",
+  "name": "第14回 淀川区ガレージセール",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "野中南公園",
+   "pref": "27",
+   "city": "大阪市淀川区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-14"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "11時から15時まで",
+   "start": "11:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第14回 淀川区ガレージセール令和8年11月14日(土曜日)野中南公園11時から15時まで雨天中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-konohana",
+  "name": "ガレージセール・IN・このはな 2026",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "此花区民一休ホール",
+   "pref": "27",
+   "city": "大阪市此花区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-14"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "11時から14時まで",
+   "start": "11:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "rain": "雨天でも実施"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "ガレージセール・IN・このはな 2026令和8年11月14日(土曜日)此花区民一休ホール11時から14時まで雨天実施"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-taisho",
+  "name": "第14回 大正区ガレージセール",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "大正区役所駐車場",
+   "pref": "27",
+   "city": "大阪市大正区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-15"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "11時から14時まで",
+   "start": "11:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第14回 大正区ガレージセール令和8年11月15日(日曜日)大正区役所駐車場11時から14時まで雨天中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-hirano",
+  "name": "ガレージセールinひらの～多世代交流～",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "コミュニティプラザ平野（平野区民センター）1階多目的ホール",
+   "pref": "27",
+   "city": "大阪市平野区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-15"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "11時から14時まで",
+   "start": "11:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "rain": "雨天でも実施"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "ガレージセールinひらの～多世代交流～令和8年11月15日(日曜日)コミュニティプラザ平野（平野区民センター）1階多目的ホール11時から14時まで雨天実施"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-higashinari",
+  "name": "第20回 東成区ガレージセール",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "東成区民センター2階 大ホール",
+   "pref": "27",
+   "city": "大阪市東成区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-22"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "11時から15時まで",
+   "start": "11:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天でも実施"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第20回 東成区ガレージセール令和8年11月22日(日曜日)東成区民センター2階 大ホール11時から15時まで雨天実施"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-sumiyoshi",
+  "name": "すみよしガレージセール",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "住吉区役所敷地内（屋外）",
+   "pref": "27",
+   "city": "大阪市住吉区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-28"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "13時から15時30分まで",
+   "start": "13:00",
+   "end": "15:30"
+  },
+  "visitor": {
+   "rain": "少雨決行・荒天中止"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "すみよしガレージセール令和8年11月28日(土曜日)住吉区役所敷地内（屋外）13時から15時30分まで少雨決行・荒天中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-nishiyodogawa",
+  "name": "ガレージセール IN にしよどがわ 2026",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "西淀川区民ホール",
+   "pref": "27",
+   "city": "大阪市西淀川区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-28"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "11時から14時まで",
+   "start": "11:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "rain": "雨天でも実施"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "ガレージセール IN にしよどがわ 2026令和8年11月28日(土曜日)西淀川区民ホール11時から14時まで雨天実施"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-miyakojima",
+  "name": "令和8年度都島区RRRフェスティバル",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "都島中央公園",
+   "pref": "27",
+   "city": "大阪市都島区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-29"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "11時から14時30分まで",
+   "start": "11:00",
+   "end": "14:30"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "令和8年度都島区RRRフェスティバル令和8年11月29日(日曜日)都島中央公園11時から14時30分まで雨天中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-nishinari",
+  "name": "西成区ガレージセール",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "玉出西公園",
+   "pref": "27",
+   "city": "大阪市西成区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-29"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "10時30分から14時30分まで",
+   "start": "10:30",
+   "end": "14:30"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "西成区ガレージセール令和8年11月29日(日曜日)玉出西公園10時30分から14時30分まで雨天中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-minato",
+  "name": "ごみ減量ECOフェスタ 港区ガレージセール",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "大阪ベイタワー2Fアトリウム広場",
+   "pref": "27",
+   "city": "大阪市港区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-29"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "12時から14時30分まで",
+   "start": "12:00",
+   "end": "14:30"
+  },
+  "visitor": {
+   "rain": "荒天中止"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "ごみ減量ECOフェスタ 港区ガレージセール令和8年11月29日(日曜日)大阪ベイタワー2Fアトリウム広場12時から14時30分まで荒天中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-higashisumiyoshi",
+  "name": "東住吉区ガレージセール",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "東住吉区民ホール 区役所3階",
+   "pref": "27",
+   "city": "大阪市東住吉区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-05"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "13時から15時30分まで",
+   "start": "13:00",
+   "end": "15:30"
+  },
+  "visitor": {
+   "rain": "雨天決行"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "東住吉区ガレージセール令和8年12月5日(土曜日)東住吉区民ホール 区役所3階13時から15時30分まで雨天決行"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-kita",
+  "name": "北区RRRフェスティバル・ガレージセール",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "扇町公園",
+   "pref": "27",
+   "city": "大阪市北区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-06"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "11時から15時まで",
+   "start": "11:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "北区RRRフェスティバル・ガレージセール令和8年12月6日(日曜日)扇町公園11時から15時まで雨天中止"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "daito-shimin-matsuri-flea",
+  "name": "大東市民まつり フリーマーケット（末広公園）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大東市民まつり（大東市の案内ページ）",
+   "label": "案内の公表元",
+   "url": "https://www.city.daito.lg.jp/soshiki/16/61472.html"
+  },
+  "venue": {
+   "name": "末広公園（住道駅南公園）",
+   "pref": "27",
+   "city": "大東市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-01"
+   ],
+   "text": "大東市の案内ページに掲載の開催日"
+  },
+  "time": {
+   "text": "午前10時00分～午後5時00分（市民まつり全体）",
+   "start": "10:00",
+   "end": "17:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.daito.lg.jp/soshiki/16/61472.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "令和8年11月1日（日曜日） 午前10時00分～午後5時00分",
+     "末広公園（住道駅南公園）",
+     "フリーマーケットブースでは12団体が出店し",
+     "（フリマ）被服、手作り小物・手芸等の販売"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hirakata-hira-eco-matsuri-flea",
+  "name": "ひらエコまつり フリーマーケット（穂谷川清掃工場）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "枚方市 環境部 循環型社会推進課",
+   "url": "https://www.city.hirakata.osaka.jp/0000054150.html"
+  },
+  "venue": {
+   "name": "穂谷川清掃工場 敷地内",
+   "pref": "27",
+   "city": "枚方市",
+   "address": "枚方市田口5丁目1番1号"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-01"
+   ],
+   "text": "枚方市の案内ページに掲載の開催日"
+  },
+  "time": {
+   "text": "午前10時から午後3時まで（ひらエコまつり全体）",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天決行",
+   "admission": "入場無料（商品の購入代金は別途）"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.hirakata.osaka.jp/0000054150.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "令和8年(2026年)11月1日(日) 午前10時から午後3時まで",
+     "穂谷川清掃工場 敷地内(枚方市田口5丁目1番1号)",
+     "雨天決行",
+     "市民の皆さんが「もったいない」の気持ちを持ち寄って開催するフリーマーケットです！",
+     "入場無料（商品の購入代金は別途）"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kashiwara-shimin-festival-flea",
+  "name": "柏原市民総合フェスティバル（フリーマーケットを含む）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "柏原市民総合フェスティバル実行委員会",
+   "url": "https://www.city.kashiwara.lg.jp/docs/2026072100040"
+  },
+  "venue": {
+   "name": "市役所前大和川河川敷（柏原市役所前大和川河川敷緑地公園）",
+   "pref": "27",
+   "city": "柏原市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-31"
+   ],
+   "text": "柏原市の案内ページに掲載の開催予定日"
+  },
+  "time": {
+   "text": "10時から（予定）"
+  },
+  "visitor": {
+   "rain": "小雨決行",
+   "notes": "天候などの都合によりプログラムを変更・中止する場合があります（市の案内）。フリーマーケットはこども向けイベントの一つとして案内されている"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.kashiwara.lg.jp/docs/2026072100040",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "令和８年度は１０月３１日（土）に柏原市役所前大和川河川敷緑地公園で開催予定です",
+     "とき 令和８年１０月３１日（土）１０時から（予定）【小雨決行】",
+     "ところ 市役所前大和川河川敷",
+     "縁日、フリーマーケット、ふわふわ遊具など",
+     "天候などの都合によりプログラムを変更・中止する場合があります"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ibaraki-nominoichi",
+  "name": "茨木蚤の市（春・秋の年2回）",
+  "kinds": [
+   "nomi"
+  ],
+  "organizer": {
+   "name": "FICベース株式会社（茨木のまちづくり会社）",
+   "url": "https://ficbase.jp/project/nominoichi"
+  },
+  "venue": {
+   "name": "茨木市内（2026年秋の会場は要確認。春の回は元茨木川緑地、おにクル芝生広場、中央公園南グラウンド等）",
+   "pref": "27",
+   "city": "茨木市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08"
+   ],
+   "text": "茨木市の記載「次回は令和8年11月8日に開催が予定」。例年春と秋の年2回"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.ibaraki.osaka.jp/ibarakinikki/reiwahachinenn/4gatu/68845.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "次回は令和8年11月8日に開催が予定されています",
+     "茨木のまちづくり会社「FICベース株式会社」が主催し、例年春と秋の年2回開催",
+     "骨董品やハンドメイド作品、飲食物等の販売をはじめ",
+     "元茨木川緑地、おにクル芝生広場、中央公園南グラウンド等"
+    ]
+   },
+   {
+    "url": "https://ficbase.jp/project/nominoichi",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "春と秋、年2回の開催",
+     "【締切ました】「茨⽊蚤の市2026~秋~」出店募集"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ibaraki-ekimae-marche",
+  "name": "IBARAKIえきまえマルシェ（第2土曜・いばらきスカイパレット）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "FICベース株式会社",
+   "url": "https://ficbase.jp/project/ekimaemarche/32th"
+  },
+  "venue": {
+   "name": "えきまえBASE（JR茨木駅東口いばらきスカイパレット）",
+   "pref": "27",
+   "city": "茨木市",
+   "address": "大阪府茨木市駅前1丁目2 いばらきスカイパレット",
+   "access": "JR茨木駅から徒歩30秒／阪急茨木市駅から徒歩21分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-14",
+    "2026-12-12",
+    "2027-01-09",
+    "2027-02-13"
+   ],
+   "text": "月の第二土曜日に開催（2026年度の開催予定日。8月・3月は開催なし）"
+  },
+  "time": {
+   "text": "日によって異なる（11/14・12/12は13～19時、1/9・2/13は11～16時）"
+  },
+  "visitor": {
+   "admission": "入場無料"
+  },
+  "sources": [
+   {
+    "url": "https://ficbase.jp/news/oX2WMwom",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "IBARAKIえきまえマルシェは、月の第二土曜日に開催しています",
+     "11/14（土） 13～19時 蚤の市後夜祭",
+     "12/12（土） 13～19時 クリスマス＆ニューイヤー",
+     "1/9（土） 11～16時 えべっさん",
+     "2/13（土） 11～16時 バレンタイン"
+    ]
+   },
+   {
+    "url": "https://ficbase.jp/project/ekimaemarche/32th",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "えきまえBASE（JR茨木駅東口いばらきスカイパレット【入場無料】）",
+     "飲食、物販、ハンドメイドクリエイター"
+    ]
+   },
+   {
+    "url": "https://ficbase.jp/base/ekimaebase",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "〒567-0888 大阪府茨木市駅前1丁目2 いばらきスカイパレット",
+     "JR茨木駅から徒歩30秒／阪急茨木市駅から徒歩21分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "himeji-tegarayama-rakuichi-rakuza",
+  "name": "手柄山オータムフェスティバル「楽市楽座」（姫路）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "姫路市",
+   "url": "https://www.city.himeji.lg.jp/kanko/0000034474.html"
+  },
+  "venue": {
+   "name": "手柄山交流ステーション3階と屋上広場",
+   "pref": "28",
+   "city": "姫路市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-03"
+   ],
+   "text": "姫路市の案内ページに掲載の開催日（手柄山オータムフェスティバル 10/24〜11/3 のうち）"
+  },
+  "time": {
+   "text": "午前10時から午後4時まで",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.himeji.lg.jp/kanko/0000034474.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "「楽市楽座」ステージイベント、おしごと体験イベント、飲食・雑貨等の出店",
+     "11月3日（火曜日・祝日）午前10時から午後4時まで手柄山交流ステーション3階と屋上広場にて",
+     "飲食や雑貨の販売、メダカすくいやスーパーボールすくい等の屋台が出店します"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kawanishi-toshi-ryokkasai-green-flea",
+  "name": "川西市都市緑化祭 緑のフリーマーケット",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "川西市 土木部 公園緑地課",
+   "url": "https://www.city.kawanishi.hyogo.jp/kurashi/1017490/midori/1014067.html"
+  },
+  "venue": {
+   "name": "キセラ川西プラザ屋外広場",
+   "pref": "28",
+   "city": "川西市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24"
+   ],
+   "text": "川西市の案内ページに掲載の開催日（第37回川西市都市緑化祭）"
+  },
+  "time": {
+   "text": "午前10時から午後2時まで",
+   "start": "10:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "notes": "緑のフリーマーケットは、家庭で育てた花や植木などを販売"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.kawanishi.hyogo.jp/kurashi/1017490/midori/1014067.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "令和8年10月24日（土曜日）午前10時から午後2時まで",
+     "キセラ川西プラザ屋外広場",
+     "緑のフリーマーケット 家庭で育てた花や植木などを販売"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kamigamo-tedukuri-ichi",
+  "name": "上賀茂手づくり市（上賀茂神社）",
+  "kinds": [
+   "handmade"
+  ],
+  "organizer": {
+   "name": "株式会社クラフト",
+   "url": "https://kamigamo-tedukuriichi.com/"
+  },
+  "venue": {
+   "name": "上賀茂神社 境内（ならの小川沿い）",
+   "pref": "26",
+   "address": "京都府京都市北区上賀茂本山339",
+   "access": "市バス停「上賀茂神社前」下車すぐ",
+   "city": "京都市北区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-25",
+    "2026-11-22",
+    "2026-12-27",
+    "2027-01-24",
+    "2027-02-03",
+    "2027-02-28",
+    "2027-03-28",
+    "2027-04-25",
+    "2027-05-23",
+    "2027-06-27"
+   ],
+   "text": "主催者の開催スケジュール（毎月第4日曜日が基本。例外の月は日付のとおり）"
+  },
+  "time": {
+   "text": "9:00〜15:00（予定）",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（災害発生時や台風接近・大雪等による荒天予報時は中止の場合あり）",
+   "admission": "入場無料"
+  },
+  "sources": [
+   {
+    "url": "https://kamigamo-tedukuriichi.com/publics/index/145/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "※毎月 第４日曜日 定期開催",
+     "１０月２５日 (日)",
+     "１１月２２日 (日) ※１１月２９日(日)は開催日ではありません",
+     "１２月２７日 (日)",
+     "１月２４日 (日) ※１月３１日(日)は開催日ではありません",
+     "２月３日 (水) ※｢節分の日｣ 特別開催",
+     "２月２８日 (日)",
+     "３月２８日 (日)",
+     "４月２５日 (日)",
+     "５月２３日 (日) ※５月３０日(日)は開催日ではありません",
+     "６月２７日 (日)"
+    ]
+   },
+   {
+    "url": "https://kamigamo-tedukuriichi.com/publics/index/141/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎月第４日曜日 定期開催",
+     "９：００～１５：００予定／雨天決行／入場無料",
+     "世界文化遺産／京都 上賀茂神社･境内（京都府京都市北区上賀茂本山３３９）",
+     "※市バス停「上賀茂神社前」下車すぐ",
+     "ご出店内容は自作の手づくり作品の販売"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "heian-rakuichi",
+  "name": "平安楽市（平安神宮前・岡崎公園）",
+  "kinds": [
+   "handmade"
+  ],
+  "organizer": {
+   "name": "株式会社クラフト",
+   "url": "https://kamigamo-tedukuriichi.com/"
+  },
+  "venue": {
+   "name": "平安神宮前、岡崎公園",
+   "pref": "26",
+   "city": "京都市左京区",
+   "access": "地下鉄東西線「東山駅」より北へ徒歩約10分、市バス停「岡崎公園 ロームシアター京都・みやこめっせ前」下車すぐ"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-06",
+    "2026-12-04",
+    "2027-01-06",
+    "2027-02-23",
+    "2027-03-09"
+   ],
+   "text": "主催者の開催スケジュール（月に一度を基本。9月・10月・1月・8月などの開催のない月あり）"
+  },
+  "time": {
+   "text": "10:00〜16:00（予定）",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（災害発生時や台風接近等による荒天予報時は中止の場合あり）",
+   "admission": "入場無料"
+  },
+  "sources": [
+   {
+    "url": "https://kamigamo-tedukuriichi.com/publics/index/145/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "１１月６日 (金) ※平日開催予定",
+     "１２月４日 (金) ※平日開催予定",
+     "１月６日 (水) ※平日開催予定",
+     "２月２３日 (火･祝)",
+     "３月９日 (火) ※平日開催予定"
+    ]
+   },
+   {
+    "url": "https://kamigamo-tedukuriichi.com/publics/index/142/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "月に一度を基本に、可能な範囲で毎月継続して開催中",
+     "１０：００～１６：００予定／雨天決行／入場無料",
+     "京都 平安神宮前、岡崎公園",
+     "地下鉄東西線「東山駅」より北へ徒歩約１０分、市バス停「岡崎公園 ロームシアター京都・みやこめっせ前」下車すぐ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ohigashisan-tedukuri-monzenichi",
+  "name": "お東さん・手づくり門前市（東本願寺前 お東さん広場）",
+  "kinds": [
+   "handmade"
+  ],
+  "organizer": {
+   "name": "株式会社クラフト",
+   "url": "https://kamigamo-tedukuriichi.com/"
+  },
+  "venue": {
+   "name": "東本願寺前、市民緑地（お東さん広場）",
+   "pref": "26",
+   "city": "京都市下京区",
+   "address": "京都市下京区常葉町他",
+   "access": "JR「京都駅」より北へ徒歩5分／地下鉄烏丸線「五条駅」より南へ徒歩5分／市バス停「烏丸七条」より徒歩1分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-30",
+    "2026-11-29",
+    "2026-12-18",
+    "2027-01-16",
+    "2027-02-20",
+    "2027-03-22"
+   ],
+   "text": "主催者の開催スケジュール（月に一度を基本。7〜8月はお休み）"
+  },
+  "time": {
+   "text": "10:00〜16:00（予定）",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（災害発生時や台風接近等による荒天予報時は中止の場合あり）",
+   "admission": "入場無料"
+  },
+  "sources": [
+   {
+    "url": "https://kamigamo-tedukuriichi.com/publics/index/145/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "１０月３０ 日 (金) ※平日開催",
+     "１１月２９ 日 (日)",
+     "１２月１８ 日 (金) ※平日開催",
+     "１月１６日 (土)",
+     "２月２０ 日 (土)",
+     "３月２２ 日 (月･休)"
+    ]
+   },
+   {
+    "url": "https://kamigamo-tedukuriichi.com/publics/index/144/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "１０：００～１６：００予定／雨天決行／入場無料",
+     "東本願寺前、市民緑地（お東さん広場）",
+     "【会場住所】京都市下京区常葉町他",
+     "ＪＲ「京都駅」より北へ徒歩５分／地下鉄烏丸線「五条駅」より南へ徒歩５分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kitayama-craft-garden",
+  "name": "北山クラフトガーデン（陶板名画の庭）",
+  "kinds": [
+   "handmade"
+  ],
+  "organizer": {
+   "name": "株式会社クラフト",
+   "url": "https://kamigamo-tedukuriichi.com/"
+  },
+  "venue": {
+   "name": "京都府立・陶板名画の庭",
+   "pref": "26",
+   "city": "京都市左京区",
+   "address": "京都府京都市左京区下鴨半木町",
+   "access": "京都市営地下鉄烏丸線「北山駅」下車、3番出口から出てすぐ東側"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-03",
+    "2026-12-06",
+    "2027-03-07",
+    "2027-04-04"
+   ],
+   "text": "主催者の開催スケジュール（不定期開催）"
+  },
+  "time": {
+   "text": "10:00〜16:00（予定）",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天中止（雨天が予想される場合は前日正午の天気予報を確認後、正午すぎに開催可否を判断）",
+   "admission": "開催当日に限り入場無料（通常は入場料200円）"
+  },
+  "sources": [
+   {
+    "url": "https://kamigamo-tedukuriichi.com/publics/index/145/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "１１月３日 (火･祝)",
+     "１２月６日 (日)",
+     "３月７日 (日)",
+     "４月４日 (日)"
+    ]
+   },
+   {
+    "url": "https://kamigamo-tedukuriichi.com/publics/index/143/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "年に６～７回ほど、不定期的に開催いたします(雨天中止)",
+     "１０：００～１６：００予定",
+     "京都府立・陶板名画の庭",
+     "会場住所：京都府京都市左京区下鴨半木町",
+     "北山クラフトガーデンの開催当日に限り入場無料",
+     "通常は入場料２００円が必要となります"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tatsuno-shimin-matsuri-flea",
+  "name": "第19回たつの市民まつり フリーマーケット（たつの市役所周辺・中川原公園）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "たつの市（観光振興課・たつの市民まつり運営委員会）",
+   "url": "https://www.city.tatsuno.lg.jp/soshiki/1023/gyomu/1/11147.html"
+  },
+  "venue": {
+   "name": "たつの市役所周辺、中川原公園",
+   "pref": "28",
+   "city": "たつの市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-03"
+   ],
+   "text": "たつの市の案内ページに掲載の開催日"
+  },
+  "visitor": {
+   "notes": "フリーマーケットは61区画（市の案内）"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.tatsuno.lg.jp/soshiki/1023/gyomu/1/11147.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "たつの市役所周辺、中川原公園",
+     "令和8年11月3日(火曜日・祝日)",
+     "フリーマーケット（61区画）が勢ぞろい"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "f2525-moriyama-moriive",
+  "name": "2525フリマ滋賀 in モリーブ守山",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "2525フリマ滋賀（ニコニコフリマ滋賀）",
+   "url": "https://2525furima.hp.peraichi.com/"
+  },
+  "venue": {
+   "name": "モリーブ守山立体駐車場の屋上エリア",
+   "pref": "25",
+   "city": "守山市",
+   "address": "滋賀県守山市播磨田町185-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-14",
+    "2026-11-15"
+   ],
+   "text": "主催者の開催日（第3回・第4回。10/17・10/18の第1回・第2回は終了）"
+  },
+  "time": {
+   "text": "10:00〜16:00（出店者以外は10時まで入場禁止）",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "admission": "来場・駐車場（300台）無料",
+   "notes": "敷地内全面禁煙。マルシェ50店舗・フリマ50店舗（主催者の案内）"
+  },
+  "sources": [
+   {
+    "url": "https://2525furima.hp.peraichi.com/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第3回 11月14日 (土)",
+     "第4回 11月15日 (日)",
+     "モリーブ守山(滋賀県守山市播磨田町１８５−１)",
+     "モリーブ守山立体駐車場の屋上エリア",
+     "【時間】 10:00~16:00",
+     "・マルシェ50店舗",
+     "来場&駐車場（300台完備）無料"
+    ]
+   },
+   {
+    "url": "https://www.pref.shiga.lg.jp/gomizero/other/334917.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "2525フリマ滋賀inモリーブ守山",
+     "日時：2026年10月17日（土曜日）、18日（日曜日）、11月14日（土曜日）、15日（日曜日）いずれも10時から16時まで"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "f2525-hikone-bunka-plaza",
+  "name": "2525フリマ滋賀 in ひこね市文化プラザ",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "2525フリマ滋賀（ニコニコフリマ滋賀）",
+   "url": "https://2525furima.hp.peraichi.com/"
+  },
+  "venue": {
+   "name": "彦根市文化プラザ駐車場",
+   "pref": "25",
+   "city": "彦根市",
+   "address": "滋賀県彦根市野瀬町187-4"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-13"
+   ],
+   "text": "主催者の開催日（第20回）"
+  },
+  "time": {
+   "text": "10:00〜16:00（出店者以外は10時まで入場禁止）",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "admission": "来場・駐車場無料",
+   "notes": "敷地内全面禁煙。マルシェ50店舗・フリマ50店舗・キッチンカー10台以上（主催者の案内）"
+  },
+  "sources": [
+   {
+    "url": "https://2525furima.hp.peraichi.com/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第20回 12月13日 (日)",
+     "彦根市文化プラザ(滋賀県彦根市野瀬町１８７−４)",
+     "【日程】 第20回2026年12月13日(日)",
+     "彦根市文化プラザ駐車場"
+    ]
+   },
+   {
+    "url": "https://www.pref.shiga.lg.jp/gomizero/other/334917.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "2525フリマ滋賀inひこね市文化プラザ",
+     "日時：2026年12月13日（日曜日）10時から16時まで",
+     "開催場所：彦根市文化プラザ駐車場（彦根市野瀬町187-4）"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "wakayama-kitabura-remember-market",
+  "name": "北ぶら リメンバーMARKET（北ぶらくり丁商店街・和歌山市）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "北ぶらくり丁商店街振興組合（和歌山市の案内ページ）",
+   "label": "案内の公表元",
+   "url": "https://www.city.wakayama.wakayama.jp/kankou/event/1003232/1049848.html"
+  },
+  "venue": {
+   "name": "北ぶらくり丁商店街",
+   "pref": "30",
+   "city": "和歌山市",
+   "access": "南海和歌山市駅からバス7分 本町3丁目バス停下車／JR和歌山駅からバス16分 本町3丁目バス停下車"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08",
+    "2026-12-13",
+    "2027-02-14",
+    "2027-03-14"
+   ],
+   "text": "和歌山市の案内ページに掲載の開催日（毎月第2日曜日開催とあるが、8月〜10月は土曜日の回あり。1月は記載なし）"
+  },
+  "time": {
+   "text": "午後4時から午後9時まで（市の案内ページの開催時間）",
+   "start": "16:00",
+   "end": "21:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.wakayama.wakayama.jp/kankou/event/1003232/1049848.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "、11月8日(日曜日)",
+     "、12月13日(日曜日)",
+     "令和9年2月14日(日曜日)",
+     "、3月14日(日曜日)",
+     "開催時間 午後4時 から 午後9時 まで",
+     "北ぶらくり丁商店街",
+     "毎月第2日曜日に、北ぶらくり丁商店街内で開催しているイベントです",
+     "南海和歌山市駅からバス7分 本町3丁目バス停下車",
+     "JR和歌山駅からバス16分 本町3丁目バス停下車"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lohas-park-kawanishi",
+  "name": "ロハスパーク川西（キセラ川西せせらぎ公園）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "ロハスパーク川西実行委員会",
+   "url": "https://lohas-park.jp/event/kiji5935/"
+  },
+  "venue": {
+   "name": "キセラ川西せせらぎ公園",
+   "pref": "28",
+   "city": "川西市",
+   "address": "兵庫県川西市火打1丁目5-17"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-07",
+    "2026-11-08"
+   ],
+   "text": "主催者の開催日"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（荒天により中止になる場合あり。中止の場合、予備日はありません）"
+  },
+  "sources": [
+   {
+    "url": "https://lohas-park.jp/event/kiji5935/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第15回 ロハスパーク川西@キセラ川西せせらぎ公園 【2026年11月7日(土)・8日(日)】",
+     "※雨天決行",
+     "※荒天により中止になる場合があります。中止の場合、予備日はありません。",
+     "10:00～16:00",
+     "〒666-0017 兵庫県川西市火打１丁目５−１７",
+     "ロハスパーク川西実行委員会"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lohas-park-kashiwara",
+  "name": "ロハスパーク大阪柏原（大和川河川敷緑地公園）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "ロハスパーク（公式サイト）",
+   "url": "https://lohas-park.jp/event/kiji5937/"
+  },
+  "venue": {
+   "name": "大和川河川敷公園",
+   "pref": "27",
+   "city": "柏原市",
+   "address": "大阪府柏原市安堂町1番地"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-14",
+    "2026-11-15"
+   ],
+   "text": "主催者の開催日"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（荒天により中止になる場合あり。中止の場合、予備日はありません）"
+  },
+  "sources": [
+   {
+    "url": "https://lohas-park.jp/event/kiji5937/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第10回 ロハスパーク大阪柏原@大和川河川敷緑地公園【2026年11月14日(土)・15日(日)】",
+     "※雨天決行",
+     "※荒天により中止になる場合があります。中止の場合、予備日はありません。",
+     "10:00～16:00",
+     "〒582-0016 大阪府柏原市安堂町1番地"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lohas-park-itami",
+  "name": "ロハスパーク伊丹（昆陽池公園）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "ロハスパーク伊丹実行委員会",
+   "url": "https://lohas-park.jp/event/kiji5944/"
+  },
+  "venue": {
+   "name": "昆陽池公園 多目的広場",
+   "pref": "28",
+   "city": "伊丹市",
+   "address": "兵庫県伊丹市昆陽池3丁目"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-22",
+    "2026-11-23"
+   ],
+   "text": "主催者の開催日"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（荒天により中止になる場合あり。中止の場合、予備日はありません）"
+  },
+  "sources": [
+   {
+    "url": "https://lohas-park.jp/event/kiji5944/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第２回 ロハスパーク伊丹@昆陽池公園 【2026年11月22日(日)・23日(月祝)】",
+     "※雨天決行",
+     "※荒天により中止になる場合があります。中止の場合、予備日はありません。",
+     "10:00～16:00",
+     "〒664-0015 兵庫県伊丹市昆陽池３丁目",
+     "ロハスパーク伊丹実行委員会"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lohas-park-sakai-oizumi",
+  "name": "ロハスパーク堺（大泉緑地）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "ロハスパーク（公式サイト）",
+   "url": "https://lohas-park.jp/event/kiji5467/"
+  },
+  "venue": {
+   "name": "大泉緑地 大芝生広場",
+   "pref": "27",
+   "city": "堺市北区",
+   "address": "大阪府堺市北区金岡町128"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-05",
+    "2026-12-06"
+   ],
+   "text": "主催者の開催日"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（荒天により中止になる場合あり。中止の場合、予備日はありません）"
+  },
+  "sources": [
+   {
+    "url": "https://lohas-park.jp/event/kiji5467/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第11回 ロハスパーク堺@大泉緑地 【2026年12月5日(土)・12月6日(日)】",
+     "※雨天決行",
+     "※荒天により中止になる場合があります。中止の場合、予備日はありません。",
+     "10:00～16:00",
+     "〒591-8022 大阪府堺市北区金岡町１２８"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lohas-park-tsurumi",
+  "name": "ロハスパーク大阪鶴見（鶴見緑地公園）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "ロハスパーク（公式サイト）",
+   "url": "https://lohas-park.jp/event/kiji5647/"
+  },
+  "venue": {
+   "name": "鶴見緑地公園 大芝生",
+   "pref": "27",
+   "city": "大阪市鶴見区",
+   "address": "大阪府大阪市鶴見区緑地公園2-163"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-10-25"
+   ],
+   "text": "主催者の開催日"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（荒天により中止になる場合あり。中止の場合、予備日はありません）"
+  },
+  "sources": [
+   {
+    "url": "https://lohas-park.jp/event/kiji5647/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第８回 ロハスパーク大阪鶴見@鶴見緑地公園 【2026年10月24日(土)・25日(日)】",
+     "※雨天決行",
+     "※荒天により中止になる場合があります。中止の場合、予備日はありません。",
+     "10:00～16:00",
+     "〒538-0036 大阪府大阪市鶴見区緑地公園２−１６３"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lohas-park-toyonaka-hattori",
+  "name": "ロハスパーク豊中（服部緑地公園）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "ロハスパーク豊中実行委員会",
+   "url": "https://lohas-park.jp/event/kiji5630/"
+  },
+  "venue": {
+   "name": "服部緑地公園 西中央広場、集いの原っぱ",
+   "pref": "27",
+   "city": "豊中市",
+   "address": "大阪府豊中市服部緑地1-10"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-31",
+    "2026-11-01"
+   ],
+   "text": "主催者の開催日"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（荒天により中止になる場合あり。中止の場合、予備日はありません）"
+  },
+  "sources": [
+   {
+    "url": "https://lohas-park.jp/event/kiji5630/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第８回 ロハスパーク豊中@服部緑地公園 【2026年10月31日(土)・11月1日(日)】",
+     "※雨天決行",
+     "※荒天により中止になる場合があります。中止の場合、予備日はありません。",
+     "10:00～16:00",
+     "〒561-0873 大阪府豊中市服部緑地１−１０",
+     "ロハスパーク豊中実行委員会"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lohas-park-higashisumiyoshi-nagai",
+  "name": "ロハスパーク東住吉（長居公園）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "ロハスパーク（公式サイト）",
+   "url": "https://lohas-park.jp/event/kiji5594/"
+  },
+  "venue": {
+   "name": "長居公園（南西入口広場、自由広場）",
+   "pref": "27",
+   "city": "大阪市東住吉区",
+   "address": "大阪府大阪市東住吉区長居公園1-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "text": "主催者の開催日"
+  },
+  "time": {
+   "text": "10:00〜17:00",
+   "start": "10:00",
+   "end": "17:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（荒天により中止になる場合あり。中止の場合、予備日はありません）"
+  },
+  "sources": [
+   {
+    "url": "https://lohas-park.jp/event/kiji5594/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第４回 ロハスパーク東住吉@長居公園 【2026年11月28日(土)・29日(日)】",
+     "※雨天決行",
+     "※荒天により中止になる場合があります。中止の場合、予備日はありません。",
+     "10:00～17:00",
+     "〒546-0034 大阪府大阪市東住吉区長居公園１−１"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lohas-park-nara-heijokyuseki",
+  "name": "ロハスパーク奈良（平城宮跡歴史公園）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "ロハスパーク実行委員会",
+   "url": "https://lohas-park.jp/event/kiji5799/"
+  },
+  "venue": {
+   "name": "平城宮跡歴史公園 朱雀門ひろば・朱雀大路",
+   "pref": "29",
+   "city": "奈良市",
+   "address": "奈良県奈良市二条大路南3丁目5番1号"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-31",
+    "2026-11-01"
+   ],
+   "text": "主催者の開催日"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（荒天により中止になる場合あり。中止の場合、予備日はありません）"
+  },
+  "sources": [
+   {
+    "url": "https://lohas-park.jp/event/kiji5799/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第１回 ロハスパーク奈良@平城宮跡歴史公園 【2026年10月31日(土)・11月1日(日)】",
+     "※雨天決行",
+     "※荒天により中止になる場合があります。中止の場合、予備日はありません。",
+     "10:00～16:00",
+     "〒630-8012 奈良県奈良市二条大路南三丁目5番1号",
+     "ロハスパーク実行委員会"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lohas-park-daito-suehiro",
+  "name": "ロハスパーク大東（末広公園）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "ロハスパーク（公式サイト）",
+   "url": "https://lohas-park.jp/event/kiji6066/"
+  },
+  "venue": {
+   "name": "末広公園",
+   "pref": "27",
+   "city": "大東市",
+   "address": "大阪府大東市末広町6-4"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-19",
+    "2026-12-20"
+   ],
+   "text": "主催者の開催日"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（荒天により中止になる場合あり。中止の場合、予備日はありません）"
+  },
+  "sources": [
+   {
+    "url": "https://lohas-park.jp/event/kiji6066/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第１回 ロハスパーク大東@末広公園【2026年12月19日(土)・20日(日)】",
+     "※雨天決行",
+     "※荒天により中止になる場合があります。中止の場合、予備日はありません。",
+     "10:00～16:00",
+     "〒574-0036 大阪府大東市末広町６−４"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lohas-park-fukinuke-marche-hyogo-eki",
+  "name": "吹きぬけマルシェ（兵庫駅前広場）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "ロハスパーク（公式サイト）",
+   "url": "https://lohas-park.jp/event/kiji6160/"
+  },
+  "venue": {
+   "name": "兵庫駅前広場（キャナルタウン広場）",
+   "pref": "28",
+   "city": "神戸市兵庫区",
+   "address": "兵庫県神戸市兵庫区駅南通5丁目1-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-05",
+    "2026-11-12",
+    "2026-11-19",
+    "2026-11-26"
+   ],
+   "text": "主催者の開催日（毎週木曜、各日8店舗）"
+  },
+  "time": {
+   "text": "10:00〜17:00",
+   "start": "10:00",
+   "end": "17:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（荒天により中止になる場合あり。中止の場合、予備日はありません）"
+  },
+  "sources": [
+   {
+    "url": "https://lohas-park.jp/event/kiji6160/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第10回 吹きぬけマルシェ@兵庫駅前広場【2026年11月5,12,19,26日(木)】",
+     "11月5日(木)",
+     "11月12日(木)",
+     "11月19日(木)",
+     "11月26日(木)",
+     "兵庫駅前広場",
+     "〒652-0897 兵庫県神戸市兵庫区駅南通５丁目１−１ キャナルタウン広場（駅前広場）",
+     "10:00～17:00",
+     "※雨天決行"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lohas-park-himeji-otemae",
+  "name": "ロハスパーク姫路（大手前公園）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "ロハスパーク（公式サイト）",
+   "url": "https://lohas-park.jp/event/kiji5931/"
+  },
+  "venue": {
+   "name": "大手前公園",
+   "pref": "28",
+   "city": "姫路市",
+   "address": "兵庫県姫路市本町大手前公園68番地"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-12",
+    "2026-12-13"
+   ],
+   "text": "主催者の開催日（ページ本文の日程欄に表記ゆれがあるため、題名の日付）"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（荒天により中止になる場合あり。中止の場合、予備日はありません）"
+  },
+  "sources": [
+   {
+    "url": "https://lohas-park.jp/event/kiji5931/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "第15回 ロハスパーク姫路@大手前公園 【2026年12月12日(土)・13日(日)】",
+     "大手前公園",
+     "〒670-0012 兵庫県姫路市本町大手前公園６８番地",
+     "10:00～16:00",
+     "※雨天決行"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "nadeshiko-jaguar-town-moriguchi",
+  "name": "ジャガータウン守口フリーマーケット（なでしこフリマ）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "なでしこふれあいマーケット協会",
+   "url": "https://nadeshikofurima.com/"
+  },
+  "venue": {
+   "name": "ジャガーグリーン内 屋外特設会場（会場立体駐車場の屋上）",
+   "pref": "27",
+   "city": "守口市",
+   "address": "大阪府守口市佐太東町二丁目6番"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 2,
+     "wd": 0
+    }
+   ],
+   "text": "毎月第二日曜日開催予定（主催者の記載）"
+  },
+  "time": {
+   "text": "10:00〜15:00（予定）",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "sources": [
+   {
+    "url": "https://nadeshikofurima.com/zyagasumaho.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "●会場 ジャガーグリーン内 屋外特設会場",
+     "●住所 大阪府守口市佐太東町二丁目６番",
+     "毎月第二日曜日開催予定 雨天中止",
+     "予定１０：００～１５：００ 雨天中止",
+     "●会場立体駐車場 屋上にて開催"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "nadeshiko-apita-keihanna",
+  "name": "アピタタウンけいはんなフリーマーケット（なでしこフリマ）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "なでしこふれあいマーケット協会",
+   "url": "https://nadeshikofurima.com/"
+  },
+  "venue": {
+   "name": "アピタタウンけいはんな 屋外特設会場",
+   "pref": "26",
+   "city": "相楽郡精華町",
+   "address": "京都府相楽郡精華町精華台9丁目2番地"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 1,
+     "wd": 0
+    }
+   ],
+   "text": "毎月第１日曜日開催予定（主催者の記載）"
+  },
+  "time": {
+   "text": "10:00〜15:00（予定）",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "sources": [
+   {
+    "url": "https://nadeshikofurima.com/apitasumaho.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "●会場 アピタタウンけいはんな 屋外特設会場",
+     "●住所 京都府相楽郡精華町精華台9丁目2番地",
+     "毎月第１日曜日開催予定 雨天中止",
+     "●１０：００予定～１５：００"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "nadeshiko-donki-uny-nishiyamato",
+  "name": "MEGAドンキホーテUNY西大和フリーマーケット（なでしこフリマ）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "なでしこふれあいマーケット協会",
+   "url": "https://nadeshikofurima.com/"
+  },
+  "venue": {
+   "name": "MEGAドンキホーテUNY西大和 メイン平面駐車場",
+   "pref": "29",
+   "city": "北葛城郡上牧町",
+   "address": "奈良県北葛城郡上牧町ささゆり台1丁目1番地の1"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 2,
+     "wd": 6
+    }
+   ],
+   "text": "第２土曜日開催予定（主催者の記載）"
+  },
+  "time": {
+   "text": "10:00〜15:00",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "sources": [
+   {
+    "url": "https://nadeshikofurima.com/custom19.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "MEGAドンキホーテUNY西大和 フリーマーケット",
+     "奈良県北葛城郡上牧町ささゆり台1丁目1番地の1",
+     "■メイン平面駐車場",
+     "第２土曜日開催予定",
+     "雨天中止",
+     "１０時～１５時"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cpm-rakuraku-ichi-tajimi",
+  "name": "セラパーク楽々市（骨董フェスタ・青空マルシェ・あきんど市）",
+  "kinds": [
+   "kotto",
+   "marche"
+  ],
+  "organizer": {
+   "name": "公益財団法人セラミックパーク美濃",
+   "url": "https://www.cpm-gifu.jp/rakuraku/"
+  },
+  "venue": {
+   "name": "セラミックパークMINO",
+   "pref": "21",
+   "city": "多治見市",
+   "address": "岐阜県多治見市東町4-2-5"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-10-25",
+    "2026-11-21",
+    "2026-11-22",
+    "2026-12-19",
+    "2026-12-20",
+    "2027-01-23",
+    "2027-01-24",
+    "2027-02-27",
+    "2027-02-28",
+    "2027-03-27",
+    "2027-03-28"
+   ],
+   "text": "毎月 第4日曜日とその前日の土曜日（12月・4月は3週目。公式の年間スケジュールの日付）"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "admission": "入場無料"
+  },
+  "sources": [
+   {
+    "url": "https://www.cpm-gifu.jp/rakuraku/schedule/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "10月24日・25日",
+     "11月21日・22日",
+     "12月19日・20日",
+     "1月23日・24日",
+     "2月27日・28日",
+     "3月27日・28日",
+     "毎月 第4日曜日とその前日の土曜日",
+     "セラミックパークＭＩＮＯ",
+     "岐阜県多治見市東町4-2-5",
+     "公益財団法人セラミックパーク美濃"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kasugai-kachigawa-kobo-ichi",
+  "name": "勝川弘法市（春日井市・勝川大弘法の商店街）",
+  "kinds": [
+   "engi"
+  ],
+  "organizer": {
+   "name": "一般社団法人春日井市観光コンベンション協会",
+   "url": "https://kasugai-kanko.jp/",
+   "label": "情報の掲載元"
+  },
+  "venue": {
+   "name": "勝川大弘法周辺の商店街",
+   "pref": "23",
+   "city": "春日井市",
+   "address": "愛知県春日井市若草通1-3"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 3,
+     "wd": 6
+    }
+   ],
+   "text": "毎月第3土曜日"
+  },
+  "sources": [
+   {
+    "url": "https://kasugai-kanko.jp/recommendedspot/kachigawataikoubou/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎月第3土曜日には、商店街でテントショップやグルメ屋台が出店される「弘法市」を開催しています",
+     "春日井市若草通1-3"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "osu-kannon-kottouichi",
+  "name": "大須観音 骨董市（毎月18日・28日の縁日）",
+  "kinds": [
+   "kotto"
+  ],
+  "organizer": {
+   "name": "大須観音（北野山真福寺宝生院）",
+   "url": "http://www.osu-kannon.jp/",
+   "label": "会場の寺院"
+  },
+  "venue": {
+   "name": "大須観音",
+   "pref": "23",
+   "city": "名古屋市中区",
+   "address": "名古屋市中区大須2-21-47",
+   "access": "地下鉄鶴舞線「大須観音」駅下車。2番出口より徒歩3分"
+  },
+  "recurrence": {
+   "type": "monthly-day",
+   "days": [
+    18,
+    28
+   ],
+   "text": "毎月18日・28日の縁日"
+  },
+  "sources": [
+   {
+    "url": "https://www.nagoya-info.jp/spot/detail/13/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎月18日28日の縁日には骨董市開催",
+     "名古屋市中区大須2-21-47",
+     "地下鉄鶴舞線「大須観音」駅下車。2番出口より徒歩3分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "jimokuji-fudo-marche",
+  "name": "甚目寺観音 風土マルシェ（毎月21日）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "鳳凰山甚目寺",
+   "label": "会場の寺院"
+  },
+  "venue": {
+   "name": "鳳凰山甚目寺（甚目寺観音）境内",
+   "pref": "23",
+   "city": "あま市",
+   "address": "愛知県あま市甚目寺東門前24",
+   "access": "名鉄「名古屋」駅から、名鉄「甚目寺」駅下車。徒歩5分"
+  },
+  "recurrence": {
+   "type": "monthly-day",
+   "days": [
+    21
+   ],
+   "text": "毎月21日"
+  },
+  "time": {
+   "text": "10:00〜14:00",
+   "start": "10:00",
+   "end": "14:00"
+  },
+  "sources": [
+   {
+    "url": "https://aichinow.pref.aichi.jp/spots/detail/914/",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎月21日10:00～14:00に行われる「風土マルシェ」",
+     "〒490-1111 あま市甚目寺東門前24",
+     "名鉄「名古屋」駅から、名鉄「甚目寺」駅下車。徒歩5分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "jimokuji-kurashi-asaichi",
+  "name": "甚目寺観音 暮らしの朝市（毎月12日・8月を除く）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "鳳凰山甚目寺",
+   "label": "会場の寺院"
+  },
+  "venue": {
+   "name": "鳳凰山甚目寺（甚目寺観音）境内",
+   "pref": "23",
+   "city": "あま市",
+   "address": "愛知県あま市甚目寺東門前24",
+   "access": "名鉄「名古屋」駅から、名鉄「甚目寺」駅下車。徒歩5分"
+  },
+  "recurrence": {
+   "type": "monthly-day",
+   "days": [
+    12
+   ],
+   "exceptMonths": [
+    8
+   ],
+   "text": "毎月12日（8月を除く）"
+  },
+  "time": {
+   "text": "10:00〜14:00",
+   "start": "10:00",
+   "end": "14:00"
+  },
+  "sources": [
+   {
+    "url": "https://aichinow.pref.aichi.jp/spots/detail/914/",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎月12日10:00～14:00に行われる「暮らしの朝市」",
+     "毎月12日には朝市を、21日にマルシェを開催（朝市：8月を除く）",
+     "〒490-1111 あま市甚目寺東門前24"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tokugawaen-kuromon-tedukuri-2026",
+  "name": "徳川園 黒門手づくり市（徳川園 秋の催事）",
+  "kinds": [
+   "handmade"
+  ],
+  "organizer": {
+   "name": "徳川園事務所",
+   "url": "https://www.tokugawaen.aichi.jp/",
+   "label": "問い合わせ先"
+  },
+  "venue": {
+   "name": "徳川園",
+   "pref": "23",
+   "city": "名古屋市東区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-03"
+   ],
+   "text": "2026年11月3日（火・祝）の秋の催事内"
+  },
+  "time": {
+   "text": "10:00〜15:00",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "fee": "徳川園の入園料は無料開園日（開園記念日）。公式の案内に「徳川園開園記念日 無料開園日」とある",
+   "access": "JR中央線「大曽根」駅南出口より徒歩10分"
+  },
+  "sources": [
+   {
+    "url": "https://www.nagoya-info.jp/event/detail/695/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "開催日：2026年11月3日(火･祝)",
+     "黒門手づくり市:10時～15時",
+     "徳川園開園記念日 無料開園日",
+     "JR中央線「大曽根」駅南出口より徒歩10分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "yokkaichi-suwa-nandemo-yokka-no-ichi",
+  "name": "なんでも四日の市（四日市諏訪新道通り）",
+  "kinds": [
+   "flea",
+   "kotto"
+  ],
+  "organizer": {
+   "name": "四日市諏訪商店街",
+   "url": "https://suwacent.com/"
+  },
+  "venue": {
+   "name": "四日市諏訪新道通り",
+   "pref": "24",
+   "city": "四日市市"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": -1,
+     "wd": 0
+    }
+   ],
+   "text": "毎月最終日曜日"
+  },
+  "time": {
+   "text": "9:00〜14:00（雨天決行）",
+   "start": "09:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（商店街にはアーケードあり）"
+  },
+  "sources": [
+   {
+    "url": "https://suwacent.com/event/9-27%e3%81%aa%e3%82%93%e3%81%a7%e3%82%82%e5%9b%9b%e6%97%a5%e3%81%ae%e5%b8%82/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎月最終日曜日に四日市市 諏訪新道通りで開催されるイベントです",
+     "9:00 ~ 14:00（雨天決行）",
+     "四日市諏訪新道通り",
+     "商店街には、アーケードもあり雨の日でもお買い物ができます"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "obihiro-wakuwaku-flea",
+  "name": "わくわくフリーマーケット（帯広市・MEGAドン・キホーテ西帯広店駐車場）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "十勝フリマクラブ",
+   "label": "問い合わせ先"
+  },
+  "venue": {
+   "name": "MEGAドン・キホーテ西帯広店 駐車場内",
+   "pref": "01",
+   "city": "帯広市",
+   "address": "帯広市西21条南4丁目"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-21",
+    "2026-10-28"
+   ],
+   "text": "令和8年9月〜10月の水曜日（10月28日は年内最終日）"
+  },
+  "time": {
+   "text": "9:00〜12:30",
+   "start": "09:00",
+   "end": "12:30"
+  },
+  "visitor": {
+   "rain": "雨天中止。34度を超える猛暑日の開催は急遽中止の場合あり"
+  },
+  "exhibitor": {
+   "fee": "1区画600円",
+   "apply": "要予約（出店希望者は十勝管内に在住の方。問い合わせは帯広市の案内ページに記載の問い合わせ先）",
+   "applyUrl": "https://www.city.obihiro.hokkaido.jp/kurashi/gomi/information/1002806.html",
+   "notes": "20区画。食品及び電化製品の販売不可"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.obihiro.hokkaido.jp/kurashi/gomi/information/1002806.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "10月21日（水曜日）、10月28日（水曜日）※年内最終日",
+     "MEGAドン・キホーテ西帯広店 駐車場内",
+     "帯広市西21条南4丁目",
+     "9時00分～12時30分",
+     "1区画600円",
+     "雨天中止",
+     "34度を超える猛暑日の開催は急遽中止有",
+     "食品及び電化製品の販売不可",
+     "出店希望者 十勝管内に在住されている方"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kokura-car-boot",
+  "name": "小倉カーブーツ（リバーウォーク紫川沿い）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "MES（門司港イベントサプライ）"
+  },
+  "venue": {
+   "name": "リバーウォーク紫川沿い",
+   "pref": "40",
+   "city": "北九州市小倉北区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-31",
+    "2026-11-01",
+    "2026-12-05",
+    "2026-12-06"
+   ],
+   "text": "北九州市の「フリーマーケット開催情報」に掲載された開催日"
+  },
+  "time": {
+   "text": "9時から15時",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "31日（土曜日）9時から15時",
+     "小倉カーブーツ （リバーウォーク紫川沿い）",
+     "11月1日（日曜日）9時から15時",
+     "12月5日（土曜日）、6日（日曜日）9時から15時"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mojiko-car-boot",
+  "name": "門司港カーブーツ（プレミアムホテル門司港海側）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "MES（門司港イベントサプライ）"
+  },
+  "venue": {
+   "name": "プレミアムホテル門司港海側",
+   "pref": "40",
+   "city": "北九州市門司区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-10-25",
+    "2026-11-28",
+    "2026-11-29",
+    "2026-12-26",
+    "2026-12-27"
+   ],
+   "text": "北九州市の「フリーマーケット開催情報」に掲載された開催日"
+  },
+  "time": {
+   "text": "9時から15時",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "24日（土曜日）、25日（日曜日）9時から15時",
+     "門司港カーブーツ （プレミアムホテル門司港海側）",
+     "11月28日（土曜日）、29日（日曜日）9時から15時",
+     "12月26日（土曜日）、27日（日曜日）9時から15時"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kokura-ogane-flea",
+  "name": "小倉黄金フリーマーケット（黄金市場アーケード）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "黄金商店街事務局"
+  },
+  "venue": {
+   "name": "黄金市場アーケード",
+   "pref": "40",
+   "city": "北九州市小倉北区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08",
+    "2026-12-13"
+   ],
+   "text": "北九州市の「フリーマーケット開催情報」に掲載された開催日"
+  },
+  "time": {
+   "text": "10時から15時30分",
+   "start": "10:00",
+   "end": "15:30"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "11月8日（日曜日）10時から15時30分",
+     "小倉黄金フリーマーケット （黄金市場アーケード）",
+     "12月13日（日曜日）10時から15時30分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kokura-de-flima",
+  "name": "こくらdeフリマ（勝山公園大芝生広場）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "こくらdeフリマ実行委員会事務局"
+  },
+  "venue": {
+   "name": "勝山公園大芝生広場",
+   "pref": "40",
+   "city": "北九州市小倉北区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-15"
+   ],
+   "text": "北九州市の「フリーマーケット開催情報」に掲載された開催日"
+  },
+  "time": {
+   "text": "10時から15時30分",
+   "start": "10:00",
+   "end": "15:30"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "11月15日（日曜日）10時から15時30分",
+     "こくらdeフリマ （勝山公園大芝生広場）"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mitsubachi-flima",
+  "name": "みつばちフリマ（響灘緑地グリーンパーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "みつばちフリマ実行委員会事務局"
+  },
+  "venue": {
+   "name": "響灘緑地グリーンパーク",
+   "pref": "40",
+   "city": "北九州市若松区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-01",
+    "2026-12-06"
+   ],
+   "text": "北九州市の「フリーマーケット開催情報」に掲載された開催日"
+  },
+  "time": {
+   "text": "10時から16時",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "11月1日（日曜日）10時から16時",
+     "みつばちフリマ （響灘緑地グリーンパーク）",
+     "12月6日（日曜日）10時から16時"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "muromachi-rakuichi-flea",
+  "name": "室町楽市フリーマーケット（常盤橋室町広場周辺）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "室町活性化自治連絡協議会 商業部 室町楽市事務局"
+  },
+  "venue": {
+   "name": "常盤橋室町広場周辺",
+   "pref": "40",
+   "city": "北九州市小倉北区"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-10-24",
+    "2026-11-28",
+    "2026-12-26"
+   ],
+   "text": "北九州市の「フリーマーケット開催情報」に掲載された開催日"
+  },
+  "time": {
+   "text": "11時から16時",
+   "start": "11:00",
+   "end": "16:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "10月24日（土曜日）11時から16時",
+     "室町楽市フリーマーケット （常盤橋室町広場周辺）",
+     "11月28日（土曜日）11時から16時",
+     "12月26日（土曜日）11時から16時"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "matsuyama-rikkuru-kurukuru-market",
+  "name": "りっくるクルくるマーケット（松山市）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "松山市"
+  },
+  "venue": {
+   "name": "りっくる（まつやまRe・再来館）",
+   "pref": "38",
+   "city": "松山市",
+   "address": "松山市空港通一丁目1－32"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08"
+   ],
+   "text": "松山市の公式ページに掲載された第11回の開催日"
+  },
+  "time": {
+   "text": "10時～15時（終了時間は早まる場合があります）",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "室内イベント。荒天により中止となる場合があります"
+  },
+  "exhibitor": {
+   "fee": "出店料は無料（松山市在住または通勤・通学の方に限る。出店者の募集は終了）"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/kankyo/rikkuru_fleamarket.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "2026年11月8日（日曜日） 10時～15時",
+     "※終了時間は早まる場合があります",
+     "りっくる（まつやまRe・再来館）",
+     "松山市空港通一丁目1－32",
+     "本イベントは室内でのイベントです",
+     "荒天により中止となる場合がございます",
+     "出店料は無料です",
+     "松山市在住または通勤・通学の方に限ります"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fukuoka-100fes",
+  "name": "100FES 全世代交流イベント（福岡市）",
+  "kinds": [
+   "flea",
+   "marche"
+  ],
+  "organizer": {
+   "name": "福岡市"
+  },
+  "venue": {
+   "name": "福岡大名ガーデンシティ・パーク",
+   "pref": "40",
+   "city": "福岡市中央区",
+   "address": "福岡市中央区大名2丁目6-50"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-03"
+   ],
+   "text": "福岡市の公式ページに掲載された開催日"
+  },
+  "time": {
+   "text": "11時00分から19時00分まで",
+   "start": "11:00",
+   "end": "19:00"
+  },
+  "visitor": {
+   "rain": "雨天時は、ステージイベント決行。ブース出展については一部実施",
+   "admission": "入場無料"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.fukuoka.lg.jp/fukushi/k_sensin/charm/100fes_2026.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "令和8年11月3日（火曜日・祝日）11時00分から19時00分まで",
+     "福岡大名ガーデンシティ・パーク（福岡市中央区大名2丁目6-50）",
+     "入場無料",
+     "（雨天時は、ステージイベント決行。ブース出展については一部実施。）",
+     "アートやフリーマーケット、フード、パフォーマンスを届ける"
+    ]
+   }
+  ]
  }
 ]

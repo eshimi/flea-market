@@ -2381,5 +2381,621 @@
    "checkedAt": "2026-10-20",
    "note": "主催者（運営会社）の公式サイト。robots.txt は許可（/members.html・/admin/・/login/ のみ禁止）。出店規約は出店者向けで、取得・転載を禁じる記載は確認できず。事実の項目（日付・時間・場所・出店料）だけ掲載し、文章は転載しない（2026-10-20 確認）"
   }
+ },
+ {
+  "url": "https://www.rbf.jp/nittei.html",
+  "series": [
+   "rbf-koshigaya-shirakobato-park",
+   "rbf-kawagoe-suijo-park",
+   "rbf-koshigaya-laketown",
+   "rbf-kazo-hanasaki-park",
+   "rbf-ikea-tokyo-bay-loppis"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://www.rbf.jp/kaijyou.html",
+  "series": [
+   "rbf-koshigaya-shirakobato-park",
+   "rbf-kawagoe-suijo-park",
+   "rbf-koshigaya-laketown",
+   "rbf-kazo-hanasaki-park",
+   "rbf-makuhari-ito-yokado",
+   "rbf-ikea-tokyo-bay-loppis"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://www.rbf.jp/laketown2.html",
+  "series": [
+   "rbf-koshigaya-laketown"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://www.rbf.jp/kazo.wakuwaku.html",
+  "series": [
+   "rbf-kazo-hanasaki-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://www.rbf.jp/chicozan.html",
+  "series": [
+   "rbf-chikozan-park-festival"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://www.rbf.jp/kashiwanoha.html",
+  "series": [
+   "rbf-kashiwanoha-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://www.rbf.jp/newtown.html",
+  "series": [
+   "rbf-aeon-chiba-newtown"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://www.rbf.jp/makuhari.html",
+  "series": [
+   "rbf-makuhari-ito-yokado"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://www.rbf.jp/apie.html",
+  "series": [
+   "rbf-mem-kashiwa-apie"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+  "series": [
+   "osaka-garagesale-higashiyodogawa",
+   "osaka-garagesale-nishi",
+   "osaka-garagesale-yodogawa",
+   "osaka-garagesale-konohana",
+   "osaka-garagesale-taisho",
+   "osaka-garagesale-hirano",
+   "osaka-garagesale-higashinari",
+   "osaka-garagesale-sumiyoshi",
+   "osaka-garagesale-nishiyodogawa",
+   "osaka-garagesale-miyakojima",
+   "osaka-garagesale-nishinari",
+   "osaka-garagesale-minato",
+   "osaka-garagesale-higashisumiyoshi",
+   "osaka-garagesale-kita"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "大阪市公式サイト。robots.txt は 404（制限なし）。「著作権・免責」のページで、コンテンツは出典を記載すれば複製・翻案を含め自由に利用できる（商用利用も可）とある。出典：大阪市環境局「ごみ減量フェスティバル・各区ガレージセールについて」（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.daito.lg.jp/soshiki/16/61472.html",
+  "series": [
+   "daito-shimin-matsuri-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "大東市公式サイト。robots.txt は許可（取得は届く範囲）。ページ上に取得・転載を禁じる記載は確認できず。事実の項目（日時・場所・出店内容）だけ掲載し、文章は転載しない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.hirakata.osaka.jp/0000054150.html",
+  "series": [
+   "hirakata-hira-eco-matsuri-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "枚方市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日時・場所・入場料・雨天の扱い）だけ掲載し、文章は転載しない。出店者募集は終了（締切済み）のため出店情報は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.kashiwara.lg.jp/docs/2026072100040",
+  "series": [
+   "kashiwara-shimin-festival-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "柏原市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日時・場所・雨天の扱い）だけ掲載し、文章は転載しない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.ibaraki.osaka.jp/ibarakinikki/reiwahachinenn/4gatu/68845.html",
+  "series": [
+   "ibaraki-nominoichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "茨木市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（開催予定日・主催）だけ掲載（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://ficbase.jp/project/nominoichi",
+  "series": [
+   "ibaraki-nominoichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（FICベース株式会社）の公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。トップのお知らせに秋の出店募集の締切が載る。日付・会場・時間はこのページには無いため市の記載のみ掲載（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://ficbase.jp/news/oX2WMwom",
+  "series": [
+   "ibaraki-ekimae-marche"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（FICベース株式会社）の公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日程・時間・場所・入場料）だけ掲載し、文章は転載しない。出店料・電話番号は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://ficbase.jp/project/ekimaemarche/32th",
+  "series": [
+   "ibaraki-ekimae-marche"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（FICベース株式会社）の公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日程・時間・場所・入場料）だけ掲載し、文章は転載しない。出店料・電話番号は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://ficbase.jp/base/ekimaebase",
+  "series": [
+   "ibaraki-ekimae-marche"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（FICベース株式会社）の公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日程・時間・場所・入場料）だけ掲載し、文章は転載しない。出店料・電話番号は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.himeji.lg.jp/kanko/0000034474.html",
+  "series": [
+   "himeji-tegarayama-rakuichi-rakuza"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "姫路市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日時・場所・内容）だけ掲載し、文章は転載しない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.kawanishi.hyogo.jp/kurashi/1017490/midori/1014067.html",
+  "series": [
+   "kawanishi-toshi-ryokkasai-green-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "川西市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日時・場所・内容）だけ掲載し、文章は転載しない。出店者募集は締切済みのため出店情報は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/141/",
+  "series": [
+   "kamigamo-tedukuri-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（株式会社クラフト）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・時間・場所・入場料・雨天の扱い）だけ掲載し、文章は転載しない。電話番号・出店者向けの情報は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/142/",
+  "series": [
+   "heian-rakuichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（株式会社クラフト）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・時間・場所・入場料・雨天の扱い）だけ掲載し、文章は転載しない。電話番号・出店者向けの情報は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/144/",
+  "series": [
+   "ohigashisan-tedukuri-monzenichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（株式会社クラフト）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・時間・場所・入場料・雨天の扱い）だけ掲載し、文章は転載しない。電話番号・出店者向けの情報は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/143/",
+  "series": [
+   "kitayama-craft-garden"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（株式会社クラフト）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・時間・場所・入場料・雨天の扱い）だけ掲載し、文章は転載しない。電話番号・出店者向けの情報は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/145/",
+  "series": [
+   "kamigamo-tedukuri-ichi",
+   "heian-rakuichi",
+   "ohigashisan-tedukuri-monzenichi",
+   "kitayama-craft-garden"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（株式会社クラフト）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（開催日程）だけ掲載し、文章は転載しない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.tatsuno.lg.jp/soshiki/1023/gyomu/1/11147.html",
+  "series": [
+   "tatsuno-shimin-matsuri-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "たつの市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日付・場所・区画数）だけ掲載し、文章は転載しない。出店者募集の条件・料金は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://2525furima.hp.peraichi.com/",
+  "series": [
+   "f2525-moriyama-moriive",
+   "f2525-hikone-bunka-plaza"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（2525フリマ滋賀）の公式ページ（ペライチ）。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・時間・場所・出店数）だけ掲載し、文章は転載しない。問い合わせ先の電話番号・個人名は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.pref.shiga.lg.jp/gomizero/other/334917.html",
+  "series": [
+   "f2525-moriyama-moriive",
+   "f2525-hikone-bunka-plaza"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "滋賀県（琵琶湖環境部 循環社会推進課）の公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日時・場所）だけ掲載し、文章は転載しない。問い合わせ先は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.wakayama.wakayama.jp/kankou/event/1003232/1049848.html",
+  "series": [
+   "wakayama-kitabura-remember-market"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "和歌山市公式サイト。robots.txt は許可。取得・転載を禁じる記載は確認できず。事実の項目（日時・場所・アクセス）だけ掲載し、文章・問い合わせ先メールは転載しない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/event/kiji5935/",
+  "series": [
+   "lohas-park-kawanishi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/event/kiji5937/",
+  "series": [
+   "lohas-park-kashiwara"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/event/kiji5944/",
+  "series": [
+   "lohas-park-itami"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/event/kiji5467/",
+  "series": [
+   "lohas-park-sakai-oizumi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/event/kiji5647/",
+  "series": [
+   "lohas-park-tsurumi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/event/kiji5630/",
+  "series": [
+   "lohas-park-toyonaka-hattori"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/event/kiji5594/",
+  "series": [
+   "lohas-park-higashisumiyoshi-nagai"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/event/kiji5799/",
+  "series": [
+   "lohas-park-nara-heijokyuseki"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/event/kiji6066/",
+  "series": [
+   "lohas-park-daito-suehiro"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/event/kiji6160/",
+  "series": [
+   "lohas-park-fukinuke-marche-hyogo-eki"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/event/kiji5931/",
+  "series": [
+   "lohas-park-himeji-otemae"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://nadeshikofurima.com/zyagasumaho.html",
+  "series": [
+   "nadeshiko-jaguar-town-moriguchi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（なでしこふれあいマーケット協会）の公式サイト。robots.txt は 404（制限なし）。利用規約のページは見当たらず（出店はお申込みで規約への同意とあるのは出店者向け）、取得・転載を禁じる記載は確認できず。事実の項目（開催のきまり・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出店料・電話番号は載せない。日付を並べた年間予定は年の記載がなく載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://nadeshikofurima.com/apitasumaho.html",
+  "series": [
+   "nadeshiko-apita-keihanna"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（なでしこふれあいマーケット協会）の公式サイト。robots.txt は 404（制限なし）。利用規約のページは見当たらず（出店はお申込みで規約への同意とあるのは出店者向け）、取得・転載を禁じる記載は確認できず。事実の項目（開催のきまり・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出店料・電話番号は載せない。日付を並べた年間予定は年の記載がなく載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://nadeshikofurima.com/custom19.html",
+  "series": [
+   "nadeshiko-donki-uny-nishiyamato"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（なでしこふれあいマーケット協会）の公式サイト。robots.txt は 404（制限なし）。利用規約のページは見当たらず（出店はお申込みで規約への同意とあるのは出店者向け）、取得・転載を禁じる記載は確認できず。事実の項目（開催のきまり・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出店料・電話番号は載せない。日付を並べた年間予定は年の記載がなく載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.cpm-gifu.jp/rakuraku/schedule/",
+  "series": [
+   "cpm-rakuraku-ichi-tajimi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者の公式サイト。利用規約のページは見当たらず、robots.txt は 404（制限なし）。事実の項目（日付・時間・会場・料金）だけ掲載。連絡先・個人名は載せない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://kasugai-kanko.jp/recommendedspot/kachigawataikoubou/",
+  "series": [
+   "kasugai-kachigawa-kobo-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "春日井市観光コンベンション協会の公式サイト。robots.txt は許可。プライバシーポリシーのみで、取得を禁じる規約は見当たらない。事実の項目だけ掲載。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://www.nagoya-info.jp/spot/detail/13/",
+  "series": [
+   "osu-kannon-kottouichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "名古屋市観光情報「名古屋コンシェルジュ」（公式）。robots.txt は許可。事実の項目（開催日・所在地・アクセス）だけ掲載し、文章は転載しない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://aichinow.pref.aichi.jp/spots/detail/914/",
+  "series": [
+   "jimokuji-fudo-marche",
+   "jimokuji-kurashi-asaichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "愛知県の観光サイト Aichi Now（公式）。robots.txt は許可。ソーシャルメディア利用規約のみで、取得を禁じる記載は見当たらない。事実の項目だけ掲載し、文章は転載しない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://www.nagoya-info.jp/event/detail/695/",
+  "series": [
+   "tokugawaen-kuromon-tedukuri-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "名古屋市観光情報「名古屋コンシェルジュ」（公式）。robots.txt は許可。事実の項目だけ掲載し、文章は転載しない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://suwacent.com/event/9-27%e3%81%aa%e3%82%93%e3%81%a7%e3%82%82%e5%9b%9b%e6%97%a5%e3%81%ae%e5%b8%82/",
+  "series": [
+   "yokkaichi-suwa-nandemo-yokka-no-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "四日市諏訪商店街の公式サイト。robots.txt は許可。利用規約のページは見当たらない。事実の項目だけ掲載。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://www.city.obihiro.hokkaido.jp/kurashi/gomi/information/1002806.html",
+  "series": [
+   "obihiro-wakuwaku-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "帯広市の公式サイト。robots.txt は許可。事実の項目だけ掲載し、主催団体の電話番号は載せない。2026-10-20 確認"
+  }
+ },
+ {
+  "url": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html",
+  "series": [
+   "kokura-car-boot",
+   "mojiko-car-boot",
+   "kokura-ogane-flea",
+   "kokura-de-flima",
+   "mitsubachi-flima",
+   "muromachi-rakuichi-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。「リンク・著作権」に無断での複製・転用不可（私的使用・引用を除く）とあるため、掲載は事実の項目（日時・会場・主催者名）だけ。電話番号は載せない"
+  }
+ },
+ {
+  "url": "https://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/kankyo/rikkuru_fleamarket.html",
+  "series": [
+   "matsuyama-rikkuru-kurukuru-market"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。「著作権・免責事項等」に私的使用・引用を除き無断で転用・引用できないとあるため、掲載は事実の項目（日時・会場・出店料・荒天時）だけ"
+  }
+ },
+ {
+  "url": "https://www.city.fukuoka.lg.jp/fukushi/k_sensin/charm/100fes_2026.html",
+  "series": [
+   "fukuoka-100fes"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。「リンク・著作権等」に私的使用・引用を除き無断で複製・転用できないとあるため、掲載は事実の項目（日時・会場・入場料・雨天時）だけ"
+  }
  }
 ]
