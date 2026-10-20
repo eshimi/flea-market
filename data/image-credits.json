@@ -248,20 +248,20 @@
    "static/img/banner/b10-relax.webp"
   ],
   "use": "中のページの上のイラスト帯（10種）",
-  "title": "イラスト（コラージュの10場面）",
-  "photographer": "運営者が用意（作成方法は要確認）",
+  "title": "イラスト（AI で作成したコラージュの10場面）",
+  "photographer": "サイト運営者（AI で作成）",
   "source": "サイト運営者",
   "sourceUrl": "/about/",
-  "license": "運営者が用意した画像（権利・作成方法は要確認）",
+  "license": "運営者が AI で作成した画像。利用に問題なし（運営者の確認による）",
   "licenseUrl": "",
-  "note": "運営者が用意した1枚のコラージュから切り出し。作成者・作成方法（AI生成かどうか）・権利は未記入（要確認）。",
+  "note": "運営者が AI で作成した1枚のコラージュから切り出し。利用は運営者が確認済み。",
   "checkedAt": "2026-10-20",
   "en": {
    "use": "Illustration band on inner pages (10 images)",
-   "title": "Illustrations (10 panels from a collage)",
-   "photographer": "Provided by the site operator (creator and method to be confirmed)",
+   "title": "Illustrations (10 panels from an AI-made collage)",
+   "photographer": "Site operator (made with AI)",
    "source": "Site operator",
-   "license": "Image provided by the site operator (rights and method to be confirmed)"
+   "license": "Made with AI by the site operator; use confirmed by the operator"
   }
  }
 ]
