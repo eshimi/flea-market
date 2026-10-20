@@ -1831,6 +1831,10 @@
   "hash": "v1:9bbe70b30d9a1006",
   "lastmod": "2026-10-20"
  },
+ "/tips/": {
+  "hash": "v1:8f6a23947707c4ab",
+  "lastmod": "2026-10-20"
+ },
  "/faq/": {
   "hash": "v1:664e913c2f2c367a",
   "lastmod": "2026-10-20"
@@ -3801,6 +3805,10 @@
  },
  "/ja/guide/": {
   "hash": "v1:a5702cce9c161564",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/tips/": {
+  "hash": "v1:ac93b5dc48b298e9",
   "lastmod": "2026-10-20"
  },
  "/ja/faq/": {
