@@ -1,6 +1,11 @@
 // トップページの各セクション。文言は scripts/lib/i18n.mjs、データは build-site.mjs の ctx（occ・series・today・days）から渡す。
 // 数字・日付・件数は、すべて実データから計算する（見本の値は使わない）。
+import { existsSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { esc } from './html.mjs';
+
+const STATIC_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'static');
 import { icon } from './icons.mjs';
 import { S, T, WD_EN, WD_JA, MON_EN } from './i18n.mjs';
 import { addDays, holidayName, isDayOff, upcomingWeekend, weekday } from './dates.mjs';
@@ -24,11 +29,15 @@ const heading = (t, id) => `<h2 class="hm-h"${id ? ` id="${id}"` : ''}><span>${e
 
 // ---- HERO ----
 // 日本語・英語どちらのトップでも、同じ検索（/search/?q=）へ送る。既存の検索の動きは変えない
+// HERO の写真。static/img/hero-2.webp があれば、トップの写真を切り替えて見られる（点を押すと入れ替わる）
+const HERO_FILES = ['/img/hero.webp', '/img/hero-2.webp'];
+const heroPhotos = () => HERO_FILES.filter((p) => existsSync(join(STATIC_DIR, p)));
 export function renderHero(lang = 'ja', photo = '/img/hero.webp') {
   const t = T[lang].hero;
   const [l1, l2, accent] = t.title;
   return `<section class="hero2 is-${lang}" aria-labelledby="hero-h">
-<div class="hero2-photo"><img src="${photo}" alt="${esc(t.photoAlt)}" width="1800" height="900" fetchpriority="high" decoding="async"></div>
+<div class="hero2-photo">${heroPhotos().map((src, i) => `<img class="hp"${i ? ' hidden' : ''} src="${src}" alt="${i ? '' : esc(t.photoAlt)}" width="1800" height="900" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async">`).join('')}</div>
+${heroPhotos().length > 1 ? `<div class="hero2-dots" role="group" aria-label="${esc(t.photoSwitch)}">${heroPhotos().map((_, i) => `<button type="button" aria-label="${i + 1}" aria-pressed="${i === 0}" data-hp="${i}"></button>`).join('')}</div>` : ''}
 <div class="hero2-in">
 <div class="hero2-copy">
 <h1 id="hero-h"><span>${esc(l1)}</span><span>${esc(l2)}</span><em>${esc(accent)}</em></h1>

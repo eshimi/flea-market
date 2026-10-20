@@ -82,7 +82,7 @@ function exhibitorList(seriesList, lang) {
 function home(ctx, lang) {
   const body = renderHomeBody(ctx, lang, disclaimer(lang));
   const fonts = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Noto+Serif+JP:wght@900&family=Caveat:wght@600&display=swap">\n<link rel="preload" as="image" href="/img/hero.webp" type="image/webp" fetchpriority="high">\n';
-  return pg(lang, '/', { title: SITE.name, description: T[lang].description, body, css: ['/home.css'], scripts: ['/home.js'], head: fonts });
+  return pg(lang, '/', { title: SITE.name, description: T[lang].description, body, css: ['/home.css'], scripts: ['/home.js', '/hero-switch.js'], head: fonts });
 }
 
 function listPage(lang, base, crumbs, h1, lead, list, extra = '', filter = false) {
