@@ -475,7 +475,7 @@ test('過去の開催の記録：公式で確認した回・中止・延期だ�
   assert.equal(pastOccurrences({ items: [item, { ...item, series: 'no-such-series' }] }, data.series).length, 1);
   const { pages } = buildPages({ ...data, archive: { items: [item] } }, '2026-11-02');
   const pg = pages.find((p) => p.path === '/date/2026-10-01/');
-  assert.ok(pg && pg.body.includes('past record') && pg.body.includes('Confirmed (official) before the event'));
+  assert.ok(pg && (pg.body + (pg.bannerText || "")).includes("past record") && (pg.body + (pg.bannerText || "")).includes("Confirmed (official) before the event"));
   assert.ok(pages.find((p) => p.path === '/ja/date/2026-10-01/').body.includes('開催前に公式で確認'));
   assert.ok(pages.find((p) => p.path === '/calendar/').body.includes('/date/2026-10-01/'));
   assert.ok(pages.find((p) => p.path === `/e/${item.series}/`).body.includes('/date/2026-10-01/'));

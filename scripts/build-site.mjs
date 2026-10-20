@@ -441,7 +441,19 @@ function sideNav(ctx, lang, base) {
 }
 
 // ページの本文（パンくずのあと）を、本文＋右のナビの2列にする
-function withSide(page, ctx, lang) {
+// 本文の先頭（パンくず・見出し・説明）を、帯の中へ移す（地域のページと同じ形）
+function splitBanner(page) {
+  if (page.bannerText || page.body.includes('class="ev-split"')) return page;
+  const m = /^<div class="in page[^"]*">((?:<nav class="crumbs"[\s\S]*?<\/nav>)?<h1[\s\S]*?<\/h1>(?:<p class="lead">[\s\S]*?<\/p>)?)([\s\S]*)<\/div>$/.exec(page.body);
+  if (m) return { ...page, bannerText: m[1], body: `<div class="in page">${m[2]}</div>` };
+  // 読み物（ガイド・よくある質問・ブログ記事）：パンくず・見出し・説明（art-head）を帯へ
+  const a = /^<div class="art-wrap">\s*(<nav class="crumbs art-crumbs"[\s\S]*?<\/nav>)\s*<header class="art-head">(<h1[\s\S]*?<\/h1>(?:<p class="art-lead">[\s\S]*?<\/p>)?)<\/header>([\s\S]*)$/.exec(page.body);
+  if (a) return { ...page, bannerText: `${a[1].replace('art-crumbs', 'art-crumbs-x')}${a[2]}`, body: `<div class="art-wrap">${a[3]}` };
+  return page;
+}
+
+function withSide(page0, ctx, lang) {
+  const page = splitBanner(page0);
   const base = splitPath(page.path).base;
   if (!/^\/(weekend|calendar|date|area|kind|spot|shuten|search|about)\//.test(base)) return page;
   if (page.body.includes('class="ev-split"')) return page; // 個別ページ（スポットなど）は、自前の2列
