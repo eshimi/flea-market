@@ -1,0 +1,24 @@
+.rv{margin-top:8px}
+.rv-lead,.rv-by,.rv-rule{font-size:14px;color:var(--sub)}
+.rv-sum{font-size:16px;margin:8px 0}
+.rv-st{color:var(--acc);letter-spacing:1px}
+.rv-date{font-size:13px;color:var(--sub)}
+.rv-list{list-style:none;margin:8px 0 16px;padding:0;display:grid;gap:10px}
+.rv-item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.rv-item p{margin:6px 0 0;white-space:pre-line}
+.rv-form{display:grid;gap:12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
+.rv-stars{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.rv-stars legend{font-weight:600;margin-bottom:4px;width:100%}
+.rv-hint{display:block;font-size:12px;font-weight:400;color:var(--sub)}
+.rv-stars label{position:relative;cursor:pointer}
+.rv-stars input{position:absolute;opacity:0;width:1px;height:1px}
+.rv-star{font-size:28px;color:#d9cfc2;line-height:1}
+.rv-stars label:has(input:checked) .rv-star,.rv-stars label:has(input:checked) ~ label .rv-star{color:var(--acc)}
+.rv-stars label:has(input:focus-visible) .rv-star{outline:2px solid var(--acc);outline-offset:2px;border-radius:4px}
+.rv-f{display:grid;gap:4px;font-size:14px}
+.rv-f textarea,.rv-f input{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.rv-form button{justify-self:start;font:inherit;font-weight:600;color:#fff;background:var(--acc);border:0;border-radius:999px;padding:10px 22px;cursor:pointer}
+.rv-form button:disabled{opacity:.6;cursor:default}
+.rv-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.rv-st-msg{margin:0;font-size:14px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}

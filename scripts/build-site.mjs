@@ -11,6 +11,7 @@ import { spotIndex, spotPage } from './lib/spot-view.mjs';
 import { KINDS } from './lib/kinds.mjs';
 import { PREFS } from './lib/areas.mjs';
 import { CONTACT_EMAIL, SITE } from './lib/nav.mjs';
+import { REVIEWS_ON, reviewsSection, validateReviews } from './lib/reviews-view.mjs';
 import { renderHomeBody } from './lib/home-view.mjs';
 import { S, T, WD_EN } from './lib/i18n.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
@@ -45,7 +46,9 @@ export function loadData(dir = join(ROOT, 'data')) {
   try { siteUpdates = read('site-updates.json'); } catch { /* 更新情報がないデータ（テストの見本など）は、枠を出さない */ }
   let tips = [];
   try { tips = read('tips.json'); } catch { /* TIPS がないデータ（テストの見本など）は、TIPS のページなし */ }
-  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts, geo, archive, venues, siteUpdates, tips };
+  let reviews = [];
+  try { reviews = read('reviews.json'); } catch { /* 掲載の評価がないデータは、評価の欄だけ（フォームは準備中） */ }
+  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts, geo, archive, venues, siteUpdates, tips, reviews };
 }
 
 // ---- 各ページ ----
@@ -250,12 +253,13 @@ ${dates}
 ${pastDatesBlock(ctx.past.filter((o) => o.series.id === s.id), lang)}
 <h2 class="sec-h" id="shuten">${esc(p.secVendor)}</h2>
 ${ex ? `<dl class="facts">${row(p.fee, tv(s, 'fee', ex.fee, lang))}${row(p.apply, tv(s, 'apply', ex.apply, lang))}${row(p.applyAt, ex.applyUrl ? `<a href="${esc(ex.applyUrl)}" rel="noopener">${esc(p.applyLink)}</a>` : TBC(lang))}${ex.notes ? row(p.notes, tv(s, 'notes', ex.notes, lang)) : ''}</dl>` : `<p class="empty">${esc(p.noVendor)}</p>`}
+${reviewsSection(s.id, REVIEWS, lang)}
 <h2 class="sec-h">${esc(p.secSrc)}</h2>
 <ul class="sources">${s.sources.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x.url)}</a>（${checked}${esc(x.checkedAt)}）</li>`).join('')}</ul>
 <p class="note">${s.recurrence.type === 'dates' ? '' : esc(p.rule(lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence)))} ${esc(disclaimer(lang))}</p>
 </div>${side}</div>
 </div>`;
-  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list), scripts: ['/weather.js', '/map.js'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
+  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list), scripts: ['/weather.js', '/map.js', ...(REVIEWS_ON ? ['/review.js'] : [])], css: ['/review.css'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
 }
 
 function shutenPage(ctx, lang) {
@@ -334,6 +338,8 @@ ${upd}
 // ---- 使い方・よくある質問・ブログ（本文は scripts/lib/content.mjs） ----
 
 let TIPS = [];
+let REVIEWS = [];
+let SERIES_IDS = [];
 // TIPSの記事（/tips/<slug>/）
 function columnPage(x, lang, base) {
   const c = x[lang];
@@ -486,9 +492,12 @@ function withSide(page0, ctx, lang) {
 
 // ---- 全体 ----
 
-export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {}, archive = { items: [] }, venues = [], siteUpdates = [], tips = [] }, today, days = 120) {
+export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {}, archive = { items: [] }, venues = [], siteUpdates = [], tips = [], reviews = [] }, today, days = 120) {
   setTranslations(translations);
   TIPS = tips;
+  validateReviews(reviews, new Set(series.map((x) => x.id)));
+  REVIEWS = reviews;
+  SERIES_IDS = series.map((x) => x.id);
   GEO = geo;
   const ids = new Set(series.map((x) => x.id));
   const occ = buildOccurrences(series, occurrences, today, days);
@@ -536,6 +545,7 @@ function main() {
     mkdirSync(dirname(join(out, f.path)), { recursive: true });
     writeFileSync(join(out, f.path), f.content);
   }
+  writeFileSync(join(out, 'series-ids.json'), JSON.stringify(SERIES_IDS));
   writeFileSync(join(out, 'spot-ids.json'), JSON.stringify(spots.map((sp) => sp.venue.id)));
   writeFileSync(join(out, 'events.json'), JSON.stringify({ today, events: searchIndex(occ), spots: spotIndexData(spots) }));
   writeFileSync(join(out, 'pages.json'), JSON.stringify(pages.filter((p) => !p.path.endsWith('.html')).map((p) => p.path)));
