@@ -2485,5 +2485,227 @@
   "evidenceOk": {
    "fukuoka-100fes": true
   }
+ },
+ "https://pearlroad.jp/2025%E5%B9%B4%E5%BA%A6%E3%80%80%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "hiratsuka-ekimae-kottoichi": true
+  }
+ },
+ "https://cgi.city.yokohama.lg.jp/common/event2/event_detail.html?id=64965": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "kamiyabe-free-market": true
+  }
+ },
+ "https://www.city.yokohama.lg.jp/hodogaya/kurashi/kyodo_manabi/kyodo_shien/chiiki/r8-ho-matsuri.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"c4ed-65e2d2e4b8d41-gzip\"",
+  "lastModified": "Mon, 19 Oct 2026 08:20:03 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "hodogaya-kuminmatsuri-flea-2026": true
+  }
+ },
+ "https://www.city.kawasaki.jp/500/page/0000190814.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Mon, 19 Oct 2026 15:39:41 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "noborito-challenge-street-2026": true
+  }
+ },
+ "https://midori.city.sagamihara.kanagawa.jp/2026/08/27/5th-shiroyama-festival-20261101/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "shiroyama-fes-2026": true
+  }
+ },
+ "http://ichigoichie.moo.jp/katori.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Mon, 13 Feb 2023 06:54:00 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "koshigaya-katori-jinja-kotto-ichi": true
+  }
+ },
+ "http://ichigoichie.moo.jp/furusato.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Thu, 10 Oct 2024 02:40:00 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "urawa-juku-furusato-ichi": true
+  }
+ },
+ "https://katorijinja.com/saiten/kottouiti/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "koshigaya-katori-jinja-kotto-ichi": true
+  }
+ },
+ "https://www.city.inzai.lg.jp/0000001565.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"522c-65e3d3ce77875\"",
+  "lastModified": "Tue, 20 Oct 2026 03:29:28 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "kioroshi-ekiminami-kotto-ichi": true
+  }
+ },
+ "https://www.city.kiryu.lg.jp/kankou/event/1010673/1001903.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"d228-65e3f5cad67f0\"",
+  "lastModified": "Tue, 20 Oct 2026 06:01:31 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "kiryu-tenmangu-kottou": true
+  }
+ },
+ "https://www.sake3.com/event/16210": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "murakami-jurinji-enma-kottou": true
+  }
+ },
+ "https://www.nagano-cvb.or.jp/modules/event/page/101": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 20 Oct 2026 06:08:04 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "nagano-zenkoji-binzuru-ichi": true
+  }
+ },
+ "https://www.binzuru-ichi.com/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"5c907cf94448bcad53ecf79c67125c17-ssl-df\"",
+  "mismatch": {},
+  "evidenceOk": {
+   "nagano-zenkoji-binzuru-ichi": true
+  }
+ },
+ "https://www.town.fujikawa.yamanashi.jp/kanko/docs_kanko/2023090700245/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6abdb880-12162\"",
+  "lastModified": "Thu, 01 Oct 2026 01:33:52 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "fujikawa-yorimichi-asaichi": true
+  }
+ },
+ "https://minatonichiyouasaichikai.com/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "hachinohe-tatehana-ganpeki-asaichi": true
+  }
+ },
+ "https://minatonichiyouasaichikai.com/map/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "hachinohe-tatehana-ganpeki-asaichi": true
+  }
+ },
+ "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/4/117.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6abf4ff3-e24d\"",
+  "lastModified": "Fri, 02 Oct 2026 06:32:19 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "saga-eco-plaza-eco-market": true
+  }
+ },
+ "https://www.city.oita.oita.jp/o141/kurashi/gomi/ki.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"584b-65cb4d2af0660\"",
+  "lastModified": "Wed, 30 Sep 2026 15:19:18 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "oita-ecolife-plaza-flea": true
+  }
+ },
+ "https://www.city.ube.yamaguchi.jp/kurashi/gomi/genryou_recycle/1002098/1002105.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"7135-65e3cdb109186\"",
+  "lastModified": "Tue, 20 Oct 2026 03:02:06 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "ube-tokiwa-park-flea": true,
+   "ube-city-flea-mucc": true
+  }
+ },
+ "https://www.city.miyakonojo.miyazaki.jp/site/kanko/2764.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 20 Oct 2026 06:02:33 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "miyakonojo-yamanokuchi-yagorodon-flea": true
+  }
+ },
+ "https://www.city.shunan.lg.jp/soshiki/48/103173.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 20 Oct 2026 05:03:15 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "shunan-kodomo-yume-matsuri-kids-flea": true
+  }
+ },
+ "https://www.city.kochi.kochi.jp/site/kanko/chuokoen-event.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"96a4-65e347ff66525\"",
+  "lastModified": "Mon, 19 Oct 2026 17:03:58 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "kochi-chuo-park-tohoku-support-flea": true
+  }
  }
 }
