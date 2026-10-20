@@ -1,6 +1,6 @@
 {
  "/": {
-  "hash": "v1:9858373a8f0c35b5",
+  "hash": "v1:48a13ebd16b10adc",
   "lastmod": "2026-10-20"
  },
  "/weekend/": {
@@ -1832,11 +1832,51 @@
   "lastmod": "2026-10-20"
  },
  "/tips/": {
-  "hash": "v1:9c218b71a4ec2fe8",
+  "hash": "v1:1c6e58219f14476b",
   "lastmod": "2026-10-20"
  },
  "/tips/manners/": {
-  "hash": "v1:c9fccbfc40f9a4ec",
+  "hash": "v1:1e3fba5371a81af0",
+  "lastmod": "2026-10-20"
+ },
+ "/tips/rain-day-check/": {
+  "hash": "v1:a429080110758f90",
+  "lastmod": "2026-10-20"
+ },
+ "/tips/closing-time/": {
+  "hash": "v1:b3d93972759c14fb",
+  "lastmod": "2026-10-20"
+ },
+ "/tips/what-is-not-sold/": {
+  "hash": "v1:d90c9a4a8787cd33",
+  "lastmod": "2026-10-20"
+ },
+ "/tips/card-payment/": {
+  "hash": "v1:c0b460607b7fa195",
+  "lastmod": "2026-10-20"
+ },
+ "/tips/parking/": {
+  "hash": "v1:c8d30c1b78180eb3",
+  "lastmod": "2026-10-20"
+ },
+ "/tips/getting-there-by-train/": {
+  "hash": "v1:38602f0f1b1945bb",
+  "lastmod": "2026-10-20"
+ },
+ "/tips/keep-valuables-close/": {
+  "hash": "v1:c5fa75d6df98e3c6",
+  "lastmod": "2026-10-20"
+ },
+ "/tips/photos-and-bargaining/": {
+  "hash": "v1:99aef9424694cd1f",
+  "lastmod": "2026-10-20"
+ },
+ "/tips/basics-for-vendors/": {
+  "hash": "v1:70bd455e11f8a4ed",
+  "lastmod": "2026-10-20"
+ },
+ "/tips/check-before-you-go/": {
+  "hash": "v1:39f2fe698d7d924d",
   "lastmod": "2026-10-20"
  },
  "/tips/manners/coins-before-you-go/": {
@@ -2000,7 +2040,7 @@
   "lastmod": "2026-10-20"
  },
  "/ja/": {
-  "hash": "v1:c5eda4f2a0d5868f",
+  "hash": "v1:8dd1e9e16e842fd7",
   "lastmod": "2026-10-20"
  },
  "/ja/weekend/": {
@@ -3832,11 +3872,51 @@
   "lastmod": "2026-10-20"
  },
  "/ja/tips/": {
-  "hash": "v1:ea3bd264ef2fd42d",
+  "hash": "v1:655569d181423d6c",
   "lastmod": "2026-10-20"
  },
  "/ja/tips/manners/": {
-  "hash": "v1:ea2ac32227178987",
+  "hash": "v1:b67fff05e986f9da",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/tips/rain-day-check/": {
+  "hash": "v1:c0187c04cbfc4496",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/tips/closing-time/": {
+  "hash": "v1:54ea5dc94f6b2840",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/tips/what-is-not-sold/": {
+  "hash": "v1:9e468ceea842bc34",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/tips/card-payment/": {
+  "hash": "v1:62c93a1b8663959d",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/tips/parking/": {
+  "hash": "v1:d1be1b2cc4a6d40b",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/tips/getting-there-by-train/": {
+  "hash": "v1:b0372a19bf080f1f",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/tips/keep-valuables-close/": {
+  "hash": "v1:44301a44a8ac0659",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/tips/photos-and-bargaining/": {
+  "hash": "v1:1b9e34d19d4670ec",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/tips/basics-for-vendors/": {
+  "hash": "v1:85c05d9ae24b79fa",
+  "lastmod": "2026-10-20"
+ },
+ "/ja/tips/check-before-you-go/": {
+  "hash": "v1:7375a2a93b45a6cc",
   "lastmod": "2026-10-20"
  },
  "/ja/tips/manners/coins-before-you-go/": {
