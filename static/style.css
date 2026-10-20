@@ -141,8 +141,8 @@ aside h2{font-size:15px;margin-bottom:10px}
 
 /* 帯の中に文字を置くページ：パンくずは帯の一番上、見出し・説明とイラストは上下の中央 */
 .pg-banner.has-text{height:auto;background:#FCEFDD;border-bottom:1px solid var(--line)}
-.pg-banner-in{display:flex;flex-direction:column;padding-top:4px;padding-bottom:4px}
-.pg-banner-crumbs .crumbs{margin:0;padding:0;line-height:1.4}
+.pg-banner-in{display:flex;flex-direction:column;padding-top:2px;padding-bottom:4px}
+.pg-banner-crumbs .crumbs{margin:0;padding:0;line-height:1.3}
 .pg-banner-main{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:center;flex:1}
 .pg-banner-text h1{margin:0 0 8px}
 .pg-banner-text .lead{margin:0;max-width:34em}
