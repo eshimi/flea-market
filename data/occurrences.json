@@ -808,5 +808,27 @@
   "reason": "加須はなさき水上公園まつり（わくわく公園まつり）内の開催",
   "checkedAt": "2026-10-20",
   "source": "https://www.rbf.jp/nittei.html"
+ },
+ {
+  "series": "murakami-jurinji-enma-kottou",
+  "date": "2026-10-25",
+  "status": "confirmed",
+  "checkedAt": "2026-10-20",
+  "source": "https://www.sake3.com/event/16210"
+ },
+ {
+  "series": "hachinohe-tatehana-ganpeki-asaichi",
+  "date": "2026-10-25",
+  "status": "confirmed",
+  "checkedAt": "2026-10-20",
+  "source": "https://minatonichiyouasaichikai.com/"
+ },
+ {
+  "series": "hachinohe-tatehana-ganpeki-asaichi",
+  "date": "2026-12-30",
+  "status": "confirmed",
+  "checkedAt": "2026-10-20",
+  "reason": "臨時朝市（公式のトップページに「臨時朝市：12月30日(火)」）",
+  "source": "https://minatonichiyouasaichikai.com/"
  }
 ]

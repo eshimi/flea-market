@@ -11493,5 +11493,970 @@
     ]
    }
   ]
+ },
+ {
+  "id": "hiratsuka-ekimae-kottoichi",
+  "name": "湘南ひらつか駅前骨董市",
+  "kinds": [
+   "kotto"
+  ],
+  "organizer": {
+   "name": "紅谷パールロード商店街",
+   "url": "https://pearlroad.jp/"
+  },
+  "venue": {
+   "name": "紅谷パールロード商店街（平塚駅北口）",
+   "pref": "14",
+   "city": "平塚市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "毎月、土曜日（日程は商店街の年間イベント情報で発表）",
+   "dates": [
+    "2026-10-24",
+    "2026-11-28",
+    "2026-12-26"
+   ]
+  },
+  "time": {
+   "text": "午前8時～4時（商店街の年間イベント情報の表記）",
+   "start": "08:00",
+   "end": "16:00"
+  },
+  "sources": [
+   {
+    "url": "https://pearlroad.jp/2025%E5%B9%B4%E5%BA%A6%E3%80%80%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "24日(土)・・・・・・・・・湘南ひらつか駅前骨董市(午前8時～4時)",
+     "28日(土)・・・・・・・・・湘南ひらつか駅前骨董市(午前8時～4時)",
+     "26日(土)・・・・・・・・・湘南ひらつか駅前骨董市(午前8時～4時)",
+     "平塚駅北口紅谷パールロード商店街"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kamiyabe-free-market",
+  "name": "無料フリーマーケット（上矢部地区センター）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "上矢部地区センター"
+  },
+  "venue": {
+   "name": "上矢部地区センター",
+   "pref": "14",
+   "city": "横浜市戸塚区",
+   "address": "横浜市戸塚区上矢部町2342"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "日曜日（日程は横浜市の市民利用施設等イベント情報で発表）",
+   "dates": [
+    "2026-10-25",
+    "2026-11-22",
+    "2026-12-27"
+   ]
+  },
+  "time": {
+   "text": "午前10時～午後2時",
+   "start": "10:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "admission": "持ち込みも持ち帰りも全て無料の交換会（クリーニング済みの子供服、婦人服、学生服や未使用の食器など）"
+  },
+  "exhibitor": {
+   "apply": "当日参加自由"
+  },
+  "sources": [
+   {
+    "url": "https://cgi.city.yokohama.lg.jp/common/event2/event_detail.html?id=64965",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "2026年10月25日(日)",
+     "2026年11月22日(日)",
+     "2026年12月27日(日)",
+     "午前10時～午後2時",
+     "上矢部地区センター",
+     "持ち込みも持ち帰りも全て無料の交換会です",
+     "当日参加自由",
+     "戸塚区上矢部町2342"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hodogaya-kuminmatsuri-flea-2026",
+  "name": "ほどがや区民まつり（フリーマーケット）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "横浜市保土ケ谷区",
+   "url": "https://www.city.yokohama.lg.jp/hodogaya/"
+  },
+  "venue": {
+   "name": "県立保土ケ谷公園 いこいの広場",
+   "pref": "14",
+   "city": "横浜市保土ケ谷区",
+   "address": "保土ケ谷区花見台4-2"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "令和8年10月31日（土曜日）",
+   "dates": [
+    "2026-10-31"
+   ]
+  },
+  "time": {
+   "text": "午前9時30分～午後3時",
+   "start": "09:30",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "小雨決行、荒天等の場合は中止"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.yokohama.lg.jp/hodogaya/kurashi/kyodo_manabi/kyodo_shien/chiiki/r8-ho-matsuri.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "令和８年10月31日（土曜日）午前９時30分～午後３時",
+     "小雨決行、荒天等の場合は中止",
+     "県立保土ケ谷公園",
+     "保土ケ谷区花見台４－２",
+     "いこいの広場で30個人・団体が出店予定です"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "noborito-challenge-street-2026",
+  "name": "のぼりとチャレンジストリート（フリマスペース）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "登戸・向ヶ丘遊園エリアプラットフォーム"
+  },
+  "venue": {
+   "name": "登戸2号線",
+   "pref": "14",
+   "city": "川崎市多摩区",
+   "address": "多摩区登戸2540-3ほか"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "令和8年11月8日（日）",
+   "dates": [
+    "2026-11-08"
+   ]
+  },
+  "time": {
+   "text": "11時～16時",
+   "start": "11:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "rain": "少雨決行・荒天中止"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.kawasaki.jp/500/page/0000190814.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "令和8年11月8日（日）11時～16時（少雨決行・荒天中止）",
+     "登戸2号線（多摩区登戸2540-3ほか）",
+     "子どもの不要になったおもちゃや手作り作品のフリマに加え"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "shiroyama-fes-2026",
+  "name": "第5回 城フェス（フリーマーケット）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "城山商工会",
+   "label": "問い合わせ先"
+  },
+  "venue": {
+   "name": "川尻八幡宮 駐車場",
+   "pref": "14",
+   "city": "相模原市緑区",
+   "address": "相模原市緑区川尻4171"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "2026年11月1日(日)",
+   "dates": [
+    "2026-11-01"
+   ]
+  },
+  "time": {
+   "text": "10時から15時",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "荒天中止"
+  },
+  "sources": [
+   {
+    "url": "https://midori.city.sagamihara.kanagawa.jp/2026/08/27/5th-shiroyama-festival-20261101/",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "2026年11月1日(日) 10時から15時",
+     "※荒天中止",
+     "川尻八幡宮 駐車場 （相模原市緑区川尻4171）",
+     "フリーマーケット 、 地元グルメ ほか"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "koshigaya-katori-jinja-kotto-ichi",
+  "name": "越谷香取神社骨董市",
+  "kinds": [
+   "kotto"
+  ],
+  "organizer": {
+   "name": "一期一会 香取神社骨董市実行委員会",
+   "url": "http://ichigoichie.moo.jp/"
+  },
+  "venue": {
+   "name": "越谷香取神社 境内",
+   "pref": "11",
+   "city": "越谷市",
+   "address": "埼玉県越谷市大沢3-13-38",
+   "access": "東武線北越谷駅 東口下車徒歩5分"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 2,
+     "wd": 6
+    }
+   ],
+   "text": "毎月第二土曜日"
+  },
+  "time": {
+   "text": "7:00～15:30（片付けの時間が早まる場合あり）",
+   "start": "07:00",
+   "end": "15:30"
+  },
+  "visitor": {
+   "admission": "無料",
+   "rain": "雨天時などは店舗数が少なくなる（神社の案内）。日程・時間・場所などは、天候や諸事情により変更される場合がある（主催者の案内）"
+  },
+  "sources": [
+   {
+    "url": "http://ichigoichie.moo.jp/katori.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎月第二土曜日",
+     "7:00～15:30",
+     "北越谷香取神社 境内",
+     "埼玉県越谷市大沢３－１３－３８",
+     "【入場料】 無料",
+     "一期一会 香取神社骨董市実行委員会",
+     "日程・時間・場所などは、天候や諸事情により変更される場合があります"
+    ]
+   },
+   {
+    "url": "https://katorijinja.com/saiten/kottouiti/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎月第2土曜日",
+     "東武線北越谷駅 東口下車徒歩5分",
+     "雨天時などは店舗数が少なくなります"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "urawa-juku-furusato-ichi",
+  "name": "浦和宿ふるさと市",
+  "kinds": [
+   "kotto"
+  ],
+  "organizer": {
+   "name": "浦和宿ふるさと市実行委員会",
+   "url": "http://ichigoichie.moo.jp/"
+  },
+  "venue": {
+   "name": "調（つきのみや）公園",
+   "pref": "11",
+   "city": "さいたま市浦和区",
+   "address": "埼玉県さいたま市浦和区岸町3-17"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 4,
+     "wd": 6
+    }
+   ],
+   "text": "毎月第四土曜日（7月と12月は変更の場合あり）"
+  },
+  "time": {
+   "text": "7:00～15:30（片付けの時間が早まる場合あり）",
+   "start": "07:00",
+   "end": "15:30"
+  },
+  "visitor": {
+   "admission": "無料",
+   "rain": "日程・時間・場所などは、天候や諸事情により変更される場合がある（主催者の案内）"
+  },
+  "sources": [
+   {
+    "url": "http://ichigoichie.moo.jp/furusato.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎月第四土曜日 ※7月と12月は変更の場合有",
+     "7:00～15:30",
+     "調（つきのみや）公園",
+     "埼玉県さいたま市浦和区岸町３-１７",
+     "【入場料】 無料",
+     "浦和宿ふるさと市実行委員会",
+     "日程・時間・場所などは、天候や諸事情により変更される場合があります"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kioroshi-ekiminami-kotto-ichi",
+  "name": "木下駅南骨董市",
+  "kinds": [
+   "kotto"
+  ],
+  "organizer": {
+   "name": "木下駅南骨董市実行委員会"
+  },
+  "venue": {
+   "name": "木下南口商店街",
+   "pref": "12",
+   "city": "印西市"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 1,
+     "wd": 6
+    }
+   ],
+   "text": "毎月第1土曜日"
+  },
+  "time": {
+   "text": "午前7時～午後2時頃",
+   "start": "07:00",
+   "end": "14:00"
+  },
+  "visitor": {
+   "rain": "変更・中止の場合あり（印西市の案内）"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.inzai.lg.jp/0000001565.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎月第1土曜日 午前7時～午後2時頃",
+     "（変更・中止の場合あり）",
+     "木下南口商店街",
+     "開催中は歩行者天国になります",
+     "木下駅南骨董市実行委員会"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kiryu-tenmangu-kottou",
+  "name": "桐生天満宮 古民具骨董市",
+  "kinds": [
+   "kotto"
+  ],
+  "organizer": {
+   "name": "桐生天満宮古民具骨董市事務局"
+  },
+  "venue": {
+   "name": "桐生天満宮境内",
+   "pref": "10",
+   "city": "桐生市",
+   "address": "桐生天満宮境内（天神町一丁目地内）",
+   "access": "JR両毛線桐生駅より車で約5分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-07",
+    "2026-12-05",
+    "2027-01-11",
+    "2027-02-06",
+    "2027-03-06"
+   ],
+   "text": "桐生市の発表した開催日（令和8年度）。毎月第1土曜日（1月は成人の日）。11月は七五三祈願のため日が変わることがある"
+  },
+  "time": {
+   "text": "7:00〜15:00",
+   "start": "07:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "悪天候等、主催者の判断により中止となる場合がある（桐生天満宮古民具骨董市事務局のホームページで確認）"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.kiryu.lg.jp/kankou/event/1010673/1001903.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "令和8年4月4日（土曜日）",
+     "11月7日（土曜日）",
+     "12月5日（土曜日）",
+     "令和9年1月11日（月曜日）",
+     "2月6日（土曜日）",
+     "3月6日（土曜日）",
+     "毎月第1土曜日 午前7時から午後3時まで",
+     "注意：11月は七五三祈願のため開催日が変更になることがあります。1月は成人の日に開催されます。",
+     "桐生天満宮境内（天神町一丁目地内）",
+     "JR両毛線桐生駅より車で約5分",
+     "当日は、悪天候等、主催者の判断により中止となる場合がございます"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "murakami-jurinji-enma-kottou",
+  "name": "十輪寺えんま堂の骨董市（村上）",
+  "kinds": [
+   "kotto"
+  ],
+  "organizer": {
+   "name": "大町振興会"
+  },
+  "venue": {
+   "name": "村上市大町通り（越後村上 町屋通り）",
+   "pref": "15",
+   "city": "村上市",
+   "access": "JR羽越本線「村上駅」から徒歩で約20分／日本海東北自動車道「村上瀬波温泉IC」から車で約5分"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 4,
+     "wd": 0
+    }
+   ],
+   "exceptMonths": [
+    1,
+    2,
+    11,
+    12
+   ],
+   "text": "毎年3〜10月の第4日曜日"
+  },
+  "time": {
+   "text": "8:00〜",
+   "start": "08:00"
+  },
+  "visitor": {
+   "rain": "小雨決行（感染症の流行状況や社会情勢等で中止になる場合あり）"
+  },
+  "sources": [
+   {
+    "url": "https://www.sake3.com/event/16210",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎年3～10月の第4日曜日に開催される定期骨董市です",
+     "2026年10月25日（日）",
+     "※小雨決行",
+     "大町振興会",
+     "村上市大町通り（越後村上 町屋通り）",
+     "JR羽越本線「村上駅」から徒歩で約20分",
+     "日本海東北自動車道「村上瀬波温泉IC」から車で約5分",
+     "8:00 ～"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "nagano-zenkoji-binzuru-ichi",
+  "name": "善光寺びんずる市",
+  "kinds": [
+   "handmade"
+  ],
+  "organizer": {
+   "name": "善光寺びんずる市実行委員会",
+   "url": "https://www.binzuru-ichi.com/"
+  },
+  "venue": {
+   "name": "善光寺東公園、城山公園噴水広場",
+   "pref": "20",
+   "city": "長野市"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 2,
+     "wd": 6
+    }
+   ],
+   "from": "2026-04-01",
+   "until": "2026-12-31",
+   "text": "2026年4月〜12月 毎月第2土曜日"
+  },
+  "visitor": {
+   "parking": "駐車場なし（ながの観光net）"
+  },
+  "sources": [
+   {
+    "url": "https://www.nagano-cvb.or.jp/modules/event/page/101",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "※2026年4月-12月 毎月第2土曜日",
+     "善光寺東公園、城山公園噴水広場",
+     "様々な「手しごと」が出展され、善光寺境内がにぎわいます！"
+    ]
+   },
+   {
+    "url": "https://www.binzuru-ichi.com/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "催・運営：善光寺びんずる市実行委員会"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fujikawa-yorimichi-asaichi",
+  "name": "富士川町朝市「よりみちマーケット」",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "富士川町観光物産協会",
+   "label": "問い合わせ先"
+  },
+  "venue": {
+   "name": "富士川町歴史文化会館『塩の華』",
+   "pref": "19",
+   "city": "富士川町",
+   "address": "富士川町鰍沢4852-1"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 2,
+     "wd": 0
+    },
+    {
+     "n": 4,
+     "wd": 0
+    }
+   ],
+   "text": "毎月第2、4日曜日"
+  },
+  "time": {
+   "text": "8:30〜13:00",
+   "start": "08:30",
+   "end": "13:00"
+  },
+  "visitor": {
+   "rain": "小雨決行（大雨・大雪・荒天中止）",
+   "parking": "お客様駐車場は会場内にある"
+  },
+  "exhibitor": {
+   "fee": "出店料がかかる（要綱で確認）",
+   "apply": "朝市実行委員会に出店者として登録が必要。登録の際、出店者部会と朝市の現地で打ち合わせ",
+   "notes": "農林産物・特産品・商店街商品・軽飲食・フリーマーケットなどジャンルは問わない。保健所や消防署の許可申請は出店者の責任"
+  },
+  "sources": [
+   {
+    "url": "https://www.town.fujikawa.yamanashi.jp/kanko/docs_kanko/2023090700245/",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎月第2、4日曜日",
+     "午前8時半～午後1時まで",
+     "小雨決行(大雨・大雪・荒天中止)",
+     "富士川町歴史文化会館『塩の華』(富士川町鰍沢4852-1)",
+     "お客様駐車場は会場内にあります。",
+     "フリーマーケット、アクセサリー、手作り手芸品",
+     "朝市実行委員会に出店者として登録",
+     "出店には、出店料がかかります。",
+     "出店者部会と朝市の現地で打ち合わせ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hachinohe-tatehana-ganpeki-asaichi",
+  "name": "館鼻岸壁朝市（八戸）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "湊日曜朝市会",
+   "url": "https://minatonichiyouasaichikai.com/"
+  },
+  "venue": {
+   "name": "館鼻岸壁",
+   "pref": "02",
+   "city": "八戸市",
+   "address": "青森県八戸市新湊三丁目"
+  },
+  "recurrence": {
+   "type": "weekly",
+   "weekdays": [
+    0
+   ],
+   "exceptMonths": [
+    1,
+    2
+   ],
+   "text": "毎年春3月〜12月 毎週日曜日（臨時朝市：5月5日、8月13日、12月30日）"
+  },
+  "time": {
+   "text": "日の出から（朝4時〜8時半頃）",
+   "start": "04:00",
+   "end": "08:30"
+  },
+  "sources": [
+   {
+    "url": "https://minatonichiyouasaichikai.com/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎年春３月〜12月",
+     "毎週日曜日 日の出から開催（朝4時〜8時半頃）",
+     "臨時朝市：5月5日、8月13日、12月30日",
+     "およそ300店（2026年現在）",
+     "次次回は10月25日(日)"
+    ]
+   },
+   {
+    "url": "https://minatonichiyouasaichikai.com/map/",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "青森県八戸市新湊三丁目"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "saga-eco-plaza-eco-market",
+  "name": "佐賀市エコプラザ エコマーケット",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "佐賀市エコプラザ",
+   "url": "https://www.city.saga.lg.jp/main/73101.html"
+  },
+  "venue": {
+   "name": "佐賀市エコプラザ",
+   "pref": "41",
+   "city": "佐賀市",
+   "access": "佐賀駅バスセンターからバスで15分と徒歩3分"
+  },
+  "recurrence": {
+   "type": "monthly-nth",
+   "byday": [
+    {
+     "n": 3,
+     "wd": 0
+    }
+   ],
+   "text": "毎月第3日曜日"
+  },
+  "time": {
+   "text": "10:00〜14:00",
+   "start": "10:00",
+   "end": "14:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/4/117.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "エコマーケットの開催（フリーマーケット。毎月第3日曜日10時～14時）",
+     "佐賀駅バスセンターからバスで15分と徒歩3分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "oita-ecolife-plaza-flea",
+  "name": "大分エコライフプラザ フリーマーケット",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大分エコライフプラザ（大分市）"
+  },
+  "venue": {
+   "name": "大分エコライフプラザ",
+   "pref": "44",
+   "city": "大分市",
+   "address": "大分県大分市大字福宗618番地"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "2026年11月1日（日曜日）。個人やグループによる日用雑貨や衣類などのフリーマーケット",
+   "dates": [
+    "2026-11-01"
+   ]
+  },
+  "time": {
+   "text": "10:00〜13:00",
+   "start": "10:00",
+   "end": "13:00"
+  },
+  "visitor": {
+   "rain": "フリーマーケットは雨天中止（おもちゃの交換会「かえっこバザール」と再生家具・自転車の無料抽選会は雨天決行）"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.oita.oita.jp/o141/kurashi/gomi/ki.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "11月1日（日曜日）フリーマーケットを開催します！",
+     "大分エコライフプラザ（大分市大字福宗618番地）",
+     "午前10時～午後1時",
+     "「フリーマーケット」 （雨天中止）"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ube-tokiwa-park-flea",
+  "name": "ときわ公園フリーマーケット（宇部市）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "ときわ公園フリーマーケット事務局",
+   "label": "問い合わせ先（宇部市の一覧による）"
+  },
+  "venue": {
+   "name": "ときわ公園東駐車場",
+   "pref": "35",
+   "city": "宇部市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "宇部市の「フリーマーケット等開催情報」に載る開催日",
+   "dates": [
+    "2026-11-08",
+    "2026-12-20",
+    "2027-01-17",
+    "2027-02-21",
+    "2027-03-21"
+   ]
+  },
+  "sources": [
+   {
+    "url": "https://www.city.ube.yamaguchi.jp/kurashi/gomi/genryou_recycle/1002098/1002105.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "ときわ公園フリーマーケット",
+     "2026年11月8日（日曜日）",
+     "2026年12月20日（日曜日）",
+     "2027年1月17日（日曜日）",
+     "2027年2月21日（日曜日）",
+     "2027年3月21日（日曜日）",
+     "ときわ公園東駐車場"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ube-city-flea-mucc",
+  "name": "宇部Cityフリーマーケット",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "宇部Cityフリーマーケット事務局",
+   "label": "問い合わせ先（宇部市の一覧による）"
+  },
+  "venue": {
+   "name": "MUCCセメント交流ひろば",
+   "pref": "35",
+   "city": "宇部市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "宇部市の「フリーマーケット等開催情報」に載る開催日",
+   "dates": [
+    "2026-12-13",
+    "2027-03-07"
+   ]
+  },
+  "visitor": {
+   "rain": "天候によっては開催時間の変更、中止となることがある"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.ube.yamaguchi.jp/kurashi/gomi/genryou_recycle/1002098/1002105.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "宇部Cityフリーマーケット",
+     "2026年12月13日（日曜日）",
+     "2027年 3月 7日（日曜日）",
+     "MUCCセメント交流ひろば",
+     "※天候によっては開催時間の変更、中止となることがございます。"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "miyakonojo-yamanokuchi-yagorodon-flea",
+  "name": "山之口弥五郎どん祭り（地場産品特売広場のフリーマーケット）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "都城市 地域生活課（山之口総合支所）",
+   "label": "問い合わせ先"
+  },
+  "venue": {
+   "name": "的野正八幡宮・農村公園ほか（祭りの会場。フリーマーケットの場所は公式に記載なし）",
+   "pref": "45",
+   "city": "都城市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "毎年11月3日（祭りの日。地場産品特売広場にフリーマーケットなどがある）",
+   "dates": [
+    "2026-11-03"
+   ]
+  },
+  "sources": [
+   {
+    "url": "https://www.city.miyakonojo.miyazaki.jp/site/kanko/2764.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎年11月3日",
+     "的野正八幡宮・農村公園ほか",
+     "地場産品特売広場では、地どれの新鮮野菜などの展示即売やフリーマーケットなどがあります。"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "shunan-kodomo-yume-matsuri-kids-flea",
+  "name": "周南こどもゆめまつり（キッズフリーマーケット）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "周南市（公式ページの掲載元）",
+   "label": "公式ページの掲載元"
+  },
+  "venue": {
+   "name": "ゆめプラザ熊毛周辺",
+   "pref": "35",
+   "city": "周南市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "令和8年10月25日（日曜日）の祭りの中のキッズフリーマーケット",
+   "dates": [
+    "2026-10-25"
+   ]
+  },
+  "time": {
+   "text": "10:00〜14:30（祭り全体）",
+   "start": "10:00",
+   "end": "14:30"
+  },
+  "visitor": {
+   "rain": "天候により、イベント内容が変更・中止になる場合がある"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.shunan.lg.jp/soshiki/48/103173.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "令和8年10月25日（日曜日） 10時から14時30分まで",
+     "場所：ゆめプラザ熊毛周辺",
+     "キッズフリーマーケット",
+     "※天候により、イベント内容が変更・中止になる場合があります。"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kochi-chuo-park-tohoku-support-flea",
+  "name": "東日本大震災支援フリーマーケット（東洋電化中央公園）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "東日本大震災支援「絆の会」"
+  },
+  "venue": {
+   "name": "東洋電化中央公園",
+   "pref": "39",
+   "city": "高知市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "text": "高知市の「東洋電化中央公園のイベント情報」に載る開催日",
+   "dates": [
+    "2026-12-31",
+    "2027-01-11"
+   ]
+  },
+  "time": {
+   "text": "8:00〜15:00",
+   "start": "08:00",
+   "end": "15:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.kochi.kochi.jp/site/kanko/chuokoen-event.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "東日本大震災支援フリーマーケット",
+     "12月31日㈭",
+     "令和9年1月11日㈪",
+     "各8時～15時",
+     "東洋電化中央公園のイベント情報について"
+    ]
+   }
+  ]
  }
 ]

@@ -2997,5 +2997,248 @@
    "checkedAt": "2026-10-20",
    "note": "robots.txt で取得を許可（2026-10-20 確認）。「リンク・著作権等」に私的使用・引用を除き無断で複製・転用できないとあるため、掲載は事実の項目（日時・会場・入場料・雨天時）だけ"
   }
+ },
+ {
+  "url": "https://pearlroad.jp/2025%E5%B9%B4%E5%BA%A6%E3%80%80%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1/",
+  "series": [
+   "hiratsuka-ekimae-kottoichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "商店街の公式サイト。利用規約のページなし（フッターに著作権表示のみ）。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://cgi.city.yokohama.lg.jp/common/event2/event_detail.html?id=64965",
+  "series": [
+   "kamiyabe-free-market"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "横浜市の公式サイト（市民利用施設等イベント情報）。利用規約のページは未確認。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://www.city.yokohama.lg.jp/hodogaya/kurashi/kyodo_manabi/kyodo_shien/chiiki/r8-ho-matsuri.html",
+  "series": [
+   "hodogaya-kuminmatsuri-flea-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "横浜市の公式サイト。利用規約のページは未確認。robots.txt は 404（許可扱い）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://www.city.kawasaki.jp/500/page/0000190814.html",
+  "series": [
+   "noborito-challenge-street-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "川崎市の公式サイト。利用規約のページは未確認。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://midori.city.sagamihara.kanagawa.jp/2026/08/27/5th-shiroyama-festival-20261101/",
+  "series": [
+   "shiroyama-fes-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "相模原市緑区の観光サイト（city.sagamihara.kanagawa.jp のサブドメイン）。利用規約のページは未確認。robots.txt で取得を許可（2026-10-20 確認）。掲載は事実の項目だけ"
+  }
+ },
+ {
+  "url": "http://ichigoichie.moo.jp/katori.html",
+  "series": [
+   "koshigaya-katori-jinja-kotto-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "一期一会（ichigoichie.moo.jp）。利用規約のページなし。robots.txt は 404（制限なし）。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "http://ichigoichie.moo.jp/furusato.html",
+  "series": [
+   "urawa-juku-furusato-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "一期一会（ichigoichie.moo.jp）。利用規約のページなし。robots.txt は 404（制限なし）。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://katorijinja.com/saiten/kottouiti/",
+  "series": [
+   "koshigaya-katori-jinja-kotto-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "越谷香取神社の公式サイト。利用規約のページなし。robots.txt で許可。事実の項目だけ掲載（主催団体の電話番号は載せない）"
+  }
+ },
+ {
+  "url": "https://www.city.inzai.lg.jp/0000001565.html",
+  "series": [
+   "kioroshi-ekiminami-kotto-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "印西市公式サイト。「著作権・リンク・免責事項について」で無断転用・複製を禁じる記載（私的使用・引用の範囲を除く）→ 事実の項目だけ掲載し、文章・画像は転載しない。robots.txt は 404（制限なし）"
+  }
+ },
+ {
+  "url": "https://www.city.kiryu.lg.jp/kankou/event/1010673/1001903.html",
+  "series": [
+   "kiryu-tenmangu-kottou"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。「このサイトについて」に私的使用・引用を除き文書・画像の無断転載を禁じるとあるため、掲載は事実の項目（日時・場所・雨天時）だけ"
+  }
+ },
+ {
+  "url": "https://www.sake3.com/event/16210",
+  "series": [
+   "murakami-jurinji-enma-kottou"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。利用規約のページは見つからず。文章・画像は転載せず、事実の項目（日時・場所・雨天時）だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.nagano-cvb.or.jp/modules/event/page/101",
+  "series": [
+   "nagano-zenkoji-binzuru-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。利用規約のページは確認できず。事実の項目（日時・場所）だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.binzuru-ichi.com/",
+  "series": [
+   "nagano-zenkoji-binzuru-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 404（制限なし）（2026-10-20 確認）。利用規約のページは見つからず。主催者名だけ掲載（お知らせは2024年で止まっており日程は載っていない）"
+  }
+ },
+ {
+  "url": "https://www.town.fujikawa.yamanashi.jp/kanko/docs_kanko/2023090700245/",
+  "series": [
+   "fujikawa-yorimichi-asaichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 404（制限なし）（2026-10-20 確認）。利用規約のページは確認できず。事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://minatonichiyouasaichikai.com/",
+  "series": [
+   "hachinohe-tatehana-ganpeki-asaichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt で取得を許可（2026-10-20 確認）。利用規約のページはなく（プライバシーポリシーのみ）、事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://minatonichiyouasaichikai.com/map/",
+  "series": [
+   "hachinohe-tatehana-ganpeki-asaichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "同上"
+  }
+ },
+ {
+  "url": "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/4/117.html",
+  "series": [
+   "saga-eco-plaza-eco-market"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 404（許可）。利用規約のページは確認できず。掲載は事実の項目だけ（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.oita.oita.jp/o141/kurashi/gomi/ki.html",
+  "series": [
+   "oita-ecolife-plaza-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 404（許可）。『著作権・免責』で無断の転載・複製を禁じる記載 → 事実の項目（日時・場所）だけ掲載し、文章・画像は転載しない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.ube.yamaguchi.jp/kurashi/gomi/genryou_recycle/1002098/1002105.html",
+  "series": [
+   "ube-tokiwa-park-flea",
+   "ube-city-flea-mucc"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 200（許可）。利用規約のページは確認できず。掲載は事実の項目だけ（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.miyakonojo.miyazaki.jp/site/kanko/2764.html",
+  "series": [
+   "miyakonojo-yamanokuchi-yagorodon-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "『免責事項』で無断の複製・転用を禁じる記載 → 事実の項目だけ掲載し、文章・画像は転載しない（2026-10-20 確認）。robots.txt は peek.mjs で許可を確認"
+  }
+ },
+ {
+  "url": "https://www.city.shunan.lg.jp/soshiki/48/103173.html",
+  "series": [
+   "shunan-kodomo-yume-matsuri-kids-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 404（許可）。『著作権・セキュリティ・免責事項』で無断使用・転載を禁じる記載 → 事実の項目だけ掲載（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.kochi.kochi.jp/site/kanko/chuokoen-event.html",
+  "series": [
+   "kochi-chuo-park-tohoku-support-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は 404（許可）。『免責事項』に転載の禁止の記載は確認できず。掲載は事実の項目だけ（2026-10-20 確認）"
+  }
  }
 ]

@@ -1578,6 +1578,130 @@
    "admission": "Free admission",
    "rain": "In rain, the stage events go ahead. Booth exhibits are held in part",
    "address": "2-6-50 Daimyo, Chuo Ward, Fukuoka City"
+  },
+  "hiratsuka-ekimae-kottoichi": {
+   "name": "Hiratsuka Station-Front Antique Market",
+   "venue": "Benimiya Pearl Road Shopping Street (north exit of Hiratsuka Station)",
+   "time": "8:00 a.m.–4:00 p.m. (as listed in the shopping street's annual event information)"
+  },
+  "kamiyabe-free-market": {
+   "name": "Free Flea Market (Kamiyabe Community Center)",
+   "venue": "Kamiyabe Community Center",
+   "time": "10:00 a.m.–2:00 p.m.",
+   "admission": "Free exchange (bring and take away for free; cleaned children's and women's clothing, school uniforms, unused tableware, etc.)",
+   "apply": "Open to all on the day",
+   "address": "2342 Kamiyabe-cho, Totsuka Ward, Yokohama City"
+  },
+  "hodogaya-kuminmatsuri-flea-2026": {
+   "name": "Hodogaya Citizens' Festival (Flea Market)",
+   "venue": "Prefectural Hodogaya Park, Ikoi Plaza",
+   "time": "9:30 a.m.–3:00 p.m.",
+   "rain": "Held in light rain; cancelled in bad weather",
+   "address": "4-2 Hanamidai, Hodogaya Ward"
+  },
+  "noborito-challenge-street-2026": {
+   "name": "Nobori to Challenge Street (Flea Market Space)",
+   "venue": "Noborito No. 2 Road",
+   "time": "11:00–16:00",
+   "rain": "Held in light rain; cancelled in bad weather",
+   "address": "2540-3 Noborito and nearby, Tama Ward"
+  },
+  "shiroyama-fes-2026": {
+   "name": "5th Shiroyama Festival (Flea Market)",
+   "venue": "Kawajiri Hachiman Shrine parking lot",
+   "time": "10:00–15:00",
+   "rain": "Cancelled in bad weather",
+   "address": "4171 Kawajiri, Midori Ward, Sagamihara City"
+  },
+  "koshigaya-katori-jinja-kotto-ichi": {
+   "name": "Koshigaya Katori Shrine Antique Market",
+   "venue": "Koshigaya Katori Shrine grounds",
+   "time": "7:00–15:30 (may end earlier when packing up)",
+   "admission": "Free",
+   "rain": "On rainy days and similar, fewer stalls (per the shrine). Dates, times and venue may change due to weather and other circumstances (per the organizer)",
+   "access": "5 min. walk from the east exit of Tobu Line Kita-Koshigaya Station",
+   "address": "3-13-38 Osawa, Koshigaya City, Saitama Prefecture"
+  },
+  "urawa-juku-furusato-ichi": {
+   "name": "Urawa-juku Furusato Market",
+   "venue": "Tsuki (Tsukinomiya) Park",
+   "time": "7:00–15:30 (may end earlier when packing up)",
+   "admission": "Free",
+   "rain": "Dates, times and venue may change due to weather and other circumstances (per the organizer)",
+   "address": "3-17 Kishi-cho, Urawa Ward, Saitama City, Saitama Prefecture"
+  },
+  "kioroshi-ekiminami-kotto-ichi": {
+   "name": "Kinoshita Station South Antique Market",
+   "venue": "Kinoshita South Exit Shopping Street",
+   "time": "About 7:00 a.m.–2:00 p.m.",
+   "rain": "May be changed or cancelled (per Inzai City)"
+  },
+  "kiryu-tenmangu-kottou": {
+   "name": "Kiryu Tenmangu Folk Crafts Antique Market",
+   "venue": "Kiryu Tenmangu Shrine grounds",
+   "rain": "May be cancelled at the organizer's discretion in bad weather (check the official website of the Kiryu Tenmangu Folk Crafts Antique Market Secretariat)",
+   "access": "About 5 min. by car from Kiryu Station on the JR Ryomo Line",
+   "address": "Kiryu Tenmangu Shrine grounds (within 1-chome, Tenjin-cho)"
+  },
+  "murakami-jurinji-enma-kottou": {
+   "name": "Jurinji Enma-do Antique Market (Murakami)",
+   "venue": "Murakami City Oomachi-dori (Echigo Murakami Machiya-dori)",
+   "time": "From 8:00",
+   "rain": "Held in light rain (may be cancelled depending on infectious disease and other circumstances)",
+   "access": "About 20 min. walk from Murakami Station on the JR Uetsu Main Line / about 5 min. by car from Murakami-Seze Onsen IC on the Hokkaido-Tohoku Expressway"
+  },
+  "nagano-zenkoji-binzuru-ichi": {
+   "name": "Zenkoji Binzuru Market",
+   "venue": "Zenkoji East Park, Shiroyama Park fountain plaza"
+  },
+  "fujikawa-yorimichi-asaichi": {
+   "name": "Fujikawa Town Morning Market \"Yorimichi Market\"",
+   "venue": "Fujikawa Town Historical and Cultural Hall \"Shio no Hana\"",
+   "rain": "Held in light rain (cancelled in heavy rain, heavy snow or bad weather)",
+   "fee": "Stall fee required (check the regulations)",
+   "apply": "Must register as a stall holder with the Morning Market Executive Committee; discussion with the stall holders' group and at the market venue at registration",
+   "notes": "Any genre is welcome, including farm and forest produce, local specialties, shopping street goods, light food and flea market items. Health center and fire station permits are the responsibility of each stall holder",
+   "address": "4852-1 Kajikazawa, Fujikawa Town"
+  },
+  "hachinohe-tatehana-ganpeki-asaichi": {
+   "name": "Tatehana Quayside Morning Market (Hachinohe)",
+   "venue": "Tatehana quayside",
+   "time": "From sunrise (about 4:00 a.m.–8:30 a.m.)",
+   "address": "3-chome Shinminato, Hachinohe City, Aomori Prefecture"
+  },
+  "saga-eco-plaza-eco-market": {
+   "name": "Saga City Eco Plaza Eco Market",
+   "venue": "Saga City Eco Plaza",
+   "access": "15 min. by bus from Saga Station Bus Center and 3 min. walk"
+  },
+  "oita-ecolife-plaza-flea": {
+   "name": "Oita Eco Life Plaza Flea Market",
+   "venue": "Oita Eco Life Plaza",
+   "rain": "The flea market is cancelled in rain (the toy exchange \"Kaekko Bazaar\" and the free lottery for refurbished furniture and bicycles go ahead in rain)",
+   "address": "618 Fukumune, Oita City, Oita Prefecture"
+  },
+  "ube-tokiwa-park-flea": {
+   "name": "Tokiwa Park Flea Market (Ube City)",
+   "venue": "Tokiwa Park East Parking Lot"
+  },
+  "ube-city-flea-mucc": {
+   "name": "Ube City Flea Market",
+   "venue": "MUCC Cement Exchange Plaza",
+   "rain": "Depending on the weather, the opening hours may change or the event may be cancelled"
+  },
+  "miyakonojo-yamanokuchi-yagorodon-flea": {
+   "name": "Yamanokuchi Yagorodon Festival (Flea Market in the Local Products Sale Plaza)",
+   "venue": "Matono Shohachiman Shrine, Nomura Park and nearby (festival venues; the flea market location is not stated on the official page)"
+  },
+  "shunan-kodomo-yume-matsuri-kids-flea": {
+   "name": "Shunan Kodomo Yume Festival (Kids' Flea Market)",
+   "venue": "Around Yume Plaza Kumuta",
+   "time": "10:00–14:30 (whole festival)",
+   "rain": "Depending on the weather, the event may be changed or cancelled"
+  },
+  "kochi-chuo-park-tohoku-support-flea": {
+   "name": "Great East Japan Earthquake Support Flea Market (Toyo Denka Central Park)",
+   "venue": "Toyo Denka Central Park"
   }
  },
  "organizers": {
@@ -1681,7 +1805,27 @@
   "みつばちフリマ実行委員会事務局": "Mitsubachi Flima Executive Committee Secretariat",
   "室町活性化自治連絡協議会 商業部 室町楽市事務局": "Muromachi Revitalization Neighborhood Association Liaison Council, Commerce Division, Muromachi Rakuichi Secretariat",
   "松山市": "Matsuyama City",
-  "福岡市": "Fukuoka City"
+  "福岡市": "Fukuoka City",
+  "紅谷パールロード商店街": "Benimiya Pearl Road Shopping Street",
+  "上矢部地区センター": "Kamiyabe Community Center",
+  "横浜市保土ケ谷区": "Hodogaya Ward, Yokohama City",
+  "登戸・向ヶ丘遊園エリアプラットフォーム": "Noborito / Mukogaoka-yuen Area Platform",
+  "城山商工会": "Shiroyama Chamber of Commerce and Industry",
+  "一期一会 香取神社骨董市実行委員会": "Ichigoichie Katori Shrine Antique Market Executive Committee",
+  "浦和宿ふるさと市実行委員会": "Urawa-juku Furusato Market Executive Committee",
+  "木下駅南骨董市実行委員会": "Kinoshita Station South Antique Market Executive Committee",
+  "桐生天満宮古民具骨董市事務局": "Kiryu Tenmangu Folk Crafts Antique Market Secretariat",
+  "大町振興会": "Oomachi Revitalization Association",
+  "善光寺びんずる市実行委員会": "Zenkoji Binzuru Market Executive Committee",
+  "富士川町観光物産協会": "Fujikawa Town Tourism and Products Association",
+  "湊日曜朝市会": "Minato Sunday Morning Market Association",
+  "佐賀市エコプラザ": "Saga City Eco Plaza",
+  "大分エコライフプラザ（大分市）": "Oita Eco Life Plaza (Oita City)",
+  "ときわ公園フリーマーケット事務局": "Tokiwa Park Flea Market Secretariat",
+  "宇部Cityフリーマーケット事務局": "Ube City Flea Market Secretariat",
+  "都城市 地域生活課（山之口総合支所）": "Local Life Division, Miyakonojo City (Yamanokuchi Branch Office)",
+  "周南市（公式ページの掲載元）": "Shunan City (source of the official page)",
+  "東日本大震災支援「絆の会」": "Great East Japan Earthquake Support \"Kizuna no Kai\""
  },
  "labels": {
   "問い合わせ先": "Contact",
@@ -1693,7 +1837,9 @@
   "日程の公表元": "Source of the schedule",
   "案内の公表元": "Source of the information",
   "情報の掲載元": "Source of the information",
-  "会場の寺院": "Venue temple"
+  "会場の寺院": "Venue temple",
+  "問い合わせ先（宇部市の一覧による）": "Contact (per the Ube City list)",
+  "公式ページの掲載元": "Source of the official page"
  },
  "official": {
   "note": "公式サイトに英語の表記があり、それに合わせたもの（2026-10-18 に確認）。ほかは、このサイトの訳（非公式）",
@@ -1836,7 +1982,24 @@
   "北九州市小倉北区": "Kokurakita Ward, Kitakyushu City",
   "北九州市門司区": "Moji Ward, Kitakyushu City",
   "北九州市若松区": "Wakamatsu Ward, Kitakyushu City",
-  "松山市": "Matsuyama City"
+  "松山市": "Matsuyama City",
+  "平塚市": "Hiratsuka City",
+  "横浜市戸塚区": "Totsuka Ward, Yokohama City",
+  "横浜市保土ケ谷区": "Hodogaya Ward, Yokohama City",
+  "川崎市多摩区": "Tama Ward, Kawasaki City",
+  "相模原市緑区": "Midori Ward, Sagamihara City",
+  "さいたま市浦和区": "Urawa Ward, Saitama City",
+  "桐生市": "Kiryu City",
+  "村上市": "Murakami City",
+  "長野市": "Nagano City",
+  "富士川町": "Fujikawa Town",
+  "八戸市": "Hachinohe City",
+  "佐賀市": "Saga City",
+  "大分市": "Oita City",
+  "宇部市": "Ube City",
+  "都城市": "Miyakonojo City",
+  "周南市": "Shunan City",
+  "高知市": "Kochi City"
  },
  "notes": {
   "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",
@@ -1934,7 +2097,8 @@
   "rbf-kawagoe-suijo-park|2026-11-21": "Held by Otakara (the event schedule page says “Otakara”)",
   "rbf-kawagoe-suijo-park|2026-12-13": "Held by Otakara (the event schedule page says “Otakara”)",
   "rbf-kazo-hanasaki-park|2026-10-31": "Held within the Kazo Hanasaki Water Park Festival (Wakuwaku Park Festival)",
-  "rbf-kazo-hanasaki-park|2026-11-01": "Held within the Kazo Hanasaki Water Park Festival (Wakuwaku Park Festival)"
+  "rbf-kazo-hanasaki-park|2026-11-01": "Held within the Kazo Hanasaki Water Park Festival (Wakuwaku Park Festival)",
+  "hachinohe-tatehana-ganpeki-asaichi|2026-12-30": "Special morning market: 12/30 (Tue) (per the official top page)"
  },
  "venues": {
   "komazawa-olympic-park": {
