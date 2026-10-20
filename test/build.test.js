@@ -637,5 +637,6 @@ test('AdSense の tag は、すべてのページの head に入る（ADSENSE_CL
   const src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`;
   for (const p of pages.filter((x) => !x.path.endsWith('.html')).slice(0, 40)) {
     assert.ok(layout(p).includes(src), p.path);
+    assert.ok(layout(p).includes(`<meta name="google-adsense-account" content="${ADSENSE_CLIENT}">`), p.path);
   }
 });

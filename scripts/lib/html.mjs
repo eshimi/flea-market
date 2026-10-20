@@ -84,7 +84,8 @@ function analyticsTag() {
 // Google AdSense（広告の自動配信のスクリプト）。ADSENSE_CLIENT が空なら出さない
 function adsenseTag() {
   if (!ADSENSE_CLIENT) return '';
-  return `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}"
+  return `<meta name="google-adsense-account" content="${ADSENSE_CLIENT}">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}"
      crossorigin="anonymous"></script>
 `;
 }
