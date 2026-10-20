@@ -140,8 +140,9 @@ function areaPages(ctx, lang) {
     if (s.venue.cityCode) prefs.get(p).set(s.venue.cityCode, s.venue.city);
   }
   const count = (f) => ctx.occ.filter((o) => isActive(o) && f(o.series)).length;
-  const idx = [...prefs.keys()].sort().map((p) => `<li><a class="pref-card" href="/area/${p}/"><img src="/img/pref/${p}.webp" alt="" width="182" height="172" loading="lazy" decoding="async"><span class="pc-t">${esc(prefLabel(p, lang))}<small>${esc(A.n(count((s) => s.venue.pref === p), ctx.days))}</small></span></a></li>`).join('');
-  pages.push(pg(lang, '/area/', { title: A.h1, description: A.desc, bannerText: `${breadcrumb([{ label: A.h1 }], lang)}<h1>${esc(A.h1)}</h1><p class="lead">${esc(A.lead)}</p>`, body: `<div class="in page">${idx ? `<ul class="grid-links">${idx}</ul>` : `<p class="empty">${esc(P[lang].soon)}</p>`}</div>` }));
+  const idx = [...prefs.keys()].sort().map((p) => `<li><a class="pref-card" href="/area/${p}/"><img src="/img/pref/${p}.webp" alt="" width="182" height="172" loading="lazy" decoding="async"><span class="pc-t">${esc(prefLabel(p, lang))}<small>${count((s) => s.venue.pref === p)}</small></span></a></li>`).join('');
+  const countNote = lang === 'en' ? 'Numbers are markets in the next 120 days.' : '数字は、今後120日の開催の件数です。';
+  pages.push(pg(lang, '/area/', { title: A.h1, description: A.desc, bannerText: `${breadcrumb([{ label: A.h1 }], lang)}<h1>${esc(A.h1)}</h1><p class="lead">${esc(A.lead)}</p>`, body: `<div class="in page"><p class="count-note">${esc(countNote)}</p>${idx ? `<ul class="grid-links">${idx}</ul>` : `<p class="empty">${esc(P[lang].soon)}</p>`}</div>` }));
   for (const [p, cities] of prefs) {
     const pn = prefLabel(p, lang);
     const cityLinks = [...cities].sort().map(([c, name]) => `<li><a href="/area/${p}/${c}/">${esc(cityL(name, lang))}<small>${esc(P[lang].cnt(count((s) => s.venue.cityCode === c)))}</small></a></li>`).join('');

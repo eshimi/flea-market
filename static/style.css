@@ -149,9 +149,11 @@ aside h2{font-size:15px;margin-bottom:10px}
 .pg-banner-art{height:140px;background-size:contain;background-position:center;background-repeat:no-repeat}
 @media (max-width:900px){.pg-banner-main{grid-template-columns:1fr;gap:6px}.pg-banner-art{height:100px}.pg-banner-in{padding-top:2px;padding-bottom:2px}}
 
-/* 地域の一覧：県ごとのイラストつきのカード */
-.grid-links .pref-card{display:flex;flex-direction:column;align-items:stretch;padding:0;overflow:hidden}
-.pref-card img{display:block;width:100%;height:auto;aspect-ratio:182/172;object-fit:contain;background:#FCEFDD}
-.pref-card .pc-t{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:10px 12px}
+/* 地域の一覧：県ごとの小さなイラストと名前（横並び） */
+.count-note{font-size:13px;color:var(--sub);margin:0 0 12px}
+.grid-links .pref-card{display:flex;flex-direction:row;align-items:center;gap:12px;padding:8px 14px;overflow:hidden}
+.pref-card img{display:block;width:72px;height:auto;aspect-ratio:182/172;object-fit:contain;flex:0 0 auto}
+.pref-card .pc-t{display:flex;justify-content:space-between;align-items:center;gap:8px;flex:1;min-width:0}
+.pref-card .pc-t small{font-size:15px;color:var(--ink);font-weight:700}
 /* 県のページの帯のイラスト（県別の画像） */
 .pg-banner-art[style*="/img/pref/"]{background-size:contain}
