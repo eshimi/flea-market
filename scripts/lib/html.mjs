@@ -1,3 +1,6 @@
+import { existsSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 // ページの共通の枠（ヘッダー・フッター・免責）と、HTML の小さな部品
 import { INDEXABLE, SITE, HEADER_NAV, FOOTER_COLS, NAV_LABELS, ANALYTICS_ID, QR_URL } from './nav.mjs';
 import { KINDS } from './kinds.mjs';
@@ -89,10 +92,14 @@ export function keywordMeta(keywords = [], lang = 'ja') {
 
 // 中のページの上のイラスト帯（添付の画像から切り出した10枚）。ページの種類ごとに決まった1枚を使う
 const BANNER_BY_SECTION = { weekend: 'b4-city', calendar: 'b4-city', date: 'b4-city', area: 'b5-mountain', kind: 'b3-paper-plane', spot: 'b10-door', e: 'b6-birds', blog: 'b8-steps-blocks', guide: 'b8-steps-blocks', faq: 'b8-steps-blocks', about: 'b7-coffee', shuten: 'b2-cliff', search: 'b9-clock' };
+// 画像（static/img/banner/<名前>.webp）が無いときは、帯を出さない
+const STATIC_BANNER_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'static', 'img', 'banner');
+// 画像（static/img/banner/<名前>.webp）が無いときは、帯を出さない
 export function pageBanner(base) {
   if (base === '/' || base === '/404.html') return '';
   const sec = base.split('/').filter(Boolean)[0] || '';
   const name = BANNER_BY_SECTION[sec] || 'b1-flower';
+  if (!existsSync(join(STATIC_BANNER_DIR, `${name}.webp`))) return '';
   return `<div class="pg-banner" aria-hidden="true" style="background-image:url(/img/banner/${name}.webp)"></div>\n`;
 }
 
