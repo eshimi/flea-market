@@ -1115,6 +1115,11 @@
    "time": "9:30–16:30",
    "rain": "Light rain: held. Cancelled in bad weather.",
    "fee": "Advance tickets ¥700 / day tickets ¥1,000 (free for elementary school children and under; separate Expo Park admission fee applies)"
+  },
+  "tokyo-romantic-shibuya": {
+   "name": "Tokyo Romantic Market (Shibuya Antique Market)",
+   "venue": "Shibuya Garden Tower outdoor plaza",
+   "time": "10:00–16:00"
   }
  },
  "organizers": {
@@ -1184,7 +1189,8 @@
   "エコロジーネットワーク ラズベリー": "Ecology Network Raspberry",
   "商業インキュベータ協会": "Commercial Incubator Association",
   "フリマ大陸": "Furima Tairiku",
-  "株式会社シティライフNEW": "City Life NEW Co., Ltd."
+  "株式会社シティライフNEW": "City Life NEW Co., Ltd.",
+  "Tokyo Romantic Market（東京浪漫・渋谷蚤の市）": "Tokyo Romantic Market"
  },
  "labels": {
   "問い合わせ先": "Contact",
