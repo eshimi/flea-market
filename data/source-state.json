@@ -2707,5 +2707,79 @@
   "evidenceOk": {
    "kochi-chuo-park-tohoku-support-flea": true
   }
+ },
+ "https://www.ishikawagokoku.or.jp/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"480f-65e2aadf4a07c-gzip\"",
+  "lastModified": "Mon, 19 Oct 2026 05:21:00 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "gokoku-jinja-nomi-ichi": true
+  }
+ },
+ "https://www.ishikawagokoku.or.jp/images/pdf/info_13.pdf": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6c47e-621a0b20dd980-gzip\"",
+  "lastModified": "Sun, 08 Sep 2024 19:32:06 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "gokoku-jinja-nomi-ichi": true
+  }
+ },
+ "https://www.toyama-gokoku.jp/nominoichi/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"4c3c-65cd50831e847\"",
+  "lastModified": "Fri, 02 Oct 2026 05:44:55 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "toyama-gokoku-nominoichi": true
+  }
+ },
+ "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/3/2/4/4967.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6ac5a794-e849\"",
+  "lastModified": "Wed, 07 Oct 2026 01:59:48 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "takaoka-asaichi": true
+  }
+ },
+ "https://www.city.takaoka.toyama.jp/soshiki/sangyokikakuka/2/1/6/11639.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6ad089d7-d0ed\"",
+  "lastModified": "Thu, 15 Oct 2026 08:07:51 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "tsuginote-takaoka": true
+  }
+ },
+ "https://www.city.sabae.fukui.jp/kanko/sightseeing/jyousyouji.html": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Mon, 19 Oct 2026 15:01:16 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "makoto-ichi-hoshoji-sabae": true
+  }
+ },
+ "https://creatorsland.studio.site/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "creatorsland-2026-sandome-fukui": true
+  }
  }
 }
