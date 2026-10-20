@@ -2336,6 +2336,51 @@
    "address": "7-9-2 Funabashi, Setagaya-ku, Tokyo",
    "access": "20 min walk from Chitose-Funabashi Station (Odakyu Line; written \"Oda Line\" in the official text) / 20 min walk from Hachimanyama Station (Keio Line) / 4 min walk from the Funabashi Kibo Junior High School or Kibogaoka Danchi bus stop (Odakyu Bus / Keio Bus)",
    "summary": "A park in Setagaya City. It opened in 1977 (Showa 52) and has a ball-game plaza and a wall-fountain plaza."
+  },
+  "koushoji-yagoto": {
+   "name": "Koshoji Temple (Yagoto)",
+   "address": "78 Yagoto-honmachi, Showa Ward, Nagoya, Aichi Prefecture",
+   "access": "By car: 300 m from the Yagoto intersection on National Route 153 toward Kawana. From the Yotsuya Exit of the Nagoya Expressway, turn right at the \"Yotsuya-dori 3\" intersection, go straight on Yamate-dori and turn right at the \"Yagoto\" intersection. Public transport information not confirmed on the official page (TBC)",
+   "summary": "A Shingon temple. On the 5th and 13th of each month, stalls line the temple grounds, according to the city and the temple. On the 21st, the Kobo Daishi Zennen day, there is the \"Koshoji Marche\" (10:00–15:00)."
+  },
+  "arako-kannon": {
+   "name": "Arako Kannon Temple",
+   "address": "Miyamado 138, Arako-cho, Naka Ward, Nagoya, Aichi Prefecture",
+   "access": "About 500 m southwest of Arako Station on the Aonami Line",
+   "summary": "On the grounds of Arako Kannon Temple, the Arako Enku Market is held on the first Sunday of every month (closed in January (1) and February (2); a night market on 8/10, August 10). According to the city, organic vegetables, handmade shops and restaurants line up. According to the city's introduction, the temple is said to have been founded by Priest Taicho in 729 (Tenpyo 1)."
+  },
+  "nittaiji-kakuozan": {
+   "name": "Nittai-ji Temple (Kakuozan)",
+   "address": "〒464-0057 1-1 Hoocho, Chikusa Ward, Nagoya, Aichi Prefecture",
+   "access": "About 15 min. walk from Kakuozan Station on the Higashiyama Subway Line, Exit 1. About 10 min. walk from the \"Kakuozan\" stop of Nagoya City Bus Kanayama Route 11 (Kanayama–Ikenoshita line) (about 30 min. from JR Kanayama Station)",
+   "summary": "A Shingon temple. The 21st of each month, the monthly day of Kobo Daishi, is a Zennen day, and according to the Chikusa Ward official page, Zennen stalls are also held along the approach.",
+   "rules": "On the 21st of each month (Zennen day), the approach becomes a pedestrian zone, so parking is prohibited from the approach to the temple grounds. Visitors coming by car should use the temporary parking (per the temple)."
+  },
+  "shitennoji": {
+   "name": "Shitennoji Temple",
+   "place": "Throughout the grounds",
+   "address": "〒543-0051 1-11-18 Shitennoji, Tennoji Ward, Osaka City, Osaka Prefecture",
+   "access": "12 min. walk north from Tennoji Station (JR Loop Line, Metro Midosuji and Tanimachi Lines). 5 min. walk south from Shitennoji-mae-Yuhigaoka Station",
+   "summary": "A head temple of the Washu sect. At the Daishikai (the monthly day of Kobo Daishi) on the 21st of each month, stalls line the grounds, according to the official notice."
+  },
+  "tsurumi-ryokuchi": {
+   "name": "Hanahaku Memorial Park Tsurumi Ryokuchi",
+   "place": "Outdoor annex exhibition space of Hanamizuki Hall (Mizu no Kan Hall)",
+   "access": "Osaka Metro Tsurumi-ryokuchi Station",
+   "summary": "An urban park in Tsurumi Ward, Osaka City. According to the official site, Hanamizuki Hall (Mizu no Kan Hall) can be used together with its outdoor annex exhibition space."
+  },
+  "nagai-park": {
+   "name": "Nagai Park",
+   "place": "Southwest Plaza",
+   "address": "〒546-0034 1-1 Nagai Park, Higashisumiyoshi Ward, Osaka City, Osaka Prefecture",
+   "access": "Right outside Exit 2 of Nagai Station on the Metro Midosuji Line",
+   "summary": "An urban park in Higashisumiyoshi Ward, Osaka City. The official site announces the 4th Nagai Antique Market (Nomi-no-ichi) at the Southwest Plaza (11/21–11/23, 2026)."
+  },
+  "ikea-tsuruhama": {
+   "name": "IKEA Tsuruhama",
+   "address": "〒551-0023 2-24-55 Tsurumachi, Taisho Ward, Osaka City, Osaka Prefecture",
+   "access": "IKEA shuttle bus (between IKEA Tsuruhama and Ohashi-bashi). Free parking, 2100 spaces (within business hours only)",
+   "summary": "An IKEA store. The store-event section of the official site lists \"Loppis (flea market)\"."
   }
  }
 }

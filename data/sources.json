@@ -3317,5 +3317,192 @@
    "checkedAt": "2026-10-20",
    "note": "主催者の公式サイト（Studio サイト）。本文は日程のタイトル行のみ（JavaScript で描画）。利用規約のページは確認できず。robots.txt は許可。掲載は事実の項目だけ（日程・会場名）。"
   }
+ },
+ {
+  "url": "https://www.koushoji.or.jp/",
+  "venues": [
+   "koushoji-yagoto"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "サイトについてのページに「無断で複写または掲載を禁止」。事実の項目（住所・アクセス・縁日の日時）だけ掲載し、文章・写真は転載しない（ユーザー決定の方針）。robots.txt は許可（200・禁止の記載なし）"
+  }
+ },
+ {
+  "url": "https://www.koushoji.or.jp/access/",
+  "venues": [
+   "koushoji-yagoto"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "同上（koushoji.or.jp のサイトについて）。事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://www.koushoji.or.jp/koushoji-ichinen/",
+  "venues": [
+   "koushoji-yagoto"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "同上（koushoji.or.jp のサイトについて）。事実の項目だけ"
+  }
+ },
+ {
+  "url": "https://www.city.nagoya.jp/showa/miryoku/1021511/1021512/1021515.html",
+  "venues": [
+   "koushoji-yagoto"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "名古屋市公式サイト（著作権・リンク・免責事項のページ）。コンテンツの再利用は別ページの規定。事実の項目だけ掲載し、出典を明記（ユーザー決定の方針）。robots.txt 許可"
+  }
+ },
+ {
+  "url": "https://www.city.nagoya.jp/kurashi/nougyou/1015555/1015560/1034067/1015569.html",
+  "venues": [
+   "arako-kannon"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "名古屋市公式サイト。事実の項目だけ掲載し出典を明記。robots.txt 許可"
+  }
+ },
+ {
+  "url": "https://www.city.nagoya.jp/nakagawa/miryoku/1022715/1022735/1022736.html",
+  "venues": [
+   "arako-kannon"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "名古屋市公式サイト（中川区）。事実の項目だけ掲載し出典を明記。robots.txt 許可"
+  }
+ },
+ {
+  "url": "https://www.nittaiji.or.jp/",
+  "venues": [
+   "nittaiji-kakuozan"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページは見当たらず（トップのリンクに無し。/basic-information/ は404）。robots.txt は404（禁止なし）。事実の項目（住所・縁日・駐車）だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.nittaiji.or.jp/14acces/index.html",
+  "venues": [
+   "nittaiji-kakuozan"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "日泰寺の公式サイト。事実の項目だけ掲載（上記と同じ）"
+  }
+ },
+ {
+  "url": "https://www.nittaiji.or.jp/15event/index.html",
+  "venues": [
+   "nittaiji-kakuozan"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "日泰寺の公式サイト。事実の項目だけ掲載（上記と同じ）"
+  }
+ },
+ {
+  "url": "https://www.city.nagoya.jp/chikusa/miryoku/1019354/1041345/1019387/1019394.html",
+  "venues": [
+   "nittaiji-kakuozan"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "名古屋市公式サイト（千種区）。事実の項目だけ掲載し出典を明記。robots.txt 許可"
+  }
+ },
+ {
+  "url": "https://www.shitennoji.or.jp/",
+  "venues": [
+   "shitennoji"
+  ],
+  "terms": {
+   "ok": null,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は確認（許可）。利用規約ページは未確認。"
+  }
+ },
+ {
+  "url": "https://www.shitennoji.or.jp/access.html",
+  "venues": [
+   "shitennoji"
+  ],
+  "terms": {
+   "ok": null,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は確認（許可）。利用規約ページは未確認。"
+  }
+ },
+ {
+  "url": "https://www.tsurumi-ryokuchi.jp/facility.html",
+  "venues": [
+   "tsurumi-ryokuchi"
+  ],
+  "terms": {
+   "ok": null,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は確認（許可）。利用規約ページは未確認。"
+  }
+ },
+ {
+  "url": "https://www.tsurumi-ryokuchi.jp/access.html",
+  "venues": [
+   "tsurumi-ryokuchi"
+  ],
+  "terms": {
+   "ok": null,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は確認（許可）。利用規約ページは未確認。"
+  }
+ },
+ {
+  "url": "https://nagaipark.com/events/000398",
+  "venues": [
+   "nagai-park"
+  ],
+  "terms": {
+   "ok": null,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は確認（許可）。利用規約ページは未確認。"
+  }
+ },
+ {
+  "url": "https://nagaipark.com/access/",
+  "venues": [
+   "nagai-park"
+  ],
+  "terms": {
+   "ok": null,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は確認（許可）。利用規約ページは未確認。"
+  }
+ },
+ {
+  "url": "https://www.ikea.com/jp/ja/stores/tsuruhama/",
+  "venues": [
+   "ikea-tsuruhama"
+  ],
+  "terms": {
+   "ok": null,
+   "checkedAt": "2026-10-20",
+   "note": "robots.txt は確認（許可）。利用規約ページは未確認。"
+  }
  }
 ]

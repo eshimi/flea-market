@@ -1457,5 +1457,269 @@
   "address": "東京都世田谷区船橋7-9-2",
   "access": "小田線 千歳船橋駅下車徒歩20分／京王線 八幡山駅下車徒歩20分／小田急バス・京王バス 船橋希望中学校前、希望ヶ丘団地下車徒歩4分",
   "summary": "世田谷区の公園。昭和52年に開園。球戯広場、壁泉広場などがある。"
+ },
+ {
+  "id": "koushoji-yagoto",
+  "name": "八事山 興正寺",
+  "kind": "shrine",
+  "area": {
+   "pref": "23",
+   "city": "昭和区"
+  },
+  "address": "愛知県名古屋市昭和区八事本町78番地",
+  "access": "車の場合：国道153号線 八事交差点より川名方面へ300メートル。名古屋高速 四谷出口より「四谷通3」交差点を右折、山手通を直進し「八事」交差点を右折。公共交通機関の案内は公式の記載を確認できず要確認",
+  "officialUrl": "https://www.koushoji.or.jp/",
+  "summary": "真言宗の寺院。毎月5日と13日の縁日には境内に露店が並ぶと、市と寺が案内している。毎月21日の弘法大師ご縁日には「興正寺マルシェ」（10時～15時）がある。",
+  "sources": [
+   {
+    "url": "https://www.koushoji.or.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "八事山興正寺は高野山真言宗の別格本山です"
+    ]
+   },
+   {
+    "url": "https://www.koushoji.or.jp/access/",
+    "type": "official",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "愛知県名古屋市昭和区八事本町78番地",
+     "国道153号線 八事交差点より川名方面へ300メートル",
+     "名古屋高速 四谷出口より「四谷通3」交差点を右折、山手通を直進し「八事」交差点を右折"
+    ]
+   },
+   {
+    "url": "https://www.koushoji.or.jp/koushoji-ichinen/",
+    "type": "official",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "日時：毎月5日 10時（露店あり／午前中）",
+     "日時：毎月13日 10時（露店あり／午前中）",
+     "（興正寺マルシェ／10時～15時）"
+    ]
+   },
+   {
+    "url": "https://www.city.nagoya.jp/showa/miryoku/1021511/1021512/1021515.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎月5日と13日の縁日は境内いっぱい露店が並んでにぎわいます"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "arako-kannon",
+  "name": "荒子観音寺",
+  "kind": "shrine",
+  "area": {
+   "pref": "23",
+   "city": "中川区"
+  },
+  "address": "名古屋市中川区荒子町字宮窓138",
+  "access": "あおなみ線「荒子」南西約500メートル",
+  "summary": "荒子観音寺の境内で、毎月第1日曜日に「荒子円空市」が開かれる（1・2月は休み。8月10日は夜市）。市の案内では、有機野菜のほか手作りのショップや飲食店が並ぶ。寺は市の案内で、天平元（729）年に泰澄和尚が開基といわれると紹介されている。",
+  "sources": [
+   {
+    "url": "https://www.city.nagoya.jp/kurashi/nougyou/1015555/1015560/1034067/1015569.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "名古屋市中川区荒子町字宮窓138",
+     "あおなみ線「荒子」南西約500メートル",
+     "開催日 第1日曜日（1・2月はお休み、8月は10日（九万九千日夜市に合わせて午後5時から午後8時に開催））",
+     "無農薬の有機野菜に楽しい手作りショップや飲食店"
+    ]
+   },
+   {
+    "url": "https://www.city.nagoya.jp/nakagawa/miryoku/1022715/1022735/1022736.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "荒子観音寺は天平元（729）年泰澄和尚が開基といわれ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "nittaiji-kakuozan",
+  "name": "覚王山 日泰寺",
+  "kind": "shrine",
+  "area": {
+   "pref": "23",
+   "city": "千種区"
+  },
+  "address": "〒464-0057 愛知県名古屋市千種区法王町1-1",
+  "access": "地下鉄東山線「覚王山」駅下車、1番出口から徒歩約15分。市営バス金山11系統（金山-池下線）「覚王山」停留所から徒歩約10分（JR金山駅から約30分）",
+  "officialUrl": "https://www.nittaiji.or.jp/",
+  "summary": "真言宗の寺院。弘法大師の月命日にあたる毎月21日は縁日で、参道でも縁日が開かれると、千種区の公式ページが案内している。",
+  "rules": "毎月21日（縁日）は歩行者天国になるため、参道から境内まで駐車禁止。車で来る場合は臨時駐車場を利用する（寺の案内）。",
+  "sources": [
+   {
+    "url": "https://www.nittaiji.or.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "愛知県名古屋市千種区法王町1-1",
+     "毎月21日(縁日)は歩行者天国になりますので、参道から日泰寺境内まで駐車禁止です"
+    ]
+   },
+   {
+    "url": "https://www.nittaiji.or.jp/14acces/index.html",
+    "type": "official",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "1番出口から徒歩約15分",
+     "覚王山停留所から徒歩約10分"
+    ]
+   },
+   {
+    "url": "https://www.nittaiji.or.jp/15event/index.html",
+    "type": "official",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "弘法大師(空海)の月命日として、毎月21日は縁日となっています"
+    ]
+   },
+   {
+    "url": "https://www.city.nagoya.jp/chikusa/miryoku/1019354/1041345/1019387/1019394.html",
+    "type": "municipal",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "毎月21日に覚王山日泰寺の参道で開催されている弘法さんの日の縁日"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "shitennoji",
+  "name": "四天王寺",
+  "kind": "shrine",
+  "area": {
+   "pref": "27",
+   "cityCode": "27109",
+   "city": "大阪市天王寺区"
+  },
+  "place": "境内一円",
+  "address": "〒543-0051 大阪府大阪市天王寺区四天王寺1-11-18",
+  "access": "天王寺駅 から北へ徒歩12 分（JR環状線・地下鉄御堂筋線・谷町線）。四天王寺前夕陽ヶ丘駅から南へ徒歩5分",
+  "officialUrl": "https://www.shitennoji.or.jp/",
+  "summary": "和宗総本山の寺院。毎月21日の大師会（弘法大師の月命日）には、境内に露店が並ぶと公式に案内されている。",
+  "sources": [
+   {
+    "url": "https://www.shitennoji.or.jp/",
+    "type": "official",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "境内に露店が並び"
+    ]
+   },
+   {
+    "url": "https://www.shitennoji.or.jp/access.html",
+    "type": "official",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "大阪府大阪市天王寺区四天王寺1-11-18",
+     "天王寺駅 から北へ徒歩12 分",
+     "四天王寺前夕陽ヶ丘駅 から南へ徒歩5 分"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tsurumi-ryokuchi",
+  "name": "花博記念公園 鶴見緑地",
+  "kind": "park",
+  "area": {
+   "pref": "27",
+   "cityCode": "27124",
+   "city": "大阪市鶴見区"
+  },
+  "place": "ハナミズキホール（水の館ホール）の屋外の附属展示場",
+  "access": "Osaka Metro鶴見緑地駅",
+  "officialUrl": "https://www.tsurumi-ryokuchi.jp/",
+  "summary": "大阪市鶴見区の都市公園。ハナミズキホール（水の館ホール）は、屋外の附属展示場との一体利用も可能と公式に案内されている。",
+  "sources": [
+   {
+    "url": "https://www.tsurumi-ryokuchi.jp/facility.html",
+    "type": "official",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "屋外の附属展示場との一体利用も可能"
+    ]
+   },
+   {
+    "url": "https://www.tsurumi-ryokuchi.jp/access.html",
+    "type": "official",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "Osaka Metro鶴見緑地駅"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "nagai-park",
+  "name": "長居公園",
+  "kind": "park",
+  "area": {
+   "pref": "27",
+   "cityCode": "27121",
+   "city": "大阪市東住吉区"
+  },
+  "place": "南西広場",
+  "address": "〒546-0034 大阪府大阪市東住吉区長居公園1-1",
+  "access": "地下鉄御堂筋線長居駅２号出入口すぐ",
+  "officialUrl": "https://nagaipark.com/",
+  "summary": "大阪市東住吉区の都市公園。公式サイトでは、南西広場での「第四回 長居蚤の市」（2026年11月21日〜23日）を案内している。",
+  "sources": [
+   {
+    "url": "https://nagaipark.com/events/000398",
+    "type": "official",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "長居公園 南西広場にて、第四回目を開催いたします",
+     "第四回 長居蚤の市"
+    ]
+   },
+   {
+    "url": "https://nagaipark.com/access/",
+    "type": "official",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "〒546-0034",
+     "地下鉄御堂筋線長居駅２号出入口すぐ"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ikea-tsuruhama",
+  "name": "IKEA鶴浜",
+  "kind": "commercial",
+  "area": {
+   "pref": "27",
+   "cityCode": "27108",
+   "city": "大阪市大正区"
+  },
+  "address": "〒551-0023 大阪府大阪市大正区鶴町2-24-55",
+  "access": "IKEAバス（IKEA鶴浜⇔大正橋間）が運行。無料駐車場2100台（営業時間内のみ）",
+  "officialUrl": "https://www.ikea.com/jp/ja/stores/tsuruhama/",
+  "summary": "IKEAの店舗。公式サイトの店舗イベント欄に「Loppis（フリーマーケット）」の案内がある。",
+  "sources": [
+   {
+    "url": "https://www.ikea.com/jp/ja/stores/tsuruhama/",
+    "type": "official",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "Loppis（フリーマーケット）",
+     "〒551-0023",
+     "大阪府大阪市大正区鶴町2-24-55",
+     "IKEA鶴浜⇔大正橋",
+     "無料駐車場：2100台"
+    ]
+   }
+  ]
  }
 ]
