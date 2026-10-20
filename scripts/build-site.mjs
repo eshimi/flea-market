@@ -15,7 +15,7 @@ import { renderHomeBody } from './lib/home-view.mjs';
 import { S, T, WD_EN } from './lib/i18n.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, blogBanner, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
-import { mannersBanner, mannersIndex, tipsBanner, tipsBody } from './lib/tips-view.mjs';
+import { mannersBanner, mannersIndex, tipsBanner, tipsIndex } from './lib/tips-view.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { spotL, venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
@@ -342,15 +342,15 @@ function mannersPage(lang) {
   return pg(lang, '/tips/manners/', { title, description: lang === 'ja' ? '日本のフリーマーケット・骨董市で、気持ちよく過ごすためのコラム。' : 'Columns on how to enjoy a Japanese flea market or antique fair in a pleasant way.', bannerText: mannersBanner(lang), body: `<div class=\"in page\">${mannersIndex(MANNERS, lang)}</div>`, css: ART_CSS });
 }
 
-function mannerArticlePage(x, lang) {
+// コラムの記事（/tips/manners/<slug>/ と /tips/<slug>/）
+function columnPage(x, lang, base) {
   const c = x[lang];
-  return pg(lang, `/tips/manners/${x.slug}/`, { title: c.title, description: c.lead, body: renderDoc({ title: c.title, lead: c.lead, secs: docSections(c.blocks, lang), lang }), css: ART_CSS });
+  return pg(lang, `${base}${x.slug}/`, { title: c.title, description: c.lead, body: renderDoc({ title: c.title, lead: c.lead, secs: docSections(c.blocks, lang), lang }), css: ART_CSS });
 }
 
 function tipsPage(lang) {
-  const tips = TIPS;
   const title = lang === 'ja' ? 'TIPS：楽しく体験するためのコツ' : 'Tips for enjoying flea markets';
-  return pg(lang, '/tips/', { title, description: lang === 'ja' ? '日本のフリーマーケット・骨董市で、気持ちよく過ごすための10のコツ。出典は公式ページ。' : 'Ten tips for a good visit to a flea market or antique fair in Japan, each with its official source.', bannerText: tipsBanner(lang), body: `<div class="in page">${tipsBody(tips, lang)}</div>`, css: ART_CSS });
+  return pg(lang, '/tips/', { title, description: lang === 'ja' ? '日本のフリーマーケット・骨董市で、気持ちよく過ごすための10のコツ。' : 'Ten tips for a pleasant visit to a flea market or antique fair in Japan.', bannerText: tipsBanner(lang), body: `<div class="in page">${tipsIndex(TIPS, lang)}</div>`, css: ART_CSS });
 }
 
 function guidePage(lang) {
@@ -509,7 +509,7 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   ALL_POSTS = [...BLOG.map((b) => cleanLinks(resolvePost(b, ctx), ids)), ...autoPosts.map((a) => cleanLinks(a, ids))];
   ctx.latestPosts = posts().slice(0, 3);
   // 英語が既定（/）。日本語は /ja/
-  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), tipsPage(lang), mannersPage(lang), ...MANNERS.map((x) => mannerArticlePage(x, lang)), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
+  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), tipsPage(lang), mannersPage(lang), ...TIPS.map((x) => columnPage(x, lang, '/tips/')), ...MANNERS.map((x) => columnPage(x, lang, '/tips/manners/')), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）
   const files = LANGS_ORDER.map((lang) => ({ path: langPath('/blog/feed.xml', lang), content: feedXml(lang) }));
   return { pages, occ, files, spots };

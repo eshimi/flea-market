@@ -1,38 +1,44 @@
 [
- {
-  "date": "2026-10-20",
-  "en": "The top page has a new design: photo categories, area tiles, a guide banner, and a QR code in the footer",
-  "ja": "トップページを刷新：写真のカテゴリー・地域のタイル・ガイド帯・フッターのQRコード（配色とフォントを全ページで統一）",
-  "link": "/"
- },
- {
-  "date": "2026-10-19",
-  "en": "Spots expanded to 30 venues in and around Tokyo, with photos, maps and a quick poll",
-  "ja": "スポット（会場）を東京近郊の30件に拡大。写真・地図・アンケートつき",
-  "link": "/spot/"
- },
- {
-  "date": "2026-10-19",
-  "en": "Guide articles started: one new venue guide every morning",
-  "ja": "ガイド記事を開始。毎朝1本、会場ガイドを追加します",
-  "link": "/blog/"
- },
- {
-  "date": "2026-10-19",
-  "en": "Added a record of past events (dates confirmed on official sources before the event)",
-  "ja": "過去の開催の記録を追加（開催前に公式で確認していた回）",
-  "link": "/calendar/"
- },
- {
-  "date": "2026-10-19",
-  "en": "More listings: Hokkaido, Aichi, Kansai, Kyoto and Fukuoka added to the Tokyo listings",
-  "ja": "掲載を拡大：東京に加えて、北海道・愛知・関西・京都・福岡の市を追加",
-  "link": "/area/"
- },
- {
-  "date": "2026-10-18",
-  "en": "The site is now in English and Japanese",
-  "ja": "日本語・英語の両方で見られるようになりました",
-  "link": "/about/"
- }
+  {
+    "date": "2026-10-20",
+    "ja": "TIPS（10のコツ）を、オリジナルのコラムに書き直しました。",
+    "en": "The 10 tips are now original columns.",
+    "link": "/tips/"
+  },
+  {
+    "date": "2026-10-20",
+    "en": "The top page has a new design: photo categories, area tiles, a guide banner, and a QR code in the footer",
+    "ja": "トップページを刷新：写真のカテゴリー・地域のタイル・ガイド帯・フッターのQRコード（配色とフォントを全ページで統一）",
+    "link": "/"
+  },
+  {
+    "date": "2026-10-19",
+    "en": "Spots expanded to 30 venues in and around Tokyo, with photos, maps and a quick poll",
+    "ja": "スポット（会場）を東京近郊の30件に拡大。写真・地図・アンケートつき",
+    "link": "/spot/"
+  },
+  {
+    "date": "2026-10-19",
+    "en": "Guide articles started: one new venue guide every morning",
+    "ja": "ガイド記事を開始。毎朝1本、会場ガイドを追加します",
+    "link": "/blog/"
+  },
+  {
+    "date": "2026-10-19",
+    "en": "Added a record of past events (dates confirmed on official sources before the event)",
+    "ja": "過去の開催の記録を追加（開催前に公式で確認していた回）",
+    "link": "/calendar/"
+  },
+  {
+    "date": "2026-10-19",
+    "en": "More listings: Hokkaido, Aichi, Kansai, Kyoto and Fukuoka added to the Tokyo listings",
+    "ja": "掲載を拡大：東京に加えて、北海道・愛知・関西・京都・福岡の市を追加",
+    "link": "/area/"
+  },
+  {
+    "date": "2026-10-18",
+    "en": "The site is now in English and Japanese",
+    "ja": "日本語・英語の両方で見られるようになりました",
+    "link": "/about/"
+  }
 ]
