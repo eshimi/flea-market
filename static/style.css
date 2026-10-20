@@ -141,10 +141,10 @@ aside h2{font-size:15px;margin-bottom:10px}
 
 /* 帯の中に文字を置くページ：パンくずは帯の一番上、見出し・説明とイラストは上下の中央 */
 .pg-banner.has-text{height:auto;background:#FCEFDD;border-bottom:1px solid var(--line)}
-.pg-banner-in{display:flex;flex-direction:column;padding-top:10px;padding-bottom:12px}
-.pg-banner-crumbs .crumbs{margin:0}
+.pg-banner-in{display:flex;flex-direction:column;padding-top:4px;padding-bottom:4px}
+.pg-banner-crumbs .crumbs{margin:0;padding:0;line-height:1.4}
 .pg-banner-main{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:center;flex:1}
 .pg-banner-text h1{margin:0 0 8px}
 .pg-banner-text .lead{margin:0;max-width:34em}
-.pg-banner-art{height:150px;background-size:contain;background-position:center;background-repeat:no-repeat}
-@media (max-width:900px){.pg-banner-main{grid-template-columns:1fr;gap:8px}.pg-banner-art{height:110px}.pg-banner-in{padding-top:8px;padding-bottom:8px}}
+.pg-banner-art{height:140px;background-size:contain;background-position:center;background-repeat:no-repeat}
+@media (max-width:900px){.pg-banner-main{grid-template-columns:1fr;gap:6px}.pg-banner-art{height:100px}.pg-banner-in{padding-top:2px;padding-bottom:2px}}
