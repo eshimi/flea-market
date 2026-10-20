@@ -14,7 +14,7 @@ import { CONTACT_EMAIL, SITE } from './lib/nav.mjs';
 import { renderHomeBody } from './lib/home-view.mjs';
 import { S, T, WD_EN } from './lib/i18n.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
-import { ART_CSS, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
+import { ART_CSS, blogBanner, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { spotL, venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
@@ -382,7 +382,7 @@ const cleanLinks = (post, ids) => {
 
 function blogIndex(lang) {
   const lead = lang === 'ja' ? 'マーケットの探し方・読み方・お出かけの前の確認について。公式ページの記載に基づいて書いています。' : 'How to find markets, read listings and check before you go, based on what official pages say.';
-  return pg(lang, '/blog/', { title: blogTitle(lang), description: lead, body: renderBlogIndex(posts(), lang), css: ART_CSS, scripts: ['/blog.js'], head: feedLink(lang) });
+  return pg(lang, '/blog/', { title: blogTitle(lang), description: lead, bannerText: blogBanner(lang), body: renderBlogIndex(posts(), lang), css: ART_CSS, scripts: ['/blog.js'], head: feedLink(lang) });
 }
 
 function blogPost(post, lang) {
@@ -447,8 +447,8 @@ function splitBanner(page) {
   const m = /^<div class="in page[^"]*">((?:<nav class="crumbs"[\s\S]*?<\/nav>)?<h1[\s\S]*?<\/h1>(?:<p class="lead">[\s\S]*?<\/p>)?)([\s\S]*)<\/div>$/.exec(page.body);
   if (m) return { ...page, bannerText: m[1], body: `<div class="in page">${m[2]}</div>` };
   // 読み物（ガイド・よくある質問・ブログ記事）：パンくず・見出し・説明（art-head）を帯へ
-  const a = /^<div class="art-wrap">\s*(<nav class="crumbs art-crumbs"[\s\S]*?<\/nav>)\s*<header class="art-head">(<h1[\s\S]*?<\/h1>(?:<p class="art-lead">[\s\S]*?<\/p>)?)<\/header>([\s\S]*)$/.exec(page.body);
-  if (a) return { ...page, bannerText: `${a[1].replace('art-crumbs', 'art-crumbs-x')}${a[2]}`, body: `<div class="art-wrap">${a[3]}` };
+  const a = /^<div class="art-wrap">\s*(<nav class="crumbs art-crumbs"[\s\S]*?<\/nav>)\s*<header class="art-head">(<h1[\s\S]*?<\/h1>(?:<p class="art-k">[\s\S]*?<\/p>)?(?:<p class="art-lead">[\s\S]*?<\/p>)?)([\s\S]*?)<\/header>([\s\S]*)$/.exec(page.body);
+  if (a) return { ...page, bannerText: `${a[1].replace('art-crumbs', 'art-crumbs-x')}${a[2]}`, body: `<div class="art-wrap">${a[3].trim() ? `<header class="art-head">${a[3]}</header>` : ''}${a[4]}` };
   return page;
 }
 

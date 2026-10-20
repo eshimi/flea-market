@@ -82,6 +82,12 @@ export function sideFirst(lang) {
 const tagLinks = (tags) => tags.map((x) => `<li><a href="/search/?q=${encodeURIComponent(x)}" rel="tag">#${esc(x)}</a></li>`).join('');
 
 // ---- 一覧 ----
+// 一覧の帯（パンくず・見出し・説明・ボタン）。帯の中に置く
+export function blogBanner(lang = 'ja') {
+  const t = TXT[lang];
+  return `<nav class="crumbs art-crumbs" aria-label="${esc(t.crumbs)}"><a href="/">${lang === 'ja' ? 'トップ' : 'Home'}</a> › <span>${esc(t.blog)}</span></nav><h1>${esc(t.blog)}</h1><p class="lp-s">${esc(t.lead)}</p><div class="lp-btns"><a class="lp-btn p" href="/search/">${esc(t.btnFind)} <span aria-hidden="true">→</span></a><a class="lp-btn s" href="/guide/">${esc(t.btnGuide)}</a></div>`;
+}
+
 export function renderBlogIndex(posts, lang) {
   const t = TXT[lang];
   const cats = Object.keys(CATS).filter((k) => posts.some((p) => p.cat === k));
@@ -93,12 +99,6 @@ export function renderBlogIndex(posts, lang) {
   }).join('\n');
   const tags = [...new Set(posts.flatMap((p) => p.tags[lang]))];
   return `<div class="art-wrap">
-<nav class="crumbs art-crumbs" aria-label="${esc(t.crumbs)}"><a href="/">${lang === 'ja' ? 'トップ' : 'Home'}</a> › <span>${esc(t.blog)}</span></nav>
-<section class="lp-hero" aria-labelledby="lp-title">
-<div class="lp-in"><p class="lp-k">${esc(t.kicker)}</p><h1 id="lp-title">${esc(t.blog)}</h1><p class="lp-s">${esc(t.lead)}</p>
-<div class="lp-btns"><a class="lp-btn p" href="/search/">${esc(t.btnFind)} <span aria-hidden="true">→</span></a><a class="lp-btn s" href="/guide/">${esc(t.btnGuide)}</a></div></div>
-<img class="lp-pic" src="/img/about.webp" alt="" width="900" height="675" loading="lazy">
-</section>
 <nav class="bl-chips" aria-label="${esc(t.filter)}">${chips}</nav>
 <div class="bl-layout"><section class="bl-list" aria-labelledby="list"><h2 id="list" class="visually-hidden">${esc(t.list)}</h2>${rows}</section>
 <aside class="page-side" aria-label="${esc(t.sideLabel)}">${sideCta(lang)}${sideFirst(lang)}<nav class="side-card side-tags" aria-label="${esc(t.popular)}"><h2>${esc(t.popular)}</h2><ul class="tag-list">${tagLinks(tags)}</ul><p class="rss"><a href="${langPath('/blog/feed.xml', lang)}">${esc(t.rss)}</a></p></nav></aside></div>

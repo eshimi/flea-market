@@ -245,8 +245,9 @@ test('使い方・よくある質問・ブログ：両言語のページ・RSS�
   assert.match(layout(has('/ja/guide/')), /href="\/ja\/weekend\/"/);
   assert.match(layout(has('/faq/')), /"@type":"FAQPage"/);
   // 参考サイトと同じ構成：一覧（見出し帯・カテゴリ・記事の行・右の案内）、記事（種別・日付・読了時間・ポイント・目次・前後の記事・タグ）
-  const idx = has('/blog/').body;
-  for (const k of ['class="lp-hero"', 'class="bl-chips"', 'class="bl-row"', 'class="side-cta"', 'side-tags']) assert.ok(idx.includes(k), k);
+  const blogPg = has('/blog/');
+  const idx = blogPg.body + (blogPg.bannerText || '');
+  for (const k of ['class="lp-s"', 'class="bl-chips"', 'class="bl-row"', 'class="side-cta"', 'side-tags']) assert.ok(idx.includes(k), k);
   const post = has('/blog/reading-the-labels/').body;
   for (const k of ['class="bl-meta"', 'class="bl-points"', 'class="art-box"', 'side-toc', 'class="bl-pn"', 'class="art-tags"']) assert.ok(post.includes(k), k);
   assert.match(has('/ja/blog/reading-the-labels/').body, /読了 約\d+分/);
