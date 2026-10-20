@@ -134,3 +134,7 @@ aside h2{font-size:15px;margin-bottom:10px}
 .af-chip:hover{border-color:var(--acc)}
 .af-chip[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
 .af-chip[aria-pressed="true"] sup{color:#fbe6dc}
+
+/* 中のページの上のイラスト帯（トップ以外） */
+.pg-banner{height:160px;background-size:cover;background-position:center;background-color:#EFE7D8;border-bottom:1px solid var(--line)}
+@media (max-width:900px){.pg-banner{height:108px}}

@@ -87,6 +87,15 @@ export function keywordMeta(keywords = [], lang = 'ja') {
   return [...new Set([...keywords.filter(Boolean), ...KW_SITE[lang]])].slice(0, 24).join(', ');
 }
 
+// 中のページの上のイラスト帯（添付の画像から切り出した10枚）。ページの種類ごとに決まった1枚を使う
+const BANNER_BY_SECTION = { weekend: 'b4-city', calendar: 'b4-city', date: 'b4-city', area: 'b5-mountain', kind: 'b3-paper-plane', spot: 'b10-door', e: 'b6-birds', blog: 'b8-steps-blocks', guide: 'b8-steps-blocks', faq: 'b8-steps-blocks', about: 'b7-coffee', shuten: 'b2-cliff', search: 'b9-clock' };
+export function pageBanner(base) {
+  if (base === '/' || base === '/404.html') return '';
+  const sec = base.split('/').filter(Boolean)[0] || '';
+  const name = BANNER_BY_SECTION[sec] || 'b1-flower';
+  return `<div class="pg-banner" aria-hidden="true" style="background-image:url(/img/banner/${name}.webp)"></div>\n`;
+}
+
 export function layout({ path, title, description, body, head = '', scripts = [], lang, css = [], keywords = [] }) {
   const sp = splitPath(path);
   lang = lang || sp.lang;
@@ -122,7 +131,7 @@ ${css.map((c) => `<link rel="stylesheet" href="${c}">`).join('\n')}${css.length 
 <body>
 ${siteHeader(base, lang)}
 <main id="main">
-${localize(body, lang)}
+${pageBanner(base)}${localize(body, lang)}
 </main>
 ${siteFooter(base, lang)}
 ${scripts.map((s) => `<script src="${s}" defer></script>`).join('\n')}
