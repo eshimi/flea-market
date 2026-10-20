@@ -1,0 +1,212 @@
+[
+  {
+    "id": "tip-01-rain",
+    "ja": {
+      "title": "雨の日は開催の有無を確かめる",
+      "body": "大江戸骨董市は、入場無料で雨天中止と案内されています。東京リサイクルのフリーマーケットは、開催の有無を原則として当日の朝7時30分までに決め、トップページで告知するとしています。"
+    },
+    "en": {
+      "title": "Check whether the market is held on a rainy day",
+      "body": "Oedo Antique Market is free to enter and is canceled in case of rain, according to its official site. Tokyo Recycle flea markets decide on the day, by 7:30 a.m., and announce it at the top of their website."
+    },
+    "sources": [
+      {
+        "url": "https://www.antique-market.jp/",
+        "checkedAt": "2026-10-20",
+        "evidence": ["入場無料。雨天中止。"]
+      },
+      {
+        "url": "https://trx.jp/faq",
+        "checkedAt": "2026-10-20",
+        "evidence": ["開催当日の朝7時30分までに決定致します。", "TOPページ上部に告知をいたします"]
+      }
+    ]
+  },
+  {
+    "id": "tip-02-hours",
+    "ja": {
+      "title": "終了時間は前後することがある",
+      "body": "大江戸骨董市の開催時間は9:00〜16:00と案内されています。天候や他の催事の都合で終了時間が繰り上がることがあり、早めに撤収する業者もいるとされています。"
+    },
+    "en": {
+      "title": "The closing time can come earlier",
+      "body": "Oedo Antique Market lists its hours as 9:00 to 16:00. The official site says the end time may move up because of the weather or other events, and some vendors start packing up early."
+    },
+    "sources": [
+      {
+        "url": "https://www.antique-market.jp/",
+        "checkedAt": "2026-10-20",
+        "evidence": ["開催時間9:00～16:00", "終了時間は16:00ですが、天候や他の催事の都合で、繰り上がる場合がありますので、ご了承ください。", "早めに撤収作業に入る業者もいますので、ご了承ください。"]
+      }
+    ]
+  },
+  {
+    "id": "tip-03-items",
+    "ja": {
+      "title": "売られていないもの",
+      "body": "東京リサイクルのフリーマーケットでは、ブランドコピー品、中古自転車、宝石・美術品・骨董品などの高額商品の販売が禁止されています。一部のブランド品は、本物でも新品・中古を問わず販売できないとされています。"
+    },
+    "en": {
+      "title": "Items that are not sold",
+      "body": "At Tokyo Recycle flea markets, copy-brand goods, used bicycles, and high-priced items such as jewelry, art and antiques are banned from sale. Some brand-name goods cannot be sold even if they are genuine, whether new or used."
+    },
+    "sources": [
+      {
+        "url": "https://trx.jp/faq",
+        "checkedAt": "2026-10-20",
+        "evidence": ["販売禁止の品物下記に関する商品の販売は禁止です", "●ブランドコピー品", "●中古自転車", "●宝石・美術品・骨董品等の高額商品"]
+      },
+      {
+        "url": "https://trx.jp/vendors",
+        "checkedAt": "2026-10-20",
+        "evidence": ["当団体は一部ブランド品の販売を、新品・中古を問わず禁止しています。", "※本物の場合でも出店できません。"]
+      }
+    ]
+  },
+  {
+    "id": "tip-04-payment",
+    "ja": {
+      "title": "カードが使えるかは店ごとに違う",
+      "body": "大江戸骨董市では、クレジットカードが使えるかは出店業者によって異なるとされ、店に直接聞くよう案内されています。東京国際フォーラムには、地下1Fのファミリーマートに ATM があります。"
+    },
+    "en": {
+      "title": "Card payment depends on each vendor",
+      "body": "At Oedo Antique Market, whether a stall accepts credit cards depends on the vendor, and visitors are asked to check with the shop. There is an ATM at the FamilyMart on the B1 floor of Tokyo International Forum."
+    },
+    "sources": [
+      {
+        "url": "https://www.antique-market.jp/q-a/",
+        "checkedAt": "2026-10-20",
+        "evidence": ["出店業者によっては利用できるところもありますのでお店の方に聞いてみてください。", "東京国際フォーラム：地下1FファミリーマートにATMがあります。"]
+      }
+    ]
+  },
+  {
+    "id": "tip-05-parking",
+    "ja": {
+      "title": "駐車場は会場の駐車場と近隣の駐車場",
+      "body": "大江戸骨董市のQ&Aでは、東京国際フォーラム駐車場が7時〜23時30分（年中無休）、420台、30分200円と案内されています。近隣にも他の駐車場があると書かれています。"
+    },
+    "en": {
+      "title": "Parking at the venue and nearby",
+      "body": "The Oedo Antique Market Q&A lists the Tokyo International Forum parking lot as open 7:00 to 23:30 every day, with 420 spaces at 200 yen per 30 minutes. The site notes that other parking lots are nearby."
+    },
+    "sources": [
+      {
+        "url": "https://www.antique-market.jp/q-a/",
+        "checkedAt": "2026-10-20",
+        "evidence": ["東京国際フォーラム駐車場", "7：00～23：30 年中無休 420台 ￥200/30分", "※その他、近隣に安い駐車場がいくつもあります。"]
+      }
+    ]
+  },
+  {
+    "id": "tip-06-access",
+    "ja": {
+      "title": "電車で行くとき",
+      "body": "大江戸骨董市の会場（東京国際フォーラム）は、JR有楽町駅から徒歩1分、JR東京駅から徒歩5分と案内されています。地下鉄では有楽町線の有楽町駅から地下通路で直結しています。"
+    },
+    "en": {
+      "title": "Getting there by train",
+      "body": "The Oedo Antique Market venue, Tokyo International Forum, is listed as a 1-minute walk from JR Yurakucho Station and a 5-minute walk from JR Tokyo Station. The Yurakucho Line's Yurakucho Station connects directly by underground passage."
+    },
+    "sources": [
+      {
+        "url": "https://www.antique-market.jp/%E4%BA%A4%E9%80%9A%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/%E6%9D%B1%E4%BA%AC%E5%9B%BD%E9%9A%9B%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%83%A0%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+        "checkedAt": "2026-10-20",
+        "evidence": ["JR有楽町駅 徒歩1分", "JR東京駅 徒歩5分", "地下鉄有楽町線 有楽町駅 地下通路直結"]
+      }
+    ]
+  },
+  {
+    "id": "tip-07-valuables",
+    "ja": {
+      "title": "貴重品は身につけて管理する",
+      "body": "東京リサイクルの公式ページでは、最近フリーマーケット会場内でスリ・置き引きが多発していると案内され、貴重品の管理をしっかり行うよう求めています。"
+    },
+    "en": {
+      "title": "Keep valuables with you",
+      "body": "The official Tokyo Recycle shopping guide says pickpocketing and bag theft have occurred often at flea market venues recently, and asks visitors to keep their valuables secure."
+    },
+    "sources": [
+      {
+        "url": "https://trx.jp/shopping",
+        "checkedAt": "2026-10-20",
+        "evidence": ["最近フリーマーケット会場内でのスリ・置き引きが多発しています。", "貴重品の管理をしっかり行ってください。"]
+      }
+    ]
+  },
+  {
+    "id": "tip-08-manners",
+    "ja": {
+      "title": "撮影と値段交渉のマナー",
+      "body": "東京リサイクルの会場では、個人的な記念撮影を除き、会場内の撮影は事前に主催者の許可が必要とされています。大江戸骨董市では、個人用の撮影でも被写体の了解を取るよう案内され、値段交渉は行き過ぎないよう控えるよう書かれています。"
+    },
+    "en": {
+      "title": "Manners for photos and bargaining",
+      "body": "At Tokyo Recycle venues, photography inside the venue needs the organizer's permission, except for personal souvenir photos. Oedo Antique Market asks visitors to get the consent of the people in a photo, and the Tokyo Recycle shopping guide asks buyers not to bargain too hard."
+    },
+    "sources": [
+      {
+        "url": "https://trx.jp/faq",
+        "checkedAt": "2026-10-20",
+        "evidence": ["個人的な記念撮影を除き、会場内での写真・動画等の撮影は事前に主催者の許可を得た場合に限り行えます。", "無断での撮影は行えません。"]
+      },
+      {
+        "url": "https://www.antique-market.jp/",
+        "checkedAt": "2026-10-20",
+        "evidence": ["個人用の写真又は動画の撮影は、撮影の前に被写体となる方や、被写体の所有者の了解をとってから行ってください。"]
+      },
+      {
+        "url": "https://trx.jp/shopping",
+        "checkedAt": "2026-10-20",
+        "evidence": ["あまり行き過ぎた値段交渉は控えましょう。"]
+      }
+    ]
+  },
+  {
+    "id": "tip-09-vendors",
+    "ja": {
+      "title": "出店したい方の基本",
+      "body": "東京リサイクルでは、公式サイトから予約し、予約サイトのアカウント登録が必要とされています。出店料は1ブースあたりの金額です。大江戸骨董市では、申込みは開催日の1か月前（手持ち出店）または2か月前（車出店）から受け付け、先着順ではなく審査があるとされています。"
+    },
+    "en": {
+      "title": "Basics for vendors",
+      "body": "Tokyo Recycle asks vendors to book through its official site, which requires an account on the Peatix booking site. The listed fee is per booth. Oedo Antique Market takes applications from one month before the date for hand-carry stalls, or two months for car stalls; applications are screened and are not first-come, first-served."
+    },
+    "sources": [
+      {
+        "url": "https://trx.jp/faq",
+        "checkedAt": "2026-10-20",
+        "evidence": ["※ご予約の際は、予約サイト（peatix）のアカウント登録が必要となります。", "なお、 記載の出店料は1ブースの金額 です。", "※システムの都合上、お電話でのご予約は対応致しかねます。"]
+      },
+      {
+        "url": "https://www.antique-market.jp/%E5%87%BA%E5%BA%97%E3%81%8A%E7%94%B3%E8%BE%BC%E3%81%BF/",
+        "checkedAt": "2026-10-20",
+        "evidence": ["手持ち出店は開催日の1ケ月前の1日から受け付けています。", "ただし、 先着順ではありません。", "出店には審査がありますので、出店をお受けできないことがありますので、ご了承ください。"]
+      }
+    ]
+  },
+  {
+    "id": "tip-10-contact",
+    "ja": {
+      "title": "来る前に最新の開催情報を確かめる",
+      "body": "大江戸骨董市は、開催情報を開催前日の夕方から電話で聞けると案内し、日程は変更になることがあるため最新の情報を確認するよう書いています。東京リサイクルは、当日の開催の有無をトップページ上部で告知するとしています。"
+    },
+    "en": {
+      "title": "Check the latest information before you go",
+      "body": "Oedo Antique Market says event information can be heard by phone from the evening before each market, and that dates may change, so visitors should check the latest information. Tokyo Recycle says it posts the same-day decision at the top of its website."
+    },
+    "sources": [
+      {
+        "url": "https://www.antique-market.jp/",
+        "checkedAt": "2026-10-20",
+        "evidence": ["(開催前日夕方から、応答電話で開催情報が聞けます)", "※スケジュールは変更になる可能性もありますので、必ず最新の情報をご確認ください。"]
+      },
+      {
+        "url": "https://trx.jp/faq",
+        "checkedAt": "2026-10-20",
+        "evidence": ["TOPページ上部に告知をいたします"]
+      }
+    ]
+  }
+]

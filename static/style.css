@@ -157,3 +157,14 @@ aside h2{font-size:15px;margin-bottom:10px}
 .pref-card .pc-t small{font-size:15px;color:var(--ink);font-weight:700}
 /* 県のページの帯のイラスト（県別の画像） */
 .pg-banner-art[style*="/img/pref/"]{background-size:contain}
+
+/* TIPS（/tips/）：番号つきの10項目 */
+.tips{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.tip{display:grid;grid-template-columns:auto 1fr;gap:16px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.tip-n{font-family:"DM Serif Display","Noto Sans JP",serif;font-size:30px;line-height:1;color:var(--acc);min-width:2.2ch}
+.tip h2{font-size:17px;margin:0 0 6px;line-height:1.4}
+.tip p{margin:0 0 6px}
+.tip-src{display:flex;align-items:flex-start;gap:6px;font-size:12.5px;color:var(--sub)}
+.tip-src .ic{flex:0 0 auto;margin-top:2px}
+.tips-note{font-size:13px;color:var(--sub);margin:18px 0 0}
+@media (max-width:600px){.tip{grid-template-columns:1fr;gap:6px}.tip-n{font-size:24px}}

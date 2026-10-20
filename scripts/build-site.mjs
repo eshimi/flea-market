@@ -15,6 +15,7 @@ import { renderHomeBody } from './lib/home-view.mjs';
 import { S, T, WD_EN } from './lib/i18n.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, blogBanner, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
+import { tipsBanner, tipsBody } from './lib/tips-view.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { spotL, venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
@@ -42,7 +43,9 @@ export function loadData(dir = join(ROOT, 'data')) {
   try { venues = read('venues.json'); } catch { /* スポットのデータがない場合（テストの見本など）は、スポットのページなし */ }
   let siteUpdates = [];
   try { siteUpdates = read('site-updates.json'); } catch { /* 更新情報がないデータ（テストの見本など）は、枠を出さない */ }
-  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts, geo, archive, venues, siteUpdates };
+  let tips = [];
+  try { tips = read('tips.json'); } catch { /* TIPS がないデータ（テストの見本など）は、TIPS のページなし */ }
+  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts, geo, archive, venues, siteUpdates, tips };
 }
 
 // ---- 各ページ ----
@@ -330,6 +333,13 @@ ${upd}
 
 // ---- 使い方・よくある質問・ブログ（本文は scripts/lib/content.mjs） ----
 
+let TIPS = [];
+function tipsPage(lang) {
+  const tips = TIPS;
+  const title = lang === 'ja' ? 'TIPS：楽しく体験するためのコツ' : 'Tips for enjoying flea markets';
+  return pg(lang, '/tips/', { title, description: lang === 'ja' ? '日本のフリーマーケット・骨董市で、気持ちよく過ごすための10のコツ。出典は公式ページ。' : 'Ten tips for a good visit to a flea market or antique fair in Japan, each with its official source.', bannerText: tipsBanner(lang), body: `<div class="in page">${tipsBody(tips, lang)}</div>`, css: ART_CSS });
+}
+
 function guidePage(lang) {
   const g = GUIDE[lang];
   const body = renderDoc({ title: g.title, lead: g.lead, secs: docSections(g.blocks, lang), lang });
@@ -471,8 +481,9 @@ function withSide(page0, ctx, lang) {
 
 // ---- 全体 ----
 
-export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {}, archive = { items: [] }, venues = [], siteUpdates = [] }, today, days = 120) {
+export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {}, archive = { items: [] }, venues = [], siteUpdates = [], tips = [] }, today, days = 120) {
   setTranslations(translations);
+  TIPS = tips;
   GEO = geo;
   const ids = new Set(series.map((x) => x.id));
   const occ = buildOccurrences(series, occurrences, today, days);
@@ -484,7 +495,7 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   ALL_POSTS = [...BLOG.map((b) => cleanLinks(resolvePost(b, ctx), ids)), ...autoPosts.map((a) => cleanLinks(a, ids))];
   ctx.latestPosts = posts().slice(0, 3);
   // 英語が既定（/）。日本語は /ja/
-  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
+  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), tipsPage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）
   const files = LANGS_ORDER.map((lang) => ({ path: langPath('/blog/feed.xml', lang), content: feedXml(lang) }));
   return { pages, occ, files, spots };
