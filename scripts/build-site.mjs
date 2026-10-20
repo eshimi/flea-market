@@ -88,7 +88,7 @@ function home(ctx, lang) {
 function listPage(lang, base, crumbs, h1, lead, list, extra = '', filter = false) {
   const af = filter ? areaFilter(list, lang) : '';
   const body = `<div class="in page">${breadcrumb(crumbs, lang)}<h1>${esc(h1)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}${extra}${af}${eventListByMonth(list, lang)}</div>`;
-  return pg(lang, base, { title: h1, description: P[lang].listDesc(h1), body, scripts: af ? ['/area-filter.js'] : [] });
+  return pg(lang, base, { title: h1, description: P[lang].listDesc(h1), body, scripts: af ? ['/area-filter.js'] : [], keywords: [h1, ...crumbs.map((c) => c.label)] });
 }
 
 function weekendPage(ctx, lang) {
@@ -161,7 +161,7 @@ function kindPages(ctx, lang) {
   const K = P[lang].kind;
   const idx = Object.keys(KINDS).map((k) => `<li><a href="/kind/${k}/">${esc(kindName(k, lang))}<small>${esc(kindDesc(k, lang))}</small></a></li>`).join('');
   return [
-    pg(lang, '/kind/', { title: K.h1, description: lang === 'ja' ? 'フリーマーケット・蚤の市・骨董市・手作り市・マルシェの種類から探せます。' : 'Find flea markets, nomi-no-ichi, antique fairs, handmade markets and marchés by type.', body: `<div class="in page">${breadcrumb([{ label: K.h1 }], lang)}<h1>${esc(K.h1)}</h1><ul class="grid-links">${idx}</ul></div>` }),
+    pg(lang, '/kind/', { keywords: Object.keys(KINDS).map((k) => kindName(k, lang)), title: K.h1, description: lang === 'ja' ? 'フリーマーケット・蚤の市・骨董市・手作り市・マルシェの種類から探せます。' : 'Find flea markets, nomi-no-ichi, antique fairs, handmade markets and marchés by type.', body: `<div class="in page">${breadcrumb([{ label: K.h1 }], lang)}<h1>${esc(K.h1)}</h1><ul class="grid-links">${idx}</ul></div>` }),
     ...Object.keys(KINDS).map((k) => listPage(lang, `/kind/${k}/`, [{ href: '/kind/', label: K.crumb }, { label: kindName(k, lang) }], K.listH1(kindName(k, lang)), kindDesc(k, lang), ctx.occ.filter((o) => o.series.kinds.includes(k)))),
   ];
 }
@@ -251,7 +251,7 @@ ${ex ? `<dl class="facts">${row(p.fee, tv(s, 'fee', ex.fee, lang))}${row(p.apply
 <p class="note">${s.recurrence.type === 'dates' ? '' : esc(p.rule(lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence)))} ${esc(disclaimer(lang))}</p>
 </div>${side}</div>
 </div>`;
-  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list), scripts: ['/weather.js', '/map.js'] });
+  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list), scripts: ['/weather.js', '/map.js'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
 }
 
 function shutenPage(ctx, lang) {
@@ -388,7 +388,7 @@ function blogIndex(lang) {
 function blogPost(post, lang) {
   const c = post[lang];
   const ld = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: c.title, datePublished: post.date, inLanguage: lang, url: `${SITE.url}${langPath(`/blog/${post.slug}/`, lang)}` };
-  return pg(lang, `/blog/${post.slug}/`, { title: c.title, description: c.summary, body: renderPost(post, posts(), lang), css: ART_CSS, head: `${feedLink(lang)}<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n` });
+  return pg(lang, `/blog/${post.slug}/`, { title: c.title, description: c.summary, body: renderPost(post, posts(), lang), css: ART_CSS, keywords: [...(c.tags || []), c.title], head: `${feedLink(lang)}<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n` });
 }
 
 // RSS（/blog/feed.xml、/ja/blog/feed.xml）

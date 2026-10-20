@@ -78,7 +78,16 @@ function analyticsTag() {
 `;
 }
 
-export function layout({ path, title, description, body, head = '', scripts = [], lang, css = [] }) {
+// キーワード（meta keywords）。検索エンジンは順位に使わないことが多いが、ページの内容語をそろえるために出す
+const KW_SITE = {
+  ja: ['フリーマーケット', 'フリマ', '蚤の市', '骨董市', '手作り市', 'マルシェ', '開催情報', '日本', '東京'],
+  en: ['flea market Japan', 'antique fair Japan', 'handmade market Japan', 'Japan market schedule', 'flea market Tokyo', 'Japanese flea market'],
+};
+export function keywordMeta(keywords = [], lang = 'ja') {
+  return [...new Set([...keywords.filter(Boolean), ...KW_SITE[lang]])].slice(0, 24).join(', ');
+}
+
+export function layout({ path, title, description, body, head = '', scripts = [], lang, css = [], keywords = [] }) {
   const sp = splitPath(path);
   lang = lang || sp.lang;
   const base = sp.base;
@@ -93,6 +102,7 @@ export function layout({ path, title, description, body, head = '', scripts = []
 <meta name="viewport" content="width=device-width,initial-scale=1">
 ${analyticsTag()}<title>${esc(full)}</title>
 <meta name="description" content="${esc(description)}">
+<meta name="keywords" content="${esc(keywordMeta(keywords, lang))}">
 ${INDEXABLE ? '' : '<meta name="robots" content="noindex,nofollow">\n'}<link rel="canonical" href="${SITE.url}${path}">
 ${alt}<meta property="og:title" content="${esc(full)}">
 <meta property="og:description" content="${esc(description)}">
