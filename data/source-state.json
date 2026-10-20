@@ -1911,5 +1911,14 @@
   "evidenceOk": {
    "fmj-tsurumi-ryokuchi": true
   }
+ },
+ "https://tokyo-romantic.com/": {
+  "fetchedAt": "2026-10-20",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "tokyo-romantic-shibuya": true
+  }
  }
 }
