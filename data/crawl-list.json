@@ -275,5 +275,21 @@
   },
   "everyDays": 3,
   "addedAt": "2026-10-20"
+ },
+ {
+  "id": "tmc-shirakobato",
+  "url": "https://tmc-dx.org/area/shirakobato.html",
+  "name": "タイムマシーンカンパニー しらこばと水上公園フリーマーケット",
+  "kind": "organizer",
+  "pref": "11",
+  "note": "埼玉県越谷市の定期開催（2ヶ月に1回程度）。2026-10-20 時点の公式の日程は 9/27 のみ（過去）。次回の日程が載ったら確認待ちに入る。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可。事実の項目だけ載せる（2026-10-20）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
  }
 ]

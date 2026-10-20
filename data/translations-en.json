@@ -1120,6 +1120,16 @@
    "name": "Tokyo Romantic Market (Shibuya Antique Market)",
    "venue": "Shibuya Garden Tower outdoor plaza",
    "time": "10:00–16:00"
+  },
+  "tmc-kawagoe-suijo-park": {
+   "name": "Kawagoe Suijo Park Flea Market (Time Machine Company)",
+   "venue": "Kawagoe Suijo Park",
+   "address": "880 Ikebe, Kawagoe City, Saitama Prefecture",
+   "access": "15 min. walk from JR Nishi-Kawagoe Station",
+   "time": "9:00–15:00",
+   "rain": "Cancelled in rain",
+   "fee": "Stall with your car (5.0 m × 5.0 m): ¥2,500 (side-by-side) / On foot (2.0 m × 2.0 m): ¥2,500 (no parking other than loading and unloading)",
+   "apply": "Reserve from the “Stall reservation” section of the official page"
   }
  },
  "organizers": {

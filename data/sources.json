@@ -2370,5 +2370,16 @@
    "checkedAt": "2026-10-20",
    "note": "主催者の公式サイト。robots.txt は許可（CMSの内部パスのみ禁止）。利用規約のページは確認できず。事実の項目（日付・時間・会場）だけ掲載（2026-10-20 確認）"
   }
+ },
+ {
+  "url": "https://tmc-dx.org/area/kawagoe.html",
+  "series": [
+   "tmc-kawagoe-suijo-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "主催者（運営会社）の公式サイト。robots.txt は許可（/members.html・/admin/・/login/ のみ禁止）。出店規約は出店者向けで、取得・転載を禁じる記載は確認できず。事実の項目（日付・時間・場所・出店料）だけ掲載し、文章は転載しない（2026-10-20 確認）"
+  }
  }
 ]

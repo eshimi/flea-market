@@ -8096,5 +8096,63 @@
     ]
    }
   ]
+ },
+ {
+  "id": "tmc-kawagoe-suijo-park",
+  "name": "川越水上公園フリーマーケット（タイムマシーンカンパニー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "タイムマシーンカンパニー",
+   "url": "https://tmc-dx.org/"
+  },
+  "venue": {
+   "name": "川越水上公園",
+   "pref": "11",
+   "city": "川越市",
+   "cityCode": "11201",
+   "address": "埼玉県川越市池辺880",
+   "access": "JR西川越駅より徒歩15分"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08",
+    "2026-12-20",
+    "2026-12-27"
+   ],
+   "text": "主催者の開催日程（2ヶ月に1回程度）"
+  },
+  "time": {
+   "text": "9:00～15:00",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "exhibitor": {
+   "fee": "車ごと出店（5.0m×5.0m）2,500円（横出し）／手持ち出店（2.0m×2.0m）2,500円（搬入出以外での駐車はできません）",
+   "apply": "公式ページの「出店予約」から申込み",
+   "applyUrl": "https://tmc-dx.org/area/kawagoe.html"
+  },
+  "visitor": {
+   "rain": "雨天中止"
+  },
+  "sources": [
+   {
+    "url": "https://tmc-dx.org/area/kawagoe.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-20",
+    "evidence": [
+     "11月08日(日)",
+     "12月20日(日)",
+     "12月27日(日)",
+     "09:00～15:00",
+     "埼玉県川越市池辺880",
+     "JR西川越駅より徒歩15分",
+     "雨天中止",
+     "車ごと出店(5.0m×5.0m)"
+    ]
+   }
+  ]
  }
 ]
