@@ -1,5 +1,6 @@
 import { handleVotes, SpotVotes } from './votes.js';
 import { handleReviews, ReviewGate } from './reviews.js';
+import { handleContact } from './contact.js';
 export { SpotVotes, ReviewGate };
 
 // 静的ファイル（dist/）を配る。/api/* は、今後の機能（保存・掲載申込みなど）のための場所
@@ -35,6 +36,7 @@ export default {
       if (v) return handleVotes(request, env, v[1]);
       const r = /^\/api\/reviews\/([a-z0-9-]+)$/.exec(url.pathname);
       if (r) return handleReviews(request, env, r[1]);
+      if (url.pathname === '/api/contact') return handleContact(request, env);
       return Response.json({ error: 'not found' }, { status: 404 });
     }
     // 以前の英語のトップ（/en/）は、英語が既定になったので / へ

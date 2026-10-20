@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-20",
+    "ja": "お問い合わせフォーム（/contact/）を追加しました。掲載の修正・削除、情報提供、出店、取材などの窓口です。",
+    "en": "A contact form (/contact/) is now available for corrections, information, vendor questions and press enquiries.",
+    "link": "/contact/"
+  },
+  {
+    "date": "2026-10-20",
     "ja": "フリマのページに、評価（★）と情報提供のフォームを追加しました。届いた内容は確認してから掲載します。",
     "en": "Market pages now have a rating and information form. Submissions are checked before they are published.",
     "link": "/e/akishima-recycle-center-flea/"

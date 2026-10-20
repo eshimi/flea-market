@@ -16,7 +16,7 @@
 .rv-stars label:has(input:checked) .rv-star,.rv-stars label:has(input:checked) ~ label .rv-star{color:var(--acc)}
 .rv-stars label:has(input:focus-visible) .rv-star{outline:2px solid var(--acc);outline-offset:2px;border-radius:4px}
 .rv-f{display:grid;gap:4px;font-size:14px}
-.rv-f textarea,.rv-f input{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.rv-f textarea,.rv-f input,.rv-f select{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:#fff}
 .rv-form button{justify-self:start;font:inherit;font-weight:600;color:#fff;background:var(--acc);border:0;border-radius:999px;padding:10px 22px;cursor:pointer}
 .rv-form button:disabled{opacity:.6;cursor:default}
 .rv-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
