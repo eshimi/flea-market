@@ -243,5 +243,37 @@
   },
   "addedAt": "2026-10-20",
   "everyDays": 1
+ },
+ {
+  "id": "garagesale-top",
+  "url": "https://garagesale.co.jp/",
+  "name": "日本ガレージセール協会（大阪のガレージセール）",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "大阪の8会場（万博お祭り広場・万博東の広場・中之島・花博・服部緑地・大泉緑地・深北緑地・久宝寺緑地）。雨天中止。日程表は読み込み（JavaScript）と紙のvol.を使うため、本文だけでは日付が取れない。トップの「開催情報」の更新を見る。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページは確認できず。robots.txt は /cmswp/wp-admin/ のみ禁止。サイトに「写真・文章・画像の無断転載を禁じます」とあるため、事実の項目だけ載せる（2026-10-20）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
+ },
+ {
+  "id": "nadeshiko-furima-schedule",
+  "url": "https://www.nadeshikofurima.com/schedule.html",
+  "name": "なでしこふれあいマーケット協会（年間スケジュール）",
+  "kind": "organizer",
+  "pref": "27",
+  "note": "大阪・京都・奈良・兵庫・滋賀の定期フリマ。年間スケジュールは表（月日・会場）。年が表示されていない（2026-10-20 時点の表は8〜9月）ので、年は要確認。",
+  "active": true,
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-20",
+   "note": "利用規約のページなし。robots.txt は 404（制限なし）。事実の項目だけ載せる（2026-10-20）"
+  },
+  "everyDays": 3,
+  "addedAt": "2026-10-20"
  }
 ]
