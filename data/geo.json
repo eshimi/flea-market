@@ -511,5 +511,32 @@
   "matched": "東京都世田谷区船橋七丁目９番２号",
   "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
   "checkedAt": "2026-10-19"
+ },
+ "setagaya-park-flea": {
+  "lat": 35.643364,
+  "lon": 139.680664,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都世田谷区池尻一丁目５番２７号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "mizuho-aozora-ichi": {
+  "lat": 35.778725,
+  "lon": 139.341995,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "東京都瑞穂町箱根ケ崎",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "edogawa-recycle-world-in-tobu-2026": {
+  "lat": 35.68996,
+  "lon": 139.899658,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都江戸川区東瑞江一丁目１７番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
  }
 }
