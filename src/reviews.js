@@ -181,7 +181,7 @@ export async function handleReviews(request, env, id, reviewId = null) {
     const r = await call(env, { op: 'report', series: id, id: reviewId, reason: body.reason });
     if (r.status !== 200) return json(r.data, r.status);
     const rv = r.data.review;
-    await notify(env, `[Flea Market JP] 不適切の通報：${id}`, `通報がありました。この書き込みは非公開になっています。管理画面で判断してください。\n\nフリマのページ：${page}\n評価：${stars(rv.stars)}\n通報の理由：${rv.reportReason || '（記入なし）'}\n\n${rv.comment}\n\n管理画面：https://${host}/admin/reviews.html`);
+    await notify(env, `[Flea Market JP] 不適切の通報：${id}`, `通報がありました。この書き込みは非公開になっています。管理画面で判断してください。\n\nフリマのページ：${page}\n評価：${stars(rv.stars)}\n通報の理由：${rv.reportReason || '（記入なし）'}\n\n${rv.comment}\n\n管理画面：https://${host}/admin/reviews`);
     return json({ ok: true });
   }
   if (request.method === 'GET') {
@@ -196,7 +196,7 @@ export async function handleReviews(request, env, id, reviewId = null) {
   const ip = request.headers.get('CF-Connecting-IP') || '';
   if (!(await gate(env, await sha256(`${env.VOTE_SALT || 'flea-market-jp'}|${ip}|${id}`), LIMIT_PER_HOUR))) return json({ error: 'rate limit' }, 429);
   const r = await call(env, { op: 'add', series: id, ...v.value });
-  await notify(env, `[Flea Market JP] 新しい評価：${id}`, `新しい書き込みが公開されました。\n\nフリマのページ：${page}\n評価：${stars(v.value.stars)}\n訪れた日：${v.value.visitedOn || '未記入'}\n\n${v.value.comment}\n\n管理画面：https://${host}/admin/reviews.html`);
+  await notify(env, `[Flea Market JP] 新しい評価：${id}`, `新しい書き込みが公開されました。\n\nフリマのページ：${page}\n評価：${stars(v.value.stars)}\n訪れた日：${v.value.visitedOn || '未記入'}\n\n${v.value.comment}\n\n管理画面：https://${host}/admin/reviews`);
   return json(r.data, r.status);
 }
 
