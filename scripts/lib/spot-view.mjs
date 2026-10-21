@@ -114,6 +114,7 @@ export function spotPage(sp, ctx, lang) {
   const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(mapQuery(shim).q)}&hl=${lang === 'ja' ? 'ja' : 'en'}&z=16&output=embed`;
   const mapImg = ctx.spotMapImg?.(v.id);
   const wxBox = sp.next && wt ? `<section class="ev-card"><h2>${esc(pp.secWx)}</h2><div class="wx" data-office="${wt.office}" data-area="${wt.area || ''}" data-date="${sp.next.date}" data-lang="${lang}" data-region="${esc(prefLabel(v.area.pref, 'en'))}"><p class="wx-st">${esc(pp.wxLoading)}</p></div><p class="note">${esc(pp.wxNote)} ${esc(pp.wxSrc)}<a href="https://www.jma.go.jp/bosai/forecast/" rel="noopener">${esc(pp.wxJma)}</a>${lang === 'ja' ? '' : ' (気象庁)'}</p></section>` : '';
+  const mapInline = (kind) => `<span class="map-inline"><a href="${esc(kind === 'open' ? mu.open : mu.route)}" target="_blank" rel="noopener nofollow">${esc(kind === 'open' ? pp.mapOpenShort : pp.mapRouteShort)} ↗</a></span>`;
   const mapCard = `<section class="ev-card"><h2>${esc(pp.secMap)}</h2>${mapImg ? `<a class="ev-mapimg" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow" title="${esc(pp.mapOpen)}"><img src="/img/maps/spot-${esc(v.id)}.webp" alt="${esc(pp.mapImgAlt(nm))}" width="640" height="400" loading="lazy" decoding="async"></a><p class="note">${esc(mu.pin ? pp.mapApproxName : mu.searched ? pp.mapApproxSearch : pp.mapApprox)}</p>` : `<div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(pp.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(nm)}</b><button type="button" class="map-show">${esc(pp.mapShow)}</button><small>${esc(pp.mapPrivacy)}</small></div></div>`}<p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(pp.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(pp.mapRoute)} ↗</a></p><p class="note">${esc(mu.pin ? pp.mapPin : mu.searched ? pp.mapSearched : mu.exact ? pp.mapExact : pp.mapLoose)}</p></section>`;
   const nav = [['/spot/', t.h1], ['/area/', lang === 'ja' ? '地域から探す' : 'Explore by Area'], ['/weekend/', lang === 'ja' ? '今週末の開催' : 'This Weekend'], ['/calendar/', lang === 'ja' ? 'イベントカレンダー' : 'Event Calendar']];
   const navCard = `<nav class="ev-card sn" aria-label="${esc(t.crumb)}"><h2>${esc(lang === 'ja' ? 'あわせて見る' : 'See also')}</h2><ul class="sn-list">${nav.map(([h, x]) => `<li><a href="${h}"><span>${esc(x)}</span><i aria-hidden="true">→</i></a></li>`).join('')}</ul></nav>`;
@@ -121,8 +122,8 @@ export function spotPage(sp, ctx, lang) {
   const q = (k, x) => `<div><dt>${esc(k)}</dt><dd>${x}</dd></div>`;
   const quickRows = [
     q(t.next, nxt ? `<b>${esc(dlabel(nxt.date, lang, { year: true }))}</b>${nxt.series.organizer.label ? (nxt.note ? ` · ${esc(nxt.note)}` : '') : ` · ${esc((lang === 'en' && orgEn(nxt.series.organizer.name)) || nxt.series.organizer.name)}`}` : `<span class="tbd">${esc(t.tbcNext)}</span>`),
-    q(t.address, addr || val('address') + (v.address && v.addressFrom === 'search' ? `<small class="addr-src">${esc(pp.addrSearched)}</small>` : '')),
-    q(t.access, val('access') + (v.access && v.accessFrom === 'search' ? `<small class="addr-src">${esc(pp.accessSearched)}</small>` : '')),
+    q(t.address, (addr || val('address') + (v.address && v.addressFrom === 'search' ? `<small class="addr-src">${esc(pp.addrSearched)}</small>` : '')) + mapInline('open')),
+    q(t.access, (val('access') + (v.access && v.accessFrom === 'search' ? `<small class="addr-src">${esc(pp.accessSearched)}</small>` : '')) + mapInline('route')),
   ].join('');
   const side = `<aside class="ev-side" aria-label="${esc(pp.secMap)}">${mapCard}${wxBox}${navCard}</aside>`;
   const body = `<div class="in page">${breadcrumb([{ href: '/spot/', label: t.crumb }, { label: spotL(v, 'name', lang) }], lang)}
@@ -140,8 +141,8 @@ ${pollBlock(v, lang)}
 <h2 class="sec-h">${esc(t.info)}</h2>
 <dl class="facts">
 ${row(t.summary, val('summary'))}
-${row(t.address, addr || val('address') + (v.address && v.addressFrom === 'search' ? `<small class="addr-src">${esc(pp.addrSearched)}</small>` : ''))}
-${row(t.access, val('access') + (v.access && v.accessFrom === 'search' ? `<small class="addr-src">${esc(pp.accessSearched)}</small>` : ''))}
+${row(t.address, (addr || val('address') + (v.address && v.addressFrom === 'search' ? `<small class="addr-src">${esc(pp.addrSearched)}</small>` : '')) + mapInline('open'))}
+${row(t.access, (val('access') + (v.access && v.accessFrom === 'search' ? `<small class="addr-src">${esc(pp.accessSearched)}</small>` : '')) + mapInline('route'))}
 ${row(t.place, val('place'))}
 ${row(t.rules, val('rules'))}
 </dl>

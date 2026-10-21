@@ -272,6 +272,7 @@ function seriesPage(s, ctx, lang) {
     ? `<ul class="sources">${list.slice(0, 12).map((o) => `<li>${esc(dlabel(o.date, lang, { year: true }))}　${statusTag(o, lang)}${o.note ? `　<span class="tbd">${esc(noteL(o, lang))}</span>` : ''}</li>`).join('')}</ul>`
     : `<p class="empty">${esc(p.noDates)}</p>`;
   const row = (k, x) => `<div><dt>${esc(k)}</dt><dd>${x}</dd></div>`;
+  const mapInline = (mu, kind) => `<span class="map-inline"><a href="${esc(kind === 'open' ? mu.open : mu.route)}" target="_blank" rel="noopener nofollow">${esc(kind === 'open' ? p.mapOpenShort : p.mapRouteShort)} ↗</a></span>`;
   // 公式に記載がない項目の「目安」（会場の名前・市区町村・一般的な傾向だけから。札を付けて区別する。住所の番地・徒歩時間は作らない）
   const est = (text, pp) => `<span class="est" title="${esc(pp.estTitle)}">${esc(pp.est)}</span> ${esc(text)}`;
   const station = /^([^\s・（(駅]+駅)前/.exec(v.name)?.[1];
@@ -302,8 +303,8 @@ ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
 ${row(p.when, rule)}
 ${row(p.time, lang === 'en' && timeEn(s) ? (s.time.text === timeEn(s).replace('–', '〜') ? esc(timeEn(s)) : orig(timeEn(s), s.time.text)) : t(s.time?.text))}
 ${row(p.venue, (lang === 'en' && venueL(s, lang) !== v.name ? orig(venueL(s, lang), v.name) : esc(v.name)) + spotLink(s, ctx, lang))}
-${row(p.address, v.address ? tv(s, 'address', v.address, lang) + (v.addressFrom === 'search' ? `<small class="addr-src">${esc(p.addrSearched)}</small>` : '') : est(estAddress, p))}
-${row(p.access, v.access ? tv(s, 'access', v.access, lang) + (v.accessFrom === 'search' ? `<small class="addr-src">${esc(p.accessSearched)}</small>` : '') : est(estAccess, p))}
+${row(p.address, (v.address ? tv(s, 'address', v.address, lang) + (v.addressFrom === 'search' ? `<small class="addr-src">${esc(p.addrSearched)}</small>` : '') : est(estAddress, p)) + mapInline(mu, 'open'))}
+${row(p.access, (v.access ? tv(s, 'access', v.access, lang) + (v.accessFrom === 'search' ? `<small class="addr-src">${esc(p.accessSearched)}</small>` : '') : est(estAccess, p)) + mapInline(mu, 'route'))}
 ${row(p.admission, s.visitor?.admission ? tv(s, 'admission', s.visitor.admission, lang) : est(p.estFree, p))}
 ${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang))}
 ${row(s.organizer.label ? (lang === 'en' ? labelEn(s.organizer.label) || p.orgLabel(s.organizer.label) : p.orgLabel(s.organizer.label)) : p.org, orgName)}

@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-10-21",
+    "ja": "開催詳細・スポットページの「所在地」「アクセス」の下に、地図で開く・経路を調べるボタンを置きました。",
+    "en": "Event and spot pages now have Open map and Directions buttons right under Address and Access."
+  },
+  {
+    "date": "2026-10-21",
     "ja": "公式ページにアクセスの記載がない会場のうち99件に、最寄り駅・徒歩などの「アクセス」を、会場名から調べて入れました（「公式ページの記載ではありません」と表示）。",
     "en": "For 99 venues with no access information on the official page, nearest stations and walking times looked up from the venue name are now shown (marked as not from the official page)."
   },
