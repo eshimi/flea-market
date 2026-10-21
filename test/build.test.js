@@ -343,8 +343,9 @@ test('地図・経路のリンクと当日の天気（気象庁）', async () =>
   assert.match(ja('edogawa-funabori-matsuri-2026'), /destination=%E6%9D%B1%E4%BA%AC%E9%83%BD/);
   assert.ok(ja('edogawa-funabori-matsuri-2026').includes('会場名から調べた住所で求めた目安です'));
   assert.match(ja('kioroshi-ekiminami-kotto-ichi'), /destination=35\.\d+%2C140\.\d+/);
-  assert.match(ja('setagaya-funabashi-nomi-no-ichi-2026-autumn'), /アクセス<\/dt><dd><span class="est"[^>]*>目安<\/span> 千歳船橋駅の駅前（会場名から/);
-  assert.match(pages.find((p) => p.path === '/e/setagaya-funabashi-nomi-no-ichi-2026-autumn/').body, /In front of Chitose-Funabashi Station \(from the venue name/);
+  // 公式にアクセスの記載がない会場：会場名から調べたアクセスに、公式の記載ではないと添える
+  assert.match(ja('setagaya-funabashi-nomi-no-ichi-2026-autumn'), /アクセス<\/dt><dd>[^<]*千歳船橋[^<]*<small class="addr-src">会場名から調べたアクセス（公式ページの記載ではありません。出発前に要確認）<\/small>/);
+  assert.match(pages.find((p) => p.path === '/e/setagaya-funabashi-nomi-no-ichi-2026-autumn/').body, /Looked up from the venue name \(not stated on the official page; please check before you go\)/);
   assert.ok(!ja('oedo-antique-market-tokyo-international-forum').includes('多くのフリーマーケット・市は入場無料'), '公式の入場料があるものには、目安を出さない');
   // 評価フォームの script は、送信先（CONTACT_EMAIL）が設定されたときだけ
   assert.deepEqual(en.scripts, ['/weather.js', '/map.js', ...(REVIEWS_ON ? ['/review.js'] : [])]);

@@ -512,7 +512,10 @@
    "pref": "26",
    "city": "京都市上京区",
    "cityCode": "26101",
-   "address": "京都市上京区馬喰町"
+   "address": "京都市上京区馬喰町",
+   "access": "京福電鉄「北野白梅町」駅から徒歩5分。京都市バス「北野天満宮前」停留所が最寄り。毎月25日は参拝者用駐車場が使えないと公式に案内されている。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://kitanotenmangu.or.jp/access/"
   },
   "recurrence": {
    "type": "monthly-day",
@@ -552,7 +555,10 @@
    "pref": "27",
    "city": "大阪市天王寺区",
    "cityCode": "27109",
-   "address": "大阪市天王寺区四天王寺1-11-18"
+   "address": "大阪市天王寺区四天王寺1-11-18",
+   "access": "Osaka Metro谷町線「四天王寺前夕陽ヶ丘」駅から徒歩5分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://osaka-info.jp/experience/ja/osaka/spot/286"
   },
   "recurrence": {
    "type": "monthly-day",
@@ -590,7 +596,10 @@
    "pref": "01",
    "city": "札幌市中央区",
    "cityCode": "01101",
-   "address": "札幌市中央区中島公園1"
+   "address": "札幌市中央区中島公園1",
+   "access": "札幌市営地下鉄南北線「中島公園」駅（1・3番出口）または「幌平橋」駅（1・2番出口）が最寄り。市電は「中島公園通」「行啓通」から徒歩3分。公園に専用の駐車場はない（自由広場の位置からの徒歩分数は記載なし）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.sapporo-park.or.jp/nakajima/?page_id=5"
   },
   "recurrence": {
    "type": "dates",
@@ -675,7 +684,10 @@
    "pref": "13",
    "city": "瑞穂町",
    "cityCode": "13303",
-   "address": "東京都西多摩郡瑞穂町大字箱根ケ崎1736番地"
+   "address": "東京都西多摩郡瑞穂町大字箱根ケ崎1736番地",
+   "access": "JR八高線「箱根ケ崎」駅から約350m。町の案内に「歩いて5分もかかりません」とある。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.town.mizuho.tokyo.jp/kirameki/006/p006278.html"
   },
   "recurrence": {
    "type": "dates",
@@ -749,7 +761,10 @@
    "pref": "13",
    "city": "杉並区",
    "cityCode": "13115",
-   "address": "杉並区高井戸東3丁目7番4号"
+   "address": "杉並区高井戸東3丁目7番4号",
+   "access": "京王井の頭線「高井戸」駅から徒歩2分。関東バス（荻54・荻58系統）「高井戸駅」下車、徒歩2分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.suginami.tokyo.jp/s103/shisetsu/15116.html"
   },
   "recurrence": {
    "type": "dates",
@@ -871,7 +886,10 @@
    "pref": "13",
    "city": "墨田区",
    "cityCode": "13107",
-   "address": "墨田区錦糸四丁目15番"
+   "address": "墨田区錦糸四丁目15番",
+   "access": "JR総武線・東京メトロ半蔵門線「錦糸町」駅から徒歩3分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://visit-sumida.jp/post_location/28165/"
   },
   "recurrence": {
    "type": "dates",
@@ -922,7 +940,10 @@
    "pref": "13",
    "city": "墨田区",
    "cityCode": "13107",
-   "address": "墨田区錦糸一丁目17番"
+   "address": "墨田区錦糸一丁目17番",
+   "access": "公園の南側（長崎橋）はJR総武線・東京メトロ半蔵門線「錦糸町」駅から徒歩5分。北側（業平橋）は「押上」駅から徒歩10分、「とうきょうスカイツリー」駅・「本所吾妻橋」駅から徒歩5分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://visit-sumida.jp/post_location/28166/"
   },
   "recurrence": {
    "type": "dates",
@@ -970,7 +991,10 @@
    "pref": "13",
    "city": "文京区",
    "cityCode": "13105",
-   "address": "文京区春日1丁目16番21号"
+   "address": "文京区春日1丁目16番21号",
+   "access": "東京メトロ「後楽園」駅（丸ノ内線4a・5番出口、南北線5番出口）と都営地下鉄「春日」駅（三田線・大江戸線、文京シビックセンター連絡口）から徒歩1分。JR総武線「水道橋」駅東口から徒歩9分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.bunkyo.lg.jp/shisetsu/civiccenter/civic.html"
   },
   "recurrence": {
    "type": "dates",
@@ -1026,7 +1050,10 @@
    "pref": "13",
    "city": "豊島区",
    "cityCode": "13116",
-   "address": "豊島区東池袋1-16-1"
+   "address": "豊島区東池袋1-16-1",
+   "access": "JR・東京メトロ・西武池袋線・東武東上線の「池袋」駅東口（30番出口）から徒歩4分。東京メトロ有楽町線「東池袋」駅6・7番出口から地下通路で徒歩11分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.toshima.lg.jp/340/miryoku/shiru/koen/nakaikebukuro.html"
   },
   "recurrence": {
    "type": "dates",
@@ -1081,7 +1108,10 @@
    "pref": "13",
    "city": "大田区",
    "cityCode": "13111",
-   "address": "大田区下丸子2-33-1"
+   "address": "大田区下丸子2-33-1",
+   "access": "東急多摩川線「武蔵新田」駅から徒歩15分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.union.tokyo23-seisou.lg.jp/tamagawa/kanri/kojo/tamagawa/annaizu.html"
   },
   "recurrence": {
    "type": "dates",
@@ -1138,7 +1168,10 @@
    "cityCode": "13123",
    "address": "東京都江戸川区船堀1-3-1",
    "addressFrom": "search",
-   "addressSeenAt": "https://www.city.edogawa.tokyo.jp/documents/3671/9_dial.pdf"
+   "addressSeenAt": "https://www.city.edogawa.tokyo.jp/documents/3671/9_dial.pdf",
+   "access": "船堀コミュニティ会館は都営新宿線「船堀」駅から徒歩5分。バスは都営バス「船堀一丁目」「船堀駅前」からそれぞれ徒歩4分。会館の駐車場は5台（うち障害者用1台）で、公共交通機関の利用が勧められている。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.edogawa.tokyo.jp/e034/kuseijoho/gaiyo/shisetsuguide/bunya/bunkachiiki/c_funabori/guide.html"
   },
   "recurrence": {
    "type": "dates",
@@ -1245,7 +1278,10 @@
    "pref": "13",
    "city": "葛飾区",
    "cityCode": "13122",
-   "address": "葛飾区立石5-27-1"
+   "address": "葛飾区立石5-27-1",
+   "access": "京成電鉄「お花茶屋」駅から徒歩10分、「京成立石」駅・「青砥」駅から徒歩13分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.katsushika.lg.jp/institution/1030224/1000097/1006912/1006928.html"
   },
   "recurrence": {
    "type": "dates",
@@ -1311,7 +1347,10 @@
    "cityCode": "13106",
    "address": "東京都台東区花川戸1-14-15",
    "addressFrom": "search",
-   "addressSeenAt": "https://filmcommission.city.taito.lg.jp/location/hanakawado-park/"
+   "addressSeenAt": "https://filmcommission.city.taito.lg.jp/location/hanakawado-park/",
+   "access": "東京メトロ銀座線「浅草」駅から徒歩3分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://filmcommission.city.taito.lg.jp/location/hanakawado-park/"
   },
   "recurrence": {
    "type": "dates",
@@ -1583,7 +1622,10 @@
    "cityCode": "13112",
    "address": "東京都世田谷区船橋1-1-5",
    "addressFrom": "search",
-   "addressSeenAt": "https://ja.wikipedia.org/wiki/千歳船橋駅"
+   "addressSeenAt": "https://ja.wikipedia.org/wiki/千歳船橋駅",
+   "access": "小田急小田原線「千歳船橋」駅の駅前（所在地は世田谷区船橋1丁目1-5）。駅前には小田急バス・京王バス・東急バスが乗り入れている。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://ja.wikipedia.org/wiki/千歳船橋駅"
   },
   "recurrence": {
    "type": "dates",
@@ -1775,7 +1817,10 @@
    "pref": "13",
    "city": "北区",
    "cityCode": "13117",
-   "address": "北区赤羽南1-14-17"
+   "address": "北区赤羽南1-14-17",
+   "access": "JR京浜東北線・埼京線「赤羽」駅から徒歩4分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://kanko.city.kita.lg.jp/sakura/"
   },
   "recurrence": {
    "type": "dates",
@@ -2396,7 +2441,10 @@
    "cityCode": "13114",
    "address": "東京都中野区中野4-10-2",
    "addressFrom": "search",
-   "addressSeenAt": "https://www.gotokyo.org/jp/spot/104/index.html"
+   "addressSeenAt": "https://www.gotokyo.org/jp/spot/104/index.html",
+   "access": "JR中野駅北口から徒歩5分（中野区の中野四季の森公園の案内）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.tokyo-nakano.lg.jp/shisetsu/jitensha/kouen/shikinomori.html"
   },
   "recurrence": {
    "type": "dates",
@@ -2727,7 +2775,10 @@
    "city": "越谷市",
    "address": "埼玉県越谷市レイクタウン8丁目",
    "addressFrom": "search",
-   "addressSeenAt": "https://ja.wikipedia.org/wiki/越谷レイクタウン駅"
+   "addressSeenAt": "https://ja.wikipedia.org/wiki/越谷レイクタウン駅",
+   "access": "JR武蔵野線「越谷レイクタウン」駅の駅前広場。北口の駅前広場の北側に見田方遺跡公園が隣接し、北東側にイオンレイクタウンがある。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://ja.wikipedia.org/wiki/越谷レイクタウン駅"
   },
   "recurrence": {
    "type": "dates",
@@ -2758,7 +2809,10 @@
    "name": "イオンモール羽生 nONIWA芝生の広場",
    "pref": "11",
    "city": "羽生市",
-   "address": "埼玉県羽生市川崎2-281-3"
+   "address": "埼玉県羽生市川崎2-281-3",
+   "access": "東武伊勢崎線・秩父鉄道「羽生」駅西口から路線バスでイオンモール羽生（バス停）へ。時刻表は公式ページに掲載。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://hanyu.aeonmall.jp/access"
   },
   "recurrence": {
    "type": "dates",
@@ -2798,7 +2852,10 @@
    "name": "越谷しらこばと水上公園",
    "pref": "11",
    "city": "越谷市",
-   "address": "越谷市小曽川985"
+   "address": "越谷市小曽川985",
+   "access": "東武スカイツリーライン越谷駅西口から岩槻駅東口行きのバスで「水上公園入口」下車、徒歩10分。東武アーバンパークライン岩槻駅東口からも越谷駅西口行きバスで同じ停留所。夏季の土日のみ、せんげん台駅・浦和美園駅から直通バスがある。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.pref.saitama.lg.jp/shisetsu/koen/025.html"
   },
   "recurrence": {
    "type": "dates",
@@ -2869,7 +2926,10 @@
   "venue": {
    "name": "草加駅前アコス広場",
    "pref": "11",
-   "city": "草加市"
+   "city": "草加市",
+   "access": "東武スカイツリーライン（伊勢崎線）「草加」駅前の複合施設「アコス」の広場。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://ja.wikipedia.org/wiki/草加駅"
   },
   "recurrence": {
    "type": "dates",
@@ -2943,7 +3003,10 @@
    "name": "戸田市さくらパル",
    "pref": "11",
    "city": "戸田市",
-   "address": "戸田市新曽南3-1-5"
+   "address": "戸田市新曽南3-1-5",
+   "access": "JR埼京線「戸田公園」駅から徒歩12分。国際興業バス（戸52）またはtocoバス（西循環）の「浅間橋」停留所から徒歩2分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.toda.saitama.jp/soshiki/192/access-sakura.html"
   },
   "recurrence": {
    "type": "dates",
@@ -2984,7 +3047,10 @@
    "city": "流山市",
    "address": "千葉県流山市おおたかの森東1-1-1",
    "addressFrom": "search",
-   "addressSeenAt": "https://ja.wikipedia.org/wiki/流山おおたかの森駅"
+   "addressSeenAt": "https://ja.wikipedia.org/wiki/流山おおたかの森駅",
+   "access": "つくばエクスプレス・東武アーバンパークライン「流山おおたかの森」駅の駅前広場。徒歩の分数は記載なし（駅の東・西・南・北に広場があり、どの広場かは要確認）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://ja.wikipedia.org/wiki/流山おおたかの森駅"
   },
   "recurrence": {
    "type": "dates",
@@ -3048,7 +3114,10 @@
    "pref": "13",
    "city": "葛飾区",
    "cityCode": "13122",
-   "address": "亀有3-25-1"
+   "address": "亀有3-25-1",
+   "access": "JR常磐線（各駅停車）「亀有」駅南口の駅前。同じリリオの複合ビル「リリオ館」は、葛飾区の案内でJR亀有駅南口から徒歩1分。ビルの東側に公共駐車場がある。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.katsushika.lg.jp/_res/projects/default_project/_page_/001/006/749/20210401_kameari.pdf"
   },
   "recurrence": {
    "type": "dates",
@@ -3088,7 +3157,10 @@
    "pref": "13",
    "city": "北区",
    "cityCode": "13117",
-   "address": "北区赤羽南1-14-17"
+   "address": "北区赤羽南1-14-17",
+   "access": "JR京浜東北線・埼京線「赤羽」駅から徒歩4分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://kanko.city.kita.lg.jp/sakura/"
   },
   "recurrence": {
    "type": "dates",
@@ -3129,7 +3201,10 @@
    "pref": "13",
    "city": "大田区",
    "cityCode": "13111",
-   "address": "東京都大田区池上1-1-1"
+   "address": "東京都大田区池上1-1-1",
+   "access": "東急池上線「池上」駅から徒歩約15分（大田区の案内。寺全体の目安で、総門からの分数ではない）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.ota.tokyo.jp/shisetsu/rekishi/ikegami/ikegamihonmonji.html"
   },
   "recurrence": {
    "type": "dates",
@@ -3193,7 +3268,10 @@
    "pref": "13",
    "city": "中央区",
    "cityCode": "13102",
-   "address": "中央区日本橋本町3-10-11"
+   "address": "中央区日本橋本町3-10-11",
+   "access": "東京メトロ日比谷線「小伝馬町」駅から徒歩1分、都営浅草線「東日本橋」駅から徒歩5分、JR総武線快速「新日本橋」駅5番出口から徒歩2分。都営バス「小伝馬町」停留所から徒歩5分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.gotokyo.org/jp/spot/ev137/index.html"
   },
   "recurrence": {
    "type": "dates",
@@ -3334,7 +3412,10 @@
    "pref": "13",
    "city": "豊島区",
    "cityCode": "13116",
-   "address": "豊島区東池袋1-16-1"
+   "address": "豊島区東池袋1-16-1",
+   "access": "JR・東京メトロ・西武池袋線・東武東上線の「池袋」駅東口（30番出口）から徒歩4分。東京メトロ有楽町線「東池袋」駅6・7番出口から地下通路で徒歩11分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.toshima.lg.jp/340/miryoku/shiru/koen/nakaikebukuro.html"
   },
   "recurrence": {
    "type": "dates",
@@ -3388,7 +3469,10 @@
    "pref": "13",
    "city": "北区",
    "cityCode": "13117",
-   "address": "赤羽南1-14-17"
+   "address": "赤羽南1-14-17",
+   "access": "JR京浜東北線・埼京線「赤羽」駅から徒歩4分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://kanko.city.kita.lg.jp/sakura/"
   },
   "recurrence": {
    "type": "dates",
@@ -3450,7 +3534,10 @@
    "cityCode": "13121",
    "address": "東京都足立区綾瀬3-1-1",
    "addressFrom": "search",
-   "addressSeenAt": "https://ja.wikipedia.org/wiki/綾瀬駅"
+   "addressSeenAt": "https://ja.wikipedia.org/wiki/綾瀬駅",
+   "access": "東京メトロ千代田線・JR常磐線（各駅停車）「綾瀬」駅の東口の駅前広場。徒歩の分数は記載なし。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://ja.wikipedia.org/wiki/綾瀬駅"
   },
   "recurrence": {
    "type": "dates",
@@ -3696,7 +3783,10 @@
    "pref": "01",
    "city": "札幌市北区",
    "cityCode": "01102",
-   "address": "北区北24条西5丁目"
+   "address": "北区北24条西5丁目",
+   "access": "札幌市営地下鉄南北線「北24条」駅1番出口からすぐ。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/shisetsu/plaza24.html"
   },
   "recurrence": {
    "type": "dates",
@@ -3876,7 +3966,10 @@
    "pref": "13",
    "city": "品川区",
    "cityCode": "13109",
-   "address": "東京都品川区勝島二丁目1番2号"
+   "address": "東京都品川区勝島二丁目1番2号",
+   "access": "東京モノレール「大井競馬場前」駅から徒歩2分、京急線「立会川」駅から徒歩12分。大森駅東口から京急バス（森22系統）「大井競馬場駅前」下車徒歩1分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://shinagawa-kanko.or.jp/spot/tokyocitykeiba/"
   },
   "recurrence": {
    "type": "dates",
@@ -4187,7 +4280,10 @@
    "pref": "13",
    "city": "墨田区",
    "cityCode": "13107",
-   "address": "東京都墨田区錦糸4"
+   "address": "東京都墨田区錦糸4",
+   "access": "JR総武線・東京メトロ半蔵門線「錦糸町」駅から徒歩3分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://visit-sumida.jp/post_location/28165/"
   },
   "recurrence": {
    "type": "dates",
@@ -4311,7 +4407,10 @@
   "venue": {
    "name": "大野極楽寺公園（一宮リバーサイドフリマ）",
    "pref": "23",
-   "address": "一宮市浅井町河田・大野・極楽寺"
+   "address": "一宮市浅井町河田・大野・極楽寺",
+   "access": "名鉄バス（一宮地区の路線バス）「大野」停留所から徒歩4分。公園の駐車場は158台で公園利用者と共用。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.ichinomiya.aichi.jp/shisetsu/1008918/1044560/1009370.html"
   },
   "recurrence": {
    "type": "dates",
@@ -4581,7 +4680,10 @@
    "pref": "23",
    "address": "愛知県稲沢市祖父江町祖父江鍋島132",
    "addressFrom": "search",
-   "addressSeenAt": "https://www.aichinow.pref.aichi.jp/spots/detail/3586/"
+   "addressSeenAt": "https://www.aichinow.pref.aichi.jp/spots/detail/3586/",
+   "access": "名鉄尾西線「森上」駅から、コミュニティバス（祖父江方面）で「サリオパーク祖父江」下車すぐ（日曜・祝日は運行なし）。森上駅からタクシーで約10分。車は名神高速道路 岐阜羽島ICから約20分。無料駐車場126台。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.aichinow.pref.aichi.jp/spots/detail/3586/"
   },
   "recurrence": {
    "type": "dates",
@@ -4782,7 +4884,10 @@
    "name": "原池公園 芝生広場",
    "pref": "27",
    "city": "堺市中区",
-   "address": "堺市中区八田寺町320"
+   "address": "堺市中区八田寺町320",
+   "access": "南海泉北線「深井」駅から南西へ約1.2km。南海バス「久世小学校前」から南西へ250m。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.sakai.lg.jp/kurashi/koen/shokai/baraike.html"
   },
   "recurrence": {
    "type": "dates",
@@ -4944,7 +5049,10 @@
    "name": "IKEA鶴浜 5F駐車場内 特設会場",
    "pref": "27",
    "city": "大阪市大正区",
-   "address": "大阪市大正区鶴町2-24-55"
+   "address": "大阪市大正区鶴町2-24-55",
+   "access": "大正橋とIKEA鶴浜の間でイケアバスが運行（大人210円、小児110円）。IKEA鶴浜の無料駐車場は2,100台（店舗の営業時間内）。最寄り駅と徒歩の記載は公式にない。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.ikea.com/jp/ja/stores/tsuruhama/"
   },
   "recurrence": {
    "type": "dates",
@@ -5042,7 +5150,10 @@
    "name": "三井アウトレットパーク 滋賀竜王 P７駐車場内特設会場",
    "pref": "25",
    "city": "蒲生郡竜王町",
-   "address": "滋賀県蒲生郡竜王町大字薬師字砂山1178-694"
+   "address": "滋賀県蒲生郡竜王町大字薬師字砂山1178-694",
+   "access": "JR東海道本線「野洲」駅・「近江八幡」駅から路線バスで約30分。車は名神高速道路の竜王ICが最寄り。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://mitsui-shopping-park.com/mop/shiga/access/"
   },
   "recurrence": {
    "type": "dates",
@@ -5232,7 +5343,10 @@
    "name": "尼崎中央公園",
    "pref": "28",
    "city": "尼崎市",
-   "address": "兵庫県尼崎市神田中通1丁目4"
+   "address": "兵庫県尼崎市神田中通1丁目4",
+   "access": "阪神電車「尼崎」駅下車すぐ。バスは、JR神戸線「尼崎」駅（北）から阪神バス11番、または阪急神戸線「塚口」駅から阪神バス13番・31番で「阪神尼崎」下車すぐ。利用できる駐車場はない。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.amagasaki.hyogo.jp/map/1000380/1000422/1000866.html"
   },
   "recurrence": {
    "type": "dates",
@@ -5283,7 +5397,10 @@
    "name": "安満遺跡公園",
    "pref": "27",
    "city": "高槻市",
-   "address": "大阪府高槻市八丁畷町12-3"
+   "address": "大阪府高槻市八丁畷町12-3",
+   "access": "阪急京都線「高槻市」駅から徒歩10分、JR京都線「高槻」駅から徒歩13分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://osaka-info.jp/special/universal/?p=5144"
   },
   "recurrence": {
    "type": "dates",
@@ -5404,7 +5521,10 @@
    "name": "キラリエ草津 市民総合交流センター 多目的室（室内）",
    "pref": "25",
    "city": "草津市",
-   "address": "滋賀県草津市大路2丁目1-35"
+   "address": "滋賀県草津市大路2丁目1-35",
+   "access": "JR「草津」駅から徒歩約5分。有料駐車場あり(混雑が予想されるため公共交通機関の利用を案内)。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.kusatsu.shiga.jp/shisei/sisetsuannai/community/kirariekusatsu/machi220210427173558.html"
   },
   "recurrence": {
    "type": "dates",
@@ -5532,7 +5652,10 @@
    "name": "奈良市役所（芝生エリア）",
    "pref": "29",
    "city": "奈良市",
-   "address": "奈良県奈良市二条大路南一丁目1番1号"
+   "address": "奈良県奈良市二条大路南一丁目1番1号",
+   "access": "近鉄奈良線「新大宮」駅の南改札から西へ約700m（約9分）。近鉄奈良駅（11番乗場）・JR奈良駅西口（13番乗場）から奈良交通バスで「奈良市庁前」下車。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.nara.lg.jp/site/shisetsu/10325.html"
   },
   "recurrence": {
    "type": "dates",
@@ -5584,7 +5707,10 @@
    "name": "大東市・深北緑地公園（第一駐車場横テニスコート前広場）",
    "pref": "27",
    "city": "大東市",
-   "address": "大阪府大東市深野北4丁目284"
+   "address": "大阪府大東市深野北4丁目284",
+   "access": "JR学研都市線「野崎」駅または「四条畷」駅から徒歩約15分。京阪本線「大和田」駅から京阪バスで「江端」下車、徒歩約10分。車は第1駐車場（国道170号「深北遊水池東」交差点を西へ）を使う。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.pref.osaka.lg.jp/shisetsu/o130140/shisetsu_000037.html"
   },
   "recurrence": {
    "type": "dates",
@@ -5670,7 +5796,10 @@
    "name": "東本願寺前・お東さん広場（東本願寺前市民緑地）",
    "pref": "26",
    "city": "京都市",
-   "address": "京都市下京区常葉町他"
+   "address": "京都市下京区常葉町他",
+   "access": "JR「京都」駅から徒歩約5分(東本願寺の前)。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://plus.kyoto.travel/entry/ohigashisan-hiroba"
   },
   "recurrence": {
    "type": "dates",
@@ -5768,7 +5897,10 @@
    "name": "岡崎公園",
    "pref": "26",
    "city": "京都市",
-   "address": "京都市左京区岡崎最勝寺町他"
+   "address": "京都市左京区岡崎最勝寺町他",
+   "access": "京都市営地下鉄「東山」駅から徒歩8分。車は名神高速道路 京都東ICから約20分（約7km）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.walkerplus.com/spot/ar0726s77590/data.html"
   },
   "recurrence": {
    "type": "dates",
@@ -6001,7 +6133,10 @@
    "name": "三重県総合文化センター 祝祭広場",
    "pref": "24",
    "city": "津市",
-   "address": "三重県津市一身田上津部田1234"
+   "address": "三重県津市一身田上津部田1234",
+   "access": "津駅から徒歩約25分。津駅西口からバスで約5分(「総合文化センター前」)、タクシーで約5分。土日祝は混雑が予想されるため公共交通機関の利用を案内。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.library.pref.mie.lg.jp/information/access/"
   },
   "recurrence": {
    "type": "dates",
@@ -6053,7 +6188,10 @@
    "name": "スーパーセンタープラント木津川",
    "pref": "26",
    "city": "木津川市",
-   "address": "京都府木津川市城山台2丁目1番地メイン駐車場"
+   "address": "京都府木津川市城山台2丁目1番地メイン駐車場",
+   "access": "「木津」駅から徒歩15分。バスは奈良交通「木津城山台中央」から徒歩4分、「京大農場」から徒歩9分。無料駐車場あり。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.fmfm-king.com/kidugawa10-31-1/"
   },
   "recurrence": {
    "type": "dates",
@@ -6105,7 +6243,10 @@
    "name": "東近江市立能登川コミュニティセンター 敷地内",
    "pref": "25",
    "city": "東近江市",
-   "address": "滋賀県東近江市躰光寺町262番地"
+   "address": "滋賀県東近江市躰光寺町262番地",
+   "access": "JR「能登川」駅西口から徒歩10分。ちょこっとバスの「能登川駅西口」から「能登川支所」下車すぐ。駐車場は300台。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.higashiomi.shiga.jp/shisetsu/1004235/1004248.html"
   },
   "recurrence": {
    "type": "dates",
@@ -6155,7 +6296,10 @@
    "name": "エイスクエア アヤカ広場前通路",
    "pref": "25",
    "city": "草津市",
-   "address": "滋賀県草津市西渋川1丁目23-1"
+   "address": "滋賀県草津市西渋川1丁目23-1",
+   "access": "JR琵琶湖線（東海道本線）「草津」駅の西口から徒歩3分。駐車場は3,000台（7:00〜22:00に入庫可）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://ayaha-asquare.com/access/"
   },
   "recurrence": {
    "type": "dates",
@@ -6206,7 +6350,10 @@
    "name": "大和西大寺駅前北側芝生広場（サンワシティ前芝生エリア）",
    "pref": "29",
    "city": "奈良市",
-   "address": "奈良県奈良市西大寺東町2丁目1-63"
+   "address": "奈良県奈良市西大寺東町2丁目1-63",
+   "access": "西大寺駅の北側の駅前にある人工芝の空間(奈良市道 西大寺一条線の歩道上)。徒歩分数の記載はない。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.nara.lg.jp/soshiki/112/250544.html"
   },
   "recurrence": {
    "type": "dates",
@@ -6309,7 +6456,10 @@
    "name": "栗東芸術文化会館さきら シンボル広場",
    "pref": "25",
    "city": "栗東市",
-   "address": "滋賀県栗東市綣二丁目1番28号"
+   "address": "滋賀県栗東市綣二丁目1番28号",
+   "access": "JR琵琶湖線「栗東」駅東口から約400m（徒歩5分）。会館に隣接した駐車場がある（有料）。満車の場合は近隣のコインパーキングを利用。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.ritto.lg.jp/umanomachi/18478.html"
   },
   "recurrence": {
    "type": "dates",
@@ -6361,7 +6511,10 @@
    "name": "鈴鹿市桜の森公園 芝生広場",
    "pref": "24",
    "city": "鈴鹿市",
-   "address": "三重県鈴鹿市南玉垣町3500-5"
+   "address": "三重県鈴鹿市南玉垣町3500-5",
+   "access": "近鉄名古屋線「白子」駅から徒歩25分（観光サイトの記載）。駐車場は無料。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.kankomie.or.jp/spot/23421"
   },
   "recurrence": {
    "type": "dates",
@@ -6428,7 +6581,10 @@
    "name": "野洲川親水公園",
    "pref": "25",
    "city": "湖南市",
-   "address": "滋賀県湖南市夏見589"
+   "address": "滋賀県湖南市夏見589",
+   "access": "JR草津線「甲西」駅から徒歩20分。名神高速道路「栗東IC」から12キロメートル（約20分）。普通車の駐車場は453台。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.shiga-konan.lg.jp/soshiki/kensetsu_keizai/toshi_seisaku/sisetu/11377.html"
   },
   "recurrence": {
    "type": "dates",
@@ -6480,7 +6636,10 @@
    "name": "枚方市・山田池公園（多目的広場）",
    "pref": "27",
    "city": "枚方市",
-   "address": "大阪府枚方市山田池公園1-1 多目的広場"
+   "address": "大阪府枚方市山田池公園1-1 多目的広場",
+   "access": "JR学研都市線「藤阪」駅から北西へ約700m、京阪バス「出屋敷」下車で東へ約200m。長尾駅・京阪「枚方市」駅北口からも京阪バスで「出屋敷」へ。公園内の多目的広場の位置は要確認。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://yamadaike.osaka-park.or.jp/access"
   },
   "recurrence": {
    "type": "dates",
@@ -6532,7 +6691,10 @@
    "name": "アル・プラザ野洲 南駐車場（宝くじ販売所側）",
    "pref": "25",
    "city": "野洲市",
-   "address": "滋賀県野洲市小篠原1000"
+   "address": "滋賀県野洲市小篠原1000",
+   "access": "JR東海道本線「野洲」駅から徒歩7分。車は名神高速道路 栗東ICから5.2km。駐車場あり。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.fmfm-king.com/yasu11-22/"
   },
   "recurrence": {
    "type": "dates",
@@ -6699,7 +6861,10 @@
    "pref": "13",
    "city": "調布市",
    "cityCode": "13208",
-   "address": "東京都調布市西町376-3"
+   "address": "東京都調布市西町376-3",
+   "access": "京王線「飛田給」駅から徒歩5分。西武多摩川線「多磨」駅から徒歩20分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.ajinomotostadium.com/access/"
   },
   "recurrence": {
    "type": "dates",
@@ -6763,7 +6928,10 @@
    "pref": "13",
    "city": "千代田区",
    "cityCode": "13101",
-   "address": "東京都千代田区丸の内3-5-1"
+   "address": "東京都千代田区丸の内3-5-1",
+   "access": "JR「有楽町」駅から徒歩1分、JR「東京」駅から徒歩5分。東京メトロ千代田線「二重橋前」駅から徒歩5分など。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.t-i-forum.co.jp/access/access/"
   },
   "recurrence": {
    "type": "dates",
@@ -6831,7 +6999,10 @@
    "pref": "13",
    "city": "江東区",
    "cityCode": "13108",
-   "address": "江東区木場4-1-1"
+   "address": "江東区木場4-1-1",
+   "access": "東京メトロ東西線「木場」駅から徒歩10分。「清澄白河」駅・都営新宿線「菊川」駅から徒歩15分。バスは「木場駅前」下車徒歩5分など。有料駐車場あり（第一駐車場は江東区木場4-1-1、104台）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.tokyo-park.or.jp/park/kiba/"
   },
   "recurrence": {
    "type": "dates",
@@ -6893,7 +7064,10 @@
    "pref": "13",
    "city": "世田谷区",
    "cityCode": "13112",
-   "address": "世田谷区駒沢公園1-1"
+   "address": "世田谷区駒沢公園1-1",
+   "access": "東急田園都市線「駒沢大学」駅から徒歩15分。JR渋谷駅から東急バス（田園調布行き）「駒沢公園東口」、JR恵比寿駅から東急バス（用賀行き）「駒沢公園」下車。駐車場は有料（第一181台・第二41台）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.tokyo-park.or.jp/park/komazawa-olympic/index.html"
   },
   "recurrence": {
    "type": "dates",
@@ -7015,7 +7189,10 @@
    "pref": "13",
    "city": "小金井市",
    "cityCode": "13210",
-   "address": "東京都小金井市関野町1-13-1"
+   "address": "東京都小金井市関野町1-13-1",
+   "access": "JR中央線「武蔵小金井」駅北口からバスで「小金井公園西口」などへ、「東小金井」駅北口からCoCoバスで「小金井公園入口」「たてもの園入口」へ。西武新宿線「花小金井」駅からは「南花小金井」から西武バスで「小金井公園西口」へ。駅からの徒歩分数の記載はない。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.tokyo-park.or.jp/park/koganei/index.html"
   },
   "recurrence": {
    "type": "dates",
@@ -7073,7 +7250,10 @@
    "pref": "13",
    "city": "練馬区",
    "cityCode": "13120",
-   "address": "東京都練馬区光が丘4-1"
+   "address": "東京都練馬区光が丘4-1",
+   "access": "都営大江戸線「光が丘」駅から徒歩8分。東武東上線「成増」駅・地下鉄成増駅から徒歩15分。有料駐車場あり（251台）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.tokyo-park.or.jp/park/hikarigaoka/"
   },
   "recurrence": {
    "type": "dates",
@@ -7133,7 +7313,10 @@
    "cityCode": "13116",
    "address": "東京都豊島区東池袋3-1",
    "addressFrom": "search",
-   "addressSeenAt": "https://co.sunshinecity.co.jp/about/outline.html"
+   "addressSeenAt": "https://co.sunshinecity.co.jp/about/outline.html",
+   "access": "JR・東京メトロ・西武線・東武線「池袋」駅35番出口から徒歩約8分。東京メトロ有楽町線「東池袋」駅から徒歩約3分。都電荒川線「東池袋四丁目」停留場から徒歩約4分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://co.sunshinecity.co.jp/about/access.html"
   },
   "recurrence": {
    "type": "dates",
@@ -7298,7 +7481,10 @@
    "pref": "13",
    "city": "府中市",
    "cityCode": "13206",
-   "address": "東京都府中市浅間町1丁目3"
+   "address": "東京都府中市浅間町1丁目3",
+   "access": "京王線「東府中」駅から徒歩10分。JR中央線「武蔵小金井」駅から京王バス（一本木経由・府中駅行き）で「天神町二丁目」下車。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.tokyo-park.or.jp/park/format/index048.html"
   },
   "recurrence": {
    "type": "dates",
@@ -7364,7 +7550,10 @@
    "pref": "27",
    "city": "大阪市鶴見区",
    "address": "大阪市鶴見区緑地公園",
-   "cityCode": "27124"
+   "cityCode": "27124",
+   "access": "Osaka Metro長堀鶴見緑地線「鶴見緑地」駅から公園の中央口まで徒歩すぐ。大阪シティバス「鶴見緑地公園前」「諸口」停留所も最寄り。ハナミズキホールまでの分数は要確認。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.tsurumi-ryokuchi.jp/access.html"
   },
   "recurrence": {
    "type": "dates",
@@ -8418,7 +8607,10 @@
    "name": "万博記念公園 東の広場",
    "pref": "27",
    "city": "吹田市",
-   "address": "大阪府吹田市千里万博公園1-1"
+   "address": "大阪府吹田市千里万博公園1-1",
+   "access": "大阪モノレール「万博記念公園」駅・「公園東口」駅が便利。自然文化園の東口は公園東口駅から徒歩約5分、中央口は万博記念公園駅から徒歩約5分（東の広場そのものからの徒歩分数は記載なし）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.expo70-park.jp/guide/access/"
   },
   "recurrence": {
    "type": "dates",
@@ -8598,7 +8790,10 @@
    "name": "越谷しらこばと水上公園",
    "pref": "11",
    "city": "越谷市",
-   "address": "越谷市小曽川985"
+   "address": "越谷市小曽川985",
+   "access": "東武スカイツリーライン越谷駅西口から岩槻駅東口行きのバスで「水上公園入口」下車、徒歩10分。東武アーバンパークライン岩槻駅東口からも越谷駅西口行きバスで同じ停留所。夏季の土日のみ、せんげん台駅・浦和美園駅から直通バスがある。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.pref.saitama.lg.jp/shisetsu/koen/025.html"
   },
   "recurrence": {
    "type": "dates",
@@ -8790,7 +8985,10 @@
    "name": "加須はなさき水上公園 銀杏並木の園路",
    "pref": "11",
    "city": "加須市",
-   "address": "埼玉県加須市水深1722"
+   "address": "埼玉県加須市水深1722",
+   "access": "東武伊勢崎線「花崎」駅から徒歩15分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.pref.saitama.lg.jp/shisetsu/koen/026.html"
   },
   "recurrence": {
    "type": "dates",
@@ -8919,7 +9117,10 @@
    "name": "柏の葉公園 第一駐車場",
    "pref": "12",
    "city": "柏市",
-   "address": "千葉県柏市柏の葉4-1"
+   "address": "千葉県柏市柏の葉4-1",
+   "access": "JR常磐線・東武アーバンパークライン「柏」駅西口から東武バスで「三井住宅前」または「柏の葉公園中央」へ(約20分)。つくばエクスプレス「柏の葉キャンパス」駅からは徒歩約20分、またはバスで約5分。駐車場あり(常磐道柏ICから約2km)。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.pref.chiba.lg.jp/kouen/toshikouen/guidemap/kashiwanoha/index.html"
   },
   "recurrence": {
    "type": "dates",
@@ -9092,7 +9293,10 @@
    "name": "M.E.M. 柏アピエ 屋内1階ホール",
    "pref": "12",
    "city": "柏市",
-   "address": "千葉県柏市十余二249-5"
+   "address": "千葉県柏市十余二249-5",
+   "access": "JR柏駅からバスで来場する案内（バス停名・所要時間の記載なし）。無料駐車場1000台（屋上駐車場）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.rbf.jp/apie.html"
   },
   "recurrence": {
    "type": "dates",
@@ -9414,7 +9618,10 @@
    "name": "大正区役所駐車場",
    "pref": "27",
    "city": "大阪市大正区",
-   "address": "大阪市大正区千島2-7-95"
+   "address": "大阪市大正区千島2-7-95",
+   "access": "大阪メトロ長堀鶴見緑地線またはJR大阪環状線の「大正」駅で下車し、バス停「大正橋」の2〜5番のりばから市バスに乗り「大正区役所前」で下車（約10分）。駐車場の台数・料金は区役所に問い合わせ。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.osaka.lg.jp/taisho/page/0000077091.html"
   },
   "recurrence": {
    "type": "dates",
@@ -9518,7 +9725,10 @@
    "city": "大阪市東成区",
    "address": "大阪府大阪市東成区大今里西3-2-17",
    "addressFrom": "search",
-   "addressSeenAt": "https://www.city.osaka.lg.jp/kankyo/page/0000687754.html"
+   "addressSeenAt": "https://www.city.osaka.lg.jp/kankyo/page/0000687754.html",
+   "access": "Osaka Metro千日前線・今里筋線「今里」駅2番出口から西へ徒歩約3分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.osaka.lg.jp/shimin/page/0000016629.html"
   },
   "recurrence": {
    "type": "dates",
@@ -9752,7 +9962,10 @@
    "name": "大阪ベイタワー2Fアトリウム広場",
    "pref": "27",
    "city": "大阪市港区",
-   "address": "大阪市港区弁天1丁目2番4-700号"
+   "address": "大阪市港区弁天1丁目2番4-700号",
+   "access": "JR大阪環状線・大阪メトロ中央線「弁天町」駅に直結。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://osaka-info.jp/spot/art-hotel-osaka-baytower/"
   },
   "recurrence": {
    "type": "dates",
@@ -9802,7 +10015,10 @@
    "name": "東住吉区民ホール 区役所3階",
    "pref": "27",
    "city": "大阪市東住吉区",
-   "address": "大阪市東住吉区東田辺1丁目13番4号"
+   "address": "大阪市東住吉区東田辺1丁目13番4号",
+   "access": "Osaka Metro谷町線「駒川中野」駅から徒歩8分、JR阪和線「南田辺」駅から徒歩10分、近鉄南大阪線「針中野」駅から徒歩15分。大阪シティバス「東住吉区役所前」停留所から徒歩2分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.osaka.lg.jp/shimin/page/0000016676.html"
   },
   "recurrence": {
    "type": "dates",
@@ -9905,7 +10121,10 @@
    "name": "末広公園（住道駅南公園）",
    "pref": "27",
    "city": "大東市",
-   "address": "末広町6および新町2・3・4"
+   "address": "末広町6および新町2・3・4",
+   "access": "JR「住道」駅南口からすぐ。専用駐車場の記載はない。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.daito.lg.jp/uploaded/attachment/40515.pdf"
   },
   "recurrence": {
    "type": "dates",
@@ -10647,7 +10866,10 @@
    "name": "彦根市文化プラザ駐車場",
    "pref": "25",
    "city": "彦根市",
-   "address": "滋賀県彦根市野瀬町187-4"
+   "address": "滋賀県彦根市野瀬町187-4",
+   "access": "彦根駅（2番のりば）から三津屋線（5番・6番系統）で「文化プラザ口」、南彦根駅西口から南彦根県立大学線（73番系統）で「ひこね市文化プラザ」。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.hikone.lg.jp/kakuka/toshi_seisaku/5/2_3/3000.html"
   },
   "recurrence": {
    "type": "dates",
@@ -10754,7 +10976,10 @@
    "name": "キセラ川西せせらぎ公園",
    "pref": "28",
    "city": "川西市",
-   "address": "兵庫県川西市火打1丁目5-17"
+   "address": "兵庫県川西市火打1丁目5-17",
+   "access": "阪急・能勢電鉄「川西能勢口」駅から徒歩8分。能勢電鉄「絹延橋」駅から徒歩5分。JR「川西池田」駅から徒歩15分。阪急バス「キセラ川西／総合医療センター」停留所から徒歩2分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.kawanishi.hyogo.jp/kurashi/1017490/midori/1009048/1009406.html"
   },
   "recurrence": {
    "type": "dates",
@@ -10802,7 +11027,10 @@
    "name": "大和川河川敷公園",
    "pref": "27",
    "city": "柏原市",
-   "address": "大阪府柏原市安堂町1番地"
+   "address": "大阪府柏原市安堂町1番地",
+   "access": "近鉄大阪線「安堂」駅から西へ徒歩約5分、近鉄道明寺線「柏原南口」駅から東へ徒歩約7分、JR大和路線「柏原」駅から南へ徒歩約17分(柏原市役所の案内。会場は安堂町の市役所付近。公園内の位置までの分数は要確認)。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.kashiwara.lg.jp/docs/2014062700202/"
   },
   "recurrence": {
    "type": "dates",
@@ -10849,7 +11077,10 @@
    "name": "昆陽池公園 多目的広場",
    "pref": "28",
    "city": "伊丹市",
-   "address": "兵庫県伊丹市昆陽池3丁目"
+   "address": "兵庫県伊丹市昆陽池3丁目",
+   "access": "伊丹市バス：JR伊丹駅・阪急伊丹駅前の4番のりばから「裁判所前」経由の西野武庫川センター前行きに乗り、「昆陽池公園前」下車すぐ。公園の駐車場は150台（有料）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.itami.lg.jp/SOSIKI/TOSHIKOTU/KOUEN/oashisu/15104.html"
   },
   "recurrence": {
    "type": "dates",
@@ -10897,7 +11128,10 @@
    "name": "大泉緑地 大芝生広場",
    "pref": "27",
    "city": "堺市北区",
-   "address": "大阪府堺市北区金岡町128"
+   "address": "大阪府堺市北区金岡町128",
+   "access": "Osaka Metro御堂筋線「新金岡」駅から東へ約1,000m。JR阪和線・南海高野線「三国ヶ丘」駅から南海バス「北区役所前」下車、東へ約800m。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.pref.osaka.lg.jp/shisetsu/cate005/021.html"
   },
   "recurrence": {
    "type": "dates",
@@ -10944,7 +11178,10 @@
    "name": "鶴見緑地公園 大芝生",
    "pref": "27",
    "city": "大阪市鶴見区",
-   "address": "大阪府大阪市鶴見区緑地公園2-163"
+   "address": "大阪府大阪市鶴見区緑地公園2-163",
+   "access": "大阪メトロ長堀鶴見緑地線「鶴見緑地」駅が最寄り。公式の案内では、改札から花博通方面へ進み中央口へ向かう。大芝生までの徒歩分数は記載なし。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.tsurumi-ryokuchi.jp/access/"
   },
   "recurrence": {
    "type": "dates",
@@ -10991,7 +11228,10 @@
    "name": "服部緑地公園 西中央広場、集いの原っぱ",
    "pref": "27",
    "city": "豊中市",
-   "address": "大阪府豊中市服部緑地1-10"
+   "address": "大阪府豊中市服部緑地1-10",
+   "access": "北大阪急行「緑地公園」駅から徒歩5分(服部緑地の案内)。西中央広場・集いの原っぱまでの分数は要確認。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://osaka-info.jp/spot/hattori-ryokuchi-park1/"
   },
   "recurrence": {
    "type": "dates",
@@ -11039,7 +11279,10 @@
    "name": "長居公園（南西入口広場、自由広場）",
    "pref": "27",
    "city": "大阪市東住吉区",
-   "address": "大阪府大阪市東住吉区長居公園1-1"
+   "address": "大阪府大阪市東住吉区長居公園1-1",
+   "access": "Osaka Metro御堂筋線「長居」駅3番出口を出てすぐ。JR阪和線「長居」駅・「鶴ヶ丘」駅から徒歩約5分、近鉄南大阪線「針中野」駅から徒歩約15分。長居公園地下駐車場（255台）は南西口・自由広場に隣接。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://nagaipark.com/access/"
   },
   "recurrence": {
    "type": "dates",
@@ -11086,7 +11329,10 @@
    "name": "平城宮跡歴史公園 朱雀門ひろば・朱雀大路",
    "pref": "29",
    "city": "奈良市",
-   "address": "奈良県奈良市二条大路南3丁目5番1号"
+   "address": "奈良県奈良市二条大路南3丁目5番1号",
+   "access": "近鉄「大和西大寺」駅南口から奈良交通バス（160・163系統）で約6分、「朱雀門ひろば前」下車。大和西大寺駅南口・近鉄「新大宮」駅から徒歩約20分とも案内されている。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.heijo-park.jp/access/"
   },
   "recurrence": {
    "type": "dates",
@@ -11134,7 +11380,10 @@
    "name": "末広公園",
    "pref": "27",
    "city": "大東市",
-   "address": "大阪府大東市末広町6-4"
+   "address": "大阪府大東市末広町6-4",
+   "access": "JR住道駅の南に位置する公園（大東市の案内）。徒歩の分数は記載なし。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.daito.lg.jp/soshiki/35/1610.html"
   },
   "recurrence": {
    "type": "dates",
@@ -11181,7 +11430,10 @@
    "name": "兵庫駅前広場（キャナルタウン広場）",
    "pref": "28",
    "city": "神戸市兵庫区",
-   "address": "兵庫県神戸市兵庫区駅南通5丁目1-1"
+   "address": "兵庫県神戸市兵庫区駅南通5丁目1-1",
+   "access": "JR「兵庫」駅の南側にある駅前広場。徒歩分数の記載はない。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.kobe.lg.jp/a96653/canaltownhiroba.html"
   },
   "recurrence": {
    "type": "dates",
@@ -11281,7 +11533,10 @@
    "name": "ジャガーグリーン内 屋外特設会場（会場立体駐車場の屋上）",
    "pref": "27",
    "city": "守口市",
-   "address": "大阪府守口市佐太東町二丁目6番"
+   "address": "大阪府守口市佐太東町二丁目6番",
+   "access": "Osaka Metro谷町線・大阪モノレール「大日」駅から東へ徒歩約15分。京阪バス「金田」停留所からすぐ。1,200台収容の無料駐車場（1時間無料）がある。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://jaguartown.jp/access.html"
   },
   "recurrence": {
    "type": "monthly-nth",
@@ -11378,7 +11633,10 @@
    "name": "MEGAドンキホーテUNY西大和 メイン平面駐車場",
    "pref": "29",
    "city": "北葛城郡上牧町",
-   "address": "奈良県北葛城郡上牧町ささゆり台1丁目1番地の1"
+   "address": "奈良県北葛城郡上牧町ささゆり台1丁目1番地の1",
+   "access": "JR「王寺」駅または近鉄「五位堂」駅からバスで「アピタ西大和」停留所下車。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.donki.com/store/shop_detail.php?shop_id=496"
   },
   "recurrence": {
    "type": "monthly-nth",
@@ -11713,7 +11971,10 @@
   "venue": {
    "name": "四日市諏訪新道通り",
    "pref": "24",
-   "city": "四日市市"
+   "city": "四日市市",
+   "access": "近鉄四日市駅から徒歩約8分。JR四日市駅から徒歩約12分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://suwacent.com/event/9-27%e3%81%aa%e3%82%93%e3%81%a7%e3%82%82%e5%9b%9b%e6%97%a5%e3%81%ae%e5%b8%82/"
   },
   "recurrence": {
    "type": "monthly-nth",
@@ -11761,7 +12022,10 @@
    "name": "MEGAドン・キホーテ西帯広店 駐車場内",
    "pref": "01",
    "city": "帯広市",
-   "address": "帯広市西21条南4丁目"
+   "address": "帯広市西21条南4丁目",
+   "access": "JR根室本線「帯広」駅南口から「長崎屋前」バス停で大谷高校前経由に乗り、「新緑通21条」バス停下車。帯広駅から車で15分、店舗の無料駐車場あり。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.donki.com/store/shop_detail.php?shop_id=195"
   },
   "recurrence": {
    "type": "dates",
@@ -11819,7 +12083,10 @@
    "city": "北九州市小倉北区",
    "address": "福岡県北九州市小倉北区室町1-1-1",
    "addressFrom": "search",
-   "addressSeenAt": "https://www.crossroadfukuoka.jp/spot/13223"
+   "addressSeenAt": "https://www.crossroadfukuoka.jp/spot/13223",
+   "access": "JR「小倉」駅から徒歩約10分、JR「西小倉」駅から徒歩約3分。西鉄バスは「室町・リバーウォーク」「西小倉駅前」下車。都市高速「小倉北ランプ」から約3分。リバーウォーク北九州の駐車場は950台（30分150円）。土日祝日は混むため公共交通機関が勧められている。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.riverwalk.co.jp/access/"
   },
   "recurrence": {
    "type": "dates",
@@ -11951,7 +12218,10 @@
    "name": "勝山公園大芝生広場",
    "pref": "40",
    "city": "北九州市小倉北区",
-   "address": "小倉北区城内"
+   "address": "小倉北区城内",
+   "access": "JR小倉駅から徒歩20分、JR西小倉駅から徒歩10分。西鉄バス・北九州市営バス「北九州市役所前」下車、徒歩約5分(勝山公園全体の案内)。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.kitakyushu.lg.jp/contents/924_00681.html"
   },
   "recurrence": {
    "type": "dates",
@@ -11999,7 +12269,10 @@
    "name": "響灘緑地グリーンパーク",
    "pref": "40",
    "city": "北九州市若松区",
-   "address": "北九州市若松区竹並1006番地"
+   "address": "北九州市若松区竹並1006番地",
+   "access": "市営バス（平日・土曜）は「響灘緑地入口」または「坊ヶ渕」から徒歩約10分。電車はJR二島駅で下車して市営バスを利用。駐車場は普通車300円、常設927台（北492台・南435台）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.kitakyushu.lg.jp/contents/924_00700.html"
   },
   "recurrence": {
    "type": "dates",
@@ -12093,7 +12366,10 @@
    "name": "りっくる（まつやまRe・再来館）",
    "pref": "38",
    "city": "松山市",
-   "address": "松山市空港通一丁目1－32"
+   "address": "松山市空港通一丁目1－32",
+   "access": "伊予鉄郡中線「土橋」駅または「土居田」駅から徒歩約10分。「竹原町南」バス停から徒歩約5分。駐車場・駐輪場あり。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.matsuyama.ehime.jp/shisetsu/kankyo/kankyouj_rikkuru.html"
   },
   "recurrence": {
    "type": "dates",
@@ -12191,7 +12467,10 @@
   "venue": {
    "name": "紅谷パールロード商店街（平塚駅北口）",
    "pref": "14",
-   "city": "平塚市"
+   "city": "平塚市",
+   "access": "JR「平塚」駅から1分（紅谷パールロード商店街の案内の表記）。",
+   "accessFrom": "search",
+   "accessSeenAt": "http://pearlroad.jp/antiquefair/"
   },
   "recurrence": {
    "type": "dates",
@@ -12288,7 +12567,10 @@
    "name": "県立保土ケ谷公園 いこいの広場",
    "pref": "14",
    "city": "横浜市保土ケ谷区",
-   "address": "保土ケ谷区花見台4-2"
+   "address": "保土ケ谷区花見台4-2",
+   "access": "JR保土ケ谷駅西口から循環バス（25系統）で約10分、「保土ケ谷野球場前」下車。相鉄線「星川」駅または「和田町」駅から徒歩約15分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.pref.kanagawa.jp/docs/i6k/cnt/f617/p1093270hodogaya.html"
   },
   "recurrence": {
    "type": "dates",
@@ -12485,7 +12767,10 @@
    "name": "調（つきのみや）公園",
    "pref": "11",
    "city": "さいたま市浦和区",
-   "address": "埼玉県さいたま市浦和区岸町3-17"
+   "address": "埼玉県さいたま市浦和区岸町3-17",
+   "access": "JR「浦和」駅西口から徒歩7分（調神社。公園は隣接）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.city.saitama.lg.jp/001/010/009/003/p007337_d/fil/urawa-ku.pdf"
   },
   "recurrence": {
    "type": "monthly-nth",
@@ -12753,7 +13038,10 @@
    "name": "富士川町歴史文化会館『塩の華』",
    "pref": "19",
    "city": "富士川町",
-   "address": "富士川町鰍沢4852-1"
+   "address": "富士川町鰍沢4852-1",
+   "access": "最寄り駅はJR身延線「鰍沢口」駅（徒歩分数の記載なし。駅から館までタクシーで約4km・約10分）。車は中部横断自動車道 増穂ICから約15分。無料駐車場あり（普通車60台、大型車4台）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://fujikawa-shionohana.com/access/"
   },
   "recurrence": {
    "type": "monthly-nth",
@@ -12816,7 +13104,10 @@
    "name": "館鼻岸壁",
    "pref": "02",
    "city": "八戸市",
-   "address": "青森県八戸市新湊三丁目"
+   "address": "青森県八戸市新湊三丁目",
+   "access": "JR八戸線「陸奥湊」駅から徒歩10分程度。日曜朝市循環バス「いさば号」の「館鼻漁港前」下車（八戸市中心街から約15分、大人100円）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://www.tohokukanko.jp/attractions/detail_1003022.html"
   },
   "recurrence": {
    "type": "weekly",
@@ -13412,7 +13703,10 @@
    "name": "高岡市営中央駐車場",
    "pref": "16",
    "city": "高岡市",
-   "address": "高岡市下関町6-11"
+   "address": "高岡市下関町6-11",
+   "access": "高岡駅まで徒歩1分（案内サイトの記載）。所在地は高岡市下関町6-11（高岡市の駐車場案内）。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://odekake7.net/takaokaeki-6825/"
   },
   "recurrence": {
    "type": "dates",
@@ -13464,7 +13758,10 @@
    "name": "本山誠照寺（境内）",
    "pref": "18",
    "city": "鯖江市",
-   "address": "福井県鯖江市本町3丁目2-38"
+   "address": "福井県鯖江市本町3丁目2-38",
+   "access": "福井鉄道「西鯖江」駅から徒歩約2分（福井市観光サイトの記載。別の案内では徒歩5分）。ハピラインふくい「鯖江」駅から徒歩約10分。",
+   "accessFrom": "search",
+   "accessSeenAt": "https://fuku-iro.jp/spot/detail_10022.html"
   },
   "recurrence": {
    "type": "monthly-nth",

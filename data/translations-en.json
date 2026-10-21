@@ -79,20 +79,23 @@
    "venue": "Kitano Tenmangu Shrine, approach",
    "time": "Stalls are open all day (the grounds are lit up from sunset)",
    "rule": "25th of every month",
-   "address": "Bakurocho, Kamigyo-ku, Kyoto-shi, Kyoto"
+   "address": "Bakurocho, Kamigyo-ku, Kyoto-shi, Kyoto",
+   "access": "About 5 min on foot from Kitano-Hakubaicho Station (Keifuku Electric Railway). The nearest Kyoto City Bus stop is Kitano Tenmangu-mae. The official site says the worshippers' parking lot is not available on the 25th of each month."
   },
   "shitennoji-daishie": {
    "name": "Shitennoji Daishi-e (monthly on the 21st, “Odaishi-san”)",
    "venue": "Shitennoji Temple, throughout the grounds",
    "rule": "21st of every month",
-   "address": "1-11-18 Shitennoji, Tennoji-ku, Osaka-shi, Osaka"
+   "address": "1-11-18 Shitennoji, Tennoji-ku, Osaka-shi, Osaka",
+   "access": "About 5 min on foot from Shitennoji-mae Yuhigaoka Station (Osaka Metro Tanimachi Line)."
   },
   "sapporo-nakajima-park-flea": {
    "name": "Nakajima Park Flea Market (Sapporo)",
    "venue": "Nakajima Park (Free Plaza)",
    "rule": "Dates for fiscal 2026 announced by Sapporo City (see the city’s list)",
    "rain": "May be cancelled depending on the weather (ask each organizing group for the status)",
-   "address": "1 Nakajima-koen, Chuo-ku, Sapporo-shi, Hokkaido"
+   "address": "1 Nakajima-koen, Chuo-ku, Sapporo-shi, Hokkaido",
+   "access": "Nearest stations are Nakajima-koen Station (exits 1 and 3) and Horohirabashi Station (exits 1 and 2) on the Sapporo Municipal Subway Namboku Line. From the streetcar stops Nakajima-koen-dori and Gyokei-dori it is a 3 min walk. The park has no parking lot of its own (walking time to the Jiyu Hiroba is not given)."
   },
   "shinjuku-recycle-center-flea": {
    "name": "Shinjuku Recycle Activity Center Flea Market",
@@ -107,7 +110,8 @@
    "rule": "Dates for fiscal 2026 announced by Mizuho Town (no events in July–August and January)",
    "apply": "Apply by phone (first come, first served). A lottery is held at the reception on the day and a permit is issued",
    "notes": "Only residents of the town can exhibit. Up to 40 spaces",
-   "address": "1736 Hakonegasaki, Mizuho-machi, Nishitama-gun, Tokyo"
+   "address": "1736 Hakonegasaki, Mizuho-machi, Nishitama-gun, Tokyo",
+   "access": "About 350 m from Hakonegasaki Station (JR Hachiko Line). The town's guide says it takes less than 5 minutes on foot."
   },
   "suginami-furima-in-takaido-2026-11": {
    "name": "Flea Market in Takaido (Environmental Activity Promotion Center)",
@@ -118,7 +122,8 @@
    "fee": "Free",
    "apply": "Application form (linked from the ward page). Lottery",
    "notes": "Open to people who live or work in the ward (no business sellers). 8 spaces. The application deadline is Oct 20, 2026. Items: clothing, accessories and miscellaneous goods. Carrying items in or out by car is not possible",
-   "address": "3-7-4 Takaido-higashi, Suginami-ku, Tokyo"
+   "address": "3-7-4 Takaido-higashi, Suginami-ku, Tokyo",
+   "access": "About 2 min on foot from Takaido Station (Keio Inokashira Line). Or take a Kanto Bus (routes Ogi 54 or Ogi 58) to Takaido Station and walk about 2 min."
   },
   "edogawa-recycle-world-in-tobu-2026": {
    "name": "The 36th Recycle World IN Tobu",
@@ -136,14 +141,16 @@
    "venue": "Kinshi Park",
    "rule": "Schedule for fiscal 2026 announced by Sumida Ward",
    "rain": "May be cancelled in rain, etc. (ask the organizer). Please refrain from parking on the street near the venue",
-   "address": "4-15 Kinshi, Sumida-ku, Tokyo"
+   "address": "4-15 Kinshi, Sumida-ku, Tokyo",
+   "access": "About 3 min on foot from Kinshicho Station (JR Sobu Line, Tokyo Metro Hanzomon Line)."
   },
   "sumida-yokojikkawa-kinshicho-flea": {
    "name": "Oyokogawa Shinsui Park, Kinshicho Event Plaza Flea Market",
    "venue": "Oyokogawa Shinsui Park, Kinshicho Event Plaza",
    "rule": "Schedule for fiscal 2026 announced by Sumida Ward (with rain dates)",
    "rain": "Rain dates are available (listed in the entry for each date). Please refrain from parking on the street near the venue",
-   "address": "1-17 Kinshi, Sumida-ku, Tokyo"
+   "address": "1-17 Kinshi, Sumida-ku, Tokyo",
+   "access": "The south end of the park (Nagasaki-bashi) is a 5 min walk from Kinshicho Station (JR Sobu Line, Tokyo Metro Hanzomon Line). The north end (Narihira-bashi) is a 10 min walk from Oshiage Station and a 5 min walk from Tokyo Skytree Station or Honjo-Azumabashi Station."
   },
   "bunkyo-stage-eco-flea-2026-11": {
    "name": "Stage Eco Flea Market (Bunkyo)",
@@ -153,7 +160,8 @@
    "fee": "2,000 yen per booth (1.5 m × 1.8 m)",
    "apply": "Application form. Lottery (capacity: 20 groups). The deadline was Oct 6, 2026, and the ward page says applications are closed",
    "notes": "Exhibitors must be residents of the ward aged 18 or over. Limited to household goods no longer needed (items sold for profit are not allowed)",
-   "address": "1-16-21 Kasuga, Bunkyo-ku, Tokyo"
+   "address": "1-16-21 Kasuga, Bunkyo-ku, Tokyo",
+   "access": "1 minute on foot from Korakuen Station (Tokyo Metro Marunouchi Line exits 4a and 5, Namboku Line exit 5) and from Kasuga Station (Toei Mita Line and Oedo Line, Bunkyo Civic Center connecting exit). 9 minutes on foot from the east exit of Suidobashi Station (JR Sobu Line)."
   },
   "toshima-nakaikebukuro-park-flea-2026-12": {
    "name": "Naka-Ikebukuro Park Flea Market",
@@ -163,14 +171,16 @@
    "fee": "3,000 yen",
    "apply": "Apply from the organizer’s website. First come, first served; closes when capacity is reached",
    "notes": "Open to everyone, inside or outside the ward",
-   "address": "1-16-1 Higashi-Ikebukuro, Toshima-ku, Tokyo"
+   "address": "1-16-1 Higashi-Ikebukuro, Toshima-ku, Tokyo",
+   "access": "About 4 min on foot from Exit 30 (east exit) of Ikebukuro Station (JR, Tokyo Metro, Seibu Ikebukuro Line, Tobu Tojo Line). From Exits 6 and 7 of Higashi-Ikebukuro Station (Tokyo Metro Yurakucho Line), about 11 min on foot via an underground passage."
   },
   "ota-tamagawa-eco-fair-2026": {
    "name": "Tamagawa Cleaning Plant Environment Fair 2026 (with a flea market)",
    "venue": "Tamagawa Cleaning Plant",
    "rule": "Oct 18 (Sun), 2026",
    "rain": "Held even in rain (cancelled in severe weather). Please refrain from coming by car",
-   "address": "2-33-1 Shimomaruko, Ota-ku"
+   "address": "2-33-1 Shimomaruko, Ota-ku",
+   "access": "About 15 min on foot from Musashi-Nitta Station (Tokyu Tamagawa Line)."
   },
   "edogawa-funabori-matsuri-2026": {
    "name": "The 51st Funabori Festival (with a flea market)",
@@ -181,7 +191,8 @@
    "fee": "1,000 yen (collected in cash on the day)",
    "apply": "Application form (application period: Sep 1 – Sep 16, 2026)",
    "notes": "About 20 stalls recruited",
-   "address": "1-3-1 Funabori, Edogawa-ku, Tokyo"
+   "address": "1-3-1 Funabori, Edogawa-ku, Tokyo",
+   "access": "Funabori Community Hall is a 5 min walk from Funabori Station on the Toei Shinjuku Line. By Toei Bus it is a 4 min walk from either the Funabori 1-chome or Funabori-ekimae stop. The hall has only 5 parking spaces (including 1 for people with disabilities), and public transport is recommended."
   },
   "shibuya-recycle-bazaar": {
    "name": "Shibuya Ward Recycle Bazaar",
@@ -198,7 +209,8 @@
    "rain": "May change because of other events",
    "apply": "Applications for exhibitor registration for the flea market are published separately in “Koho Katsushika” (about 6 stalls)",
    "notes": "Only residents of the ward who are not seeking profit can put items in the Recycle Corner",
-   "address": "5-27-1 Tateishi, Katsushika-ku, Tokyo"
+   "address": "5-27-1 Tateishi, Katsushika-ku, Tokyo",
+   "access": "About 10 min on foot from Ohanajaya Station, or about 13 min on foot from Keisei Tateishi Station or Aoto Station (all Keisei Electric Railway)."
   },
   "taito-hanakawado-park-flea": {
    "name": "Hanakawado Park Flea Market (Taito)",
@@ -206,7 +218,8 @@
    "rule": "Dates announced by Taito Ward (Sep 2026 – Mar 2027)",
    "rain": "Cancelled in rain, or when the organizing group decides on its own",
    "apply": "Differs by organizing group (for stalls and inquiries, contact each group; the Taito Ward page links to each group’s website)",
-   "address": "1-14-15 Hanakawado, Taito-ku, Tokyo"
+   "address": "1-14-15 Hanakawado, Taito-ku, Tokyo",
+   "access": "About 3 min on foot from Asakusa Station (Tokyo Metro Ginza Line)."
   },
   "arakawa-park-flea-2027-03": {
    "name": "Arakawa Flea Market (Arakawa Park, fiscal 2026, 2nd)",
@@ -250,7 +263,8 @@
    "fee": "500 yen per space (2 m square)",
    "apply": "Write your address, name, phone number and the items you will sell on a postcard and send it to the Funabashi Machizukuri Center. A lottery is held if there are many applicants",
    "notes": "Application deadline: Oct 2, 2026 (must arrive by then). Residents of Funabashi and Chitosedai are given priority. Food and drink are not allowed",
-   "address": "1-1-5 Funabashi, Setagaya-ku, Tokyo"
+   "address": "1-1-5 Funabashi, Setagaya-ku, Tokyo",
+   "access": "In front of Chitose-Funabashi Station on the Odakyu Odawara Line (1-1-5 Funabashi, Setagaya). Odakyu Bus, Keio Bus and Tokyu Bus lines serve the station."
   },
   "frma-akatsuka-park-flea": {
    "name": "Takashimadaira Akatsuka Park Flea Market (Recycle Suishin Tomo-no-Kai)",
@@ -282,7 +296,8 @@
    "rain": "If cancelled, the substitute date is Nov 21 (Sat)",
    "apply": "Reserve from the venue page on the organizer's website (fees differ by membership and by how you apply; the fee table is on the same page)",
    "notes": "Household items only. Professional (business) sellers are not allowed",
-   "address": "1-14-17 Akabaneminami, Kita-ku, Tokyo"
+   "address": "1-14-17 Akabaneminami, Kita-ku, Tokyo",
+   "access": "4 minutes on foot from Akabane Station (JR Keihin-Tohoku Line, Saikyo Line)."
   },
   "frma-ukima-park-flea": {
    "name": "Ukima Park Station Plaza Flea Market (Recycle Suishin Tomo-no-Kai)",
@@ -377,7 +392,8 @@
    "name": "MOTTAINAI Flea Market (Nakano Central Park)",
    "venue": "Nakano Central Park",
    "rule": "Dates in the organizer’s event calendar",
-   "address": "4-10-2 Nakano, Nakano-ku, Tokyo"
+   "address": "4-10-2 Nakano, Nakano-ku, Tokyo",
+   "access": "About 5 min on foot from the north exit of Nakano Station (JR), according to the Nakano Ward guide to Nakano Shikinomori Park."
   },
   "mottainai-flea-kichijoji-parco": {
    "name": "MOTTAINAI Flea Market (Kichijoji Parco rooftop)",
@@ -426,19 +442,22 @@
    "name": "Koshigaya Lake Town Station Plaza Flea Market (Flea Market Promotion Network)",
    "venue": "Koshigaya Lake Town Station plaza",
    "rule": "Dates published by the organizer (Flea Market Promotion Network)",
-   "address": "8-chome Lake Town, Koshigaya-shi, Saitama"
+   "address": "8-chome Lake Town, Koshigaya-shi, Saitama",
+   "access": "The station-front plaza of Koshigaya-Laketown Station on the JR Musashino Line. At the north exit, Mitakata Ruins Park adjoins the north side of the plaza and AEON Lake Town lies to the northeast."
   },
   "fmpn-hanyu-aeon-noniwa": {
    "name": "AEON Mall Hanyu, nONIWA Lawn Plaza Flea Market (Flea Market Promotion Network)",
    "venue": "AEON Mall Hanyu, nONIWA lawn plaza",
    "rule": "Dates published by the organizer (Flea Market Promotion Network)",
-   "address": "2-281-3 Kawasaki, Hanyu, Saitama"
+   "address": "2-281-3 Kawasaki, Hanyu, Saitama",
+   "access": "By route bus from the west exit of Hanyu Station (Tobu Isesaki Line, Chichibu Railway) to the Aeon Mall Hanyu bus stop. Timetables are on the mall's official page."
   },
   "fmpn-koshigaya-shirakobato-park": {
    "name": "Koshigaya Shirakobato Water Park Flea Market (Flea Market Promotion Network)",
    "venue": "Koshigaya Shirakobato Water Park",
    "rule": "Dates published by the organizer (Flea Market Promotion Network)",
-   "address": "985 Kosogawa, Koshigaya"
+   "address": "985 Kosogawa, Koshigaya",
+   "access": "From the west exit of Koshigaya Station (Tobu Skytree Line), take a bus bound for the east exit of Iwatsuki Station to Suijo Koen Iriguchi and walk about 10 min. The same stop is also reached from the east exit of Iwatsuki Station (Tobu Urban Park Line) by bus bound for Koshigaya Station. Direct buses from Senge-dai Station and Urawa-Misono Station run on summer weekends only."
   },
   "fmpn-kawaguchi-jissoji-omatsuri": {
    "name": "Kawaguchi Jissoji Festival Flea Market (Flea Market Promotion Network)",
@@ -449,7 +468,8 @@
   "fmpn-soka-acos-plaza": {
    "name": "Soka Station Acos Plaza Flea Market (Flea Market Promotion Network)",
    "venue": "Soka Station Acos Plaza",
-   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)",
+   "access": "The plaza of Acos, the commercial complex in front of Soka Station on the Tobu Skytree Line (Isesaki Line)."
   },
   "fmpn-tokorozawa-aviation-park": {
    "name": "Tokorozawa Aviation Memorial Park Flea Market (Flea Market Promotion Network)",
@@ -462,13 +482,15 @@
    "name": "Toda City Sakura Pal Flea Market (Flea Market Promotion Network)",
    "venue": "Toda City Sakura Pal",
    "rule": "Dates published by the organizer (Flea Market Promotion Network)",
-   "address": "3-1-5 Niizominami, Toda"
+   "address": "3-1-5 Niizominami, Toda",
+   "access": "12 minutes on foot from Toda-koen Station (JR Saikyo Line). 2 minutes on foot from the Sengenbashi bus stop (Kokusai Kogyo Bus route Toh 52 or the toco Bus west loop)."
   },
   "fmpn-nagareyama-otakanomori": {
    "name": "Nagareyama-Otakanomori Station Plaza Flea Market (Flea Market Promotion Network)",
    "venue": "Nagareyama-Otakanomori Station plaza",
    "rule": "Dates published by the organizer (Flea Market Promotion Network)",
-   "address": "1-1-1 Otakanomori-higashi, Nagareyama-shi, Chiba"
+   "address": "1-1-1 Otakanomori-higashi, Nagareyama-shi, Chiba",
+   "access": "This is a plaza at Nagareyama-Otakanomori Station (Tsukuba Express and Tobu Urban Park Line). No walking time is given. The station has plazas on the east, west, south and north sides; which one is used should be checked."
   },
   "fmpn-takashimadaira-danchi-park": {
    "name": "Takashimadaira Danchi Fountain Park Flea Market (Flea Market Promotion Network)",
@@ -479,13 +501,15 @@
    "name": "Kameari Station Lilio Park Flea Market (Flea Market Promotion Network)",
    "venue": "Kameari Station Lilio Park",
    "rule": "Dates published by the organizer (Flea Market Promotion Network)",
-   "address": "3-25-1 Kameari"
+   "address": "3-25-1 Kameari",
+   "access": "In front of the south exit of Kameari Station on the JR Joban Line (Local). Katsushika Ward's guide says the Lilio Building next to it is a 1 min walk from the south exit, and a public car park is on the east side of the building."
   },
   "fmpn-akabane-park": {
    "name": "Akabane Park Flea Market (Flea Market Promotion Network)",
    "venue": "Akabane Park",
    "rule": "Dates published by the organizer (Flea Market Promotion Network)",
-   "address": "1-14-17 Akabaneminami, Kita-ku, Tokyo"
+   "address": "1-14-17 Akabaneminami, Kita-ku, Tokyo",
+   "access": "4 minutes on foot from Akabane Station (JR Keihin-Tohoku Line, Saikyo Line)."
   },
   "nerima-sakuradai-chikusai-flea-2026": {
    "name": "Sakuradai District Festival (includes a flea market, Nerima)",
@@ -508,13 +532,15 @@
    "fee": "5,000 yen",
    "apply": "Apply from the vendor recruitment page (for the Dec 20, 2026 event, the deadline is Oct 23)",
    "notes": "Sales of household unwanted items are not accepted. No food trucks are recruited",
-   "address": "1-1-1 Ikegami, Ota-ku, Tokyo"
+   "address": "1-1-1 Ikegami, Ota-ku, Tokyo",
+   "access": "About 15 min on foot from Ikegami Station (Tokyu Ikegami Line), according to the Ota Ward guide. This is a rough figure for the temple as a whole, not from the main gate."
   },
   "nihonbashi-bettara-ichi": {
    "name": "Nihonbashi Ebisu-ko “Bettara-ichi”",
    "venue": "Around Nihonbashi Odenmacho and Nihonbashi Honcho, centered on Takarada Ebisu Shrine",
    "rule": "Oct 19 (Mon) – Oct 20 (Tue), 2026",
-   "address": "3-10-11 Nihonbashi-Honcho, Chuo-ku, Tokyo"
+   "address": "3-10-11 Nihonbashi-Honcho, Chuo-ku, Tokyo",
+   "access": "About 1 min on foot from Kodemmacho Station (Tokyo Metro Hibiya Line), 5 min from Higashi-Nihombashi Station (Toei Asakusa Line), and 2 min from Exit 5 of Shin-Nihombashi Station (JR Sobu Line Rapid). About 5 min on foot from the Toei Bus Kodemmacho stop."
   },
   "toshima-nakaikebukuro-park-flea-2026-11": {
    "name": "Naka-Ikebukuro Park Flea Market (November)",
@@ -524,7 +550,8 @@
    "fee": "3,000 yen",
    "apply": "Apply from the organizer’s website. First come, first served; closes when capacity is reached",
    "notes": "Open to everyone, inside or outside the ward",
-   "address": "1-16-1 Higashi-Ikebukuro, Toshima-ku, Tokyo"
+   "address": "1-16-1 Higashi-Ikebukuro, Toshima-ku, Tokyo",
+   "access": "About 4 min on foot from Exit 30 (east exit) of Ikebukuro Station (JR, Tokyo Metro, Seibu Ikebukuro Line, Tobu Tojo Line). From Exits 6 and 7 of Higashi-Ikebukuro Station (Tokyo Metro Yurakucho Line), about 11 min on foot via an underground passage."
   },
   "kita-akabane-park-flea-smile-2026-10": {
    "name": "Akabane Park Flea Market (ward-sponsored, October)",
@@ -533,7 +560,8 @@
    "rain": "If it rains, postponed to Oct 25 (Sun)",
    "fee": "2,000 yen (2 m × 2.5 m)",
    "apply": "Apply to the organizer by phone (50 stalls planned, by lottery; the application deadline was Sep 30 and has passed)",
-   "address": "1-14-17 Akabaminami, Kita-ku, Tokyo"
+   "address": "1-14-17 Akabaminami, Kita-ku, Tokyo",
+   "access": "4 minutes on foot from Akabane Station (JR Keihin-Tohoku Line, Saikyo Line)."
   },
   "adachi-guruguru-kiosk-ayase-2026-10": {
    "name": "Guruguru KIOSK (Ayase Station Night Marché, October)",
@@ -542,7 +570,8 @@
    "rule": "Oct 23 (Fri), 2026",
    "rain": "Cancelled in rain",
    "notes": "To run a stall you need experience such as past participation in Guruguru Haku. Food trucks have no conditions (recruitment for the October event has closed)",
-   "address": "3-1-1 Ayase, Adachi-ku, Tokyo"
+   "address": "3-1-1 Ayase, Adachi-ku, Tokyo",
+   "access": "This is the plaza in front of the east exit of Ayase Station (Tokyo Metro Chiyoda Line and JR Joban Line local trains). No walking time is given."
   },
   "fuchu-oshitate-park-flea": {
    "name": "Oshitate Park Flea Market (Fuchu City)",
@@ -574,7 +603,8 @@
    "venue": "Sapporo Sun Plaza",
    "rain": "Held even in bad weather because the venue is indoors",
    "notes": "Household items no longer needed (handmade and new items can also be sold: please confirm when applying). Apply for a stall from the official website",
-   "address": "Kita 24-jo Nishi 5-chome, Kita-ku, Sapporo"
+   "address": "Kita 24-jo Nishi 5-chome, Kita-ku, Sapporo",
+   "access": "Right by exit 1 of Kita-24-jo Station on the Sapporo Municipal Subway Namboku Line."
   },
   "cultune-fukuoka-maizuru-flea": {
    "name": "CULTUNE Flea Market in Maizuru",
@@ -595,7 +625,8 @@
    "name": "Ohi Racecourse Tokyo City Flea Market (Tokyo Recycle)",
    "venue": "Ohi Racecourse Tokyo City Flea Market",
    "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
-   "address": "2-1-2 Katsushima, Shinagawa-ku, Tokyo"
+   "address": "2-1-2 Katsushima, Shinagawa-ku, Tokyo",
+   "access": "2 minutes on foot from Oi Keibajo-mae Station (Tokyo Monorail) and 12 minutes on foot from Tachiaigawa Station (Keikyu Line). 1 minute on foot from the Oi Keibajo Ekimae stop on the Keikyu Bus route Mori 22 from the east exit of Omori Station."
   },
   "trx-ike-sunpark-flea": {
    "name": "Ike Sunpark Flea Market (Tokyo Recycle)",
@@ -628,7 +659,8 @@
    "admission": "No admission fee",
    "rain": "The flea market is canceled in rain. Cancellation is announced between the day before and 7:00 on the morning of the day",
    "apply": "Apply from the venue page on the organizer's website (about 40 stalls, hand-carried stalls only, first come, first served)",
-   "address": "Kinshi 4, Sumida-ku, Tokyo"
+   "address": "Kinshi 4, Sumida-ku, Tokyo",
+   "access": "About 3 min on foot from Kinshicho Station (JR Sobu Line, Tokyo Metro Hanzomon Line)."
   },
   "yuyu-marche-inazawa-kinro-fukushi-kaikan": {
    "name": "Inazawa Kinro Fukushi Kaikan Flea Market (Yuyu Marche)",
@@ -647,7 +679,8 @@
    "fee": "Car stall (car parked sideways): 2,500 yen; hand-carried stall (2.5m × 2.5m): 1,500 yen",
    "apply": "Apply from the \"stall application\" page of the official website",
    "notes": "Stall positions cannot be specified. Cancellation fees apply (see the stall rules page)",
-   "address": "Asaicho Kawada, Ono and Gokurakuji, Ichinomiya"
+   "address": "Asaicho Kawada, Ono and Gokurakuji, Ichinomiya",
+   "access": "4 minutes on foot from the Ono stop of the Meitetsu Bus (Ichinomiya area route bus). The park parking lot has 158 spaces, shared with other park users."
   },
   "yuyu-marche-motohama-park": {
    "name": "Motohama Park Flea Market (Yuyu Marche)",
@@ -684,7 +717,8 @@
    "fee": "Car stall: sideways (5m × 5m, car included) 2,500 yen; lengthwise (2.5m × 7m, car included) 2,000 yen",
    "apply": "Apply from the \"stall application\" page of the official website",
    "notes": "Stall positions cannot be specified. Cancellation fees apply (see the stall rules page)",
-   "address": "132 Sobuecho Sobue Nabeshima, Inazawa-shi, Aichi"
+   "address": "132 Sobuecho Sobue Nabeshima, Inazawa-shi, Aichi",
+   "access": "Take the Meitetsu Bisai Line to Morigami Station, then the community bus toward Sobue and get off at Sario Park Sobue, right by the park (the bus does not run on Sundays or public holidays). A taxi from Morigami Station takes about 10 minutes. By car, about 20 minutes from Gifu-Hashima IC on the Meishin Expressway. Free parking for 126 cars."
   },
   "hyakumanben-tedukuri-ichi": {
    "name": "Hyakumanben-san Handmade Market (Kyoto)",
@@ -712,7 +746,8 @@
    "rain": "Held rain or shine",
    "fee": "1 booth (2.5 m wide × 2.5 m deep): 2,500 yen (tax included)",
    "notes": "The vendor secretariat for the flea market area is the Japan Flea Market Association",
-   "address": "320 Hattaji-cho, Naka-ku, Sakai-shi"
+   "address": "320 Hattaji-cho, Naka-ku, Sakai-shi",
+   "access": "About 1.2 km southwest of Fukai Station (Nankai Semboku Line). 250 m southwest of the Kuze Shogakko-mae stop of the Nankai Bus."
   },
   "jfma-kobe-harborland-seaside-market": {
    "name": "Kobe Harborland Seaside Market",
@@ -739,7 +774,8 @@
    "time": "10:00–16:00 (planned)",
    "admission": "Free",
    "fee": "1 booth (car booth, 5 m wide × 4.5 m deep): 3,500 yen (tax included)",
-   "address": "2-24-55 Tsurumachi, Taisho-ku, Osaka-shi"
+   "address": "2-24-55 Tsurumachi, Taisho-ku, Osaka-shi",
+   "access": "An IKEA shuttle bus runs between Taishobashi and IKEA Tsuruhama (210 yen for adults, 110 yen for children). The store has a free car park for 2,100 cars, open during store hours. No nearest station or walking time is given on the official page."
   },
   "jfma-minatomachi-river-place-flea": {
    "name": "Minatomachi River Place Flea Market (Osaka, Namba)",
@@ -755,7 +791,8 @@
    "venue": "Mitsui Outlet Park Shiga Ryuo, special venue in the P7 parking lot",
    "time": "10:00–16:00 (planned)",
    "admission": "Free",
-   "address": "1178-694 Sunayama, Oaza Yakushi, Ryuo-cho, Gamo-gun, Shiga"
+   "address": "1178-694 Sunayama, Oaza Yakushi, Ryuo-cho, Gamo-gun, Shiga",
+   "access": "About 30 min by local bus from Yasu Station or Omi-Hachiman Station (JR Tokaido Line). By car, the nearest interchange is Ryuo IC on the Meishin Expressway."
   },
   "jfma-wanwan-marche-kobe-port-island-vol53": {
    "name": "Wanwan Marche vol.53 (Kobe Port Island)",
@@ -786,14 +823,16 @@
    "venue": "Amagasaki Chuo Park",
    "rain": "Held rain or shine",
    "apply": "Apply on each event's official page (bottom of the page) or via LINE",
-   "address": "1-4 Kandanaka-dori, Amagasaki-shi, Hyogo"
+   "address": "1-4 Kandanaka-dori, Amagasaki-shi, Hyogo",
+   "access": "Right by Amagasaki Station on the Hanshin Railway. By bus, take Hanshin Bus no. 11 from the north side of JR Amagasaki Station, or no. 13 or 31 from Hankyu Tsukaguchi Station, and get off at Hanshin Amagasaki. There is no parking available."
   },
   "fmj-amaiseki-park": {
    "name": "Amaiseki Park Flea Market & Marche (Flea Market Japan)",
    "venue": "Amaiseki Park",
    "rain": "Held rain or shine",
    "apply": "Apply on each event's official page (bottom of the page) or via LINE",
-   "address": "12-3 Hacchonawate-cho, Takatsuki-shi, Osaka"
+   "address": "12-3 Hacchonawate-cho, Takatsuki-shi, Osaka",
+   "access": "10 minutes on foot from Takatsukishi Station (Hankyu Kyoto Line) and 13 minutes on foot from Takatsuki Station (JR Kyoto Line)."
   },
   "fmj-apia-higashiomi": {
    "name": "Shopping Plaza Apia Marche (Flea Market Japan)",
@@ -807,7 +846,8 @@
    "venue": "Kirarie Kusatsu, Citizens' General Exchange Center, multipurpose room (indoors)",
    "rain": "Held rain or shine, as it is indoors",
    "apply": "Apply on each event's official page (bottom of the page) or via LINE",
-   "address": "2-1-35 Oji, Kusatsu-shi, Shiga"
+   "address": "2-1-35 Oji, Kusatsu-shi, Shiga",
+   "access": "About 5 min on foot from Kusatsu Station (JR). A paid parking lot is available, but the city recommends public transport because it is expected to be crowded."
   },
   "fmj-minoh-cues-mall": {
    "name": "Minoh Cues Mall Flea Market & Marche (Flea Market Japan)",
@@ -821,28 +861,32 @@
    "venue": "Nara City Hall (lawn area)",
    "rain": "Held in the rain (canceled in severe weather)",
    "apply": "Apply on each event's official page (bottom of the page) or via LINE",
-   "address": "1-1-1 Nijo-oji-minami, Nara-shi, Nara"
+   "address": "1-1-1 Nijo-oji-minami, Nara-shi, Nara",
+   "access": "About 700 m west of the south ticket gate of Shin-Omiya Station (Kintetsu Nara Line), roughly 9 minutes on foot. By Nara Kotsu bus from Kintetsu Nara Station (stop 11) or the west exit of JR Nara Station (stop 13) to the Nara Shicho-mae stop."
   },
   "fmj-fukakita-ryokuchi": {
    "name": "Fukakita Ryokuchi Park Flea Market & Marche (Furima Japan)",
    "venue": "Fukakita Ryokuchi Park, Daito City (plaza in front of the tennis courts next to Parking Lot No. 1)",
    "rain": "Held rain or shine",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Fukano-kita 4-chome 284, Daito City, Osaka Prefecture"
+   "address": "Fukano-kita 4-chome 284, Daito City, Osaka Prefecture",
+   "access": "About 15 min on foot from Nozaki Station or Shijonawate Station (JR Gakkentoshi Line). Or take a Keihan Bus from Owada Station (Keihan Main Line) to Ebata and walk about 10 min. By car, use Parking Lot 1 (west from the Fukakita Yusuichi-higashi intersection on National Route 170)."
   },
   "fmj-ohigashi-hiroba": {
    "name": "Ohigashi-san Plaza Flea Market & Marche (Furima Japan)",
    "venue": "Ohigashi-san Plaza in front of Higashi Hongan-ji (Higashi Hongan-ji Mae Citizens’ Green Space)",
    "rain": "Held rain or shine",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Tokiwa-cho and others, Shimogyo Ward, Kyoto City"
+   "address": "Tokiwa-cho and others, Shimogyo Ward, Kyoto City",
+   "access": "About 5 min on foot from Kyoto Station (JR), in front of Higashi Honganji Temple."
   },
   "fmj-okazaki-park": {
    "name": "Okazaki Park Flea Market & Marche (Furima Japan)",
    "venue": "Okazaki Park",
    "rain": "Held rain or shine",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Okazaki Saishojicho and around, Sakyo-ku, Kyoto"
+   "address": "Okazaki Saishojicho and around, Sakyo-ku, Kyoto",
+   "access": "An 8 min walk from Higashiyama Station on the Kyoto Municipal Subway. By car, about 20 minutes (about 7 km) from Kyoto-Higashi IC on the Meishin Expressway."
   },
   "fmj-tsurumi-ryokuchi": {
    "name": "Hanahaku Memorial Park Tsurumi Ryokuchi Flea Market & Marche (Furima Japan)",
@@ -863,70 +907,80 @@
    "venue": "Mie Prefectural General Cultural Center, Shukusai Hiroba (Festival Plaza)",
    "rain": "Held in rain (cancelled in severe weather)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Isshinden-Kozubeta 1234, Tsu City, Mie Prefecture"
+   "address": "Isshinden-Kozubeta 1234, Tsu City, Mie Prefecture",
+   "access": "About 25 min on foot from Tsu Station. About 5 min by bus from the west exit of Tsu Station (Sogo Bunka Center-mae stop), or about 5 min by taxi. Public transport is recommended on weekends and holidays."
   },
   "fmj-plant-kizugawa": {
    "name": "Super Center Plant Kizugawa Flea Market & Marche (Furima Japan)",
    "venue": "Super Center Plant Kizugawa",
    "rain": "Cancelled in rain (held in light rain)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Shiroyamadai 2-chome 1-banchi, Main Parking Lot, Kizugawa City, Kyoto Prefecture"
+   "address": "Shiroyamadai 2-chome 1-banchi, Main Parking Lot, Kizugawa City, Kyoto Prefecture",
+   "access": "A 15 min walk from Kizu Station. By Nara Kotsu bus, it is a 4 min walk from the Kizu-Shiroyamadai-chuo stop or a 9 min walk from the Kyodai-nojo stop. Free parking is available."
   },
   "fmj-notogawa-community-center": {
    "name": "Notogawa Community Center Flea Market & Marche (Furima Japan)",
    "venue": "Grounds of Higashiomi City Notogawa Community Center",
    "rain": "Held in light rain (cancelled in severe weather such as typhoons)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Taikoji-cho 262-banchi, Higashiomi City, Shiga Prefecture"
+   "address": "Taikoji-cho 262-banchi, Higashiomi City, Shiga Prefecture",
+   "access": "10 minutes on foot from the west exit of Notogawa Station (JR). Get off at the Notogawa Shisho stop of the Chokotto Bus from the Notogawa Station West Exit stop; it is right there. Parking for 300 vehicles."
   },
   "fmj-a-square-kusatsu": {
    "name": "A-Square Marche (Furima Japan)",
    "venue": "Passage in front of Ayaka Plaza, A-Square",
    "rain": "Cancelled in rain (held in light rain)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Nishishibukawa 1-chome 23-1, Kusatsu City, Shiga Prefecture"
+   "address": "Nishishibukawa 1-chome 23-1, Kusatsu City, Shiga Prefecture",
+   "access": "About 3 min on foot from the west exit of Kusatsu Station (JR Biwako Line). There is a car park for 3,000 cars (entry from 7:00 to 22:00)."
   },
   "fmj-yamato-saidaiji-ekimae": {
    "name": "Yamato-Saidaiji Station Front Flea Market & Marche (Furima Japan)",
    "venue": "Lawn plaza on the north side of Yamato-Saidaiji Station (lawn area in front of Sanwa City)",
    "rain": "Held in rain (cancelled in severe weather)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Saidaiji Higashi-machi 2-chome 1-63, Nara City, Nara Prefecture"
+   "address": "Saidaiji Higashi-machi 2-chome 1-63, Nara City, Nara Prefecture",
+   "access": "An artificial-turf space on the sidewalk in front of the north side of Saidaiji Station (Nara City road Saidaiji Ichijo Line). The page gives no walking time."
   },
   "fmj-ritto-sakira": {
    "name": "Ritto Sakira Flea Market & Marche (Furima Japan)",
    "venue": "Symbol Plaza, Ritto Arts and Culture Hall Sakira",
    "rain": "Cancelled in rain (held in light rain)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Haze 2-chome 1-ban 28-go, Ritto City, Shiga Prefecture"
+   "address": "Haze 2-chome 1-ban 28-go, Ritto City, Shiga Prefecture",
+   "access": "About 400 m (a 5 min walk) from the east exit of Ritto Station on the JR Biwako Line. A paid car park adjoins the hall; if it is full, use nearby coin parking."
   },
   "fmj-suzuka-sakura-no-mori": {
    "name": "Suzuka City Sakura no Mori Park Flea Market & Marche (Furima Japan)",
    "venue": "Lawn plaza, Suzuka City Sakura no Mori Park",
    "rain": "Cancelled in rain (held in light rain)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Minamitamagaki-cho 3500-5, Suzuka City, Mie Prefecture"
+   "address": "Minamitamagaki-cho 3500-5, Suzuka City, Mie Prefecture",
+   "access": "25 minutes on foot from Shiroko Station (Kintetsu Nagoya Line), according to a tourism site. Parking is free."
   },
   "fmj-yasugawa-shinsui-park": {
    "name": "Yasugawa Shinsui Park Flea Market & Marche (Furima Japan)",
    "venue": "Yasugawa Shinsui Park",
    "rain": "Cancelled in rain (held in light rain)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Natsumi 589, Konan City, Shiga Prefecture"
+   "address": "Natsumi 589, Konan City, Shiga Prefecture",
+   "access": "About 20 min on foot from Kosei Station (JR Kusatsu Line). It is 12 km (about 20 min) from the Ritto IC on the Meishin Expressway. The car park has space for 453 cars."
   },
   "fmj-yamada-ike-park": {
    "name": "Yamadaike Park Flea Market & Marche (Furima Japan)",
    "venue": "Yamadaike Park, Hirakata City (multipurpose plaza)",
    "rain": "Held rain or shine",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "1-1 Yamadaikekoen, Hirakata City, Osaka Prefecture, Multipurpose Plaza"
+   "address": "1-1 Yamadaikekoen, Hirakata City, Osaka Prefecture, Multipurpose Plaza",
+   "access": "About 700 m northwest of Fujisaka Station (JR Gakkentoshi Line), or about 200 m east of the Keihan Bus Deyashiki stop. Keihan buses to Deyashiki also run from Nagao Station and from the north exit of Hirakata-shi Station (Keihan). The location of the multipurpose field within the park is not confirmed."
   },
   "fmj-alplaza-yasu": {
    "name": "Al Plaza Yasu Flea Market & Marche (Furima Japan)",
    "venue": "Al Plaza Yasu, south parking lot (lottery ticket booth side)",
    "rain": "Held in rain",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Kosasahara 1000, Yasu City, Shiga Prefecture"
+   "address": "Kosasahara 1000, Yasu City, Shiga Prefecture",
+   "access": "A 7 min walk from Yasu Station on the JR Tokaido Main Line. By car, 5.2 km from Ritto IC on the Meishin Expressway. Parking is available."
   },
   "fmj-yokkaichi-shimin-park": {
    "name": "Yokkaichi Citizens’ Park Flea Market & Marche (Furima Japan)",
@@ -942,7 +996,8 @@
    "admission": "300 yen per person; free for elementary school children and younger (early entry 8:00–10:00 is 1,000 yen)",
    "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
    "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
-   "address": "376-3 Nishimachi, Chofu-shi, Tokyo"
+   "address": "376-3 Nishimachi, Chofu-shi, Tokyo",
+   "access": "About 5 min on foot from Tobitakyu Station (Keio Line), or about 20 min on foot from Tama Station (Seibu Tamagawa Line)."
   },
   "recycler-tokyo-international-forum-flea": {
    "name": "Tokyo International Forum Flea Market (Recycle Undo Shimin-no-Kai)",
@@ -950,21 +1005,24 @@
    "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
    "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
    "address": "3-5-1 Marunouchi, Chiyoda-ku, Tokyo",
-   "fee": "Revised from the December 2026 events: stall fee 4,500 yen → 5,000 yen and 5,500 yen → 6,000 yen (the official notice does not say which membership type or booth each applies to). Parking (up to 8 hours) 2,500 yen → 3,000 yen"
+   "fee": "Revised from the December 2026 events: stall fee 4,500 yen → 5,000 yen and 5,500 yen → 6,000 yen (the official notice does not say which membership type or booth each applies to). Parking (up to 8 hours) 2,500 yen → 3,000 yen",
+   "access": "About 1 min on foot from Yurakucho Station (JR) and about 5 min from Tokyo Station (JR). About 5 min from Nijubashimae Station (Tokyo Metro Chiyoda Line), among other stations."
   },
   "recycler-kiba-park-flea": {
    "name": "Tokyo Metropolitan Kiba Park Flea Market (Recycle Undo Shimin-no-Kai)",
    "venue": "Tokyo Metropolitan Kiba Park",
    "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
    "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
-   "address": "4-1-1 Kiba, Koto-ku"
+   "address": "4-1-1 Kiba, Koto-ku",
+   "access": "A 10 min walk from Kiba Station on the Tokyo Metro Tozai Line, or 15 min from Kiyosumi-Shirakawa Station or Kikukawa Station (Toei Shinjuku Line). By bus, it is a 5 min walk from the Kiba-ekimae stop, among others. Paid parking is available (Lot 1 at 4-1-1 Kiba, 104 spaces)."
   },
   "recycler-komazawa-park-flea": {
    "name": "Komazawa Olympic Park Flea Market (Recycle Undo Shimin-no-Kai)",
    "venue": "Komazawa Olympic Park",
    "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
    "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
-   "address": "1-1 Komazawa Koen, Setagaya-ku"
+   "address": "1-1 Komazawa Koen, Setagaya-ku",
+   "access": "15 minutes on foot from Komazawa-Daigaku Station (Tokyu Den-en-toshi Line). By Tokyu Bus from JR Shibuya Station (Den-en-chofu route) to Komazawa Koen Higashiguchi, or from JR Ebisu Station (Yoga route) to Komazawa Koen. Paid parking: 181 spaces in lot 1 and 41 in lot 2."
   },
   "recycler-fussa-baseside-street": {
    "name": "Fussa Baseside Street Vintage Clothing & Antique Market (Recycle Undo Shimin-no-Kai)",
@@ -978,21 +1036,24 @@
    "venue": "Tokyo Metropolitan Koganei Park",
    "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
    "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
-   "address": "1-13-1 Sekinomachi, Koganei-shi, Tokyo"
+   "address": "1-13-1 Sekinomachi, Koganei-shi, Tokyo",
+   "access": "By bus from the north exit of Musashi-Koganei Station (JR Chuo Line) to Koganei Koen Nishiguchi and other stops, or by CoCo Bus from the north exit of Higashi-Koganei Station to Koganei Koen Iriguchi or Tatemonoen Iriguchi. From Hanakoganei Station (Seibu Shinjuku Line), take a Seibu Bus from Minami-Hanakoganei to Koganei Koen Nishiguchi. No walking time from the stations is given."
   },
   "recycler-hikarigaoka-pageant-festa-flea": {
    "name": "Nerima Hikarigaoka Hikari Pageant Festa Flea Market (Recycle Undo Shimin-no-Kai)",
    "venue": "Tokyo Metropolitan Hikarigaoka Park",
    "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
    "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
-   "address": "4-1 Hikarigaoka, Nerima-ku, Tokyo"
+   "address": "4-1 Hikarigaoka, Nerima-ku, Tokyo",
+   "access": "An 8 min walk from Hikarigaoka Station on the Toei Oedo Line, or 15 min from Narimasu Station (Tobu Tojo Line) or Chikatetsu-Narimasu Station. Paid parking is available (251 spaces)."
   },
   "sunshine-city-big-furima": {
    "name": "Sunshine City Big Flea Market (Ikebukuro)",
    "venue": "Sunshine City, Sunshine Plaza",
    "admission": "Free admission",
    "rain": "Cancelled in case of rain",
-   "address": "3-1 Higashi-Ikebukuro, Toshima-ku, Tokyo"
+   "address": "3-1 Higashi-Ikebukuro, Toshima-ku, Tokyo",
+   "access": "About 8 minutes on foot from exit 35 of Ikebukuro Station (JR, Tokyo Metro, Seibu, Tobu). About 3 minutes on foot from Higashi-Ikebukuro Station (Tokyo Metro Yurakucho Line). About 4 minutes on foot from the Higashi-Ikebukuro 4-chome stop (Toden Arakawa Line)."
   },
   "komazawa-park-flea-tokyo-park": {
    "name": "Komazawa Olympic Park Flea Market (schedule from the Tokyo Metropolitan Park Association)",
@@ -1018,14 +1079,16 @@
    "rain": "Cancelled in rain, as decided by the secretariat (it is held unless a cancellation notice is posted by 7:00 a.m.)",
    "fee": "Carried-in stall (paid on the day): trial member 2,000 yen / amateur member (annual fee required) 1,500 yen",
    "apply": "Apply from the venue page on the organizer’s site (the stall fee differs by membership type)",
-   "notes": "Only ordinary household items can be sold. New goods, specialist stock or mainly handmade works cannot be sold. This is the first time the organizer holds an event at this venue"
+   "notes": "Only ordinary household items can be sold. New goods, specialist stock or mainly handmade works cannot be sold. This is the first time the organizer holds an event at this venue",
+   "access": "About 10 min on foot from Higashi-Fuchu Station (Keio Line). Or take a Keio Bus (via Ippongi, bound for Fuchu Station) from Musashi-Koganei Station (JR Chuo Line) to Tenjincho 2-chome."
   },
   "jfma-tsurumi-ryokuchi-flea": {
    "name": "Tsurumi Ryokuchi Flea Market (Expo ’90 Commemorative Park, Osaka)",
    "venue": "Exhibition space attached to Hanamizuki Hall, Expo Commemorative Park Tsurumi Ryokuchi",
    "address": "Ryokuchi-koen, Tsurumi-ku, Osaka-shi",
    "apply": "The organizer’s stall reception schedule lists the reception date as “undecided” (TBC)",
-   "notes": "Stall capacity is 130 booths per day (planned)"
+   "notes": "Stall capacity is 130 booths per day (planned)",
+   "access": "Right next to the park's Central Gate from Tsurumi-ryokuchi Station (Osaka Metro Nagahori Tsurumi-ryokuchi Line); the Osaka City Bus stops Tsurumi Ryokuchi Koen-mae and Moroguchi are also nearby. The walking time to Hanamizuki Hall is not confirmed."
   },
   "bia-osaka-bay-tower": {
    "name": "Osaka Bay Tower Flea Market",
@@ -1184,7 +1247,8 @@
    "address": "1-1 Senri Banpaku Koen, Suita, Osaka Prefecture",
    "time": "9:30–16:30",
    "rain": "Light rain: held. Cancelled in bad weather.",
-   "fee": "Advance tickets ¥700 / day tickets ¥1,000 (free for elementary school children and under; separate Expo Park admission fee applies)"
+   "fee": "Advance tickets ¥700 / day tickets ¥1,000 (free for elementary school children and under; separate Expo Park admission fee applies)",
+   "access": "The Osaka Monorail's Expo Commemoration Park Station and Koen-Higashiguchi Station are the convenient stops. The east entrance of the Cultural Park is about a 5 min walk from Koen-Higashiguchi Station, and the central entrance is about 5 min from Expo Commemoration Park Station (no walking time is given for the East Plaza itself)."
   },
   "tokyo-romantic-shibuya": {
    "name": "Tokyo Romantic Market (Shibuya Antique Market)",
@@ -1209,7 +1273,8 @@
    "rain": "Cancelled in rain or bad weather at all venues (official list of venues)",
    "fee": "Side-by-side with car: ¥2,500 (event schedule page)",
    "apply": "Apply from “Exhibit” on the official page (the event schedule page shows recruitment status)",
-   "address": "985 Kosogawa, Koshigaya"
+   "address": "985 Kosogawa, Koshigaya",
+   "access": "From the west exit of Koshigaya Station (Tobu Skytree Line), take a bus bound for the east exit of Iwatsuki Station to Suijo Koen Iriguchi and walk about 10 min. The same stop is also reached from the east exit of Iwatsuki Station (Tobu Urban Park Line) by bus bound for Koshigaya Station. Direct buses from Senge-dai Station and Urawa-Misono Station run on summer weekends only."
   },
   "rbf-kawagoe-suijo-park": {
    "name": "Kawagoe Suijo Park Big Flea Market (Raspberry)",
@@ -1234,7 +1299,8 @@
    "rain": "Cancelled in rain or bad weather at all venues (official list of venues)",
    "fee": "On-foot stall: ¥2,000 per space (width 3.6 m × depth 2.0 m). Designated location: ¥500 extra",
    "apply": "Apply from “Exhibit” on the official page (the event schedule page shows recruitment status)",
-   "address": "1722 Mizufuka, Kazo City, Saitama Prefecture"
+   "address": "1722 Mizufuka, Kazo City, Saitama Prefecture",
+   "access": "About 15 min on foot from Hanasaki Station (Tobu Isesaki Line)."
   },
   "rbf-chikozan-park-festival": {
    "name": "Chikozan Park Festival Flea Market (Raspberry)",
@@ -1253,7 +1319,8 @@
    "rain": "Cancelled in rain or bad weather",
    "fee": "On foot: ¥2,000 (2 m × 2 m)",
    "apply": "Apply from “Exhibit” on the official page (the event schedule page shows recruitment status)",
-   "address": "4-1 Kashiwanoha, Kashiwa City, Chiba Prefecture"
+   "address": "4-1 Kashiwanoha, Kashiwa City, Chiba Prefecture",
+   "access": "From the west exit of Kashiwa Station (JR Joban Line, Tobu Urban Park Line), take a Tobu Bus (about 20 min) to Mitsui Jutaku-mae or Kashiwanoha Koen Chuo. From Kashiwanoha-campus Station (Tsukuba Express), it is about 20 min on foot or about 5 min by bus. Parking is available (about 2 km from Kashiwa IC on the Joban Expressway)."
   },
   "rbf-aeon-chiba-newtown": {
    "name": "AEON Mall Chiba New Town Rooftop Big Flea Market (Raspberry)",
@@ -1283,7 +1350,8 @@
    "rain": "Held indoors (the official page says “air-conditioned indoor event, so no worries about rain or bad weather”)",
    "fee": "Regular: Loading A ¥2,000, Loading B ¥1,500 (official LINE friends participation fee: Loading A ¥1,500, Loading B ¥1,000). Free admission",
    "apply": "Apply from “Exhibit” on the official page (the event schedule page shows recruitment status)",
-   "address": "249-5 Toyofuta, Kashiwa City, Chiba Prefecture"
+   "address": "249-5 Toyofuta, Kashiwa City, Chiba Prefecture",
+   "access": "Visitors can come by bus from JR Kashiwa Station (the bus stop and travel time are not given). Free parking for 1,000 cars on the rooftop car park."
   },
   "rbf-ikea-tokyo-bay-loppis": {
    "name": "IKEA Tokyo-Bay LOPPIS Flea Market (Raspberry)",
@@ -1330,7 +1398,8 @@
    "venue": "Taisho Ward Office parking lot",
    "time": "11:00–14:00",
    "rain": "Cancelled in rain",
-   "address": "2-7-95 Chishima, Taisho-ku, Osaka"
+   "address": "2-7-95 Chishima, Taisho-ku, Osaka",
+   "access": "Get off at Taisho Station (Osaka Metro Nagahori Tsurumi-ryokuchi Line or JR Osaka Loop Line), take a bus from stops 2 to 5 at Taishobashi, and get off at Taisho Kuyakusho-mae (about 10 min). Ask the ward office about the car park."
   },
   "osaka-garagesale-hirano": {
    "name": "Garage Sale in Hirano – Multigenerational Exchange –",
@@ -1345,7 +1414,8 @@
    "venue": "Higashinari Ward Center, 2nd-floor Main Hall",
    "time": "11:00–15:00",
    "rain": "Held even in rain",
-   "address": "3-2-17 Oimazato-nishi, Higashinari-ku, Osaka-shi, Osaka"
+   "address": "3-2-17 Oimazato-nishi, Higashinari-ku, Osaka-shi, Osaka",
+   "access": "About 3 min on foot west from Exit 2 of Imazato Station (Osaka Metro Sennichimae Line, Imazatosuji Line)."
   },
   "osaka-garagesale-sumiyoshi": {
    "name": "Sumiyoshi Garage Sale",
@@ -1382,14 +1452,16 @@
    "venue": "Osaka Bay Tower, 2F Atrium Plaza",
    "time": "12:00–14:30",
    "rain": "Cancelled in severe weather",
-   "address": "1-2-4-700 Benten, Minato-ku, Osaka"
+   "address": "1-2-4-700 Benten, Minato-ku, Osaka",
+   "access": "Directly connected to Bentencho Station (JR Osaka Loop Line and Osaka Metro Chuo Line)."
   },
   "osaka-garagesale-higashisumiyoshi": {
    "name": "Higashisumiyoshi Ward Garage Sale",
    "venue": "Higashisumiyoshi Ward Hall, 3rd floor of the Ward Office",
    "time": "13:00–15:30",
    "rain": "Held rain or shine",
-   "address": "1-13-4 Higashitanabe, Higashisumiyoshi-ku, Osaka"
+   "address": "1-13-4 Higashitanabe, Higashisumiyoshi-ku, Osaka",
+   "access": "About 8 min on foot from Komagawa-Nakano Station (Osaka Metro Tanimachi Line), 10 min from Minami-Tanabe Station (JR Hanwa Line), and 15 min from Harinakano Station (Kintetsu Minami-Osaka Line). About 2 min on foot from the Osaka City Bus Higashisumiyoshi Kuyakusho-mae stop."
   },
   "osaka-garagesale-kita": {
    "name": "Kita Ward RRR Festival Garage Sale",
@@ -1403,7 +1475,8 @@
    "name": "Daito Citizens' Festival Flea Market (Suehiro Park)",
    "venue": "Suehiro Park (Suminodo Station South Park)",
    "time": "10:00 a.m.–5:00 p.m. (for the whole Citizens' Festival)",
-   "address": "Suehirocho 6 and Shinmachi 2, 3 and 4"
+   "address": "Suehirocho 6 and Shinmachi 2, 3 and 4",
+   "access": "Right by the south exit of Suminodo Station (JR). No dedicated parking is mentioned."
   },
   "hirakata-hira-eco-matsuri-flea": {
    "name": "Hira Eco Festival Flea Market (Hotanigawa Cleaning Plant)",
@@ -1499,7 +1572,8 @@
    "venue": "Hikone City Culture Plaza car park",
    "time": "10:00–16:00 (no entry before 10:00 except for vendors)",
    "admission": "Free for visitors and parking",
-   "address": "187-4 Nose-cho, Hikone City, Shiga Prefecture"
+   "address": "187-4 Nose-cho, Hikone City, Shiga Prefecture",
+   "access": "From Hikone Station (platform 2), the Mitsuya Line (routes 5 and 6) stops at Bunka Plaza-guchi. From the west exit of Minami-Hikone Station, the Minami-Hikone Prefectural University Line (route 73) stops at Hikone-shi Bunka Plaza."
   },
   "wakayama-kitabura-remember-market": {
    "name": "Kita-Burakuricho Remember MARKET (Kita-Burakuricho Shopping Street, Wakayama City)",
@@ -1511,61 +1585,71 @@
    "name": "Lohas Park Kawanishi (Kisera Kawanishi Seseragi Park)",
    "venue": "Kisera Kawanishi Seseragi Park",
    "rain": "Held rain or shine (may be cancelled in severe weather; if cancelled, there is no rain date)",
-   "address": "1-chome 5-17 Hiuchi, Kawanishi City, Hyogo Prefecture"
+   "address": "1-chome 5-17 Hiuchi, Kawanishi City, Hyogo Prefecture",
+   "access": "About 8 min on foot from Kawanishi-Noseguchi Station (Hankyu, Nose Electric Railway). About 5 min on foot from Kinunobebashi Station (Nose Electric Railway). About 15 min on foot from Kawanishi-Ikeda Station (JR). About 2 min on foot from the Kisera Kawanishi / Sogo Iryo Center bus stop (Hankyu Bus)."
   },
   "lohas-park-kashiwara": {
    "name": "Lohas Park Osaka Kashiwara (Yamatogawa Riverside Green Space Park)",
    "venue": "Yamatogawa Riverside Park",
    "rain": "Held rain or shine (may be cancelled in severe weather; if cancelled, there is no rain date)",
-   "address": "1 Ando-cho, Kashiwara City, Osaka Prefecture"
+   "address": "1 Ando-cho, Kashiwara City, Osaka Prefecture",
+   "access": "About 5 min on foot west from Ando Station (Kintetsu Osaka Line), 7 min east from Kashiwara-minamiguchi Station (Kintetsu Domyoji Line), and 17 min south from Kashiwara Station (JR Yamatoji Line). These are the times given for Kashiwara City Hall, in the same Ando-cho area as the venue; the time to the spot within the park is not confirmed."
   },
   "lohas-park-itami": {
    "name": "Lohas Park Itami (Koyaike Park)",
    "venue": "Koyaike Park, Multipurpose Plaza",
    "rain": "Held rain or shine (may be cancelled in severe weather; if cancelled, there is no rain date)",
-   "address": "3-chome Koyaike, Itami City, Hyogo Prefecture"
+   "address": "3-chome Koyaike, Itami City, Hyogo Prefecture",
+   "access": "By Itami City Bus: take a bus from stop no. 4 in front of JR Itami Station or Hankyu Itami Station, bound for Nishino-Mukogawa Center-mae via Saibansho-mae, and get off at Koyaike-koen-mae, right at the park. The park car park has 150 spaces (paid)."
   },
   "lohas-park-sakai-oizumi": {
    "name": "Lohas Park Sakai (Oizumi Green Space)",
    "venue": "Oizumi Green Space, Oshibafu Plaza (Large Lawn Plaza)",
    "rain": "Held rain or shine (may be cancelled in severe weather; if cancelled, there is no rain date)",
-   "address": "128 Kanaoka-cho, Kita Ward, Sakai City, Osaka Prefecture"
+   "address": "128 Kanaoka-cho, Kita Ward, Sakai City, Osaka Prefecture",
+   "access": "About 1,000 m east of Shinkanaoka Station (Osaka Metro Midosuji Line). From Mikunigaoka Station (JR Hanwa Line, Nankai Koya Line), take the Nankai Bus to Kita-kuyakusho-mae and walk about 800 m east."
   },
   "lohas-park-tsurumi": {
    "name": "Lohas Park Osaka Tsurumi (Tsurumi Ryokuchi Park)",
    "venue": "Tsurumi Ryokuchi Park, Large Lawn",
    "rain": "Held rain or shine (may be cancelled in severe weather; if cancelled, there is no rain date)",
-   "address": "2-163 Ryokuchi Koen, Tsurumi Ward, Osaka City, Osaka Prefecture"
+   "address": "2-163 Ryokuchi Koen, Tsurumi Ward, Osaka City, Osaka Prefecture",
+   "access": "The nearest station is Tsurumi-ryokuchi Station (Osaka Metro Nagahori Tsurumi-ryokuchi Line). The official guide says to head toward Hanahaku-dori from the ticket gate to reach the Central Entrance. No walking time to the Large Lawn is given."
   },
   "lohas-park-toyonaka-hattori": {
    "name": "Lohas Park Toyonaka (Hattori Ryokuchi Park)",
    "venue": "Hattori Ryokuchi Park, West Central Plaza and Tsudoi no Harappa",
    "rain": "Held rain or shine (may be cancelled in severe weather; if cancelled, there is no rain date)",
-   "address": "1-10 Hattori Ryokuchi, Toyonaka City, Osaka Prefecture"
+   "address": "1-10 Hattori Ryokuchi, Toyonaka City, Osaka Prefecture",
+   "access": "About 5 min on foot from Ryokuchi-koen Station (Kita-Osaka Kyuko) to Hattori Ryokuchi Park. The time to Nishi-Chuo Hiroba and Tsudoi no Harappa within the park is not confirmed."
   },
   "lohas-park-higashisumiyoshi-nagai": {
    "name": "Lohas Park Higashisumiyoshi (Nagai Park)",
    "venue": "Nagai Park (Southwest Entrance Plaza, Free Plaza)",
    "rain": "Held rain or shine (may be cancelled in severe weather; if cancelled, there is no rain date)",
-   "address": "1-1 Nagai Koen, Higashisumiyoshi Ward, Osaka City, Osaka Prefecture"
+   "address": "1-1 Nagai Koen, Higashisumiyoshi Ward, Osaka City, Osaka Prefecture",
+   "access": "Right outside exit 3 of Nagai Station on the Osaka Metro Midosuji Line. About a 5 min walk from Nagai Station or Tsurugaoka Station (JR Hanwa Line), and about 15 min from Harinakano Station (Kintetsu Minami-Osaka Line). The Nagai Park Underground Car Park (255 spaces) adjoins the south-west entrance and the Jiyu Hiroba."
   },
   "lohas-park-nara-heijokyuseki": {
    "name": "Lohas Park Nara (Heijo Palace Site Historical Park)",
    "venue": "Heijo Palace Site Historical Park, Suzakumon Plaza and Suzaku Avenue",
    "rain": "Held rain or shine (may be cancelled in severe weather; if cancelled, there is no rain date)",
-   "address": "3-5-1 Nijo Oji Minami, Nara City, Nara Prefecture"
+   "address": "3-5-1 Nijo Oji Minami, Nara City, Nara Prefecture",
+   "access": "About 6 minutes by Nara Kotsu bus (routes 160 and 163) from the south exit of Yamato-Saidaiji Station (Kintetsu) to the Suzakumon Hiroba-mae stop. The official page also lists about 20 minutes on foot from the south exit of Yamato-Saidaiji Station and from Shin-Omiya Station."
   },
   "lohas-park-daito-suehiro": {
    "name": "Lohas Park Daito (Suehiro Park)",
    "venue": "Suehiro Park",
    "rain": "Held rain or shine (may be cancelled in severe weather; if cancelled, there is no rain date)",
-   "address": "6-4 Suehiro-cho, Daito City, Osaka Prefecture"
+   "address": "6-4 Suehiro-cho, Daito City, Osaka Prefecture",
+   "access": "The park is located south of Suminodo Station (JR), according to the Daito City website. No walking time is given."
   },
   "lohas-park-fukinuke-marche-hyogo-eki": {
    "name": "Fukinuke Marche (Hyogo Station Square)",
    "venue": "Hyogo Station Square (Canal Town Plaza)",
    "rain": "Held rain or shine (may be cancelled in severe weather; if cancelled, there is no rain date)",
-   "address": "5-1-1 Ekiminami-dori, Hyogo Ward, Kobe City, Hyogo Prefecture"
+   "address": "5-1-1 Ekiminami-dori, Hyogo Ward, Kobe City, Hyogo Prefecture",
+   "access": "A station-front plaza on the south side of Hyogo Station (JR). The page gives no walking time."
   },
   "lohas-park-himeji-otemae": {
    "name": "Lohas Park Himeji (Otemae Park)",
@@ -1578,7 +1662,8 @@
    "venue": "Special outdoor venue in Jaguar Green (rooftop of the venue's multi-storey car park)",
    "time": "10:00–15:00 (planned)",
    "rain": "Cancelled in rain",
-   "address": "2-chome 6 Sata Higashi-machi, Moriguchi City, Osaka Prefecture"
+   "address": "2-chome 6 Sata Higashi-machi, Moriguchi City, Osaka Prefecture",
+   "access": "About 15 minutes on foot east of Dainichi Station (Osaka Metro Tanimachi Line, Osaka Monorail). Right by the Kaneda stop of the Keihan Bus. A free parking lot for 1,200 vehicles is available (first hour free)."
   },
   "nadeshiko-apita-keihanna": {
    "name": "Apita Town Keihanna Flea Market (Nadeshiko Flea Market)",
@@ -1591,7 +1676,8 @@
    "name": "MEGA Don Quijote UNY Nishiyamato Flea Market (Nadeshiko Flea Market)",
    "venue": "MEGA Don Quijote UNY Nishiyamato, main ground-level car park",
    "rain": "Cancelled in rain",
-   "address": "1-1-1 Sasayuridai, Kanmaki-cho, Kitakatsuragi-gun, Nara Prefecture"
+   "address": "1-1-1 Sasayuridai, Kanmaki-cho, Kitakatsuragi-gun, Nara Prefecture",
+   "access": "Take a bus from Oji Station (JR) or Goido Station (Kintetsu) to the Apita Nishi-Yamato stop."
   },
   "cpm-rakuraku-ichi-tajimi": {
    "name": "Ceramic Park Raku-raku Market (Antique Festa, Open-air Marche, Akindo Market)",
@@ -1632,7 +1718,8 @@
    "name": "Nandemo Yokka no Ichi (Yokkaichi Suwa Shinmichi-dori)",
    "venue": "Yokkaichi Suwa Shinmichi-dori",
    "time": "9:00–14:00 (held in rain)",
-   "rain": "Held in rain (the shopping street has an arcade)"
+   "rain": "Held in rain (the shopping street has an arcade)",
+   "access": "About 8 min on foot from Kintetsu-Yokkaichi Station, or about 12 min on foot from JR Yokkaichi Station."
   },
   "obihiro-wakuwaku-flea": {
    "name": "Wakuwaku Flea Market (Obihiro City, MEGA Don Quijote Nishi-Obihiro parking lot)",
@@ -1641,13 +1728,15 @@
    "fee": "¥600 per plot",
    "apply": "Reservation required (vendors must live within the Tokachi area. For inquiries, use the contact given on the Obihiro City information page)",
    "notes": "20 plots. Food and electrical appliances may not be sold",
-   "address": "Nishi 21-jo Minami 4-chome, Obihiro City"
+   "address": "Nishi 21-jo Minami 4-chome, Obihiro City",
+   "access": "From the south exit of Obihiro Station (JR Nemuro Line), take a bus from the Nagasakiya-mae stop via Otani Koko-mae and get off at Shinryokudori 21-jo. It is 15 min by car from Obihiro Station, and the store has free parking."
   },
   "kokura-car-boot": {
    "name": "Kokura Car Boot (along the Murasaki River at Riverwalk)",
    "venue": "Along the Murasaki River at Riverwalk",
    "time": "9:00–15:00",
-   "address": "1-1-1 Muromachi, Kokurakita-ku, Kitakyushu-shi, Fukuoka"
+   "address": "1-1-1 Muromachi, Kokurakita-ku, Kitakyushu-shi, Fukuoka",
+   "access": "About a 10 min walk from JR Kokura Station, or about 3 min from JR Nishi-Kokura Station. By Nishitetsu Bus, get off at Muromachi/Riverwalk or Nishi-Kokura-ekimae. About 3 minutes from Kokura-kita Ramp on the Urban Expressway. Riverwalk Kitakyushu has parking for 950 cars (150 yen per 30 min); public transport is recommended on weekends and holidays because it gets crowded."
   },
   "mojiko-car-boot": {
    "name": "Mojiko Car Boot (seaside of Premium Hotel Mojiko)",
@@ -1664,13 +1753,15 @@
    "name": "Kokura de Flima (Katsuyama Park, Large Lawn Plaza)",
    "venue": "Katsuyama Park, Large Lawn Plaza",
    "time": "10:00–15:30",
-   "address": "Jonai, Kokurakita-ku"
+   "address": "Jonai, Kokurakita-ku",
+   "access": "About 20 min on foot from Kokura Station (JR) and about 10 min from Nishi-Kokura Station (JR). About 5 min on foot from the Kitakyushu Shiyakusho-mae bus stop (Nishitetsu Bus, Kitakyushu City Bus). These are times for Katsuyama Park as a whole."
   },
   "mitsubachi-flima": {
    "name": "Mitsubachi Flima (Hibikinada Green Space, Green Park)",
    "venue": "Hibikinada Green Space, Green Park",
    "time": "10:00–16:00",
-   "address": "1006 Takenami, Wakamatsu-ku, Kitakyushu"
+   "address": "1006 Takenami, Wakamatsu-ku, Kitakyushu",
+   "access": "On weekdays and Saturdays, take a municipal bus to Hibikinada-ryokuchi-iriguchi or Bogabuchi and walk about 10 min. By train, get off at JR Futajima Station and transfer to a municipal bus. Parking costs 300 yen for a regular car; there are 927 permanent spaces (492 north, 435 south)."
   },
   "muromachi-rakuichi-flea": {
    "name": "Muromachi Rakuichi Flea Market (around Tokiwabashi Muromachi Plaza)",
@@ -1684,7 +1775,8 @@
    "time": "10:00–15:00 (may end earlier)",
    "rain": "Indoor event. May be cancelled due to severe weather",
    "fee": "Free of charge for vendors (limited to people who live, work or study in Matsuyama City. Vendor recruitment has closed)",
-   "address": "1-1-32 Kuko-dori, Matsuyama City"
+   "address": "1-1-32 Kuko-dori, Matsuyama City",
+   "access": "About 10 min on foot from Dobashi Station or Doida Station (Iyotetsu Gunchu Line). About 5 min on foot from the Takeharacho-minami bus stop. A car park and a bicycle park are available."
   },
   "fukuoka-100fes": {
    "name": "100FES All-Generations Exchange Event (Fukuoka City)",
@@ -1697,7 +1789,8 @@
   "hiratsuka-ekimae-kottoichi": {
    "name": "Hiratsuka Station-Front Antique Market",
    "venue": "Benimiya Pearl Road Shopping Street (north exit of Hiratsuka Station)",
-   "time": "8:00 a.m.–4:00 p.m. (as listed in the shopping street's annual event information)"
+   "time": "8:00 a.m.–4:00 p.m. (as listed in the shopping street's annual event information)",
+   "access": "1 minute from JR Hiratsuka Station (as stated by the Benidani Pearl Road shopping street)."
   },
   "kamiyabe-free-market": {
    "name": "Free Flea Market (Kamiyabe Community Center)",
@@ -1712,7 +1805,8 @@
    "venue": "Prefectural Hodogaya Park, Ikoi Plaza",
    "time": "9:30 a.m.–3:00 p.m.",
    "rain": "Held in light rain; cancelled in bad weather",
-   "address": "4-2 Hanamidai, Hodogaya Ward"
+   "address": "4-2 Hanamidai, Hodogaya Ward",
+   "access": "From the west exit of Hodogaya Station (JR), take the Route 25 circular bus for about 10 min to Hodogaya Yakyujo-mae. Or about 15 min on foot from Hoshikawa Station or Wadamachi Station (Sotetsu Line)."
   },
   "noborito-challenge-street-2026": {
    "name": "Nobori to Challenge Street (Flea Market Space)",
@@ -1743,7 +1837,8 @@
    "time": "7:00–15:30 (may end earlier when packing up)",
    "admission": "Free",
    "rain": "Dates, times and venue may change due to weather and other circumstances (per the organizer)",
-   "address": "3-17 Kishi-cho, Urawa Ward, Saitama City, Saitama Prefecture"
+   "address": "3-17 Kishi-cho, Urawa Ward, Saitama City, Saitama Prefecture",
+   "access": "7 minutes on foot from the west exit of Urawa Station (JR), for Tsuki Shrine, next to which the park lies."
   },
   "kioroshi-ekiminami-kotto-ichi": {
    "name": "Kinoshita Station South Antique Market",
@@ -1778,13 +1873,15 @@
    "fee": "Stall fee required (check the regulations)",
    "apply": "Must register as a stall holder with the Morning Market Executive Committee; discussion with the stall holders' group and at the market venue at registration",
    "notes": "Any genre is welcome, including farm and forest produce, local specialties, shopping street goods, light food and flea market items. Health center and fire station permits are the responsibility of each stall holder",
-   "address": "4852-1 Kajikazawa, Fujikawa Town"
+   "address": "4852-1 Kajikazawa, Fujikawa Town",
+   "access": "The nearest station is Kajikazawaguchi Station on the JR Minobu Line (no walking time is given; by taxi it is about 4 km, roughly 10 minutes). By car, about 15 minutes from Masuho IC on the Chubu-Odan Expressway. Free parking is available (60 regular cars, 4 large vehicles)."
   },
   "hachinohe-tatehana-ganpeki-asaichi": {
    "name": "Tatehana Quayside Morning Market (Hachinohe)",
    "venue": "Tatehana quayside",
    "time": "From sunrise (about 4:00 a.m.–8:30 a.m.)",
-   "address": "3-chome Shinminato, Hachinohe City, Aomori Prefecture"
+   "address": "3-chome Shinminato, Hachinohe City, Aomori Prefecture",
+   "access": "About 10 minutes on foot from Mutsu-Minato Station (JR Hachinohe Line). Or take the Sunday morning market loop bus Isaba-go to Tatehana Gyoko-mae (about 15 minutes from central Hachinohe, 100 yen for adults)."
   },
   "saga-eco-plaza-eco-market": {
    "name": "Saga City Eco Plaza Eco Market",
@@ -1856,12 +1953,14 @@
    "name": "Sanchi no Kangyo Hakurankai Tsuginote (Takaoka)",
    "venue": "Takaoka Municipal Central Parking Lot",
    "time": "10:00–16:30",
-   "address": "6-11 Shimozekimachi, Takaoka"
+   "address": "6-11 Shimozekimachi, Takaoka",
+   "access": "A 1 min walk to Takaoka Station (as stated by a local guide site). Located at 6-11 Shimoseki-machi, Takaoka (Takaoka City's car park guide)."
   },
   "makoto-ichi-hoshoji-sabae": {
    "name": "Makoto Ichi (Motoyama Seishoji Temple, Sabae City)",
    "venue": "Motoyama Seishoji Temple (temple grounds)",
-   "address": "3-2-38 Honmachi, Sabae City, Fukui Prefecture"
+   "address": "3-2-38 Honmachi, Sabae City, Fukui Prefecture",
+   "access": "About 2 minutes on foot from Nishi-Sabae Station (Fukui Railway), according to a tourism site (another guide says 5 minutes). About 10 minutes on foot from Sabae Station (Hapi-Line Fukui)."
   },
   "creatorsland-2026-sandome-fukui": {
    "name": "Creators Land 2026 (Sandome Fukui)",
@@ -2313,7 +2412,8 @@
    "name": "Oi Racecourse",
    "summary": "The venue of the “Tokyo City Flea Market” run by Tokyo Recycle. Its schedule page lists 21 days from 10/24 to 12/27 in 2026.",
    "rules": "From the organizer, Tokyo Recycle (applies to its events in general): do not push price negotiation too far. Pickpocketing and bag theft are reported as frequent at the venue, so keep valuables safe. Buying counterfeit brand goods is a crime. Except for personal commemorative photos, photography needs the organizer’s prior permission. Smoking is allowed only in designated smoking areas.",
-   "address": "2-1-2 Katsushima, Shinagawa-ku, Tokyo"
+   "address": "2-1-2 Katsushima, Shinagawa-ku, Tokyo",
+   "access": "2 minutes on foot from Oi Keibajo-mae Station (Tokyo Monorail) and 12 minutes on foot from Tachiaigawa Station (Keikyu Line). 1 minute on foot from the Oi Keibajo Ekimae stop on the Keikyu Bus route Mori 22 from the east exit of Omori Station."
   },
   "koganei-park": {
    "name": "Koganei Park",
@@ -2385,7 +2485,8 @@
   "akabane-park": {
    "name": "Akabane Park",
    "address": "1-14-17 Akabaneminami, Kita-ku, Tokyo",
-   "place": "fountain plaza"
+   "place": "fountain plaza",
+   "access": "4 minutes on foot from Akabane Station (JR Keihin-Tohoku Line, Saikyo Line)."
   },
   "kinshi-park": {
    "name": "Kinshi Park",
@@ -2401,7 +2502,8 @@
   },
   "hanakawado-park": {
    "name": "Hanakawado Park",
-   "address": "1-14-15 Hanakawado and other lots, Taito-ku, Tokyo"
+   "address": "1-14-15 Hanakawado and other lots, Taito-ku, Tokyo",
+   "access": "About 3 min on foot from Asakusa Station (Tokyo Metro Ginza Line)."
   },
   "arakawa-park": {
    "name": "Arakawa Park",
@@ -2438,7 +2540,8 @@
   },
   "nakano-central-park": {
    "name": "Nakano Central Park",
-   "address": "4-10-2 Nakano, Nakano-ku, Tokyo"
+   "address": "4-10-2 Nakano, Nakano-ku, Tokyo",
+   "access": "About 5 min on foot from the north exit of Nakano Station (JR), according to the Nakano Ward guide to Nakano Shikinomori Park."
   },
   "kichijoji-parco": {
    "name": "Kichijoji Parco",

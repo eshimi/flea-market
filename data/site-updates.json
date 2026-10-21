@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-10-21",
+    "ja": "公式ページにアクセスの記載がない会場のうち99件に、最寄り駅・徒歩などの「アクセス」を、会場名から調べて入れました（「公式ページの記載ではありません」と表示）。",
+    "en": "For 99 venues with no access information on the official page, nearest stations and walking times looked up from the venue name are now shown (marked as not from the official page)."
+  },
+  {
+    "date": "2026-10-21",
     "ja": "公式に住所がない会場のうち24か所に、会場名から調べた住所を入れました（「公式ページの記載ではありません」と表示）。地図と経路案内も、その住所で開きます。",
     "en": "24 venues with no address on the official page now show an address looked up from the venue name (marked as not from the official page); maps and directions use it."
   },

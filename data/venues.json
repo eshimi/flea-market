@@ -235,7 +235,10 @@
   "rules": "主催の東京リサイクルの案内（同団体の開催全般）：行き過ぎた値段交渉は控える。会場内でスリ・置き引きが多発しているので、貴重品の管理に注意。コピーブランド品の購入は犯罪になる。個人的な記念撮影を除き、撮影は事前に主催者の許可が必要。指定の喫煙場所以外では喫煙できない。",
   "address": "東京都品川区勝島2-1-2",
   "addressFrom": "search",
-  "addressSeenAt": "https://www.mec-h.com/town/mh-shinagawa/334"
+  "addressSeenAt": "https://www.mec-h.com/town/mh-shinagawa/334",
+  "access": "東京モノレール「大井競馬場前」駅から徒歩2分、京急線「立会川」駅から徒歩12分。大森駅東口から京急バス（森22系統）「大井競馬場駅前」下車徒歩1分。",
+  "accessFrom": "search",
+  "accessSeenAt": "https://shinagawa-kanko.or.jp/spot/tokyocitykeiba/"
  },
  {
   "id": "koganei-park",
@@ -858,7 +861,10 @@
     ]
    }
   ],
-  "officialUrl": "https://www.city.kita.lg.jp/city-information/facilities/1015990/1016001.html"
+  "officialUrl": "https://www.city.kita.lg.jp/city-information/facilities/1015990/1016001.html",
+  "access": "JR京浜東北線・埼京線「赤羽」駅から徒歩4分。",
+  "accessFrom": "search",
+  "accessSeenAt": "https://kanko.city.kita.lg.jp/sakura/"
  },
  {
   "id": "kinshi-park",
@@ -976,7 +982,10 @@
    }
   ],
   "officialUrl": "https://www.city.taito.lg.jp/kenchiku/hanamidori/koen/riyo.html",
-  "address": "台東区花川戸1丁目14番15号他"
+  "address": "台東区花川戸1丁目14番15号他",
+  "access": "東京メトロ銀座線「浅草」駅から徒歩3分。",
+  "accessFrom": "search",
+  "accessSeenAt": "https://filmcommission.city.taito.lg.jp/location/hanakawado-park/"
  },
  {
   "id": "arakawa-park",
@@ -1251,7 +1260,10 @@
   },
   "address": "東京都中野区中野4-10-2",
   "addressFrom": "search",
-  "addressSeenAt": "https://www.gotokyo.org/jp/spot/104/index.html"
+  "addressSeenAt": "https://www.gotokyo.org/jp/spot/104/index.html",
+  "access": "JR中野駅北口から徒歩5分（中野区の中野四季の森公園の案内）。",
+  "accessFrom": "search",
+  "accessSeenAt": "https://www.city.tokyo-nakano.lg.jp/shisetsu/jitensha/kouen/shikinomori.html"
  },
  {
   "id": "kichijoji-parco",
