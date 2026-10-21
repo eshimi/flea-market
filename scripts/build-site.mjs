@@ -238,8 +238,8 @@ function eventLd(s, list, lang = 'ja', description = '') {
     name: nameL(s, lang),
     ...(description ? { description } : {}),
     image: [image],
-    startDate: s.time?.start ? `${o.date}T${s.time.start}:00+09:00` : o.date,
-    ...(s.time?.end ? { endDate: `${o.date}T${s.time.end}:00+09:00` } : {}),
+    startDate: s.time?.start && !s.searched?.time ? `${o.date}T${s.time.start}:00+09:00` : o.date,
+    ...(s.time?.end && !s.searched?.time ? { endDate: `${o.date}T${s.time.end}:00+09:00` } : {}),
     eventStatus: `https://schema.org/${map[o.status]}`,
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: { '@type': 'Place', name: venueL(s, lang), address: { '@type': 'PostalAddress', ...(s.venue.address && s.venue.addressFrom !== 'search' ? { streetAddress: s.venue.address } : {}), ...(s.venue.city ? { addressLocality: s.venue.city } : {}), addressRegion: PREFS[s.venue.pref], addressCountry: 'JP' } },
@@ -261,6 +261,9 @@ function pastDatesBlock(list, lang) {
   const p = P[lang].series;
   return `<h2 class="sec-h">${esc(p.secPast)}</h2><p class="note">${esc(P[lang].date.pastNote)}</p><ul class="sources">${list.slice(0, 10).map((o) => `<li><a href="/date/${o.date}/">${esc(dlabel(o.date, lang, { year: true }))}</a>　${statusTag(o, lang)}${o.note ? `　<span class="tbd">${esc(noteL(o, lang))}</span>` : ''}</li>`).join('')}</ul>`;
 }
+
+// 公式ページに記載がなく、ネットで調べて補った項目（series.searched[項目] = 出典の URL）には、公式の記載ではないと添える
+const srcNote = (s, key, p) => (s.searched?.[key] ? `<small class="addr-src">${esc(p.infoSearched)}</small>` : '');
 
 // 開催日ごとの行に添える、時間と会場（シリーズに書いてあるものだけ。日ごとに違うときは、各日の注記が別に出る）
 function dateInfo(s, lang) {
@@ -309,19 +312,19 @@ ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
 <h2 class="sec-h">${esc(p.secInfo)}</h2>
 <dl class="facts">
 ${row(p.when, rule)}
-${row(p.time, lang === 'en' && timeEn(s) ? (s.time.text === timeEn(s).replace('–', '〜') ? esc(timeEn(s)) : orig(timeEn(s), s.time.text)) : t(s.time?.text))}
+${row(p.time, (lang === 'en' && timeEn(s) ? (s.time.text === timeEn(s).replace('–', '〜') ? esc(timeEn(s)) : orig(timeEn(s), s.time.text)) : t(s.time?.text)) + srcNote(s, 'time', p))}
 ${row(p.venue, (lang === 'en' && venueL(s, lang) !== v.name ? orig(venueL(s, lang), v.name) : esc(v.name)) + spotLink(s, ctx, lang))}
 ${row(p.address, (v.address ? tv(s, 'address', v.address, lang) + (v.addressFrom === 'search' ? `<small class="addr-src">${esc(p.addrSearched)}</small>` : '') : est(estAddress, p)) + mapInline(mu, 'open'))}
 ${row(p.access, (v.access ? tv(s, 'access', v.access, lang) + (v.accessFrom === 'search' ? `<small class="addr-src">${esc(p.accessSearched)}</small>` : '') : est(estAccess, p)) + mapInline(mu, 'route'))}
-${row(p.admission, s.visitor?.admission ? tv(s, 'admission', s.visitor.admission, lang) : est(p.estFree, p))}
-${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang))}
+${row(p.admission, s.visitor?.admission ? tv(s, 'admission', s.visitor.admission, lang) + srcNote(s, 'admission', p) : est(p.estFree, p))}
+${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang) + srcNote(s, 'rain', p))}
 ${row(s.organizer.label ? (lang === 'en' ? labelEn(s.organizer.label) || p.orgLabel(s.organizer.label) : p.orgLabel(s.organizer.label)) : p.org, orgName)}
 </dl>
 <h2 class="sec-h">${esc(p.secDates)}</h2>
 ${dates}
 ${pastDatesBlock(ctx.past.filter((o) => o.series.id === s.id), lang)}
 <h2 class="sec-h" id="shuten">${esc(p.secVendor)}</h2>
-${ex ? `<dl class="facts">${row(p.fee, tv(s, 'fee', ex.fee, lang))}${row(p.apply, tv(s, 'apply', ex.apply, lang))}${row(p.applyAt, ex.applyUrl ? `<a href="${esc(ex.applyUrl)}" rel="noopener">${esc(p.applyLink)}</a>` : TBC(lang))}${ex.notes ? row(p.notes, tv(s, 'notes', ex.notes, lang)) : ''}</dl>` : `<p class="empty">${esc(p.noVendor)}</p>`}
+${ex ? `<dl class="facts">${row(p.fee, tv(s, 'fee', ex.fee, lang) + srcNote(s, 'fee', p))}${row(p.apply, tv(s, 'apply', ex.apply, lang) + srcNote(s, 'apply', p))}${row(p.applyAt, ex.applyUrl ? `<a href="${esc(ex.applyUrl)}" rel="noopener">${esc(p.applyLink)}</a>` : TBC(lang))}${ex.notes ? row(p.notes, tv(s, 'notes', ex.notes, lang) + srcNote(s, 'notes', p)) : ''}</dl>` : `<p class="empty">${esc(p.noVendor)}</p>`}
 ${reviewsSection(s.id, lang)}
 <h2 class="sec-h">${esc(p.secSrc)}</h2>
 <ul class="sources">${s.sources.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x.url)}</a>（${checked}${esc(x.checkedAt)}）</li>`).join('')}</ul>

@@ -29,6 +29,11 @@ export function validateSeries(list) {
     if (!Array.isArray(s.kinds) || !s.kinds.length || !s.kinds.every((k) => KINDS[k])) e(`kinds が不正: ${JSON.stringify(s.kinds)}`);
     if (!s.organizer?.name) e('organizer.name がありません');
     if (s.organizer?.url && !HTTP_RE.test(s.organizer.url)) e('organizer.url が不正');
+    // 公式に記載がなく、ネットで調べて補った項目（値は通常の項目に書き、ここに出典の URL を書く）
+    for (const [k, u] of Object.entries(s.searched || {})) {
+      if (!['time', 'admission', 'rain', 'fee', 'apply', 'notes'].includes(k)) e(`searched.${k} は項目名として不正`);
+      if (!HTTP_RE.test(u || '')) e(`searched.${k} の出典 URL が不正`);
+    }
     const v = s.venue || {};
     if (!v.name) e('venue.name がありません');
     if (!PREFS[v.pref]) e(`venue.pref（都道府県コード）が不正: ${v.pref}`);
