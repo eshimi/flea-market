@@ -4082,5 +4082,16 @@
    "checkedAt": "2026-10-21",
    "note": "宇部市公式サイト。robots.txt で許可（2026-10-21 確認）。"
   }
+ },
+ {
+  "url": "https://www.rbf.jp/loppis.html",
+  "series": [
+   "rbf-ikea-tokyo-bay-loppis"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
+  }
  }
 ]

@@ -1355,12 +1355,14 @@
   },
   "rbf-ikea-tokyo-bay-loppis": {
    "name": "IKEA Tokyo-Bay LOPPIS Flea Market (Raspberry)",
-   "venue": "IKEA Tokyo-Bay",
+   "venue": "In front of the IKEA Tokyo-Bay store",
    "rain": "Cancelled in rain or bad weather at all venues (official list of venues)",
    "fee": "On foot: ¥2,500 (event schedule page)",
    "apply": "Apply from “Exhibit” on the official page (the event schedule page shows recruitment status)",
    "address": "2-3-30 Hamacho, Funabashi, Chiba",
-   "access": "Right outside the ticket gates of Minami-Funabashi Station (JR Keiyo and Musashino lines)"
+   "access": "Right outside the ticket gates of Minami-Funabashi Station (JR Keiyo and Musashino lines)",
+   "time": "10:00–15:00 (set-up from 9:35)",
+   "notes": "Items sought: used clothes, second-hand goods, used furniture, children’s clothes and baby goods. Handmade items are not allowed (upcycled handmade items are OK). One plot is 2.0 m wide × 2.5 m deep"
   },
   "osaka-garagesale-higashiyodogawa": {
    "name": "15th Higashiyodogawa Ward Garage Sale",
