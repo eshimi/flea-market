@@ -63,7 +63,9 @@
    "name": "Setagaya Park Flea Market",
    "venue": "Setagaya Ward Park (Setagaya Park)",
    "rule": "Dates announced by Setagaya Ward (Oct 2026 – Mar 2027). No events in July and August",
-   "rain": "Whether it is held on the day: ask each organizing group (per the ward’s notice)"
+   "rain": "Whether it is held on the day: ask each organizing group (per the ward’s notice)",
+   "address": "1-5-27 Ikejiri, Setagaya-ku, Tokyo",
+   "access": "18 min walk from Ikejiri-Ohashi Station (Tokyu Den-en-toshi Line) / 18 min walk from Sangenjaya Station (Tokyu Setagaya Line / Den-en-toshi Line)"
   },
   "toji-kobo-ichi": {
    "name": "To-ji Kobo-ichi market",
@@ -207,7 +209,9 @@
    "rain": "The rain date is Mar 21 (Sun). Cancelled if it is difficult to hold on the rain date because of rain, etc. There is no parking at the venue",
    "fee": "500 yen",
    "apply": "Recruited after publication in the ward bulletin (application period: Jan 21 – Feb 3, 2027, postmark valid). A lottery is held if applications exceed the number of stalls",
-   "notes": "Open to residents of the ward. The stall space is about 2 m × 2 m. Only household items no longer needed may be sold"
+   "notes": "Open to residents of the ward. The stall space is about 2 m × 2 m. Only household items no longer needed may be sold",
+   "address": "2-2-3 Arakawa, Arakawa-ku, Tokyo",
+   "access": "4 min walk from the Arakawa 2-chome or Arakawa Kuyakusho-mae stop (Toden Arakawa Line)"
   },
   "setagaya-soshigaya-furusato-festival-flea-2026": {
    "name": "The 28th Soshigaya Furusato Festival Flea Market",
@@ -228,7 +232,9 @@
    "rain": "Held in rain, cancelled in severe weather (the content may change in rain)",
    "fee": "1,500 yen (per space)",
    "apply": "Write your address, name, phone number and the items you will sell on a postcard and mail it to the Funabashi Machizukuri Center. A lottery is held if there are many applicants",
-   "notes": "Application deadline: Oct 1, 2026 (must arrive by then; extended from the original deadline). Residents of Funabashi and Chitosedai are given priority. One space per address"
+   "notes": "Application deadline: Oct 1, 2026 (must arrive by then; extended from the original deadline). Residents of Funabashi and Chitosedai are given priority. One space per address",
+   "address": "7-9-2 Funabashi, Setagaya-ku, Tokyo",
+   "access": "20 min walk from Chitose-Funabashi Station (Odakyu Line; written \"Oda Line\" in the official text) / 20 min walk from Hachimanyama Station (Keio Line) / 4 min walk from the Funabashi Kibo Junior High School or Kibogaoka Danchi bus stop (Odakyu Bus / Keio Bus)"
   },
   "setagaya-funabashi-nomi-no-ichi-2026-autumn": {
    "name": "Autumn Funabashi Nomi-no-Ichi (Chitose-Funabashi Station Plaza)",
@@ -246,7 +252,9 @@
    "rule": "Organizer’s schedule (the schedule on its top page)",
    "rain": "Also cancelled for forecast light rain or extreme heat",
    "apply": "Reserve from the venue page on the organizer's website (fees differ by membership and by how you apply; the fee table is on the same page)",
-   "notes": "Household items only. Professional (business) sellers are not allowed"
+   "notes": "Household items only. Professional (business) sellers are not allowed",
+   "address": "Takashimadaira 3-chome, Tokumaru 7-8-chome, Yotsuba 2-chome, Daimon, Akatsuka 4, 5 and 8-chome, Itabashi-ku, Tokyo",
+   "access": "8 min walk from Takashimadaira Station (I25, Toei Mita Line) / 1 min walk from the Akatsuka-koen bus stop (Kokusai Kogyo bus from Narimasu Station, bound for Takashimadaira Depot)"
   },
   "frma-komatsugawa-park-flea": {
    "name": "Komatsugawa Park Flea Market (Recycle Suishin Tomo-no-Kai, limited-period trial)",
@@ -255,7 +263,9 @@
    "rule": "Organizer’s schedule (the schedule on its top page)",
    "rain": "Also cancelled for forecast light rain or extreme heat",
    "apply": "Reserve from the venue page on the organizer's website (fees differ by membership and by how you apply; the fee table is on the same page)",
-   "notes": "Household items only. Professional (business) sellers are not allowed"
+   "notes": "Household items only. Professional (business) sellers are not allowed",
+   "address": "Oshima 9-chome, Koto-ku (Komatsugawa 1-chome, Edogawa-ku), Tokyo",
+   "access": "3 min walk from Higashi-Ojima Station (Toei Shinjuku Line)"
   },
   "frma-akabane-park-flea": {
    "name": "Kita Ward, Akabane Park Flea Market (Recycle Suishin Tomo-no-Kai)",
@@ -264,7 +274,8 @@
    "rule": "Organizer’s schedule (the schedule on its top page)",
    "rain": "If cancelled, the substitute date is Nov 21 (Sat)",
    "apply": "Reserve from the venue page on the organizer's website (fees differ by membership and by how you apply; the fee table is on the same page)",
-   "notes": "Household items only. Professional (business) sellers are not allowed"
+   "notes": "Household items only. Professional (business) sellers are not allowed",
+   "address": "1-14-17 Akabaneminami, Kita-ku, Tokyo"
   },
   "frma-ukima-park-flea": {
    "name": "Ukima Park Station Plaza Flea Market (Recycle Suishin Tomo-no-Kai)",
@@ -273,7 +284,9 @@
    "rule": "Organizer’s schedule (the schedule on its top page)",
    "rain": "May be cancelled for light rain or extreme heat",
    "apply": "Reserve from the venue page on the organizer's website (fees differ by membership and by how you apply; the fee table is on the same page)",
-   "notes": "Household items only. Professional (business) sellers are not allowed"
+   "notes": "Household items only. Professional (business) sellers are not allowed",
+   "address": "2 Ukima, Kita-ku and 2 Funado, Itabashi-ku, Tokyo",
+   "access": "1 min walk from Ukima-Funado Station (JR Saikyo Line)"
   },
   "frma-koganei-park-flea": {
    "name": "Koganei Park Flea Market (Recycle Suishin Tomo-no-Kai)",
@@ -282,7 +295,9 @@
    "rule": "Organizer’s schedule (the schedule on its top page)",
    "rain": "Once a cancellation is decided, it does not change even if the weather changes",
    "apply": "Reserve from the venue page on the organizer's website (fees differ by membership and by how you apply; the fee table is on the same page)",
-   "notes": "Household items only. Professional (business) sellers are not allowed"
+   "notes": "Household items only. Professional (business) sellers are not allowed",
+   "address": "3-chome Sakuracho, 1-chome and 2-chome Sekinomachi (Koganei City); 3-chome Hanakoganei-minamicho (Kodaira City); 6-chome Mukaidaicho (Nishitokyo City); 3-chome Sakuratsutsumi (Musashino City)",
+   "access": "Seibu Bus from Musashi-Koganei Station (JR Chuo Line) to “Koganei Koen Nishiguchi”. CoCo Bus from Higashi-Koganei Station (JR Chuo Line) to “Koganei Koen Iriguchi”. Seibu Bus from Hanakoganei Station (Seibu Shinjuku Line) to “Koganei Koen Nishiguchi”"
   },
   "frma-hikarigaoka-park-flea": {
    "name": "Nerima Ward, Hikarigaoka Park (in front of the gymnasium) Flea Market (Recycle Suishin Tomo-no-Kai)",
@@ -291,7 +306,9 @@
    "rule": "Organizer’s schedule (the schedule on its top page)",
    "rain": "Once a cancellation is decided, it does not change even if the weather changes",
    "apply": "Reserve from the venue page on the organizer's website (fees differ by membership and by how you apply; the fee table is on the same page)",
-   "notes": "Household items only. Professional (business) sellers are not allowed"
+   "notes": "Household items only. Professional (business) sellers are not allowed",
+   "address": "4-1-1 Hikarigaoka, Nerima-ku, Tokyo (the official site says this is the address of the whole park)",
+   "access": "About 8 minutes on foot from Hikarigaoka Station (Toei Oedo Line) to Keyaki Plaza"
   },
   "frma-nakameguro-funeiriba-flea": {
    "name": "Nakameguro Funeiriba Flea Market (Recycle Suishin Tomo-no-Kai)",
@@ -355,12 +372,16 @@
   "mottainai-flea-kichijoji-parco": {
    "name": "MOTTAINAI Flea Market (Kichijoji Parco rooftop)",
    "venue": "Kichijoji Parco, rooftop",
-   "rule": "Dates in the organizer’s event calendar"
+   "rule": "Dates in the organizer’s event calendar",
+   "address": "1-5-1 Kichijoji-honcho, Musashino-shi, Tokyo",
+   "access": "2 min walk from Kichijoji Station (JR Chuo/Sobu Line, Keio Inokashira Line)"
   },
   "mottainai-flea-shinjuku-chuo-park": {
    "name": "MOTTAINAI Flea Market (Shinjuku Central Park)",
    "venue": "Shinjuku Central Park",
-   "rule": "Dates in the organizer’s event calendar"
+   "rule": "Dates in the organizer’s event calendar",
+   "address": "2-11 Nishi-Shinjuku, Shinjuku-ku, Tokyo",
+   "access": "about 10 min walk from Shinjuku Station (JR, Odakyu, Keio) / about 5 min walk from Nishi-Shinjuku Station (Marunouchi Line) / 0 min walk from Tochomae Station (Oedo Line)"
   },
   "kita-fujimibashi-echo-hirobakan-flea": {
    "name": "Fujimibashi Echo Hiroba-kan Flea Market (Kita Ward)",
@@ -440,7 +461,8 @@
   "fmpn-akabane-park": {
    "name": "Akabane Park Flea Market (Flea Market Promotion Network)",
    "venue": "Akabane Park",
-   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)",
+   "address": "1-14-17 Akabaneminami, Kita-ku, Tokyo"
   },
   "nerima-sakuradai-chikusai-flea-2026": {
    "name": "Sakuradai District Festival (includes a flea market, Nerima)",
@@ -536,7 +558,9 @@
   "earthgarden-gearloop-market-2026": {
    "name": "GEARLOOP MARKET (outdoor gear flea market within Earth Garden Autumn 2026)",
    "venue": "Yoyogi Park (within EARTH GARDEN Autumn)",
-   "rain": "Held rain or shine"
+   "rain": "Held rain or shine",
+   "address": "Yoyogi Kamizono-cho, Shibuya-ku (Area A); 1-chome and 2-chome Jinnan (Area B)",
+   "access": "3 minutes on foot from Harajuku (JR Yamanote Line) / 3 minutes on foot from Yoyogi-koen (Tokyo Metro Chiyoda Line) / 3 minutes on foot from Meiji-jingumae <Harajuku> (Chiyoda and Fukutoshin Lines) / 6 minutes on foot from Yoyogi-Hachiman (Odakyu Line)"
   },
   "trx-oi-keibajo-tokyo-city-flea": {
    "name": "Ohi Racecourse Tokyo City Flea Market (Tokyo Recycle)",

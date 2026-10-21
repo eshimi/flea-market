@@ -392,7 +392,9 @@
    "name": "区立世田谷公園",
    "pref": "13",
    "city": "世田谷区",
-   "cityCode": "13112"
+   "cityCode": "13112",
+   "address": "東京都世田谷区池尻1-5-27",
+   "access": "東急田園都市線 池尻大橋駅徒歩18分／東急世田谷線・東急田園都市線 三軒茶屋駅徒歩18分"
   },
   "recurrence": {
    "type": "dates",
@@ -433,6 +435,16 @@
      "令和9年3月28日（日曜日）世田谷公園フリーマーケット推進ネットワーク",
      "7月～8月は、区立世田谷公園でのフリーマーケットの開催はありません",
      "天候等の状況による当日の開催有無等についても、各主催団体へ直接お問い合わせください"
+    ]
+   },
+   {
+    "url": "https://www.city.setagaya.lg.jp/02075/9095.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都世田谷区池尻1-5-27",
+     "東急田園都市線 池尻大橋駅徒歩18分",
+     "東急世田谷線・東急田園都市線 三軒茶屋駅徒歩18分"
     ]
    }
   ],
@@ -1329,7 +1341,9 @@
    "name": "荒川公園",
    "pref": "13",
    "city": "荒川区",
-   "cityCode": "13118"
+   "cityCode": "13118",
+   "address": "荒川区荒川二丁目2番3号",
+   "access": "都電荒川線「荒川二丁目」「荒川区役所前」下車 徒歩4分"
   },
   "recurrence": {
    "type": "dates",
@@ -1365,6 +1379,15 @@
      "1月21日（木曜）～2月3日（水曜）まで",
      "順延日が雨天などで実施が困難となった場合、中止となります",
      "会場に駐車場はありません"
+    ]
+   },
+   {
+    "url": "https://www.city.arakawa.tokyo.jp/a043/shisetsuannai/koukyoushisetsu/kouenyuuen016.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "荒川区荒川二丁目2番3号",
+     "都電荒川線「荒川二丁目」「荒川区役所前」下車 徒歩4分"
     ]
    }
   ],
@@ -1443,7 +1466,9 @@
    "name": "希望丘公園",
    "pref": "13",
    "city": "世田谷区",
-   "cityCode": "13112"
+   "cityCode": "13112",
+   "address": "東京都世田谷区船橋7-9-2",
+   "access": "小田線 千歳船橋駅下車徒歩20分／京王線 八幡山駅下車徒歩20分／小田急バス・京王バス 船橋希望中学校前、希望ヶ丘団地下車徒歩4分"
   },
   "recurrence": {
    "type": "dates",
@@ -1490,6 +1515,17 @@
      "午前10時から午後2時",
      "希望丘公園（メイン）",
      "フリーマーケット"
+    ]
+   },
+   {
+    "url": "https://www.city.setagaya.lg.jp/02075/9160.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都世田谷区船橋7-9-2",
+     "千歳船橋駅下車徒歩20分",
+     "八幡山駅下車徒歩20分",
+     "船橋希望中学校前、希望ヶ丘団地下車徒歩4分"
     ]
    }
   ],
@@ -1561,7 +1597,9 @@
   },
   "venue": {
    "name": "赤塚公園 噴水前",
-   "pref": "13"
+   "pref": "13",
+   "address": "板橋区高島平三丁目、徳丸七・八丁目、四葉二丁目、大門、赤塚四・五・八丁目",
+   "access": "地下鉄三田線「高島平」(I25)下車 徒歩8分／東武東上線「成増駅」から国際興業バス（高島平操車場行き）「赤塚公園」下車 徒歩1分"
   },
   "recurrence": {
    "type": "dates",
@@ -1602,6 +1640,16 @@
      "家庭の不用品のみ",
      "予報の小雨や猛暑も中止"
     ]
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/park/akatsuka/index.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "板橋区高島平三丁目、徳丸七・八丁目、四葉二丁目、大門、赤塚四・五・八丁目",
+     "地下鉄三田線「高島平」(I25)下車 徒歩8分",
+     "「成増駅」から国際興業バス（高島平操車場行き）「赤塚公園」下車 徒歩1分"
+    ]
    }
   ],
   "venueId": "akatsuka-park"
@@ -1618,7 +1666,9 @@
   },
   "venue": {
    "name": "大島小松川公園 駐車場脇",
-   "pref": "13"
+   "pref": "13",
+   "address": "江東区大島九丁目(江戸川区小松川一丁目）",
+   "access": "都営新宿線 東大島駅 徒歩3分"
   },
   "recurrence": {
    "type": "dates",
@@ -1659,6 +1709,15 @@
      "期間限定トライアル",
      "予報の小雨や猛暑も中止"
     ]
+   },
+   {
+    "url": "https://tokyo-eastpark.com/parksearch/ohjima",
+    "type": "organizer",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "江東区大島九丁目(江戸川区小松川一丁目）",
+     "都営新宿線 東大島駅 徒歩3分"
+    ]
    }
   ],
   "venueId": "oshima-komatsugawa-park"
@@ -1677,7 +1736,8 @@
    "name": "赤羽公園 噴水広場",
    "pref": "13",
    "city": "北区",
-   "cityCode": "13117"
+   "cityCode": "13117",
+   "address": "北区赤羽南1-14-17"
   },
   "recurrence": {
    "type": "dates",
@@ -1718,6 +1778,14 @@
      "約50店プロ不可",
      "中止の振替指定日は、1日です（中止後に決定）"
     ]
+   },
+   {
+    "url": "https://www.city.kita.lg.jp/city-information/facilities/1015990/1016001.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "北区赤羽南1-14-17"
+    ]
    }
   ],
   "venueId": "akabane-park"
@@ -1734,7 +1802,9 @@
   },
   "venue": {
    "name": "浮間公園 駅前広場",
-   "pref": "13"
+   "pref": "13",
+   "address": "北区浮間2、板橋区舟渡2",
+   "access": "JR埼京線浮間舟渡駅徒歩1分"
   },
   "recurrence": {
    "type": "dates",
@@ -1774,6 +1844,15 @@
      "約50店プロ不可",
      "小雨や猛暑の中止有り"
     ]
+   },
+   {
+    "url": "https://www.city.kita.lg.jp/culture-tourism-sports/tourism/1010756/1010759/1010765.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "北区浮間2、板橋区舟渡2",
+     "JR埼京線浮間舟渡駅徒歩1分"
+    ]
    }
   ],
   "venueId": "ukima-park"
@@ -1792,7 +1871,9 @@
    "name": "小金井公園 いこいの広場",
    "pref": "13",
    "city": "小金井市",
-   "cityCode": "13210"
+   "cityCode": "13210",
+   "address": "小金井市桜町三丁目、関野町一・二丁目、小平市花小金井南町三丁目、西東京市向台町六丁目、武蔵野市桜堤三丁目",
+   "access": "JR中央線「武蔵小金井」から西武バス「小金井公園西口」下車。JR中央線「東小金井駅」からCoCoバス「小金井公園入口」下車。西武新宿線「花小金井」から西武バス「小金井公園西口」下車"
   },
   "recurrence": {
    "type": "dates",
@@ -1832,6 +1913,16 @@
      "約94店プロ不可",
      "中止の決定した場合、天気が変わっても変更なし"
     ]
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/park/koganei/index.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "小金井市桜町三丁目、関野町一・二丁目、小平市花小金井南町三丁目、西東京市向台町六丁目、武蔵野市桜堤三丁目",
+     "「小金井公園西口」下車",
+     "「小金井公園入口」下車"
+    ]
    }
   ],
   "venueId": "koganei-park"
@@ -1850,7 +1941,9 @@
    "name": "光が丘公園 図書館前（体育館前）",
    "pref": "13",
    "city": "練馬区",
-   "cityCode": "13120"
+   "cityCode": "13120",
+   "address": "東京都練馬区光が丘4-1-1",
+   "access": "都営大江戸線「光が丘」駅から けやき広場まで徒歩約8分"
   },
   "recurrence": {
    "type": "dates",
@@ -1889,6 +1982,14 @@
      "開催9時～15時",
      "約200店プロ不可",
      "中止の決定した場合、天気が変わっても変更なし"
+    ]
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都練馬区光が丘4-1-1"
     ]
    }
   ],
@@ -2289,7 +2390,9 @@
    "name": "吉祥寺パルコ 屋上",
    "pref": "13",
    "city": "武蔵野市",
-   "cityCode": "13203"
+   "cityCode": "13203",
+   "address": "東京都武蔵野市吉祥寺本町1-5-1",
+   "access": "JR中央線・総武線 吉祥寺駅／京王井の頭線 吉祥寺駅より徒歩2分"
   },
   "recurrence": {
    "type": "dates",
@@ -2310,6 +2413,15 @@
      "11月14日(土)吉祥寺パルコ屋上（武蔵野市）",
      "12月6日(日)吉祥寺パルコ屋上（武蔵野市）"
     ]
+   },
+   {
+    "url": "https://kichijoji.parco.jp/info/",
+    "type": "organizer",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都武蔵野市吉祥寺本町1-5-1",
+     "JR中央線・総武線 吉祥寺駅／京王井の頭線 吉祥寺駅より徒歩2分"
+    ]
    }
   ],
   "venueId": "kichijoji-parco"
@@ -2328,7 +2440,9 @@
    "name": "新宿中央公園",
    "pref": "13",
    "city": "新宿区",
-   "cityCode": "13104"
+   "cityCode": "13104",
+   "address": "東京都新宿区西新宿二丁目11番",
+   "access": "JR・小田急線・京王線 新宿駅から徒歩約10分／東京メトロ丸の内線 西新宿駅から徒歩約5分／都営大江戸線 都庁前駅から徒歩0分"
   },
   "recurrence": {
    "type": "dates",
@@ -2344,6 +2458,17 @@
     "checkedAt": "2026-10-21",
     "evidence": [
      "11月21日(土)新宿中央公園（新宿区）"
+    ]
+   },
+   {
+    "url": "https://www.city.shinjuku.lg.jp/seikatsu/file15_02_00001.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "東京都新宿区西新宿二丁目11番",
+     "新宿駅から徒歩約10分",
+     "西新宿駅から徒歩約5分",
+     "都庁前駅から徒歩0分"
     ]
    }
   ],
@@ -2839,7 +2964,8 @@
    "name": "赤羽公園",
    "pref": "13",
    "city": "北区",
-   "cityCode": "13117"
+   "cityCode": "13117",
+   "address": "北区赤羽南1-14-17"
   },
   "recurrence": {
    "type": "dates",
@@ -2853,6 +2979,14 @@
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
     "checkedAt": "2026-10-18"
+   },
+   {
+    "url": "https://www.city.kita.lg.jp/city-information/facilities/1015990/1016001.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "北区赤羽南1-14-17"
+    ]
    }
   ],
   "venueId": "akabane-park"
@@ -3524,7 +3658,9 @@
    "name": "代々木公園（EARTH GARDEN 秋 内）",
    "pref": "13",
    "city": "渋谷区",
-   "cityCode": "13113"
+   "cityCode": "13113",
+   "address": "渋谷区代々木神園町（A地区）、神南一丁目・神南二丁目（B地区）",
+   "access": "JR山手線「原宿」下車 徒歩3分／東京メトロ千代田線「代々木公園」下車 徒歩3分／千代田線・副都心線「明治神宮前（原宿）」下車 徒歩3分／小田急線「代々木八幡」下車 徒歩6分"
   },
   "recurrence": {
    "type": "dates",
@@ -3553,6 +3689,16 @@
      "時間：10:00〜17:00",
      "会場：代々木公園（EARTH GARDEN 秋 内）",
      "※雨天決行です。"
+    ]
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/park/yoyogi/index.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-19",
+    "evidence": [
+     "所在地 渋谷区代々木神園町(A地区)、神南一丁目・神南二丁目(B地区)",
+     "「原宿」下車 徒歩3分",
+     "「代々木八幡」下車 徒歩6分"
     ]
    }
   ],

@@ -291,8 +291,8 @@ test('英語の訳：すべての掲載に訳があり、数字が日本語の�
     }
     if (s.venue.address) {
       assert.ok(t.address, `${s.id}: 住所の訳がありません`);
-      // 住所の番地は、順番も含めて原文と同じ（「四丁目」は 4 として数える）
-      const adr = (x) => (String(x).replace(/([一二三四五六七八九])丁目/g, (_, k) => '一二三四五六七八九'.indexOf(k) + 1 + '-').match(/\d+/g) || []).join(',');
+      // 住所の番地は、順番も含めて原文と同じ（「四丁目」は 4、「七・八丁目」は 7 と 8 として数える）
+      const adr = (x) => (String(x).replace(/([一二三四五六七八九])(?=(?:・[一二三四五六七八九])*丁目)/g, (_, k) => '一二三四五六七八九'.indexOf(k) + 1 + '-').match(/\d+/g) || []).join(',');
       assert.equal(adr(t.address), adr(s.venue.address), `${s.id}: 住所の数字\n  ja: ${s.venue.address}\n  en: ${t.address}`);
     }
     assert.ok(!s.venue.city || T.cities[s.venue.city], `${s.id}: 市区町村の訳 ${s.venue.city}`);

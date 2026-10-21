@@ -1773,7 +1773,8 @@
  {
   "url": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html",
   "series": [
-   "hikarigaoka-park-flea-tokyo-park"
+   "hikarigaoka-park-flea-tokyo-park",
+   "frma-hikarigaoka-park-flea"
   ],
   "terms": {
    "ok": true,
@@ -1786,7 +1787,9 @@
  },
  {
   "url": "https://www.tokyo-park.or.jp/park/yoyogi/index.html",
-  "series": [],
+  "series": [
+   "earthgarden-gearloop-market-2026"
+  ],
   "venues": [
    "yoyogi-park"
   ],
@@ -1834,7 +1837,9 @@
  },
  {
   "url": "https://www.tokyo-park.or.jp/park/koganei/index.html",
-  "series": [],
+  "series": [
+   "frma-koganei-park-flea"
+  ],
   "venues": [
    "koganei-park"
   ],
@@ -1906,7 +1911,9 @@
  },
  {
   "url": "https://www.city.setagaya.lg.jp/02075/9095.html",
-  "series": [],
+  "series": [
+   "setagaya-park-flea"
+  ],
   "venues": [
    "setagaya-park"
   ],
@@ -1966,7 +1973,10 @@
  },
  {
   "url": "https://www.city.kita.lg.jp/city-information/facilities/1015990/1016001.html",
-  "series": [],
+  "series": [
+   "frma-akabane-park-flea",
+   "fmpn-akabane-park"
+  ],
   "venues": [
    "akabane-park"
   ],
@@ -2014,7 +2024,9 @@
  },
  {
   "url": "https://www.city.arakawa.tokyo.jp/a043/shisetsuannai/koukyoushisetsu/kouenyuuen016.html",
-  "series": [],
+  "series": [
+   "arakawa-park-flea-2027-03"
+  ],
   "venues": [
    "arakawa-park"
   ],
@@ -2026,7 +2038,9 @@
  },
  {
   "url": "https://www.city.kita.lg.jp/culture-tourism-sports/tourism/1010756/1010759/1010765.html",
-  "series": [],
+  "series": [
+   "frma-ukima-park-flea"
+  ],
   "venues": [
    "ukima-park"
   ],
@@ -2038,7 +2052,9 @@
  },
  {
   "url": "https://www.tokyo-park.or.jp/park/akatsuka/index.html",
-  "series": [],
+  "series": [
+   "frma-akatsuka-park-flea"
+  ],
   "venues": [
    "akatsuka-park"
   ],
@@ -2050,7 +2066,9 @@
  },
  {
   "url": "https://tokyo-eastpark.com/parksearch/ohjima",
-  "series": [],
+  "series": [
+   "frma-komatsugawa-park-flea"
+  ],
   "venues": [
    "oshima-komatsugawa-park"
   ],
@@ -2062,7 +2080,9 @@
  },
  {
   "url": "https://www.city.shinjuku.lg.jp/seikatsu/file15_02_00001.html",
-  "series": [],
+  "series": [
+   "mottainai-flea-shinjuku-chuo-park"
+  ],
   "venues": [
    "shinjuku-central-park"
   ],
@@ -2074,7 +2094,9 @@
  },
  {
   "url": "https://kichijoji.parco.jp/info/",
-  "series": [],
+  "series": [
+   "mottainai-flea-kichijoji-parco"
+  ],
   "venues": [
    "kichijoji-parco"
   ],
@@ -2122,7 +2144,9 @@
  },
  {
   "url": "https://www.city.setagaya.lg.jp/02075/9160.html",
-  "series": [],
+  "series": [
+   "setagaya-funabashi-fureai-matsuri-flea-2026"
+  ],
   "venues": [
    "kibogaoka-park"
   ],
