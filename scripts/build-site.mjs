@@ -262,6 +262,14 @@ function pastDatesBlock(list, lang) {
   return `<h2 class="sec-h">${esc(p.secPast)}</h2><p class="note">${esc(P[lang].date.pastNote)}</p><ul class="sources">${list.slice(0, 10).map((o) => `<li><a href="/date/${o.date}/">${esc(dlabel(o.date, lang, { year: true }))}</a>　${statusTag(o, lang)}${o.note ? `　<span class="tbd">${esc(noteL(o, lang))}</span>` : ''}</li>`).join('')}</ul>`;
 }
 
+// 開催日ごとの行に添える、時間と会場（シリーズに書いてあるものだけ。日ごとに違うときは、各日の注記が別に出る）
+function dateInfo(s, lang) {
+  const time = lang === 'en' ? (timeEn(s) || s.time?.text) : s.time?.text;
+  const place = lang === 'en' ? venueL(s, lang) : s.venue.name;
+  const parts = [time, /開催日ごと|会場が複数|要確認/.test(s.venue.name) ? '' : place].filter(Boolean);
+  return parts.length ? `<span class="dt-info">${parts.map(esc).join(lang === 'en' ? ' · ' : '　')}</span>` : '';
+}
+
 function seriesPage(s, ctx, lang) {
   const p = P[lang].series;
   const list = ctx.occ.filter((o) => o.series.id === s.id);
@@ -269,7 +277,7 @@ function seriesPage(s, ctx, lang) {
   const pn = prefLabel(v.pref, lang);
   const next = list.find(isActive);
   const dates = list.length
-    ? `<ul class="sources">${list.slice(0, 12).map((o) => `<li>${esc(dlabel(o.date, lang, { year: true }))}　${statusTag(o, lang)}${o.note ? `　<span class="tbd">${esc(noteL(o, lang))}</span>` : ''}</li>`).join('')}</ul>`
+    ? `<ul class="sources">${list.slice(0, 12).map((o) => `<li>${esc(dlabel(o.date, lang, { year: true }))}　${statusTag(o, lang)}${o.note ? `　<span class="tbd">${esc(noteL(o, lang))}</span>` : ''}${dateInfo(s, lang)}</li>`).join('')}</ul>`
     : `<p class="empty">${esc(p.noDates)}</p>`;
   const row = (k, x) => `<div><dt>${esc(k)}</dt><dd>${x}</dd></div>`;
   const mapInline = (mu, kind) => `<span class="map-inline"><a href="${esc(kind === 'open' ? mu.open : mu.route)}" target="_blank" rel="noopener nofollow">${esc(kind === 'open' ? p.mapOpenShort : p.mapRouteShort)} ↗</a></span>`;
