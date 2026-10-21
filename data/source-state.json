@@ -3376,5 +3376,16 @@
   "evidenceOk": {
    "umekoji-park-tedukuri-ichi": true
   }
+ },
+ "https://www.rbf.jp/loppis.html": {
+  "fetchedAt": "2026-10-22",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"354c-65e1d5b2cf740\"",
+  "lastModified": "Sun, 18 Oct 2026 13:27:17 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "rbf-ikea-tokyo-bay-loppis": true
+  }
  }
 }
