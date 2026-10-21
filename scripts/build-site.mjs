@@ -276,7 +276,7 @@ function seriesPage(s, ctx, lang) {
   const est = (text, pp) => `<span class="est" title="${esc(pp.estTitle)}">${esc(pp.est)}</span> ${esc(text)}`;
   const station = /^([^\s・（(駅]+駅)前/.exec(v.name)?.[1];
   const stationEn = /^(.+? Station)\b/.exec(venueEn(s))?.[1];
-  const estAddress = p.estAddr(lang === 'ja' ? `${PREFS[v.pref]}${v.city || ''}` : [cityL(v.city, lang), pn].filter(Boolean).join(', '));
+  const estAddress = lang === 'ja' && !v.address && GEO[s.id]?.estAddress ? p.estAddrGeo(GEO[s.id].estAddress) : p.estAddr(lang === 'ja' ? `${PREFS[v.pref]}${v.city || ''}` : [cityL(v.city, lang), pn].filter(Boolean).join(', '));
   const estAccess = station && (lang === 'ja' || stationEn) ? p.estStation(lang === 'ja' ? station : stationEn) : p.estRoute;
   const ex = s.exhibitor;
   const t = (x) => val(x, lang);
@@ -285,11 +285,12 @@ function seriesPage(s, ctx, lang) {
   const oen = lang === 'en' ? orgEn(s.organizer.name) : '';
   const oShown = oen ? orig(oen, s.organizer.name) : esc(s.organizer.name);
   const orgName = s.organizer.url ? `<a href="${esc(s.organizer.url)}" rel="noopener">${oShown}</a>` : oShown;
-  const mu = mapUrls(s, lang);
+  const g = GEO[s.id];
+  const mu = mapUrls(s, lang, g);
   const wt = weatherTarget(s);
   const wxBox = next && wt ? `<section class="ev-card"><h2>${esc(p.secWx)}</h2><div class="wx" data-office="${wt.office}" data-area="${wt.area || ''}" data-date="${next.date}" data-lang="${lang}" data-region="${esc(prefLabel(v.pref, 'en'))}"><p class="wx-st">${esc(p.wxLoading)}</p></div><p class="note">${esc(p.wxNote)} ${esc(p.wxSrc)}<a href="https://www.jma.go.jp/bosai/forecast/" rel="noopener">${esc(p.wxJma)}</a>${lang === 'ja' ? '' : ' (気象庁)'}</p></section>` : '';
   const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(mapQuery(s).q)}&hl=${lang === 'ja' ? 'ja' : 'en'}&z=16&output=embed`;
-  const side = `<aside class="ev-side" aria-label="${esc(p.secMap)}"><section class="ev-card"><h2>${esc(p.secMap)}</h2>${hasMapImg(s.id) ? `<a class="ev-mapimg" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow" title="${esc(p.mapOpen)}"><img src="/img/maps/${s.id}.webp" alt="${esc(p.mapImgAlt(lang === 'en' ? venueL(s, lang) : v.name))}" width="640" height="400" loading="lazy" decoding="async"></a><p class="note">${esc(p.mapApprox)}</p>` : `<div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(p.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(lang === 'en' ? venueL(s, lang) : v.name)}</b><button type="button" class="map-show">${esc(p.mapShow)}</button><small>${esc(p.mapPrivacy)}</small></div></div>`}<p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(p.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(p.mapRoute)} ↗</a></p><p class="note">${esc(mu.exact ? p.mapExact : p.mapLoose)}</p></section>${wxBox}</aside>`;
+  const side = `<aside class="ev-side" aria-label="${esc(p.secMap)}"><section class="ev-card"><h2>${esc(p.secMap)}</h2>${hasMapImg(s.id) ? `<a class="ev-mapimg" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow" title="${esc(p.mapOpen)}"><img src="/img/maps/${s.id}.webp" alt="${esc(p.mapImgAlt(lang === 'en' ? venueL(s, lang) : v.name))}" width="640" height="400" loading="lazy" decoding="async"></a><p class="note">${esc(mu.pin ? p.mapApproxName : p.mapApprox)}</p>` : `<div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(p.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(lang === 'en' ? venueL(s, lang) : v.name)}</b><button type="button" class="map-show">${esc(p.mapShow)}</button><small>${esc(p.mapPrivacy)}</small></div></div>`}<p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(p.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(p.mapRoute)} ↗</a></p><p class="note">${esc(mu.pin ? p.mapPin : mu.exact ? p.mapExact : p.mapLoose)}</p></section>${wxBox}</aside>`;
   const body = `<div class="in page ev-page">${breadcrumb([{ href: `/area/${v.pref}/`, label: pn }, ...(v.cityCode ? [{ href: `/area/${v.pref}/${v.cityCode}/`, label: cityL(v.city, lang) }] : []), { label: nameL(s, lang) }], lang)}
 <h1>${esc(nameL(s, lang))}</h1>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-h" lang="ja">${esc(s.name)}</p>` : ''}
 <div class="tags">${kindTags(s.kinds, lang)}</div>
@@ -566,7 +567,7 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   const past = pastOccurrences(archive, series).filter((o) => o.date < today);
   const spots = buildSpots(venues, series, occ, today);
   const spotMapImg = (id) => Boolean(GEO[`spot-${id}`]) && existsSync(join(ROOT, 'static', 'img', 'maps', `spot-${id}.webp`));
-  const ctx = { series, occ, past, spots, spotMapImg, guideSlugs: new Set(BLOG.map((b) => b.slug)), siteUpdates: [...siteUpdates].sort((a, b) => b.date.localeCompare(a.date)), weekend: upcomingWeekend(today), today, days, credits };
+  const ctx = { series, occ, past, spots, spotMapImg, spotGeo: (id) => GEO[`spot-${id}`], guideSlugs: new Set(BLOG.map((b) => b.slug)), siteUpdates: [...siteUpdates].sort((a, b) => b.date.localeCompare(a.date)), weekend: upcomingWeekend(today), today, days, credits };
   ALL_POSTS = [...BLOG.map((b) => cleanLinks(resolvePost(b, ctx), ids)), ...autoPosts.map((a) => cleanLinks(a, ids))];
   ctx.latestPosts = posts().slice(0, 3);
   // 英語が既定（/）。日本語は /ja/

@@ -98,6 +98,9 @@ export function spotPage(sp, ctx, lang) {
   const v = sp.venue;
   const L = (k) => spotL(v, k, lang);
   const row = (k, x) => `<div><dt>${esc(k)}</dt><dd>${x}</dd></div>`;
+  // 公式に住所がないときは、会場名から地図で調べた位置の目安（日本語は町・丁目まで、英語は市区町村まで）
+  const g = ctx.spotGeo?.(v.id);
+  const addr = v.address || !g?.estAddress ? null : `<span class="est" title="${esc(pp.estTitle)}">${esc(pp.est)}</span> ${esc(pp.estAddrGeo(lang === 'ja' ? g.estAddress : cityOf(v, lang)))}`;
   const val = (key) => (v[key] ? (lang === 'en' && L(key) !== v[key] ? `${esc(L(key))}<small class="orig" lang="ja">${esc(v[key])}</small>` : esc(v[key])) : TBC(lang));
   const srcs = v.sources.map((s) => `<li><a href="${esc(s.url)}" rel="noopener">${esc(s.url)}</a>　${esc(t.checked)}: ${esc(s.checkedAt)}</li>`).join('');
   const seriesList = sp.series.map((s) => `<li><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a></li>`).join('');
@@ -105,20 +108,20 @@ export function spotPage(sp, ctx, lang) {
   const cityName = cityOf(v, lang);
   // 地図・経路・天気（開催詳細と同じ。会場の住所があれば住所、なければ会場名＋区市で検索）
   const shim = { venue: { name: v.name, pref: v.area.pref, city: v.area.city, address: v.address } };
-  const mu = mapUrls(shim, lang);
+  const mu = mapUrls(shim, lang, ctx.spotGeo?.(v.id));
   const wt = weatherTarget(shim);
   const nm = lang === 'en' ? L('name') : v.name;
   const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(mapQuery(shim).q)}&hl=${lang === 'ja' ? 'ja' : 'en'}&z=16&output=embed`;
   const mapImg = ctx.spotMapImg?.(v.id);
   const wxBox = sp.next && wt ? `<section class="ev-card"><h2>${esc(pp.secWx)}</h2><div class="wx" data-office="${wt.office}" data-area="${wt.area || ''}" data-date="${sp.next.date}" data-lang="${lang}" data-region="${esc(prefLabel(v.area.pref, 'en'))}"><p class="wx-st">${esc(pp.wxLoading)}</p></div><p class="note">${esc(pp.wxNote)} ${esc(pp.wxSrc)}<a href="https://www.jma.go.jp/bosai/forecast/" rel="noopener">${esc(pp.wxJma)}</a>${lang === 'ja' ? '' : ' (気象庁)'}</p></section>` : '';
-  const mapCard = `<section class="ev-card"><h2>${esc(pp.secMap)}</h2>${mapImg ? `<a class="ev-mapimg" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow" title="${esc(pp.mapOpen)}"><img src="/img/maps/spot-${esc(v.id)}.webp" alt="${esc(pp.mapImgAlt(nm))}" width="640" height="400" loading="lazy" decoding="async"></a><p class="note">${esc(pp.mapApprox)}</p>` : `<div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(pp.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(nm)}</b><button type="button" class="map-show">${esc(pp.mapShow)}</button><small>${esc(pp.mapPrivacy)}</small></div></div>`}<p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(pp.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(pp.mapRoute)} ↗</a></p><p class="note">${esc(mu.exact ? pp.mapExact : pp.mapLoose)}</p></section>`;
+  const mapCard = `<section class="ev-card"><h2>${esc(pp.secMap)}</h2>${mapImg ? `<a class="ev-mapimg" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow" title="${esc(pp.mapOpen)}"><img src="/img/maps/spot-${esc(v.id)}.webp" alt="${esc(pp.mapImgAlt(nm))}" width="640" height="400" loading="lazy" decoding="async"></a><p class="note">${esc(mu.pin ? pp.mapApproxName : pp.mapApprox)}</p>` : `<div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(pp.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(nm)}</b><button type="button" class="map-show">${esc(pp.mapShow)}</button><small>${esc(pp.mapPrivacy)}</small></div></div>`}<p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(pp.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(pp.mapRoute)} ↗</a></p><p class="note">${esc(mu.exact ? pp.mapExact : pp.mapLoose)}</p></section>`;
   const nav = [['/spot/', t.h1], ['/area/', lang === 'ja' ? '地域から探す' : 'Explore by Area'], ['/weekend/', lang === 'ja' ? '今週末の開催' : 'This Weekend'], ['/calendar/', lang === 'ja' ? 'イベントカレンダー' : 'Event Calendar']];
   const navCard = `<nav class="ev-card sn" aria-label="${esc(t.crumb)}"><h2>${esc(lang === 'ja' ? 'あわせて見る' : 'See also')}</h2><ul class="sn-list">${nav.map(([h, x]) => `<li><a href="${h}"><span>${esc(x)}</span><i aria-hidden="true">→</i></a></li>`).join('')}</ul></nav>`;
   const nxt = sp.next;
   const q = (k, x) => `<div><dt>${esc(k)}</dt><dd>${x}</dd></div>`;
   const quickRows = [
     q(t.next, nxt ? `<b>${esc(dlabel(nxt.date, lang, { year: true }))}</b>${nxt.series.organizer.label ? (nxt.note ? ` · ${esc(nxt.note)}` : '') : ` · ${esc((lang === 'en' && orgEn(nxt.series.organizer.name)) || nxt.series.organizer.name)}`}` : `<span class="tbd">${esc(t.tbcNext)}</span>`),
-    q(t.address, val('address')),
+    q(t.address, addr || val('address')),
     q(t.access, val('access')),
   ].join('');
   const side = `<aside class="ev-side" aria-label="${esc(pp.secMap)}">${mapCard}${wxBox}${navCard}</aside>`;
@@ -137,7 +140,7 @@ ${pollBlock(v, lang)}
 <h2 class="sec-h">${esc(t.info)}</h2>
 <dl class="facts">
 ${row(t.summary, val('summary'))}
-${row(t.address, val('address'))}
+${row(t.address, addr || val('address'))}
 ${row(t.access, val('access'))}
 ${row(t.place, val('place'))}
 ${row(t.rules, val('rules'))}

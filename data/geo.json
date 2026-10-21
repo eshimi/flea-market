@@ -1933,5 +1933,295 @@
   "matched": "福井県越前市瓜生町５番地",
   "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
   "checkedAt": "2026-10-21"
+ },
+ "taito-hanakawado-park-flea": {
+  "lat": 35.714223,
+  "lon": 139.799615,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "花川戸公園",
+  "estAddress": "東京都台東区花川戸二丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "setagaya-funabashi-nomi-no-ichi-2026-autumn": {
+  "lat": 35.647241,
+  "lon": 139.621815,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "千歳船橋駅",
+  "estAddress": "東京都世田谷区桜丘五丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "mottainai-flea-nakano-central-park": {
+  "lat": 35.707353,
+  "lon": 139.6617,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "中野セントラルパーク",
+  "estAddress": "東京都中野区中野四丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "fmpn-koshigaya-laketown-plaza": {
+  "lat": 35.876281,
+  "lon": 139.822273,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "越谷レイクタウン",
+  "estAddress": "埼玉県越谷市レイクタウン八丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "fmpn-nagareyama-otakanomori": {
+  "lat": 35.872026,
+  "lon": 139.925894,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "流山おおたかの森",
+  "estAddress": "千葉県流山市おおたかの森東一丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "adachi-guruguru-kiosk-ayase-2026-10": {
+  "lat": 35.762805,
+  "lon": 139.826645,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "綾瀬駅東口駅前交通広場",
+  "estAddress": "東京都足立区綾瀬三丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "fuchu-oshitate-park-flea": {
+  "lat": 35.660383,
+  "lon": 139.510831,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "押立公園",
+  "estAddress": "東京都府中市押立町一丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "yuyu-marche-sobue-ryokuchi": {
+  "lat": 35.26181,
+  "lon": 136.705816,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "祖父江緑地",
+  "estAddress": "愛知県稲沢市祖父江町祖父江",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "rbf-koshigaya-laketown": {
+  "lat": 35.876295,
+  "lon": 139.822273,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "越谷レイクタウン",
+  "estAddress": "埼玉県越谷市レイクタウン八丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "osaka-garagesale-miyakojima": {
+  "lat": 34.707429,
+  "lon": 135.522638,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "都島中央公園",
+  "estAddress": "大阪府大阪市都島区中野町五丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "osaka-garagesale-nishinari": {
+  "lat": 34.626869,
+  "lon": 135.489431,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "玉出西公園",
+  "estAddress": "大阪府大阪市西成区玉出西一丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "spot-sunshine-city": {
+  "lat": 35.728848,
+  "lon": 139.719546,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "サンシャインシティ",
+  "estAddress": "東京都豊島区東池袋三丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "spot-oi-racecourse": {
+  "lat": 35.592305,
+  "lon": 139.743401,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "大井競馬場",
+  "estAddress": "東京都品川区勝島二丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "spot-nakano-central-park": {
+  "lat": 35.707353,
+  "lon": 139.6617,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "中野セントラルパーク",
+  "estAddress": "東京都中野区中野四丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "spot-tsurumi-ryokuchi": {
+  "lat": 34.711828,
+  "lon": 135.567273,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "花博記念公園 鶴見緑地",
+  "estAddress": "大阪府大阪市鶴見区緑三丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "edogawa-funabori-matsuri-2026": {
+  "lat": 35.686232,
+  "lon": 139.862203,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "船堀コミュニティ会館",
+  "estAddress": "東京都江戸川区船堀一丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "fmpn-kawaguchi-jissoji-omatsuri": {
+  "lat": 35.795195,
+  "lon": 139.741624,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "実相寺",
+  "estAddress": "埼玉県川口市領家二丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "fmpn-takashimadaira-danchi-park": {
+  "lat": 35.783009,
+  "lon": 139.665741,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "高島平団地",
+  "estAddress": "東京都板橋区高島平二丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "hyakumanben-tedukuri-ichi": {
+  "lat": 35.030003,
+  "lon": 135.780963,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "百万遍知恩寺",
+  "estAddress": "京都府京都市左京区田中門前町",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "sunshine-city-big-furima": {
+  "lat": 35.728848,
+  "lon": 139.719546,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "サンシャインシティ",
+  "estAddress": "東京都豊島区東池袋三丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "osaka-garagesale-higashinari": {
+  "lat": 34.668041,
+  "lon": 135.541358,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "東成区民センター",
+  "estAddress": "大阪府大阪市東成区大今里西三丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "wakayama-kitabura-remember-market": {
+  "lat": 34.235016,
+  "lon": 135.175704,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "北ぶらくり丁",
+  "estAddress": "和歌山県和歌山市匠町",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "kokura-car-boot": {
+  "lat": 33.885865,
+  "lon": 130.875247,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "リバーウォーク北九州",
+  "estAddress": "福岡県北九州市小倉北区室町一丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "mojiko-car-boot": {
+  "lat": 33.946894,
+  "lon": 130.962603,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "プレミアホテル門司港",
+  "estAddress": "福岡県北九州市門司区港町",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "muromachi-rakuichi-flea": {
+  "lat": 33.886356,
+  "lon": 130.877505,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "常盤橋",
+  "estAddress": "福岡県北九州市小倉北区室町二丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "kioroshi-ekiminami-kotto-ichi": {
+  "lat": 35.838908,
+  "lon": 140.148377,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "木下駅",
+  "estAddress": "千葉県印西市木下",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "murakami-jurinji-enma-kottou": {
+  "lat": 38.224313,
+  "lon": 139.478413,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "大町",
+  "estAddress": "新潟県村上市大町",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "ube-tokiwa-park-flea": {
+  "lat": 33.94851,
+  "lon": 131.282204,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "ときわ公園",
+  "estAddress": "山口県宇部市野中三丁目",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
+ },
+ "takaoka-asaichi": {
+  "lat": 36.747481,
+  "lon": 137.014762,
+  "zoom": 16,
+  "precision": "name",
+  "matched": "坂下町",
+  "estAddress": "富山県高岡市坂下町",
+  "source": "公式に住所がないため、会場名で OpenStreetMap（Nominatim）を検索した位置（目安）。町・丁目は国土地理院の逆ジオコーダ",
+  "checkedAt": "2026-10-21"
  }
 }
