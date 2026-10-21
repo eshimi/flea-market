@@ -292,7 +292,7 @@ test('英語の訳：すべての掲載に訳があり、数字が日本語の�
     if (s.venue.address) {
       assert.ok(t.address, `${s.id}: 住所の訳がありません`);
       // 住所の番地は、順番も含めて原文と同じ（「四丁目」は 4、「七・八丁目」は 7 と 8 として数える）
-      const adr = (x) => (String(x).replace(/([一二三四五六七八九])(?=(?:・[一二三四五六七八九])*丁目)/g, (_, k) => '一二三四五六七八九'.indexOf(k) + 1 + '-').match(/\d+/g) || []).join(',');
+      const adr = (x) => (String(x).normalize('NFKC').replace(/([一二三四五六七八九])(?=(?:・[一二三四五六七八九])*丁目)/g, (_, k) => '一二三四五六七八九'.indexOf(k) + 1 + '-').match(/\d+/g) || []).join(',');
       assert.equal(adr(t.address), adr(s.venue.address), `${s.id}: 住所の数字\n  ja: ${s.venue.address}\n  en: ${t.address}`);
     }
     assert.ok(!s.venue.city || T.cities[s.venue.city], `${s.id}: 市区町村の訳 ${s.venue.city}`);
@@ -334,7 +334,7 @@ test('地図・経路のリンクと当日の天気（気象庁）', async () =>
   // 公式に記載のない項目の「目安」：入場料の既定、市区町村までの所在地、会場名から分かる駅前
   const ja = (id) => pages.find((p) => p.path === `/ja/e/${id}/`).body;
   assert.match(ja('takahata-fudoson-gozareichi'), /入場料<\/dt><dd><span class="est"[^>]*>目安<\/span> 多くのフリーマーケット・市は入場無料です/);
-  assert.match(ja('mizuho-aozora-ichi'), /所在地<\/dt><dd><span class="est"[^>]*>目安<\/span> 東京都瑞穂町（番地は要確認）/);
+  assert.match(ja('edogawa-funabori-matsuri-2026'), /所在地<\/dt><dd><span class="est"[^>]*>目安<\/span> 東京都江戸川区（番地は要確認）/);
   assert.match(ja('setagaya-funabashi-nomi-no-ichi-2026-autumn'), /アクセス<\/dt><dd><span class="est"[^>]*>目安<\/span> 千歳船橋駅の駅前（会場名から/);
   assert.match(pages.find((p) => p.path === '/e/setagaya-funabashi-nomi-no-ichi-2026-autumn/').body, /In front of Chitose-Funabashi Station \(from the venue name/);
   assert.ok(!ja('oedo-antique-market-tokyo-international-forum').includes('多くのフリーマーケット・市は入場無料'), '公式の入場料があるものには、目安を出さない');

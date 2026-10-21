@@ -674,7 +674,8 @@
    "name": "みずほエコパーク 管理棟前広場",
    "pref": "13",
    "city": "瑞穂町",
-   "cityCode": "13303"
+   "cityCode": "13303",
+   "address": "東京都西多摩郡瑞穂町大字箱根ケ崎1736番地"
   },
   "recurrence": {
    "type": "dates",
@@ -721,6 +722,14 @@
      "最大出店数 40区画",
      "出店場所 エコパーク管理棟前広場",
      "申込法 電話申込み（先着順）"
+    ]
+   },
+   {
+    "url": "https://www.town.mizuho.tokyo.jp/kurashi/005/015/p000000.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 東京都西多摩郡瑞穂町大字箱根ケ崎1736番地"
     ]
    }
   ]
@@ -797,7 +806,9 @@
    "name": "東部区民館 駐車場・周辺道路",
    "pref": "13",
    "city": "江戸川区",
-   "cityCode": "13123"
+   "cityCode": "13123",
+   "address": "江戸川区東瑞江1丁目17番1号",
+   "access": "地下鉄都営新宿線「瑞江駅」 徒歩5分"
   },
   "recurrence": {
    "type": "dates",
@@ -831,6 +842,15 @@
      "東部区民館 駐車場・周辺道路",
      "出店料：1,000円",
      "江戸川区内在住の方（申込者多数の場合は抽選"
+    ]
+   },
+   {
+    "url": "https://www.city.edogawa.tokyo.jp/e036/kuseijoho/gaiyo/shisetsuguide/bunya/kuyakusho/c_toubu/guide.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 〒132-0014 江戸川区東瑞江1丁目17番1号",
+     "地下鉄都営新宿線「瑞江駅」 徒歩5分"
     ]
    }
   ]
@@ -1060,7 +1080,8 @@
    "name": "多摩川清掃工場",
    "pref": "13",
    "city": "大田区",
-   "cityCode": "13111"
+   "cityCode": "13111",
+   "address": "大田区下丸子2-33-1"
   },
   "recurrence": {
    "type": "dates",
@@ -1088,6 +1109,14 @@
      "・フリーマーケット",
      "雨天でも開催します。(荒天中止)",
      "自動車での来場はご遠慮ください"
+    ]
+   },
+   {
+    "url": "https://www.union.tokyo23-seisou.lg.jp/kojo/tamagawa/index.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 〒146-0092 大田区下丸子2-33-1"
     ]
    }
   ]
@@ -2009,7 +2038,9 @@
    "name": "中目黒 船入場（山手通り脇）",
    "pref": "13",
    "city": "目黒区",
-   "cityCode": "13110"
+   "cityCode": "13110",
+   "address": "目黒区中目黒1丁目",
+   "access": "東横線「中目黒」徒歩5分"
   },
   "recurrence": {
    "type": "dates",
@@ -2043,11 +2074,13 @@
    {
     "url": "http://www.frma.jp/hunairiba.html",
     "type": "organizer",
-    "checkedAt": "2026-10-19",
+    "checkedAt": "2026-10-21",
     "evidence": [
      "開催9時～15時",
      "約60店",
-     "小雨や猛暑の中止有り"
+     "小雨や猛暑の中止有り",
+     "【住 所】 目黒区中目黒1丁目",
+     "【交 通】 東横線「中目黒」徒歩5分"
     ]
    }
   ]
@@ -2595,7 +2628,9 @@
   "venue": {
    "name": "所沢市民フェス",
    "pref": "11",
-   "city": "所沢市"
+   "city": "所沢市",
+   "address": "所沢市並木1-13",
+   "access": "西武新宿線「航空公園駅」から徒歩すぐ"
   },
   "recurrence": {
    "type": "dates",
@@ -2610,6 +2645,15 @@
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
     "checkedAt": "2026-10-18"
+   },
+   {
+    "url": "https://www.pref.saitama.lg.jp/shisetsu/koen/009.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 所沢市並木1-13",
+     "西武新宿線「航空公園駅」から徒歩すぐ"
+    ]
    }
   ]
  },
@@ -2626,7 +2670,9 @@
   "venue": {
    "name": "川越水上公園",
    "pref": "11",
-   "city": "川越市"
+   "city": "川越市",
+   "address": "川越市大字池辺、豊田本、小ヶ谷、上寺山、的場地内",
+   "access": "JR川越線「西川越駅」から徒歩15分"
   },
   "recurrence": {
    "type": "dates",
@@ -2641,6 +2687,15 @@
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
     "checkedAt": "2026-10-18"
+   },
+   {
+    "url": "https://www.pref.saitama.lg.jp/shisetsu/koen/024.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 川越市大字池辺、豊田本、小ヶ谷、上寺山、的場地内",
+     "JR川越線「西川越駅」から徒歩15分"
+    ]
    }
   ]
  },
@@ -2687,7 +2742,8 @@
   "venue": {
    "name": "イオンモール羽生 nONIWA芝生の広場",
    "pref": "11",
-   "city": "羽生市"
+   "city": "羽生市",
+   "address": "埼玉県羽生市川崎2-281-3"
   },
   "recurrence": {
    "type": "dates",
@@ -2702,6 +2758,14 @@
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
     "checkedAt": "2026-10-18"
+   },
+   {
+    "url": "https://www.aeonmall.com/facility/detail/1439/",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "イオンモール羽生 モール公式サイト アクセス 所在地 埼玉県羽生市川崎2-281-3"
+    ]
    }
   ]
  },
@@ -2718,7 +2782,8 @@
   "venue": {
    "name": "越谷しらこばと水上公園",
    "pref": "11",
-   "city": "越谷市"
+   "city": "越谷市",
+   "address": "越谷市小曽川985"
   },
   "recurrence": {
    "type": "dates",
@@ -2732,6 +2797,14 @@
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
     "checkedAt": "2026-10-18"
+   },
+   {
+    "url": "https://www.pref.saitama.lg.jp/spo-navi/shisetsu/saitamaken/alnethome.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 〒343-0802 越谷市小曽川985"
+    ]
    }
   ]
  },
@@ -2809,7 +2882,9 @@
   "venue": {
    "name": "所沢航空記念公園",
    "pref": "11",
-   "city": "所沢市"
+   "city": "所沢市",
+   "address": "所沢市並木1-13",
+   "access": "西武新宿線「航空公園駅」から徒歩すぐ"
   },
   "recurrence": {
    "type": "dates",
@@ -2824,6 +2899,15 @@
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
     "checkedAt": "2026-10-18"
+   },
+   {
+    "url": "https://www.pref.saitama.lg.jp/shisetsu/koen/009.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "施設情報 所在地 所沢市並木1-13",
+     "1.電車 西武新宿線「航空公園駅」から徒歩すぐ"
+    ]
    }
   ]
  },
@@ -2840,7 +2924,8 @@
   "venue": {
    "name": "戸田市さくらパル",
    "pref": "11",
-   "city": "戸田市"
+   "city": "戸田市",
+   "address": "戸田市新曽南3-1-5"
   },
   "recurrence": {
    "type": "dates",
@@ -2854,6 +2939,14 @@
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
     "checkedAt": "2026-10-18"
+   },
+   {
+    "url": "https://www.city.toda.saitama.jp/soshiki/192/community-sakura-introgaiyo.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 戸田市新曽南3-1-5（新曽南庁舎1階・2階）"
+    ]
    }
   ]
  },
@@ -2933,7 +3026,8 @@
    "name": "亀有駅前リリオパーク",
    "pref": "13",
    "city": "葛飾区",
-   "cityCode": "13122"
+   "cityCode": "13122",
+   "address": "亀有3-25-1"
   },
   "recurrence": {
    "type": "dates",
@@ -2947,6 +3041,14 @@
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
     "checkedAt": "2026-10-18"
+   },
+   {
+    "url": "https://www.city.katsushika.lg.jp/planning/1003408/1003556.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "亀有リリオパーク 亀有3-25-1"
+    ]
    }
   ]
  },
@@ -3432,7 +3534,9 @@
    "name": "環境コミュニケーションセンター リサイクル棟外周通路",
    "pref": "13",
    "city": "昭島市",
-   "cityCode": "13207"
+   "cityCode": "13207",
+   "address": "昭島市美堀町3-8-1",
+   "access": "JR昭島駅または拝島駅より徒歩20分"
   },
   "recurrence": {
    "type": "dates",
@@ -3483,6 +3587,15 @@
      "2月開催：1月1日から15日まで",
      "3月開催：2月1日から15日まで"
     ]
+   },
+   {
+    "url": "https://www.city.akishima.lg.jp/kurashi/gomi/1001623/1001628.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 昭島市美堀町3-8-1",
+     "交通 JR昭島駅または拝島駅より徒歩20分"
+    ]
    }
   ]
  },
@@ -3502,7 +3615,8 @@
    "pref": "13",
    "city": "日野市",
    "cityCode": "13212",
-   "access": "JR中央線「日野駅」より徒歩15分／多摩モノレール「甲州街道駅」より徒歩15分"
+   "access": "JR中央線「日野駅」より徒歩15分／多摩モノレール「甲州街道駅」より徒歩15分",
+   "address": "日野市日野本町6-1-74"
   },
   "recurrence": {
    "type": "dates",
@@ -3531,6 +3645,14 @@
     "checkedAt": "2026-10-21",
     "evidence": [
      "開催日 10月24日（土曜日）、10月25日（日曜日）"
+    ]
+   },
+   {
+    "url": "https://www.city.hino.lg.jp/press/1026432/1026482.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "仲田の森蚕糸公園（日野市日野本町6-1-74）"
     ]
    }
   ]
@@ -3601,7 +3723,9 @@
    "name": "舞鶴公園 三ノ丸広場",
    "pref": "40",
    "city": "福岡市中央区",
-   "cityCode": "40133"
+   "cityCode": "40133",
+   "address": "福岡市中央区城内１－４",
+   "access": "西鉄大手門バス停から徒歩8分 市営地下鉄赤坂駅から徒歩8分"
   },
   "recurrence": {
    "type": "dates",
@@ -3640,6 +3764,15 @@
      "地下鉄空港線「大濠公園」駅",
      "徒歩約8分",
      "200組（抽選制）"
+    ]
+   },
+   {
+    "url": "https://fkmachi.city.fukuoka.lg.jp/facilities/detail/787133e2-2332-4c8b-9cd8-056039bdabed",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "住所 〒810-0043福岡市中央区城内１－４",
+     "西鉄大手門バス停から徒歩8分 市営地下鉄赤坂駅から徒歩8分"
     ]
    }
   ]
@@ -3718,7 +3851,8 @@
    "name": "大井競馬場TokyoCityFleaMarket",
    "pref": "13",
    "city": "品川区",
-   "cityCode": "13109"
+   "cityCode": "13109",
+   "address": "東京都品川区勝島二丁目1番2号"
   },
   "recurrence": {
    "type": "dates",
@@ -3785,6 +3919,14 @@
      "朝7時30分までに決定致します",
      "TOPページ上部に告知をいたします"
     ]
+   },
+   {
+    "url": "https://www.tokyocitykeiba.com/race/wp-content/uploads/sites/3/2026/09/gaitei_r08_10-1.pdf",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "開催場所 東京都品川区勝島二丁目1番2号 大井競馬場"
+    ]
    }
   ],
   "venueId": "oi-racecourse",
@@ -3806,7 +3948,9 @@
    "name": "イケ・サンパーク",
    "pref": "13",
    "city": "豊島区",
-   "cityCode": "13116"
+   "cityCode": "13116",
+   "address": "東京都豊島区東池袋4丁目42番",
+   "access": "東京メトロ有楽町線「東池袋駅」下車6番出口から徒歩5分"
   },
   "recurrence": {
    "type": "dates",
@@ -3837,6 +3981,15 @@
      "朝7時30分までに決定致します",
      "TOPページ上部に告知をいたします"
     ]
+   },
+   {
+    "url": "https://ikesunpark.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "東京都豊島区東池袋4丁目 42 番",
+     "・東京メトロ有楽町線「東池袋駅」下車6番出口から徒歩5分"
+    ]
    }
   ],
   "visitor": {
@@ -3857,7 +4010,9 @@
    "name": "船橋競馬場フリーマーケット",
    "pref": "12",
    "city": "船橋市",
-   "cityCode": "12204"
+   "cityCode": "12204",
+   "address": "船橋市若松1-2-1",
+   "access": "京成線「船橋競馬場駅」から徒歩5分、JR京葉線「南船橋駅」から徒歩10分"
   },
   "recurrence": {
    "type": "dates",
@@ -3883,6 +4038,15 @@
      "原則当日の判断となります",
      "朝7時30分までに決定致します",
      "TOPページ上部に告知をいたします"
+    ]
+   },
+   {
+    "url": "https://www.city.funabashi.lg.jp/loca/location/006/p114339.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 船橋市若松1-2-1",
+     "京成線「船橋競馬場駅」から徒歩5分、JR京葉線「南船橋駅」から徒歩10分"
     ]
    }
   ],
@@ -4053,7 +4217,8 @@
   },
   "venue": {
    "name": "稲沢勤労福祉会館",
-   "pref": "23"
+   "pref": "23",
+   "address": "稲沢市朝府町5-1"
   },
   "recurrence": {
    "type": "dates",
@@ -4097,6 +4262,15 @@
     "evidence": [
      "6：0０にＨＰ上に更新します"
     ]
+   },
+   {
+    "url": "https://www.city.inazawa.aichi.jp/0000002801.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "施設案内 勤労福祉会館",
+     "所在地 〒492-8268 稲沢市朝府町5-1"
+    ]
    }
   ]
  },
@@ -4112,7 +4286,8 @@
   },
   "venue": {
    "name": "大野極楽寺公園（一宮リバーサイドフリマ）",
-   "pref": "23"
+   "pref": "23",
+   "address": "一宮市浅井町河田・大野・極楽寺"
   },
   "recurrence": {
    "type": "dates",
@@ -4158,6 +4333,14 @@
     "evidence": [
      "6：0０にＨＰ上に更新します"
     ]
+   },
+   {
+    "url": "https://www.city.ichinomiya.aichi.jp/shisetsu/kouen/1017179/1017417/1009340.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 一宮市浅井町河田・大野・極楽寺"
+    ]
    }
   ]
  },
@@ -4173,7 +4356,9 @@
   },
   "venue": {
    "name": "元浜公園",
-   "pref": "23"
+   "pref": "23",
+   "address": "東海市元浜町64-2",
+   "access": "名鉄電車「尾張横須賀駅」下車、西へ徒歩10分"
   },
   "recurrence": {
    "type": "dates",
@@ -4218,6 +4403,15 @@
     "checkedAt": "2026-10-21",
     "evidence": [
      "6：0０にＨＰ上に更新します"
+    ]
+   },
+   {
+    "url": "https://www.city.tokai.aichi.jp/shisetsu/1005655/1005664/1003654.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 東海市元浜町64-2",
+     "名鉄電車「尾張横須賀駅」下車、西へ徒歩10分"
     ]
    }
   ]
@@ -4293,7 +4487,8 @@
   },
   "venue": {
    "name": "ＪＡげんきの郷",
-   "pref": "23"
+   "pref": "23",
+   "address": "愛知県大府市吉田町正右エ門新田1-1"
   },
   "recurrence": {
    "type": "dates",
@@ -4335,6 +4530,14 @@
     "checkedAt": "2026-10-21",
     "evidence": [
      "6：0０にＨＰ上に更新します"
+    ]
+   },
+   {
+    "url": "https://agritown.co.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "アクセス JAあぐりタウンげんきの郷 〒474-0041 愛知県大府市吉田町正右エ門新田1-1"
     ]
    }
   ]
@@ -4477,7 +4680,8 @@
   "venue": {
    "name": "梅小路公園",
    "pref": "26",
-   "access": "JR嵯峨野線「梅小路京都西駅」下車すぐ"
+   "access": "JR嵯峨野線「梅小路京都西駅」下車すぐ",
+   "address": "京都市下京区観喜寺町５６-３"
   },
   "recurrence": {
    "type": "monthly-nth",
@@ -4523,6 +4727,14 @@
     "checkedAt": "2026-10-19",
     "evidence": [
      "JR嵯峨野線「梅小路京都西駅」下車すぐ"
+    ]
+   },
+   {
+    "url": "https://www.kyoto-ga.jp/umekouji/index.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "梅小路公園 〒600-8835 京都市下京区観喜寺町５６-３ 梅小路公園内"
     ]
    }
   ]
@@ -4591,7 +4803,8 @@
   "venue": {
    "name": "神戸ハーバーランド オリーブ広場及びはね橋周辺",
    "pref": "28",
-   "access": "JR神戸線「神戸駅」下車、徒歩5分／地下鉄海岸線「ハーバーランド駅」下車、徒歩5分"
+   "access": "JR神戸線「神戸駅」下車、徒歩5分／地下鉄海岸線「ハーバーランド駅」下車、徒歩5分",
+   "address": "兵庫県神戸市中央区東川崎町１丁目"
   },
   "recurrence": {
    "type": "dates",
@@ -4625,6 +4838,14 @@
      "10:00〜16:00予定",
      "神戸ハーバーランドで定期開催のフリマ！",
      "JR神戸線「神戸駅」下車、徒歩5分"
+    ]
+   },
+   {
+    "url": "https://harborland.co.jp/access/",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "住所 神戸ハーバーランド 〒650-0044 兵庫県神戸市中央区東川崎町１丁目"
     ]
    }
   ]
@@ -5516,7 +5737,8 @@
   "venue": {
    "name": "岡崎公園",
    "pref": "26",
-   "city": "京都市"
+   "city": "京都市",
+   "address": "京都市左京区岡崎最勝寺町他"
   },
   "recurrence": {
    "type": "dates",
@@ -5554,6 +5776,14 @@
      "京都市左京区岡崎最勝寺町",
      "※雨天開催決行",
      "岡崎公園（平安神宮前・神宮道）"
+    ]
+   },
+   {
+    "url": "https://www.city.kyoto.lg.jp/kensetu/page/0000082743.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 京都市左京区岡崎最勝寺町他"
     ]
    }
   ],
@@ -7890,7 +8120,8 @@
   "venue": {
    "name": "花博鶴見緑地公園（水の館付属展示場）",
    "pref": "27",
-   "access": "地下鉄長堀鶴見緑地線 鶴見緑地駅 下車すぐ"
+   "access": "地下鉄長堀鶴見緑地線 鶴見緑地駅 下車すぐ",
+   "address": "大阪市鶴見区緑地公園（花博記念公園鶴見緑地内）"
   },
   "recurrence": {
    "type": "dates",
@@ -7945,6 +8176,14 @@
      "￥3,000 （消費税込・振込手数料別）",
      "￥5,500",
      "￥6,000"
+    ]
+   },
+   {
+    "url": "https://www.tsurumi-ryokuchi.jp/facility/hanamizuki.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 〒538‐0036 大阪市鶴見区緑地公園（花博記念公園鶴見緑地内）"
     ]
    }
   ]
@@ -8196,7 +8435,9 @@
    "name": "住友不動産渋谷ガーデンタワー 屋外広場",
    "pref": "13",
    "city": "渋谷区",
-   "cityCode": "13113"
+   "cityCode": "13113",
+   "address": "Nanpeidaicho16-17 Shibuya-ku Tokyo",
+   "access": "It is about 8 minutes walk from Shibuya Station"
   },
   "recurrence": {
    "type": "dates",
@@ -8239,6 +8480,15 @@
      "Sun. 28 Mar. 2027",
      "OPEN from 10:00 to 16:00",
      "Shibuya Garden Tower"
+    ]
+   },
+   {
+    "url": "https://tokyo-romantic.com/access/",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "Shibuya Garden Tower : Nanpeidaicho16-17 Shibuya-ku Tokyo",
+     "It is about 8 minutes walk from Shibuya Station"
     ]
    }
   ]
@@ -8314,7 +8564,8 @@
   "venue": {
    "name": "越谷しらこばと水上公園",
    "pref": "11",
-   "city": "越谷市"
+   "city": "越谷市",
+   "address": "越谷市小曽川985"
   },
   "recurrence": {
    "type": "dates",
@@ -8351,6 +8602,14 @@
     "evidence": [
      "全会場雨荒天中止"
     ]
+   },
+   {
+    "url": "https://www.pref.saitama.lg.jp/spo-navi/shisetsu/saitamaken/alnethome.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 〒343-0802 越谷市小曽川985"
+    ]
    }
   ]
  },
@@ -8367,7 +8626,9 @@
   "venue": {
    "name": "川越水上公園",
    "pref": "11",
-   "city": "川越市"
+   "city": "川越市",
+   "address": "川越市大字池辺、豊田本、小ヶ谷、上寺山、的場地内",
+   "access": "JR川越線「西川越駅」から徒歩15分"
   },
   "recurrence": {
    "type": "dates",
@@ -8403,6 +8664,15 @@
     "checkedAt": "2026-10-21",
     "evidence": [
      "全会場雨荒天中止"
+    ]
+   },
+   {
+    "url": "https://www.pref.saitama.lg.jp/shisetsu/koen/024.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 川越市大字池辺、豊田本、小ヶ谷、上寺山、的場地内",
+     "JR川越線「西川越駅」から徒歩15分"
     ]
    }
   ]
@@ -8552,7 +8822,9 @@
   "venue": {
    "name": "智光山公園 ひょうたん池周辺",
    "pref": "11",
-   "city": "狭山市"
+   "city": "狭山市",
+   "address": "狭山市柏原561",
+   "access": "西武新宿線狭山市駅西口から智光山公園行きバス終点下車（所要時間:約20分）"
   },
   "recurrence": {
    "type": "dates",
@@ -8582,6 +8854,15 @@
      "◆10時～15時30分",
      "車両出店1区画2000円(横だし)",
      "雨荒天中止"
+    ]
+   },
+   {
+    "url": "https://www.city.sayama.saitama.jp/shisei/shisetsu/doubutsuen/cikozankoen/index.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 所在地 狭山市柏原561",
+     "西武新宿線狭山市駅西口から智光山公園行きバス終点下車（所要時間:約20分）"
     ]
    }
   ],
@@ -8831,7 +9112,9 @@
   },
   "venue": {
    "name": "IKEA Tokyo-Bay",
-   "pref": "12"
+   "pref": "12",
+   "address": "千葉県船橋市浜町2-3-30",
+   "access": "JR京葉線・武蔵野線 南船橋駅 改札出てすぐ"
   },
   "recurrence": {
    "type": "dates",
@@ -8866,6 +9149,15 @@
     "evidence": [
      "全会場雨荒天中止"
     ]
+   },
+   {
+    "url": "https://www.ikea.com/jp/ja/stores/tokyo-bay/",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "住所 IKEA Tokyo-Bay 〒273-0012 千葉県船橋市浜町2-3-30",
+     "JR京葉線・武蔵野線 南船橋駅 改札出てすぐ"
+    ]
    }
   ]
  },
@@ -8882,7 +9174,9 @@
   "venue": {
    "name": "東北環境事業センター",
    "pref": "27",
-   "city": "大阪市東淀川区"
+   "city": "大阪市東淀川区",
+   "address": "大阪市東淀川区上新庄1-2-20",
+   "access": "阪急電車 京都線「上新庄」駅（西へ約700メートル）"
   },
   "recurrence": {
    "type": "dates",
@@ -8907,6 +9201,15 @@
     "evidence": [
      "第15回東淀川区ガレージセール令和8年10月25日(日曜日)東北環境事業センター11時から15時まで雨天中止"
     ]
+   },
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000009981.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地：〒533-0006 大阪市東淀川区上新庄1-2-20",
+     "阪急電車 京都線「上新庄」駅（西へ約700メートル）"
+    ]
    }
   ]
  },
@@ -8923,7 +9226,9 @@
   "venue": {
    "name": "靭公園（東園けやき並木）",
    "pref": "27",
-   "city": "大阪市西区"
+   "city": "大阪市西区",
+   "address": "大阪市西区靱本町",
+   "access": "中央線・四ツ橋線／本町駅下車 28番出口"
   },
   "recurrence": {
    "type": "dates",
@@ -8948,6 +9253,15 @@
     "evidence": [
      "第14回 西区ガレージセール令和8年11月8日(日曜日)靭公園（東園けやき並木）11時から15時まで雨天中止"
     ]
+   },
+   {
+    "url": "https://parksgreenery.city.osaka.lg.jp/article/expo_park1/",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 大阪市西区靱本町",
+     "[OsakaMetro] 中央線・四ツ橋線／本町駅下車 28番出口"
+    ]
    }
   ]
  },
@@ -8964,7 +9278,8 @@
   "venue": {
    "name": "野中南公園",
    "pref": "27",
-   "city": "大阪市淀川区"
+   "city": "大阪市淀川区",
+   "address": "淀川区野中南2丁目1番地"
   },
   "recurrence": {
    "type": "dates",
@@ -8989,6 +9304,14 @@
     "evidence": [
      "第14回 淀川区ガレージセール令和8年11月14日(土曜日)野中南公園11時から15時まで雨天中止"
     ]
+   },
+   {
+    "url": "https://www.city.osaka.lg.jp/yodogawa/page/0000435972.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "野中南公園 （住所： 淀川区野中南2丁目1番地 ）"
+    ]
    }
   ]
  },
@@ -9005,7 +9328,9 @@
   "venue": {
    "name": "此花区民一休ホール",
    "pref": "27",
-   "city": "大阪市此花区"
+   "city": "大阪市此花区",
+   "address": "大阪市此花区四貫島1-1-18",
+   "access": "阪神なんば線「千鳥橋」駅 徒歩2分"
   },
   "recurrence": {
    "type": "dates",
@@ -9030,6 +9355,15 @@
     "evidence": [
      "ガレージセール・IN・このはな 2026令和8年11月14日(土曜日)此花区民一休ホール11時から14時まで雨天実施"
     ]
+   },
+   {
+    "url": "https://www.city.osaka.lg.jp/shimin/page/0000016604.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "此花区民一休ホール（此花区） 所在地 〒554-0014 大阪市此花区四貫島1-1-18",
+     "最寄駅 阪神なんば線「千鳥橋」駅 徒歩2分"
+    ]
    }
   ]
  },
@@ -9046,7 +9380,8 @@
   "venue": {
    "name": "大正区役所駐車場",
    "pref": "27",
-   "city": "大阪市大正区"
+   "city": "大阪市大正区",
+   "address": "大阪市大正区千島2-7-95"
   },
   "recurrence": {
    "type": "dates",
@@ -9071,6 +9406,14 @@
     "evidence": [
      "第14回 大正区ガレージセール令和8年11月15日(日曜日)大正区役所駐車場11時から14時まで雨天中止"
     ]
+   },
+   {
+    "url": "https://www.city.osaka.lg.jp/taisho/page/0000077091.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 〒551-8501 大阪市大正区千島2-7-95"
+    ]
    }
   ]
  },
@@ -9087,7 +9430,9 @@
   "venue": {
    "name": "コミュニティプラザ平野（平野区民センター）1階多目的ホール",
    "pref": "27",
-   "city": "大阪市平野区"
+   "city": "大阪市平野区",
+   "address": "大阪市平野区長吉出戸5-3-58",
+   "access": "Osaka Metro谷町線「出戸」駅下車 ４号出口 東へ約400m（徒歩５分）"
   },
   "recurrence": {
    "type": "dates",
@@ -9111,6 +9456,15 @@
     "checkedAt": "2026-10-21",
     "evidence": [
      "ガレージセールinひらの～多世代交流～令和8年11月15日(日曜日)コミュニティプラザ平野（平野区民センター）1階多目的ホール11時から14時まで雨天実施"
+    ]
+   },
+   {
+    "url": "https://www.osakacommunity.jp/branches/hirano/access/",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "大阪市平野区長吉出戸5-3-58 （平野区民センター内）",
+     "Osaka Metro谷町線「出戸」駅下車 ４号出口 東へ約400m（徒歩５分）"
     ]
    }
   ]
@@ -9169,7 +9523,9 @@
   "venue": {
    "name": "住吉区役所敷地内（屋外）",
    "pref": "27",
-   "city": "大阪市住吉区"
+   "city": "大阪市住吉区",
+   "address": "大阪市住吉区南住吉3-15-55",
+   "access": "南海高野線「沢ノ町」駅下車東へ約300メートル"
   },
   "recurrence": {
    "type": "dates",
@@ -9194,6 +9550,15 @@
     "evidence": [
      "すみよしガレージセール令和8年11月28日(土曜日)住吉区役所敷地内（屋外）13時から15時30分まで少雨決行・荒天中止"
     ]
+   },
+   {
+    "url": "https://www.city.osaka.lg.jp/sumiyoshi/page/0000158918.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 〒558-8501 大阪市住吉区南住吉3-15-55",
+     "南海高野線「沢ノ町」駅下車東へ約300メートル"
+    ]
    }
   ]
  },
@@ -9210,7 +9575,9 @@
   "venue": {
    "name": "西淀川区民ホール",
    "pref": "27",
-   "city": "大阪市西淀川区"
+   "city": "大阪市西淀川区",
+   "address": "大阪市西淀川区御幣島3-13-3",
+   "access": "JR東西線「御幣島」駅 徒歩10分"
   },
   "recurrence": {
    "type": "dates",
@@ -9234,6 +9601,15 @@
     "checkedAt": "2026-10-21",
     "evidence": [
      "ガレージセール IN にしよどがわ 2026令和8年11月28日(土曜日)西淀川区民ホール11時から14時まで雨天実施"
+    ]
+   },
+   {
+    "url": "https://www.city.osaka.lg.jp/shimin/page/0000016622.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "近藤技研工業 西淀川区民ホール（西淀川区） 所在地 〒555-0012 大阪市西淀川区御幣島3-13-3",
+     "最寄駅 JR東西線「御幣島」駅 徒歩10分"
     ]
    }
   ]
@@ -9333,7 +9709,8 @@
   "venue": {
    "name": "大阪ベイタワー2Fアトリウム広場",
    "pref": "27",
-   "city": "大阪市港区"
+   "city": "大阪市港区",
+   "address": "大阪市港区弁天1丁目2番4-700号"
   },
   "recurrence": {
    "type": "dates",
@@ -9358,6 +9735,14 @@
     "evidence": [
      "ごみ減量ECOフェスタ 港区ガレージセール令和8年11月29日(日曜日)大阪ベイタワー2Fアトリウム広場12時から14時30分まで荒天中止"
     ]
+   },
+   {
+    "url": "https://baytower.jp/contact/",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "大阪ベイタワーマネジメントオフィス 住所 〒552-0007 大阪市港区弁天1丁目2番4-700号"
+    ]
    }
   ]
  },
@@ -9374,7 +9759,8 @@
   "venue": {
    "name": "東住吉区民ホール 区役所3階",
    "pref": "27",
-   "city": "大阪市東住吉区"
+   "city": "大阪市東住吉区",
+   "address": "大阪市東住吉区東田辺1丁目13番4号"
   },
   "recurrence": {
    "type": "dates",
@@ -9399,6 +9785,14 @@
     "evidence": [
      "東住吉区ガレージセール令和8年12月5日(土曜日)東住吉区民ホール 区役所3階13時から15時30分まで雨天決行"
     ]
+   },
+   {
+    "url": "https://www.city.osaka.lg.jp/higashisumiyoshi/page/0000415142.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "東住吉区民ホールのご案内 〒546-8501 大阪市東住吉区東田辺1丁目13番4号 東住吉区役所3階"
+    ]
    }
   ]
  },
@@ -9415,7 +9809,9 @@
   "venue": {
    "name": "扇町公園",
    "pref": "27",
-   "city": "大阪市北区"
+   "city": "大阪市北区",
+   "address": "大阪市北区扇町１丁目１",
+   "access": "堺筋線／扇町駅 より徒歩1分"
   },
   "recurrence": {
    "type": "dates",
@@ -9440,6 +9836,15 @@
     "evidence": [
      "北区RRRフェスティバル・ガレージセール令和8年12月6日(日曜日)扇町公園11時から15時まで雨天中止"
     ]
+   },
+   {
+    "url": "https://parksgreenery.city.osaka.lg.jp/article/parks-ogimachi/",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 大阪市北区扇町１丁目１",
+     "堺筋線／扇町駅 より徒歩1分"
+    ]
    }
   ]
  },
@@ -9457,7 +9862,8 @@
   "venue": {
    "name": "末広公園（住道駅南公園）",
    "pref": "27",
-   "city": "大東市"
+   "city": "大東市",
+   "address": "末広町6および新町2・3・4"
   },
   "recurrence": {
    "type": "dates",
@@ -9481,6 +9887,14 @@
      "末広公園（住道駅南公園）",
      "フリーマーケットブースでは12団体が出店し",
      "（フリマ）被服、手作り小物・手芸等の販売"
+    ]
+   },
+   {
+    "url": "https://www.city.daito.lg.jp/site/iju/47784.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "末広公園 （末広町6および新町2・3・4）"
     ]
    }
   ]
@@ -9545,7 +9959,9 @@
   "venue": {
    "name": "市役所前大和川河川敷（柏原市役所前大和川河川敷緑地公園）",
    "pref": "27",
-   "city": "柏原市"
+   "city": "柏原市",
+   "address": "柏原市安堂町1番55号先",
+   "access": "近鉄大阪線安堂駅より約500ｍ／徒歩約7分"
   },
   "recurrence": {
    "type": "dates",
@@ -9572,6 +9988,16 @@
      "ところ 市役所前大和川河川敷",
      "縁日、フリーマーケット、ふわふわ遊具など",
      "天候などの都合によりプログラムを変更・中止する場合があります"
+    ]
+   },
+   {
+    "url": "https://www.city.kashiwara.lg.jp/docs/2026062300122/file_contents/file_20267105131019_1.pdf",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "大和川河川敷緑地公園",
+     "所在地 柏原市安堂町 1 番 55 号先",
+     "アクセス 近鉄大阪線安堂駅より約 500ｍ／徒歩約 7 分"
     ]
    }
   ]
@@ -9700,7 +10126,9 @@
   "venue": {
    "name": "手柄山交流ステーション3階と屋上広場",
    "pref": "28",
-   "city": "姫路市"
+   "city": "姫路市",
+   "address": "姫路市西延末440番地 手柄山平和公園内",
+   "access": "山陽電車「手柄駅」下車徒歩約10分"
   },
   "recurrence": {
    "type": "dates",
@@ -9724,6 +10152,15 @@
      "11月3日（火曜日・祝日）午前10時から午後4時まで手柄山交流ステーション3階と屋上広場にて",
      "飲食や雑貨の販売、メダカすくいやスーパーボールすくい等の屋台が出店します"
     ]
+   },
+   {
+    "url": "https://www.city.himeji.lg.jp/kanko/0000005715.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "住所: 〒670-0971 姫路市西延末440番地 手柄山平和公園内",
+     "山陽電車「手柄駅」下車徒歩約10分"
+    ]
    }
   ]
  },
@@ -9740,7 +10177,9 @@
   "venue": {
    "name": "キセラ川西プラザ屋外広場",
    "pref": "28",
-   "city": "川西市"
+   "city": "川西市",
+   "address": "川西市火打1丁目12番16号",
+   "access": "阪急・能勢電鉄「川西能勢口」駅から北へ徒歩約15分。または、「絹延橋」駅から西へ徒歩約5分。"
   },
   "recurrence": {
    "type": "dates",
@@ -9766,6 +10205,15 @@
      "令和8年10月24日（土曜日）午前10時から午後2時まで",
      "キセラ川西プラザ屋外広場",
      "緑のフリーマーケット 家庭で育てた花や植木などを販売"
+    ]
+   },
+   {
+    "url": "https://www.city.kawanishi.hyogo.jp/shisetsu/1002994/1002995/1007387.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在 〒666-0017 川西市火打1丁目12番16号",
+     "阪急・能勢電鉄「川西能勢口」駅から北へ徒歩約15分。または、「絹延橋」駅から西へ徒歩約5分。"
     ]
    }
   ]
@@ -9859,7 +10307,8 @@
    "name": "平安神宮前、岡崎公園",
    "pref": "26",
    "city": "京都市左京区",
-   "access": "地下鉄東西線「東山駅」より北へ徒歩約10分、市バス停「岡崎公園 ロームシアター京都・みやこめっせ前」下車すぐ"
+   "access": "地下鉄東西線「東山駅」より北へ徒歩約10分、市バス停「岡崎公園 ロームシアター京都・みやこめっせ前」下車すぐ",
+   "address": "京都市左京区岡崎最勝寺町他"
   },
   "recurrence": {
    "type": "dates",
@@ -9903,6 +10352,14 @@
      "１０：００～１６：００予定／雨天決行／入場無料",
      "京都 平安神宮前、岡崎公園",
      "地下鉄東西線「東山駅」より北へ徒歩約１０分、市バス停「岡崎公園 ロームシアター京都・みやこめっせ前」下車すぐ"
+    ]
+   },
+   {
+    "url": "https://www.city.kyoto.lg.jp/kensetu/page/0000082743.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 京都市左京区岡崎最勝寺町他"
     ]
    }
   ]
@@ -11157,7 +11614,9 @@
   "venue": {
    "name": "徳川園",
    "pref": "23",
-   "city": "名古屋市東区"
+   "city": "名古屋市東区",
+   "address": "愛知県名古屋市東区徳川町1001",
+   "access": "JR中央本線、「大曽根」駅下車南出口より徒歩10分"
   },
   "recurrence": {
    "type": "dates",
@@ -11185,6 +11644,15 @@
      "黒門手づくり市:10時～15時",
      "徳川園開園記念日 無料開園日",
      "JR中央線「大曽根」駅南出口より徒歩10分"
+    ]
+   },
+   {
+    "url": "https://www.tokugawaen.aichi.jp/transportation-guide/index.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 〒461-0023 愛知県名古屋市東区徳川町1001",
+     "JR中央本線、「大曽根」駅下車南出口より徒歩10分"
     ]
    }
   ]
@@ -11434,7 +11902,8 @@
   "venue": {
    "name": "勝山公園大芝生広場",
    "pref": "40",
-   "city": "北九州市小倉北区"
+   "city": "北九州市小倉北区",
+   "address": "小倉北区城内"
   },
   "recurrence": {
    "type": "dates",
@@ -11457,6 +11926,15 @@
      "11月15日（日曜日）10時から15時30分",
      "こくらdeフリマ （勝山公園大芝生広場）"
     ]
+   },
+   {
+    "url": "https://www.city.kitakyushu.lg.jp/contents/924_00902.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 小倉北区城内",
+     "大芝生広場"
+    ]
    }
   ]
  },
@@ -11472,7 +11950,8 @@
   "venue": {
    "name": "響灘緑地グリーンパーク",
    "pref": "40",
-   "city": "北九州市若松区"
+   "city": "北九州市若松区",
+   "address": "北九州市若松区竹並1006番地"
   },
   "recurrence": {
    "type": "dates",
@@ -11496,6 +11975,14 @@
      "11月1日（日曜日）10時から16時",
      "みつばちフリマ （響灘緑地グリーンパーク）",
      "12月6日（日曜日）10時から16時"
+    ]
+   },
+   {
+    "url": "https://www.city.kitakyushu.lg.jp/contents/v059_00008.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "響灘緑地グリーンパーク （北九州市若松区竹並1006番地）"
     ]
    }
   ]
@@ -12327,7 +12814,8 @@
    "name": "佐賀市エコプラザ",
    "pref": "41",
    "city": "佐賀市",
-   "access": "佐賀駅バスセンターからバスで15分と徒歩3分"
+   "access": "佐賀駅バスセンターからバスで15分と徒歩3分",
+   "address": "佐賀市高木瀬町大字長瀬2369"
   },
   "recurrence": {
    "type": "monthly-nth",
@@ -12352,6 +12840,14 @@
     "evidence": [
      "エコマーケットの開催（フリーマーケット。毎月第3日曜日10時～14時）",
      "佐賀駅バスセンターからバスで15分と徒歩3分"
+    ]
+   },
+   {
+    "url": "https://www.saga-ecoplaza.jp/about/access",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "佐賀市エコプラザ 〒849-0917 佐賀市高木瀬町大字長瀬2369"
     ]
    }
   ]
@@ -12456,7 +12952,8 @@
   "venue": {
    "name": "MUCCセメント交流ひろば",
    "pref": "35",
-   "city": "宇部市"
+   "city": "宇部市",
+   "address": "宇部市常盤町一丁目7番1号"
   },
   "recurrence": {
    "type": "dates",
@@ -12480,6 +12977,16 @@
      "2027年 3月 7日（日曜日）",
      "MUCCセメント交流ひろば",
      "※天候によっては開催時間の変更、中止となることがございます。"
+    ]
+   },
+   {
+    "url": "https://www.city.ube.yamaguchi.jp/shisei/kouhou/kishahappyou/1008059/1026530/1028655.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "宇部市庁舎広場の愛称が決定",
+     "愛称 MUCCセメント交流ひろば",
+     "宇部市 UBE CITY 〒755-8601 宇部市常盤町一丁目7番1号"
     ]
    }
   ]
@@ -12532,7 +13039,9 @@
   "venue": {
    "name": "ゆめプラザ熊毛周辺",
    "pref": "35",
-   "city": "周南市"
+   "city": "周南市",
+   "address": "周南市熊毛中央町1番1号",
+   "access": "高水駅下車徒歩15分"
   },
   "recurrence": {
    "type": "dates",
@@ -12560,6 +13069,15 @@
      "キッズフリーマーケット",
      "※天候により、イベント内容が変更・中止になる場合があります。"
     ]
+   },
+   {
+    "url": "https://www.city.shunan.lg.jp/soshiki/48/98277.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 周南市熊毛中央町1番1号",
+     "ＪＲ岩徳線 高水駅下車徒歩15分"
+    ]
    }
   ]
  },
@@ -12575,7 +13093,8 @@
   "venue": {
    "name": "東洋電化中央公園",
    "pref": "39",
-   "city": "高知市"
+   "city": "高知市",
+   "address": "高知市帯屋町1丁目11-27"
   },
   "recurrence": {
    "type": "dates",
@@ -12601,6 +13120,15 @@
      "令和9年1月11日㈪",
      "各8時～15時",
      "東洋電化中央公園のイベント情報について"
+    ]
+   },
+   {
+    "url": "https://www.city.kochi.kochi.jp/soshiki/128/barrierfree-tanoshimu.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "F27 東洋電化中央公園",
+     "【住所】 〒780-0841 高知市帯屋町1丁目11-27"
     ]
    }
   ]
@@ -12823,7 +13351,8 @@
   "venue": {
    "name": "高岡市営中央駐車場",
    "pref": "16",
-   "city": "高岡市"
+   "city": "高岡市",
+   "address": "高岡市下関町6-11"
   },
   "recurrence": {
    "type": "dates",
@@ -12850,6 +13379,14 @@
      "令和8年10月24日（土曜日）・25日（日曜日）10:00～16:30",
      "高岡市営中央駐車場",
      "無料（入場時に登録が必要です。webで事前登録ができます。）"
+    ]
+   },
+   {
+    "url": "https://www.city.takaoka.toyama.jp/soshiki/toshikeikakuka/2/3/1/1/2515.html",
+    "type": "municipality",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "所在地 高岡市下関町6-11"
     ]
    }
   ]
@@ -12909,7 +13446,9 @@
   },
   "venue": {
    "name": "サンドーム福井",
-   "pref": "18"
+   "pref": "18",
+   "address": "越前市瓜生町5-1-1",
+   "access": "サンドーム西駅からサンドーム福井までは、徒歩約15分（1.5㎞）"
   },
   "recurrence": {
    "type": "dates",
@@ -12929,6 +13468,15 @@
      "北陸最大級のハンドメイドの祭典",
      "11月28・29日",
      "サンドーム福井"
+    ]
+   },
+   {
+    "url": "https://sundome.sankan.jp/access-map/",
+    "type": "organizer",
+    "checkedAt": "2026-10-21",
+    "evidence": [
+     "〒915-0096 越前市瓜生町5-1-1",
+     "※サンドーム西駅からサンドーム福井までは、徒歩約15分（1.5㎞）"
     ]
    }
   ]

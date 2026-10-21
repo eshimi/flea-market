@@ -3528,5 +3528,559 @@
    "checkedAt": "2026-10-20",
    "note": "robots.txt は確認（許可）。利用規約ページは未確認。"
   }
+ },
+ {
+  "url": "https://www.town.mizuho.tokyo.jp/kurashi/005/015/p000000.html",
+  "series": [
+   "mizuho-aozora-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "サイトポリシーに「町に無断で複製・転用することはできない」→ 事実（住所）のみ。robots.txt で許可（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.pref.saitama.lg.jp/shisetsu/koen/009.html",
+  "series": [
+   "fmpn-tokorozawa-shimin-fes",
+   "fmpn-tokorozawa-aviation-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "埼玉県「著作権・リンク等」：許可なく他のメディアへ転載することはお断り → 事実（住所）のみ。robots.txt で許可（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.pref.saitama.lg.jp/spo-navi/shisetsu/saitamaken/alnethome.html",
+  "series": [
+   "fmpn-koshigaya-shirakobato-park",
+   "rbf-koshigaya-shirakobato-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "埼玉県「著作権・リンク等」：許可なく転載はお断り → 事実（住所）のみ。robots.txt で許可（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.toda.saitama.jp/soshiki/192/community-sakura-introgaiyo.html",
+  "series": [
+   "fmpn-toda-sakura-pal"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "戸田市「著作権について」：無断で掲載等をすることは禁止 → 事実（住所）のみ。robots.txt なし（404）（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.hino.lg.jp/press/1026432/1026482.html",
+  "series": [
+   "hino-art-festival-flea-craft"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "日野市「ホームページの考え方」：無断で複製・転用はできない → 事実（住所）のみ。robots.txt なし（404）（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.funabashi.lg.jp/loca/location/006/p114339.html",
+  "series": [
+   "trx-funabashi-keibajo-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "船橋市「著作権・リンク・免責事項」：許可なく無断で複製・転用を禁止 → 事実（住所）のみ。robots.txt で許可（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.ichinomiya.aichi.jp/shisetsu/kouen/1017179/1017417/1009340.html",
+  "series": [
+   "yuyu-marche-ichinomiya-riverside-ono-gokurakuji"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "一宮市「このサイトについて」に取得を禁じる記載なし。robots.txt で許可（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.kyoto.lg.jp/kensetu/page/0000082743.html",
+  "series": [
+   "fmj-okazaki-park",
+   "heian-rakuichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "京都市「著作権・リンク等」：著作権は京都市に帰属 → 事実（住所）のみ。robots.txt なし（404）（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://parksgreenery.city.osaka.lg.jp/article/expo_park1/",
+  "series": [
+   "osaka-garagesale-nishi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "利用規約のページは見当たらず。robots.txt なし（404）（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.osakacommunity.jp/branches/hirano/access/",
+  "series": [
+   "osaka-garagesale-hirano"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "利用規約のページなし（プライバシーポリシーのみ）。robots.txt で許可（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://parksgreenery.city.osaka.lg.jp/article/parks-ogimachi/",
+  "series": [
+   "osaka-garagesale-kita"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "利用規約のページは見当たらず。robots.txt なし（404）（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.himeji.lg.jp/kanko/0000005715.html",
+  "series": [
+   "himeji-tegarayama-rakuichi-rakuza"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "姫路市「著作権・リンク・免責事項」：無断で二次利用（複製・転載・転用・販売など）を固く禁じる → 事実（住所）のみ。robots.txt で許可（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.takaoka.toyama.jp/soshiki/toshikeikakuka/2/3/1/1/2515.html",
+  "series": [
+   "tsuginote-takaoka"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "利用規約のページは見当たらず。robots.txt なし（404）（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.edogawa.tokyo.jp/e036/kuseijoho/gaiyo/shisetsuguide/bunya/kuyakusho/c_toubu/guide.html",
+  "series": [
+   "edogawa-recycle-world-in-tobu-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "江戸川区の公式ページ。robots.txt で許可（2026-10-21 確認）。事実（所在地）のみ使用"
+  }
+ },
+ {
+  "url": "https://www.pref.saitama.lg.jp/shisetsu/koen/024.html",
+  "series": [
+   "fmpn-kawagoe-suijo-park",
+   "rbf-kawagoe-suijo-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "埼玉県の公式ページ。robots.txt で許可（2026-10-21 確認）。事実（所在地）のみ使用"
+  }
+ },
+ {
+  "url": "https://fkmachi.city.fukuoka.lg.jp/facilities/detail/787133e2-2332-4c8b-9cd8-056039bdabed",
+  "series": [
+   "cultune-fukuoka-maizuru-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "福岡市バリアフリーマップ（福岡市福祉局）。robots.txt で許可（2026-10-21 確認）。事実（住所）のみ使用"
+  }
+ },
+ {
+  "url": "https://www.city.tokai.aichi.jp/shisetsu/1005655/1005664/1003654.html",
+  "series": [
+   "yuyu-marche-motohama-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "東海市の公式ページ。robots.txt で許可（2026-10-21 確認）。事実（所在地）のみ使用"
+  }
+ },
+ {
+  "url": "https://www.city.sayama.saitama.jp/shisei/shisetsu/doubutsuen/cikozankoen/index.html",
+  "series": [
+   "rbf-chikozan-park-festival"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "狭山市の公式ページ。robots.txt で許可（2026-10-21 確認）。事実（所在地）のみ使用"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/yodogawa/page/0000435972.html",
+  "series": [
+   "osaka-garagesale-yodogawa"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "大阪市淀川区の公式ページ（土のうステーションの設置公園の一覧）。robots.txt 404（許可）（2026-10-21 確認）。事実（住所）のみ使用"
+  }
+ },
+ {
+  "url": "https://www.city.daito.lg.jp/site/iju/47784.html",
+  "series": [
+   "daito-shimin-matsuri-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "大東市の公式ページ（移住サイト「大東市には152か所の公園があります」）。robots.txt で許可（2026-10-21 確認）。事実（所在地）のみ使用"
+  }
+ },
+ {
+  "url": "https://www.city.kawanishi.hyogo.jp/shisetsu/1002994/1002995/1007387.html",
+  "series": [
+   "kawanishi-toshi-ryokkasai-green-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "川西市の公式ページ。robots.txt で許可（2026-10-21 確認）。事実（所在地）のみ使用"
+  }
+ },
+ {
+  "url": "https://www.tokugawaen.aichi.jp/transportation-guide/index.html",
+  "series": [
+   "tokugawaen-kuromon-tedukuri-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "徳川園の公式サイト（指定管理者：徳川の杜グループ）。利用規約のページなし、robots.txt は 404（許可）（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.saga-ecoplaza.jp/about/access",
+  "series": [
+   "saga-eco-plaza-eco-market"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "佐賀市エコプラザの公式サイト。利用規約のページなし、robots.txt は 404（許可）（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.shunan.lg.jp/soshiki/48/98277.html",
+  "series": [
+   "shunan-kodomo-yume-matsuri-kids-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "周南市の公式ページ。robots.txt で許可（2026-10-21 確認）。事実（所在地）のみ使用"
+  }
+ },
+ {
+  "url": "https://sundome.sankan.jp/access-map/",
+  "series": [
+   "creatorsland-2026-sandome-fukui"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "サンドーム福井の公式サイト（指定管理者：一般財団法人福井県産業会館）。robots.txt で許可。/terms/（ご利用環境条件）に取得・転載の禁止の記載なし（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.union.tokyo23-seisou.lg.jp/kojo/tamagawa/index.html",
+  "series": [
+   "ota-tamagawa-eco-fair-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "東京二十三区清掃一部事務組合（工場の設置者）。「このホームページについて」に無断複製・転用の禁止（私的使用・引用を除く）→ 事実（住所）だけ。robots.txt 許可（2026-10-21 確認）。同じページの下部に「東京都大田区下丸子二丁目33番1号」の表記もある"
+  }
+ },
+ {
+  "url": "https://www.tokyocitykeiba.com/race/wp-content/uploads/sites/3/2026/09/gaitei_r08_10-1.pdf",
+  "series": [
+   "trx-oi-keibajo-tokyo-city-flea"
+  ],
+  "terms": {
+   "ok": null,
+   "checkedAt": "2026-10-21",
+   "note": "競馬場の施行者（特別区競馬組合）の公告 PDF（pdftotext で本文化）。robots.txt 許可。東京シティ競馬のサイトは外部クラウドの障害で 503 のため、規約のページは未確認（要確認）。品川区の公式ページ（https://www.city.shinagawa.tokyo.jp/kurashi/community/1008160/1008164.html、pages/v026-shinagawa.txt）にも「会場 大井競馬場第一駐車場 （勝島2-1-2）」とあり一致（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.kyoto-ga.jp/umekouji/index.html",
+  "series": [
+   "umekoji-park-tedukuri-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "公園の管理者（京都市都市緑化協会）のページ。利用規約のページなし。robots.txt は 404（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.tsurumi-ryokuchi.jp/facility/hanamizuki.html",
+  "series": [
+   "furimatairiku-hanahaku-tsurumi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "公園の指定管理者のページ（ハナミズキホール（水の館ホール）。同じページに「ハナミズキ（水の館）ホール附属展示場」）。公式の所在地に番地はない。サイト運営方針に無断での複製・転送などの禁止 → 事実（住所）だけ。robots.txt 許可（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.ikea.com/jp/ja/stores/tokyo-bay/",
+  "series": [
+   "rbf-ikea-tokyo-bay-loppis"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "会場（店舗）の公式ページ。利用規約の一覧は取引・サービスの規約で、サイトの取得を禁じる記載は見当たらない（個別規約の全文は未確認）。robots.txt 許可（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/shimin/page/0000016604.html",
+  "series": [
+   "osaka-garagesale-konohana"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "大阪市の公式ページ。「著作権・免責」に、出典を記載すれば複製・翻案など自由に利用できる（商用可）とある → 出典（大阪市ホームページ）を記載。robots.txt は 404（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/sumiyoshi/page/0000158918.html",
+  "series": [
+   "osaka-garagesale-sumiyoshi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "大阪市の公式ページ。「著作権・免責」に、出典を記載すれば複製・翻案など自由に利用できる（商用可）とある → 出典（大阪市ホームページ）を記載。robots.txt は 404（2026-10-21 確認）（会場は区役所の敷地内の屋外。住所は区役所の所在地）"
+  }
+ },
+ {
+  "url": "https://baytower.jp/contact/",
+  "series": [
+   "osaka-garagesale-minato"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "施設の公式サイト。住所は同じ建物内の「大阪ベイタワーマネジメントオフィス」のもの（-700号は事務所の部屋番号とみられる。建物の所在地としての記載は見つからない＝要確認）。利用規約のページなし（プライバシーポリシーのみ）。robots.txt 許可（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.kashiwara.lg.jp/docs/2026062300122/file_contents/file_20267105131019_1.pdf",
+  "series": [
+   "kashiwara-shimin-festival-flea"
+  ],
+  "terms": {
+   "ok": null,
+   "checkedAt": "2026-10-21",
+   "note": "柏原市の公式 PDF（包括指定管理のサウンディング調査の実施要領。所在地は大和川河川敷緑地公園・高井田河川敷運動広場・河川敷駐車場・庁舎前駐車場の4施設をまとめた記載。pdftotext で本文化）。robots.txt 許可。市の「著作権」ページは 408 で取得できず、規約は未確認（要確認）"
+  }
+ },
+ {
+  "url": "https://www.city.kitakyushu.lg.jp/contents/924_00902.html",
+  "series": [
+   "kokura-de-flima"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "北九州市の勝山公園のページ（公式の所在地は町名まで。番地なし）。「リンク・著作権」に無断複製・転用の禁止（私的使用・引用を除く）→ 事実（住所）だけ。robots.txt 許可（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.city.kochi.kochi.jp/soshiki/128/barrierfree-tanoshimu.html",
+  "series": [
+   "kochi-chuo-park-tohoku-support-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "高知市（商業振興課）のバリアフリーマップのページ。免責事項のページに取得を禁じる記載なし。robots.txt は 404（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.aeonmall.com/facility/detail/1439/",
+  "series": [
+   "fmpn-hanyu-aeon-noniwa"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "イオンモール株式会社の公式サイト。免責事項（/escape/）に著作権は同社に帰属・無断転用・複製禁止とある → 事実（住所）だけ使用。robots.txt で許可（2026-10-21）。"
+  }
+ },
+ {
+  "url": "https://www.city.katsushika.lg.jp/planning/1003408/1003556.html",
+  "series": [
+   "fmpn-kameari-lilio-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "葛飾区公式サイト。robots.txt で許可（2026-10-21 確認。1回目は ECONNRESET、再試行で取得）。"
+  }
+ },
+ {
+  "url": "https://www.city.akishima.lg.jp/kurashi/gomi/1001623/1001628.html",
+  "series": [
+   "akishima-recycle-center-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "昭島市公式サイト（環境コミュニケーションセンターの施設ページ）。robots.txt で許可（2026-10-21 確認）。"
+  }
+ },
+ {
+  "url": "https://ikesunpark.jp/",
+  "series": [
+   "trx-ike-sunpark-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "指定管理者（日比谷アメニス・NTTアーバンバリューサポート共同事業体）の公園サイト。利用規約のページは見当たらず、robots.txt で許可（2026-10-21 確認）。"
+  }
+ },
+ {
+  "url": "https://www.city.inazawa.aichi.jp/0000002801.html",
+  "series": [
+   "yuyu-marche-inazawa-kinro-fukushi-kaikan"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "稲沢市公式サイト。robots.txt なし（404）で許可扱い（2026-10-21 確認）。"
+  }
+ },
+ {
+  "url": "https://agritown.co.jp/",
+  "series": [
+   "yuyu-marche-ja-genki-no-sato"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "利用規約のページは見当たらず（プライバシーポリシーのみ）、robots.txt で許可（2026-10-21 確認）。"
+  }
+ },
+ {
+  "url": "https://harborland.co.jp/access/",
+  "series": [
+   "jfma-kobe-harborland-seaside-market"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "神戸ハーバーランド公式サイト。利用規約のページは見当たらず（個人情報保護方針のみ）、robots.txt で許可（2026-10-21 確認）。"
+  }
+ },
+ {
+  "url": "https://tokyo-romantic.com/access/",
+  "series": [
+   "tokyo-romantic-shibuya"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "主催者（東京浪漫）の公式サイト。利用規約のページは見当たらず、robots.txt で許可（2026-10-21 確認）。"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/kankyo/page/0000009981.html",
+  "series": [
+   "osaka-garagesale-higashiyodogawa"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "大阪市公式サイト（環境事業センターの一覧）。robots.txt なし（404）で許可扱い（2026-10-21。最初の取得は 408 で失敗、再試行で取得）。"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/taisho/page/0000077091.html",
+  "series": [
+   "osaka-garagesale-taisho"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "大阪市大正区の公式ページ。robots.txt なし（404）で許可扱い（2026-10-21 確認）。"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/shimin/page/0000016622.html",
+  "series": [
+   "osaka-garagesale-nishiyodogawa"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "大阪市公式サイト。robots.txt なし（404）で許可扱い（2026-10-21 確認）。"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/higashisumiyoshi/page/0000415142.html",
+  "series": [
+   "osaka-garagesale-higashisumiyoshi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "大阪市東住吉区の公式ページ。robots.txt なし（404）で許可扱い（2026-10-21 確認）。"
+  }
+ },
+ {
+  "url": "https://www.city.kitakyushu.lg.jp/contents/v059_00008.html",
+  "series": [
+   "mitsubachi-flima"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "北九州市公式サイト。robots.txt で許可（2026-10-21 確認）。"
+  }
+ },
+ {
+  "url": "https://www.city.ube.yamaguchi.jp/shisei/kouhou/kishahappyou/1008059/1026530/1028655.html",
+  "series": [
+   "ube-city-flea-mucc"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-21",
+   "note": "宇部市公式サイト。robots.txt で許可（2026-10-21 確認）。"
+  }
  }
 ]
