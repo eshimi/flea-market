@@ -122,7 +122,7 @@ export function spotPage(sp, ctx, lang) {
   const quickRows = [
     q(t.next, nxt ? `<b>${esc(dlabel(nxt.date, lang, { year: true }))}</b>${nxt.series.organizer.label ? (nxt.note ? ` · ${esc(nxt.note)}` : '') : ` · ${esc((lang === 'en' && orgEn(nxt.series.organizer.name)) || nxt.series.organizer.name)}`}` : `<span class="tbd">${esc(t.tbcNext)}</span>`),
     q(t.address, addr || val('address') + (v.address && v.addressFrom === 'search' ? `<small class="addr-src">${esc(pp.addrSearched)}</small>` : '')),
-    q(t.access, val('access')),
+    q(t.access, val('access') + (v.access && v.accessFrom === 'search' ? `<small class="addr-src">${esc(pp.accessSearched)}</small>` : '')),
   ].join('');
   const side = `<aside class="ev-side" aria-label="${esc(pp.secMap)}">${mapCard}${wxBox}${navCard}</aside>`;
   const body = `<div class="in page">${breadcrumb([{ href: '/spot/', label: t.crumb }, { label: spotL(v, 'name', lang) }], lang)}
@@ -141,7 +141,7 @@ ${pollBlock(v, lang)}
 <dl class="facts">
 ${row(t.summary, val('summary'))}
 ${row(t.address, addr || val('address') + (v.address && v.addressFrom === 'search' ? `<small class="addr-src">${esc(pp.addrSearched)}</small>` : ''))}
-${row(t.access, val('access'))}
+${row(t.access, val('access') + (v.access && v.accessFrom === 'search' ? `<small class="addr-src">${esc(pp.accessSearched)}</small>` : ''))}
 ${row(t.place, val('place'))}
 ${row(t.rules, val('rules'))}
 </dl>
