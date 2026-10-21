@@ -192,10 +192,12 @@ export function md(s) {
   return `${+m}/${+d}`;
 }
 
+// 開催回の状態の札。「公式で確認」はふつうの状態なので札を出さない（ユーザーの指示 2026-10-21）。
+// 予定（きまりから算出）・中止・延期・要確認と、過去の記録の札は出す
 export function statusTag(o, lang = 'en') {
-  const when = o.status === 'confirmed' ? `${md(o.checkedAt)} ` : '';
   const past = o.past && o.status === 'confirmed';
-  return `<span class="tag ${STATUS_CLASS[o.status]}" title="${lang === 'ja' ? '最終確認' : 'Last checked'}: ${esc(o.checkedAt)}">${esc(past ? S[lang].pastConfirmed : when + S[lang].status[o.status])}</span>`;
+  if (o.status === 'confirmed' && !past) return '';
+  return `<span class="tag ${STATUS_CLASS[o.status]}" title="${lang === 'ja' ? '最終確認' : 'Last checked'}: ${esc(o.checkedAt)}">${esc(past ? S[lang].pastConfirmed : S[lang].status[o.status])}</span>`;
 }
 
 export function kindTags(kinds, lang = 'en') {
