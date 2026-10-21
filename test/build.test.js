@@ -336,8 +336,13 @@ test('地図・経路のリンクと当日の天気（気象庁）', async () =>
   assert.match(ja('takahata-fudoson-gozareichi'), /入場料<\/dt><dd><span class="est"[^>]*>目安<\/span> 多くのフリーマーケット・市は入場無料です/);
   assert.match(ja('shibuya-recycle-bazaar'), /所在地<\/dt><dd><span class="est"[^>]*>目安<\/span> 東京都渋谷区（番地は要確認）/);
   // 公式に住所がなく、会場名から地図で調べた位置（目安）があるときは、町・丁目までと、緯度経度で開く地図・経路
-  assert.match(ja('edogawa-funabori-matsuri-2026'), /所在地<\/dt><dd><span class="est"[^>]*>目安<\/span> 東京都江戸川区船堀一丁目付近（会場名から地図で調べた位置。番地は要確認）/);
-  assert.match(ja('edogawa-funabori-matsuri-2026'), /maps\/dir\/\?api=1&amp;destination=35\.\d+%2C139\.\d+/);
+  assert.match(ja('fuchu-oshitate-park-flea'), /所在地<\/dt><dd><span class="est"[^>]*>目安<\/span> 東京都府中市押立町一丁目付近（会場名から地図で調べた位置。番地は要確認）/);
+  assert.match(ja('fuchu-oshitate-park-flea'), /maps\/dir\/\?api=1&amp;destination=35\.\d+%2C139\.\d+/);
+  // 会場名から調べた住所：住所で開き、公式の記載ではないと添える（町までの住所は、調べた位置で開く）
+  assert.match(ja('edogawa-funabori-matsuri-2026'), /所在地<\/dt><dd>東京都江戸川区船堀1-3-1<small class="addr-src">会場名から調べた住所（公式ページの記載ではありません）<\/small>/);
+  assert.match(ja('edogawa-funabori-matsuri-2026'), /destination=%E6%9D%B1%E4%BA%AC%E9%83%BD/);
+  assert.ok(ja('edogawa-funabori-matsuri-2026').includes('会場名から調べた住所で求めた目安です'));
+  assert.match(ja('kioroshi-ekiminami-kotto-ichi'), /destination=35\.\d+%2C140\.\d+/);
   assert.match(ja('setagaya-funabashi-nomi-no-ichi-2026-autumn'), /アクセス<\/dt><dd><span class="est"[^>]*>目安<\/span> 千歳船橋駅の駅前（会場名から/);
   assert.match(pages.find((p) => p.path === '/e/setagaya-funabashi-nomi-no-ichi-2026-autumn/').body, /In front of Chitose-Funabashi Station \(from the venue name/);
   assert.ok(!ja('oedo-antique-market-tokyo-international-forum').includes('多くのフリーマーケット・市は入場無料'), '公式の入場料があるものには、目安を出さない');
@@ -553,9 +558,9 @@ test('スポットの右の列：地図・天気・アンケート。画像の�
   assert.ok(pg_.body.includes('class="ev-card poll"') && pg_.body.includes('data-choice="want"') && !pg_.body.includes('data-choice="bad"'));
   assert.ok(pg_.scripts.includes('/vote.js'));
   // 住所のない会場は、押すと開く地図
-  // 公式に住所のない会場も、会場名から地図で調べた位置（目安）の地図画像と、緯度経度の経路
+  // 公式に住所のない会場も、会場名から調べた住所の地図画像と経路（公式の記載ではないと添える）
   const oi = pages.find((p) => p.path === '/spot/oi-racecourse/').body;
-  assert.ok(oi.includes('class="ev-mapimg"') && /destination=35\.\d+%2C139\.\d+/.test(oi));
+  assert.ok(oi.includes('class="ev-mapimg"') && oi.includes('class="addr-src"') && /destination=%E6%9D%B1%E4%BA%AC%E9%83%BD/.test(oi));
   const { SpotVotes, handleVotes, resetIdsCache, CHOICES } = await import('../src/votes.js');
   assert.ok(!CHOICES.includes('bad'));
   const mem = new Map();

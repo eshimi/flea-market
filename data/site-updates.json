@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-10-21",
+    "ja": "公式に住所がない会場のうち24か所に、会場名から調べた住所を入れました（「公式ページの記載ではありません」と表示）。地図と経路案内も、その住所で開きます。",
+    "en": "24 venues with no address on the official page now show an address looked up from the venue name (marked as not from the official page); maps and directions use it."
+  },
+  {
+    "date": "2026-10-21",
     "ja": "公式に住所がない会場も、会場名から地図で調べた位置（目安）で、地図と経路案内を出すようにしました（29か所）。",
     "en": "Venues with no address on the official page now show a map and directions using a location found from the venue name (an estimate; 29 places).",
     "link": "/spot/nakano-central-park/"

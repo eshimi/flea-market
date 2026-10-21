@@ -20,13 +20,14 @@ export function mapQuery(s) {
 }
 // geo：公式に住所がないとき、会場名から地図で調べた位置（目安。data/geo.json の precision: 'name'）。あれば緯度経度で開く
 export const mapUrls = (s, lang, geo = null) => {
-  const pin = !s.venue.address && geo?.lat != null && geo?.lon != null;
+  const pin = geo?.precision === 'name' && geo.lat != null && geo.lon != null;
   const { q, exact } = pin ? { q: `${geo.lat},${geo.lon}`, exact: false } : mapQuery(s);
   const e = encodeURIComponent(q);
   const hl = lang === 'ja' ? 'ja' : 'en';
   return {
     exact,
     pin,
+    searched: !pin && s.venue.address && s.venue.addressFrom === 'search',
     open: `https://www.google.com/maps/search/?api=1&query=${e}&hl=${hl}`,
     route: `https://www.google.com/maps/dir/?api=1&destination=${e}&travelmode=transit&hl=${hl}`,
   };

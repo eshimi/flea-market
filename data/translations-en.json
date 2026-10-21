@@ -180,7 +180,8 @@
    "rain": "Partly cancelled in rain",
    "fee": "1,000 yen (collected in cash on the day)",
    "apply": "Application form (application period: Sep 1 – Sep 16, 2026)",
-   "notes": "About 20 stalls recruited"
+   "notes": "About 20 stalls recruited",
+   "address": "1-3-1 Funabori, Edogawa-ku, Tokyo"
   },
   "shibuya-recycle-bazaar": {
    "name": "Shibuya Ward Recycle Bazaar",
@@ -204,7 +205,8 @@
    "venue": "Hanakawado Park",
    "rule": "Dates announced by Taito Ward (Sep 2026 – Mar 2027)",
    "rain": "Cancelled in rain, or when the organizing group decides on its own",
-   "apply": "Differs by organizing group (for stalls and inquiries, contact each group; the Taito Ward page links to each group’s website)"
+   "apply": "Differs by organizing group (for stalls and inquiries, contact each group; the Taito Ward page links to each group’s website)",
+   "address": "1-14-15 Hanakawado, Taito-ku, Tokyo"
   },
   "arakawa-park-flea-2027-03": {
    "name": "Arakawa Flea Market (Arakawa Park, fiscal 2026, 2nd)",
@@ -247,7 +249,8 @@
    "rain": "Cancelled in rain (no postponement). Stalls have no roof",
    "fee": "500 yen per space (2 m square)",
    "apply": "Write your address, name, phone number and the items you will sell on a postcard and send it to the Funabashi Machizukuri Center. A lottery is held if there are many applicants",
-   "notes": "Application deadline: Oct 2, 2026 (must arrive by then). Residents of Funabashi and Chitosedai are given priority. Food and drink are not allowed"
+   "notes": "Application deadline: Oct 2, 2026 (must arrive by then). Residents of Funabashi and Chitosedai are given priority. Food and drink are not allowed",
+   "address": "1-1-5 Funabashi, Setagaya-ku, Tokyo"
   },
   "frma-akatsuka-park-flea": {
    "name": "Takashimadaira Akatsuka Park Flea Market (Recycle Suishin Tomo-no-Kai)",
@@ -373,7 +376,8 @@
   "mottainai-flea-nakano-central-park": {
    "name": "MOTTAINAI Flea Market (Nakano Central Park)",
    "venue": "Nakano Central Park",
-   "rule": "Dates in the organizer’s event calendar"
+   "rule": "Dates in the organizer’s event calendar",
+   "address": "4-10-2 Nakano, Nakano-ku, Tokyo"
   },
   "mottainai-flea-kichijoji-parco": {
    "name": "MOTTAINAI Flea Market (Kichijoji Parco rooftop)",
@@ -421,7 +425,8 @@
   "fmpn-koshigaya-laketown-plaza": {
    "name": "Koshigaya Lake Town Station Plaza Flea Market (Flea Market Promotion Network)",
    "venue": "Koshigaya Lake Town Station plaza",
-   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)",
+   "address": "8-chome Lake Town, Koshigaya-shi, Saitama"
   },
   "fmpn-hanyu-aeon-noniwa": {
    "name": "AEON Mall Hanyu, nONIWA Lawn Plaza Flea Market (Flea Market Promotion Network)",
@@ -438,7 +443,8 @@
   "fmpn-kawaguchi-jissoji-omatsuri": {
    "name": "Kawaguchi Jissoji Festival Flea Market (Flea Market Promotion Network)",
    "venue": "Kawaguchi Jissoji Festival",
-   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)",
+   "address": "2-14-11 Ryoke, Kawaguchi-shi, Saitama"
   },
   "fmpn-soka-acos-plaza": {
    "name": "Soka Station Acos Plaza Flea Market (Flea Market Promotion Network)",
@@ -461,7 +467,8 @@
   "fmpn-nagareyama-otakanomori": {
    "name": "Nagareyama-Otakanomori Station Plaza Flea Market (Flea Market Promotion Network)",
    "venue": "Nagareyama-Otakanomori Station plaza",
-   "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+   "rule": "Dates published by the organizer (Flea Market Promotion Network)",
+   "address": "1-1-1 Otakanomori-higashi, Nagareyama-shi, Chiba"
   },
   "fmpn-takashimadaira-danchi-park": {
    "name": "Takashimadaira Danchi Fountain Park Flea Market (Flea Market Promotion Network)",
@@ -534,7 +541,8 @@
    "time": "17:00–20:00 (the end time may change depending on weather and sales)",
    "rule": "Oct 23 (Fri), 2026",
    "rain": "Cancelled in rain",
-   "notes": "To run a stall you need experience such as past participation in Guruguru Haku. Food trucks have no conditions (recruitment for the October event has closed)"
+   "notes": "To run a stall you need experience such as past participation in Guruguru Haku. Food trucks have no conditions (recruitment for the October event has closed)",
+   "address": "3-1-1 Ayase, Adachi-ku, Tokyo"
   },
   "fuchu-oshitate-park-flea": {
    "name": "Oshitate Park Flea Market (Fuchu City)",
@@ -675,7 +683,8 @@
    "rain": "Whether the event is held or canceled is decided differently at each venue, but it is posted on the website at 6:00 on the day",
    "fee": "Car stall: sideways (5m × 5m, car included) 2,500 yen; lengthwise (2.5m × 7m, car included) 2,000 yen",
    "apply": "Apply from the \"stall application\" page of the official website",
-   "notes": "Stall positions cannot be specified. Cancellation fees apply (see the stall rules page)"
+   "notes": "Stall positions cannot be specified. Cancellation fees apply (see the stall rules page)",
+   "address": "132 Sobuecho Sobue Nabeshima, Inazawa-shi, Aichi"
   },
   "hyakumanben-tedukuri-ichi": {
    "name": "Hyakumanben-san Handmade Market (Kyoto)",
@@ -683,7 +692,8 @@
    "time": "8:00 a.m.–4:00 p.m. (held in rain)",
    "rain": "Held in rain",
    "access": "Keihan Railway Kyoto Line, get off at Demachiyanagi Station, 10-minute walk",
-   "apply": "Application form on the official website (application guidelines available)"
+   "apply": "Application form on the official website (application guidelines available)",
+   "address": "103 Tanaka Monzencho, Sakyo-ku, Kyoto-shi, Kyoto"
   },
   "umekoji-park-tedukuri-ichi": {
    "name": "Umekoji Park Handmade Market (Kyoto)",
@@ -981,7 +991,8 @@
    "name": "Sunshine City Big Flea Market (Ikebukuro)",
    "venue": "Sunshine City, Sunshine Plaza",
    "admission": "Free admission",
-   "rain": "Cancelled in case of rain"
+   "rain": "Cancelled in case of rain",
+   "address": "3-1 Higashi-Ikebukuro, Toshima-ku, Tokyo"
   },
   "komazawa-park-flea-tokyo-park": {
    "name": "Komazawa Olympic Park Flea Market (schedule from the Tokyo Metropolitan Park Association)",
@@ -1333,7 +1344,8 @@
    "name": "20th Higashinari Ward Garage Sale",
    "venue": "Higashinari Ward Center, 2nd-floor Main Hall",
    "time": "11:00–15:00",
-   "rain": "Held even in rain"
+   "rain": "Held even in rain",
+   "address": "3-2-17 Oimazato-nishi, Higashinari-ku, Osaka-shi, Osaka"
   },
   "osaka-garagesale-sumiyoshi": {
    "name": "Sumiyoshi Garage Sale",
@@ -1355,13 +1367,15 @@
    "name": "Reiwa 8 Miyakojima Ward RRR Festival",
    "venue": "Miyakojima Central Park",
    "time": "11:00–14:30",
-   "rain": "Cancelled in rain"
+   "rain": "Cancelled in rain",
+   "address": "5-15 Nakanocho, Miyakojima-ku, Osaka-shi, Osaka"
   },
   "osaka-garagesale-nishinari": {
    "name": "Nishinari Ward Garage Sale",
    "venue": "Tamade-nishi Park",
    "time": "10:30–14:30",
-   "rain": "Cancelled in rain"
+   "rain": "Cancelled in rain",
+   "address": "1-9 Tamadenishi, Nishinari-ku, Osaka-shi, Osaka"
   },
   "osaka-garagesale-minato": {
    "name": "Waste Reduction ECO Festa: Minato Ward Garage Sale",
@@ -1632,12 +1646,14 @@
   "kokura-car-boot": {
    "name": "Kokura Car Boot (along the Murasaki River at Riverwalk)",
    "venue": "Along the Murasaki River at Riverwalk",
-   "time": "9:00–15:00"
+   "time": "9:00–15:00",
+   "address": "1-1-1 Muromachi, Kokurakita-ku, Kitakyushu-shi, Fukuoka"
   },
   "mojiko-car-boot": {
    "name": "Mojiko Car Boot (seaside of Premium Hotel Mojiko)",
    "venue": "Seaside of Premium Hotel Mojiko",
-   "time": "9:00–15:00"
+   "time": "9:00–15:00",
+   "address": "9-11 Minatomachi, Moji-ku, Kitakyushu-shi, Fukuoka"
   },
   "kokura-ogane-flea": {
    "name": "Kokura Ogane Flea Market (Ogane Market arcade)",
@@ -1659,7 +1675,8 @@
   "muromachi-rakuichi-flea": {
    "name": "Muromachi Rakuichi Flea Market (around Tokiwabashi Muromachi Plaza)",
    "venue": "Around Tokiwabashi Muromachi Plaza",
-   "time": "11:00–16:00"
+   "time": "11:00–16:00",
+   "address": "2-chome Muromachi, Kokurakita-ku, Kitakyushu-shi, Fukuoka"
   },
   "matsuyama-rikkuru-kurukuru-market": {
    "name": "Rikkuru Kurukuru Market (Matsuyama City)",
@@ -1732,7 +1749,8 @@
    "name": "Kinoshita Station South Antique Market",
    "venue": "Kinoshita South Exit Shopping Street",
    "time": "About 7:00 a.m.–2:00 p.m.",
-   "rain": "May be changed or cancelled (per Inzai City)"
+   "rain": "May be changed or cancelled (per Inzai City)",
+   "address": "Kioroshi, Inzai-shi, Chiba"
   },
   "kiryu-tenmangu-kottou": {
    "name": "Kiryu Tenmangu Folk Crafts Antique Market",
@@ -1746,7 +1764,8 @@
    "venue": "Murakami City Oomachi-dori (Echigo Murakami Machiya-dori)",
    "time": "From 8:00",
    "rain": "Held in light rain (may be cancelled depending on infectious disease and other circumstances)",
-   "access": "About 20 min. walk from Murakami Station on the JR Uetsu Main Line / about 5 min. by car from Murakami-Seze Onsen IC on the Hokkaido-Tohoku Expressway"
+   "access": "About 20 min. walk from Murakami Station on the JR Uetsu Main Line / about 5 min. by car from Murakami-Seze Onsen IC on the Hokkaido-Tohoku Expressway",
+   "address": "Omachi, Murakami-shi, Niigata"
   },
   "nagano-zenkoji-binzuru-ichi": {
    "name": "Zenkoji Binzuru Market",
@@ -1830,7 +1849,8 @@
    "venue": "Sakashita-machi-dori (from the Daibutsu-mae intersection to the Sakashita-machi intersection)",
    "time": "5:30 a.m.–8:00 a.m.",
    "fee": "12,000 yen per space (14 sessions per year). For one-off stalls, 2,000 yen per space per session (electricity charged separately)",
-   "apply": "Submit the application form to the Takaoka Morning Market Executive Committee Secretariat (accepted any time during the period)"
+   "apply": "Submit the application form to the Takaoka Morning Market Executive Committee Secretariat (accepted any time during the period)",
+   "address": "坂下町, Takaoka-shi, Toyama"
   },
   "tsuginote-takaoka": {
    "name": "Sanchi no Kangyo Hakurankai Tsuginote (Takaoka)",
@@ -2278,7 +2298,8 @@
    "place": "Sunshine Plaza",
    "access": "About 8 minutes on foot from Exit 35 of Ikebukuro Station (JR, Tokyo Metro, Seibu and Tobu lines); about 3 minutes on foot through the underground passage from Exits 6 and 7 of Higashi-Ikebukuro Station (Tokyo Metro Yurakucho Line) (both to the Sunshine City entrance)",
    "summary": "A commercial complex in Ikebukuro. The “Sunshine City Big Flea Market” (organizer: Otakara Net) is held in Sunshine Plaza.",
-   "rules": "The 11/3/2026 event is cancelled in case of rain (per the official event page)."
+   "rules": "The 11/3/2026 event is cancelled in case of rain (per the official event page).",
+   "address": "3-1 Higashi-Ikebukuro, Toshima-ku, Tokyo"
   },
   "hikarigaoka-park": {
    "name": "Hikarigaoka Park",
@@ -2291,7 +2312,8 @@
   "oi-racecourse": {
    "name": "Oi Racecourse",
    "summary": "The venue of the “Tokyo City Flea Market” run by Tokyo Recycle. Its schedule page lists 21 days from 10/24 to 12/27 in 2026.",
-   "rules": "From the organizer, Tokyo Recycle (applies to its events in general): do not push price negotiation too far. Pickpocketing and bag theft are reported as frequent at the venue, so keep valuables safe. Buying counterfeit brand goods is a crime. Except for personal commemorative photos, photography needs the organizer’s prior permission. Smoking is allowed only in designated smoking areas."
+   "rules": "From the organizer, Tokyo Recycle (applies to its events in general): do not push price negotiation too far. Pickpocketing and bag theft are reported as frequent at the venue, so keep valuables safe. Buying counterfeit brand goods is a crime. Except for personal commemorative photos, photography needs the organizer’s prior permission. Smoking is allowed only in designated smoking areas.",
+   "address": "2-1-2 Katsushima, Shinagawa-ku, Tokyo"
   },
   "koganei-park": {
    "name": "Koganei Park",
@@ -2415,7 +2437,8 @@
    "summary": "A park in Shinjuku City, with an area of 88,363.15 square meters."
   },
   "nakano-central-park": {
-   "name": "Nakano Central Park"
+   "name": "Nakano Central Park",
+   "address": "4-10-2 Nakano, Nakano-ku, Tokyo"
   },
   "kichijoji-parco": {
    "name": "Kichijoji Parco",
@@ -2473,7 +2496,8 @@
    "name": "Hanahaku Memorial Park Tsurumi Ryokuchi",
    "place": "Outdoor annex exhibition space of Hanamizuki Hall (Mizu no Kan Hall)",
    "access": "Osaka Metro Tsurumi-ryokuchi Station",
-   "summary": "An urban park in Tsurumi Ward, Osaka City. According to the official site, Hanamizuki Hall (Mizu no Kan Hall) can be used together with its outdoor annex exhibition space."
+   "summary": "An urban park in Tsurumi Ward, Osaka City. According to the official site, Hanamizuki Hall (Mizu no Kan Hall) can be used together with its outdoor annex exhibition space.",
+   "address": "2-163 Ryokuchikoen, Tsurumi-ku, Osaka-shi, Osaka"
   },
   "nagai-park": {
    "name": "Nagai Park",

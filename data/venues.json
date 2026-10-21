@@ -125,7 +125,10 @@
      "6・7番出口より地下通路で 徒歩約3分"
     ]
    }
-  ]
+  ],
+  "address": "東京都豊島区東池袋3-1",
+  "addressFrom": "search",
+  "addressSeenAt": "https://co.sunshinecity.co.jp/about/outline.html"
  },
  {
   "id": "hikarigaoka-park",
@@ -229,7 +232,10 @@
    "altEn": "The grandstand and track at Oi Racecourse.",
    "note": "元画像 1600x1200 から中央を3:2に切り出し、1200x800 の webp に変換"
   },
-  "rules": "主催の東京リサイクルの案内（同団体の開催全般）：行き過ぎた値段交渉は控える。会場内でスリ・置き引きが多発しているので、貴重品の管理に注意。コピーブランド品の購入は犯罪になる。個人的な記念撮影を除き、撮影は事前に主催者の許可が必要。指定の喫煙場所以外では喫煙できない。"
+  "rules": "主催の東京リサイクルの案内（同団体の開催全般）：行き過ぎた値段交渉は控える。会場内でスリ・置き引きが多発しているので、貴重品の管理に注意。コピーブランド品の購入は犯罪になる。個人的な記念撮影を除き、撮影は事前に主催者の許可が必要。指定の喫煙場所以外では喫煙できない。",
+  "address": "東京都品川区勝島2-1-2",
+  "addressFrom": "search",
+  "addressSeenAt": "https://www.mec-h.com/town/mh-shinagawa/334"
  },
  {
   "id": "koganei-park",
@@ -1242,7 +1248,10 @@
    "altJa": "中野セントラルパークのイースト棟と、前に広がる芝生と歩道。",
    "altEn": "The East Building of Nakano Central Park with its lawn and walkway.",
    "note": "4:3を3:2に切り出し。遠景に車いすの2人が小さく写る（識別できない）"
-  }
+  },
+  "address": "東京都中野区中野4-10-2",
+  "addressFrom": "search",
+  "addressSeenAt": "https://www.gotokyo.org/jp/spot/104/index.html"
  },
  {
   "id": "kichijoji-parco",
@@ -1657,7 +1666,10 @@
      "Osaka Metro鶴見緑地駅"
     ]
    }
-  ]
+  ],
+  "address": "大阪府大阪市鶴見区緑地公園2-163",
+  "addressFrom": "search",
+  "addressSeenAt": "https://osaka-info.jp/spot/tsurumiryokuchi-expo-commemorative-park/"
  },
  {
   "id": "nagai-park",

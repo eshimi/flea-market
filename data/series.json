@@ -1135,7 +1135,10 @@
    "name": "船堀コミュニティ会館周辺（都営船堀一丁目アパート前広場）",
    "pref": "13",
    "city": "江戸川区",
-   "cityCode": "13123"
+   "cityCode": "13123",
+   "address": "東京都江戸川区船堀1-3-1",
+   "addressFrom": "search",
+   "addressSeenAt": "https://www.city.edogawa.tokyo.jp/documents/3671/9_dial.pdf"
   },
   "recurrence": {
    "type": "dates",
@@ -1305,7 +1308,10 @@
    "name": "花川戸公園",
    "pref": "13",
    "city": "台東区",
-   "cityCode": "13106"
+   "cityCode": "13106",
+   "address": "東京都台東区花川戸1-14-15",
+   "addressFrom": "search",
+   "addressSeenAt": "https://filmcommission.city.taito.lg.jp/location/hanakawado-park/"
   },
   "recurrence": {
    "type": "dates",
@@ -1574,7 +1580,10 @@
    "name": "千歳船橋駅前広場",
    "pref": "13",
    "city": "世田谷区",
-   "cityCode": "13112"
+   "cityCode": "13112",
+   "address": "東京都世田谷区船橋1-1-5",
+   "addressFrom": "search",
+   "addressSeenAt": "https://ja.wikipedia.org/wiki/千歳船橋駅"
   },
   "recurrence": {
    "type": "dates",
@@ -2384,7 +2393,10 @@
    "name": "中野セントラルパーク",
    "pref": "13",
    "city": "中野区",
-   "cityCode": "13114"
+   "cityCode": "13114",
+   "address": "東京都中野区中野4-10-2",
+   "addressFrom": "search",
+   "addressSeenAt": "https://www.gotokyo.org/jp/spot/104/index.html"
   },
   "recurrence": {
    "type": "dates",
@@ -2712,7 +2724,10 @@
   "venue": {
    "name": "越谷レイクタウン駅前広場",
    "pref": "11",
-   "city": "越谷市"
+   "city": "越谷市",
+   "address": "埼玉県越谷市レイクタウン8丁目",
+   "addressFrom": "search",
+   "addressSeenAt": "https://ja.wikipedia.org/wiki/越谷レイクタウン駅"
   },
   "recurrence": {
    "type": "dates",
@@ -2821,7 +2836,10 @@
   "venue": {
    "name": "川口実相寺おまつりフリマ",
    "pref": "11",
-   "city": "川口市"
+   "city": "川口市",
+   "address": "埼玉県川口市領家2-14-11",
+   "addressFrom": "search",
+   "addressSeenAt": "https://www.city.kawaguchi.lg.jp/material/files/group/3/24394691.pdf"
   },
   "recurrence": {
    "type": "dates",
@@ -2963,7 +2981,10 @@
   "venue": {
    "name": "流山おおたかの森駅前広場",
    "pref": "12",
-   "city": "流山市"
+   "city": "流山市",
+   "address": "千葉県流山市おおたかの森東1-1-1",
+   "addressFrom": "search",
+   "addressSeenAt": "https://ja.wikipedia.org/wiki/流山おおたかの森駅"
   },
   "recurrence": {
    "type": "dates",
@@ -3426,7 +3447,10 @@
    "name": "綾瀬駅東口駅前交通広場",
    "pref": "13",
    "city": "足立区",
-   "cityCode": "13121"
+   "cityCode": "13121",
+   "address": "東京都足立区綾瀬3-1-1",
+   "addressFrom": "search",
+   "addressSeenAt": "https://ja.wikipedia.org/wiki/綾瀬駅"
   },
   "recurrence": {
    "type": "dates",
@@ -4554,7 +4578,10 @@
   },
   "venue": {
    "name": "祖父江緑地",
-   "pref": "23"
+   "pref": "23",
+   "address": "愛知県稲沢市祖父江町祖父江鍋島132",
+   "addressFrom": "search",
+   "addressSeenAt": "https://www.aichinow.pref.aichi.jp/spots/detail/3586/"
   },
   "recurrence": {
    "type": "dates",
@@ -4614,7 +4641,10 @@
    "name": "百萬遍知恩寺境内",
    "pref": "26",
    "city": "京都市左京区",
-   "access": "京阪電車京都線「出町柳駅」下車 徒歩10分"
+   "access": "京阪電車京都線「出町柳駅」下車 徒歩10分",
+   "address": "京都府京都市左京区田中門前町103",
+   "addressFrom": "search",
+   "addressSeenAt": "https://rurubu.jp/andmore/spot/80026192"
   },
   "recurrence": {
    "type": "monthly-day",
@@ -7100,7 +7130,10 @@
    "name": "サンシャインシティ サンシャイン広場",
    "pref": "13",
    "city": "豊島区",
-   "cityCode": "13116"
+   "cityCode": "13116",
+   "address": "東京都豊島区東池袋3-1",
+   "addressFrom": "search",
+   "addressSeenAt": "https://co.sunshinecity.co.jp/about/outline.html"
   },
   "recurrence": {
    "type": "dates",
@@ -9482,7 +9515,10 @@
   "venue": {
    "name": "東成区民センター2階 大ホール",
    "pref": "27",
-   "city": "大阪市東成区"
+   "city": "大阪市東成区",
+   "address": "大阪府大阪市東成区大今里西3-2-17",
+   "addressFrom": "search",
+   "addressSeenAt": "https://www.city.osaka.lg.jp/kankyo/page/0000687754.html"
   },
   "recurrence": {
    "type": "dates",
@@ -9627,7 +9663,10 @@
   "venue": {
    "name": "都島中央公園",
    "pref": "27",
-   "city": "大阪市都島区"
+   "city": "大阪市都島区",
+   "address": "大阪府大阪市都島区中野町5-15",
+   "addressFrom": "search",
+   "addressSeenAt": "https://www.city.osaka.lg.jp/kankyo/page/0000686152.html"
   },
   "recurrence": {
    "type": "dates",
@@ -9668,7 +9707,10 @@
   "venue": {
    "name": "玉出西公園",
    "pref": "27",
-   "city": "大阪市西成区"
+   "city": "大阪市西成区",
+   "address": "大阪府大阪市西成区玉出西1-9",
+   "addressFrom": "search",
+   "addressSeenAt": "https://www.city.osaka.lg.jp/kankyo/page/0000608677.html"
   },
   "recurrence": {
    "type": "dates",
@@ -11774,7 +11816,10 @@
   "venue": {
    "name": "リバーウォーク紫川沿い",
    "pref": "40",
-   "city": "北九州市小倉北区"
+   "city": "北九州市小倉北区",
+   "address": "福岡県北九州市小倉北区室町1-1-1",
+   "addressFrom": "search",
+   "addressSeenAt": "https://www.crossroadfukuoka.jp/spot/13223"
   },
   "recurrence": {
    "type": "dates",
@@ -11817,7 +11862,10 @@
   "venue": {
    "name": "プレミアムホテル門司港海側",
    "pref": "40",
-   "city": "北九州市門司区"
+   "city": "北九州市門司区",
+   "address": "福岡県北九州市門司区港町9-11",
+   "addressFrom": "search",
+   "addressSeenAt": "https://www.jalan.net/yad328903/"
   },
   "recurrence": {
    "type": "dates",
@@ -11999,7 +12047,10 @@
   "venue": {
    "name": "常盤橋室町広場周辺",
    "pref": "40",
-   "city": "北九州市小倉北区"
+   "city": "北九州市小倉北区",
+   "address": "福岡県北九州市小倉北区室町2丁目",
+   "addressFrom": "search",
+   "addressSeenAt": "https://www.city.kitakyushu.lg.jp/kokurakita/w2100016.html"
   },
   "recurrence": {
    "type": "dates",
@@ -12484,7 +12535,10 @@
   "venue": {
    "name": "木下南口商店街",
    "pref": "12",
-   "city": "印西市"
+   "city": "印西市",
+   "address": "千葉県印西市木下",
+   "addressFrom": "search",
+   "addressSeenAt": "https://ja.wikipedia.org/wiki/木下駅"
   },
   "recurrence": {
    "type": "monthly-nth",
@@ -12588,7 +12642,10 @@
    "name": "村上市大町通り（越後村上 町屋通り）",
    "pref": "15",
    "city": "村上市",
-   "access": "JR羽越本線「村上駅」から徒歩で約20分／日本海東北自動車道「村上瀬波温泉IC」から車で約5分"
+   "access": "JR羽越本線「村上駅」から徒歩で約20分／日本海東北自動車道「村上瀬波温泉IC」から車で約5分",
+   "address": "新潟県村上市大町",
+   "addressFrom": "search",
+   "addressSeenAt": "https://www.pref.niigata.lg.jp/sec/murakami_kikaku/1356758645463.html"
   },
   "recurrence": {
    "type": "monthly-nth",
@@ -13278,7 +13335,10 @@
   "venue": {
    "name": "坂下町通り（大仏前交差点～坂下町交差点）",
    "pref": "16",
-   "city": "高岡市"
+   "city": "高岡市",
+   "address": "富山県高岡市坂下町",
+   "addressFrom": "search",
+   "addressSeenAt": "https://hamoni.jp/area/toyama/takaoka/sakashita"
   },
   "recurrence": {
    "type": "dates",
