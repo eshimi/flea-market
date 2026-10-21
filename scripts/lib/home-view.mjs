@@ -40,7 +40,8 @@ export function renderHero(lang = 'ja', photo = '/img/hero.webp') {
 ${heroPhotos().length > 1 ? `<div class="hero2-dots" role="group" aria-label="${esc(t.photoSwitch)}">${heroPhotos().map((_, i) => `<button type="button" aria-label="${i + 1}" aria-pressed="${i === 0}" data-hp="${i}"></button>`).join('')}</div>` : ''}
 <div class="hero2-in">
 <div class="hero2-copy">
-<h1 id="hero-h"><span>${esc(l1)}</span><span>${esc(l2)}</span><em>${esc(accent)}</em></h1>
+<h1 class="hero2-kicker" id="hero-h">${esc(t.h1)}</h1>
+<p class="hero2-title"><span>${esc(l1)}</span><span>${esc(l2)}</span><em>${esc(accent)}</em></p>
 <p class="hero2-sub">${esc(t.sub)}</p>
 <form class="hsearch" action="/search/" role="search"><span class="hs-ic">${icon('search', 21)}</span><input name="q" type="search" placeholder="${esc(t.placeholder)}" aria-label="${esc(t.searchLabel)}" autocomplete="off"><button type="submit">${esc(t.button)}${icon('arrow', 18)}</button></form>
 </div>

@@ -109,8 +109,9 @@ test('トップ（新デザイン）：HERO・検索・種類の入口・ヘッ�
   assert.ok(!page('/en/'), '/en/ は作らない（Worker が / へ転送する）');
   assert.equal(ja.lang, 'ja');
   assert.equal(en.lang, 'en');
-  assert.match(en.body, /<h1[^>]*><span>Find Japan’s<\/span><span>hidden market<\/span><em>treasures\.<\/em><\/h1>/);
-  assert.match(en.body, /Flea markets, antique fairs &amp; handmade markets — happening near you\./);
+  assert.match(en.body, /<h1 class="hero2-kicker" id="hero-h">Find Flea Markets in Japan<\/h1>/);
+  assert.match(en.body, /<p class="hero2-title"><span>Find Japan’s<\/span><span>hidden market<\/span><em>treasures\.<\/em><\/p>/);
+  assert.match(en.body, /Browse by date, city and market type, with links to official event information\./);
   for (const p of [ja, en]) {
     assert.match(p.body, /<form class="hsearch" action="\/search\/" role="search">[\s\S]*?<input name="q" type="search"/);
     for (const k of ['kotto', 'handmade', 'flea', 'marche']) assert.ok(p.body.includes(`href="/kind/${k}/"`), `${k}`);
@@ -639,4 +640,31 @@ test('AdSense の tag は、すべてのページの head に入る（ADSENSE_CL
     assert.ok(layout(p).includes(src), p.path);
     assert.ok(layout(p).includes(`<meta name="google-adsense-account" content="${ADSENSE_CLIENT}">`), p.path);
   }
+});
+
+test('都道府県ページの概要：掲載データの件数・毎月の市・初めての方へ。東京・大阪・京都だけ、観光の枠と公式の観光サイト', () => {
+  const real = loadData();
+  const { pages } = buildPages(real, '2026-10-21');
+  const tokyo = pages.find((p) => p.path === '/area/13/').body;
+  assert.match(tokyo, /class="pov"/);
+  assert.match(tokyo, /Flea Market JP lists \d+ markets in Tokyo/);
+  assert.ok(tokyo.includes('/blog/guide-tokyo-flea-markets-visitors/'), '東京の旅行者ガイドへのリンク');
+  assert.ok(tokyo.includes('https://www.gotokyo.org/en/index.html'));
+  assert.ok(pages.find((p) => p.path === '/ja/area/26/').body.includes('https://ja.kyoto.travel/'));
+  const saitama = pages.find((p) => p.path === '/area/11/').body;
+  assert.match(saitama, /class="pov"/);
+  assert.ok(!saitama.includes('pov-sights'), '観光の枠は東京・大阪・京都だけ');
+});
+
+test('SNS で共有したときの画像とカード（og:image・twitter:card）、Event の構造化データは言語ごとの名前と画像', () => {
+  const real = loadData();
+  const { pages } = buildPages(real, '2026-10-21');
+  const top = layout(pages.find((p) => p.path === '/'));
+  assert.ok(top.includes('<meta property="og:image" content="') && top.includes('/img/og/default.jpg"'));
+  assert.ok(top.includes('<meta name="twitter:card" content="summary_large_image">'));
+  const ev = pages.find((p) => p.path === '/e/oedo-antique-market-tokyo-international-forum/');
+  const ld = JSON.parse(/<script type="application\/ld\+json">(.*?)<\/script>/.exec(ev.head)[1]);
+  assert.equal(ld[0].name, 'Oedo Antique Market (Tokyo International Forum)');
+  assert.ok(ld[0].image?.length && ld[0].description && ld[0].location.address.addressCountry === 'JP');
+  assert.ok(ev.body.includes('"@type":"BreadcrumbList"'));
 });

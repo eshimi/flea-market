@@ -24,9 +24,10 @@
  {
   "id": "hero-3",
   "files": [
-   "static/img/hero-3.webp"
+   "static/img/hero-3.webp",
+   "static/img/og/default.jpg"
   ],
-  "use": "トップページの写真（切り替え用の3枚目。左を白に溶かすグラデーション入り）",
+  "use": "トップページの写真（切り替え用の3枚目。左を白に溶かすグラデーション入り）。SNS で共有したときの画像（1200×630）にも使用",
   "title": "運営者が AI で作成した画像（トーキョー フリーマーケット）",
   "photographer": "サイト運営者（AI で作成）",
   "source": "サイト運営者",
@@ -36,7 +37,7 @@
   "note": "サイト運営者が AI で作成。権利は運営者が確認済み。ネイティブの大きさ（1659×948）のまま、拡大・縮小せず等倍で表示。左側と下側をクリーム色に溶かすグラデーション入り",
   "checkedAt": "2026-10-20",
   "en": {
-   "use": "Top page photo (third photo in the rotation; left side faded into the background)",
+   "use": "Top page photo (third photo in the rotation; left side faded into the background); also the image shown when pages are shared on social media (1200×630)",
    "title": "Image created with AI by the site operator (Tokyo flea market)",
    "photographer": "Site operator (created with AI)",
    "source": "Site operator",

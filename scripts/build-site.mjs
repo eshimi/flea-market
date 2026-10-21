@@ -21,7 +21,7 @@ import { tipsBanner, tipsIndex } from './lib/tips-view.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { spotL, venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
-import { setFooterAreas, areaFilter, breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, statusTag } from './lib/html.mjs';
+import { setFooterAreas, areaFilter, breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, OG_DEFAULT, statusTag } from './lib/html.mjs';
 
 const LANGS_ORDER = ['en', 'ja'];
 
@@ -137,6 +137,62 @@ function calendarPage(ctx, lang) {
   return pg(lang, '/calendar/', { title: p.h1, description: p.desc, body });
 }
 
+// 都道府県ページの「この地域の概要」：掲載データの事実だけから作る（件数・種類・毎月の市・初めての方への案内）。
+// 東京・大阪・京都は、社寺の境内で開かれる市（会場名から）と、公式の観光サイトへのリンクを小さく添える
+const TOURISM = {
+  13: { en: ['GO TOKYO, the official travel guide of Tokyo', 'https://www.gotokyo.org/en/index.html'], ja: ['東京の観光公式サイト GO TOKYO', 'https://www.gotokyo.org/jp/index.html'] },
+  27: { en: ['OSAKA-INFO, Osaka official tourism guide', 'https://osaka-info.jp/en/'], ja: ['大阪観光公式ガイド OSAKA-INFO', 'https://osaka-info.jp/'] },
+  26: { en: ['Kyoto City Official Guide', 'https://kyoto.travel/en/'], ja: ['京都市公式 京都観光Navi', 'https://ja.kyoto.travel/'] },
+};
+const SACRED = /(寺|神社|天満宮|八幡宮|大社|大師|不動尊|観音|稲荷|神宮)/;
+const REGULAR = new Set(['monthly-nth', 'monthly-day', 'weekly']);
+function prefOverview(p, ctx, lang) {
+  const ja = lang === 'ja';
+  const pn = prefLabel(p, lang);
+  const ser = ctx.series.filter((s) => s.venue.pref === p);
+  if (!ser.length) return '';
+  const occ = ctx.occ.filter((o) => isActive(o) && o.series.venue.pref === p);
+  const end30 = addDays(ctx.today, 30);
+  const in30 = occ.filter((o) => o.date <= end30);
+  const days30 = new Set(in30.map((o) => o.date)).size;
+  const wk = occ.filter((o) => ctx.weekend.includes(o.date)).length;
+  const kinds = Object.keys(KINDS).map((k) => [k, ser.filter((s) => s.kinds.includes(k)).length]).filter(([, n]) => n);
+  const kindTxt = kinds.map(([k, n]) => `<li>${esc(kindName(k, lang))} <b>${n}</b></li>`).join('');
+  const regular = ser.filter((s) => REGULAR.has(s.recurrence.type)).slice(0, 6)
+    .map((s) => `<li><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a> <span>${esc(ja ? s.recurrence.text : fieldEn(s, 'rule') || recurEn(s.recurrence) || s.recurrence.text)}</span></li>`).join('');
+  const areaPost = ALL_POSTS.filter((b) => b.slug.startsWith(`area-${p}-`)).sort((x, y) => y.slug.localeCompare(x.slug))[0];
+  const visitorPost = ALL_POSTS.find((b) => b.slug === `guide-${{ 13: 'tokyo', 27: 'osaka', 26: 'kyoto' }[p] || 'x'}-flea-markets-visitors`);
+  const firstLinks = [
+    ...(visitorPost ? [[`/blog/${visitorPost.slug}/`, visitorPost[lang].title]] : []),
+    ...(areaPost ? [[`/blog/${areaPost.slug}/`, areaPost[lang].title]] : []),
+    ['/tips/before-you-go/', ja ? '出かける前に確かめたいこと' : 'Before you go'],
+    ['/tips/shopping-and-payment/', ja ? '買い物と支払いのコツ' : 'Shopping and payment'],
+    ['/tips/manners-and-photos/', ja ? '会場でのふるまい：ことばと写真' : 'Manners at the market: words and photos'],
+  ].map(([h, t]) => `<li><a href="${h}">${esc(t)}</a></li>`).join('');
+  let sights = '';
+  const tour = TOURISM[p];
+  if (tour) {
+    const seen = new Set();
+    const sacred = ser.filter((s) => SACRED.test(s.venue.name) && !seen.has(s.venue.name) && seen.add(s.venue.name)).slice(0, 5)
+      .map((s) => `<li><a href="/e/${s.id}/">${esc(venueL(s, lang))}</a></li>`).join('');
+    const [tName, tUrl] = tour[lang];
+    sights = `<div class="pov-box pov-sights"><h3>${ja ? '観光と組み合わせる' : 'Combine with sightseeing'}</h3>${sacred ? `<p>${ja ? '次の市は、寺社の境内や門前などで開かれます（会場名から）。市と一緒に、寺社そのものも訪ねられます。' : 'These markets are held at or next to temples and shrines (by venue name), so you can visit the temple or shrine on the same trip.'}</p><ul>${sacred}</ul>` : ''}<p>${ja ? 'ほかの観光地は、公式の観光サイトで：' : 'For other sights, see the official guide: '}<a href="${tUrl}" rel="noopener">${esc(tName)} ↗</a></p></div>`;
+  }
+  const lead = ja
+    ? `${pn}の掲載は${ser.length}件（主催者・自治体の公式情報から）。今後30日の開催は${days30}日、今週末は${wk}件です。`
+    : `Flea Market JP lists ${ser.length} market${ser.length === 1 ? '' : 's'} in ${pn}, all from official organizer and municipal pages. In the next 30 days there are markets on ${days30} day${days30 === 1 ? '' : 's'}; ${wk} this weekend.`;
+  return `<section class="pov" aria-label="${ja ? `${pn}の概要` : `${pn} at a glance`}">
+<p class="pov-lead">${esc(lead)}</p>
+<p class="pov-links"><a href="/weekend/#pref=${p}">${ja ? `今週末の${pn}の開催` : `This weekend in ${pn}`} →</a> <a href="/calendar/">${ja ? 'カレンダーで見る' : 'Calendar'} →</a></p>
+<div class="pov-grid">
+<div class="pov-box"><h3>${ja ? '種類別の掲載数' : 'Markets by type'}</h3><ul class="pov-kinds">${kindTxt}</ul></div>
+${regular ? `<div class="pov-box"><h3>${ja ? '毎月・毎週の市' : 'Regular markets'}</h3><ul class="pov-reg">${regular}</ul></div>` : ''}
+<div class="pov-box"><h3>${ja ? '初めての方へ' : 'First visit?'}</h3><ul>${firstLinks}</ul></div>
+${sights}
+</div>
+</section>`;
+}
+
 function areaPages(ctx, lang) {
   const pages = [];
   const A = P[lang].area;
@@ -153,7 +209,7 @@ function areaPages(ctx, lang) {
   for (const [p, cities] of prefs) {
     const pn = prefLabel(p, lang);
     const cityLinks = [...cities].sort().map(([c, name]) => `<li><a href="/area/${p}/${c}/">${esc(cityL(name, lang))}<small>${esc(P[lang].cnt(count((s) => s.venue.cityCode === c)))}</small></a></li>`).join('');
-    const extra = cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '';
+    const extra = prefOverview(p, ctx, lang) + (cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '');
     pages.push({ ...listPage(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), '', ctx.occ.filter((o) => o.series.venue.pref === p), extra), bannerArt: `/img/pref/${p}.webp` });
     for (const [c, name] of cities) {
       pages.push(listPage(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c)));
@@ -174,20 +230,24 @@ function kindPages(ctx, lang) {
   ];
 }
 
-function eventLd(s, list) {
+function eventLd(s, list, lang = 'ja', description = '') {
+  const kind = s.kinds.find((k) => existsSync(join(ROOT, 'static', 'img', 'kinds', `${k}.webp`)));
+  const image = `${SITE.url}${kind ? `/img/kinds/${kind}.webp` : OG_DEFAULT}`;
   const map = { confirmed: 'EventScheduled', scheduled: 'EventScheduled', cancelled: 'EventCancelled', postponed: 'EventPostponed' };
   const items = list.filter((o) => map[o.status]).slice(0, 3).map((o) => ({
     '@context': 'https://schema.org',
     '@type': 'Event',
-    name: s.name,
+    name: nameL(s, lang),
+    ...(description ? { description } : {}),
+    image: [image],
     startDate: s.time?.start ? `${o.date}T${s.time.start}:00+09:00` : o.date,
     ...(s.time?.end ? { endDate: `${o.date}T${s.time.end}:00+09:00` } : {}),
     eventStatus: `https://schema.org/${map[o.status]}`,
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    location: { '@type': 'Place', name: s.venue.name, address: s.venue.address || `${PREFS[s.venue.pref]}${s.venue.city || ''}` },
+    location: { '@type': 'Place', name: venueL(s, lang), address: { '@type': 'PostalAddress', ...(s.venue.address ? { streetAddress: s.venue.address } : {}), ...(s.venue.city ? { addressLocality: s.venue.city } : {}), addressRegion: PREFS[s.venue.pref], addressCountry: 'JP' } },
     // organizer.label があるもの（主催者ではなく問い合わせ先など）は、主催者として出さない
     ...(s.organizer.label ? {} : { organizer: { '@type': 'Organization', name: s.organizer.name, ...(s.organizer.url ? { url: s.organizer.url } : {}) } }),
-    url: `${SITE.url}/e/${s.id}/`,
+    url: `${SITE.url}${langPath(`/e/${s.id}/`, lang)}`,
   }));
   return items.length ? `<script type="application/ld+json">${JSON.stringify(items).replace(/</g, '\\u003c')}</script>\n` : '';
 }
@@ -260,7 +320,7 @@ ${reviewsSection(s.id, REVIEWS, lang)}
 <p class="note">${s.recurrence.type === 'dates' ? '' : esc(p.rule(lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence)))} ${esc(disclaimer(lang))}</p>
 </div>${side}</div>
 </div>`;
-  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list), scripts: ['/weather.js', '/map.js', ...(REVIEWS_ON ? ['/review.js'] : [])], css: ['/review.css'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
+  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list, lang, p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s))), scripts: ['/weather.js', '/map.js', ...(REVIEWS_ON ? ['/review.js'] : [])], css: ['/review.css'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
 }
 
 function shutenPage(ctx, lang) {

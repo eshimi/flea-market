@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-10-21",
+    "ja": "都道府県のページに概要（件数・毎月の市・初めての方へ）を追加。東京・大阪・京都には観光の案内も。旅行者向けガイド2本（東京のフリマ・日本の骨董市）を公開しました。",
+    "en": "Prefecture pages now have an overview (counts, regular markets, first-visit links), with sightseeing tips for Tokyo, Osaka and Kyoto. Two new visitor guides: Tokyo flea markets and Japanese antique markets.",
+    "link": "/area/13/"
+  },
+  {
     "date": "2026-10-20",
     "ja": "広告（Google AdSense）の配信用のタグを、全ページに入れました。",
     "en": "The Google AdSense tag is now on every page."

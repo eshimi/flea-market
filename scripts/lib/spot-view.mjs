@@ -146,5 +146,5 @@ ${row(t.rules, val('rules'))}
 ${sp.series.length ? `<h2 class="sec-h">${esc(t.series)}</h2><ul class="sp-series">${seriesList}</ul>` : ''}
 ${others.length ? `<h2 class="sec-h">${esc(t.others)}</h2><ul class="grid-links">${others.map((x) => `<li><a href="/spot/${x.venue.id}/">${esc(spotL(x.venue, 'name', lang))}<small>${esc(kindL(x.venue.kind, lang))}</small></a></li>`).join('')}</ul>` : ''}
 <p class="note">${esc(t.note)}</p></div>${side}</div></div>`;
-  return pg(lang, `/spot/${v.id}/`, { title: L('name'), description: t.desc(L('name')), body, css: ['/spot.css'], scripts: ['/weather.js', '/map.js', '/vote.js'], head: placeLd(v, lang), keywords: [L('name'), v.area?.city, v.area?.pref && prefLabel(v.area.pref, lang), kindL(v.kind, lang)].filter(Boolean) });
+  return pg(lang, `/spot/${v.id}/`, { title: L('name'), ogImage: v.image ? `/img/spots/${v.image.file}` : "", description: t.desc(L('name')), body, css: ['/spot.css'], scripts: ['/weather.js', '/map.js', '/vote.js'], head: placeLd(v, lang), keywords: [L('name'), v.area?.city, v.area?.pref && prefLabel(v.area.pref, lang), kindL(v.kind, lang)].filter(Boolean) });
 }

@@ -123,6 +123,8 @@
 - ヘッダー幅とそのほかのページの本文幅は、1240px にそろえた（`.in`）。
 - 後でそろえる：ヘッダーの横幅（1240px）と本文の幅（1120px）が少しずれている（Step 5）。フッターは Step 4 で作り直す。
 
+- **SEO の改善（2026-10-21、ユーザーの依頼）**：トップの H1 を説明的な「Find Flea Markets in Japan／全国のフリーマーケットを探す」（`hero2-kicker`）にし、ブランドの文句は `p.hero2-title` で見た目そのまま。トップのタイトル・説明文も変更。全ページに `og:image`（既定 `static/img/og/default.jpg` 1200×630。スポットは写真）と `twitter:card`。パンくずに BreadcrumbList（`breadcrumb()`）。Event の構造化データは言語ごとの名前・会場名、説明・画像（種類のイラスト）・PostalAddress。**都道府県ページの概要**（`prefOverview`：件数・今後30日・今週末・種類別・毎月の市・初めての方へ。掲載データの事実だけ）。東京・大阪・京都だけ「観光と組み合わせる」（会場名が寺社の市＋公式の観光サイト GO TOKYO／OSAKA-INFO／京都観光Navi へのリンク。`TOURISM`）。旅行者向けガイド `guide-tokyo-flea-markets-visitors`・`guide-japanese-antique-markets`。大阪・京都の旅行者ガイドを足すなら slug は `guide-osaka-flea-markets-visitors`・`guide-kyoto-flea-markets-visitors`（概要から自動でリンク）。
+
 ## 未対応・次にやること
 - 東京都の定期市の洗い出し → 利用規約・robots.txt の確認 → 公式ページから書き起こし（evidence 付き）→ 検証 → 掲載。
 - 掲載の修正・削除の依頼の窓口（`/about/#remove`。いまは「準備中（要確認）」）。

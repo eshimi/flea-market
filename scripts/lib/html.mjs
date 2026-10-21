@@ -81,6 +81,9 @@ function analyticsTag() {
 `;
 }
 
+// SNS で共有したときの画像（1200×630。ページごとの指定がなければこれ）
+export const OG_DEFAULT = '/img/og/default.jpg';
+
 // Google AdSense（広告の自動配信のスクリプト）。ADSENSE_CLIENT が空なら出さない
 function adsenseTag() {
   if (!ADSENSE_CLIENT) return '';
@@ -122,13 +125,13 @@ export function pageBanner(base, text = '', artOverride = '') {
   return `<div class="pg-banner" aria-hidden="true" style="background-image:url(${art})"></div>\n`;
 }
 
-export function layout({ path, title, description, body, head = '', scripts = [], lang, css = [], keywords = [], bannerText = '', bannerArt = '' }) {
+export function layout({ path, title, description, body, head = '', scripts = [], lang, css = [], keywords = [], bannerText = '', bannerArt = '', ogImage = '' }) {
   const sp = splitPath(path);
   lang = lang || sp.lang;
   const base = sp.base;
   const t = T[lang];
   const isHome = base === '/';
-  const full = isHome ? `${SITE.name}｜${lang === 'en' ? 'Flea markets, antique fairs & handmade markets in Japan' : `${SITE.tagline}の開催情報`}` : `${title}${P[lang].titleSep}${SITE.name}`;
+  const full = isHome ? (lang === 'en' ? `Flea Markets in Japan: Dates, Locations & Calendar | ${SITE.name}` : `全国のフリーマーケット・骨董市の開催日・場所・カレンダー｜${SITE.name}`) : `${title}${P[lang].titleSep}${SITE.name}`;
   const alt = base === '/404.html' ? '' : `<link rel="alternate" hreflang="en" href="${SITE.url}${langPath(base, 'en')}">\n<link rel="alternate" hreflang="ja" href="${SITE.url}${langPath(base, 'ja')}">\n<link rel="alternate" hreflang="x-default" href="${SITE.url}${langPath(base, 'en')}">\n`;
   return `<!doctype html>
 <html lang="${t.htmlLang}">
@@ -143,6 +146,13 @@ ${alt}<meta property="og:title" content="${esc(full)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${SITE.url}${path}">
+<meta property="og:site_name" content="${esc(SITE.name)}">
+<meta property="og:locale" content="${lang === 'ja' ? 'ja_JP' : 'en_US'}">
+<meta property="og:image" content="${SITE.url}${ogImage || OG_DEFAULT}">
+${ogImage ? '' : '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n'}<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(full)}">
+<meta name="twitter:description" content="${esc(description)}">
+<meta name="twitter:image" content="${SITE.url}${ogImage || OG_DEFAULT}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap">
@@ -168,7 +178,9 @@ ${scripts.map((s) => `<script src="${s}" defer></script>`).join('\n')}
 
 export function breadcrumb(items, lang = 'en') {
   const p = P[lang];
-  return `<nav class="crumbs" aria-label="${esc(p.crumbsLabel)}"><a href="/">${esc(p.home)}</a>${items.map((i) => (i.href ? ` › <a href="${i.href}">${esc(i.label)}</a>` : ` › <span>${esc(i.label)}</span>`)).join('')}</nav>`;
+  // 検索エンジン向けのパンくず（BreadcrumbList）。最後の項目（このページ）は URL なし
+  const ld = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ href: '/', label: p.home }, ...items].map((i, n) => ({ '@type': 'ListItem', position: n + 1, name: i.label, ...(i.href ? { item: `${SITE.url}${langPath(i.href, lang)}` } : {}) })) };
+  return `<nav class="crumbs" aria-label="${esc(p.crumbsLabel)}"><a href="/">${esc(p.home)}</a>${items.map((i) => (i.href ? ` › <a href="${i.href}">${esc(i.label)}</a>` : ` › <span>${esc(i.label)}</span>`)).join('')}</nav><script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>`;
 }
 
 export const STATUS_LABEL = S.ja.status;

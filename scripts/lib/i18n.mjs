@@ -12,8 +12,9 @@ export const T = {
     langLabel: '言語',
     tagline: 'DISCOVER JAPAN’S LOCAL MARKETS',
     hero: {
+      h1: '全国のフリーマーケットを探す',
       title: ['日本の、', '市場の宝物を', '見つけよう。'],
-      sub: 'フリーマーケット・骨董市・手づくり市の、近くの開催情報。主催者・自治体の公式情報だけを掲載しています。',
+      sub: '全国のフリーマーケット・骨董市・手作り市を、日付・地域・種類から探せます。主催者・自治体の公式情報へのリンクつき。',
       placeholder: '地名・駅名・マーケットの種類',
       button: 'マーケットを探す',
       searchLabel: 'キーワード',
@@ -28,7 +29,7 @@ export const T = {
         { key: 'food', href: '/kind/marche/', icon: 'sprout', label: ['地元の食・', 'その他'] },
       ],
     },
-    description: '全国のフリーマーケット・蚤の市・骨董市・手作り市の開催情報を、主催者と自治体の公式情報からまとめています。今週末の開催・地域・種類から探せます。毎朝更新。',
+    description: '全国のフリーマーケット・蚤の市・骨董市・手作り市の開催日と場所を、カレンダー・地域・種類から探せます。東京・大阪から各地の市まで、主催者と自治体の公式情報へのリンクつき。毎朝更新。',
   },
   en: {
     htmlLang: 'en',
@@ -39,8 +40,9 @@ export const T = {
     langLabel: 'Language',
     tagline: 'DISCOVER JAPAN’S LOCAL MARKETS',
     hero: {
+      h1: 'Find Flea Markets in Japan',
       title: ['Find Japan’s', 'hidden market', 'treasures.'],
-      sub: 'Flea markets, antique fairs & handmade markets — happening near you.',
+      sub: 'Discover flea markets, antique fairs and handmade markets across Japan. Browse by date, city and market type, with links to official event information.',
       placeholder: 'City, station or market type',
       button: 'EXPLORE MARKETS',
       searchLabel: 'Keyword',
@@ -55,7 +57,7 @@ export const T = {
         { key: 'food', href: '/kind/marche/', icon: 'sprout', label: ['Local Food', '& More'] },
       ],
     },
-    description: 'Flea markets, antique fairs and handmade markets across Japan, from official organizer and municipal sources. Find what is on this weekend, by area or by type. Updated every morning.',
+    description: 'Find upcoming flea markets in Japan, from Tokyo and Osaka to local markets across the country. Check dates, locations, market types and official organizer information.',
   },
 };
 
