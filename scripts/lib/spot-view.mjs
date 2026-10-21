@@ -69,7 +69,7 @@ export function spotIndex(ctx, lang) {
 
 function placeLd(v, lang) {
   const a = v.area;
-  const ld = { '@context': 'https://schema.org', '@type': 'Place', name: v.name, ...(v.address ? { address: v.address } : {}), ...(v.officialUrl ? { url: v.officialUrl } : {}) };
+  const ld = { '@context': 'https://schema.org', '@type': 'Place', name: v.name, ...(v.address && v.addressFrom !== 'search' ? { address: v.address } : {}), ...(v.officialUrl ? { url: v.officialUrl } : {}) };
   return `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n`;
 }
 
@@ -121,7 +121,7 @@ export function spotPage(sp, ctx, lang) {
   const q = (k, x) => `<div><dt>${esc(k)}</dt><dd>${x}</dd></div>`;
   const quickRows = [
     q(t.next, nxt ? `<b>${esc(dlabel(nxt.date, lang, { year: true }))}</b>${nxt.series.organizer.label ? (nxt.note ? ` · ${esc(nxt.note)}` : '') : ` · ${esc((lang === 'en' && orgEn(nxt.series.organizer.name)) || nxt.series.organizer.name)}`}` : `<span class="tbd">${esc(t.tbcNext)}</span>`),
-    q(t.address, addr || val('address')),
+    q(t.address, addr || val('address') + (v.address && v.addressFrom === 'search' ? `<small class="addr-src">${esc(pp.addrSearched)}</small>` : '')),
     q(t.access, val('access')),
   ].join('');
   const side = `<aside class="ev-side" aria-label="${esc(pp.secMap)}">${mapCard}${wxBox}${navCard}</aside>`;
@@ -140,7 +140,7 @@ ${pollBlock(v, lang)}
 <h2 class="sec-h">${esc(t.info)}</h2>
 <dl class="facts">
 ${row(t.summary, val('summary'))}
-${row(t.address, addr || val('address'))}
+${row(t.address, addr || val('address') + (v.address && v.addressFrom === 'search' ? `<small class="addr-src">${esc(pp.addrSearched)}</small>` : ''))}
 ${row(t.access, val('access'))}
 ${row(t.place, val('place'))}
 ${row(t.rules, val('rules'))}

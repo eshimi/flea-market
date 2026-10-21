@@ -242,7 +242,7 @@ function eventLd(s, list, lang = 'ja', description = '') {
     ...(s.time?.end ? { endDate: `${o.date}T${s.time.end}:00+09:00` } : {}),
     eventStatus: `https://schema.org/${map[o.status]}`,
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    location: { '@type': 'Place', name: venueL(s, lang), address: { '@type': 'PostalAddress', ...(s.venue.address ? { streetAddress: s.venue.address } : {}), ...(s.venue.city ? { addressLocality: s.venue.city } : {}), addressRegion: PREFS[s.venue.pref], addressCountry: 'JP' } },
+    location: { '@type': 'Place', name: venueL(s, lang), address: { '@type': 'PostalAddress', ...(s.venue.address && s.venue.addressFrom !== 'search' ? { streetAddress: s.venue.address } : {}), ...(s.venue.city ? { addressLocality: s.venue.city } : {}), addressRegion: PREFS[s.venue.pref], addressCountry: 'JP' } },
     // organizer.label があるもの（主催者ではなく問い合わせ先など）は、主催者として出さない
     ...(s.organizer.label ? {} : { organizer: { '@type': 'Organization', name: s.organizer.name, ...(s.organizer.url ? { url: s.organizer.url } : {}) } }),
     url: `${SITE.url}${langPath(`/e/${s.id}/`, lang)}`,
@@ -302,7 +302,7 @@ ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
 ${row(p.when, rule)}
 ${row(p.time, lang === 'en' && timeEn(s) ? (s.time.text === timeEn(s).replace('–', '〜') ? esc(timeEn(s)) : orig(timeEn(s), s.time.text)) : t(s.time?.text))}
 ${row(p.venue, (lang === 'en' && venueL(s, lang) !== v.name ? orig(venueL(s, lang), v.name) : esc(v.name)) + spotLink(s, ctx, lang))}
-${row(p.address, v.address ? tv(s, 'address', v.address, lang) : est(estAddress, p))}
+${row(p.address, v.address ? tv(s, 'address', v.address, lang) + (v.addressFrom === 'search' ? `<small class="addr-src">${esc(p.addrSearched)}</small>` : '') : est(estAddress, p))}
 ${row(p.access, v.access ? tv(s, 'access', v.access, lang) : est(estAccess, p))}
 ${row(p.admission, s.visitor?.admission ? tv(s, 'admission', s.visitor.admission, lang) : est(p.estFree, p))}
 ${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang))}
