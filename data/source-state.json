@@ -1425,14 +1425,15 @@
   }
  },
  "https://www.tokyo-park.or.jp/park/yoyogi/index.html": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-21",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"a1744d4756b1a822635760aa073ddd58\"",
-  "lastModified": "Sun, 18 Oct 2026 09:09:10 GMT",
+  "etag": "\"b9b46a0630a410f8e9b5d9f0fd3791ac\"",
+  "lastModified": "Wed, 21 Oct 2026 09:09:14 GMT",
   "mismatch": {},
   "evidenceOk": {
-   "venue:yoyogi-park": true
+   "venue:yoyogi-park": true,
+   "earthgarden-gearloop-market-2026": true
   }
  },
  "https://www.tokyo-park.or.jp/park/yoyogi/news/2026/8.html": {
@@ -1525,14 +1526,17 @@
   }
  },
  "https://www.city.setagaya.lg.jp/02075/9095.html": {
-  "fetchedAt": "2026-10-19",
-  "httpStatus": 200,
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 304,
   "failCount": 0,
   "etag": "W/\"8879-65b2238fc98ca\"",
   "lastModified": "Thu, 10 Sep 2026 15:00:03 GMT",
-  "mismatch": {},
+  "mismatch": {
+   "setagaya-park-flea": []
+  },
   "evidenceOk": {
-   "venue:setagaya-park": true
+   "venue:setagaya-park": true,
+   "setagaya-park-flea": false
   }
  },
  "https://www.tokyo-park.or.jp/park/kiba/index.html": {
@@ -2883,6 +2887,479 @@
   "mismatch": {},
   "evidenceOk": {
    "venue:nittaiji-kakuozan": true
+  }
+ },
+ "https://www.town.mizuho.tokyo.jp/kurashi/005/015/p000000.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"3be22b-17b06-6519d57ff3018\"",
+  "lastModified": "Tue, 12 May 2026 11:41:28 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "mizuho-aozora-ichi": true
+  }
+ },
+ "https://www.pref.saitama.lg.jp/shisetsu/koen/009.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"3c57-6469af0d6334b\"",
+  "lastModified": "Tue, 23 Dec 2025 09:12:19 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "fmpn-tokorozawa-shimin-fes": true,
+   "fmpn-tokorozawa-aviation-park": true
+  }
+ },
+ "https://www.pref.saitama.lg.jp/spo-navi/shisetsu/saitamaken/alnethome.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"42ec-65c8715e12b33\"",
+  "lastModified": "Mon, 28 Sep 2026 08:45:17 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "fmpn-koshigaya-shirakobato-park": true,
+   "rbf-koshigaya-shirakobato-park": true
+  }
+ },
+ "https://www.city.toda.saitama.jp/soshiki/192/community-sakura-introgaiyo.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 20 Oct 2026 16:00:10 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "fmpn-toda-sakura-pal": true
+  }
+ },
+ "https://www.city.hino.lg.jp/press/1026432/1026482.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"6422-65e5616aa6ee7\"",
+  "lastModified": "Wed, 21 Oct 2026 09:08:20 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "hino-art-festival-flea-craft": true
+  }
+ },
+ "https://www.city.funabashi.lg.jp/loca/location/006/p114339.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Mon, 05 Oct 2026 08:29:32 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "trx-funabashi-keibajo-flea": true
+  }
+ },
+ "https://www.city.ichinomiya.aichi.jp/shisetsu/kouen/1017179/1017417/1009340.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"85fa-65e54c99b87c4\"",
+  "lastModified": "Wed, 21 Oct 2026 07:35:12 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "yuyu-marche-ichinomiya-riverside-ono-gokurakuji": true
+  }
+ },
+ "https://www.city.kyoto.lg.jp/kensetu/page/0000082743.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Wed, 21 Oct 2026 03:57:56 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "fmj-okazaki-park": true,
+   "heian-rakuichi": true
+  }
+ },
+ "https://parksgreenery.city.osaka.lg.jp/article/expo_park1/": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "osaka-garagesale-nishi": true
+  }
+ },
+ "https://www.osakacommunity.jp/branches/hirano/access/": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "osaka-garagesale-hirano": true
+  }
+ },
+ "https://parksgreenery.city.osaka.lg.jp/article/parks-ogimachi/": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "osaka-garagesale-kita": true
+  }
+ },
+ "https://www.city.himeji.lg.jp/kanko/0000005715.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 20 Oct 2026 15:06:46 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "himeji-tegarayama-rakuichi-rakuza": true
+  }
+ },
+ "https://www.city.takaoka.toyama.jp/soshiki/toshikeikakuka/2/3/1/1/2515.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6ac5a6a1-e361\"",
+  "lastModified": "Wed, 07 Oct 2026 01:55:45 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "tsuginote-takaoka": true
+  }
+ },
+ "https://www.city.edogawa.tokyo.jp/e036/kuseijoho/gaiyo/shisetsuguide/bunya/kuyakusho/c_toubu/guide.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"58ca-64f516756169a\"",
+  "lastModified": "Mon, 13 Apr 2026 06:15:04 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "edogawa-recycle-world-in-tobu-2026": true
+  }
+ },
+ "https://www.pref.saitama.lg.jp/shisetsu/koen/024.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"3d68-64f64af26f3b9\"",
+  "lastModified": "Tue, 14 Apr 2026 05:15:14 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "fmpn-kawagoe-suijo-park": true,
+   "rbf-kawagoe-suijo-park": true
+  }
+ },
+ "https://fkmachi.city.fukuoka.lg.jp/facilities/detail/787133e2-2332-4c8b-9cd8-056039bdabed": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "cultune-fukuoka-maizuru-flea": true
+  }
+ },
+ "https://www.city.tokai.aichi.jp/shisetsu/1005655/1005664/1003654.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6d3c-65e5888c8ca7d\"",
+  "lastModified": "Wed, 21 Oct 2026 12:03:25 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "yuyu-marche-motohama-park": true
+  }
+ },
+ "https://www.city.sayama.saitama.jp/shisei/shisetsu/doubutsuen/cikozankoen/index.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Wed, 21 Oct 2026 12:02:49 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "rbf-chikozan-park-festival": true
+  }
+ },
+ "https://www.city.osaka.lg.jp/yodogawa/page/0000435972.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 20 Oct 2026 15:08:47 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "osaka-garagesale-yodogawa": true
+  }
+ },
+ "https://www.city.daito.lg.jp/site/iju/47784.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"a20a-65e5880d31857\"",
+  "lastModified": "Wed, 21 Oct 2026 12:01:11 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "daito-shimin-matsuri-flea": true
+  }
+ },
+ "https://www.city.kawanishi.hyogo.jp/shisetsu/1002994/1002995/1007387.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"7921-65e55526a86fb\"",
+  "lastModified": "Wed, 21 Oct 2026 08:13:28 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "kawanishi-toshi-ryokkasai-green-flea": true
+  }
+ },
+ "https://www.tokugawaen.aichi.jp/transportation-guide/index.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "tokugawaen-kuromon-tedukuri-2026": true
+  }
+ },
+ "https://www.saga-ecoplaza.jp/about/access": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "saga-eco-plaza-eco-market": true
+  }
+ },
+ "https://www.city.shunan.lg.jp/soshiki/48/98277.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Wed, 21 Oct 2026 12:02:33 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "shunan-kodomo-yume-matsuri-kids-flea": true
+  }
+ },
+ "https://sundome.sankan.jp/access-map/": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "creatorsland-2026-sandome-fukui": true
+  }
+ },
+ "https://www.union.tokyo23-seisou.lg.jp/kojo/tamagawa/index.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"45a7-659fc049652f4\"",
+  "lastModified": "Thu, 27 Aug 2026 00:00:03 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "ota-tamagawa-eco-fair-2026": true
+  }
+ },
+ "https://www.tsurumi-ryokuchi.jp/facility/hanamizuki.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "furimatairiku-hanahaku-tsurumi": true
+  }
+ },
+ "https://www.ikea.com/jp/ja/stores/tokyo-bay/": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "rbf-ikea-tokyo-bay-loppis": true
+  }
+ },
+ "https://www.city.osaka.lg.jp/shimin/page/0000016604.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 20 Oct 2026 15:12:37 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "osaka-garagesale-konohana": true
+  }
+ },
+ "https://www.city.osaka.lg.jp/sumiyoshi/page/0000158918.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 20 Oct 2026 15:07:15 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "osaka-garagesale-sumiyoshi": true
+  }
+ },
+ "https://baytower.jp/contact/": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "osaka-garagesale-minato": true
+  }
+ },
+ "https://www.city.kitakyushu.lg.jp/contents/924_00902.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "kokura-de-flima": true
+  }
+ },
+ "https://www.city.kochi.kochi.jp/soshiki/128/barrierfree-tanoshimu.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"a6db-65e489cb4eab5\"",
+  "lastModified": "Tue, 20 Oct 2026 17:03:40 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "kochi-chuo-park-tohoku-support-flea": true
+  }
+ },
+ "https://www.aeonmall.com/facility/detail/1439/": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "fmpn-hanyu-aeon-noniwa": true
+  }
+ },
+ "https://www.city.katsushika.lg.jp/planning/1003408/1003556.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"a359-65e5541c19368\"",
+  "lastModified": "Wed, 21 Oct 2026 08:08:48 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "fmpn-kameari-lilio-park": true
+  }
+ },
+ "https://www.city.akishima.lg.jp/kurashi/gomi/1001623/1001628.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"908f-65e587e52228d\"",
+  "lastModified": "Wed, 21 Oct 2026 12:00:29 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "akishima-recycle-center-flea": true
+  }
+ },
+ "https://ikesunpark.jp/": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "trx-ike-sunpark-flea": true
+  }
+ },
+ "https://www.city.inazawa.aichi.jp/0000002801.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Wed, 21 Oct 2026 03:06:24 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "yuyu-marche-inazawa-kinro-fukushi-kaikan": true
+  }
+ },
+ "https://agritown.co.jp/": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "yuyu-marche-ja-genki-no-sato": true
+  }
+ },
+ "https://harborland.co.jp/access/": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "jfma-kobe-harborland-seaside-market": true
+  }
+ },
+ "https://tokyo-romantic.com/access/": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "tokyo-romantic-shibuya": true
+  }
+ },
+ "https://www.city.osaka.lg.jp/kankyo/page/0000009981.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 20 Oct 2026 15:18:31 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "osaka-garagesale-higashiyodogawa": true
+  }
+ },
+ "https://www.city.osaka.lg.jp/taisho/page/0000077091.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 20 Oct 2026 15:06:12 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "osaka-garagesale-taisho": true
+  }
+ },
+ "https://www.city.osaka.lg.jp/shimin/page/0000016622.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 20 Oct 2026 15:12:38 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "osaka-garagesale-nishiyodogawa": true
+  }
+ },
+ "https://www.city.osaka.lg.jp/higashisumiyoshi/page/0000415142.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Tue, 20 Oct 2026 15:08:10 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "osaka-garagesale-higashisumiyoshi": true
+  }
+ },
+ "https://www.city.kitakyushu.lg.jp/contents/v059_00008.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "mitsubachi-flima": true
+  }
+ },
+ "https://www.city.ube.yamaguchi.jp/shisei/kouhou/kishahappyou/1008059/1026530/1028655.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"6af8-65e5893a437e0\"",
+  "lastModified": "Wed, 21 Oct 2026 12:06:27 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "ube-city-flea-mucc": true
   }
  }
 }
