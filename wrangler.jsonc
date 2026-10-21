@@ -16,6 +16,10 @@
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["SpotVotes"] }, { "tag": "v2", "new_sqlite_classes": ["ReviewGate"] }, { "tag": "v3", "new_sqlite_classes": ["ReviewStore"] }],
   // フリマの情報提供フォームの送信（サイト専用アドレスへ届ける）。送信先 MAIL_TO・差出人 MAIL_FROM は Secrets/Variables で設定（未設定の間は受け付けない）
   "send_email": [{ "name": "EMAIL" }],
+  // 送信先（サイト専用メール）。差出人 MAIL_FROM は、Email Sending でドメインを有効にしてから足す
+  "vars": { "MAIL_TO": "info@streetbazaars.jp" },
+  // ダッシュボードで設定した変数を、デプロイで消さない
+  "keep_vars": true,
   "observability": { "enabled": true },
   "routes": [{ "pattern": "streetbazaars.jp", "custom_domain": true }]
 }
