@@ -1,7 +1,7 @@
 import { handleVotes, SpotVotes } from './votes.js';
-import { handleReviews, ReviewGate } from './reviews.js';
+import { handleAdminReviews, handleReviews, ReviewGate, ReviewStore } from './reviews.js';
 import { handleContact } from './contact.js';
-export { SpotVotes, ReviewGate };
+export { SpotVotes, ReviewGate, ReviewStore };
 
 // 静的ファイル（dist/）を配る。/api/* は、今後の機能（保存・掲載申込みなど）のための場所
 const SECURITY_HEADERS = {
@@ -34,8 +34,10 @@ export default {
       if (m) return weather(m[1]);
       const v = /^\/api\/votes\/([a-z0-9-]+)$/.exec(url.pathname);
       if (v) return handleVotes(request, env, v[1]);
-      const r = /^\/api\/reviews\/([a-z0-9-]+)$/.exec(url.pathname);
-      if (r) return handleReviews(request, env, r[1]);
+      const r = /^\/api\/reviews\/([a-z0-9-]+)(?:\/([a-z0-9]+)\/report)?$/.exec(url.pathname);
+      if (r) return handleReviews(request, env, r[1], r[2] || null);
+      const ad = /^\/api\/admin\/reviews(?:\/([a-z0-9-]+)\/([a-z0-9]+))?$/.exec(url.pathname);
+      if (ad) return handleAdminReviews(request, env, ad[1] || null, ad[2] || null);
       if (url.pathname === '/api/contact') return handleContact(request, env);
       return Response.json({ error: 'not found' }, { status: 404 });
     }

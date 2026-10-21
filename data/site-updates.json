@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-21",
+    "ja": "フリマのページの評価・情報提供は、書き込むとすぐ表示されるようにしました。不適切な書き込みは「通報」で非表示になり、管理者が判断します。",
+    "en": "Reviews on market pages now appear as soon as they are posted. Inappropriate posts can be reported, which hides them until we review them.",
+    "link": "/e/oedo-antique-market-tokyo-international-forum/#reviews"
+  },
+  {
+    "date": "2026-10-21",
     "ja": "都道府県のページに概要（件数・毎月の市・初めての方へ）を追加。東京・大阪・京都には観光の案内も。旅行者向けガイド2本（東京のフリマ・日本の骨董市）を公開しました。",
     "en": "Prefecture pages now have an overview (counts, regular markets, first-visit links), with sightseeing tips for Tokyo, Osaka and Kyoto. Two new visitor guides: Tokyo flea markets and Japanese antique markets.",
     "link": "/area/13/"

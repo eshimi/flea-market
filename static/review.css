@@ -22,3 +22,6 @@
 .rv-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .rv-st-msg{margin:0;font-size:14px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.rv-report{display:block;margin-top:6px;font:inherit;font-size:12px;color:var(--sub);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}
+.rv-report:disabled{opacity:.5;cursor:default}
+.rv-sum:empty{display:none}

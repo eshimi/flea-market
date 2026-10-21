@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>評価の管理｜Flea Market JP</title>
+<style>
+:root{--bg:#F7F3EB;--ink:#292B28;--sub:#6b6e66;--acc:#B95E43;--line:#e6dccd;color-scheme:light}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 "Noto Sans JP",system-ui,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:22px;margin:0 0 4px}
+.note{color:var(--sub);font-size:13px;margin:0 0 14px}
+.login,.tabs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 14px}
+input[type=password]{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;min-width:240px}
+button{font:inherit;font-size:14px;padding:6px 14px;border-radius:999px;border:1px solid var(--acc);background:#fff;color:var(--acc);cursor:pointer}
+button.on,button.pri{background:var(--acc);color:#fff}
+button.danger{border-color:#a33;color:#a33}
+.item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 10px}
+.meta{font-size:13px;color:var(--sub);display:flex;flex-wrap:wrap;gap:4px 14px}
+.st{font-weight:700}.st.reported{color:#a33}.st.removed{color:var(--sub)}.st.public{color:#2f6f5e}
+textarea{width:100%;box-sizing:border-box;font:inherit;padding:8px;border:1px solid var(--line);border-radius:8px;margin:8px 0}
+select{font:inherit;padding:4px}
+.acts{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+#msg{min-height:1.5em;font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<h1>評価・情報提供の管理</h1>
+<p class="note">「通報あり」は、利用者の通報で非表示になっている書き込みです。内容を見て、「公開に戻す」か「非公開のまま」か「削除」を選んでください。編集（個人情報の削除など）もできます。トークンはこのタブの間だけ保存されます。</p>
+<form class="login" id="login"><input type="password" id="token" placeholder="管理用トークン（ADMIN_TOKEN）" autocomplete="off"><button class="pri" type="submit">表示する</button></form>
+<div class="tabs" id="tabs" hidden>
+<button data-s="reported" class="on">通報あり</button><button data-s="public">公開中</button><button data-s="removed">非公開</button><button data-s="all">すべて</button>
+</div>
+<p id="msg" role="status"></p>
+<div id="list"></div>
+</main>
+<script src="/admin/reviews.js"></script>
+</body>
+</html>

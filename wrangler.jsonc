@@ -12,8 +12,8 @@
     "run_worker_first": ["/api/*", "/en", "/en/"]
   },
   // スポットのアンケートの保存（会場ごとに1つの Durable Object）
-  "durable_objects": { "bindings": [{ "name": "SPOT_VOTES", "class_name": "SpotVotes" }, { "name": "REVIEW_GATE", "class_name": "ReviewGate" }] },
-  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["SpotVotes"] }, { "tag": "v2", "new_sqlite_classes": ["ReviewGate"] }],
+  "durable_objects": { "bindings": [{ "name": "SPOT_VOTES", "class_name": "SpotVotes" }, { "name": "REVIEW_GATE", "class_name": "ReviewGate" }, { "name": "REVIEW_STORE", "class_name": "ReviewStore" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["SpotVotes"] }, { "tag": "v2", "new_sqlite_classes": ["ReviewGate"] }, { "tag": "v3", "new_sqlite_classes": ["ReviewStore"] }],
   // フリマの情報提供フォームの送信（サイト専用アドレスへ届ける）。送信先 MAIL_TO・差出人 MAIL_FROM は Secrets/Variables で設定（未設定の間は受け付けない）
   "send_email": [{ "name": "EMAIL" }],
   "observability": { "enabled": true },
