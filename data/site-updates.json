@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-21",
+    "ja": "会場の住所を公式ページから調べ、68件の掲載に住所（とアクセス）を補いました。住所のある会場には地図の画像と経路案内が出ます（住所のある掲載は 202 件）。",
+    "en": "We looked up venue addresses on official pages and added them to 68 listings, with map images and directions (202 listings now have an address).",
+    "link": "/e/trx-ike-sunpark-flea/"
+  },
+  {
+    "date": "2026-10-21",
     "ja": "フリマのページの評価・情報提供は、書き込むとすぐ表示されるようにしました。不適切な書き込みは「通報」で非表示になり、管理者が判断します。",
     "en": "Reviews on market pages now appear as soon as they are posted. Inappropriate posts can be reported, which hides them until we review them.",
     "link": "/e/oedo-antique-market-tokyo-international-forum/#reviews"
