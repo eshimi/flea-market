@@ -538,5 +538,500 @@
   "matched": "東京都江戸川区東瑞江一丁目１７番",
   "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
   "checkedAt": "2026-10-21"
+ },
+ "ota-tamagawa-eco-fair-2026": {
+  "lat": 35.562351,
+  "lon": 139.687775,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都大田区下丸子二丁目３３番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "arakawa-park-flea-2027-03": {
+  "lat": 35.73513,
+  "lon": 139.783615,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都荒川区荒川二丁目２番３号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "setagaya-funabashi-fureai-matsuri-flea-2026": {
+  "lat": 35.658066,
+  "lon": 139.61824,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都世田谷区船橋七丁目９番２号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "frma-komatsugawa-park-flea": {
+  "lat": 35.690636,
+  "lon": 139.846069,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "東京都江東区大島九丁目",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "frma-akabane-park-flea": {
+  "lat": 35.778004,
+  "lon": 139.724136,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都北区赤羽南一丁目１４番１７号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "frma-hikarigaoka-park-flea": {
+  "lat": 35.76881,
+  "lon": 139.630585,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都練馬区光が丘四丁目１番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "frma-nakameguro-funeiriba-flea": {
+  "lat": 35.643726,
+  "lon": 139.702789,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "東京都目黒区中目黒一丁目",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "mottainai-flea-kichijoji-parco": {
+  "lat": 35.70348,
+  "lon": 139.578171,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都武蔵野市吉祥寺本町一丁目５番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "mottainai-flea-shinjuku-chuo-park": {
+  "lat": 35.691105,
+  "lon": 139.687698,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都新宿区西新宿二丁目１１番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmpn-tokorozawa-shimin-fes": {
+  "lat": 35.798306,
+  "lon": 139.469131,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "埼玉県所沢市並木一丁目１３番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmpn-hanyu-aeon-noniwa": {
+  "lat": 36.142914,
+  "lon": 139.541718,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "埼玉県羽生市川崎二丁目２８１番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmpn-koshigaya-shirakobato-park": {
+  "lat": 35.913731,
+  "lon": 139.750961,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "埼玉県越谷市小曽川９８５番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmpn-tokorozawa-aviation-park": {
+  "lat": 35.798306,
+  "lon": 139.469131,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "埼玉県所沢市並木一丁目１３番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmpn-toda-sakura-pal": {
+  "lat": 35.807007,
+  "lon": 139.670731,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "埼玉県戸田市新曽南三丁目１番５号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmpn-kameari-lilio-park": {
+  "lat": 35.76627,
+  "lon": 139.847,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都葛飾区亀有三丁目２５番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmpn-akabane-park": {
+  "lat": 35.778004,
+  "lon": 139.724136,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都北区赤羽南一丁目１４番１７号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "akishima-recycle-center-flea": {
+  "lat": 35.723354,
+  "lon": 139.355255,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都昭島市美堀町三丁目８番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "hino-art-festival-flea-craft": {
+  "lat": 35.681778,
+  "lon": 139.402344,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都日野市日野本町六丁目１番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "recyclefmd-sapporo-plaza-flea": {
+  "lat": 43.090744,
+  "lon": 141.342041,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "北海道札幌市北区北二十四条西五丁目",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "cultune-fukuoka-maizuru-flea": {
+  "lat": 33.587425,
+  "lon": 130.383011,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "福岡県福岡市中央区城内１番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "trx-oi-keibajo-tokyo-city-flea": {
+  "lat": 35.591084,
+  "lon": 139.739212,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都品川区勝島二丁目１番２号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "trx-ike-sunpark-flea": {
+  "lat": 35.727776,
+  "lon": 139.721848,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "東京都豊島区東池袋四丁目４２番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "trx-funabashi-keibajo-flea": {
+  "lat": 35.686874,
+  "lon": 139.995056,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "千葉県船橋市若松一丁目２番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "recycler-sumida-live-fes-2026-winter-flea": {
+  "lat": 35.698601,
+  "lon": 139.817169,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "東京都墨田区錦糸四丁目",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "yuyu-marche-inazawa-kinro-fukushi-kaikan": {
+  "lat": 35.252594,
+  "lon": 136.775757,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "愛知県稲沢市朝府町５番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "yuyu-marche-motohama-park": {
+  "lat": 35.014416,
+  "lon": 136.878479,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "愛知県東海市元浜町６４番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "yuyu-marche-ja-genki-no-sato": {
+  "lat": 34.992634,
+  "lon": 136.943665,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "愛知県大府市吉田町正右エ門新田",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "umekoji-park-tedukuri-ichi": {
+  "lat": 34.987286,
+  "lon": 135.744644,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "京都府京都市下京区観喜寺町",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "jfma-nakaku-kumin-festa-flea-2026": {
+  "lat": 34.528957,
+  "lon": 135.478668,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "大阪府堺市中区八田寺町",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "jfma-kobe-harborland-seaside-market": {
+  "lat": 34.679077,
+  "lon": 135.181961,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "兵庫県神戸市中央区東川崎町一丁目",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "jfma-nishikita-flea": {
+  "lat": 34.742252,
+  "lon": 135.358383,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "兵庫県西宮市深津町４番３０号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "jfma-ikea-tsuruhama-loppis": {
+  "lat": 34.637794,
+  "lon": 135.449936,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "大阪府大阪市大正区鶴町二丁目２４番５５号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "jfma-minatomachi-river-place-flea": {
+  "lat": 34.668625,
+  "lon": 135.496506,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "大阪府大阪市浪速区湊町一丁目３番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "jfma-wanwan-marche-shiga-ryuo-vol17": {
+  "lat": 35.066269,
+  "lon": 136.111084,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "滋賀県竜王町薬師",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "jfma-wanwan-marche-kobe-port-island-vol53": {
+  "lat": 34.665592,
+  "lon": 135.209518,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "兵庫県神戸市中央区港島中町六丁目９番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "jfma-wanwan-marche-kobe-meriken-park-vol8": {
+  "lat": 34.684692,
+  "lon": 135.189758,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "兵庫県神戸市中央区波止場町２番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "jfma-ikea-kobe-loppis": {
+  "lat": 34.661564,
+  "lon": 135.212219,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "兵庫県神戸市中央区港島中町八丁目７番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-amagasaki-chuo-park": {
+  "lat": 34.719048,
+  "lon": 135.416733,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "兵庫県尼崎市神田中通一丁目４番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-amaiseki-park": {
+  "lat": 34.854542,
+  "lon": 135.629242,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "大阪府高槻市八丁畷町１２番３号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-apia-higashiomi": {
+  "lat": 35.114456,
+  "lon": 136.196274,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "滋賀県東近江市八日市浜野町３番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-kirarie-kusatsu": {
+  "lat": 35.021713,
+  "lon": 135.965271,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "滋賀県草津市大路二丁目１番３５号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-minoh-cues-mall": {
+  "lat": 34.832684,
+  "lon": 135.489944,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "大阪府箕面市西宿一丁目１５番３０号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-nara-city-hall-lawn": {
+  "lat": 34.684479,
+  "lon": 135.805618,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "奈良県奈良市二条大路南一丁目１番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-fukakita-ryokuchi": {
+  "lat": 34.727352,
+  "lon": 135.628754,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "大阪府大東市深野北四丁目２８４番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-tsurumi-ryokuchi": {
+  "lat": 34.717262,
+  "lon": 135.575058,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "大阪府大阪市鶴見区緑地公園２番２号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-cainz-hikone": {
+  "lat": 35.277943,
+  "lon": 136.243561,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "滋賀県彦根市馬場二丁目１番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-mie-sogo-bunka-center": {
+  "lat": 34.744926,
+  "lon": 136.500809,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "三重県津市一身田上津部田１２３４番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-plant-kizugawa": {
+  "lat": 34.735855,
+  "lon": 135.835327,
+  "zoom": 15,
+  "precision": "area",
+  "matched": "京都府木津川市城山台二丁目",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-notogawa-community-center": {
+  "lat": 35.184589,
+  "lon": 136.162704,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "滋賀県東近江市躰光寺町２６２番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-a-square-kusatsu": {
+  "lat": 35.024239,
+  "lon": 135.96109,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "滋賀県草津市西渋川一丁目２３番１号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-yamato-saidaiji-ekimae": {
+  "lat": 34.694023,
+  "lon": 135.783539,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "奈良県奈良市西大寺東町二丁目１番６３号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-ritto-sakira": {
+  "lat": 35.036385,
+  "lon": 135.983047,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "滋賀県栗東市綣二丁目１番２８号",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-suzuka-sakura-no-mori": {
+  "lat": 34.851566,
+  "lon": 136.585876,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "三重県鈴鹿市南玉垣町３５００番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-yasugawa-shinsui-park": {
+  "lat": 34.997772,
+  "lon": 136.097076,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "滋賀県湖南市夏見５８９番地",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
+ },
+ "fmj-yamada-ike-park": {
+  "lat": 34.824505,
+  "lon": 135.689835,
+  "zoom": 16,
+  "precision": "lot",
+  "matched": "大阪府枚方市山田池公園１番",
+  "source": "国土地理院 住所検索（msearch.gsi.go.jp）で、公式の所在地から求めた位置",
+  "checkedAt": "2026-10-21"
  }
 }
