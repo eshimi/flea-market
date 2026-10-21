@@ -8,6 +8,9 @@ import { SITE, ADSENSE_CLIENT } from '../scripts/lib/nav.mjs';
 import { mainHash, updateLastmod } from '../scripts/update-sitemap.mjs';
 import { REVIEWS_ON } from '../scripts/lib/reviews-view.mjs';
 
+// 管理画面（静的ファイル static/admin/reviews.html。Cloudflare が .html を外して配る）。フッターの「©」が隠しリンク
+const ADMIN_PAGE = '/admin/reviews';
+
 const FIX = join(fileURLToPath(new URL('.', import.meta.url)), 'fixtures');
 const data = loadData(FIX);
 const { pages, occ } = buildPages(data, '2026-10-17');
@@ -184,7 +187,7 @@ test('トップの下部：カレンダー・注目・出店者・地域・種�
     // 内部リンクは、その言語で作ったページにある
     for (const m of layout(p).matchAll(/href="(\/[^"#?]*)/g)) {
       const h = m[1];
-      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(h)) continue;
+      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(h) || h === ADMIN_PAGE) continue;
       assert.ok(page(h) || (p.lang === 'en' && h === '/ja/'), `${h} がありません`);
     }
     assert.ok(!/12,345|1,234|99\+/.test(b), 'ダミーの数字');
@@ -238,7 +241,7 @@ test('使い方・よくある質問・ブログ：両言語のページ・RSS�
   for (const p of built.pages) {
     const html = layout(p);
     for (const m of html.matchAll(/href="(\/[^"#?]*)/g)) {
-      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(m[1])) continue;
+      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(m[1]) || m[1] === ADMIN_PAGE) continue;
       assert.ok(paths.has(m[1]), `${p.path} → ${m[1]} がありません`);
     }
   }
@@ -427,7 +430,7 @@ test('自動のブログ記事：今週末・来月のまとめ・新着の掲�
   const paths = new Set(built.pages.map((p) => p.path));
   for (const p of built.pages.filter((x) => x.path.includes('/blog/'))) {
     for (const m of layout(p).matchAll(/href="(\/[^"#?]*)/g)) {
-      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(m[1])) continue;
+      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(m[1]) || m[1] === ADMIN_PAGE) continue;
       assert.ok(paths.has(m[1]), `${p.path} → ${m[1]}`);
     }
   }
@@ -667,4 +670,10 @@ test('SNS で共有したときの画像とカード（og:image・twitter:card�
   assert.equal(ld[0].name, 'Oedo Antique Market (Tokyo International Forum)');
   assert.ok(ld[0].image?.length && ld[0].description && ld[0].location.address.addressCountry === 'JP');
   assert.ok(ev.body.includes('"@type":"BreadcrumbList"'));
+});
+
+test('管理画面への隠しリンク：フッターの「©」が /admin/reviews を指し、その静的ファイルがある', async () => {
+  const { existsSync } = await import('node:fs');
+  assert.ok(existsSync(join(fileURLToPath(new URL('..', import.meta.url)), 'static', 'admin', 'reviews.html')));
+  for (const path of ['/', '/ja/']) assert.ok(layout(page(path)).includes(`<a class="ft-admin" href="${ADMIN_PAGE}" rel="nofollow">©</a>`), path);
 });

@@ -61,7 +61,7 @@ export function siteFooter(path, lang = 'en') {
 <div class="ft-brandcol"><a class="brand ft-brand" href="${langPath('/', lang)}" aria-label="Flea Market JP">${logoSvg()}<span class="brand-t"><b>Flea Market <em>JP</em></b><small>${esc(T[lang].tagline)}</small></span></a>${langSwitch(path, lang)}<figure class="ft-qr"><img src="/img/qr.svg" width="104" height="104" alt="" loading="lazy" decoding="async"><figcaption>${esc(lang === "en" ? "Scan to open on your phone" : "スマホで開く")}<small>${esc(QR_URL.replace(/^https?:\/\/|\/$/g, ""))}</small></figcaption></figure></div>
 <nav class="ft-cols" aria-label="${esc(f.nav)}">${FOOTER_COLS.map(col).join('')}</nav>
 </div>
-<div class="ft-note"><p>${esc(disclaimer(lang))}</p><p>© ${esc(SITE.name)}　${esc(f.copy)}</p></div>
+<div class="ft-note"><p>${esc(disclaimer(lang))}</p><p><a class="ft-admin" href="/admin/reviews" rel="nofollow">©</a> ${esc(SITE.name)}　${esc(f.copy)}</p></div>
 </footer>`;
 }
 

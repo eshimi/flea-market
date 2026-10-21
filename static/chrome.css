@@ -73,3 +73,5 @@
 .ft-qr img{width:104px;height:104px;border:1px solid var(--cx-line);border-radius:8px;background:#fff;padding:4px;flex:0 0 auto}
 .ft-qr figcaption{font-size:13px;color:var(--cx-ink);line-height:1.5}
 .ft-qr small{display:block;color:var(--cx-sub);font-size:12px}
+/* 管理画面への隠しリンク（フッターの「©」）。見た目は周りの文字と同じ */
+.ft-note a.ft-admin{color:inherit;text-decoration:none;cursor:text}
