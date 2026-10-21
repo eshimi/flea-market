@@ -3361,5 +3361,16 @@
   "evidenceOk": {
    "ube-city-flea-mucc": true
   }
+ },
+ "https://www.kyoto-ga.jp/umekouji/index.html": {
+  "fetchedAt": "2026-10-21",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"1d7831-450a-65ddc623f494a\"",
+  "lastModified": "Thu, 15 Oct 2026 07:56:22 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "umekoji-park-tedukuri-ichi": true
+  }
  }
 }
