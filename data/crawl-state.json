@@ -23,11 +23,12 @@
   "hash": "1e6d1113712340e9"
  },
  "recycler-jp": {
-  "fetchedAt": "2026-10-19",
+  "fetchedAt": "2026-10-22",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 5768,
-  "hash": "0391163940219f9f"
+  "len": 6549,
+  "hash": "73a76546f041094e",
+  "changedAt": "2026-10-22"
  },
  "tezukuriichi": {
   "fetchedAt": "2026-10-19",
@@ -81,11 +82,12 @@
   "hash": "467025b9a547119f"
  },
  "recycler-jp-schedule": {
-  "fetchedAt": "2026-10-21",
+  "fetchedAt": "2026-10-22",
   "httpStatus": 200,
   "failCount": 0,
   "len": 3938,
-  "hash": "112be4d7523d250c"
+  "hash": "05919107ea2b7f38",
+  "changedAt": "2026-10-22"
  },
  "bia-furima-go": {
   "fetchedAt": "2026-10-20",
