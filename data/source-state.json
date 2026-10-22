@@ -643,10 +643,10 @@
   }
  },
  "https://hino-artfestival.com/": {
-  "fetchedAt": "2026-10-21",
-  "httpStatus": 304,
+  "fetchedAt": "2026-10-22",
+  "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"1-1792043052;br\"",
+  "etag": "\"97-1792656084;br\"",
   "mismatch": {},
   "evidenceOk": {
    "hino-art-festival-flea-craft": true
@@ -1919,7 +1919,7 @@
   }
  },
  "https://tokyo-romantic.com/": {
-  "fetchedAt": "2026-10-21",
+  "fetchedAt": "2026-10-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2551,7 +2551,7 @@
   }
  },
  "http://ichigoichie.moo.jp/furusato.html": {
-  "fetchedAt": "2026-10-21",
+  "fetchedAt": "2026-10-22",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Thu, 10 Oct 2024 02:40:00 GMT",
@@ -3298,7 +3298,7 @@
   }
  },
  "https://tokyo-romantic.com/access/": {
-  "fetchedAt": "2026-10-21",
+  "fetchedAt": "2026-10-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
