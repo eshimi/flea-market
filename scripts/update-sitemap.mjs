@@ -33,6 +33,10 @@ function main() {
   const stateFile = join(ROOT, 'data', 'sitemap-lastmod.json');
   const state = existsSync(stateFile) ? JSON.parse(readFileSync(stateFile, 'utf8')) : {};
   const paths = JSON.parse(readFileSync(join(out, 'pages.json'), 'utf8'));
+  // 静的に追加するメディア紹介ページも、存在する場合はサイトマップへ含める。
+  for (const p of ['/press/', '/ja/press/']) {
+    if (existsSync(join(out, p, 'index.html')) && !paths.includes(p)) paths.push(p);
+  }
   const next = updateLastmod(state, paths.map((p) => [p, mainHash(readFileSync(join(out, p, 'index.html'), 'utf8'))]), today);
   writeFileSync(stateFile, JSON.stringify(next, null, 1) + '\n');
   // 英語（既定）と日本語は、お互いを hreflang で示す
