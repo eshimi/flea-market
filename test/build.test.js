@@ -659,9 +659,12 @@ test('AdSense の tag は、すべてのページの head に入る（ADSENSE_CL
 test('都道府県ページの概要：掲載データの件数・毎月の市・初めての方へ。東京・大阪・京都だけ、観光の枠と公式の観光サイト', () => {
   const real = loadData();
   const { pages } = buildPages(real, '2026-10-21');
-  const tokyo = pages.find((p) => p.path === '/area/13/').body;
+  const tokyoPage = pages.find((p) => p.path === '/area/13/');
+  const tokyo = tokyoPage.body;
   assert.match(tokyo, /class="pov"/);
-  assert.match(tokyo, /Flea Market JP lists \d+ markets in Tokyo/);
+  // 見出しと説明は、上部の帯の中（パンくずもロゴの下の帯の中）
+  assert.match(tokyoPage.bannerText, /^<nav class="crumbs[\s\S]*<h1>[\s\S]*<p class="lead">Flea Market JP lists \d+ markets in Tokyo/);
+  assert.ok(!tokyo.includes('<h1>'));
   assert.ok(tokyo.includes('/blog/guide-tokyo-flea-markets-visitors/'), '東京の旅行者ガイドへのリンク');
   assert.ok(tokyo.includes('https://www.gotokyo.org/en/index.html'));
   assert.ok(pages.find((p) => p.path === '/ja/area/26/').body.includes('https://ja.kyoto.travel/'));

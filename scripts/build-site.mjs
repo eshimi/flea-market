@@ -179,8 +179,7 @@ function prefOverview(p, ctx, lang) {
   const lead = ja
     ? `${pn}の掲載は${ser.length}件（主催者・自治体の公式情報から）。今後30日の開催は${days30}日、今週末は${wk}件です。`
     : `Flea Market JP lists ${ser.length} market${ser.length === 1 ? '' : 's'} in ${pn}, all from official organizer and municipal pages. In the next 30 days there are markets on ${days30} day${days30 === 1 ? '' : 's'}; ${wk} this weekend.`;
-  return `<section class="pov" aria-label="${ja ? `${pn}の概要` : `${pn} at a glance`}">
-<p class="pov-lead">${esc(lead)}</p>
+  return { lead, html: `<section class="pov" aria-label="${ja ? `${pn}の概要` : `${pn} at a glance`}">
 <p class="pov-links"><a href="/weekend/#pref=${p}">${ja ? `今週末の${pn}の開催` : `This weekend in ${pn}`} →</a> <a href="/calendar/">${ja ? 'カレンダーで見る' : 'Calendar'} →</a></p>
 <div class="pov-grid">
 <div class="pov-box"><h3>${ja ? '種類別の掲載数' : 'Markets by type'}</h3><ul class="pov-kinds">${kindTxt}</ul></div>
@@ -188,7 +187,7 @@ ${regular ? `<div class="pov-box"><h3>${ja ? '毎月・毎週の市' : 'Regular 
 <div class="pov-box"><h3>${ja ? '初めての方へ' : 'First visit?'}</h3><ul>${firstLinks}</ul></div>
 ${sights}
 </div>
-</section>`;
+</section>` };
 }
 
 function areaPages(ctx, lang) {
@@ -207,8 +206,9 @@ function areaPages(ctx, lang) {
   for (const [p, cities] of prefs) {
     const pn = prefLabel(p, lang);
     const cityLinks = [...cities].sort().map(([c, name]) => `<li><a href="/area/${p}/${c}/">${esc(cityL(name, lang))}<small>${esc(P[lang].cnt(count((s) => s.venue.cityCode === c)))}</small></a></li>`).join('');
-    const extra = prefOverview(p, ctx, lang) + (cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '');
-    pages.push({ ...listPage(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), '', ctx.occ.filter((o) => o.series.venue.pref === p), extra), bannerArt: `/img/pref/${p}.webp` });
+    const ov = prefOverview(p, ctx, lang);
+    const extra = ov.html + (cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '');
+    pages.push({ ...listPage(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), ov.lead, ctx.occ.filter((o) => o.series.venue.pref === p), extra), bannerArt: `/img/pref/${p}.webp` });
     for (const [c, name] of cities) {
       pages.push(listPage(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c)));
     }
@@ -542,7 +542,7 @@ function sideNav(ctx, lang, base) {
 // 本文の先頭（パンくず・見出し・説明）を、帯の中へ移す（地域のページと同じ形）
 function splitBanner(page) {
   if (page.bannerText || page.body.includes('class="ev-split"')) return page;
-  const m = /^<div class="in page[^"]*">((?:<nav class="crumbs"[\s\S]*?<\/nav>)?<h1[\s\S]*?<\/h1>(?:<p class="lead">[\s\S]*?<\/p>)?)([\s\S]*)<\/div>$/.exec(page.body);
+  const m = /^<div class="in page[^"]*">((?:<nav class="crumbs"[\s\S]*?<\/nav>(?:<script type="application\/ld\+json">[\s\S]*?<\/script>)?)?<h1[\s\S]*?<\/h1>(?:<p class="lead">[\s\S]*?<\/p>)?)([\s\S]*)<\/div>$/.exec(page.body);
   if (m) return { ...page, bannerText: m[1], body: `<div class="in page">${m[2]}</div>` };
   // 読み物（ガイド・よくある質問・ブログ記事）：パンくず・見出し・説明（art-head）を帯へ
   const a = /^<div class="art-wrap">\s*(<nav class="crumbs art-crumbs"[\s\S]*?<\/nav>)\s*<header class="art-head">(<h1[\s\S]*?<\/h1>(?:<p class="art-k">[\s\S]*?<\/p>)?(?:<p class="art-lead">[\s\S]*?<\/p>)?)([\s\S]*?)<\/header>([\s\S]*)$/.exec(page.body);

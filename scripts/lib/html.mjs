@@ -116,7 +116,7 @@ export function pageBanner(base, text = '', artOverride = '') {
   const art = artOverride || (existsSync(join(STATIC_BANNER_DIR, `${name}.webp`)) ? `/img/banner/${name}.webp` : '');
   if (text) {
     // パンくずは帯の一番上、見出し・説明とイラストは上下の中央
-    const cm = /^(<nav class="crumbs[\s\S]*?<\/nav>)([\s\S]*)$/.exec(text);
+    const cm = /^(<nav class="crumbs[\s\S]*?<\/nav>(?:<script type="application\/ld\+json">[\s\S]*?<\/script>)?)([\s\S]*)$/.exec(text);
     const crumbs = cm ? cm[1] : '';
     const rest = cm ? cm[2] : text;
     return `<div class="pg-banner has-text"><div class="in pg-banner-in">${crumbs ? `<div class="pg-banner-crumbs">${crumbs}</div>` : ''}<div class="pg-banner-main"><div class="pg-banner-text">${rest}</div>${art ? `<div class="pg-banner-art" aria-hidden="true" style="background-image:url(${art})"></div>` : ''}</div></div></div>\n`;
