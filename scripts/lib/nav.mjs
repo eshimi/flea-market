@@ -34,7 +34,7 @@ export const FOOTER_COLS = [
   { key: 'find', items: [['/weekend/', 'weekend'], ['/calendar/', 'calendar'], ['/area/', 'area'], ['/spot/', 'spots'], ['/kind/', 'types'], ['/search/', 'search']] },
   { key: 'areas', areas: true, more: ['/area/', 'allAreas'] },
   { key: 'guides', items: [['/blog/', 'blog'], ['/guide/', 'howto'], ['/tips/', 'tips'], ['/faq/', 'faq'], ['/blog/guide-tokyo-international-forum/', 'g1'], ['/blog/guide-tokyo-monthly-rule-markets/', 'g2']] },
-  { key: 'site', items: [['/about/', 'aboutPolicy'], ['/shuten/', 'vendors'], ['/about/#remove', 'remove'], ['/contact/', 'contact']] },
+  { key: 'site', items: [['/about/', 'aboutPolicy'], ['/press/', 'press'], ['/shuten/', 'vendors'], ['/about/#remove', 'remove'], ['/contact/', 'contact']] },
 ];
 
 export const NAV_LABELS = {
