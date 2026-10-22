@@ -57,7 +57,8 @@ export function loadData(dir = join(ROOT, 'data')) {
 const val = (v, lang) => (v ? esc(v) : TBC(lang));
 // 英語のページでは、訳があれば「英語＋公式の日本語（小さく）」で出す。訳がなければ日本語のまま
 const orig = (en, ja) => `${esc(en)}<small class="orig" lang="ja">${esc(ja)}</small>`;
-const tv = (s, key, ja, lang) => (!ja ? TBC(lang) : lang === 'en' && fieldEn(s, key) ? orig(fieldEn(s, key), ja) : esc(ja));
+const ORIG_KEYS = new Set(['address', 'venue', 'name']);
+const tv = (s, key, ja, lang) => (!ja ? TBC(lang) : lang === 'en' && fieldEn(s, key) ? (ORIG_KEYS.has(key) ? orig(fieldEn(s, key), ja) : esc(fieldEn(s, key))) : esc(ja));
 const pg = (lang, base, x) => ({ path: langPath(base, lang), lang, ...x });
 
 function dayStrip(occ, today, current, lang) {
@@ -293,7 +294,7 @@ function seriesPage(s, ctx, lang) {
   const ex = s.exhibitor;
   const t = (x) => val(x, lang);
   const checked = lang === 'ja' ? '最終確認 ' : 'last checked ';
-  const rule = lang === 'ja' ? esc(s.recurrence.text) : fieldEn(s, 'rule') ? orig(fieldEn(s, 'rule'), s.recurrence.text) : `${esc(recurEn(s.recurrence) || 'Selected dates (see below)')}<small class="orig" lang="ja">${esc(s.recurrence.text)}</small>`;
+  const rule = lang === 'ja' ? esc(s.recurrence.text) : fieldEn(s, 'rule') ? esc(fieldEn(s, 'rule')) : esc(recurEn(s.recurrence) || 'Selected dates (see below)');
   const oen = lang === 'en' ? orgEn(s.organizer.name) : '';
   const oShown = oen ? orig(oen, s.organizer.name) : esc(s.organizer.name);
   const orgName = s.organizer.url ? `<a href="${esc(s.organizer.url)}" rel="noopener">${oShown}</a>` : oShown;
@@ -312,7 +313,7 @@ ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
 <h2 class="sec-h">${esc(p.secInfo)}</h2>
 <dl class="facts">
 ${row(p.when, rule)}
-${row(p.time, (lang === 'en' && timeEn(s) ? (s.time.text === timeEn(s).replace('–', '〜') ? esc(timeEn(s)) : orig(timeEn(s), s.time.text)) : t(s.time?.text)) + srcNote(s, 'time', p))}
+${row(p.time, (lang === 'en' && timeEn(s) ? (s.time.text === timeEn(s).replace('–', '〜') ? esc(timeEn(s)) : esc(timeEn(s))) : t(s.time?.text)) + srcNote(s, 'time', p))}
 ${row(p.venue, (lang === 'en' && venueL(s, lang) !== v.name ? orig(venueL(s, lang), v.name) : esc(v.name)) + spotLink(s, ctx, lang))}
 ${row(p.address, (v.address ? tv(s, 'address', v.address, lang) + (v.addressFrom === 'search' ? `<small class="addr-src">${esc(p.addrSearched)}</small>` : '') : est(estAddress, p)) + mapInline(mu, 'open'))}
 ${row(p.access, (v.access ? tv(s, 'access', v.access, lang) + (v.accessFrom === 'search' ? `<small class="addr-src">${esc(p.accessSearched)}</small>` : '') : est(estAccess, p)) + mapInline(mu, 'route'))}
