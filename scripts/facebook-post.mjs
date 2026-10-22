@@ -61,7 +61,7 @@ export function buildPost(data, today) {
 async function post({ text, link }) {
   const id = process.env.FB_PAGE_ID;
   const token = process.env.FB_PAGE_TOKEN;
-  const res = await fetch(`https://graph.facebook.com/v21.0/${encodeURIComponent(id)}/feed`, {
+  const res = await fetch(`https://graph.facebook.com/v26.0/${encodeURIComponent(id)}/feed`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({ message: text, link, access_token: token }),
