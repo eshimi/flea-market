@@ -10,6 +10,8 @@ import { REVIEWS_ON } from '../scripts/lib/reviews-view.mjs';
 
 // 管理画面（静的ファイル static/admin/reviews.html。Cloudflare が .html を外して配る）。フッターの「©」が隠しリンク
 const ADMIN_PAGE = '/admin/reviews';
+// 手で書いた静的ページ（static/press/・static/ja/press/）。ビルドのページ一覧にはないが、リンクしてよい
+const STATIC_PAGES = ['/press/', '/ja/press/'];
 
 const FIX = join(fileURLToPath(new URL('.', import.meta.url)), 'fixtures');
 const data = loadData(FIX);
@@ -187,7 +189,7 @@ test('トップの下部：カレンダー・注目・出店者・地域・種�
     // 内部リンクは、その言語で作ったページにある
     for (const m of layout(p).matchAll(/href="(\/[^"#?]*)/g)) {
       const h = m[1];
-      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(h) || h === ADMIN_PAGE) continue;
+      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(h) || h === ADMIN_PAGE || STATIC_PAGES.includes(h)) continue;
       assert.ok(page(h) || (p.lang === 'en' && h === '/ja/'), `${h} がありません`);
     }
     assert.ok(!/12,345|1,234|99\+/.test(b), 'ダミーの数字');
@@ -241,7 +243,7 @@ test('使い方・よくある質問・ブログ：両言語のページ・RSS�
   for (const p of built.pages) {
     const html = layout(p);
     for (const m of html.matchAll(/href="(\/[^"#?]*)/g)) {
-      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(m[1]) || m[1] === ADMIN_PAGE) continue;
+      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(m[1]) || m[1] === ADMIN_PAGE || STATIC_PAGES.includes(m[1])) continue;
       assert.ok(paths.has(m[1]), `${p.path} → ${m[1]} がありません`);
     }
   }
@@ -439,7 +441,7 @@ test('自動のブログ記事：今週末・来月のまとめ・新着の掲�
   const paths = new Set(built.pages.map((p) => p.path));
   for (const p of built.pages.filter((x) => x.path.includes('/blog/'))) {
     for (const m of layout(p).matchAll(/href="(\/[^"#?]*)/g)) {
-      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(m[1]) || m[1] === ADMIN_PAGE) continue;
+      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(m[1]) || m[1] === ADMIN_PAGE || STATIC_PAGES.includes(m[1])) continue;
       assert.ok(paths.has(m[1]), `${p.path} → ${m[1]}`);
     }
   }
