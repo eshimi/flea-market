@@ -2,7 +2,7 @@ import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 // ページの共通の枠（ヘッダー・フッター・免責）と、HTML の小さな部品
-import { INDEXABLE, SITE, HEADER_NAV, FOOTER_COLS, NAV_LABELS, ANALYTICS_ID, ADSENSE_CLIENT, QR_URL } from './nav.mjs';
+import { FACEBOOK_GROUP, FACEBOOK_PAGE, INDEXABLE, SITE, HEADER_NAV, FOOTER_COLS, NAV_LABELS, ANALYTICS_ID, ADSENSE_CLIENT, QR_URL } from './nav.mjs';
 import { KINDS } from './kinds.mjs';
 import { weekday } from './dates.mjs';
 import { cityL, nameL, noteL, timeEn, venueL } from './tr-en.mjs';
@@ -58,7 +58,7 @@ export function siteFooter(path, lang = 'en') {
   };
   return `<footer class="site-foot2">
 <div class="ft-in">
-<div class="ft-brandcol"><a class="brand ft-brand" href="${langPath('/', lang)}" aria-label="Flea Market JP">${logoSvg()}<span class="brand-t"><b>Flea Market <em>JP</em></b><small>${esc(T[lang].tagline)}</small></span></a>${langSwitch(path, lang)}<figure class="ft-qr"><img src="/img/qr.svg" width="104" height="104" alt="" loading="lazy" decoding="async"><figcaption>${esc(lang === "en" ? "Scan to open on your phone" : "スマホで開く")}<small>${esc(QR_URL.replace(/^https?:\/\/|\/$/g, ""))}</small></figcaption></figure></div>
+<div class="ft-brandcol"><a class="brand ft-brand" href="${langPath('/', lang)}" aria-label="Flea Market JP">${logoSvg()}<span class="brand-t"><b>Flea Market <em>JP</em></b><small>${esc(T[lang].tagline)}</small></span></a>${langSwitch(path, lang)}<p class="ft-social"><a href="${FACEBOOK_PAGE}" target="_blank" rel="noopener">${icon('facebook', 18)}<span>${esc(f.fbFollow)}</span></a><a class="ft-join" href="${FACEBOOK_GROUP}" target="_blank" rel="noopener">${esc(f.fbJoin)}</a></p><figure class="ft-qr"><img src="/img/qr.svg" width="104" height="104" alt="" loading="lazy" decoding="async"><figcaption>${esc(lang === "en" ? "Scan to open on your phone" : "スマホで開く")}<small>${esc(QR_URL.replace(/^https?:\/\/|\/$/g, ""))}</small></figcaption></figure></div>
 <nav class="ft-cols" aria-label="${esc(f.nav)}">${FOOTER_COLS.map(col).join('')}</nav>
 </div>
 <div class="ft-note"><p>${esc(disclaimer(lang))}</p><p><a class="ft-admin" href="/admin/reviews" rel="nofollow">©</a> ${esc(SITE.name)}　${esc(f.copy)}</p></div>
@@ -125,6 +125,15 @@ export function pageBanner(base, text = '', artOverride = '') {
   return `<div class="pg-banner" aria-hidden="true" style="background-image:url(${art})"></div>\n`;
 }
 
+// トップページの構造化データ（Organization と WebSite）。sameAs に Facebook ページ
+function orgLd() {
+  const ld = [
+    { '@context': 'https://schema.org', '@type': 'Organization', name: SITE.name, url: `${SITE.url}/`, logo: `${SITE.url}/favicon-512.png`, sameAs: [FACEBOOK_PAGE] },
+    { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: `${SITE.url}/` },
+  ];
+  return `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n`;
+}
+
 export function layout({ path, title, description, body, head = '', scripts = [], lang, css = [], keywords = [], bannerText = '', bannerArt = '', ogImage = '' }) {
   const sp = splitPath(path);
   lang = lang || sp.lang;
@@ -163,7 +172,7 @@ ${ogImage ? '' : '<meta property="og:image:width" content="1200">\n<meta propert
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/style.css">
 <link rel="stylesheet" href="/chrome.css">
-${css.map((c) => `<link rel="stylesheet" href="${c}">`).join('\n')}${css.length ? '\n' : ''}${head}</head>
+${css.map((c) => `<link rel="stylesheet" href="${c}">`).join('\n')}${css.length ? '\n' : ''}${head}${isHome ? orgLd() : ''}</head>
 <body>
 ${siteHeader(base, lang)}
 <main id="main">

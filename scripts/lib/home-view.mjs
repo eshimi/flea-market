@@ -4,6 +4,7 @@ import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { esc } from './html.mjs';
+import { FACEBOOK_PAGE } from './nav.mjs';
 
 const STATIC_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'static');
 import { icon } from './icons.mjs';
@@ -202,6 +203,12 @@ export function renderNews(ctx, lang = 'ja') {
 }
 
 // 英語のトップでは、出店者向けは下に細いバナーだけ（訪日外国人にはあまり要らない情報のため）
+// Facebook ページへの小さな CTA（「このサイトについて」の下）
+export function renderFbCta(lang = 'en') {
+  const t = S[lang].fb;
+  return `<section class="hm-sec hm-fbcta" aria-label="Facebook"><div class="hm-in"><div class="fbc">${icon('facebook', 22)}<b>${esc(t.title)}</b><a class="fbc-btn" href="${FACEBOOK_PAGE}" target="_blank" rel="noopener">${esc(t.btn)}</a></div></div></section>`;
+}
+
 export function renderVendorBanner(lang = 'en') {
   const t = S[lang].vendors;
   return `<section class="hm-sec hm-vbanner" aria-label="${esc(t.title)}"><div class="hm-in"><a class="vb" href="/shuten/">${icon('store', 22)}<b>${esc(t.title)}</b><span>${esc(t.bannerDesc || t.desc)}</span>${icon('arrow', 18)}</a></div></section>`;
@@ -268,6 +275,7 @@ export function renderHomeBody(ctx, lang = 'ja', disclaimer = '') {
     renderNews(ctx, lang),
     en ? '' : renderVendors(ctx, lang),
     renderAbout(ctx, lang, disclaimer),
+    renderFbCta(lang),
     en ? renderVendorBanner(lang) : '',
   ].join('\n');
 }
