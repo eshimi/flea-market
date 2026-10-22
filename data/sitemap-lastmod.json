@@ -1863,6 +1863,10 @@
   "hash": "v1:9f54dc8e4d81d0f2",
   "lastmod": "2026-10-20"
  },
+ "/press/": {
+  "hash": "v1:117bbc1ff159f725",
+  "lastmod": "2026-10-22"
+ },
  "/faq/": {
   "hash": "v1:664e913c2f2c367a",
   "lastmod": "2026-10-20"
@@ -3875,6 +3879,10 @@
   "hash": "v1:172c6a0e0a383341",
   "lastmod": "2026-10-20"
  },
+ "/ja/press/": {
+  "hash": "v1:08c6f35b89fa06d8",
+  "lastmod": "2026-10-22"
+ },
  "/ja/faq/": {
   "hash": "v1:ba37d8ca4f47872b",
   "lastmod": "2026-10-20"
@@ -4022,13 +4030,5 @@
  "/ja/blog/weekend-2026-10-24/": {
   "hash": "v1:2174fb0540c56810",
   "lastmod": "2026-10-21"
- },
- "/press/": {
-  "hash": "v1:8a865532f3092a20",
-  "lastmod": "2026-10-22"
- },
- "/ja/press/": {
-  "hash": "v1:ba8b9216ed9539b5",
-  "lastmod": "2026-10-22"
  }
 }
