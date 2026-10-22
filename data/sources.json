@@ -4250,7 +4250,8 @@
    "jfma-ikea-tsuruhama-loppis",
    "jfma-minatomachi-river-place-flea",
    "jfma-wanwan-marche-kobe-meriken-park-vol8",
-   "jfma-ikea-kobe-loppis"
+   "jfma-ikea-kobe-loppis",
+   "jfma-tsurumi-ryokuchi-flea"
   ],
   "terms": {
    "ok": true,
@@ -4322,6 +4323,264 @@
    "ok": true,
    "checkedAt": "2026-10-22",
    "note": "ウォーカープラス（イベント情報サイト。情報提供：イベントバンク）。robots.txt は200で許可（2026-10-22 確認）。利用規約（/info/rules.html）に「私的利用の範囲でのみ使用」「複製・転載の禁止」とあるため、事実の項目（料金・アクセスなど）だけを短く掲載し、文章・画像は転載しない。扱いは要判断"
+  }
+ },
+ {
+  "url": "http://freemarket-go.com/shousai_osaka_003.html",
+  "series": [
+   "jfma-tsurumi-ryokuchi-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイトの会場ページ。robots.txt で許可（2026-10-22 確認）。利用規約のページは未確認"
+  }
+ },
+ {
+  "url": "http://furimatairiku.jp/",
+  "series": [
+   "furimatairiku-hanahaku-tsurumi",
+   "furimatairiku-kawachi-kosaka",
+   "furimatairiku-aeontown-matsubara",
+   "furimatairiku-karako-kagi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイト(トップ)。robots.txt は 404（制限なし, 2026-10-22 確認）。利用規約のページなし"
+  }
+ },
+ {
+  "url": "http://furimatairiku.jp/Agreement/index.html",
+  "series": [
+   "furimatairiku-hanahaku-tsurumi",
+   "furimatairiku-kawachi-kosaka",
+   "furimatairiku-aeontown-matsubara",
+   "furimatairiku-karako-kagi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "出店に関する規約のページ。robots.txt は 404（制限なし）。規約に自動取得を禁じる記載は見当たらない（2026-10-22 確認）"
+  }
+ },
+ {
+  "url": "https://www.rbf.jp/shirakobato.html",
+  "series": [
+   "rbf-koshigaya-shirakobato-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイトの会場ページ。robots.txt は 404（制限なし, 2026-10-22 確認）。利用規約のページなし"
+  }
+ },
+ {
+  "url": "https://www.rbf.jp/kawagoe.html",
+  "series": [
+   "rbf-kawagoe-suijo-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイトの会場ページ。robots.txt は 404（制限なし, 2026-10-22 確認）。利用規約のページなし"
+  }
+ },
+ {
+  "url": "https://www.rbf.jp/laketown.html",
+  "series": [
+   "rbf-koshigaya-laketown"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイトの旧会場ページ（2021年の日付が残る）。robots.txt は 404（制限なし, 2026-10-22 確認）。内容が古いため、取り込み時に年を添えること"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/kankyo/page/0000687560.html",
+  "series": [
+   "osaka-garagesale-konohana"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "大阪市公式サイト（同じ環境局の別ページ）。robots.txt は 404（制限なし）。2026-10-22 確認"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/kankyo/page/0000576497.html",
+  "series": [
+   "osaka-garagesale-hirano"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "大阪市公式サイト（同じ環境局の別ページ）。robots.txt は 404（制限なし）。2026-10-22 確認"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/kankyo/page/0000687754.html",
+  "series": [
+   "osaka-garagesale-higashinari"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "大阪市公式サイト（同じ環境局の別ページ）。robots.txt は 404（制限なし）。2026-10-22 確認"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/kankyo/page/0000489331.html",
+  "series": [
+   "osaka-garagesale-sumiyoshi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "大阪市公式サイト（同じ環境局の別ページ）。robots.txt は 404（制限なし）。2026-10-22 確認"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/kankyo/page/0000606700.html",
+  "series": [
+   "osaka-garagesale-nishiyodogawa"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "大阪市公式サイト（同じ環境局の別ページ）。robots.txt は 404（制限なし）。2026-10-22 確認"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/kankyo/page/0000687562.html",
+  "series": [
+   "osaka-garagesale-minato"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "大阪市公式サイト（同じ環境局の別ページ）。robots.txt は 404（制限なし）。2026-10-22 確認"
+  }
+ },
+ {
+  "url": "https://www.city.osaka.lg.jp/kankyo/page/0000687281.html",
+  "series": [
+   "osaka-garagesale-higashisumiyoshi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "大阪市公式サイト（同じ環境局の別ページ）。robots.txt は 404（制限なし）。2026-10-22 確認"
+  }
+ },
+ {
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/78/",
+  "series": [
+   "kamigamo-tedukuri-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ主催者（株式会社クラフト）サイトの出店案内ページ。robots.txt で許可（/files は Disallow なので PDF は取得しない）。2026-10-22 確認。規約ページは未確認"
+  }
+ },
+ {
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/104/",
+  "series": [
+   "heian-rakuichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ主催者（株式会社クラフト）サイトの出店案内ページ。robots.txt で許可（/files は Disallow なので PDF は取得しない）。2026-10-22 確認。規約ページは未確認"
+  }
+ },
+ {
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/79/",
+  "series": [
+   "kitayama-craft-garden"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ主催者（株式会社クラフト）サイトの出店案内ページ。robots.txt で許可（/files は Disallow なので PDF は取得しない）。2026-10-22 確認。規約ページは未確認"
+  }
+ },
+ {
+  "url": "https://boshuu.hp.peraichi.com/boshuu",
+  "series": [
+   "f2525-moriyama-moriive",
+   "f2525-hikone-bunka-plaza"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ主催者（2525フリマ滋賀）の出店募集ページ（peraichi の別サブドメイン）。robots.txt で許可。2026-10-22 確認。規約は未確認"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/faq/",
+  "series": [
+   "lohas-park-kashiwara",
+   "lohas-park-itami",
+   "lohas-park-sakai-oizumi",
+   "lohas-park-tsurumi",
+   "lohas-park-toyonaka-hattori",
+   "lohas-park-higashisumiyoshi-nagai",
+   "lohas-park-nara-heijokyuseki",
+   "lohas-park-daito-suehiro",
+   "lohas-park-fukinuke-marche-hyogo-eki",
+   "lohas-park-himeji-otemae"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイト（lohas-park.jp）。利用規約のページなし。robots.txt で許可（2026-10-22 確認）"
+  }
+ },
+ {
+  "url": "https://pearlroad.jp/antiquefair/",
+  "series": [
+   "hiratsuka-ekimae-kottoichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイト（pearlroad.jp）。利用規約のページなし。robots.txt で許可（2026-10-22 確認）"
+  }
+ },
+ {
+  "url": "http://pearlroad.jp/wp/wp-content/uploads/2018/04/kaisaigaiyou.pdf",
+  "series": [
+   "hiratsuka-ekimae-kottoichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイトのPDF。利用規約のページなし。robots.txt で許可（2026-10-22 確認）。2018年4月付"
+  }
+ },
+ {
+  "url": "https://www.binzuru-ichi.com/join/about-intro.html",
+  "series": [
+   "nagano-zenkoji-binzuru-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイト(binzuru-ichi.com)の別ページ。robots.txt は404で許可(2026-10-22確認)。利用規約のページは確認していない(要確認)。事実の項目のみ"
+  }
+ },
+ {
+  "url": "https://www.binzuru-ichi.com/access.html",
+  "series": [
+   "nagano-zenkoji-binzuru-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同上"
   }
  }
 ]
