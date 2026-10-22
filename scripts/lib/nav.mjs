@@ -1,4 +1,8 @@
 // ナビは、ここ1か所で定義する（補助金ネットと同じ考え方：探す → 出店する → 読む → サイトについて）
+// 公式の Facebook（ページ＝メインの導線、グループ＝コミュニティ）
+export const FACEBOOK_PAGE = 'https://www.facebook.com/profile.php?id=61595691571877';
+export const FACEBOOK_GROUP = 'https://www.facebook.com/groups/1726298765106058';
+
 export const SITE = {
   name: 'Flea Market JP',
   tagline: '全国のフリマ・蚤の市・骨董市・手作り市',
