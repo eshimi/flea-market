@@ -207,7 +207,7 @@ export function renderNews(ctx, lang = 'ja') {
 // Facebook ページへの小さな CTA（「このサイトについて」の下）
 export function renderFbCta(lang = 'en') {
   const t = S[lang].fb;
-  return `<section class="hm-sec hm-fbcta" aria-label="Facebook"><div class="hm-in"><div class="fbc">${fbLogo(44)}<div class="fbc-text"><b>${esc(t.title)}</b><a class="fbc-group" href="${FACEBOOK_GROUP}" target="_blank" rel="noopener">${esc(S[lang].footer.fbJoin)} →</a></div><a class="fbc-btn" href="${FACEBOOK_PAGE}" target="_blank" rel="noopener">${fbLogo(20)}<span>${esc(t.btn)}</span></a></div></div></section>`;
+  return `<section class="hm-sec hm-fbcta" aria-label="Facebook"><div class="hm-in"><div class="fbc"><a class="fbc-logo" href="${FACEBOOK_PAGE}" target="_blank" rel="noopener" aria-label="${esc(t.btn)}">${fbLogo(52)}</a><div class="fbc-text"><b>${esc(t.title)}</b><a class="fbc-group" href="${FACEBOOK_GROUP}" target="_blank" rel="noopener">${esc(S[lang].footer.fbJoin)} →</a></div><a class="fbc-btn" href="${FACEBOOK_PAGE}" target="_blank" rel="noopener">${esc(t.btn)}</a></div></div></section>`;
 }
 
 export function renderVendorBanner(lang = 'en') {

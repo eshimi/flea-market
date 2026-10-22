@@ -274,15 +274,15 @@ a:hover .pm-on,a:focus-visible .pm-on{fill:#9A4C36}
 .hero2-dots button{width:14px;height:14px;border-radius:50%;border:2px solid #fff;background:rgba(41,43,40,.45);padding:0;cursor:pointer}
 .hero2-dots button[aria-pressed="true"]{background:#B95E43;border-color:#fff}
 @media (max-width:900px){.hero2-dots{right:16px;bottom:10px}}
-/* Facebook の CTA（ロゴつき・青系で目立たせる） */
+/* Facebook の CTA（公式ロゴは単独で置き、文字は離す） */
 .hm-fbcta{padding:6px 0 26px}
-.hm-fbcta .fbc{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:#eef4ff;border:1px solid #c9dcff;border-radius:14px;padding:18px 22px}
-.hm-fbcta .fb-logo{flex:0 0 auto}
+.hm-fbcta .fbc{display:flex;align-items:center;gap:20px;flex-wrap:wrap;background:#eef4ff;border:1px solid #c9dcff;border-radius:14px;padding:18px 22px}
+.hm-fbcta .fbc-logo{flex:0 0 auto;display:block;line-height:0}
+.hm-fbcta .fb-logo{display:block;border-radius:50%}
 .hm-fbcta .fbc-text{flex:1 1 260px;display:flex;flex-direction:column;gap:3px}
 .hm-fbcta .fbc-text b{font-size:17px;color:#16336b}
 .hm-fbcta .fbc-group{font-size:13px;color:#1b5fc4;text-decoration:none}
 .hm-fbcta .fbc-group:hover{text-decoration:underline}
-.hm-fbcta .fbc-btn{display:inline-flex;align-items:center;gap:9px;background:#1877F2;color:#fff;border-radius:999px;padding:10px 20px 10px 12px;font-size:14.5px;font-weight:700;text-decoration:none;box-shadow:0 4px 12px rgba(24,119,242,.28)}
-.hm-fbcta .fbc-btn .fb-logo circle{fill:#fff}.hm-fbcta .fbc-btn .fb-logo path{fill:#1877F2}
-.hm-fbcta .fbc-btn:hover{background:#1565d8}
-@media (max-width:600px){.hm-fbcta .fbc{padding:16px}.hm-fbcta .fbc-btn{width:100%;justify-content:center}}
+.hm-fbcta .fbc-btn{display:inline-flex;align-items:center;background:#fff;color:#0a58d6;border:2px solid #0866ff;border-radius:999px;padding:10px 22px;font-size:14.5px;font-weight:700;text-decoration:none;box-shadow:0 4px 12px rgba(8,102,255,.18)}
+.hm-fbcta .fbc-btn:hover{background:#0866ff;color:#fff}
+@media (max-width:600px){.hm-fbcta .fbc{padding:16px;gap:14px}.hm-fbcta .fbc-btn{width:100%;justify-content:center}}

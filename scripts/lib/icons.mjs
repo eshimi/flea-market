@@ -28,8 +28,8 @@ const PATHS = {
   torii: '<path d="M3 6h18M5 9.500h14M7 6v14M17 6v14M12 9.500V6"/>',
 };
 
-// Facebook のロゴ（青い丸に白い f）。公式ページ・グループへのリンクの目印として使う
-export const fbLogo = (size = 24) => `<svg class="fb-logo" viewBox="0 0 24 24" width="${size}" height="${size}" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#fff" d="M16.7 15.4l.55-3.4h-3.3V9.8c0-.93.46-1.84 1.94-1.84h1.5V5.06s-1.36-.23-2.66-.23c-2.72 0-4.5 1.65-4.5 4.63V12H7.2v3.4h3.03V24h3.72v-8.6z"/></svg>`;
+// Facebook のロゴ（公式の青い丸。Meta のブランド素材 static/img/facebook-logo.webp）。形・色は変えない。単独で置き、「Facebook」などの文字を隣に付けない
+export const fbLogo = (size = 24) => `<img class="fb-logo" src="/img/facebook-logo.webp" width="${size}" height="${size}" alt="" loading="lazy" decoding="async">`;
 
 export function icon(name, size) {
   if (!PATHS[name]) throw new Error(`アイコンがありません: ${name}`);
