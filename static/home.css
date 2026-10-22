@@ -274,13 +274,15 @@ a:hover .pm-on,a:focus-visible .pm-on{fill:#9A4C36}
 .hero2-dots button{width:14px;height:14px;border-radius:50%;border:2px solid #fff;background:rgba(41,43,40,.45);padding:0;cursor:pointer}
 .hero2-dots button[aria-pressed="true"]{background:#B95E43;border-color:#fff}
 @media (max-width:900px){.hero2-dots{right:16px;bottom:10px}}
-/* Facebook の小さな CTA */
-.hm-fbcta{padding:4px 0 22px}
-.hm-fbcta .fbc{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#fff;border:1px solid #ece2d2;border-radius:12px;padding:12px 18px}
-.hm-fbcta .fbc b{font-size:14.5px;flex:1 1 220px}
-.hm-fbcta .fbc-btn{display:inline-block;border:1.5px solid #c73e2a;color:#c73e2a;border-radius:999px;padding:7px 18px;font-size:13.5px;font-weight:700;text-decoration:none}
-.hm-fbcta .fbc-btn:hover{background:#c73e2a;color:#fff}
-/* HERO 右上の「初めての方へ」リンク */
-.hero2-new{position:absolute;top:16px;right:28px;z-index:3;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.92);border:1px solid #e5ddd0;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;color:#272a25;text-decoration:none;box-shadow:0 4px 14px rgba(40,35,25,.12)}
-.hero2-new:hover{background:#c73e2a;border-color:#c73e2a;color:#fff}
-@media (max-width:900px){.hero2-new{top:10px;right:16px;padding:6px 12px;font-size:12.5px}}
+/* Facebook の CTA（ロゴつき・青系で目立たせる） */
+.hm-fbcta{padding:6px 0 26px}
+.hm-fbcta .fbc{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:#eef4ff;border:1px solid #c9dcff;border-radius:14px;padding:18px 22px}
+.hm-fbcta .fb-logo{flex:0 0 auto}
+.hm-fbcta .fbc-text{flex:1 1 260px;display:flex;flex-direction:column;gap:3px}
+.hm-fbcta .fbc-text b{font-size:17px;color:#16336b}
+.hm-fbcta .fbc-group{font-size:13px;color:#1b5fc4;text-decoration:none}
+.hm-fbcta .fbc-group:hover{text-decoration:underline}
+.hm-fbcta .fbc-btn{display:inline-flex;align-items:center;gap:9px;background:#1877F2;color:#fff;border-radius:999px;padding:10px 20px 10px 12px;font-size:14.5px;font-weight:700;text-decoration:none;box-shadow:0 4px 12px rgba(24,119,242,.28)}
+.hm-fbcta .fbc-btn .fb-logo circle{fill:#fff}.hm-fbcta .fbc-btn .fb-logo path{fill:#1877F2}
+.hm-fbcta .fbc-btn:hover{background:#1565d8}
+@media (max-width:600px){.hm-fbcta .fbc{padding:16px}.hm-fbcta .fbc-btn{width:100%;justify-content:center}}

@@ -6,7 +6,7 @@ import { FACEBOOK_GROUP, FACEBOOK_PAGE, INDEXABLE, SITE, HEADER_NAV, FOOTER_COLS
 import { KINDS } from './kinds.mjs';
 import { weekday } from './dates.mjs';
 import { cityL, nameL, noteL, timeEn, venueL } from './tr-en.mjs';
-import { icon, logoSvg } from './icons.mjs';
+import { fbLogo, icon, logoSvg } from './icons.mjs';
 import { MON_EN, S, T, WD_EN, WD_JA } from './i18n.mjs';
 import { disclaimer, DISCLAIMER_JA, KIND_SHORT_EN, langPath, localize, P, prefLabel, recurTag, splitPath, monthHead } from './l10n.mjs';
 
@@ -58,7 +58,7 @@ export function siteFooter(path, lang = 'en') {
   };
   return `<footer class="site-foot2">
 <div class="ft-in">
-<div class="ft-brandcol"><a class="brand ft-brand" href="${langPath('/', lang)}" aria-label="Flea Market JP">${logoSvg()}<span class="brand-t"><b>Flea Market <em>JP</em></b><small>${esc(T[lang].tagline)}</small></span></a>${langSwitch(path, lang)}<p class="ft-social"><a href="${FACEBOOK_PAGE}" target="_blank" rel="noopener">${icon('facebook', 18)}<span>${esc(f.fbFollow)}</span></a><a class="ft-join" href="${FACEBOOK_GROUP}" target="_blank" rel="noopener">${esc(f.fbJoin)}</a></p><figure class="ft-qr"><img src="/img/qr.svg" width="104" height="104" alt="" loading="lazy" decoding="async"><figcaption>${esc(lang === "en" ? "Scan to open on your phone" : "スマホで開く")}<small>${esc(QR_URL.replace(/^https?:\/\/|\/$/g, ""))}</small></figcaption></figure></div>
+<div class="ft-brandcol"><a class="brand ft-brand" href="${langPath('/', lang)}" aria-label="Flea Market JP">${logoSvg()}<span class="brand-t"><b>Flea Market <em>JP</em></b><small>${esc(T[lang].tagline)}</small></span></a>${langSwitch(path, lang)}<p class="ft-social"><a class="ft-fb" href="${FACEBOOK_PAGE}" target="_blank" rel="noopener">${fbLogo(24)}<span>${esc(f.fbFollow)}</span></a><a class="ft-join" href="${FACEBOOK_GROUP}" target="_blank" rel="noopener">${esc(f.fbJoin)}</a></p><figure class="ft-qr"><img src="/img/qr.svg" width="104" height="104" alt="" loading="lazy" decoding="async"><figcaption>${esc(lang === "en" ? "Scan to open on your phone" : "スマホで開く")}<small>${esc(QR_URL.replace(/^https?:\/\/|\/$/g, ""))}</small></figcaption></figure></div>
 <nav class="ft-cols" aria-label="${esc(f.nav)}">${FOOTER_COLS.map(col).join('')}</nav>
 </div>
 <div class="ft-note"><p>${esc(disclaimer(lang))}</p><p><a class="ft-admin" href="/admin/reviews" rel="nofollow">©</a> ${esc(SITE.name)}　${esc(f.copy)}</p></div>
