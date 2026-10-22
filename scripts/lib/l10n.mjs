@@ -10,7 +10,7 @@ export const DEFAULT_LANG = 'en';
 export const ja = (lang) => lang === 'ja';
 
 // ---- URL ----
-const PAGE_ROOTS = ['weekend', 'calendar', 'date', 'area', 'kind', 'e', 'shuten', 'search', 'about', 'guide', 'faq', 'blog'];
+const PAGE_ROOTS = ['weekend', 'calendar', 'date', 'area', 'kind', 'e', 'shuten', 'search', 'about', 'guide', 'faq', 'blog', 'tips', 'spot', 'contact', 'press'];
 // 英語（既定）の URL → その言語の URL
 export const langPath = (path, lang) => (lang === 'ja' ? (path === '/' ? '/ja/' : `/ja${path}`) : path);
 // 出力先の URL → 言語と、英語側の URL

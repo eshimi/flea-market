@@ -39,6 +39,7 @@ export function renderHero(lang = 'ja', photo = '/img/hero.webp') {
   return `<section class="hero2 is-${lang}" aria-labelledby="hero-h">
 <div class="hero2-photo">${heroPhotos().map((src, i) => `<img class="hp${i ? ' hp-alt' : ''}"${i ? ' hidden' : ''} src="${src}" alt="${i ? '' : esc(t.photoAlt)}" width="1800" height="900" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async">`).join('')}</div>
 ${heroPhotos().length > 1 ? `<div class="hero2-dots" role="group" aria-label="${esc(t.photoSwitch)}">${heroPhotos().map((_, i) => `<button type="button" aria-label="${i + 1}" aria-pressed="${i === 0}" data-hp="${i}"></button>`).join('')}</div>` : ''}
+<a class="hero2-new" href="/press/#story">${esc(t.newHere)}${icon('arrow', 15)}</a>
 <div class="hero2-in">
 <div class="hero2-copy">
 <h1 class="hero2-kicker" id="hero-h">${esc(t.h1)}</h1>

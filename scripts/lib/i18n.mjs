@@ -19,7 +19,7 @@ export const T = {
       button: 'マーケットを探す',
       searchLabel: 'キーワード',
       photoAlt: '日本の骨董市の露店。陶器や招き猫、ひょうたんが並ぶ',
-      photoSwitch: '写真を切り替える',
+      photoSwitch: '写真を切り替える', newHere: '初めての方へ',
       script: ['Good Things', 'New Encounters', 'in Japan!'],
       stamp: 'EXPLORE LOCAL MARKETS',
       cats: [
@@ -47,7 +47,7 @@ export const T = {
       button: 'EXPLORE MARKETS',
       searchLabel: 'Keyword',
       photoAlt: 'A stall at a Japanese antique market, with ceramics, a maneki-neko and gourds under a canopy',
-      photoSwitch: 'Switch photo',
+      photoSwitch: 'Switch photo', newHere: 'New here? Start here',
       script: ['Good Things', 'New Encounters', 'in Japan!'],
       stamp: 'EXPLORE LOCAL MARKETS',
       cats: [
