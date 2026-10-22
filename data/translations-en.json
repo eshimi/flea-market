@@ -440,10 +440,10 @@
   "kita-fujimibashi-echo-hirobakan-flea": {
    "name": "Fujimibashi Echo Hiroba-kan Flea Market (Kita Ward)",
    "venue": "Fujimibashi Echo Hiroba-kan",
-   "rule": "Every Sunday",
+   "rule": "3rd and 4th Sundays (official flyer). The official top page says “every Sunday” (to be confirmed)",
    "access": "8 min. on foot from the north exit of JR Tabata Station / 10 min. from the east exit of JR Komagome Station",
    "address": "5-16-1 Tabata, Kita-ku, Tokyo",
-   "time": "10:00–12:00 (flyer for the 3rd and 4th Sundays; check-in from 9:15)",
+   "time": "10:00–12:00 (reception from 9:15)",
    "rain": "Cancelled if it is raining at 9:00 on the day (decided by the Echo Hiroba-kan); also cancelled in snow, typhoons or extreme heat",
    "apply": "Applications open 3 months before and close 7 days before the event; a lottery is held if there are 20+ applicants (priority to those living, studying or working in the ward). Only household second-hand items may be sold"
   },
@@ -559,10 +559,10 @@
   },
   "koenji-fes-2026-aozora-tezukuri-ichi": {
    "name": "Koenji Fes 2026 Open-Air Solo Exhibition Tezukuri-ichi (Autumn Grand Culture Festival)",
-   "venue": "JR Koenji North-South Plaza, Za-Koenji, Koenji Chuo Park, participating shops and other places (the venue of the tezukuri-ichi is TBC on the official site)",
-   "time": "11:00–16:00 (opening hours of the Grand Culture Festival)",
-   "rule": "Dates of the Koenji Fes 2026 Autumn Grand Culture Festival (the dates and times of the tezukuri-ichi are TBC on the official site)",
-   "admission": "Free (Grand Culture Festival)",
+   "venue": "Koenji Kita Park (venue of the tezukuri-ichi)",
+   "time": "10:00–16:00",
+   "rule": "Oct 24 (Sat) and Oct 25 (Sun), 2026 (dates on the official tezukuri-ichi page)",
+   "admission": "Free",
    "rain": "Cancelled in rain (announced by 7:30 a.m. on the day on the Aozora Kotenn official site)",
    "address": "Koenji-Kita Park, 3-20-15 Koenji-kita, Suginami-ku, Tokyo"
   },

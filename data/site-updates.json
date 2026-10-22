@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-10-22",
+    "ja": "全ページの空いている項目（時間・入場料・雨天・出店料・申込み・アクセスなど）を、公式の本文から、取れないものはネット検索で補いました。調べたものには「公式ページの記載ではありません」と表示します。",
+    "en": "Missing details on every page (hours, admission, rain policy, stall fees, how to apply, access) were filled in from the official pages first, then from web searches; searched items are marked as not from the official page."
+  },
+  {
     "date": "2026-10-21",
     "ja": "開催詳細・スポットページの「所在地」「アクセス」の下に、地図で開く・経路を調べるボタンを置きました。",
     "en": "Event and spot pages now have Open map and Directions buttons right under Address and Access."
