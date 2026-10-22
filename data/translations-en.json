@@ -72,7 +72,9 @@
    "venue": "To-ji Temple, grounds",
    "rule": "21st of every month",
    "access": "15 min. on foot from the Hachijo exit of Kyoto Station / 10 min. from Toji Station",
-   "address": "1 Kujocho, Minami-ku, Kyoto-shi, Kyoto"
+   "address": "1 Kujocho, Minami-ku, Kyoto-shi, Kyoto",
+   "time": "7:00–15:30 (regular monthly market on the 21st)",
+   "rain": "Held even in rain"
   },
   "kitano-tenjin-ennichi": {
    "name": "Kitano Tenmangu “Tenjin-san” (monthly fair on the 25th)",
@@ -87,7 +89,8 @@
    "venue": "Shitennoji Temple, throughout the grounds",
    "rule": "21st of every month",
    "address": "1-11-18 Shitennoji, Tennoji-ku, Osaka-shi, Osaka",
-   "access": "About 5 min on foot from Shitennoji-mae Yuhigaoka Station (Osaka Metro Tanimachi Line)."
+   "access": "About 5 min on foot from Shitennoji-mae Yuhigaoka Station (Osaka Metro Tanimachi Line).",
+   "admission": "The central temple precinct is open free of charge on this day (the top-floor gallery of the five-story pagoda is also open)"
   },
   "sapporo-nakajima-park-flea": {
    "name": "Nakajima Park Flea Market (Sapporo)",
@@ -111,7 +114,9 @@
    "apply": "Apply by phone (first come, first served). A lottery is held at the reception on the day and a permit is issued",
    "notes": "Only residents of the town can exhibit. Up to 40 spaces",
    "address": "1736 Hakonegasaki, Mizuho-machi, Nishitama-gun, Tokyo",
-   "access": "About 350 m from Hakonegasaki Station (JR Hachiko Line). The town's guide says it takes less than 5 minutes on foot."
+   "access": "About 350 m from Hakonegasaki Station (JR Hachiko Line). The town's guide says it takes less than 5 minutes on foot.",
+   "fee": "Free",
+   "rain": "Cancellation due to rain is decided on the morning of the event (call between 7:30 and 9:00 to check)"
   },
   "suginami-furima-in-takaido-2026-11": {
    "name": "Flea Market in Takaido (Environmental Activity Promotion Center)",
@@ -142,7 +147,8 @@
    "rule": "Schedule for fiscal 2026 announced by Sumida Ward",
    "rain": "May be cancelled in rain, etc. (ask the organizer). Please refrain from parking on the street near the venue",
    "address": "4-15 Kinshi, Sumida-ku, Tokyo",
-   "access": "About 3 min on foot from Kinshicho Station (JR Sobu Line, Tokyo Metro Hanzomon Line)."
+   "access": "About 3 min on foot from Kinshicho Station (JR Sobu Line, Tokyo Metro Hanzomon Line).",
+   "apply": "To sell, apply directly to the organizing group (as stated by Sumida Ward)"
   },
   "sumida-yokojikkawa-kinshicho-flea": {
    "name": "Oyokogawa Shinsui Park, Kinshicho Event Plaza Flea Market",
@@ -150,7 +156,8 @@
    "rule": "Schedule for fiscal 2026 announced by Sumida Ward (with rain dates)",
    "rain": "Rain dates are available (listed in the entry for each date). Please refrain from parking on the street near the venue",
    "address": "1-17 Kinshi, Sumida-ku, Tokyo",
-   "access": "The south end of the park (Nagasaki-bashi) is a 5 min walk from Kinshicho Station (JR Sobu Line, Tokyo Metro Hanzomon Line). The north end (Narihira-bashi) is a 10 min walk from Oshiage Station and a 5 min walk from Tokyo Skytree Station or Honjo-Azumabashi Station."
+   "access": "The south end of the park (Nagasaki-bashi) is a 5 min walk from Kinshicho Station (JR Sobu Line, Tokyo Metro Hanzomon Line). The north end (Narihira-bashi) is a 10 min walk from Oshiage Station and a 5 min walk from Tokyo Skytree Station or Honjo-Azumabashi Station.",
+   "apply": "To sell, apply directly to the organizing group (as stated by Sumida Ward)"
   },
   "bunkyo-stage-eco-flea-2026-11": {
    "name": "Stage Eco Flea Market (Bunkyo)",
@@ -180,7 +187,8 @@
    "rule": "Oct 18 (Sun), 2026",
    "rain": "Held even in rain (cancelled in severe weather). Please refrain from coming by car",
    "address": "2-33-1 Shimomaruko, Ota-ku",
-   "access": "About 15 min on foot from Musashi-Nitta Station (Tokyu Tamagawa Line)."
+   "access": "About 15 min on foot from Musashi-Nitta Station (Tokyu Tamagawa Line).",
+   "admission": "Free"
   },
   "edogawa-funabori-matsuri-2026": {
    "name": "The 51st Funabori Festival (with a flea market)",
@@ -219,7 +227,9 @@
    "rain": "Cancelled in rain, or when the organizing group decides on its own",
    "apply": "Differs by organizing group (for stalls and inquiries, contact each group; the Taito Ward page links to each group’s website)",
    "address": "1-14-15 Hanakawado, Taito-ku, Tokyo",
-   "access": "About 3 min on foot from Asakusa Station (Tokyo Metro Ginza Line)."
+   "access": "About 3 min on foot from Asakusa Station (Tokyo Metro Ginza Line).",
+   "time": "Varies by date (9:00–15:00 or 10:00–15:00)",
+   "fee": "On days run by Recycle Suishin Tomo-no-Kai, residents of the ward pay 2,000 yen when booking and paying by bank transfer through the organizer's website (ask other organizers directly)"
   },
   "arakawa-park-flea-2027-03": {
    "name": "Arakawa Flea Market (Arakawa Park, fiscal 2026, 2nd)",
@@ -350,7 +360,8 @@
    "access": "5 min. on foot from Daishimae Station (Tobu Daishi Line)",
    "fee": "Regular stall 4,000 yen, hand-held stall 2,500 yen",
    "notes": "The official page says it is not recruiting stalls for the ennichi flea market or the New Year flea market",
-   "address": "1-15-1 Nishiarai, Adachi-ku, Tokyo"
+   "address": "1-15-1 Nishiarai, Adachi-ku, Tokyo",
+   "apply": "The official page states that it is not recruiting stall holders for the Ennichi flea market or the New Year flea market"
   },
   "machida-tenmangu-garakuta-kottoichi": {
    "name": "Machida Tenmangu Garakuta Antique Market",
@@ -360,7 +371,9 @@
    "access": "8 min. on foot from Machida Station (Odakyu Line) / 5 min. from Machida Station (JR Yokohama Line)",
    "notes": "A second-hand dealer’s license is required to exhibit. 80 stalls (per the official page)",
    "organizer": "Kanagawa Kottoichi",
-   "address": "1-21-5 Haramachida, Machida-shi, Tokyo"
+   "address": "1-21-5 Haramachida, Machida-shi, Tokyo",
+   "apply": "Stalls require a second-hand dealer licence (kobutsu-sho permit); dealers who wish to exhibit are asked to phone the organizer (contact details on the official page)",
+   "rain": "May close early depending on the weather (the page does not say whether the market is held in rain)"
   },
   "musashi-itsukaichi-furumono-ichi": {
    "name": "Musashi-Itsukaichi Furumono-ichi (Old Goods Market)",
@@ -369,7 +382,9 @@
    "rule": "5th of every month (closed every August)",
    "access": "5 min. on foot from Musashi-Itsukaichi Station (JR)",
    "notes": "A second-hand dealer’s license is required to exhibit. 30 stalls (per the official page)",
-   "address": "110-1 Itsukaichi, Akiruno-shi, Tokyo"
+   "address": "110-1 Itsukaichi, Akiruno-shi, Tokyo",
+   "apply": "Stalls require a second-hand dealer licence (kobutsu-sho permit); dealers who wish to exhibit are asked to phone the organizer (contact details on the official page)",
+   "rain": "May close early depending on the weather (the page does not say whether the market is held in rain)"
   },
   "tomioka-hachimangu-kottoichi": {
    "name": "Tomioka Hachimangu Antique Market",
@@ -386,35 +401,51 @@
    "time": "10:00–17:00",
    "rule": "4th Sunday of every month (closed in December)",
    "access": "12 min. on foot from Nishi-Ogikubo Station (JR Chuo Line) (on holidays, take the Chuo-Sobu Line local)",
-   "address": "4-35-9 Nishiogi-kita, Suginami-ku, Tokyo"
+   "address": "4-35-9 Nishiogi-kita, Suginami-ku, Tokyo",
+   "rain": "An indoor event (the exhibitor guidelines say \"indoor event\"; no rain policy is stated)"
   },
   "mottainai-flea-nakano-central-park": {
    "name": "MOTTAINAI Flea Market (Nakano Central Park)",
    "venue": "Nakano Central Park",
    "rule": "Dates in the organizer’s event calendar",
    "address": "4-10-2 Nakano, Nakano-ku, Tokyo",
-   "access": "About 5 min on foot from the north exit of Nakano Station (JR), according to the Nakano Ward guide to Nakano Shikinomori Park."
+   "access": "About 5 min on foot from the north exit of Nakano Station (JR), according to the Nakano Ward guide to Nakano Shikinomori Park.",
+   "rain": "Whether it is held is decided at 7:30 on the day (check the rain-information line after 7:30)",
+   "apply": "Book a stall via \"Schedule\" → \"Apply for tickets\" on the Tokyo Recycle Citizens' Association website (trx.jp). Free user registration is required",
+   "time": "10:00–16:00 (as listed for the 3, 4, 24 and 25 October 2026 dates)",
+   "admission": "Free (as listed for the October 2026 dates)",
+   "fee": "¥3,000, reservation required (as listed for the October 2026 dates)"
   },
   "mottainai-flea-kichijoji-parco": {
    "name": "MOTTAINAI Flea Market (Kichijoji Parco rooftop)",
    "venue": "Kichijoji Parco, rooftop",
    "rule": "Dates in the organizer’s event calendar",
    "address": "1-5-1 Kichijoji-honcho, Musashino-shi, Tokyo",
-   "access": "2 min walk from Kichijoji Station (JR Chuo/Sobu Line, Keio Inokashira Line)"
+   "access": "2 min walk from Kichijoji Station (JR Chuo/Sobu Line, Keio Inokashira Line)",
+   "rain": "Whether it is held is decided at 7:30 on the day (check the rain-information line after 7:30)",
+   "apply": "Book a stall via \"Schedule\" → \"Apply for tickets\" on the Tokyo Recycle Citizens' Association website (trx.jp). Free user registration is required",
+   "time": "09:30–14:00 (as listed for 6 December 2026)",
+   "admission": "Free (as listed for 6 December 2026)",
+   "fee": "¥2,500, reservation required (as listed for 6 December 2026)"
   },
   "mottainai-flea-shinjuku-chuo-park": {
    "name": "MOTTAINAI Flea Market (Shinjuku Central Park)",
    "venue": "Shinjuku Central Park",
    "rule": "Dates in the organizer’s event calendar",
    "address": "2-11 Nishi-Shinjuku, Shinjuku-ku, Tokyo",
-   "access": "about 10 min walk from Shinjuku Station (JR, Odakyu, Keio) / about 5 min walk from Nishi-Shinjuku Station (Marunouchi Line) / 0 min walk from Tochomae Station (Oedo Line)"
+   "access": "about 10 min walk from Shinjuku Station (JR, Odakyu, Keio) / about 5 min walk from Nishi-Shinjuku Station (Marunouchi Line) / 0 min walk from Tochomae Station (Oedo Line)",
+   "rain": "Whether it is held is decided at 7:30 on the day (check the rain-information line after 7:30)",
+   "apply": "Book a stall via \"Schedule\" → \"Apply for tickets\" on the Tokyo Recycle Citizens' Association website (trx.jp). Free user registration is required"
   },
   "kita-fujimibashi-echo-hirobakan-flea": {
    "name": "Fujimibashi Echo Hiroba-kan Flea Market (Kita Ward)",
    "venue": "Fujimibashi Echo Hiroba-kan",
    "rule": "Every Sunday",
    "access": "8 min. on foot from the north exit of JR Tabata Station / 10 min. from the east exit of JR Komagome Station",
-   "address": "5-16-1 Tabata, Kita-ku, Tokyo"
+   "address": "5-16-1 Tabata, Kita-ku, Tokyo",
+   "time": "10:00–12:00 (flyer for the 3rd and 4th Sundays; check-in from 9:15)",
+   "rain": "Cancelled if it is raining at 9:00 on the day (decided by the Echo Hiroba-kan); also cancelled in snow, typhoons or extreme heat",
+   "apply": "Applications open 3 months before and close 7 days before the event; a lottery is held if there are 20+ applicants (priority to those living, studying or working in the ward). Only household second-hand items may be sold"
   },
   "tama-econico-market": {
    "name": "Eco-Nico Market (Tama City, Eco-Nico Center)",
@@ -422,14 +453,19 @@
    "time": "10:00–13:00 (some booths may close earlier)",
    "rule": "Official event schedule (once a month, Saturday or Sunday). In March 2027 the official page says “28th and 29th”; the 29th is a Monday, so only the 28th is listed",
    "notes": "6 table booths (indoors). The application period is as shown in the official table",
-   "address": "2-1-1 Karakida, Tama-shi, Tokyo"
+   "address": "2-1-1 Karakida, Tama-shi, Tokyo",
+   "fee": "¥300 per day, paid on the day of the stall",
+   "rain": "Stalls are indoor tables inside the centre (no rain policy is stated)",
+   "access": "From Odakyu Karakida Station, turn left out of the ticket gate and walk 5 minutes toward the Welfare Center and pool (access page of the Tama New Town Environmental Union, same address)"
   },
   "fmpn-tokorozawa-shimin-fes": {
    "name": "Tokorozawa Citizens’ Festival (Flea Market Promotion Network)",
    "venue": "Tokorozawa Citizens’ Festival",
    "rule": "Dates published by the organizer (Flea Market Promotion Network)",
    "address": "1-13 Namiki, Tokorozawa",
-   "access": "A short walk from Kokukoen Station (Seibu Shinjuku Line)"
+   "access": "A short walk from Kokukoen Station (Seibu Shinjuku Line)",
+   "time": "10:00–16:00 (as listed for 24–25 October 2026)",
+   "admission": "Free admission (as listed for 24–25 October 2026)"
   },
   "fmpn-kawagoe-suijo-park": {
    "name": "Kawagoe Suijo Park Flea Market (Flea Market Promotion Network)",
@@ -443,7 +479,8 @@
    "venue": "Koshigaya Lake Town Station plaza",
    "rule": "Dates published by the organizer (Flea Market Promotion Network)",
    "address": "8-chome Lake Town, Koshigaya-shi, Saitama",
-   "access": "The station-front plaza of Koshigaya-Laketown Station on the JR Musashino Line. At the north exit, Mitakata Ruins Park adjoins the north side of the plaza and AEON Lake Town lies to the northeast."
+   "access": "The station-front plaza of Koshigaya-Laketown Station on the JR Musashino Line. At the north exit, Mitakata Ruins Park adjoins the north side of the plaza and AEON Lake Town lies to the northeast.",
+   "time": "10:00–15:00 (as stated for the events of 5/23 and 5/24, 2026)"
   },
   "fmpn-hanyu-aeon-noniwa": {
    "name": "AEON Mall Hanyu, nONIWA Lawn Plaza Flea Market (Flea Market Promotion Network)",
@@ -490,7 +527,10 @@
    "venue": "Nagareyama-Otakanomori Station plaza",
    "rule": "Dates published by the organizer (Flea Market Promotion Network)",
    "address": "1-1-1 Otakanomori-higashi, Nagareyama-shi, Chiba",
-   "access": "This is a plaza at Nagareyama-Otakanomori Station (Tsukuba Express and Tobu Urban Park Line). No walking time is given. The station has plazas on the east, west, south and north sides; which one is used should be checked."
+   "access": "This is a plaza at Nagareyama-Otakanomori Station (Tsukuba Express and Tobu Urban Park Line). No walking time is given. The station has plazas on the east, west, south and north sides; which one is used should be checked.",
+   "time": "10:00–15:00 (as listed for the 29 November 2025 event)",
+   "admission": "Free admission (as listed for the 29 November 2025 event)",
+   "fee": "¥2,200 per booth (as listed for the 29 November 2025 event)"
   },
   "fmpn-takashimadaira-danchi-park": {
    "name": "Takashimadaira Danchi Fountain Park Flea Market (Flea Market Promotion Network)",
@@ -522,7 +562,9 @@
    "venue": "JR Koenji North-South Plaza, Za-Koenji, Koenji Chuo Park, participating shops and other places (the venue of the tezukuri-ichi is TBC on the official site)",
    "time": "11:00–16:00 (opening hours of the Grand Culture Festival)",
    "rule": "Dates of the Koenji Fes 2026 Autumn Grand Culture Festival (the dates and times of the tezukuri-ichi are TBC on the official site)",
-   "admission": "Free (Grand Culture Festival)"
+   "admission": "Free (Grand Culture Festival)",
+   "rain": "Cancelled in rain (announced by 7:30 a.m. on the day on the Aozora Kotenn official site)",
+   "address": "Koenji-Kita Park, 3-20-15 Koenji-kita, Suginami-ku, Tokyo"
   },
   "ikegami-biyori-marche": {
    "name": "Ikegami Biyori (Ikegami Honmonji Temple, plaza inside the main gate)",
@@ -540,7 +582,9 @@
    "venue": "Around Nihonbashi Odenmacho and Nihonbashi Honcho, centered on Takarada Ebisu Shrine",
    "rule": "Oct 19 (Mon) – Oct 20 (Tue), 2026",
    "address": "3-10-11 Nihonbashi-Honcho, Chuo-ku, Tokyo",
-   "access": "About 1 min on foot from Kodemmacho Station (Tokyo Metro Hibiya Line), 5 min from Higashi-Nihombashi Station (Toei Asakusa Line), and 2 min from Exit 5 of Shin-Nihombashi Station (JR Sobu Line Rapid). About 5 min on foot from the Toei Bus Kodemmacho stop."
+   "access": "About 1 min on foot from Kodemmacho Station (Tokyo Metro Hibiya Line), 5 min from Higashi-Nihombashi Station (Toei Asakusa Line), and 2 min from Exit 5 of Shin-Nihombashi Station (JR Sobu Line Rapid). About 5 min on foot from the Toei Bus Kodemmacho stop.",
+   "rain": "Held rain or shine, except in severe weather (as listed for the 2026 event)",
+   "admission": "Free (as listed for the 2026 event)"
   },
   "toshima-nakaikebukuro-park-flea-2026-11": {
    "name": "Naka-Ikebukuro Park Flea Market (November)",
@@ -571,7 +615,8 @@
    "rain": "Cancelled in rain",
    "notes": "To run a stall you need experience such as past participation in Guruguru Haku. Food trucks have no conditions (recruitment for the October event has closed)",
    "address": "3-1-1 Ayase, Adachi-ku, Tokyo",
-   "access": "This is the plaza in front of the east exit of Ayase Station (Tokyo Metro Chiyoda Line and JR Joban Line local trains). No walking time is given."
+   "access": "This is the plaza in front of the east exit of Ayase Station (Tokyo Metro Chiyoda Line and JR Joban Line local trains). No walking time is given.",
+   "apply": "Vendor recruitment is announced on the ward website and social media (the food-truck call for the October event has closed). Stall vendors need prior participation experience."
   },
   "fuchu-oshitate-park-flea": {
    "name": "Oshitate Park Flea Market (Fuchu City)",
@@ -604,7 +649,9 @@
    "rain": "Held even in bad weather because the venue is indoors",
    "notes": "Household items no longer needed (handmade and new items can also be sold: please confirm when applying). Apply for a stall from the official website",
    "address": "Kita 24-jo Nishi 5-chome, Kita-ku, Sapporo",
-   "access": "Right by exit 1 of Kita-24-jo Station on the Sapporo Municipal Subway Namboku Line."
+   "access": "Right by exit 1 of Kita-24-jo Station on the Sapporo Municipal Subway Namboku Line.",
+   "fee": "Hand-carry stall (about 32 stalls): 3,600 yen (paid table and chair rental available). As listed for the 3 Nov 2026 event.",
+   "apply": "Apply on the official website. After applying, pay by bank transfer to the account given in the guidance email; the stall permit is mailed 5 days before the event."
   },
   "cultune-fukuoka-maizuru-flea": {
    "name": "CULTUNE Flea Market in Maizuru",
@@ -612,7 +659,10 @@
    "rain": "Held in light rain; canceled in stormy weather (announced on the website and social media on the morning of the day)",
    "notes": "Stall genres: secondhand clothing, miscellaneous goods, handmade items, food trucks, experience booths, and more. 200 groups recruited (by lottery). Apply from the recruitment page of the official website",
    "address": "1-4 Jonai, Chuo-ku, Fukuoka",
-   "access": "8 min walk from the Nishitetsu Otemon bus stop; 8 min walk from Akasaka Station (city subway)"
+   "access": "8 min walk from the Nishitetsu Otemon bus stop; 8 min walk from Akasaka Station (city subway)",
+   "admission": "Free (no reservation needed)",
+   "fee": "General: from 2,500 yen (2m x 2m); businesses, food trucks and food sales: 12,000 yen",
+   "apply": "Apply on the recruitment page for each event date (lottery; 200 stalls). Pay by bank transfer within 1 week of receiving the winning notice."
   },
   "earthgarden-gearloop-market-2026": {
    "name": "GEARLOOP MARKET (outdoor gear flea market within Earth Garden Autumn 2026)",
@@ -626,31 +676,49 @@
    "venue": "Ohi Racecourse Tokyo City Flea Market",
    "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
    "address": "2-1-2 Katsushima, Shinagawa-ku, Tokyo",
-   "access": "2 minutes on foot from Oi Keibajo-mae Station (Tokyo Monorail) and 12 minutes on foot from Tachiaigawa Station (Keikyu Line). 1 minute on foot from the Oi Keibajo Ekimae stop on the Keikyu Bus route Mori 22 from the east exit of Omori Station."
+   "access": "2 minutes on foot from Oi Keibajo-mae Station (Tokyo Monorail) and 12 minutes on foot from Tachiaigawa Station (Keikyu Line). 1 minute on foot from the Oi Keibajo Ekimae stop on the Keikyu Bus route Mori 22 from the east exit of Omori Station.",
+   "apply": "Book through the organizer's website (trx.jp) and the ticketing site Peatix (a Peatix account is required; phone bookings are not accepted). The stall fee is paid at the on-site reception on the day, except at venues that require advance payment.",
+   "time": "9:00–14:30 (as listed for the October 2025 event)",
+   "admission": "Free (as listed for the October 2025 event)"
   },
   "trx-ike-sunpark-flea": {
    "name": "Ike Sunpark Flea Market (Tokyo Recycle)",
    "venue": "Ike Sunpark",
    "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
    "address": "4-42 Higashi-Ikebukuro, Toshima-ku, Tokyo",
-   "access": "5 min walk from Exit 6 of Higashi-Ikebukuro Station (Tokyo Metro Yurakucho Line)"
+   "access": "5 min walk from Exit 6 of Higashi-Ikebukuro Station (Tokyo Metro Yurakucho Line)",
+   "apply": "Book through the organizer's website (trx.jp) and the ticketing site Peatix (a Peatix account is required; phone bookings are not accepted). The stall fee is paid at the on-site reception on the day, except at venues that require advance payment.",
+   "time": "9:00–15:00 (as listed for the 15 Nov 2026 event)",
+   "admission": "Free",
+   "fee": "2,500 yen (reservation required)"
   },
   "trx-funabashi-keibajo-flea": {
    "name": "Funabashi Racecourse Flea Market (Tokyo Recycle)",
    "venue": "Funabashi Racecourse Flea Market",
    "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
    "address": "1-2-1 Wakamatsu, Funabashi",
-   "access": "5 min walk from Funabashikeibajo Station (Keisei Line); 10 min walk from Minami-Funabashi Station (JR Keiyo Line)"
+   "access": "5 min walk from Funabashikeibajo Station (Keisei Line); 10 min walk from Minami-Funabashi Station (JR Keiyo Line)",
+   "apply": "Book through the organizer's website (trx.jp) and the ticketing site Peatix (a Peatix account is required; phone bookings are not accepted). The stall fee is paid at the on-site reception on the day, except at venues that require advance payment.",
+   "time": "10:00–15:00 (as listed for the 31 Oct 2026 event)",
+   "admission": "Free",
+   "fee": "2,500 yen (reservation required)"
   },
   "trx-kitaku-minsho-matsuri-flea": {
    "name": "Kita Ward Commerce Festival (listed in the Tokyo Recycle event schedule)",
    "venue": "Kita Ward Commerce Festival",
-   "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)"
+   "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
+   "apply": "Book through the organizer's website (trx.jp) and the ticketing site Peatix (a Peatix account is required; phone bookings are not accepted). The stall fee is paid at the on-site reception on the day, except at venues that require advance payment."
   },
   "trx-musamura-flea": {
    "name": "Musamura Flea Market (Tokyo Recycle)",
    "venue": "Musamura Flea Market",
-   "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)"
+   "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
+   "apply": "Book through the organizer's website (trx.jp) and the ticketing site Peatix (a Peatix account is required; phone bookings are not accepted). The stall fee is paid at the on-site reception on the day, except at venues that require advance payment.",
+   "time": "10:00–15:00 (as listed for the 21 Nov 2026 event)",
+   "admission": "Free",
+   "fee": "Car stall: 3,500 yen; hand-carry stall: 2,500 yen (reservation required)",
+   "address": "1-1-34 Enoki, Musashimurayama City (AEON MALL Musashi-Murayama, Tsumugu Hiroba)",
+   "access": "By bus from Higashiyamato, Tamagawa-josui, Tachikawa, Akishima or Hakonegasaki stations to \"AEON MALL Musashi-Murayama\""
   },
   "recycler-sumida-live-fes-2026-winter-flea": {
    "name": "Sumida Live Fes 2026 Winter Flea Market (Kinshi Park, Recycle Movement Citizens' Association)",
@@ -708,7 +776,8 @@
    "fee": "Hand-carried (2.2m × 1.8m): 2,500 yen (includes a 500 yen shopping voucher)",
    "apply": "Apply from the \"stall application\" page of the official website",
    "notes": "Stall positions cannot be specified. Cancellation fees apply (see the stall rules page)",
-   "address": "1-1 Yoshidacho 正右エ門新田, Obu, Aichi"
+   "address": "1-1 Yoshidacho 正右エ門新田, Obu, Aichi",
+   "access": "About 15 min by Chita Bus (bound for Genki-no-Sato) from the west exit of JR Obu Station (Tokaido Line)"
   },
   "yuyu-marche-sobue-ryokuchi": {
    "name": "Sobue Green Space Flea Market (Yuyu Marche)",
@@ -727,7 +796,8 @@
    "rain": "Held in rain",
    "access": "Keihan Railway Kyoto Line, get off at Demachiyanagi Station, 10-minute walk",
    "apply": "Application form on the official website (application guidelines available)",
-   "address": "103 Tanaka Monzencho, Sakyo-ku, Kyoto-shi, Kyoto"
+   "address": "103 Tanaka Monzencho, Sakyo-ku, Kyoto-shi, Kyoto",
+   "fee": "Stall fee: 5,000 yen per booth (4,000 yen for students). One booth is 1 tsubo (1.8m x 1.8m)."
   },
   "umekoji-park-tedukuri-ichi": {
    "name": "Umekoji Park Handmade Market (Kyoto)",
@@ -736,7 +806,8 @@
    "rain": "Held rain or shine",
    "access": "Right next to JR Sagano Line Umekoji-Kyoto-nishi Station",
    "apply": "Application form on the official website (application guidelines available)",
-   "address": "56-3 Kankijicho, Shimogyo-ku, Kyoto"
+   "address": "56-3 Kankijicho, Shimogyo-ku, Kyoto",
+   "fee": "Stall fee: 4,000 yen per booth. One booth is 1 tsubo (1.8m x 1.8m)."
   },
   "jfma-nakaku-kumin-festa-flea-2026": {
    "name": "Naka Ward Residents' Festa Flea Market Area (Sakai City, Haraike Park)",
@@ -747,7 +818,8 @@
    "fee": "1 booth (2.5 m wide × 2.5 m deep): 2,500 yen (tax included)",
    "notes": "The vendor secretariat for the flea market area is the Japan Flea Market Association",
    "address": "320 Hattaji-cho, Naka-ku, Sakai-shi",
-   "access": "About 1.2 km southwest of Fukai Station (Nankai Semboku Line). 250 m southwest of the Kuze Shogakko-mae stop of the Nankai Bus."
+   "access": "About 1.2 km southwest of Fukai Station (Nankai Semboku Line). 250 m southwest of the Kuze Shogakko-mae stop of the Nankai Bus.",
+   "apply": "Register and log in on the Japan Flea Market Association website to apply online (phone applications are also accepted). Same-day applications are not accepted; advance application and payment are required."
   },
   "jfma-kobe-harborland-seaside-market": {
    "name": "Kobe Harborland Seaside Market",
@@ -757,7 +829,9 @@
    "access": "5 min. walk from Kobe Station on the JR Kobe Line / 5 min. walk from Harborland Station on the Subway Kaigan Line",
    "fee": "Hand-luggage space (3 m wide × 2 m deep): 3,500 yen (tax included)",
    "notes": "Household unwanted items (recycled goods) only. Newly purchased goods are not allowed",
-   "address": "1-chome Higashikawasakicho, Chuo-ku, Kobe, Hyogo"
+   "address": "1-chome Higashikawasakicho, Chuo-ku, Kobe, Hyogo",
+   "rain": "The association decides on the day whether the event goes ahead; cancellations are announced on its official X account and by phone (rain dates are listed per venue on the official page).",
+   "apply": "Register and log in on the Japan Flea Market Association website to apply online (phone applications are also accepted). Same-day applications are not accepted; advance application and payment are required."
   },
   "jfma-nishikita-flea": {
    "name": "Nishikita Flea Market (Nishinomiya)",
@@ -766,7 +840,9 @@
    "admission": "Adults 300 yen, elementary school students 100 yen",
    "access": "5 min. walk south from Nishinomiya-Kitaguchi Station on the Hankyu Kobe Line",
    "fee": "Hand-luggage space (3 m wide × 3 m deep): 3,500 yen; car space (6 m wide × 4 m deep): 6,800 yen (tax included)",
-   "address": "4-30 Fukatsu-cho, Nishinomiya-shi"
+   "address": "4-30 Fukatsu-cho, Nishinomiya-shi",
+   "rain": "The association decides on the day whether the event goes ahead; cancellations are announced on its official X account and by phone (rain dates are listed per venue on the official page).",
+   "apply": "Register and log in on the Japan Flea Market Association website to apply online (phone applications are also accepted). Same-day applications are not accepted; advance application and payment are required."
   },
   "jfma-ikea-tsuruhama-loppis": {
    "name": "IKEA Tsuruhama Loppis (Flea Market)",
@@ -775,7 +851,9 @@
    "admission": "Free",
    "fee": "1 booth (car booth, 5 m wide × 4.5 m deep): 3,500 yen (tax included)",
    "address": "2-24-55 Tsurumachi, Taisho-ku, Osaka-shi",
-   "access": "An IKEA shuttle bus runs between Taishobashi and IKEA Tsuruhama (210 yen for adults, 110 yen for children). The store has a free car park for 2,100 cars, open during store hours. No nearest station or walking time is given on the official page."
+   "access": "An IKEA shuttle bus runs between Taishobashi and IKEA Tsuruhama (210 yen for adults, 110 yen for children). The store has a free car park for 2,100 cars, open during store hours. No nearest station or walking time is given on the official page.",
+   "rain": "The association decides on the day whether the event goes ahead; cancellations are announced on its official X account and by phone (rain dates are listed per venue on the official page).",
+   "apply": "Register and log in on the Japan Flea Market Association website to apply online (phone applications are also accepted). Same-day applications are not accepted; advance application and payment are required."
   },
   "jfma-minatomachi-river-place-flea": {
    "name": "Minatomachi River Place Flea Market (Osaka, Namba)",
@@ -784,7 +862,9 @@
    "admission": "Free",
    "access": "Right next to Namba Station on the Osaka Metro Yotsubashi Line and Kintetsu Line",
    "fee": "Hand-luggage space (3 m wide × 2 m deep): 3,500 yen (tax included)",
-   "address": "1-3-1 Minatomachi, Naniwa-ku, Osaka-shi"
+   "address": "1-3-1 Minatomachi, Naniwa-ku, Osaka-shi",
+   "rain": "The association decides on the day whether the event goes ahead; cancellations are announced on its official X account and by phone (rain dates are listed per venue on the official page).",
+   "apply": "Register and log in on the Japan Flea Market Association website to apply online (phone applications are also accepted). Same-day applications are not accepted; advance application and payment are required."
   },
   "jfma-wanwan-marche-shiga-ryuo-vol17": {
    "name": "Wanwan Marche at Mitsui Outlet Park Shiga Ryuo vol.17",
@@ -792,7 +872,10 @@
    "time": "10:00–16:00 (planned)",
    "admission": "Free",
    "address": "1178-694 Sunayama, Oaza Yakushi, Ryuo-cho, Gamo-gun, Shiga",
-   "access": "About 30 min by local bus from Yasu Station or Omi-Hachiman Station (JR Tokaido Line). By car, the nearest interchange is Ryuo IC on the Meishin Expressway."
+   "access": "About 30 min by local bus from Yasu Station or Omi-Hachiman Station (JR Tokaido Line). By car, the nearest interchange is Ryuo IC on the Meishin Expressway.",
+   "rain": "Rain date: Saturday, 13 March 2027",
+   "fee": "General market stall (5m x 5m): 9,000 yen; companies/manufacturers (7.5m x 5m): 38,000 yen; animal-welfare groups (5m x 5m): 3,000 yen (tax included, per booth)",
+   "apply": "General stalls: apply through the Japan Flea Market Association's booking system. First-time vendors must pass a prior screening of their products (by email). Companies and manufacturers apply by email."
   },
   "jfma-wanwan-marche-kobe-port-island-vol53": {
    "name": "Wanwan Marche vol.53 (Kobe Port Island)",
@@ -800,14 +883,20 @@
    "time": "10:00–16:00 (planned)",
    "admission": "Free",
    "access": "Transfer to the Port Liner at Sannomiya Station (JR, Hankyu, Hanshin) and get off right at Shimin Hiroba Station",
-   "address": "6-9-2 Minatojima Nakamachi, Chuo-ku, Kobe-shi"
+   "address": "6-9-2 Minatojima Nakamachi, Chuo-ku, Kobe-shi",
+   "rain": "Rain date: not yet decided",
+   "fee": "Hand-carry stall (2.5m x 2.5m): 4,500 yen; car stall A (2.5m x 8m): 8,000 yen; car stall B (6m x 4m): 11,000 yen; companies/manufacturers (6m x 4m): 40,000 yen (tax included, per booth per day). Revised from October 2026.",
+   "apply": "General stalls: apply through the Japan Flea Market Association's booking system. The organizer screens vendors in advance; read the guidelines and the association's rules, then send an email. Companies and manufacturers apply by email."
   },
   "jfma-wanwan-marche-kobe-meriken-park-vol8": {
    "name": "Wanwan Marche in KOBE Meriken Park vol.8",
    "venue": "Meriken Park, Event Plaza",
    "admission": "Free",
    "access": "5 min. walk from Minato-Motomachi Station on the Kobe Municipal Subway Kaigan Line",
-   "address": "2 Hatoba-cho, Chuo-ku, Kobe-shi"
+   "address": "2 Hatoba-cho, Chuo-ku, Kobe-shi",
+   "rain": "Whether the event is held is decided by the association on the day (general guidance of the Japan Flea Market Association). The rain-date for this event is not yet set",
+   "fee": "Per day, per booth (tax included): general marché, car booth (2.5 m × 8 m) ¥9,000; hand-carry booth (2.5 m × 2.5 m) ¥4,500; companies/makers ¥40,000",
+   "apply": "First-time exhibitors at Wanwan Marché need a prior screening (send the screening email at least 1 week before applying). Read the recruitment guidelines and the association's exhibitor rules before applying"
   },
   "jfma-ikea-kobe-loppis": {
    "name": "IKEA Kobe Loppis (Flea Market)",
@@ -816,7 +905,9 @@
    "admission": "Free",
    "access": "Take the Port Liner from Sannomiya Station and get off at Minami-koen Station, right by the south exit",
    "fee": "1 booth (car booth, 5 m wide × 4.5 m deep): 3,500 yen (tax included)",
-   "address": "8-7-1 Minatojima Nakamachi, Chuo-ku, Kobe-shi"
+   "address": "8-7-1 Minatojima Nakamachi, Chuo-ku, Kobe-shi",
+   "rain": "Whether the event is held is decided by the association on the day (general guidance of the Japan Flea Market Association)",
+   "apply": "Advance application and payment are required (no same-day applications). Apply through the Japan Flea Market Association member login"
   },
   "fmj-amagasaki-chuo-park": {
    "name": "Amagasaki Chuo Park Flea Market & Marche (Flea Market Japan)",
@@ -824,7 +915,8 @@
    "rain": "Held rain or shine",
    "apply": "Apply on each event's official page (bottom of the page) or via LINE",
    "address": "1-4 Kandanaka-dori, Amagasaki-shi, Hyogo",
-   "access": "Right by Amagasaki Station on the Hanshin Railway. By bus, take Hanshin Bus no. 11 from the north side of JR Amagasaki Station, or no. 13 or 31 from Hankyu Tsukaguchi Station, and get off at Hanshin Amagasaki. There is no parking available."
+   "access": "Right by Amagasaki Station on the Hanshin Railway. By bus, take Hanshin Bus no. 11 from the north side of JR Amagasaki Station, or no. 13 or 31 from Hankyu Tsukaguchi Station, and get off at Hanshin Amagasaki. There is no parking available.",
+   "fee": "Flea market / marché / food tent: ¥3,500 per slot, tax included (as stated for the 12 Dec 2026 event)"
   },
   "fmj-amaiseki-park": {
    "name": "Amaiseki Park Flea Market & Marche (Flea Market Japan)",
@@ -832,14 +924,18 @@
    "rain": "Held rain or shine",
    "apply": "Apply on each event's official page (bottom of the page) or via LINE",
    "address": "12-3 Hacchonawate-cho, Takatsuki-shi, Osaka",
-   "access": "10 minutes on foot from Takatsukishi Station (Hankyu Kyoto Line) and 13 minutes on foot from Takatsuki Station (JR Kyoto Line)."
+   "access": "10 minutes on foot from Takatsukishi Station (Hankyu Kyoto Line) and 13 minutes on foot from Takatsuki Station (JR Kyoto Line).",
+   "time": "Varies by date: 14 Nov 2026 11:00–17:00; 26 Dec 10:00–16:00; 27 Dec 10:00–15:30",
+   "fee": "Flea market / marché / food tent: ¥3,000 tax included (26 and 27 Dec). For 14 Nov, by tent size: ¥3,000 (2×2 m) / ¥3,500 (2.5×2.5 m) / ¥4,000 (3×3 m)"
   },
   "fmj-apia-higashiomi": {
    "name": "Shopping Plaza Apia Marche (Flea Market Japan)",
    "venue": "Shopping Plaza Apia, Apia Hall (indoors)",
    "rain": "Held rain or shine, as it is indoors",
    "apply": "Apply on each event's official page (bottom of the page) or via LINE",
-   "address": "3-1 Yokaichi Hamano-cho, Higashiomi-shi, Shiga"
+   "address": "3-1 Yokaichi Hamano-cho, Higashiomi-shi, Shiga",
+   "access": "5 min walk from Omi Railway Yokaichi Station. By car, about 5 km (15 min) from Meishin Expressway Yokaichi IC. Free parking available",
+   "fee": "Marché booth: ¥3,500 tax included (about 180 cm × 1 m; table rental available). As stated for the 31 Oct 2026 event"
   },
   "fmj-kirarie-kusatsu": {
    "name": "Kirarie Kusatsu Marche (Flea Market Japan)",
@@ -847,14 +943,17 @@
    "rain": "Held rain or shine, as it is indoors",
    "apply": "Apply on each event's official page (bottom of the page) or via LINE",
    "address": "2-1-35 Oji, Kusatsu-shi, Shiga",
-   "access": "About 5 min on foot from Kusatsu Station (JR). A paid parking lot is available, but the city recommends public transport because it is expected to be crowded."
+   "access": "About 5 min on foot from Kusatsu Station (JR). A paid parking lot is available, but the city recommends public transport because it is expected to be crowded.",
+   "fee": "Marché booth: ¥3,500 tax included (about 180 cm × 1 m; table rental available). As stated for the 18 Oct 2026 event"
   },
   "fmj-minoh-cues-mall": {
    "name": "Minoh Cues Mall Flea Market & Marche (Flea Market Japan)",
    "venue": "Minoh Cues Mall (Kaya Plaza)",
    "rain": "Held rain or shine",
    "apply": "Apply on each event's official page (bottom of the page) or via LINE",
-   "address": "1-15-30 Nishijuku, Minoh-shi, Osaka"
+   "address": "1-15-30 Nishijuku, Minoh-shi, Osaka",
+   "access": "Right next to Minoh-Kayano Station (Kita-Osaka Kyuko Railway). By bus from Hankyu Minoh Station on Hankyu Bus routes 22, 23 and 36 (toward Minoh-Kayano). Paid parking only",
+   "fee": "Flea market / marché / food tent: ¥3,500 (22 Nov and 13 Dec). For 25 Oct, by tent size: ¥3,500 (2×2 m) / ¥4,000 (2.5×2.5 m) / ¥4,500 (3×3 m)"
   },
   "fmj-nara-city-hall-lawn": {
    "name": "Nara City Hall Lawn Area Flea Market & Marche (Flea Market Japan)",
@@ -870,7 +969,9 @@
    "rain": "Held rain or shine",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "Fukano-kita 4-chome 284, Daito City, Osaka Prefecture",
-   "access": "About 15 min on foot from Nozaki Station or Shijonawate Station (JR Gakkentoshi Line). Or take a Keihan Bus from Owada Station (Keihan Main Line) to Ebata and walk about 10 min. By car, use Parking Lot 1 (west from the Fukakita Yusuichi-higashi intersection on National Route 170)."
+   "access": "About 15 min on foot from Nozaki Station or Shijonawate Station (JR Gakkentoshi Line). Or take a Keihan Bus from Owada Station (Keihan Main Line) to Ebata and walk about 10 min. By car, use Parking Lot 1 (west from the Fukakita Yusuichi-higashi intersection on National Route 170).",
+   "time": "Varies by date: 24 Oct, 8 Nov, 23 Nov 11:00–16:00; 19–20 Dec 10:00–15:30 (2026)",
+   "fee": "Flea market / marché: ¥3,500 (same on all four event pages: 24 Oct, 8 Nov, 23 Nov, 19–20 Dec)"
   },
   "fmj-ohigashi-hiroba": {
    "name": "Ohigashi-san Plaza Flea Market & Marche (Furima Japan)",
@@ -878,7 +979,9 @@
    "rain": "Held rain or shine",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "Tokiwa-cho and others, Shimogyo Ward, Kyoto City",
-   "access": "About 5 min on foot from Kyoto Station (JR), in front of Higashi Honganji Temple."
+   "access": "About 5 min on foot from Kyoto Station (JR), in front of Higashi Honganji Temple.",
+   "time": "Varies by date: 20 Oct, 16 Nov, 23 Dec, 5 Jan 10:00–16:00; 10 Nov 9:00–17:00",
+   "fee": "Flea market / marché / food tent: ¥3,000 (20 Oct, 16 Nov, 23 Dec, 5 Jan). For 10 Nov: ¥2,500 (2.5×2.5 m) or ¥3,500 (3×3 m), tax included"
   },
   "fmj-okazaki-park": {
    "name": "Okazaki Park Flea Market & Marche (Furima Japan)",
@@ -886,21 +989,25 @@
    "rain": "Held rain or shine",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "Okazaki Saishojicho and around, Sakyo-ku, Kyoto",
-   "access": "An 8 min walk from Higashiyama Station on the Kyoto Municipal Subway. By car, about 20 minutes (about 7 km) from Kyoto-Higashi IC on the Meishin Expressway."
+   "access": "An 8 min walk from Higashiyama Station on the Kyoto Municipal Subway. By car, about 20 minutes (about 7 km) from Kyoto-Higashi IC on the Meishin Expressway.",
+   "time": "Varies by date: 4 Nov 2026 9:00–17:00; 29–30 Dec 10:00–16:00"
   },
   "fmj-tsurumi-ryokuchi": {
    "name": "Hanahaku Memorial Park Tsurumi Ryokuchi Flea Market & Marche (Furima Japan)",
    "venue": "Outdoors at the annex exhibition hall of Mizu no Yakata (Hanamizuki Hall), Hanahaku Memorial Park Tsurumi Ryokuchi",
    "rain": "Held rain or shine",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "2-2 Ryokuchikoen, Tsurumi Ward, Osaka City, Osaka Prefecture"
+   "address": "2-2 Ryokuchikoen, Tsurumi Ward, Osaka City, Osaka Prefecture",
+   "access": "Right next to Tsurumi-ryokuchi Station (Osaka Metro Nagahori Tsurumi-ryokuchi Line). About 20 paid parking spaces on site (¥1,000 per car); cars cannot be moved during the event"
   },
   "fmj-cainz-hikone": {
    "name": "Cainz Hikone Store Flea Market & Marche (Furima Japan)",
    "venue": "Cainz Hikone Store parking lot",
    "rain": "Held in rain (cancelled in severe weather)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Baba 2-chome 1-1, Hikone City, Shiga Prefecture"
+   "address": "Baba 2-chome 1-1, Hikone City, Shiga Prefecture",
+   "access": "About 20 min walk from JR Biwako Line Hikone Station. Free parking available",
+   "fee": "Flea market / marché / food tent: ¥2,800 (as stated for the 7–8 Nov 2026 event)"
   },
   "fmj-mie-sogo-bunka-center": {
    "name": "Mie Prefectural General Cultural Center Flea Market & Marche (Furima Japan)",
@@ -908,7 +1015,8 @@
    "rain": "Held in rain (cancelled in severe weather)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "Isshinden-Kozubeta 1234, Tsu City, Mie Prefecture",
-   "access": "About 25 min on foot from Tsu Station. About 5 min by bus from the west exit of Tsu Station (Sogo Bunka Center-mae stop), or about 5 min by taxi. Public transport is recommended on weekends and holidays."
+   "access": "About 25 min on foot from Tsu Station. About 5 min by bus from the west exit of Tsu Station (Sogo Bunka Center-mae stop), or about 5 min by taxi. Public transport is recommended on weekends and holidays.",
+   "fee": "Flea market / marché / food tent: ¥2,800 tax included (merchandise sales only). As stated for the 26–27 Dec 2026 event"
   },
   "fmj-plant-kizugawa": {
    "name": "Super Center Plant Kizugawa Flea Market & Marche (Furima Japan)",
@@ -916,7 +1024,8 @@
    "rain": "Cancelled in rain (held in light rain)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "Shiroyamadai 2-chome 1-banchi, Main Parking Lot, Kizugawa City, Kyoto Prefecture",
-   "access": "A 15 min walk from Kizu Station. By Nara Kotsu bus, it is a 4 min walk from the Kizu-Shiroyamadai-chuo stop or a 9 min walk from the Kyodai-nojo stop. Free parking is available."
+   "access": "A 15 min walk from Kizu Station. By Nara Kotsu bus, it is a 4 min walk from the Kizu-Shiroyamadai-chuo stop or a 9 min walk from the Kyodai-nojo stop. Free parking is available.",
+   "fee": "Flea market / marché / food tent: ¥3,000 tax included (merchandise sales only). As stated for the 31 Oct–1 Nov 2026 event"
   },
   "fmj-notogawa-community-center": {
    "name": "Notogawa Community Center Flea Market & Marche (Furima Japan)",
@@ -924,7 +1033,8 @@
    "rain": "Held in light rain (cancelled in severe weather such as typhoons)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "Taikoji-cho 262-banchi, Higashiomi City, Shiga Prefecture",
-   "access": "10 minutes on foot from the west exit of Notogawa Station (JR). Get off at the Notogawa Shisho stop of the Chokotto Bus from the Notogawa Station West Exit stop; it is right there. Parking for 300 vehicles."
+   "access": "10 minutes on foot from the west exit of Notogawa Station (JR). Get off at the Notogawa Shisho stop of the Chokotto Bus from the Notogawa Station West Exit stop; it is right there. Parking for 300 vehicles.",
+   "fee": "Flea market / marché: ¥2,000 for Higashiomi residents, ¥3,000 for non-residents (as stated for the 25 Oct 2026 event)"
   },
   "fmj-a-square-kusatsu": {
    "name": "A-Square Marche (Furima Japan)",
@@ -932,7 +1042,8 @@
    "rain": "Cancelled in rain (held in light rain)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "Nishishibukawa 1-chome 23-1, Kusatsu City, Shiga Prefecture",
-   "access": "About 3 min on foot from the west exit of Kusatsu Station (JR Biwako Line). There is a car park for 3,000 cars (entry from 7:00 to 22:00)."
+   "access": "About 3 min on foot from the west exit of Kusatsu Station (JR Biwako Line). There is a car park for 3,000 cars (entry from 7:00 to 22:00).",
+   "fee": "Marché / food marché: from ¥2,000 (extra charge depending on booth size). As stated for the 21 Nov 2026 event"
   },
   "fmj-yamato-saidaiji-ekimae": {
    "name": "Yamato-Saidaiji Station Front Flea Market & Marche (Furima Japan)",
@@ -940,7 +1051,8 @@
    "rain": "Held in rain (cancelled in severe weather)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "Saidaiji Higashi-machi 2-chome 1-63, Nara City, Nara Prefecture",
-   "access": "An artificial-turf space on the sidewalk in front of the north side of Saidaiji Station (Nara City road Saidaiji Ichijo Line). The page gives no walking time."
+   "access": "An artificial-turf space on the sidewalk in front of the north side of Saidaiji Station (Nara City road Saidaiji Ichijo Line). The page gives no walking time.",
+   "fee": "Flea market / marché / food tent: ¥3,000 (same on all five event pages: 25 Oct, 7 Nov, 22 Nov, 12 Dec, 20 Dec)"
   },
   "fmj-ritto-sakira": {
    "name": "Ritto Sakira Flea Market & Marche (Furima Japan)",
@@ -948,7 +1060,8 @@
    "rain": "Cancelled in rain (held in light rain)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "Haze 2-chome 1-ban 28-go, Ritto City, Shiga Prefecture",
-   "access": "About 400 m (a 5 min walk) from the east exit of Ritto Station on the JR Biwako Line. A paid car park adjoins the hall; if it is full, use nearby coin parking."
+   "access": "About 400 m (a 5 min walk) from the east exit of Ritto Station on the JR Biwako Line. A paid car park adjoins the hall; if it is full, use nearby coin parking.",
+   "fee": "Flea market / marché / food: ¥2,800 tax included; kids' flea market: ¥1,000 tax included. As stated for the 14–15 Nov 2026 event"
   },
   "fmj-suzuka-sakura-no-mori": {
    "name": "Suzuka City Sakura no Mori Park Flea Market & Marche (Furima Japan)",
@@ -956,7 +1069,8 @@
    "rain": "Cancelled in rain (held in light rain)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "Minamitamagaki-cho 3500-5, Suzuka City, Mie Prefecture",
-   "access": "25 minutes on foot from Shiroko Station (Kintetsu Nagoya Line), according to a tourism site. Parking is free."
+   "access": "25 minutes on foot from Shiroko Station (Kintetsu Nagoya Line), according to a tourism site. Parking is free.",
+   "fee": "Flea market / marché / food tent: ¥2,800 tax included (merchandise sales only). Same on both event pages (21–23 Nov, 5–6 Dec)"
   },
   "fmj-yasugawa-shinsui-park": {
    "name": "Yasugawa Shinsui Park Flea Market & Marche (Furima Japan)",
@@ -964,7 +1078,8 @@
    "rain": "Cancelled in rain (held in light rain)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "Natsumi 589, Konan City, Shiga Prefecture",
-   "access": "About 20 min on foot from Kosei Station (JR Kusatsu Line). It is 12 km (about 20 min) from the Ritto IC on the Meishin Expressway. The car park has space for 453 cars."
+   "access": "About 20 min on foot from Kosei Station (JR Kusatsu Line). It is 12 km (about 20 min) from the Ritto IC on the Meishin Expressway. The car park has space for 453 cars.",
+   "fee": "Flea market / marché / food tent: ¥2,800 (as stated for the 19–20 Dec 2026 event)"
   },
   "fmj-yamada-ike-park": {
    "name": "Yamadaike Park Flea Market & Marche (Furima Japan)",
@@ -972,7 +1087,8 @@
    "rain": "Held rain or shine",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "1-1 Yamadaikekoen, Hirakata City, Osaka Prefecture, Multipurpose Plaza",
-   "access": "About 700 m northwest of Fujisaka Station (JR Gakkentoshi Line), or about 200 m east of the Keihan Bus Deyashiki stop. Keihan buses to Deyashiki also run from Nagao Station and from the north exit of Hirakata-shi Station (Keihan). The location of the multipurpose field within the park is not confirmed."
+   "access": "About 700 m northwest of Fujisaka Station (JR Gakkentoshi Line), or about 200 m east of the Keihan Bus Deyashiki stop. Keihan buses to Deyashiki also run from Nagao Station and from the north exit of Hirakata-shi Station (Keihan). The location of the multipurpose field within the park is not confirmed.",
+   "fee": "Flea market / marché / food tent: ¥3,000 tax included (merchandise sales only). As stated for the 19–20 Dec 2026 event"
   },
   "fmj-alplaza-yasu": {
    "name": "Al Plaza Yasu Flea Market & Marche (Furima Japan)",
@@ -980,14 +1096,16 @@
    "rain": "Held in rain",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
    "address": "Kosasahara 1000, Yasu City, Shiga Prefecture",
-   "access": "A 7 min walk from Yasu Station on the JR Tokaido Main Line. By car, 5.2 km from Ritto IC on the Meishin Expressway. Parking is available."
+   "access": "A 7 min walk from Yasu Station on the JR Tokaido Main Line. By car, 5.2 km from Ritto IC on the Meishin Expressway. Parking is available.",
+   "fee": "Flea market / marché / food tent: ¥2,800 tax included (same on both event pages: 22 Nov, 6 Dec)"
   },
   "fmj-yokkaichi-shimin-park": {
    "name": "Yokkaichi Citizens’ Park Flea Market & Marche (Furima Japan)",
    "venue": "Yokkaichi Citizens’ Park",
    "rain": "Cancelled in rain (held in light rain)",
    "apply": "Apply via the official page of each event (at the bottom of the page) or via LINE",
-   "address": "Yasujima 1-chome 3, Yokkaichi City, Mie Prefecture"
+   "address": "Yasujima 1-chome 3, Yokkaichi City, Mie Prefecture",
+   "fee": "Flea market / marché / food tent: ¥2,800 tax included (same on all five event pages: 24 Oct, 8 Nov, 21 Nov, 12 Dec, 30 Dec)"
   },
   "recycler-ajinomoto-stadium-flea": {
    "name": "Ajinomoto Stadium BIG Flea Market (Recycle Undo Shimin-no-Kai)",
@@ -1006,7 +1124,8 @@
    "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
    "address": "3-5-1 Marunouchi, Chiyoda-ku, Tokyo",
    "fee": "Revised from the December 2026 events: stall fee 4,500 yen → 5,000 yen and 5,500 yen → 6,000 yen (the official notice does not say which membership type or booth each applies to). Parking (up to 8 hours) 2,500 yen → 3,000 yen",
-   "access": "About 1 min on foot from Yurakucho Station (JR) and about 5 min from Tokyo Station (JR). About 5 min from Nijubashimae Station (Tokyo Metro Chiyoda Line), among other stations."
+   "access": "About 1 min on foot from Yurakucho Station (JR) and about 5 min from Tokyo Station (JR). About 5 min from Nijubashimae Station (Tokyo Metro Chiyoda Line), among other stations.",
+   "admission": "Free"
   },
   "recycler-kiba-park-flea": {
    "name": "Tokyo Metropolitan Kiba Park Flea Market (Recycle Undo Shimin-no-Kai)",
@@ -1014,7 +1133,8 @@
    "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
    "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
    "address": "4-1-1 Kiba, Koto-ku",
-   "access": "A 10 min walk from Kiba Station on the Tokyo Metro Tozai Line, or 15 min from Kiyosumi-Shirakawa Station or Kikukawa Station (Toei Shinjuku Line). By bus, it is a 5 min walk from the Kiba-ekimae stop, among others. Paid parking is available (Lot 1 at 4-1-1 Kiba, 104 spaces)."
+   "access": "A 10 min walk from Kiba Station on the Tokyo Metro Tozai Line, or 15 min from Kiyosumi-Shirakawa Station or Kikukawa Station (Toei Shinjuku Line). By bus, it is a 5 min walk from the Kiba-ekimae stop, among others. Paid parking is available (Lot 1 at 4-1-1 Kiba, 104 spaces).",
+   "admission": "Free admission (as stated in September 2024)"
   },
   "recycler-komazawa-park-flea": {
    "name": "Komazawa Olympic Park Flea Market (Recycle Undo Shimin-no-Kai)",
@@ -1022,14 +1142,18 @@
    "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
    "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
    "address": "1-1 Komazawa Koen, Setagaya-ku",
-   "access": "15 minutes on foot from Komazawa-Daigaku Station (Tokyu Den-en-toshi Line). By Tokyu Bus from JR Shibuya Station (Den-en-chofu route) to Komazawa Koen Higashiguchi, or from JR Ebisu Station (Yoga route) to Komazawa Koen. Paid parking: 181 spaces in lot 1 and 41 in lot 2."
+   "access": "15 minutes on foot from Komazawa-Daigaku Station (Tokyu Den-en-toshi Line). By Tokyu Bus from JR Shibuya Station (Den-en-chofu route) to Komazawa Koen Higashiguchi, or from JR Ebisu Station (Yoga route) to Komazawa Koen. Paid parking: 181 spaces in lot 1 and 41 in lot 2.",
+   "admission": "Free admission (as stated for the April 2026 event)",
+   "fee": "Exhibitor fee ¥3,000, reservation required (as stated for the April 2026 event; the organizer's venue page says fees differ by member type)"
   },
   "recycler-fussa-baseside-street": {
    "name": "Fussa Baseside Street Vintage Clothing & Antique Market (Recycle Undo Shimin-no-Kai)",
    "venue": "Fussa Baseside Street (Friendship Park)",
    "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
    "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
-   "address": "2351-11 Fussa, Fussa-shi, Friendship Park"
+   "address": "2351-11 Fussa, Fussa-shi, Friendship Park",
+   "admission": "Free admission (as stated for the July 2026 event)",
+   "access": "13 min walk from JR Ome Line Ushihama Station, or 13 min walk from JR Hachiko Line Higashi-Fussa Station (as stated in July 2026)"
   },
   "recycler-koganei-park-flea": {
    "name": "Koganei Park Flea Market (Recycle Undo Shimin-no-Kai)",
@@ -1037,7 +1161,9 @@
    "rain": "Cancellation in case of rain is decided by the secretariat (held unless a cancellation notice is issued by 7 a.m.)",
    "apply": "Apply from the venue page on the organizer's website (stall fee differs by membership type)",
    "address": "1-13-1 Sekinomachi, Koganei-shi, Tokyo",
-   "access": "By bus from the north exit of Musashi-Koganei Station (JR Chuo Line) to Koganei Koen Nishiguchi and other stops, or by CoCo Bus from the north exit of Higashi-Koganei Station to Koganei Koen Iriguchi or Tatemonoen Iriguchi. From Hanakoganei Station (Seibu Shinjuku Line), take a Seibu Bus from Minami-Hanakoganei to Koganei Koen Nishiguchi. No walking time from the stations is given."
+   "access": "By bus from the north exit of Musashi-Koganei Station (JR Chuo Line) to Koganei Koen Nishiguchi and other stops, or by CoCo Bus from the north exit of Higashi-Koganei Station to Koganei Koen Iriguchi or Tatemonoen Iriguchi. From Hanakoganei Station (Seibu Shinjuku Line), take a Seibu Bus from Minami-Hanakoganei to Koganei Koen Nishiguchi. No walking time from the stations is given.",
+   "admission": "Free admission (as stated for the April 2026 event)",
+   "fee": "Exhibitor fee ¥2,500, reservation required (as stated for the April 2026 event; the organizer's venue page says fees differ by member type)"
   },
   "recycler-hikarigaoka-pageant-festa-flea": {
    "name": "Nerima Hikarigaoka Hikari Pageant Festa Flea Market (Recycle Undo Shimin-no-Kai)",

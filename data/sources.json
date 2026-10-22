@@ -4093,5 +4093,235 @@
    "checkedAt": "2026-10-22",
    "note": "主催者（エコロジーネットワーク・ラズベリー）の公式サイト。利用規約のページはなく（kiyaku.html は出店者向けの出店規約）、robots.txt は 404（制限なし）。事実の項目だけ掲載し、文章は転載しない。電話番号・SNS・LINE は載せない。2026-10-20 確認"
   }
+ },
+ {
+  "url": "https://ja.kyoto.travel/event/single.php?event_id=9231",
+  "series": [
+   "toji-kobo-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "京都市公式観光サイト（京都観光Navi）。取得はWebFetchで1ページのみ。利用規約は未確認のため、事実の項目（時間・雨天）だけを使い、文章は転載しない"
+  }
+ },
+ {
+  "url": "https://www.town.mizuho.tokyo.jp/event/e011/p002837_d/fil/youryou.pdf",
+  "series": [
+   "mizuho-aozora-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ町公式サイトのPDF（瑞穂町フリーマーケット実施要領）。robots.txt は許可（2026-10-21確認）。利用規約のページなし"
+  }
+ },
+ {
+  "url": "https://www.union.tokyo23-seisou.lg.jp/kojo/tamagawa/documents/tamagawadayori47.pdf",
+  "series": [
+   "ota-tamagawa-eco-fair-2026"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "既存の出典（東京二十三区清掃一部事務組合 多摩川清掃工場）と同じ公式サイトのPDF（工場だより第47号）。robots.txt は許可（2026-10-21確認）。利用規約のページは未確認"
+  }
+ },
+ {
+  "url": "https://www.teshigoro.com/%E5%87%BA%E5%B1%95%E8%80%85%E5%8B%9F%E9%9B%86",
+  "series": [
+   "nishiogi-teshigoto-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイトの出展者募集ページ。robots.txt は 404（制限なし）、利用規約のページなし（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.mottainai.info/jp/faq/",
+  "series": [
+   "mottainai-flea-nakano-central-park",
+   "mottainai-flea-kichijoji-parco",
+   "mottainai-flea-shinjuku-chuo-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "既存の出典と同じ公式サイト。robots.txt 許可。/terms/ に複製禁止の記載があり事実の項目だけ掲載（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://www.mottainai.info/jp/event/fleama/",
+  "series": [
+   "mottainai-flea-nakano-central-park",
+   "mottainai-flea-kichijoji-parco",
+   "mottainai-flea-shinjuku-chuo-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同上"
+  }
+ },
+ {
+  "url": "https://www.eko-hirobakan.jp/fujimibashi/pdf/freemarket_20260401.pdf",
+  "series": [
+   "kita-fujimibashi-echo-hirobakan-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "公式トップ（既存の出典）からリンクされた案内チラシ（PDF）。robots.txt は 404（制限なし）、利用規約のページは未確認（2026-10-21）"
+  }
+ },
+ {
+  "url": "https://www.tama-seisokojo.or.jp/access",
+  "series": [
+   "tama-econico-market"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイト（多摩ニュータウン環境組合）のアクセス案内。robots.txt 許可（2026-10-21 確認）"
+  }
+ },
+ {
+  "url": "https://koenjifes.jp/2026/aozorakoten/",
+  "series": [
+   "koenji-fes-2026-aozora-tezukuri-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "高円寺フェス公式サイト（杉並区のページがリンクしている公式サイト）の「青空個展てづくり市」ページ。robots.txt は 404（制限なし）、利用規約のページは未確認（2026-10-21）"
+  }
+ },
+ {
+  "url": "https://aozorakoten.com/participants",
+  "series": [
+   "koenji-fes-2026-aozora-tezukuri-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "青空個展（高円寺北公園のてづくり市の運営ページ。東京リサイクル運営）の出展者向けページ。robots.txt 許可。規約の「特定商取引の記載」「プライバシー」ページのみで複製禁止の記載は未確認（2026-10-21）"
+  }
+ },
+ {
+  "url": "https://cultune.org/cultune-entry.html",
+  "series": [
+   "cultune-fukuoka-maizuru-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイトの出店者募集ページ（12/20分）。robots.txt は許可（2026-10-22 確認）。利用規約のページは確認できず。申込みページへのリンクとしてのみ使用"
+  }
+ },
+ {
+  "url": "https://www.tedukuri-ichi.com/entry_index_hyakumanben",
+  "series": [
+   "hyakumanben-tedukuri-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイト（tedukuri-ichi.com）の応募要項ページ。robots.txt は許可（2026-10-22 確認）。利用規約のページは確認できず。事実の項目（出展料）だけ掲載し文章は転載しない"
+  }
+ },
+ {
+  "url": "https://www.tedukuri-ichi.com/entry_index_umekoji",
+  "series": [
+   "umekoji-park-tedukuri-ichi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイト（tedukuri-ichi.com）の応募要項ページ。robots.txt は許可（2026-10-22 確認）。利用規約のページは確認できず。事実の項目（出展料）だけ掲載し文章は転載しない"
+  }
+ },
+ {
+  "url": "http://freemarket-go.com/faq.html",
+  "series": [
+   "jfma-nakaku-kumin-festa-flea-2026",
+   "jfma-kobe-harborland-seaside-market",
+   "jfma-nishikita-flea",
+   "jfma-ikea-tsuruhama-loppis",
+   "jfma-minatomachi-river-place-flea",
+   "jfma-wanwan-marche-kobe-meriken-park-vol8",
+   "jfma-ikea-kobe-loppis"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "同じ公式サイト（freemarket-go.com）の「よくあるご質問」ページ。robots.txt は許可（2026-10-22 確認）。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（申込み方法・中止の判断）だけ掲載し文章は転載しない"
+  }
+ },
+ {
+  "url": "https://www.t-i-forum.co.jp/visitors/flea_market/",
+  "series": [
+   "recycler-tokyo-international-forum-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "東京国際フォーラム（会場運営者）の公式サイト。robots.txt は404（許可、2026-10-22 確認）。「このサイトのご利用にあたって」に、情報の複製等の使用を禁止する記載があるため、事実の項目だけ掲載"
+  }
+ },
+ {
+  "url": "https://www.walkerplus.com/event/ar0313e517707/price.html",
+  "series": [
+   "recycler-kiba-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "ウォーカープラス（イベント情報サイト。情報提供：イベントバンク）。robots.txt は200で許可（2026-10-22 確認）。利用規約（/info/rules.html）に「私的利用の範囲でのみ使用」「複製・転載の禁止」とあるため、事実の項目（料金・アクセスなど）だけを短く掲載し、文章・画像は転載しない。扱いは要判断"
+  }
+ },
+ {
+  "url": "https://spring.walkerplus.com/gw/detail_e/ar0313e580202/data.html",
+  "series": [
+   "recycler-komazawa-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "ウォーカープラス（イベント情報サイト。情報提供：イベントバンク）。robots.txt は200で許可（2026-10-22 確認）。利用規約（/info/rules.html）に「私的利用の範囲でのみ使用」「複製・転載の禁止」とあるため、事実の項目（料金・アクセスなど）だけを短く掲載し、文章・画像は転載しない。扱いは要判断"
+  }
+ },
+ {
+  "url": "https://summer.walkerplus.com/odekake/detail_e/ar0313e598307/data.html",
+  "series": [
+   "recycler-fussa-baseside-street"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "ウォーカープラス（イベント情報サイト。情報提供：イベントバンク）。robots.txt は200で許可（2026-10-22 確認）。利用規約（/info/rules.html）に「私的利用の範囲でのみ使用」「複製・転載の禁止」とあるため、事実の項目（料金・アクセスなど）だけを短く掲載し、文章・画像は転載しない。扱いは要判断"
+  }
+ },
+ {
+  "url": "https://summer.walkerplus.com/odekake/detail_e/ar0313e598307/map.html",
+  "series": [
+   "recycler-fussa-baseside-street"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "ウォーカープラス（イベント情報サイト。情報提供：イベントバンク）。robots.txt は200で許可（2026-10-22 確認）。利用規約（/info/rules.html）に「私的利用の範囲でのみ使用」「複製・転載の禁止」とあるため、事実の項目（料金・アクセスなど）だけを短く掲載し、文章・画像は転載しない。扱いは要判断"
+  }
+ },
+ {
+  "url": "https://spring.walkerplus.com/gw/detail_e/ar0313e580206/data.html",
+  "series": [
+   "recycler-koganei-park-flea"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-22",
+   "note": "ウォーカープラス（イベント情報サイト。情報提供：イベントバンク）。robots.txt は200で許可（2026-10-22 確認）。利用規約（/info/rules.html）に「私的利用の範囲でのみ使用」「複製・転載の禁止」とあるため、事実の項目（料金・アクセスなど）だけを短く掲載し、文章・画像は転載しない。扱いは要判断"
+  }
  }
 ]
