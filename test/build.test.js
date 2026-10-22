@@ -10,8 +10,7 @@ import { REVIEWS_ON } from '../scripts/lib/reviews-view.mjs';
 
 // 管理画面（静的ファイル static/admin/reviews.html。Cloudflare が .html を外して配る）。フッターの「©」が隠しリンク
 const ADMIN_PAGE = '/admin/reviews';
-// 手で書いた静的ページ（static/press/・static/ja/press/）。ビルドのページ一覧にはないが、リンクしてよい
-const STATIC_PAGES = ['/press/', '/ja/press/'];
+const STATIC_PAGES = [];
 
 const FIX = join(fileURLToPath(new URL('.', import.meta.url)), 'fixtures');
 const data = loadData(FIX);
