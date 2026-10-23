@@ -2220,6 +2220,22 @@
    "venue": "Sandome Fukui",
    "address": "5-1-1 Uryucho, Echizen",
    "access": "About 15 min walk (1.5 km) from Sundome-Nishi Station to Sundome Fukui"
+  },
+  "lohas-park-naruto-uchinoumi": {
+   "name": "Lohas Park Naruto (Naruto Uchinoumi General Park)",
+   "venue": "Naruto Uchinoumi General Park",
+   "rule": "Dec 5 (Sat) and 6 (Sun), 2026",
+   "time": "10:00–16:00",
+   "address": "679 Takashima-kita, Naruto-cho, Naruto-shi, Tokushima",
+   "rain": "Held in rain (may be cancelled in severe weather; there is no rain date)"
+  },
+  "lohas-park-musashimurayama-aeon": {
+   "name": "Lohas Park Musashimurayama (AEON MALL Musashimurayama)",
+   "venue": "AEON MALL Musashimurayama, Tsumugu Hiroba",
+   "rule": "Dec 12 (Sat) and 13 (Sun), 2026",
+   "time": "10:00–17:00",
+   "address": "1-1-34 Enoki, Musashimurayama-shi, Tokyo",
+   "rain": "Held in rain (may be cancelled in severe weather; there is no rain date)"
   }
  },
  "organizers": {
@@ -2349,7 +2365,8 @@
   "たかおか朝市実行委員会": "Takaoka Morning Market Executive Committee",
   "ツギノテ実行委員会": "Tsuginote Executive Committee",
   "誠市（鯖江商工会議所）": "Makoto Ichi (Sabae Chamber of Commerce and Industry)",
-  "クリエイターズランド": "Creators Land"
+  "クリエイターズランド": "Creators Land",
+  "ロハスパーク鳴門実行委員会": "Lohas Park Naruto Executive Committee"
  },
  "labels": {
   "問い合わせ先": "Contact",
@@ -2527,7 +2544,8 @@
   "金沢市": "Kanazawa City",
   "富山市": "Toyama City",
   "高岡市": "Takaoka City",
-  "鯖江市": "Sabae City"
+  "鯖江市": "Sabae City",
+  "鳴門市": "Naruto City"
  },
  "notes": {
   "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",
@@ -2626,7 +2644,8 @@
   "rbf-kawagoe-suijo-park|2026-12-13": "Held by Otakara (the event schedule page says “Otakara”)",
   "rbf-kazo-hanasaki-park|2026-10-31": "Held within the Kazo Hanasaki Water Park Festival (Wakuwaku Park Festival)",
   "rbf-kazo-hanasaki-park|2026-11-01": "Held within the Kazo Hanasaki Water Park Festival (Wakuwaku Park Festival)",
-  "hachinohe-tatehana-ganpeki-asaichi|2026-12-30": "Special morning market: 12/30 (Tue) (per the official top page)"
+  "hachinohe-tatehana-ganpeki-asaichi|2026-12-30": "Special morning market: 12/30 (Tue) (per the official top page)",
+  "kawanishi-toshi-ryokkasai-green-flea|2026-10-24": "Cancelled because of rain, according to the Kawanishi City page (updated Reiwa 8, Oct 22, 2026)"
  },
  "venues": {
   "komazawa-olympic-park": {

@@ -830,5 +830,13 @@
   "checkedAt": "2026-10-20",
   "reason": "臨時朝市（公式のトップページに「臨時朝市：12月30日(火)」）",
   "source": "https://minatonichiyouasaichikai.com/"
+ },
+ {
+  "series": "kawanishi-toshi-ryokkasai-green-flea",
+  "date": "2026-10-24",
+  "status": "cancelled",
+  "checkedAt": "2026-10-23",
+  "source": "https://www.city.kawanishi.hyogo.jp/kurashi/1017490/midori/1014067.html",
+  "reason": "川西市の案内ページ（令和8年10月22日更新）。雨天のため中止"
  }
 ]

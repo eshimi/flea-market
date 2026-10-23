@@ -2365,7 +2365,8 @@
  {
   "url": "https://www.fmfm-king.com/osaka/",
   "series": [
-   "fmj-tsurumi-ryokuchi"
+   "fmj-tsurumi-ryokuchi",
+   "fmj-amaiseki-park"
   ],
   "terms": {
    "ok": true,
@@ -4581,6 +4582,28 @@
    "ok": true,
    "checkedAt": "2026-10-22",
    "note": "同上"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/event/kiji5947/",
+  "series": [
+   "lohas-park-naruto-uchinoumi"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-23",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+  }
+ },
+ {
+  "url": "https://lohas-park.jp/event/kiji6048/",
+  "series": [
+   "lohas-park-musashimurayama-aeon"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-23",
+   "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
   }
  }
 ]
