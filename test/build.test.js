@@ -692,3 +692,17 @@ test('管理画面への隠しリンク：フッターの「©」が /admin/revi
   assert.ok(existsSync(join(fileURLToPath(new URL('..', import.meta.url)), 'static', 'admin', 'reviews.html')));
   for (const path of ['/', '/ja/']) assert.ok(layout(page(path)).includes(`<a class="ft-admin" href="${ADMIN_PAGE}" rel="nofollow">©</a>`), path);
 });
+
+test('取得の並行化：同じサイトへは順番に、別のサイトは並行して取得する', async () => {
+  const { byHost } = await import('../scripts/check-sources.mjs');
+  const log = [];
+  const t0 = Date.now();
+  const items = ['https://a.example/1', 'https://a.example/2', 'https://b.example/1', 'https://b.example/2', 'https://c.example/1'];
+  await byHost(items, (u) => u, async (u) => { log.push(`start ${u}`); await new Promise((r) => setTimeout(r, 40)); log.push(`end ${u}`); });
+  // 同じサイトの2件目は、1件目が終わってから始まる
+  assert.ok(log.indexOf('end https://a.example/1') < log.indexOf('start https://a.example/2'));
+  assert.ok(log.indexOf('end https://b.example/1') < log.indexOf('start https://b.example/2'));
+  // 別のサイトは並行：直列なら 200ms 以上かかる
+  assert.ok(Date.now() - t0 < 160, `並行になっていません: ${Date.now() - t0}ms`);
+  assert.equal(log.filter((l) => l.startsWith('end')).length, 5);
+});

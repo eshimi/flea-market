@@ -10,7 +10,7 @@ import { todayJst } from './lib/dates.mjs';
 import { crawlDelay, isAllowed } from './lib/robots.mjs';
 import { htmlToText } from './lib/text.mjs';
 import { applyCrawl, planCrawl } from './lib/crawl.mjs';
-import { get, MIN_GAP_MS, sleep } from './check-sources.mjs';
+import { byHost, get, MIN_GAP_MS, sleep } from './check-sources.mjs';
 
 const DATA = join(dirname(fileURLToPath(import.meta.url)), '..', 'data');
 const arg = (k) => process.argv.find((a) => a.startsWith(`--${k}=`))?.split('=')[1];
@@ -26,7 +26,7 @@ async function main() {
   const lines = [`## 巡回するサイトの確認（${today}）`, '', `取得 ${plan.length} 件、見送り ${skipped.length} 件`, ''];
   const robotsCache = new Map();
   const lastHit = new Map();
-  for (const e of plan) {
+  await byHost(plan, (x) => x.url, async (e) => {
     const u = new URL(e.url);
     if (!robotsCache.has(u.origin)) {
       const r = await get(`${u.origin}/robots.txt`);
@@ -34,11 +34,11 @@ async function main() {
       lastHit.set(u.origin, Date.now());
     }
     const robots = robotsCache.get(u.origin);
-    if (robots === null) { lines.push(`- ${e.name}：robots.txt に届かないため、取得しません`); continue; }
+    if (robots === null) { lines.push(`- ${e.name}：robots.txt に届かないため、取得しません`); return; }
     if (!isAllowed(robots, u.pathname + u.search)) {
       lines.push(`- ${e.name}：robots.txt で禁止のため、取得しません（リストの見直しが必要）`);
       state[e.id] = { ...(state[e.id] || {}), robots: 'disallowed', fetchedAt: today };
-      continue;
+      return;
     }
     const wait = (lastHit.get(u.origin) || 0) + Math.max(MIN_GAP_MS, (crawlDelay(robots) || 0) * 1000) - Date.now();
     if (wait > 0) await sleep(wait);
@@ -49,8 +49,8 @@ async function main() {
     const res = await get(e.url, headers);
     lastHit.set(u.origin, Date.now());
     if (res.status === 200 && !res.pdf) res.text = htmlToText(res.text);
-    lines.push(`- ${e.name}：${applyCrawl({ entry: e, result: res, state, queue, today })}`);
-  }
+    lines.push(`- ${e.name}：${applyCrawl({ entry: e, result: res, state, queue, today })}`);  });
+
   const pending = queue.filter((q) => q.status === 'pending');
   lines.push('', `確認待ち：${pending.length} 件${pending.length ? '（' + pending.map((q) => q.name).join('、') + '）' : ''}`);
   if (!dry) {

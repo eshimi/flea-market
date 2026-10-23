@@ -90,6 +90,21 @@ export function applyResult({ src, result, series, state, today, venues = [] }) 
 
 export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// 同じサイトへは順番に（間隔をあけて）、別のサイトは並行して取得する（取得の合計時間を短くする。同じサイトへの間隔は変えない）
+export async function byHost(items, urlOf, worker, concurrency = 8) {
+  const groups = new Map();
+  for (const it of items) {
+    const o = new URL(urlOf(it)).origin;
+    groups.set(o, [...(groups.get(o) || []), it]);
+  }
+  const queue = [...groups.values()];
+  const run = async () => {
+    for (let g = queue.shift(); g; g = queue.shift()) for (const it of g) await worker(it);
+  };
+  await Promise.all(Array.from({ length: Math.min(concurrency, queue.length) }, run));
+}
+
+
 export async function get(url, headers = {}) {
   try {
     const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, ...headers }, redirect: 'follow', signal: AbortSignal.timeout(30000) });
@@ -124,7 +139,7 @@ async function main() {
   const lines = [`## 公式ページの確認（${today}）`, '', `取得 ${plan.length} 件、見送り ${skipped.length} 件`, ''];
   const robotsCache = new Map();
   const lastHit = new Map();
-  for (const src of plan) {
+  await byHost(plan, (x) => x.url, async (src) => {
     const u = new URL(src.url);
     if (!robotsCache.has(u.origin)) {
       const r = await get(`${u.origin}/robots.txt`);
@@ -133,11 +148,11 @@ async function main() {
       lastHit.set(u.origin, Date.now());
     }
     const robots = robotsCache.get(u.origin);
-    if (robots === null) { lines.push(`- ${src.url}：robots.txt に届かないため、取得しません`); continue; }
+    if (robots === null) { lines.push(`- ${src.url}：robots.txt に届かないため、取得しません`); return; }
     if (!isAllowed(robots, u.pathname + u.search)) {
       lines.push(`- ${src.url}：robots.txt で禁止のため、取得しません（台帳の見直しが必要）`);
       state[src.url] = { ...(state[src.url] || {}), robots: 'disallowed', fetchedAt: today };
-      continue;
+      return;
     }
     const gap = Math.max(MIN_GAP_MS, (crawlDelay(robots) || 0) * 1000);
     const wait = (lastHit.get(u.origin) || 0) + gap - Date.now();
@@ -150,8 +165,8 @@ async function main() {
     lastHit.set(u.origin, Date.now());
     if (res.status === 200 && !res.pdf) res.text = htmlToText(res.text);
     const notes = applyResult({ src, result: res, series, state, today, venues });
-    lines.push(`- ${src.url}：${res.status || res.error}${notes.length ? '\n  - ' + notes.join('\n  - ') : '（一致）'}`);
-  }
+    lines.push(`- ${src.url}：${res.status || res.error}${notes.length ? '\n  - ' + notes.join('\n  - ') : '（一致）'}`);  });
+
   if (!dry) {
     writeFileSync(join(DATA, 'series.json'), JSON.stringify(series, null, 1) + '\n');
     if (venues.length) writeFileSync(join(DATA, 'venues.json'), JSON.stringify(venues, null, 1) + '\n');
