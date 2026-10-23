@@ -2236,6 +2236,27 @@
    "time": "10:00–17:00",
    "address": "1-1-34 Enoki, Musashimurayama-shi, Tokyo",
    "rain": "Held in rain (may be cancelled in severe weather; there is no rain date)"
+  },
+  "rbf-hikarigaoka-park": {
+   "name": "Hikarigaoka Park Big Flea Market (Raspberry)",
+   "venue": "Hikarigaoka Park",
+   "rule": "Nov 29, 2026 (Sun), as listed on the organizer's schedule"
+  },
+  "rbf-koganei-park": {
+   "name": "Koganei Park Big Flea Market (Raspberry)",
+   "venue": "Koganei Park",
+   "rule": "Dec 13, 2026 (Sun), as listed on the organizer's schedule"
+  },
+  "rbf-komazawa-park": {
+   "name": "Komazawa Olympic Park Big Flea Market (Raspberry)",
+   "venue": "Komazawa Olympic Park",
+   "rule": "Dec 20, 2026 (Sun), as listed on the organizer's schedule"
+  },
+  "osaka-garagesale-abeno": {
+   "name": "Abeno Ward Garage Sale (Reiwa 8 / FY2026)",
+   "venue": "Kanezuka Elementary School, Osaka City",
+   "rule": "Nov 8, 2026 (Sun), as listed in the Osaka City garage sale schedule",
+   "time": "11:00–15:00"
   }
  },
  "organizers": {
@@ -2545,7 +2566,8 @@
   "富山市": "Toyama City",
   "高岡市": "Takaoka City",
   "鯖江市": "Sabae City",
-  "鳴門市": "Naruto City"
+  "鳴門市": "Naruto City",
+  "大阪市阿倍野区": "Abeno Ward, Osaka"
  },
  "notes": {
   "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",

@@ -2414,7 +2414,10 @@
    "rbf-kawagoe-suijo-park",
    "rbf-koshigaya-laketown",
    "rbf-kazo-hanasaki-park",
-   "rbf-ikea-tokyo-bay-loppis"
+   "rbf-ikea-tokyo-bay-loppis",
+   "rbf-hikarigaoka-park",
+   "rbf-koganei-park",
+   "rbf-komazawa-park"
   ],
   "terms": {
    "ok": true,
@@ -2531,7 +2534,8 @@
    "osaka-garagesale-nishinari",
    "osaka-garagesale-minato",
    "osaka-garagesale-higashisumiyoshi",
-   "osaka-garagesale-kita"
+   "osaka-garagesale-kita",
+   "osaka-garagesale-abeno"
   ],
   "terms": {
    "ok": true,
@@ -4605,5 +4609,19 @@
    "checkedAt": "2026-10-23",
    "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
   }
+ },
+ {
+  "url": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_11.html",
+  "series": [
+   "hikarigaoka-park-flea-tokyo-park"
+  ],
+  "terms": {
+   "ok": true,
+   "checkedAt": "2026-10-23",
+   "note": "東京都公園協会（tokyo-park.or.jp）のサイトポリシーに「権利者の許可なく複製、転用、販売などの二次利用を固く禁じます」とあり。robots.txt は 404（取得を許可）。方針（ユーザー決定）に従い、日付・会場・主催団体名などの事実の項目だけを掲載し、文章・画像は転載しない（2026-10-19 判断）"
+  },
+  "venues": [
+   "hikarigaoka-park"
+  ]
  }
 ]

@@ -8104,7 +8104,8 @@
    "type": "dates",
    "dates": [
     "2026-11-08",
-    "2026-11-29"
+    "2026-11-29",
+    "2027-01-24"
    ],
    "text": "東京都公園協会が公表した今後のフリーマーケット開催予定（けやき広場。2026年10月の催し物の案内）"
   },
@@ -8125,6 +8126,14 @@
      "都営大江戸線光が丘駅より けやき広場まで 徒歩約8分",
      "雨天等により、日程変更・中止になる場合がございます。",
      "天候による中止など、最新の情報は 光が丘公園 X （旧Twitter）でご確認ください。"
+    ]
+   },
+   {
+    "url": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_11.html",
+    "type": "organizer",
+    "checkedAt": "2026-10-23",
+    "evidence": [
+     "1月24日(日)"
     ]
    }
   ],
@@ -15343,6 +15352,144 @@
      "〒208-0022 東京都武蔵村山市榎１丁目１−３４",
      "イオンモールむさし村山 つむぐひろば",
      "ロハスパーク実行委員会"
+    ],
+    "checkedAt": "2026-10-23"
+   }
+  ]
+ },
+ {
+  "id": "rbf-hikarigaoka-park",
+  "name": "光が丘公園ビッグフリマ（ラズベリー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "エコロジーネットワーク・ラズベリー",
+   "url": "https://www.rbf.jp/"
+  },
+  "venue": {
+   "name": "光が丘公園",
+   "pref": "13"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-29"
+   ],
+   "text": "公式の開催日程に掲載の開催日"
+  },
+  "sources": [
+   {
+    "url": "https://www.rbf.jp/nittei.html",
+    "type": "organizer",
+    "evidence": [
+     "11/29(日)",
+     "光が丘公園ビッグフリマ"
+    ],
+    "checkedAt": "2026-10-23"
+   }
+  ]
+ },
+ {
+  "id": "rbf-koganei-park",
+  "name": "小金井公園ビッグフリマ（ラズベリー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "エコロジーネットワーク・ラズベリー",
+   "url": "https://www.rbf.jp/"
+  },
+  "venue": {
+   "name": "小金井公園",
+   "pref": "13"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-13"
+   ],
+   "text": "公式の開催日程に掲載の開催日"
+  },
+  "sources": [
+   {
+    "url": "https://www.rbf.jp/nittei.html",
+    "type": "organizer",
+    "evidence": [
+     "12/13(日)",
+     "小金井公園ビッグフリマ"
+    ],
+    "checkedAt": "2026-10-23"
+   }
+  ]
+ },
+ {
+  "id": "rbf-komazawa-park",
+  "name": "駒沢オリンピック公園ビッグフリマ（ラズベリー）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "エコロジーネットワーク・ラズベリー",
+   "url": "https://www.rbf.jp/"
+  },
+  "venue": {
+   "name": "駒沢オリンピック公園",
+   "pref": "13"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-12-20"
+   ],
+   "text": "公式の開催日程に掲載の開催日"
+  },
+  "sources": [
+   {
+    "url": "https://www.rbf.jp/nittei.html",
+    "type": "organizer",
+    "evidence": [
+     "12/20(日)",
+     "駒沢オリンピック公園"
+    ],
+    "checkedAt": "2026-10-23"
+   }
+  ]
+ },
+ {
+  "id": "osaka-garagesale-abeno",
+  "name": "令和8年度 阿倍野区ガレージセール",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "大阪市（担当の環境事業センター・環境局家庭ごみ減量課）",
+   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  "venue": {
+   "name": "大阪市金塚小学校",
+   "pref": "27",
+   "city": "大阪市阿倍野区",
+   "cityCode": "27109"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-08"
+   ],
+   "text": "大阪市の「各区ガレージセール開催状況」に掲載の開催日"
+  },
+  "time": {
+   "text": "11時から15時まで",
+   "start": "11:00",
+   "end": "15:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
+    "type": "municipality",
+    "evidence": [
+     "令和8年度 阿倍野区ガレージセール令和8年11月8日(日曜日)大阪市金塚小学校11時から15時まで雨天中止"
     ],
     "checkedAt": "2026-10-23"
    }
