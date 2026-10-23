@@ -91,22 +91,76 @@ function home(ctx, lang) {
   return pg(lang, '/', { title: SITE.name, description: T[lang].description, body, css: ['/home.css'], scripts: ['/home.js', '/hero-switch.js'], head: fonts });
 }
 
-function listPage(lang, base, crumbs, h1, lead, list, extra = '', filter = false) {
+function listPage(lang, base, crumbs, h1, lead, list, extra = '', filter = false, seo = {}) {
   const af = filter ? areaFilter(list, lang) : '';
   const body = `<div class="in page">${breadcrumb(crumbs, lang)}<h1>${esc(h1)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}${extra}${af}${eventListByMonth(list, lang)}</div>`;
-  return pg(lang, base, { title: h1, description: P[lang].listDesc(h1), body, scripts: af ? ['/area-filter.js'] : [], keywords: [h1, ...crumbs.map((c) => c.label)] });
+  return pg(lang, base, { title: seo.title || h1, description: seo.description || P[lang].listDesc(h1), body, scripts: af ? ['/area-filter.js'] : [], keywords: [h1, ...crumbs.map((c) => c.label)], ...(seo.head ? { head: seo.head } : {}) });
+}
+
+
+// ---- 日別・今週末ページの SEO（タイトル・説明・書き出しの文・構造化データ・日別への導線）----
+// 検索する人の言葉（Japan・flea market・this weekend・件数）をタイトルの前に置く。件数・内訳は実データから作る
+const AREA_TOP = 3;
+function seoStats(list, lang) {
+  const act = list.filter(isActive);
+  const conf = act.filter((o) => o.status === 'confirmed').length;
+  const m = new Map();
+  for (const o of act) m.set(o.series.venue.pref, (m.get(o.series.venue.pref) || 0) + 1);
+  const top = [...m].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, AREA_TOP).map(([p, n]) => `${prefLabel(p, lang)} ${n}`);
+  return { act, n: act.length, conf, top };
+}
+function seoText(lang, scope, label, st, holidayLabel) {
+  const { n, conf, top } = st;
+  if (lang === 'ja') {
+    const hol = holidayLabel ? `（${holidayLabel}）` : '';
+    return {
+      title: scope === 'weekend' ? `今週末（${label}）の全国のフリマ・蚤の市・骨董市：${n}件` : `${label}${hol}の全国のフリマ・蚤の市・骨董市：${n}件`,
+      description: `${scope === 'weekend' ? `今週末（${label}）` : `${label}${hol}`}に開催されるフリマ・蚤の市・骨董市・手作り市${n}件の一覧。東京・大阪・京都ほか。主催者・自治体の公式情報をもとに、毎朝更新しています。`,
+      lead: `${scope === 'weekend' ? `今週末（${label}）` : `${label}${hol}`}の開催は${n}件です。そのうち${conf}件は主催者・自治体の公式ページで確認した回で、残りは公式のきまりから算出した予定です。${top.length ? `地域別の多い順：${top.join('、')}。` : ''}`,
+    };
+  }
+  const events = `${n} event${n === 1 ? '' : 's'}`;
+  const hol = holidayLabel ? ` (${holidayLabel})` : '';
+  return {
+    title: scope === 'weekend' ? `Flea Markets in Japan This Weekend (${label}): ${events}` : `Flea Markets in Japan on ${label}${hol}: ${events}`,
+    description: `${n} flea market${n === 1 ? '' : 's'}, antique fair${n === 1 ? '' : 's'} and handmade market${n === 1 ? '' : 's'} in Japan ${scope === 'weekend' ? `this weekend (${label})` : `on ${label}`}${n === 1 ? '' : ' — Tokyo, Osaka, Kyoto and more'}. Listed from official organizer and municipal pages, updated every morning.`,
+    lead: `${n === 1 ? 'There is 1 market' : `There are ${n} markets`} in Japan ${scope === 'weekend' ? 'this weekend' : `on ${label}`}${hol}. ${conf} of ${n} ${conf === 1 ? 'is' : 'are'} confirmed from official organizer or municipal pages; the rest follow their recurring schedules.${top.length ? ` Most by area: ${top.join(', ')}.` : ''}`,
+  };
+}
+function listLd(name, list, lang) {
+  const items = list.filter(isActive).slice(0, 50).map((o, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}${langPath(`/e/${o.series.id}/`, lang)}`, name: nameL(o.series, lang) }));
+  if (!items.length) return '';
+  return `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'ItemList', name, numberOfItems: list.filter(isActive).length, itemListElement: items }).replace(/</g, '\\u003c')}</script>\n`;
+}
+// 今週末の土曜・日曜（開催のある日）のページと、今週末のページへの相互リンク
+function weekendLinks(ctx, current, lang) {
+  const days = upcomingWeekend(ctx.today);
+  const cnt = (d) => ctx.occ.filter((o) => o.date === d && isActive(o)).length;
+  const num = (d) => (lang === 'ja' ? `（${cnt(d)}）` : ` (${cnt(d)})`);
+  const links = days.filter((d) => cnt(d) > 0).map((d) => (d === current ? `<b>${esc(dlabel(d, lang))}${num(d)}</b>` : `<a href="/date/${d}/">${esc(dlabel(d, lang))}${num(d)}</a>`));
+  const all = current === 'weekend' ? '' : `<a href="/weekend/">${lang === 'ja' ? '今週末の一覧' : 'This weekend: all days'}</a>`;
+  const parts = [...links, all].filter(Boolean);
+  if (!parts.length || (current !== 'weekend' && !days.includes(current))) return '';
+  return `<p class="day-links">${lang === 'ja' ? '今週末：' : 'This weekend: '}${parts.join(' · ')}</p>`;
 }
 
 function weekendPage(ctx, lang) {
   const days = upcomingWeekend(ctx.today);
   const p = P[lang].weekend;
   const title = p.title(dlabel(days[0], lang), days.length > 1 ? dlabel(days.at(-1), lang) : '');
-  return listPage(lang, '/weekend/', [{ label: p.crumb }], title, p.lead, ctx.occ.filter((o) => days.includes(o.date)), dayStrip(ctx.occ, ctx.today, undefined, lang), true);
+  const list = ctx.occ.filter((o) => days.includes(o.date));
+  const label = days.length > 1 ? `${dlabel(days[0], lang)}${lang === 'ja' ? '〜' : ' – '}${dlabel(days.at(-1), lang)}` : dlabel(days[0], lang);
+  const t = seoText(lang, 'weekend', label, seoStats(list, lang));
+  return listPage(lang, '/weekend/', [{ label: p.crumb }], t.title, t.lead, list, weekendLinks(ctx, 'weekend', lang) + dayStrip(ctx.occ, ctx.today, undefined, lang), true, { title: t.title, description: t.description, head: listLd(t.title, list, lang) });
 }
 
 function datePages(ctx, lang) {
   const dates = [...new Set(ctx.occ.map((o) => o.date))];
-  const upcoming = dates.map((d) => listPage(lang, `/date/${d}/`, [{ href: '/calendar/', label: P[lang].date.crumb }, { label: dlabel(d, lang) }], P[lang].date.h1(dlabel(d, lang, { year: true }), holiday(d, lang)), '', ctx.occ.filter((o) => o.date === d), dayStrip(ctx.occ, ctx.today, d, lang), true));
+  const upcoming = dates.map((d) => {
+    const list = ctx.occ.filter((o) => o.date === d);
+    const t = seoText(lang, 'date', dlabel(d, lang, { year: true }), seoStats(list, lang), holiday(d, lang));
+    return listPage(lang, `/date/${d}/`, [{ href: '/calendar/', label: P[lang].date.crumb }, { label: dlabel(d, lang) }], t.title, t.lead, list, weekendLinks(ctx, d, lang) + dayStrip(ctx.occ, ctx.today, d, lang), true, { title: t.title, description: t.description, head: listLd(t.title, list, lang) });
+  });
   // 過去の日（公式で確認した回の記録）
   const pastDates = [...new Set(ctx.past.map((o) => o.date))];
   const pastPages = pastDates.map((d) => listPage(lang, `/date/${d}/`, [{ href: '/calendar/', label: P[lang].date.crumb }, { label: dlabel(d, lang) }], P[lang].date.h1Past(dlabel(d, lang, { year: true }), holiday(d, lang)), P[lang].date.pastNote, ctx.past.filter((o) => o.date === d)));

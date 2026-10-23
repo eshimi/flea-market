@@ -145,7 +145,7 @@ test('トップ（新デザイン）：HERO・検索・種類の入口・ヘッ�
   assert.match(wk, /<a href="\/ja\/weekend\/" hreflang="ja"/);
   assert.match(layout(page('/about/')), /class="site-head2"/, '全ページに新ヘッダー');
   // 英語のページに、日本語の UI 文言（データ以外）が残らない：ナビ・見出し
-  assert.match(layout(page('/weekend/')), /<h1>This weekend’s markets/);
+  assert.match(layout(page('/weekend/')), /<h1>Flea Markets in Japan This Weekend \(/);
   assert.match(layout(page('/e/sample-park-flea/')), /Stall recruitment is not confirmed from official sources \(TBC\)/);
   assert.match(layout(page('/e/sample-shrine-kotto/')), /Cancelled/);
 });
@@ -705,4 +705,18 @@ test('取得の並行化：同じサイトへは順番に、別のサイトは�
   // 別のサイトは並行：直列なら 200ms 以上かかる
   assert.ok(Date.now() - t0 < 160, `並行になっていません: ${Date.now() - t0}ms`);
   assert.equal(log.filter((l) => l.startsWith('end')).length, 5);
+});
+
+test('日別・今週末のページの SEO：タイトル・書き出しの文・ItemList・今週末への導線', () => {
+  const real = loadData();
+  const { pages } = buildPages(real, '2026-10-21');
+  // 検索の言葉（Japan・flea market・件数）をタイトルの前に置き、書き出しの文・ItemList・日別への導線がある
+  const wk2 = layout(pages.find((x) => x.path === '/weekend/'));
+  assert.match(wk2, /<title>Flea Markets in Japan This Weekend \([^)]*\): \d+ events? \| /);
+  assert.match(wk2, /class="lead">There are \d+ markets in Japan this weekend\. \d+ of \d+ (is|are) confirmed/);
+  assert.match(wk2, /"@type":"ItemList"/);
+  const dp = pages.find((x) => /^\/date\/\d{4}-\d\d-\d\d\/$/.test(x.path) && x.body.includes('class="day-links"'));
+  assert.ok(dp, '日別ページに、今週末への導線がある');
+  assert.match(layout(dp), /<title>Flea Markets in Japan on [^<]*: \d+ events? \| /);
+  assert.match(layout(dp), /<a href="\/weekend\/">This weekend: all days<\/a>/);
 });
