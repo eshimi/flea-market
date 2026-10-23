@@ -82,7 +82,7 @@
   "hash": "467025b9a547119f"
  },
  "recycler-jp-schedule": {
-  "fetchedAt": "2026-10-23",
+  "fetchedAt": "2026-10-24",
   "httpStatus": 200,
   "failCount": 0,
   "len": 4029,
@@ -1259,11 +1259,13 @@
   "changedAt": "2026-10-23"
  },
  "t-i-forum-e350a3": {
-  "fetchedAt": "2026-10-20",
+  "fetchedAt": "2026-10-24",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 28131,
-  "hash": "18316b786f9e3ecc"
+  "len": 1036,
+  "hash": "1e830c074580563d",
+  "lastModified": "Fri, 23 Oct 2026 07:29:27 GMT",
+  "changedAt": "2026-10-24"
  },
  "showakinen-koen-3bf349": {
   "fetchedAt": "2026-10-20",
@@ -1315,14 +1317,14 @@
   "changedAt": "2026-10-23"
  },
  "ajinomotostadium-e8889b": {
-  "fetchedAt": "2026-10-20",
+  "fetchedAt": "2026-10-24",
   "httpStatus": 200,
   "failCount": 0,
   "len": 12056,
   "hash": "48be94006fe74c68"
  },
  "ajinomotostadium-b6c6bc": {
-  "fetchedAt": "2026-10-20",
+  "fetchedAt": "2026-10-24",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2951,
