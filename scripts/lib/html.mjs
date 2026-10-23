@@ -17,6 +17,10 @@ export function esc(s) {
 export const DISCLAIMER = '開催の有無・内容は、変わることがあります。お出かけ・お申込みの前に、必ず主催者の公式情報でご確認ください。';
 
 // ヘッダー（全ページ共通）。path は英語側の URL（例 /weekend/）。言語切替は、同じページの英語・日本語へ
+// 言語の自動切替（初めて来た人だけ）：端末の言語が日本語なら /ja/、それ以外は英語のページへ。
+// 言語切替のリンクを押した人は、その選択を覚えて（localStorage の fm-lang）、以後は自動で切り替えない。検索エンジンのロボットには切り替えない
+export const LANG_JS = "(function(){try{var d=document;d.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('.langsw a[hreflang]');if(a){try{localStorage.setItem('fm-lang',a.getAttribute('hreflang'))}catch(x){}}});var p=location.pathname;if(/^\\/(admin|api)\\//.test(p)||/bot|crawl|spider|slurp|facebookexternalhit|preview/i.test(navigator.userAgent))return;var ja=p==='/ja'||p.indexOf('/ja/')===0;var pref=null;try{pref=localStorage.getItem('fm-lang')}catch(x){}var l=((navigator.languages&&navigator.languages[0])||navigator.language||'').toLowerCase();var want=pref||(l.indexOf('ja')===0?'ja':'en');if(want==='ja'&&!ja)location.replace('/ja'+p+location.search+location.hash);else if(want==='en'&&ja)location.replace((p.replace(/^\\/ja/,'')||'/')+location.search+location.hash)}catch(e){}})();";
+
 export function langSwitch(path, lang) {
   const a = (l, text, code) => `<a href="${langPath(path, l)}" hreflang="${code}" lang="${code}"${lang === l ? ' aria-current="true"' : ''}>${text}</a>`;
   return `<div class="langsw" role="group" aria-label="${esc(T[lang].langLabel)}">${icon('globe', 18)}${a('en', 'EN', 'en')}<i aria-hidden="true">|</i>${a('ja', '日本語', 'ja')}</div>`;
@@ -147,6 +151,7 @@ export function layout({ path, title, description, body, head = '', scripts = []
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>${LANG_JS}</script>
 ${analyticsTag()}${adsenseTag()}<title>${esc(full)}</title>
 <meta name="description" content="${esc(description)}">
 <meta name="keywords" content="${esc(keywordMeta(keywords, lang))}">

@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-10-23",
+    "ja": "端末の言語が日本語なら日本語のページ、それ以外は英語のページへ自動で切り替えるようにしました。言語切替のリンクで選んだ言語は覚えます。",
+    "en": "The site now switches automatically: Japanese devices go to the Japanese pages, all others to English. A language you choose with the switch is remembered."
+  },
+  {
     "date": "2026-10-22",
     "ja": "全ページの空いている項目（時間・入場料・雨天・出店料・申込み・アクセスなど）を、公式の本文から、取れないものはネット検索で補いました。調べたものには「公式ページの記載ではありません」と表示します。",
     "en": "Missing details on every page (hours, admission, rain policy, stall fees, how to apply, access) were filled in from the official pages first, then from web searches; searched items are marked as not from the official page."

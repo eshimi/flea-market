@@ -720,3 +720,32 @@ test('日別・今週末のページの SEO：タイトル・書き出しの文�
   assert.match(layout(dp), /<title>Flea Markets in Japan on [^<]*: \d+ events? \| /);
   assert.match(layout(dp), /<a href="\/weekend\/">This weekend: all days<\/a>/);
 });
+
+test('言語の自動切替：日本語の端末は /ja/ へ、それ以外は英語へ。選んだ言語は覚え、ロボットには切り替えない', async () => {
+  const { LANG_JS } = await import('../scripts/lib/html.mjs');
+  const run = ({ path, langs, ua = 'Mozilla/5.0', pref = null, search = '', hash = '' }) => {
+    const out = { to: null, stored: {} };
+    const location = { pathname: path, search, hash, replace: (u) => { out.to = u; } };
+    const localStorage = { getItem: (k) => (k === 'fm-lang' ? pref : null), setItem: (k, v) => { out.stored[k] = v; } };
+    let click;
+    const document = { addEventListener: (_, f) => { click = f; } };
+    new Function('location', 'navigator', 'localStorage', 'document', LANG_JS)(location, { languages: langs, language: langs[0], userAgent: ua }, localStorage, document);
+    out.click = click;
+    return out;
+  };
+  assert.equal(run({ path: '/', langs: ['ja-JP', 'en'] }).to, '/ja/');
+  assert.equal(run({ path: '/weekend/', langs: ['ja'], search: '?a=1', hash: '#x' }).to, '/ja/weekend/?a=1#x');
+  assert.equal(run({ path: '/ja/weekend/', langs: ['en-US'] }).to, '/weekend/');
+  assert.equal(run({ path: '/ja/', langs: ['fr'] }).to, '/');
+  assert.equal(run({ path: '/', langs: ['en-US'] }).to, null, '英語の端末は、英語のままにする');
+  assert.equal(run({ path: '/ja/e/x/', langs: ['ja'] }).to, null, '日本語の端末は、日本語のまま');
+  assert.equal(run({ path: '/', langs: ['ja'], pref: 'en' }).to, null, '英語を選んだ人には、切り替えない');
+  assert.equal(run({ path: '/', langs: ['en'], pref: 'ja' }).to, '/ja/', '日本語を選んだ人は、日本語へ');
+  assert.equal(run({ path: '/', langs: ['ja'], ua: 'Mozilla/5.0 (compatible; Googlebot/2.1)' }).to, null, 'ロボットには切り替えない');
+  assert.equal(run({ path: '/admin/reviews', langs: ['ja'] }).to, null, '管理画面は対象外');
+  // 言語切替のリンクを押すと、その言語を覚える
+  const r = run({ path: '/', langs: ['en'] });
+  r.click({ target: { closest: () => ({ getAttribute: () => 'en' }) } });
+  assert.equal(r.stored['fm-lang'], 'en');
+  assert.match(layout(page('/')), /<script>\(function\(\)\{try\{var d=document;/);
+});
