@@ -1,6 +1,20 @@
 {
- "lastDate": "2026-10-22",
+ "lastDate": "2026-10-23",
  "items": [
+  {
+   "series": "adachi-guruguru-kiosk-ayase-2026-10",
+   "date": "2026-10-23",
+   "status": "confirmed",
+   "checkedAt": "2026-10-22",
+   "source": "https://www.city.adachi.tokyo.jp/kyoso/ku/kuse/guruguru-kiosk080424.html"
+  },
+  {
+   "series": "vintage-market-expo70",
+   "date": "2026-10-23",
+   "status": "confirmed",
+   "checkedAt": "2026-10-20",
+   "source": "https://vintagemarket.jp/"
+  },
   {
    "series": "bia-sunshine",
    "date": "2026-10-21",
