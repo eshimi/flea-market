@@ -19,6 +19,7 @@ import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, blogBanner, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
 import { tipsBanner, tipsIndex } from './lib/tips-view.mjs';
 import { hubText } from './lib/hub.mjs';
+import { endedSeries, MAX_RULES, redirectRules } from './lib/redirects.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { spotL, venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
@@ -676,7 +677,10 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   TIPS = tips;
   SERIES_IDS = series.map((x) => x.id);
   GEO = geo;
-  const ids = new Set(series.map((x) => x.id));
+  // 終了した催し（日付を列挙したきまりで、最後の開催日から30日すぎたもの）は、ページを作らず、301 で会場・地域のページへ
+  const ended = endedSeries(series, occurrences, today);
+  const endedIds = new Set(ended.map((x) => x.id));
+  const ids = new Set(series.filter((x) => !endedIds.has(x.id)).map((x) => x.id));
   const occ = buildOccurrences(series, occurrences, today, days);
   { const n = new Map(); for (const o of occ) if (isActive(o)) n.set(o.series.venue.pref, (n.get(o.series.venue.pref) || 0) + 1); setFooterAreas([...n].sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1)).slice(0, 8).map(([p]) => p)); }
   const past = pastOccurrences(archive, series).filter((o) => o.date < today);
@@ -686,10 +690,13 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   ALL_POSTS = [...BLOG.map((b) => cleanLinks(resolvePost(b, ctx), ids)), ...autoPosts.map((a) => cleanLinks(a, ids))];
   ctx.latestPosts = posts().slice(0, 3);
   // 英語が既定（/）。日本語は /ja/
-  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), tipsPage(lang), ...TIPS.map((x) => columnPage(x, lang, '/tips/')), contactPage(lang), pressPage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
+  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.filter((s) => !endedIds.has(s.id)).map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), tipsPage(lang), ...TIPS.map((x) => columnPage(x, lang, '/tips/')), contactPage(lang), pressPage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）
   const files = LANGS_ORDER.map((lang) => ({ path: langPath('/blog/feed.xml', lang), content: feedXml(lang) }));
-  return { pages, occ, files, spots };
+  const rules = redirectRules(ended, { spotIds: new Set(spots.map((sp) => sp.venue.id)), cities: new Set(series.map((x) => x.venue.cityCode).filter(Boolean)), prefs: new Set(series.map((x) => x.venue.pref)) });
+  if (rules.length > MAX_RULES) throw new Error(`_redirects の規則が多すぎます（${rules.length}行）`);
+  if (rules.length) files.push({ path: '/_redirects', content: `${rules.join('\n')}\n` });
+  return { pages, occ, files, spots, ended };
 }
 
 export function searchIndex(occ) {

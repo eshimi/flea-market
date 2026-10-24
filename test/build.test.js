@@ -814,3 +814,34 @@ test('一覧ページの解説ブロック：手書きの文（hub-content.json�
   // 本番のデータは、検証に通る
   assert.deepEqual(validateHub(real.hub, { prefs: new Set(Object.keys(PREFS)), cities: new Set(real.series.map((s) => s.venue.cityCode).filter(Boolean)), kinds: new Set(Object.keys(KINDS)) }).errs, []);
 });
+
+test('終了した催しの 301：日付を列挙したきまりで、最後の開催日から30日すぎたものだけ。会場・市区町村・県の順で行き先を決める。定期市は対象外', async () => {
+  const { endedSeries, redirectRules, redirectTarget } = await import('../scripts/lib/redirects.mjs');
+  const real = loadData();
+  const today = '2027-06-01';
+  const { pages, files, ended } = buildPages(real, today);
+  assert.ok(ended.length > 0 && ended.every((s) => s.recurrence.type === 'dates'));
+  for (const s of ended) {
+    assert.ok(!pages.some((p) => p.path === `/e/${s.id}/` || p.path === `/ja/e/${s.id}/`), `${s.id}: ページを作らない`);
+    assert.ok(s.recurrence.dates.at(-1) < '2027-05-02', '最後の開催日から30日以上');
+  }
+  // 毎月・毎週などの定期市は、ページが残る
+  const rec = real.series.find((s) => s.recurrence.type !== 'dates');
+  assert.ok(pages.some((p) => p.path === `/e/${rec.id}/`));
+  const rd = files.find((f) => f.path === '/_redirects').content.trim().split('\n');
+  assert.ok(rd.every((l) => /^\/(ja\/)?e\/[a-z0-9-]+\/? \/[^ ]+ 301$/.test(l)), '規則の形');
+  assert.ok(rd.length <= 1900);
+  const s0 = ended[0];
+  assert.ok(rd.includes(`/e/${s0.id}/ ${redirectTarget(s0, { spotIds: new Set(), cities: new Set([s0.venue.cityCode]), prefs: new Set([s0.venue.pref]) })} 301`) || rd.some((l) => l.startsWith(`/e/${s0.id}/ `)));
+  // 行き先の優先順：スポット → 市区町村 → 県 → 地域の一覧
+  const base = { id: 'x', venueId: 'v1', venue: { pref: '13', cityCode: '13114' } };
+  const ctx = { spotIds: new Set(['v1']), cities: new Set(['13114']), prefs: new Set(['13']) };
+  assert.equal(redirectTarget(base, ctx), '/spot/v1/');
+  assert.equal(redirectTarget({ ...base, venueId: undefined }, ctx), '/area/13/13114/');
+  assert.equal(redirectTarget({ ...base, venueId: undefined, venue: { pref: '13' } }, ctx), '/area/13/');
+  assert.equal(redirectTarget({ ...base, venueId: undefined, venue: { pref: '99' } }, ctx), '/area/');
+  assert.deepEqual(redirectRules([base], ctx), ['/e/x/ /spot/v1/ 301', '/e/x /spot/v1/ 301', '/ja/e/x/ /ja/spot/v1/ 301', '/ja/e/x /ja/spot/v1/ 301']);
+  // 猶予の前（今日）は、まだリダイレクトしない
+  assert.equal(buildPages(real, '2026-10-24').ended.length, 0);
+  assert.equal(endedSeries([{ id: 'a', recurrence: { type: 'dates', dates: ['2026-10-01'] } }], [{ series: 'a', date: '2026-10-20' }], '2026-11-10').length, 0, '開催回の記録に、もっと後の日があれば対象にしない');
+});
