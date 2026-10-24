@@ -2882,5 +2882,23 @@
   "hash": "73a76546f041094e",
   "status": "done",
   "processedAt": "2026-10-23"
+ },
+ {
+  "id": "recycler-jp",
+  "url": "https://www2.recycler.jp/",
+  "name": "リサイクル運動市民の会（フリーマーケット情報）",
+  "detectedAt": "2026-10-25",
+  "reason": "changed",
+  "hash": "24be601794f26f51",
+  "status": "pending"
+ },
+ {
+  "id": "recycler-jp-schedule",
+  "url": "https://www2.recycler.jp/sm/index.php",
+  "name": "リサイクル運動市民の会（開催スケジュール）",
+  "detectedAt": "2026-10-25",
+  "reason": "changed",
+  "hash": "c53a7e8a8cf50b47",
+  "status": "pending"
  }
 ]

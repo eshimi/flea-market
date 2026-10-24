@@ -1,6 +1,148 @@
 {
- "lastDate": "2026-10-23",
+ "lastDate": "2026-10-24",
  "items": [
+  {
+   "series": "bia-izumiyakoryo",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-23",
+   "source": "https://b-i-a.jp/reserve/izumiyakoryo/"
+  },
+  {
+   "series": "bia-sevenpark",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-23",
+   "source": "https://b-i-a.jp/reserve/sevenpark/"
+  },
+  {
+   "series": "cpm-rakuraku-ichi-tajimi",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.cpm-gifu.jp/rakuraku/schedule/"
+  },
+  {
+   "series": "earthgarden-gearloop-market-2026",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.earth-garden.jp/festival/83598/"
+  },
+  {
+   "series": "fmj-fukakita-ryokuchi",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-18",
+   "note": "11:00〜16:00",
+   "source": "https://www.fmfm-king.com/fukakita10-24/"
+  },
+  {
+   "series": "fmj-yokkaichi-shimin-park",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-24",
+   "source": "https://www.fmfm-king.com/yoxtukaichi10-24/"
+  },
+  {
+   "series": "fmpn-tokorozawa-shimin-fes",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://recycle-man.or.jp/"
+  },
+  {
+   "series": "hino-art-festival-flea-craft",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://hino-artfestival.com/"
+  },
+  {
+   "series": "hiratsuka-ekimae-kottoichi",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-24",
+   "source": "https://pearlroad.jp/2025%E5%B9%B4%E5%BA%A6%E3%80%80%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1/"
+  },
+  {
+   "series": "kawanishi-toshi-ryokkasai-green-flea",
+   "date": "2026-10-24",
+   "status": "cancelled",
+   "checkedAt": "2026-10-23",
+   "note": "川西市の案内ページ（令和8年10月22日更新）。雨天のため中止",
+   "source": "https://www.city.kawanishi.hyogo.jp/kurashi/1017490/midori/1014067.html"
+  },
+  {
+   "series": "koenji-fes-2026-aozora-tezukuri-ichi",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.city.suginami.tokyo.jp/s033/event/29570.html"
+  },
+  {
+   "series": "lohas-park-tsurumi",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://lohas-park.jp/event/kiji5647/"
+  },
+  {
+   "series": "mojiko-car-boot",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html"
+  },
+  {
+   "series": "mottainai-flea-nakano-central-park",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.mottainai.info/jp/event/"
+  },
+  {
+   "series": "muromachi-rakuichi-flea",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html"
+  },
+  {
+   "series": "rbf-koshigaya-shirakobato-park",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.rbf.jp/nittei.html"
+  },
+  {
+   "series": "tama-econico-market",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.tama-seisokojo.or.jp/econico/market"
+  },
+  {
+   "series": "trx-oi-keibajo-tokyo-city-flea",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://trx.jp/schejule"
+  },
+  {
+   "series": "tsuginote-takaoka",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.city.takaoka.toyama.jp/soshiki/sangyokikakuka/2/1/6/11639.html"
+  },
+  {
+   "series": "vintage-market-expo70",
+   "date": "2026-10-24",
+   "status": "confirmed",
+   "checkedAt": "2026-10-20",
+   "source": "https://vintagemarket.jp/"
+  },
   {
    "series": "adachi-guruguru-kiosk-ayase-2026-10",
    "date": "2026-10-23",
