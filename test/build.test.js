@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { buildPages, loadData, searchIndex } from '../scripts/build-site.mjs';
 import { eventListByMonth, layout } from '../scripts/lib/html.mjs';
 import { SITE, ADSENSE_CLIENT } from '../scripts/lib/nav.mjs';
+import { langPath, splitPath } from '../scripts/lib/l10n.mjs';
 import { mainHash, updateLastmod } from '../scripts/update-sitemap.mjs';
 import { REVIEWS_ON } from '../scripts/lib/reviews-view.mjs';
 
@@ -748,4 +749,38 @@ test('言語の自動切替：日本語の端末は /ja/ へ、それ以外は�
   r.click({ target: { closest: () => ({ getAttribute: () => 'en' }) } });
   assert.equal(r.stored['fm-lang'], 'en');
   assert.match(layout(page('/')), /<script>\(function\(\)\{try\{var d=document;/);
+});
+
+test('hreflang：404 以外のすべてのページに、自己参照つきの en・ja・x-default と canonical がある', () => {
+  const real = loadData();
+  const { pages } = buildPages(real, '2026-10-21');
+  const head = (p) => layout(p);
+  let n = 0;
+  for (const p of pages) {
+    if (p.path.endsWith('404.html')) continue;
+    const h = head(p);
+    const base = splitPath(p.path).base;
+    for (const [code, lp] of [['en', langPath(base, 'en')], ['ja', langPath(base, 'ja')], ['x-default', langPath(base, 'en')]]) {
+      assert.ok(h.includes(`hreflang="${code}" href="${SITE.url}${lp}"`), `${p.path}: hreflang ${code}`);
+    }
+    assert.ok(h.includes(`rel="canonical" href="${SITE.url}${p.path}"`), `${p.path}: canonical`);
+    n++;
+  }
+  assert.ok(n > 500);
+});
+
+test('Event の構造化データ：必須項目（name・startDate・endDate・location・eventAttendanceMode・eventStatus）と、入場料の offers', () => {
+  const real = loadData();
+  const { pages } = buildPages(real, '2026-10-21');
+  let withOffer = 0;
+  for (const p of pages.filter((x) => /^\/e\/[^/]+\/$/.test(x.path))) {
+    const m = /<script type="application\/ld\+json">(\[\{"@context":"https:\/\/schema.org","@type":"Event"[\s\S]*?)<\/script>/.exec(layout(p));
+    if (!m) continue; // 今後の開催がない掲載には出さない
+    for (const ev of JSON.parse(m[1])) {
+      for (const k of ['name', 'startDate', 'endDate', 'location', 'eventAttendanceMode', 'eventStatus']) assert.ok(ev[k], `${p.path}: ${k}`);
+      assert.equal(ev.location['@type'], 'Place');
+      if (ev.offers) { withOffer++; assert.equal(ev.offers.priceCurrency, 'JPY'); assert.ok(ev.offers.price >= 0); }
+    }
+  }
+  assert.ok(withOffer > 0, '入場料が公式にある掲載には offers がある');
 });

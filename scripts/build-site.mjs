@@ -283,6 +283,16 @@ function kindPages(ctx, lang) {
   ];
 }
 
+// 入場料（offers）：公式に「無料」とあれば price 0、「○○円」とあれば、その金額。記載がなければ出さない（調べて補った料金も出さない）
+function offerLd(s, lang) {
+  const a = s.visitor?.admission;
+  if (!a || s.searched?.admission) return {};
+  const free = /無料|free/i.test(a) && !/円/.test(a);
+  const m = /(\d[\d,]*)\s*円/.exec(a);
+  if (!free && !m) return {};
+  return { offers: { '@type': 'Offer', price: free ? 0 : Number(m[1].replace(/,/g, '')), priceCurrency: 'JPY', availability: 'https://schema.org/InStock', url: `${SITE.url}${langPath(`/e/${s.id}/`, lang)}` } };
+}
+
 function eventLd(s, list, lang = 'ja', description = '') {
   const kind = s.kinds.find((k) => existsSync(join(ROOT, 'static', 'img', 'kinds', `${k}.webp`)));
   const image = `${SITE.url}${kind ? `/img/kinds/${kind}.webp` : OG_DEFAULT}`;
@@ -294,7 +304,8 @@ function eventLd(s, list, lang = 'ja', description = '') {
     ...(description ? { description } : {}),
     image: [image],
     startDate: s.time?.start && !s.searched?.time ? `${o.date}T${s.time.start}:00+09:00` : o.date,
-    ...(s.time?.end && !s.searched?.time ? { endDate: `${o.date}T${s.time.end}:00+09:00` } : {}),
+    endDate: s.time?.end && !s.searched?.time ? `${o.date}T${s.time.end}:00+09:00` : o.date,
+    ...offerLd(s, lang),
     eventStatus: `https://schema.org/${map[o.status]}`,
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: { '@type': 'Place', name: venueL(s, lang), address: { '@type': 'PostalAddress', ...(s.venue.address && s.venue.addressFrom !== 'search' ? { streetAddress: s.venue.address } : {}), ...(s.venue.city ? { addressLocality: s.venue.city } : {}), addressRegion: PREFS[s.venue.pref], addressCountry: 'JP' } },
