@@ -6,6 +6,8 @@ import { buildPages, loadData, searchIndex } from '../scripts/build-site.mjs';
 import { eventListByMonth, layout } from '../scripts/lib/html.mjs';
 import { SITE, ADSENSE_CLIENT } from '../scripts/lib/nav.mjs';
 import { langPath, splitPath } from '../scripts/lib/l10n.mjs';
+import { PREFS } from '../scripts/lib/areas.mjs';
+import { KINDS } from '../scripts/lib/kinds.mjs';
 import { mainHash, updateLastmod } from '../scripts/update-sitemap.mjs';
 import { REVIEWS_ON } from '../scripts/lib/reviews-view.mjs';
 
@@ -783,4 +785,32 @@ test('Event の構造化データ：必須項目（name・startDate・endDate・
     }
   }
   assert.ok(withOffer > 0, '入場料が公式にある掲載には offers がある');
+});
+
+test('一覧ページの解説ブロック：手書きの文（hub-content.json）があればそれ、なければ掲載データから作る導入文。検証は文字数・キー・両言語', async () => {
+  const { validateHub, hubText } = await import('../scripts/lib/hub.mjs');
+  const real = loadData();
+  const city = real.series.find((s) => s.venue.cityCode)?.venue.cityCode;
+  const manualEn = 'This is a hand-written introduction for the hub page. '.repeat(5).trim();
+  const manualJa = 'これはハブページの手書きの紹介文です。'.repeat(10);
+  const withHub = buildPages({ ...real, hub: { city: { [city]: { en: manualEn, ja: manualJa } }, kind: { flea: { en: manualEn, ja: manualJa } } } }, '2026-10-21').pages;
+  const plain = buildPages({ ...real, hub: {} }, '2026-10-21').pages;
+  const find = (pages, p) => pages.find((x) => x.path === p);
+  const cityPath = `/area/${city.slice(0, 2)}/${city}/`;
+  // 手書きがあれば手書き、なければ自動の導入文（どちらも hub-intro の枠）
+  assert.match(find(withHub, cityPath).body, /data-hub="city:\d{5}" data-manual="1"><p>This is a hand-written/);
+  assert.match(find(withHub, '/ja/kind/flea/').body, /data-manual="1"><p>これはハブページの手書き/);
+  assert.match(find(plain, cityPath).body, /class="hub-intro" data-hub="city:\d{5}"><p>\d+ listings? in /);
+  assert.ok(!find(plain, cityPath).body.includes('data-manual'));
+  assert.match(find(plain, '/kind/flea/').body, /class="hub-intro" data-hub="kind:flea"/);
+  assert.equal(hubText({ kind: { flea: { en: ' x ' } } }, 'kind', 'flea', 'en'), 'x');
+  // 検証：存在しないキー・片方の言語がない・長すぎる文はエラー、目安から外れる長さは警告
+  const ctx = { prefs: new Set(['13']), cities: new Set(['13114']), kinds: new Set(['flea']) };
+  assert.equal(validateHub({ area: { 13: { en: manualEn, ja: manualJa } } }, ctx).errs.length, 0);
+  assert.ok(validateHub({ area: { 99: { en: manualEn, ja: manualJa } } }, ctx).errs.some((e) => e.includes('該当するページ')));
+  assert.ok(validateHub({ kind: { flea: { en: manualEn } } }, ctx).errs.some((e) => e.includes('.ja')));
+  assert.ok(validateHub({ kind: { flea: { en: 'a'.repeat(2000), ja: manualJa } } }, ctx).errs.some((e) => e.includes('長すぎ')));
+  assert.ok(validateHub({ kind: { flea: { en: 'short', ja: 'みじかい' } } }, ctx).warns.length === 2);
+  // 本番のデータは、検証に通る
+  assert.deepEqual(validateHub(real.hub, { prefs: new Set(Object.keys(PREFS)), cities: new Set(real.series.map((s) => s.venue.cityCode).filter(Boolean)), kinds: new Set(Object.keys(KINDS)) }).errs, []);
 });

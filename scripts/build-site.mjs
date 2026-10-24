@@ -4,7 +4,7 @@ import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, write
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { addDays, holidayName, isDayOff, parseYmd, todayJst, upcomingWeekend, weekday, WEEKDAYS } from './lib/dates.mjs';
-import { buildOccurrences, isActive, lastChecked } from './lib/events.mjs';
+import { buildOccurrences, isActive, lastChecked, WINDOW_DAYS } from './lib/events.mjs';
 import { pastOccurrences } from './lib/archive.mjs';
 import { buildSpots } from './lib/spots.mjs';
 import { spotIndex, spotPage } from './lib/spot-view.mjs';
@@ -18,6 +18,7 @@ import { S, T, WD_EN } from './lib/i18n.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, blogBanner, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
 import { tipsBanner, tipsIndex } from './lib/tips-view.mjs';
+import { hubText } from './lib/hub.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { spotL, venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
@@ -47,7 +48,9 @@ export function loadData(dir = join(ROOT, 'data')) {
   try { siteUpdates = read('site-updates.json'); } catch { /* 更新情報がないデータ（テストの見本など）は、枠を出さない */ }
   let tips = [];
   try { tips = read('tips.json'); } catch { /* TIPS がないデータ（テストの見本など）は、TIPS のページなし */ }
-  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts, geo, archive, venues, siteUpdates, tips };
+  let hub = {};
+  try { hub = read('hub-content.json'); } catch { /* 解説文のデータがない場合は、掲載データから作る導入文だけ */ }
+  return { series: read('series.json'), occurrences: read('occurrences.json'), credits, translations, autoPosts, geo, archive, venues, siteUpdates, tips, hub };
 }
 
 // ---- 各ページ ----
@@ -262,10 +265,10 @@ function areaPages(ctx, lang) {
     const pn = prefLabel(p, lang);
     const cityLinks = [...cities].sort().map(([c, name]) => `<li><a href="/area/${p}/${c}/">${esc(cityL(name, lang))}<small>${esc(P[lang].cnt(count((s) => s.venue.cityCode === c)))}</small></a></li>`).join('');
     const ov = prefOverview(p, ctx, lang);
-    const extra = ov.html + (cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '');
+    const extra = (hubText(ctx.hub, 'area', p, lang) ? hubBlock(ctx, lang, 'area', p, pn) : '') + ov.html + (cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '');
     pages.push({ ...listPage(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), ov.lead, ctx.occ.filter((o) => o.series.venue.pref === p), extra), bannerArt: `/img/pref/${p}.webp` });
     for (const [c, name] of cities) {
-      pages.push(listPage(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c)));
+      pages.push(listPage(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c), hubBlock(ctx, lang, 'city', c, `${cityL(name, lang)}, ${pn}`)));
     }
   }
   return pages;
@@ -274,12 +277,39 @@ function areaPages(ctx, lang) {
 const kindName = (k, lang) => S[lang].kinds[k];
 const kindDesc = (k, lang) => (lang === 'ja' ? KINDS[k].desc : KIND_DESC_EN[k]);
 
+// 地域・種類の一覧ページの解説ブロック：data/hub-content.json の文があればそれ、なければ掲載データから作る事実だけの導入文
+function hubBlock(ctx, lang, type, key, label) {
+  const manual = hubText(ctx.hub, type, key, lang);
+  let text = manual;
+  if (!text) {
+    const ja = lang === 'ja';
+    const pick = type === 'city' ? (s) => s.venue.cityCode === key : type === 'kind' ? (s) => s.kinds.includes(key) : (s) => s.venue.pref === key;
+    const ser = ctx.series.filter(pick);
+    const act = ctx.occ.filter((o) => isActive(o) && pick(o.series));
+    const next = act.map((o) => o.date).sort()[0];
+    if (!ser.length) return '';
+    const prefs = new Map();
+    for (const s of ser) prefs.set(s.venue.pref, (prefs.get(s.venue.pref) || 0) + 1);
+    const top = [...prefs].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([p, n]) => `${prefLabel(p, lang)} ${n}`);
+    if (type === 'kind') {
+      text = ja
+        ? `${kindDesc(key, lang)}。${ser.length}件の掲載があり、今後${WINDOW_DAYS}日の開催は${act.length}件です。${top.length ? `掲載が多い地域：${top.join('、')}。` : ''}すべて主催者・自治体の公式情報をもとにしています。`
+        : `${kindDesc(key, lang)}. ${ser.length} listing${ser.length === 1 ? '' : 's'}, with ${act.length} event${act.length === 1 ? '' : 's'} in the next ${WINDOW_DAYS} days.${top.length ? ` Most listings: ${top.join(', ')}.` : ''} Everything is based on official organizer and municipal pages.`;
+    } else {
+      text = ja
+        ? `${label}の掲載は${ser.length}件で、今後${WINDOW_DAYS}日の開催は${act.length}件です。${next ? `直近の開催日は${dlabel(next, 'ja', { year: true })}です。` : ''}主催者・自治体の公式ページの情報だけを載せ、確認した日を各ページに示しています。`
+        : `${ser.length} listing${ser.length === 1 ? '' : 's'} in ${label}, with ${act.length} event${act.length === 1 ? '' : 's'} in the next ${WINDOW_DAYS} days.${next ? ` The next is on ${dlabel(next, 'en', { year: true })}.` : ''} Only information from official organizer and municipal pages is listed, and each page shows when it was last checked.`;
+    }
+  }
+  return `<section class="hub-intro" data-hub="${esc(type)}:${esc(key)}"${manual ? ' data-manual="1"' : ''}><p>${esc(text)}</p></section>`;
+}
+
 function kindPages(ctx, lang) {
   const K = P[lang].kind;
   const idx = Object.keys(KINDS).map((k) => `<li><a href="/kind/${k}/">${esc(kindName(k, lang))}<small>${esc(kindDesc(k, lang))}</small></a></li>`).join('');
   return [
     pg(lang, '/kind/', { keywords: Object.keys(KINDS).map((k) => kindName(k, lang)), title: K.h1, description: lang === 'ja' ? 'フリーマーケット・蚤の市・骨董市・手作り市・マルシェの種類から探せます。' : 'Find flea markets, nomi-no-ichi, antique fairs, handmade markets and marchés by type.', body: `<div class="in page">${breadcrumb([{ label: K.h1 }], lang)}<h1>${esc(K.h1)}</h1><ul class="grid-links">${idx}</ul></div>` }),
-    ...Object.keys(KINDS).map((k) => listPage(lang, `/kind/${k}/`, [{ href: '/kind/', label: K.crumb }, { label: kindName(k, lang) }], K.listH1(kindName(k, lang)), kindDesc(k, lang), ctx.occ.filter((o) => o.series.kinds.includes(k)))),
+    ...Object.keys(KINDS).map((k) => listPage(lang, `/kind/${k}/`, [{ href: '/kind/', label: K.crumb }, { label: kindName(k, lang) }], K.listH1(kindName(k, lang)), kindDesc(k, lang), ctx.occ.filter((o) => o.series.kinds.includes(k)), hubBlock(ctx, lang, 'kind', k, kindName(k, lang)))),
   ];
 }
 
@@ -641,7 +671,7 @@ function withSide(page0, ctx, lang) {
 
 // ---- 全体 ----
 
-export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {}, archive = { items: [] }, venues = [], siteUpdates = [], tips = [] }, today, days = 120) {
+export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {}, archive = { items: [] }, venues = [], siteUpdates = [], tips = [], hub = {} }, today, days = 120) {
   setTranslations(translations);
   TIPS = tips;
   SERIES_IDS = series.map((x) => x.id);
@@ -652,7 +682,7 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   const past = pastOccurrences(archive, series).filter((o) => o.date < today);
   const spots = buildSpots(venues, series, occ, today);
   const spotMapImg = (id) => Boolean(GEO[`spot-${id}`]) && existsSync(join(ROOT, 'static', 'img', 'maps', `spot-${id}.webp`));
-  const ctx = { series, occ, past, spots, spotMapImg, spotGeo: (id) => GEO[`spot-${id}`], guideSlugs: new Set(BLOG.map((b) => b.slug)), siteUpdates: [...siteUpdates].sort((a, b) => b.date.localeCompare(a.date)), weekend: upcomingWeekend(today), today, days, credits };
+  const ctx = { hub, series, occ, past, spots, spotMapImg, spotGeo: (id) => GEO[`spot-${id}`], guideSlugs: new Set(BLOG.map((b) => b.slug)), siteUpdates: [...siteUpdates].sort((a, b) => b.date.localeCompare(a.date)), weekend: upcomingWeekend(today), today, days, credits };
   ALL_POSTS = [...BLOG.map((b) => cleanLinks(resolvePost(b, ctx), ids)), ...autoPosts.map((a) => cleanLinks(a, ids))];
   ctx.latestPosts = posts().slice(0, 3);
   // 英語が既定（/）。日本語は /ja/
