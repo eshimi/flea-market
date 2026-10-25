@@ -1,6 +1,241 @@
 {
- "lastDate": "2026-10-24",
+ "lastDate": "2026-10-25",
  "items": [
+  {
+   "series": "cpm-rakuraku-ichi-tajimi",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.cpm-gifu.jp/rakuraku/schedule/"
+  },
+  {
+   "series": "earthgarden-gearloop-market-2026",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.earth-garden.jp/festival/83598/"
+  },
+  {
+   "series": "fmj-minoh-cues-mall",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.fmfm-king.com/enmino10-25/"
+  },
+  {
+   "series": "fmj-notogawa-community-center",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-18",
+   "note": "能登川ふれあいフェスタ2026",
+   "source": "https://www.fmfm-king.com/notogawa10-25/"
+  },
+  {
+   "series": "fmj-yamato-saidaiji-ekimae",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.fmfm-king.com/saidaiji10-25/"
+  },
+  {
+   "series": "fmpn-tokorozawa-shimin-fes",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://recycle-man.or.jp/"
+  },
+  {
+   "series": "hachinohe-tatehana-ganpeki-asaichi",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-20",
+   "source": "https://minatonichiyouasaichikai.com/"
+  },
+  {
+   "series": "hino-art-festival-flea-craft",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://hino-artfestival.com/"
+  },
+  {
+   "series": "jfma-nakaku-kumin-festa-flea-2026",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-22",
+   "source": "http://freemarket-go.com/shousai-osaka-028.html"
+  },
+  {
+   "series": "kamigamo-tedukuri-ichi",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-26",
+   "source": "https://kamigamo-tedukuriichi.com/publics/index/145/"
+  },
+  {
+   "series": "kamiyabe-free-market",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://cgi.city.yokohama.lg.jp/common/event2/event_detail.html?id=64965"
+  },
+  {
+   "series": "koenji-fes-2026-aozora-tezukuri-ichi",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.city.suginami.tokyo.jp/s033/event/29570.html"
+  },
+  {
+   "series": "lohas-park-tsurumi",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-26",
+   "source": "https://lohas-park.jp/event/kiji5647/"
+  },
+  {
+   "series": "mojiko-car-boot",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-26",
+   "source": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html"
+  },
+  {
+   "series": "mottainai-flea-nakano-central-park",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-26",
+   "source": "https://www.mottainai.info/jp/event/"
+  },
+  {
+   "series": "murakami-jurinji-enma-kottou",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-20",
+   "source": "https://www.sake3.com/event/16210"
+  },
+  {
+   "series": "osaka-garagesale-higashiyodogawa",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  {
+   "series": "rbf-ikea-tokyo-bay-loppis",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-26",
+   "source": "https://www.rbf.jp/nittei.html"
+  },
+  {
+   "series": "rbf-kashiwanoha-park",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.rbf.jp/kashiwanoha.html"
+  },
+  {
+   "series": "setagaya-park-flea",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-18",
+   "note": "主催団体：リサイクル推進友の会（問い合わせ先は区の一覧に掲載）",
+   "source": "https://www.city.setagaya.lg.jp/02241/375.html"
+  },
+  {
+   "series": "setagaya-soshigaya-furusato-festival-flea-2026",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.city.setagaya.lg.jp/01026/25051.html"
+  },
+  {
+   "series": "shibuya-recycle-bazaar",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-18",
+   "note": "会場：初台区民会館・初台青年館／10:00〜14:00／出店25店",
+   "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+  },
+  {
+   "series": "shunan-kodomo-yume-matsuri-kids-flea",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.city.shunan.lg.jp/soshiki/48/103173.html"
+  },
+  {
+   "series": "sumida-kinshi-park-flea",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+  },
+  {
+   "series": "sumida-yokojikkawa-kinshicho-flea",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-18",
+   "note": "雨天予備日：11月8日（日）",
+   "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+  },
+  {
+   "series": "takaoka-asaichi",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.city.takaoka.toyama.jp/soshiki/shiminseikatsuka/2/3/2/4/4967.html"
+  },
+  {
+   "series": "tama-econico-market",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.tama-seisokojo.or.jp/econico/market"
+  },
+  {
+   "series": "tokyo-romantic-shibuya",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://tokyo-romantic.com/"
+  },
+  {
+   "series": "tomioka-hachimangu-kottoichi",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://kottou-rakuichi.com/about.html"
+  },
+  {
+   "series": "trx-oi-keibajo-tokyo-city-flea",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-26",
+   "source": "https://trx.jp/schejule"
+  },
+  {
+   "series": "tsuginote-takaoka",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-25",
+   "source": "https://www.city.takaoka.toyama.jp/soshiki/sangyokikakuka/2/1/6/11639.html"
+  },
+  {
+   "series": "vintage-market-expo70",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-20",
+   "source": "https://vintagemarket.jp/"
+  },
+  {
+   "series": "yuyu-marche-ichinomiya-riverside-ono-gokurakuji",
+   "date": "2026-10-25",
+   "status": "confirmed",
+   "checkedAt": "2026-10-26",
+   "source": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/"
+  },
   {
    "series": "bia-izumiyakoryo",
    "date": "2026-10-24",
