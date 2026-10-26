@@ -443,7 +443,6 @@ function searchPage(lang) {
 <form class="search" action="/search/" role="search"><input name="q" type="search" placeholder="${esc(p.ph)}" aria-label="${esc(p.kw)}"><button>${esc(p.btn)}</button></form>
 <p class="lead" id="search-status" aria-live="polite"></p><div id="search-results"></div></div>`;
   return pg(lang, '/search/', { title: p.h1, description: p.desc, body, head: '<meta name="robots" content="noindex,follow">\n', scripts: ['/search.js'], css: ['/spot.css'] });
-', scripts: ['/search.js'], css: ['/spot.css'] });
 }
 
 function aboutPage(ctx, lang) {
