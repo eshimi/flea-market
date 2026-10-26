@@ -19,6 +19,9 @@ import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, blogBanner, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
 import { tipsBanner, tipsIndex } from './lib/tips-view.mjs';
 import { hubText } from './lib/hub.mjs';
+import { icsDates, icsFor, icsPath } from './lib/ics.mjs';
+import { SV } from './lib/saved-txt.mjs';
+import { icon } from './lib/icons.mjs';
 import { endedSeries, MAX_RULES, redirectRules } from './lib/redirects.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { spotL, venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
@@ -362,6 +365,19 @@ function pastDatesBlock(list, lang) {
 // 公式ページに記載がなく、ネットで調べて補った項目（series.searched[項目] = 出典の URL）には、公式の記載ではないと添える
 const srcNote = (s, key, p) => (s.searched?.[key] ? `<small class="addr-src">${esc(p.infoSearched)}</small>` : '');
 
+// 開催日の行の「カレンダーに追加」（先の3回だけ。.ics はビルドが作る）
+function calLink(s, o, list, lang) {
+  if (!icsDates(list, isActive).some((x) => x.date === o.date)) return '';
+  return `<a class="cal-add" href="${icsPath(s.id, o.date, lang)}" download aria-label="${esc(SV[lang].calAria(dlabel(o.date, lang, { year: true })))}">${icon('calplus', 16)}<span>${esc(SV[lang].cal)}</span></a>`;
+}
+
+// 詳細ページの操作：保存（マイリスト）・共有（端末の共有メニュー。なければリンクのコピー）
+function evActions(s, lang) {
+  const t = SV[lang];
+  const url = `${SITE.url}${langPath(`/e/${s.id}/`, lang)}`;
+  return `<p class="ev-actions"><button type="button" class="save-btn big" data-id="${esc(s.id)}" aria-pressed="false" aria-label="${esc(t.saveAria)}" data-on="${esc(t.removeAria)}" data-off="${esc(t.saveAria)}">${icon('heart', 18)}<span data-t-on="${esc(t.saved)}" data-t-off="${esc(t.save)}">${esc(t.save)}</span></button><button type="button" class="share-btn" data-title="${esc(nameL(s, lang))}" data-url="${esc(url)}" data-copied="${esc(t.copied)}">${icon('share', 18)}<span>${esc(t.share)}</span></button></p>`;
+}
+
 // 開催日ごとの行に添える、時間と会場（シリーズに書いてあるものだけ。日ごとに違うときは、各日の注記が別に出る）
 function dateInfo(s, lang) {
   const time = lang === 'en' ? (timeEn(s) || s.time?.text) : s.time?.text;
@@ -377,7 +393,7 @@ function seriesPage(s, ctx, lang) {
   const pn = prefLabel(v.pref, lang);
   const next = list.find(isActive);
   const dates = list.length
-    ? `<ul class="sources">${list.slice(0, 12).map((o) => `<li>${esc(dlabel(o.date, lang, { year: true }))}　${statusTag(o, lang)}${o.note ? `　<span class="tbd">${esc(noteL(o, lang))}</span>` : ''}${dateInfo(s, lang)}</li>`).join('')}</ul>`
+    ? `<ul class="sources">${list.slice(0, 12).map((o) => `<li>${esc(dlabel(o.date, lang, { year: true }))}　${statusTag(o, lang)}${o.note ? `　<span class="tbd">${esc(noteL(o, lang))}</span>` : ''}${dateInfo(s, lang)}${calLink(s, o, list, lang)}</li>`).join('')}</ul>`
     : `<p class="empty">${esc(p.noDates)}</p>`;
   const row = (k, x) => `<div><dt>${esc(k)}</dt><dd>${x}</dd></div>`;
   const mapInline = (mu, kind) => `<span class="map-inline"><a href="${esc(kind === 'open' ? mu.open : mu.route)}" target="_blank" rel="noopener nofollow">${esc(kind === 'open' ? p.mapOpenShort : p.mapRouteShort)} ↗</a></span>`;
@@ -403,6 +419,7 @@ function seriesPage(s, ctx, lang) {
   const body = `<div class="in page ev-page">${breadcrumb([{ href: `/area/${v.pref}/`, label: pn }, ...(v.cityCode ? [{ href: `/area/${v.pref}/${v.cityCode}/`, label: cityL(v.city, lang) }] : []), { label: nameL(s, lang) }], lang)}
 <h1>${esc(nameL(s, lang))}</h1>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-h" lang="ja">${esc(s.name)}</p>` : ''}
 <div class="tags">${kindTags(s.kinds, lang)}</div>
+${evActions(s, lang)}
 ${next ? `<p class="banner">${esc(p.next)}${lang === 'ja' ? '：' : ': '}<b>${esc(dlabel(next.date, lang, { year: true }))}</b>　${esc(S[lang].status[next.status])}${lang === 'ja' ? '（' : ' ('}${checked}${esc(next.checkedAt)}${lang === 'ja' ? '）' : ')'}</p>` : ''}
 ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
 <div class="ev-split"><div class="ev-main">
@@ -435,6 +452,16 @@ function shutenPage(ctx, lang) {
   const p = P[lang].shuten;
   const body = `<div class="in page">${breadcrumb([{ label: p.crumb }], lang)}<h1>${esc(p.h1)}</h1><p class="lead">${esc(p.lead)}</p>${exhibitorList(ctx.series, lang)}</div>`;
   return pg(lang, '/shuten/', { title: p.title, description: p.desc, body });
+}
+
+function savedPage(lang) {
+  const t = SV[lang];
+  const body = `<div class="in page">${breadcrumb([{ label: t.crumb }], lang)}<h1>${esc(t.h1)}</h1><p class="lead">${esc(t.lead)}</p>
+<p class="note" id="saved-shared-note" hidden>${esc(t.sharedNote)}</p>
+<div id="saved-list" data-empty="${esc(t.empty)}" data-fail="${esc(t.loadFail)}" data-none="${esc(t.none)}" data-upcoming="${esc(t.upcoming)}" data-remove="${esc(t.remove)}" data-lang="${lang}"></div>
+<p class="ev-actions"><button type="button" class="share-btn" id="saved-share" hidden data-title="${esc(t.h1)}" data-copied="${esc(t.copied)}">${icon('share', 18)}<span>${esc(t.shareList)}</span></button><button type="button" class="save-btn big" id="saved-saveall" hidden>${icon('heart', 18)}<span>${esc(t.saveAll)}</span></button></p>
+<p><a href="/weekend/">${esc(t.browse)}</a></p></div>`;
+  return pg(lang, '/saved/', { title: t.h1, description: t.desc, body, head: '<meta name="robots" content="noindex,follow">\n', css: ['/spot.css'] });
 }
 
 function searchPage(lang) {
@@ -690,9 +717,20 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   ALL_POSTS = [...BLOG.map((b) => cleanLinks(resolvePost(b, ctx), ids)), ...autoPosts.map((a) => cleanLinks(a, ids))];
   ctx.latestPosts = posts().slice(0, 3);
   // 英語が既定（/）。日本語は /ja/
-  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.filter((s) => !endedIds.has(s.id)).map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), aboutPage(ctx, lang), guidePage(lang), tipsPage(lang), ...TIPS.map((x) => columnPage(x, lang, '/tips/')), contactPage(lang), pressPage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
+  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.filter((s) => !endedIds.has(s.id)).map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), savedPage(lang), aboutPage(ctx, lang), guidePage(lang), tipsPage(lang), ...TIPS.map((x) => columnPage(x, lang, '/tips/')), contactPage(lang), pressPage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）
   const files = LANGS_ORDER.map((lang) => ({ path: langPath('/blog/feed.xml', lang), content: feedXml(lang) }));
+  for (const lang of LANGS_ORDER) {
+    for (const s of series) {
+      if (endedIds.has(s.id)) continue;
+      const list = occ.filter((o) => o.series.id === s.id);
+      const v = s.venue;
+      const url = `${SITE.url}${langPath(`/e/${s.id}/`, lang)}`;
+      for (const o of icsDates(list, isActive)) {
+        files.push({ path: icsPath(s.id, o.date, lang), content: icsFor(o, { name: nameL(s, lang), venue: venueL(s, lang), address: v.address && v.addressFrom !== 'search' ? v.address : '', url, note: lang === 'ja' ? '最新の情報は公式ページでご確認ください。' : 'Please check the official page for the latest details.', stamp: today }) });
+      }
+    }
+  }
   const rules = redirectRules(ended, { spotIds: new Set(spots.map((sp) => sp.venue.id)), cities: new Set(series.map((x) => x.venue.cityCode).filter(Boolean)), prefs: new Set(series.map((x) => x.venue.pref)) });
   if (rules.length > MAX_RULES) throw new Error(`_redirects の規則が多すぎます（${rules.length}行）`);
   if (rules.length) files.push({ path: '/_redirects', content: `${rules.join('\n')}\n` });
@@ -732,7 +770,7 @@ function main() {
   writeFileSync(join(out, 'series-ids.json'), JSON.stringify(SERIES_IDS));
   writeFileSync(join(out, 'spot-ids.json'), JSON.stringify(spots.map((sp) => sp.venue.id)));
   writeFileSync(join(out, 'events.json'), JSON.stringify({ today, events: searchIndex(occ), spots: spotIndexData(spots) }));
-  writeFileSync(join(out, 'pages.json'), JSON.stringify(pages.filter((p) => !p.path.endsWith('.html')).map((p) => p.path)));
+  writeFileSync(join(out, 'pages.json'), JSON.stringify(pages.filter((p) => !p.path.endsWith('.html') && !/\/saved\/$/.test(p.path)).map((p) => p.path)));
   console.log(`${today} 基準で ${pages.length} ページ、開催 ${occ.length} 件を ${out} に書き出しました`);
 }
 

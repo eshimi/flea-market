@@ -86,3 +86,7 @@
 .ft-social a.ft-fbtext{font-weight:700;color:#34343f;text-decoration:none;font-size:13px;padding:5px 0}
 .ft-social a.ft-fbtext:hover{text-decoration:underline}
 .ft-social .ft-join{flex-basis:100%;padding-left:44px;margin-top:-2px;font-size:12px;color:var(--cx-sub)}
+
+.hd-saved{position:relative;display:inline-flex;align-items:center;padding:6px}
+.hd-saved .cnt{position:absolute;top:-2px;right:-4px;min-width:16px;height:16px;border-radius:8px;background:#c8553d;color:#fff;font-size:.68rem;line-height:16px;text-align:center;padding:0 4px}
+@media(max-width:600px){.hd-saved{padding:4px 2px}}

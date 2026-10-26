@@ -5,6 +5,9 @@ const wrap = (inner, size = 22) =>
 const PATHS = {
   search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.9-4.9"/>',
   arrow: '<path d="M4 12h15M13 6l6 6-6 6"/>',
+  heart: '<path d="M12 20.2s-7.7-4.7-7.7-10.4A4.5 4.5 0 0 1 12 6.9a4.5 4.5 0 0 1 7.7 2.9c0 5.7-7.7 10.4-7.7 10.4z"/>',
+  share: '<circle cx="6" cy="12" r="2.4"/><circle cx="17.5" cy="6" r="2.4"/><circle cx="17.5" cy="18" r="2.4"/><path d="m8.2 10.8 7.1-3.6M8.2 13.2l7.1 3.6"/>',
+  calplus: '<rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M12 12.5v5M9.5 15h5"/>',
   facebook: '<path d="M14 21v-7.5h2.6l.5-3H14V8.7c0-.9.4-1.5 1.6-1.5h1.6V4.5c-.4 0-1.4-.2-2.5-.2-2.4 0-4 1.5-4 4.1v2.1H8v3h2.7V21z"/>',
   calendar: '<rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',
   pin: '<path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/>',

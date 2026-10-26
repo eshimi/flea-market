@@ -7,6 +7,7 @@ import { KINDS } from './kinds.mjs';
 import { weekday } from './dates.mjs';
 import { cityL, nameL, noteL, timeEn, venueL } from './tr-en.mjs';
 import { fbLogo, icon, logoSvg } from './icons.mjs';
+import { SV } from './saved-txt.mjs';
 import { MON_EN, S, T, WD_EN, WD_JA } from './i18n.mjs';
 import { disclaimer, DISCLAIMER_JA, KIND_SHORT_EN, langPath, localize, P, prefLabel, recurTag, splitPath, monthHead } from './l10n.mjs';
 
@@ -40,7 +41,7 @@ export function siteHeader(path, lang = 'en') {
 <input type="checkbox" id="nav-t" class="nav-t" aria-hidden="true">
 <label for="nav-t" class="burger" aria-label="${esc(t.menu)}">${icon('menu', 24)}</label>
 <nav class="hd-nav" aria-label="${esc(t.navLabel)}">${nav}</nav>
-<div class="hd-tools"><a class="hd-search" href="${langPath('/search/', lang)}" aria-label="${esc(t.search)}">${icon('search', 20)}</a>
+<div class="hd-tools"><a class="hd-saved" href="${langPath('/saved/', lang)}" aria-label="${esc(SV[lang].nav)}">${icon('heart', 20)}<span class="cnt" hidden></span></a><a class="hd-search" href="${langPath('/search/', lang)}" aria-label="${esc(t.search)}">${icon('search', 20)}</a>
 ${langSwitch(path, lang)}</div>
 </div></header>`;
 }
@@ -193,6 +194,7 @@ ${pageBanner(base, bannerText ? localize(bannerText, lang) : '', bannerArt)}${lo
 </main>
 ${siteFooter(base, lang)}
 ${scripts.map((s) => `<script src="${s}" defer></script>`).join('\n')}
+<script src="/saved.js" defer></script>
 </body>
 </html>
 `;
@@ -237,6 +239,7 @@ export function eventCard(o, lang = 'en') {
   const rule = recurTag(s.recurrence, lang);
   return `<article class="ev${cls}" data-pref="${esc(s.venue.pref)}">
 <div class="ev-date"><small>${lang === 'ja' ? `${+m}月` : MON_EN[+m - 1]}</small><b>${+d}</b><small>${wd}</small></div>
+<button type="button" class="save-btn" data-id="${s.id}" aria-pressed="false" aria-label="${esc(SV[lang].saveAria)}" data-on="${esc(SV[lang].removeAria)}" data-off="${esc(SV[lang].saveAria)}">${icon('heart', 20)}</button>
 <div class="ev-body"><h3><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a></h3>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-n" lang="ja">${esc(s.name)}</p>` : ''}
 <p class="meta">${meta}</p>
 <div class="tags">${kindTags(s.kinds, lang)}${rule ? `<span class="tag">${esc(rule)}</span>` : ''}${statusTag(o, lang)}</div>

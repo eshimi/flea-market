@@ -31,15 +31,15 @@ export const HEADER_NAV = [
 
 // フッター：列ごと（探す／人気の地域／ガイド／サイト）。areas の都道府県は、今後の開催が多い順に8つ（ビルドで決める）
 export const FOOTER_COLS = [
-  { key: 'find', items: [['/weekend/', 'weekend'], ['/calendar/', 'calendar'], ['/area/', 'area'], ['/spot/', 'spots'], ['/kind/', 'types'], ['/search/', 'search']] },
+  { key: 'find', items: [['/weekend/', 'weekend'], ['/calendar/', 'calendar'], ['/area/', 'area'], ['/spot/', 'spots'], ['/kind/', 'types'], ['/search/', 'search'], ['/saved/', 'saved']] },
   { key: 'areas', areas: true, more: ['/area/', 'allAreas'] },
   { key: 'guides', items: [['/blog/', 'blog'], ['/guide/', 'howto'], ['/tips/', 'tips'], ['/faq/', 'faq'], ['/blog/guide-tokyo-international-forum/', 'g1'], ['/blog/guide-tokyo-monthly-rule-markets/', 'g2']] },
   { key: 'site', items: [['/about/', 'aboutPolicy'], ['/press/', 'press'], ['/shuten/', 'vendors'], ['/about/#remove', 'remove'], ['/contact/', 'contact']] },
 ];
 
 export const NAV_LABELS = {
-  en: { contact: 'Contact', tips: 'Tips', guides: 'Guides', site: 'About', blog: 'Blog & Guide Articles', howto: 'How to Use', faq: 'FAQ', aboutPolicy: 'Listing Policy & Sources', press: 'About Street Bazaars', vendors: 'For Vendors', remove: 'Corrections & Removal Requests', calendar: 'Event Calendar', search: 'Keyword Search', allAreas: 'All prefectures', g1: 'Guide: Oedo Antique Market', g2: 'Guide: Tokyo’s monthly markets', colFind: 'Find markets', colAreas: 'Popular areas', colGuides: 'Guides', colSite: 'About this site' },
-  ja: { contact: 'お問い合わせ', tips: 'TIPS', guides: 'ガイド', site: 'サイト', blog: 'ブログ・ガイド記事', howto: '使い方', faq: 'よくある質問', aboutPolicy: '掲載のきまり・出典', press: 'メディア・サービス紹介', vendors: '出店したい方へ', remove: '掲載の修正・削除の依頼', calendar: 'イベントカレンダー', search: 'キーワード検索', allAreas: 'すべての都道府県', g1: 'ガイド：大江戸骨董市', g2: 'ガイド：東京の毎月の市', colFind: 'マーケットを探す', colAreas: '人気の地域', colGuides: 'ガイド', colSite: 'このサイトについて' },
+  en: { saved: 'My list', contact: 'Contact', tips: 'Tips', guides: 'Guides', site: 'About', blog: 'Blog & Guide Articles', howto: 'How to Use', faq: 'FAQ', aboutPolicy: 'Listing Policy & Sources', press: 'About Street Bazaars', vendors: 'For Vendors', remove: 'Corrections & Removal Requests', calendar: 'Event Calendar', search: 'Keyword Search', allAreas: 'All prefectures', g1: 'Guide: Oedo Antique Market', g2: 'Guide: Tokyo’s monthly markets', colFind: 'Find markets', colAreas: 'Popular areas', colGuides: 'Guides', colSite: 'About this site' },
+  ja: { saved: 'マイリスト', contact: 'お問い合わせ', tips: 'TIPS', guides: 'ガイド', site: 'サイト', blog: 'ブログ・ガイド記事', howto: '使い方', faq: 'よくある質問', aboutPolicy: '掲載のきまり・出典', press: 'メディア・サービス紹介', vendors: '出店したい方へ', remove: '掲載の修正・削除の依頼', calendar: 'イベントカレンダー', search: 'キーワード検索', allAreas: 'すべての都道府県', g1: 'ガイド：大江戸骨董市', g2: 'ガイド：東京の毎月の市', colFind: 'マーケットを探す', colAreas: '人気の地域', colGuides: 'ガイド', colSite: 'このサイトについて' },
 };
 
 // アクセス解析（Google アナリティクス）。全ページの head に入れる。GA_ID=（空）で外せる

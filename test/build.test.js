@@ -191,7 +191,7 @@ test('トップの下部：カレンダー・注目・出店者・地域・種�
     // 内部リンクは、その言語で作ったページにある
     for (const m of layout(p).matchAll(/href="(\/[^"#?]*)/g)) {
       const h = m[1];
-      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(h) || h === ADMIN_PAGE || STATIC_PAGES.includes(h)) continue;
+      if (/\.(css|js|webp|json|txt|xml|svg|png|ico|ics)$/.test(h) || h === ADMIN_PAGE || STATIC_PAGES.includes(h)) continue;
       assert.ok(page(h) || (p.lang === 'en' && h === '/ja/'), `${h} がありません`);
     }
     assert.ok(!/12,345|1,234|99\+/.test(b), 'ダミーの数字');
@@ -235,8 +235,8 @@ test('使い方・よくある質問・ブログ：両言語のページ・RSS�
     assert.ok(has(base), base);
     assert.ok(has(`/ja${base}`), `/ja${base}`);
   }
-  assert.deepEqual(built.files.map((f) => f.path).sort(), ['/blog/feed.xml', '/ja/blog/feed.xml']);
-  for (const f of built.files) {
+  assert.deepEqual(built.files.filter((f) => f.path.endsWith('.xml')).map((f) => f.path).sort(), ['/blog/feed.xml', '/ja/blog/feed.xml']);
+  for (const f of built.files.filter((x) => x.path.endsWith('.xml'))) {
     assert.match(f.content, /^<\?xml/);
     for (const b of BLOG) assert.ok(f.content.includes(`/blog/${b.slug}/`));
   }
@@ -245,7 +245,7 @@ test('使い方・よくある質問・ブログ：両言語のページ・RSS�
   for (const p of built.pages) {
     const html = layout(p);
     for (const m of html.matchAll(/href="(\/[^"#?]*)/g)) {
-      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(m[1]) || m[1] === ADMIN_PAGE || STATIC_PAGES.includes(m[1])) continue;
+      if (/\.(css|js|webp|json|txt|xml|svg|png|ico|ics)$/.test(m[1]) || m[1] === ADMIN_PAGE || STATIC_PAGES.includes(m[1])) continue;
       assert.ok(paths.has(m[1]), `${p.path} → ${m[1]} がありません`);
     }
   }
@@ -439,11 +439,11 @@ test('自動のブログ記事：今週末・来月のまとめ・新着の掲�
   assert.ok(page('/blog/weekend-2026-10-24/') && page('/ja/blog/month-2026-11/'));
   const gh = page('/blog/weekend-ghost/').body;
   assert.ok(gh.includes('Gone') && !gh.includes('no-such-series'));
-  assert.ok(built.files.every((f) => f.content.includes('weekend-2026-10-24')));
+  assert.ok(built.files.filter((f) => f.path.endsWith('.xml')).every((f) => f.content.includes('weekend-2026-10-24')));
   const paths = new Set(built.pages.map((p) => p.path));
   for (const p of built.pages.filter((x) => x.path.includes('/blog/'))) {
     for (const m of layout(p).matchAll(/href="(\/[^"#?]*)/g)) {
-      if (/\.(css|js|webp|json|txt|xml|svg|png|ico)$/.test(m[1]) || m[1] === ADMIN_PAGE || STATIC_PAGES.includes(m[1])) continue;
+      if (/\.(css|js|webp|json|txt|xml|svg|png|ico|ics)$/.test(m[1]) || m[1] === ADMIN_PAGE || STATIC_PAGES.includes(m[1])) continue;
       assert.ok(paths.has(m[1]), `${p.path} → ${m[1]}`);
     }
   }
@@ -870,4 +870,25 @@ test('スマホの速度：HERO は選んだ1枚だけを読む（srcset）、�
   assert.ok(!top.includes('Noto+Sans+JP') && !top.includes('Noto+Serif+JP') && !top.includes('Playfair'));
   assert.ok(!/<script async src="https:\/\/(www\.googletagmanager|pagead2)/.test(top));
   assert.match(top, /addEventListener\('load',function\(\)\{setTimeout\(go,0\)\}\)/);
+});
+
+test('マイリスト・共有・カレンダー追加：保存ボタン・/saved/（noindex）・.ics（時間は公式のみ）', () => {
+  const { pages, files } = buildPages(loadData(), '2026-10-24');
+  const get = (p) => pages.find((x) => x.path === p);
+  assert.ok(get('/saved/') && get('/ja/saved/'));
+  assert.match(get('/saved/').head, /noindex/);
+  const ev = pages.find((x) => x.path.startsWith('/e/') && x.body.includes('save-btn big'));
+  assert.ok(ev, '詳細に保存ボタン');
+  assert.ok(ev.body.includes('share-btn'));
+  const ics = files.filter((f) => f.path.endsWith('.ics'));
+  assert.ok(ics.length > 10);
+  assert.ok(ics.some((f) => f.path.startsWith('/ja/ics/')));
+  for (const f of ics) {
+    assert.match(f.content, /^BEGIN:VCALENDAR\r\n/);
+    assert.match(f.content, /END:VCALENDAR\r\n$/);
+    assert.ok(f.content.split('\r\n').every((l) => Buffer.byteLength(l) <= 75), f.path);
+  }
+  const linked = pages.filter((x) => x.body.includes('class="cal-add"'));
+  assert.ok(linked.length);
+  for (const m of linked[0].body.matchAll(/class="cal-add" href="([^"]+)"/g)) assert.ok(ics.some((f) => f.path === m[1]), m[1]);
 });

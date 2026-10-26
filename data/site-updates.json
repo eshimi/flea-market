@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-26",
+    "ja": "マイリスト（登録なしで気に入った市を保存）・共有ボタン・カレンダーへの追加（.ics）を追加しました。",
+    "en": "Added My list (save markets without signing up), a share button and add-to-calendar (.ics) files.",
+    "link": "/saved/"
+  },
+  {
+    "date": "2026-10-26",
     "ja": "スマホでの表示を速くしました。写真は画面に合う大きさだけを読み、日本語のWebフォントをやめ、広告と解析はページの表示が終わってから読み込みます。",
     "en": "Pages now load faster on phones: photos are sized to the screen, the large Japanese web font is gone, and ads and analytics load after the page has finished displaying."
   },
