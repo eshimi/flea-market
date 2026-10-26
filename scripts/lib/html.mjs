@@ -74,7 +74,6 @@ export function siteFooter(path, lang = 'en') {
 function analyticsTag() {
   if (!ANALYTICS_ID) return '';
   return `<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_ID}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -92,8 +91,17 @@ export const OG_DEFAULT = '/img/og/default.jpg';
 function adsenseTag() {
   if (!ADSENSE_CLIENT) return '';
   return `<meta name="google-adsense-account" content="${ADSENSE_CLIENT}">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}"
-     crossorigin="anonymous"></script>
+`;
+}
+
+// アクセス解析（gtag.js）と広告（AdSense）の読み込みは、ページの表示が終わってから（load のあと）にする。
+// 画像・文字の表示と取り合わないようにして、スマホでの表示開始を早める。gtag の設定（dataLayer）は先に入っているので、ページビューは取りこぼさない
+function deferredScripts() {
+  const urls = [];
+  if (ANALYTICS_ID) urls.push([`https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_ID}`, 0]);
+  if (ADSENSE_CLIENT) urls.push([`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`, 1]);
+  if (!urls.length) return '';
+  return `<script>(function(){var u=${JSON.stringify(urls)};function go(){u.forEach(function(x){var s=document.createElement('script');s.async=true;s.src=x[0];if(x[1])s.crossOrigin='anonymous';document.head.appendChild(s)})}if(document.readyState==='complete')setTimeout(go,0);else addEventListener('load',function(){setTimeout(go,0)})})();</script>
 `;
 }
 
@@ -152,7 +160,7 @@ export function layout({ path, title, description, body, head = '', scripts = []
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script>${LANG_JS}</script>
-${analyticsTag()}${adsenseTag()}<title>${esc(full)}</title>
+${analyticsTag()}${adsenseTag()}${deferredScripts()}<title>${esc(full)}</title>
 <meta name="description" content="${esc(description)}">
 <meta name="keywords" content="${esc(keywordMeta(keywords, lang))}">
 ${INDEXABLE ? '' : '<meta name="robots" content="noindex,nofollow">\n'}<link rel="canonical" href="${SITE.url}${path}">
@@ -169,7 +177,7 @@ ${ogImage ? '' : '<meta property="og:image:width" content="1200">\n<meta propert
 <meta name="twitter:image" content="${SITE.url}${ogImage || OG_DEFAULT}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">

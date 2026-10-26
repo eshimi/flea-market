@@ -9,11 +9,11 @@
 .hero2-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(251,247,239,.98) 0,rgba(251,247,239,.93) 28%,rgba(251,247,239,.45) 47%,rgba(251,247,239,0) 63%)}
 .hero2-in{width:100%;box-sizing:border-box;max-width:1240px;margin:0 auto;padding:44px 28px 40px;position:relative}
 .hero2-copy{max-width:680px}
-.hero2-kicker{font-family:"DM Sans","Noto Sans JP",sans-serif;font-weight:700;font-size:13px;line-height:1.3;letter-spacing:.08em;text-transform:uppercase;color:var(--hm-red);margin:0 0 8px}
-.hero2 .hero2-title{font-family:"DM Serif Display","Noto Serif JP",Georgia,"Times New Roman",serif;font-weight:800;font-size:clamp(30px,3.4vw,47px);line-height:1.1;letter-spacing:-.012em;color:var(--hm-ink);margin:0}
+.hero2-kicker{font-family:"DM Sans","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",sans-serif;font-weight:700;font-size:13px;line-height:1.3;letter-spacing:.08em;text-transform:uppercase;color:var(--hm-red);margin:0 0 8px}
+.hero2 .hero2-title{font-family:"DM Serif Display","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP",Georgia,"Times New Roman",serif;font-weight:800;font-size:clamp(30px,3.4vw,47px);line-height:1.1;letter-spacing:-.012em;color:var(--hm-ink);margin:0}
 .hero2 .hero2-title span{display:inline;margin-right:.26em}
 .hero2 .hero2-title em{display:block;font-style:normal;color:var(--hm-red)}
-.hero2[lang=ja] .hero2-title,.hero2.is-ja .hero2-title{font-family:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:900;font-size:clamp(30px,3.6vw,48px);line-height:1.22;letter-spacing:.01em}
+.hero2[lang=ja] .hero2-title,.hero2.is-ja .hero2-title{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:900;font-size:clamp(30px,3.6vw,48px);line-height:1.22;letter-spacing:.01em}
 .hero2[lang=ja] .hero2-title span,.hero2.is-ja .hero2-title span{margin-right:0}
 .hero2-sub{word-break:auto-phrase;text-wrap:pretty;font-size:16px;line-height:1.6;color:var(--hm-sub);margin:12px 0 16px;max-width:40em}
 .hsearch{display:flex;align-items:stretch;background:#fff;border-radius:10px;box-shadow:0 8px 26px rgba(20,20,30,.17);overflow:hidden;max-width:580px}
@@ -63,7 +63,7 @@
 .hm-sec{padding:44px 0}
 .hm-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:18px}
 .hm-h{margin:0;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
-.hm-h span{font-family:"DM Serif Display","Noto Serif JP",Georgia,serif;font-weight:800;font-size:27px;color:var(--hm-ink);line-height:1.25}
+.hm-h span{font-family:"DM Serif Display","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP",Georgia,serif;font-weight:800;font-size:27px;color:var(--hm-ink);line-height:1.25}
 .hm-h small{font-size:12.5px;color:var(--hm-sub);font-weight:400}
 .hm-more{display:inline-flex;align-items:center;gap:6px;color:#1f5fa8;font-size:13.5px;text-decoration:none;white-space:nowrap;padding:6px 0}
 .hm-more:hover{text-decoration:underline}
@@ -167,7 +167,7 @@ a:hover .pm-on,a:focus-visible .pm-on{fill:#9A4C36}
 .about-box .hm-h span{font-size:23px}
 .about-nums{display:flex;gap:28px;margin:0}
 .about-nums div{display:flex;flex-direction:column-reverse}
-.about-nums dd{margin:0;font-family:"DM Serif Display","Noto Serif JP",Georgia,serif;font-size:42px;font-weight:800;color:var(--hm-red);line-height:1.05}
+.about-nums dd{margin:0;font-family:"DM Serif Display","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP",Georgia,serif;font-size:42px;font-weight:800;color:var(--hm-red);line-height:1.05}
 .about-nums dt{font-size:12.5px;color:var(--hm-sub);line-height:1.35}
 .about-nums dt small{display:block;font-size:11px}
 .about-text{font-size:13px;color:#3a3a46;line-height:1.7}
@@ -238,7 +238,7 @@ a:hover .pm-on,a:focus-visible .pm-on{fill:#9A4C36}
 .areas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
 .ar{display:flex;flex-direction:column;justify-content:space-between;height:132px;padding:16px 18px;border-radius:12px;background:#fff;border:1px solid var(--hm-line,#e3d6bf);color:var(--hm-ink);text-decoration:none}
 .ar small{font-size:12px;color:var(--hm-sub);letter-spacing:.06em}
-.ar b{font-family:"DM Serif Display","Noto Sans JP",serif;font-weight:400;font-size:24px;line-height:1.05;letter-spacing:.02em}
+.ar b{font-family:"DM Serif Display","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",serif;font-weight:400;font-size:24px;line-height:1.05;letter-spacing:.02em}
 .ar em{font-style:normal;font-size:12.5px;color:var(--hm-red);font-weight:700;display:inline-flex;align-items:center;gap:4px}
 .ar:hover b{text-decoration:underline}
 .ar.t1{background:var(--hm-red);border-color:var(--hm-red);color:#fff}.ar.t1 small,.ar.t1 em{color:#fbe6dc}
@@ -251,7 +251,7 @@ a:hover .pm-on,a:focus-visible .pm-on{fill:#9A4C36}
 .gband{display:grid;grid-template-columns:44% 1fr;border-radius:14px;overflow:hidden;background:#EFE7D8;min-height:225px;position:relative}
 .gband-ph{background-size:cover;background-position:center 30%;min-height:225px}
 .gband-t{position:relative;padding:28px 46px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;overflow:hidden}
-.gband-t h2{font-family:"DM Serif Display","Noto Sans JP",serif;font-weight:400;font-size:32px;line-height:1.12;margin:0 0 10px;color:var(--hm-ink);position:relative;z-index:1}
+.gband-t h2{font-family:"DM Serif Display","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",serif;font-weight:400;font-size:32px;line-height:1.12;margin:0 0 10px;color:var(--hm-ink);position:relative;z-index:1}
 .gband-t h2 span{display:block}
 .gband-t p{margin:0 0 16px;font-size:14px;line-height:1.6;color:#4a4a46;max-width:460px;position:relative;z-index:1}
 .gband .btn{position:relative;z-index:1;display:inline-flex;align-items:center;gap:8px;background:var(--hm-red);color:#fff;padding:13px 22px;border-radius:6px;font-weight:700;text-decoration:none}

@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-10-26",
+    "ja": "スマホでの表示を速くしました。写真は画面に合う大きさだけを読み、日本語のWebフォントをやめ、広告と解析はページの表示が終わってから読み込みます。",
+    "en": "Pages now load faster on phones: photos are sized to the screen, the large Japanese web font is gone, and ads and analytics load after the page has finished displaying."
+  },
+  {
     "date": "2026-10-23",
     "ja": "端末の言語が日本語なら日本語のページ、それ以外は英語のページへ自動で切り替えるようにしました。言語切替のリンクで選んだ言語は覚えます。",
     "en": "The site now switches automatically: Japanese devices go to the Japanese pages, all others to English. A language you choose with the switch is remembered."

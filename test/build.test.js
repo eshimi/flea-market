@@ -845,3 +845,29 @@ test('終了した催しの 301：日付を列挙したきまりで、最後の�
   assert.equal(buildPages(real, '2026-10-24').ended.length, 0);
   assert.equal(endedSeries([{ id: 'a', recurrence: { type: 'dates', dates: ['2026-10-01'] } }], [{ series: 'a', date: '2026-10-20' }], '2026-11-10').length, 0, '開催回の記録に、もっと後の日があれば対象にしない');
 });
+
+test('スマホの速度：HERO は選んだ1枚だけを読む（srcset）、フォントは日本語の Web フォントを使わない、広告・解析は load のあとに読む', async () => {
+  const { HERO_PICK_JS } = await import('../scripts/lib/home-view.mjs');
+  const top = layout(page('/'));
+  // HERO：src を持つ画像は noscript の1枚だけ。3枚は data-src・data-srcset（画面の幅に合う版を含む）
+  assert.equal((top.match(/<img class="hp[^"]*"[^>]* data-src=/g) || []).length, 3);
+  assert.ok(!/<img class="hp[^"]*"[^>]* src="/.test(top.replace(/<noscript>[\s\S]*?<\/noscript>/g, '')), 'HERO の画像は、script が選ぶまで src を持たない');
+  assert.match(top, /data-srcset="\/img\/hero-800\.webp 800w, \/img\/hero-1400\.webp 1400w, \/img\/hero\.webp 1800w"/);
+  assert.ok(!top.includes('rel="preload" as="image"'), '3枚のうち、どれが出るか分からないので、先読みしない');
+  // 選ぶ処理：保存がなければ、3枚すべてが出うる（0 番も）。前回と同じ番号は避ける
+  const pick = (stored, rnd) => {
+    const el = [0, 1, 2].map((i) => ({ hidden: false, _a: {}, setAttribute(k, v) { this._a[k] = v; }, getAttribute(k) { return `${k}${i}`; }, set src(v) { this.s = v; }, set srcset(v) { this.ss = v; }, set sizes(v) {} }));
+    const doc = { querySelectorAll: () => el };
+    const ss = { getItem: () => stored, setItem: () => {} };
+    new Function('document', 'sessionStorage', 'Math', HERO_PICK_JS)(doc, ss, { floor: Math.floor, random: () => rnd });
+    return el.findIndex((x) => !x.hidden);
+  };
+  assert.deepEqual([0, 0.4, 0.9].map((r) => pick(null, r)), [0, 1, 2]);
+  assert.deepEqual([0, 0.99].map((r) => pick('1', r)), [0, 2], '前回の1番は避ける');
+  // 種類のカードは、小さい版（-400）の srcset
+  assert.match(top, /srcset="\/img\/kinds\/[a-z0-9-]+-400\.webp 400w, \/img\/kinds\/[a-z0-9-]+\.webp 800w"/);
+  // フォント：Google Fonts に日本語（Noto）を頼まない。広告・解析の script は、head に直接書かず、load のあとに足す
+  assert.ok(!top.includes('Noto+Sans+JP') && !top.includes('Noto+Serif+JP') && !top.includes('Playfair'));
+  assert.ok(!/<script async src="https:\/\/(www\.googletagmanager|pagead2)/.test(top));
+  assert.match(top, /addEventListener\('load',function\(\)\{setTimeout\(go,0\)\}\)/);
+});

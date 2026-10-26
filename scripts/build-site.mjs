@@ -91,7 +91,7 @@ function exhibitorList(seriesList, lang) {
 // トップ。構成は scripts/lib/home-view.mjs（HERO → カレンダー → 注目マーケット → 出店者 → 地域・種類 → サイト情報）
 function home(ctx, lang) {
   const body = renderHomeBody(ctx, lang, disclaimer(lang));
-  const fonts = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Noto+Serif+JP:wght@900&family=Caveat:wght@600&display=swap">\n<link rel="preload" as="image" href="/img/hero.webp" type="image/webp" fetchpriority="high">\n';
+  const fonts = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap">\n';
   return pg(lang, '/', { title: SITE.name, description: T[lang].description, body, css: ['/home.css'], scripts: ['/home.js', '/hero-switch.js'], head: fonts });
 }
 

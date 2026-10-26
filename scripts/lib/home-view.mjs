@@ -26,6 +26,8 @@ const kindImg = (k, id = '', n = null) => {
   for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
   return FLEA_IMGS[h % 3];
 };
+// 種類の写真は、表示の大きさに合う小さい版（-400）も添える
+const kindSrcset = (p) => `src="${p}" srcset="${p.replace(/\.webp$/, '-400.webp')} 400w, ${p} 800w" sizes="(max-width: 700px) 46vw, 280px"`;
 const heading = (t, id) => `<h2 class="hm-h"${id ? ` id="${id}"` : ''}><span>${esc(t.title)}</span>${t.sub ? `<small>${esc(t.sub)}</small>` : ''}</h2>`;
 
 // ---- HERO ----
@@ -33,11 +35,21 @@ const heading = (t, id) => `<h2 class="hm-h"${id ? ` id="${id}"` : ''}><span>${e
 // HERO の写真。static/img/hero-2.webp があれば、トップの写真を切り替えて見られる（点を押すと入れ替わる）
 const HERO_FILES = ['/img/hero.webp', '/img/hero-2.webp', '/img/hero-3.webp'];
 const heroPhotos = () => HERO_FILES.filter((p) => existsSync(join(STATIC_DIR, p)));
+// 写真は、画面の幅に合う大きさだけを読む（srcset。-800・-1400 は tools/img/make_variants.py で作る）。どの1枚を出すかは、ページを開いたときに決め、その1枚だけを読む
+const HERO_W = { '/img/hero-3.webp': 1659 };
+const heroSrcset = (src) => {
+  const b = src.replace(/\.webp$/, '');
+  const v = [[800, `${b}-800.webp`], [1400, `${b}-1400.webp`]].filter(([, p]) => existsSync(join(STATIC_DIR, p)));
+  return [...v.map(([w, p]) => `${p} ${w}w`), `${src} ${HERO_W[src] || 1800}w`].join(', ');
+};
+// 開いたときに、1枚をランダムに選んで読む（前回と同じ写真は続けない）。JavaScript がないときは、noscript の1枚目
+export const HERO_PICK_JS = "(function(){var im=document.querySelectorAll('.hero2-photo img.hp');if(!im.length)return;var last=-1;try{var l=sessionStorage.getItem('fm-hero-last');if(l!==null)last=Number(l)}catch(e){}var p=[];for(var k=0;k<im.length;k++)if(k!==last)p.push(k);if(!p.length)p=[0];var i=p[Math.floor(Math.random()*p.length)];try{sessionStorage.setItem('fm-hero-last',String(i))}catch(e){}for(k=0;k<im.length;k++)im[k].hidden=k!==i;var a=im[i];a.setAttribute('fetchpriority','high');a.srcset=a.getAttribute('data-srcset');a.sizes='100vw';a.src=a.getAttribute('data-src')})();";
 export function renderHero(lang = 'ja', photo = '/img/hero.webp') {
   const t = T[lang].hero;
   const [l1, l2, accent] = t.title;
   return `<section class="hero2 is-${lang}" aria-labelledby="hero-h">
-<div class="hero2-photo">${heroPhotos().map((src, i) => `<img class="hp${i ? ' hp-alt' : ''}"${i ? ' hidden' : ''} src="${src}" alt="${i ? '' : esc(t.photoAlt)}" width="1800" height="900" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async">`).join('')}</div>
+<div class="hero2-photo">${heroPhotos().map((src, i) => `<img class="hp${i ? ' hp-alt' : ''}"${i ? ' hidden' : ''} data-src="${src}" data-srcset="${heroSrcset(src)}" alt="${esc(t.photoAlt)}" width="1800" height="900" decoding="async">`).join('')}<noscript><img class="hp" src="${HERO_FILES[0]}" alt="${esc(t.photoAlt)}" width="1800" height="900"></noscript></div>
+<script>${HERO_PICK_JS}</script>
 ${heroPhotos().length > 1 ? `<div class="hero2-dots" role="group" aria-label="${esc(t.photoSwitch)}">${heroPhotos().map((_, i) => `<button type="button" aria-label="${i + 1}" aria-pressed="${i === 0}" data-hp="${i}"></button>`).join('')}</div>` : ''}
 <a class="hero2-new" href="/press/#story">${esc(t.newHere)}${icon('arrow', 15)}</a>
 <div class="hero2-in">
@@ -99,7 +111,7 @@ export function renderCard(o, lang = 'ja', n = null) {
   const kinds = s.kinds.map((x) => `<a class="mkind" href="/kind/${x}/">${esc(S[lang].kinds[x])}</a>`).join('');
   const off = o.status === 'cancelled' || o.status === 'postponed' ? ' is-off' : '';
   return `<article class="mcard${off}">
-<a class="mc-img" href="/e/${s.id}/" tabindex="-1" aria-hidden="true"><img src="${kindImg(k, s.id, n)}" alt="" width="800" height="600" loading="lazy" decoding="async"><span class="mc-date">${badge}</span></a>
+<a class="mc-img" href="/e/${s.id}/" tabindex="-1" aria-hidden="true"><img ${kindSrcset(kindImg(k, s.id, n))} alt="" width="800" height="600" loading="lazy" decoding="async"><span class="mc-date">${badge}</span></a>
 <div class="mc-body">
 <h3><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a></h3>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="mc-orig" lang="ja">${esc(s.name)}</p>` : ''}
 <p class="mc-line">${icon('pin', 16)}<span>${esc(place)}</span></p>
@@ -145,7 +157,7 @@ export function vendorRows(ctx) {
 
 export function renderVendors(ctx, lang = 'ja') {
   const t = S[lang].vendors;
-  const rows = vendorRows(ctx).map((s) => `<li><a href="/e/${s.id}/#shuten"><img src="${kindImg(s.kinds[0], s.id)}" alt="" width="96" height="72" loading="lazy" decoding="async"><span><b>${esc(nameL(s, lang))}</b><em>${esc(t.fee)}${esc(first((lang === 'en' && fieldEn(s, 'fee')) || s.exhibitor.fee))}</em><em>${esc(t.apply)}${esc(first((lang === 'en' && fieldEn(s, 'apply')) || s.exhibitor.apply) || S[lang].featured.tbc)}</em></span></a></li>`).join('');
+  const rows = vendorRows(ctx).map((s) => `<li><a href="/e/${s.id}/#shuten"><img src="${kindImg(s.kinds[0], s.id).replace(/\.webp$/, '-400.webp')}" alt="" width="96" height="72" loading="lazy" decoding="async"><span><b>${esc(nameL(s, lang))}</b><em>${esc(t.fee)}${esc(first((lang === 'en' && fieldEn(s, 'fee')) || s.exhibitor.fee))}</em><em>${esc(t.apply)}${esc(first((lang === 'en' && fieldEn(s, 'apply')) || s.exhibitor.apply) || S[lang].featured.tbc)}</em></span></a></li>`).join('');
   return `<section class="hm-sec hm-vendors" aria-labelledby="vendors-h"><div class="hm-in"><div class="vend-box">
 <div class="vend-copy"><div class="vend-ic">${icon('store', 34)}</div>${heading(t, 'vendors-h')}<p>${esc(t.desc)}</p><a class="vend-btn" href="/shuten/">${esc(t.button)}${icon('arrow', 18)}</a></div>
 <ul class="vend-list">${rows || `<li class="hm-empty">${esc(t.empty)}</li>`}</ul>
@@ -180,7 +192,7 @@ export function renderAbout(ctx, lang = 'ja', disclaimer) {
 <div class="about-left"><div class="about-title">${icon('doc', 36)}${heading(t, 'about-h')}</div>
 <dl class="about-nums"><div><dd>${events}</dd><dt>${esc(t.events)}<small>${esc(t.eventsNote(ctx.days))}</small></dt></div><div><dd>${ctx.series.length}</dd><dt>${esc(t.markets)}</dt></div><div><dd>${organizerCount(ctx.series)}</dd><dt>${esc(t.organizers)}</dt></div></dl></div>
 <div class="about-text"><p class="about-up">${esc(t.updated(S[lang].dateLong(ctx.today)))}</p><p>${esc(t.policy)}${lang === "en" ? " " : ""}${esc(t.source)}</p><p>${esc(disclaimer)}</p><a href="/about/">${esc(t.link)}${icon('arrow', 15)}</a></div>
-<div class="about-photo"><img src="/img/about.webp" alt="${esc(t.photoAlt)}" width="900" height="675" loading="lazy" decoding="async"><p class="vend-script" aria-hidden="true">${t.script.map(esc).join('<br>')}</p></div>
+<div class="about-photo"><img src="/img/about.webp" srcset="/img/about-450.webp 450w, /img/about.webp 900w" sizes="(max-width: 900px) 90vw, 320px" alt="${esc(t.photoAlt)}" width="900" height="675" loading="lazy" decoding="async"><p class="vend-script" aria-hidden="true">${t.script.map(esc).join('<br>')}</p></div>
 </div></div></section>`;
 }
 

@@ -2,10 +2,10 @@
 :root{--bg:#F7F3EB;--ink:#292B28;--sub:#6b6e66;--acc:#B95E43;--acc-d:#9A4C36;--acc2:#2f6f5e;--line:#e6dccd;--card:#fff;--soft:#f3ece1;--sat:#2b62b8;color-scheme:light}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans","Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;font-size:15px;line-height:1.7}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP","Hiragino Sans","Yu Gothic",sans-serif;font-size:15px;line-height:1.7}
 a{color:var(--acc2)}
 h1,h2,h3{line-height:1.4;margin:0}
-h1,h2{font-family:"DM Serif Display","Noto Sans JP",sans-serif}
+h1,h2{font-family:"DM Serif Display","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",sans-serif}
 .in{max-width:1240px;margin:auto;padding:0 28px}
 /* ヘッダー */
 main{display:block;min-height:50vh}
@@ -25,7 +25,7 @@ main{display:block;min-height:50vh}
 .day[aria-current]{background:var(--ink);color:#fff;border-color:var(--ink)}.day[aria-current] small,.day[aria-current] i,.day[aria-current] b{color:#fff}
 .cols{display:grid;grid-template-columns:1fr 300px;gap:28px;padding-bottom:40px}
 .sec-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:22px 0 12px;font-size:20px}
-.sec-h a{font-size:13px;font-family:"Noto Sans JP",sans-serif;font-weight:400}
+.sec-h a{font-size:13px;font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",sans-serif;font-weight:400}
 /* 開催カード */
 .ev{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:10px}
 .ev.off{opacity:.75}.ev.off h3 a{text-decoration:line-through}
@@ -43,7 +43,7 @@ main{display:block;min-height:50vh}
 .empty{background:#fff;border:1px dashed var(--line);border-radius:14px;padding:18px;color:var(--sub)}
 /* 月ごとの一覧 */
 .month-block{margin:6px 0 14px}
-.month-h{font-size:16px;font-family:"DM Serif Display","Noto Sans JP",sans-serif;font-weight:700;margin:14px 0 8px}
+.month-h{font-size:16px;font-family:"DM Serif Display","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",sans-serif;font-weight:700;margin:14px 0 8px}
 summary.month-h{cursor:pointer;padding:10px 14px;background:#fff;border:1px solid var(--line);border-radius:12px;list-style-position:inside}
 details[open]>summary.month-h{margin-bottom:10px}
 /* 右の列 */
@@ -167,7 +167,7 @@ aside h2{font-size:15px;margin-bottom:10px}
 /* TIPS（/tips/）：番号つきの10項目 */
 .tips{list-style:none;margin:0;padding:0;display:grid;gap:14px}
 .tip{display:grid;grid-template-columns:auto 1fr;gap:16px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-.tip-n{font-family:"DM Serif Display","Noto Sans JP",serif;font-size:30px;line-height:1;color:var(--acc);min-width:2.2ch}
+.tip-n{font-family:"DM Serif Display","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",serif;font-size:30px;line-height:1;color:var(--acc);min-width:2.2ch}
 .tip h2{font-size:17px;margin:0 0 6px;line-height:1.4}
 .tip p{margin:0 0 6px}
 .tip-src{display:flex;align-items:flex-start;gap:6px;font-size:12.5px;color:var(--sub)}
@@ -180,7 +180,7 @@ aside h2{font-size:15px;margin-bottom:10px}
 .col-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 .col-card a{display:flex;flex-direction:column;gap:6px;height:100%;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;color:var(--ink);text-decoration:none}
 .col-card a:hover{border-color:var(--acc)}
-.col-n{font-family:"DM Serif Display","Noto Sans JP",serif;font-size:26px;color:var(--acc);line-height:1}
+.col-n{font-family:"DM Serif Display","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",serif;font-size:26px;color:var(--acc);line-height:1}
 .col-card b{font-size:17px;line-height:1.4}
 .col-l{font-size:14px;color:var(--sub)}
 .tips-tag{display:inline-block;align-self:flex-start;font-size:12px;color:var(--acc);border:1px solid var(--acc);border-radius:999px;padding:1px 9px}
