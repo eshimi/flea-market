@@ -92,6 +92,8 @@ export function renderCalendar(ctx, lang = 'ja') {
 
 // ---- 今週末の注目マーケット（写真つきカード）----
 function tagFor(o, lang) {
+  // 公式で確認・予定の札は出さない（ユーザー指示 2026-10-26）。中止・延期・要確認は、誤解を招くので出す
+  if (o.status === 'confirmed' || o.status === 'scheduled') return '';
   const cls = { confirmed: 'ok', scheduled: 'plan', cancelled: 'stop', postponed: 'stop', unknown: 'warn' }[o.status];
   const [, m, d] = o.checkedAt.split('-');
   const when = o.status === 'confirmed' ? `${+m}/${+d} ` : '';
