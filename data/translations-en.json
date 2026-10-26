@@ -2266,6 +2266,23 @@
       "address": "4-1-1 Hikarigaoka, Nerima-ku, Tokyo",
       "access": "8 minutes on foot from Hikarigaoka Station (Toei Oedo Line)",
       "time": "10:00–16:30 (ticket sales until 16:00)"
+    },
+    "umitaka-marche-2026": {
+      "name": "Umitaka Marche (handmade market at the 67th Kaiyodai Umitaka Festival, Tokyo University of Marine Science and Technology)",
+      "venue": "Tokyo University of Marine Science and Technology, Shinagawa Campus, Chubu Auditorium",
+      "address": "4-5-7 Konan, Minato-ku, Tokyo",
+      "access": "About 10 minutes on foot from Shinagawa Station (JR / Keikyu lines)",
+      "time": "10:00–13:00 (last entry 12:40) / 14:00–16:50 (last entry 16:30), in two sessions"
+    },
+    "tmu-miyakosai-furima-2026": {
+      "name": "22nd Miyako Festival Flea Market (Tokyo Metropolitan University)",
+      "venue": "Tokyo Metropolitan University, Minami-Osawa Campus, outdoors from in front of the Makino Herbarium to in front of Building 11",
+      "address": "1-1 Minami-Osawa, Hachioji-shi, Tokyo",
+      "access": "5 minutes on foot from Minami-Osawa Station (Keio Sagamihara Line)",
+      "time": "11:00–16:00",
+      "notes": "Booth size 3.0 m × 3.0 m. Tarps, tables and chairs are not provided. If applicants exceed the number of booths, participants are chosen by lottery.",
+      "fee": "Free",
+      "apply": "Application form (the application deadline of Sep 30, 2026 has passed)"
     }
   },
   "organizers": {
@@ -2397,7 +2414,9 @@
     "誠市（鯖江商工会議所）": "Makoto Ichi (Sabae Chamber of Commerce and Industry)",
     "クリエイターズランド": "Creators Land",
     "ロハスパーク鳴門実行委員会": "Lohas Park Naruto Executive Committee",
-    "ロハスフェスタ実行委員会": "LOHAS Festa Executive Committee"
+    "ロハスフェスタ実行委員会": "LOHAS Festa Executive Committee",
+    "海鷹祭実行委員会": "Umitaka Festival Executive Committee",
+    "東京都立大学大学祭実行委員会": "Tokyo Metropolitan University Festival Executive Committee"
   },
   "labels": {
     "問い合わせ先": "Contact",
@@ -2577,7 +2596,9 @@
     "高岡市": "Takaoka City",
     "鯖江市": "Sabae City",
     "鳴門市": "Naruto City",
-    "大阪市阿倍野区": "Abeno Ward, Osaka"
+    "大阪市阿倍野区": "Abeno Ward, Osaka",
+    "港区": "Minato City",
+    "八王子市": "Hachioji City"
   },
   "notes": {
     "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",

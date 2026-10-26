@@ -4645,5 +4645,60 @@
       "checkedAt": "2026-10-26",
       "note": "robots.txt は許可（/wp/wp-admin/ のみ禁止）。利用規約のページは確認できず（要確認）。事実の項目（日時・会場・料金）だけ載せ、文章・画像は転載しない（2026-10-26 確認）"
     }
+  },
+  {
+    "url": "https://umitakasai-kaiyo.net/%e3%81%86%e3%81%bf%e3%81%9f%e3%81%8b%e3%83%9e%e3%83%ab%e3%82%b7%e3%82%a7-3/",
+    "series": [
+      "umitaka-marche-2026"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-10-26",
+      "note": "robots.txt は許可（/wp-admin/ のみ禁止）。利用規約のページは確認できず（要確認）。事実の項目（日時・会場・出展数）だけ載せ、文章・画像は転載しない。主催の連絡先（メール・SNS）は載せない（2026-10-26 確認）"
+    }
+  },
+  {
+    "url": "https://umitakasai-kaiyo.net/%e9%96%8b%e5%82%ac%e6%a6%82%e8%a6%81%e3%83%bb%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/",
+    "series": [
+      "umitaka-marche-2026"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-10-26",
+      "note": "robots.txt は許可（/wp-admin/ のみ禁止）。利用規約のページは確認できず（要確認）。事実の項目（日時・会場・出展数）だけ載せ、文章・画像は転載しない。主催の連絡先（メール・SNS）は載せない（2026-10-26 確認）"
+    }
+  },
+  {
+    "url": "http://www.miyakomatsuri.com/furima.php",
+    "series": [
+      "tmu-miyakosai-furima-2026"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-10-26",
+      "note": "robots.txt は許可（または記載なし）。利用規約のページは確認できず（要確認）。事実の項目（日時・場所・ブース数・出店料）だけ載せ、文章・画像は転載しない。主催の連絡先（メール・SNS）は載せない（2026-10-26 確認）"
+    }
+  },
+  {
+    "url": "http://www.miyakomatsuri.com/access.php",
+    "series": [
+      "tmu-miyakosai-furima-2026"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-10-26",
+      "note": "robots.txt は許可（または記載なし）。利用規約のページは確認できず（要確認）。事実の項目（日時・場所・ブース数・出店料）だけ載せ、文章・画像は転載しない。主催の連絡先（メール・SNS）は載せない（2026-10-26 確認）"
+    }
+  },
+  {
+    "url": "https://gs.tmu.ac.jp/activities/miyako.html",
+    "series": [
+      "tmu-miyakosai-furima-2026"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-10-26",
+      "note": "robots.txt は許可（または記載なし）。利用規約のページは確認できず（要確認）。事実の項目（日時・場所・ブース数・出店料）だけ載せ、文章・画像は転載しない。主催の連絡先（メール・SNS）は載せない（2026-10-26 確認）"
+    }
   }
 ]
