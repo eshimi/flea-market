@@ -1,0 +1,63 @@
+{
+ "slug": "new-2026-10-27",
+ "date": "2026-10-27",
+ "cat": "new",
+ "tags": {
+  "en": [
+   "Tokyo",
+   "flea market"
+  ],
+  "ja": [
+   "東京",
+   "フリマ"
+  ]
+ },
+ "en": {
+  "title": "New on Flea Market JP (Oct 27): 1 new listing",
+  "summary": "Markets added to the site. Each page shows the official rule and its source.",
+  "points": [
+   "1 new listing",
+   "Dates, times and venues are shown on each page as stated officially"
+  ],
+  "blocks": [
+   {
+    "h2": "Newly listed markets"
+   },
+   {
+    "ul": [
+     "[LOHAS Festa Tokyo 2026](/e/lohasfesta-tokyo-2026/): Nerima City, Hikarigaoka Park, Lawn Plaza"
+    ]
+   },
+   {
+    "h2": "Before you go"
+   },
+   {
+    "p": "Each listing links to its page with the official source. Rules for rain and cancellations differ from market to market: see [Rain and cancellations](/blog/rain-and-cancellations/) and the [guide](/guide/). “Scheduled” dates are calculated from an official recurring rule and have not been confirmed individually."
+   }
+  ]
+ },
+ "ja": {
+  "title": "新しく載せた開催（10月27日）：1件",
+  "summary": "新しく掲載したマーケットです。公式ページのきまりと出典は、各ページにあります。",
+  "points": [
+   "新しい掲載は1件",
+   "開催日・時間・会場は、各ページに公式の記載のまま載せています"
+  ],
+  "blocks": [
+   {
+    "h2": "新しく載せたマーケット"
+   },
+   {
+    "ul": [
+     "[ロハスフェスタ東京 2026](/e/lohasfesta-tokyo-2026/)：練馬区・光が丘公園・芝生広場（2026年10月30日(金)・31日(土)・11月1日(日)の3日間）"
+    ]
+   },
+   {
+    "h2": "お出かけの前に"
+   },
+   {
+    "p": "各開催のページに、公式の出典があります。雨天・中止の扱いはマーケットごとに違います。[雨天・中止：公式ページの書き方](/blog/rain-and-cancellations/)と[使い方](/guide/)をご覧ください。「予定」の日は、公式のきまりから計算した日で、その回の個別の確認はありません。"
+   }
+  ]
+ }
+}
