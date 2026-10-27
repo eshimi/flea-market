@@ -25,12 +25,12 @@
   "changedAt": "2026-10-26"
  },
  "recycler-jp": {
-  "fetchedAt": "2026-10-25",
+  "fetchedAt": "2026-10-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 6643,
-  "hash": "24be601794f26f51",
-  "changedAt": "2026-10-25"
+  "len": 6376,
+  "hash": "94c24b35f25642a4",
+  "changedAt": "2026-10-28"
  },
  "tezukuriichi": {
   "fetchedAt": "2026-10-26",
@@ -88,12 +88,12 @@
   "hash": "467025b9a547119f"
  },
  "recycler-jp-schedule": {
-  "fetchedAt": "2026-10-27",
+  "fetchedAt": "2026-10-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 3878,
-  "hash": "1bc7cc13b355a527",
-  "changedAt": "2026-10-27"
+  "hash": "92d1664fb9255343",
+  "changedAt": "2026-10-28"
  },
  "bia-furima-go": {
   "fetchedAt": "2026-10-26",
@@ -138,7 +138,7 @@
   "hash": "9139cf4e6f081015"
  },
  "tmc-shirakobato": {
-  "fetchedAt": "2026-10-23",
+  "fetchedAt": "2026-10-28",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Thu, 16 Jul 2026 10:16:04 GMT",
@@ -1645,7 +1645,7 @@
   "changedAt": "2026-10-26"
  },
  "tmc-dx-9fdcd2": {
-  "fetchedAt": "2026-10-23",
+  "fetchedAt": "2026-10-28",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Sun, 30 Aug 2026 00:34:22 GMT",
@@ -2191,10 +2191,10 @@
   "changedAt": "2026-10-26"
  },
  "nagano-cvb-a86a0d": {
-  "fetchedAt": "2026-10-20",
+  "fetchedAt": "2026-10-28",
   "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Tue, 20 Oct 2026 07:36:00 GMT",
+  "lastModified": "Tue, 27 Oct 2026 23:50:05 GMT",
   "len": 7566,
   "hash": "fba0c45ae4b810b0"
  },
@@ -2366,5 +2366,19 @@
   "failCount": 0,
   "len": 2902,
   "hash": "ec6e92b1becb35e9"
+ },
+ "bon-dimanche-event-1": {
+  "fetchedAt": "2026-10-28",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 8269,
+  "hash": "81b794d2deefb75e"
+ },
+ "higashiginza-event-1": {
+  "fetchedAt": "2026-10-28",
+  "httpStatus": 200,
+  "failCount": 0,
+  "len": 7715,
+  "hash": "f30a8de142854aaa"
  }
 }

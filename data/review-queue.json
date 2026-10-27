@@ -2887,18 +2887,18 @@
   "id": "recycler-jp",
   "url": "https://www2.recycler.jp/",
   "name": "リサイクル運動市民の会（フリーマーケット情報）",
-  "detectedAt": "2026-10-25",
+  "detectedAt": "2026-10-28",
   "reason": "changed",
-  "hash": "24be601794f26f51",
+  "hash": "94c24b35f25642a4",
   "status": "pending"
  },
  {
   "id": "recycler-jp-schedule",
   "url": "https://www2.recycler.jp/sm/index.php",
   "name": "リサイクル運動市民の会（開催スケジュール）",
-  "detectedAt": "2026-10-27",
+  "detectedAt": "2026-10-28",
   "reason": "changed",
-  "hash": "1bc7cc13b355a527",
+  "hash": "92d1664fb9255343",
   "status": "pending"
  },
  {
@@ -3574,6 +3574,24 @@
   "detectedAt": "2026-10-27",
   "reason": "new",
   "hash": "ec6e92b1becb35e9",
+  "status": "pending"
+ },
+ {
+  "id": "bon-dimanche-event-1",
+  "url": "https://bon.haleinc.co.jp/event/",
+  "name": "Bon Dimanche Market（HALE・イベント開催日程）",
+  "detectedAt": "2026-10-28",
+  "reason": "new",
+  "hash": "81b794d2deefb75e",
+  "status": "pending"
+ },
+ {
+  "id": "higashiginza-event-1",
+  "url": "https://www.higashiginza-area.com/event/",
+  "name": "東銀座エリアマネジメント（イベント情報）",
+  "detectedAt": "2026-10-28",
+  "reason": "new",
+  "hash": "f30a8de142854aaa",
   "status": "pending"
  }
 ]
