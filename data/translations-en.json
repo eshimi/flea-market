@@ -2283,6 +2283,27 @@
       "notes": "Booth size 3.0 m × 3.0 m. Tarps, tables and chairs are not provided. If applicants exceed the number of booths, participants are chosen by lottery.",
       "fee": "Free",
       "apply": "Application form (the application deadline of Sep 30, 2026 has passed)"
+    },
+    "higashiginza-modern-chic-market-2026": {
+      "name": "Higashi-Ginza Modern Chic Market",
+      "venue": "Ginza Shochiku Square, outdoor space",
+      "rule": "Oct 31 (Sat) and Nov 1 (Sun), 2026 (2 days)",
+      "time": "11:00–16:00",
+      "rain": "Cancelled in the rain",
+      "address": "1-13-1 Tsukiji, Chuo-ku, Tokyo"
+    },
+    "bon-dimanche-chofu-parco": {
+      "name": "Chofu PARCO Bon Dimanche Market",
+      "venue": "Chofu PARCO, 1F outdoor",
+      "rule": "Dates listed on the organizer’s schedule",
+      "access": "3 minutes on foot from Chofu Station (Keio Line)",
+      "address": "1-38-1 Kojima-cho, Chofu-shi, Tokyo"
+    },
+    "bon-dimanche-oimachi-tracks": {
+      "name": "Oimachi TRACKS Bon Dimanche Market",
+      "venue": "Oimachi TRACKS",
+      "rule": "Dates listed on the organizer’s schedule",
+      "address": "2-1-3, 17, 21 and 2-2-9 Hiromachi, Shinagawa-ku, Tokyo"
     }
   },
   "organizers": {
@@ -2416,7 +2437,9 @@
     "ロハスパーク鳴門実行委員会": "Lohas Park Naruto Executive Committee",
     "ロハスフェスタ実行委員会": "LOHAS Festa Executive Committee",
     "海鷹祭実行委員会": "Umitaka Festival Executive Committee",
-    "東京都立大学大学祭実行委員会": "Tokyo Metropolitan University Festival Executive Committee"
+    "東京都立大学大学祭実行委員会": "Tokyo Metropolitan University Festival Executive Committee",
+    "家貨屋 kakaya／一般社団法人東銀座エリアマネジメント（共催）": "kakaya and Higashi-Ginza Area Management Association (co-hosts)",
+    "株式会社HALE": "HALE Inc."
   },
   "labels": {
     "問い合わせ先": "Contact",

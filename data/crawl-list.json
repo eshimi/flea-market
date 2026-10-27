@@ -4691,5 +4691,37 @@
     },
     "everyDays": 7,
     "addedAt": "2026-10-26"
+  },
+  {
+    "id": "bon-dimanche-event-1",
+    "url": "https://bon.haleinc.co.jp/event/",
+    "name": "Bon Dimanche Market（HALE・イベント開催日程）",
+    "kind": "organizer",
+    "pref": "13",
+    "note": "公式ページ（調布パルコ・大井町トラックスほか、各会場の開催日程）。",
+    "active": true,
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-10-28",
+      "note": "robots.txt は許可。利用規約に画像等の無断使用・私的利用を超える複製の禁止あり。掲載は事実の項目だけ（2026-10-28 確認）"
+    },
+    "everyDays": 3,
+    "addedAt": "2026-10-28"
+  },
+  {
+    "id": "higashiginza-event-1",
+    "url": "https://www.higashiginza-area.com/event/",
+    "name": "東銀座エリアマネジメント（イベント情報）",
+    "kind": "organizer",
+    "pref": "13",
+    "note": "公式ページ（東銀座モダンシックマーケットほか）。",
+    "active": true,
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-10-28",
+      "note": "robots.txt は許可（/wp-admin/ のみ禁止）。利用規約は確認できず。掲載は事実の項目だけ（2026-10-28 確認）"
+    },
+    "everyDays": 7,
+    "addedAt": "2026-10-28"
   }
 ]

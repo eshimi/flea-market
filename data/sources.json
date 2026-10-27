@@ -4700,5 +4700,50 @@
       "checkedAt": "2026-10-26",
       "note": "robots.txt は許可（または記載なし）。利用規約のページは確認できず（要確認）。事実の項目（日時・場所・ブース数・出店料）だけ載せ、文章・画像は転載しない。主催の連絡先（メール・SNS）は載せない（2026-10-26 確認）"
     }
+  },
+  {
+    "url": "https://www.higashiginza-area.com/event/%E3%80%8C%E6%9D%B1%E9%8A%80%E5%BA%A7%E3%83%A2%E3%83%80%E3%83%B3%E3%82%B7%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88%E3%80%8D%E9%96%8B%E5%82%AC%EF%BC%81-2/",
+    "series": [
+      "higashiginza-modern-chic-market-2026"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-10-28",
+      "note": "robots.txt は許可（/wp-admin/ のみ禁止）。利用規約のページは確認できず（要確認）。事実の項目（日時・場所・時間・雨天）だけ載せ、文章・画像は転載しない。SNS・連絡先は載せない（2026-10-28 確認）"
+    }
+  },
+  {
+    "url": "https://bon.haleinc.co.jp/event/",
+    "series": [
+      "bon-dimanche-chofu-parco",
+      "bon-dimanche-oimachi-tracks"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-10-28",
+      "note": "robots.txt は許可（Disallow なし）。利用規約（/terms/）に「画像などの無断使用」「情報内容を私的利用の範囲を超えて複製、販売、出版する行為」の禁止の記載あり。方針（ユーザー決定）に従い、事実の項目（日時・会場名・住所・アクセス）だけを掲載し、文章・画像は転載しない（2026-10-28 判断）"
+    }
+  },
+  {
+    "url": "https://bon.haleinc.co.jp/venue/8474/",
+    "series": [
+      "bon-dimanche-chofu-parco"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-10-28",
+      "note": "robots.txt は許可（Disallow なし）。利用規約（/terms/）に「画像などの無断使用」「情報内容を私的利用の範囲を超えて複製、販売、出版する行為」の禁止の記載あり。方針（ユーザー決定）に従い、事実の項目（日時・会場名・住所・アクセス）だけを掲載し、文章・画像は転載しない（2026-10-28 判断）"
+    }
+  },
+  {
+    "url": "https://bon.haleinc.co.jp/venue/",
+    "series": [
+      "bon-dimanche-oimachi-tracks"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-10-28",
+      "note": "robots.txt は許可（Disallow なし）。利用規約（/terms/）に「画像などの無断使用」「情報内容を私的利用の範囲を超えて複製、販売、出版する行為」の禁止の記載あり。方針（ユーザー決定）に従い、事実の項目（日時・会場名・住所・アクセス）だけを掲載し、文章・画像は転載しない（2026-10-28 判断）"
+    }
   }
 ]
