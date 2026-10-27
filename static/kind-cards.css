@@ -1,0 +1,16 @@
+/* 種類の入口：カード（左に名前・件数、右に写真と色の図形） */
+.kc-grid{list-style:none;margin:18px 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.kc{position:relative;display:flex;height:100%;box-sizing:border-box;min-height:170px;overflow:hidden;background:#fbf8f1;border:1px solid #efe6d8;border-radius:14px;color:#292b28;text-decoration:none;box-shadow:0 1px 3px rgba(60,40,20,.06)}
+.kc:hover{box-shadow:0 4px 14px rgba(60,40,20,.14)}
+.kc-t{position:relative;z-index:2;display:flex;flex-direction:column;padding:16px 0 14px 16px;width:60%}
+.kc-t b{font-size:21px;line-height:1.25}
+.kc-t em{font-style:normal;font-size:11px;letter-spacing:.16em;color:#6b6e66;margin:2px 0 10px}
+.kc-t small{font-size:13px;line-height:1.55;color:#555;max-width:9em}
+.kc-t i{margin-top:auto;padding-top:12px;display:flex;align-items:center;gap:10px;font-style:normal;font-weight:700;font-size:22px;color:var(--kc)}
+.kc-go{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:1px solid var(--kc);border-radius:50%;color:var(--kc)}
+.kc-art{position:absolute;right:0;top:0;bottom:0;width:40%;overflow:hidden}
+.kc-art::before{content:"";position:absolute;right:-10%;top:8%;width:78%;aspect-ratio:1;border-radius:50%;background:var(--kc)}
+.kc-art::after{content:"";position:absolute;right:0;bottom:0;width:36%;height:30%;background:var(--kd);opacity:.92}
+.kc-art img{position:absolute;right:0;bottom:0;z-index:1;width:100%;height:78%;object-fit:cover;border-radius:60% 0 0 0}
+@media(max-width:900px){.kc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.kc-grid{grid-template-columns:1fr}.kc{min-height:150px}}

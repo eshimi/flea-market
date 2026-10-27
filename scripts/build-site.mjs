@@ -311,9 +311,21 @@ function hubBlock(ctx, lang, type, key, label) {
 
 function kindPages(ctx, lang) {
   const K = P[lang].kind;
-  const idx = Object.keys(KINDS).map((k) => `<li><a href="/kind/${k}/">${esc(kindName(k, lang))}<small>${esc(kindDesc(k, lang))}</small></a></li>`).join('');
+  const KC = {
+    flea: { en: 'FLEA MARKET', ja: '掘り出しものとの出会いを楽しむ', enT: 'Enjoy finding a bargain', c: '#e8603c', d: '#2d2f2c' },
+    nomi: { en: 'VINTAGE MARKET', ja: 'ヨーロッパのような雰囲気を楽しむ', enT: 'Enjoy a European-style atmosphere', c: '#2b6c99', d: '#1f3c5c' },
+    kotto: { en: 'ANTIQUE MARKET', ja: '歴史ある品との出会い', enT: 'Meet objects with a history', c: '#d9a42a', d: '#e8603c' },
+    handmade: { en: 'HANDMADE MARKET', ja: '作り手の想いにふれる', enT: 'Meet the makers behind the work', c: '#e9776a', d: '#1d4a3a' },
+    engi: { en: 'FESTIVAL STALLS', ja: 'お祭りのにぎわいを楽しむ', enT: 'Enjoy the buzz of a festival', c: '#d9453a', d: '#1f3c5c' },
+    marche: { en: 'LOCAL MARKET', ja: '地元の食と人に出会う', enT: 'Meet local food and people', c: '#d9a42a', d: '#1d4a3a' },
+  };
+  const kcount = (k) => ctx.occ.filter((o) => isActive(o) && o.series.kinds.includes(k)).length;
+  const idx = Object.keys(KINDS).map((k) => {
+    const v = KC[k];
+    return `<li><a class="kc" href="/kind/${k}/" style="--kc:${v.c};--kd:${v.d}"><span class="kc-t"><b>${esc(kindName(k, lang))}</b><em>${esc(v.en)}</em><small>${esc(lang === 'ja' ? v.ja : v.enT)}</small><i>${esc(P[lang].cnt(kcount(k)))}<span class="kc-go">${icon('arrow', 16)}</span></i></span><span class="kc-art" aria-hidden="true"><img src="/img/kinds/${k}-400.webp" alt="" width="400" height="300" loading="lazy" decoding="async"></span></a></li>`;
+  }).join('');
   return [
-    pg(lang, '/kind/', { keywords: Object.keys(KINDS).map((k) => kindName(k, lang)), title: K.h1, description: lang === 'ja' ? 'フリーマーケット・蚤の市・骨董市・手作り市・マルシェの種類から探せます。' : 'Find flea markets, nomi-no-ichi, antique fairs, handmade markets and marchés by type.', body: `<div class="in page">${breadcrumb([{ label: K.h1 }], lang)}<h1>${esc(K.h1)}</h1><ul class="grid-links">${idx}</ul></div>` }),
+    pg(lang, '/kind/', { keywords: Object.keys(KINDS).map((k) => kindName(k, lang)), title: K.h1, description: lang === 'ja' ? 'フリーマーケット・蚤の市・骨董市・手作り市・マルシェの種類から探せます。' : 'Find flea markets, nomi-no-ichi, antique fairs, handmade markets and marchés by type.', body: `<div class="in page">${breadcrumb([{ label: K.h1 }], lang)}<h1>${esc(K.h1)}</h1><ul class="kc-grid">${idx}</ul></div>`, css: ['/kind-cards.css'] }),
     ...Object.keys(KINDS).map((k) => listPage(lang, `/kind/${k}/`, [{ href: '/kind/', label: K.crumb }, { label: kindName(k, lang) }], K.listH1(kindName(k, lang)), kindDesc(k, lang), ctx.occ.filter((o) => o.series.kinds.includes(k)), hubBlock(ctx, lang, 'kind', k, kindName(k, lang)))),
   ];
 }
