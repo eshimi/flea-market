@@ -326,7 +326,12 @@ function kindPages(ctx, lang) {
   }).join('');
   return [
     pg(lang, '/kind/', { keywords: Object.keys(KINDS).map((k) => kindName(k, lang)), title: K.h1, description: lang === 'ja' ? 'フリーマーケット・蚤の市・骨董市・手作り市・マルシェの種類から探せます。' : 'Find flea markets, nomi-no-ichi, antique fairs, handmade markets and marchés by type.', body: `<div class="in page">${breadcrumb([{ label: K.h1 }], lang)}<h1>${esc(K.h1)}</h1><ul class="kc-grid">${idx}</ul></div>`, css: ['/kind-cards.css'] }),
-    ...Object.keys(KINDS).map((k) => listPage(lang, `/kind/${k}/`, [{ href: '/kind/', label: K.crumb }, { label: kindName(k, lang) }], K.listH1(kindName(k, lang)), kindDesc(k, lang), ctx.occ.filter((o) => o.series.kinds.includes(k)), hubBlock(ctx, lang, 'kind', k, kindName(k, lang)))),
+    ...Object.keys(KINDS).map((k) => {
+      const lst = ctx.occ.filter((o) => o.series.kinds.includes(k));
+      const lead = kindDesc(k, lang);
+      const cal = renderCalendar(ctx, lang, { occ: lst, title: lang === 'en' ? `${kindName(k, lang)} by date` : `${kindName(k, lang)}の開催カレンダー`, area: true });
+      return { ...listPage(lang, `/kind/${k}/`, [{ href: '/kind/', label: K.crumb }, { label: kindName(k, lang) }], K.listH1(kindName(k, lang)), lead, lst, cal + hubBlock(ctx, lang, 'kind', k, kindName(k, lang))), bannerArt: `/img/kind-banner/${k}.webp` };
+    }),
   ];
 }
 
