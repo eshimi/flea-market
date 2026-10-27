@@ -330,7 +330,7 @@ function kindPages(ctx, lang) {
       const lst = ctx.occ.filter((o) => o.series.kinds.includes(k));
       const lead = kindDesc(k, lang);
       const cal = renderCalendar(ctx, lang, { occ: lst, title: lang === 'en' ? `${kindName(k, lang)} by date` : `${kindName(k, lang)}の開催カレンダー`, area: true });
-      return { ...listPage(lang, `/kind/${k}/`, [{ href: '/kind/', label: K.crumb }, { label: kindName(k, lang) }], K.listH1(kindName(k, lang)), lead, lst, cal + hubBlock(ctx, lang, 'kind', k, kindName(k, lang))), bannerArt: `/img/kind-banner/${k}.webp` };
+      return { ...listPage(lang, `/kind/${k}/`, [{ href: '/kind/', label: K.crumb }, { label: kindName(k, lang) }], K.listH1(kindName(k, lang)), lead, lst, cal + hubBlock(ctx, lang, 'kind', k, kindName(k, lang)), true), bannerArt: `/img/kind-banner/${k}.webp` };
     }),
   ];
 }
