@@ -74,16 +74,16 @@ export function calendarDays(occ, today, n = 14) {
   });
 }
 
-export function renderCalendar(ctx, lang = 'ja') {
-  const t = S[lang].cal;
+export function renderCalendar(ctx, lang = 'ja', opt = {}) {
+  const t = { ...S[lang].cal, ...(opt.title ? { title: opt.title, sub: '' } : {}) };
   const wdName = lang === 'en' ? WD_EN : WD_JA;
-  const chips = calendarDays(ctx.occ, ctx.today).map((d) => {
+  const chips = calendarDays(opt.occ || ctx.occ, ctx.today).map((d) => {
     const cls = ['cd', d.sat ? 'sat' : '', d.off ? 'off' : '', d.n ? '' : 'none', d.current ? 'cur' : ''].filter(Boolean).join(' ');
     const wd = lang === 'en' ? `(${wdName[d.wd]})` : `（${wdName[d.wd]}）`;
     const inner = `<b>${esc(S[lang].date(d.iso))}</b><em>${esc(wd)}</em><i>${esc(t.n(d.n))}</i>`;
-    return `<li>${d.n ? `<a class="${cls}" href="/date/${d.iso}/"${d.current ? ' aria-current="date"' : ''}>${inner}</a>` : `<span class="${cls}"${d.current ? ' aria-current="date"' : ''}>${inner}</span>`}</li>`;
+    return `<li>${d.n ? `<a class="${cls}" href="/date/${d.iso}/${opt.hash || ''}"${d.current ? ' aria-current="date"' : ''}>${inner}</a>` : `<span class="${cls}"${d.current ? ' aria-current="date"' : ''}>${inner}</span>`}</li>`;
   }).join('');
-  return `<section class="hm-cal" aria-label="${esc(t.aria)}"><div class="hm-in hm-cal-in">
+  return `<section class="hm-cal${opt.area ? ' hm-cal-area' : ''}" aria-label="${esc(t.aria)}"><div class="${opt.area ? '' : 'hm-in '}hm-cal-in">
 <div class="cal-label">${icon('calendar', 34)}<div><strong>${esc(t.title)}</strong>${t.sub ? `<small>${esc(t.sub)}</small>` : ''}</div></div>
 <ol class="cal-days" tabindex="0" aria-label="${esc(t.aria)}">${chips}</ol>
 <a class="cal-view" href="/calendar/">${icon('calendar', 26)}<span>${esc(t.view)}</span>${icon('arrow', 16)}</a>

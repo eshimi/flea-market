@@ -13,7 +13,7 @@ import { PREFS } from './lib/areas.mjs';
 import { CONTACT_EMAIL, SITE } from './lib/nav.mjs';
 import { REVIEWS_ON, reviewsSection } from './lib/reviews-view.mjs';
 import { CONTACT_ON, contactBanner, contactBody } from './lib/contact-view.mjs';
-import { renderHomeBody } from './lib/home-view.mjs';
+import { renderCalendar, renderHomeBody } from './lib/home-view.mjs';
 import { S, T, WD_EN } from './lib/i18n.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, blogBanner, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
@@ -101,7 +101,7 @@ function home(ctx, lang) {
 function listPage(lang, base, crumbs, h1, lead, list, extra = '', filter = false, seo = {}) {
   const af = filter ? areaFilter(list, lang) : '';
   const body = `<div class="in page">${breadcrumb(crumbs, lang)}<h1>${esc(h1)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}${extra}${af}${eventListByMonth(list, lang)}</div>`;
-  return pg(lang, base, { title: seo.title || h1, description: seo.description || P[lang].listDesc(h1), body, scripts: af ? ['/area-filter.js'] : [], keywords: [h1, ...crumbs.map((c) => c.label)], ...(seo.head ? { head: seo.head } : {}) });
+  return pg(lang, base, { title: seo.title || h1, description: seo.description || P[lang].listDesc(h1), body, scripts: af ? ['/area-filter.js'] : [], css: extra.includes('hm-cal') ? ['/cal-band.css'] : [], keywords: [h1, ...crumbs.map((c) => c.label)], ...(seo.head ? { head: seo.head } : {}) });
 }
 
 
@@ -269,10 +269,11 @@ function areaPages(ctx, lang) {
     const pn = prefLabel(p, lang);
     const cityLinks = [...cities].sort().map(([c, name]) => `<li><a href="/area/${p}/${c}/">${esc(cityL(name, lang))}<small>${esc(P[lang].cnt(count((s) => s.venue.cityCode === c)))}</small></a></li>`).join('');
     const ov = prefOverview(p, ctx, lang);
-    const extra = (hubText(ctx.hub, 'area', p, lang) ? hubBlock(ctx, lang, 'area', p, pn) : '') + ov.html + (cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '');
+    const calP = renderCalendar(ctx, lang, { occ: ctx.occ.filter((o) => o.series.venue.pref === p), hash: `#pref=${p}`, title: lang === 'en' ? `Markets by date: ${pn}` : `${pn}の開催カレンダー`, area: true });
+    const extra = calP + (hubText(ctx.hub, 'area', p, lang) ? hubBlock(ctx, lang, 'area', p, pn) : '') + ov.html + (cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '');
     pages.push({ ...listPage(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), ov.lead, ctx.occ.filter((o) => o.series.venue.pref === p), extra), bannerArt: `/img/pref/${p}.webp` });
     for (const [c, name] of cities) {
-      pages.push(listPage(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c), hubBlock(ctx, lang, 'city', c, `${cityL(name, lang)}, ${pn}`)));
+      pages.push(listPage(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c), renderCalendar(ctx, lang, { occ: ctx.occ.filter((o) => o.series.venue.cityCode === c), title: lang === 'en' ? `Markets by date: ${cityL(name, lang)}` : `${cityL(name, lang)}の開催カレンダー`, area: true }) + hubBlock(ctx, lang, 'city', c, `${cityL(name, lang)}, ${pn}`)));
     }
   }
   return pages;
