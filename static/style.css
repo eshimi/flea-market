@@ -223,3 +223,16 @@ aside h2{font-size:15px;margin-bottom:10px}
 .saved-li a{font-weight:700}
 .saved-li .meta{margin:2px 0;color:#6b5e52;font-size:.9rem}
 .saved-rm{font:inherit;font-size:.8rem;background:none;border:1px solid #d9cdbb;border-radius:999px;padding:4px 10px;cursor:pointer}
+
+/* ページ送り・実URLの絞り込みボタン・種類ページの FAQ */
+a.af-chip{display:inline-block;text-decoration:none}
+span.af-chip[aria-current="page"]{background:var(--acc);border-color:var(--acc);color:#fff}
+span.af-chip[aria-current="page"] sup{color:#fbe6dc}
+.pager{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:22px 0 6px}
+.pager a,.pager b{display:inline-block;min-width:34px;text-align:center;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);text-decoration:none;font-size:14px}
+.pager b{background:var(--acc);border-color:var(--acc);color:#fff}
+.pager .pg-nums{display:flex;flex-wrap:wrap;gap:6px}
+.pager small{color:var(--sub);margin-left:auto}
+.kind-faq{margin:30px 0 8px}
+.kind-faq dt{font-weight:700;margin:14px 0 4px}
+.kind-faq dd{margin:0;color:var(--sub);line-height:1.7}

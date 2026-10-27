@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-10-27",
+    "ja": "種類ごと・地域ごとの一覧を軽くしました（40件ずつのページ分け）。「種類×都道府県」（例：東京都のフリーマーケット）の専用ページを追加しました。",
+    "en": "Type and area lists are lighter (40 events per page), and there are now dedicated pages for each type in each prefecture, such as Flea Markets in Tokyo.",
+    "link": "/kind/flea/13/"
+  },
+  {
     "date": "2026-10-26",
     "ja": "マイリスト（登録なしで気に入った市を保存）・共有ボタン・カレンダーへの追加（.ics）を追加しました。",
     "en": "Added My list (save markets without signing up), a share button and add-to-calendar (.ics) files.",

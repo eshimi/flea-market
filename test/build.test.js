@@ -892,3 +892,36 @@ test('マイリスト・共有・カレンダー追加：保存ボタン・/save
   assert.ok(linked.length);
   for (const m of linked[0].body.matchAll(/class="cal-add" href="([^"]+)"/g)) assert.ok(ics.some((f) => f.path === m[1]), m[1]);
 });
+
+test('一覧の軽量化・実URL化：ページ分割（40件）、種類×都道府県のページ、ItemList、FAQ、alt', () => {
+  const { pages } = buildPages(loadData(), '2026-10-24');
+  const has = (p) => pages.find((x) => x.path === p);
+  // 種類ページ：先頭ページは40件以内、2ページ目は noindex・prev/next、サイトマップに入れない
+  const k1 = has('/kind/flea/');
+  assert.ok(k1 && has('/kind/flea/page/2/'));
+  assert.ok((k1.body.match(/<article class="ev/g) || []).length <= 40);
+  assert.match(k1.head, /rel="next"/);
+  assert.ok(!k1.head.includes('noindex'));
+  assert.match(has('/kind/flea/page/2/').head, /noindex,follow/);
+  assert.match(has('/kind/flea/page/2/').head, /rel="prev"/);
+  assert.ok(k1.body.includes('class="pager"'));
+  // ItemList（種類・都道府県のページ）
+  for (const p of ['/kind/flea/', '/area/13/']) assert.match(has(p).head, /"@type":"ItemList"/, p);
+  // 種類×都道府県：件数の多い組み合わせは実URL。ボタンはリンク（#pref ではない）
+  const combo = has('/kind/flea/13/');
+  assert.ok(combo && has('/ja/kind/flea/13/'));
+  assert.match(combo.bannerText + combo.body, /<h1>Flea Markets in Tokyo<\/h1>/);
+  assert.match(has('/ja/kind/flea/13/').bannerText, /<h1>東京都のフリーマーケット<\/h1>/);
+  assert.ok(k1.body.includes('class="af-chip" data-pref="13" href="/kind/flea/13/"'));
+  assert.ok(!k1.body.includes('data-pref="all"'));
+  assert.ok(k1.scripts.includes('/kind-redir.js'));
+  // 件数の少ない組み合わせは作らない
+  assert.ok(!pages.some((x) => /^\/kind\/handmade\/\d{2}\/$/.test(x.path) && x.body.includes('class="ev-list"') && (x.body.match(/<article class="ev/g) || []).length < 3));
+  // FAQ（画面の文と構造化データが同じ）
+  assert.match(k1.body, /class="kind-faq"/);
+  const ld = JSON.parse(/<script type="application\/ld\+json">(\{"@context":"https:\/\/schema.org","@type":"FAQPage"[\s\S]*?)<\/script>/.exec(k1.body)[1]);
+  for (const q of ld.mainEntity) { assert.ok(k1.body.includes(q.name)); assert.ok(k1.body.includes(q.acceptedAnswer.text.replace(/&/g, '&amp;'))); }
+  // トップのカテゴリ画像には alt がある
+  const top = layout(has('/'));
+  assert.ok(!/class="ct-img"><img [^>]*alt=""/.test(top));
+});

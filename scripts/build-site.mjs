@@ -100,10 +100,40 @@ function home(ctx, lang) {
 
 function listPage(lang, base, crumbs, h1, lead, list, extra = '', filter = false, seo = {}) {
   const af = filter ? areaFilter(list, lang) : '';
-  const body = `<div class="in page">${breadcrumb(crumbs, lang)}<h1>${esc(h1)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}${extra}${af}${eventListByMonth(list, lang)}</div>`;
-  return pg(lang, base, { title: seo.title || h1, description: seo.description || P[lang].listDesc(h1), body, scripts: af ? ['/area-filter.js'] : [], css: extra.includes('hm-cal') ? ['/cal-band.css'] : [], keywords: [h1, ...crumbs.map((c) => c.label)], ...(seo.head ? { head: seo.head } : {}) });
+  const body = `<div class="in page">${breadcrumb(crumbs, lang)}<h1>${esc(h1)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}${extra}${af}${eventListByMonth(list, lang)}${seo.after || ''}</div>`;
+  return pg(lang, base, { title: seo.title || h1, description: seo.description || P[lang].listDesc(h1), body, scripts: [...(af ? ['/area-filter.js'] : []), ...(seo.scripts || [])], css: extra.includes('hm-cal') ? ['/cal-band.css'] : [], keywords: [h1, ...crumbs.map((c) => c.label)], ...(seo.head ? { head: seo.head } : {}) });
 }
 
+
+// ---- 長い一覧は、実URLのページに分ける（1ページ40件。2ページ目以降は noindex,follow・サイトマップに入れない）----
+export const PAGE_SIZE = 40;
+const PG_TXT = {
+  en: { page: (n) => `Page ${n}`, of: (n, t) => `Page ${n} of ${t}`, prev: 'Previous', next: 'Next', nav: 'Pages' },
+  ja: { page: (n) => `${n}ページ目`, of: (n, t) => `${n} / ${t} ページ`, prev: '前へ', next: '次へ', nav: 'ページ送り' },
+};
+function pager(base, n, total, lang) {
+  if (total < 2) return '';
+  const x = PG_TXT[lang];
+  const href = (i) => (i === 1 ? base : `${base}page/${i}/`);
+  const link = (i, label, rel) => `<a href="${href(i)}" rel="${rel}">${esc(label)}</a>`;
+  const nums = Array.from({ length: total }, (_, i) => i + 1).map((i) => (i === n ? `<b aria-current="page">${i}</b>` : `<a href="${href(i)}">${i}</a>`)).join('');
+  return `<nav class="pager" aria-label="${esc(x.nav)}">${n > 1 ? link(n - 1, `‹ ${x.prev}`, 'prev') : ''}<span class="pg-nums">${nums}</span>${n < total ? link(n + 1, `${x.next} ›`, 'next') : ''}<small>${esc(x.of(n, total))}</small></nav>`;
+}
+function listPaged(lang, base, crumbs, h1, lead, list, extra = '', filterHtml = '', seo = {}) {
+  const total = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+  const x = PG_TXT[lang];
+  return Array.from({ length: total }, (_, i) => {
+    const n = i + 1;
+    const slice = list.slice(i * PAGE_SIZE, (i + 1) * PAGE_SIZE);
+    const path = n === 1 ? base : `${base}page/${n}/`;
+    const cr = n === 1 ? crumbs : [...crumbs.slice(0, -1), { href: base, label: crumbs[crumbs.length - 1].label }, { label: x.page(n) }];
+    const rel = (k, m) => `<link rel="${k}" href="${SITE.url}${langPath(m === 1 ? base : `${base}page/${m}/`, lang)}">\n`;
+    const head = `${listLd(h1, slice, lang)}${n > 1 ? rel('prev', n - 1) : ''}${n < total ? rel('next', n + 1) : ''}${n > 1 ? '<meta name="robots" content="noindex,follow">\n' : ''}`;
+    const title = n === 1 ? (seo.title || h1) : `${seo.title || h1} (${x.page(n)})`;
+    const first = n === 1;
+    return listPage(lang, path, cr, first ? h1 : `${h1} (${x.page(n)})`, first ? lead : '', slice, first ? extra + filterHtml : '', false, { title, description: first ? seo.description : undefined, head, scripts: first ? seo.scripts : [], after: pager(base, n, total, lang) + (first ? seo.after || '' : '') });
+  });
+}
 
 // ---- 日別・今週末ページの SEO（タイトル・説明・書き出しの文・構造化データ・日別への導線）----
 // 検索する人の言葉（Japan・flea market・this weekend・件数）をタイトルの前に置く。件数・内訳は実データから作る
@@ -262,7 +292,7 @@ function areaPages(ctx, lang) {
     if (s.venue.cityCode) prefs.get(p).set(s.venue.cityCode, s.venue.city);
   }
   const count = (f) => ctx.occ.filter((o) => isActive(o) && f(o.series)).length;
-  const idx = [...prefs.keys()].sort().map((p) => `<li><a class="pref-card" href="/area/${p}/"><img src="/img/pref/${p}.webp" alt="" width="182" height="172" loading="lazy" decoding="async"><span class="pc-t">${esc(prefLabel(p, lang))}<small>${count((s) => s.venue.pref === p)}</small></span></a></li>`).join('');
+  const idx = [...prefs.keys()].sort().map((p) => `<li><a class="pref-card" href="/area/${p}/"><img src="/img/pref/${p}.webp" alt="${esc(lang === 'en' ? `${prefLabel(p, lang)} illustration` : `${prefLabel(p, lang)}のイラスト`)}" width="182" height="172" loading="lazy" decoding="async"><span class="pc-t">${esc(prefLabel(p, lang))}<small>${count((s) => s.venue.pref === p)}</small></span></a></li>`).join('');
   const countNote = lang === 'en' ? 'Numbers are markets in the next 120 days.' : '数字は、今後120日の開催の件数です。';
   pages.push(pg(lang, '/area/', { title: A.h1, description: A.desc, bannerText: `${breadcrumb([{ label: A.h1 }], lang)}<h1>${esc(A.h1)}</h1><p class="lead">${esc(A.lead)}</p>`, body: `<div class="in page"><p class="count-note">${esc(countNote)}</p>${idx ? `<ul class="grid-links">${idx}</ul>` : `<p class="empty">${esc(P[lang].soon)}</p>`}</div>` }));
   for (const [p, cities] of prefs) {
@@ -271,9 +301,9 @@ function areaPages(ctx, lang) {
     const ov = prefOverview(p, ctx, lang);
     const calP = renderCalendar(ctx, lang, { occ: ctx.occ.filter((o) => o.series.venue.pref === p), hash: `#pref=${p}`, title: lang === 'en' ? `Markets by date: ${pn}` : `${pn}の開催カレンダー`, area: true });
     const extra = calP + (hubText(ctx.hub, 'area', p, lang) ? hubBlock(ctx, lang, 'area', p, pn) : '') + ov.html + (cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '');
-    pages.push({ ...listPage(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), ov.lead, ctx.occ.filter((o) => o.series.venue.pref === p), extra), bannerArt: `/img/pref/${p}.webp` });
+    pages.push(...listPaged(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), ov.lead, ctx.occ.filter((o) => o.series.venue.pref === p), extra).map((x) => ({ ...x, bannerArt: `/img/pref/${p}.webp` })));
     for (const [c, name] of cities) {
-      pages.push(listPage(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c), renderCalendar(ctx, lang, { occ: ctx.occ.filter((o) => o.series.venue.cityCode === c), title: lang === 'en' ? `Markets by date: ${cityL(name, lang)}` : `${cityL(name, lang)}の開催カレンダー`, area: true }) + hubBlock(ctx, lang, 'city', c, `${cityL(name, lang)}, ${pn}`)));
+      pages.push(...listPaged(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c), renderCalendar(ctx, lang, { occ: ctx.occ.filter((o) => o.series.venue.cityCode === c), title: lang === 'en' ? `Markets by date: ${cityL(name, lang)}` : `${cityL(name, lang)}の開催カレンダー`, area: true }) + hubBlock(ctx, lang, 'city', c, `${cityL(name, lang)}, ${pn}`)));
     }
   }
   return pages;
@@ -309,6 +339,88 @@ function hubBlock(ctx, lang, type, key, label) {
   return `<section class="hub-intro" data-hub="${esc(type)}:${esc(key)}"${manual ? ' data-manual="1"' : ''}><p>${esc(text)}</p></section>`;
 }
 
+// 種類のページ（全国）と、種類×都道府県のページ（件数が COMBO_MIN 以上のものだけ。実URL）
+export const COMBO_MIN = 3;
+const KFAQ = {
+  en: {
+    h: 'Frequently asked questions',
+    qCount: (kn) => `How many ${kn} are listed?`,
+    aCount: (s, n, top) => `${s} listing${s === 1 ? '' : 's'}, with ${n} event${n === 1 ? '' : 's'} in the next ${WINDOW_DAYS} days.${top ? ` Most listings: ${top}.` : ''}`,
+    qFreq: (kn) => `Are ${kn} held regularly?`,
+    aFreq: (rec, one) => `${rec} listing${rec === 1 ? ' repeats' : 's repeat'} on a regular rule such as a fixed day every month; ${one} ${one === 1 ? 'is' : 'are'} held on specific dates. Each detail page shows the recurrence rule or the dates.`,
+    qRain: 'What happens if it rains?',
+    aRain: (m, s) => `${m} of ${s} listings show an official rain policy on their detail page. Where none is shown, it is not stated on the official page, so please check the organizer before you go.`,
+    qOff: 'Is the information official?',
+    aOff: 'Dates are taken from organizer and municipal pages. Each listing shows when it was last checked; items not checked for 14 days are marked “to be confirmed”.',
+    qNear: 'How do I find one near me?',
+    aNear: 'Use the prefecture buttons on this page, or browse by area.',
+  },
+  ja: {
+    h: 'よくある質問',
+    qCount: (kn) => `${kn}は何件載っていますか？`,
+    aCount: (s, n, top) => `${s}件の掲載があり、今後${WINDOW_DAYS}日の開催は${n}件です。${top ? `掲載が多い地域：${top}。` : ''}`,
+    qFreq: (kn) => `${kn}は定期的に開かれていますか？`,
+    aFreq: (rec, one) => `${rec}件は「毎月第○日曜」のようなきまりで繰り返し開かれ、${one}件は日付が決まった開催です。各詳細ページに、開催のきまり、または日付があります。`,
+    qRain: '雨のときはどうなりますか？',
+    aRain: (m, s) => `${s}件のうち${m}件は、公式の雨天時の扱いを詳細ページに載せています。載せていないものは、公式ページに記載がないため、主催者に確認してください。`,
+    qOff: '載っている情報は公式のものですか？',
+    aOff: '日程は、主催者・自治体の公式ページをもとにしています。各掲載に最終確認日があり、14日以上確認できていないものは「要確認」と表示します。',
+    qNear: '近くの市を探すには？',
+    aNear: 'このページの都道府県ボタン、または地域のページから探せます。',
+  },
+};
+function kindFaq(ctx, k, lang, ser, act) {
+  const f = KFAQ[lang];
+  const kn = kindName(k, lang);
+  const prefs = new Map();
+  for (const s of ser) prefs.set(s.venue.pref, (prefs.get(s.venue.pref) || 0) + 1);
+  const top = [...prefs].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([p, n]) => `${prefLabel(p, lang)} ${n}`).join(lang === 'ja' ? '、' : ', ');
+  const rec = ser.filter((s) => s.recurrence.type !== 'dates').length;
+  const rain = ser.filter((s) => s.visitor?.rain).length;
+  const qa = [[f.qCount(kn), f.aCount(ser.length, act.length, top)], [f.qFreq(kn), f.aFreq(rec, ser.length - rec)], [f.qRain, f.aRain(rain, ser.length)], [f.qOff, f.aOff], [f.qNear, f.aNear]];
+  const ld = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: qa.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+  const html = `<section class="kind-faq"><h2 class="sec-h">${esc(f.h)}</h2><dl>${qa.map(([q, a]) => `<dt>${esc(q)}</dt><dd>${esc(a)}</dd>`).join('')}</dl><script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script></section>`;
+  return html;
+}
+function kindSection(ctx, lang, k) {
+  const K = P[lang].kind;
+  const kn = kindName(k, lang);
+  const lst = ctx.occ.filter((o) => o.series.kinds.includes(k));
+  const act = lst.filter(isActive);
+  const ser = ctx.series.filter((s) => s.kinds.includes(k));
+  const byPref = new Map();
+  for (const o of act) byPref.set(o.series.venue.pref, (byPref.get(o.series.venue.pref) || 0) + 1);
+  const combos = [...byPref].filter(([, n]) => n >= COMBO_MIN).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  const AF = { en: { label: 'Filter by prefecture', all: 'All' }, ja: { label: '都道府県で絞り込む', all: 'すべて' } }[lang];
+  const nav = (cur) => {
+    const chips = combos.map(([p, n]) => (p === cur ? `<span class="af-chip" aria-current="page">${esc(prefLabel(p, lang))}<sup>${n}</sup></span>` : `<a class="af-chip" data-pref="${esc(p)}" href="/kind/${k}/${p}/">${esc(prefLabel(p, lang))}<sup>${n}</sup></a>`)).join('');
+    if (!chips) return '';
+    return `<nav class="af-chips af-links" aria-label="${esc(AF.label)}">${cur ? `<a class="af-chip" href="/kind/${k}/">${esc(AF.all)}<sup>${act.length}</sup></a>` : `<span class="af-chip" aria-current="page">${esc(AF.all)}<sup>${act.length}</sup></span>`}${chips}</nav>`;
+  };
+  const cal = (occ, title) => renderCalendar(ctx, lang, { occ, title, area: true });
+  const out = listPaged(lang, `/kind/${k}/`, [{ href: '/kind/', label: K.crumb }, { label: kn }], K.listH1(kn), kindDesc(k, lang), lst,
+    cal(lst, lang === 'en' ? `${kn} by date` : `${kn}の開催カレンダー`) + hubBlock(ctx, lang, 'kind', k, kn), nav(null),
+    { after: kindFaq(ctx, k, lang, ser, act), scripts: ['/kind-redir.js'] }).map((x) => ({ ...x, bannerArt: `/img/kind-banner/${k}.webp` }));
+  for (const [p] of combos) {
+    const pn = prefLabel(p, lang);
+    const cl = lst.filter((o) => o.series.venue.pref === p);
+    const ca = cl.filter(isActive);
+    const cs = new Set(ca.map((o) => o.series.id)).size;
+    const cities = new Set(ca.map((o) => o.series.venue.city).filter(Boolean));
+    const h1 = lang === 'en' ? `${kn} in ${pn}` : `${pn}の${kn}`;
+    const lead = lang === 'en'
+      ? `${cs} ${kn} listing${cs === 1 ? '' : 's'} in ${pn}, with ${ca.length} event${ca.length === 1 ? '' : 's'} in the next ${WINDOW_DAYS} days${cities.size ? ` across ${cities.size} ${cities.size === 1 ? 'city or ward' : 'cities and wards'}` : ''}. All dates come from official organizer and municipal pages.`
+      : `${pn}の${kn}：${cs}件の掲載があり、今後${WINDOW_DAYS}日の開催は${ca.length}件です。日程は、主催者・自治体の公式ページをもとにしています。`;
+    const desc = lang === 'en'
+      ? `${kn} in ${pn}: ${ca.length} events in the next ${WINDOW_DAYS} days, from official organizer and municipal pages, updated every morning.`
+      : `${pn}の${kn}：今後${WINDOW_DAYS}日で${ca.length}件。主催者・自治体の公式情報をもとに、毎朝更新しています。`;
+    out.push(...listPaged(lang, `/kind/${k}/${p}/`, [{ href: '/kind/', label: K.crumb }, { href: `/kind/${k}/`, label: kn }, { label: pn }], h1, lead, cl,
+      cal(cl, lang === 'en' ? `${kn} in ${pn} by date` : `${pn}の${kn}カレンダー`), nav(p), { title: h1, description: desc })
+      .map((x) => ({ ...x, bannerArt: `/img/kind-banner/${k}.webp` })));
+  }
+  return out;
+}
+
 function kindPages(ctx, lang) {
   const K = P[lang].kind;
   const KC = {
@@ -322,16 +434,11 @@ function kindPages(ctx, lang) {
   const kcount = (k) => ctx.occ.filter((o) => isActive(o) && o.series.kinds.includes(k)).length;
   const idx = Object.keys(KINDS).map((k) => {
     const v = KC[k];
-    return `<li><a class="kc" href="/kind/${k}/" style="--kc:${v.c};--kd:${v.d}"><span class="kc-t"><b>${esc(kindName(k, lang))}</b><em>${esc(v.en)}</em><small>${esc(lang === 'ja' ? v.ja : v.enT)}</small><i>${esc(P[lang].cnt(kcount(k)))}<span class="kc-go">${icon('arrow', 16)}</span></i></span><span class="kc-art" aria-hidden="true"><img src="/img/kinds/${k}-400.webp" alt="" width="400" height="300" loading="lazy" decoding="async"></span></a></li>`;
+    return `<li><a class="kc" href="/kind/${k}/" style="--kc:${v.c};--kd:${v.d}"><span class="kc-t"><b>${esc(kindName(k, lang))}</b><em>${esc(v.en)}</em><small>${esc(lang === 'ja' ? v.ja : v.enT)}</small><i>${esc(P[lang].cnt(kcount(k)))}<span class="kc-go">${icon('arrow', 16)}</span></i></span><span class="kc-art" aria-hidden="true"><img src="/img/kinds/${k}-400.webp" alt="${esc(lang === 'en' ? `${kindName(k, lang)}: a market scene` : `${kindName(k, lang)}の市の様子`)}" width="400" height="300" loading="lazy" decoding="async"></span></a></li>`;
   }).join('');
   return [
     pg(lang, '/kind/', { keywords: Object.keys(KINDS).map((k) => kindName(k, lang)), title: K.h1, description: lang === 'ja' ? 'フリーマーケット・蚤の市・骨董市・手作り市・マルシェの種類から探せます。' : 'Find flea markets, nomi-no-ichi, antique fairs, handmade markets and marchés by type.', body: `<div class="in page">${breadcrumb([{ label: K.h1 }], lang)}<h1>${esc(K.h1)}</h1><ul class="kc-grid">${idx}</ul></div>`, css: ['/kind-cards.css'] }),
-    ...Object.keys(KINDS).map((k) => {
-      const lst = ctx.occ.filter((o) => o.series.kinds.includes(k));
-      const lead = kindDesc(k, lang);
-      const cal = renderCalendar(ctx, lang, { occ: lst, title: lang === 'en' ? `${kindName(k, lang)} by date` : `${kindName(k, lang)}の開催カレンダー`, area: true });
-      return { ...listPage(lang, `/kind/${k}/`, [{ href: '/kind/', label: K.crumb }, { label: kindName(k, lang) }], K.listH1(kindName(k, lang)), lead, lst, cal + hubBlock(ctx, lang, 'kind', k, kindName(k, lang)), true), bannerArt: `/img/kind-banner/${k}.webp` };
-    }),
+    ...Object.keys(KINDS).flatMap((k) => kindSection(ctx, lang, k)),
   ];
 }
 
@@ -788,7 +895,7 @@ function main() {
   writeFileSync(join(out, 'series-ids.json'), JSON.stringify(SERIES_IDS));
   writeFileSync(join(out, 'spot-ids.json'), JSON.stringify(spots.map((sp) => sp.venue.id)));
   writeFileSync(join(out, 'events.json'), JSON.stringify({ today, events: searchIndex(occ), spots: spotIndexData(spots) }));
-  writeFileSync(join(out, 'pages.json'), JSON.stringify(pages.filter((p) => !p.path.endsWith('.html') && !/\/saved\/$/.test(p.path)).map((p) => p.path)));
+  writeFileSync(join(out, 'pages.json'), JSON.stringify(pages.filter((p) => !p.path.endsWith('.html') && !/\/saved\/$/.test(p.path) && !(p.head || '').includes('noindex')).map((p) => p.path)));
   console.log(`${today} 基準で ${pages.length} ページ、開催 ${occ.length} 件を ${out} に書き出しました`);
 }
 

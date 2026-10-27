@@ -231,16 +231,16 @@ export function renderVendorBanner(lang = 'en') {
 
 // ---- 新しいトップ（写真のカテゴリー・地域の文字タイル・ガイド帯）----
 const CATS = [
-  { img: 'cat-antiques', href: '/kind/kotto/', en: 'Antiques & Vintage', ja: '骨董・ヴィンテージ' },
-  { img: 'cat-secondhand', href: '/kind/flea/', en: 'Secondhand & Fashion', ja: '古着・ファッション' },
-  { img: 'cat-handmade', href: '/kind/handmade/', en: 'Crafts & Handmade', ja: '手作り・クラフト' },
-  { img: 'cat-food', href: '/kind/marche/', en: 'Local Food', ja: 'ご当地グルメ' },
-  { img: 'cat-traditional', href: '/kind/engi/', en: 'Traditional & Cultural', ja: '縁日・伝統' },
-  { img: 'cat-markets', href: '/kind/', en: 'All Markets', ja: 'すべての市' },
+  { img: 'cat-antiques', href: '/kind/kotto/', en: 'Antiques & Vintage', ja: '骨董・ヴィンテージ', altEn: 'Antique and vintage goods on a market stall', altJa: '市に並ぶ骨董・ヴィンテージの品' },
+  { img: 'cat-secondhand', href: '/kind/flea/', en: 'Secondhand & Fashion', ja: '古着・ファッション', altEn: 'Secondhand clothes on racks at a flea market', altJa: 'フリーマーケットのラックに並ぶ古着' },
+  { img: 'cat-handmade', href: '/kind/handmade/', en: 'Crafts & Handmade', ja: '手作り・クラフト', altEn: 'Handmade crafts displayed at a market', altJa: '市に並ぶ手作りの作品' },
+  { img: 'cat-food', href: '/kind/marche/', en: 'Local Food', ja: 'ご当地グルメ', altEn: 'Local food and produce at a market', altJa: '市に並ぶ地元の食べ物・農産物' },
+  { img: 'cat-traditional', href: '/kind/engi/', en: 'Traditional & Cultural', ja: '縁日・伝統', altEn: 'Festival stalls at a Japanese shrine or temple fair', altJa: '神社・寺の縁日に並ぶ露店' },
+  { img: 'cat-markets', href: '/kind/', en: 'All Markets', ja: 'すべての市', altEn: 'A busy market in Japan', altJa: 'にぎわう日本の市' },
 ];
 export function renderCategories(lang = 'ja') {
   const en = lang === 'en';
-  const items = CATS.map((c) => `<li><a class="ctile" href="${c.href}"><span class="ct-img"><img src="/img/home/${c.img}.webp" alt="" width="276" height="228" loading="lazy" decoding="async"></span><b>${esc(en ? c.en : c.ja)}</b></a></li>`).join('');
+  const items = CATS.map((c) => `<li><a class="ctile" href="${c.href}"><span class="ct-img"><img src="/img/home/${c.img}.webp" alt="${esc(en ? c.altEn : c.altJa)}" width="276" height="228" loading="lazy" decoding="async"></span><b>${esc(en ? c.en : c.ja)}</b></a></li>`).join('');
   return `<section class="hm-sec hm-cats" aria-label="${en ? 'Categories' : 'カテゴリー'}"><div class="hm-in"><ul class="ctiles">${items}</ul></div></section>`;
 }
 
