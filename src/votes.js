@@ -57,11 +57,16 @@ let idsCache = { at: 0, ids: null };
 export async function knownSpot(env, id) {
   if (!idsCache.ids || Date.now() - idsCache.at > 10 * 60 * 1000) {
     try {
-      const r = await env.ASSETS.fetch(new Request('https://assets.local/spot-ids.json'));
-      idsCache = { at: Date.now(), ids: new Set(r.ok ? await r.json() : []) };
+      const get = async (name) => { const r = await env.ASSETS.fetch(new Request(`https://assets.local/${name}`)); return r.ok ? await r.json() : []; };
+      idsCache = { at: Date.now(), ids: new Set(await get('spot-ids.json')), series: new Set(await get('series-ids.json')) };
     } catch { return false; }
   }
   return idsCache.ids.has(id);
+}
+// 開催（シリーズ）の id。会場の id と重なるときは会場が優先
+export async function knownSeries(env, id) {
+  await knownSpot(env, id);
+  return Boolean(idsCache.series?.has(id));
 }
 export const resetIdsCache = () => { idsCache = { at: 0, ids: null }; };
 
@@ -76,8 +81,11 @@ async function verifyTurnstile(env, token, ip, fetchImpl) {
 
 // /api/votes/<会場id>
 export async function handleVotes(request, env, id, fetchImpl = fetch) {
-  if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(id) || id.length > 80 || !(await knownSpot(env, id))) return json({ error: 'not found' }, 404);
-  const stub = env.SPOT_VOTES.get(env.SPOT_VOTES.idFromName(id));
+  if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(id) || id.length > 80) return json({ error: 'not found' }, 404);
+  const isSpot = await knownSpot(env, id);
+  if (!isSpot && !(await knownSeries(env, id))) return json({ error: 'not found' }, 404);
+  // 会場と開催は、別の Durable Object（名前の前に s: を付ける）
+  const stub = env.SPOT_VOTES.get(env.SPOT_VOTES.idFromName(isSpot ? id : `s:${id}`));
   if (request.method === 'GET') {
     const r = await stub.fetch('https://do/', { method: 'GET' });
     return json((await r.json()), 200, { 'Cache-Control': 'public, max-age=20' });

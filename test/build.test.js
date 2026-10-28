@@ -352,7 +352,7 @@ test('地図・経路のリンクと当日の天気（気象庁）', async () =>
   assert.match(pages.find((p) => p.path === '/e/setagaya-funabashi-nomi-no-ichi-2026-autumn/').body, /Looked up from the venue name \(not stated on the official page; please check before you go\)/);
   assert.ok(!ja('oedo-antique-market-tokyo-international-forum').includes('多くのフリーマーケット・市は入場無料'), '公式の入場料があるものには、目安を出さない');
   // 評価フォームの script は、送信先（CONTACT_EMAIL）が設定されたときだけ
-  assert.deepEqual(en.scripts, ['/weather.js', '/map.js', ...(REVIEWS_ON ? ['/review.js'] : [])]);
+  assert.deepEqual(en.scripts, ['/weather.js', '/map.js', '/vote.js', ...(REVIEWS_ON ? ['/review.js'] : [])]);
   assert.match(en.body, /<aside class="ev-side"/);
   // 位置のない会場は、押すと Google マップの埋め込みを読み込むボタン
   const noGeo = real.series.find((s) => !real.geo[s.id]);
@@ -924,4 +924,39 @@ test('一覧の軽量化・実URL化：ページ分割（40件）、種類×都�
   // トップのカテゴリ画像には alt がある
   const top = layout(has('/'));
   assert.ok(!/class="ct-img"><img [^>]*alt=""/.test(top));
+});
+
+test('開催（シリーズ）にもワンクリック：知っている id だけ・会場とは別の保存先・詳細ページにボタン', async () => {
+  const { SpotVotes, handleVotes, resetIdsCache } = await import('../src/votes.js');
+  const stores = new Map();
+  const names = [];
+  const env = {
+    ASSETS: { fetch: async (req) => new Response(JSON.stringify(String(req.url).endsWith('series-ids.json') ? ['toji-kobo-ichi'] : ['toji-park'])) },
+    SPOT_VOTES: { idFromName: (n) => { names.push(n); return n; }, get: (n) => { if (!stores.has(n)) { const m = new Map(); stores.set(n, new SpotVotes({ storage: { get: async (k) => m.get(k), put: async (k, v) => { m.set(k, v); } } })); } return { fetch: (u, init) => stores.get(n).fetch(new Request(u, init)) }; } },
+  };
+  resetIdsCache();
+  const post = (id) => handleVotes(new Request(`https://x.example/api/votes/${id}`, { method: 'POST', headers: { 'Content-Type': 'application/json', Origin: 'https://x.example', 'CF-Connecting-IP': '1.2.3.4' }, body: JSON.stringify({ choice: 'want', on: true, voter: 'a'.repeat(20), t: 3000 }) }), env, id);
+  assert.equal((await post('toji-kobo-ichi')).status, 200);
+  assert.ok(names.includes('s:toji-kobo-ichi'));
+  assert.equal((await post('nope')).status, 404);
+  const { pages } = buildPages(loadData(), '2026-10-24');
+  const ev = pages.find((x) => x.path === '/e/toji-kobo-ichi/');
+  assert.ok(ev.body.includes('class="ev-card poll"') && ev.body.includes('data-spot="toji-kobo-ichi"'));
+  assert.ok(ev.scripts.includes('/vote.js'));
+});
+
+test('地域×月のページ：年つきURL・5件以上の月だけ・都道府県ページから月ボタン', () => {
+  const { pages } = buildPages(loadData(), '2026-10-24');
+  const months = pages.filter((x) => /^\/area\/13\/\d{4}-\d{2}\/$/.test(x.path));
+  assert.ok(months.length >= 3, `東京の月ページ ${months.length}`);
+  const p = months.find((x) => x.path === '/area/13/2026-11/');
+  assert.ok(p && pages.some((x) => x.path === '/ja/area/13/2026-11/'));
+  assert.match(p.bannerText, /<h1>Tokyo Flea Markets in November 2026<\/h1>/);
+  assert.match(pages.find((x) => x.path === '/ja/area/13/2026-11/').bannerText, /<h1>2026年11月の東京都のフリーマーケット・蚤の市<\/h1>/);
+  assert.ok((p.body.match(/<article class="ev/g) || []).length > 0);
+  assert.match(p.head, /"@type":"ItemList"/);
+  const pref = pages.find((x) => x.path === '/area/13/').body;
+  assert.ok(pref.includes('href="/area/13/2026-11/"'));
+  // 5件未満の月は作らない
+  for (const m of months) assert.ok((m.body.match(/<article class="ev/g) || []).length >= 1);
 });

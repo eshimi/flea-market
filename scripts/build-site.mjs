@@ -7,7 +7,7 @@ import { addDays, holidayName, isDayOff, parseYmd, todayJst, upcomingWeekend, we
 import { buildOccurrences, isActive, lastChecked, WINDOW_DAYS } from './lib/events.mjs';
 import { pastOccurrences } from './lib/archive.mjs';
 import { buildSpots } from './lib/spots.mjs';
-import { spotIndex, spotPage } from './lib/spot-view.mjs';
+import { pollBlock, spotIndex, spotPage } from './lib/spot-view.mjs';
 import { KINDS } from './lib/kinds.mjs';
 import { PREFS } from './lib/areas.mjs';
 import { CONTACT_EMAIL, SITE } from './lib/nav.mjs';
@@ -133,6 +133,38 @@ function listPaged(lang, base, crumbs, h1, lead, list, extra = '', filterHtml = 
     const first = n === 1;
     return listPage(lang, path, cr, first ? h1 : `${h1} (${x.page(n)})`, first ? lead : '', slice, first ? extra + filterHtml : '', false, { title, description: first ? seo.description : undefined, head, scripts: first ? seo.scripts : [], after: pager(base, n, total, lang) + (first ? seo.after || '' : '') });
   });
+}
+
+// ---- 地域 × 月のページ（年つき。/area/13/2026-11/）。今後120日の開催が MONTH_MIN 件以上ある月だけ ----
+export const MONTH_MIN = 5;
+function monthPrefs(ctx, p) {
+  const m = new Map();
+  for (const o of ctx.occ) if (isActive(o) && o.series.venue.pref === p) m.set(o.date.slice(0, 7), (m.get(o.date.slice(0, 7)) || 0) + 1);
+  return new Map([...m].filter(([, n]) => n >= MONTH_MIN).sort((a, b) => (a[0] < b[0] ? -1 : 1)));
+}
+function monthNav(mp, p, cur, lang) {
+  if (!mp.size) return '';
+  const label = lang === 'en' ? 'Browse by month' : '月から探す';
+  const chips = [...mp].map(([ym, n]) => (ym === cur ? `<span class="af-chip" aria-current="page">${esc(monthTitle(ym, lang))}<sup>${n}</sup></span>` : `<a class="af-chip" href="/area/${p}/${ym}/">${esc(monthTitle(ym, lang))}<sup>${n}</sup></a>`)).join('');
+  return `<nav class="af-chips af-links" aria-label="${esc(label)}">${chips}</nav>`;
+}
+function monthPages(ctx, lang, p, pn, ym, mp, A) {
+  const mt = monthTitle(ym, lang);
+  const all = ctx.occ.filter((o) => o.series.venue.pref === p && o.date.startsWith(ym));
+  const act = all.filter(isActive);
+  const days = new Set(act.map((o) => o.date)).size;
+  const kinds = new Map();
+  for (const o of act) for (const k of o.series.kinds) kinds.set(k, (kinds.get(k) || 0) + 1);
+  const kl = [...kinds].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([k, n]) => `${kindName(k, lang)} ${n}`).join(lang === 'ja' ? '、' : ', ');
+  const h1 = lang === 'en' ? `${pn} Flea Markets in ${mt}` : `${mt}の${pn}のフリーマーケット・蚤の市`;
+  const lead = lang === 'en'
+    ? `${act.length} market${act.length === 1 ? '' : 's'} on ${days} day${days === 1 ? '' : 's'} in ${pn} in ${mt}${kl ? ` (${kl})` : ''}. Dates come from official organizer and municipal pages.`
+    : `${pn}の${mt}の開催は、${days}日にわたって${act.length}件です${kl ? `（${kl}）` : ''}。日程は、主催者・自治体の公式ページをもとにしています。`;
+  const desc = lang === 'en'
+    ? `${pn} flea markets, antique fairs and craft markets in ${mt}: ${act.length} events on ${days} days, from official organizer and municipal pages.`
+    : `${mt}の${pn}のフリーマーケット・蚤の市・骨董市：${days}日で${act.length}件。主催者・自治体の公式情報をもとにしています。`;
+  return listPaged(lang, `/area/${p}/${ym}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: mt }], h1, lead, all, monthNav(mp, p, ym, lang), '', { title: h1, description: desc })
+    .map((x) => ({ ...x, bannerArt: `/img/pref/${p}.webp` }));
 }
 
 // ---- 日別・今週末ページの SEO（タイトル・説明・書き出しの文・構造化データ・日別への導線）----
@@ -300,8 +332,10 @@ function areaPages(ctx, lang) {
     const cityLinks = [...cities].sort().map(([c, name]) => `<li><a href="/area/${p}/${c}/">${esc(cityL(name, lang))}<small>${esc(P[lang].cnt(count((s) => s.venue.cityCode === c)))}</small></a></li>`).join('');
     const ov = prefOverview(p, ctx, lang);
     const calP = renderCalendar(ctx, lang, { occ: ctx.occ.filter((o) => o.series.venue.pref === p), hash: `#pref=${p}`, title: lang === 'en' ? `Markets by date: ${pn}` : `${pn}の開催カレンダー`, area: true });
-    const extra = calP + (hubText(ctx.hub, 'area', p, lang) ? hubBlock(ctx, lang, 'area', p, pn) : '') + ov.html + (cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '');
+    const mp = monthPrefs(ctx, p);
+    const extra = calP + monthNav(mp, p, null, lang) + (hubText(ctx.hub, 'area', p, lang) ? hubBlock(ctx, lang, 'area', p, pn) : '') + ov.html + (cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '');
     pages.push(...listPaged(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), ov.lead, ctx.occ.filter((o) => o.series.venue.pref === p), extra).map((x) => ({ ...x, bannerArt: `/img/pref/${p}.webp` })));
+    for (const ym of mp.keys()) pages.push(...monthPages(ctx, lang, p, pn, ym, mp, A));
     for (const [c, name] of cities) {
       pages.push(...listPaged(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c), renderCalendar(ctx, lang, { occ: ctx.occ.filter((o) => o.series.venue.cityCode === c), title: lang === 'en' ? `Markets by date: ${cityL(name, lang)}` : `${cityL(name, lang)}の開催カレンダー`, area: true }) + hubBlock(ctx, lang, 'city', c, `${cityL(name, lang)}, ${pn}`)));
     }
@@ -564,13 +598,14 @@ ${dates}
 ${pastDatesBlock(ctx.past.filter((o) => o.series.id === s.id), lang)}
 <h2 class="sec-h" id="shuten">${esc(p.secVendor)}</h2>
 ${ex ? `<dl class="facts">${row(p.fee, tv(s, 'fee', ex.fee, lang) + srcNote(s, 'fee', p))}${row(p.apply, tv(s, 'apply', ex.apply, lang) + srcNote(s, 'apply', p))}${row(p.applyAt, ex.applyUrl ? `<a href="${esc(ex.applyUrl)}" rel="noopener">${esc(p.applyLink)}</a>` : TBC(lang))}${ex.notes ? row(p.notes, tv(s, 'notes', ex.notes, lang) + srcNote(s, 'notes', p)) : ''}</dl>` : `<p class="empty">${esc(p.noVendor)}</p>`}
+${pollBlock({ id: s.id }, lang, true)}
 ${reviewsSection(s.id, lang)}
 <h2 class="sec-h">${esc(p.secSrc)}</h2>
 <ul class="sources">${s.sources.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x.url)}</a>（${checked}${esc(x.checkedAt)}）</li>`).join('')}</ul>
 <p class="note">${s.recurrence.type === 'dates' ? '' : esc(p.rule(lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence)))} ${esc(disclaimer(lang))}</p>
 </div>${side}</div>
 </div>`;
-  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list, lang, p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s))), scripts: ['/weather.js', '/map.js', ...(REVIEWS_ON ? ['/review.js'] : [])], css: ['/review.css'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
+  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list, lang, p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s))), scripts: ['/weather.js', '/map.js', '/vote.js', ...(REVIEWS_ON ? ['/review.js'] : [])], css: ['/review.css', '/poll.css'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
 }
 
 function shutenPage(ctx, lang) {

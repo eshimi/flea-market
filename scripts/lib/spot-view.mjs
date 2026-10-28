@@ -85,8 +85,8 @@ function photoBlock(v, lang) {
   return `<figure class="sp-photo"><img src="/img/spots/${esc(im.file)}" alt="${esc(lang === 'ja' ? im.altJa : im.altEn)}" width="800" height="533" decoding="async"><figcaption>${esc(t.photo)}: ${esc(im.author)} / <a href="${esc(im.licenseUrl || im.sourceUrl)}" rel="noopener nofollow">${esc(im.license)}</a> / <a href="${esc(im.sourceUrl)}" rel="noopener nofollow">Wikimedia Commons</a>${lang === 'ja' ? '（トリミング・縮小）' : ' (cropped and resized)'}</figcaption></figure>`;
 }
 
-function pollBlock(v, lang) {
-  const q = POLL[lang];
+export function pollBlock(v, lang, market = false) {
+  const q = { ...POLL[lang], ...(market ? { h: lang === 'ja' ? 'このマーケット、どうでしたか？' : 'What do you think of this market?' } : {}) };
   const site = process.env.TURNSTILE_SITE_KEY || '';
   const btns = Object.entries(q.choices).map(([k, label]) => `<button type="button" data-choice="${k}" aria-pressed="false"><span>${esc(label)}</span><b class="n"></b></button>`).join('');
   return `<section class="ev-card poll" data-spot="${esc(v.id)}" data-lang="${lang}" data-min="5"${site ? ` data-turnstile="${esc(site)}"` : ''}><h2>${esc(q.h)}</h2><p class="note">${esc(q.lead)}</p><div class="poll-btns">${btns}</div><input class="poll-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><div class="poll-ts"></div><p class="poll-st" aria-live="polite"></p><p class="note">${esc(q.note)}</p></section>`;

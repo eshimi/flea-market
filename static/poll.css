@@ -1,0 +1,9 @@
+.poll-btns{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.poll-btns button{display:inline-flex;align-items:center;gap:6px;border:1px solid #d9ccb6;background:#fff;color:inherit;border-radius:99px;padding:7px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+.poll-btns button:hover{border-color:#B95E43}
+.poll-btns button.on{background:#B95E43;border-color:#B95E43;color:#fff}
+.poll-btns button:disabled{opacity:.6;cursor:wait}
+.poll-btns .n{font-weight:700;min-width:1ch}
+.poll-btns .n:empty{display:none}
+.poll-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.poll-st{margin:6px 0;font-size:.85rem;color:#7a6a58}
