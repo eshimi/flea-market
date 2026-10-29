@@ -281,27 +281,42 @@ export function renderGuideBand(lang = 'ja') {
 
 // 今週末の一覧（左）と、地域の入口・はじめての方へ（右）。デザイン案（Main）の2列の区画。件数・日付・場所は実データ
 const WK = {
-  en: { h: 'Happening this weekend', hFallback: 'Coming up', sort: 'Sorted by date', all: 'See all events this weekend', allFb: 'See the calendar', area: 'Explore by area', n: (k) => `${k} market${k === 1 ? '' : 's'}`, gh: 'New to flea markets?', gp: 'Read the first-visit guide: rain, access and rules, as stated on the official pages.', gb: 'Read the guide', empty: 'No markets are listed for this weekend yet.' },
-  ja: { h: '今週末の開催', hFallback: 'これからの開催', sort: '日付順', all: '今週末の一覧をすべて見る', allFb: 'カレンダーを見る', area: '地域から探す', n: (k) => `${k}件`, gh: 'はじめての方へ', gp: '雨天・行き方・ルールなど、公式ページの記載をまとめたガイドです。', gb: 'ガイドを読む', empty: '今週末の掲載はまだありません。' },
+  en: { h: 'Happening this weekend', hFallback: 'Coming up', sort: 'Sorted by date', nation: 'All Japan', filter: 'Filter by area', more: '', all: 'See all events this weekend', allFb: 'See the calendar', area: 'Explore by area', n: (k) => `${k} market${k === 1 ? '' : 's'}`, gh: 'New to flea markets?', gp: 'Read the first-visit guide: rain, access and rules, as stated on the official pages.', gb: 'Read the guide', empty: 'No markets are listed for this weekend yet.' },
+  ja: { h: '今週末の開催', hFallback: 'これからの開催', sort: '日付順', nation: '全国', filter: '地域で絞り込む', more: '', all: '今週末の一覧をすべて見る', allFb: 'カレンダーを見る', area: '地域から探す', n: (k) => `${k}件`, gh: 'はじめての方へ', gp: '雨天・行き方・ルールなど、公式ページの記載をまとめたガイドです。', gb: 'ガイドを読む', empty: '今週末の掲載はまだありません。' },
 };
+export const WK_SHOW = 6; // 1回に出す件数（static/wk-filter.js と同じ）
 export function renderWeekendCols(ctx, lang = 'ja') {
   const t = WK[lang];
-  const f = featuredList(ctx);
-  const rows = f.list.slice(0, 6).map((o) => {
+  const weekend = upcomingWeekend(ctx.today);
+  let list = ctx.occ.filter((o) => weekend.includes(o.date));
+  const fallback = !list.length;
+  if (fallback) list = ctx.occ.filter(isActive).slice(0, 60);
+  // 地域の絞り込み：東京（13）を先頭に、あとは件数の多い順。既定は東京（東京の開催がなければ全国）
+  const counts = new Map();
+  for (const o of list) counts.set(o.series.venue.pref, (counts.get(o.series.venue.pref) || 0) + 1);
+  const prefs = [...counts].sort((a, b) => (a[0] === '13' ? -1 : b[0] === '13' ? 1 : b[1] - a[1] || String(a[0]).localeCompare(String(b[0])))).slice(0, 8);
+  const def = counts.has('13') ? '13' : 'all';
+  let shown = 0;
+  const rows = list.map((o) => {
     const s = o.series;
     const [, m, d] = o.date.split('-');
     const wd = lang === 'en' ? WD_EN[weekday(o.date)] : WD_JA[weekday(o.date)];
     const day = lang === 'en' ? `${wd} ${+d}` : `${+m}/${+d}（${wd}）`;
     const time = first((lang === 'en' && timeEn(s)) || s.time?.text) || S[lang].featured.tbc;
     const place = [venueL(s, lang), cityL(s.venue.city, lang) || prefLabel(s.venue.pref, lang)].filter(Boolean).join(' · ');
-    return `<li class="wk-row"><div class="wk-d">${esc(day)}<small>${esc(time)}</small></div><div class="wk-n"><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a><small>${esc(place)}</small></div><span class="wk-k">${esc(S[lang].kinds[s.kinds[0]])}</span>${tagFor(o, lang)}</li>`;
+    const visible = (def === 'all' || s.venue.pref === def) && shown < WK_SHOW;
+    if (visible) shown++;
+    return `<li class="wk-row" data-pref="${esc(s.venue.pref)}"${visible ? '' : ' hidden'}><div class="wk-d">${esc(day)}<small>${esc(time)}</small></div><div class="wk-n"><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a><small>${esc(place)}</small></div><span class="wk-k">${esc(S[lang].kinds[s.kinds[0]])}</span>${tagFor(o, lang)}</li>`;
   }).join('');
-  const counts = [...areaCounts(ctx.occ)].filter(([p]) => p).sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]))).slice(0, 6);
-  const areas = counts.map(([p, n]) => `<li><a href="/area/${p}/"><span>${esc(prefLabel(p, lang))}</span><small>${esc(t.n(n))} →</small></a></li>`).join('');
+  const chip = (p, label, n) => `<button type="button" class="wk-chip" data-pref="${esc(p)}" aria-pressed="${p === def}">${esc(label)}<sup>${n}</sup></button>`;
+  const chips = chip('all', t.nation, list.length) + prefs.map(([p, n]) => chip(p, prefLabel(p, lang), n)).join('');
+  const areaCnt = [...areaCounts(ctx.occ)].filter(([p]) => p).sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]))).slice(0, 6);
+  const areas = areaCnt.map(([p, n]) => `<li><a href="/area/${p}/"><span>${esc(prefLabel(p, lang))}</span><small>${esc(t.n(n))} →</small></a></li>`).join('');
+  const allHref = fallback ? '/calendar/' : '/weekend/';
   return `<section class="hm-sec wk-cols" aria-label="${esc(t.h)}"><div class="hm-in"><div class="wk-grid">
-<div class="wk-card"><div class="wk-head"><h2>${esc(f.fallback ? t.hFallback : t.h)}</h2><small>${esc(t.sort)}</small></div>
-${rows ? `<ul class="wk-list">${rows}</ul>` : `<p class="hm-empty">${esc(t.empty)}</p>`}
-<a class="wk-all" href="${f.fallback ? '/calendar/' : '/weekend/'}">${esc(f.fallback ? t.allFb : t.all)} →</a></div>
+<div class="wk-card" id="wk-card" data-more="${esc(t.more)}"><div class="wk-head"><h2>${esc(fallback ? t.hFallback : t.h)}</h2><small>${esc(t.sort)}</small></div>
+${rows ? `<nav class="wk-chips" aria-label="${esc(t.filter)}">${chips}</nav><ul class="wk-list">${rows}</ul><p class="wk-empty" hidden>${esc(t.empty)}</p>` : `<p class="hm-empty">${esc(t.empty)}</p>`}
+<a class="wk-all" id="wk-all" href="${allHref}" data-base="${allHref}">${esc(fallback ? t.allFb : t.all)} →</a></div>
 <div class="wk-side"><div class="wk-card"><h2>${esc(t.area)}</h2><ul class="wk-areas">${areas}</ul></div>
 <div class="guide-cta"><h2>${esc(t.gh)}</h2><p>${esc(t.gp)}</p><a href="/blog/guide-tokyo-flea-markets-visitors/">${esc(t.gb)} →</a></div></div>
 </div></div></section>`;

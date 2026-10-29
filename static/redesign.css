@@ -198,3 +198,13 @@ h1,h2{font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK 
 
 /* 開催詳細：写真は出さない（同じ写真の使いまわしのため） */
 .ev-thumb,.ev-photo{display:none}
+
+/* トップ：今週末の一覧の地域の絞り込み */
+.wk-chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+.wk-chip{font:inherit;font-size:13.5px;line-height:1.2;color:var(--rd-ink);background:#fff;border:1px solid var(--rd-ctl);border-radius:20px;padding:7px 13px;cursor:pointer;white-space:nowrap}
+.wk-chip sup{font-size:10.5px;color:var(--rd-sub);margin-left:3px;font-weight:700}
+.wk-chip:hover{border-color:var(--rd-acc)}
+.wk-chip[aria-pressed="true"]{background:var(--rd-acc);border-color:var(--rd-acc);color:#fff}
+.wk-chip[aria-pressed="true"] sup{color:#fbe6dc}
+.wk-row[hidden],.wk-empty[hidden]{display:none}
+.wk-empty{margin:16px 0;color:var(--rd-sub)}
