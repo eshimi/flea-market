@@ -14,7 +14,7 @@ import { CONTACT_EMAIL, SITE } from './lib/nav.mjs';
 import { REVIEWS_ON, reviewsSection } from './lib/reviews-view.mjs';
 import { CONTACT_ON, contactBanner, contactBody } from './lib/contact-view.mjs';
 import { renderCalendar, renderHomeBody } from './lib/home-view.mjs';
-import { S, T, WD_EN } from './lib/i18n.mjs';
+import { MON_EN, S, T, WD_EN, WD_JA } from './lib/i18n.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, blogBanner, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
 import { tipsBanner, tipsIndex } from './lib/tips-view.mjs';
@@ -588,18 +588,25 @@ function seriesPage(s, ctx, lang) {
   const wxBox = next && wt ? `<section class="ev-card"><h2>${esc(p.secWx)}</h2><div class="wx" data-office="${wt.office}" data-area="${wt.area || ''}" data-date="${next.date}" data-lang="${lang}" data-region="${esc(prefLabel(v.pref, 'en'))}"><p class="wx-st">${esc(p.wxLoading)}</p></div><p class="note">${esc(p.wxNote)} ${esc(p.wxSrc)}<a href="https://www.jma.go.jp/bosai/forecast/" rel="noopener">${esc(p.wxJma)}</a>${lang === 'ja' ? '' : ' (気象庁)'}</p></section>` : '';
   const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(mapQuery(s).q)}&hl=${lang === 'ja' ? 'ja' : 'en'}&z=16&output=embed`;
   const mapBlock = `<div class="ev-map-block"><h3>${esc(p.secMap)}</h3>${hasMapImg(s.id) ? `<a class="ev-mapimg" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow" title="${esc(p.mapOpen)}"><img src="/img/maps/${s.id}.webp" alt="${esc(p.mapImgAlt(lang === 'en' ? venueL(s, lang) : v.name))}" width="640" height="400" loading="lazy" decoding="async"></a><p class="note">${esc(mu.pin ? p.mapApproxName : mu.searched ? p.mapApproxSearch : p.mapApprox)}</p>` : `<div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(p.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(lang === 'en' ? venueL(s, lang) : v.name)}</b><button type="button" class="map-show">${esc(p.mapShow)}</button><small>${esc(p.mapPrivacy)}</small></div></div>`}<p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(p.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(p.mapRoute)} ↗</a></p><p class="note">${esc(mu.pin ? p.mapPin : mu.searched ? p.mapSearched : mu.exact ? p.mapExact : p.mapLoose)}</p></div>`;
+  const shortT = (x) => String(x || '').split(/[（(。]|\.\s|\s\(/)[0].trim();
+  const nextTime = shortT(lang === 'en' && timeEn(s) ? timeEn(s) : s.time?.text) || TBC(lang);
+  const nextCard = next ? (() => {
+    const [, nm, nd] = next.date.split('-');
+    const wdn = (lang === 'ja' ? WD_JA : WD_EN)[weekday(next.date)];
+    return `<div class="ev-next"><div class="ev-next-d"><small>${lang === 'ja' ? `${+nm}月` : MON_EN[+nm - 1]}</small><b>${+nd}</b><span>${esc(wdn)}${lang === 'ja' ? '曜日' : ''}</span></div><div><small class="lab">${esc(p.next)}</small><div class="ev-next-t">${esc(nextTime)}</div><p>${esc(lang === 'en' ? venueL(s, lang) : v.name)} ／ ${esc(S[lang].status[next.status])}${lang === 'ja' ? '（' : ' ('}${checked}${esc(next.checkedAt)}${lang === 'ja' ? '）' : ')'}</p></div></div>`;
+  })() : '';
   const body = `<div class="in page ev-page">${breadcrumb([{ href: `/area/${v.pref}/`, label: pn }, ...(v.cityCode ? [{ href: `/area/${v.pref}/${v.cityCode}/`, label: cityL(v.city, lang) }] : []), { label: nameL(s, lang) }], lang)}
 <div class="ev-grid">
 <div class="ev-head">
-<h1>${esc(nameL(s, lang))}</h1>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-h" lang="ja">${esc(s.name)}</p>` : ''}
-<div class="tags">${kindTags(s.kinds, lang)}<span class="tag chk">${lang === 'ja' ? '最終確認：' : 'Last checked: '}${esc(lastChecked(s))}</span></div>
+<div class="ev-title"><img class="ev-thumb" src="${cardImg(s)}" alt="" width="88" height="88" decoding="async"><div><h1>${esc(nameL(s, lang))}</h1>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-h" lang="ja">${esc(s.name)}</p>` : ''}
+<div class="tags">${kindTags(s.kinds, lang)}<span class="tag chk">${lang === 'ja' ? '最終確認：' : 'Last checked: '}${esc(lastChecked(s))}</span></div></div></div>
 ${evActions(s, lang)}
-${next ? `<p class="banner">${esc(p.next)}${lang === 'ja' ? '：' : ': '}<b>${esc(dlabel(next.date, lang, { year: true }))}</b>　${esc(S[lang].status[next.status])}${lang === 'ja' ? '（' : ' ('}${checked}${esc(next.checkedAt)}${lang === 'ja' ? '）' : ')'}</p>` : ''}
 ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
-<div class="ev-hero"><img src="${cardImg(s).replace('-400.webp', '.webp')}" alt="" width="800" height="600" loading="lazy" decoding="async"></div>
 </div>
-<div class="ev-rcol"><aside class="ev-facts-card" aria-label="${esc(p.secInfo)}">
+<div class="ev-info">
+${nextCard}
 <h2 class="sec-h">${esc(p.secInfo)}</h2>
+<div class="ev-facts-card">
 <dl class="facts">
 ${row(p.when, rule)}
 ${row(p.time, (lang === 'en' && timeEn(s) ? (s.time.text === timeEn(s).replace('–', '〜') ? esc(timeEn(s)) : esc(timeEn(s))) : t(s.time?.text)) + srcNote(s, 'time', p))}
@@ -610,9 +617,10 @@ ${row(p.admission, s.visitor?.admission ? tv(s, 'admission', s.visitor.admission
 ${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang) + srcNote(s, 'rain', p))}
 ${row(s.organizer.label ? (lang === 'en' ? labelEn(s.organizer.label) || p.orgLabel(s.organizer.label) : p.orgLabel(s.organizer.label)) : p.org, orgName)}
 </dl>
-${mapBlock}
-<p class="ev-cta">${officialUrl ? `<a class="btn-acc" href="${esc(officialUrl)}" rel="noopener">${lang === 'ja' ? '公式サイト' : 'Official site'} →</a>` : ''}<a class="btn-line" href="${langPath(`/e/${s.id}/`, lang === 'ja' ? 'en' : 'ja')}" hreflang="${lang === 'ja' ? 'en' : 'ja'}">${lang === 'ja' ? 'English page' : '日本語ページを開く'} →</a></p>
-</aside>
+</div>
+</div>
+<div class="ev-rcol"><aside class="ev-map-card" aria-label="${esc(p.secMap)}"><img class="ev-photo" src="${cardImg(s).replace('-400.webp', '.webp')}" alt="" width="800" height="600" loading="lazy" decoding="async"><div class="ev-map-in">${mapBlock}
+<p class="ev-cta">${officialUrl ? `<a class="btn-acc" href="${esc(officialUrl)}" rel="noopener">${lang === 'ja' ? '公式サイト' : 'Official site'} →</a>` : ''}<a class="btn-line" href="${langPath(`/e/${s.id}/`, lang === 'ja' ? 'en' : 'ja')}" hreflang="${lang === 'ja' ? 'en' : 'ja'}">${lang === 'ja' ? 'English page' : '日本語ページを開く'} →</a></p></div></aside>
 ${wxBox}</div>
 <div class="ev-main">
 <h2 class="sec-h">${esc(p.secDates)}</h2>

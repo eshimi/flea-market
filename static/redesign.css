@@ -155,3 +155,43 @@ h1,h2{font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK 
 .ev-facts-card .map-btns{flex-direction:column;margin:12px 0 0}
 .ev-facts-card .map-btn{text-align:center}
 .ev-facts-card .note{margin:8px 0 0;font-size:12.5px;color:var(--rd-sub)}
+
+
+/* ===== 開催詳細（B案）：情報が主役。写真は小さく。左＝次の開催・開催の情報、右＝地図・行き方・ボタン ===== */
+.ev-grid{grid-template-columns:minmax(0,1fr) 380px;grid-template-rows:auto auto 1fr;gap:0 40px;grid-template-areas:"head head" "info rcol" "main rcol"}
+.ev-info{grid-area:info;min-width:0}
+.ev-title{display:flex;gap:20px;align-items:center}
+.ev-thumb{width:88px;height:88px;border-radius:10px;object-fit:cover;flex:none}
+.ev-title h1{font-size:40px;line-height:1.15}
+.ev-head .ev-actions{margin:14px 0 0}
+.ev-next{display:flex;gap:24px;align-items:center;margin-top:22px;padding:22px 24px;background:var(--rd-tint);border:1px solid #E7CFC3;border-radius:10px}
+.ev-next-d{flex:none;text-align:center;min-width:104px;padding-right:24px;border-right:1px dashed #D9B9AA}
+.ev-next-d small{display:block;color:var(--rd-acc);font-weight:700;font-size:14px}
+.ev-next-d b{display:block;font-family:"Fraunces",serif;font-size:60px;line-height:1;font-weight:700}
+.ev-next-d span{font-weight:700}
+.ev-next .lab{display:block;font-size:12px;color:var(--rd-mute);letter-spacing:.04em}
+.ev-next-t{font-size:26px;font-weight:700;line-height:1.3}
+.ev-next p{margin:2px 0 0;color:var(--rd-sub);font-size:14.5px}
+.ev-info .sec-h{margin:28px 0 12px;font-size:24px}
+.ev-info .ev-facts-card{position:static;padding:6px 26px;border-radius:10px;background:#fff;border:1px solid var(--rd-line)}
+.ev-info .ev-facts-card .facts{border:0;padding:0;margin:0}
+.ev-info .ev-facts-card .facts div{display:grid;grid-template-columns:140px minmax(0,1fr);gap:0 20px;padding:14px 0;border-top:1px solid var(--rd-line)}
+.ev-info .ev-facts-card .facts div:first-child{border-top:0}
+.ev-info .ev-facts-card .facts dt{font-size:13.5px;font-weight:700;color:var(--rd-mute)}
+.ev-info .ev-facts-card .facts dd{font-size:17px}
+.ev-main .sec-h{font-size:24px}
+.ev-map-card{background:#fff;border:1px solid var(--rd-line);border-radius:10px;overflow:hidden}
+.ev-photo{display:block;width:100%;height:120px;object-fit:cover}
+.ev-map-in{padding:18px}
+.ev-map-in .ev-map-block{margin-top:0;padding-top:0;border-top:0}
+.ev-map-in .map-btns{flex-direction:column;margin:12px 0 0}
+.ev-map-in .map-btn{text-align:center}
+.ev-map-in .note{margin:8px 0 0;font-size:12.5px;color:var(--rd-sub)}
+@media (max-width:900px){
+  .ev-grid{grid-template-columns:minmax(0,1fr);grid-template-rows:none;gap:20px;grid-template-areas:"head" "info" "rcol" "main"}
+  .ev-title{gap:12px}.ev-thumb{width:60px;height:60px}.ev-title h1{font-size:28px}
+  .ev-next{gap:16px;padding:16px}.ev-next-d{min-width:78px;padding-right:16px}.ev-next-d b{font-size:44px}.ev-next-t{font-size:21px}
+  .ev-info .ev-facts-card{padding:4px 16px}
+  .ev-info .ev-facts-card .facts div{grid-template-columns:1fr;gap:2px}
+  .ev-photo{display:none}
+}
