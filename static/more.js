@@ -27,3 +27,13 @@
   document.querySelectorAll('.af-chip').forEach((c) => c.addEventListener('click', reveal));
   if (/#pref=\d{2}/.test(location.hash)) reveal();
 })();
+
+// 右の列のカード（区市・都道府県の一覧など）：スマホ幅では閉じて、パソコン幅では開く
+(() => {
+  const folds = [...document.querySelectorAll('details.sn-fold')];
+  if (!folds.length) return;
+  const mq = window.matchMedia('(max-width: 900px)');
+  const apply = () => folds.forEach((d) => { d.open = !mq.matches; });
+  apply();
+  mq.addEventListener('change', apply);
+})();

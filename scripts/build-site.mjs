@@ -819,7 +819,8 @@ function notFound(lang) {
 function sideNav(ctx, lang, base) {
   const sd = P[lang].side;
   const li = (href, text, right = '→', cur = false) => `<li><a href="${href}"${cur ? ' aria-current="page"' : ''}><span>${esc(text)}</span><i aria-hidden="true">${esc(right)}</i></a></li>`;
-  const card = (title, items, aria) => `<nav class="ev-card sn" aria-label="${esc(aria || title)}"><h2>${esc(title)}</h2><ul class="sn-list">${items.join('')}</ul></nav>`;
+  // スマホ幅では、折りたたむ（static/more.js が閉じる。JavaScript なしでは開いたまま）
+  const card = (title, items, aria) => `<nav class="ev-card sn" aria-label="${esc(aria || title)}"><details class="sn-fold" open><summary><h2>${esc(title)}</h2></summary><ul class="sn-list">${items.join('')}</ul></details></nav>`;
   const active = ctx.occ.filter(isActive);
   const curRoot = (href) => (href === '/' ? base === '/' : base === href || (href !== '/about/' && base.startsWith(href)) || (href === '/about/' && base.startsWith('/about/')));
   const links = S[lang].footer.links.filter(([h]) => !h.includes('#'));

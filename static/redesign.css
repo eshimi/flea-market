@@ -132,3 +132,14 @@ h1,h2{font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK 
   .ev-more{display:none}
   .ev-more-btn{display:block;width:100%;margin:12px 0 4px;padding:13px;border:1px solid var(--rd-ctl);border-radius:6px;background:#fff;color:var(--rd-ink);font:inherit;font-weight:700;font-size:15px;cursor:pointer}
 }
+
+/* 右の列のカードを折りたたむ（スマホ幅。パソコン幅では開いたまま） */
+.sn-fold summary{display:flex;align-items:center;justify-content:space-between;cursor:pointer;list-style:none}
+.sn-fold summary::-webkit-details-marker{display:none}
+.sn-fold summary h2{margin:0}
+@media (max-width:900px){
+  .sn-fold summary::after{content:"＋";font-size:20px;line-height:1;color:var(--rd-acc);font-weight:700}
+  .sn-fold[open] summary::after{content:"－"}
+  .sn-fold[open] summary{margin-bottom:10px}
+}
+@media (min-width:901px){.sn-fold summary{cursor:default;pointer-events:none}}
