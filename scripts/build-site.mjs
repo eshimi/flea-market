@@ -598,7 +598,7 @@ function seriesPage(s, ctx, lang) {
   const body = `<div class="in page ev-page">${breadcrumb([{ href: `/area/${v.pref}/`, label: pn }, ...(v.cityCode ? [{ href: `/area/${v.pref}/${v.cityCode}/`, label: cityL(v.city, lang) }] : []), { label: nameL(s, lang) }], lang)}
 <div class="ev-grid">
 <div class="ev-head">
-<div class="ev-title"><img class="ev-thumb" src="${cardImg(s)}" alt="" width="88" height="88" decoding="async"><div><h1>${esc(nameL(s, lang))}</h1>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-h" lang="ja">${esc(s.name)}</p>` : ''}
+<div class="ev-title"><div><h1>${esc(nameL(s, lang))}</h1>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-h" lang="ja">${esc(s.name)}</p>` : ''}
 <div class="tags">${kindTags(s.kinds, lang)}<span class="tag chk">${lang === 'ja' ? '最終確認：' : 'Last checked: '}${esc(lastChecked(s))}</span></div></div></div>
 ${evActions(s, lang)}
 ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
@@ -619,7 +619,7 @@ ${row(s.organizer.label ? (lang === 'en' ? labelEn(s.organizer.label) || p.orgLa
 </dl>
 </div>
 </div>
-<div class="ev-rcol"><aside class="ev-map-card" aria-label="${esc(p.secMap)}"><img class="ev-photo" src="${cardImg(s).replace('-400.webp', '.webp')}" alt="" width="800" height="600" loading="lazy" decoding="async"><div class="ev-map-in">${mapBlock}
+<div class="ev-rcol"><aside class="ev-map-card" aria-label="${esc(p.secMap)}"><div class="ev-map-in">${mapBlock}
 <p class="ev-cta">${officialUrl ? `<a class="btn-acc" href="${esc(officialUrl)}" rel="noopener">${lang === 'ja' ? '公式サイト' : 'Official site'} →</a>` : ''}<a class="btn-line" href="${langPath(`/e/${s.id}/`, lang === 'ja' ? 'en' : 'ja')}" hreflang="${lang === 'ja' ? 'en' : 'ja'}">${lang === 'ja' ? 'English page' : '日本語ページを開く'} →</a></p></div></aside>
 ${wxBox}</div>
 <div class="ev-main">

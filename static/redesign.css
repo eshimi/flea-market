@@ -195,3 +195,6 @@ h1,h2{font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK 
   .ev-info .ev-facts-card .facts div{grid-template-columns:1fr;gap:2px}
   .ev-photo{display:none}
 }
+
+/* 開催詳細：写真は出さない（同じ写真の使いまわしのため） */
+.ev-thumb,.ev-photo{display:none}
