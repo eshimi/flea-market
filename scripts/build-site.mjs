@@ -596,7 +596,7 @@ function seriesPage(s, ctx, lang) {
 ${evActions(s, lang)}
 ${next ? `<p class="banner">${esc(p.next)}${lang === 'ja' ? '：' : ': '}<b>${esc(dlabel(next.date, lang, { year: true }))}</b>　${esc(S[lang].status[next.status])}${lang === 'ja' ? '（' : ' ('}${checked}${esc(next.checkedAt)}${lang === 'ja' ? '）' : ')'}</p>` : ''}
 ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
-<div class="ev-hero"><img src="${cardImg(s).replace('-400.webp', '.webp')}" alt="" width="800" height="600" decoding="async"></div>
+<div class="ev-hero"><img src="${cardImg(s).replace('-400.webp', '.webp')}" alt="" width="800" height="600" loading="lazy" decoding="async"></div>
 </div>
 <aside class="ev-facts-card" aria-label="${esc(p.secInfo)}">
 <h2 class="sec-h">${esc(p.secInfo)}</h2>
