@@ -45,7 +45,7 @@ h1,h2{font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK 
 
 /* 開催の詳細：上段は左に見出し・写真、右に事実のカード */
 .ev-grid{display:grid;grid-template-columns:minmax(0,1fr) 380px;grid-template-rows:auto 1fr;gap:0 40px;grid-template-areas:"head rcol" "main rcol";align-items:start;margin-top:12px}
-.ev-head{grid-area:head;min-width:0}.ev-main{grid-area:main;min-width:0}
+.ev-head{grid-area:head;min-width:0}.ev-grid>.ev-main{grid-area:main;min-width:0}
 .ev-rcol{grid-area:rcol;display:flex;flex-direction:column;gap:20px;min-width:0}
 .ev-head h1{font-size:48px;line-height:1.1;margin:0}
 .ev-head .orig-h{font-size:16px;color:var(--rd-sub);margin:8px 0 0}
