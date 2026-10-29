@@ -1630,18 +1630,18 @@
   "id": "t-i-forum-e350a3",
   "url": "https://www.t-i-forum.co.jp/",
   "name": "www.t-i-forum.co.jp",
-  "detectedAt": "2026-10-24",
+  "detectedAt": "2026-10-30",
   "reason": "new",
-  "hash": "1e830c074580563d",
+  "hash": "240eafbb963b3457",
   "status": "pending"
  },
  {
   "id": "showakinen-koen-3bf349",
   "url": "https://www.showakinen-koen.jp/",
   "name": "www.showakinen-koen.jp",
-  "detectedAt": "2026-10-20",
+  "detectedAt": "2026-10-30",
   "reason": "new",
-  "hash": "644417739a2c9b54",
+  "hash": "d5debf782cbe8e62",
   "status": "pending"
  },
  {
