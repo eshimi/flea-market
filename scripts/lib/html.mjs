@@ -194,7 +194,7 @@ ${siteHeader(base, lang)}
 ${pageBanner(base, bannerText ? localize(bannerText, lang) : '', bannerArt)}${localize(body, lang)}
 </main>
 ${siteFooter(base, lang)}
-${scripts.map((s) => `<script src="${s}" defer></script>`).join('\n')}
+${[...scripts, '/more.js'].map((s) => `<script src="${s}" defer></script>`).join('\n')}
 <script src="/saved.js" defer></script>
 </body>
 </html>
