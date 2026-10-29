@@ -143,3 +143,7 @@ h1,h2{font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK 
   .sn-fold[open] summary{margin-bottom:10px}
 }
 @media (min-width:901px){.sn-fold summary{cursor:default;pointer-events:none}}
+
+/* 右の列の幅をそろえる：事実のカード（上段）と、地図・天気・ナビ（下段・ほかのページ）を、どちらも 380px・同じ間隔に */
+.ev-split{grid-template-columns:minmax(0,1fr) 380px;gap:40px}
+@media (max-width:900px){.ev-split{grid-template-columns:minmax(0,1fr);gap:20px}}
