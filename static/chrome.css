@@ -1,7 +1,7 @@
 /* 全ページ共通のヘッダー（2026-10 リニューアル）。デザイン：白に近い生成り・墨色・朱色 */
-:root{--cx-bg:#F7F3EB;--cx-ink:#292B28;--cx-sub:#6b6e66;--cx-line:#eadfce;--cx-red:#B95E43}
-.site-head2{background:var(--cx-bg);border-bottom:1px solid var(--cx-line);position:relative;z-index:30}
-.hd-in{max-width:1240px;margin:auto;padding:0 28px;min-height:70px;display:flex;align-items:center;gap:20px}
+:root{--cx-bg:#F7F3EC;--cx-ink:#2A2622;--cx-sub:#5B5249;--cx-line:#E4DCCD;--cx-red:#B5452E}
+.site-head2{background:#FBF8F2;border-bottom:1px solid var(--cx-line);position:relative;z-index:30}
+.hd-in{max-width:1240px;margin:auto;padding:0 48px;min-height:70px;display:flex;align-items:center;gap:20px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--cx-ink);flex:0 0 auto}
 .logo-svg{display:block;flex:0 0 auto}
 .brand-t{display:flex;flex-direction:column;line-height:1.1}
@@ -24,7 +24,7 @@
 @media (max-width:900px){
   .hd-in{padding:0 16px;min-height:62px;justify-content:space-between;gap:10px}
   .hd-tools{order:2;gap:6px}
-  .burger{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;order:3;cursor:pointer;color:var(--cx-ink);border-radius:8px}
+  .burger{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;order:3;cursor:pointer;color:var(--cx-ink);border-radius:6px}
   .hd-nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--cx-bg);border-bottom:1px solid var(--cx-line);box-shadow:0 12px 20px rgba(20,20,30,.08);flex-direction:column;gap:0;margin:0;padding:6px 20px 14px}
   .hd-nav a{padding:13px 2px;border-bottom:1px solid #f1e9dc;font-size:15px}
   .nav-t:checked~.hd-nav{display:flex}
@@ -33,14 +33,14 @@
 @media (max-width:420px){.brand-t b{font-size:16px}.logo-svg{width:36px;height:30px}.langsw .ic{display:none}}
 
 /* フッター（全ページ共通） */
-.site-foot2{background:var(--cx-bg);border-top:1px solid var(--cx-line);font-size:13px;color:var(--cx-ink)}
-.ft-in{max-width:1240px;margin:auto;padding:22px 28px 8px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.site-foot2{background:#FBF8F2;border-top:1px solid var(--cx-line);font-size:13px;color:var(--cx-ink)}
+.ft-in{max-width:1240px;margin:auto;padding:22px 48px 8px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
 .ft-brand{flex:0 0 auto}
 .ft-nav{display:flex;flex-wrap:wrap;align-items:center;gap:2px 12px;flex:1 1 480px}
 .ft-nav a{color:#34343f;text-decoration:none;padding:9px 2px}
 .ft-nav a:hover{text-decoration:underline}
 .ft-nav i{font-style:normal;color:#d3c8b7}
-.ft-note{max-width:1240px;margin:auto;padding:2px 28px 26px;font-size:12px;color:var(--cx-sub)}
+.ft-note{max-width:1240px;margin:auto;padding:2px 48px 26px;font-size:12px;color:var(--cx-sub)}
 .ft-note p{margin:3px 0}
 @media (max-width:900px){.ft-in{padding:18px 16px 6px}.ft-nav{flex-basis:100%;order:3}.ft-note{padding:2px 16px 22px}}
 
@@ -49,9 +49,9 @@
 .hd-nav .dd-b{display:inline-flex;align-items:center;gap:7px;background:none;border:0;border-bottom:2px solid transparent;color:var(--cx-ink);font:inherit;font-size:13.5px;padding:8px 0;cursor:pointer;white-space:nowrap}
 .hd-nav .dd-b .ic{color:var(--cx-red)}
 .hd-nav .dd:hover .dd-b,.hd-nav .dd.cur .dd-b,.hd-nav .dd:focus-within .dd-b{border-bottom-color:var(--cx-red)}
-.hd-nav .dd-m{display:none;position:absolute;top:100%;left:-14px;min-width:230px;background:#fff;border:1px solid var(--cx-line);border-radius:12px;box-shadow:0 12px 24px rgba(20,20,30,.12);padding:8px;z-index:60}
+.hd-nav .dd-m{display:none;position:absolute;top:100%;left:-14px;min-width:230px;background:#fff;border:1px solid var(--cx-line);border-radius:10px;box-shadow:0 12px 24px rgba(20,20,30,.12);padding:8px;z-index:60}
 .hd-nav .dd:hover .dd-m,.hd-nav .dd:focus-within .dd-m{display:block}
-.hd-nav .dd-m a{display:block;padding:9px 12px;border:0;border-radius:8px;font-size:13.5px;white-space:nowrap}
+.hd-nav .dd-m a{display:block;padding:9px 12px;border:0;border-radius:6px;font-size:13.5px;white-space:nowrap}
 .hd-nav .dd-m a:hover,.hd-nav .dd-m a[aria-current]{background:#fbeee9;border:0}
 @media (max-width:900px){
   .hd-nav .dd-b{width:100%;padding:13px 2px 4px;font-size:12px;color:#7a6a58;cursor:default;border:0;pointer-events:none}
@@ -70,7 +70,7 @@
 @media (max-width:420px){.ft-cols{grid-template-columns:1fr}}
 /* フッターのQRコード（スマホで開く）。画像は tools/qr/make_qr.py で作る */
 .ft-qr{margin:6px 0 0;display:flex;gap:12px;align-items:center}
-.ft-qr img{width:104px;height:104px;border:1px solid var(--cx-line);border-radius:8px;background:#fff;padding:4px;flex:0 0 auto}
+.ft-qr img{width:104px;height:104px;border:1px solid var(--cx-line);border-radius:6px;background:#fff;padding:4px;flex:0 0 auto}
 .ft-qr figcaption{font-size:13px;color:var(--cx-ink);line-height:1.5}
 .ft-qr small{display:block;color:var(--cx-sub);font-size:12px}
 /* 管理画面への隠しリンク（フッターの「©」）。見た目は周りの文字と同じ */
@@ -88,5 +88,5 @@
 .ft-social .ft-join{flex-basis:100%;padding-left:44px;margin-top:-2px;font-size:12px;color:var(--cx-sub)}
 
 .hd-saved{position:relative;display:inline-flex;align-items:center;padding:6px}
-.hd-saved .cnt{position:absolute;top:-2px;right:-4px;min-width:16px;height:16px;border-radius:8px;background:#c8553d;color:#fff;font-size:.68rem;line-height:16px;text-align:center;padding:0 4px}
+.hd-saved .cnt{position:absolute;top:-2px;right:-4px;min-width:16px;height:16px;border-radius:6px;background:#c8553d;color:#fff;font-size:.68rem;line-height:16px;text-align:center;padding:0 4px}
 @media(max-width:600px){.hd-saved{padding:4px 2px}}

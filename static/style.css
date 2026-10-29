@@ -1,24 +1,24 @@
 /* Flea Market JP — 案A（日付が中心）。生成り色とテラコッタ。常に明るい配色で表示する */
-:root{--bg:#F7F3EB;--ink:#292B28;--sub:#6b6e66;--acc:#B95E43;--acc-d:#9A4C36;--acc2:#2f6f5e;--line:#e6dccd;--card:#fff;--soft:#f3ece1;--sat:#2b62b8;color-scheme:light}
+:root{--bg:#F7F3EC;--ink:#2A2622;--sub:#5B5249;--acc:#B5452E;--acc-d:#963825;--acc2:#2f6f5e;--line:#E4DCCD;--card:#fff;--soft:#f3ece1;--sat:#2b62b8;color-scheme:light}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP","Hiragino Sans","Yu Gothic",sans-serif;font-size:15px;line-height:1.7}
 a{color:var(--acc2)}
 h1,h2,h3{line-height:1.4;margin:0}
-h1,h2{font-family:"DM Serif Display","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",sans-serif}
-.in{max-width:1240px;margin:auto;padding:0 28px}
+h1,h2{font-family:"Fraunces","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",sans-serif}
+.in{max-width:1240px;margin:auto;padding:0 48px}
 /* ヘッダー */
 main{display:block;min-height:50vh}
 /* トップ */
 .lead{color:var(--sub);margin:6px 0 0}
 .search{display:flex;gap:8px;margin-top:16px}
-.search input{flex:1;min-width:0;background:#fff;border:2px solid var(--ink);border-radius:12px;padding:12px 16px;font:inherit}
-.search button{background:var(--acc);color:#fff;border:0;border-radius:12px;padding:0 26px;font:inherit;font-weight:700;font-size:16px;cursor:pointer}
+.search input{flex:1;min-width:0;background:#fff;border:2px solid var(--ink);border-radius:10px;padding:12px 16px;font:inherit}
+.search button{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:0 26px;font:inherit;font-weight:700;font-size:16px;cursor:pointer}
 .search button:hover{background:var(--acc-d)}
 .days{display:flex;gap:8px;margin-top:22px;overflow-x:auto;padding-bottom:4px}
 /* 横に送る列の、スクロールバー（バー）は表示しない。指やトラックパッドで送れる */
 .days,.cal-days,.mc-row,.sp-tbl{scrollbar-width:none}.days::-webkit-scrollbar,.cal-days::-webkit-scrollbar,.mc-row::-webkit-scrollbar,.sp-tbl::-webkit-scrollbar{display:none}
-.day{flex:0 0 74px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 4px;color:var(--ink);text-decoration:none;line-height:1.4}
+.day{flex:0 0 74px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 4px;color:var(--ink);text-decoration:none;line-height:1.4}
 .day small{display:block;color:var(--sub);font-size:12px}.day b{font-size:20px;display:block}.day i{display:block;font-style:normal;font-size:12px;color:var(--acc2);font-weight:700}
 .day.off b{color:var(--acc)}.day.sat b{color:var(--sat)}
 .day.none{opacity:.5}.day.none i{color:var(--sub);font-weight:400}
@@ -27,7 +27,7 @@ main{display:block;min-height:50vh}
 .sec-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:22px 0 12px;font-size:20px}
 .sec-h a{font-size:13px;font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",sans-serif;font-weight:400}
 /* 開催カード */
-.ev{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:10px}
+.ev{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin-bottom:10px}
 .ev.off{opacity:.75}.ev.off h3 a{text-decoration:line-through}
 .ev-date{flex:0 0 62px;text-align:center;border-right:1px dashed var(--line);padding-right:12px;line-height:1.3}
 .ev-date b{font-size:24px;display:block;line-height:1.15}.ev-date small{display:block;color:var(--sub);font-size:12px}
@@ -40,17 +40,17 @@ main{display:block;min-height:50vh}
 .tag.warn{background:#fdecdc;color:#9a4a14;font-weight:700}
 .tag.stop{background:#f8dcd6;color:#9b2c17;font-weight:700}
 .ev-note{font-size:13px;color:#9a4a14;margin:6px 0 0}
-.empty{background:#fff;border:1px dashed var(--line);border-radius:14px;padding:18px;color:var(--sub)}
+.empty{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:18px;color:var(--sub)}
 /* 月ごとの一覧 */
 .month-block{margin:6px 0 14px}
-.month-h{font-size:16px;font-family:"DM Serif Display","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",sans-serif;font-weight:700;margin:14px 0 8px}
-summary.month-h{cursor:pointer;padding:10px 14px;background:#fff;border:1px solid var(--line);border-radius:12px;list-style-position:inside}
+.month-h{font-size:16px;font-family:"Fraunces","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",sans-serif;font-weight:700;margin:14px 0 8px}
+summary.month-h{cursor:pointer;padding:10px 14px;background:#fff;border:1px solid var(--line);border-radius:10px;list-style-position:inside}
 details[open]>summary.month-h{margin-bottom:10px}
 /* 右の列 */
-aside .box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:22px}
+aside .box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:22px}
 aside h2{font-size:15px;margin-bottom:10px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0;list-style:none}
-.chips a{display:inline-block;font-size:13px;padding:3px 10px;border:1px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;background:#fff}
+.chips a{display:inline-block;font-size:13px;padding:3px 10px;border:1px solid var(--line);border-radius:20px;color:var(--ink);text-decoration:none;background:#fff}
 .chips a:hover{border-color:var(--ink)}
 .note{font-size:12.5px;color:var(--sub);margin:0}
 .nums{display:flex;gap:18px;margin:0}.nums div{font-size:12px;color:var(--sub)}.nums b{display:block;font-size:22px;color:var(--ink)}
@@ -60,16 +60,16 @@ aside h2{font-size:15px;margin-bottom:10px}
 .ev-page{padding-top:0}.ev-page>.crumbs{padding-top:2px;line-height:1.3}
 .page h1{font-size:28px;margin:6px 0 4px}
 .crumbs{font-size:12.5px;color:var(--sub);padding-top:14px}.crumbs a{color:var(--sub)}
-.facts{background:#fff;border:1px solid var(--line);border-radius:14px;padding:6px 18px;margin:12px 0}
+.facts{background:#fff;border:1px solid var(--line);border-radius:10px;padding:6px 18px;margin:12px 0}
 .facts div{display:grid;grid-template-columns:9em 1fr;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
 .facts div:first-child{border-top:0}
 .facts dt{color:var(--sub);font-size:13.5px}.facts dd{margin:0;overflow-wrap:anywhere}
 .tbd{color:#9a4a14;font-size:13px}
 .prose h2{font-size:20px;margin:26px 0 8px}.prose p,.prose li{margin:6px 0}
 .sources{font-size:13.5px;padding-left:1.2em;overflow-wrap:anywhere}
-.banner{background:#fdecdc;border-radius:12px;padding:12px 14px;font-size:14px;margin:12px 0}
+.banner{background:#fdecdc;border-radius:10px;padding:12px 14px;font-size:14px;margin:12px 0}
 .grid-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;padding:0;list-style:none}
-.grid-links a{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--ink);text-decoration:none}
+.grid-links a{display:block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--ink);text-decoration:none}
 .grid-links a small{display:block;color:var(--sub);font-size:12.5px}
 .month{margin:22px 0}.month h2{font-size:18px;margin-bottom:8px}
 /* フッター */
@@ -92,7 +92,7 @@ aside h2{font-size:15px;margin-bottom:10px}
 .map-btn{display:inline-block;padding:11px 18px;border-radius:10px;background:var(--acc);color:#fff;font-weight:700;text-decoration:none;font-size:14.5px}
 .map-btn:hover{background:var(--acc-d)}
 .map-btn.s{background:#fff;color:var(--acc);border:2px solid var(--acc);padding:9px 16px}
-.wx{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px;max-width:640px}
+.wx{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 20px;max-width:640px}
 .wx-st{margin:0;color:var(--sub)}
 .wx-main{display:flex;align-items:center;gap:14px;margin-bottom:10px;font-size:18px}
 .wx-ic{font-size:34px;line-height:1}
@@ -101,7 +101,7 @@ aside h2{font-size:15px;margin-bottom:10px}
 /* 開催詳細：右の列（地図・天気） */
 .ev-split{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start}
 .ev-side{position:sticky;top:16px;display:flex;flex-direction:column;gap:16px}
-.ev-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.ev-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px}
 .ev-card h2{margin:0 0 10px;font-size:16px}
 .ev-card .note{margin:8px 0 0}
 .ev-map{height:240px;border-radius:10px;overflow:hidden;background:var(--soft);border:1px solid var(--line)}
@@ -133,7 +133,7 @@ aside h2{font-size:15px;margin-bottom:10px}
 .ev-mapimg:hover{border-color:var(--acc)}
 /* 地域で絞り込む（日付・今週末の一覧） */
 .af-chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
-.af-chip{font:inherit;font-size:13.5px;line-height:1.2;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 13px;cursor:pointer;white-space:nowrap}
+.af-chip{font:inherit;font-size:13.5px;line-height:1.2;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:20px;padding:7px 13px;cursor:pointer;white-space:nowrap}
 .af-chip sup{font-size:10.5px;color:var(--sub);margin-left:3px;font-weight:700}
 .af-chip:hover{border-color:var(--acc)}
 .af-chip[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
@@ -166,8 +166,8 @@ aside h2{font-size:15px;margin-bottom:10px}
 
 /* TIPS（/tips/）：番号つきの10項目 */
 .tips{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-.tip{display:grid;grid-template-columns:auto 1fr;gap:16px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-.tip-n{font-family:"DM Serif Display","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",serif;font-size:30px;line-height:1;color:var(--acc);min-width:2.2ch}
+.tip{display:grid;grid-template-columns:auto 1fr;gap:16px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+.tip-n{font-family:"Fraunces","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",serif;font-size:30px;line-height:1;color:var(--acc);min-width:2.2ch}
 .tip h2{font-size:17px;margin:0 0 6px;line-height:1.4}
 .tip p{margin:0 0 6px}
 .tip-src{display:flex;align-items:flex-start;gap:6px;font-size:12.5px;color:var(--sub)}
@@ -178,12 +178,12 @@ aside h2{font-size:15px;margin-bottom:10px}
 /* TIPSコーナー「日本でのふるまい」：コラムの一覧 */
 .col-intro{margin:0 0 16px;color:var(--sub)}
 .col-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.col-card a{display:flex;flex-direction:column;gap:6px;height:100%;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;color:var(--ink);text-decoration:none}
+.col-card a{display:flex;flex-direction:column;gap:6px;height:100%;background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px;color:var(--ink);text-decoration:none}
 .col-card a:hover{border-color:var(--acc)}
-.col-n{font-family:"DM Serif Display","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",serif;font-size:26px;color:var(--acc);line-height:1}
+.col-n{font-family:"Fraunces","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",serif;font-size:26px;color:var(--acc);line-height:1}
 .col-card b{font-size:17px;line-height:1.4}
 .col-l{font-size:14px;color:var(--sub)}
-.tips-tag{display:inline-block;align-self:flex-start;font-size:12px;color:var(--acc);border:1px solid var(--acc);border-radius:999px;padding:1px 9px}
+.tips-tag{display:inline-block;align-self:flex-start;font-size:12px;color:var(--acc);border:1px solid var(--acc);border-radius:20px;padding:1px 9px}
 @media (max-width:700px){.col-list{grid-template-columns:1fr}}
 
 /* 都道府県ページの概要（掲載データから） */
@@ -191,27 +191,27 @@ aside h2{font-size:15px;margin-bottom:10px}
 .pov-lead{font-size:15px;margin:0 0 6px}
 .pov-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 12px;font-size:14px}
 .pov-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.pov-box{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14px}
+.pov-box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:14px}
 .pov-box h3{margin:0 0 6px;font-size:15px}
 .pov-box ul{margin:0;padding-left:1.1em}
 .pov-box li{margin:2px 0}
 .pov-box p{margin:0 0 6px}
 .pov-kinds{list-style:none;padding:0!important;display:flex;flex-wrap:wrap;gap:6px}
-.pov-kinds li{background:var(--soft);border-radius:999px;padding:2px 10px;margin:0}
+.pov-kinds li{background:var(--soft);border-radius:20px;padding:2px 10px;margin:0}
 .pov-reg span{color:var(--sub);font-size:13px}
 @media (max-width:700px){.pov-grid{grid-template-columns:1fr}}
 .addr-src{display:block;font-size:12px;color:var(--sub);margin-top:2px}
 .map-inline{display:inline-block;margin-left:8px;white-space:nowrap}
-.map-inline a{font-size:12.5px;font-weight:600;color:var(--accent,#c8553d);text-decoration:none;border:1px solid currentColor;border-radius:999px;padding:1px 9px}
+.map-inline a{font-size:12.5px;font-weight:600;color:var(--accent,#c8553d);text-decoration:none;border:1px solid currentColor;border-radius:20px;padding:1px 9px}
 .map-inline a:hover{background:#c8553d;color:#fff;border-color:#c8553d}
 .sources .dt-info{display:block;font-size:13px;color:var(--sub);margin-top:1px}
 .day-links{margin:2px 0 10px;font-size:13.5px;color:var(--sub)}.day-links a{color:var(--green,#1f6b46);font-weight:700}.day-links b{color:var(--ink,#272a25)}
 /* 地域・種類の一覧ページの解説ブロック */
-.hub-intro{margin:6px 0 16px;padding:14px 18px;background:#fffdf8;border:1px solid var(--line);border-left:4px solid var(--accent,#c8553d);border-radius:8px;font-size:14.5px;line-height:1.75;color:#3a3a46}
+.hub-intro{margin:6px 0 16px;padding:14px 18px;background:#fffdf8;border:1px solid var(--line);border-left:4px solid var(--accent,#c8553d);border-radius:6px;font-size:14.5px;line-height:1.75;color:#3a3a46}
 .hub-intro p{margin:0}
 
 /* マイリスト・共有・カレンダー追加 */
-.save-btn,.share-btn,.cal-add{display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:.85rem;color:var(--ink,#3a2f27);background:#fff;border:1px solid #d9cdbb;border-radius:999px;padding:6px 12px;cursor:pointer;text-decoration:none;line-height:1.2}
+.save-btn,.share-btn,.cal-add{display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:.85rem;color:var(--ink,#3a2f27);background:#fff;border:1px solid #d9cdbb;border-radius:20px;padding:6px 12px;cursor:pointer;text-decoration:none;line-height:1.2}
 .save-btn svg,.share-btn svg,.cal-add svg{flex:none}
 .save-btn[aria-pressed="true"]{color:#c8553d;border-color:#c8553d;background:#fdf1ec}
 .save-btn[aria-pressed="true"] svg{fill:currentColor}
@@ -222,14 +222,14 @@ aside h2{font-size:15px;margin-bottom:10px}
 .saved-li{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px solid #e6dccb}
 .saved-li a{font-weight:700}
 .saved-li .meta{margin:2px 0;color:#6b5e52;font-size:.9rem}
-.saved-rm{font:inherit;font-size:.8rem;background:none;border:1px solid #d9cdbb;border-radius:999px;padding:4px 10px;cursor:pointer}
+.saved-rm{font:inherit;font-size:.8rem;background:none;border:1px solid #d9cdbb;border-radius:20px;padding:4px 10px;cursor:pointer}
 
 /* ページ送り・実URLの絞り込みボタン・種類ページの FAQ */
 a.af-chip{display:inline-block;text-decoration:none}
 span.af-chip[aria-current="page"]{background:var(--acc);border-color:var(--acc);color:#fff}
 span.af-chip[aria-current="page"] sup{color:#fbe6dc}
 .pager{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:22px 0 6px}
-.pager a,.pager b{display:inline-block;min-width:34px;text-align:center;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);text-decoration:none;font-size:14px}
+.pager a,.pager b{display:inline-block;min-width:34px;text-align:center;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);text-decoration:none;font-size:14px}
 .pager b{background:var(--acc);border-color:var(--acc);color:#fff}
 .pager .pg-nums{display:flex;flex-wrap:wrap;gap:6px}
 .pager small{color:var(--sub);margin-left:auto}
