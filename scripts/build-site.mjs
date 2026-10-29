@@ -587,10 +587,10 @@ function seriesPage(s, ctx, lang) {
   const wt = weatherTarget(s);
   const wxBox = next && wt ? `<section class="ev-card"><h2>${esc(p.secWx)}</h2><div class="wx" data-office="${wt.office}" data-area="${wt.area || ''}" data-date="${next.date}" data-lang="${lang}" data-region="${esc(prefLabel(v.pref, 'en'))}"><p class="wx-st">${esc(p.wxLoading)}</p></div><p class="note">${esc(p.wxNote)} ${esc(p.wxSrc)}<a href="https://www.jma.go.jp/bosai/forecast/" rel="noopener">${esc(p.wxJma)}</a>${lang === 'ja' ? '' : ' (気象庁)'}</p></section>` : '';
   const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(mapQuery(s).q)}&hl=${lang === 'ja' ? 'ja' : 'en'}&z=16&output=embed`;
-  const side = `<aside class="ev-side" aria-label="${esc(p.secMap)}"><section class="ev-card"><h2>${esc(p.secMap)}</h2>${hasMapImg(s.id) ? `<a class="ev-mapimg" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow" title="${esc(p.mapOpen)}"><img src="/img/maps/${s.id}.webp" alt="${esc(p.mapImgAlt(lang === 'en' ? venueL(s, lang) : v.name))}" width="640" height="400" loading="lazy" decoding="async"></a><p class="note">${esc(mu.pin ? p.mapApproxName : mu.searched ? p.mapApproxSearch : p.mapApprox)}</p>` : `<div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(p.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(lang === 'en' ? venueL(s, lang) : v.name)}</b><button type="button" class="map-show">${esc(p.mapShow)}</button><small>${esc(p.mapPrivacy)}</small></div></div>`}<p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(p.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(p.mapRoute)} ↗</a></p><p class="note">${esc(mu.pin ? p.mapPin : mu.searched ? p.mapSearched : mu.exact ? p.mapExact : p.mapLoose)}</p></section>${wxBox}</aside>`;
+  const mapBlock = `<div class="ev-map-block"><h3>${esc(p.secMap)}</h3>${hasMapImg(s.id) ? `<a class="ev-mapimg" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow" title="${esc(p.mapOpen)}"><img src="/img/maps/${s.id}.webp" alt="${esc(p.mapImgAlt(lang === 'en' ? venueL(s, lang) : v.name))}" width="640" height="400" loading="lazy" decoding="async"></a><p class="note">${esc(mu.pin ? p.mapApproxName : mu.searched ? p.mapApproxSearch : p.mapApprox)}</p>` : `<div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(p.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(lang === 'en' ? venueL(s, lang) : v.name)}</b><button type="button" class="map-show">${esc(p.mapShow)}</button><small>${esc(p.mapPrivacy)}</small></div></div>`}<p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(p.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(p.mapRoute)} ↗</a></p><p class="note">${esc(mu.pin ? p.mapPin : mu.searched ? p.mapSearched : mu.exact ? p.mapExact : p.mapLoose)}</p></div>`;
   const body = `<div class="in page ev-page">${breadcrumb([{ href: `/area/${v.pref}/`, label: pn }, ...(v.cityCode ? [{ href: `/area/${v.pref}/${v.cityCode}/`, label: cityL(v.city, lang) }] : []), { label: nameL(s, lang) }], lang)}
-<div class="ev-top">
-<div class="ev-top-l">
+<div class="ev-grid">
+<div class="ev-head">
 <h1>${esc(nameL(s, lang))}</h1>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-h" lang="ja">${esc(s.name)}</p>` : ''}
 <div class="tags">${kindTags(s.kinds, lang)}<span class="tag chk">${lang === 'ja' ? '最終確認：' : 'Last checked: '}${esc(lastChecked(s))}</span></div>
 ${evActions(s, lang)}
@@ -598,22 +598,23 @@ ${next ? `<p class="banner">${esc(p.next)}${lang === 'ja' ? '：' : ': '}<b>${es
 ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
 <div class="ev-hero"><img src="${cardImg(s).replace('-400.webp', '.webp')}" alt="" width="800" height="600" loading="lazy" decoding="async"></div>
 </div>
-<aside class="ev-facts-card" aria-label="${esc(p.secInfo)}">
+<div class="ev-rcol"><aside class="ev-facts-card" aria-label="${esc(p.secInfo)}">
 <h2 class="sec-h">${esc(p.secInfo)}</h2>
 <dl class="facts">
 ${row(p.when, rule)}
 ${row(p.time, (lang === 'en' && timeEn(s) ? (s.time.text === timeEn(s).replace('–', '〜') ? esc(timeEn(s)) : esc(timeEn(s))) : t(s.time?.text)) + srcNote(s, 'time', p))}
 ${row(p.venue, (lang === 'en' && venueL(s, lang) !== v.name ? orig(venueL(s, lang), v.name) : esc(v.name)) + spotLink(s, ctx, lang))}
-${row(p.address, (v.address ? tv(s, 'address', v.address, lang) + (v.addressFrom === 'search' ? `<small class="addr-src">${esc(p.addrSearched)}</small>` : '') : est(estAddress, p)) + mapInline(mu, 'open'))}
-${row(p.access, (v.access ? tv(s, 'access', v.access, lang) + (v.accessFrom === 'search' ? `<small class="addr-src">${esc(p.accessSearched)}</small>` : '') : est(estAccess, p)) + mapInline(mu, 'route'))}
+${row(p.address, (v.address ? tv(s, 'address', v.address, lang) + (v.addressFrom === 'search' ? `<small class="addr-src">${esc(p.addrSearched)}</small>` : '') : est(estAddress, p)))}
+${row(p.access, (v.access ? tv(s, 'access', v.access, lang) + (v.accessFrom === 'search' ? `<small class="addr-src">${esc(p.accessSearched)}</small>` : '') : est(estAccess, p)))}
 ${row(p.admission, s.visitor?.admission ? tv(s, 'admission', s.visitor.admission, lang) + srcNote(s, 'admission', p) : est(p.estFree, p))}
 ${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang) + srcNote(s, 'rain', p))}
 ${row(s.organizer.label ? (lang === 'en' ? labelEn(s.organizer.label) || p.orgLabel(s.organizer.label) : p.orgLabel(s.organizer.label)) : p.org, orgName)}
 </dl>
+${mapBlock}
 <p class="ev-cta">${officialUrl ? `<a class="btn-acc" href="${esc(officialUrl)}" rel="noopener">${lang === 'ja' ? '公式サイト' : 'Official site'} →</a>` : ''}<a class="btn-line" href="${langPath(`/e/${s.id}/`, lang === 'ja' ? 'en' : 'ja')}" hreflang="${lang === 'ja' ? 'en' : 'ja'}">${lang === 'ja' ? 'English page' : '日本語ページを開く'} →</a></p>
 </aside>
-</div>
-<div class="ev-split"><div class="ev-main">
+${wxBox}</div>
+<div class="ev-main">
 <h2 class="sec-h">${esc(p.secDates)}</h2>
 ${dates}
 ${pastDatesBlock(ctx.past.filter((o) => o.series.id === s.id), lang)}
@@ -624,7 +625,8 @@ ${reviewsSection(s.id, lang)}
 <h2 class="sec-h">${esc(p.secSrc)}</h2>
 <ul class="sources">${s.sources.map((x) => `<li><a href="${esc(x.url)}" rel="noopener">${esc(x.url)}</a>（${checked}${esc(x.checkedAt)}）</li>`).join('')}</ul>
 <p class="note">${s.recurrence.type === 'dates' ? '' : esc(p.rule(lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence)))} ${esc(disclaimer(lang))}</p>
-</div>${side}</div>
+</div>
+</div>
 </div>`;
   return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list, lang, p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s))), scripts: ['/weather.js', '/map.js', '/vote.js', ...(REVIEWS_ON ? ['/review.js'] : [])], css: ['/review.css', '/poll.css'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
 }

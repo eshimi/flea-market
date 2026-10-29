@@ -353,7 +353,8 @@ test('地図・経路のリンクと当日の天気（気象庁）', async () =>
   assert.ok(!ja('oedo-antique-market-tokyo-international-forum').includes('多くのフリーマーケット・市は入場無料'), '公式の入場料があるものには、目安を出さない');
   // 評価フォームの script は、送信先（CONTACT_EMAIL）が設定されたときだけ
   assert.deepEqual(en.scripts, ['/weather.js', '/map.js', '/vote.js', ...(REVIEWS_ON ? ['/review.js'] : [])]);
-  assert.match(en.body, /<aside class="ev-side"/);
+  // 事実のカードに、地図・行き方を統合している（1つの枠）
+  assert.match(en.body, /<aside class="ev-facts-card"[\s\S]*class="ev-map-block"/);
   // 位置のない会場は、押すと Google マップの埋め込みを読み込むボタン
   const noGeo = real.series.find((s) => !real.geo[s.id]);
   const ng = pages.find((p) => p.path === `/e/${noGeo.id}/`).body;

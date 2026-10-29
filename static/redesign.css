@@ -44,13 +44,15 @@ h1,h2{font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK 
 .month-block .ev-list{margin-top:4px}
 
 /* 開催の詳細：上段は左に見出し・写真、右に事実のカード */
-.ev-top{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:40px;align-items:start;margin-top:12px}
-.ev-top-l h1{font-size:48px;line-height:1.1;margin:0}
-.ev-top-l .orig-h{font-size:16px;color:var(--rd-sub);margin:8px 0 0}
-.ev-top .tag.chk{background:#E6F0EC;color:#2F6B5E;font-weight:700;border-radius:20px;padding:2px 10px}
+.ev-grid{display:grid;grid-template-columns:minmax(0,1fr) 380px;grid-template-rows:auto 1fr;gap:0 40px;grid-template-areas:"head rcol" "main rcol";align-items:start;margin-top:12px}
+.ev-head{grid-area:head;min-width:0}.ev-main{grid-area:main;min-width:0}
+.ev-rcol{grid-area:rcol;display:flex;flex-direction:column;gap:20px;min-width:0}
+.ev-head h1{font-size:48px;line-height:1.1;margin:0}
+.ev-head .orig-h{font-size:16px;color:var(--rd-sub);margin:8px 0 0}
+.ev-head .tag.chk{background:#E6F0EC;color:#2F6B5E;font-weight:700;border-radius:20px;padding:2px 10px}
 .ev-hero{margin-top:20px;height:340px;border-radius:12px;overflow:hidden;background:#C9B89B}
 .ev-hero img{display:block;width:100%;height:100%;object-fit:cover}
-.ev-facts-card{position:sticky;top:16px;background:#fff;border:1px solid var(--rd-line);border-radius:12px;padding:20px 24px}
+.ev-facts-card{background:#fff;border:1px solid var(--rd-line);border-radius:12px;padding:20px 24px}
 .ev-facts-card .sec-h{margin:0 0 6px;font-size:20px}
 .ev-facts-card .facts{border:0;padding:0;margin:0}
 .ev-facts-card .facts div{grid-template-columns:1fr;gap:2px}
@@ -60,7 +62,7 @@ h1,h2{font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK 
 .btn-acc,.btn-line{display:block;text-align:center;padding:13px 14px;border-radius:6px;font-weight:700;font-size:15px;text-decoration:none}
 .btn-acc{background:var(--rd-acc);color:#fff}
 .btn-line{border:1px solid var(--rd-ctl);color:var(--rd-ink);font-weight:500;font-size:14px}
-.ev-top .banner{background:var(--rd-tint);border-radius:10px}
+.ev-head .banner{background:var(--rd-tint);border-radius:10px}
 
 /* 地域：件数などの小さな枠 */
 .area-facts{display:flex;gap:16px;margin:4px 0 8px}
@@ -74,9 +76,8 @@ h1,h2{font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK 
 
 @media (max-width:900px){
   .ev-list{grid-template-columns:1fr}
-  .pg-banner-text h1,.page>h1,.ev-top-l h1{font-size:34px}
-  .ev-top{grid-template-columns:1fr;gap:20px}
-  .ev-facts-card{position:static}
+  .pg-banner-text h1,.page>h1,.ev-head h1{font-size:34px}
+  .ev-grid{grid-template-columns:minmax(0,1fr);grid-template-rows:none;gap:20px;grid-template-areas:"head" "rcol" "main"}
   .ev-hero{height:220px}
   .day-tabs a,.day-tabs b{padding:10px 14px;font-size:14px}
   .area-facts{flex-wrap:wrap}.area-facts div{flex:1 1 40%}
@@ -147,3 +148,10 @@ h1,h2{font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK 
 /* 右の列の幅をそろえる：事実のカード（上段）と、地図・天気・ナビ（下段・ほかのページ）を、どちらも 380px・同じ間隔に */
 .ev-split{grid-template-columns:minmax(0,1fr) 380px;gap:40px}
 @media (max-width:900px){.ev-split{grid-template-columns:minmax(0,1fr);gap:20px}}
+
+/* 開催詳細：事実のカードに、地図・行き方を統合（1つの枠） */
+.ev-map-block{margin-top:18px;padding-top:16px;border-top:1px solid var(--rd-line)}
+.ev-map-block h3{margin:0 0 10px;font-size:16px;font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho",serif}
+.ev-facts-card .map-btns{flex-direction:column;margin:12px 0 0}
+.ev-facts-card .map-btn{text-align:center}
+.ev-facts-card .note{margin:8px 0 0;font-size:12.5px;color:var(--rd-sub)}
