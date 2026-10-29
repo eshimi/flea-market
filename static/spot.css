@@ -1,10 +1,10 @@
 .sp-hl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
 .sp-hl b{font-size:.9rem;margin-right:4px}
-.sp-hl a,.sp-chips a{border:1px solid #d9ccb6;border-radius:99px;padding:3px 12px;font-size:.85rem;background:#fff;color:inherit;text-decoration:none}
-.sp-hl a{border-color:#B95E43;color:#B95E43;font-weight:700}
+.sp-hl a,.sp-chips a{border:1px solid #d9ccb6;border-radius:20px;padding:3px 12px;font-size:.85rem;background:#fff;color:inherit;text-decoration:none}
+.sp-hl a{border-color:#B5452E;color:#B5452E;font-weight:700}
 .sp-chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
 .sp-area h2{margin:22px 0 6px;font-size:1.15rem}
-.sp-tbl{overflow-x:auto;background:#fff;border:1px solid #e7dccb;border-radius:12px}
+.sp-tbl{overflow-x:auto;background:#fff;border:1px solid #e7dccb;border-radius:10px}
 .sp-tbl table{width:100%;border-collapse:collapse;min-width:520px}
 .sp-tbl th,.sp-tbl td{padding:10px 12px;text-align:left;border-bottom:1px solid #f0e7d8;font-size:.92rem;vertical-align:top}
 .sp-tbl tr:last-child td{border-bottom:0}
@@ -15,7 +15,7 @@
 .sp-head{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin:4px 0 8px}
 .sp-head.has-photo{grid-template-columns:380px minmax(0,1fr);align-items:start}
 .sp-photo{margin:0}
-.sp-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px;background:#efe6d6}
+.sp-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:10px;background:#efe6d6}
 .sp-photo figcaption{font-size:.7rem;line-height:1.4;color:#7a6a58;margin-top:5px}
 .sp-photo figcaption a{color:inherit}
 .sp-head-body h1{margin:0 0 4px}
@@ -31,9 +31,9 @@
 .sp-th{flex:0 0 64px;width:64px;height:43px;object-fit:cover;border-radius:6px;background:#efe6d6}
 .sp-th.ph{display:block}
 .poll-btns{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
-.poll-btns button{display:inline-flex;align-items:center;gap:6px;border:1px solid #d9ccb6;background:#fff;color:inherit;border-radius:99px;padding:7px 14px;font:inherit;font-size:.9rem;cursor:pointer}
-.poll-btns button:hover{border-color:#B95E43}
-.poll-btns button.on{background:#B95E43;border-color:#B95E43;color:#fff}
+.poll-btns button{display:inline-flex;align-items:center;gap:6px;border:1px solid #d9ccb6;background:#fff;color:inherit;border-radius:20px;padding:7px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+.poll-btns button:hover{border-color:#B5452E}
+.poll-btns button.on{background:#B5452E;border-color:#B5452E;color:#fff}
 .poll-btns button:disabled{opacity:.6;cursor:wait}
 .poll-btns .n{font-weight:700;min-width:1ch}
 .poll-btns .n:empty{display:none}

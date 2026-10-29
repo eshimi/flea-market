@@ -1,5 +1,5 @@
 /* トップページ専用（2026-10 リニューアル）。他のページには影響しない */
-:root{--hm-cream:#F7F3EB;--hm-ink:#292B28;--hm-red:#B95E43;--hm-red-d:#9A4C36;--hm-sub:#6b6e66}
+:root{--hm-cream:#F7F3EC;--hm-ink:#2A2622;--hm-red:#B5452E;--hm-red-d:#963825;--hm-sub:#5B5249}
 /* ---- HERO ---- */
 .hero2{position:relative;background:var(--hm-cream);overflow:hidden;isolation:isolate}
 .hero2-photo{position:absolute;inset:0;z-index:-1}
@@ -7,10 +7,10 @@
 /* 2・3枚目は、同じ大きさ（幅1161px、約0.7倍）で右寄せ・上下中央に表示する */
 .hero2-photo img.hp-alt[src$="hero-2.webp"],.hero2-photo img.hp-alt[src$="hero-3.webp"]{position:absolute;right:0;top:50%;transform:translateY(-50%);width:1161px;max-width:none;height:auto;object-fit:fill}
 .hero2-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(251,247,239,.98) 0,rgba(251,247,239,.93) 28%,rgba(251,247,239,.45) 47%,rgba(251,247,239,0) 63%)}
-.hero2-in{width:100%;box-sizing:border-box;max-width:1240px;margin:0 auto;padding:44px 28px 40px;position:relative}
+.hero2-in{width:100%;box-sizing:border-box;max-width:1240px;margin:0 auto;padding:44px 48px 40px;position:relative}
 .hero2-copy{max-width:680px}
 .hero2-kicker{font-family:"DM Sans","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",sans-serif;font-weight:700;font-size:13px;line-height:1.3;letter-spacing:.08em;text-transform:uppercase;color:var(--hm-red);margin:0 0 8px}
-.hero2 .hero2-title{font-family:"DM Serif Display","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP",Georgia,"Times New Roman",serif;font-weight:800;font-size:clamp(30px,3.4vw,47px);line-height:1.1;letter-spacing:-.012em;color:var(--hm-ink);margin:0}
+.hero2 .hero2-title{font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP",Georgia,"Times New Roman",serif;font-weight:800;font-size:clamp(30px,3.4vw,47px);line-height:1.1;letter-spacing:-.012em;color:var(--hm-ink);margin:0}
 .hero2 .hero2-title span{display:inline;margin-right:.26em}
 .hero2 .hero2-title em{display:block;font-style:normal;color:var(--hm-red)}
 .hero2[lang=ja] .hero2-title,.hero2.is-ja .hero2-title{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:900;font-size:clamp(30px,3.6vw,48px);line-height:1.22;letter-spacing:.01em}
@@ -59,15 +59,15 @@
 @media (max-width:360px){.hsearch button{font-size:11.5px;padding:0 12px}}
 
 /* ---- 共通の部品 ---- */
-.hm-in{max-width:1240px;margin:auto;padding:0 28px}
+.hm-in{max-width:1240px;margin:auto;padding:0 48px}
 .hm-sec{padding:44px 0}
 .hm-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:18px}
 .hm-h{margin:0;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
-.hm-h span{font-family:"DM Serif Display","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP",Georgia,serif;font-weight:800;font-size:27px;color:var(--hm-ink);line-height:1.25}
+.hm-h span{font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP",Georgia,serif;font-weight:800;font-size:27px;color:var(--hm-ink);line-height:1.25}
 .hm-h small{font-size:12.5px;color:var(--hm-sub);font-weight:400}
 .hm-more{display:inline-flex;align-items:center;gap:6px;color:#1f5fa8;font-size:13.5px;text-decoration:none;white-space:nowrap;padding:6px 0}
 .hm-more:hover{text-decoration:underline}
-.hm-empty{background:#fff;border:1px dashed #e0d4c0;border-radius:12px;padding:18px;color:var(--hm-sub);margin:0}
+.hm-empty{background:#fff;border:1px dashed #e0d4c0;border-radius:10px;padding:18px;color:var(--hm-sub);margin:0}
 /* ---- 開催カレンダー ---- */
 .hm-cal{background:#fff;border-bottom:1px solid #efe6d8}
 .hm-cal-in{display:flex;align-items:center;gap:22px;padding-top:14px;padding-bottom:14px}
@@ -76,7 +76,7 @@
 .cal-label small{display:block;color:var(--hm-sub);font-size:11.5px}
 .cal-days{list-style:none;display:flex;gap:8px;margin:0;padding:4px 2px;overflow-x:auto;flex:1 1 auto;min-width:0;scroll-snap-type:x proximity;scrollbar-width:none}
 .cal-days li{flex:0 0 auto}
-.cd{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-width:76px;padding:8px 8px;border:1px solid #e6dccd;border-radius:8px;background:#fff;color:var(--hm-ink);text-decoration:none;line-height:1.3;scroll-snap-align:start}
+.cd{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-width:76px;padding:8px 8px;border:1px solid #E4DCCD;border-radius:6px;background:#fff;color:var(--hm-ink);text-decoration:none;line-height:1.3;scroll-snap-align:start}
 .cd b{font-size:15px}
 .cd em{font-style:normal;color:var(--hm-sub);font-size:11px}
 .cd i{font-style:normal;color:#2f6f5e;font-weight:700;font-size:12px}
@@ -89,11 +89,11 @@ a.cd:hover{border-color:var(--hm-red)}
 .cal-view .ic:first-child{color:var(--hm-red)}
 .cal-view:hover span{text-decoration:underline}
 /* ---- 今週末の注目マーケット ---- */
-.hm-featured{background:#F7F3EB}
+.hm-featured{background:#F7F3EC}
 .mc-wrap{position:relative}
 .mc-row{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 64px)/5);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 14px;scrollbar-width:none}
-.mcard{display:flex;flex-direction:column;background:#fff;border:1px solid #ece2d2;border-radius:12px;overflow:hidden;scroll-snap-align:start;min-width:0}
-.mc-img{position:relative;display:block;aspect-ratio:4/3;background:#eadfce}
+.mcard{display:flex;flex-direction:column;background:#fff;border:1px solid #ece2d2;border-radius:10px;overflow:hidden;scroll-snap-align:start;min-width:0}
+.mc-img{position:relative;display:block;aspect-ratio:4/3;background:#E4DCCD}
 .mc-img img{display:block;width:100%;height:100%;object-fit:cover}
 .mc-date{position:absolute;left:10px;top:10px;background:#fff;border-radius:6px;min-width:44px;padding:4px 6px 3px;text-align:center;line-height:1.1;box-shadow:0 2px 8px rgba(0,0,0,.2)}
 .mc-date .mc-m,.mc-date .mc-w{display:block;font-size:10px;letter-spacing:.06em;color:var(--hm-sub);font-weight:700}
@@ -120,33 +120,33 @@ a.cd:hover{border-color:var(--hm-red)}
 .mc-next[hidden]{display:none}
 /* ---- 出店者向け ---- */
 .hm-vendors{background:#fff;padding:14px 0 44px}
-.vend-box{display:grid;grid-template-columns:minmax(240px,.95fr) minmax(0,1.35fr) minmax(0,1.1fr);gap:24px;background:#fbeee9;border-radius:14px;padding:26px;align-items:center}
+.vend-box{display:grid;grid-template-columns:minmax(240px,.95fr) minmax(0,1.35fr) minmax(0,1.1fr);gap:24px;background:#fbeee9;border-radius:10px;padding:26px;align-items:center}
 .vend-ic{color:var(--hm-red);margin-bottom:6px}
 .vend-box .hm-h span{font-size:26px}
 .vend-copy p{margin:12px 0 18px;color:#3a3a46;font-size:14.5px;line-height:1.7}
-.vend-btn{display:inline-flex;align-items:center;gap:10px;background:var(--hm-red);color:#fff;padding:0 24px;min-height:50px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px}
+.vend-btn{display:inline-flex;align-items:center;gap:10px;background:var(--hm-red);color:#fff;padding:0 24px;min-height:50px;border-radius:6px;text-decoration:none;font-weight:700;font-size:15px}
 .vend-btn:hover{background:var(--hm-red-d)}
 .vend-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.vend-list a{display:flex;gap:12px;align-items:center;background:#fff;border-radius:8px;padding:8px;text-decoration:none;color:var(--hm-ink);box-shadow:0 1px 4px rgba(0,0,0,.07)}
+.vend-list a{display:flex;gap:12px;align-items:center;background:#fff;border-radius:6px;padding:8px;text-decoration:none;color:var(--hm-ink);box-shadow:0 1px 4px rgba(0,0,0,.07)}
 .vend-list img{width:96px;height:72px;object-fit:cover;border-radius:6px;flex:0 0 auto}
 .vend-list span{min-width:0}
 .vend-list b{display:block;font-size:14.5px;line-height:1.35;margin-bottom:2px}
-.vend-list em{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-style:normal;font-size:12.5px;color:#6b6e66;line-height:1.4}
-.vend-photo{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3}
+.vend-list em{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-style:normal;font-size:12.5px;color:#5B5249;line-height:1.4}
+.vend-photo{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/3}
 .vend-photo img{display:block;width:100%;height:100%;object-fit:cover}
 .vend-script{position:absolute;left:14px;top:12px;margin:0;font-family:"Caveat","Segoe Script",cursive;font-weight:600;font-size:clamp(24px,2.4vw,34px);color:#fff;transform:rotate(-7deg);text-shadow:0 2px 10px rgba(0,0,0,.6);line-height:1.1}
 /* ---- 地域から探す・種類から探す ---- */
 .hm-explore{background:#fff;padding:18px 0 44px}
 .hm-two{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.3fr);gap:36px;align-items:start}
-.area-box{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:14px;background:#F7F3EB;border-radius:14px;padding:18px 18px 0;overflow:hidden}
+.area-box{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:14px;background:#F7F3EC;border-radius:10px;padding:18px 18px 0;overflow:hidden}
 .jmap{display:block;width:100%;height:auto}
-.pm-off{fill:#efd3c8;stroke:#F7F3EB;stroke-width:.8}
+.pm-off{fill:#efd3c8;stroke:#F7F3EC;stroke-width:.8}
 .pm-on{fill:#d9533b;stroke:#fff;stroke-width:1;cursor:pointer;transition:fill .15s}
-a:hover .pm-on,a:focus-visible .pm-on{fill:#9A4C36}
+a:hover .pm-on,a:focus-visible .pm-on{fill:#963825}
 .area-side{align-self:center}
 .area-lead{margin:0 0 10px;font-size:13px;color:var(--hm-sub)}
 .achips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0}
-.achip{display:inline-flex;align-items:center;gap:7px;border:1px solid #e3b9ae;border-radius:8px;background:#fff4f0;color:#9A4C36;padding:0 12px;min-height:42px;text-decoration:none;font-weight:700;font-size:14px}
+.achip{display:inline-flex;align-items:center;gap:7px;border:1px solid #e3b9ae;border-radius:6px;background:#fff4f0;color:#963825;padding:0 12px;min-height:42px;text-decoration:none;font-weight:700;font-size:14px}
 .achip small{font-weight:400;color:#6b5a55;font-size:11.5px}
 .achip:hover{border-color:var(--hm-red)}
 .area-sky{grid-column:1 / -1;margin:0 -18px;line-height:0}
@@ -160,14 +160,14 @@ a:hover .pm-on,a:focus-visible .pm-on{fill:#9A4C36}
 .tcard b{margin-top:8px;font-size:13px;line-height:1.35;padding:0 4px;word-break:auto-phrase;text-wrap:balance}
 .tcard small{color:var(--hm-sub);font-size:12.5px;margin-top:2px}
 /* ---- サイト情報 ---- */
-.hm-about{background:#F7F3EB;padding:30px 0 44px}
-.about-box{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(220px,.62fr);gap:30px;align-items:center;background:#fff;border:1px solid #ece2d2;border-radius:14px;padding:20px 0 20px 24px;overflow:hidden}
+.hm-about{background:#F7F3EC;padding:30px 0 44px}
+.about-box{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(220px,.62fr);gap:30px;align-items:center;background:#fff;border:1px solid #ece2d2;border-radius:10px;padding:20px 0 20px 24px;overflow:hidden}
 .about-left{display:flex;flex-direction:column;gap:16px}
 .about-title{display:flex;gap:12px;align-items:center;color:var(--hm-red)}
 .about-box .hm-h span{font-size:23px}
 .about-nums{display:flex;gap:28px;margin:0}
 .about-nums div{display:flex;flex-direction:column-reverse}
-.about-nums dd{margin:0;font-family:"DM Serif Display","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP",Georgia,serif;font-size:42px;font-weight:800;color:var(--hm-red);line-height:1.05}
+.about-nums dd{margin:0;font-family:"Fraunces","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP",Georgia,serif;font-size:42px;font-weight:800;color:var(--hm-red);line-height:1.05}
 .about-nums dt{font-size:12.5px;color:var(--hm-sub);line-height:1.35}
 .about-nums dt small{display:block;font-size:11px}
 .about-text{font-size:13px;color:#3a3a46;line-height:1.7}
@@ -213,14 +213,14 @@ a:hover .pm-on,a:focus-visible .pm-on{fill:#9A4C36}
 .hm-news{padding:34px 0 8px}
 .hm-news-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:32px}
 .news-list{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:10px}
-.news-list li>a,.news-list li>div{display:grid;gap:3px;background:#fff;border:1px solid #e7dccb;border-radius:12px;padding:12px 16px;color:inherit;text-decoration:none}
-.news-list li>a:hover{border-color:#B95E43}
+.news-list li>a,.news-list li>div{display:grid;gap:3px;background:#fff;border:1px solid #e7dccb;border-radius:10px;padding:12px 16px;color:inherit;text-decoration:none}
+.news-list li>a:hover{border-color:#B5452E}
 .news-list time{font-size:12px;color:#7a6a58}
 .news-list b{font-size:15px;line-height:1.45}
 .news-list span{font-size:13px;color:#6a5a48;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .news-list.upd li>a,.news-list.upd li>div{padding:10px 14px}
 .hm-vbanner{padding:6px 0 30px}
-.hm-vbanner .vb{display:flex;align-items:center;gap:12px;background:#fbeee9;border-radius:12px;padding:12px 18px;color:inherit;text-decoration:none}
+.hm-vbanner .vb{display:flex;align-items:center;gap:12px;background:#fbeee9;border-radius:10px;padding:12px 18px;color:inherit;text-decoration:none}
 .hm-vbanner .vb b{font-size:15px}
 .hm-vbanner .vb span{flex:1;font-size:13px;color:#6a5a48}
 .hm-vbanner .vb:hover{background:#f6e3dc}
@@ -229,16 +229,16 @@ a:hover .pm-on,a:focus-visible .pm-on{fill:#9A4C36}
 /* 新しいトップ：カテゴリー（写真）・地域（文字のタイル）・ガイド帯 */
 .hm-cats{padding:34px 0 8px}
 .ctiles{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}
-.ctile{display:block;background:#fff;border-radius:12px;padding:12px 12px 14px;text-align:center;color:var(--hm-ink);text-decoration:none;height:100%}
+.ctile{display:block;background:#fff;border-radius:10px;padding:12px 12px 14px;text-align:center;color:var(--hm-ink);text-decoration:none;height:100%}
 .ctile:hover{box-shadow:0 6px 16px rgba(41,43,40,.08)}
-.ct-img{display:block;border-radius:8px;overflow:hidden;aspect-ratio:276/228;margin-bottom:10px;background:#EFE7D8}
+.ct-img{display:block;border-radius:6px;overflow:hidden;aspect-ratio:276/228;margin-bottom:10px;background:#EFE7D8}
 .ct-img img{width:100%;height:100%;object-fit:cover;display:block}
 .ctile b{font-size:14px;font-weight:500;line-height:1.4;display:block}
 .hm-explore{padding-top:46px}
 .areas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
-.ar{display:flex;flex-direction:column;justify-content:space-between;height:132px;padding:16px 18px;border-radius:12px;background:#fff;border:1px solid var(--hm-line,#e3d6bf);color:var(--hm-ink);text-decoration:none}
+.ar{display:flex;flex-direction:column;justify-content:space-between;height:132px;padding:16px 18px;border-radius:10px;background:#fff;border:1px solid var(--hm-line,#e3d6bf);color:var(--hm-ink);text-decoration:none}
 .ar small{font-size:12px;color:var(--hm-sub);letter-spacing:.06em}
-.ar b{font-family:"DM Serif Display","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",serif;font-weight:400;font-size:24px;line-height:1.05;letter-spacing:.02em}
+.ar b{font-family:"Fraunces","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",serif;font-weight:400;font-size:24px;line-height:1.05;letter-spacing:.02em}
 .ar em{font-style:normal;font-size:12.5px;color:var(--hm-red);font-weight:700;display:inline-flex;align-items:center;gap:4px}
 .ar:hover b{text-decoration:underline}
 .ar.t1{background:var(--hm-red);border-color:var(--hm-red);color:#fff}.ar.t1 small,.ar.t1 em{color:#fbe6dc}
@@ -248,10 +248,10 @@ a:hover .pm-on,a:focus-visible .pm-on{fill:#9A4C36}
 .ar.t5{background:#fff}
 .hm-gband{padding:46px 0 0}
 .hm-gband .gband{margin:0}
-.gband{display:grid;grid-template-columns:44% 1fr;border-radius:14px;overflow:hidden;background:#EFE7D8;min-height:225px;position:relative}
+.gband{display:grid;grid-template-columns:44% 1fr;border-radius:10px;overflow:hidden;background:#EFE7D8;min-height:225px;position:relative}
 .gband-ph{background-size:cover;background-position:center 30%;min-height:225px}
 .gband-t{position:relative;padding:28px 46px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;overflow:hidden}
-.gband-t h2{font-family:"DM Serif Display","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",serif;font-weight:400;font-size:32px;line-height:1.12;margin:0 0 10px;color:var(--hm-ink);position:relative;z-index:1}
+.gband-t h2{font-family:"Fraunces","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans CJK JP",serif;font-weight:400;font-size:32px;line-height:1.12;margin:0 0 10px;color:var(--hm-ink);position:relative;z-index:1}
 .gband-t h2 span{display:block}
 .gband-t p{margin:0 0 16px;font-size:14px;line-height:1.6;color:#4a4a46;max-width:460px;position:relative;z-index:1}
 .gband .btn{position:relative;z-index:1;display:inline-flex;align-items:center;gap:8px;background:var(--hm-red);color:#fff;padding:13px 22px;border-radius:6px;font-weight:700;text-decoration:none}
@@ -269,24 +269,24 @@ a:hover .pm-on,a:focus-visible .pm-on{fill:#9A4C36}
 /* HERO の写真の切り替え（点）。写真が1枚だけのときは出ない */
 .hero2-photo img.hp[hidden]{display:none}
 /* 2枚目は、引いて（全体が見えるように）右寄せ */
-.hero2-photo img.hp-alt{object-fit:contain;object-position:right center;background:#F7F3EB;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%);mask-image:linear-gradient(90deg,transparent 0,#000 14%)}
+.hero2-photo img.hp-alt{object-fit:contain;object-position:right center;background:#F7F3EC;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%);mask-image:linear-gradient(90deg,transparent 0,#000 14%)}
 .hero2-dots{position:absolute;right:28px;bottom:18px;display:flex;gap:8px;z-index:2}
 .hero2-dots button{width:14px;height:14px;border-radius:50%;border:2px solid #fff;background:rgba(41,43,40,.45);padding:0;cursor:pointer}
-.hero2-dots button[aria-pressed="true"]{background:#B95E43;border-color:#fff}
+.hero2-dots button[aria-pressed="true"]{background:#B5452E;border-color:#fff}
 @media (max-width:900px){.hero2-dots{right:16px;bottom:10px}}
 /* Facebook の CTA（公式ロゴは単独で置き、文字は離す） */
 .hm-fbcta{padding:6px 0 26px}
-.hm-fbcta .fbc{display:flex;align-items:center;gap:20px;flex-wrap:wrap;background:#eef4ff;border:1px solid #c9dcff;border-radius:14px;padding:18px 22px}
+.hm-fbcta .fbc{display:flex;align-items:center;gap:20px;flex-wrap:wrap;background:#eef4ff;border:1px solid #c9dcff;border-radius:10px;padding:18px 22px}
 .hm-fbcta .fbc-logo{flex:0 0 auto;display:block;line-height:0}
 .hm-fbcta .fb-logo{display:block;border-radius:50%}
 .hm-fbcta .fbc-text{flex:1 1 260px;display:flex;flex-direction:column;gap:3px}
 .hm-fbcta .fbc-text b{font-size:17px;color:#16336b}
 .hm-fbcta .fbc-group{font-size:13px;color:#1b5fc4;text-decoration:none}
 .hm-fbcta .fbc-group:hover{text-decoration:underline}
-.hm-fbcta .fbc-btn{display:inline-flex;align-items:center;background:#fff;color:#0a58d6;border:2px solid #0866ff;border-radius:999px;padding:10px 22px;font-size:14.5px;font-weight:700;text-decoration:none;box-shadow:0 4px 12px rgba(8,102,255,.18)}
+.hm-fbcta .fbc-btn{display:inline-flex;align-items:center;background:#fff;color:#0a58d6;border:2px solid #0866ff;border-radius:20px;padding:10px 22px;font-size:14.5px;font-weight:700;text-decoration:none;box-shadow:0 4px 12px rgba(8,102,255,.18)}
 .hm-fbcta .fbc-btn:hover{background:#0866ff;color:#fff}
 @media (max-width:600px){.hm-fbcta .fbc{padding:16px;gap:14px}.hm-fbcta .fbc-btn{width:100%;justify-content:center}}
 /* HERO 右上の「初めての方へ」リンク */
-.hero2-new{position:absolute;top:16px;right:28px;z-index:3;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.92);border:1px solid #e5ddd0;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;color:#272a25;text-decoration:none;box-shadow:0 4px 14px rgba(40,35,25,.12)}
+.hero2-new{position:absolute;top:16px;right:28px;z-index:3;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.92);border:1px solid #e5ddd0;border-radius:20px;padding:7px 14px;font-size:13px;font-weight:700;color:#272a25;text-decoration:none;box-shadow:0 4px 14px rgba(40,35,25,.12)}
 .hero2-new:hover{background:#c73e2a;border-color:#c73e2a;color:#fff}
 @media (max-width:900px){.hero2-new{top:10px;right:16px;padding:6px 12px;font-size:12.5px}}

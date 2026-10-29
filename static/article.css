@@ -1,6 +1,6 @@
 /* 記事ページ（ブログ・使い方・よくある質問）。構成は参考にした補助金ネットのブログと同じ、色はこのサイトの生成り・墨・朱 */
-:root{--ar-ink:#292B28;--ar-sub:#6b6e66;--ar-line:#e9dfd0;--ar-red:#B95E43;--ar-red-d:#9A4C36;--ar-card:#fff;--ar-soft:#f6efe3;--ar-dark:#292B28}
-.art-wrap{max-width:1240px;margin:0 auto;padding:0 28px 56px;color:var(--ar-ink)}
+:root{--ar-ink:#2A2622;--ar-sub:#5B5249;--ar-line:#E4DCCD;--ar-red:#B5452E;--ar-red-d:#963825;--ar-card:#fff;--ar-soft:#f6efe3;--ar-dark:#2A2622}
+.art-wrap{max-width:1240px;margin:0 auto;padding:0 48px 56px;color:var(--ar-ink)}
 .art-crumbs{padding:14px 0 6px;font-size:13px;color:var(--ar-sub)}
 .visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 /* 一覧の見出し帯 */
@@ -16,12 +16,12 @@
 .lp-pic{width:100%;height:240px;object-fit:cover;object-position:50% 40%;display:block;-webkit-mask-image:linear-gradient(90deg,transparent,#000 28%);mask-image:linear-gradient(90deg,transparent,#000 28%)}
 /* カテゴリ */
 .bl-chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px}
-.bl-chip{font:inherit;font-weight:700;font-size:14px;padding:9px 16px;border-radius:999px;border:1px solid var(--ar-line);background:#fff;color:var(--ar-ink);cursor:pointer}
+.bl-chip{font:inherit;font-weight:700;font-size:14px;padding:9px 16px;border-radius:20px;border:1px solid var(--ar-line);background:#fff;color:var(--ar-ink);cursor:pointer}
 .bl-chip sup{font-weight:400;color:var(--ar-sub);margin-left:5px;font-size:11px}
 .bl-chip[aria-pressed=true]{background:var(--ar-dark);color:#fff;border-color:var(--ar-dark)}.bl-chip[aria-pressed=true] sup{color:#d9d4cb}
 /* 2列 */
 .bl-layout,.page-split{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;align-items:start}
-.bl-list{background:var(--ar-card);border:1px solid var(--ar-line);border-radius:14px;overflow:hidden}
+.bl-list{background:var(--ar-card);border:1px solid var(--ar-line);border-radius:10px;overflow:hidden}
 .bl-row{display:grid;grid-template-columns:120px minmax(0,1fr);gap:20px;padding:22px 26px;text-decoration:none;color:inherit;border-top:1px solid var(--ar-line)}
 .bl-row:first-child{border-top:0}.bl-row[hidden]{display:none}
 .bl-row:hover{background:#fffaf2}
@@ -40,7 +40,7 @@
 .bl-points{margin:20px 0 0;background:#fff;border:1px solid var(--ar-line);border-left:4px solid var(--ar-red);border-radius:10px;padding:16px 22px;max-width:46em}
 .bl-points h2{margin:0 0 8px;font-size:15px}.bl-points ol{margin:0;padding-left:1.4em;line-height:1.8;font-size:14.5px}
 /* 本文カード */
-.art-box{background:var(--ar-card);border:1px solid var(--ar-line);border-radius:14px;padding:30px 36px 18px;box-shadow:0 2px 12px rgba(40,30,15,.05)}
+.art-box{background:var(--ar-card);border:1px solid var(--ar-line);border-radius:10px;padding:30px 36px 18px;box-shadow:0 2px 12px rgba(40,30,15,.05)}
 .art-sec{margin:0 0 1.9rem;scroll-margin-top:84px}
 .art-sec h2{display:flex;align-items:center;gap:10px;margin:0 0 .8rem;font-size:1.25rem;line-height:1.5}
 .art-sec h2::before{content:"";width:5px;height:1.2em;border-radius:3px;background:var(--ar-red);flex-shrink:0}
@@ -50,24 +50,24 @@
 .art-note{margin:14px 0 0;font-size:13px;color:var(--ar-sub);border-left:3px solid var(--ar-line);padding-left:14px}
 /* 前後の記事・タグ */
 .bl-pn{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:26px 0}
-.bl-pn-card{display:block;background:#fff;border:1px solid var(--ar-line);border-radius:12px;padding:14px 18px;text-decoration:none;color:inherit;min-width:0}
+.bl-pn-card{display:block;background:#fff;border:1px solid var(--ar-line);border-radius:10px;padding:14px 18px;text-decoration:none;color:inherit;min-width:0}
 .bl-pn-card small{display:block;color:var(--ar-sub);font-size:12px;margin-bottom:4px}
 .bl-pn-card b{font-size:14px;line-height:1.5}
 .bl-pn-card:hover{border-color:var(--ar-red)}
 .art-tags{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 8px}
 .art-tags-label{font-size:13px;font-weight:700}
 .tag-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.tag-list a{display:inline-block;padding:5px 12px;border-radius:999px;background:#fff;border:1px solid var(--ar-line);font-size:13px;color:var(--ar-ink);text-decoration:none}
+.tag-list a{display:inline-block;padding:5px 12px;border-radius:20px;background:#fff;border:1px solid var(--ar-line);font-size:13px;color:var(--ar-ink);text-decoration:none}
 .tag-list a:hover{border-color:var(--ar-red);color:var(--ar-red)}
 /* 右の列 */
 .page-side{display:flex;flex-direction:column;gap:18px;position:sticky;top:16px;align-self:start}
-.side-card{background:#fff;border:1px solid var(--ar-line);border-radius:14px;padding:18px 20px}
+.side-card{background:#fff;border:1px solid var(--ar-line);border-radius:10px;padding:18px 20px}
 .side-card h2{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px}
 .side-toc h2::before{content:"";width:4px;height:1em;border-radius:2px;background:var(--ar-red)}
 .side-toc ul{list-style:none;margin:0;padding:0 0 0 10px;border-left:2px solid var(--ar-line)}
 .side-toc li a{display:block;padding:6px 12px;font-size:13.5px;color:#34343f;text-decoration:none;line-height:1.5}
 .side-toc li a:hover{color:var(--ar-red)}
-.side-cta{background:var(--ar-dark);color:#fff;border-radius:14px;padding:20px 22px}
+.side-cta{background:var(--ar-dark);color:#fff;border-radius:10px;padding:20px 22px}
 .side-cta h2{margin:0 0 8px;font-size:17px}.side-cta p{margin:0 0 14px;color:#d9d6cf;font-size:13.5px;line-height:1.7}
 .btn-w{display:block;text-align:center;background:#fff;color:var(--ar-ink);font-weight:700;border-radius:9px;padding:11px 12px;text-decoration:none;font-size:14px}
 .btn-w:hover{background:#ffeede}
