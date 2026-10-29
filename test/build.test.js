@@ -961,3 +961,12 @@ test('地域×月のページ：年つきURL・5件以上の月だけ・都道�
   // 5件未満の月は作らない
   for (const m of months) assert.ok((m.body.match(/<article class="ev/g) || []).length >= 1);
 });
+
+test('ブログ記事の slug は重複しない（同じ記事が2件並ばない）', async () => {
+  const { BLOG } = await import('../scripts/lib/content.mjs');
+  const seen = new Set();
+  for (const b of BLOG) {
+    assert.ok(!seen.has(b.slug), `slug が重複: ${b.slug}`);
+    seen.add(b.slug);
+  }
+});
