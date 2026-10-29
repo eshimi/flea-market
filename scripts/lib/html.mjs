@@ -186,6 +186,7 @@ ${ogImage ? '' : '<meta property="og:image:width" content="1200">\n<meta propert
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/style.css">
 <link rel="stylesheet" href="/chrome.css">
+<link rel="stylesheet" href="/redesign.css">
 ${css.map((c) => `<link rel="stylesheet" href="${c}">`).join('\n')}${css.length ? '\n' : ''}${head}${isHome ? orgLd() : ''}</head>
 <body>
 ${siteHeader(base, lang)}
@@ -229,6 +230,16 @@ export function kindTags(kinds, lang = 'en') {
 }
 
 // 一覧の1件（案Aのカード）
+// カードの写真：種類ごとの既存の写真（フリマは3種類から、シリーズ id で決める）
+const CARD_FLEA = ['/img/kinds/flea-400.webp', '/img/kinds/flea-2-400.webp', '/img/kinds/flea-3-400.webp'];
+export function cardImg(s) {
+  const k = s.kinds[0];
+  if (k !== 'flea') return `/img/kinds/${k}-400.webp`;
+  let h = 0;
+  for (const ch of s.id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  return CARD_FLEA[h % 3];
+}
+
 export function eventCard(o, lang = 'en') {
   const s = o.series;
   const [, m, d] = o.date.split('-');
@@ -238,6 +249,7 @@ export function eventCard(o, lang = 'en') {
   const cls = o.status === 'cancelled' || o.status === 'postponed' ? ' off' : '';
   const rule = recurTag(s.recurrence, lang);
   return `<article class="ev${cls}" data-pref="${esc(s.venue.pref)}">
+<a class="ev-ph" href="/e/${s.id}/" tabindex="-1" aria-hidden="true"><img src="${cardImg(s)}" alt="" width="400" height="300" loading="lazy" decoding="async"></a>
 <div class="ev-date"><small>${lang === 'ja' ? `${+m}月` : MON_EN[+m - 1]}</small><b>${+d}</b><small>${wd}</small></div>
 <button type="button" class="save-btn" data-id="${s.id}" aria-pressed="false" aria-label="${esc(SV[lang].saveAria)}" data-on="${esc(SV[lang].removeAria)}" data-off="${esc(SV[lang].saveAria)}">${icon('heart', 20)}</button>
 <div class="ev-body"><h3><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a></h3>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-n" lang="ja">${esc(s.name)}</p>` : ''}

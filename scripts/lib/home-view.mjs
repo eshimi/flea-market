@@ -278,14 +278,42 @@ export function renderGuideBand(lang = 'ja') {
 }
 
 // トップ全体。カレンダー → カテゴリー → 今週末 → 地域 → ガイド帯 → 新着 → 出店者（日）・サイト情報
+
+// 今週末の一覧（左）と、地域の入口・はじめての方へ（右）。デザイン案（Main）の2列の区画。件数・日付・場所は実データ
+const WK = {
+  en: { h: 'Happening this weekend', hFallback: 'Coming up', sort: 'Sorted by date', all: 'See all events this weekend', allFb: 'See the calendar', area: 'Explore by area', n: (k) => `${k} market${k === 1 ? '' : 's'}`, gh: 'New to flea markets?', gp: 'Read the first-visit guide: rain, access and rules, as stated on the official pages.', gb: 'Read the guide', empty: 'No markets are listed for this weekend yet.' },
+  ja: { h: '今週末の開催', hFallback: 'これからの開催', sort: '日付順', all: '今週末の一覧をすべて見る', allFb: 'カレンダーを見る', area: '地域から探す', n: (k) => `${k}件`, gh: 'はじめての方へ', gp: '雨天・行き方・ルールなど、公式ページの記載をまとめたガイドです。', gb: 'ガイドを読む', empty: '今週末の掲載はまだありません。' },
+};
+export function renderWeekendCols(ctx, lang = 'ja') {
+  const t = WK[lang];
+  const f = featuredList(ctx);
+  const rows = f.list.slice(0, 6).map((o) => {
+    const s = o.series;
+    const [, m, d] = o.date.split('-');
+    const wd = lang === 'en' ? WD_EN[weekday(o.date)] : WD_JA[weekday(o.date)];
+    const day = lang === 'en' ? `${wd} ${+d}` : `${+m}/${+d}（${wd}）`;
+    const time = first((lang === 'en' && timeEn(s)) || s.time?.text) || S[lang].featured.tbc;
+    const place = [venueL(s, lang), cityL(s.venue.city, lang) || prefLabel(s.venue.pref, lang)].filter(Boolean).join(' · ');
+    return `<li class="wk-row"><div class="wk-d">${esc(day)}<small>${esc(time)}</small></div><div class="wk-n"><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a><small>${esc(place)}</small></div><span class="wk-k">${esc(S[lang].kinds[s.kinds[0]])}</span>${tagFor(o, lang)}</li>`;
+  }).join('');
+  const counts = [...areaCounts(ctx.occ)].filter(([p]) => p).sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]))).slice(0, 6);
+  const areas = counts.map(([p, n]) => `<li><a href="/area/${p}/"><span>${esc(prefLabel(p, lang))}</span><small>${esc(t.n(n))} →</small></a></li>`).join('');
+  return `<section class="hm-sec wk-cols" aria-label="${esc(t.h)}"><div class="hm-in"><div class="wk-grid">
+<div class="wk-card"><div class="wk-head"><h2>${esc(f.fallback ? t.hFallback : t.h)}</h2><small>${esc(t.sort)}</small></div>
+${rows ? `<ul class="wk-list">${rows}</ul>` : `<p class="hm-empty">${esc(t.empty)}</p>`}
+<a class="wk-all" href="${f.fallback ? '/calendar/' : '/weekend/'}">${esc(f.fallback ? t.allFb : t.all)} →</a></div>
+<div class="wk-side"><div class="wk-card"><h2>${esc(t.area)}</h2><ul class="wk-areas">${areas}</ul></div>
+<div class="guide-cta"><h2>${esc(t.gh)}</h2><p>${esc(t.gp)}</p><a href="/blog/guide-tokyo-flea-markets-visitors/">${esc(t.gb)} →</a></div></div>
+</div></div></section>`;
+}
+
 export function renderHomeBody(ctx, lang = 'ja', disclaimer = '') {
   const en = lang === 'en';
   return [
     renderHero(lang),
     renderCalendar(ctx, lang),
     renderCategories(lang),
-    renderFeatured(ctx, lang),
-    renderAreaTiles(ctx, lang),
+    renderWeekendCols(ctx, lang),
     renderGuideBand(lang),
     renderNews(ctx, lang),
     en ? '' : renderVendors(ctx, lang),

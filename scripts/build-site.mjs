@@ -26,7 +26,7 @@ import { endedSeries, MAX_RULES, redirectRules } from './lib/redirects.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { spotL, venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
-import { setFooterAreas, areaFilter, breadcrumb, esc, eventList, eventListByMonth, kindTags, layout, OG_DEFAULT, statusTag } from './lib/html.mjs';
+import { setFooterAreas, areaFilter, breadcrumb, esc, cardImg, eventList, eventListByMonth, kindTags, layout, OG_DEFAULT, statusTag } from './lib/html.mjs';
 
 const LANGS_ORDER = ['en', 'ja'];
 
@@ -206,11 +206,10 @@ function weekendLinks(ctx, current, lang) {
   const days = upcomingWeekend(ctx.today);
   const cnt = (d) => ctx.occ.filter((o) => o.date === d && isActive(o)).length;
   const num = (d) => (lang === 'ja' ? `（${cnt(d)}）` : ` (${cnt(d)})`);
-  const links = days.filter((d) => cnt(d) > 0).map((d) => (d === current ? `<b>${esc(dlabel(d, lang))}${num(d)}</b>` : `<a href="/date/${d}/">${esc(dlabel(d, lang))}${num(d)}</a>`));
-  const all = current === 'weekend' ? '' : `<a href="/weekend/">${lang === 'ja' ? '今週末の一覧' : 'This weekend: all days'}</a>`;
-  const parts = [...links, all].filter(Boolean);
-  if (!parts.length || (current !== 'weekend' && !days.includes(current))) return '';
-  return `<p class="day-links">${lang === 'ja' ? '今週末：' : 'This weekend: '}${parts.join(' · ')}</p>`;
+  const tabs = days.filter((d) => cnt(d) > 0).map((d) => (d === current ? `<b aria-current="page">${esc(dlabel(d, lang))}${num(d)}</b>` : `<a href="/date/${d}/">${esc(dlabel(d, lang))}${num(d)}</a>`));
+  if (!tabs.length || (current !== 'weekend' && !days.includes(current))) return '';
+  const all = days.length > 1 ? (current === 'weekend' ? `<b aria-current="page">${lang === 'ja' ? '両日' : 'Both days'}</b>` : `<a href="/weekend/">${lang === 'ja' ? '両日' : 'Both days'}</a>`) : '';
+  return `<nav class="day-tabs" aria-label="${lang === 'ja' ? '今週末' : 'This weekend'}">${tabs.join('')}${all}</nav>`;
 }
 
 function weekendPage(ctx, lang) {
@@ -220,7 +219,7 @@ function weekendPage(ctx, lang) {
   const list = ctx.occ.filter((o) => days.includes(o.date));
   const label = days.length > 1 ? `${dlabel(days[0], lang)}${lang === 'ja' ? '〜' : ' – '}${dlabel(days.at(-1), lang)}` : dlabel(days[0], lang);
   const t = seoText(lang, 'weekend', label, seoStats(list, lang));
-  return listPage(lang, '/weekend/', [{ label: p.crumb }], t.title, t.lead, list, weekendLinks(ctx, 'weekend', lang) + dayStrip(ctx.occ, ctx.today, undefined, lang), true, { title: t.title, description: t.description, head: listLd(t.title, list, lang) });
+  return listPage(lang, '/weekend/', [{ label: p.crumb }], t.title, t.lead, list, weekendLinks(ctx, 'weekend', lang), true, { title: t.title, description: t.description, head: listLd(t.title, list, lang) });
 }
 
 function datePages(ctx, lang) {
@@ -314,6 +313,19 @@ ${sights}
 </section>` };
 }
 
+// 地域ページ上部の小さな枠（掲載データから数えた事実だけ）
+function areaFacts(list, lang) {
+  const sers = new Map();
+  for (const o of list) sers.set(o.series.id, o.series);
+  if (!sers.size) return '';
+  const next = list.find(isActive);
+  const kinds = new Set([...sers.values()].flatMap((x) => x.kinds));
+  const chk = [...sers.values()].map(lastChecked).filter(Boolean).sort().at(-1) || '';
+  const t = lang === 'ja' ? ['掲載されている市', '次の開催', '市の種類', '最終確認'] : ['Markets in this area', 'Next market', 'Market types', 'Last checked'];
+  const tile = (k, v) => `<div><small>${esc(k)}</small><b>${esc(v)}</b></div>`;
+  return `<div class="area-facts">${tile(t[0], String(sers.size))}${tile(t[1], next ? dlabel(next.date, lang) : '—')}${tile(t[2], String(kinds.size))}${tile(t[3], chk || '—')}</div>`;
+}
+
 function areaPages(ctx, lang) {
   const pages = [];
   const A = P[lang].area;
@@ -333,11 +345,11 @@ function areaPages(ctx, lang) {
     const ov = prefOverview(p, ctx, lang);
     const calP = renderCalendar(ctx, lang, { occ: ctx.occ.filter((o) => o.series.venue.pref === p), hash: `#pref=${p}`, title: lang === 'en' ? `Markets by date: ${pn}` : `${pn}の開催カレンダー`, area: true });
     const mp = monthPrefs(ctx, p);
-    const extra = calP + monthNav(mp, p, null, lang) + (hubText(ctx.hub, 'area', p, lang) ? hubBlock(ctx, lang, 'area', p, pn) : '') + ov.html + (cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '');
+    const extra = areaFacts(ctx.occ.filter((o) => o.series.venue.pref === p), lang) + calP + monthNav(mp, p, null, lang) + (hubText(ctx.hub, 'area', p, lang) ? hubBlock(ctx, lang, 'area', p, pn) : '') + ov.html + (cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '');
     pages.push(...listPaged(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), ov.lead, ctx.occ.filter((o) => o.series.venue.pref === p), extra).map((x) => ({ ...x, bannerArt: `/img/pref/${p}.webp` })));
     for (const ym of mp.keys()) pages.push(...monthPages(ctx, lang, p, pn, ym, mp, A));
     for (const [c, name] of cities) {
-      pages.push(...listPaged(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c), renderCalendar(ctx, lang, { occ: ctx.occ.filter((o) => o.series.venue.cityCode === c), title: lang === 'en' ? `Markets by date: ${cityL(name, lang)}` : `${cityL(name, lang)}の開催カレンダー`, area: true }) + hubBlock(ctx, lang, 'city', c, `${cityL(name, lang)}, ${pn}`)));
+      pages.push(...listPaged(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c), areaFacts(ctx.occ.filter((o) => o.series.venue.cityCode === c), lang) + renderCalendar(ctx, lang, { occ: ctx.occ.filter((o) => o.series.venue.cityCode === c), title: lang === 'en' ? `Markets by date: ${cityL(name, lang)}` : `${cityL(name, lang)}の開催カレンダー`, area: true }) + hubBlock(ctx, lang, 'city', c, `${cityL(name, lang)}, ${pn}`)));
     }
   }
   return pages;
@@ -570,18 +582,23 @@ function seriesPage(s, ctx, lang) {
   const oShown = oen ? orig(oen, s.organizer.name) : esc(s.organizer.name);
   const orgName = s.organizer.url ? `<a href="${esc(s.organizer.url)}" rel="noopener">${oShown}</a>` : oShown;
   const g = GEO[s.id];
+  const officialUrl = s.organizer.url || s.sources.find((x) => x.type === 'official')?.url || '';
   const mu = mapUrls(s, lang, g);
   const wt = weatherTarget(s);
   const wxBox = next && wt ? `<section class="ev-card"><h2>${esc(p.secWx)}</h2><div class="wx" data-office="${wt.office}" data-area="${wt.area || ''}" data-date="${next.date}" data-lang="${lang}" data-region="${esc(prefLabel(v.pref, 'en'))}"><p class="wx-st">${esc(p.wxLoading)}</p></div><p class="note">${esc(p.wxNote)} ${esc(p.wxSrc)}<a href="https://www.jma.go.jp/bosai/forecast/" rel="noopener">${esc(p.wxJma)}</a>${lang === 'ja' ? '' : ' (気象庁)'}</p></section>` : '';
   const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(mapQuery(s).q)}&hl=${lang === 'ja' ? 'ja' : 'en'}&z=16&output=embed`;
   const side = `<aside class="ev-side" aria-label="${esc(p.secMap)}"><section class="ev-card"><h2>${esc(p.secMap)}</h2>${hasMapImg(s.id) ? `<a class="ev-mapimg" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow" title="${esc(p.mapOpen)}"><img src="/img/maps/${s.id}.webp" alt="${esc(p.mapImgAlt(lang === 'en' ? venueL(s, lang) : v.name))}" width="640" height="400" loading="lazy" decoding="async"></a><p class="note">${esc(mu.pin ? p.mapApproxName : mu.searched ? p.mapApproxSearch : p.mapApprox)}</p>` : `<div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(p.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(lang === 'en' ? venueL(s, lang) : v.name)}</b><button type="button" class="map-show">${esc(p.mapShow)}</button><small>${esc(p.mapPrivacy)}</small></div></div>`}<p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(p.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(p.mapRoute)} ↗</a></p><p class="note">${esc(mu.pin ? p.mapPin : mu.searched ? p.mapSearched : mu.exact ? p.mapExact : p.mapLoose)}</p></section>${wxBox}</aside>`;
   const body = `<div class="in page ev-page">${breadcrumb([{ href: `/area/${v.pref}/`, label: pn }, ...(v.cityCode ? [{ href: `/area/${v.pref}/${v.cityCode}/`, label: cityL(v.city, lang) }] : []), { label: nameL(s, lang) }], lang)}
+<div class="ev-top">
+<div class="ev-top-l">
 <h1>${esc(nameL(s, lang))}</h1>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-h" lang="ja">${esc(s.name)}</p>` : ''}
-<div class="tags">${kindTags(s.kinds, lang)}</div>
+<div class="tags">${kindTags(s.kinds, lang)}<span class="tag chk">${lang === 'ja' ? '最終確認：' : 'Last checked: '}${esc(lastChecked(s))}</span></div>
 ${evActions(s, lang)}
 ${next ? `<p class="banner">${esc(p.next)}${lang === 'ja' ? '：' : ': '}<b>${esc(dlabel(next.date, lang, { year: true }))}</b>　${esc(S[lang].status[next.status])}${lang === 'ja' ? '（' : ' ('}${checked}${esc(next.checkedAt)}${lang === 'ja' ? '）' : ')'}</p>` : ''}
 ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
-<div class="ev-split"><div class="ev-main">
+<div class="ev-hero"><img src="${cardImg(s).replace('-400.webp', '.webp')}" alt="" width="800" height="600" decoding="async"></div>
+</div>
+<aside class="ev-facts-card" aria-label="${esc(p.secInfo)}">
 <h2 class="sec-h">${esc(p.secInfo)}</h2>
 <dl class="facts">
 ${row(p.when, rule)}
@@ -593,6 +610,10 @@ ${row(p.admission, s.visitor?.admission ? tv(s, 'admission', s.visitor.admission
 ${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang) + srcNote(s, 'rain', p))}
 ${row(s.organizer.label ? (lang === 'en' ? labelEn(s.organizer.label) || p.orgLabel(s.organizer.label) : p.orgLabel(s.organizer.label)) : p.org, orgName)}
 </dl>
+<p class="ev-cta">${officialUrl ? `<a class="btn-acc" href="${esc(officialUrl)}" rel="noopener">${lang === 'ja' ? '公式サイト' : 'Official site'} →</a>` : ''}<a class="btn-line" href="${langPath(`/e/${s.id}/`, lang === 'ja' ? 'en' : 'ja')}" hreflang="${lang === 'ja' ? 'en' : 'ja'}">${lang === 'ja' ? 'English page' : '日本語ページを開く'} →</a></p>
+</aside>
+</div>
+<div class="ev-split"><div class="ev-main">
 <h2 class="sec-h">${esc(p.secDates)}</h2>
 ${dates}
 ${pastDatesBlock(ctx.past.filter((o) => o.series.id === s.id), lang)}
@@ -819,6 +840,7 @@ function sideNav(ctx, lang, base) {
     const cards = [];
     if (pref && prefs.has(pref) && prefs.get(pref).size) cards.push(card(sd.cities, [...prefs.get(pref)].sort().map(([c, n]) => li(`/area/${pref}/${c}/`, cityL(n, lang), P[lang].cnt(count((s) => s.venue.cityCode === c)), c === city))));
     cards.push(card(sd.pref, [...prefs.keys()].sort().map((k) => li(`/area/${k}/`, prefLabel(k, lang), P[lang].cnt(count((s) => s.venue.pref === k)), k === pref && !city))));
+    cards.unshift(`<section class="guide-cta"><h2>${lang === 'ja' ? 'はじめての方へ' : 'New to flea markets in Japan?'}</h2><p>${lang === 'ja' ? '雨天・行き方・ルールなど、公式の記載をまとめたガイドです。' : 'Our guides collect what the official pages say about rain, access and rules.'}</p><a href="/blog/guide-tokyo-flea-markets-visitors/">${lang === 'ja' ? 'ガイドを読む' : 'Read the guide'} →</a></section>`);
     extra = cards.join('');
   } else if (base.startsWith('/kind/') || base === '/shuten/' || base === '/search/') {
     const cur = /^\/kind\/(\w+)\/$/.exec(base)?.[1];
@@ -844,7 +866,7 @@ function splitBanner(page) {
 function withSide(page0, ctx, lang) {
   const page = splitBanner(page0);
   const base = splitPath(page.path).base;
-  if (!/^\/(weekend|calendar|date|area|kind|spot|shuten|search|about)\//.test(base)) return page;
+  if (!/^\/(weekend|calendar|date|area|kind|spot|shuten|search|about)\//.test(base) || base === '/weekend/') return page;
   if (page.body.includes('class="ev-split"')) return page; // 個別ページ（スポットなど）は、自前の2列
   // 帯に文字を置くページ（パンくずが帯の中）：本文の右に、同じ右の列を付ける
   if (page.bannerText) {

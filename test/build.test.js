@@ -42,9 +42,9 @@ test('作るページ：トップ・今週末・日別・地域・市区町村�
 
 test('今週末（10/17 土・10/18 日）の一覧と、要確認・中止の表示', () => {
   const home = jp('/').body;
-  // 今週末の開催は、写真つきカードとして並ぶ（日付のバッジは、実データの 10/17 と 10/18）
-  assert.match(home, /<span class="mc-m">10月<\/span><b>17<\/b><span class="mc-w">土<\/span>/);
-  assert.match(home, /<span class="mc-m">10月<\/span><b>18<\/b><span class="mc-w">日<\/span>/);
+  // 今週末の開催は、トップの「今週末の開催」の一覧に並ぶ（日付は、実データの 10/17 と 10/18）
+  assert.match(home, /class="wk-d">10\/17（土）/);
+  assert.match(home, /class="wk-d">10\/18（日）/);
   assert.match(home, /見本手づくり市/);
   assert.match(home, /開催は要確認/);
   const detail = jp('/e/sample-shrine-kotto/').body;
@@ -386,7 +386,8 @@ test('ヘッダーのリンク先は、すべて右のナビ（主なページ�
       const pg_ = pages.find((p) => p.path === `${pre}${base}`);
       if (!pg_) continue;
       const html = layout(pg_);
-      assert.match(html, /<aside class="ev-side"/, `${pre}${base}`);
+      // 今週末のページは、デザイン案に合わせて右の列なし（フッターに同じリンクがある）
+      if (base !== '/weekend/') assert.match(html, /<aside class="ev-side"/, `${pre}${base}`);
       for (const h of ['/weekend/', '/calendar/', '/area/', '/kind/', '/shuten/', '/search/', '/guide/', '/faq/', '/blog/', '/about/']) assert.ok(html.includes(`href="${pre}${h}"`), `${pre}${base} → ${h}`);
       // いま見ているページは、目印（aria-current）つき
       const root = '/' + base.split('/')[1] + '/';
@@ -718,10 +719,10 @@ test('日別・今週末のページの SEO：タイトル・書き出しの文�
   assert.match(wk2, /<title>Flea Markets in Japan This Weekend \([^)]*\): \d+ events? \| /);
   assert.match(wk2, /class="lead">There are \d+ markets in Japan this weekend\. \d+ of \d+ (is|are) confirmed/);
   assert.match(wk2, /"@type":"ItemList"/);
-  const dp = pages.find((x) => /^\/date\/\d{4}-\d\d-\d\d\/$/.test(x.path) && x.body.includes('class="day-links"'));
+  const dp = pages.find((x) => /^\/date\/\d{4}-\d\d-\d\d\/$/.test(x.path) && x.body.includes('class="day-tabs"'));
   assert.ok(dp, '日別ページに、今週末への導線がある');
   assert.match(layout(dp), /<title>Flea Markets in Japan on [^<]*: \d+ events? \| /);
-  assert.match(layout(dp), /<a href="\/weekend\/">This weekend: all days<\/a>/);
+  assert.match(layout(dp), /<a href="\/weekend\/">Both days<\/a>/);
 });
 
 test('言語の自動切替：日本語の端末は /ja/ へ、それ以外は英語へ。選んだ言語は覚え、ロボットには切り替えない', async () => {
@@ -864,8 +865,8 @@ test('スマホの速度：HERO は選んだ1枚だけを読む（srcset）、�
   };
   assert.deepEqual([0, 0.4, 0.9].map((r) => pick(null, r)), [0, 1, 2]);
   assert.deepEqual([0, 0.99].map((r) => pick('1', r)), [0, 2], '前回の1番は避ける');
-  // 種類のカードは、小さい版（-400）の srcset
-  assert.match(top, /srcset="\/img\/kinds\/[a-z0-9-]+-400\.webp 400w, \/img\/kinds\/[a-z0-9-]+\.webp 800w"/);
+  // 開催のカード（一覧）の写真は、小さい版（-400）
+  assert.match(jp('/weekend/').body, /<img src="\/img\/kinds\/[a-z0-9-]+-400\.webp"/);
   // フォント：Google Fonts に日本語（Noto）を頼まない。広告・解析の script は、head に直接書かず、load のあとに足す
   assert.ok(!top.includes('Noto+Sans+JP') && !top.includes('Noto+Serif+JP') && !top.includes('Playfair'));
   assert.ok(!/<script async src="https:\/\/(www\.googletagmanager|pagead2)/.test(top));
