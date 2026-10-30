@@ -143,9 +143,9 @@
   "id": "nihon-freemarket-kyokai-schedule",
   "url": "http://freemarket-go.com/schedule_shop.html",
   "name": "日本フリーマーケット協会（出店受付スケジュール。大阪・兵庫・奈良・滋賀）",
-  "detectedAt": "2026-10-29",
+  "detectedAt": "2026-10-31",
   "reason": "new",
-  "hash": "2322c9527b10ee06",
+  "hash": "4324088a07e345b6",
   "status": "pending"
  },
  {
@@ -2887,9 +2887,9 @@
   "id": "recycler-jp",
   "url": "https://www2.recycler.jp/",
   "name": "リサイクル運動市民の会（フリーマーケット情報）",
-  "detectedAt": "2026-10-28",
+  "detectedAt": "2026-10-31",
   "reason": "changed",
-  "hash": "94c24b35f25642a4",
+  "hash": "41f8570b4ad8210d",
   "status": "pending"
  },
  {
@@ -3754,6 +3754,24 @@
   "detectedAt": "2026-10-29",
   "reason": "changed",
   "hash": "ed0453f008c767d2",
+  "status": "pending"
+ },
+ {
+  "id": "tmc-shirakobato",
+  "url": "https://tmc-dx.org/area/shirakobato.html",
+  "name": "タイムマシーンカンパニー しらこばと水上公園フリーマーケット",
+  "detectedAt": "2026-10-31",
+  "reason": "changed",
+  "hash": "8ce2be09730dbea4",
+  "status": "pending"
+ },
+ {
+  "id": "tmc-dx-9fdcd2",
+  "url": "https://tmc-dx.org/area/kawagoe.html",
+  "name": "タイムマシーンカンパニー",
+  "detectedAt": "2026-10-31",
+  "reason": "changed",
+  "hash": "13e37c344ab2ffe7",
   "status": "pending"
  }
 ]
