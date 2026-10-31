@@ -28,6 +28,12 @@ export function validateSeries(list) {
     if (!s.name) e('name がありません');
     if (!Array.isArray(s.kinds) || !s.kinds.length || !s.kinds.every((k) => KINDS[k])) e(`kinds が不正: ${JSON.stringify(s.kinds)}`);
     if (!s.organizer?.name) e('organizer.name がありません');
+    // 注目度の目安：Google の月間検索ボリューム（キーワードプランナーの幅の下限 volumeMin）。名称（キーワード）と取得日を必ず添える
+    if (s.attention) {
+      if (!Number.isInteger(s.attention.volumeMin) || s.attention.volumeMin < 100) e('attention.volumeMin は100以上の整数（100未満はマークを付けない）');
+      if (!s.attention.keyword) e('attention.keyword がありません');
+      if (!/^\d{4}-\d\d-\d\d$/.test(s.attention.checkedAt || '')) e('attention.checkedAt は YYYY-MM-DD');
+    }
     // 規模の目安：公式に書かれた出店数（stalls）と、その語句（quote。シリーズの文章の中にそのまま書いてあること）
     if (s.scale) {
       if (!Number.isInteger(s.scale.stalls) || s.scale.stalls < 1) e('scale.stalls は1以上の整数');

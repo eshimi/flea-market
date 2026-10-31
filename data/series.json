@@ -81,7 +81,14 @@
     ]
    }
   ],
-  "venueId": "tokyo-international-forum"
+  "venueId": "tokyo-international-forum",
+  "attention": {
+   "keyword": "大江戸骨董市",
+   "volumeMin": 10000,
+   "volume": "1万〜10万",
+   "checkedAt": "2026-10-31",
+   "source": "Google キーワードプランナー（月間検索ボリューム）"
+  }
  },
  {
   "id": "takahata-fudoson-gozareichi",
@@ -375,7 +382,14 @@
      "世田谷総合支所 地域振興課"
     ]
    }
-  ]
+  ],
+  "attention": {
+   "keyword": "世田谷のボロ市",
+   "volumeMin": 10000,
+   "volume": "1万〜10万",
+   "checkedAt": "2026-10-31",
+   "source": "Google キーワードプランナー（月間検索ボリューム）"
+  }
  },
  {
   "id": "setagaya-park-flea",
@@ -3550,7 +3564,14 @@
     ]
    }
   ],
-  "venueId": "ikegami-honmonji"
+  "venueId": "ikegami-honmonji",
+  "attention": {
+   "keyword": "池上日和",
+   "volumeMin": 100,
+   "volume": "100〜1,000",
+   "checkedAt": "2026-10-31",
+   "source": "Google キーワードプランナー（月間検索ボリューム）"
+  }
  },
  {
   "id": "nihonbashi-bettara-ichi",
@@ -15615,7 +15636,14 @@
     ]
    }
   ],
-  "venueId": "hikarigaoka-park"
+  "venueId": "hikarigaoka-park",
+  "attention": {
+   "keyword": "ロハスフェスタ東京 2026",
+   "volumeMin": 100,
+   "volume": "100〜1,000",
+   "checkedAt": "2026-10-31",
+   "source": "Google キーワードプランナー（月間検索ボリューム）"
+  }
  },
  {
   "id": "umitaka-marche-2026",

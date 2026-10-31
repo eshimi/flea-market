@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-31",
+    "ja": "Google の検索数にもとづく「注目度」（高・中・低）のマークを追加しました。規模（出店数）とは別のマークで、いまは大江戸骨董市・世田谷のボロ市・ロハスフェスタ東京・池上日和に付いています。",
+    "en": "Added a “Buzz” mark (high, medium, low) based on Google search volume, separate from the scale mark. It currently appears on Oedo Antique Market, Setagaya Boroichi, LOHAS Festa Tokyo and Ikegami Biyori.",
+    "link": "/kind/"
+  },
+  {
+    "date": "2026-10-31",
     "ja": "出店数が公式に書かれているマーケットに、規模の目安（小・中・大）のマークを付けました。30店以下＝小、31〜99店＝中、100店以上＝大です。",
     "en": "Markets whose stall count is stated officially now show a scale mark (small, medium, large): 30 or fewer stalls = small, 31–99 = medium, 100 or more = large.",
     "link": "/kind/"
