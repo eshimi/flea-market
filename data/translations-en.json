@@ -674,12 +674,13 @@
     "trx-oi-keibajo-tokyo-city-flea": {
       "name": "Ohi Racecourse Tokyo City Flea Market (Tokyo Recycle)",
       "venue": "Ohi Racecourse Tokyo City Flea Market",
-      "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
+      "rain": "Cancelled in rain (held in light rain). Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
       "address": "2-1-2 Katsushima, Shinagawa-ku, Tokyo",
       "access": "2 minutes on foot from Oi Keibajo-mae Station (Tokyo Monorail) and 12 minutes on foot from Tachiaigawa Station (Keikyu Line). 1 minute on foot from the Oi Keibajo Ekimae stop on the Keikyu Bus route Mori 22 from the east exit of Omori Station.",
       "apply": "Book through the organizer's website (trx.jp) and the ticketing site Peatix (a Peatix account is required; phone bookings are not accepted). The stall fee is paid at the on-site reception on the day, except at venues that require advance payment.",
-      "time": "9:00–14:30 (as listed for the October 2025 event)",
-      "admission": "Free (as listed for the October 2025 event)"
+      "time": "8:45–14:15 (during Oct 31, 2026 – Jan 10, 2027, when the Tokyo Mega Illumination runs; as listed on the organizer’s event page)",
+      "admission": "Free",
+      "notes": "About 700 stalls (as listed on the organizer’s event page)"
     },
     "trx-ike-sunpark-flea": {
       "name": "Ike Sunpark Flea Market (Tokyo Recycle)",

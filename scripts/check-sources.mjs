@@ -14,6 +14,7 @@ import { buildOccurrences } from './lib/events.mjs';
 import { crawlDelay, isAllowed, UA_TOKEN } from './lib/robots.mjs';
 import { checkEvidence, decodeBody, htmlToText, pdfToText } from './lib/text.mjs';
 import { SITE } from './lib/nav.mjs';
+import { closeBrowser, needsRender, renderGet } from './lib/render.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = join(ROOT, 'data');
@@ -161,12 +162,13 @@ async function main() {
     const headers = {};
     if (prev.etag) headers['If-None-Match'] = prev.etag;
     if (prev.lastModified) headers['If-Modified-Since'] = prev.lastModified;
-    const res = await get(src.url, headers);
+    const res = needsRender(src.url) ? await renderGet(src.url, USER_AGENT) : await get(src.url, headers);
     lastHit.set(u.origin, Date.now());
-    if (res.status === 200 && !res.pdf) res.text = htmlToText(res.text);
+    if (res.status === 200 && !res.pdf && !res.rendered) res.text = htmlToText(res.text);
     const notes = applyResult({ src, result: res, series, state, today, venues });
     lines.push(`- ${src.url}：${res.status || res.error}${notes.length ? '\n  - ' + notes.join('\n  - ') : '（一致）'}`);  });
 
+  await closeBrowser();
   if (!dry) {
     writeFileSync(join(DATA, 'series.json'), JSON.stringify(series, null, 1) + '\n');
     if (venues.length) writeFileSync(join(DATA, 'venues.json'), JSON.stringify(venues, null, 1) + '\n');
