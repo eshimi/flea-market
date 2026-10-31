@@ -44,6 +44,7 @@ export function siteHeader(path, lang = 'en') {
 <label for="nav-t" class="burger" aria-label="${esc(t.menu)}">${icon('menu', 24)}</label>
 <nav class="hd-nav" aria-label="${esc(t.navLabel)}">${nav}</nav>
 <div class="hd-tools"><a class="hd-saved" href="${langPath('/saved/', lang)}" aria-label="${esc(SV[lang].nav)}">${icon('heart', 20)}<span class="cnt" hidden></span></a><a class="hd-search" href="${langPath('/search/', lang)}" aria-label="${esc(t.search)}">${icon('search', 20)}</a>
+<a class="hd-map" aria-label="${esc(L.map)}" href="${langPath('/map/', lang)}"${path === '/map/' ? ' aria-current="page"' : ''}>${icon('pin', 18)}<span>${esc(L.mapShort)}</span></a>
 ${langSwitch(path, lang)}</div>
 </div></header>`;
 }
@@ -126,7 +127,7 @@ const STATIC_BANNER_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', '.
 export function pageBanner(base, text = '', artOverride = '') {
   if (base === '/' || base === '/404.html') return '';
   const sec = base.split('/').filter(Boolean)[0] || '';
-  if (sec === 'e' || sec === 'press' || (sec === 'spot' && base !== '/spot/')) return ''; // 開催の詳細ページ・メディア向けの紹介ページは、上部の帯なし
+  if (sec === 'e' || sec === 'press' || (sec === 'spot' && base !== '/spot/') || sec === 'map') return ''; // 開催の詳細ページ・メディア向けの紹介ページは、上部の帯なし
   const name = BANNER_BY_SECTION[sec] || 'b10-relax';
   const art = artOverride || (existsSync(join(STATIC_BANNER_DIR, `${name}.webp`)) ? `/img/banner/${name}.webp` : '');
   if (text) {

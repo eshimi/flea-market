@@ -277,3 +277,17 @@ table.sp-dates{width:100%;border-collapse:collapse}
 .attn-stars{display:inline-flex;gap:1px;font-size:11px;line-height:1}
 .attn-stars i{font-style:normal;color:#E4DCCD}
 .attn-stars.s1 i:nth-child(1),.attn-stars.s2 i:nth-child(-n+2),.attn-stars.s3 i{color:#C98A1B}
+
+/* ヘッダー：言語切替の近くの「マップで探す」。スマホでは、アイコンだけ */
+.hd-map{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:500;color:var(--rd-ink);text-decoration:none;padding:7px 10px;border:1px solid var(--rd-ctl);border-radius:6px;background:#fff;white-space:nowrap}
+.hd-map .ic{color:var(--rd-acc)}
+.hd-map:hover,.hd-map[aria-current]{border-color:var(--rd-acc)}
+@media (max-width:900px){.hd-map span{display:none}.hd-map{padding:7px 8px}}
+@media (max-width:560px){
+  .hd-tools{gap:2px}
+  .hd-map{padding:6px 7px}
+  .hd-search{padding:0 4px}
+  .langsw{padding:5px 6px;font-size:11.5px}
+  .brand-t b{font-size:16px}
+}
+@media (max-width:400px){.hd-search{display:none}}

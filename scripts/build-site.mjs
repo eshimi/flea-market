@@ -16,6 +16,7 @@ import { CONTACT_ON, contactBanner, contactBody } from './lib/contact-view.mjs';
 import { renderCalendar, renderHomeBody } from './lib/home-view.mjs';
 import { MON_EN, S, T, WD_EN, WD_JA } from './lib/i18n.mjs';
 import { scaleMark, scaleText, scaleTier } from './lib/scale.mjs';
+import { mapData, mapPage } from './lib/map-view.mjs';
 import { attentionMark, attentionText, attentionTier } from './lib/attention.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, blogBanner, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
@@ -898,6 +899,9 @@ function withSide(page0, ctx, lang) {
 
 // ---- 全体 ----
 
+let MAP_DATA = null;
+const mapPageFor = (ctx, lang) => mapPage(ctx, lang, MAP_DATA, ctx.today, ctx.weekend);
+
 export function buildPages({ series, occurrences, credits = [], translations = {}, autoPosts = [], geo = {}, archive = { items: [] }, venues = [], siteUpdates = [], tips = [], hub = {} }, today, days = 120) {
   setTranslations(translations);
   TIPS = tips;
@@ -912,13 +916,16 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   const past = pastOccurrences(archive, series).filter((o) => o.date < today);
   const spots = buildSpots(venues, series, occ, today);
   const spotMapImg = (id) => Boolean(GEO[`spot-${id}`]) && existsSync(join(ROOT, 'static', 'img', 'maps', `spot-${id}.webp`));
+  const ctx0 = { series, occ };
+  MAP_DATA = mapData(ctx0, geo, endedIds);
   const ctx = { hub, series, occ, past, spots, spotMapImg, spotGeo: (id) => GEO[`spot-${id}`], guideSlugs: new Set(BLOG.map((b) => b.slug)), siteUpdates: [...siteUpdates].sort((a, b) => b.date.localeCompare(a.date)), weekend: upcomingWeekend(today), today, days, credits };
   ALL_POSTS = [...BLOG.map((b) => cleanLinks(resolvePost(b, ctx), ids)), ...autoPosts.map((a) => cleanLinks(a, ids))];
   ctx.latestPosts = posts().slice(0, 3);
   // 英語が既定（/）。日本語は /ja/
-  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.filter((s) => !endedIds.has(s.id)).map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), savedPage(lang), aboutPage(ctx, lang), guidePage(lang), tipsPage(lang), ...TIPS.map((x) => columnPage(x, lang, '/tips/')), contactPage(lang), pressPage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
+  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), mapPageFor(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.filter((s) => !endedIds.has(s.id)).map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), savedPage(lang), aboutPage(ctx, lang), guidePage(lang), tipsPage(lang), ...TIPS.map((x) => columnPage(x, lang, '/tips/')), contactPage(lang), pressPage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）
   const files = LANGS_ORDER.map((lang) => ({ path: langPath('/blog/feed.xml', lang), content: feedXml(lang) }));
+  files.push({ path: '/map-data.json', content: JSON.stringify(MAP_DATA.items) });
   for (const lang of LANGS_ORDER) {
     for (const s of series) {
       if (endedIds.has(s.id)) continue;

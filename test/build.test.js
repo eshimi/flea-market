@@ -1007,3 +1007,28 @@ test('HTML のタグが、文字としてそのまま画面に出ていない（
   const bad = pages.filter((p) => /&lt;span|&lt;a |&lt;small|&lt;b&gt;/.test(layout(p)));
   assert.deepEqual(bad.map((p) => p.path).slice(0, 5), []);
 });
+
+test('マップで探すページ：両言語のページ・ヘッダーのリンク・地図のデータ（位置は日本の範囲内、実在する市だけ）', () => {
+  const real = loadData();
+  const { pages, files } = buildPages(real, '2026-10-20');
+  for (const base of ['/map/', '/ja/map/']) {
+    const pg_ = pages.find((p) => p.path === base);
+    assert.ok(pg_, base);
+    const html = layout(pg_);
+    assert.ok(html.includes('id="mk-map"') && html.includes('/vendor/leaflet/leaflet.js') && html.includes('/map-page.js'), base);
+    assert.ok(html.includes('国土地理院') || html.includes('Geospatial Information Authority'), `${base}: 地図の出典`);
+    assert.match(html, /class="hd-map"/, `${base}: ヘッダーにマップのリンク`);
+  }
+  assert.match(layout(pages.find((p) => p.path === '/')), /class="hd-map" aria-label="Search by map" href="\/map\/"/);
+  assert.match(layout(pages.find((p) => p.path === '/ja/')), /class="hd-map" aria-label="マップで探す" href="\/ja\/map\/"/);
+  const f = files.find((x) => x.path === '/map-data.json');
+  assert.ok(f, 'map-data.json');
+  const items = JSON.parse(f.content);
+  assert.ok(items.length > 50, `地図に出る市が少なすぎる: ${items.length}`);
+  const sids = new Set(real.series.map((s) => s.id));
+  for (const it of items) {
+    assert.ok(sids.has(it.id), it.id);
+    assert.ok(it.lat > 20 && it.lat < 46 && it.lon > 122 && it.lon < 154, `${it.id}: 位置が日本の範囲外 ${it.lat},${it.lon}`);
+    assert.ok(it.d.length >= 1 && it.n.length === 2, it.id);
+  }
+});
