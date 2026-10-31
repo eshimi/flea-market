@@ -72,3 +72,4 @@
   #mk-map{height:70vh}
 }
 @media (max-width:900px){.mk-bar,.mk-grp{min-width:0;max-width:100%}}
+.mk-status{margin:0 0 10px;font-size:13px;color:#5B5249;min-height:1.2em}

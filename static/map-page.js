@@ -29,10 +29,14 @@
     ['all', t.all, () => true],
   ];
   const state = { range: 'weekend', kind: 'all', pref: 'all' };
+  let user = null; // 現在地 { lat, lon }（許可されたときだけ）
+  const km = (a, b, c, d) => { const R = 6371; const r = (x) => (x * Math.PI) / 180; const dl = r(c - a); const dn = r(d - b); const h = Math.sin(dl / 2) ** 2 + Math.cos(r(a)) * Math.cos(r(c)) * Math.sin(dn / 2) ** 2; return 2 * R * Math.asin(Math.sqrt(h)); };
+  const kmText = (v) => t.nearTpl.replace('{km}', v < 10 ? v.toFixed(1) : String(Math.round(v)));
 
   // ---- 操作パネル ----
   const bar = root.querySelector('.mk-bar');
   const countEl = root.querySelector('.mk-count');
+  const statusEl = el('p', 'mk-status'); statusEl.setAttribute('aria-live', 'polite'); root.querySelector('.mk-bar').after(statusEl);
   const listEl = root.querySelector('.mk-list');
   const wrap = root.querySelector('#mk-map');
   const pop = root.querySelector('.mk-pop');
@@ -114,8 +118,10 @@
   const PIN = 'M0 0c-5.6-7.4-8.6-11.4-8.6-15.9a8.6 8.6 0 1 1 17.2 0c0 4.5-3 8.5-8.6 15.9z';
   const inRange = (it) => { const f = ranges.find((r) => r[0] === state.range)[2]; return it.d.filter(f); };
   function visible() {
-    return items.map((it) => { const [x, y] = project(it.lat, it.lon); return { it, shown: inRange(it), x, y }; })
+    const v = items.map((it) => { const [x, y] = project(it.lat, it.lon); return { it, shown: inRange(it), x, y, d: user ? km(user.lat, user.lon, it.lat, it.lon) : null }; })
       .filter((o) => o.shown.length && (state.kind === 'all' || o.it.k.includes(state.kind)) && (state.pref === 'all' || o.it.pref === state.pref) && o.it.pref !== '47');
+    if (user) v.sort((a, b) => a.d - b.d);
+    return v;
   }
   function clusters(k) {
     const R = 20 / k; const out = [];
@@ -153,7 +159,7 @@
     for (const o of c.m.slice(0, 8)) {
       const it = o.it; const box = el('div', 'mk-pop-i');
       box.appendChild(el('b', 'mk-pop-n', it.n[li])); box.appendChild(el('div', 'mk-pop-v', it.v[li]));
-      box.appendChild(el('div', 'mk-pop-d', `${t.next}: ${dlabel(o.shown[0])}${it.t[li] ? ` ${it.t[li]}` : ''}`));
+      box.appendChild(el('div', 'mk-pop-d', `${t.next}: ${dlabel(o.shown[0])}${it.t[li] ? ` ${it.t[li]}` : ''}${o.d != null ? ` ／ ${kmText(o.d)}` : ''}`));
       if (it.pr && it.pr !== 'lot') box.appendChild(el('div', 'mk-pop-a', t.approx));
       const a = el('a', 'mk-pop-l', `${t.open} →`); a.href = href(it.id); box.appendChild(a); pop.appendChild(box);
     }
@@ -179,7 +185,7 @@
     for (const o of vis) {
       const it = o.it; const row = el('li', 'mk-row'); row.dataset.id = it.id;
       const btn = el('button', 'mk-row-b'); btn.type = 'button';
-      btn.appendChild(el('b', 'mk-row-n', it.n[li])); btn.appendChild(el('span', 'mk-row-v', it.v[li]));
+      btn.appendChild(el('b', 'mk-row-n', it.n[li])); btn.appendChild(el('span', 'mk-row-v', `${it.v[li]}${o.d != null ? ` ／ ${kmText(o.d)}` : ''}`));
       btn.appendChild(el('span', 'mk-row-d', `${dlabel(o.shown[0])}${o.shown.length > 1 ? ` +${o.shown.length - 1}` : ''}${it.t[li] ? ` ${it.t[li]}` : ''}`));
       btn.addEventListener('click', () => { fitBox(o.x, o.y, o.x, o.y, 0, 14); draw(); showPop({ x: o.x, y: o.y, m: [o] }); wrap.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); });
       row.appendChild(btn); const link = el('a', 'mk-row-l', t.open); link.href = href(it.id); row.appendChild(link); listEl.appendChild(row);
@@ -187,7 +193,7 @@
     countEl.textContent = vis.length ? t.countTpl.replace('{n}', vis.length) : t.none;
     if (fit) {
       if (state.pref !== 'all' && prefBox(state.pref)) { const b = prefBox(state.pref); fitBox(b.x, b.y, b.x + b.width, b.y + b.height, 0.18, 9); }
-      else if (vis.length && state.pref === 'all' && vis.length < items.length * 0.4 && false) { fitBox(Math.min(...vis.map((o) => o.x)), Math.min(...vis.map((o) => o.y)), Math.max(...vis.map((o) => o.x)), Math.max(...vis.map((o) => o.y))); }
+      else if (user) { fitNear(); }
       else resetView();
     }
     draw();
@@ -202,23 +208,31 @@
     [...prefs].sort().forEach((p) => prefSel.appendChild(new Option(cfg.prefs[p] || p, p)));
   }
 
-  // ---- 現在地（日本の範囲内のときだけ） ----
+  // ---- 現在地：ページを開いたときに、自動で確認する（許可されたときだけ使う。許可されなければ全国）。「現在地へ」で、もう一度 ----
   let me = null;
-  locBtn.addEventListener('click', () => {
-    if (!navigator.geolocation) { countEl.textContent = t.locFail; return; }
-    countEl.textContent = t.locating;
+  function showMe() { if (me) me.remove(); const [x, y] = project(user.lat, user.lon); me = se('circle', { cx: x, cy: y, r: 1.4, class: 'mk-me' }); svg.insertBefore(me, gMarks); }
+  function fitNear() {
+    const [ux, uy] = project(user.lat, user.lon);
+    const near = vis.slice(0, 3);
+    const xs = [ux, ...near.map((o) => o.x)]; const ys = [uy, ...near.map((o) => o.y)];
+    fitBox(Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys), 0.35, 12);
+  }
+  function locate(auto) {
+    if (!navigator.geolocation) { if (!auto) countEl.textContent = t.locFail; else statusEl.textContent = t.locDenied; return; }
+    if (!auto) countEl.textContent = t.locating;
     navigator.geolocation.getCurrentPosition((pos) => {
-      const { latitude: la, longitude: lo } = pos.coords;
-      if (la < 24 || la > 46 || lo < 122 || lo > 146.5) { countEl.textContent = t.locFail; return; }
-      const [x, y] = project(la, lo); if (me) me.remove(); me = se('circle', { cx: x, cy: y, r: 1.4, class: 'mk-me' }); svg.insertBefore(me, gMarks);
-      fitBox(x, y, x, y, 0, 8); render(false); fitBox(x, y, x, y, 0, 8); draw();
-    }, () => { countEl.textContent = t.locFail; }, { timeout: 10000, maximumAge: 600000 });
-  });
+      const la = pos.coords.latitude; const lo = pos.coords.longitude;
+      if (la < 24 || la > 46 || lo < 122 || lo > 146.5) { statusEl.textContent = t.locOut; return; }
+      user = { lat: la, lon: lo }; showMe(); statusEl.textContent = t.locAuto; render(true);
+    }, () => { statusEl.textContent = t.locDenied; render(false); }, { timeout: 12000, maximumAge: 600000 });
+  }
+  locBtn.addEventListener('click', () => locate(false));
 
   window.addEventListener('resize', () => { hidePop(); draw(); });
   fetch(root.dataset.src).then((r) => r.json()).then((data) => {
     items = data; buildFilters();
     if (!visible().length) state.range = 'd30';
     render(true);
+    locate(true);
   }).catch((e) => { console.error('map', e); countEl.textContent = t.none; });
 })();

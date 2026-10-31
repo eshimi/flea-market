@@ -15,7 +15,7 @@ const T = {
     when: '日付', weekend: '今週末', d7: '今後7日', d30: '今後30日', all: 'すべて（今後120日）', kind: '種類', pref: '地域', allPrefs: 'すべての地域', allKinds: 'すべて',
     countTpl: '{n}件を表示', none: '条件に合う市は、地図にありません。条件を変えてみてください。', locate: '現在地へ', locating: '現在地を調べています…', locFail: '現在地を取得できませんでした。',
     next: '次回', open: '開催詳細を見る', approx: '位置は目安', list: '一覧', resetView: '全国に戻す', credit: '地図：Natural Earth（パブリックドメイン）の都道府県の形を簡略化したイラスト地図です。位置は目安です。', noscript: '地図には JavaScript が必要です。一覧は「今週末」「地域」のページからご覧ください。',
-    unlocated: (n) => `位置が未確認の市が${n}件あります（地図には出ません）。`, locNote: '「現在地へ」を押すと、ブラウザが位置情報の許可を求めます。位置は、地図を動かすためだけに使い、送信・保存はしません。',
+    unlocated: (n) => `位置が未確認の市が${n}件あります（地図には出ません）。`, locNote: 'このページを開くと、ブラウザが位置情報の許可を求めます。位置は、近くの市を並べて地図を動かすためだけに使い、送信・保存はしません。許可しない場合は、全国を表示します。', nearTpl: '約{km}km', locAuto: '現在地の近くから表示しています。', locDenied: '位置情報が使えないため、全国を表示しています。「現在地へ」で、もう一度お試しください。', locOut: '現在地が日本の外のようです。全国を表示しています。',
   },
   en: {
     crumb: 'Search by map', h1: 'Flea markets on the map', title: 'Search by map', desc: 'Find flea markets, antique fairs, handmade markets and marchés across Japan on a map. Filter by date, type and area.',
@@ -23,7 +23,7 @@ const T = {
     when: 'Date', weekend: 'This weekend', d7: 'Next 7 days', d30: 'Next 30 days', all: 'All (next 120 days)', kind: 'Type', pref: 'Area', allPrefs: 'All areas', allKinds: 'All',
     countTpl: '{n} shown', none: 'No markets match. Try changing the filters.', locate: 'My location', locating: 'Finding your location…', locFail: 'Could not get your location.',
     next: 'Next', open: 'View details', approx: 'Approximate location', list: 'List', resetView: 'Reset view', credit: 'Map: an illustrated map simplified from Natural Earth prefecture shapes (public domain). Locations are approximate.', noscript: 'The map needs JavaScript. Browse by “This weekend” or “Area” instead.',
-    unlocated: (n) => `${n} markets have no confirmed location and are not on the map.`, locNote: 'Pressing “My location” makes your browser ask for permission. The location is used only to move the map; it is not sent or stored.',
+    unlocated: (n) => `${n} markets have no confirmed location and are not on the map.`, locNote: 'When you open this page, your browser asks for permission to use your location. It is used only to list nearby markets and move the map; it is not sent or stored. If you decline, the whole of Japan is shown.', nearTpl: '{km} km', locAuto: 'Showing markets near your location.', locDenied: 'Your location is not available, so the whole of Japan is shown. Press “My location” to try again.', locOut: 'Your location seems to be outside Japan, so the whole of Japan is shown.',
   },
 };
 export const mapText = (lang) => T[lang];

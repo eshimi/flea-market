@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-10-31",
+    "ja": "マップで探すを開くと、現在地の近くから表示するようになりました（許可しない場合は全国表示。位置は送信・保存しません）。",
+    "en": "The map now opens near your current location (if you decline, all of Japan is shown). Your location is not sent or stored.",
+    "link": "/map/"
+  },
+  {
     "date": "2026-11-01",
     "ja": "表示の「今日」を、前日の夜6時に切り替えるようにしました。日曜の夜6時から次の週末の一覧になります。更新は毎日18時と、金・土・日の朝7時です。",
     "en": "The site’s “today” now switches at 6 p.m. the evening before. From Sunday 6 p.m. the weekend list shows the next weekend. Updates run daily at 6 p.m. and also at 7 a.m. on Fridays, Saturdays and Sundays.",
