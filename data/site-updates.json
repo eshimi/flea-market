@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-31",
+    "ja": "東京の主要スポット5件（光が丘公園・世田谷公園・国営昭和記念公園・西新井大師・富岡八幡宮）の会場ガイドを追加しました。",
+    "en": "Added venue guides for five major Tokyo spots: Hikarigaoka Park, Setagaya Park, Showa Kinen Park, Nishiarai Daishi and Tomioka Hachimangu.",
+    "link": "/blog/"
+  },
+  {
+    "date": "2026-10-31",
     "ja": "今週末・日別の一覧で、地域に加えて「種類」（フリマ・マルシェ・蚤の市・手作り市・骨董市など）でも絞り込めるようにしました。マーケットとスポットのページに、日本語の名前・住所のコピーボタン（英語ページ）も追加しました。",
     "en": "On This Weekend and daily lists you can now filter by type (flea market, marché, nomi-no-ichi, handmade, antique fair…) as well as by area. Market and spot pages also have buttons to copy the Japanese name and address.",
     "link": "/weekend/"
