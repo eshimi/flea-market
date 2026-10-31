@@ -259,6 +259,46 @@ ${o.note ? `<p class="ev-note">${esc(noteL(o, lang))}</p>` : ''}</div>
 </article>`;
 }
 
+// 同じ市（シリーズ）の開催を、1つにまとめる（先頭の開催の日付順を保つ）。地域・種類のページの一覧に使う
+export function groupBySeries(list) {
+  const m = new Map();
+  for (const o of list) {
+    if (!m.has(o.series.id)) m.set(o.series.id, []);
+    m.get(o.series.id).push(o);
+  }
+  return [...m.values()];
+}
+
+const DATES_SHOWN = 6; // 次回のあとに並べる日付の数
+export function seriesCard(g, lang = 'en') {
+  const o = g[0];
+  const s = o.series;
+  const [, m, d] = o.date.split('-');
+  const wd = lang === 'ja' ? WD_JA[weekday(o.date)] : WD_EN[weekday(o.date)];
+  const place = [cityL(s.venue.city, lang) || prefLabel(s.venue.pref, lang), venueL(s, lang)].filter(Boolean).join(lang === 'en' ? ', ' : '・');
+  const meta = [place, (lang === 'en' && timeEn(s)) || s.time?.text].filter(Boolean).map(esc).join(lang === 'en' ? ' / ' : ' ／ ');
+  const cls = o.status === 'cancelled' || o.status === 'postponed' ? ' off' : '';
+  const rule = recurTag(s.recurrence, lang);
+  const rest = g.slice(1);
+  const lab = (x) => { const [, mm, dd] = x.date.split('-'); return lang === 'ja' ? `${+mm}/${+dd}（${WD_JA[weekday(x.date)]}）` : `${MON_EN[+mm - 1]} ${+dd}`; };
+  const chips = rest.length
+    ? `<p class="ev-dates"><span class="ev-n">${lang === 'ja' ? `全${g.length}日` : `${g.length} dates`}</span>${rest.slice(0, DATES_SHOWN).map((x) => `<a href="/e/${s.id}/"${x.status === 'cancelled' || x.status === 'postponed' ? ' class="off"' : ''}>${esc(lab(x))}</a>`).join('')}${rest.length > DATES_SHOWN ? `<a class="more" href="/e/${s.id}/">${lang === 'ja' ? `ほか${rest.length - DATES_SHOWN}日` : `+${rest.length - DATES_SHOWN} more`}</a>` : ''}</p>`
+    : '';
+  return `<article class="ev ev-s${cls}" data-pref="${esc(s.venue.pref)}">
+<a class="ev-ph" href="/e/${s.id}/" tabindex="-1" aria-hidden="true"><img src="${cardImg(s)}" alt="" width="400" height="300" loading="lazy" decoding="async"></a>
+<div class="ev-date"><small>${lang === 'ja' ? `${+m}月` : MON_EN[+m - 1]}</small><b>${+d}</b><small>${wd}</small></div>
+<button type="button" class="save-btn" data-id="${s.id}" aria-pressed="false" aria-label="${esc(SV[lang].saveAria)}" data-on="${esc(SV[lang].removeAria)}" data-off="${esc(SV[lang].saveAria)}">${icon('heart', 20)}</button>
+<div class="ev-body"><h3><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a></h3>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-n" lang="ja">${esc(s.name)}</p>` : ''}
+<p class="meta">${meta}</p>
+<div class="tags">${kindTags(s.kinds, lang)}${rule ? `<span class="tag">${esc(rule)}</span>` : ''}${statusTag(o, lang)}</div>
+${o.note ? `<p class="ev-note">${esc(noteL(o, lang))}</p>` : ''}${chips}</div>
+</article>`;
+}
+
+export function seriesList(groups, lang = 'en', empty) {
+  return groups.length ? `<div class="ev-list">${groups.map((g) => seriesCard(g, lang)).join('\n')}</div>` : `<p class="empty">${esc(empty || P[lang].evEmpty)}</p>`;
+}
+
 // 地域で絞り込む（掲載のある都道府県だけ。1つだけなら出さない）。動きは static/area-filter.js
 const AF = { ja: { label: '地域で絞り込む', all: 'すべて' }, en: { label: 'Filter by area', all: 'All' } };
 export function areaFilter(list, lang = 'ja') {

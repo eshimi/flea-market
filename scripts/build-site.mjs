@@ -26,7 +26,7 @@ import { endedSeries, MAX_RULES, redirectRules } from './lib/redirects.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { spotL, venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
-import { setFooterAreas, areaFilter, breadcrumb, esc, cardImg, eventList, eventListByMonth, kindTags, layout, OG_DEFAULT, statusTag } from './lib/html.mjs';
+import { setFooterAreas, areaFilter, breadcrumb, esc, cardImg, eventList, eventListByMonth, groupBySeries, seriesList, kindTags, layout, OG_DEFAULT, statusTag } from './lib/html.mjs';
 
 const LANGS_ORDER = ['en', 'ja'];
 
@@ -100,7 +100,7 @@ function home(ctx, lang) {
 
 function listPage(lang, base, crumbs, h1, lead, list, extra = '', filter = false, seo = {}) {
   const af = filter ? areaFilter(list, lang) : '';
-  const body = `<div class="in page">${breadcrumb(crumbs, lang)}<h1>${esc(h1)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}${extra}${af}${eventListByMonth(list, lang)}${seo.after || ''}</div>`;
+  const body = `<div class="in page">${breadcrumb(crumbs, lang)}<h1>${esc(h1)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}${extra}${af}${seo.group ? seriesList(list, lang) : eventListByMonth(list, lang)}${seo.after || ''}</div>`;
   return pg(lang, base, { title: seo.title || h1, description: seo.description || P[lang].listDesc(h1), body, scripts: [...(af ? ['/area-filter.js'] : []), ...(seo.scripts || [])], css: extra.includes('hm-cal') ? ['/cal-band.css'] : [], keywords: [h1, ...crumbs.map((c) => c.label)], ...(seo.head ? { head: seo.head } : {}) });
 }
 
@@ -119,7 +119,9 @@ function pager(base, n, total, lang) {
   const nums = Array.from({ length: total }, (_, i) => i + 1).map((i) => (i === n ? `<b aria-current="page">${i}</b>` : `<a href="${href(i)}">${i}</a>`)).join('');
   return `<nav class="pager" aria-label="${esc(x.nav)}">${n > 1 ? link(n - 1, `‹ ${x.prev}`, 'prev') : ''}<span class="pg-nums">${nums}</span>${n < total ? link(n + 1, `${x.next} ›`, 'next') : ''}<small>${esc(x.of(n, total))}</small></nav>`;
 }
-function listPaged(lang, base, crumbs, h1, lead, list, extra = '', filterHtml = '', seo = {}) {
+function listPaged(lang, base, crumbs, h1, lead, list0, extra = '', filterHtml = '', seo = {}) {
+  // 同じ市（シリーズ）の開催は、1枚のカードにまとめる（次回の日付と、続く日付のリンク）。1ページ40件は、カードの数
+  const list = groupBySeries(list0);
   const total = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
   const x = PG_TXT[lang];
   return Array.from({ length: total }, (_, i) => {
@@ -128,10 +130,10 @@ function listPaged(lang, base, crumbs, h1, lead, list, extra = '', filterHtml = 
     const path = n === 1 ? base : `${base}page/${n}/`;
     const cr = n === 1 ? crumbs : [...crumbs.slice(0, -1), { href: base, label: crumbs[crumbs.length - 1].label }, { label: x.page(n) }];
     const rel = (k, m) => `<link rel="${k}" href="${SITE.url}${langPath(m === 1 ? base : `${base}page/${m}/`, lang)}">\n`;
-    const head = `${listLd(h1, slice, lang)}${n > 1 ? rel('prev', n - 1) : ''}${n < total ? rel('next', n + 1) : ''}${n > 1 ? '<meta name="robots" content="noindex,follow">\n' : ''}`;
+    const head = `${listLd(h1, slice.map((g) => g[0]), lang)}${n > 1 ? rel('prev', n - 1) : ''}${n < total ? rel('next', n + 1) : ''}${n > 1 ? '<meta name="robots" content="noindex,follow">\n' : ''}`;
     const title = n === 1 ? (seo.title || h1) : `${seo.title || h1} (${x.page(n)})`;
     const first = n === 1;
-    return listPage(lang, path, cr, first ? h1 : `${h1} (${x.page(n)})`, first ? lead : '', slice, first ? extra + filterHtml : '', false, { title, description: first ? seo.description : undefined, head, scripts: first ? seo.scripts : [], after: pager(base, n, total, lang) + (first ? seo.after || '' : '') });
+    return listPage(lang, path, cr, first ? h1 : `${h1} (${x.page(n)})`, first ? lead : '', slice, first ? extra + filterHtml : '', false, { title, description: first ? seo.description : undefined, head, scripts: first ? seo.scripts : [], after: pager(base, n, total, lang) + (first ? seo.after || '' : ''), group: true });
   });
 }
 

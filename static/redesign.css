@@ -242,3 +242,11 @@ table.sp-dates{width:100%;border-collapse:collapse}
 .sp-page .ev-main>h3{margin:26px 0 8px;font-size:18px}
 .sp-page .ev-main>.sources{margin-top:0}
 .sp-page .ev-main>.note{margin:14px 0 0}
+
+/* 地域・種類の一覧：同じ市の開催は1枚のカード。次回の日付のあとに、続く日付を小さなリンクで */
+.ev-dates{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:12px 0 0;font-size:12.5px}
+.ev-dates .ev-n{font-weight:700;color:var(--rd-acc);margin-right:2px}
+.ev-dates a{padding:2px 9px;border:1px solid var(--rd-line);border-radius:20px;background:#fff;color:var(--rd-sub);text-decoration:none;white-space:nowrap}
+.ev-dates a:hover{border-color:var(--rd-acc);color:var(--rd-acc)}
+.ev-dates a.off{text-decoration:line-through;color:var(--rd-mute)}
+.ev-dates a.more{border-style:dashed}
