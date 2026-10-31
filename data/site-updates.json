@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-01",
+    "ja": "表示の「今日」を、前日の夜6時に切り替えるようにしました。日曜の夜6時から次の週末の一覧になります。更新は毎日18時と、金・土・日の朝7時です。",
+    "en": "The site’s “today” now switches at 6 p.m. the evening before. From Sunday 6 p.m. the weekend list shows the next weekend. Updates run daily at 6 p.m. and also at 7 a.m. on Fridays, Saturdays and Sundays.",
+    "link": "/weekend/"
+  },
+  {
+    "date": "2026-11-01",
     "ja": "「マップで探す」ページを追加しました。ヘッダーの言語切替の近くから開けます。日付・種類・地域で絞り込めるイラスト地図です。",
     "en": "Added a “Search by map” page, linked next to the language switch in the header. It is an illustrated map you can filter by date, type and area.",
     "link": "/map/"

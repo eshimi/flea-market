@@ -33,6 +33,13 @@ export function todayJst(now = new Date()) {
   return fmt(new Date(now.getTime() + 9 * 3600000));
 }
 
+// サイトの表示の「今日」：日本時間の18:00を過ぎたら、翌日として扱う（前日の夜6時に、次の日ベースの表示に切り替わる）。
+// ページ生成と、過去の開催の記録に使う。公式ページの確認・巡回・ブログの自動記事・Facebook は、実際の日付（todayJst）のまま
+export const SWITCH_HOUR_JST = 18;
+export function siteToday(now = new Date()) {
+  return todayJst(new Date(now.getTime() + (24 - SWITCH_HOUR_JST) * 3600000));
+}
+
 export function ymd(y, m, d) {
   return fmt(new Date(Date.UTC(y, m - 1, d)));
 }

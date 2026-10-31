@@ -3,7 +3,7 @@
 import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { addDays, holidayName, isDayOff, parseYmd, todayJst, upcomingWeekend, weekday, WEEKDAYS } from './lib/dates.mjs';
+import { addDays, holidayName, isDayOff, parseYmd, siteToday, todayJst, upcomingWeekend, weekday, WEEKDAYS } from './lib/dates.mjs';
 import { buildOccurrences, isActive, lastChecked, WINDOW_DAYS } from './lib/events.mjs';
 import { pastOccurrences } from './lib/archive.mjs';
 import { buildSpots } from './lib/spots.mjs';
@@ -957,7 +957,7 @@ function spotIndexData(spots) {
 }
 
 function main() {
-  const today = arg('today') || todayJst();
+  const today = arg('today') || siteToday();
   parseYmd(today);
   const out = resolve(ROOT, arg('out') || 'dist');
   rmSync(out, { recursive: true, force: true });

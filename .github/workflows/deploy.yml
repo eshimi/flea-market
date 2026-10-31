@@ -1,13 +1,16 @@
 name: 毎日の更新（Cloudflare Workers へデプロイ）
 
-# 毎朝 5:17（日本時間）＝ 20:17 UTC と、手動実行で動く。
+# 毎日 18:00（日本時間）＝ 09:00 UTC に動く。加えて、週末（金・土・日）は、朝 7:00（日本時間）＝ 前日 22:00 UTC（木・金・土）にも動く（雨による中止など、当日に入る情報を拾うため）。手動実行もできる。
+# 18:00 の実行から、サイトの「今日」は翌日になる（scripts/lib/dates.mjs の siteToday）。前日の夜6時に、次の日ベースの表示に切り替わる。
 # 公式ページの確認（scripts/check-sources.mjs）→ 確認結果を data/ に保存してコミット → ページ生成 → デプロイ。
 # ページは日付で中身が変わる（「今週末」・過ぎた開催の除外）ので、データに変更がなくても、毎日デプロイする。
+# GitHub の定期実行は、混み合うと遅れることがある（早まることはない）。18:00 の実行が遅れても、翌日基準になる。
 # 必要な GitHub Secrets: CLOUDFLARE_API_TOKEN（Workers の編集権限）, CLOUDFLARE_ACCOUNT_ID。未設定ならデプロイを飛ばす。
 # Variables: SITE_URL（本番の URL）、CONTACT_EMAIL（掲載の修正・削除の依頼を受けるメールアドレス）。どちらかが未設定の間は、検索に載せない（noindex）
 on:
   schedule:
-    - cron: '17 20 * * *'
+    - cron: '0 9 * * *'
+    - cron: '0 22 * * 4,5,6'
   workflow_dispatch:
     inputs:
       all:

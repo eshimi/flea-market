@@ -3,7 +3,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { todayJst } from './lib/dates.mjs';
+import { siteToday } from './lib/dates.mjs';
 import { updateArchive } from './lib/archive.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -19,6 +19,6 @@ export function run(dataDir, today) {
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  const r = run(resolve(arg('data') || join(ROOT, 'data')), arg('today') || todayJst());
+  const r = run(resolve(arg('data') || join(ROOT, 'data')), arg('today') || siteToday());
   console.log(`過去の開催の記録：${r.added} 件を追記（合計 ${r.total} 件）`);
 }
