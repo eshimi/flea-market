@@ -1015,8 +1015,8 @@ test('マップで探すページ：両言語のページ・ヘッダーのリ�
     const pg_ = pages.find((p) => p.path === base);
     assert.ok(pg_, base);
     const html = layout(pg_);
-    assert.ok(html.includes('id="mk-map"') && html.includes('/vendor/leaflet/leaflet.js') && html.includes('/map-page.js'), base);
-    assert.ok(html.includes('国土地理院') || html.includes('Geospatial Information Authority'), `${base}: 地図の出典`);
+    assert.ok(html.includes('id="mk-map"') && html.includes('class="mk-svg"') && html.includes('/map-page.js') && !html.includes('leaflet'), base);
+    assert.ok(html.includes('Natural Earth'), `${base}: 地図の出典`);
     assert.match(html, /class="hd-map"/, `${base}: ヘッダーにマップのリンク`);
   }
   assert.match(layout(pages.find((p) => p.path === '/')), /class="hd-map" aria-label="Search by map" href="\/map\/"/);

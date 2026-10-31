@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { esc } from './html.mjs';
 
 const DATA = JSON.parse(readFileSync(join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'data', 'japan-prefs.json'), 'utf8'));
+export const MAP_VIEWBOX = DATA.viewBox;
 export const MAP_PREFS = DATA.prefs; // { '13': { name: '東京都', en: 'Tokyo', d, c } }
 
 // counts: Map<都道府県コード, 件数>。label: 言語ごとの aria 説明。countText: (n) => '5件'
