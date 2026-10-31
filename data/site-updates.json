@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-31",
+    "ja": "ブログの一覧を、読みもの記事と「今週・今月のフリマ特集」（自動作成の記事・地域ガイド）の2つのコーナーに分けました。",
+    "en": "The blog list is now split into articles and a separate corner for this week and this month (auto-built picks and area guides).",
+    "link": "/blog/"
+  },
+  {
+    "date": "2026-10-31",
     "ja": "マップで探すを開くと、現在地の近くから表示するようになりました（許可しない場合は全国表示。位置は送信・保存しません）。",
     "en": "The map now opens near your current location (if you decline, all of Japan is shown). Your location is not sent or stored.",
     "link": "/map/"

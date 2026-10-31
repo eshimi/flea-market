@@ -6,6 +6,8 @@
   const apply = (cat) => {
     chips.forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.cat === cat)));
     rows.forEach((r) => { r.hidden = cat !== 'all' && r.dataset.cat !== cat; });
+    document.querySelectorAll('.bl-area').forEach((d) => { if (cat === 'area') d.open = true; });
+    document.querySelectorAll('.bl-corner,.bl-list:not(.bl-corner)').forEach((sec) => { sec.hidden = !sec.querySelector('.bl-row:not([hidden])'); });
   };
   chips.forEach((c) => c.addEventListener('click', () => { apply(c.dataset.cat); try { history.replaceState(null, '', c.dataset.cat === 'all' ? location.pathname : `#cat=${c.dataset.cat}`); } catch { /* 履歴を触れない環境では、そのまま */ } }));
   const m = /#cat=([a-z]+)/.exec(location.hash);

@@ -94,14 +94,25 @@ export function renderBlogIndex(posts, lang) {
   const cats = Object.keys(CATS).filter((k) => posts.some((p) => p.cat === k));
   const chips = [['all', t.all, posts.length], ...cats.map((k) => [k, CATS[k][lang], posts.filter((p) => p.cat === k).length])]
     .map(([k, n, c], i) => `<button type="button" class="bl-chip" data-cat="${k}" aria-pressed="${i === 0}">${esc(n)}<sup>${c}</sup></button>`).join('');
-  const rows = posts.map((p) => {
+  const row = (p) => {
     const c = p[lang];
     return `<a class="bl-row" data-cat="${p.cat}" href="/blog/${p.slug}/"><span class="bl-d"><time datetime="${p.date}">${esc(dateText(p.date, lang))}</time><br>${esc(t.read(minutes(c.blocks, lang)))}</span><span class="bl-b"><span class="bl-cat bl-cat-${p.cat}">${esc(CATS[p.cat][lang])}</span><h3>${esc(c.title)}</h3><p>${esc(c.summary)}</p></span></a>`;
-  }).join('\n');
+  };
+  const AUTO = ['weekly', 'monthly', 'new'];
+  const edit = posts.filter((p) => !AUTO.includes(p.cat) && p.cat !== 'area');
+  const autoPosts = posts.filter((p) => AUTO.includes(p.cat));
+  const areaPosts = posts.filter((p) => p.cat === 'area');
+  const rows = edit.map(row).join('\n');
+  const ct = lang === 'ja'
+    ? { h: '今週・今月のフリマ特集', n: '掲載データから自動で作る記事です（今週末・月のまとめ・新着）。', area: '地域ガイド', areaN: (n) => `${n}件` }
+    : { h: 'This week & this month', n: 'Auto-built from our listing data: weekend picks, monthly overviews and new listings.', area: 'Area guides', areaN: (n) => `${n}` };
+  const corner = autoPosts.length || areaPosts.length
+    ? `<section class="bl-list bl-corner" aria-labelledby="corner"><h2 id="corner">${esc(ct.h)}</h2><p class="bl-corner-n">${esc(ct.n)}</p>${autoPosts.map(row).join('\n')}${areaPosts.length ? `<details class="bl-area"><summary>${esc(ct.area)} <sup>${esc(ct.areaN(areaPosts.length))}</sup></summary>${areaPosts.map(row).join('\n')}</details>` : ''}</section>`
+    : '';
   const tags = [...new Set(posts.flatMap((p) => p.tags[lang]))];
   return `<div class="art-wrap">
 <nav class="bl-chips" aria-label="${esc(t.filter)}">${chips}</nav>
-<div class="bl-layout"><section class="bl-list" aria-labelledby="list"><h2 id="list" class="visually-hidden">${esc(t.list)}</h2>${rows}</section>
+<div class="bl-layout"><div class="bl-main"><section class="bl-list" aria-labelledby="list"><h2 id="list" class="visually-hidden">${esc(t.list)}</h2>${rows}</section>${corner}</div>
 <aside class="page-side" aria-label="${esc(t.sideLabel)}">${sideCta(lang)}${sideFirst(lang)}<nav class="side-card side-tags" aria-label="${esc(t.popular)}"><h2>${esc(t.popular)}</h2><ul class="tag-list">${tagLinks(tags)}</ul><p class="rss"><a href="${langPath('/blog/feed.xml', lang)}">${esc(t.rss)}</a></p></nav></aside></div>
 </div>`;
 }
