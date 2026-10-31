@@ -773,6 +773,10 @@
   ],
   "visitor": {
    "rain": "雨天中止の決定は当日の朝に行う（午前7時30分〜9時に電話で確認）"
+  },
+  "scale": {
+   "stalls": 40,
+   "quote": "最大40区画"
   }
  },
  {
@@ -834,7 +838,11 @@
      "車での搬出入・来場はできません"
     ]
    }
-  ]
+  ],
+  "scale": {
+   "stalls": 8,
+   "quote": "8区画"
+  }
  },
  {
   "id": "edogawa-recycle-world-in-tobu-2026",
@@ -1074,7 +1082,11 @@
      "〒112-8555東京都文京区春日1丁目16番21号"
     ]
    }
-  ]
+  ],
+  "scale": {
+   "stalls": 20,
+   "quote": "定員20組"
+  }
  },
  {
   "id": "toshima-nakaikebukuro-park-flea-2026-12",
@@ -1258,7 +1270,11 @@
      "主催船堀まつり実行委員会・江戸川区"
     ]
    }
-  ]
+  ],
+  "scale": {
+   "stalls": 20,
+   "quote": "募集は20店舗程度"
+  }
  },
  {
   "id": "shibuya-recycle-bazaar",
@@ -1377,7 +1393,11 @@
      "購入はどなたでもしていただけます"
     ]
    }
-  ]
+  ],
+  "scale": {
+   "stalls": 6,
+   "quote": "出店は6店舗程度"
+  }
  },
  {
   "id": "taito-hanakawado-park-flea",
@@ -1581,7 +1601,11 @@
      "令和8年6月25日(木曜日)から令和8年7月31日(金曜日)"
     ]
    }
-  ]
+  ],
+  "scale": {
+   "stalls": 28,
+   "quote": "募集は28店"
+  }
  },
  {
   "id": "setagaya-funabashi-fureai-matsuri-flea-2026",
@@ -2328,6 +2352,10 @@
   "venueId": "machida-tenmangu",
   "visitor": {
    "rain": "天候により早めに店じまいする場合あり（雨天時に開催するかどうかの記載はなし）"
+  },
+  "scale": {
+   "stalls": 80,
+   "quote": "出店数 80店（公式の記載）"
   }
  },
  {
@@ -2386,6 +2414,10 @@
   ],
   "visitor": {
    "rain": "天候により早めに店じまいする場合あり（雨天時に開催するかどうかの記載はなし）"
+  },
+  "scale": {
+   "stalls": 30,
+   "quote": "出店数 30店（公式の記載）"
   }
  },
  {
@@ -3800,7 +3832,11 @@
     ]
    }
   ],
-  "venueId": "akabane-park"
+  "venueId": "akabane-park",
+  "scale": {
+   "stalls": 50,
+   "quote": "出店予定数50店"
+  }
  },
  {
   "id": "adachi-guruguru-kiosk-ayase-2026-10",
@@ -3997,7 +4033,11 @@
      "交通 JR昭島駅または拝島駅より徒歩20分"
     ]
    }
-  ]
+  ],
+  "scale": {
+   "stalls": 27,
+   "quote": "募集27店舗"
+  }
  },
  {
   "id": "hino-art-festival-flea-craft",
@@ -4115,7 +4155,11 @@
      "開催日の5日前に出店許可郵送"
     ]
    }
-  ]
+  ],
+  "scale": {
+   "stalls": 32,
+   "quote": "約32店"
+  }
  },
  {
   "id": "cultune-fukuoka-maizuru-flea",
@@ -4193,7 +4237,11 @@
      "西鉄大手門バス停から徒歩8分 市営地下鉄赤坂駅から徒歩8分"
     ]
    }
-  ]
+  ],
+  "scale": {
+   "stalls": 200,
+   "quote": "募集200組"
+  }
  },
  {
   "id": "earthgarden-gearloop-market-2026",
@@ -4709,7 +4757,11 @@
     ]
    }
   ],
-  "venueId": "kinshi-park"
+  "venueId": "kinshi-park",
+  "scale": {
+   "stalls": 40,
+   "quote": "約40店"
+  }
  },
  {
   "id": "yuyu-marche-inazawa-kinro-fukushi-kaikan",
@@ -11831,7 +11883,11 @@
      "フリーマーケット（61区画）が勢ぞろい"
     ]
    }
-  ]
+  ],
+  "scale": {
+   "stalls": 61,
+   "quote": "フリーマーケットは61区画"
+  }
  },
  {
   "id": "f2525-moriyama-moriive",
@@ -13372,7 +13428,11 @@
      "出店希望者 十勝管内に在住されている方"
     ]
    }
-  ]
+  ],
+  "scale": {
+   "stalls": 20,
+   "quote": "20区画"
+  }
  },
  {
   "id": "kokura-car-boot",

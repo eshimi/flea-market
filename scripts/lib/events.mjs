@@ -28,6 +28,12 @@ export function validateSeries(list) {
     if (!s.name) e('name がありません');
     if (!Array.isArray(s.kinds) || !s.kinds.length || !s.kinds.every((k) => KINDS[k])) e(`kinds が不正: ${JSON.stringify(s.kinds)}`);
     if (!s.organizer?.name) e('organizer.name がありません');
+    // 規模の目安：公式に書かれた出店数（stalls）と、その語句（quote。シリーズの文章の中にそのまま書いてあること）
+    if (s.scale) {
+      if (!Number.isInteger(s.scale.stalls) || s.scale.stalls < 1) e('scale.stalls は1以上の整数');
+      const body = JSON.stringify({ visitor: s.visitor, exhibitor: s.exhibitor, notes: s.notes, summary: s.summary, time: s.time }).replace(/\\"/g, '"');
+      if (!s.scale.quote || !body.includes(s.scale.quote)) e('scale.quote が、シリーズの文章に見つかりません');
+    }
     if (s.organizer?.url && !HTTP_RE.test(s.organizer.url)) e('organizer.url が不正');
     // 公式に記載がなく、ネットで調べて補った項目（値は通常の項目に書き、ここに出典の URL を書く）
     for (const [k, u] of Object.entries(s.searched || {})) {

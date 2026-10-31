@@ -15,6 +15,7 @@ import { REVIEWS_ON, reviewsSection } from './lib/reviews-view.mjs';
 import { CONTACT_ON, contactBanner, contactBody } from './lib/contact-view.mjs';
 import { renderCalendar, renderHomeBody } from './lib/home-view.mjs';
 import { MON_EN, S, T, WD_EN, WD_JA } from './lib/i18n.mjs';
+import { scaleMark, scaleText, scaleTier } from './lib/scale.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, blogBanner, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
 import { tipsBanner, tipsIndex } from './lib/tips-view.mjs';
@@ -617,6 +618,7 @@ ${row(p.address, (v.address ? tv(s, 'address', v.address, lang) + (v.addressFrom
 ${row(p.access, (v.access ? tv(s, 'access', v.access, lang) + (v.accessFrom === 'search' ? `<small class="addr-src">${esc(p.accessSearched)}</small>` : '') : est(estAccess, p)))}
 ${row(p.admission, s.visitor?.admission ? tv(s, 'admission', s.visitor.admission, lang) + srcNote(s, 'admission', p) : est(p.estFree, p))}
 ${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang) + srcNote(s, 'rain', p))}
+${scaleTier(s) ? row(scaleText(lang).label, `${scaleMark(s, lang, { withLabel: false })} <span class="est" title="${esc(scaleText(lang).rule)}">${esc(scaleText(lang).est)}</span> ${esc(scaleText(lang).stalls(s.scale.stalls))}<small class="scale-q" lang="ja">${esc(scaleText(lang).from)}: 「${esc(s.scale.quote)}」</small><small class="scale-q">${esc(scaleText(lang).rule)}</small>`) : ''}
 ${row(s.organizer.label ? (lang === 'en' ? labelEn(s.organizer.label) || p.orgLabel(s.organizer.label) : p.orgLabel(s.organizer.label)) : p.org, orgName)}
 </dl>
 </div>

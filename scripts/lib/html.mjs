@@ -8,6 +8,7 @@ import { weekday } from './dates.mjs';
 import { cityL, nameL, noteL, timeEn, venueL } from './tr-en.mjs';
 import { fbLogo, icon, logoSvg } from './icons.mjs';
 import { SV } from './saved-txt.mjs';
+import { scaleMark } from './scale.mjs';
 import { MON_EN, S, T, WD_EN, WD_JA } from './i18n.mjs';
 import { disclaimer, DISCLAIMER_JA, KIND_SHORT_EN, langPath, localize, P, prefLabel, recurTag, splitPath, monthHead } from './l10n.mjs';
 
@@ -261,7 +262,7 @@ export function eventCard(o, lang = 'en') {
 <button type="button" class="save-btn" data-id="${s.id}" aria-pressed="false" aria-label="${esc(SV[lang].saveAria)}" data-on="${esc(SV[lang].removeAria)}" data-off="${esc(SV[lang].saveAria)}">${icon('heart', 20)}</button>
 <div class="ev-body"><h3><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a></h3>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-n" lang="ja">${esc(s.name)}</p>` : ''}
 <p class="meta">${meta}</p>
-<div class="tags">${kindTags(s.kinds, lang)}${rule ? `<span class="tag">${esc(rule)}</span>` : ''}${statusTag(o, lang)}</div>
+<div class="tags">${kindTags(s.kinds, lang)}${rule ? `<span class="tag">${esc(rule)}</span>` : ''}${statusTag(o, lang)}${scaleMark(s, lang)}</div>
 ${o.note ? `<p class="ev-note">${esc(noteL(o, lang))}</p>` : ''}</div>
 </article>`;
 }
@@ -297,7 +298,7 @@ export function seriesCard(g, lang = 'en') {
 <button type="button" class="save-btn" data-id="${s.id}" aria-pressed="false" aria-label="${esc(SV[lang].saveAria)}" data-on="${esc(SV[lang].removeAria)}" data-off="${esc(SV[lang].saveAria)}">${icon('heart', 20)}</button>
 <div class="ev-body"><h3><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a></h3>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-n" lang="ja">${esc(s.name)}</p>` : ''}
 <p class="meta">${meta}</p>
-<div class="tags">${kindTags(s.kinds, lang)}${rule ? `<span class="tag">${esc(rule)}</span>` : ''}${statusTag(o, lang)}</div>
+<div class="tags">${kindTags(s.kinds, lang)}${rule ? `<span class="tag">${esc(rule)}</span>` : ''}${statusTag(o, lang)}${scaleMark(s, lang)}</div>
 ${o.note ? `<p class="ev-note">${esc(noteL(o, lang))}</p>` : ''}${chips}</div>
 </article>`;
 }

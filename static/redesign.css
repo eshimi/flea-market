@@ -261,3 +261,12 @@ table.sp-dates{width:100%;border-collapse:collapse}
   .sp-page .ev-side .sp-photo{order:-1}
   .sp-page .ev-side .sp-photo img{max-height:220px}
 }
+
+/* 規模の目安（小・中・大）：3本の棒。小=1本・中=2本・大=3本が塗られる */
+.scale{display:inline-flex;align-items:center;gap:6px;font-size:12px;line-height:1.7;padding:1px 9px 1px 7px;border:1px solid var(--rd-ctl);border-radius:12px;background:#fff;color:var(--rd-ink);white-space:nowrap}
+.scale b{font-weight:700}
+.scale-bars{display:inline-flex;align-items:flex-end;gap:2px;height:12px}
+.scale-bars i{display:block;width:4px;border-radius:1px;background:#E4DCCD}
+.scale-bars i:nth-child(1){height:5px}.scale-bars i:nth-child(2){height:8px}.scale-bars i:nth-child(3){height:12px}
+.scale-bars.s1 i:nth-child(1),.scale-bars.s2 i:nth-child(-n+2),.scale-bars.s3 i{background:var(--rd-acc)}
+.scale-q{display:block;margin-top:3px;font-size:12.5px;color:var(--rd-mute)}
