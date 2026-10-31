@@ -1,6 +1,166 @@
 {
- "lastDate": "2026-10-30",
+ "lastDate": "2026-10-31",
  "items": [
+  {
+   "series": "bia-sunshine",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-20",
+   "source": "https://b-i-a.jp/reserve/sunshine/"
+  },
+  {
+   "series": "bon-dimanche-chofu-parco",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://bon.haleinc.co.jp/event/"
+  },
+  {
+   "series": "fmj-apia-higashiomi",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-18",
+   "note": "みんなのファミリーフェスタ",
+   "source": "https://www.fmfm-king.com/apia10-31/"
+  },
+  {
+   "series": "fmj-nara-city-hall-lawn",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-18",
+   "note": "ランタンナイト・フリーマーケット・マルシェ・キッチンカ―",
+   "source": "https://www.fmfm-king.com/ennara10-31-1/"
+  },
+  {
+   "series": "fmj-plant-kizugawa",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-18",
+   "note": "木津川にぎわい祭り",
+   "source": "https://www.fmfm-king.com/kidugawa10-31-1/"
+  },
+  {
+   "series": "higashiginza-modern-chic-market-2026",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://www.higashiginza-area.com/event/%E3%80%8C%E6%9D%B1%E9%8A%80%E5%BA%A7%E3%83%A2%E3%83%80%E3%83%B3%E3%82%B7%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88%E3%80%8D%E9%96%8B%E5%82%AC%EF%BC%81-2/"
+  },
+  {
+   "series": "hodogaya-kuminmatsuri-flea-2026",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://www.city.yokohama.lg.jp/hodogaya/kurashi/kyodo_manabi/kyodo_shien/chiiki/r8-ho-matsuri.html"
+  },
+  {
+   "series": "jfma-wanwan-marche-kobe-meriken-park-vol8",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "http://freemarket-go.com/shousai-hyogo-009.html"
+  },
+  {
+   "series": "kashiwara-shimin-festival-flea",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://www.city.kashiwara.lg.jp/docs/2026072100040"
+  },
+  {
+   "series": "kokura-car-boot",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html"
+  },
+  {
+   "series": "lohas-park-nara-heijokyuseki",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://lohas-park.jp/event/kiji5799/"
+  },
+  {
+   "series": "lohas-park-toyonaka-hattori",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://lohas-park.jp/event/kiji5630/"
+  },
+  {
+   "series": "lohasfesta-tokyo-2026",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://lohasfesta.jp/tokyo/about"
+  },
+  {
+   "series": "nerima-sakuradai-chikusai-flea-2026",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://www.city.nerima.tokyo.jp/kankomoyoshi/annai/omatsuri/chikusai/20260616103208700.html"
+  },
+  {
+   "series": "oedo-antique-market-tokyo-international-forum",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://www.antique-market.jp/"
+  },
+  {
+   "series": "rbf-chikozan-park-festival",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://www.rbf.jp/chicozan.html"
+  },
+  {
+   "series": "rbf-kazo-hanasaki-park",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-20",
+   "note": "加須はなさき水上公園まつり（わくわく公園まつり）内の開催",
+   "source": "https://www.rbf.jp/nittei.html"
+  },
+  {
+   "series": "sapporo-nakajima-park-flea",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-18",
+   "note": "10時〜13時／主催団体：日本リサイクルネットワーク北海道",
+   "source": "https://www.city.sapporo.jp/seiso/hurima.html"
+  },
+  {
+   "series": "taito-hanakawado-park-flea",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-18",
+   "note": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円",
+   "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+   "series": "tokyo-nominoichi-2026-autumn",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://tokyonominoichi.com/2026_autumn/outline/"
+  },
+  {
+   "series": "trx-funabashi-keibajo-flea",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://trx.jp/schejule"
+  },
+  {
+   "series": "trx-oi-keibajo-tokyo-city-flea",
+   "date": "2026-10-31",
+   "status": "confirmed",
+   "checkedAt": "2026-10-31",
+   "source": "https://trx.jp/schejule"
+  },
   {
    "series": "lohasfesta-tokyo-2026",
    "date": "2026-10-30",
