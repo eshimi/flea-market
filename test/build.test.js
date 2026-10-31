@@ -607,7 +607,9 @@ test('スポットの写真：作者・ライセンスの表示と、本体・�
   const { pages } = buildPages(real, '2026-10-19');
   const withImg = real.venues.find((v) => v.image);
   const pg_ = pages.find((p) => p.path === `/spot/${withImg.id}/`);
-  assert.ok(pg_.body.includes(withImg.image.author) && pg_.body.includes('class="sp-head has-photo"'));
+  // スポットのページ（B案）は写真を出さない。作者・ライセンスは、一覧のサムネイルがあるので「掲載のきまり」に残す
+  assert.ok(!pg_.body.includes('class="sp-head has-photo"') && pg_.body.includes('class="ev-next"'));
+  assert.ok(pages.find((p) => p.path === '/about/').body.includes(withImg.image.author), '掲載のきまりに、写真の作者を表示');
   assert.ok(pages.find((p) => p.path === '/spot/').body.includes(withImg.image.file.replace(/\.webp$/, '-t.webp')));
 });
 

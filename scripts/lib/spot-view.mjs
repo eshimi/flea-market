@@ -1,9 +1,10 @@
 // スポット（会場）のページ：/spot/（区・市ごとの表）と /spot/<id>/
-import { addDays } from './dates.mjs';
+import { addDays, weekday } from './dates.mjs';
+import { MON_EN, S, WD_EN, WD_JA } from './i18n.mjs';
 import { dlabel, langPath, P, TBC, prefLabel } from './l10n.mjs';
-import { breadcrumb, esc, eventListByMonth } from './html.mjs';
+import { breadcrumb, esc, statusTag } from './html.mjs';
 import { SPOT_KINDS } from './spots.mjs';
-import { cityL, nameL, orgEn, spotL } from './tr-en.mjs';
+import { cityL, nameL, noteL, orgEn, spotL, timeEn } from './tr-en.mjs';
 import { PREFS } from './areas.mjs';
 import { SITE } from './nav.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './weather.mjs';
@@ -16,7 +17,7 @@ const T = {
     photo: '写真', guide: '会場ガイドを読む →', next: '次の開催', kindLabel: '種類', open: '公式サイト', upcoming: '今後の開催予定', info: '会場の情報', address: '所在地', access: 'アクセス', place: '開催場所', rules: '会場の決まり', summary: '概要',
     sources: '出典', checked: '最終確認', series: 'この会場で開かれている市', others: '同じ区・市の他のスポット', noUpcoming: '今後の開催予定は要確認です（公式の案内が出たら載せます）。',
     desc: (n) => `${n}の会場情報と、開催予定のフリマ・蚤の市。`, listDesc: 'フリマ・蚤の市が開かれる会場の一覧。区・市ごとに、直近の開催と主催をまとめています。', note: '開催の有無・内容は変わることがあります。出かける前に、主催者・会場の公式情報でご確認ください。',
-    organizerFrom: '', more: (n) => `ほか${n}回`,
+    organizerFrom: '', more: (n) => `ほか${n}回`, dates: (n) => `開催日（全${n}日）`, rest: (n) => `残り${n}日を見る`, detail: '詳細 →', mapHead: '地図・行き方', weekday: '曜日',
   },
   en: {
     crumb: 'Spots', h1: 'Spots (venues)', lead: 'Venues that host flea markets, by ward and city, with their next dates and organizers. Venue details are limited to what official pages state.',
@@ -25,7 +26,7 @@ const T = {
     photo: 'Photo', guide: 'Read the venue guide →', next: 'Next', kindLabel: 'Type', open: 'Official site', upcoming: 'Upcoming dates', info: 'Venue information', address: 'Address', access: 'Access', place: 'Where on site', rules: 'Venue rules', summary: 'Overview',
     sources: 'Sources', checked: 'last checked', series: 'Markets held here', others: 'Other spots in the same ward / city', noUpcoming: 'Upcoming dates are TBC (we list them once officially announced).',
     desc: (n) => `Venue information for ${n} and its upcoming flea markets.`, listDesc: 'Venues that host flea markets and antique fairs, by ward and city, with next dates and organizers.', note: 'Events can change or be cancelled. Please check official information from the organizer or venue before you go.',
-    organizerFrom: '', more: (n) => `+${n} more`,
+    organizerFrom: '', more: (n) => `+${n} more`, dates: (n) => `Dates (${n} in all)`, rest: (n) => `Show ${n} more dates`, detail: 'Details →', mapHead: 'Map & directions', weekday: '',
   },
 };
 
@@ -78,12 +79,6 @@ const POLL = {
   en: { h: 'What do you think of this venue?', lead: 'Press to respond; press again to undo. Anonymous; you can pick several.', choices: { want: 'Want to go', been: 'Been here', again: 'Want to go again', crowded: 'It was crowded', finds: 'Found good stuff' }, note: 'Duplicates are prevented with an anonymous ID kept in your browser and a non-identifying value derived from your IP (used only to limit how often one can respond). We collect no personal information. Results are visitors’ impressions, not official information.' },
 };
 
-function photoBlock(v, lang) {
-  const im = v.image;
-  if (!im) return '';
-  const t = T[lang];
-  return `<figure class="sp-photo"><img src="/img/spots/${esc(im.file)}" alt="${esc(lang === 'ja' ? im.altJa : im.altEn)}" width="800" height="533" decoding="async"><figcaption>${esc(t.photo)}: ${esc(im.author)} / <a href="${esc(im.licenseUrl || im.sourceUrl)}" rel="noopener nofollow">${esc(im.license)}</a> / <a href="${esc(im.sourceUrl)}" rel="noopener nofollow">Wikimedia Commons</a>${lang === 'ja' ? '（トリミング・縮小）' : ' (cropped and resized)'}</figcaption></figure>`;
-}
 
 export function pollBlock(v, lang, market = false) {
   const q = { ...POLL[lang], ...(market ? { h: lang === 'ja' ? 'このマーケット、どうでしたか？' : 'What do you think of this market?' } : {}) };
@@ -103,7 +98,6 @@ export function spotPage(sp, ctx, lang) {
   const addr = v.address || !g?.estAddress ? null : `<span class="est" title="${esc(pp.estTitle)}">${esc(pp.est)}</span> ${esc(pp.estAddrGeo(lang === 'ja' ? g.estAddress : cityOf(v, lang)))}`;
   const val = (key) => (v[key] ? (lang === 'en' && L(key) !== v[key] ? `${esc(L(key))}<small class="orig" lang="ja">${esc(v[key])}</small>` : esc(v[key])) : TBC(lang));
   const srcs = v.sources.map((s) => `<li><a href="${esc(s.url)}" rel="noopener">${esc(s.url)}</a>　${esc(t.checked)}: ${esc(s.checkedAt)}</li>`).join('');
-  const seriesList = sp.series.map((s) => `<li><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a></li>`).join('');
   const others = ctx.spots.filter((x) => x.venue.id !== v.id && x.venue.area.pref === v.area.pref && (x.venue.area.cityCode || '') === (v.area.cityCode || ''));
   const cityName = cityOf(v, lang);
   // 地図・経路・天気（開催詳細と同じ。会場の住所があれば住所、なければ会場名＋区市で検索）
@@ -114,40 +108,45 @@ export function spotPage(sp, ctx, lang) {
   const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(mapQuery(shim).q)}&hl=${lang === 'ja' ? 'ja' : 'en'}&z=16&output=embed`;
   const mapImg = ctx.spotMapImg?.(v.id);
   const wxBox = sp.next && wt ? `<section class="ev-card"><h2>${esc(pp.secWx)}</h2><div class="wx" data-office="${wt.office}" data-area="${wt.area || ''}" data-date="${sp.next.date}" data-lang="${lang}" data-region="${esc(prefLabel(v.area.pref, 'en'))}"><p class="wx-st">${esc(pp.wxLoading)}</p></div><p class="note">${esc(pp.wxNote)} ${esc(pp.wxSrc)}<a href="https://www.jma.go.jp/bosai/forecast/" rel="noopener">${esc(pp.wxJma)}</a>${lang === 'ja' ? '' : ' (気象庁)'}</p></section>` : '';
-  const mapInline = (kind) => `<span class="map-inline"><a href="${esc(kind === 'open' ? mu.open : mu.route)}" target="_blank" rel="noopener nofollow">${esc(kind === 'open' ? pp.mapOpenShort : pp.mapRouteShort)} ↗</a></span>`;
   const mapCard = `<section class="ev-card"><h2>${esc(pp.secMap)}</h2>${mapImg ? `<a class="ev-mapimg" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow" title="${esc(pp.mapOpen)}"><img src="/img/maps/spot-${esc(v.id)}.webp" alt="${esc(pp.mapImgAlt(nm))}" width="640" height="400" loading="lazy" decoding="async"></a><p class="note">${esc(mu.pin ? pp.mapApproxName : mu.searched ? pp.mapApproxSearch : pp.mapApprox)}</p>` : `<div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(pp.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(nm)}</b><button type="button" class="map-show">${esc(pp.mapShow)}</button><small>${esc(pp.mapPrivacy)}</small></div></div>`}<p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(pp.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(pp.mapRoute)} ↗</a></p><p class="note">${esc(mu.pin ? pp.mapPin : mu.searched ? pp.mapSearched : mu.exact ? pp.mapExact : pp.mapLoose)}</p></section>`;
-  const nav = [['/spot/', t.h1], ['/area/', lang === 'ja' ? '地域から探す' : 'Explore by Area'], ['/weekend/', lang === 'ja' ? '今週末の開催' : 'This Weekend'], ['/calendar/', lang === 'ja' ? 'イベントカレンダー' : 'Event Calendar']];
-  const navCard = `<nav class="ev-card sn" aria-label="${esc(t.crumb)}"><h2>${esc(lang === 'ja' ? 'あわせて見る' : 'See also')}</h2><ul class="sn-list">${nav.map(([h, x]) => `<li><a href="${h}"><span>${esc(x)}</span><i aria-hidden="true">→</i></a></li>`).join('')}</ul></nav>`;
   const nxt = sp.next;
-  const q = (k, x) => `<div><dt>${esc(k)}</dt><dd>${x}</dd></div>`;
-  const quickRows = [
-    q(t.next, nxt ? `<b>${esc(dlabel(nxt.date, lang, { year: true }))}</b>${nxt.series.organizer.label ? (nxt.note ? ` · ${esc(nxt.note)}` : '') : ` · ${esc((lang === 'en' && orgEn(nxt.series.organizer.name)) || nxt.series.organizer.name)}`}` : `<span class="tbd">${esc(t.tbcNext)}</span>`),
-    q(t.address, (addr || val('address') + (v.address && v.addressFrom === 'search' ? `<small class="addr-src">${esc(pp.addrSearched)}</small>` : '')) + mapInline('open')),
-    q(t.access, (val('access') + (v.access && v.accessFrom === 'search' ? `<small class="addr-src">${esc(pp.accessSearched)}</small>` : '')) + mapInline('route')),
-  ].join('');
-  const side = `<aside class="ev-side" aria-label="${esc(pp.secMap)}">${mapCard}${wxBox}${navCard}</aside>`;
-  const body = `<div class="in page">${breadcrumb([{ href: '/spot/', label: t.crumb }, { label: spotL(v, 'name', lang) }], lang)}
+  const shortT = (x) => String(x || '').split(/[（(。]|\.\s|\s\(/)[0].trim();
+  const timeOf = (o) => shortT(lang === 'en' && timeEn(o.series) ? timeEn(o.series) : o.series.time?.text) || t.tbc;
+  const multi = sp.series.length > 1;
+  // 次の開催（大きな日付）
+  const nextCard = nxt ? (() => {
+    const [, nm, nd] = nxt.date.split('-');
+    const wdn = (lang === 'ja' ? WD_JA : WD_EN)[weekday(nxt.date)];
+    const org = nxt.series.organizer.label ? (nxt.note ? esc(nxt.note) : '') : esc((lang === 'en' && orgEn(nxt.series.organizer.name)) || nxt.series.organizer.name);
+    return `<div class="ev-next"><div class="ev-next-d"><small>${lang === 'ja' ? `${+nm}月` : MON_EN[+nm - 1]}</small><b>${+nd}</b><span>${esc(wdn)}${lang === 'ja' ? '曜日' : ''}</span></div><div><small class="lab">${esc(t.next)}</small><div class="ev-next-t">${esc(timeOf(nxt))}</div><p><a href="/e/${nxt.series.id}/">${esc(nameL(nxt.series, lang))}</a>${org ? ` ／ ${org}` : ''} ／ ${esc(S[lang].status[nxt.status])}</p></div></div>`;
+  })() : `<p class="empty">${esc(t.noUpcoming)}</p>`;
+  // 開催日の表（最初の6件。残りは「残りN日を見る」で開く。HTML には全件が入る）
+  const dateRow = (o) => `<tr><td class="sd-d"><a href="/e/${o.series.id}/">${esc(dlabel(o.date, lang))}</a></td><td class="sd-t">${esc(timeOf(o))}${multi ? `<small>${esc(nameL(o.series, lang))}</small>` : ''}${o.note ? `<small>${esc(noteL(o, lang))}</small>` : ''}</td><td>${statusTag(o, lang)}</td><td class="sd-m"><a href="/e/${o.series.id}/">${esc(t.detail)}</a></td></tr>`;
+  const SHOW = 6;
+  const tbl = (rows) => `<table class="sp-dates"><tbody>${rows.map(dateRow).join('')}</tbody></table>`;
+  const datesBlock = sp.occ.length
+    ? `<h2 class="sec-h">${esc(t.dates(sp.occ.length))}</h2><div class="ev-facts-card">${tbl(sp.occ.slice(0, SHOW))}${sp.occ.length > SHOW ? `<details class="sp-more"><summary>${esc(t.rest(sp.occ.length - SHOW))}</summary>${tbl(sp.occ.slice(SHOW))}</details>` : ''}</div><p class="note">${esc(t.tbcSeries)}</p>`
+    : '';
+  const cityNameShort = cityName;
+  const checkedAll = v.sources.map((x) => x.checkedAt).filter(Boolean).sort().at(-1);
+  const extraLinks = `${v.officialUrl ? `<a class="btn-line" href="${esc(v.officialUrl)}" rel="noopener">${esc(t.open)} ↗</a>` : ''}${ctx.guideSlugs?.has(`guide-${v.id}`) ? `<a class="btn-line" href="/blog/guide-${esc(v.id)}/">${esc(t.guide)}</a>` : ''}`;
+  const side = `<aside class="ev-side" aria-label="${esc(pp.secMap)}">${mapCard.replace('</section>', `${extraLinks ? `<p class="ev-cta">${extraLinks}</p>` : ''}</section>`)}${wxBox}</aside>`;
+  const body = `<div class="in page sp-page">${breadcrumb([{ href: '/spot/', label: t.crumb }, { label: spotL(v, 'name', lang) }], lang)}
+<div class="sp-title"><h1>${esc(L('name'))}</h1>${lang === 'en' && L('name') !== v.name ? `<p class="orig-h" lang="ja">${esc(v.name)}</p>` : ''}
+<div class="tags"><span class="tag">${esc(kindL(v.kind, lang))}</span><span class="tag">${esc(cityNameShort)}</span>${checkedAll ? `<span class="tag chk">${lang === 'ja' ? '最終確認：' : 'Last checked: '}${esc(checkedAll)}</span>` : ''}</div></div>
 <div class="ev-split"><div class="ev-main">
-<header class="sp-head${v.image ? ' has-photo' : ''}">${photoBlock(v, lang)}<div class="sp-head-body">
-<h1>${esc(L('name'))}</h1>${lang === 'en' && L('name') !== v.name ? `<p class="orig-h" lang="ja">${esc(v.name)}</p>` : ''}
-<div class="tags"><span class="tag">${esc(kindL(v.kind, lang))}</span><span class="tag">${esc(cityName)}</span></div>
-<dl class="sp-quick">${quickRows}</dl>
-<p class="sp-cta">${ctx.guideSlugs?.has(`guide-${v.id}`) ? `<a class="map-btn s" href="/blog/guide-${esc(v.id)}/">${esc(t.guide)}</a>` : ''}${v.officialUrl ? `<a class="map-btn s" href="${esc(v.officialUrl)}" rel="noopener">${esc(t.open)} ↗</a>` : ''}<a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(pp.mapOpen)} ↗</a></p>
-</div></header>
-<h2 class="sec-h">${esc(t.upcoming)}</h2>
-${sp.occ.length ? eventListByMonth(sp.occ, lang) : `<p class="empty">${esc(t.noUpcoming)}</p>`}
-<p class="note">${esc(t.tbcSeries)}</p>
-${pollBlock(v, lang)}
+${nextCard}
+${datesBlock}
 <h2 class="sec-h">${esc(t.info)}</h2>
-<dl class="facts">
+<div class="ev-facts-card"><dl class="facts">
 ${row(t.summary, val('summary'))}
-${row(t.address, (addr || val('address') + (v.address && v.addressFrom === 'search' ? `<small class="addr-src">${esc(pp.addrSearched)}</small>` : '')) + mapInline('open'))}
-${row(t.access, (val('access') + (v.access && v.accessFrom === 'search' ? `<small class="addr-src">${esc(pp.accessSearched)}</small>` : '')) + mapInline('route'))}
-${row(t.place, val('place'))}
-${row(t.rules, val('rules'))}
-</dl>
+${row(t.address, addr || val('address') + (v.address && v.addressFrom === 'search' ? `<small class="addr-src">${esc(pp.addrSearched)}</small>` : ''))}
+${row(t.access, val('access') + (v.access && v.accessFrom === 'search' ? `<small class="addr-src">${esc(pp.accessSearched)}</small>` : ''))}
+${v.place ? row(t.place, val('place')) : ''}
+${v.rules ? row(t.rules, val('rules')) : ''}
+</dl></div>
+${pollBlock(v, lang)}
 <h3>${esc(t.sources)}</h3><ul class="sources">${srcs}</ul>
-${sp.series.length ? `<h2 class="sec-h">${esc(t.series)}</h2><ul class="sp-series">${seriesList}</ul>` : ''}
 ${others.length ? `<h2 class="sec-h">${esc(t.others)}</h2><ul class="grid-links">${others.map((x) => `<li><a href="/spot/${x.venue.id}/">${esc(spotL(x.venue, 'name', lang))}<small>${esc(kindL(x.venue.kind, lang))}</small></a></li>`).join('')}</ul>` : ''}
 <p class="note">${esc(t.note)}</p></div>${side}</div></div>`;
   return pg(lang, `/spot/${v.id}/`, { title: L('name'), ogImage: v.image ? `/img/spots/${v.image.file}` : "", description: t.desc(L('name')), body, css: ['/spot.css'], scripts: ['/weather.js', '/map.js', '/vote.js'], head: placeLd(v, lang), keywords: [L('name'), v.area?.city, v.area?.pref && prefLabel(v.area.pref, lang), kindL(v.kind, lang)].filter(Boolean) });

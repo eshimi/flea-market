@@ -124,7 +124,7 @@ const STATIC_BANNER_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', '.
 export function pageBanner(base, text = '', artOverride = '') {
   if (base === '/' || base === '/404.html') return '';
   const sec = base.split('/').filter(Boolean)[0] || '';
-  if (sec === 'e' || sec === 'press') return ''; // 開催の詳細ページ・メディア向けの紹介ページは、上部の帯なし
+  if (sec === 'e' || sec === 'press' || (sec === 'spot' && base !== '/spot/')) return ''; // 開催の詳細ページ・メディア向けの紹介ページは、上部の帯なし
   const name = BANNER_BY_SECTION[sec] || 'b10-relax';
   const art = artOverride || (existsSync(join(STATIC_BANNER_DIR, `${name}.webp`)) ? `/img/banner/${name}.webp` : '');
   if (text) {
