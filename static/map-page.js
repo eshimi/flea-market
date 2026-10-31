@@ -133,7 +133,11 @@
   }
   function draw() {
     const k = kOf(); gMarks.textContent = '';
-    for (const c of clusters(k)) {
+    if (vb.w <= home.w / 3) needLines();
+    rail.j.style.display = rail.o.style.display = vb.w <= home.w / 3 ? '' : 'none';
+    const cl = clusters(k); drawPlaces(k, cl);
+    svg.classList.toggle('mk-deep', home.w / vb.w >= 6);
+    for (const c of cl) {
       const g = se('g', { transform: `translate(${c.x} ${c.y}) scale(${1 / k})` });
       if (c.m.length === 1) {
         g.setAttribute('class', 'mk-pin'); g.setAttribute('tabindex', '0'); g.setAttribute('role', 'button'); g.setAttribute('aria-label', c.m[0].it.n[li]);
@@ -148,6 +152,41 @@
         g.addEventListener('click', (e) => { e.stopPropagation(); if (!suppressClick) open(); }); g.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
       }
       gMarks.appendChild(g);
+    }
+  }
+
+  // ---- 都市名・鉄道（新幹線は常に。在来線・地下鉄と駅名は、拡大したときに読み込む）----
+  const gRail = svg.querySelector('.mk-rail'); const gPlaces = svg.querySelector('.mk-places');
+  const rail = { s: gRail.querySelector('.mk-r-s'), j: gRail.querySelector('.mk-r-j'), o: gRail.querySelector('.mk-r-o') };
+  let stations = null; let linesState = 0;
+  fetch('/rail/shinkansen.json').then((r) => r.json()).then((d) => { rail.s.setAttribute('d', d.s); }).catch(() => {});
+  function needLines() {
+    if (linesState) return; linesState = 1;
+    Promise.all([fetch('/rail/lines.json').then((r) => r.json()), fetch('/rail/stations.json').then((r) => r.json())])
+      .then(([l, st]) => { rail.j.setAttribute('d', l.j); rail.o.setAttribute('d', l.o); stations = st; linesState = 2; draw(); }).catch(() => { linesState = 0; });
+  }
+  function drawPlaces(k, cl) {
+    gPlaces.textContent = ''; const zoom = home.w / vb.w;
+    const taken = (cl || []).map((c) => { const px = (c.x - vb.x) * k; const py = (c.y - vb.y) * k; return c.m.length === 1 ? [px - 12, py - 36, px + 12, py + 4] : [px - 16, py - 16, px + 16, py + 16]; });
+    const free = (x, y, w) => { const b = [x - 4, y - 14, x + w + 4, y + 4]; if (taken.some((q) => b[0] < q[2] && b[2] > q[0] && b[1] < q[3] && b[3] > q[1])) return false; taken.push(b); return true; };
+    const inView = (x, y) => x > vb.x && x < vb.x + vb.w && y > vb.y && y < vb.y + vb.h;
+    const put = (x, y, name, cls, size) => {
+      const px = (x - vb.x) * k; const py = (y - vb.y) * k; const w = name.length * size * (lang === 'ja' ? 1 : 0.58);
+      if (!free(px + 6, py, w)) return;
+      const g = se('g', { transform: `translate(${x} ${y}) scale(${1 / k})`, class: cls });
+      g.appendChild(se('circle', { r: cls === 'mk-city' ? 3.4 : 2.6 }));
+      const tx = se('text', { x: 7, y: -4 }); tx.textContent = name; g.appendChild(tx); gPlaces.appendChild(g);
+    };
+    if (zoom < 6) for (const c of cfg.cities) if (inView(c.x, c.y)) put(c.x, c.y, c.n[li], 'mk-city', 13);
+    if (zoom >= 6 && stations) {
+      let n = 0;
+      for (const c of cfg.cities) if (zoom < 14 && inView(c.x, c.y)) put(c.x, c.y, c.n[li], 'mk-city', 13);
+      for (const s of stations) {
+        if (n >= 60) break; if (!inView(s.x, s.y)) continue;
+        if (s.p < (zoom >= 14 ? 2 : zoom >= 9 ? 3 : 5)) continue;
+        const name = lang === 'ja' ? s.n : s.e; if (!name) continue;
+        const before = gPlaces.childNodes.length; put(s.x, s.y, name, 'mk-st', 12); if (gPlaces.childNodes.length > before) n++;
+      }
     }
   }
 

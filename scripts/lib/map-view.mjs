@@ -14,7 +14,7 @@ const T = {
     lead: '位置がわかる市を、地図の上に出しています。位置は、公式の所在地や会場名から求めた目安です。',
     when: '日付', weekend: '今週末', d7: '今後7日', d30: '今後30日', all: 'すべて（今後120日）', kind: '種類', pref: '地域', allPrefs: 'すべての地域', allKinds: 'すべて',
     countTpl: '{n}件を表示', none: '条件に合う市は、地図にありません。条件を変えてみてください。', locate: '現在地へ', locating: '現在地を調べています…', locFail: '現在地を取得できませんでした。',
-    next: '次回', open: '開催詳細を見る', approx: '位置は目安', list: '一覧', resetView: '全国に戻す', credit: '地図：Natural Earth（パブリックドメイン）の都道府県の形を簡略化したイラスト地図です。位置は目安です。', noscript: '地図には JavaScript が必要です。一覧は「今週末」「地域」のページからご覧ください。',
+    next: '次回', open: '開催詳細を見る', approx: '位置は目安', list: '一覧', resetView: '全国に戻す', credit: '地図：Natural Earth（パブリックドメイン）の都道府県の形を簡略化したイラスト地図です。位置は目安です。鉄道：国土交通省 国土数値情報（鉄道データ N02-23）を加工して作成。', noscript: '地図には JavaScript が必要です。一覧は「今週末」「地域」のページからご覧ください。',
     unlocated: (n) => `位置が未確認の市が${n}件あります（地図には出ません）。`, locNote: 'このページを開くと、ブラウザが位置情報の許可を求めます。位置は、近くの市を並べて地図を動かすためだけに使い、送信・保存はしません。許可しない場合は、全国を表示します。', nearTpl: '約{km}km', locAuto: '現在地の近くから表示しています。', locDenied: '位置情報が使えないため、全国を表示しています。「現在地へ」で、もう一度お試しください。', locOut: '現在地が日本の外のようです。全国を表示しています。',
   },
   en: {
@@ -22,7 +22,7 @@ const T = {
     lead: 'Markets whose location is known are shown on the map. Locations are estimates from the official address or the venue name.',
     when: 'Date', weekend: 'This weekend', d7: 'Next 7 days', d30: 'Next 30 days', all: 'All (next 120 days)', kind: 'Type', pref: 'Area', allPrefs: 'All areas', allKinds: 'All',
     countTpl: '{n} shown', none: 'No markets match. Try changing the filters.', locate: 'My location', locating: 'Finding your location…', locFail: 'Could not get your location.',
-    next: 'Next', open: 'View details', approx: 'Approximate location', list: 'List', resetView: 'Reset view', credit: 'Map: an illustrated map simplified from Natural Earth prefecture shapes (public domain). Locations are approximate.', noscript: 'The map needs JavaScript. Browse by “This weekend” or “Area” instead.',
+    next: 'Next', open: 'View details', approx: 'Approximate location', list: 'List', resetView: 'Reset view', credit: 'Map: an illustrated map simplified from Natural Earth prefecture shapes (public domain). Locations are approximate. Railways: processed from MLIT National Land Numerical Information (Railway data, N02-23).', noscript: 'The map needs JavaScript. Browse by “This weekend” or “Area” instead.',
     unlocated: (n) => `${n} markets have no confirmed location and are not on the map.`, locNote: 'When you open this page, your browser asks for permission to use your location. It is used only to list nearby markets and move the map; it is not sent or stored. If you decline, the whole of Japan is shown.', nearTpl: '{km} km', locAuto: 'Showing markets near your location.', locDenied: 'Your location is not available, so the whole of Japan is shown. Press “My location” to try again.', locOut: 'Your location seems to be outside Japan, so the whole of Japan is shown.',
   },
 };
@@ -52,6 +52,8 @@ export function mapData(ctx, geo, ended = new Set()) {
   return { items: out, unlocated };
 }
 
+// 主要都市（全国の表示で名前を出す。位置は市役所・中心駅のおおよその緯度経度）
+const CITIES = [['札幌', 'Sapporo', 43.06, 141.35], ['仙台', 'Sendai', 38.26, 140.87], ['新潟', 'Niigata', 37.91, 139.04], ['東京', 'Tokyo', 35.68, 139.77], ['横浜', 'Yokohama', 35.45, 139.64], ['金沢', 'Kanazawa', 36.56, 136.65], ['名古屋', 'Nagoya', 35.18, 136.91], ['京都', 'Kyoto', 35.01, 135.77], ['大阪', 'Osaka', 34.69, 135.50], ['神戸', 'Kobe', 34.69, 135.20], ['広島', 'Hiroshima', 34.39, 132.46], ['福岡', 'Fukuoka', 33.59, 130.40]];
 export const PROJ = { ax: 17.6, bx: -2182, ay: -20, by: 936 };
 
 // イラスト地図の SVG（都道府県の形。印は、ブラウザ側の JavaScript が重ねる）
@@ -68,6 +70,8 @@ function mapSvg(lang) {
 <rect x="-400" y="-400" width="1200" height="1200" fill="url(#mk-waves)" opacity=".75"/>
 <g class="mk-land">${paths}</g>
 <rect class="mk-inset" rx="4" ry="4" fill="none"/>
+<g class="mk-rail"><path class="mk-r-o"/><path class="mk-r-j"/><path class="mk-r-s"/></g>
+<g class="mk-places"></g>
 <g class="mk-markers"></g>
 </svg>`;
 }
@@ -81,6 +85,7 @@ export function mapPage(ctx, lang, data, today, weekend) {
     kinds: Object.fromEntries(Object.entries(S[lang].kinds)),
     prefs: Object.fromEntries(prefs.map((p) => [p, prefLabel(p, lang)])),
     lang,
+    cities: CITIES.map(([ja, en, la, lo]) => ({ n: [ja, en], x: +(PROJ.ax * lo + PROJ.bx).toFixed(2), y: +(PROJ.ay * la + PROJ.by).toFixed(2) })),
   };
   const body = `<div class="in page mk-page">${breadcrumb([{ label: t.crumb }], lang)}
 <h1>${esc(t.h1)}</h1><p class="lead">${esc(t.lead)}</p>

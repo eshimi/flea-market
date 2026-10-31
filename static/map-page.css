@@ -73,3 +73,14 @@
 }
 @media (max-width:900px){.mk-bar,.mk-grp{min-width:0;max-width:100%}}
 .mk-status{margin:0 0 10px;font-size:13px;color:#5B5249;min-height:1.2em}
+
+/* 鉄道・都市名 */
+.mk-rail path{fill:none;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;pointer-events:none}
+.mk-r-o{stroke:#B9AE9E;stroke-width:1px}
+.mk-r-j{stroke:#6F655B;stroke-width:1.4px}
+.mk-r-s{stroke:#2F6B5E;stroke-width:2.2px}
+.mk-places{pointer-events:none}
+.mk-places circle{fill:#fff;stroke:#2A2622;stroke-width:1.4px}
+.mk-places text{font-size:12.5px;font-weight:700;fill:#2A2622;stroke:#FFFBF4;stroke-width:3.5px;paint-order:stroke;font-family:inherit}
+.mk-st text{font-size:11.5px;font-weight:600;fill:#4A423A}
+.mk-deep .mk-pref,.mk-deep .mk-pref.lv1,.mk-deep .mk-pref.lv2,.mk-deep .mk-pref.lv3{fill:#FFFBF4}.mk-deep .mk-pref.sel{stroke:#E4DCCD;stroke-width:1px}

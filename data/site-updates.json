@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-01",
+    "ja": "マップに主要都市の名前と新幹線を出し、拡大すると在来線・地下鉄の路線と駅名が出るようにしました。",
+    "en": "The map now shows major cities and Shinkansen lines; zoom in to see railway lines and station names.",
+    "link": "/map/"
+  },
+  {
     "date": "2026-10-31",
     "ja": "ブログの一覧を、読みもの記事と「今週・今月のフリマ特集」（自動作成の記事・地域ガイド）の2つのコーナーに分けました。",
     "en": "The blog list is now split into articles and a separate corner for this week and this month (auto-built picks and area guides).",
