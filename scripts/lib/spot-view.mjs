@@ -80,6 +80,13 @@ const POLL = {
 };
 
 
+function photoBlock(v, lang) {
+  const im = v.image;
+  if (!im) return '';
+  const t = T[lang];
+  return `<figure class="sp-photo"><img src="/img/spots/${esc(im.file)}" alt="${esc(lang === 'ja' ? im.altJa : im.altEn)}" width="800" height="533" decoding="async"><figcaption>${esc(t.photo)}: ${esc(im.author)} / <a href="${esc(im.licenseUrl || im.sourceUrl)}" rel="noopener nofollow">${esc(im.license)}</a> / <a href="${esc(im.sourceUrl)}" rel="noopener nofollow">Wikimedia Commons</a>${lang === 'ja' ? '（トリミング・縮小）' : ' (cropped and resized)'}</figcaption></figure>`;
+}
+
 export function pollBlock(v, lang, market = false) {
   const q = { ...POLL[lang], ...(market ? { h: lang === 'ja' ? 'このマーケット、どうでしたか？' : 'What do you think of this market?' } : {}) };
   const site = process.env.TURNSTILE_SITE_KEY || '';
@@ -130,7 +137,7 @@ export function spotPage(sp, ctx, lang) {
   const cityNameShort = cityName;
   const checkedAll = v.sources.map((x) => x.checkedAt).filter(Boolean).sort().at(-1);
   const extraLinks = `${v.officialUrl ? `<a class="btn-line" href="${esc(v.officialUrl)}" rel="noopener">${esc(t.open)} ↗</a>` : ''}${ctx.guideSlugs?.has(`guide-${v.id}`) ? `<a class="btn-line" href="/blog/guide-${esc(v.id)}/">${esc(t.guide)}</a>` : ''}`;
-  const side = `<aside class="ev-side" aria-label="${esc(pp.secMap)}">${mapCard.replace('</section>', `${extraLinks ? `<p class="ev-cta">${extraLinks}</p>` : ''}</section>`)}${wxBox}</aside>`;
+  const side = `<aside class="ev-side" aria-label="${esc(pp.secMap)}">${photoBlock(v, lang)}${mapCard.replace('</section>', `${extraLinks ? `<p class="ev-cta">${extraLinks}</p>` : ''}</section>`)}${wxBox}</aside>`;
   const body = `<div class="in page sp-page">${breadcrumb([{ href: '/spot/', label: t.crumb }, { label: spotL(v, 'name', lang) }], lang)}
 <div class="sp-title"><h1>${esc(L('name'))}</h1>${lang === 'en' && L('name') !== v.name ? `<p class="orig-h" lang="ja">${esc(v.name)}</p>` : ''}
 <div class="tags"><span class="tag">${esc(kindL(v.kind, lang))}</span><span class="tag">${esc(cityNameShort)}</span>${checkedAll ? `<span class="tag chk">${lang === 'ja' ? '最終確認：' : 'Last checked: '}${esc(checkedAll)}</span>` : ''}</div></div>

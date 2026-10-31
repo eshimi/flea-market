@@ -250,3 +250,14 @@ table.sp-dates{width:100%;border-collapse:collapse}
 .ev-dates a:hover{border-color:var(--rd-acc);color:var(--rd-acc)}
 .ev-dates a.off{text-decoration:line-through;color:var(--rd-mute)}
 .ev-dates a.more{border-style:dashed}
+
+/* スポット：写真（右の列の先頭。スマホでは見出しのすぐ下） */
+.sp-page .ev-side .sp-photo{margin:0}
+.sp-page .ev-side .sp-photo img{aspect-ratio:3/2;border-radius:10px}
+.sp-page .ev-side .sp-photo figcaption{font-size:11.5px;color:var(--rd-mute)}
+@media (max-width:900px){
+  .sp-page .ev-split{display:flex;flex-direction:column;gap:16px}
+  .sp-page .ev-side{display:contents}
+  .sp-page .ev-side .sp-photo{order:-1}
+  .sp-page .ev-side .sp-photo img{max-height:220px}
+}

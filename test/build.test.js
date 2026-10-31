@@ -607,8 +607,8 @@ test('スポットの写真：作者・ライセンスの表示と、本体・�
   const { pages } = buildPages(real, '2026-10-19');
   const withImg = real.venues.find((v) => v.image);
   const pg_ = pages.find((p) => p.path === `/spot/${withImg.id}/`);
-  // スポットのページ（B案）は写真を出さない。作者・ライセンスは、一覧のサムネイルがあるので「掲載のきまり」に残す
-  assert.ok(!pg_.body.includes('class="sp-head has-photo"') && pg_.body.includes('class="ev-next"'));
+  // スポットのページ（B案）：右の列の先頭に写真（作者・ライセンスつき）。本文は「次の開催」から始まる
+  assert.ok(pg_.body.includes('class="sp-photo"') && pg_.body.includes(withImg.image.author) && pg_.body.includes('class="ev-next"'));
   assert.ok(pages.find((p) => p.path === '/about/').body.includes(withImg.image.author), '掲載のきまりに、写真の作者を表示');
   assert.ok(pages.find((p) => p.path === '/spot/').body.includes(withImg.image.file.replace(/\.webp$/, '-t.webp')));
 });
