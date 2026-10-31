@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-31",
+    "ja": "出店数が公式に書かれているマーケットに、規模の目安（小・中・大）のマークを付けました。30店以下＝小、31〜99店＝中、100店以上＝大です。",
+    "en": "Markets whose stall count is stated officially now show a scale mark (small, medium, large): 30 or fewer stalls = small, 31–99 = medium, 100 or more = large.",
+    "link": "/kind/"
+  },
+  {
+    "date": "2026-10-31",
     "ja": "東京の主要スポット5件（光が丘公園・世田谷公園・国営昭和記念公園・西新井大師・富岡八幡宮）の会場ガイドを追加しました。",
     "en": "Added venue guides for five major Tokyo spots: Hikarigaoka Park, Setagaya Park, Showa Kinen Park, Nishiarai Daishi and Tomioka Hachimangu.",
     "link": "/blog/"
