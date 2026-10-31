@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-01",
+    "ja": "「マップで探す」ページを追加しました。ヘッダーの言語切替の近くから開けます。日付・種類・地域で絞り込めるイラスト地図です。",
+    "en": "Added a “Search by map” page, linked next to the language switch in the header. It is an illustrated map you can filter by date, type and area.",
+    "link": "/map/"
+  },
+  {
     "date": "2026-10-31",
     "ja": "Google の検索数にもとづく「注目度」（高・中・低）のマークを追加しました。規模（出店数）とは別のマークで、いまは大江戸骨董市・世田谷のボロ市・ロハスフェスタ東京・池上日和に付いています。",
     "en": "Added a “Buzz” mark (high, medium, low) based on Google search volume, separate from the scale mark. It currently appears on Oedo Antique Market, Setagaya Boroichi, LOHAS Festa Tokyo and Ikegami Biyori.",
