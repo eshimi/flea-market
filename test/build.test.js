@@ -1000,3 +1000,10 @@ test('開催詳細・スポットに、日本語の名前と住所のコピー�
   const spot = pages.find((x) => /^\/spot\/[^/]+\/$/.test(x.path));
   assert.ok(spot.scripts.includes('/copy.js') && spot.body.includes('Copy Japanese name'));
 });
+
+test('HTML のタグが、文字としてそのまま画面に出ていない（エスケープされた <span> などが無い）', () => {
+  const real = loadData();
+  const { pages } = buildPages(real, '2026-10-20');
+  const bad = pages.filter((p) => /&lt;span|&lt;a |&lt;small|&lt;b&gt;/.test(layout(p)));
+  assert.deepEqual(bad.map((p) => p.path).slice(0, 5), []);
+});

@@ -593,7 +593,7 @@ function seriesPage(s, ctx, lang) {
   const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(mapQuery(s).q)}&hl=${lang === 'ja' ? 'ja' : 'en'}&z=16&output=embed`;
   const mapBlock = `<div class="ev-map-block"><h3>${esc(p.secMap)}</h3>${hasMapImg(s.id) ? `<a class="ev-mapimg" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow" title="${esc(p.mapOpen)}"><img src="/img/maps/${s.id}.webp" alt="${esc(p.mapImgAlt(lang === 'en' ? venueL(s, lang) : v.name))}" width="640" height="400" loading="lazy" decoding="async"></a><p class="note">${esc(mu.pin ? p.mapApproxName : mu.searched ? p.mapApproxSearch : p.mapApprox)}</p>` : `<div class="ev-map" data-src="${esc(mapSrc)}" data-title="${esc(p.secMap)}"><div class="ev-map-ph"><span aria-hidden="true">📍</span><b>${esc(lang === 'en' ? venueL(s, lang) : v.name)}</b><button type="button" class="map-show">${esc(p.mapShow)}</button><small>${esc(p.mapPrivacy)}</small></div></div>`}<p class="map-btns"><a class="map-btn" href="${esc(mu.open)}" target="_blank" rel="noopener nofollow">${esc(p.mapOpen)} ↗</a><a class="map-btn s" href="${esc(mu.route)}" target="_blank" rel="noopener nofollow">${esc(p.mapRoute)} ↗</a></p><p class="note">${esc(mu.pin ? p.mapPin : mu.searched ? p.mapSearched : mu.exact ? p.mapExact : p.mapLoose)}</p></div>`;
   const shortT = (x) => String(x || '').split(/[（(。]|\.\s|\s\(/)[0].trim();
-  const nextTime = shortT(lang === 'en' && timeEn(s) ? timeEn(s) : s.time?.text) || TBC(lang);
+  const nextTime = shortT(lang === 'en' && timeEn(s) ? timeEn(s) : s.time?.text) || (lang === 'ja' ? '要確認' : 'TBC');
   const nextCard = next ? (() => {
     const [, nm, nd] = next.date.split('-');
     const wdn = (lang === 'ja' ? WD_JA : WD_EN)[weekday(next.date)];
