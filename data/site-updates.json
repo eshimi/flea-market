@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-10-31",
+    "ja": "今週末・日別の一覧で、地域に加えて「種類」（フリマ・マルシェ・蚤の市・手作り市・骨董市など）でも絞り込めるようにしました。マーケットとスポットのページに、日本語の名前・住所のコピーボタン（英語ページ）も追加しました。",
+    "en": "On This Weekend and daily lists you can now filter by type (flea market, marché, nomi-no-ichi, handmade, antique fair…) as well as by area. Market and spot pages also have buttons to copy the Japanese name and address.",
+    "link": "/weekend/"
+  },
+  {
     "date": "2026-10-28",
     "ja": "「東京都のフリーマーケット・蚤の市（2026年11月）」のような、地域×月のページを追加しました。各マーケットの詳細ページにも、「行ってみたい」などのワンクリックを追加しました。",
     "en": "Added month pages such as Tokyo Flea Markets in November 2026, and one-tap responses (Want to go, Been here…) on each market page.",

@@ -352,7 +352,7 @@ test('地図・経路のリンクと当日の天気（気象庁）', async () =>
   assert.match(pages.find((p) => p.path === '/e/setagaya-funabashi-nomi-no-ichi-2026-autumn/').body, /Looked up from the venue name \(not stated on the official page; please check before you go\)/);
   assert.ok(!ja('oedo-antique-market-tokyo-international-forum').includes('多くのフリーマーケット・市は入場無料'), '公式の入場料があるものには、目安を出さない');
   // 評価フォームの script は、送信先（CONTACT_EMAIL）が設定されたときだけ
-  assert.deepEqual(en.scripts, ['/weather.js', '/map.js', '/vote.js', ...(REVIEWS_ON ? ['/review.js'] : [])]);
+  assert.deepEqual(en.scripts, ['/weather.js', '/map.js', '/vote.js', '/copy.js', ...(REVIEWS_ON ? ['/review.js'] : [])]);
   // 開催詳細（B案）：左に「次の開催」と開催の情報、右に地図・行き方（1つの枠）
   assert.match(en.body, /class="ev-next"[\s\S]*class="ev-facts-card"[\s\S]*<aside class="ev-map-card"[\s\S]*class="ev-map-block"/);
   // 位置のない会場は、押すと Google マップの埋め込みを読み込むボタン
@@ -972,4 +972,31 @@ test('ブログ記事の slug は重複しない（同じ記事が2件並ばな�
     assert.ok(!seen.has(b.slug), `slug が重複: ${b.slug}`);
     seen.add(b.slug);
   }
+});
+
+test('今週末・日別の一覧に、地域に加えて種類の絞り込みがある（両方を組み合わせられる）', () => {
+  const { pages } = buildPages(loadData(), '2026-10-24');
+  const wk = pages.find((x) => x.path === '/weekend/');
+  assert.ok(wk.scripts.includes('/area-filter.js'));
+  assert.match(wk.body, /class="af-chips af-kinds" aria-label="Filter by type"/);
+  assert.match(wk.body, /data-kind="all"/);
+  // 各カードに種類が付き、種類ボタンはカードにある種類だけ
+  const kindsOnCards = new Set([...wk.body.matchAll(/<article class="ev[^"]*" data-pref="\d{2}" data-kinds="([^"]*)"/g)].flatMap((m) => m[1].split(' ')));
+  assert.ok(kindsOnCards.size >= 2);
+  const chips = new Set([...wk.body.matchAll(/data-kind="([a-z]+)"/g)].map((m) => m[1]).filter((k) => k !== 'all'));
+  assert.deepEqual([...chips].sort(), [...kindsOnCards].sort());
+  assert.match(pages.find((x) => x.path === '/ja/weekend/').body, /aria-label="種類で絞り込む"/);
+});
+
+test('開催詳細・スポットに、日本語の名前と住所のコピーボタン（英語のページだけ）', () => {
+  const { pages } = buildPages(loadData(), '2026-10-24');
+  const ev = pages.find((x) => /^\/e\/[^/]+\/$/.test(x.path) && x.body.includes('class="orig-h"'));
+  assert.ok(ev && ev.scripts.includes('/copy.js'));
+  assert.match(ev.body, /class="copy-btn" data-copy="[^"]+" data-done="Copied" lang="en">Copy Japanese name</);
+  const withAddr = pages.find((x) => /^\/e\/[^/]+\/$/.test(x.path) && x.body.includes('Copy Japanese address'));
+  assert.ok(withAddr);
+  // 日本語のページには出さない
+  assert.ok(!pages.find((x) => x.path === `/ja${ev.path}`).body.includes('copy-btn'));
+  const spot = pages.find((x) => /^\/spot\/[^/]+\/$/.test(x.path));
+  assert.ok(spot.scripts.includes('/copy.js') && spot.body.includes('Copy Japanese name'));
 });

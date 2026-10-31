@@ -26,7 +26,7 @@ import { endedSeries, MAX_RULES, redirectRules } from './lib/redirects.mjs';
 import { mapQuery, mapUrls, weatherTarget } from './lib/weather.mjs';
 import { spotL, venueTrEn, cityEn, cityL, fieldEn, labelEn, nameEn, nameL, noteL, orgEn, setTranslations, timeEn, venueEn, venueL } from './lib/tr-en.mjs';
 import { disclaimer, dlabel, holiday, KIND_DESC_EN, langPath, splitPath, monthTitle, P, prefLabel, recurEn, TBC } from './lib/l10n.mjs';
-import { setFooterAreas, areaFilter, breadcrumb, esc, cardImg, eventList, eventListByMonth, groupBySeries, seriesList, kindTags, layout, OG_DEFAULT, statusTag } from './lib/html.mjs';
+import { setFooterAreas, areaFilter, breadcrumb, esc, cardImg, eventList, eventListByMonth, groupBySeries, seriesList, kindTags, copyBtn, layout, OG_DEFAULT, statusTag } from './lib/html.mjs';
 
 const LANGS_ORDER = ['en', 'ja'];
 
@@ -600,7 +600,7 @@ function seriesPage(s, ctx, lang) {
   const body = `<div class="in page ev-page">${breadcrumb([{ href: `/area/${v.pref}/`, label: pn }, ...(v.cityCode ? [{ href: `/area/${v.pref}/${v.cityCode}/`, label: cityL(v.city, lang) }] : []), { label: nameL(s, lang) }], lang)}
 <div class="ev-grid">
 <div class="ev-head">
-<div class="ev-title"><div><h1>${esc(nameL(s, lang))}</h1>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-h" lang="ja">${esc(s.name)}</p>` : ''}
+<div class="ev-title"><div><h1>${esc(nameL(s, lang))}</h1>${lang === 'en' && nameL(s, lang) !== s.name ? `<p class="orig-h" lang="ja">${esc(s.name)}</p>` : ''}${lang === 'en' ? `<p class="copy-row">${copyBtn(s.name, 'name')}</p>` : ''}
 <div class="tags">${kindTags(s.kinds, lang)}<span class="tag chk">${lang === 'ja' ? '最終確認：' : 'Last checked: '}${esc(lastChecked(s))}</span></div></div></div>
 ${evActions(s, lang)}
 ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
@@ -613,7 +613,7 @@ ${nextCard}
 ${row(p.when, rule)}
 ${row(p.time, (lang === 'en' && timeEn(s) ? (s.time.text === timeEn(s).replace('–', '〜') ? esc(timeEn(s)) : esc(timeEn(s))) : t(s.time?.text)) + srcNote(s, 'time', p))}
 ${row(p.venue, (lang === 'en' && venueL(s, lang) !== v.name ? orig(venueL(s, lang), v.name) : esc(v.name)) + spotLink(s, ctx, lang))}
-${row(p.address, (v.address ? tv(s, 'address', v.address, lang) + (v.addressFrom === 'search' ? `<small class="addr-src">${esc(p.addrSearched)}</small>` : '') : est(estAddress, p)))}
+${row(p.address, (v.address ? tv(s, 'address', v.address, lang) + (v.addressFrom === 'search' ? `<small class="addr-src">${esc(p.addrSearched)}</small>` : '') + (lang === 'en' ? copyBtn(v.address, 'address') : '') : est(estAddress, p)))}
 ${row(p.access, (v.access ? tv(s, 'access', v.access, lang) + (v.accessFrom === 'search' ? `<small class="addr-src">${esc(p.accessSearched)}</small>` : '') : est(estAccess, p)))}
 ${row(p.admission, s.visitor?.admission ? tv(s, 'admission', s.visitor.admission, lang) + srcNote(s, 'admission', p) : est(p.estFree, p))}
 ${row(p.rain, tv(s, 'rain', s.visitor?.rain, lang) + srcNote(s, 'rain', p))}
@@ -638,7 +638,7 @@ ${reviewsSection(s.id, lang)}
 </div>
 </div>
 </div>`;
-  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list, lang, p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s))), scripts: ['/weather.js', '/map.js', '/vote.js', ...(REVIEWS_ON ? ['/review.js'] : [])], css: ['/review.css', '/poll.css'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
+  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list, lang, p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s))), scripts: ['/weather.js', '/map.js', '/vote.js', '/copy.js', ...(REVIEWS_ON ? ['/review.js'] : [])], css: ['/review.css', '/poll.css'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
 }
 
 function shutenPage(ctx, lang) {

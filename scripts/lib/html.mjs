@@ -225,6 +225,13 @@ export function statusTag(o, lang = 'en') {
   return `<span class="tag ${STATUS_CLASS[o.status]}" title="${lang === 'ja' ? '最終確認' : 'Last checked'}: ${esc(o.checkedAt)}">${esc(past ? S[lang].pastConfirmed : S[lang].status[o.status])}</span>`;
 }
 
+// 日本語の名前・住所のコピーボタン（英語のページだけ。地図アプリ・タクシー・窓口で、そのまま見せられるように）。動きは static/copy.js
+const COPY = { name: 'Copy Japanese name', address: 'Copy Japanese address', done: 'Copied' };
+export function copyBtn(text, kind = 'name') {
+  if (!text) return '';
+  return `<button type="button" class="copy-btn" data-copy="${esc(text)}" data-done="${COPY.done}" lang="en">${kind === 'address' ? COPY.address : COPY.name}</button>`;
+}
+
 export function kindTags(kinds, lang = 'en') {
   return kinds.map((k) => `<a class="tag" href="/kind/${k}/">${esc(lang === 'ja' ? KINDS[k].short : KIND_SHORT_EN[k])}</a>`).join('');
 }
@@ -248,7 +255,7 @@ export function eventCard(o, lang = 'en') {
   const meta = [place, (lang === 'en' && timeEn(s)) || s.time?.text].filter(Boolean).map(esc).join(lang === 'en' ? ' / ' : ' ／ ');
   const cls = o.status === 'cancelled' || o.status === 'postponed' ? ' off' : '';
   const rule = recurTag(s.recurrence, lang);
-  return `<article class="ev${cls}" data-pref="${esc(s.venue.pref)}">
+  return `<article class="ev${cls}" data-pref="${esc(s.venue.pref)}" data-kinds="${esc(s.kinds.join(' '))}">
 <a class="ev-ph" href="/e/${s.id}/" tabindex="-1" aria-hidden="true"><img src="${cardImg(s)}" alt="" width="400" height="300" loading="lazy" decoding="async"></a>
 <div class="ev-date"><small>${lang === 'ja' ? `${+m}月` : MON_EN[+m - 1]}</small><b>${+d}</b><small>${wd}</small></div>
 <button type="button" class="save-btn" data-id="${s.id}" aria-pressed="false" aria-label="${esc(SV[lang].saveAria)}" data-on="${esc(SV[lang].removeAria)}" data-off="${esc(SV[lang].saveAria)}">${icon('heart', 20)}</button>
@@ -284,7 +291,7 @@ export function seriesCard(g, lang = 'en') {
   const chips = rest.length
     ? `<p class="ev-dates"><span class="ev-n">${lang === 'ja' ? `全${g.length}日` : `${g.length} dates`}</span>${rest.slice(0, DATES_SHOWN).map((x) => `<a href="/e/${s.id}/"${x.status === 'cancelled' || x.status === 'postponed' ? ' class="off"' : ''}>${esc(lab(x))}</a>`).join('')}${rest.length > DATES_SHOWN ? `<a class="more" href="/e/${s.id}/">${lang === 'ja' ? `ほか${rest.length - DATES_SHOWN}日` : `+${rest.length - DATES_SHOWN} more`}</a>` : ''}</p>`
     : '';
-  return `<article class="ev ev-s${cls}" data-pref="${esc(s.venue.pref)}">
+  return `<article class="ev ev-s${cls}" data-pref="${esc(s.venue.pref)}" data-kinds="${esc(s.kinds.join(' '))}">
 <a class="ev-ph" href="/e/${s.id}/" tabindex="-1" aria-hidden="true"><img src="${cardImg(s)}" alt="" width="400" height="300" loading="lazy" decoding="async"></a>
 <div class="ev-date"><small>${lang === 'ja' ? `${+m}月` : MON_EN[+m - 1]}</small><b>${+d}</b><small>${wd}</small></div>
 <button type="button" class="save-btn" data-id="${s.id}" aria-pressed="false" aria-label="${esc(SV[lang].saveAria)}" data-on="${esc(SV[lang].removeAria)}" data-off="${esc(SV[lang].saveAria)}">${icon('heart', 20)}</button>
@@ -299,15 +306,25 @@ export function seriesList(groups, lang = 'en', empty) {
   return groups.length ? `<div class="ev-list">${groups.map((g) => seriesCard(g, lang)).join('\n')}</div>` : `<p class="empty">${esc(empty || P[lang].evEmpty)}</p>`;
 }
 
-// 地域で絞り込む（掲載のある都道府県だけ。1つだけなら出さない）。動きは static/area-filter.js
-const AF = { ja: { label: '地域で絞り込む', all: 'すべて' }, en: { label: 'Filter by area', all: 'All' } };
+// 地域・種類で絞り込む（掲載のある都道府県・種類だけ。1つだけなら、その行は出さない）。動きは static/area-filter.js
+const AF = { ja: { label: '地域で絞り込む', all: 'すべて', kindLabel: '種類で絞り込む' }, en: { label: 'Filter by area', all: 'All', kindLabel: 'Filter by type' } };
 export function areaFilter(list, lang = 'ja') {
   const counts = new Map();
   for (const o of list) counts.set(o.series.venue.pref, (counts.get(o.series.venue.pref) || 0) + 1);
-  if (counts.size < 2) return '';
-  const chips = [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-    .map(([p, n]) => `<button type="button" class="af-chip" data-pref="${esc(p)}" aria-pressed="false">${esc(prefLabel(p, lang))}<sup>${n}</sup></button>`).join('');
-  return `<nav class="af-chips" aria-label="${esc(AF[lang].label)}"><button type="button" class="af-chip" data-pref="all" aria-pressed="true">${esc(AF[lang].all)}<sup>${list.length}</sup></button>${chips}</nav>`;
+  const kinds = new Map();
+  for (const o of list) for (const k of o.series.kinds) kinds.set(k, (kinds.get(k) || 0) + 1);
+  const rows = [];
+  if (counts.size >= 2) {
+    const chips = [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+      .map(([p, n]) => `<button type="button" class="af-chip" data-pref="${esc(p)}" aria-pressed="false">${esc(prefLabel(p, lang))}<sup>${n}</sup></button>`).join('');
+    rows.push(`<nav class="af-chips" aria-label="${esc(AF[lang].label)}"><button type="button" class="af-chip" data-pref="all" aria-pressed="true">${esc(AF[lang].all)}<sup>${list.length}</sup></button>${chips}</nav>`);
+  }
+  if (kinds.size >= 2) {
+    const chips = [...kinds].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+      .map(([k, n]) => `<button type="button" class="af-chip" data-kind="${esc(k)}" aria-pressed="false">${esc(lang === 'ja' ? KINDS[k].short : KIND_SHORT_EN[k])}<sup>${n}</sup></button>`).join('');
+    rows.push(`<nav class="af-chips af-kinds" aria-label="${esc(AF[lang].kindLabel)}"><button type="button" class="af-chip" data-kind="all" aria-pressed="true">${esc(AF[lang].all)}<sup>${list.length}</sup></button>${chips}</nav>`);
+  }
+  return rows.join('');
 }
 
 export function eventList(list, lang = 'en', empty) {

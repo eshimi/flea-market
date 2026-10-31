@@ -236,3 +236,9 @@ span.af-chip[aria-current="page"] sup{color:#fbe6dc}
 .kind-faq{margin:30px 0 8px}
 .kind-faq dt{font-weight:700;margin:14px 0 4px}
 .kind-faq dd{margin:0;color:var(--sub);line-height:1.7}
+
+.copy-row{margin:6px 0 0}
+.copy-btn{font:inherit;font-size:12.5px;line-height:1.2;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:16px;padding:5px 11px;cursor:pointer;white-space:nowrap}
+.copy-btn:hover{border-color:var(--ink)}
+.copy-btn.done{color:#2f6b3f;border-color:#2f6b3f}
+.facts .copy-btn{display:inline-block;margin:6px 0 0}

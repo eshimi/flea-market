@@ -2,7 +2,7 @@
 import { addDays, weekday } from './dates.mjs';
 import { MON_EN, S, WD_EN, WD_JA } from './i18n.mjs';
 import { dlabel, langPath, P, TBC, prefLabel } from './l10n.mjs';
-import { breadcrumb, esc, statusTag } from './html.mjs';
+import { breadcrumb, copyBtn, esc, statusTag } from './html.mjs';
 import { SPOT_KINDS } from './spots.mjs';
 import { cityL, nameL, noteL, orgEn, spotL, timeEn } from './tr-en.mjs';
 import { PREFS } from './areas.mjs';
@@ -139,7 +139,7 @@ export function spotPage(sp, ctx, lang) {
   const extraLinks = `${v.officialUrl ? `<a class="btn-line" href="${esc(v.officialUrl)}" rel="noopener">${esc(t.open)} ↗</a>` : ''}${ctx.guideSlugs?.has(`guide-${v.id}`) ? `<a class="btn-line" href="/blog/guide-${esc(v.id)}/">${esc(t.guide)}</a>` : ''}`;
   const side = `<aside class="ev-side" aria-label="${esc(pp.secMap)}">${photoBlock(v, lang)}${mapCard.replace('</section>', `${extraLinks ? `<p class="ev-cta">${extraLinks}</p>` : ''}</section>`)}${wxBox}</aside>`;
   const body = `<div class="in page sp-page">${breadcrumb([{ href: '/spot/', label: t.crumb }, { label: spotL(v, 'name', lang) }], lang)}
-<div class="sp-title"><h1>${esc(L('name'))}</h1>${lang === 'en' && L('name') !== v.name ? `<p class="orig-h" lang="ja">${esc(v.name)}</p>` : ''}
+<div class="sp-title"><h1>${esc(L('name'))}</h1>${lang === 'en' && L('name') !== v.name ? `<p class="orig-h" lang="ja">${esc(v.name)}</p>` : ''}${lang === 'en' ? `<p class="copy-row">${copyBtn(v.name, 'name')}</p>` : ''}
 <div class="tags"><span class="tag">${esc(kindL(v.kind, lang))}</span><span class="tag">${esc(cityNameShort)}</span>${checkedAll ? `<span class="tag chk">${lang === 'ja' ? '最終確認：' : 'Last checked: '}${esc(checkedAll)}</span>` : ''}</div></div>
 <div class="ev-split"><div class="ev-main">
 ${nextCard}
@@ -147,7 +147,7 @@ ${datesBlock}
 <h2 class="sec-h">${esc(t.info)}</h2>
 <div class="ev-facts-card"><dl class="facts">
 ${row(t.summary, val('summary'))}
-${row(t.address, addr || val('address') + (v.address && v.addressFrom === 'search' ? `<small class="addr-src">${esc(pp.addrSearched)}</small>` : ''))}
+${row(t.address, addr || val('address') + (v.address && v.addressFrom === 'search' ? `<small class="addr-src">${esc(pp.addrSearched)}</small>` : '') + (lang === 'en' && v.address ? copyBtn(v.address, 'address') : ''))}
 ${row(t.access, val('access') + (v.access && v.accessFrom === 'search' ? `<small class="addr-src">${esc(pp.accessSearched)}</small>` : ''))}
 ${v.place ? row(t.place, val('place')) : ''}
 ${v.rules ? row(t.rules, val('rules')) : ''}
@@ -156,5 +156,5 @@ ${pollBlock(v, lang)}
 <h3>${esc(t.sources)}</h3><ul class="sources">${srcs}</ul>
 ${others.length ? `<h2 class="sec-h">${esc(t.others)}</h2><ul class="grid-links">${others.map((x) => `<li><a href="/spot/${x.venue.id}/">${esc(spotL(x.venue, 'name', lang))}<small>${esc(kindL(x.venue.kind, lang))}</small></a></li>`).join('')}</ul>` : ''}
 <p class="note">${esc(t.note)}</p></div>${side}</div></div>`;
-  return pg(lang, `/spot/${v.id}/`, { title: L('name'), ogImage: v.image ? `/img/spots/${v.image.file}` : "", description: t.desc(L('name')), body, css: ['/spot.css'], scripts: ['/weather.js', '/map.js', '/vote.js'], head: placeLd(v, lang), keywords: [L('name'), v.area?.city, v.area?.pref && prefLabel(v.area.pref, lang), kindL(v.kind, lang)].filter(Boolean) });
+  return pg(lang, `/spot/${v.id}/`, { title: L('name'), ogImage: v.image ? `/img/spots/${v.image.file}` : "", description: t.desc(L('name')), body, css: ['/spot.css'], scripts: ['/copy.js', '/weather.js', '/map.js', '/vote.js'], head: placeLd(v, lang), keywords: [L('name'), v.area?.city, v.area?.pref && prefLabel(v.area.pref, lang), kindL(v.kind, lang)].filter(Boolean) });
 }
