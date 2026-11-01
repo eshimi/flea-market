@@ -337,8 +337,10 @@ function weekendPrefPage(ctx, lang, code, which) {
   const crumbs = next
     ? [{ href: '/weekend/', label: P[lang].weekend.crumb }, { href: `/weekend/${code}/`, label: nm }, { label: ja ? '来週末' : 'Next weekend' }]
     : [{ href: '/weekend/', label: P[lang].weekend.crumb }, { label: nm }];
+  const gp = ALL_POSTS.find((b) => b.slug === `guide-${{ 13: 'tokyo', 27: 'osaka', 26: 'kyoto', 14: 'kanagawa', 23: 'aichi', 40: 'fukuoka', 11: 'saitama', 12: 'chiba', 28: 'hyogo', '01': 'hokkaido' }[code] || 'x'}-flea-markets-visitors`);
+  const guideLink = gp ? `<p class="pov-links"><a href="/blog/${gp.slug}/">${esc(ja ? `${nm}のフリマ・蚤の市ガイド（行き方・雨天・次回の開催日）` : `${nm} visitor guide: access, rain and next dates`)} →</a></p>` : '';
   const h1 = ja ? `${nm}の週末フリマ：${when}（${short}）の開催${n ? ` ${n}件` : ''}` : title;
-  return listPage(lang, `/weekend/${code}/${next ? 'next/' : ''}`, crumbs, h1, lead, list, sw + area, false, { title, description, head: listLd(title, list, lang) + (n ? '' : '<meta name="robots" content="noindex,follow">\n'), after: weekendFaq(list, faqLabel, lang) + weekendPrefLinks(lang, code) });
+  return listPage(lang, `/weekend/${code}/${next ? 'next/' : ''}`, crumbs, h1, lead, list, sw + area + guideLink, false, { title, description, head: listLd(title, list, lang) + (n ? '' : '<meta name="robots" content="noindex,follow">\n'), after: weekendFaq(list, faqLabel, lang) + weekendPrefLinks(lang, code) });
 }
 const weekendPrefPages = (ctx, lang) => WEEKEND_PREFS.flatMap((c) => ['this', 'next'].map((w) => weekendPrefPage(ctx, lang, c, w)));
 
@@ -895,7 +897,63 @@ function resolvePost(post, ctx) {
   for (const lang of ['en', 'ja']) {
     out[lang] = { ...post[lang], blocks: post[lang].blocks.map((b) => (b.dates ? datesBlock(b.dates, ctx, lang) : b.photo ? photoBlock_(b.photo, ctx, lang) : b.prefMap ? prefMapBlock(b.prefMap, ctx, lang) : b)) };
   }
+  // 都道府県ガイド：最終確認日（＝記事の更新日）、関連ページへのリンク、掲載データから数える Q&A（FAQPage）
+  const pm = post.en.blocks.find((b) => b.prefMap)?.prefMap;
+  if (pm) {
+    const checked = (post.en.blocks.filter((b) => b.dates).map((b) => datesChecked(b.dates, ctx))).filter(Boolean).sort().at(-1);
+    out.modified = checked && checked > post.date ? checked : post.date;
+    out.faq = {};
+    for (const lang of ['en', 'ja']) {
+      const { qa, links, seo } = guideExtras(pm.pref, post.en.blocks.find((b) => b.dates)?.dates.series || [], ctx, lang);
+      out.faq[lang] = qa;
+      (out.seo ||= {})[lang] = seo;
+      out[lang].blocks = [...out[lang].blocks, { h2: lang === 'ja' ? 'よくある質問' : 'FAQ' }, ...qa.map(([q, a]) => ({ p: `**${q}** ${a}` })), { h2: lang === 'ja' ? '関連ページ' : 'Related pages' }, { ul: links }];
+    }
+  }
   return out;
+}
+const datesChecked = (d, ctx) => {
+  const ids = new Set(d.series);
+  return ctx.occ.filter((o) => ids.has(o.series.id) && isActive(o)).slice(0, d.limit || 8).map((o) => o.checkedAt).sort().at(-1);
+};
+// 県ガイドの Q&A と関連リンク。数えるのは掲載データだけ（ネット検索で補った項目 searched は数えない）
+function guideExtras(pref, seriesIds, ctx, lang) {
+  const ja = lang === 'ja';
+  const nm = prefShort(pref, lang);
+  const act = ctx.occ.filter(isActive).filter((o) => o.series.venue.pref === pref);
+  const in30 = act.filter((o) => o.date <= addDays(ctx.today, 30));
+  const wk = upcomingWeekend(ctx.today);
+  const nwk = nextWeekendDays(ctx.today);
+  const wn = act.filter((o) => wk.includes(o.date)).length;
+  const nn = act.filter((o) => nwk.includes(o.date)).length;
+  const mine = ctx.series.filter((x) => seriesIds.includes(x.id));
+  const rain = mine.filter((x) => x.visitor?.rain && !x.searched?.rain).length;
+  const qa = ja ? [
+    [`${nm}で、これから30日に開かれるフリマ・蚤の市は何件ですか。`, in30.length ? `掲載データでは${in30.length}件です（${ctx.today}時点。公式で確認した回と、公式のきまりから算出した予定を含みます）。` : `${ctx.today}時点の掲載データには、これから30日の開催がありません（要確認）。`],
+    [`${nm}の今週末・来週末の開催は？`, `今週末は${wn}件、来週末は${nn}件です。日付ごとの一覧は[${nm}の今週末](/weekend/${pref}/)と[来週末](/weekend/${pref}/next/)にあります。`],
+    [`雨の日はどうなりますか。`, `この記事のマーケット${mine.length}件のうち、雨天の扱いが公式に書かれているのは${rain}件です。書かれていないものは「要確認」です。各開催詳細ページで確かめてください。`],
+    [`開催日はどこで確かめられますか。`, `どの掲載にも、公式ページへのリンクと最終確認日があります。出かける前に公式ページで最新の案内をご確認ください。`],
+  ] : [
+    [`How many flea markets are held in ${nm} in the next 30 days?`, in30.length ? `${in30.length} in our listings (as of ${ctx.today}), counting dates confirmed from official pages and dates calculated from official recurring schedules.` : `Our listings show none in the next 30 days as of ${ctx.today} (TBC).`],
+    [`What is on in ${nm} this weekend and next weekend?`, `${wn} this weekend and ${nn} next weekend. See [${nm} this weekend](/weekend/${pref}/) and [next weekend](/weekend/${pref}/next/) for the list by date.`],
+    [`What happens if it rains?`, `Of the ${mine.length} markets in this guide, ${rain} state their rain policy on official pages. For the others it is TBC; check each event page.`],
+    [`Where can I check the dates?`, `Every listing links to the official page and shows when it was last checked. Please confirm the latest notice on the official page before you go.`],
+  ];
+  const links = ja ? [
+    `[${nm}の今週末のフリマ](/weekend/${pref}/)・[来週末](/weekend/${pref}/next/)`,
+    `[${nm}のフリマ・蚤の市の一覧（地域のページ）](/area/${pref}/)`,
+    `[${nm}をマップで探す](/map/?pref=${pref})`,
+    `[骨董市](/kind/kotto/)・[蚤の市](/kind/nomi/)・[フリーマーケット](/kind/flea/)の種類別の一覧`,
+  ] : [
+    `[Flea markets in ${nm} this weekend](/weekend/${pref}/) and [next weekend](/weekend/${pref}/next/)`,
+    `[All markets in ${nm} (area page)](/area/${pref}/)`,
+    `[Search ${nm} on the map](/map/?pref=${pref})`,
+    `Lists by type: [antique fairs](/kind/kotto/), [flea markets (nomi-no-ichi)](/kind/nomi/), [flea markets](/kind/flea/)`,
+  ];
+  const seo = ja
+    ? { title: `${nm}の週末フリマ・蚤の市ガイド：開催日と行き方${wn ? `（今週末${wn}件）` : ''}`, lead: `今週末は${wn}件、これから30日で${in30.length}件（${ctx.today}時点）。` }
+    : { title: `${nm} Flea Markets This Weekend & Dates: Visitor Guide${wn ? ` (${wn} this weekend)` : ''}`, lead: `${wn} this weekend and ${in30.length} in the next 30 days (as of ${ctx.today}). ` };
+  return { qa, links, seo };
 }
 function datesBlock(d, ctx, lang) {
   const ids = new Set(d.series);
@@ -945,8 +1003,15 @@ function blogIndex(lang) {
 
 function blogPost(post, lang) {
   const c = post[lang];
-  const ld = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: c.title, datePublished: post.date, inLanguage: lang, url: `${SITE.url}${langPath(`/blog/${post.slug}/`, lang)}` };
-  return pg(lang, `/blog/${post.slug}/`, { title: c.title, description: c.summary, body: renderPost(post, posts(), lang), css: ART_CSS, keywords: [...(c.tags || []), c.title], head: `${feedLink(lang)}<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n` });
+  const ld = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: c.title, datePublished: post.date, dateModified: post.modified || post.date, inLanguage: lang, url: `${SITE.url}${langPath(`/blog/${post.slug}/`, lang)}` };
+  // 記事内のマーケット一覧（開催詳細へのリンク）を ItemList に、県ガイドの Q&A を FAQPage に
+  const items = [...new Set([...JSON.stringify(c.blocks).matchAll(/\[([^\]]+)\]\(\/e\/([a-z0-9-]+)\/\)/g)].map((m) => `${m[2]}\u0000${m[1]}`))].map((x) => x.split('\u0000'));
+  const extra = [];
+  if (items.length >= 2) extra.push({ '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: items.map(([id, name], i) => ({ '@type': 'ListItem', position: i + 1, name: name.replace(/\*\*/g, ''), url: `${SITE.url}${langPath(`/e/${id}/`, lang)}` })) });
+  if (post.faq?.[lang]?.length) extra.push({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: post.faq[lang].map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1') } })) });
+  const ldAll = [ld, ...extra].map((x) => `<script type="application/ld+json">${JSON.stringify(x).replace(/</g, '\\u003c')}</script>\n`).join('');
+  const sq = post.seo?.[lang];
+  return pg(lang, `/blog/${post.slug}/`, { title: sq ? sq.title : c.title, description: sq ? sq.lead + c.summary : c.summary, body: renderPost(post, posts(), lang), css: ART_CSS, keywords: [...(c.tags || []), c.title], head: `${feedLink(lang)}${ldAll}` });
 }
 
 // RSS（/blog/feed.xml、/ja/blog/feed.xml）

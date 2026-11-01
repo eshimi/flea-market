@@ -132,7 +132,7 @@ export function renderPost(post, posts, lang) {
 <header class="art-head"><h1>${esc(c.title)}</h1><p class="art-k">${esc(t.kicker)}</p><p class="art-lead">${esc(c.summary)}</p>
 <p class="bl-meta"><span class="bl-cat bl-cat-${post.cat}">${esc(CATS[post.cat][lang])}</span><span>${esc(t.published)} <time datetime="${post.date}">${esc(dateText(post.date, lang))}</time></span><span>${esc(t.read(minutes(c.blocks, lang)))}</span><a href="/blog/">${esc(t.sameCat)} <span aria-hidden="true">→</span></a></p>${points}</header>
 <div class="page-split"><div class="page-main">${articleBox(secs)}
-<p class="art-note">${esc(t.updated)}：${esc(dateText(post.date, lang))}</p>
+<p class="art-note">${esc(t.updated)}：${esc(dateText(post.modified || post.date, lang))}</p>
 <nav class="bl-pn" aria-label="${esc(t.prev)} / ${esc(t.next)}">${card(older, `${t.prev} ←`)}<a class="bl-pn-card bl-pn-list" href="/blog/"><small>${esc(t.toList)}</small><b>${esc(t.backList)} <span aria-hidden="true">→</span></b></a>${card(newer, `${t.next} →`)}</nav>
 <nav class="art-tags" aria-label="${esc(t.tagsNav)}"><span class="art-tags-label">${esc(t.tags)}</span><ul class="tag-list">${tagLinks(post.tags[lang])}</ul></nav></div>
 <aside class="page-side" aria-label="${esc(t.sideLabel)}">${sideToc(secs, lang)}${sideCta(lang)}${sideFirst(lang)}</aside></div>
