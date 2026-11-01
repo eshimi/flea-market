@@ -4352,5 +4352,50 @@
   "evidenceOk": {
    "mottainai-flea-shinjuku-chuo-park": true
   }
+ },
+ "https://ikesunpark20270111.peatix.com/": {
+  "fetchedAt": "2026-11-01",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "trx-ike-sunpark-flea": true
+  }
+ },
+ "https://musamura20270111.peatix.com/": {
+  "fetchedAt": "2026-11-01",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "trx-musamura-flea": true
+  }
+ },
+ "https://nakano20270117.peatix.com/": {
+  "fetchedAt": "2026-11-01",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "mottainai-flea-nakano-central-park": true
+  }
+ },
+ "https://toc20270103.peatix.com/": {
+  "fetchedAt": "2026-11-01",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "mottainai-flea-gotanda-toc": true
+  }
+ },
+ "https://nakano20270116.peatix.com/": {
+  "fetchedAt": "2026-11-01",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "mottainai-flea-nakano-central-park": true
+  }
  }
 }
