@@ -183,12 +183,15 @@ function seoStats(list, lang) {
   const top = [...m].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, AREA_TOP).map(([p, n]) => `${prefLabel(p, lang)} ${n}`);
   return { act, n: act.length, conf, top };
 }
-function seoText(lang, scope, label, st, holidayLabel) {
+function seoText(lang, scope, label, st, holidayLabel, iso) {
   const { n, conf, top } = st;
+  const wd = iso ? weekday(iso) : -1;
   if (lang === 'ja') {
     const hol = holidayLabel ? `（${holidayLabel}）` : '';
+    // 土曜・日曜は「土曜のフリマ」「日曜のフリマ」の語を、タイトルに入れる（検索する人の言葉）
+    const wdWord = wd === 6 ? '土曜' : wd === 0 ? '日曜' : '';
     return {
-      title: scope === 'weekend' ? `今週末（${label}）の全国のフリマ・蚤の市・骨董市：${n}件` : `${label}${hol}の全国のフリマ・蚤の市・骨董市：${n}件`,
+      title: scope === 'weekend' ? `今週末（${label}）の全国のフリマ・蚤の市・骨董市：${n}件` : wdWord ? `${label}${hol}｜${wdWord}開催のフリマ・蚤の市・骨董市：全国${n}件` : `${label}${hol}の全国のフリマ・蚤の市・骨董市：${n}件`,
       description: `${scope === 'weekend' ? `今週末（${label}）` : `${label}${hol}`}に開催されるフリマ・蚤の市・骨董市・手作り市${n}件の一覧。東京・大阪・京都ほか。主催者・自治体の公式情報をもとに、毎朝更新しています。`,
       lead: `${scope === 'weekend' ? `今週末（${label}）` : `${label}${hol}`}の開催は${n}件です。そのうち${conf}件は主催者・自治体の公式ページで確認した回で、残りは公式のきまりから算出した予定です。${top.length ? `地域別の多い順：${top.join('、')}。` : ''}`,
     };
@@ -217,21 +220,83 @@ function weekendLinks(ctx, current, lang) {
   return `<nav class="day-tabs" aria-label="${lang === 'ja' ? '今週末' : 'This weekend'}">${tabs.join('')}${all}</nav>`;
 }
 
-function weekendPage(ctx, lang) {
-  const days = upcomingWeekend(ctx.today);
+// 週末ページのよくある質問（掲載データの事実だけ。件数は、その週末の開催から数える）
+const WFAQ = {
+  ja: {
+    h: '週末のフリマ・蚤の市のよくある質問',
+    qCount: (l) => `${l}のフリマ・フリーマーケットは何件ありますか？`,
+    aCount: (l, n, conf, top) => `${l}の開催は${n}件です（${conf}件は主催者・自治体の公式ページで確認した回、残りは公式のきまりから算出した予定です）。${top ? `地域別の多い順：${top}。` : ''}`,
+    qRain: '週末のフリマは、雨でも開催されますか？',
+    aRain: (r, n) => `開催の有無は主催者が決めます。雨天の扱い（中止・当日判断など）が公式ページに書かれているのは${n}件中${r}件です。記載のないものは、各開催ページで「要確認」と表示しています。当日は、主催者の公式ページでご確認ください。`,
+    qFree: 'フリマの入場料は、かかりますか？',
+    aFree: (f, n) => `公式ページに入場無料と書かれているのは${n}件中${f}件です。料金の記載のないものは、各開催ページで「要確認」または「目安」として表示しています。`,
+    qTime: 'フリマは、何時から開催されますか？',
+    aTime: (t, n) => `開催時間が公式に載っているのは${n}件中${t}件です。時間は回によって異なる場合があるので、各開催ページの「時間」と公式ページをご確認ください。`,
+    qNear: '近くのフリマを探すには？',
+    aNear: '「マップで探す」では、現在地の近くの開催を、近い順に見られます。都道府県・市区町村・種類（フリーマーケット・蚤の市・骨董市など）からも絞り込めます。',
+  },
+  en: {
+    h: 'Weekend flea markets: FAQ',
+    qCount: (l) => `How many flea markets are there ${l}?`,
+    aCount: (l, n, conf, top) => `There are ${n} markets ${l}. ${conf} of them are confirmed from official organizer or municipal pages; the rest follow their recurring schedules.${top ? ` Most by area: ${top}.` : ''}`,
+    qRain: 'Do weekend flea markets go ahead in the rain?',
+    aRain: (r, n) => `The organizer decides. The official page states how rain is handled (cancellation, decided on the day, etc.) for ${r} of ${n}. Where nothing is stated, each event page shows TBC. Check the organizer’s official page on the day.`,
+    qFree: 'Is there an entry fee?',
+    aFree: (f, n) => `${f} of ${n} are officially listed as free entry. Where the fee is not stated, each event page shows TBC or an estimate.`,
+    qTime: 'What time do flea markets start?',
+    aTime: (t, n) => `Opening hours are officially listed for ${t} of ${n}. Hours can differ from one date to the next, so check the “Time” on each event page and the official page.`,
+    qNear: 'How can I find a flea market near me?',
+    aNear: 'Use “Search by map” to see markets near your location, nearest first. You can also filter by prefecture, city and type (flea market, nomi-no-ichi, antique fair and more).',
+  },
+};
+function weekendFaq(list, label, lang) {
+  const f = WFAQ[lang];
+  const act = list.filter(isActive);
+  if (!act.length) return '';
+  const st = seoStats(list, lang);
+  const sep = lang === 'ja' ? '、' : ', ';
+  // 公式の記載だけを数える（ネット検索で補った項目 `searched` は含めない）
+  const rain = act.filter((o) => o.series.visitor?.rain && !o.series.searched?.rain).length;
+  const free = act.filter((o) => /無料/.test(o.series.visitor?.admission || '') && !o.series.searched?.admission).length;
+  const tm = act.filter((o) => o.series.time?.text && !o.series.searched?.time).length;
+  const qa = [[f.qCount(label), f.aCount(label, st.n, st.conf, st.top.join(sep))], [f.qRain, f.aRain(rain, act.length)], [f.qFree, f.aFree(free, act.length)], [f.qTime, f.aTime(tm, act.length)], [f.qNear, f.aNear]];
+  const ld = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: qa.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+  const links = lang === 'ja' ? '<p class="pov-links"><a href="/map/">マップで探す →</a> <a href="/area/">地域から探す →</a> <a href="/kind/">種類から探す →</a></p>' : '<p class="pov-links"><a href="/map/">Search by map →</a> <a href="/area/">Explore by area →</a> <a href="/kind/">Market types →</a></p>';
+  return `<section class="kind-faq"><h2 class="sec-h">${esc(f.h)}</h2><dl>${qa.map(([q, a]) => `<dt>${esc(q)}</dt><dd>${esc(a)}</dd>`).join('')}</dl>${links}<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script></section>`;
+}
+// 今週末と来週末の切り替え（相互リンク）
+function weekendSwitch(current, lang) {
+  const a = lang === 'ja' ? ['今週末', '来週末'] : ['This weekend', 'Next weekend'];
+  const cell = (id, href, label) => (id === current ? `<b aria-current="page">${label}</b>` : `<a href="${href}">${label}</a>`);
+  return `<nav class="day-tabs" aria-label="${lang === 'ja' ? '週末' : 'Weekends'}">${cell('this', '/weekend/', a[0])}${cell('next', '/weekend/next/', a[1])}</nav>`;
+}
+// 「来週末」：今週末（今日以降で最初の、土日・祝日の連なり）のあとの、最初の土曜から始まる週末（土日。続く祝日も含む）
+function nextWeekendDays(today) {
+  const cur = upcomingWeekend(today);
+  let d = addDays(cur.at(-1), 1);
+  while (weekday(d) !== 6) d = addDays(d, 1);
+  return upcomingWeekend(d);
+}
+function weekendPage(ctx, lang, which = 'this') {
+  const days = which === 'next' ? nextWeekendDays(ctx.today) : upcomingWeekend(ctx.today);
   const p = P[lang].weekend;
-  const title = p.title(dlabel(days[0], lang), days.length > 1 ? dlabel(days.at(-1), lang) : '');
   const list = ctx.occ.filter((o) => days.includes(o.date));
   const label = days.length > 1 ? `${dlabel(days[0], lang)}${lang === 'ja' ? '〜' : ' – '}${dlabel(days.at(-1), lang)}` : dlabel(days[0], lang);
   const t = seoText(lang, 'weekend', label, seoStats(list, lang));
-  return listPage(lang, '/weekend/', [{ label: p.crumb }], t.title, t.lead, list, weekendLinks(ctx, 'weekend', lang), true, { title: t.title, description: t.description, head: listLd(t.title, list, lang) });
+  const next = which === 'next';
+  const title = next ? (lang === 'ja' ? `来週末（${label}）の全国のフリマ・蚤の市・骨董市：${seoStats(list, lang).n}件` : `Flea Markets in Japan Next Weekend (${label}): ${seoStats(list, lang).n} events`) : t.title;
+  const description = next ? t.description.replace(lang === 'ja' ? '今週末' : 'this weekend', lang === 'ja' ? '来週末' : 'next weekend') : t.description;
+  const lead = next ? t.lead.replace(lang === 'ja' ? '今週末' : 'this weekend', lang === 'ja' ? '来週末' : 'next weekend') : t.lead;
+  const faqLabel = lang === 'ja' ? `${next ? '来週末' : '今週末'}（${label}）` : `${next ? 'next weekend' : 'this weekend'} (${label})`;
+  const crumbs = next ? [{ href: '/weekend/', label: p.crumb }, { label: lang === 'ja' ? '来週末' : 'Next weekend' }] : [{ label: p.crumb }];
+  return listPage(lang, next ? '/weekend/next/' : '/weekend/', crumbs, title, lead, list, weekendSwitch(next ? 'next' : 'this', lang) + (next ? '' : weekendLinks(ctx, 'weekend', lang)), true, { title, description, head: listLd(title, list, lang), after: weekendFaq(list, faqLabel, lang) });
 }
 
 function datePages(ctx, lang) {
   const dates = [...new Set(ctx.occ.map((o) => o.date))];
   const upcoming = dates.map((d) => {
     const list = ctx.occ.filter((o) => o.date === d);
-    const t = seoText(lang, 'date', dlabel(d, lang, { year: true }), seoStats(list, lang), holiday(d, lang));
+    const t = seoText(lang, 'date', dlabel(d, lang, { year: true }), seoStats(list, lang), holiday(d, lang), d);
     return listPage(lang, `/date/${d}/`, [{ href: '/calendar/', label: P[lang].date.crumb }, { label: dlabel(d, lang) }], t.title, t.lead, list, weekendLinks(ctx, d, lang) + dayStrip(ctx.occ, ctx.today, d, lang), true, { title: t.title, description: t.description, head: listLd(t.title, list, lang) });
   });
   // 過去の日（公式で確認した回の記録）
@@ -884,7 +949,7 @@ function splitBanner(page) {
 function withSide(page0, ctx, lang) {
   const page = splitBanner(page0);
   const base = splitPath(page.path).base;
-  if (!/^\/(weekend|calendar|date|area|kind|spot|shuten|search|about)\//.test(base) || base === '/weekend/') return page;
+  if (!/^\/(weekend|calendar|date|area|kind|spot|shuten|search|about)\//.test(base) || base === '/weekend/' || base === '/weekend/next/') return page;
   if (page.body.includes('class="ev-split"')) return page; // 個別ページ（スポットなど）は、自前の2列
   // 帯に文字を置くページ（パンくずが帯の中）：本文の右に、同じ右の列を付ける
   if (page.bannerText) {
@@ -922,7 +987,7 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   ALL_POSTS = [...BLOG.map((b) => cleanLinks(resolvePost(b, ctx), ids)), ...autoPosts.map((a) => cleanLinks(a, ids))];
   ctx.latestPosts = posts().slice(0, 3);
   // 英語が既定（/）。日本語は /ja/
-  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), mapPageFor(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.filter((s) => !endedIds.has(s.id)).map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), savedPage(lang), aboutPage(ctx, lang), guidePage(lang), tipsPage(lang), ...TIPS.map((x) => columnPage(x, lang, '/tips/')), contactPage(lang), pressPage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
+  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), weekendPage(ctx, lang, 'next'), calendarPage(ctx, lang), ...datePages(ctx, lang), mapPageFor(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.filter((s) => !endedIds.has(s.id)).map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), savedPage(lang), aboutPage(ctx, lang), guidePage(lang), tipsPage(lang), ...TIPS.map((x) => columnPage(x, lang, '/tips/')), contactPage(lang), pressPage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）
   const files = LANGS_ORDER.map((lang) => ({ path: langPath('/blog/feed.xml', lang), content: feedXml(lang) }));
   files.push({ path: '/map-data.json', content: JSON.stringify(MAP_DATA.items) });

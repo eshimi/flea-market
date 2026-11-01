@@ -1032,3 +1032,17 @@ test('マップで探すページ：両言語のページ・ヘッダーのリ�
     assert.ok(it.d.length >= 1 && it.n.length === 2, it.id);
   }
 });
+
+test('週末ページ：よくある質問（FAQPage）と、来週末のページ。土日の日別ページのタイトルに、土曜・日曜の語が入る', () => {
+  for (const [lang, root] of [['ja', '/ja'], ['en', '']]) {
+    const wk = page(`${root}/weekend/`);
+    assert.ok(wk.body.includes('"@type":"FAQPage"'), `${lang} /weekend/ の FAQ`);
+    const nx = page(`${root}/weekend/next/`);
+    assert.ok(nx, `${lang} /weekend/next/`);
+    // 見本データは、来週末の開催がないことがある（開催がなければ、FAQ は出さない）
+    assert.match(nx.title, lang === 'ja' ? /来週末/ : /Next Weekend/);
+    assert.notEqual(nx.title, wk.title);
+  }
+  // 日曜（2026-10-18）の日別ページ
+  assert.match(page('/ja/date/2026-10-18/').title, /日曜開催のフリマ/);
+});

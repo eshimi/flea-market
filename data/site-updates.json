@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-01",
+    "ja": "「来週末」のフリマ・蚤の市のページと、週末ページの「よくある質問」を追加しました。",
+    "en": "Added a “next weekend” page and an FAQ on the weekend pages.",
+    "link": "/weekend/next/"
+  },
+  {
+    "date": "2026-11-01",
     "ja": "東京リサイクルの2027年1〜3月の開催（大井競馬場22回ほか）と、新しい会場「五反田TOC」（1月3日）を掲載しました。",
     "en": "Added Tokyo Recycle events for January–March 2027 (22 at Ohi Racecourse and more) and a new venue, Gotanda TOC (Jan 3).",
     "link": "/weekend/"
