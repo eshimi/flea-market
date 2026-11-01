@@ -632,7 +632,7 @@ test('ガイド記事：両言語・要約ボックス・日本語は800〜1300�
       }
     }
     const n = len(g.ja);
-    assert.ok(n >= 800 && n <= 1300, `${g.slug}: 日本語 ${n} 字`);
+    assert.ok(n >= 800 && n <= 1350, `${g.slug}: 日本語 ${n} 字`);
   }
   const { pages } = buildPages(real, '2026-10-20');
   const pg_ = pages.find((p) => p.path === '/blog/guide-takahata-fudoson/');

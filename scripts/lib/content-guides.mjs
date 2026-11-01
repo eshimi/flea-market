@@ -239,6 +239,8 @@ export const GUIDES = [
       blocks: [
         { h2: 'Finding a market for your dates' },
         { p: 'Start with [This Weekend](/weekend/#pref=13) or the [Tokyo area page](/area/13/). For a month view, use the [calendar](/calendar/). Every listing links to the organizer’s official page and shows when it was last checked.' },
+        { h2: 'Map' },
+        { prefMap: { pref: '13', series: ['oedo-antique-market-tokyo-international-forum', 'tomioka-hachimangu-kottoichi', 'machida-tenmangu-garakuta-kottoichi', 'trx-oi-keibajo-tokyo-city-flea', 'nishiarai-daishi-ennichi-flea', 'takahata-fudoson-gozareichi', 'zoshigaya-tezukuriichi', 'setagaya-boroichi'] } },
         { h2: 'Antique fairs' },
         { ul: [
           '[Oedo Antique Market](/e/oedo-antique-market-tokyo-international-forum/) at Tokyo International Forum: twice a month, 9:00–16:00, free entry, cancelled in rain (see the [venue guide](/blog/guide-tokyo-international-forum/)).',
@@ -272,6 +274,8 @@ export const GUIDES = [
       blocks: [
         { h2: '行ける日に合う市を探す' },
         { p: 'まずは[今週末の開催](/weekend/#pref=13)か[東京都のページ](/area/13/)から。月単位なら[カレンダー](/calendar/)が便利です。どの掲載にも、主催者の公式ページへのリンクと、最終確認日があります。' },
+        { h2: 'Map' },
+        { prefMap: { pref: '13', series: ['oedo-antique-market-tokyo-international-forum', 'tomioka-hachimangu-kottoichi', 'machida-tenmangu-garakuta-kottoichi', 'trx-oi-keibajo-tokyo-city-flea', 'nishiarai-daishi-ennichi-flea', 'takahata-fudoson-gozareichi', 'zoshigaya-tezukuriichi', 'setagaya-boroichi'] } },
         { h2: '骨董市' },
         { ul: [
           '[大江戸骨董市](/e/oedo-antique-market-tokyo-international-forum/)（東京国際フォーラム）：月に2回、9:00〜16:00、入場無料、雨天中止（[会場ガイド](/blog/guide-tokyo-international-forum/)）。',
@@ -935,7 +939,7 @@ export const GUIDES = [
       blocks: [
         { h2: '行ける日に合う市を探す' },
         { p: 'まずは[大阪の今週末](/weekend/27/)か[大阪府のページ](/area/27/)から。月単位なら[カレンダー](/calendar/)が便利です。どの掲載にも、公式ページへのリンクと最終確認日があります。' },
-        { h2: '地図で見る' },
+        { h2: '地図' },
         { prefMap: { pref: '27', series: ['shitennoji-daishie', 'vintage-market-expo70', 'ibaraki-nominoichi', 'osaka-garagesale-nishi', 'lohas-park-tsurumi', 'jfma-ikea-tsuruhama-loppis'] } },
         { h2: '社寺の市・蚤の市' },
         { ul: [
@@ -971,6 +975,8 @@ export const GUIDES = [
       blocks: [
         { h2: 'Finding a market for your dates' },
         { p: 'Start with [This Weekend in Kyoto](/weekend/26/) or the [Kyoto area page](/area/26/). For a month view, use the [calendar](/calendar/). Every listing links to the organizer’s official page and shows when it was last checked.' },
+        { h2: 'Map' },
+        { prefMap: { pref: '26', series: ['toji-kobo-ichi', 'kitano-tenjin-ennichi', 'hyakumanben-tedukuri-ichi', 'umekoji-park-tedukuri-ichi', 'kamigamo-tedukuri-ichi', 'heian-rakuichi', 'ohigashisan-tedukuri-monzenichi'] } },
         { h2: 'Temple markets on a fixed day' },
         { ul: [
           '[To-ji Kobo-ichi](/e/toji-kobo-ichi/): the 21st of every month on the temple grounds. About 15 minutes on foot from the Hachijo exit of Kyoto Station, or 10 minutes from To-ji Station. Opening hours and rain rules are not stated on the official page (TBC); the event page shows information we found by search, marked as not official.',
@@ -999,6 +1005,8 @@ export const GUIDES = [
       blocks: [
         { h2: '行ける日に合う市を探す' },
         { p: 'まずは[京都の今週末](/weekend/26/)か[京都府のページ](/area/26/)から。月単位なら[カレンダー](/calendar/)が便利です。どの掲載にも、主催者の公式ページへのリンクと、最終確認日があります。' },
+        { h2: '地図' },
+        { prefMap: { pref: '26', series: ['toji-kobo-ichi', 'kitano-tenjin-ennichi', 'hyakumanben-tedukuri-ichi', 'umekoji-park-tedukuri-ichi', 'kamigamo-tedukuri-ichi', 'heian-rakuichi', 'ohigashisan-tedukuri-monzenichi'] } },
         { h2: '決まった日の社寺の市' },
         { ul: [
           '[東寺 弘法市](/e/toji-kobo-ichi/)：毎月21日、境内で。京都駅八条口から徒歩15分、東寺駅から徒歩10分。時間と雨天の扱いは公式ページに記載なし（要確認）。開催詳細ページには、検索で補った情報を「公式ではない」と明記して載せています。',
@@ -1033,6 +1041,8 @@ export const GUIDES = [
       blocks: [
         { h2: 'Finding a market for your dates' },
         { p: 'Start with [This Weekend in Aichi](/weekend/23/) or the [Aichi area page](/area/23/). For a month view, use the [calendar](/calendar/). Every listing links to the organizer’s official page and shows when it was last checked.' },
+        { h2: 'Map' },
+        { prefMap: { pref: '23', series: ['osu-kannon-kottouichi', 'jimokuji-fudo-marche', 'jimokuji-kurashi-asaichi', 'kasugai-kachigawa-kobo-ichi', 'tokugawaen-kuromon-tedukuri-2026', 'yuyu-marche-motohama-park'] } },
         { h2: 'Temple markets on a fixed day' },
         { ul: [
           '[Osu Kannon Antique Market](/e/osu-kannon-kottouichi/): the 18th and 28th of every month. About 3 minutes on foot from exit 2 of Osu-Kannon Station (Tsurumai Line). Opening hours and rain rules are not stated on the official page (TBC); the event page shows information we found by search, marked as not official.',
@@ -1060,6 +1070,8 @@ export const GUIDES = [
       blocks: [
         { h2: '行ける日に合う市を探す' },
         { p: 'まずは[愛知の今週末](/weekend/23/)か[愛知県のページ](/area/23/)から。月単位なら[カレンダー](/calendar/)が便利です。どの掲載にも、主催者の公式ページへのリンクと、最終確認日があります。' },
+        { h2: '地図' },
+        { prefMap: { pref: '23', series: ['osu-kannon-kottouichi', 'jimokuji-fudo-marche', 'jimokuji-kurashi-asaichi', 'kasugai-kachigawa-kobo-ichi', 'tokugawaen-kuromon-tedukuri-2026', 'yuyu-marche-motohama-park'] } },
         { h2: '決まった日の社寺の市' },
         { ul: [
           '[大須観音 骨董市](/e/osu-kannon-kottouichi/)：毎月18日・28日。地下鉄鶴舞線「大須観音」駅の2番出口から徒歩3分。時間と雨天の扱いは公式ページに記載なし（要確認）。開催詳細ページには、検索で補った情報を「公式ではない」と明記して載せています。',
@@ -1093,6 +1105,8 @@ export const GUIDES = [
       blocks: [
         { h2: 'Finding a market for your dates' },
         { p: 'Start with [This Weekend in Kanagawa](/weekend/14/) or the [Kanagawa area page](/area/14/). For a month view, use the [calendar](/calendar/). Every listing links to the official page and shows when it was last checked.' },
+        { h2: 'Map' },
+        { prefMap: { pref: '14', series: ['hiratsuka-ekimae-kottoichi', 'kamiyabe-free-market', 'noborito-challenge-street-2026', 'shiroyama-fes-2026'] } },
         { h2: 'Antique fair' },
         { ul: ['[Shonan Hiratsuka Station-front Antique Fair](/e/hiratsuka-ekimae-kottoichi/): Saturdays, on the Benibaya Pearl Road shopping street near the north exit of Hiratsuka Station. The official page gives the hours as “8:00 a.m. to 4:00”, and it goes ahead in light rain. The dates are announced in the shopping street’s annual events list.'] },
         { h2: 'Swap events and flea markets' },
@@ -1116,6 +1130,8 @@ export const GUIDES = [
       blocks: [
         { h2: '行ける日に合う市を探す' },
         { p: 'まずは[神奈川の今週末](/weekend/14/)か[神奈川県のページ](/area/14/)から。月単位なら[カレンダー](/calendar/)が便利です。どの掲載にも、公式ページへのリンクと最終確認日があります。' },
+        { h2: 'Map' },
+        { prefMap: { pref: '14', series: ['hiratsuka-ekimae-kottoichi', 'kamiyabe-free-market', 'noborito-challenge-street-2026', 'shiroyama-fes-2026'] } },
         { h2: '骨董市' },
         { ul: ['[湘南ひらつか駅前骨董市](/e/hiratsuka-ekimae-kottoichi/)：土曜日、平塚駅北口の紅谷パールロード商店街で。時間は公式に「午前8時～4時」と表記され、小雨決行です。日程は、商店街の年間イベント情報で発表されます。'] },
         { h2: '交換会・フリーマーケット' },
@@ -1145,6 +1161,8 @@ export const GUIDES = [
       blocks: [
         { h2: 'Finding a market for your dates' },
         { p: 'Start with [This Weekend in Fukuoka](/weekend/40/) or the [Fukuoka area page](/area/40/). For a month view, use the [calendar](/calendar/). Every listing links to the official page and shows when it was last checked.' },
+        { h2: 'Map' },
+        { prefMap: { pref: '40', series: ['cultune-fukuoka-maizuru-flea', 'fukuoka-100fes', 'kokura-car-boot', 'mojiko-car-boot', 'kokura-ogane-flea', 'kokura-de-flima', 'mitsubachi-flima', 'muromachi-rakuichi-flea'] } },
         { h2: 'Fukuoka City' },
         { ul: [
           '[CULTUNE Flea Market in Maizuru](/e/cultune-fukuoka-maizuru-flea/): at Sannomaru Square, Maizuru Park, 10:00–16:00, free entry (no reservation needed). It goes ahead in light rain and is cancelled in severe weather; the decision is posted on its website and social media on the morning of the day. About 8 minutes on foot from Ohori-koen Station.',
@@ -1172,6 +1190,8 @@ export const GUIDES = [
       blocks: [
         { h2: '行ける日に合う市を探す' },
         { p: 'まずは[福岡の今週末](/weekend/40/)か[福岡県のページ](/area/40/)から。月単位なら[カレンダー](/calendar/)が便利です。どの掲載にも、公式ページへのリンクと最終確認日があります。' },
+        { h2: 'Map' },
+        { prefMap: { pref: '40', series: ['cultune-fukuoka-maizuru-flea', 'fukuoka-100fes', 'kokura-car-boot', 'mojiko-car-boot', 'kokura-ogane-flea', 'kokura-de-flima', 'mitsubachi-flima', 'muromachi-rakuichi-flea'] } },
         { h2: '福岡市' },
         { ul: [
           '[CULTUNE フリマin舞鶴](/e/cultune-fukuoka-maizuru-flea/)：舞鶴公園の三ノ丸広場で、10:00〜16:00、入場無料（予約不要）。小雨決行、荒天時は中止で、当日朝にホームページとSNSで知らせます。地下鉄空港線「大濠公園」駅から徒歩約8分。',
@@ -1205,6 +1225,8 @@ export const GUIDES = [
       blocks: [
         { h2: 'Finding a market for your dates' },
         { p: 'Start with [This Weekend in Saitama](/weekend/11/) or the [Saitama area page](/area/11/). For a month view, use the [calendar](/calendar/). Every listing links to the organizer’s official page and shows when it was last checked.' },
+        { h2: 'Map' },
+        { prefMap: { pref: '11', series: ['koshigaya-katori-jinja-kotto-ichi', 'urawa-juku-furusato-ichi', 'rbf-kawagoe-suijo-park', 'rbf-koshigaya-laketown', 'tmc-kawagoe-suijo-park', 'fmpn-tokorozawa-aviation-park'] } },
         { h2: 'Monthly antique fairs' },
         { ul: [
           '[Koshigaya Katori Shrine Antique Market](/e/koshigaya-katori-jinja-kotto-ichi/): the 2nd Saturday of every month, 7:00–15:30 (packing up may start earlier), free entry, in the shrine grounds. The shrine says fewer stalls open in rain.',
@@ -1231,6 +1253,8 @@ export const GUIDES = [
       blocks: [
         { h2: '行ける日に合う市を探す' },
         { p: 'まずは[埼玉の今週末](/weekend/11/)か[埼玉県のページ](/area/11/)から。月単位なら[カレンダー](/calendar/)が便利です。どの掲載にも、主催者の公式ページへのリンクと、最終確認日があります。' },
+        { h2: '地図' },
+        { prefMap: { pref: '11', series: ['koshigaya-katori-jinja-kotto-ichi', 'urawa-juku-furusato-ichi', 'rbf-kawagoe-suijo-park', 'rbf-koshigaya-laketown', 'tmc-kawagoe-suijo-park', 'fmpn-tokorozawa-aviation-park'] } },
         { h2: '毎月の骨董市' },
         { ul: [
           '[越谷香取神社骨董市](/e/koshigaya-katori-jinja-kotto-ichi/)：毎月第2土曜、7:00〜15:30（片付けが早まる場合あり）、入場無料、神社の境内で。雨天などでは、店の数が少なくなると神社が案内しています。',
@@ -1263,6 +1287,8 @@ export const GUIDES = [
       blocks: [
         { h2: 'Finding a market for your dates' },
         { p: 'Start with [This Weekend in Chiba](/weekend/12/) or the [Chiba area page](/area/12/). For a month view, use the [calendar](/calendar/). Every listing links to the organizer’s official page and shows when it was last checked.' },
+        { h2: 'Map' },
+        { prefMap: { pref: '12', series: ['kioroshi-ekiminami-kotto-ichi', 'rbf-kashiwanoha-park', 'rbf-aeon-chiba-newtown', 'rbf-makuhari-ito-yokado', 'rbf-ikea-tokyo-bay-loppis', 'rbf-mem-kashiwa-apie'] } },
         { h2: 'Antique fair' },
         { ul: ['[Kioroshi Ekiminami Antique Fair](/e/kioroshi-ekiminami-kotto-ichi/): the 1st Saturday of every month, about 7:00 a.m. to 2:00 p.m., on the Kioroshi south-exit shopping street in Inzai. The city says it may be changed or cancelled.'] },
         { h2: 'Big flea markets' },
@@ -1288,6 +1314,8 @@ export const GUIDES = [
       blocks: [
         { h2: '行ける日に合う市を探す' },
         { p: 'まずは[千葉の今週末](/weekend/12/)か[千葉県のページ](/area/12/)から。月単位なら[カレンダー](/calendar/)が便利です。どの掲載にも、主催者の公式ページへのリンクと、最終確認日があります。' },
+        { h2: 'Map' },
+        { prefMap: { pref: '12', series: ['kioroshi-ekiminami-kotto-ichi', 'rbf-kashiwanoha-park', 'rbf-aeon-chiba-newtown', 'rbf-makuhari-ito-yokado', 'rbf-ikea-tokyo-bay-loppis', 'rbf-mem-kashiwa-apie'] } },
         { h2: '骨董市' },
         { ul: ['[木下駅南骨董市](/e/kioroshi-ekiminami-kotto-ichi/)：毎月第1土曜日、午前7時〜午後2時頃、印西市の木下南口商店街で。変更・中止の場合があると印西市が案内しています。'] },
         { h2: '大きなフリーマーケット' },
@@ -1319,6 +1347,8 @@ export const GUIDES = [
       blocks: [
         { h2: 'Finding a market for your dates' },
         { p: 'Start with [This Weekend in Hyogo](/weekend/28/) or the [Hyogo area page](/area/28/). For a month view, use the [calendar](/calendar/). Every listing links to the organizer’s official page and shows when it was last checked.' },
+        { h2: 'Map' },
+        { prefMap: { pref: '28', series: ['jfma-kobe-harborland-seaside-market', 'bia-sunshine', 'lohas-park-fukinuke-marche-hyogo-eki', 'jfma-nishikita-flea', 'lohas-park-itami', 'himeji-tegarayama-rakuichi-rakuza'] } },
         { h2: 'Kobe' },
         { ul: [
           '[Kobe Harborland Seaside Market](/e/jfma-kobe-harborland-seaside-market/): 10:00–16:00 (planned), free entry, at Olive Square. Whether it is held is decided on the day by the Japan Flea Market Association.',
@@ -1346,6 +1376,8 @@ export const GUIDES = [
       blocks: [
         { h2: '行ける日に合う市を探す' },
         { p: 'まずは[兵庫の今週末](/weekend/28/)か[兵庫県のページ](/area/28/)から。月単位なら[カレンダー](/calendar/)が便利です。どの掲載にも、主催者の公式ページへのリンクと、最終確認日があります。' },
+        { h2: 'Map' },
+        { prefMap: { pref: '28', series: ['jfma-kobe-harborland-seaside-market', 'bia-sunshine', 'lohas-park-fukinuke-marche-hyogo-eki', 'jfma-nishikita-flea', 'lohas-park-itami', 'himeji-tegarayama-rakuichi-rakuza'] } },
         { h2: '神戸' },
         { ul: [
           '[神戸ハーバーランドシーサイドマーケット](/e/jfma-kobe-harborland-seaside-market/)：10:00〜16:00（予定）、入場無料、オリーブ広場で。開催するかどうかは、当日に日本フリーマーケット協会が判断します。',
@@ -1379,6 +1411,8 @@ export const GUIDES = [
       blocks: [
         { h2: 'Finding a market for your dates' },
         { p: 'Start with [This Weekend in Hokkaido](/weekend/01/) or the [Hokkaido area page](/area/01/). For a month view, use the [calendar](/calendar/). Every listing links to the official page and shows when it was last checked.' },
+        { h2: 'Map' },
+        { prefMap: { pref: '01', series: ['recyclefmd-sapporo-plaza-flea', 'sapporo-nakajima-park-flea', 'obihiro-wakuwaku-flea'] } },
         { h2: 'Sapporo' },
         { ul: [
           '[Sapporo Plaza Flea Market](/e/recyclefmd-sapporo-plaza-flea/) (Kita Ward): 10:00–13:30. The venue is indoors, so it goes ahead in bad weather.',
@@ -1401,6 +1435,8 @@ export const GUIDES = [
       blocks: [
         { h2: '行ける日に合う市を探す' },
         { p: 'まずは[北海道の今週末](/weekend/01/)か[北海道のページ](/area/01/)から。月単位なら[カレンダー](/calendar/)が便利です。どの掲載にも、主催者の公式ページへのリンクと、最終確認日があります。' },
+        { h2: 'Map' },
+        { prefMap: { pref: '01', series: ['recyclefmd-sapporo-plaza-flea', 'sapporo-nakajima-park-flea', 'obihiro-wakuwaku-flea'] } },
         { h2: '札幌' },
         { ul: [
           '[札幌サンプラザのフリーマーケット](/e/recyclefmd-sapporo-plaza-flea/)（北区）：10:00〜13:30。屋内の会場なので、悪天候でも開催されます。',
