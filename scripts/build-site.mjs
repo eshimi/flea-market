@@ -401,7 +401,7 @@ function prefOverview(p, ctx, lang) {
   const regular = ser.filter((s) => REGULAR.has(s.recurrence.type)).slice(0, 6)
     .map((s) => `<li><a href="/e/${s.id}/">${esc(nameL(s, lang))}</a> <span>${esc(ja ? s.recurrence.text : fieldEn(s, 'rule') || recurEn(s.recurrence) || s.recurrence.text)}</span></li>`).join('');
   const areaPost = ALL_POSTS.filter((b) => b.slug.startsWith(`area-${p}-`)).sort((x, y) => y.slug.localeCompare(x.slug))[0];
-  const visitorPost = ALL_POSTS.find((b) => b.slug === `guide-${{ 13: 'tokyo', 27: 'osaka', 26: 'kyoto' }[p] || 'x'}-flea-markets-visitors`);
+  const visitorPost = ALL_POSTS.find((b) => b.slug === `guide-${{ 13: 'tokyo', 27: 'osaka', 26: 'kyoto', 14: 'kanagawa', 23: 'aichi', 40: 'fukuoka' }[p] || 'x'}-flea-markets-visitors`);
   const firstLinks = [
     ...(visitorPost ? [[`/blog/${visitorPost.slug}/`, visitorPost[lang].title]] : []),
     ...(areaPost ? [[`/blog/${areaPost.slug}/`, areaPost[lang].title]] : []),
