@@ -760,7 +760,13 @@ ${reviewsSection(s.id, lang)}
 </div>
 </div>
 </div>`;
-  return pg(lang, `/e/${s.id}/`, { title: p.title(nameL(s, lang), pn, cityL(v.city, lang)), description: p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s)), body, head: eventLd(s, list, lang, p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s))), scripts: ['/weather.js', '/map.js', '/vote.js', '/copy.js', ...(REVIEWS_ON ? ['/review.js'] : [])], css: ['/review.css', '/poll.css'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
+  const nx = list.find(isActive);
+  const ttl = nx ? (lang === 'ja' ? `${nameL(s, lang)}｜${PREFS[v.pref]} ${dlabel(nx.date, lang)}開催` : `${nameL(s, lang)} – ${pn}, ${dlabel(nx.date, lang)}`) : p.title(nameL(s, lang), pn, cityL(v.city, lang));
+  const tm = s.time?.text && !s.searched?.time ? s.time.text : '';
+  const dsc = nx ? (lang === 'ja'
+    ? `${nameL(s, lang)}の次回は${dlabel(nx.date, lang)}（${PREFS[v.pref]}${v.city || ''}${v.name ? `・${v.name}` : ''}）。開催のきまり：${s.recurrence.text}。${tm ? `時間：${tm}。` : ''}主催者・自治体の公式情報をもとに掲載（最終確認 ${lastChecked(s)}）。`
+    : `Next: ${dlabel(nx.date, lang)} — ${nameL(s, lang)} (${[cityL(v.city, lang), pn].filter(Boolean).join(', ')}). ${recurEn(s.recurrence) ? `${recurEn(s.recurrence)}. ` : ''}Listed from official organizer information (last checked ${lastChecked(s)}).`) : p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s));
+  return pg(lang, `/e/${s.id}/`, { title: ttl, description: dsc, body, head: eventLd(s, list, lang, p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s))), scripts: ['/weather.js', '/map.js', '/vote.js', '/copy.js', ...(REVIEWS_ON ? ['/review.js'] : [])], css: ['/review.css', '/poll.css'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
 }
 
 function shutenPage(ctx, lang) {
