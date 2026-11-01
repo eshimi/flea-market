@@ -770,7 +770,9 @@ ${reviewsSection(s.id, lang)}
   const base = lang === 'ja' ? `${nameL(s, lang)}｜${sd}` : `${nameL(s, lang)} – ${sd}`;
   const pre = lang === 'ja' ? PREFS[v.pref].replace(/[都府県]$/, '') : pn;
   const SP = lang === 'ja' ? '｜' : ' | ';
-  const withExtra = extra && [...base].length + [...extra].length + 1 <= (lang === 'ja' ? 40 : 70) ? `${base}${SP}${extra}` : base;
+  const LIM = lang === 'ja' ? 40 : 70;
+  const fit = (x) => x && [...base].length + [...x].length + 1 <= LIM;
+  const withExtra = fit(extra) ? `${base}${SP}${extra}` : fit(offT) ? `${base}${SP}${offT}` : base;
   const ttl = nx ? `${withExtra}${SP}${pre}` : p.title(nameL(s, lang), pn, cityL(v.city, lang));
   const tm = s.time?.text && !s.searched?.time ? s.time.text : '';
   const dsc = nx ? (lang === 'ja'
