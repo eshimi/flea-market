@@ -1046,3 +1046,19 @@ test('週末ページ：よくある質問（FAQPage）と、来週末のペー�
   // 日曜（2026-10-18）の日別ページ
   assert.match(page('/ja/date/2026-10-18/').title, /日曜開催のフリマ/);
 });
+
+test('主要都市の週末ページ：両言語・今週末と来週末。開催がなければ noindex（サイトマップに入れない）', () => {
+  for (const code of ['13', '27', '26', '11', '12', '14', '23', '28', '40', '01']) {
+    for (const root of ['', '/ja']) {
+      for (const sfx of ['', 'next/']) {
+        const pg = page(`${root}/weekend/${code}/${sfx}`);
+        assert.ok(pg, `${root}/weekend/${code}/${sfx}`);
+        const empty = !pg.body.includes('"@type":"FAQPage"'); // 開催があるときだけ、FAQ が出る
+        if (empty) assert.ok((pg.head || '').includes('noindex'), `${pg.path} は開催がないので noindex`);
+        else assert.ok(!(pg.head || '').includes('noindex'), `${pg.path}`);
+      }
+    }
+  }
+  assert.match(page('/ja/weekend/13/').title, /^東京の週末フリマ情報/);
+  assert.match(page('/weekend/13/').title, /Tokyo/);
+});

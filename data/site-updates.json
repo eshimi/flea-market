@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-01",
+    "ja": "東京・大阪・京都など主要10地域の「週末のフリマ」ページ（今週末・来週末）を追加しました。",
+    "en": "Added “this weekend” and “next weekend” pages for ten major regions, including Tokyo, Osaka and Kyoto.",
+    "link": "/weekend/13/"
+  },
+  {
+    "date": "2026-11-01",
     "ja": "「来週末」のフリマ・蚤の市のページと、週末ページの「よくある質問」を追加しました。",
     "en": "Added a “next weekend” page and an FAQ on the weekend pages.",
     "link": "/weekend/next/"
