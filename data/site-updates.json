@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-01",
+    "ja": "大阪と京都の旅行者向けガイド記事（フリーマーケット・社寺の市・手づくり市）を追加しました。",
+    "en": "Added visitor guides to flea markets, temple markets and handmade markets in Osaka and Kyoto.",
+    "link": "/blog/guide-osaka-flea-markets-visitors/"
+  },
+  {
+    "date": "2026-11-01",
     "ja": "東京・大阪・京都など主要10地域の「週末のフリマ」ページ（今週末・来週末）を追加しました。",
     "en": "Added “this weekend” and “next weekend” pages for ten major regions, including Tokyo, Osaka and Kyoto.",
     "link": "/weekend/13/"
