@@ -761,7 +761,17 @@ ${reviewsSection(s.id, lang)}
 </div>
 </div>`;
   const nx = list.find(isActive);
-  const ttl = nx ? (lang === 'ja' ? `${nameL(s, lang)}｜${PREFS[v.pref]} ${dlabel(nx.date, lang)}開催` : `${nameL(s, lang)} – ${pn}, ${dlabel(nx.date, lang)}`) : p.title(nameL(s, lang), pn, cityL(v.city, lang));
+  // タイトル：名称（全部）｜次回の日付｜時間・出店数（公式の記載があるときだけ。長くなるときは省く）｜県
+  const WD = lang === 'ja' ? ['日', '月', '火', '水', '木', '金', '土'] : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  const sd = nx ? `${+nx.date.slice(5, 7)}/${+nx.date.slice(8, 10)}${lang === 'ja' ? `(${WD[weekday(nx.date)]})` : ` ${WD[weekday(nx.date)]}`}` : '';
+  const offT = s.time?.start && !s.searched?.time ? `${s.time.start.replace(/^0/, '')}${lang === 'ja' ? '〜' : '–'}${(s.time.end || '').replace(/^0/, '')}`.replace(/[〜–]$/, '') : '';
+  const stl = s.scale?.stalls ? (lang === 'ja' ? `${s.scale.stalls}店` : `${s.scale.stalls} stalls`) : '';
+  const extra = [offT, stl].filter(Boolean).join(lang === 'ja' ? '・' : ', ');
+  const base = lang === 'ja' ? `${nameL(s, lang)}｜${sd}` : `${nameL(s, lang)} – ${sd}`;
+  const pre = lang === 'ja' ? PREFS[v.pref].replace(/[都府県]$/, '') : pn;
+  const SP = lang === 'ja' ? '｜' : ' | ';
+  const withExtra = extra && [...base].length + [...extra].length + 1 <= (lang === 'ja' ? 40 : 70) ? `${base}${SP}${extra}` : base;
+  const ttl = nx ? `${withExtra}${SP}${pre}` : p.title(nameL(s, lang), pn, cityL(v.city, lang));
   const tm = s.time?.text && !s.searched?.time ? s.time.text : '';
   const dsc = nx ? (lang === 'ja'
     ? `${nameL(s, lang)}の次回は${dlabel(nx.date, lang)}（${PREFS[v.pref]}${v.city || ''}${v.name ? `・${v.name}` : ''}）。開催のきまり：${s.recurrence.text}。${tm ? `時間：${tm}。` : ''}${s.scale?.stalls ? `出店数：${s.scale.stalls}店。` : ''}主催者・自治体の公式情報をもとに掲載（最終確認 ${lastChecked(s)}）。`
