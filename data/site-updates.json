@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-01",
+    "ja": "東京リサイクルの開催（大井競馬場・イケ・サンパーク・北区・むさ村・MOTTAINAI 3会場）の時間・入場料・出店数を、主催者の開催ページから確認して載せました。",
+    "en": "Hours, admission and stall counts for Tokyo Recycle events (Ohi Racecourse, IKE•SUNPARK, Kita Ward, Musashi-Murayama and three MOTTAINAI sites) now come from the organizer’s event pages.",
+    "link": "/spot/"
+  },
+  {
+    "date": "2026-11-01",
     "ja": "マップに主要都市の名前と新幹線を出し、拡大すると在来線・地下鉄の路線と駅名が出るようにしました。",
     "en": "The map now shows major cities and Shinkansen lines; zoom in to see railway lines and station names.",
     "link": "/map/"

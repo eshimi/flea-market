@@ -412,9 +412,10 @@
       "access": "About 5 min on foot from the north exit of Nakano Station (JR), according to the Nakano Ward guide to Nakano Shikinomori Park.",
       "rain": "Whether it is held is decided at 7:30 on the day (check the rain-information line after 7:30)",
       "apply": "Book a stall via \"Schedule\" → \"Apply for tickets\" on the Tokyo Recycle Citizens' Association website (trx.jp). Free user registration is required",
-      "time": "10:00–16:00 (as listed for the 3, 4, 24 and 25 October 2026 dates)",
-      "admission": "Free (as listed for the October 2026 dates)",
-      "fee": "¥3,000, reservation required (as listed for the October 2026 dates)"
+      "time": "10:00–16:00 (as listed on the organizer’s event page)",
+      "admission": "Free",
+      "fee": "¥3,000, reservation required (as listed for the October 2026 dates)",
+      "notes": "350 stalls (as listed on the organizer’s event page)"
     },
     "mottainai-flea-kichijoji-parco": {
       "name": "MOTTAINAI Flea Market (Kichijoji Parco rooftop)",
@@ -424,9 +425,10 @@
       "access": "2 min walk from Kichijoji Station (JR Chuo/Sobu Line, Keio Inokashira Line)",
       "rain": "Whether it is held is decided at 7:30 on the day (check the rain-information line after 7:30)",
       "apply": "Book a stall via \"Schedule\" → \"Apply for tickets\" on the Tokyo Recycle Citizens' Association website (trx.jp). Free user registration is required",
-      "time": "09:30–14:00 (as listed for 6 December 2026)",
-      "admission": "Free (as listed for 6 December 2026)",
-      "fee": "¥2,500, reservation required (as listed for 6 December 2026)"
+      "time": "9:30–14:00 (as listed on the organizer’s event page)",
+      "admission": "Free",
+      "fee": "¥2,500, reservation required (as listed for 6 December 2026)",
+      "notes": "100 stalls (as listed on the organizer’s event page)"
     },
     "mottainai-flea-shinjuku-chuo-park": {
       "name": "MOTTAINAI Flea Market (Shinjuku Central Park)",
@@ -435,7 +437,10 @@
       "address": "2-11 Nishi-Shinjuku, Shinjuku-ku, Tokyo",
       "access": "about 10 min walk from Shinjuku Station (JR, Odakyu, Keio) / about 5 min walk from Nishi-Shinjuku Station (Marunouchi Line) / 0 min walk from Tochomae Station (Oedo Line)",
       "rain": "Whether it is held is decided at 7:30 on the day (check the rain-information line after 7:30)",
-      "apply": "Book a stall via \"Schedule\" → \"Apply for tickets\" on the Tokyo Recycle Citizens' Association website (trx.jp). Free user registration is required"
+      "apply": "Book a stall via \"Schedule\" → \"Apply for tickets\" on the Tokyo Recycle Citizens' Association website (trx.jp). Free user registration is required",
+      "time": "9:00–15:00 (as listed on the organizer’s event page)",
+      "admission": "Free",
+      "notes": "154 stalls (as listed on the organizer’s event page)"
     },
     "kita-fujimibashi-echo-hirobakan-flea": {
       "name": "Fujimibashi Echo Hiroba-kan Flea Market (Kita Ward)",
@@ -678,20 +683,21 @@
       "address": "2-1-2 Katsushima, Shinagawa-ku, Tokyo",
       "access": "2 minutes on foot from Oi Keibajo-mae Station (Tokyo Monorail) and 12 minutes on foot from Tachiaigawa Station (Keikyu Line). 1 minute on foot from the Oi Keibajo Ekimae stop on the Keikyu Bus route Mori 22 from the east exit of Omori Station.",
       "apply": "Book through the organizer's website (trx.jp) and the ticketing site Peatix (a Peatix account is required; phone bookings are not accepted). The stall fee is paid at the on-site reception on the day, except at venues that require advance payment.",
-      "time": "8:45–14:15 (during Oct 31, 2026 – Jan 10, 2027, when the Tokyo Mega Illumination runs; as listed on the organizer’s event page)",
+      "time": "8:45–14:15 (until 12:00 on Nov 1 and until 13:30 on Nov 23 and 29. Hours change during Oct 31, 2026 – Jan 10, 2027 because of the Tokyo Mega Illumination; as listed on the organizer’s event pages)",
       "admission": "Free",
       "notes": "About 700 stalls (as listed on the organizer’s event page)"
     },
     "trx-ike-sunpark-flea": {
       "name": "Ike Sunpark Flea Market (Tokyo Recycle)",
       "venue": "Ike Sunpark",
-      "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
+      "rain": "Cancelled in rain. Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
       "address": "4-42 Higashi-Ikebukuro, Toshima-ku, Tokyo",
       "access": "5 min walk from Exit 6 of Higashi-Ikebukuro Station (Tokyo Metro Yurakucho Line)",
       "apply": "Book through the organizer's website (trx.jp) and the ticketing site Peatix (a Peatix account is required; phone bookings are not accepted). The stall fee is paid at the on-site reception on the day, except at venues that require advance payment.",
-      "time": "9:00–15:00 (as listed for the 15 Nov 2026 event)",
+      "time": "9:00–15:00 (as listed on the organizer’s event page)",
       "admission": "Free",
-      "fee": "2,500 yen (reservation required)"
+      "fee": "2,500 yen (reservation required)",
+      "notes": "100 stalls (as listed on the organizer’s event page)"
     },
     "trx-funabashi-keibajo-flea": {
       "name": "Funabashi Racecourse Flea Market (Tokyo Recycle)",
@@ -707,19 +713,23 @@
     "trx-kitaku-minsho-matsuri-flea": {
       "name": "Kita Ward Commerce Festival (listed in the Tokyo Recycle event schedule)",
       "venue": "Kita Ward Commerce Festival",
-      "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
-      "apply": "Book through the organizer's website (trx.jp) and the ticketing site Peatix (a Peatix account is required; phone bookings are not accepted). The stall fee is paid at the on-site reception on the day, except at venues that require advance payment."
+      "rain": "Cancelled in rain. Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
+      "apply": "Book through the organizer's website (trx.jp) and the ticketing site Peatix (a Peatix account is required; phone bookings are not accepted). The stall fee is paid at the on-site reception on the day, except at venues that require advance payment.",
+      "time": "10:00–15:00 (as listed on the organizer’s event page)",
+      "admission": "Free",
+      "notes": "50 stalls (as listed on the organizer’s event page)"
     },
     "trx-musamura-flea": {
       "name": "Musamura Flea Market (Tokyo Recycle)",
       "venue": "Musamura Flea Market",
-      "rain": "Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
+      "rain": "Cancelled in rain. Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
       "apply": "Book through the organizer's website (trx.jp) and the ticketing site Peatix (a Peatix account is required; phone bookings are not accepted). The stall fee is paid at the on-site reception on the day, except at venues that require advance payment.",
-      "time": "10:00–15:00 (as listed for the 21 Nov 2026 event)",
+      "time": "10:00–15:00 (as listed on the organizer’s event page)",
       "admission": "Free",
       "fee": "Car stall: 3,500 yen; hand-carry stall: 2,500 yen (reservation required)",
       "address": "1-1-34 Enoki, Musashimurayama City (AEON MALL Musashi-Murayama, Tsumugu Hiroba)",
-      "access": "By bus from Higashiyamato, Tamagawa-josui, Tachikawa, Akishima or Hakonegasaki stations to \"AEON MALL Musashi-Murayama\""
+      "access": "By bus from Higashiyamato, Tamagawa-josui, Tachikawa, Akishima or Hakonegasaki stations to \"AEON MALL Musashi-Murayama\"",
+      "notes": "Up to 100 stalls (as listed on the organizer’s event page)"
     },
     "recycler-sumida-live-fes-2026-winter-flea": {
       "name": "Sumida Live Fes 2026 Winter Flea Market (Kinshi Park, Recycle Movement Citizens' Association)",

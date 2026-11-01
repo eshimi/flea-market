@@ -20,7 +20,16 @@ async function browser() {
 }
 export async function closeBrowser() { if (browserP) { const b = await browserP; browserP = null; if (b) await b.close(); } }
 
-export async function renderGet(url, userAgent) {
+// Peatix のページは、開催回ごとに別のサブドメイン。check-sources はサイトごとに並行して取るので、ここで1ページずつ、2秒あけて開く
+let chain = Promise.resolve();
+const GAP_MS = 2000;
+export function renderGet(url, userAgent) {
+  const run = chain.then(() => renderOne(url, userAgent)).then((r) => new Promise((ok) => setTimeout(() => ok(r), GAP_MS)));
+  chain = run.catch(() => {});
+  return run;
+}
+
+async function renderOne(url, userAgent) {
   try {
     const b = await browser();
     if (!b) return { status: 0, error: 'no-browser' };
