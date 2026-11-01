@@ -42,7 +42,9 @@
 .mk-clu:hover .mk-clu-b,.mk-clu:focus .mk-clu-b{fill:#963825}
 .mk-me{pointer-events:none}
 .mk-me-halo{fill:rgba(47,107,94,.18);stroke:rgba(47,107,94,.35);stroke-width:1px}
-.mk-me-dot{fill:#2F6B5E;stroke:#fff;stroke-width:2.5px}
+.mk-me-dot{fill:#2F6B5E;stroke:#fff;stroke-width:2.5px;animation:mk-blink 1.4s ease-in-out infinite}
+@keyframes mk-blink{0%,100%{opacity:1}50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.mk-me-dot{animation:none}}
 .mk-zoom{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:6px;z-index:3}
 .mk-zoom button{font:700 18px/1 "DM Sans",sans-serif;width:36px;height:36px;border:1px solid #CFC5B3;border-radius:10px;background:#fff;color:#2A2622;cursor:pointer;box-shadow:0 1px 3px rgba(60,40,30,.15)}
 .mk-zoom .mk-reset{width:auto;height:auto;font-size:12px;padding:8px 10px;font-weight:500}

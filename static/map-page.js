@@ -252,7 +252,7 @@
   let me = null;
   // 現在地の印：拡大しても画面上の大きさは同じ（地図の単位ではなく、画面の px で描く）
   function placeMe() { if (!me || !user) return; const [x, y] = project(user.lat, user.lon); me.setAttribute('transform', `translate(${x} ${y}) scale(${1 / kOf()})`); }
-  function showMe() { if (me) me.remove(); me = se('g', { class: 'mk-me', 'aria-hidden': 'true' }); me.appendChild(se('circle', { r: 16, class: 'mk-me-halo' })); me.appendChild(se('circle', { r: 7, class: 'mk-me-dot' })); svg.insertBefore(me, gMarks); placeMe(); }
+  function showMe() { if (me) me.remove(); me = se('g', { class: 'mk-me', 'aria-hidden': 'true' }); me.appendChild(se('circle', { r: 25, class: 'mk-me-halo' })); me.appendChild(se('circle', { r: 7, class: 'mk-me-dot' })); svg.insertBefore(me, gMarks); placeMe(); }
   function fitNear() {
     const [ux, uy] = project(user.lat, user.lon);
     const near = vis.slice(0, 3);
