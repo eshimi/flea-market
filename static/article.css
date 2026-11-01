@@ -115,7 +115,7 @@
 
 /* 記事の小さな地図 */
 .pmm{margin:18px 0;padding:0}
-.pmm svg{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--ar-line)}
+.pmm svg{display:block;width:100%;max-width:600px;height:auto;border-radius:10px;border:1px solid var(--ar-line)}
 .pmm-sea{fill:#E4EEEA}
 .pmm-others path{fill:#F4EEE3;stroke:#DDD3C3;stroke-width:.35px;vector-effect:non-scaling-stroke;stroke-width:1px}
 .pmm-pref{fill:#F0C4B3;stroke:#B5452E;stroke-width:1.6px;vector-effect:non-scaling-stroke;stroke-linejoin:round}

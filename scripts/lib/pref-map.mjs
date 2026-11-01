@@ -23,8 +23,8 @@ export function prefMapHtml({ pref, items, rest = [], lang, text }) {
   const pts = items.map((it) => project(it.lat, it.lon));
   const x0 = Math.min(px0, ...pts.map((q) => q[0])), x1 = Math.max(px1, ...pts.map((q) => q[0]));
   const y0 = Math.min(py0, ...pts.map((q) => q[1])), y1 = Math.max(py1, ...pts.map((q) => q[1]));
-  // 表示は 4:3。都道府県の外枠に余白をつける（北海道のように大きいものも、全体が入る）
-  const asp = 4 / 3;
+  // 表示は 2:1（高さを抑える）。都道府県の外枠に余白をつける（北海道のように大きいものも、全体が入る）
+  const asp = 2;
   let w = (x1 - x0) * 1.18 + 4, h = (y1 - y0) * 1.18 + 4;
   if (w / h < asp) w = h * asp; else h = w / asp;
   const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
