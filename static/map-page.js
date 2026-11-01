@@ -276,7 +276,11 @@
   fetch(root.dataset.src).then((r) => r.json()).then((data) => {
     items = data; buildFilters();
     if (!visible().length) state.range = 'd30';
+    // ?pref=27 で、その都道府県を開く（記事の小さな地図から来たとき）。このときは、現在地への自動の切り替えをしない
+    const qp = new URLSearchParams(location.search).get('pref');
+    const okPref = qp && [...prefSel.options].some((o) => o.value === qp);
+    if (okPref) { state.pref = qp; prefSel.value = qp; state.range = 'all'; }
     render(true);
-    locate(true);
+    if (!okPref) locate(true);
   }).catch((e) => { console.error('map', e); countEl.textContent = t.none; });
 })();

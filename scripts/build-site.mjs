@@ -17,6 +17,7 @@ import { renderCalendar, renderHomeBody } from './lib/home-view.mjs';
 import { MON_EN, S, T, WD_EN, WD_JA } from './lib/i18n.mjs';
 import { scaleMark, scaleText, scaleTier } from './lib/scale.mjs';
 import { mapData, mapPage } from './lib/map-view.mjs';
+import { prefMapHtml } from './lib/pref-map.mjs';
 import { attentionMark, attentionText, attentionTier } from './lib/attention.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, blogBanner, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
@@ -892,7 +893,7 @@ let ALL_POSTS = [...BLOG];
 function resolvePost(post, ctx) {
   const out = { ...post };
   for (const lang of ['en', 'ja']) {
-    out[lang] = { ...post[lang], blocks: post[lang].blocks.map((b) => (b.dates ? datesBlock(b.dates, ctx, lang) : b.photo ? photoBlock_(b.photo, ctx, lang) : b)) };
+    out[lang] = { ...post[lang], blocks: post[lang].blocks.map((b) => (b.dates ? datesBlock(b.dates, ctx, lang) : b.photo ? photoBlock_(b.photo, ctx, lang) : b.prefMap ? prefMapBlock(b.prefMap, ctx, lang) : b)) };
   }
   return out;
 }
@@ -902,6 +903,22 @@ function datesBlock(d, ctx, lang) {
   if (!list.length) return { p: lang === 'ja' ? '今後の開催日は、公式の情報で確認できていません（要確認）。' : 'No upcoming dates are confirmed from official sources (TBC).' };
   const checked = list.map((o) => o.checkedAt).sort().at(-1);
   return { ul: [...list.map((o) => `**${dlabel(o.date, lang, { year: true })}** ${S[lang].status[o.status]}${o.note ? `（${noteL(o, lang)}）` : ''} — [${nameL(o.series, lang)}](/e/${o.series.id}/)`), lang === 'ja' ? `最終確認：${checked}（毎朝の自動更新で更新されます）` : `Last checked: ${checked} (updated by the daily refresh)`] };
+}
+// 記事の小さな地図：その都道府県の形と、記事に載せた市のピン（位置のあるものだけ）。位置は data/geo.json の目安
+const PM_TXT = {
+  ja: { aria: (n) => `${n}の地図。記事に載せた市の位置`, approx: '位置は目安', noPos: '位置は未確認', full: (n) => `${n}の全体マップで見る`, note: '位置は、公式の住所や会場名から求めた目安です。' },
+  en: { aria: (n) => `Map of ${n} with the markets in this guide`, approx: 'approximate', noPos: 'location TBC', full: (n) => `See all markets in ${n} on the map`, note: 'Locations are approximate, based on official addresses or venue names.' },
+};
+function prefMapBlock(pm, ctx, lang) {
+  const byId = new Map(ctx.series.map((x) => [x.id, x]));
+  const items = []; const rest = [];
+  for (const id of pm.series) {
+    const sr = byId.get(id); if (!sr) continue;
+    const g = GEO[id] || (sr.venueId && GEO[`spot-${sr.venueId}`]);
+    if (g && typeof g.lat === 'number' && typeof g.lon === 'number') items.push({ id, name: nameL(sr, lang), lat: g.lat, lon: g.lon, approx: (g.precision || '') !== 'lot' });
+    else rest.push({ id, name: nameL(sr, lang) });
+  }
+  return { html: prefMapHtml({ pref: pm.pref, items, rest, lang, text: PM_TXT[lang] }) };
 }
 function photoBlock_(vid, ctx, lang) {
   const v = ctx.spots.find((x) => x.venue.id === vid)?.venue;

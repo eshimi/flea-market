@@ -905,6 +905,8 @@ export const GUIDES = [
       blocks: [
         { h2: 'Finding a market for your dates' },
         { p: 'Start with [This Weekend in Osaka](/weekend/27/) or the [Osaka area page](/area/27/). For a month view, use the [calendar](/calendar/). Every listing links to the official page and shows when it was last checked.' },
+        { h2: 'Map' },
+        { prefMap: { pref: '27', series: ['shitennoji-daishie', 'vintage-market-expo70', 'ibaraki-nominoichi', 'osaka-garagesale-nishi', 'lohas-park-tsurumi', 'jfma-ikea-tsuruhama-loppis'] } },
         { h2: 'Temple and vintage markets' },
         { ul: [
           '[Shitennoji Daishie](/e/shitennoji-daishie/): the 21st of every month on the temple grounds. The main halls are open free of charge (including the top gallery of the five-story pagoda). The official page does not state opening hours (TBC). Directions are on the event page (information found by search, marked as not official).',
@@ -933,6 +935,8 @@ export const GUIDES = [
       blocks: [
         { h2: '行ける日に合う市を探す' },
         { p: 'まずは[大阪の今週末](/weekend/27/)か[大阪府のページ](/area/27/)から。月単位なら[カレンダー](/calendar/)が便利です。どの掲載にも、公式ページへのリンクと最終確認日があります。' },
+        { h2: '地図で見る' },
+        { prefMap: { pref: '27', series: ['shitennoji-daishie', 'vintage-market-expo70', 'ibaraki-nominoichi', 'osaka-garagesale-nishi', 'lohas-park-tsurumi', 'jfma-ikea-tsuruhama-loppis'] } },
         { h2: '社寺の市・蚤の市' },
         { ul: [
           '[四天王寺 大師会](/e/shitennoji-daishie/)：毎月21日、境内で。中心伽藍は無料で開放（五重塔の最上階回廊も開放）。時間は公式ページに記載なし（要確認）。行き方は開催詳細ページに（検索で補った情報で、公式ではないと明記）。',
