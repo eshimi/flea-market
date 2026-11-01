@@ -189,3 +189,5 @@
 - **大阪・京都の旅行者ガイド（2026-11-01、ユーザーの依頼）**：`guide-osaka-flea-markets-visitors`・`guide-kyoto-flea-markets-visitors`（`content-guides.mjs`。両言語。県ページの概要から自動でリンク）。データの公式の記載だけ。**アクセス・時間・雨天がネット検索で補った情報（`accessFrom: 'search'`・`searched`）のもの（東寺の時間・雨天、四天王寺・北野天満宮の行き方）は、記事では数字を書かず「開催詳細ページに（公式ではないと明記）」とした**。次回の開催日は、各記事の `dates` ブロックがビルドのたびに作る。
 
 - **主要都市の旅行者ガイドを拡大・英語タイトルの見直し（2026-11-01、ユーザーの依頼）**：`guide-kanagawa-flea-markets-visitors`・`guide-aichi-flea-markets-visitors`・`guide-fukuoka-flea-markets-visitors` を追加（県ページの概要から自動でリンク。build-site.mjs の `{13:'tokyo',27:'osaka',26:'kyoto',14:'kanagawa',23:'aichi',40:'fukuoka'}`）。**検索で補った項目（大須観音の時間・雨天、平塚・小倉のアクセス）は、記事に書かない**。英語タイトルは「<地名> Flea Markets & <Temple Markets|Antique Fairs>: Dates and Where to Go」の形に（東京・大阪・京都）。日本語のタイトルは変えていない。**未作成**：埼玉・千葉・兵庫・北海道のガイド（同じ手順で足す。県ページへの自動リンクは、build-site.mjs の対応表に足す）。
+
+- **残りの主要都市のガイド（2026-11-01、ユーザーの依頼）**：`guide-saitama-…`・`guide-chiba-…`・`guide-hyogo-…`・`guide-hokkaido-flea-markets-visitors` を追加（build-site.mjs の対応表は `{13,27,26,14,23,40,11,12,28,'01'}` の10県）。これで `WEEKEND_PREFS` の10県すべてにガイドがある。**北海道は、屋外のフリマの今年分が終わっている**（帯広は10/28が最終、中島公園は日程が秋まで）ので、記事にそう書き、札幌サンプラザ（屋内）だけが次回の日程を持つ。日程が出たら、記事の文面も見直す。
