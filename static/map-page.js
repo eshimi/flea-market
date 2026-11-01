@@ -135,6 +135,7 @@
     const k = kOf(); gMarks.textContent = '';
     if (vb.w <= home.w / 3) needLines();
     rail.j.style.display = rail.o.style.display = vb.w <= home.w / 3 ? '' : 'none';
+    placeMe();
     const cl = clusters(k); drawPlaces(k, cl);
     svg.classList.toggle('mk-deep', home.w / vb.w >= 6);
     for (const c of cl) {
@@ -249,7 +250,9 @@
 
   // ---- 現在地：ページを開いたときに、自動で確認する（許可されたときだけ使う。許可されなければ全国）。「現在地へ」で、もう一度 ----
   let me = null;
-  function showMe() { if (me) me.remove(); const [x, y] = project(user.lat, user.lon); me = se('circle', { cx: x, cy: y, r: 1.4, class: 'mk-me' }); svg.insertBefore(me, gMarks); }
+  // 現在地の印：拡大しても画面上の大きさは同じ（地図の単位ではなく、画面の px で描く）
+  function placeMe() { if (!me || !user) return; const [x, y] = project(user.lat, user.lon); me.setAttribute('transform', `translate(${x} ${y}) scale(${1 / kOf()})`); }
+  function showMe() { if (me) me.remove(); me = se('g', { class: 'mk-me', 'aria-hidden': 'true' }); me.appendChild(se('circle', { r: 16, class: 'mk-me-halo' })); me.appendChild(se('circle', { r: 7, class: 'mk-me-dot' })); svg.insertBefore(me, gMarks); placeMe(); }
   function fitNear() {
     const [ux, uy] = project(user.lat, user.lon);
     const near = vis.slice(0, 3);
