@@ -253,11 +253,13 @@
   // 現在地の印：拡大しても画面上の大きさは同じ（地図の単位ではなく、画面の px で描く）
   function placeMe() { if (!me || !user) return; const [x, y] = project(user.lat, user.lon); me.setAttribute('transform', `translate(${x} ${y}) scale(${1 / kOf()})`); }
   function showMe() { if (me) me.remove(); me = se('g', { class: 'mk-me', 'aria-hidden': 'true' }); me.appendChild(se('circle', { r: 25, class: 'mk-me-halo' })); me.appendChild(se('circle', { r: 7, class: 'mk-me-dot' })); svg.insertBefore(me, gMarks); placeMe(); }
+  // 現在地が分かったら、現在地を中心にした詳細な地図（路線・駅名が出る倍率）に切り替える。いちばん近い開催が枠の外なら、そこまで広げる（上限あり）
   function fitNear() {
     const [ux, uy] = project(user.lat, user.lon);
-    const near = vis.slice(0, 3);
-    const xs = [ux, ...near.map((o) => o.x)]; const ys = [uy, ...near.map((o) => o.y)];
-    fitBox(Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys), 0.35, 12);
+    let hw = 7; // 約65km幅
+    const first = vis[0];
+    if (first) hw = Math.min(Math.max(hw, Math.abs(first.x - ux) * 1.15, Math.abs(first.y - uy) * 1.15 / 0.62), home.w / 10);
+    fitBox(ux - hw, uy - hw * 0.62, ux + hw, uy + hw * 0.62, 0, 40);
   }
   function locate(auto) {
     if (!navigator.geolocation) { if (!auto) countEl.textContent = t.locFail; else statusEl.textContent = t.locDenied; return; }
