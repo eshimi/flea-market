@@ -284,7 +284,11 @@ function weekendPage(ctx, lang, which = 'this') {
   const label = days.length > 1 ? `${dlabel(days[0], lang)}${lang === 'ja' ? '〜' : ' – '}${dlabel(days.at(-1), lang)}` : dlabel(days[0], lang);
   const t = seoText(lang, 'weekend', label, seoStats(list, lang));
   const next = which === 'next';
-  const title = next ? (lang === 'ja' ? `来週末（${label}）の全国のフリマ・蚤の市・骨董市：${seoStats(list, lang).n}件` : `Flea Markets in Japan Next Weekend (${label}): ${seoStats(list, lang).n} events`) : t.title;
+  // 日本語のタイトルは、検索する人の言葉「週末」「フリマ」を先頭に近く置く（案A。2026-11-01 にユーザーが選択）
+  const md = (iso) => `${+iso.slice(5, 7)}/${+iso.slice(8, 10)}`;
+  const short = days.length > 1 ? `${md(days[0])}〜${md(days.at(-1))}` : md(days[0]);
+  const nn = seoStats(list, lang).n;
+  const title = lang === 'ja' ? `週末のフリマ情報｜${next ? '来週末' : '今週末'}（${short}）に開催の全国のフリーマーケット・蚤の市 ${nn}件` : next ? `Flea Markets in Japan Next Weekend (${label}): ${nn} events` : t.title;
   const description = next ? t.description.replace(lang === 'ja' ? '今週末' : 'this weekend', lang === 'ja' ? '来週末' : 'next weekend') : t.description;
   const lead = next ? t.lead.replace(lang === 'ja' ? '今週末' : 'this weekend', lang === 'ja' ? '来週末' : 'next weekend') : t.lead;
   const faqLabel = lang === 'ja' ? `${next ? '来週末' : '今週末'}（${label}）` : `${next ? 'next weekend' : 'this weekend'} (${label})`;
