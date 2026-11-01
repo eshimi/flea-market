@@ -319,7 +319,7 @@ function weekendPrefPage(ctx, lang, code, which) {
   const when = lang === 'ja' ? (next ? '来週末' : '今週末') : (next ? 'next weekend' : 'this weekend');
   const ja = lang === 'ja';
   const title = ja
-    ? `${nm}の週末フリマ情報｜${when}（${short}）${n ? `に開催の${nm}のフリーマーケット・蚤の市 ${n}件` : 'の開催情報・フリーマーケット・蚤の市'}`
+    ? `${nm}の週末フリマ情報｜${when}（${short}）${n ? ` ${n}件` : 'の開催情報'}`
     : `Flea Markets in ${nm} ${next ? 'Next Weekend' : 'This Weekend'} (${label}): ${n} event${n === 1 ? '' : 's'}`;
   const description = ja
     ? `${nm}で${when}（${label}）に開催されるフリマ・蚤の市・骨董市${n ? `${n}件` : ''}の一覧。主催者・自治体の公式情報をもとに、毎朝更新しています。`
