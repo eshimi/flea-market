@@ -22,7 +22,9 @@ export function splitPath(path) {
 export function localize(html, lang) {
   if (lang !== 'ja') return html;
   const re = new RegExp(`(href|action)="(/(?:(?:${PAGE_ROOTS.join('|')})/[^"]*)?)"`, 'g');
-  return html.replace(re, (_, a, h) => `${a}="${langPath(h, 'ja')}"`);
+  // 英語ページへのリンク（hreflang="en"）は、英語の URL のまま（/ja/ を付けると、日本語ページ自身に戻ってしまう）
+  const keep = html.replace(/<a\b[^>]*\bhreflang="en"[^>]*>/g, (m) => m.replace(/\bhref="/, 'href\u0000="'));
+  return keep.replace(re, (_, a, h) => `${a}="${langPath(h, 'ja')}"`).replace(/href\u0000="/g, 'href="');
 }
 
 // ---- 地名・種類 ----
