@@ -683,7 +683,7 @@
       "address": "2-1-2 Katsushima, Shinagawa-ku, Tokyo",
       "access": "2 minutes on foot from Oi Keibajo-mae Station (Tokyo Monorail) and 12 minutes on foot from Tachiaigawa Station (Keikyu Line). 1 minute on foot from the Oi Keibajo Ekimae stop on the Keikyu Bus route Mori 22 from the east exit of Omori Station.",
       "apply": "Book through the organizer's website (trx.jp) and the ticketing site Peatix (a Peatix account is required; phone bookings are not accepted). The stall fee is paid at the on-site reception on the day, except at venues that require advance payment.",
-      "time": "8:45–14:15 (until 12:00 on Nov 1 and until 13:30 on Nov 23 and 29. Hours change during Oct 31, 2026 – Jan 10, 2027 because of the Tokyo Mega Illumination; as listed on the organizer’s event pages)",
+      "time": "8:45–14:15 (until 12:00 on Nov 1 and until 13:30 on Nov 23 and 29. Hours change during Oct 31, 2026 – Jan 10, 2027 because of the Tokyo Mega Illumination; as listed on the organizer’s event pages. For events from Jan 11, 2027, the event pages are not yet published, so TBC)",
       "admission": "Free",
       "notes": "About 700 stalls (as listed on the organizer’s event page)"
     },
@@ -2315,6 +2315,19 @@
       "venue": "Oimachi TRACKS",
       "rule": "Dates listed on the organizer’s schedule",
       "address": "2-1-3, 17, 21 and 2-2-9 Hiromachi, Shinagawa-ku, Tokyo"
+    },
+    "mottainai-flea-gotanda-toc": {
+      "name": "MOTTAINAI Flea Market (Gotanda TOC)",
+      "venue": "TOC Building, 13th floor Grand Hall",
+      "rule": "Tokyo Recycle's event schedule",
+      "address": "7-22-17 Nishi-Gotanda, Shinagawa-ku, Tokyo",
+      "access": "8 minutes on foot from Gotanda Station (JR, Tokyu Ikegami Line, Toei Asakusa Line), 5 minutes from Osaki-hirokoji Station (Tokyu Ikegami Line), or 6 minutes from Fudomae Station (Tokyu Meguro Line).",
+      "rain": "Held rain or shine (indoors)",
+      "apply": "Book a stall by applying for a ticket on this Peatix page (carry-in stalls, paid on the day; bookings open from 18:00 on 2026-11-30). First-row booths (prepaid) are booked on a separate page (online only).",
+      "time": "10:00–16:00 (as listed on the organizer’s event page)",
+      "admission": "Free",
+      "fee": "Carry-in stalls (paid on the day): ¥3,500 per booth (2.0 m × 2.0 m). First-row booths (prepaid): ¥4,000 per booth.",
+      "notes": "250 stalls (as listed on the organizer’s event page)"
     }
   },
   "organizers": {

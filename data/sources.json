@@ -876,7 +876,9 @@
       "trx-ike-sunpark-flea",
       "trx-funabashi-keibajo-flea",
       "trx-kitaku-minsho-matsuri-flea",
-      "trx-musamura-flea"
+      "trx-musamura-flea",
+      "mottainai-flea-nakano-central-park",
+      "mottainai-flea-gotanda-toc"
     ],
     "terms": {
       "ok": true,
@@ -5052,6 +5054,61 @@
       "ok": true,
       "checkedAt": "2026-11-01",
       "note": "ブラウザで描画して取得（本文が JavaScript で組み立てられるため）。robots.txt は /event/ を許可（Crawl-delay 1）。利用規約 第11条は会員に「提供情報の事前許可なき複製・転載・配布」を禁じる（自動取得そのものを禁じる文言は見つけられず）。ユーザー決定の方針（2026-10-31）に従い、事実の項目（日時・料金・出店数・雨天の扱い）だけ載せ、文章・画像は転載しない"
+    }
+  },
+  {
+    "url": "https://ikesunpark20270111.peatix.com/",
+    "series": [
+      "trx-ike-sunpark-flea"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-01",
+      "note": "ブラウザで描画して取得（本文が JavaScript で組み立てられるため）。robots.txt は /event/ を許可（Crawl-delay 1）。利用規約 第11条は会員に「提供情報の事前許可なき複製・転載・配布」を禁じる（自動取得そのものを禁じる文言は見つけられず）。ユーザー決定の方針（2026-10-31）に従い、事実の項目（日時・料金・出店数・雨天の扱い）だけ載せ、文章・画像は転載しない。主催者名は Peatix 上では「東京リサイクル運動市民の会」"
+    }
+  },
+  {
+    "url": "https://musamura20270111.peatix.com/",
+    "series": [
+      "trx-musamura-flea"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-01",
+      "note": "ブラウザで描画して取得（本文が JavaScript で組み立てられるため）。robots.txt は /event/ を許可（Crawl-delay 1）。利用規約 第11条は会員に「提供情報の事前許可なき複製・転載・配布」を禁じる（自動取得そのものを禁じる文言は見つけられず）。ユーザー決定の方針（2026-10-31）に従い、事実の項目（日時・料金・出店数・雨天の扱い）だけ載せ、文章・画像は転載しない。主催者名は Peatix 上では「東京リサイクル運動市民の会」"
+    }
+  },
+  {
+    "url": "https://nakano20270116.peatix.com/",
+    "series": [
+      "mottainai-flea-nakano-central-park"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-01",
+      "note": "ブラウザで描画して取得（本文が JavaScript で組み立てられるため）。robots.txt は /event/ を許可（Crawl-delay 1）。利用規約 第11条は会員に「提供情報の事前許可なき複製・転載・配布」を禁じる（自動取得そのものを禁じる文言は見つけられず）。ユーザー決定の方針（2026-10-31）に従い、事実の項目（日時・料金・出店数・雨天の扱い）だけ載せ、文章・画像は転載しない。主催者名は Peatix 上では「東京リサイクル運動市民の会」"
+    }
+  },
+  {
+    "url": "https://nakano20270117.peatix.com/",
+    "series": [
+      "mottainai-flea-nakano-central-park"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-01",
+      "note": "ブラウザで描画して取得（本文が JavaScript で組み立てられるため）。robots.txt は /event/ を許可（Crawl-delay 1）。利用規約 第11条は会員に「提供情報の事前許可なき複製・転載・配布」を禁じる（自動取得そのものを禁じる文言は見つけられず）。ユーザー決定の方針（2026-10-31）に従い、事実の項目（日時・料金・出店数・雨天の扱い）だけ載せ、文章・画像は転載しない。主催者名は Peatix 上では「東京リサイクル運動市民の会」"
+    }
+  },
+  {
+    "url": "https://toc20270103.peatix.com/",
+    "series": [
+      "mottainai-flea-gotanda-toc"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-01",
+      "note": "ブラウザで描画して取得（本文が JavaScript で組み立てられるため）。robots.txt は /event/ を許可（Crawl-delay 1）。利用規約 第11条は会員に「提供情報の事前許可なき複製・転載・配布」を禁じる（自動取得そのものを禁じる文言は見つけられず）。ユーザー決定の方針（2026-10-31）に従い、事実の項目（日時・料金・出店数・雨天の扱い）だけ載せ、文章・画像は転載しない。主催者名は Peatix 上では「東京リサイクル運動市民の会」"
     }
   }
 ]
