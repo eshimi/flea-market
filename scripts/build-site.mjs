@@ -18,6 +18,7 @@ import { MON_EN, S, T, WD_EN, WD_JA } from './lib/i18n.mjs';
 import { scaleMark, scaleText, scaleTier } from './lib/scale.mjs';
 import { mapData, mapPage } from './lib/map-view.mjs';
 import { prefMapHtml } from './lib/pref-map.mjs';
+import { PRIVACY } from './lib/privacy.mjs';
 import { attentionMark, attentionText, attentionTier } from './lib/attention.mjs';
 import { BLOG, FAQ, GUIDE } from './lib/content.mjs';
 import { ART_CSS, blogBanner, docSections, faqSections, renderBlogIndex, renderDoc, renderPost } from './lib/article-view.mjs';
@@ -874,6 +875,11 @@ function columnPage(x, lang, base) {
   return pg(lang, `${base}${x.slug}/`, { title: c.title, description: c.lead, body: renderDoc({ title: c.title, lead: c.lead, secs: docSections(c.blocks, lang), lang }), css: ART_CSS });
 }
 
+function privacyPage(lang) {
+  const g = PRIVACY[lang];
+  return pg(lang, '/privacy/', { title: g.title, description: g.lead, body: renderDoc({ title: g.title, lead: g.lead, secs: docSections(g.blocks, lang), lang }), css: ART_CSS });
+}
+
 function tipsPage(lang) {
   const title = lang === 'ja' ? 'TIPS：楽しく体験するためのコツ' : 'Tips for enjoying flea markets';
   return pg(lang, '/tips/', { title, description: lang === 'ja' ? '日本のフリーマーケット・骨董市で、気持ちよく過ごすためのコツ。' : 'Columns on how to enjoy a Japanese flea market or antique fair in a pleasant way.', bannerText: tipsBanner(lang), body: `<div class="in page">${tipsIndex(TIPS, lang)}</div>`, css: ART_CSS });
@@ -1136,7 +1142,7 @@ export function buildPages({ series, occurrences, credits = [], translations = {
   ALL_POSTS = [...BLOG.map((b) => cleanLinks(resolvePost(b, ctx), ids)), ...autoPosts.map((a) => cleanLinks(a, ids))];
   ctx.latestPosts = posts().slice(0, 3);
   // 英語が既定（/）。日本語は /ja/
-  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), weekendPage(ctx, lang, 'next'), ...weekendPrefPages(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), mapPageFor(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.filter((s) => !endedIds.has(s.id)).map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), savedPage(lang), aboutPage(ctx, lang), guidePage(lang), tipsPage(lang), ...TIPS.map((x) => columnPage(x, lang, '/tips/')), contactPage(lang), pressPage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
+  const pages = LANGS_ORDER.flatMap((lang) => [home(ctx, lang), weekendPage(ctx, lang), weekendPage(ctx, lang, 'next'), ...weekendPrefPages(ctx, lang), calendarPage(ctx, lang), ...datePages(ctx, lang), mapPageFor(ctx, lang), ...areaPages(ctx, lang), ...kindPages(ctx, lang), ...series.filter((s) => !endedIds.has(s.id)).map((s) => seriesPage(s, ctx, lang)), ...(spots.length ? [spotIndex(ctx, lang), ...spots.map((sp) => spotPage(sp, ctx, lang))] : []), shutenPage(ctx, lang), searchPage(lang), savedPage(lang), aboutPage(ctx, lang), guidePage(lang), tipsPage(lang), ...TIPS.map((x) => columnPage(x, lang, '/tips/')), contactPage(lang), privacyPage(lang), pressPage(lang), faqPage(lang), blogIndex(lang), ...ALL_POSTS.map((b) => blogPost(b, lang)), notFound(lang)].map((pg_) => withSide(pg_, ctx, lang)));
   // ページではないファイル（RSS）
   const files = LANGS_ORDER.map((lang) => ({ path: langPath('/blog/feed.xml', lang), content: feedXml(lang) }));
   files.push({ path: '/map-data.json', content: JSON.stringify(MAP_DATA.items) });
