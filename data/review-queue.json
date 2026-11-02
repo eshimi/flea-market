@@ -2203,9 +2203,9 @@
   "id": "city-b488ba",
   "url": "https://www.city.kashiwara.lg.jp/docs/2026072100040",
   "name": "柏原市（柏原市民総合フェスティバル実行委員会",
-  "detectedAt": "2026-10-27",
+  "detectedAt": "2026-11-03",
   "reason": "new",
-  "hash": "58b5416c56bb318c",
+  "hash": "e3b30147845bd9e9",
   "status": "pending"
  },
  {
@@ -3499,9 +3499,9 @@
   "id": "city-e6868f",
   "url": "https://www.city.adachi.tokyo.jp/kyoso/ku/kuse/guruguru-kiosk080424.html",
   "name": "足立区（足立区 あだち未来創造室 SDGs・協創推進課 コミュニティ創出担当",
-  "detectedAt": "2026-10-27",
+  "detectedAt": "2026-11-03",
   "reason": "changed",
-  "hash": "5c0441066d886583",
+  "hash": "8c1b2e5d1b713bdb",
   "status": "pending"
  },
  {
@@ -3547,18 +3547,18 @@
   "id": "city-42c339",
   "url": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html",
   "name": "大阪市東淀川区（大阪市（担当の環境事業センター・環境局家庭ごみ減量課",
-  "detectedAt": "2026-10-27",
+  "detectedAt": "2026-11-03",
   "reason": "changed",
-  "hash": "bdd3dad38a0d61db",
+  "hash": "fa48c212d8fa3d16",
   "status": "pending"
  },
  {
   "id": "city-81f0bf",
   "url": "https://www.city.hirakata.osaka.jp/0000054150.html",
   "name": "枚方市（枚方市 環境部 循環型社会推進課",
-  "detectedAt": "2026-10-27",
+  "detectedAt": "2026-11-03",
   "reason": "changed",
-  "hash": "10e41233b81fdaa6",
+  "hash": "7059b53978f13154",
   "status": "pending"
  },
  {
@@ -3998,5 +3998,257 @@
   "hash": "67b366497c5e33d4",
   "status": "done",
   "processedAt": "2026-11-02"
+ },
+ {
+  "id": "recycler-jp",
+  "url": "https://www2.recycler.jp/",
+  "name": "リサイクル運動市民の会（フリーマーケット情報）",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "8386cb64de868e72",
+  "status": "pending"
+ },
+ {
+  "id": "city-0cd911",
+  "url": "https://www.city.setagaya.lg.jp/02072/10108.html",
+  "name": "世田谷区（世田谷区 世田谷総合支所 地域振興課",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "458180e99df839f8",
+  "status": "pending"
+ },
+ {
+  "id": "recycler-jp-schedule",
+  "url": "https://www2.recycler.jp/sm/index.php",
+  "name": "リサイクル運動市民の会（開催スケジュール）",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "68c4eee4a4531763",
+  "status": "pending"
+ },
+ {
+  "id": "city-a3e2fa",
+  "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html",
+  "name": "墨田区（リサイクル運動市民の会（墨田区の開催日程ページより",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "7f35abed80fc823b",
+  "status": "pending"
+ },
+ {
+  "id": "city-1630e9",
+  "url": "https://www.city.sumida.lg.jp/sisetu_info/kouen/kunai_park_annai/sumida_park/park14.html",
+  "name": "www.city.sumida.lg.jp",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "b0582b20f358e543",
+  "status": "pending"
+ },
+ {
+  "id": "city-ec5f68",
+  "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/event/tamakoufea.html",
+  "name": "大田区（大田区",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "65c6cb17fb4aa45d",
+  "status": "pending"
+ },
+ {
+  "id": "city-ab4a07",
+  "url": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html",
+  "name": "台東区（主催団体は開催日ごとに異なります（台東区の一覧を参照",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "0fd1f1c5921c239e",
+  "status": "pending"
+ },
+ {
+  "id": "city-67004d",
+  "url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/annai/omatsuri/chikusai/20260616103208700.html",
+  "name": "練馬区（練馬区の地区祭日程に掲載（主催者名は公式ページになし",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "804868e3f196240a",
+  "status": "pending"
+ },
+ {
+  "id": "city-4a0464",
+  "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/shigen/fleamarket.html",
+  "name": "荒川区（荒川区",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "a3593b486fd791fc",
+  "status": "pending"
+ },
+ {
+  "id": "city-063bf8",
+  "url": "https://www.city.taito.lg.jp/kenchiku/hanamidori/koen/riyo.html",
+  "name": "www.city.taito.lg.jp",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "eacc99487d906b99",
+  "status": "pending"
+ },
+ {
+  "id": "city-a18059",
+  "url": "https://www.city.akishima.lg.jp/kurashi/gomi/1008272/1001598.html",
+  "name": "昭島市（昭島市 環境部 ごみ対策課",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "d6361fa8f186195f",
+  "status": "pending"
+ },
+ {
+  "id": "city-d59b68",
+  "url": "https://www.city.fuchu.tokyo.jp/gyosei/johokokai/koho/kohoshi/koho/reiwa8nenhakkou/r081001.html",
+  "name": "府中市（車返地域のリサイクルを考える会",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "f5c262488dd339c9",
+  "status": "pending"
+ },
+ {
+  "id": "sunshinecity-51057c",
+  "url": "https://sunshinecity.jp/event/entry-39014.html",
+  "name": "豊島区（オタカラ・ネット",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "f10663e24d7c87ce",
+  "status": "pending"
+ },
+ {
+  "id": "sunshinecity-b5086b",
+  "url": "https://sunshinecity.jp/information/access_train.html",
+  "name": "sunshinecity.jp",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "408fdaf9dc7f5405",
+  "status": "pending"
+ },
+ {
+  "id": "city-8e2612",
+  "url": "https://www.city.himeji.lg.jp/kanko/0000034474.html",
+  "name": "姫路市（姫路市",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "e01a8ef537652a27",
+  "status": "pending"
+ },
+ {
+  "id": "city-0443eb",
+  "url": "https://www.city.tatsuno.lg.jp/soshiki/1023/gyomu/1/11147.html",
+  "name": "たつの市（たつの市（観光振興課・たつの市民まつり運営委員会",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "702dd667883dbe98",
+  "status": "pending"
+ },
+ {
+  "id": "pref-67fc34",
+  "url": "https://www.pref.shiga.lg.jp/gomizero/other/334917.html",
+  "name": "守山市（2525フリマ滋賀（ニコニコフリマ滋賀",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "a8bea2c14377d8a6",
+  "status": "pending"
+ },
+ {
+  "id": "city-760c3a",
+  "url": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html",
+  "name": "北九州市小倉北区（MES（門司港イベントサプライ",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "f881a9636fca9450",
+  "status": "pending"
+ },
+ {
+  "id": "aichinow-ab6826",
+  "url": "https://aichinow.pref.aichi.jp/spots/detail/914/",
+  "name": "あま市（鳳凰山甚目寺",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "aecc72d1e257fcb0",
+  "status": "pending"
+ },
+ {
+  "id": "city-fa5b3c",
+  "url": "https://www.city.wakayama.wakayama.jp/kankou/event/1003232/1049848.html",
+  "name": "和歌山市（北ぶらくり丁商店街振興組合（和歌山市の案内ページ",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "2ce99cb2b3bc3873",
+  "status": "pending"
+ },
+ {
+  "id": "city-62ccf1",
+  "url": "https://www.city.fukuoka.lg.jp/fukushi/k_sensin/charm/100fes_2026.html",
+  "name": "福岡市中央区（福岡市",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "5dfeceb9be002ea5",
+  "status": "pending"
+ },
+ {
+  "id": "city-fb032b",
+  "url": "https://www.city.yokohama.lg.jp/hodogaya/kurashi/kyodo_manabi/kyodo_shien/chiiki/r8-ho-matsuri.html",
+  "name": "横浜市保土ケ谷区（横浜市保土ケ谷区",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "73ebbdc6d94160e0",
+  "status": "pending"
+ },
+ {
+  "id": "city-1cea9c",
+  "url": "https://www.city.saga.lg.jp/kurashi/seikatsukankyo/1/4/117.html",
+  "name": "佐賀市（佐賀市エコプラザ",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "3e4cc2377a0de61d",
+  "status": "pending"
+ },
+ {
+  "id": "town-2c25d3",
+  "url": "https://www.town.fujikawa.yamanashi.jp/kanko/docs_kanko/2023090700245/",
+  "name": "富士川町（富士川町観光物産協会",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "017513340220026b",
+  "status": "pending"
+ },
+ {
+  "id": "city-9f64c6",
+  "url": "https://www.city.oita.oita.jp/o141/kurashi/gomi/ki.html",
+  "name": "大分市（大分エコライフプラザ（大分市",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "2c7ccf181f6d2798",
+  "status": "pending"
+ },
+ {
+  "id": "lohasfesta-tokyo-1",
+  "url": "https://lohasfesta.jp/tokyo/",
+  "name": "ロハスフェスタ東京（公式）",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "9bd2f89ab9db5355",
+  "status": "pending"
+ },
+ {
+  "id": "miyakosai-1",
+  "url": "http://www.miyakomatsuri.com/furima.php",
+  "name": "みやこ祭（東京都立大学・公式）フリーマーケット",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "bf8569e2efc57b15",
+  "status": "pending"
+ },
+ {
+  "id": "umitakasai-1",
+  "url": "https://umitakasai-kaiyo.net/",
+  "name": "海鷹祭（東京海洋大学・公式）",
+  "detectedAt": "2026-11-03",
+  "reason": "changed",
+  "hash": "71cc53873f9c9439",
+  "status": "pending"
  }
 ]
