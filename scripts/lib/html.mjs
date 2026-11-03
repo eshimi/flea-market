@@ -31,7 +31,7 @@ export function langSwitch(path, lang) {
 
 // スマホの下部タブバー（今週末・地域・マップ・検索・マイリスト）。PC では CSS で隠す
 export function tabBar(path, lang = 'en') {
-  const L = NAV_LABELS[lang];
+  const L = { ...T[lang].nav, ...NAV_LABELS[lang] };
   const tabs = [['/', 'home', 'tabHome'], ['/weekend/', 'calendar', 'weekend'], ['/area/', 'grid', 'area'], ['/map/', 'pin', 'mapShort'], ['/search/', 'search', 'tabSearch'], ['/saved/', 'heart', 'saved']];
   const here = (h) => (h === '/' ? path === '/' : path === h || path.startsWith(h));
   return `<nav class="tabbar" aria-label="${esc(lang === 'ja' ? 'メインメニュー' : 'Main menu')}">${tabs.map(([h, ic, k]) => `<a href="${langPath(h, lang)}"${here(h) ? ' aria-current="page"' : ''}>${icon(ic, 22)}<span>${esc(L[k])}</span></a>`).join('')}</nav>`;
