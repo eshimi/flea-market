@@ -737,7 +737,6 @@ function seriesPage(s, ctx, lang) {
 <div class="tags">${kindTags(s.kinds, lang)}<span class="tag chk">${lang === 'ja' ? '最終確認：' : 'Last checked: '}${esc(lastChecked(s))}</span></div></div></div>
 ${evActions(s, lang)}
 ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
-${evPhoto(s, ctx, lang)}
 </div>
 <div class="ev-info">
 ${nextCard}
@@ -757,7 +756,7 @@ ${row(s.organizer.label ? (lang === 'en' ? labelEn(s.organizer.label) || p.orgLa
 </dl>
 </div>
 </div>
-<div class="ev-rcol"><aside class="ev-map-card" aria-label="${esc(p.secMap)}"><div class="ev-map-in">${mapBlock}
+<div class="ev-rcol">${evPhoto(s, ctx, lang)}<aside class="ev-map-card" aria-label="${esc(p.secMap)}"><div class="ev-map-in">${mapBlock}
 <p class="ev-cta">${officialUrl ? `<a class="btn-acc" href="${esc(officialUrl)}" rel="noopener">${lang === 'ja' ? '公式サイト' : 'Official site'} →</a>` : ''}<a class="btn-line" href="${langPath(`/e/${s.id}/`, lang === 'ja' ? 'en' : 'ja')}" hreflang="${lang === 'ja' ? 'en' : 'ja'}">${lang === 'ja' ? 'English page' : '日本語ページを開く'} →</a></p></div></aside>
 ${wxBox}</div>
 <div class="ev-main">
