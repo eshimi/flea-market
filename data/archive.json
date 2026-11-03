@@ -1,6 +1,125 @@
 {
- "lastDate": "2026-11-02",
+ "lastDate": "2026-11-03",
  "items": [
+  {
+   "series": "bia-sevenpark",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-02",
+   "source": "https://b-i-a.jp/reserve/sevenpark/"
+  },
+  {
+   "series": "fmpn-kawagoe-suijo-park",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-04",
+   "source": "https://recycle-man.or.jp/"
+  },
+  {
+   "series": "fukuoka-100fes",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-03",
+   "source": "https://www.city.fukuoka.lg.jp/fukushi/k_sensin/charm/100fes_2026.html"
+  },
+  {
+   "series": "furimatairiku-karako-kagi",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-03",
+   "source": "http://furimatairiku.jp/Taharamoto/index.html"
+  },
+  {
+   "series": "himeji-tegarayama-rakuichi-rakuza",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-03",
+   "source": "https://www.city.himeji.lg.jp/kanko/0000034474.html"
+  },
+  {
+   "series": "jfma-nishikita-flea",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-04",
+   "source": "http://freemarket-go.com/shousai_hyogo_003.html"
+  },
+  {
+   "series": "kitayama-craft-garden",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-04",
+   "source": "https://kamigamo-tedukuriichi.com/publics/index/145/"
+  },
+  {
+   "series": "miyakonojo-yamanokuchi-yagorodon-flea",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-03",
+   "source": "https://www.city.miyakonojo.miyazaki.jp/site/kanko/2764.html"
+  },
+  {
+   "series": "mottainai-flea-nakano-central-park",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-03",
+   "source": "https://trx.jp/schejule"
+  },
+  {
+   "series": "rbf-mem-kashiwa-apie",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-03",
+   "source": "https://www.rbf.jp/apie.html"
+  },
+  {
+   "series": "recyclefmd-sapporo-plaza-flea",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-03",
+   "source": "https://www.recyclefmd.gr.jp/"
+  },
+  {
+   "series": "setagaya-funabashi-fureai-matsuri-flea-2026",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-03",
+   "source": "https://www.city.setagaya.lg.jp/01028/36021.html"
+  },
+  {
+   "series": "sunshine-city-big-furima",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-03",
+   "source": "https://sunshinecity.jp/event/entry-39014.html"
+  },
+  {
+   "series": "tatsuno-shimin-matsuri-flea",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-03",
+   "source": "https://www.city.tatsuno.lg.jp/soshiki/1023/gyomu/1/11147.html"
+  },
+  {
+   "series": "tmu-miyakosai-furima-2026",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-03",
+   "source": "http://www.miyakomatsuri.com/furima.php"
+  },
+  {
+   "series": "tokugawaen-kuromon-tedukuri-2026",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-03",
+   "source": "https://www.nagoya-info.jp/event/detail/695/"
+  },
+  {
+   "series": "tokyo-nominoichi-2026-autumn",
+   "date": "2026-11-03",
+   "status": "confirmed",
+   "checkedAt": "2026-11-03",
+   "source": "https://tokyonominoichi.com/2026_autumn/outline/"
+  },
   {
    "series": "tmu-miyakosai-furima-2026",
    "date": "2026-11-02",
