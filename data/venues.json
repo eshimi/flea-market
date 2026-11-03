@@ -1756,5 +1756,43 @@
     ]
    }
   ]
+ },
+ {
+  "id": "asukayama-park",
+  "name": "飛鳥山公園",
+  "kind": "park",
+  "area": {
+   "pref": "13",
+   "city": "北区",
+   "cityCode": "13117"
+  },
+  "place": "園内の歩道",
+  "address": "北区王子1丁目1−3",
+  "access": "JR京浜東北線「王子駅」（中央口か南口）から徒歩すぐ。東京メトロ南北線「王子駅」（1番出口）から徒歩3分、「西ヶ原駅」（2番出口）から徒歩4分。東京さくらトラム（都電荒川線）「飛鳥山」「王子駅前」から徒歩すぐ（主催者の開催ページの記載）。",
+  "sources": [
+   {
+    "url": "https://kitaku20261101.peatix.com/",
+    "type": "official",
+    "checkedAt": "2026-11-03",
+    "evidence": [
+     "飛鳥山公園",
+     "北区王子1丁目1-3",
+     "飛鳥山公園内の歩道にて",
+     "JR京浜東北線「王子駅」（中央口か南口）から徒歩すぐ",
+     "東京メトロ南北線「王子駅」（1番出口）から徒歩3分"
+    ]
+   }
+  ],
+  "image": {
+   "file": "asukayama-park.webp",
+   "title": "飛鳥山公園のフリーマーケット",
+   "author": "Flea Market JP 運営（サイト運営者の撮影）",
+   "license": "© Flea Market JP（無断転載禁止）",
+   "sourceUrl": "https://streetbazaars.jp/",
+   "own": true,
+   "altJa": "飛鳥山公園の園内の歩道に出店が並ぶフリーマーケット。木立の下を、買い物客が歩いている。",
+   "altEn": "A flea market along a path in Asukayama Park. Shoppers walk under the trees past the stalls.",
+   "note": "サイト運営者が 2026-11-01 に撮影した写真から、3:2に切り出し、顔が識別できる人にぼかしを入れて、800x533 の webp に変換"
+  }
  }
 ]

@@ -712,12 +712,13 @@
     },
     "trx-kitaku-minsho-matsuri-flea": {
       "name": "Kita Ward Commerce Festival (listed in the Tokyo Recycle event schedule)",
-      "venue": "Kita Ward Commerce Festival",
+      "venue": "Asukayama Park (on the park’s footpaths)",
       "rain": "Cancelled in rain. Whether it is held is, in principle, decided on the day (decided by 7:30 a.m. and announced on the top page of the official site)",
       "apply": "Book through the organizer's website (trx.jp) and the ticketing site Peatix (a Peatix account is required; phone bookings are not accepted). The stall fee is paid at the on-site reception on the day, except at venues that require advance payment.",
       "time": "10:00–15:00 (as listed on the organizer’s event page)",
       "admission": "Free",
-      "notes": "50 stalls (as listed on the organizer’s event page)"
+      "notes": "50 stalls (as listed on the organizer’s event page)",
+      "address": "1-1-3 Oji, Kita-ku, Tokyo"
     },
     "trx-musamura-flea": {
       "name": "Musamura Flea Market (Tokyo Recycle)",
@@ -2995,6 +2996,12 @@
       "address": "〒551-0023 2-24-55 Tsurumachi, Taisho Ward, Osaka City, Osaka Prefecture",
       "access": "IKEA shuttle bus (between IKEA Tsuruhama and Ohashi-bashi). Free parking, 2100 spaces (within business hours only)",
       "summary": "An IKEA store. The store-event section of the official site lists \"Loppis (flea market)\"."
+    },
+    "asukayama-park": {
+      "name": "Asukayama Park",
+      "place": "Footpaths in the park",
+      "address": "1-1-3 Oji, Kita-ku, Tokyo",
+      "access": "A short walk from Oji Station (JR Keihin-Tohoku Line; Central or South Exit). 3 minutes on foot from Oji Station (Tokyo Metro Namboku Line; Exit 1), 4 minutes from Nishigahara Station (Exit 2). Short walk from the Tokyo Sakura Tram (Toden Arakawa Line) stops “Asukayama” and “Oji-ekimae” (as listed on the organizer’s event page)."
     }
   }
 }
