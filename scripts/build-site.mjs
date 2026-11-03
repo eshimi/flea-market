@@ -659,7 +659,7 @@ function evPhoto(s, ctx, lang) {
   const cap = im.own
     ? `${lang === 'ja' ? '写真' : 'Photo'}: ${esc(im.author)} / ${esc(im.license)}${editNote(im, lang)}`
     : `${lang === 'ja' ? '写真' : 'Photo'}: ${esc(im.author)} / <a href="${esc(im.licenseUrl || im.sourceUrl)}" rel="noopener nofollow">${esc(im.license)}</a> / <a href="${esc(im.sourceUrl)}" rel="noopener nofollow">Wikimedia Commons</a>`;
-  return `<figure class="bl-photo ev-photo"><img src="/img/spots/${esc(im.file)}" alt="${esc(lang === 'ja' ? im.altJa : im.altEn)}" width="800" height="533" loading="lazy" decoding="async"><figcaption>${cap}</figcaption></figure>`;
+  return `<figure class="bl-photo ev-spotphoto"><img src="/img/spots/${esc(im.file)}" alt="${esc(lang === 'ja' ? im.altJa : im.altEn)}" width="800" height="533" loading="lazy" decoding="async"><figcaption>${cap}</figcaption></figure>`;
 }
 
 function pastDatesBlock(list, lang) {
