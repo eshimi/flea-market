@@ -1,3 +1,4 @@
+import { editNote } from './lib/photo-note.mjs';
 // data/ から、dist/ に静的サイトを作る（毎日、日本時間の今日を基準に作り直す）。
 // 使い方: node scripts/build-site.mjs [--today=YYYY-MM-DD] [--out=dist]
 import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
@@ -656,7 +657,7 @@ function evPhoto(s, ctx, lang) {
   const im = v?.image;
   if (!im) return '';
   const cap = im.own
-    ? `${lang === 'ja' ? '写真' : 'Photo'}: ${esc(im.author)} / ${esc(im.license)}`
+    ? `${lang === 'ja' ? '写真' : 'Photo'}: ${esc(im.author)} / ${esc(im.license)}${editNote(im, lang)}`
     : `${lang === 'ja' ? '写真' : 'Photo'}: ${esc(im.author)} / <a href="${esc(im.licenseUrl || im.sourceUrl)}" rel="noopener nofollow">${esc(im.license)}</a> / <a href="${esc(im.sourceUrl)}" rel="noopener nofollow">Wikimedia Commons</a>`;
   return `<figure class="bl-photo ev-photo"><img src="/img/spots/${esc(im.file)}" alt="${esc(lang === 'ja' ? im.altJa : im.altEn)}" width="800" height="533" loading="lazy" decoding="async"><figcaption>${cap}</figcaption></figure>`;
 }
@@ -824,7 +825,7 @@ function aboutPage(ctx, lang) {
   const cr = (c) => (lang === 'ja' ? c : { ...c, ...c.en });
   const venuePhotos = (ctx.spots || []).filter((sp) => sp.venue.image).map((sp) => sp.venue);
   const photoCredits = venuePhotos.length ? `<h2>${lang === 'ja' ? 'スポットの写真の出典' : 'Spot photo credits'}</h2>
-<ul>${venuePhotos.map((v) => `<li>${esc(lang === 'ja' ? v.name : spotL(v, 'name', 'en'))}：「${esc(v.image.title || v.image.file)}」${esc(v.image.author)}（${v.image.own ? '' : `<a href="${esc(v.image.sourceUrl)}" rel="noopener">Wikimedia Commons</a>。`}${esc(v.image.license)}${lang === 'ja' ? (v.image.own ? '。トリミング・縮小。人の顔にぼかしを入れています' : '。トリミング・縮小') : (v.image.own ? '. Cropped and resized; faces blurred' : '. Cropped and resized')}）</li>`).join('')}</ul>` : '';
+<ul>${venuePhotos.map((v) => `<li>${esc(lang === 'ja' ? v.name : spotL(v, 'name', 'en'))}：「${esc(v.image.title || v.image.file)}」${esc(v.image.author)}（${v.image.own ? '' : `<a href="${esc(v.image.sourceUrl)}" rel="noopener">Wikimedia Commons</a>。`}${esc(v.image.license)}${v.image.own ? (v.image.edit?.[lang] ? (lang === 'ja' ? '。' : '. ') + esc(v.image.edit[lang]) : '') : (lang === 'ja' ? '。トリミング・縮小' : '. Cropped and resized')}）</li>`).join('')}</ul>` : '';
   const credits = photoCredits + (ctx.credits?.length ? `<h2>${lang === 'ja' ? '画像の出典' : 'Image credits'}</h2>
 <ul>${ctx.credits.map(cr).map((c) => (lang === 'ja' ? `<li>${esc(c.use)}：「${esc(c.title)}」${esc(c.photographer)}（<a href="${esc(c.sourceUrl)}" rel="noopener">${esc(c.source)}</a>。${esc(c.license)}）</li>` : `<li>${esc(c.use)}: “${esc(c.title)}” — ${esc(c.photographer)} (<a href="${esc(c.sourceUrl)}" rel="noopener">${esc(c.source)}</a>; ${esc(c.license)})</li>`)).join('')}</ul>` : '');
   const ja = `<h1>掲載のきまり・出典</h1>

@@ -135,7 +135,7 @@
    "author": "Flea Market JP 運営（サイト運営者の撮影）",
    "license": "© Flea Market JP（無断転載禁止）",
    "sourceUrl": "https://streetbazaars.jp/",
-   "own": true,
+   "own": true, "edit": {"ja": "トリミング・縮小。人の顔にぼかしを入れています", "en": "cropped and resized; faces blurred"},
    "altJa": "サンシャインシティの建物の前で開かれているフリーマーケット。広場に敷物を広げた出店と、買い物客でにぎわっている。",
    "altEn": "A flea market in front of the Sunshine City building. Vendors have spread out mats on the plaza and shoppers fill the area.",
    "note": "サイト運営者が撮影した写真から、3:2に切り出し、顔が識別できる人にぼかしを入れて、800x533 の webp に変換"
@@ -1264,7 +1264,7 @@
    "author": "Flea Market JP 運営（サイト運営者の撮影）",
    "license": "© Flea Market JP（無断転載禁止）",
    "sourceUrl": "https://streetbazaars.jp/",
-   "own": true,
+   "own": true, "edit": {"ja": "縮小のみ", "en": "resized only"},
    "altJa": "中野セントラルパークの芝生広場と、大きなガラス張りのオフィスビル。",
    "altEn": "The lawn of Nakano Central Park and the large glass-fronted office buildings around it.",
    "note": "サイト運営者が撮影した写真（678x452）を、そのまま webp に変換（切り出しなし）"
@@ -1789,7 +1789,7 @@
    "author": "Flea Market JP 運営（サイト運営者の撮影）",
    "license": "© Flea Market JP（無断転載禁止）",
    "sourceUrl": "https://streetbazaars.jp/",
-   "own": true,
+   "own": true, "edit": {"ja": "トリミング・縮小。人の顔にぼかしを入れています", "en": "cropped and resized; faces blurred"},
    "altJa": "飛鳥山公園の園内の歩道に出店が並ぶフリーマーケット。木立の下を、買い物客が歩いている。",
    "altEn": "A flea market along a path in Asukayama Park. Shoppers walk under the trees past the stalls.",
    "note": "サイト運営者が 2026-11-01 に撮影した写真から、3:2に切り出し、顔が識別できる人にぼかしを入れて、800x533 の webp に変換"
