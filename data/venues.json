@@ -1260,14 +1260,14 @@
   ],
   "image": {
    "file": "nakano-central-park.webp",
-   "title": "Nakano Central Park East.jpg",
-   "author": "掬茶",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakano_Central_Park_East.jpg",
-   "altJa": "中野セントラルパークのイースト棟と、前に広がる芝生と歩道。",
-   "altEn": "The East Building of Nakano Central Park with its lawn and walkway.",
-   "note": "4:3を3:2に切り出し。遠景に車いすの2人が小さく写る（識別できない）"
+   "title": "中野セントラルパーク",
+   "author": "Flea Market JP 運営（サイト運営者の撮影）",
+   "license": "© Flea Market JP（無断転載禁止）",
+   "sourceUrl": "https://streetbazaars.jp/",
+   "own": true,
+   "altJa": "中野セントラルパークの芝生広場と、大きなガラス張りのオフィスビル。",
+   "altEn": "The lawn of Nakano Central Park and the large glass-fronted office buildings around it.",
+   "note": "サイト運営者が撮影した写真（678x452）を、そのまま webp に変換（切り出しなし）"
   },
   "address": "東京都中野区中野4-10-2",
   "addressFrom": "search",
