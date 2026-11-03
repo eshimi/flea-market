@@ -27,7 +27,7 @@
   }
  },
  "https://www.takahatafudoson.or.jp/?page_id=9": {
-  "fetchedAt": "2026-11-02",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -38,7 +38,7 @@
   }
  },
  "https://www.takahatafudoson.or.jp/": {
-  "fetchedAt": "2026-11-02",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -49,7 +49,7 @@
   }
  },
  "https://tokyonominoichi.com/2026_autumn/outline/": {
-  "fetchedAt": "2026-11-02",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -83,7 +83,7 @@
   }
  },
  "https://tokyonominoichi.com/": {
-  "fetchedAt": "2026-11-02",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1788,7 +1788,7 @@
   }
  },
  "https://tokyo-eastpark.com/parksearch/ohjima": {
-  "fetchedAt": "2026-11-02",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1910,7 +1910,7 @@
   }
  },
  "https://b-i-a.jp/reserve/osaka-bay-tower/": {
-  "fetchedAt": "2026-10-27",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1919,12 +1919,16 @@
   }
  },
  "https://b-i-a.jp/reserve/sevenpark/": {
-  "fetchedAt": "2026-11-02",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
-  "mismatch": {},
+  "mismatch": {
+   "bia-sevenpark": [
+    "2026/11/3（火祝）"
+   ]
+  },
   "evidenceOk": {
-   "bia-sevenpark": true
+   "bia-sevenpark": false
   }
  },
  "https://b-i-a.jp/reserve/icora/": {
@@ -1941,7 +1945,7 @@
   }
  },
  "https://b-i-a.jp/reserve/iwashikincyaku/": {
-  "fetchedAt": "2026-10-27",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1950,7 +1954,7 @@
   }
  },
  "https://b-i-a.jp/reserve/izumiyayao/": {
-  "fetchedAt": "2026-11-02",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1959,7 +1963,7 @@
   }
  },
  "https://b-i-a.jp/reserve/tsurumiryokuchi/": {
-  "fetchedAt": "2026-10-27",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1982,7 +1986,7 @@
   }
  },
  "https://b-i-a.jp/reserve/hirakiiwaoka/": {
-  "fetchedAt": "2026-11-02",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1991,7 +1995,7 @@
   }
  },
  "https://b-i-a.jp/reserve/izumiyanishikobe/": {
-  "fetchedAt": "2026-10-27",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2425,7 +2429,7 @@
   }
  },
  "https://lohas-park.jp/event/kiji5935/": {
-  "fetchedAt": "2026-11-02",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2434,7 +2438,7 @@
   }
  },
  "https://lohas-park.jp/event/kiji5937/": {
-  "fetchedAt": "2026-10-27",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2443,7 +2447,7 @@
   }
  },
  "https://lohas-park.jp/event/kiji5944/": {
-  "fetchedAt": "2026-10-27",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2452,7 +2456,7 @@
   }
  },
  "https://lohas-park.jp/event/kiji5467/": {
-  "fetchedAt": "2026-10-27",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2479,7 +2483,7 @@
   }
  },
  "https://lohas-park.jp/event/kiji5594/": {
-  "fetchedAt": "2026-10-27",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2497,7 +2501,7 @@
   }
  },
  "https://lohas-park.jp/event/kiji6066/": {
-  "fetchedAt": "2026-10-27",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2506,16 +2510,16 @@
   }
  },
  "https://lohas-park.jp/event/kiji6160/": {
-  "fetchedAt": "2026-11-02",
-  "httpStatus": 200,
-  "failCount": 0,
+  "fetchedAt": "2026-11-03",
+  "httpStatus": 404,
+  "failCount": 1,
   "mismatch": {},
   "evidenceOk": {
    "lohas-park-fukinuke-marche-hyogo-eki": true
   }
  },
  "https://lohas-park.jp/event/kiji5931/": {
-  "fetchedAt": "2026-10-27",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2566,7 +2570,7 @@
   }
  },
  "https://kasugai-kanko.jp/recommendedspot/kachigawataikoubou/": {
-  "fetchedAt": "2026-10-27",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -3289,7 +3293,7 @@
   }
  },
  "https://www.tokugawaen.aichi.jp/transportation-guide/index.html": {
-  "fetchedAt": "2026-11-02",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -3454,7 +3458,7 @@
   }
  },
  "https://agritown.co.jp/": {
-  "fetchedAt": "2026-11-02",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -3918,7 +3922,7 @@
   }
  },
  "https://lohas-park.jp/faq/": {
-  "fetchedAt": "2026-11-02",
+  "fetchedAt": "2026-11-03",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
