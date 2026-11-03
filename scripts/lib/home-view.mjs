@@ -4,7 +4,7 @@ import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { esc } from './html.mjs';
-import { FACEBOOK_GROUP, FACEBOOK_PAGE } from './nav.mjs';
+import { FACEBOOK_GROUPS, FACEBOOK_PAGE } from './nav.mjs';
 
 const STATIC_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'static');
 import { fbLogo, icon } from './icons.mjs';
@@ -221,7 +221,7 @@ export function renderNews(ctx, lang = 'ja') {
 // Facebook ページへの小さな CTA（「このサイトについて」の下）
 export function renderFbCta(lang = 'en') {
   const t = S[lang].fb;
-  return `<section class="hm-sec hm-fbcta" aria-label="Facebook"><div class="hm-in"><div class="fbc"><a class="fbc-logo" href="${FACEBOOK_PAGE}" target="_blank" rel="noopener" aria-label="${esc(t.btn)}">${fbLogo(52)}</a><div class="fbc-text"><b>${esc(t.title)}</b><a class="fbc-group" href="${FACEBOOK_GROUP}" target="_blank" rel="noopener">${esc(S[lang].footer.fbJoin)} →</a></div><a class="fbc-btn" href="${FACEBOOK_PAGE}" target="_blank" rel="noopener">${esc(t.btn)}</a></div></div></section>`;
+  return `<section class="hm-sec hm-fbcta" aria-label="Facebook"><div class="hm-in"><div class="fbc"><a class="fbc-logo" href="${FACEBOOK_PAGE}" target="_blank" rel="noopener" aria-label="${esc(t.btn)}">${fbLogo(52)}</a><div class="fbc-text"><b>${esc(t.title)}</b><a class="fbc-group" href="${FACEBOOK_GROUPS[lang] || FACEBOOK_GROUPS.en}" target="_blank" rel="noopener">${esc(S[lang].footer.fbJoin)} →</a></div><a class="fbc-btn" href="${FACEBOOK_PAGE}" target="_blank" rel="noopener">${esc(t.btn)}</a></div></div></section>`;
 }
 
 export function renderVendorBanner(lang = 'en') {

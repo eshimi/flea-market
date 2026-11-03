@@ -1,7 +1,9 @@
 // ナビは、ここ1か所で定義する（補助金ネットと同じ考え方：探す → 出店する → 読む → サイトについて）
 // 公式の Facebook（ページ＝メインの導線、グループ＝コミュニティ）
 export const FACEBOOK_PAGE = 'https://www.facebook.com/profile.php?id=61595691571877';
-export const FACEBOOK_GROUP = 'https://www.facebook.com/groups/1726298765106058';
+// Facebook グループ：言語ごとに別のグループ（日本語版・英語版）
+export const FACEBOOK_GROUPS = { en: 'https://www.facebook.com/groups/1726298765106058', ja: 'https://www.facebook.com/groups/1912285776404999' };
+export const FACEBOOK_GROUP = FACEBOOK_GROUPS.en;
 
 export const SITE = {
   name: 'Flea Market JP',
