@@ -29,6 +29,14 @@ export function langSwitch(path, lang) {
   return `<div class="langsw" role="group" aria-label="${esc(T[lang].langLabel)}">${icon('globe', 18)}${a('en', 'EN', 'en')}<i aria-hidden="true">|</i>${a('ja', '日本語', 'ja')}</div>`;
 }
 
+// スマホの下部タブバー（今週末・地域・マップ・検索・マイリスト）。PC では CSS で隠す
+export function tabBar(path, lang = 'en') {
+  const L = NAV_LABELS[lang];
+  const tabs = [['/', 'home', 'tabHome'], ['/weekend/', 'calendar', 'weekend'], ['/area/', 'grid', 'area'], ['/map/', 'pin', 'mapShort'], ['/search/', 'search', 'tabSearch'], ['/saved/', 'heart', 'saved']];
+  const here = (h) => (h === '/' ? path === '/' : path === h || path.startsWith(h));
+  return `<nav class="tabbar" aria-label="${esc(lang === 'ja' ? 'メインメニュー' : 'Main menu')}">${tabs.map(([h, ic, k]) => `<a href="${langPath(h, lang)}"${here(h) ? ' aria-current="page"' : ''}>${icon(ic, 22)}<span>${esc(L[k])}</span></a>`).join('')}</nav>`;
+}
+
 export function siteHeader(path, lang = 'en') {
   const t = T[lang];
   const L = { ...t.nav, ...NAV_LABELS[lang] };
@@ -197,6 +205,7 @@ ${siteHeader(base, lang)}
 ${pageBanner(base, bannerText ? localize(bannerText, lang) : '', bannerArt)}${localize(body, lang)}
 </main>
 ${siteFooter(base, lang)}
+${tabBar(base, lang)}
 ${[...scripts, '/more.js'].map((s) => `<script src="${s}" defer></script>`).join('\n')}
 <script src="/saved.js" defer></script>
 </body>
