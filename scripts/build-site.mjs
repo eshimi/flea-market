@@ -650,6 +650,17 @@ function spotLink(s, ctx, lang) {
   return sp ? `<br><a href="/spot/${sp.venue.id}/">${esc(lang === 'ja' ? 'この会場のスポットページ' : 'Spot page for this venue')}</a>` : '';
 }
 
+// 紐づくスポット（venueId）に写真があれば、開催詳細にも同じ写真と出典を出す
+function evPhoto(s, ctx, lang) {
+  const v = s.venueId && ctx.spots.find((x) => x.venue.id === s.venueId)?.venue;
+  const im = v?.image;
+  if (!im) return '';
+  const cap = im.own
+    ? `${lang === 'ja' ? '写真' : 'Photo'}: ${esc(im.author)} / ${esc(im.license)}`
+    : `${lang === 'ja' ? '写真' : 'Photo'}: ${esc(im.author)} / <a href="${esc(im.licenseUrl || im.sourceUrl)}" rel="noopener nofollow">${esc(im.license)}</a> / <a href="${esc(im.sourceUrl)}" rel="noopener nofollow">Wikimedia Commons</a>`;
+  return `<figure class="bl-photo ev-photo"><img src="/img/spots/${esc(im.file)}" alt="${esc(lang === 'ja' ? im.altJa : im.altEn)}" width="800" height="533" loading="lazy" decoding="async"><figcaption>${cap}</figcaption></figure>`;
+}
+
 function pastDatesBlock(list, lang) {
   if (!list.length) return '';
   const p = P[lang].series;
@@ -725,6 +736,7 @@ function seriesPage(s, ctx, lang) {
 <div class="tags">${kindTags(s.kinds, lang)}<span class="tag chk">${lang === 'ja' ? '最終確認：' : 'Last checked: '}${esc(lastChecked(s))}</span></div></div></div>
 ${evActions(s, lang)}
 ${p.quoted ? `<p class="note">${esc(p.quoted)}</p>` : ''}
+${evPhoto(s, ctx, lang)}
 </div>
 <div class="ev-info">
 ${nextCard}
