@@ -10,7 +10,7 @@ export const STALE_DAYS = 14;
 export const WINDOW_DAYS = 120;
 
 export const OCC_STATUSES = ['confirmed', 'cancelled', 'postponed', 'unknown'];
-export const SOURCE_TYPES = ['organizer', 'municipality', 'opendata', 'submission'];
+export const SOURCE_TYPES = ['organizer', 'municipality', 'opendata', 'submission', 'organizer-sns'];
 
 const ID_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const HTTP_RE = /^https?:\/\/[^\s]+$/;
