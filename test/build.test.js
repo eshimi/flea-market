@@ -602,7 +602,7 @@ test('スポットの写真：作者・ライセンスの表示と、本体・�
   const real = loadData();
   for (const v of real.venues.filter((x) => x.image)) {
     for (const f of [v.image.file, v.image.file.replace(/\.webp$/, '-t.webp')]) assert.ok(existsSync(new URL(`../static/img/spots/${f}`, import.meta.url)), `${v.id}: ${f} がありません`);
-    assert.ok(['CC0', 'CC BY', 'CC BY-SA', 'Public domain', 'PD'].some((l) => v.image.license.startsWith(l)), `${v.id}: ライセンス ${v.image.license}`);
+    assert.ok(v.image.own === true || ['CC0', 'CC BY', 'CC BY-SA', 'Public domain', 'PD'].some((l) => v.image.license.startsWith(l)), `${v.id}: ライセンス ${v.image.license}`);
   }
   const { pages } = buildPages(real, '2026-10-19');
   const withImg = real.venues.find((v) => v.image);

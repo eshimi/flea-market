@@ -128,7 +128,18 @@
   ],
   "address": "東京都豊島区東池袋3-1",
   "addressFrom": "search",
-  "addressSeenAt": "https://co.sunshinecity.co.jp/about/outline.html"
+  "addressSeenAt": "https://co.sunshinecity.co.jp/about/outline.html",
+  "image": {
+   "file": "sunshine-city.webp",
+   "title": "サンシャインシティ前のフリーマーケット",
+   "author": "Flea Market JP 運営（サイト運営者の撮影）",
+   "license": "© Flea Market JP（無断転載禁止）",
+   "sourceUrl": "https://streetbazaars.jp/",
+   "own": true,
+   "altJa": "サンシャインシティの建物の前で開かれているフリーマーケット。広場に敷物を広げた出店と、買い物客でにぎわっている。",
+   "altEn": "A flea market in front of the Sunshine City building. Vendors have spread out mats on the plaza and shoppers fill the area.",
+   "note": "サイト運営者が撮影した写真から、3:2に切り出し、顔が識別できる人にぼかしを入れて、800x533 の webp に変換"
+  }
  },
  {
   "id": "hikarigaoka-park",

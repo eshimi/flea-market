@@ -84,6 +84,7 @@ function photoBlock(v, lang) {
   const im = v.image;
   if (!im) return '';
   const t = T[lang];
+  if (im.own) return `<figure class="sp-photo"><img src="/img/spots/${esc(im.file)}" alt="${esc(lang === 'ja' ? im.altJa : im.altEn)}" width="800" height="533" decoding="async"><figcaption>${esc(t.photo)}: ${esc(im.author)} / ${esc(im.license)}${lang === 'ja' ? '（トリミング・縮小。人の顔にぼかしを入れています）' : ' (cropped and resized; faces blurred)'}</figcaption></figure>`;
   return `<figure class="sp-photo"><img src="/img/spots/${esc(im.file)}" alt="${esc(lang === 'ja' ? im.altJa : im.altEn)}" width="800" height="533" decoding="async"><figcaption>${esc(t.photo)}: ${esc(im.author)} / <a href="${esc(im.licenseUrl || im.sourceUrl)}" rel="noopener nofollow">${esc(im.license)}</a> / <a href="${esc(im.sourceUrl)}" rel="noopener nofollow">Wikimedia Commons</a>${lang === 'ja' ? '（トリミング・縮小）' : ' (cropped and resized)'}</figcaption></figure>`;
 }
 
