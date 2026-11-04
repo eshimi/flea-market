@@ -1,16 +1,20 @@
-# 毎週水曜の朝（米国東部時間 9:00 ＝ 夏時間の間は 13:00 UTC。冬時間は 8:00）に、今週末の予定を Facebook ページへ英語で投稿する。
+# 毎週金曜の朝 8:00 JST（＝木曜 23:00 UTC）に、今週末の予定を Facebook ページへ英語・日本語の順に投稿する。
 # Secrets: FB_PAGE_ID（ページの ID）、FB_PAGE_TOKEN（ページのアクセストークン）。どちらかがなければ、本文を表示するだけ（投稿しない）。
-# 手動実行（workflow_dispatch）は、既定で試運転（投稿しない）。
+# 手動実行（workflow_dispatch）は、既定で試運転（投稿しない）。言語は lang（both・en・ja）で選ぶ。
 name: 週末の予定を Facebook に投稿
 on:
   schedule:
-    - cron: '0 13 * * 3'
+    - cron: '0 23 * * 4'
   workflow_dispatch:
     inputs:
       dry_run:
         description: '試運転（投稿しない）'
         type: boolean
         default: true
+      lang:
+        description: '言語（both・en・ja）'
+        type: string
+        default: both
 permissions:
   contents: read
 jobs:
@@ -31,7 +35,7 @@ jobs:
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.dry_run }}" = "true" ]; then
-            node scripts/facebook-post.mjs --dry-run
+            node scripts/facebook-post.mjs --lang=${{ inputs.lang }} --dry-run
           else
-            node scripts/facebook-post.mjs
+            node scripts/facebook-post.mjs --lang=${{ inputs.lang || 'both' }}
           fi
