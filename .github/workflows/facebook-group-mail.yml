@@ -1,0 +1,37 @@
+# 毎週金曜の朝 5:19 JST（＝木曜 20:19 UTC）に、Facebook グループ（英語・日本語）へ手動で貼る投稿文を、運営者へメールで送る。
+# グループへの自動投稿は Facebook の API で不可のため、文面だけを用意する。メールは Worker（/api/admin/mail）が、MAIL_TO（サイト専用メール）へ送る。
+# Secrets: ADMIN_TOKEN（Worker の ADMIN_TOKEN と同じ値）。なければ本文を表示するだけ。
+# 手動実行（workflow_dispatch）は、既定で試運転（送らない）。
+name: FBグループ投稿文をメールで送る
+on:
+  schedule:
+    - cron: '19 20 * * 4'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '試運転（メールを送らない）'
+        type: boolean
+        default: true
+permissions:
+  contents: read
+jobs:
+  mail:
+    runs-on: ubuntu-latest
+    env:
+      SITE_URL: ${{ vars.SITE_URL }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: 投稿文を作る（と、メールで送る）
+        env:
+          ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.dry_run }}" = "true" ]; then
+            node scripts/facebook-post.mjs --mail --dry-run
+          else
+            node scripts/facebook-post.mjs --mail
+          fi

@@ -87,6 +87,39 @@ function buildPostJa({ occ, picked, days }) {
   return { text, link: `${SITE.url}/ja/weekend/`, days, count: n };
 }
 
+// グループへ手動で貼る文（英語・日本語）を、運営者へメールで送る（/api/admin/mail。宛先は Worker 側の MAIL_TO に固定）
+export function buildMail(data, today) {
+  const en = buildPost(data, today, 'en');
+  const ja = buildPost(data, today, 'ja');
+  if (!en || !ja) return null;
+  const bare = (p) => `${p.text}\n\n${p.link}`;
+  const subject = `【今週末のFBグループ投稿文】英語版・日本語版（${rangeJa(en.days)}）`;
+  const text = [
+    '次の2つを、それぞれのグループに貼って投稿してください。',
+    '',
+    '■英語グループ https://www.facebook.com/groups/1726298765106058 に貼る文',
+    '----------------------------------------',
+    bare(en),
+    '',
+    '■日本語グループ https://www.facebook.com/groups/1912285776404999 に貼る文',
+    '----------------------------------------',
+    bare(ja),
+    '',
+    '※ページ（公式）への自動投稿は、同じ金曜の朝8時ごろに別に行われます。件数は、そのときのデータで少し変わることがあります。',
+  ].join('\n');
+  return { subject, text };
+}
+
+async function sendMail({ subject, text }) {
+  const res = await fetch(`${SITE.url}/api/admin/mail`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${process.env.ADMIN_TOKEN}` },
+    body: JSON.stringify({ subject, text }),
+  });
+  const body = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(`メールの送信に失敗: HTTP ${res.status} ${body?.error || ''} ${body?.detail || ''}`);
+}
+
 async function post({ text, link }) {
   const id = process.env.FB_PAGE_ID;
   const token = process.env.FB_PAGE_TOKEN;
@@ -103,6 +136,14 @@ async function post({ text, link }) {
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const arg = (k) => process.argv.find((a) => a.startsWith(`--${k}=`))?.split('=')[1];
   const data = loadData();
+  if (process.argv.includes('--mail')) {
+    const m = buildMail(data, arg('today') || todayJst());
+    if (!m) { console.log('今週末の開催がないので、メールしません。'); process.exit(0); }
+    console.log(`${m.subject}\n\n${m.text}\n`);
+    if (process.argv.includes('--dry-run') || !process.env.ADMIN_TOKEN) console.log('メールは送っていません（試運転、または ADMIN_TOKEN が未設定）。');
+    else { await sendMail(m); console.log('メールを送りました。'); }
+    process.exit(0);
+  }
   const langs = (arg('lang') || 'both') === 'both' ? ['en', 'ja'] : [arg('lang')];
   for (const lang of langs) {
     const p = buildPost(data, arg('today') || todayJst(), lang);

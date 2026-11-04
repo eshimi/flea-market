@@ -201,7 +201,7 @@ export async function handleReviews(request, env, id, reviewId = null) {
 }
 
 // 時間が一定の比較（トークンの推測を防ぐ）
-function sameToken(a, b) {
+export function sameToken(a, b) {
   if (typeof a !== 'string' || typeof b !== 'string' || a.length !== b.length) return false;
   let d = 0;
   for (let i = 0; i < a.length; i++) d |= a.charCodeAt(i) ^ b.charCodeAt(i);
