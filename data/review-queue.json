@@ -4021,9 +4021,9 @@
   "id": "recycler-jp-schedule",
   "url": "https://www2.recycler.jp/sm/index.php",
   "name": "リサイクル運動市民の会（開催スケジュール）",
-  "detectedAt": "2026-11-04",
+  "detectedAt": "2026-11-05",
   "reason": "changed",
-  "hash": "f1dc09c5e07ed0f1",
+  "hash": "8bf1ab3d4d02f3dc",
   "status": "pending"
  },
  {
@@ -4645,6 +4645,33 @@
   "detectedAt": "2026-11-04",
   "reason": "changed",
   "hash": "a19c7d309c4ed96d",
+  "status": "pending"
+ },
+ {
+  "id": "t-i-forum-e350a3",
+  "url": "https://www.t-i-forum.co.jp/",
+  "name": "www.t-i-forum.co.jp",
+  "detectedAt": "2026-11-05",
+  "reason": "changed",
+  "hash": "18316b786f9e3ecc",
+  "status": "pending"
+ },
+ {
+  "id": "nihon-freemarket-kyokai",
+  "url": "http://freemarket-go.com/",
+  "name": "日本フリーマーケット協会（関西）",
+  "detectedAt": "2026-11-05",
+  "reason": "changed",
+  "hash": "58250fb351e7e0d2",
+  "status": "pending"
+ },
+ {
+  "id": "showakinen-koen-3bf349",
+  "url": "https://www.showakinen-koen.jp/",
+  "name": "www.showakinen-koen.jp",
+  "detectedAt": "2026-11-05",
+  "reason": "changed",
+  "hash": "abb95135295567d3",
   "status": "pending"
  }
 ]
