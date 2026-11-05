@@ -4003,9 +4003,9 @@
   "id": "recycler-jp",
   "url": "https://www2.recycler.jp/",
   "name": "リサイクル運動市民の会（フリーマーケット情報）",
-  "detectedAt": "2026-11-03",
+  "detectedAt": "2026-11-06",
   "reason": "changed",
-  "hash": "8386cb64de868e72",
+  "hash": "32028978488593fe",
   "status": "pending"
  },
  {
@@ -4021,9 +4021,9 @@
   "id": "recycler-jp-schedule",
   "url": "https://www2.recycler.jp/sm/index.php",
   "name": "リサイクル運動市民の会（開催スケジュール）",
-  "detectedAt": "2026-11-05",
+  "detectedAt": "2026-11-06",
   "reason": "changed",
-  "hash": "8bf1ab3d4d02f3dc",
+  "hash": "f1dc09c5e07ed0f1",
   "status": "pending"
  },
  {
@@ -4672,6 +4672,24 @@
   "detectedAt": "2026-11-05",
   "reason": "changed",
   "hash": "abb95135295567d3",
+  "status": "pending"
+ },
+ {
+  "id": "bon-dimanche-event-1",
+  "url": "https://bon.haleinc.co.jp/event/",
+  "name": "Bon Dimanche Market（HALE・イベント開催日程）",
+  "detectedAt": "2026-11-06",
+  "reason": "changed",
+  "hash": "17e867890922dd7d",
+  "status": "pending"
+ },
+ {
+  "id": "nagano-cvb-a86a0d",
+  "url": "https://www.nagano-cvb.or.jp/modules/event/page/101",
+  "name": "善光寺びんずる市実行委員会",
+  "detectedAt": "2026-11-06",
+  "reason": "changed",
+  "hash": "c0f2dfa9157b4a70",
   "status": "pending"
  }
 ]
