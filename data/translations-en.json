@@ -2336,6 +2336,11 @@
       "admission": "Free",
       "fee": "Carry-in stalls (paid on the day): ¥3,500 per booth (2.0 m × 2.0 m). First-row booths (prepaid): ¥4,000 per booth.",
       "notes": "250 stalls (as listed on the organizer’s event page)"
+    },
+    "fmpn-niiza-city-hall": {
+      "name": "Niiza City Hall Flea Market (Flea Market Promotion Network)",
+      "venue": "Niiza City Hall",
+      "rule": "Dates published by the organizer (Flea Market Promotion Network)"
     }
   },
   "organizers": {
@@ -2653,7 +2658,8 @@
     "鳴門市": "Naruto City",
     "大阪市阿倍野区": "Abeno Ward, Osaka",
     "港区": "Minato City",
-    "八王子市": "Hachioji City"
+    "八王子市": "Hachioji City",
+    "新座市": "Niiza City"
   },
   "notes": {
     "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",
