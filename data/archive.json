@@ -1,6 +1,105 @@
 {
- "lastDate": "2026-11-06",
+ "lastDate": "2026-11-07",
  "items": [
+  {
+   "series": "bia-izumiyayao",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-06",
+   "source": "https://b-i-a.jp/reserve/izumiyayao/"
+  },
+  {
+   "series": "bunkyo-stage-eco-flea-2026-11",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "source": "https://www.city.bunkyo.lg.jp/b038/p007538.html"
+  },
+  {
+   "series": "fmj-cainz-hikone",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "note": "彦根・にぎわい秋まつり",
+   "source": "https://www.fmfm-king.com/hikone11-7-8/"
+  },
+  {
+   "series": "fmj-yamato-saidaiji-ekimae",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "source": "https://www.fmfm-king.com/saidaiji10-25/"
+  },
+  {
+   "series": "fmpn-kawagoe-suijo-park",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "source": "https://recycle-man.or.jp/"
+  },
+  {
+   "series": "frma-komatsugawa-park-flea",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "source": "http://www.frma.jp/"
+  },
+  {
+   "series": "jfma-ikea-tsuruhama-loppis",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "source": "http://freemarket-go.com/shousai_osaka_013.html"
+  },
+  {
+   "series": "jfma-wanwan-marche-shiga-ryuo-vol17",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "source": "http://freemarket-go.com/shousai-siga-004.html"
+  },
+  {
+   "series": "kiryu-tenmangu-kottou",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-04",
+   "source": "https://www.city.kiryu.lg.jp/kankou/event/1010673/1001903.html"
+  },
+  {
+   "series": "lohas-park-kawanishi",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "source": "https://lohas-park.jp/event/kiji5935/"
+  },
+  {
+   "series": "oedo-antique-market-tokyo-international-forum",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "source": "https://www.antique-market.jp/"
+  },
+  {
+   "series": "trx-oi-keibajo-tokyo-city-flea",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "source": "https://trx.jp/schejule"
+  },
+  {
+   "series": "umekoji-park-tedukuri-ichi",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "source": "https://www.tedukuri-ichi.com/"
+  },
+  {
+   "series": "yuyu-marche-inazawa-kinro-fukushi-kaikan",
+   "date": "2026-11-07",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "source": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/"
+  },
   {
    "series": "heian-rakuichi",
    "date": "2026-11-06",
