@@ -72,3 +72,18 @@ test('日付を列挙したきまりは、公式で確認（古くなれば要�
   const old = { ...s, sources: [{ ...s.sources[0], checkedAt: '2026-09-01' }] };
   assert.equal(buildOccurrences([old], [], '2026-10-17', 30)[0].status, 'unknown');
 });
+
+test('記録（occurrences）の確認日は、その出典が最近確認されていれば、出典の確認日まで進む（要確認にならない）', async () => {
+  const { buildOccurrences } = await import('../scripts/lib/events.mjs');
+  const mk = (srcChecked) => ({ id: 's', name: 's', kinds: ['flea'], venue: { name: 'v', pref: '13' }, recurrence: { type: 'dates', dates: ['2026-11-08'], text: 't' }, sources: [{ url: 'https://a.example/', type: 'organizer', checkedAt: srcChecked }] });
+  const rec = [{ series: 's', date: '2026-11-08', status: 'confirmed', checkedAt: '2026-10-18', source: 'https://a.example/' }];
+  const fresh = buildOccurrences([mk('2026-11-07')], rec, '2026-11-07', 30)[0];
+  assert.equal(fresh.status, 'confirmed');
+  assert.equal(fresh.checkedAt, '2026-11-07');
+  // 出典が古いままなら、これまでどおり要確認
+  const old = buildOccurrences([mk('2026-10-18')], rec, '2026-11-07', 30)[0];
+  assert.equal(old.status, 'unknown');
+  // 記録の出典が、シリーズの出典と別の URL なら、記録の確認日のまま
+  const other = buildOccurrences([mk('2026-11-07')], [{ ...rec[0], source: 'https://b.example/' }], '2026-11-07', 30)[0];
+  assert.equal(other.status, 'unknown');
+});

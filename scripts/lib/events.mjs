@@ -132,7 +132,10 @@ export function buildOccurrences(seriesList, overrides, today, days = WINDOW_DAY
       let note = null;
       if (o) {
         status = o.status;
-        checkedAt = o.checkedAt;
+        // 記録の確認日は、その出典（シリーズの出典と同じ URL）が、毎日の確認で本文と一致していれば、その出典の確認日まで進む
+        // （check-sources は、シリーズの出典の確認日だけを進めるため。出典が違う記録は、記録の確認日のまま）
+        const sc = s.sources.find((x) => x.url === o.source)?.checkedAt || '';
+        checkedAt = sc > o.checkedAt ? sc : o.checkedAt;
         if (status === 'postponed') note = o.movedTo ? `延期（${o.movedTo} に変更）` : '延期（日程は要確認）';
         if (o.reason) note = note ? `${note}：${o.reason}` : o.reason;
         if (status === 'confirmed' && diffDays(checkedAt, today) > STALE_DAYS) {
