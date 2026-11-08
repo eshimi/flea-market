@@ -1,6 +1,199 @@
 {
- "lastDate": "2026-11-07",
+ "lastDate": "2026-11-08",
  "items": [
+  {
+   "series": "akishima-recycle-center-flea",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "source": "https://www.city.akishima.lg.jp/kurashi/gomi/1008272/1001598.html"
+  },
+  {
+   "series": "bia-hirakiiwaoka",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "source": "https://b-i-a.jp/reserve/hirakiiwaoka/"
+  },
+  {
+   "series": "fmj-cainz-hikone",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "note": "彦根・にぎわい秋まつり",
+   "source": "https://www.fmfm-king.com/hikone11-7-8/"
+  },
+  {
+   "series": "fmj-fukakita-ryokuchi",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "note": "11:00〜16:00",
+   "source": "https://www.fmfm-king.com/fuka11-8/"
+  },
+  {
+   "series": "fmj-yokkaichi-shimin-park",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "source": "https://www.fmfm-king.com/yoxtukaichi10-24/"
+  },
+  {
+   "series": "fmpn-hanyu-aeon-noniwa",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "source": "https://recycle-man.or.jp/"
+  },
+  {
+   "series": "fmpn-koshigaya-laketown-plaza",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-07",
+   "source": "https://recycle-man.or.jp/"
+  },
+  {
+   "series": "hikarigaoka-park-flea-tokyo-park",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "note": "主催団体：ミルクの会",
+   "source": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html"
+  },
+  {
+   "series": "ibaraki-nominoichi",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "source": "https://www.city.ibaraki.osaka.jp/ibarakinikki/reiwahachinenn/4gatu/68845.html"
+  },
+  {
+   "series": "kokura-ogane-flea",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-09",
+   "source": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html"
+  },
+  {
+   "series": "lohas-park-kawanishi",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "source": "https://lohas-park.jp/event/kiji5935/"
+  },
+  {
+   "series": "matsuyama-rikkuru-kurukuru-market",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "source": "https://www.city.matsuyama.ehime.jp/kurashi/kurashi/seikatsu/kankyo/rikkuru_fleamarket.html"
+  },
+  {
+   "series": "noborito-challenge-street-2026",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "source": "https://www.city.kawasaki.jp/500/page/0000190814.html"
+  },
+  {
+   "series": "osaka-garagesale-abeno",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-09",
+   "source": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  {
+   "series": "osaka-garagesale-nishi",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-09",
+   "source": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  {
+   "series": "rbf-aeon-chiba-newtown",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-06",
+   "source": "https://www.rbf.jp/newtown.html"
+  },
+  {
+   "series": "rbf-ikea-tokyo-bay-loppis",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-09",
+   "source": "https://www.rbf.jp/nittei.html"
+  },
+  {
+   "series": "recycler-tokyo-international-forum-flea",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "source": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=904"
+  },
+  {
+   "series": "suginami-furima-in-takaido-2026-11",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "source": "https://www.city.suginami.tokyo.jp/s103/event/28212.html"
+  },
+  {
+   "series": "taito-hanakawado-park-flea",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "note": "主催団体：フリーマーケット推進ネットワーク／10:00〜15:00",
+   "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+   "series": "takahata-fudoson-recycle-market",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-09",
+   "source": "https://www.takahatafudoson.or.jp/"
+  },
+  {
+   "series": "tmc-kawagoe-suijo-park",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "source": "https://tmc-dx.org/area/kawagoe.html"
+  },
+  {
+   "series": "tokyo-romantic-shibuya",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "source": "https://tokyo-romantic.com/"
+  },
+  {
+   "series": "trx-oi-keibajo-tokyo-city-flea",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-09",
+   "source": "https://trx.jp/schejule"
+  },
+  {
+   "series": "ube-tokiwa-park-flea",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "source": "https://www.city.ube.yamaguchi.jp/kurashi/gomi/genryou_recycle/1002098/1002105.html"
+  },
+  {
+   "series": "wakayama-kitabura-remember-market",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-05",
+   "source": "https://www.city.wakayama.wakayama.jp/kankou/event/1003232/1049848.html"
+  },
+  {
+   "series": "yuyu-marche-ja-genki-no-sato",
+   "date": "2026-11-08",
+   "status": "confirmed",
+   "checkedAt": "2026-11-09",
+   "source": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/"
+  },
   {
    "series": "bia-izumiyayao",
    "date": "2026-11-07",

@@ -4003,9 +4003,9 @@
   "id": "recycler-jp",
   "url": "https://www2.recycler.jp/",
   "name": "リサイクル運動市民の会（フリーマーケット情報）",
-  "detectedAt": "2026-11-06",
+  "detectedAt": "2026-11-09",
   "reason": "changed",
-  "hash": "32028978488593fe",
+  "hash": "ba3fc5bf4ef1614d",
   "status": "pending"
  },
  {
@@ -4021,9 +4021,9 @@
   "id": "recycler-jp-schedule",
   "url": "https://www2.recycler.jp/sm/index.php",
   "name": "リサイクル運動市民の会（開催スケジュール）",
-  "detectedAt": "2026-11-08",
+  "detectedAt": "2026-11-09",
   "reason": "changed",
-  "hash": "68c4eee4a4531763",
+  "hash": "91eb90270f8b041f",
   "status": "pending"
  },
  {
@@ -4678,9 +4678,9 @@
   "id": "bon-dimanche-event-1",
   "url": "https://bon.haleinc.co.jp/event/",
   "name": "Bon Dimanche Market（HALE・イベント開催日程）",
-  "detectedAt": "2026-11-06",
+  "detectedAt": "2026-11-09",
   "reason": "changed",
-  "hash": "17e867890922dd7d",
+  "hash": "481e5c986a40800b",
   "status": "pending"
  },
  {
@@ -4834,6 +4834,51 @@
   "detectedAt": "2026-11-07",
   "reason": "changed",
   "hash": "5c34435d8222e78a",
+  "status": "pending"
+ },
+ {
+  "id": "recycle-undo-hokkaido",
+  "url": "https://www.recyclefmd.gr.jp/",
+  "name": "リサイクル運動市民の会 北海道本部（フリーマーケット北海道）",
+  "detectedAt": "2026-11-09",
+  "reason": "changed",
+  "hash": "d1c97b1f4a031eb6",
+  "status": "pending"
+ },
+ {
+  "id": "furima-japan",
+  "url": "https://www.fmfm-king.com/",
+  "name": "フリマジャパン（滋賀・京都・大阪・三重など）",
+  "detectedAt": "2026-11-09",
+  "reason": "changed",
+  "hash": "3fb2d7920ad1e8df",
+  "status": "pending"
+ },
+ {
+  "id": "trx-tokyo-recycle",
+  "url": "https://trx.jp/",
+  "name": "東京リサイクル（フリーマーケット情報。大井競馬場フリマなど）",
+  "detectedAt": "2026-11-09",
+  "reason": "changed",
+  "hash": "fc23571b520e1e24",
+  "status": "pending"
+ },
+ {
+  "id": "rpa-yuyu-marche",
+  "url": "https://rpa.flima.net/",
+  "name": "リサイクル運動推進の会・友遊（ゆうゆう）マルシェ（愛知）",
+  "detectedAt": "2026-11-09",
+  "reason": "changed",
+  "hash": "77a7dedc962dd576",
+  "status": "pending"
+ },
+ {
+  "id": "hyakumanben-tedukuri-ichi",
+  "url": "https://www.tedukuri-ichi.com/",
+  "name": "手づくり市.com（京都 百万遍さんの手づくり市・梅小路公園手づくり市）",
+  "detectedAt": "2026-11-09",
+  "reason": "changed",
+  "hash": "21dd7e9dfff35a3e",
   "status": "pending"
  }
 ]
