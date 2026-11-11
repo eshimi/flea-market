@@ -4660,9 +4660,9 @@
   "id": "nihon-freemarket-kyokai",
   "url": "http://freemarket-go.com/",
   "name": "日本フリーマーケット協会（関西）",
-  "detectedAt": "2026-11-05",
+  "detectedAt": "2026-11-12",
   "reason": "changed",
-  "hash": "58250fb351e7e0d2",
+  "hash": "faad4b200b9e9927",
   "status": "pending"
  },
  {
@@ -4678,9 +4678,9 @@
   "id": "bon-dimanche-event-1",
   "url": "https://bon.haleinc.co.jp/event/",
   "name": "Bon Dimanche Market（HALE・イベント開催日程）",
-  "detectedAt": "2026-11-09",
+  "detectedAt": "2026-11-12",
   "reason": "changed",
-  "hash": "481e5c986a40800b",
+  "hash": "171e1ec3715084d9",
   "status": "pending"
  },
  {
