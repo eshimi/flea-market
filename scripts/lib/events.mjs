@@ -106,8 +106,11 @@ export function validateSources(sources, series) {
 }
 
 // シリーズの最終確認日（出典のうち、いちばん新しい日）
+// 最終確認日：シリーズの出典のうち、最も新しい確認日。ただし scope:'venue'（会場の所在地などだけを裏づける出典）は、日程の確認日に数えない
+// （日程の出典より新しく確認されていても、「日程を最後に確認した日」を新しく見せないため）。日程の出典がなければ、すべてを数える
 export function lastChecked(series) {
-  return series.sources.map((s) => s.checkedAt).sort().at(-1);
+  const own = series.sources.filter((s) => s.scope !== 'venue');
+  return (own.length ? own : series.sources).map((s) => s.checkedAt).sort().at(-1);
 }
 
 // 表示用の状態:

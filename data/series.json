@@ -3271,6 +3271,7 @@
    {
     "url": "https://www.pref.saitama.lg.jp/spo-navi/shisetsu/saitamaken/alnethome.html",
     "type": "municipality",
+    "scope": "venue",
     "checkedAt": "2026-11-12",
     "evidence": [
      "所在地 〒343-0802 越谷市小曽川985"
