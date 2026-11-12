@@ -119,21 +119,21 @@
    "static/img/kinds/handmade.webp"
   ],
   "use": "手作り市の写真",
-  "title": "Close-up of Colorful, Handmade Items at the Market",
-  "photographer": "Marek Piwnicki",
+  "title": "手作り市のイメージ（雑貨を見る客と出店者）",
+  "photographer": "AI生成（運営者が用意）",
   "photographerUrl": "",
-  "source": "Pexels",
-  "sourceUrl": "https://www.pexels.com/photo/26558812/",
-  "license": "Pexels License（無料で商用利用できる写真）",
-  "licenseUrl": "https://www.pexels.com/license/",
-  "note": "Pexelsのページに記載の場所：撮影地は記載なし。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
-  "checkedAt": "2026-10-18",
+  "source": "サイト運営者",
+  "sourceUrl": "/about/",
+  "license": "AI生成画像（運営者が用意。権利は運営者の確認による）",
+  "licenseUrl": "",
+  "note": "AI で作成した、実際の市の写真ではないイメージ画像（運営者が用意。権利は運営者の確認による）。作成したツール・日付は未記入（要確認）。横長の画像から4:3に切り出し・縮小。",
+  "checkedAt": "2026-11-12",
   "en": {
-   "use": "Handmade market photo",
-   "title": "Close-up of Colorful, Handmade Items at the Market",
-   "photographer": "Marek Piwnicki",
-   "source": "Pexels",
-   "license": "Pexels License (free to use, including commercially)"
+   "use": "Handmade market image",
+   "title": "Handmade market (illustrative image of a vendor and visitors)",
+   "photographer": "AI-generated (provided by the site operator)",
+   "source": "Site operator",
+   "license": "AI-generated image provided by the site operator (rights confirmed by the operator)"
   }
  },
  {
