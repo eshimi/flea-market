@@ -728,7 +728,7 @@ function seriesPage(s, ctx, lang) {
   const nextCard = next ? (() => {
     const [, nm, nd] = next.date.split('-');
     const wdn = (lang === 'ja' ? WD_JA : WD_EN)[weekday(next.date)];
-    return `<div class="ev-next"><div class="ev-next-d"><small>${lang === 'ja' ? `${+nm}月` : MON_EN[+nm - 1]}</small><b>${+nd}</b><span>${esc(wdn)}${lang === 'ja' ? '曜日' : ''}</span></div><div><small class="lab">${esc(p.next)}</small><div class="ev-next-t">${esc(nextTime || (lang === 'en' ? venueL(s, lang) : v.name))}</div><p>${nextTime ? `${esc(lang === 'en' ? venueL(s, lang) : v.name)} ／ ` : ''}${esc(S[lang].status[next.status])}${lang === 'ja' ? '（' : ' ('}${checked}${esc(next.checkedAt)}${lang === 'ja' ? '）' : ')'}</p></div></div>`;
+    return `<div class="ev-next"><div class="ev-next-d"><small>${lang === 'ja' ? `${+nm}月` : MON_EN[+nm - 1]}</small><b>${+nd}</b><span>${esc(wdn)}${lang === 'ja' ? '曜日' : ''}</span></div><div><small class="lab">${esc(p.next)}</small><div class="ev-next-t">${esc(dlabel(next.date, lang))}</div><p>${nextTime ? `${esc(nextTime)} ／ ` : ''}${esc(lang === 'en' ? venueL(s, lang) : v.name)} ／ ${esc(S[lang].status[next.status])}${lang === 'ja' ? '（' : ' ('}${checked}${esc(next.checkedAt)}${lang === 'ja' ? '）' : ')'}</p></div></div>`;
   })() : '';
   const body = `<div class="in page ev-page">${breadcrumb([{ href: `/area/${v.pref}/`, label: pn }, ...(v.cityCode ? [{ href: `/area/${v.pref}/${v.cityCode}/`, label: cityL(v.city, lang) }] : []), { label: nameL(s, lang) }], lang)}
 <div class="ev-grid">

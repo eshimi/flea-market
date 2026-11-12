@@ -96,7 +96,7 @@ export const P = {
     series: {
       secInfo: '開催の情報', secDates: 'これからの開催日', secPast: '過去の開催（記録）', secVendor: '出店したい方へ', secSrc: '出典',
       when: '開催日', time: '時間', venue: '会場', address: '所在地', access: 'アクセス', admission: '入場料', rain: '雨天のとき', org: '主催',
-      next: '次の開催', checked: '最終確認', noDates: '今後の開催日は、公式の情報で確認できていません（要確認）。',
+      next: '次の開催日', checked: '最終確認', noDates: '今後の開催日は、公式の情報で確認できていません（要確認）。',
       noVendor: '出店の募集について、公式の情報で確認できていません（要確認）。',
       fee: '出店料', apply: '申込み方法', applyAt: '申込み先', applyLink: '主催者の案内（公式）', notes: '注意',
       rule: (t) => `「予定（きまりから算出）」は、公式に書かれた開催のきまり（${t}）から計算した日です。`,
@@ -126,7 +126,7 @@ export const P = {
     series: {
       secInfo: 'Event details', secDates: 'Upcoming dates', secPast: 'Past dates (record)', secVendor: 'For vendors', secSrc: 'Sources',
       when: 'Schedule', time: 'Time', venue: 'Venue', address: 'Address', access: 'Access', admission: 'Admission', rain: 'In rain', org: 'Organizer',
-      next: 'Next', checked: 'last checked', noDates: 'No upcoming dates are confirmed from official sources (TBC).',
+      next: 'Next date', checked: 'last checked', noDates: 'No upcoming dates are confirmed from official sources (TBC).',
       noVendor: 'Stall recruitment is not confirmed from official sources (TBC).',
       fee: 'Stall fee', apply: 'How to apply', applyAt: 'Apply at', applyLink: 'Organizer’s page (official)', notes: 'Notes',
       rule: (t) => `“Scheduled” dates are calculated from the recurrence rule stated officially (${t}).`,
