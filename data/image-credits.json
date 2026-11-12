@@ -92,6 +92,29 @@
   }
  },
  {
+  "id": "flea-3",
+  "files": [
+   "static/img/kinds/flea-3.webp"
+  ],
+  "use": "フリマの写真",
+  "title": "フリマのイメージ（アウトドア用品の出店）",
+  "photographer": "AI生成（運営者が用意）",
+  "photographerUrl": "",
+  "source": "サイト運営者",
+  "sourceUrl": "/about/",
+  "license": "AI生成画像（運営者が用意。権利は運営者の確認による）",
+  "licenseUrl": "",
+  "note": "AI で作成した、実際の市の写真ではないイメージ画像（運営者が用意。権利は運営者の確認による）。黒板の価格はイメージで、実際の価格ではない（運営者の指示）。作成したツール・日付は未記入（要確認）。横長の画像から4:3に切り出し・縮小。",
+  "checkedAt": "2026-11-12",
+  "en": {
+   "use": "Flea market image",
+   "title": "Flea market (illustrative image of an outdoor gear stall; prices on the sign are illustrative)",
+   "photographer": "AI-generated (provided by the site operator)",
+   "source": "Site operator",
+   "license": "AI-generated image provided by the site operator (rights confirmed by the operator)"
+  }
+ },
+ {
   "id": "handmade",
   "files": [
    "static/img/kinds/handmade.webp"

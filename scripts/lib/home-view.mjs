@@ -16,9 +16,9 @@ import { cityL, fieldEn, nameL, noteL, timeEn, venueL } from './tr-en.mjs';
 
 export const FEATURED_MAX = 12;
 export const VENDOR_ROWS = 3;
-// フリマは写真が2種類。シリーズの id から決めるので、同じ市はいつも同じ写真になる
-// 並びの番号（n）があるときは、番号順に2種を回す（並んだカードが同じ写真にならない）
-const FLEA_IMGS = ['/img/kinds/flea.webp', '/img/kinds/flea-2.webp'];
+// フリマは写真が3種類。シリーズの id から決めるので、同じ市はいつも同じ写真になる
+// 並びの番号（n）があるときは、番号順に3種を回す（並んだカードが同じ写真にならない）
+const FLEA_IMGS = ['/img/kinds/flea.webp', '/img/kinds/flea-2.webp', '/img/kinds/flea-3.webp'];
 const kindImg = (k, id = '', n = null) => {
   if (k !== 'flea') return `/img/kinds/${k}.webp`;
   if (n !== null) return FLEA_IMGS[n % FLEA_IMGS.length];
