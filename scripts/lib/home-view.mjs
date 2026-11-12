@@ -16,15 +16,15 @@ import { cityL, fieldEn, nameL, noteL, timeEn, venueL } from './tr-en.mjs';
 
 export const FEATURED_MAX = 12;
 export const VENDOR_ROWS = 3;
-// フリマは写真が3種類。シリーズの id から決めるので、同じ市はいつも同じ写真になる
-// 並びの番号（n）があるときは、番号順に3種を回す（並んだカードが同じ写真にならない）
-const FLEA_IMGS = ['/img/kinds/flea.webp', '/img/kinds/flea-2.webp', '/img/kinds/flea-3.webp'];
+// フリマは写真が2種類。シリーズの id から決めるので、同じ市はいつも同じ写真になる
+// 並びの番号（n）があるときは、番号順に2種を回す（並んだカードが同じ写真にならない）
+const FLEA_IMGS = ['/img/kinds/flea.webp', '/img/kinds/flea-2.webp'];
 const kindImg = (k, id = '', n = null) => {
   if (k !== 'flea') return `/img/kinds/${k}.webp`;
-  if (n !== null) return FLEA_IMGS[n % 3];
+  if (n !== null) return FLEA_IMGS[n % FLEA_IMGS.length];
   let h = 0;
   for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
-  return FLEA_IMGS[h % 3];
+  return FLEA_IMGS[h % FLEA_IMGS.length];
 };
 // 種類の写真は、表示の大きさに合う小さい版（-400）も添える
 const kindSrcset = (p) => `src="${p}" srcset="${p.replace(/\.webp$/, '-400.webp')} 400w, ${p} 800w" sizes="(max-width: 700px) 46vw, 280px"`;

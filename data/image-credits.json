@@ -92,28 +92,6 @@
   }
  },
  {
-  "id": "flea-3",
-  "files": [
-   "static/img/kinds/flea-3.webp"
-  ],
-  "use": "フリマの写真",
-  "title": "飛鳥山公園のフリマ（おもちゃの出店）",
-  "photographer": "サイト運営者（撮影）",
-  "source": "サイト運営者",
-  "sourceUrl": "/about/",
-  "license": "© Flea Market JP（無断転載禁止）",
-  "licenseUrl": "",
-  "note": "サイト運営者が 2026-11-01 に飛鳥山公園で撮影。切り出し・縮小。人の顔・車のナンバーにぼかしを入れている",
-  "checkedAt": "2026-11-03",
-  "en": {
-   "use": "Flea market photo",
-   "title": "Flea market in Asukayama Park (a toy stall)",
-   "photographer": "Site operator (photo)",
-   "source": "Site operator",
-   "license": "© Flea Market JP (all rights reserved)"
-  }
- },
- {
   "id": "handmade",
   "files": [
    "static/img/kinds/handmade.webp"
@@ -141,22 +119,22 @@
   "files": [
    "static/img/kinds/marche.webp"
   ],
-  "use": "マルシェの写真",
-  "title": "Charming Street Vendor in Tokyo's Urban Corner",
-  "photographer": "Iban Lopez Luna",
+  "use": "マルシェの写真（手作り市と同じイメージ画像を仮に使用）",
+  "title": "手作り市のイメージ（雑貨を見る客と出店者）",
+  "photographer": "AI生成（運営者が用意）",
   "photographerUrl": "",
-  "source": "Pexels",
-  "sourceUrl": "https://www.pexels.com/photo/37767450/",
-  "license": "Pexels License（無料で商用利用できる写真）",
-  "licenseUrl": "https://www.pexels.com/license/",
-  "note": "Pexelsのページに記載の場所：東京。ライセンス全文は自動取得できず、ブラウザでの確認が必要（要確認）。写真ページのURLは番号で指定",
-  "checkedAt": "2026-10-18",
+  "source": "サイト運営者",
+  "sourceUrl": "/about/",
+  "license": "AI生成画像（運営者が用意。権利は運営者の確認による）",
+  "licenseUrl": "",
+  "note": "AI で作成した、実際の市の写真ではないイメージ画像（運営者が用意。権利は運営者の確認による）。作成したツール・日付は未記入（要確認）。横長の画像から4:3に切り出し・縮小。 マルシェ用の専用画像が用意できるまで、手作り市と同じ画像を使う。",
+  "checkedAt": "2026-11-12",
   "en": {
-   "use": "Marché photo",
-   "title": "Charming Street Vendor in Tokyo's Urban Corner",
-   "photographer": "Iban Lopez Luna",
-   "source": "Pexels",
-   "license": "Pexels License (free to use, including commercially)"
+   "use": "Marche image (the same image as the handmade market, for now)",
+   "title": "Handmade market (illustrative image of a vendor and visitors)",
+   "photographer": "AI-generated (provided by the site operator)",
+   "source": "Site operator",
+   "license": "AI-generated image provided by the site operator (rights confirmed by the operator)"
   }
  },
  {

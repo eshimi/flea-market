@@ -250,13 +250,13 @@ export function kindTags(kinds, lang = 'en') {
 
 // 一覧の1件（案Aのカード）
 // カードの写真：種類ごとの既存の写真（フリマは3種類から、シリーズ id で決める）
-const CARD_FLEA = ['/img/kinds/flea-400.webp', '/img/kinds/flea-2-400.webp', '/img/kinds/flea-3-400.webp'];
+const CARD_FLEA = ['/img/kinds/flea-400.webp', '/img/kinds/flea-2-400.webp'];
 export function cardImg(s) {
   const k = s.kinds[0];
   if (k !== 'flea') return `/img/kinds/${k}-400.webp`;
   let h = 0;
   for (const ch of s.id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
-  return CARD_FLEA[h % 3];
+  return CARD_FLEA[h % CARD_FLEA.length];
 }
 
 export function eventCard(o, lang = 'en') {
