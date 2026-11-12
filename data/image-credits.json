@@ -115,6 +115,52 @@
   }
  },
  {
+  "id": "flea-4",
+  "files": [
+   "static/img/kinds/flea-4.webp"
+  ],
+  "use": "フリマの写真",
+  "title": "フリマのイメージ（民芸品・古道具の出店）",
+  "photographer": "AI生成（運営者が用意）",
+  "photographerUrl": "",
+  "source": "サイト運営者",
+  "sourceUrl": "/about/",
+  "license": "AI生成画像（運営者が用意。権利は運営者の確認による）",
+  "licenseUrl": "",
+  "note": "AI で作成した、実際の市の写真ではないイメージ画像（運営者が用意。権利は運営者の確認による）。他社のキャラクターが写る部分を除くため、右側を4:3に切り出し・縮小。作成したツール・日付は未記入（要確認）。",
+  "checkedAt": "2026-11-12",
+  "en": {
+   "use": "Flea market image",
+   "title": "Flea market (illustrative image of a folk craft and antiques stall)",
+   "photographer": "AI-generated (provided by the site operator)",
+   "source": "Site operator",
+   "license": "AI-generated image provided by the site operator (rights confirmed by the operator)"
+  }
+ },
+ {
+  "id": "flea-5",
+  "files": [
+   "static/img/kinds/flea-5.webp"
+  ],
+  "use": "フリマの写真",
+  "title": "フリマのイメージ（並木道の出店と来場者）",
+  "photographer": "AI生成（運営者が用意）",
+  "photographerUrl": "",
+  "source": "サイト運営者",
+  "sourceUrl": "/about/",
+  "license": "AI生成画像（運営者が用意。権利は運営者の確認による）",
+  "licenseUrl": "",
+  "note": "AI で作成した、実際の市の写真ではないイメージ画像（運営者が用意。権利は運営者の確認による）。他社のキャラクターが写る部分を除くため、右側を4:3に切り出し・縮小。作成したツール・日付は未記入（要確認）。",
+  "checkedAt": "2026-11-12",
+  "en": {
+   "use": "Flea market image",
+   "title": "Flea market (illustrative image of stalls and visitors along a tree-lined path)",
+   "photographer": "AI-generated (provided by the site operator)",
+   "source": "Site operator",
+   "license": "AI-generated image provided by the site operator (rights confirmed by the operator)"
+  }
+ },
+ {
   "id": "handmade",
   "files": [
    "static/img/kinds/handmade.webp"
