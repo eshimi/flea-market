@@ -2378,6 +2378,25 @@
       "time": "10:00–17:00 (held in light rain)",
       "rain": "Held in light rain",
       "summary": "Antiques, vintage items, household goods, kimono, clothing, ceramics, tableware, records, kitchenware and more"
+    },
+    "nishiwaseda-recycle-center-flea": {
+      "name": "Nishi-Waseda Recycling Activity Center Flea Market",
+      "venue": "Nishi-Waseda Recycling Activity Center, meeting space",
+      "rule": "2nd and 4th Saturdays (the dates in the “upcoming schedule” on the official page)",
+      "time": "Slot A: 11:00–13:00 / Slot B: 13:30–15:30 (stalls swap between morning and afternoon)",
+      "rain": "Held indoors",
+      "apply": "Registration with “Moichido Club” is required (reservation system)",
+      "fee": "Free",
+      "notes": "14 stall spaces. A long conference table (1) and 2 chairs are lent"
+    },
+    "tachikawa-rakuichi-2026": {
+      "name": "Tachikawa Rakuichi 2026 (Tachikawa Handicraft Exhibition and more)",
+      "venue": "Showa Kinen Park, Midori no Bunka Zone, Yume-hiroba",
+      "rule": "Dates announced on the official page by the Tachikawa Rakuichi Executive Committee",
+      "time": "10:00–16:00",
+      "rain": "Cancelled in stormy weather / held in light rain",
+      "summary": "Held together with the Tachikawa Citizens’ Festival, the Tachikawa Merchants’ Festival, the Tachikawa Agricultural Festival and more. Includes the Tachikawa Handicraft Exhibition (display, sale and workshops of handicrafts and art) and farm produce sales (vegetables, fruit, flower seedlings, udo, eggs and more)",
+      "address": "3173 Midori-cho, Tachikawa City, Tokyo"
     }
   },
   "organizers": {
@@ -2517,7 +2536,9 @@
     "立川市消費者団体連絡会、立川市": "Tachikawa Consumer Groups Liaison Council and Tachikawa City",
     "デザインフェスタ有限会社": "Design Festa Co., Ltd.",
     "千束通商店街振興組合": "Senzoku-dori Shopping Street Promotion Association",
-    "ぽっぽ町田蚤の市実行委員会": "Poppo Machida Flea Market Executive Committee"
+    "ぽっぽ町田蚤の市実行委員会": "Poppo Machida Flea Market Executive Committee",
+    "西早稲田リサイクル活動センター": "Nishi-Waseda Recycling Activity Center",
+    "たちかわ楽市実行委員会": "Tachikawa Rakuichi Executive Committee"
   },
   "labels": {
     "問い合わせ先": "Contact",

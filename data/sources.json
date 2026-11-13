@@ -5162,5 +5162,38 @@
       "checkedAt": "2026-11-13",
       "note": "利用規約のページは見つからず。robots.txt は 404（制限なし）。日時・場所・出品物の事実だけを掲載し、文章・画像は転載しない。実行委員会のメール・LINE は載せない"
     }
+  },
+  {
+    "url": "http://www.shinjuku-rc.org/nishiwaseda/furima.htm",
+    "series": [
+      "nishiwaseda-recycle-center-flea"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-13",
+      "note": "利用規約のページは見つからず。robots.txt は 404（制限なし）。日付・時間・場所・出店区画の事実だけを掲載し、文章は転載しない。問い合わせ先の電話は載せない。日が過ぎた日付の行は公式ページから消えるため、その日付の evidence は載せていない"
+    }
+  },
+  {
+    "url": "http://www.shinjuku-rc.org/nishiwaseda/event/e_news.htm",
+    "series": [
+      "nishiwaseda-recycle-center-flea"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-13",
+      "note": "利用規約のページは見つからず。robots.txt は 404（制限なし）。日付・時間・場所・出店区画の事実だけを掲載し、文章は転載しない。問い合わせ先の電話は載せない。日が過ぎた日付の行は公式ページから消えるため、その日付の evidence は載せていない"
+    }
+  },
+  {
+    "url": "https://www.tachikawa-chiikibunka.or.jp/b10-20261114/",
+    "series": [
+      "tachikawa-rakuichi-2026"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-13",
+      "note": "利用規約・著作権のページは見つからず。robots.txt は許可（200）。日時・場所・催しの種類の事実だけを掲載し、文章・画像は転載しない。問い合わせ先の電話・メールは載せない"
+    }
   }
 ]
