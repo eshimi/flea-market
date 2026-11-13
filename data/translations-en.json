@@ -2397,6 +2397,35 @@
       "rain": "Cancelled in stormy weather / held in light rain",
       "summary": "Held together with the Tachikawa Citizens’ Festival, the Tachikawa Merchants’ Festival, the Tachikawa Agricultural Festival and more. Includes the Tachikawa Handicraft Exhibition (display, sale and workshops of handicrafts and art) and farm produce sales (vegetables, fruit, flower seedlings, udo, eggs and more)",
       "address": "3173 Midori-cho, Tachikawa City, Tokyo"
+    },
+    "atsugi-shimin-fureai-market": {
+      "name": "Atsugi Citizens’ Fureai Market",
+      "venue": "Atsugi Chuo Park",
+      "rule": "Dates for fiscal 2026 shown on the Atsugi City official page (held only in November and March, instead of four times a year)",
+      "time": "9:30–14:00"
+    },
+    "koshigaya-niigata-festa-flea": {
+      "name": "Niigata District Festa (flea market and food stalls)",
+      "venue": "Around Niigata District Center / Community Center",
+      "rule": "Date of the 14th Niigata District Festa, shown on the Koshigaya City official page",
+      "time": "9:30–14:30",
+      "rain": "A decision is made at 7:00 a.m. on the day if rain may force a cancellation. In rain, only the free sweet potato giveaway, the wild bird forest free admission and small-animal corner, and the children’s painting contest are held",
+      "address": "470-1 Oyoshi, Koshigaya City"
+    },
+    "ashikaga-shohiseikatsuten-flea": {
+      "name": "Ashikaga Consumer Life Exhibition Flea Market",
+      "venue": "Ashikaga Flower Park Plaza (Ashikaga Citizens’ Plaza), Izumi Square",
+      "rule": "Date of the 2026 Ashikaga Consumer Life Exhibition, shown on the Ashikaga City official page",
+      "time": "10:30–14:30 (held in rain)",
+      "rain": "Held in rain (the flea market moves to the 3rd floor of the West Building in rain)",
+      "notes": "8 groups are scheduled to set up stalls",
+      "address": "264 Asakura-cho, Ashikaga City"
+    },
+    "asaka-uchimagi-sdgs-flea": {
+      "name": "Uchimagi “SDGs” Flea Market (Uchimagi Community Center Festival)",
+      "venue": "Uchimagi Community Center",
+      "rule": "Date shown on the Asaka City official page (a special event of the Uchimagi Community Center Festival)",
+      "time": "10:00–14:00"
     }
   },
   "organizers": {
@@ -2538,7 +2567,11 @@
     "千束通商店街振興組合": "Senzoku-dori Shopping Street Promotion Association",
     "ぽっぽ町田蚤の市実行委員会": "Poppo Machida Flea Market Executive Committee",
     "西早稲田リサイクル活動センター": "Nishi-Waseda Recycling Activity Center",
-    "たちかわ楽市実行委員会": "Tachikawa Rakuichi Executive Committee"
+    "たちかわ楽市実行委員会": "Tachikawa Rakuichi Executive Committee",
+    "市民ふれあいマーケット実行委員会": "Citizens’ Fureai Market Executive Committee",
+    "越谷市 新方地区（市の公式ページに掲載）": "Niigata District, Koshigaya City (listed on the city’s official page)",
+    "足利市（2026足利市消費生活展）": "Ashikaga City (2026 Ashikaga Consumer Life Exhibition)",
+    "NPO法人フリーマーケット主催団体協議会（共催：内間木公民館）": "NPO Flea Market Organizers Council (co-sponsored by Uchimagi Community Center)"
   },
   "labels": {
     "問い合わせ先": "Contact",
@@ -2721,7 +2754,10 @@
     "大阪市阿倍野区": "Abeno Ward, Osaka",
     "港区": "Minato City",
     "八王子市": "Hachioji City",
-    "新座市": "Niiza City"
+    "新座市": "Niiza City",
+    "厚木市": "Atsugi City",
+    "足利市": "Ashikaga City",
+    "朝霞市": "Asaka City"
   },
   "notes": {
     "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",

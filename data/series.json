@@ -16873,5 +16873,203 @@
     ]
    }
   ]
+ },
+ {
+  "id": "atsugi-shimin-fureai-market",
+  "name": "厚木市民ふれあいマーケット",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "市民ふれあいマーケット実行委員会",
+   "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kankyojigyoka/3/shiminhureaimar-ket/52284.html"
+  },
+  "venue": {
+   "name": "厚木中央公園",
+   "pref": "14",
+   "city": "厚木市",
+   "cityCode": "14212"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-14",
+    "2027-03-06"
+   ],
+   "text": "厚木市の公式ページに載っている令和8年度の開催日（年4回から、11月と3月のみに変更）"
+  },
+  "time": {
+   "text": "9:30〜14:00",
+   "start": "09:30",
+   "end": "14:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kankyojigyoka/3/shiminhureaimar-ket/52284.html",
+    "type": "municipality",
+    "checkedAt": "2026-11-13",
+    "evidence": [
+     "令和8年11月14日（土曜日）",
+     "令和9年3月6日（土曜日）",
+     "9時30分から14時まで",
+     "市民ふれあいマーケット実行委員会"
+    ]
+   },
+   {
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kankyojigyoka/3/shiminhureaimar-ket/37119.html",
+    "type": "municipality",
+    "checkedAt": "2026-11-13",
+    "evidence": [
+     "11月14日の市民ふれあいマーケットは予定通り開催します。",
+     "開催会場 厚木中央公園",
+     "開催時間 午前9時30分から午後2時まで"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "koshigaya-niigata-festa-flea",
+  "name": "新方地区フェスタ（フリーマーケット・模擬店）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "越谷市 新方地区（市の公式ページに掲載）",
+   "label": "掲載元",
+   "url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/chiikishimin/13chikudantai/niigata/niigatachikufesta.html"
+  },
+  "venue": {
+   "name": "新方地区センター・公民館 周辺",
+   "pref": "11",
+   "city": "越谷市",
+   "cityCode": "11222",
+   "address": "越谷市大吉470番地1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-15"
+   ],
+   "text": "越谷市の公式ページに載っている第14回新方地区フェスタの開催日"
+  },
+  "time": {
+   "text": "9:30〜14:30",
+   "start": "09:30",
+   "end": "14:30"
+  },
+  "visitor": {
+   "rain": "雨天により開催が危ぶまれる場合は、当日の午前7時に判定。雨天の場合は、さつまいもの無料配布、野鳥の森無料入園・小動物とのふれあいコーナー、小中学生等絵画コンテストのみ実施"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/chiikishimin/13chikudantai/niigata/niigatachikufesta.html",
+    "type": "municipality",
+    "checkedAt": "2026-11-13",
+    "evidence": [
+     "第14回新方地区フェスタについて",
+     "令和8 年11 月15 日(日) 午前9時30分から午後2時30分",
+     "新方地区センター・公民館 (越谷市大吉470番地1) 周辺",
+     "雨天により開催が危ぶまれる場合は、 当日の午前7時に判定を行います。",
+     "【フリーマーケット・模擬店】"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ashikaga-shohiseikatsuten-flea",
+  "name": "足利市消費生活展 フリーマーケット",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "足利市（2026足利市消費生活展）",
+   "url": "https://www.city.ashikaga.tochigi.jp/living/000955/000960/p003477.html"
+  },
+  "venue": {
+   "name": "あしかがフラワーパークプラザ（足利市民プラザ） 泉の広場",
+   "pref": "09",
+   "city": "足利市",
+   "cityCode": "09201",
+   "address": "足利市朝倉町264番地"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-15"
+   ],
+   "text": "足利市の公式ページに載っている2026足利市消費生活展の開催日"
+  },
+  "time": {
+   "text": "10:30〜14:30（雨天決行）",
+   "start": "10:30",
+   "end": "14:30"
+  },
+  "visitor": {
+   "rain": "雨天決行（フリーマーケットは、雨天の場合、西館3階）"
+  },
+  "exhibitor": {
+   "notes": "8団体が出店予定"
+  },
+  "scale": {
+   "stalls": 8,
+   "quote": "8団体が出店予定"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.ashikaga.tochigi.jp/living/000955/000960/p003477.html",
+    "type": "municipality",
+    "checkedAt": "2026-11-13",
+    "evidence": [
+     "令和8(2026)年11月15日（日曜日）",
+     "午前10時30分～午後2時30分 （雨天決行）",
+     "会場あしかがフラワーパークプラザ（足利市民プラザ） 小ホール・泉の広場ほか",
+     "足利市朝倉町264番地",
+     "フリーマーケット〔泉の広場（屋外） ※雨天の場合は西館3階〕",
+     "8団体が出店予定"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "asaka-uchimagi-sdgs-flea",
+  "name": "内公SDG'sフリーマーケット（内間木公民館まつり）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "NPO法人フリーマーケット主催団体協議会（共催：内間木公民館）",
+   "url": "https://www.city.asaka.lg.jp/soshiki/43/utikofleama.html"
+  },
+  "venue": {
+   "name": "内間木公民館",
+   "pref": "11",
+   "city": "朝霞市",
+   "cityCode": "11227"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-15"
+   ],
+   "text": "朝霞市の公式ページに載っている開催日（内間木公民館まつりの特設イベント）"
+  },
+  "time": {
+   "text": "10:00〜14:00",
+   "start": "10:00",
+   "end": "14:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.city.asaka.lg.jp/soshiki/43/utikofleama.html",
+    "type": "municipality",
+    "checkedAt": "2026-11-13",
+    "evidence": [
+     "「内公SDG'ｓフリーマーケット」を開催します（内間木公民館）",
+     "令和8年 11月15日（日曜日） 午前10時から午後2時まで",
+     "NPO法人フリーマーケット主催団体協議会",
+     "【共催】内間木公民館"
+    ]
+   }
+  ]
  }
 ]

@@ -5195,5 +5195,60 @@
       "checkedAt": "2026-11-13",
       "note": "利用規約・著作権のページは見つからず。robots.txt は許可（200）。日時・場所・催しの種類の事実だけを掲載し、文章・画像は転載しない。問い合わせ先の電話・メールは載せない"
     }
+  },
+  {
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kankyojigyoka/3/shiminhureaimar-ket/52284.html",
+    "series": [
+      "atsugi-shimin-fureai-market"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-13",
+      "note": "厚木市の「WEBサイトについて」の著作権（私的使用・引用などを除き、無断で複製・転用を禁じる）の方針により、日付・時間・会場の事実だけを掲載。担当課の電話番号などは掲載しない。robots.txt は 404（制限なし）"
+    }
+  },
+  {
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kankyojigyoka/3/shiminhureaimar-ket/37119.html",
+    "series": [
+      "atsugi-shimin-fureai-market"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-13",
+      "note": "同上（11/14 の開催可否のお知らせページ。日が過ぎると読めなくなる場合がある）"
+    }
+  },
+  {
+    "url": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/chiikishimin/13chikudantai/niigata/niigatachikufesta.html",
+    "series": [
+      "koshigaya-niigata-festa-flea"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-13",
+      "note": "越谷市の「このサイトについて」に、複製・転載を禁じる文言は見つからず。robots.txt は 404（制限なし）。日付・時間・会場・雨天の扱いの事実だけを掲載し、文章は転載しない"
+    }
+  },
+  {
+    "url": "https://www.city.ashikaga.tochigi.jp/living/000955/000960/p003477.html",
+    "series": [
+      "ashikaga-shohiseikatsuten-flea"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-13",
+      "note": "足利市の「著作権・リンクについて」（私的利用・引用などを除き、許可なく使用・複製・転載を禁じる）の方針により、日付・時間・会場・出店団体数の事実だけを掲載。robots.txt は許可（200）"
+    }
+  },
+  {
+    "url": "https://www.city.asaka.lg.jp/soshiki/43/utikofleama.html",
+    "series": [
+      "asaka-uchimagi-sdgs-flea"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-13",
+      "note": "朝霞市の「免責事項」の著作権（私的使用・引用などを除き、無断で複製・転用を禁じる）の方針により、日付・時間・主催団体名の事実だけを掲載。robots.txt は 404（制限なし）"
+    }
   }
 ]
