@@ -2341,6 +2341,24 @@
       "name": "Niiza City Hall Flea Market (Flea Market Promotion Network)",
       "venue": "Niiza City Hall",
       "rule": "Dates published by the organizer (Flea Market Promotion Network)"
+    },
+    "tachikawa-furima-mura": {
+      "name": "Tachikawa Flea Market Village",
+      "venue": "Under Tachikawa-Kita Station (Tama Monorail), Sunsan Road (Akebono-cho)",
+      "rule": "Date shown on the Tachikawa City official page",
+      "time": "10 a.m.–2 p.m.",
+      "rain": "Cancelled in case of rain",
+      "notes": "Come directly to the venue. Please bring your own shopping bag. There is no parking or bicycle parking."
+    },
+    "designfesta-vol64": {
+      "name": "Design Festa Vol.64",
+      "venue": "Tokyo Big Sight, West & South Halls (all halls)",
+      "rule": "Dates shown on the official site’s event overview",
+      "time": "10:00–18:00",
+      "admission": "Advance one-day ticket ¥800 / advance two-day ticket ¥1,500 / same-day one-day ticket ¥1,000 (free for elementary school students and younger)",
+      "summary": "Display and sale of original works, performances and more. About 6,500 booths per day",
+      "address": "3-11-1 Ariake, Koto-ku, Tokyo",
+      "access": "7 min on foot from Kokusai-Tenjijo Station (Rinkai Line) / 3 min on foot from Tokyo Big Sight Station (Yurikamome)"
     }
   },
   "organizers": {
@@ -2476,7 +2494,9 @@
     "海鷹祭実行委員会": "Umitaka Festival Executive Committee",
     "東京都立大学大学祭実行委員会": "Tokyo Metropolitan University Festival Executive Committee",
     "家貨屋 kakaya／一般社団法人東銀座エリアマネジメント（共催）": "kakaya and Higashi-Ginza Area Management Association (co-hosts)",
-    "株式会社HALE": "HALE Inc."
+    "株式会社HALE": "HALE Inc.",
+    "立川市消費者団体連絡会、立川市": "Tachikawa Consumer Groups Liaison Council and Tachikawa City",
+    "デザインフェスタ有限会社": "Design Festa Co., Ltd."
   },
   "labels": {
     "問い合わせ先": "Contact",
