@@ -2426,6 +2426,13 @@
       "venue": "Uchimagi Community Center",
       "rule": "Date shown on the Asaka City official page (a special event of the Uchimagi Community Center Festival)",
       "time": "10:00–14:00"
+    },
+    "fmpn-takamoto-health-park": {
+      "name": "Takamoto Health Park Flea Market (Flea Market Promotion Network)",
+      "venue": "Takamoto Health Park (Koshigaya Park, former Prefectural Health and Welfare Village)",
+      "rule": "Dates published by the organizer (Flea Market Promotion Network)",
+      "address": "82 Kita-Gokoya, Koshigaya City, Saitama",
+      "access": "25 min on foot from Higashi-Kawaguchi Station (JR Musashino Line / Saitama Rapid Railway) / about 20 min by bus from the west exit of Koshigaya Station (Tobu Isesaki Line), get off at the terminus “Takamoto Health Park”"
     }
   },
   "organizers": {

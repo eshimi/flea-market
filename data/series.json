@@ -3082,7 +3082,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-10-18"
+    "checkedAt": "2026-11-13"
    },
    {
     "url": "https://www.pref.saitama.lg.jp/shisetsu/koen/009.html",
@@ -3136,7 +3136,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-10-18"
+    "checkedAt": "2026-11-13"
    },
    {
     "url": "https://www.pref.saitama.lg.jp/shisetsu/koen/024.html",
@@ -3181,7 +3181,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-11-07"
+    "checkedAt": "2026-11-13"
    }
   ],
   "time": {
@@ -3224,7 +3224,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-11-07"
+    "checkedAt": "2026-11-13"
    },
    {
     "url": "https://www.aeonmall.com/facility/detail/1439/",
@@ -3266,7 +3266,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-11-07"
+    "checkedAt": "2026-11-13"
    },
    {
     "url": "https://www.pref.saitama.lg.jp/spo-navi/shisetsu/saitamaken/alnethome.html",
@@ -3308,7 +3308,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-11-07"
+    "checkedAt": "2026-11-13"
    }
   ]
  },
@@ -3342,7 +3342,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-11-07"
+    "checkedAt": "2026-11-13"
    }
   ]
  },
@@ -3376,7 +3376,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-11-07"
+    "checkedAt": "2026-11-13"
    },
    {
     "url": "https://www.pref.saitama.lg.jp/shisetsu/koen/009.html",
@@ -3419,7 +3419,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-11-07"
+    "checkedAt": "2026-11-13"
    },
    {
     "url": "https://www.city.toda.saitama.jp/soshiki/192/community-sakura-introgaiyo.html",
@@ -3465,7 +3465,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-11-07"
+    "checkedAt": "2026-11-13"
    }
   ],
   "time": {
@@ -3512,7 +3512,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-11-07"
+    "checkedAt": "2026-11-13"
    }
   ]
  },
@@ -3547,7 +3547,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-11-07"
+    "checkedAt": "2026-11-13"
    },
    {
     "url": "https://www.city.katsushika.lg.jp/planning/1003408/1003556.html",
@@ -3590,7 +3590,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-11-07"
+    "checkedAt": "2026-11-13"
    },
    {
     "url": "https://www.city.kita.lg.jp/city-information/facilities/1015990/1016001.html",
@@ -16520,7 +16520,7 @@
    {
     "url": "https://recycle-man.or.jp/",
     "type": "organizer",
-    "checkedAt": "2026-11-07"
+    "checkedAt": "2026-11-13"
    }
   ]
  },
@@ -17068,6 +17068,52 @@
      "令和8年 11月15日（日曜日） 午前10時から午後2時まで",
      "NPO法人フリーマーケット主催団体協議会",
      "【共催】内間木公民館"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fmpn-takamoto-health-park",
+  "name": "たかもとヘルスパーク フリーマーケット（フリーマーケット推進ネットワーク）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "フリーマーケット推進ネットワーク",
+   "url": "https://recycle-man.or.jp/"
+  },
+  "venue": {
+   "name": "たかもとヘルスパーク（越谷公園・旧県民健康福祉村）",
+   "pref": "11",
+   "city": "越谷市",
+   "cityCode": "11222",
+   "address": "越谷市北後谷82",
+   "access": "JR武蔵野線 埼玉高速鉄道「東川口駅」徒歩25分／東武伊勢崎線「越谷駅」西口からバスで約20分（たかもとヘルスパーク行き終点下車）"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-29",
+    "2026-12-20",
+    "2027-01-17"
+   ],
+   "text": "主催者（フリーマーケット推進ネットワーク）が公開している開催予定日"
+  },
+  "sources": [
+   {
+    "url": "https://recycle-man.or.jp/",
+    "type": "organizer",
+    "checkedAt": "2026-11-13"
+   },
+   {
+    "url": "https://www.pref.saitama.lg.jp/shisetsu/koen/028.html",
+    "type": "municipality",
+    "checkedAt": "2026-11-13",
+    "scope": "venue",
+    "evidence": [
+     "〒343-0854 埼玉県越谷市北後谷82",
+     "JR武蔵野線 埼玉高速鉄道「東川口駅」徒歩25分",
+     "東武伊勢崎線「越谷駅」西口からバスで約20分（たかもとヘルスパーク行き終点下車）"
     ]
    }
   ]
