@@ -2359,6 +2359,25 @@
       "summary": "Display and sale of original works, performances and more. About 6,500 booths per day",
       "address": "3-11-1 Ariake, Koto-ku, Tokyo",
       "access": "7 min on foot from Kokusai-Tenjijo Station (Rinkai Line) / 3 min on foot from Tokyo Big Sight Station (Yurikamome)"
+    },
+    "senzokudori-autumn-furima": {
+      "name": "Flea market in Senzoku Park at the Senzoku-dori Shopping Street “Autumn Grand Thanksgiving Festival”",
+      "venue": "Senzoku Park",
+      "rule": "Dates shown on the Senzoku-dori Shopping Street’s official page (Autumn Grand Thanksgiving Festival)",
+      "time": "10:00–16:00 (held in rain)",
+      "rain": "Held in rain",
+      "apply": "Application form on the official page (bring your own goods, first come, first served)",
+      "notes": "Stall spaces accepted: about 30 (bring your own goods, first come, first served)",
+      "address": "4-24-7 Asakusa, Taito-ku, Tokyo",
+      "access": "5 min on foot from Asakusa Station (Tsukuba Express)"
+    },
+    "poppo-machida-nominoichi": {
+      "name": "Poppo Machida Flea Market (Nominoichi)",
+      "venue": "Poppo Machida, outdoor plaza and piloti",
+      "rule": "Dates shown on the official page of Poppo Machida (Machida Machizukuri Kosha)",
+      "time": "10:00–17:00 (held in light rain)",
+      "rain": "Held in light rain",
+      "summary": "Antiques, vintage items, household goods, kimono, clothing, ceramics, tableware, records, kitchenware and more"
     }
   },
   "organizers": {
@@ -2496,7 +2515,9 @@
     "家貨屋 kakaya／一般社団法人東銀座エリアマネジメント（共催）": "kakaya and Higashi-Ginza Area Management Association (co-hosts)",
     "株式会社HALE": "HALE Inc.",
     "立川市消費者団体連絡会、立川市": "Tachikawa Consumer Groups Liaison Council and Tachikawa City",
-    "デザインフェスタ有限会社": "Design Festa Co., Ltd."
+    "デザインフェスタ有限会社": "Design Festa Co., Ltd.",
+    "千束通商店街振興組合": "Senzoku-dori Shopping Street Promotion Association",
+    "ぽっぽ町田蚤の市実行委員会": "Poppo Machida Flea Market Executive Committee"
   },
   "labels": {
     "問い合わせ先": "Contact",

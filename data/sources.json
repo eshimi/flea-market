@@ -5140,5 +5140,27 @@
       "checkedAt": "2026-11-13",
       "note": "利用規約（転載・取得を禁じるページ）は、サイトに見つからず（プライバシポリシーと、出展・来場の注意事項のみ）。robots.txt は許可（200）。日時・会場・入場料の事実だけを掲載し、文章・画像は転載しない"
     }
+  },
+  {
+    "url": "https://senzokudori.com/event/8392/",
+    "series": [
+      "senzokudori-autumn-furima"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-13",
+      "note": "利用規約のページは見つからず（プライバシーポリシーのみ）。robots.txt は許可（200）。日時・場所・出店受付数の事実だけを掲載し、文章・画像は転載しない。Instagram など SNS は載せない"
+    }
+  },
+  {
+    "url": "http://www.poppo.jp/event_poppo/",
+    "series": [
+      "poppo-machida-nominoichi"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-13",
+      "note": "利用規約のページは見つからず。robots.txt は 404（制限なし）。日時・場所・出品物の事実だけを掲載し、文章・画像は転載しない。実行委員会のメール・LINE は載せない"
+    }
   }
 ]
