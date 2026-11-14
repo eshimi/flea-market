@@ -4526,5 +4526,99 @@
   "evidenceOk": {
    "poppo-machida-nominoichi": true
   }
+ },
+ "http://www.shinjuku-rc.org/nishiwaseda/furima.htm": {
+  "fetchedAt": "2026-11-14",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"1599-65ef09aa60f00\"",
+  "lastModified": "Thu, 29 Oct 2026 01:29:00 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "nishiwaseda-recycle-center-flea": true
+  }
+ },
+ "https://www.city.ashikaga.tochigi.jp/living/000955/000960/p003477.html": {
+  "fetchedAt": "2026-11-14",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "ashikaga-shohiseikatsuten-flea": true
+  }
+ },
+ "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/chiikishimin/13chikudantai/niigata/niigatachikufesta.html": {
+  "fetchedAt": "2026-11-14",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"a3fb-65f4a3312f27d-gzip\"",
+  "lastModified": "Mon, 02 Nov 2026 12:22:29 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "koshigaya-niigata-festa-flea": true
+  }
+ },
+ "https://www.city.asaka.lg.jp/soshiki/43/utikofleama.html": {
+  "fetchedAt": "2026-11-14",
+  "httpStatus": 200,
+  "failCount": 0,
+  "lastModified": "Sat, 14 Nov 2026 01:01:21 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "asaka-uchimagi-sdgs-flea": true
+  }
+ },
+ "https://www.tachikawa-chiikibunka.or.jp/b10-20261114/": {
+  "fetchedAt": "2026-11-14",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "tachikawa-rakuichi-2026": true
+  }
+ },
+ "https://www.city.atsugi.kanagawa.jp/soshiki/kankyojigyoka/3/shiminhureaimar-ket/52284.html": {
+  "fetchedAt": "2026-11-14",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"6af72644-f226\"",
+  "lastModified": "Fri, 13 Nov 2026 15:01:24 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "atsugi-shimin-fureai-market": true
+  }
+ },
+ "https://www.pref.saitama.lg.jp/shisetsu/koen/028.html": {
+  "fetchedAt": "2026-11-14",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"3f00-64f65bb70c574\"",
+  "lastModified": "Tue, 14 Apr 2026 06:30:15 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "fmpn-takamoto-health-park": true
+  }
+ },
+ "http://www.shinjuku-rc.org/nishiwaseda/event/e_news.htm": {
+  "fetchedAt": "2026-11-14",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"1a40-65ef0a1cd1d00\"",
+  "lastModified": "Thu, 29 Oct 2026 01:31:00 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "nishiwaseda-recycle-center-flea": true
+  }
+ },
+ "https://www.city.atsugi.kanagawa.jp/soshiki/kankyojigyoka/3/shiminhureaimar-ket/37119.html": {
+  "fetchedAt": "2026-11-14",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"6af6759a-e6ff\"",
+  "lastModified": "Fri, 13 Nov 2026 02:27:38 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "atsugi-shimin-fureai-market": true
+  }
  }
 }
