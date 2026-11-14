@@ -3984,7 +3984,10 @@
       "ok": true,
       "checkedAt": "2026-10-21",
       "note": "指定管理者（日比谷アメニス・NTTアーバンバリューサポート共同事業体）の公園サイト。利用規約のページは見当たらず、robots.txt で許可（2026-10-21 確認）。"
-    }
+    },
+    "venues": [
+      "ike-sun-park"
+    ]
   },
   {
     "url": "https://www.city.inazawa.aichi.jp/0000002801.html",

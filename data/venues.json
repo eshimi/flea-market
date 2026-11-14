@@ -1806,5 +1806,46 @@
    "altEn": "A flea market along a path in Asukayama Park. Shoppers walk under the trees past the stalls.",
    "note": "サイト運営者が 2026-11-01 に撮影した写真から、3:2に切り出し、顔が識別できる人にぼかしを入れて、800x533 の webp に変換"
   }
- }
+ },
+  {
+    "id": "ike-sun-park",
+    "name": "イケ・サンパーク",
+    "kind": "plaza",
+    "area": {
+      "pref": "13",
+      "cityCode": "13116",
+      "city": "豊島区"
+    },
+    "address": "東京都豊島区東池袋4丁目42番",
+    "access": "東京メトロ有楽町線「東池袋駅」下車6番出口から徒歩5分",
+    "officialUrl": "https://ikesunpark.jp/",
+    "summary": "東池袋の会場で、東京リサイクルの「イケ・サンパーク フリーマーケット」が開かれる。",
+    "rules": "雨天時は中止。開催の可否は当日7時30分までに公式サイトへ掲載（主催者の記載）。",
+    "sources": [
+      {
+        "url": "https://ikesunpark.jp/",
+        "type": "official",
+        "checkedAt": "2026-11-14",
+        "evidence": [
+          "東京都豊島区東池袋4丁目 42 番",
+          "東京メトロ有楽町線「東池袋駅」下車6番出口から徒歩5分"
+        ]
+      }
+    ],
+    "image": {
+      "file": "ike-sun-park.webp",
+      "title": "イケ・サンパークのフリーマーケット",
+      "author": "Flea Market JP 運営（サイト運営者の撮影）",
+      "license": "© Flea Market JP（無断転載禁止）",
+      "sourceUrl": "https://streetbazaars.jp/",
+      "own": true,
+      "edit": {
+        "ja": "3:2に切り出し・縮小。人の顔にぼかしを入れています",
+        "en": "cropped to 3:2 and resized; faces blurred"
+      },
+      "altJa": "イケ・サンパークの広場に、赤いテントと敷物の出店が並び、買い物客でにぎわっている。",
+      "altEn": "A flea market at IKE-SUN PARK, with red tents and mat stalls on the plaza and shoppers filling the area.",
+      "note": "サイト運営者が撮影した写真から、3:2に切り出し、顔が識別できる人にぼかしを入れて、800x533 の webp に変換"
+    }
+  }
 ]
