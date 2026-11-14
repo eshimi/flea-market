@@ -1,6 +1,155 @@
 {
- "lastDate": "2026-11-13",
+ "lastDate": "2026-11-14",
  "items": [
+  {
+   "series": "atsugi-shimin-fureai-market",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://www.city.atsugi.kanagawa.jp/soshiki/kankyojigyoka/3/shiminhureaimar-ket/52284.html"
+  },
+  {
+   "series": "bia-sunshine",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-13",
+   "source": "https://b-i-a.jp/reserve/sunshine/"
+  },
+  {
+   "series": "designfesta-vol64",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://designfesta.com/about/"
+  },
+  {
+   "series": "f2525-moriyama-moriive",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://2525furima.hp.peraichi.com/"
+  },
+  {
+   "series": "fmj-amaiseki-park",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "note": "11:00〜17:00",
+   "source": "https://www.fmfm-king.com/enama11-14/"
+  },
+  {
+   "series": "fmj-ritto-sakira",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "note": "栗東にぎわいまつり",
+   "source": "https://www.fmfm-king.com/sakira11-14-15/"
+  },
+  {
+   "series": "fmpn-koshigaya-shirakobato-park",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-13",
+   "source": "https://recycle-man.or.jp/"
+  },
+  {
+   "series": "ibaraki-ekimae-marche",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://ficbase.jp/news/oX2WMwom"
+  },
+  {
+   "series": "jfma-ikea-kobe-loppis",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "http://freemarket-go.com/shousai-hyogo-010.html"
+  },
+  {
+   "series": "lohas-park-kashiwara",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://lohas-park.jp/event/kiji5937/"
+  },
+  {
+   "series": "mottainai-flea-kichijoji-parco",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://www.mottainai.info/jp/event/"
+  },
+  {
+   "series": "nishiwaseda-recycle-center-flea",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "http://www.shinjuku-rc.org/nishiwaseda/furima.htm"
+  },
+  {
+   "series": "osaka-garagesale-konohana",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  {
+   "series": "osaka-garagesale-yodogawa",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  {
+   "series": "poppo-machida-nominoichi",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "http://www.poppo.jp/event_poppo/"
+  },
+  {
+   "series": "rbf-kawagoe-suijo-park",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://www.rbf.jp/nittei.html"
+  },
+  {
+   "series": "senzokudori-autumn-furima",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://senzokudori.com/event/8392/"
+  },
+  {
+   "series": "tachikawa-furima-mura",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://www.city.tachikawa.lg.jp/event/e-moyooshi/1025473.html"
+  },
+  {
+   "series": "tachikawa-rakuichi-2026",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://www.tachikawa-chiikibunka.or.jp/b10-20261114/"
+  },
+  {
+   "series": "trx-ike-sunpark-flea",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://trx.jp/schejule"
+  },
+  {
+   "series": "trx-oi-keibajo-tokyo-city-flea",
+   "date": "2026-11-14",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://trx.jp/schejule"
+  },
   {
    "series": "lohas-park-fukinuke-marche-hyogo-eki",
    "date": "2026-11-12",
