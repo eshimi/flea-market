@@ -1,4 +1,4 @@
-// キーワード検索：/events.json を読み、名前・地域・会場・種類・開催のきまりで絞り込む（すべての語を含むもの）。
+// キーワード検索：/events.json を読み、名前・地域・会場・住所・アクセス・種類・開催のきまりで絞り込む（すべての語を含むもの）。
 // 表記のゆれは、検索語と本文の両方を同じ形にそろえてから比べる（全角・半角、カタカナ・ひらがな、ヶ・が、アクセント記号を一つに。中黒・空白・ハイフンなどの記号は無視）
 (async () => {
   const ja = document.documentElement.lang === 'ja';
@@ -25,10 +25,10 @@
     const { events, spots = [] } = await (await fetch('/events.json')).json();
     const words = q.split(/[\s　]+/).map(norm).filter(Boolean);
     const hit = events.filter((e) => {
-      const text = norm([e.n, e.ne || '', e.p, e.pe || '', e.cie || '', e.ve || '', e.re || '', e.ci, e.v, e.r, ...e.k.map((k) => KIND[k] || '')].join(' '));
+      const text = norm([e.n, e.ne || '', e.p, e.pe || '', e.cie || '', e.ve || '', e.re || '', e.ci, e.v, e.a || '', e.ac || '', e.r, ...e.k.map((k) => KIND[k] || '')].join(' '));
       return words.every((w) => text.includes(w));
     });
-    const sh = spots.filter((x) => { const t = norm([x.n, x.ne || '', x.p, x.pe || '', x.ci, x.cie || '', x.pl].join(' ')); return words.every((w) => t.includes(w)); });
+    const sh = spots.filter((x) => { const t = norm([x.n, x.ne || '', x.p, x.pe || '', x.ci, x.cie || '', x.pl, x.a || '', x.ac || ''].join(' ')); return words.every((w) => t.includes(w)); });
     const spotHtml = sh.length ? `<div class="sp-hl"><b>${ja ? 'スポット（会場）' : 'Spots'}</b>${sh.slice(0, 12).map((x) => `<a href="${pre}/spot/${esc(x.id)}/">${esc(!ja && x.ne ? x.ne : x.n)}</a>`).join('')}</div>` : '';
     status.textContent = ja ? `「${q}」の開催：${hit.length}件` : `${hit.length} result${hit.length === 1 ? '' : 's'} for “${q}”`;
     out.innerHTML = spotHtml + hit.slice(0, 200).map((e) => {

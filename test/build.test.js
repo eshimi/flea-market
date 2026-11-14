@@ -67,7 +67,7 @@ test('HTML のエスケープと、検索用の索引', () => {
   assert.ok(!html.includes('<title><a>'));
   const idx = searchIndex(occ);
   assert.equal(idx.length, occ.length);
-  assert.deepEqual(Object.keys(idx[0]).sort(), ['c', 'ci', 'cie', 'd', 'id', 'k', 'n', 'ne', 'p', 'pe', 'r', 're', 'st', 't', 'te', 'v', 've']);
+  assert.deepEqual(Object.keys(idx[0]).sort(), ['a', 'ac', 'c', 'ci', 'cie', 'd', 'id', 'k', 'n', 'ne', 'p', 'pe', 'r', 're', 'st', 't', 'te', 'v', 've']);
 });
 
 test('サイトマップの更新日は、本文が変わったページだけ進む', () => {

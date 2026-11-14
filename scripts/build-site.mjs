@@ -1179,13 +1179,13 @@ export function searchIndex(occ) {
   // 検索用：開催回ごとの小さな JSON（/events.json）
   return occ.map((o) => ({
     d: o.date, st: o.status, c: o.checkedAt, id: o.series.id, n: o.series.name, ne: nameEn(o.series), k: o.series.kinds,
-    p: PREFS[o.series.venue.pref], pe: prefLabel(o.series.venue.pref, 'en'), ci: o.series.venue.city || '', cie: cityEn(o.series.venue.city), v: o.series.venue.name, ve: venueEn(o.series), t: o.series.time?.text || '', te: timeEn(o.series), r: o.series.recurrence.text, re: recurEn(o.series.recurrence),
+    p: PREFS[o.series.venue.pref], pe: prefLabel(o.series.venue.pref, 'en'), ci: o.series.venue.city || '', cie: cityEn(o.series.venue.city), v: o.series.venue.name, ve: venueEn(o.series), a: o.series.venue.address || '', ac: o.series.venue.access || '', t: o.series.time?.text || '', te: timeEn(o.series), r: o.series.recurrence.text, re: recurEn(o.series.recurrence),
   }));
 }
 
 // 検索用：スポット（会場）の小さな JSON（/events.json の spots）
 function spotIndexData(spots) {
-  return spots.map((sp) => ({ id: sp.venue.id, n: sp.venue.name, ne: venueTrEn(sp.venue.id, 'name'), ci: sp.venue.area.city || '', cie: cityEn(sp.venue.area.city), p: PREFS[sp.venue.area.pref], pe: prefLabel(sp.venue.area.pref, 'en'), k: sp.venue.kind, pl: sp.venue.place || '', c: sp.count }));
+  return spots.map((sp) => ({ id: sp.venue.id, n: sp.venue.name, ne: venueTrEn(sp.venue.id, 'name'), ci: sp.venue.area.city || '', cie: cityEn(sp.venue.area.city), p: PREFS[sp.venue.area.pref], pe: prefLabel(sp.venue.area.pref, 'en'), k: sp.venue.kind, pl: sp.venue.place || '', a: sp.venue.address || '', ac: sp.venue.access || '', c: sp.count }));
 }
 
 function main() {
