@@ -29,7 +29,16 @@
       return words.every((w) => text.includes(w));
     });
     const sh = spots.filter((x) => { const t = norm([x.n, x.ne || '', x.p, x.pe || '', x.ci, x.cie || '', x.pl, x.a || '', x.ac || ''].join(' ')); return words.every((w) => t.includes(w)); });
-    const spotHtml = sh.length ? `<div class="sp-hl"><b>${ja ? 'スポット（会場）' : 'Spots'}</b>${sh.slice(0, 12).map((x) => `<a href="${pre}/spot/${esc(x.id)}/">${esc(!ja && x.ne ? x.ne : x.n)}</a>`).join('')}</div>` : '';
+    const fmtD = (ymd) => { const d = new Date(ymd + 'T00:00:00Z'); return ja ? `${d.getUTCMonth() + 1}月${d.getUTCDate()}日（${WD[d.getUTCDay()]}）` : `${MON[d.getUTCMonth()]} ${d.getUTCDate()} (${WDE[d.getUTCDay()]})`; };
+    const spotCard = (x) => {
+      const name = esc(!ja && x.ne ? x.ne : x.n);
+      const sub = esc([!ja && x.cie ? x.cie : x.ci, !ja && x.pe ? x.pe : x.p].filter(Boolean).join(ja ? '・' : ', '));
+      const nd = x.nd ? (ja ? `次回：${esc(fmtD(x.nd))}` : `Next: ${esc(fmtD(x.nd))}`) : (ja ? '次回の日程は未確認' : 'Next date not yet confirmed');
+      const cnt = x.c ? (ja ? `今後${x.c}回` : `${x.c} upcoming`) : '';
+      const img = x.img ? `<img src="${esc(x.img)}" alt="" loading="lazy" width="120" height="80">` : '<span class="sp-noimg" aria-hidden="true"></span>';
+      return `<a class="sp-card" href="${pre}/spot/${esc(x.id)}/">${img}<span class="sp-body"><b>${name}</b><small>${sub}</small><span class="sp-next${x.nd ? '' : ' tbd'}">${nd}${cnt ? ` · ${cnt}` : ''}</span></span></a>`;
+    };
+    const spotHtml = sh.length ? `<section class="sp-res"><h2>${ja ? 'スポット（会場）' : 'Spots (venues)'}</h2><div class="sp-cards">${sh.slice(0, 6).map(spotCard).join('')}</div></section>` : '';
     status.textContent = ja ? `「${q}」の開催：${hit.length}件` : `${hit.length} result${hit.length === 1 ? '' : 's'} for “${q}”`;
     out.innerHTML = spotHtml + hit.slice(0, 200).map((e) => {
       const d = new Date(e.d + 'T00:00:00Z');

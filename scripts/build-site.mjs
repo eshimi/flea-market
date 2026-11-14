@@ -1185,7 +1185,7 @@ export function searchIndex(occ) {
 
 // 検索用：スポット（会場）の小さな JSON（/events.json の spots）
 function spotIndexData(spots) {
-  return spots.map((sp) => ({ id: sp.venue.id, n: sp.venue.name, ne: venueTrEn(sp.venue.id, 'name'), ci: sp.venue.area.city || '', cie: cityEn(sp.venue.area.city), p: PREFS[sp.venue.area.pref], pe: prefLabel(sp.venue.area.pref, 'en'), k: sp.venue.kind, pl: sp.venue.place || '', a: sp.venue.address || '', ac: sp.venue.access || '', c: sp.count }));
+  return spots.map((sp) => ({ id: sp.venue.id, n: sp.venue.name, ne: venueTrEn(sp.venue.id, 'name'), ci: sp.venue.area.city || '', cie: cityEn(sp.venue.area.city), p: PREFS[sp.venue.area.pref], pe: prefLabel(sp.venue.area.pref, 'en'), k: sp.venue.kind, pl: sp.venue.place || '', a: sp.venue.address || '', ac: sp.venue.access || '', c: sp.count, nd: sp.next ? sp.next.date : '', img: sp.venue.image ? `/img/spots/${sp.venue.image.file.replace(/\.webp$/, '-t.webp')}` : '' }));
 }
 
 function main() {

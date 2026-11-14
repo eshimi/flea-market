@@ -40,3 +40,17 @@
 .poll-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 .poll-st{margin:6px 0;font-size:.85rem;color:#7a6a58}
 .sp-quick dd{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+/* 検索結果のスポット（会場）カード */
+.sp-res{margin:12px 0 18px}
+.sp-res h2{font-size:1rem;margin:0 0 8px}
+.sp-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.sp-card{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid #e6dccb;border-radius:12px;padding:10px;text-decoration:none;color:inherit}
+.sp-card:hover{border-color:#B5452E}
+.sp-card img,.sp-card .sp-noimg{width:96px;height:64px;border-radius:8px;object-fit:cover;flex:none;background:#f1e9db}
+.sp-card .sp-body{display:flex;flex-direction:column;gap:2px;min-width:0}
+.sp-card b{font-size:1rem;color:#B5452E}
+.sp-card small{color:#6b625a;font-size:.82rem}
+.sp-card .sp-next{font-size:.85rem;font-weight:700}
+.sp-card .sp-next.tbd{font-weight:400;color:#8a7f73}
+@media (max-width:480px){.sp-cards{grid-template-columns:1fr}}
