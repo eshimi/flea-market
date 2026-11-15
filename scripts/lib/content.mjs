@@ -177,6 +177,8 @@ export const BLOG = [
         { p: 'We found this specific occurrence in the organizer’s or municipality’s official information. The date beside the label is the day we last checked.' },
         { h2: 'Scheduled (from recurring rule)' },
         { p: 'We calculated the date from the official rule. The market is very likely to be on, but nobody has confirmed that day yet. Please check the official page, linked under “Sources”, before you go.' },
+        { h2: 'Confirmed (organizer’s social media)' },
+        { p: 'Some markets announce their dates only on the organizer’s own social media account (for example Instagram). We read such a post by hand and list the date, time and place as a fact, with a link to the post under “Sources”. We do not collect social media automatically and we do not copy the text or images. This label is not an official-site confirmation, so please check the post again before you go. After 14 days without a new check, it changes to “To be confirmed”.' },
         { h2: 'Cancelled, postponed, and to be confirmed' },
         { ul: [
           'Cancelled and postponed events stay on the page, marked as such.',
@@ -195,6 +197,8 @@ export const BLOG = [
         { p: 'その回の開催を、主催者・自治体の公式情報で見つけました。札の横の日付は、最後に確認した日です。' },
         { h2: '予定（きまりから算出）' },
         { p: '公式に書かれたきまりから計算した日です。開く可能性は高いのですが、その日について確認した人はまだいません。お出かけの前に、「出典」のリンクから公式ページをご確認ください。' },
+        { h2: '主催者のSNSで確認' },
+        { p: '日程を、主催者本人の SNS（たとえば Instagram）だけで発表しているマーケットがあります。その投稿を人が読んで、日付・時間・場所を事実として載せ、「出典」に投稿へのリンクを付けます。SNS の自動収集はしません。文章・画像も転載しません。この札は、公式サイトでの確認ではないので、お出かけの前に、投稿をもう一度ご確認ください。最後の確認から14日を超えると、「開催は要確認」に変わります。' },
         { h2: '中止・延期・要確認' },
         { ul: [
           '中止・延期は、消さずにそのまま表示します。',

@@ -5,7 +5,7 @@ import { addDays } from './dates.mjs';
 export const ICS_PER_SERIES = 3;
 export const icsPath = (id, date, lang) => `${lang === 'ja' ? '/ja' : ''}/ics/${id}-${date}.ics`;
 // 追加できる開催回：今後の（中止・延期でない）開催の、先の3回
-export const icsDates = (list, isActive) => list.filter((o) => isActive(o) && (o.status === 'confirmed' || o.status === 'scheduled')).slice(0, ICS_PER_SERIES);
+export const icsDates = (list, isActive) => list.filter((o) => isActive(o) && (o.status === 'confirmed' || o.status === 'sns' || o.status === 'scheduled')).slice(0, ICS_PER_SERIES);
 
 const esc = (t) => String(t).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
 const fold = (line) => {

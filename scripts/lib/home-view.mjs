@@ -94,7 +94,7 @@ export function renderCalendar(ctx, lang = 'ja', opt = {}) {
 function tagFor(o, lang) {
   // 公式で確認・予定の札は出さない（ユーザー指示 2026-10-26）。中止・延期・要確認は、誤解を招くので出す
   if (o.status === 'confirmed' || o.status === 'scheduled') return '';
-  const cls = { confirmed: 'ok', scheduled: 'plan', cancelled: 'stop', postponed: 'stop', unknown: 'warn' }[o.status];
+  const cls = { confirmed: 'ok', sns: 'plan', scheduled: 'plan', cancelled: 'stop', postponed: 'stop', unknown: 'warn' }[o.status];
   const [, m, d] = o.checkedAt.split('-');
   const when = o.status === 'confirmed' ? `${+m}/${+d} ` : '';
   return `<span class="mtag ${cls}" title="${esc(o.checkedAt)}">${esc(when + S[lang].status[o.status])}</span>`;

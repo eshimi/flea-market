@@ -2433,6 +2433,30 @@
       "rule": "Dates published by the organizer (Flea Market Promotion Network)",
       "address": "82 Kita-Gokoya, Koshigaya City, Saitama",
       "access": "25 min on foot from Higashi-Kawaguchi Station (JR Musashino Line / Saitama Rapid Railway) / about 20 min by bus from the west exit of Koshigaya Station (Tobu Isesaki Line), get off at the terminus “Takamoto Health Park”"
+    },
+    "hakoichi-fukuoka": {
+      "name": "Hakoichi",
+      "venue": "Hako Building / Hako Machiya",
+      "rule": "Dates in the organizer’s Instagram announcement (the organizer’s post says it is held regularly on the 3rd Saturday and Sunday of each month)",
+      "time": "10:00–16:00",
+      "address": "2-10-34 Hakozaki, Higashi-ku, Fukuoka"
+    },
+    "zasshonokuma-nominoichi": {
+      "name": "Zasshonokuma Flea Market (3rd)",
+      "venue": "Ginten-cho Shopping Street",
+      "rule": "Date in the organizer’s Instagram announcement",
+      "time": "12:00–18:00",
+      "address": "2-chome Ginten-cho, Hakata-ku, Fukuoka",
+      "access": "Right next to Zasshonokuma Station (Nishitetsu)"
+    },
+    "lohas-park-fukuoka": {
+      "name": "LOHAS Park Fukuoka (3rd)",
+      "venue": "Maizuru Park, Sannomaru Square",
+      "rule": "Dates in the organizer’s Instagram announcement (Nov 23 is a national holiday)",
+      "time": "10:00–16:00",
+      "admission": "Free",
+      "rain": "Held in rain",
+      "address": "Jonai, Chuo-ku, Fukuoka"
     }
   },
   "organizers": {
@@ -2578,7 +2602,10 @@
     "市民ふれあいマーケット実行委員会": "Citizens’ Fureai Market Executive Committee",
     "越谷市 新方地区（市の公式ページに掲載）": "Niigata District, Koshigaya City (listed on the city’s official page)",
     "足利市（2026足利市消費生活展）": "Ashikaga City (2026 Ashikaga Consumer Life Exhibition)",
-    "NPO法人フリーマーケット主催団体協議会（共催：内間木公民館）": "NPO Flea Market Organizers Council (co-sponsored by Uchimagi Community Center)"
+    "NPO法人フリーマーケット主催団体協議会（共催：内間木公民館）": "NPO Flea Market Organizers Council (co-sponsored by Uchimagi Community Center)",
+    "ハコイチ（主催者のInstagram：@hakoichi851）": "Hakoichi (organizer’s Instagram: @hakoichi851)",
+    "雑餉隈蚤の市（主催者のInstagram：@zasshonokuma.nominoichi）": "Zasshonokuma Flea Market (organizer’s Instagram: @zasshonokuma.nominoichi)",
+    "ロハスパーク（主催者のInstagram：@lohaspark96）": "LOHAS Park (organizer’s Instagram: @lohaspark96)"
   },
   "labels": {
     "問い合わせ先": "Contact",
@@ -2764,7 +2791,9 @@
     "新座市": "Niiza City",
     "厚木市": "Atsugi City",
     "足利市": "Ashikaga City",
-    "朝霞市": "Asaka City"
+    "朝霞市": "Asaka City",
+    "福岡市東区": "Higashi Ward, Fukuoka",
+    "福岡市博多区": "Hakata Ward, Fukuoka"
   },
   "notes": {
     "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",

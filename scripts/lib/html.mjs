@@ -222,7 +222,7 @@ export function breadcrumb(items, lang = 'en') {
 
 export const STATUS_LABEL = S.ja.status;
 
-const STATUS_CLASS = { confirmed: 'ok', scheduled: 'plan', cancelled: 'stop', postponed: 'stop', unknown: 'warn' };
+const STATUS_CLASS = { confirmed: 'ok', sns: 'plan', scheduled: 'plan', cancelled: 'stop', postponed: 'stop', unknown: 'warn' };
 
 export function md(s) {
   const [, m, d] = s.split('-');

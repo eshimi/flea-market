@@ -17118,5 +17118,124 @@
     ]
    }
   ]
+ },
+ {
+  "id": "hakoichi-fukuoka",
+  "name": "ハコイチ",
+  "kinds": [
+   "handmade"
+  ],
+  "organizer": {
+   "name": "ハコイチ（主催者のInstagram：@hakoichi851）",
+   "url": "https://www.instagram.com/hakoichi851/"
+  },
+  "venue": {
+   "name": "ハコビル・ハコ町屋",
+   "pref": "40",
+   "city": "福岡市東区",
+   "cityCode": "40131",
+   "address": "福岡市東区箱崎2-10-34"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21",
+    "2026-11-22"
+   ],
+   "text": "主催者のInstagramの告知投稿にある開催日（毎月第3土日の定期開催と、主催者の投稿にある）"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/p/DfULJ5QEz6p/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-15"
+   }
+  ]
+ },
+ {
+  "id": "zasshonokuma-nominoichi",
+  "name": "雑餉隈蚤の市（第3回）",
+  "kinds": [
+   "nomi"
+  ],
+  "organizer": {
+   "name": "雑餉隈蚤の市（主催者のInstagram：@zasshonokuma.nominoichi）",
+   "url": "https://www.instagram.com/zasshonokuma.nominoichi/"
+  },
+  "venue": {
+   "name": "銀天町商店街",
+   "pref": "40",
+   "city": "福岡市博多区",
+   "cityCode": "40132",
+   "address": "福岡市博多区銀天町2丁目",
+   "access": "西鉄雑餉隈駅すぐ"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-22"
+   ],
+   "text": "主催者のInstagramの告知投稿にある開催日"
+  },
+  "time": {
+   "text": "12:00〜18:00",
+   "start": "12:00",
+   "end": "18:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/p/Dfl3F8miZ-q/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-15"
+   }
+  ]
+ },
+ {
+  "id": "lohas-park-fukuoka",
+  "name": "ロハスパーク福岡（第3回）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "ロハスパーク（主催者のInstagram：@lohaspark96）",
+   "url": "https://www.instagram.com/lohaspark96/"
+  },
+  "venue": {
+   "name": "舞鶴公園 三の丸広場",
+   "pref": "40",
+   "city": "福岡市中央区",
+   "cityCode": "40133",
+   "address": "福岡市中央区城内"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21",
+    "2026-11-22",
+    "2026-11-23"
+   ],
+   "text": "主催者のInstagramの告知投稿にある開催日（11/23は祝日）"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "visitor": {
+   "admission": "無料",
+   "rain": "雨天決行"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/p/DflXvYfn3OA/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-15"
+   }
+  ]
  }
 ]
