@@ -1,6 +1,214 @@
 {
- "lastDate": "2026-11-14",
+ "lastDate": "2026-11-15",
  "items": [
+  {
+   "series": "asaka-uchimagi-sdgs-flea",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "https://www.city.asaka.lg.jp/soshiki/43/utikofleama.html"
+  },
+  {
+   "series": "ashikaga-shohiseikatsuten-flea",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "https://www.city.ashikaga.tochigi.jp/living/000955/000960/p003477.html"
+  },
+  {
+   "series": "bia-icora",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-14",
+   "source": "https://b-i-a.jp/reserve/icora/"
+  },
+  {
+   "series": "designfesta-vol64",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "https://designfesta.com/about/"
+  },
+  {
+   "series": "f2525-moriyama-moriive",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "https://2525furima.hp.peraichi.com/"
+  },
+  {
+   "series": "fmj-ritto-sakira",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "note": "栗東にぎわいまつり",
+   "source": "https://www.fmfm-king.com/sakira11-14-15/"
+  },
+  {
+   "series": "fmpn-kawaguchi-jissoji-omatsuri",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-13",
+   "source": "https://recycle-man.or.jp/"
+  },
+  {
+   "series": "fmpn-soka-acos-plaza",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-13",
+   "source": "https://recycle-man.or.jp/"
+  },
+  {
+   "series": "frma-akabane-park-flea",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-16",
+   "note": "振替日：11月21日（土）",
+   "source": "http://www.frma.jp/"
+  },
+  {
+   "series": "furimatairiku-kawachi-kosaka",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "http://furimatairiku.jp/Kawati/index.html"
+  },
+  {
+   "series": "hyakumanben-tedukuri-ichi",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "https://www.tedukuri-ichi.com/"
+  },
+  {
+   "series": "kokura-de-flima",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "https://www.city.kitakyushu.lg.jp/contents/924_12034.html"
+  },
+  {
+   "series": "koshigaya-niigata-festa-flea",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/shisei/chiikishimin/13chikudantai/niigata/niigatachikufesta.html"
+  },
+  {
+   "series": "lohas-park-kashiwara",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-16",
+   "source": "https://lohas-park.jp/event/kiji5937/"
+  },
+  {
+   "series": "mizuho-aozora-ichi",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "https://www.town.mizuho.tokyo.jp/event/e011/p002837_d/fil/R8yoteihyo.pdf"
+  },
+  {
+   "series": "osaka-garagesale-hirano",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-16",
+   "source": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  {
+   "series": "osaka-garagesale-taisho",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-16",
+   "source": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  {
+   "series": "poppo-machida-nominoichi",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "http://www.poppo.jp/event_poppo/"
+  },
+  {
+   "series": "rbf-kashiwanoha-park",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-16",
+   "source": "https://www.rbf.jp/kashiwanoha.html"
+  },
+  {
+   "series": "recycler-kiba-park-flea",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=045"
+  },
+  {
+   "series": "senzokudori-autumn-furima",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "https://senzokudori.com/event/8392/"
+  },
+  {
+   "series": "shibuya-recycle-bazaar",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-16",
+   "note": "会場：上原社会教育館／11:00〜14:00／出店20店",
+   "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+  },
+  {
+   "series": "sumida-yokojikkawa-kinshicho-flea",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-16",
+   "note": "雨天予備日：11月29日（日）",
+   "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+  },
+  {
+   "series": "tachikawa-rakuichi-2026",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "https://www.tachikawa-chiikibunka.or.jp/b10-20261114/"
+  },
+  {
+   "series": "takahata-fudoson-gozareichi",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "source": "https://www.takahatafudoson.or.jp/"
+  },
+  {
+   "series": "trx-ike-sunpark-flea",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-16",
+   "source": "https://trx.jp/schejule"
+  },
+  {
+   "series": "trx-oi-keibajo-tokyo-city-flea",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-16",
+   "source": "https://trx.jp/schejule"
+  },
+  {
+   "series": "yuyu-marche-sobue-ryokuchi",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-16",
+   "source": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/"
+  },
+  {
+   "series": "zoshigaya-tezukuriichi",
+   "date": "2026-11-15",
+   "status": "confirmed",
+   "checkedAt": "2026-11-15",
+   "note": "大鳥神社の会場はお休み（酉の市のため）",
+   "source": "https://tezukuriichi.com/home.html"
+  },
   {
    "series": "atsugi-shimin-fureai-market",
    "date": "2026-11-14",
