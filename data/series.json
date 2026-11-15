@@ -17237,5 +17237,278 @@
     "checkedAt": "2026-11-15"
    }
   ]
+ },
+ {
+  "id": "fuchu-fudogu-marche",
+  "name": "フチュウフルドウグマルシェ vol.36",
+  "kinds": [
+   "nomi"
+  ],
+  "organizer": {
+   "name": "フチュウフルドウグマルシェ（主催者のInstagram：@fu.fu.marche）",
+   "url": "https://www.instagram.com/fu.fu.marche/"
+  },
+  "venue": {
+   "name": "大東京綜合卸売センター（府中市場）",
+   "pref": "13",
+   "city": "府中市",
+   "cityCode": "13206",
+   "address": "府中市矢崎町4-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-19",
+    "2026-11-20",
+    "2026-11-21",
+    "2026-11-23"
+   ],
+   "text": "主催者のInstagramの告知にある開催日（22日は定休日で休み）"
+  },
+  "time": {
+   "text": "9:00〜15:00",
+   "start": "09:00",
+   "end": "15:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/reel/DfvXEyqxyy8/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   }
+  ]
+ },
+ {
+  "id": "shimokitazawa-fleamarket",
+  "name": "下北沢フリーマーケット",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "下北沢フリーマーケット（主催者のInstagram：@fleamarket_99）",
+   "url": "https://www.instagram.com/fleamarket_99/"
+  },
+  "venue": {
+   "name": "下北沢（定例会場）",
+   "pref": "13",
+   "city": "世田谷区",
+   "cityCode": "13112",
+   "address": "世田谷区北沢2丁目"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-20",
+    "2026-11-21",
+    "2026-11-23"
+   ],
+   "text": "主催者のInstagramの告知にある開催日"
+  },
+  "time": {
+   "text": "12:00〜17:00",
+   "start": "12:00",
+   "end": "17:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/p/DfuRe2okn7f/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   }
+  ]
+ },
+ {
+  "id": "kotsukaikan-marche",
+  "name": "交通会館マルシェ",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "交通会館マルシェ（主催者のInstagram：@kotsukaikanmarche）",
+   "url": "https://www.instagram.com/kotsukaikanmarche/"
+  },
+  "venue": {
+   "name": "東京交通会館",
+   "pref": "13",
+   "city": "千代田区",
+   "cityCode": "13101",
+   "address": "千代田区有楽町2-10-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21",
+    "2026-11-22",
+    "2026-11-23"
+   ],
+   "text": "主催者のInstagramに、毎週土日祝の開催とある。ここには、確認した今週末の日付だけを載せている（平日のミニマルシェは火・水開催とある）"
+  },
+  "time": {
+   "text": "11:30〜17:30",
+   "start": "11:30",
+   "end": "17:30"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/p/DftPJ6_GC4N/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   }
+  ]
+ },
+ {
+  "id": "akasaka-nominoichi-arkhills",
+  "name": "赤坂蚤の市 in ARK HILLS（クリスマス特別回）",
+  "kinds": [
+   "nomi"
+  ],
+  "organizer": {
+   "name": "赤坂蚤の市（主催者のInstagram：@akasaka.nominoichi2014）",
+   "url": "https://www.instagram.com/akasaka.nominoichi2014/"
+  },
+  "venue": {
+   "name": "アークヒルズ",
+   "pref": "13",
+   "city": "港区",
+   "cityCode": "13103",
+   "address": "港区赤坂1-12-32"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-22"
+   ],
+   "text": "主催者のInstagramの告知にある開催日"
+  },
+  "time": {
+   "text": "11:00〜18:00",
+   "start": "11:00",
+   "end": "18:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/p/DfwEqrXJuqv/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   }
+  ]
+ },
+ {
+  "id": "shibuya-nominoichi",
+  "name": "渋谷蚤の市",
+  "kinds": [
+   "nomi"
+  ],
+  "organizer": {
+   "name": "渋谷蚤の市（主催者のInstagram：@shibuya.nominoichi）",
+   "url": "https://www.instagram.com/shibuya.nominoichi/"
+  },
+  "venue": {
+   "name": "住友不動産渋谷ガーデンタワー隣接広場",
+   "pref": "13",
+   "city": "渋谷区",
+   "cityCode": "13113",
+   "address": "渋谷区南平台町16-17"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-22"
+   ],
+   "text": "主催者のInstagramの投稿にある開催日（毎月第2・第4日曜の開催と、投稿にある）"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/p/DfgJ4qnAXYZ/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   },
+   {
+    "url": "https://www.instagram.com/p/Dfdp5LtAbkQ/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   }
+  ]
+ },
+ {
+  "id": "nanbu-marche",
+  "name": "NANBUマルシェ（NANBU BASE）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "NANBUマルシェ（主催者のInstagram：@nanbu.marche）",
+   "url": "https://www.instagram.com/nanbu.marche/"
+  },
+  "venue": {
+   "name": "ブランチ横浜南部市場・NANBU BASE",
+   "pref": "14",
+   "city": "横浜市金沢区",
+   "cityCode": "14110",
+   "address": "横浜市金沢区鳥浜町1-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21",
+    "2026-11-22"
+   ],
+   "text": "主催者のInstagramの告知にある開催日"
+  },
+  "time": {
+   "text": "10:00〜17:00",
+   "start": "10:00",
+   "end": "17:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/p/Dfno1yikv8b/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   }
+  ]
+ },
+ {
+  "id": "nanbu-fleamarket",
+  "name": "NANBUフリーマーケット",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "NANBUフリーマーケット（主催者のInstagram：@nanbu.marche）",
+   "url": "https://www.instagram.com/nanbu.marche/"
+  },
+  "venue": {
+   "name": "ブランチ横浜南部市場・NANBU BASE",
+   "pref": "14",
+   "city": "横浜市金沢区",
+   "cityCode": "14110",
+   "address": "横浜市金沢区鳥浜町1-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21",
+    "2026-12-19"
+   ],
+   "text": "主催者のInstagramの告知にある開催日（12月19日の開催をもって終了と、告知にある）"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/p/DfS_hknkrCY/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   }
+  ]
  }
 ]

@@ -2457,6 +2457,55 @@
       "admission": "Free",
       "rain": "Held in rain",
       "address": "Jonai, Chuo-ku, Fukuoka"
+    },
+    "fuchu-fudogu-marche": {
+      "name": "Fuchu Furudogu Marche vol.36 (flea market)",
+      "venue": "Daitokyo Sogo Oroshiuri Center (Fuchu Market)",
+      "rule": "Dates in the organizer’s Instagram announcement (closed on the 22nd)",
+      "time": "9:00–15:00",
+      "address": "4-1 Yazaki-cho, Fuchu City, Tokyo"
+    },
+    "shimokitazawa-fleamarket": {
+      "name": "Shimokitazawa Flea Market",
+      "venue": "Shimokitazawa (regular venue)",
+      "rule": "Dates in the organizer’s Instagram announcement",
+      "time": "12:00–17:00",
+      "address": "2-chome Kitazawa, Setagaya-ku, Tokyo"
+    },
+    "kotsukaikan-marche": {
+      "name": "Kotsu Kaikan Marche",
+      "venue": "Tokyo Kotsu Kaikan",
+      "rule": "The organizer’s Instagram says it is held every weekend and holiday. Only the dates confirmed for this weekend are listed here (a weekday mini marche is held on Tuesdays and Wednesdays, it says)",
+      "time": "11:30–17:30",
+      "address": "2-10-1 Yurakucho, Chiyoda-ku, Tokyo"
+    },
+    "akasaka-nominoichi-arkhills": {
+      "name": "Akasaka Flea Market at ARK Hills (Christmas special)",
+      "venue": "ARK Hills",
+      "rule": "Date in the organizer’s Instagram announcement",
+      "time": "11:00–18:00",
+      "address": "1-12-32 Akasaka, Minato-ku, Tokyo"
+    },
+    "shibuya-nominoichi": {
+      "name": "Shibuya Flea Market",
+      "venue": "Open square next to Sumitomo Realty Shibuya Garden Tower",
+      "rule": "Date in the organizer’s Instagram post (the post says it is held on the 2nd and 4th Sunday of each month)",
+      "time": "10:00–16:00",
+      "address": "16-17 Nanpeidai-cho, Shibuya-ku, Tokyo"
+    },
+    "nanbu-marche": {
+      "name": "NANBU Marche (NANBU BASE)",
+      "venue": "Branch Yokohama Nanbu Market / NANBU BASE",
+      "rule": "Dates in the organizer’s Instagram announcement",
+      "time": "10:00–17:00",
+      "address": "1-1 Torihama-cho, Kanazawa-ku, Yokohama"
+    },
+    "nanbu-fleamarket": {
+      "name": "NANBU Flea Market",
+      "venue": "Branch Yokohama Nanbu Market / NANBU BASE",
+      "rule": "Dates in the organizer’s Instagram announcement (the announcement says it ends with the Dec 19 event)",
+      "time": "10:00–16:00",
+      "address": "1-1 Torihama-cho, Kanazawa-ku, Yokohama"
     }
   },
   "organizers": {
@@ -2605,7 +2654,14 @@
     "NPO法人フリーマーケット主催団体協議会（共催：内間木公民館）": "NPO Flea Market Organizers Council (co-sponsored by Uchimagi Community Center)",
     "ハコイチ（主催者のInstagram：@hakoichi851）": "Hakoichi (organizer’s Instagram: @hakoichi851)",
     "雑餉隈蚤の市（主催者のInstagram：@zasshonokuma.nominoichi）": "Zasshonokuma Flea Market (organizer’s Instagram: @zasshonokuma.nominoichi)",
-    "ロハスパーク（主催者のInstagram：@lohaspark96）": "LOHAS Park (organizer’s Instagram: @lohaspark96)"
+    "ロハスパーク（主催者のInstagram：@lohaspark96）": "LOHAS Park (organizer’s Instagram: @lohaspark96)",
+    "フチュウフルドウグマルシェ（主催者のInstagram：@fu.fu.marche）": "フチュウフルドウグマルシェ（organizer’s Instagram：@fu.fu.marche）",
+    "下北沢フリーマーケット（主催者のInstagram：@fleamarket_99）": "下北沢フリーマーケット（organizer’s Instagram：@fleamarket_99）",
+    "交通会館マルシェ（主催者のInstagram：@kotsukaikanmarche）": "交通会館マルシェ（organizer’s Instagram：@kotsukaikanmarche）",
+    "赤坂蚤の市（主催者のInstagram：@akasaka.nominoichi2014）": "赤坂蚤の市（organizer’s Instagram：@akasaka.nominoichi2014）",
+    "渋谷蚤の市（主催者のInstagram：@shibuya.nominoichi）": "渋谷蚤の市（organizer’s Instagram：@shibuya.nominoichi）",
+    "NANBUマルシェ（主催者のInstagram：@nanbu.marche）": "NANBUマルシェ（organizer’s Instagram：@nanbu.marche）",
+    "NANBUフリーマーケット（主催者のInstagram：@nanbu.marche）": "NANBUフリーマーケット（organizer’s Instagram：@nanbu.marche）"
   },
   "labels": {
     "問い合わせ先": "Contact",
@@ -2793,7 +2849,8 @@
     "足利市": "Ashikaga City",
     "朝霞市": "Asaka City",
     "福岡市東区": "Higashi Ward, Fukuoka",
-    "福岡市博多区": "Hakata Ward, Fukuoka"
+    "福岡市博多区": "Hakata Ward, Fukuoka",
+    "横浜市金沢区": "Kanazawa Ward, Yokohama"
   },
   "notes": {
     "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",
