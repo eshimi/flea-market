@@ -2687,9 +2687,9 @@
   }
  },
  "https://aichinow.pref.aichi.jp/spots/detail/914/": {
-  "fetchedAt": "2026-11-14",
-  "httpStatus": 200,
-  "failCount": 0,
+  "fetchedAt": "2026-11-15",
+  "httpStatus": 0,
+  "failCount": 1,
   "mismatch": {},
   "evidenceOk": {
    "jimokuji-fudo-marche": true,
