@@ -17510,5 +17510,220 @@
     "checkedAt": "2026-11-16"
    }
   ]
+ },
+ {
+  "id": "tsukuba-nominoichi",
+  "name": "つくば蚤の市",
+  "kinds": [
+   "nomi"
+  ],
+  "organizer": {
+   "name": "つくば蚤の市（主催者のInstagram：@tsukubanominoichi）",
+   "url": "https://www.instagram.com/tsukubanominoichi/"
+  },
+  "venue": {
+   "name": "つくば駅前",
+   "pref": "08",
+   "city": "つくば市",
+   "cityCode": "08220",
+   "address": "つくば市吾妻1-6-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21",
+    "2026-11-22"
+   ],
+   "text": "主催者のInstagramの告知にある開催日"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/p/Dfn_NXIksdy/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   }
+  ]
+ },
+ {
+  "id": "hitachinokuni-market-vol8",
+  "name": "ひたちのくにのマーケット Vol.8",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "ひたちのくにのマーケット（主催者のInstagram：@hitatinokuni）",
+   "url": "https://www.instagram.com/hitatinokuni/"
+  },
+  "venue": {
+   "name": "石岡市 イベント広場",
+   "pref": "08",
+   "city": "石岡市",
+   "cityCode": "08221",
+   "address": "石岡市若宮3-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-22",
+    "2026-11-23"
+   ],
+   "text": "主催者のInstagramの告知にある開催日。告知のキャプションに年が「2027」とあるが、投稿の時期と今週の開催日（11/22）から、2026年の誤記と判断した（要確認）"
+  },
+  "time": {
+   "text": "10:00〜15:30",
+   "start": "10:00",
+   "end": "15:30"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/p/DfubE5bE2ZR/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   }
+  ]
+ },
+ {
+  "id": "sakai-rakuichi",
+  "name": "堺楽市（骨董市）",
+  "kinds": [
+   "kotto"
+  ],
+  "organizer": {
+   "name": "堺楽市（主催者のInstagram：@sakai_rakuichi）",
+   "url": "https://www.instagram.com/sakai_rakuichi/"
+  },
+  "venue": {
+   "name": "堺楽市の会場（堺市北区長曽根町）",
+   "pref": "27",
+   "city": "堺市北区",
+   "cityCode": "27146",
+   "address": "堺市北区長曽根町183-5"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-18"
+   ],
+   "text": "主催者のInstagramの告知にある開催日"
+  },
+  "time": {
+   "text": "10:00〜15:00",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "室内開催"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/p/DfJhIOyRd9E/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   }
+  ]
+ },
+ {
+  "id": "hanicotto-vol15",
+  "name": "古墳フェス come come*はにコット vol.15",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "はにコット（主催者のInstagram：@hanicotto）",
+   "url": "https://www.instagram.com/hanicotto/"
+  },
+  "venue": {
+   "name": "今城塚古墳公園",
+   "pref": "27",
+   "city": "高槻市",
+   "cityCode": "27207",
+   "address": "高槻市郡家新町"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-22"
+   ],
+   "text": "主催者のInstagramの告知にある開催日"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/p/DfhEYcoD1GO/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   }
+  ]
+ },
+ {
+  "id": "junkan-fes",
+  "name": "循環フェス",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "循環フェス（主催者のInstagram：@junkan.fes）",
+   "url": "https://www.instagram.com/junkan.fes/"
+  },
+  "venue": {
+   "name": "梅小路公園",
+   "pref": "26",
+   "city": "京都市下京区",
+   "cityCode": "26105",
+   "address": "京都市下京区観喜寺町56-3"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-21"
+   ],
+   "text": "主催者のInstagramのプロフィールと投稿にある開催日（時間は投稿で未確認）"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/reel/DfvdqoqzLWO/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   }
+  ]
+ },
+ {
+  "id": "hamamatsu-art-festival-104",
+  "name": "浜松アートフェスティバル（第104回）",
+  "kinds": [
+   "handmade"
+  ],
+  "organizer": {
+   "name": "浜松アートフェスティバル（主催者のInstagram：@hamamatsu.artfes）",
+   "url": "https://www.instagram.com/hamamatsu.artfes/"
+  },
+  "venue": {
+   "name": "浜松駅前ソラモ",
+   "pref": "22",
+   "city": "浜松市"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-16"
+   ],
+   "text": "主催者のInstagramの告知にある開催日（第104回は11/14〜16で、今週分は16日のみ記載。時間は投稿で未確認。出典はアカウントのページで、個別の投稿のURLは記録していない）"
+  },
+  "sources": [
+   {
+    "url": "https://www.instagram.com/hamamatsu.artfes/",
+    "type": "organizer-sns",
+    "checkedAt": "2026-11-16"
+   }
+  ]
  }
 ]

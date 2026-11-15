@@ -2506,6 +2506,46 @@
       "rule": "Dates in the organizer’s Instagram announcement (the announcement says it ends with the Dec 19 event)",
       "time": "10:00–16:00",
       "address": "1-1 Torihama-cho, Kanazawa-ku, Yokohama"
+    },
+    "tsukuba-nominoichi": {
+      "name": "Tsukuba Flea Market",
+      "venue": "In front of Tsukuba Station",
+      "rule": "Dates in the organizer’s Instagram announcement",
+      "time": "10:00–16:00",
+      "address": "1-6-1 Azuma, Tsukuba City, Ibaraki"
+    },
+    "hitachinokuni-market-vol8": {
+      "name": "Hitachi no Kuni Market Vol.8",
+      "venue": "Ishioka City event plaza",
+      "rule": "Dates in the organizer’s Instagram announcement. The caption says the year is “2027”, but from the time of the post and this week’s event date (Nov 22) we judged it to be a typo for 2026 (to be confirmed)",
+      "time": "10:00–15:30",
+      "address": "3-1 Wakamiya, Ishioka City, Ibaraki"
+    },
+    "sakai-rakuichi": {
+      "name": "Sakai Rakuichi (antique market)",
+      "venue": "Sakai Rakuichi venue (Nagasone-cho, Kita-ku, Sakai)",
+      "rule": "Date in the organizer’s Instagram announcement",
+      "time": "10:00–15:00",
+      "rain": "Held indoors",
+      "address": "183-5 Nagasone-cho, Kita-ku, Sakai City, Osaka"
+    },
+    "hanicotto-vol15": {
+      "name": "Kofun Fes come come* Hanicotto vol.15",
+      "venue": "Imashirozuka Kofun Park",
+      "rule": "Date in the organizer’s Instagram announcement",
+      "time": "10:00–16:00",
+      "address": "Gunge Shinmachi, Takatsuki City, Osaka"
+    },
+    "junkan-fes": {
+      "name": "Junkan Fes",
+      "venue": "Umekoji Park",
+      "rule": "Date in the organizer’s Instagram profile and post (the time is not confirmed in the post)",
+      "address": "56-3 Kankiji-cho, Shimogyo-ku, Kyoto"
+    },
+    "hamamatsu-art-festival-104": {
+      "name": "Hamamatsu Art Festival (104th)",
+      "venue": "Hamamatsu Station Front, SORAMO",
+      "rule": "Date in the organizer’s Instagram announcement (104th event, Nov 14–16; only the 16th is listed here; the time is not confirmed in the post; the source is the account page, not an individual post)"
     }
   },
   "organizers": {
@@ -2661,7 +2701,13 @@
     "赤坂蚤の市（主催者のInstagram：@akasaka.nominoichi2014）": "赤坂蚤の市（organizer’s Instagram：@akasaka.nominoichi2014）",
     "渋谷蚤の市（主催者のInstagram：@shibuya.nominoichi）": "渋谷蚤の市（organizer’s Instagram：@shibuya.nominoichi）",
     "NANBUマルシェ（主催者のInstagram：@nanbu.marche）": "NANBUマルシェ（organizer’s Instagram：@nanbu.marche）",
-    "NANBUフリーマーケット（主催者のInstagram：@nanbu.marche）": "NANBUフリーマーケット（organizer’s Instagram：@nanbu.marche）"
+    "NANBUフリーマーケット（主催者のInstagram：@nanbu.marche）": "NANBUフリーマーケット（organizer’s Instagram：@nanbu.marche）",
+    "つくば蚤の市（主催者のInstagram：@tsukubanominoichi）": "つくば蚤の市（organizer’s Instagram：@tsukubanominoichi）",
+    "ひたちのくにのマーケット（主催者のInstagram：@hitatinokuni）": "ひたちのくにのマーケット（organizer’s Instagram：@hitatinokuni）",
+    "堺楽市（主催者のInstagram：@sakai_rakuichi）": "堺楽市（organizer’s Instagram：@sakai_rakuichi）",
+    "はにコット（主催者のInstagram：@hanicotto）": "はにコット（organizer’s Instagram：@hanicotto）",
+    "循環フェス（主催者のInstagram：@junkan.fes）": "循環フェス（organizer’s Instagram：@junkan.fes）",
+    "浜松アートフェスティバル（主催者のInstagram：@hamamatsu.artfes）": "浜松アートフェスティバル（organizer’s Instagram：@hamamatsu.artfes）"
   },
   "labels": {
     "問い合わせ先": "Contact",
@@ -2850,7 +2896,10 @@
     "朝霞市": "Asaka City",
     "福岡市東区": "Higashi Ward, Fukuoka",
     "福岡市博多区": "Hakata Ward, Fukuoka",
-    "横浜市金沢区": "Kanazawa Ward, Yokohama"
+    "横浜市金沢区": "Kanazawa Ward, Yokohama",
+    "つくば市": "Tsukuba City",
+    "石岡市": "Ishioka City",
+    "浜松市": "Hamamatsu City"
   },
   "notes": {
     "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",
