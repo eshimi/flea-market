@@ -1,6 +1,14 @@
 {
- "lastDate": "2026-11-15",
+ "lastDate": "2026-11-16",
  "items": [
+  {
+   "series": "fmj-ohigashi-hiroba",
+   "date": "2026-11-16",
+   "status": "confirmed",
+   "checkedAt": "2026-11-16",
+   "note": "10:00〜16:00",
+   "source": "https://www.fmfm-king.com/ohigashi11-16/"
+  },
   {
    "series": "asaka-uchimagi-sdgs-flea",
    "date": "2026-11-15",
