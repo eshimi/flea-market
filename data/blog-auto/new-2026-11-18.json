@@ -1,0 +1,75 @@
+{
+ "slug": "new-2026-11-18",
+ "date": "2026-11-18",
+ "cat": "new",
+ "tags": {
+  "en": [
+   "Tokyo",
+   "flea market"
+  ],
+  "ja": [
+   "東京",
+   "フリマ"
+  ]
+ },
+ "en": {
+  "title": "New on Flea Market JP (Nov 18): 7 new listings",
+  "summary": "Markets added to the site. Each page shows the official rule and its source.",
+  "points": [
+   "7 new listings",
+   "Dates, times and venues are shown on each page as stated officially"
+  ],
+  "blocks": [
+   {
+    "h2": "Newly listed markets"
+   },
+   {
+    "ul": [
+     "[Kawagoe Suijo Park Flea Market (Recycle Suishin Tomonokai)](/e/frma-kawagoe-suijo-park-flea/): Saitama, Kawagoe Suijo Park (November 23 (Mon, holiday) 2026)",
+     "[Koshigaya Shirakobato Flea Market (Recycle Suishin Tomonokai)](/e/frma-koshigaya-shirakobato-flea/): Saitama, Koshigaya Shirakobato (December 19 (Sat) 2026)",
+     "[Higashi-Ginza X'mas GIFT MARKET](/e/higashiginza-xmas-gift-market-2026/): Chuo Ward, Ginza Shochiku Square outdoor plaza (Sat 5 – Sun 6 December 2026)",
+     "[Sasazuka Flea Market](/e/sasazuka-flea-market-2026/): Shibuya Ward, Suido-dori road in front of Sasazuka Junior High School (Sunday 6 December 2026)",
+     "[Shirakobato Water Park Flea Market (Time Machine Company)](/e/tmc-shirakobato-suijo-park/): Koshigaya City, Shirakobato Water Park (Dates listed by the organizer (about once every two months))",
+     "[Obata Ryokuchi Flea Market (Yuyu Marche)](/e/yuyu-marche-obata-ryokuchi/): Aichi, Obata Ryokuchi, lawn in front of the main parking lot (Listed on the organizer's schedule page)",
+     "[Otofuke Eco Recycle Market](/e/otofuke-eco-recycle-ichi/): Otofuke Town, Otofuke Kyoei Community Center, 1F Main Hall (Dates listed in Obihiro City's flea market information (Nov 29 and Dec 13))"
+    ]
+   },
+   {
+    "h2": "Before you go"
+   },
+   {
+    "p": "Each listing links to its page with the official source. Rules for rain and cancellations differ from market to market: see [Rain and cancellations](/blog/rain-and-cancellations/) and the [guide](/guide/). “Scheduled” dates are calculated from an official recurring rule and have not been confirmed individually."
+   }
+  ]
+ },
+ "ja": {
+  "title": "新しく載せた開催（11月18日）：7件",
+  "summary": "新しく掲載したマーケットです。公式ページのきまりと出典は、各ページにあります。",
+  "points": [
+   "新しい掲載は7件",
+   "開催日・時間・会場は、各ページに公式の記載のまま載せています"
+  ],
+  "blocks": [
+   {
+    "h2": "新しく載せたマーケット"
+   },
+   {
+    "ul": [
+     "[川越水上公園 フリーマーケット（リサイクル推進友の会）](/e/frma-kawagoe-suijo-park-flea/)：埼玉県・川越水上公園（11/23(月・祝)川越水上公園）",
+     "[越谷しらこばと フリーマーケット（リサイクル推進友の会）](/e/frma-koshigaya-shirakobato-flea/)：埼玉県・越谷しらこばと（12/19(土)越谷しらこばと）",
+     "[東銀座X’mas GIFT MARKET](/e/higashiginza-xmas-gift-market-2026/)：中央区・銀座松竹スクエア屋外広場（2026年12月05日(土)〜2026年12月06日(日)）",
+     "[笹塚フリーマーケット](/e/sasazuka-flea-market-2026/)：渋谷区・笹塚中学校前 水道道路（令和8年12月6日（日曜日））",
+     "[しらこばと水上公園フリーマーケット（タイムマシーンカンパニー）](/e/tmc-shirakobato-suijo-park/)：越谷市・しらこばと水上公園（主催者の開催日程（2ヶ月1回程度））",
+     "[小幡緑地 フリーマーケット（友遊マルシェ）](/e/yuyu-marche-obata-ryokuchi/)：愛知県・小幡緑地 本園駐車場前芝生広場（主催団体の「開催日程」ページ）",
+     "[音更エコ・リサイクル市](/e/otofuke-eco-recycle-ichi/)：音更町・音更町共栄コミセン1階大ホール（帯広市「フリーマーケット開催情報」に掲載された開催日）"
+    ]
+   },
+   {
+    "h2": "お出かけの前に"
+   },
+   {
+    "p": "各開催のページに、公式の出典があります。雨天・中止の扱いはマーケットごとに違います。[雨天・中止：公式ページの書き方](/blog/rain-and-cancellations/)と[使い方](/guide/)をご覧ください。「予定」の日は、公式のきまりから計算した日で、その回の個別の確認はありません。"
+   }
+  ]
+ }
+}
