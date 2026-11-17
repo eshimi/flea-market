@@ -5,7 +5,7 @@ S=json.load(open(R+'series.json')); D=json.load(open(R+'sources.json')); T=json.
 by={s['id']:s for s in S}; srcs={d['url']:d for d in D}; qid={q['id']:q for q in Q}
 import datetime
 TODAY=(datetime.datetime.utcnow()+datetime.timedelta(hours=9)).strftime('%Y-%m-%d')
-CITY={'鳴門市':'36202','武蔵村山市':'13303','大阪市阿倍野区':'27109'}
+CITY={'鳴門市':'36202','武蔵村山市':'13303','大阪市阿倍野区':'27109','中央区':'13102','渋谷区':'13113','越谷市':'11222','音更町':'01644'}
 ADDR_EN={'lohas-park-naruto-uchinoumi':'679 Takashima-kita, Naruto-cho, Naruto-shi, Tokushima','lohas-park-musashimurayama-aeon':'1-1-34 Enoki, Musashimurayama-shi, Tokyo'}
 RAIN_EN='Held in rain (may be cancelled in severe weather; there is no rain date)'
 tmpl=[d for d in D if 'lohas-park' in d['url']][0]

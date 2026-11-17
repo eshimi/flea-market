@@ -3275,7 +3275,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "cb3c660a52bb6227",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "lohas-park-7df715",
@@ -3444,7 +3445,8 @@
   "detectedAt": "2026-10-27",
   "reason": "changed",
   "hash": "9b1c177cd151b7b7",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-6c0322",
@@ -3483,7 +3485,8 @@
   "detectedAt": "2026-10-27",
   "reason": "changed",
   "hash": "872a70b605fe3d91",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-67004d",
@@ -3502,7 +3505,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "8c1b2e5d1b713bdb",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-057a60",
@@ -3541,7 +3545,8 @@
   "detectedAt": "2026-10-27",
   "reason": "changed",
   "hash": "ad7469b119bffae6",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-42c339",
@@ -3550,7 +3555,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "11194387a4bf7bc4",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-81f0bf",
@@ -3878,7 +3884,8 @@
   "detectedAt": "2026-10-31",
   "reason": "changed",
   "hash": "8ce2be09730dbea4",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "tmc-dx-9fdcd2",
@@ -3887,7 +3894,8 @@
   "detectedAt": "2026-10-31",
   "reason": "changed",
   "hash": "13e37c344ab2ffe7",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "www2-4d38aa",
@@ -4006,7 +4014,8 @@
   "detectedAt": "2026-11-18",
   "reason": "changed",
   "hash": "5fb32c0fc25118dd",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-0cd911",
@@ -4015,7 +4024,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "458180e99df839f8",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "recycler-jp-schedule",
@@ -4024,7 +4034,8 @@
   "detectedAt": "2026-11-18",
   "reason": "changed",
   "hash": "784a8075919970cf",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-a3e2fa",
@@ -4033,7 +4044,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "331535d583e1b3b1",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-1630e9",
@@ -4051,7 +4063,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "817ad8db2fe922c7",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-ab4a07",
@@ -4060,7 +4073,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "0fd1f1c5921c239e",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-67004d",
@@ -4078,7 +4092,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "451c380549d1f42b",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-063bf8",
@@ -4087,7 +4102,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "6dd5974244ea9c8e",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-a18059",
@@ -4096,7 +4112,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "19a5016957c65ce7",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-d59b68",
@@ -4105,7 +4122,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "6752b52dc3e2f751",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "sunshinecity-51057c",
@@ -4114,7 +4132,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "f10663e24d7c87ce",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "sunshinecity-b5086b",
@@ -4123,7 +4142,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "542be980d5ec44fc",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-8e2612",
@@ -4132,7 +4152,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "e01a8ef537652a27",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-0443eb",
@@ -4141,7 +4162,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "702dd667883dbe98",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "pref-67fc34",
@@ -4150,7 +4172,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "a8bea2c14377d8a6",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-760c3a",
@@ -4159,7 +4182,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "5eb54f453d01b552",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "aichinow-ab6826",
@@ -4168,7 +4192,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "85dd313adf61ca85",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-fa5b3c",
@@ -4177,7 +4202,8 @@
   "detectedAt": "2026-11-10",
   "reason": "changed",
   "hash": "5422363164351d1b",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-62ccf1",
@@ -4186,7 +4212,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "5dfeceb9be002ea5",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-fb032b",
@@ -4195,7 +4222,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "73ebbdc6d94160e0",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-1cea9c",
@@ -4204,7 +4232,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "3e4cc2377a0de61d",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "town-2c25d3",
@@ -4213,7 +4242,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "315f7970a855e556",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-9f64c6",
@@ -4222,7 +4252,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "2c7ccf181f6d2798",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "lohasfesta-tokyo-1",
@@ -4231,7 +4262,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "9bd2f89ab9db5355",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "miyakosai-1",
@@ -4240,7 +4272,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "bf8569e2efc57b15",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "umitakasai-1",
@@ -4249,7 +4282,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "8996884264906aae",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "midori-48b0c4",
@@ -4258,7 +4292,8 @@
   "detectedAt": "2026-11-03",
   "reason": "changed",
   "hash": "ad46d8828fb47172",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "antique-market-58fc6b",
@@ -4267,7 +4302,8 @@
   "detectedAt": "2026-11-10",
   "reason": "changed",
   "hash": "fa519bd093f649ac",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "garagesale-top",
@@ -4276,7 +4312,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "b33a5e6120a9cfad",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "antique-market-a5e2ab",
@@ -4285,7 +4322,8 @@
   "detectedAt": "2026-11-10",
   "reason": "changed",
   "hash": "994096dae3bcdcfd",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "b-i-a-5e0067",
@@ -4294,7 +4332,8 @@
   "detectedAt": "2026-11-04",
   "reason": "changed",
   "hash": "39cfe96b0e2f027b",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "www2-4d38aa",
@@ -4303,7 +4342,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "eb2e21bf43b1d76f",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "shitennoji-9c908f",
@@ -4312,7 +4352,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "dc232c09422ee5a4",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "frma-4cbdde",
@@ -4330,7 +4371,8 @@
   "detectedAt": "2026-11-10",
   "reason": "changed",
   "hash": "d45a11c1b9e0a0c2",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "mottainai-1b3bfe",
@@ -4339,7 +4381,8 @@
   "detectedAt": "2026-11-04",
   "reason": "changed",
   "hash": "881eab42c69765e8",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "ikeshoren-c529cc",
@@ -4348,7 +4391,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "ff6c68cc313d45b7",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "ikeshoren-939ca9",
@@ -4357,7 +4401,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "8901a215df51c0b3",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "earth-garden-44cb54",
@@ -4366,7 +4411,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "41dc04ea4790c241",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "trx-f98cdd",
@@ -4375,7 +4421,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "e980ed3ed3819358",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "rpa-fb6d35",
@@ -4384,7 +4431,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "4860bc52eec2d4b9",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "tokyo-eastpark-38aa31",
@@ -4393,7 +4441,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "274c231bfb77b68b",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "souq-319cbd",
@@ -4402,7 +4451,8 @@
   "detectedAt": "2026-11-04",
   "reason": "changed",
   "hash": "f0e14fbb1924752f",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "rbf-5d5178",
@@ -4411,7 +4461,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "68d21d8e42ef7a87",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "kamigamo-tedukuriichi-75c1a6",
@@ -4420,7 +4471,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "8d493920aa54fb62",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "ficbase-283fb8",
@@ -4429,7 +4481,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "2549d4381aab28d5",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "kamigamo-tedukuriichi-598310",
@@ -4438,7 +4491,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "0e920383eeff6132",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "lohas-park-5b1062",
@@ -4447,7 +4501,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "83aa8815f16f995d",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "tokyo-park-b1f385",
@@ -4456,7 +4511,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "85b7c5fdcc879d09",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "ficbase-c1ef6a",
@@ -4465,7 +4521,8 @@
   "detectedAt": "2026-11-04",
   "reason": "changed",
   "hash": "9737a0ad62f87444",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "kamigamo-tedukuriichi-c472b2",
@@ -4474,7 +4531,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "73e287e52b2e3e6b",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "lohas-park-5f0e4c",
@@ -4483,7 +4541,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "40611bc77d20c7f4",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "kamigamo-tedukuriichi-ae38cd",
@@ -4492,7 +4551,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "6fc858bd446ccf0d",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "lohas-park-67c7b4",
@@ -4501,7 +4561,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "305b3259129daac2",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "kamigamo-tedukuriichi-22f597",
@@ -4510,7 +4571,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "71f51ff24c2d6159",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "lohas-park-cfb1f9",
@@ -4519,7 +4581,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "c85184e725b30808",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "tokyo-park-f8a56d",
@@ -4528,7 +4591,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "efaa519f16d3c545",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "nagoya-info-de5af8",
@@ -4537,7 +4601,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "8bed29ed539c596e",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "lohas-park-7df715",
@@ -4546,7 +4611,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "8a38c81bfd72b5c3",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "sake3-30b3d7",
@@ -4555,7 +4621,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "05acad971f1d997f",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "lohas-park-a01c9e",
@@ -4564,7 +4631,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "b6de7f5509a8da01",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "higashiginza-event-1",
@@ -4573,7 +4641,8 @@
   "detectedAt": "2026-11-18",
   "reason": "changed",
   "hash": "182634b89f2d47d4",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "lohas-park-f40263",
@@ -4582,7 +4651,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "4ae4ba307097d60a",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-cd46c6",
@@ -4591,7 +4661,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "70104ecb82815e9a",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "lohas-park-2570dd",
@@ -4600,7 +4671,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "ea6d02468ce4f857",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "lohas-park-40e61d",
@@ -4609,7 +4681,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "8cc5ac5a089f3e5e",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "lohas-park-6798db",
@@ -4618,7 +4691,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "7f93b6692629488f",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-b56cdb",
@@ -4627,7 +4701,8 @@
   "detectedAt": "2026-11-04",
   "reason": "changed",
   "hash": "41f277e666f69239",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-1f9c9d",
@@ -4636,7 +4711,8 @@
   "detectedAt": "2026-11-07",
   "reason": "changed",
   "hash": "fd2d9c74737be651",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-030343",
@@ -4645,7 +4721,8 @@
   "detectedAt": "2026-11-04",
   "reason": "changed",
   "hash": "a19c7d309c4ed96d",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "t-i-forum-e350a3",
@@ -4654,7 +4731,8 @@
   "detectedAt": "2026-11-05",
   "reason": "changed",
   "hash": "18316b786f9e3ecc",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "nihon-freemarket-kyokai",
@@ -4663,7 +4741,8 @@
   "detectedAt": "2026-11-12",
   "reason": "changed",
   "hash": "faad4b200b9e9927",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "showakinen-koen-3bf349",
@@ -4672,7 +4751,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "3db355a0a19f9127",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "bon-dimanche-event-1",
@@ -4681,7 +4761,8 @@
   "detectedAt": "2026-11-12",
   "reason": "changed",
   "hash": "171e1ec3715084d9",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "nagano-cvb-a86a0d",
@@ -4690,7 +4771,8 @@
   "detectedAt": "2026-11-15",
   "reason": "changed",
   "hash": "086c4e7786bc7a5f",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "takahatafudoson-6e9ee1",
@@ -4699,7 +4781,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "01815ce54007bd10",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "furimatairiku-5b141c",
@@ -4708,7 +4791,8 @@
   "detectedAt": "2026-11-07",
   "reason": "changed",
   "hash": "4f2aa1e8732a0d15",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "www2-410121",
@@ -4717,7 +4801,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "1d47b4a01402e46c",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "furimatairiku-653c30",
@@ -4726,7 +4811,8 @@
   "detectedAt": "2026-11-07",
   "reason": "changed",
   "hash": "7d485ad51c6df563",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "teshigoro-bc53a5",
@@ -4735,7 +4821,8 @@
   "detectedAt": "2026-11-07",
   "reason": "changed",
   "hash": "c658b2efae92a8d5",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "b-i-a-e5b0f2",
@@ -4744,7 +4831,8 @@
   "detectedAt": "2026-11-07",
   "reason": "changed",
   "hash": "50291007540b6b77",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "eko-hirobakan-bc3ce7",
@@ -4753,7 +4841,8 @@
   "detectedAt": "2026-11-07",
   "reason": "changed",
   "hash": "be633975243146af",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "www2-b38954",
@@ -4762,7 +4851,8 @@
   "detectedAt": "2026-11-07",
   "reason": "changed",
   "hash": "56768bda3f0e5d5e",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "tokyo-park-b56fab",
@@ -4771,7 +4861,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "b7dcf077e674ef58",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "ficbase-531b7c",
@@ -4780,7 +4871,8 @@
   "detectedAt": "2026-11-10",
   "reason": "changed",
   "hash": "c9fe041565ba571c",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-956224",
@@ -4789,7 +4881,8 @@
   "detectedAt": "2026-11-07",
   "reason": "changed",
   "hash": "e694dd0f060a4fa9",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "tokyo-park-b42635",
@@ -4798,7 +4891,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "deeeba99b0ef6999",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-27e5bc",
@@ -4807,7 +4901,8 @@
   "detectedAt": "2026-11-07",
   "reason": "changed",
   "hash": "bd8bbb29170b6d96",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "minatonichiyouasaichikai-86109c",
@@ -4816,7 +4911,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "368f8b3c8021e468",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-5a1178",
@@ -4825,7 +4921,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "ed0453f008c767d2",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-fdefb4",
@@ -4834,7 +4931,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "17187115d5727f97",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "recycle-undo-hokkaido",
@@ -4843,7 +4941,8 @@
   "detectedAt": "2026-11-09",
   "reason": "changed",
   "hash": "d1c97b1f4a031eb6",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "furima-japan",
@@ -4852,7 +4951,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "8ffa3ada3a6dfe95",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "trx-tokyo-recycle",
@@ -4861,7 +4961,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "0c887086ef07bc3c",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "rpa-yuyu-marche",
@@ -4870,7 +4971,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "0ddd199db4218d04",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "hyakumanben-tedukuri-ichi",
@@ -4879,7 +4981,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "ac6a111948b39cd1",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "www2-3e63da",
@@ -4888,7 +4991,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "46e7cfe4e8016d32",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "www2-bcd746",
@@ -4897,7 +5001,8 @@
   "detectedAt": "2026-11-10",
   "reason": "changed",
   "hash": "b0af91577770e922",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-6ca764",
@@ -4906,7 +5011,8 @@
   "detectedAt": "2026-11-10",
   "reason": "changed",
   "hash": "b761c0fdee829b60",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-1c208f",
@@ -4915,7 +5021,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "8c6f4feb513b4f5a",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "freemarket-go-7a7eff",
@@ -4924,7 +5031,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "cf0a7c1f03476db1",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "b-i-a-f791e1",
@@ -4933,7 +5041,8 @@
   "detectedAt": "2026-11-10",
   "reason": "changed",
   "hash": "9827d79e739c9866",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-c09c44",
@@ -4942,7 +5051,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "a915904c78767e1f",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-068c5e",
@@ -4951,7 +5061,8 @@
   "detectedAt": "2026-11-10",
   "reason": "changed",
   "hash": "0a7070cb0d35041a",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "kichijoji-d7f720",
@@ -4960,7 +5071,8 @@
   "detectedAt": "2026-11-10",
   "reason": "changed",
   "hash": "5fe60a603935ffd7",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "tokyo-romantic-03da84",
@@ -4969,7 +5081,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "814d4f89ca6e5f90",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "tokyo-park-98dd04",
@@ -4978,7 +5091,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "9e97d6dceb064190",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-4f7c4f",
@@ -4987,7 +5101,8 @@
   "detectedAt": "2026-11-10",
   "reason": "changed",
   "hash": "03a7f68f9e158451",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-cb43ec",
@@ -4996,7 +5111,8 @@
   "detectedAt": "2026-11-10",
   "reason": "changed",
   "hash": "8985273c22a2d704",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-4e3101",
@@ -5005,7 +5121,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "1aba8845795614f2",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "tokyo-park-69051f",
@@ -5014,7 +5131,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "43d702905c287d22",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-d4915f",
@@ -5023,7 +5141,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "605c8a2706dc5e4c",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "tokyo-park-316038",
@@ -5032,7 +5151,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "a5399e22e144185d",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "ishikawagokoku-783c67",
@@ -5041,7 +5161,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "9affc7a82bda7447",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-da9730",
@@ -5050,7 +5171,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "5232572dfe8b30b9",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-1aa1d8",
@@ -5059,7 +5181,8 @@
   "detectedAt": "2026-11-13",
   "reason": "changed",
   "hash": "93de052f72049586",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "nihon-freemarket-kyokai-schedule",
@@ -5068,7 +5191,8 @@
   "detectedAt": "2026-11-14",
   "reason": "changed",
   "hash": "4c1a6965a8cd7ce8",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "earth-garden",
@@ -5077,7 +5201,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "d5035478f65b2854",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "b-i-a-9bd731",
@@ -5086,7 +5211,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "ba9f2b038d69db6f",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "freemarket-go-c53aec",
@@ -5095,7 +5221,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "d3d763fb865d9327",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "b-i-a-7e255e",
@@ -5104,7 +5231,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "9a1da45495b32f85",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "freemarket-go-a5f4fe",
@@ -5113,7 +5241,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "812d07d8dcecae9a",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "freemarket-go-d78a19",
@@ -5122,7 +5251,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "438e858398577827",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "kitanotenmangu-5d3153",
@@ -5131,7 +5261,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "68b85220fdba10f7",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "freemarket-go-d77887",
@@ -5140,7 +5271,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "98153eee33fdf48e",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "b-i-a-a3581d",
@@ -5149,7 +5281,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "5f44b9ade2fedf32",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "freemarket-go-d2754e",
@@ -5158,7 +5291,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "9f7f763e36477749",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "freemarket-go-35f243",
@@ -5167,7 +5301,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "c6678dc4dfcdf40f",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "freemarket-go-8ac437",
@@ -5176,7 +5311,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "67d3fcf1f1c90ab5",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "2525furima-286ccc",
@@ -5185,7 +5321,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "24c77f65f02e934f",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-af91f3",
@@ -5194,7 +5331,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "33c1b271675d9e1d",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "fmfm-king-70c9a2",
@@ -5203,7 +5341,8 @@
   "detectedAt": "2026-11-16",
   "reason": "changed",
   "hash": "688adc40788be635",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-0cd618",
@@ -5212,7 +5351,8 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "e4ac82438244d10a",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  },
  {
   "id": "city-912d4f",
@@ -5221,6 +5361,7 @@
   "detectedAt": "2026-11-17",
   "reason": "changed",
   "hash": "751bbf40a3320efb",
-  "status": "pending"
+  "status": "done",
+  "processedAt": "2026-11-18"
  }
 ]

@@ -2546,6 +2546,48 @@
       "name": "Hamamatsu Art Festival (104th)",
       "venue": "Hamamatsu Station Front, SORAMO",
       "rule": "Date in the organizer’s Instagram announcement (104th event, Nov 14–16; only the 16th is listed here; the time is not confirmed in the post; the source is the account page, not an individual post)"
+    },
+    "frma-kawagoe-suijo-park-flea": {
+      "name": "Kawagoe Suijo Park Flea Market (Recycle Suishin Tomonokai)",
+      "venue": "Kawagoe Suijo Park",
+      "rule": "November 23 (Mon, holiday) 2026"
+    },
+    "frma-koshigaya-shirakobato-flea": {
+      "name": "Koshigaya Shirakobato Flea Market (Recycle Suishin Tomonokai)",
+      "venue": "Koshigaya Shirakobato",
+      "rule": "December 19 (Sat) 2026"
+    },
+    "higashiginza-xmas-gift-market-2026": {
+      "name": "Higashi-Ginza X'mas GIFT MARKET",
+      "venue": "Ginza Shochiku Square outdoor plaza",
+      "rule": "Sat 5 – Sun 6 December 2026"
+    },
+    "sasazuka-flea-market-2026": {
+      "name": "Sasazuka Flea Market",
+      "venue": "Suido-dori road in front of Sasazuka Junior High School",
+      "rule": "Sunday 6 December 2026",
+      "time": "9:30–11:30",
+      "rain": "If it rains, held at the Sasazuka Junior High School small gymnasium and the Sasazuka Ward Hall"
+    },
+    "tmc-shirakobato-suijo-park": {
+      "name": "Shirakobato Water Park Flea Market (Time Machine Company)",
+      "venue": "Shirakobato Water Park",
+      "rule": "Dates listed by the organizer (about once every two months)",
+      "time": "09:00–15:00",
+      "address": "985 Kosogawa, Koshigaya"
+    },
+    "yuyu-marche-obata-ryokuchi": {
+      "name": "Obata Ryokuchi Flea Market (Yuyu Marche)",
+      "venue": "Obata Ryokuchi, lawn in front of the main parking lot",
+      "rule": "Listed on the organizer's schedule page",
+      "time": "9:00–14:00"
+    },
+    "otofuke-eco-recycle-ichi": {
+      "name": "Otofuke Eco Recycle Market",
+      "venue": "Otofuke Kyoei Community Center, 1F Main Hall",
+      "rule": "Dates listed in Obihiro City's flea market information (Nov 29 and Dec 13)",
+      "time": "10:00–13:30",
+      "address": "17-1 Kino-nishi-dori, Otofuke-cho, Kato-gun, Hokkaido"
     }
   },
   "organizers": {
@@ -2707,7 +2749,10 @@
     "堺楽市（主催者のInstagram：@sakai_rakuichi）": "堺楽市（organizer’s Instagram：@sakai_rakuichi）",
     "はにコット（主催者のInstagram：@hanicotto）": "はにコット（organizer’s Instagram：@hanicotto）",
     "循環フェス（主催者のInstagram：@junkan.fes）": "循環フェス（organizer’s Instagram：@junkan.fes）",
-    "浜松アートフェスティバル（主催者のInstagram：@hamamatsu.artfes）": "浜松アートフェスティバル（organizer’s Instagram：@hamamatsu.artfes）"
+    "浜松アートフェスティバル（主催者のInstagram：@hamamatsu.artfes）": "浜松アートフェスティバル（organizer’s Instagram：@hamamatsu.artfes）",
+    "笹塚フリーマーケット事務局": "Sasazuka Flea Market Secretariat",
+    "一般社団法人東銀座エリアマネジメント": "Higashi-Ginza Area Management Association",
+    "帯広フリマ": "Obihiro Flea Market (contact)"
   },
   "labels": {
     "問い合わせ先": "Contact",
@@ -2899,7 +2944,8 @@
     "横浜市金沢区": "Kanazawa Ward, Yokohama",
     "つくば市": "Tsukuba City",
     "石岡市": "Ishioka City",
-    "浜松市": "Hamamatsu City"
+    "浜松市": "Hamamatsu City",
+    "音更町": "Otofuke Town"
   },
   "notes": {
     "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",

@@ -313,6 +313,7 @@
   {
     "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html",
     "series": [
+      "sasazuka-flea-market-2026",
       "shibuya-recycle-bazaar"
     ],
     "terms": {
@@ -413,13 +414,15 @@
   {
     "url": "http://www.frma.jp/",
     "series": [
-      "frma-akatsuka-park-flea",
-      "frma-komatsugawa-park-flea",
       "frma-akabane-park-flea",
-      "frma-ukima-park-flea",
-      "frma-koganei-park-flea",
+      "frma-akatsuka-park-flea",
       "frma-hikarigaoka-park-flea",
-      "frma-nakameguro-funeiriba-flea"
+      "frma-kawagoe-suijo-park-flea",
+      "frma-koganei-park-flea",
+      "frma-komatsugawa-park-flea",
+      "frma-koshigaya-shirakobato-flea",
+      "frma-nakameguro-funeiriba-flea",
+      "frma-ukima-park-flea"
     ],
     "terms": {
       "ok": true,
@@ -908,11 +911,12 @@
   {
     "url": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/",
     "series": [
-      "yuyu-marche-inazawa-kinro-fukushi-kaikan",
       "yuyu-marche-ichinomiya-riverside-ono-gokurakuji",
-      "yuyu-marche-motohama-park",
-      "yuyu-marche-plant6",
+      "yuyu-marche-inazawa-kinro-fukushi-kaikan",
       "yuyu-marche-ja-genki-no-sato",
+      "yuyu-marche-motohama-park",
+      "yuyu-marche-obata-ryokuchi",
+      "yuyu-marche-plant6",
       "yuyu-marche-sobue-ryokuchi"
     ],
     "terms": {
@@ -2204,6 +2208,10 @@
   {
     "url": "http://freemarket-go.com/schedule_shop.html",
     "series": [
+      "jfma-ikea-kobe-loppis",
+      "jfma-ikea-tsuruhama-loppis",
+      "jfma-kobe-harborland-seaside-market",
+      "jfma-minatomachi-river-place-flea",
       "jfma-tsurumi-ryokuchi-flea"
     ],
     "terms": {
@@ -2989,7 +2997,8 @@
   {
     "url": "https://www.city.obihiro.hokkaido.jp/kurashi/gomi/information/1002806.html",
     "series": [
-      "obihiro-wakuwaku-flea"
+      "obihiro-wakuwaku-flea",
+      "otofuke-eco-recycle-ichi"
     ],
     "terms": {
       "ok": true,
@@ -5451,6 +5460,76 @@
       "ok": null,
       "checkedAt": "2026-11-16",
       "note": "主催者本人の Instagram の告知投稿。ユーザーが読んで日付・時間・場所を伝えた（2026-11-16）。この環境から自動取得はしない（Instagram の規約・ログインの制限。回避しない）ため、本文の突き合わせはしない。掲載は事実の項目（日付・時間・場所）だけで、文章・画像は転載しない。最終確認日が14日を超えると「要確認」になるので、再確認が要る"
+    }
+  },
+  {
+    "url": "https://www.higashiginza-area.com/event/%e3%80%8e%e6%9d%b1%e9%8a%80%e5%ba%a7xmas-gift-market%e3%80%8f%e9%96%8b%e5%82%ac%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/",
+    "series": [
+      "higashiginza-xmas-gift-market-2026"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-18",
+      "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+    }
+  },
+  {
+    "url": "https://tmc-dx.org/area/shirakobato.html",
+    "series": [
+      "tmc-shirakobato-suijo-park"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-18",
+      "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
+    }
+  },
+  {
+    "url": "https://rpa.flima.net/",
+    "series": [
+      "yuyu-marche-ja-genki-no-sato"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-17",
+      "note": "主催団体の公式サイト。robots.txt は許可。利用規約のページは確認できず。事実の項目（日付・会場名・時間・出店料）だけ掲載し、文章は転載しない。電話・メールは載せない（2026-10-18 確認）"
+    }
+  },
+  {
+    "url": "http://freemarket-go.com/",
+    "series": [
+      "jfma-ikea-kobe-loppis",
+      "jfma-ikea-tsuruhama-loppis"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-17",
+      "note": "主催者の公式サイト。robots.txt は許可。利用規約のページは確認できず（出店規約は出店者向け）。事実の項目（日付・会場・時間・料金）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+    }
+  },
+  {
+    "url": "https://www.fmfm-king.com/",
+    "series": [
+      "fmj-kirarie-kusatsu",
+      "fmj-ohigashi-hiroba",
+      "fmj-okazaki-park",
+      "fmj-yamato-saidaiji-ekimae"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-17",
+      "note": "主催者（運営会社）の公式サイト。robots.txt は許可。「利用規約」は出店者向けで、取得・転載を禁じる記載なし。事実の項目（日付・会場・時間・住所）だけ掲載し、文章は転載しない（2026-10-18 確認）"
+    }
+  },
+  {
+    "url": "https://lohas-park.jp/event/kiji6263/",
+    "series": [
+      "lohas-park-fukinuke-marche-hyogo-eki"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-17",
+      "note": "主催者（ロハスパーク）の公式サイト。robots.txt は許可。利用規約のページは見当たらず、取得・転載を禁じる記載も確認できず。事実の項目（日程・会場・時間・雨天の扱い）だけ掲載し、文章は転載しない。出展料・応募の条件は載せない（2026-10-20 確認）"
     }
   }
 ]
