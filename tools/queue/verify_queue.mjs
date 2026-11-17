@@ -10,4 +10,4 @@ for (const f of readdirSync(dir).filter((f) => /^queue-\d\.json$/.test(f))) for 
   for (const u of x.occurrenceUpdates || []) jobs.push([x.id + ':' + u.date, u.url, u.evidence]);
 }
 let last = 0;
-for (const [id, url, ev] of jobs) { const w = 5200 - (Date.now() - last); if (w > 0) await sleep(w); const r = await get(url); last = Date.now(); const text = r.status === 200 ? r.text : ''; console.log(id, url, r.status, JSON.stringify(checkEvidence(text, ev))); }
+for (const [id, url, ev] of jobs) { const w = 5200 - (Date.now() - last); if (w > 0) await sleep(w); const r = await get(url); last = Date.now(); const text = r.status === 200 ? (r.pdf ? r.text : htmlToText(r.text)) : ''; // check-sources と同じく、HTML は本文にしてから比べる console.log(id, url, r.status, JSON.stringify(checkEvidence(text, ev))); }
