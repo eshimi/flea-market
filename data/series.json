@@ -18072,6 +18072,7 @@
       "type": "dates",
       "dates": [
         "2026-11-21",
+        "2026-12-06",
         "2027-02-06",
         "2027-03-06"
       ],
@@ -18178,6 +18179,3020 @@
           "音更町共栄コミセン1階大ホール",
           "10時00分～13時30分"
         ],
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "free-flea-market-shimotsuma",
+    "name": "FREE FLEA Market（下妻）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "Shimotsuma FREEpER",
+      "url": "https://www.instagram.com/free.flea.market_freeper/"
+    },
+    "venue": {
+      "name": "粉クリ・ドームしもつま（旧WaiWaiドームしもつま）",
+      "pref": "08",
+      "city": "下妻市",
+      "cityCode": "08225",
+      "address": "茨城県下妻市下妻丁91"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "雨天決行（屋内ドーム会場）"
+    },
+    "sources": [
+      {
+        "url": "https://www.instagram.com/p/Df1spT4kQ0W/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "warehouse-market-tsukimidori",
+    "name": "Warehouse Market TSUKIMIDORI",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "TSUKIMIDORI RVパーク茨城",
+      "url": "https://www.instagram.com/tsukimidori310/"
+    },
+    "venue": {
+      "name": "TSUKIMIDORI RVパーク茨城",
+      "pref": "08",
+      "city": "茨城町",
+      "cityCode": "08302",
+      "address": "茨城県東茨城郡茨城町宮ヶ崎1708-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22"
+      ],
+      "text": "毎月1回開催"
+    },
+    "time": {
+      "text": "10:00〜16:00",
+      "start": "10:00",
+      "end": "16:00"
+    },
+    "visitor": {
+      "rain": "倉庫内開催のため雨天でも開催"
+    },
+    "sources": [
+      {
+        "url": "https://www.instagram.com/p/DdOZb13zqlt/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "ushiku-gottaichi",
+    "name": "うしくゴッ多市",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "うしくゴッ多市組合",
+      "url": "https://gottaichi.e-ushiku.jp/"
+    },
+    "venue": {
+      "name": "牛久市中央生涯学習センター駐車場",
+      "pref": "08",
+      "city": "牛久市",
+      "cityCode": "08224",
+      "address": "茨城県牛久市柏田町1606-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-13"
+      ],
+      "text": "年5回（2・4・6・10・12月の第2日曜日）"
+    },
+    "time": {
+      "text": "9:00〜14:00",
+      "start": "09:00",
+      "end": "14:00"
+    },
+    "sources": [
+      {
+        "url": "https://www.ushikukankou.com/うしくゴッ多市/",
+        "type": "municipality",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://gottaichi.e-ushiku.jp/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "nagara-dam-friday-flea-kottou",
+    "name": "金曜フリマ骨董市 in 長柄ダム",
+    "kinds": [
+      "flea",
+      "kotto"
+    ],
+    "organizer": {
+      "name": "外房フリマ実行委員会",
+      "url": "https://mykoho.jp/article/124265/9869438/10101785"
+    },
+    "venue": {
+      "name": "長柄町都市農村交流センター（ワクワクながら）",
+      "pref": "12",
+      "city": "長柄町",
+      "cityCode": "12427",
+      "address": "千葉県長生郡長柄町山之郷70-15"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-20",
+        "2026-11-27",
+        "2026-12-04",
+        "2026-12-11"
+      ],
+      "text": "毎週金曜日"
+    },
+    "time": {
+      "text": "9:00〜14:00（第2会場は8:00〜14:00）"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://mykoho.jp/article/124265/9869438/10101785",
+        "type": "municipality",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "gyotoku-station-park-flea",
+    "name": "行徳駅前公園フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "里彩くるカエル倶楽部",
+      "url": "https://timetreeapp.com/public_calendars/kaeruclub2oo2"
+    },
+    "venue": {
+      "name": "行徳駅前公園",
+      "pref": "12",
+      "city": "市川市",
+      "cityCode": "12203",
+      "address": "千葉県市川市湊新田2-4-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21",
+        "2026-11-28",
+        "2026-12-12"
+      ],
+      "text": "土曜開催（月2〜4回程度）"
+    },
+    "time": {
+      "text": "9:00〜14:00",
+      "start": "09:00",
+      "end": "14:00"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://timetreeapp.com/public_calendars/kaeruclub2oo2",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "milk-kashiwanoha-park-flea",
+    "name": "柏の葉公園フリーマーケット（ミルクの会）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "ミルクの会",
+      "url": "http://flma.jp/"
+    },
+    "venue": {
+      "name": "県立柏の葉公園 第1駐車場サービスヤード",
+      "pref": "12",
+      "city": "柏市",
+      "cityCode": "12217",
+      "address": "千葉県柏市柏の葉4-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-28"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "sources": [
+      {
+        "url": "http://flma.jp/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "http://flma.jp/ground_kashiwa.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "milk-akebonoyama-park-flea",
+    "name": "あけぼの山公園フリーマーケット（ミルクの会 vol.3）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "ミルクの会（NPO法人地域活性化リサイクル活動ミルクの会）",
+      "url": "http://flma.jp/"
+    },
+    "venue": {
+      "name": "あけぼの山農業公園",
+      "pref": "12",
+      "city": "柏市",
+      "cityCode": "12217",
+      "address": "千葉県柏市布施2005-2"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "http://flma.jp/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "http://flma.jp/akebono.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "unomi-park-flea-recycler-kanagawa",
+    "name": "海の公園フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "リサイクル運動市民の会 神奈川本部",
+      "url": "https://recyclekanagawa.com/"
+    },
+    "venue": {
+      "name": "海の公園 柴口駐車場",
+      "pref": "14",
+      "city": "横浜市金沢区",
+      "cityCode": "14108",
+      "address": "神奈川県横浜市金沢区海の公園10番"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-12-06",
+        "2026-12-13"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜16:00",
+      "start": "10:00",
+      "end": "16:00"
+    },
+    "visitor": {
+      "rain": "雨天中止・順延日なし（中止等の発表は当日の朝7時までに主催者サイトとXで発表）"
+    },
+    "sources": [
+      {
+        "url": "https://www.hama-midorinokyokai.or.jp/park/uminokouen/details/111111.php",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://recyclekanagawa.com/place/seapark/guide-seapark/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "kodomonokuni-tanpopo-flea",
+    "name": "こどもの国フリーマーケット（たんぽぽフリーマーケット）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "たんぽぽフリーマーケット",
+      "url": "https://kodomonokuni.org/event_topics/detail.html?id=50"
+    },
+    "venue": {
+      "name": "こどもの国 中央広場",
+      "pref": "14",
+      "city": "横浜市青葉区",
+      "cityCode": "14117",
+      "address": "神奈川県横浜市青葉区奈良町700"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "9:30〜16:00",
+      "start": "09:30",
+      "end": "16:00"
+    },
+    "visitor": {
+      "rain": "雨天中止（開催可否は当日電話で問い合わせるよう公式に注意書きあり）"
+    },
+    "sources": [
+      {
+        "url": "https://kodomonokuni.org/event_topics/detail.html?id=50",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "apita-terrace-tsunashima-flea",
+    "name": "アピタテラス綱島店（屋上）駐車場フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "全国GILフリーマーケット協会",
+      "url": "https://www.furima-gil.com/furima/"
+    },
+    "venue": {
+      "name": "アピタテラス横浜綱島 屋上駐車場",
+      "pref": "14",
+      "city": "横浜市港北区",
+      "cityCode": "14109",
+      "address": "神奈川県横浜市港北区綱島東4丁目3番17号"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-06"
+      ],
+      "text": "毎月第1日曜日・第3日曜日、ほかに月1回土曜日"
+    },
+    "time": {
+      "text": "9:00〜14:00",
+      "start": "09:00",
+      "end": "14:00"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://apita-terrace.com/event/event-22252",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://www.furima-gil.com/furima/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "apita-kanazawabunko-flea",
+    "name": "アピタ金沢文庫店（屋上）駐車場フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "全国GILフリーマーケット協会",
+      "url": "https://www.furima-gil.com/furima/"
+    },
+    "venue": {
+      "name": "アピタ金沢文庫店 屋上",
+      "pref": "14",
+      "city": "横浜市金沢区",
+      "cityCode": "14108",
+      "address": "神奈川県横浜市金沢区釜利谷東2丁目1番1号"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "9:00〜14:00（出店者の状況により終了が早まる場合あり）"
+    },
+    "visitor": {
+      "rain": "悪天候・雨予報の場合は中止"
+    },
+    "sources": [
+      {
+        "url": "https://www.uny.co.jp/shop/single.php?shop_id=99999185",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://www.apitakanazawabunko.com/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "kaede-walk-nagatsuta-flea",
+    "name": "カエデウォーク長津田（アピタ長津田店）屋上駐車場フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "全国GILフリーマーケット協会",
+      "url": "https://www.furima-gil.com/furima/"
+    },
+    "venue": {
+      "name": "カエデウォーク長津田 屋上駐車場",
+      "pref": "14",
+      "city": "横浜市緑区",
+      "cityCode": "14113",
+      "address": "神奈川県横浜市緑区長津田みなみ台4丁目7-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-28"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "9:00〜14:00",
+      "start": "09:00",
+      "end": "14:00"
+    },
+    "visitor": {
+      "rain": "雨天中止（中止の場合は当日朝7時までに主催者サイトに掲載）"
+    },
+    "sources": [
+      {
+        "url": "https://walk-uny.com/kaede-walk/event/entry-39537.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "ito-yokado-kawasaki-oda-flea",
+    "name": "イトーヨーカドー小田栄店（川崎店）屋上駐車場フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "リサイクル運動推進事業協会（第4支部）",
+      "url": "https://r-kyokai.com/sp/pref.php?prefid=9"
+    },
+    "venue": {
+      "name": "イトーヨーカドー川崎店 屋上駐車場（悪天候時は5階駐車場）",
+      "pref": "14",
+      "city": "川崎市川崎区",
+      "cityCode": "14131",
+      "address": "神奈川県川崎市川崎区小田栄2-2-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-29"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "雨天決行（悪天候時は屋根のある5階駐車場で開催。場所は当日7:30までに協会サイトで告知）"
+    },
+    "sources": [
+      {
+        "url": "https://r-kyokai.com/sp/pref.php?prefid=9",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://www.r-kyokai.com/user/ivent/placeview.php?pid=175",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "osc-shonan-city-flea",
+    "name": "OSC湘南シティフリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "リサイクル運動市民の会 神奈川本部",
+      "url": "https://recyclekanagawa.com/"
+    },
+    "venue": {
+      "name": "OSC湘南シティ オープンモール",
+      "pref": "14",
+      "city": "平塚市",
+      "cityCode": "14203",
+      "address": "神奈川県平塚市代官町33-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-28",
+        "2026-12-12"
+      ],
+      "text": "毎月第2・第4土曜日開催予定"
+    },
+    "time": {
+      "text": "10:00〜16:00",
+      "start": "10:00",
+      "end": "16:00"
+    },
+    "visitor": {
+      "rain": "原則雨天中止（中止等の発表は当日の朝7時までに主催者サイトとXで発表）"
+    },
+    "sources": [
+      {
+        "url": "https://recyclekanagawa.com/place/osc/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "zushi-fureai-flea-kameoka-hachiman",
+    "name": "逗子ふれあいフリーマーケット（亀岡八幡宮）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "逗子ふれあいフリーマーケット実行委員",
+      "url": "https://www.zushitrip.com/"
+    },
+    "venue": {
+      "name": "亀岡八幡宮境内",
+      "pref": "14",
+      "city": "逗子市",
+      "cityCode": "14210",
+      "address": "神奈川県逗子市逗子5-2-13"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-27",
+        "2026-12-11"
+      ],
+      "text": "毎月、月末の金曜日（2026年12月は12月11日）"
+    },
+    "time": {
+      "text": "8:00〜14:30",
+      "start": "08:00",
+      "end": "14:30"
+    },
+    "sources": [
+      {
+        "url": "https://www.zushitrip.com/spot/detail_115.html",
+        "type": "municipality",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://www.zushitrip.com/feature/detail_30.html",
+        "type": "municipality",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "ikuta-ryokuchi-flea-tmc",
+    "name": "川崎市生田緑地フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "タイムマシーンカンパニー",
+      "url": "https://tmc-dx.org/area/ikuta.html"
+    },
+    "venue": {
+      "name": "生田緑地（東口入口付近・しょうぶ池正面、東口駐車場前）",
+      "pref": "14",
+      "city": "川崎市多摩区",
+      "cityCode": "14135",
+      "address": "神奈川県川崎市多摩区枡形7-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22"
+      ],
+      "text": "毎月第2・第4日曜日"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://tmc-dx.org/area/ikuta.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "agripark-yumesugito-flea",
+    "name": "アグリパークゆめすぎとフリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "有限会社アグリパークゆめすぎと",
+      "url": "http://www.pikaru.co.jp/event.html"
+    },
+    "venue": {
+      "name": "道の駅アグリパークゆめすぎと（エントランス／イベント広場）",
+      "pref": "11",
+      "city": "杉戸町",
+      "cityCode": "11464",
+      "address": "埼玉県北葛飾郡杉戸町才羽823-2"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-28",
+        "2026-11-29",
+        "2026-12-05",
+        "2026-12-06",
+        "2026-12-12",
+        "2026-12-13"
+      ],
+      "text": "登録した出店者は、休館日（毎週水曜ほか）と施設占用日を除き、いつでも出店できる常設型（実際は土日祝が中心）"
+    },
+    "time": {
+      "text": "9:00〜16:30",
+      "start": "09:00",
+      "end": "16:30"
+    },
+    "sources": [
+      {
+        "url": "http://www.pikaru.co.jp/event.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://www.pikaru.co.jp/img/event/free_youkou.pdf",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "milk-kazo-hanasaki-flea",
+    "name": "加須はなさき水上公園フリーマーケット（ミルクの会）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "ミルクの会",
+      "url": "http://flma.jp/ground_kazo.html"
+    },
+    "venue": {
+      "name": "加須はなさき水上公園",
+      "pref": "11",
+      "city": "加須市",
+      "cityCode": "11231",
+      "address": "埼玉県加須市水深1722"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-06"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜15:00（受付8:00〜9:00）"
+    },
+    "sources": [
+      {
+        "url": "http://flma.jp/ground_kazo.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "saitama-shintoshin-keyaki-flea",
+    "name": "さいたま新都心けやきひろばフリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "リサイクル運動市民の会・埼玉本部",
+      "url": "https://furima-s.com/kaijouannai/keyaki.htm"
+    },
+    "venue": {
+      "name": "さいたま新都心けやきひろば",
+      "pref": "11",
+      "city": "さいたま市中央区",
+      "cityCode": "11107",
+      "address": "埼玉県さいたま市中央区新都心10"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-18",
+        "2026-11-27",
+        "2026-12-04",
+        "2026-12-06"
+      ],
+      "text": "平日開催あり（平日約50店・土日祝約100店）"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "雨天中止の明記はないが、開催確認は平日が当日朝8時以降、土日祝が当日朝7時以降に行う（天候で判断）"
+    },
+    "sources": [
+      {
+        "url": "https://www.saitama-arena.co.jp/schedule/2026/11/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://furima-s.com/kaijouannai/keyaki.htm",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "saitama-tokorozawa-aviation-park-flea",
+    "name": "所沢航空記念公園フリーマーケット（リサイクル運動市民の会・埼玉本部）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "リサイクル運動市民の会・埼玉本部",
+      "url": "https://furima-s.com/kaijouannai/tokorozawa.htm"
+    },
+    "venue": {
+      "name": "所沢航空記念公園 放送塔南側",
+      "pref": "11",
+      "city": "所沢市",
+      "cityCode": "11208",
+      "address": "埼玉県所沢市並木1-13"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "sources": [
+      {
+        "url": "https://furima-s.com/kaijouannai/tokorozawa.htm",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "ecopa-coco-flea",
+    "name": "エコパココフリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "エコパハウス",
+      "url": "https://www.ecopa.jp/event2/fleamarket"
+    },
+    "venue": {
+      "name": "エコパスタジアム（スタジアム外周、エントランス広場）",
+      "pref": "22",
+      "city": "袋井市",
+      "cityCode": "22216",
+      "address": "静岡県袋井市愛野2300-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-05",
+        "2026-12-06"
+      ],
+      "text": "年数回開催（エコパの自主事業）"
+    },
+    "time": {
+      "text": "10:00〜14:00",
+      "start": "10:00",
+      "end": "14:00"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://www.ecopa.jp/event2/fleamarket",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "fuji-iwamotoyama-park-flea",
+    "name": "富士岩本山公園フリーマーケット（たまげたフリーマーケット）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "NPO法人静岡リサイクル協会",
+      "url": "http://simizufmc.a.la9.jp/"
+    },
+    "venue": {
+      "name": "岩本山公園",
+      "pref": "22",
+      "city": "富士市",
+      "cityCode": "22210",
+      "address": "静岡県富士市岩本1605"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "9:00〜12:00",
+      "start": "09:00",
+      "end": "12:00"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://www.fuji-kousya.jp/park/topics/img_event/24-1.pdf",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "http://simizufmc.a.la9.jp/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "shizuoka-waiwai-yumeichi-flea",
+    "name": "静岡市 わいわい夢市フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "しずおか市消費者協会",
+      "url": "https://shizuokashi-sk.com/free/freemarket"
+    },
+    "venue": {
+      "name": "青葉シンボルロード",
+      "pref": "22",
+      "city": "静岡市葵区",
+      "cityCode": "22101"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21",
+        "2026-11-22"
+      ],
+      "text": "年に数回、土日の2日間開催"
+    },
+    "time": {
+      "text": "9:30〜15:00",
+      "start": "09:30",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://shizuokashi-sk.com/free/freemarket",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://shizuokashi-sk.com/info/6908177",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "fujikawa-rakuza-fuji-style-flea",
+    "name": "道の駅富士川楽座 フリーマーケット『フジスタイル』",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "道の駅富士川楽座",
+      "url": "https://fujikawarakuza.co.jp/event"
+    },
+    "venue": {
+      "name": "道の駅 富士川楽座 3F屋外イベント広場",
+      "pref": "22",
+      "city": "富士市",
+      "cityCode": "22210",
+      "address": "静岡県富士市岩淵1488-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-05",
+        "2026-12-06"
+      ],
+      "text": "月1回程度、土日の2日間"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "sources": [
+      {
+        "url": "https://fujikawarakuza.co.jp/event",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "fujikawa-rakuza-kottou-flea",
+    "name": "道の駅富士川楽座 フリーマーケット『骨董市』",
+    "kinds": [
+      "kotto",
+      "flea"
+    ],
+    "organizer": {
+      "name": "道の駅富士川楽座",
+      "url": "https://fujikawarakuza.co.jp/event"
+    },
+    "venue": {
+      "name": "道の駅 富士川楽座 3F屋外イベント広場",
+      "pref": "22",
+      "city": "富士市",
+      "cityCode": "22210",
+      "address": "静岡県富士市岩淵1488-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21",
+        "2026-11-22"
+      ],
+      "text": "月1回程度、土日の2日間"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "sources": [
+      {
+        "url": "https://fujikawarakuza.co.jp/event",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "shizumall-nishigaya-flea",
+    "name": "しずもーるフリーマーケット（しずもーる西ケ谷）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "静岡市環境公社（しずもーる西ケ谷）",
+      "url": "https://www.shizuoka4r.jp/nishigaya/"
+    },
+    "venue": {
+      "name": "静岡市西ケ谷資源循環体験プラザ「しずもーる西ケ谷」駐車場",
+      "pref": "22",
+      "city": "静岡市葵区",
+      "cityCode": "22101",
+      "address": "静岡県静岡市葵区西ケ谷553番地の2"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "9:00〜12:00",
+      "start": "09:00",
+      "end": "12:00"
+    },
+    "visitor": {
+      "rain": "雨天中止（前日昼ごろの降水確率で判断し、サイトで告知）"
+    },
+    "sources": [
+      {
+        "url": "https://www.shizuoka4r.jp/nishigaya/",
+        "type": "municipality",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "garage-sale-sunday-ecopa",
+    "name": "GARAGE SALE SUNDAY",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "SPACE",
+      "url": "https://www.instagram.com/garage_sale_sunday/"
+    },
+    "venue": {
+      "name": "エコパ P9駐車場（第9駐車場）",
+      "pref": "22",
+      "city": "袋井市",
+      "cityCode": "22216",
+      "address": "静岡県袋井市愛野2300-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22"
+      ],
+      "text": "不定期開催（会場は回により異なる）"
+    },
+    "time": {
+      "text": "9:00〜15:00",
+      "start": "09:00",
+      "end": "15:00"
+    },
+    "sources": [
+      {
+        "url": "https://www.instagram.com/garage_sale_sunday/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "swapmeet-hanahaku",
+    "name": "Swapmeet in 花博公園",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "日本スワップミート協会",
+      "url": "https://swapmeet.ne.jp/info/hanahaku"
+    },
+    "venue": {
+      "name": "花博記念公園鶴見緑地 ハナミズキホールおよび付属展示場",
+      "pref": "27",
+      "city": "大阪市鶴見区",
+      "address": "大阪府大阪市鶴見区緑地公園2-163"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-11-23",
+        "2026-12-05",
+        "2026-12-06"
+      ],
+      "text": "通常回（11/22・12/5）とスペシャル回（11/23・12/6）"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "雨天順延（スペシャル回は雨天時、屋内外とも全面中止で振替予定日あり）"
+    },
+    "sources": [
+      {
+        "url": "https://swapmeet.ne.jp/info/hanahaku",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://swapmeet.ne.jp/info/hanahaku-sp",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://www.instagram.com/swapmeet__official/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "nadeshiko-amaiseki-park-flea",
+    "name": "安満遺跡公園なでしこフリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "なでしこふれあいマーケット協会",
+      "url": "https://www.nadeshikofurima.com/amaiseki.html"
+    },
+    "venue": {
+      "name": "安満遺跡公園 サンスター広場",
+      "pref": "27",
+      "city": "高槻市",
+      "cityCode": "27207",
+      "address": "大阪府高槻市八丁畷町12-3"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21",
+        "2026-11-22"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "雨天中止の場合あり（中止時は原則として次回開催日へ振替。12月開催分は振替なし）"
+    },
+    "sources": [
+      {
+        "url": "https://www.nadeshikofurima.com/amaiseki.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "sojiji-honmichi-shotengai-flea",
+    "name": "総持寺本通商店街フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "総持寺本通商店街振興組合",
+      "url": "https://www.city.ibaraki.osaka.jp/koho/kohohtml/1612/12/22.html"
+    },
+    "venue": {
+      "name": "総持寺本通商店街区域",
+      "pref": "27",
+      "city": "茨木市",
+      "cityCode": "27211",
+      "address": "大阪府茨木市中総持寺4-5"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-28",
+        "2026-12-12"
+      ],
+      "text": "毎月第4土曜日（12月のみ第2土曜日）"
+    },
+    "time": {
+      "text": "11:00〜16:00",
+      "start": "11:00",
+      "end": "16:00"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://www.city.ibaraki.osaka.jp/koho/kohohtml/1612/12/22.html",
+        "type": "municipality",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "toyokuni-omoshiro-ichi",
+    "name": "豊国さんのおもしろ市",
+    "kinds": [
+      "flea",
+      "kotto"
+    ],
+    "organizer": {
+      "name": "おもしろ市（京都おもしろ市）",
+      "url": "http://www.omosiro1.com/"
+    },
+    "venue": {
+      "name": "豊国神社 参道",
+      "pref": "26",
+      "city": "京都市東山区",
+      "cityCode": "26105",
+      "address": "京都府京都市東山区大和大路正面茶屋町530"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-18",
+        "2026-11-28",
+        "2026-12-08"
+      ],
+      "text": "毎月8日・18日・28日（8日＝古布・骨董市、18日＝フリーマーケット、28日＝手作り・手作り素材市）"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "sources": [
+      {
+        "url": "http://www.omosiro1.com/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://www.instagram.com/omosiro_ichi_kyoto_japan/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "kyoto-city-hall-plusone-flea",
+    "name": "京都市役所前フリーマーケット（プラスワン）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "NPO法人プラスワンネットワーク",
+      "url": "http://www.plusone.ne.jp/?cat=4"
+    },
+    "venue": {
+      "name": "京都市役所前広場",
+      "pref": "26",
+      "city": "京都市中京区",
+      "cityCode": "26104",
+      "address": "京都府京都市中京区寺町通御池上る上本能寺前町488"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-12-06"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜16:00",
+      "start": "10:00",
+      "end": "16:00"
+    },
+    "visitor": {
+      "rain": "当日判断（開催可否は公式の当日開催情報で告知）"
+    },
+    "sources": [
+      {
+        "url": "http://www.plusone.ne.jp/?cat=4",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "nadeshiko-ohigashisan-flea",
+    "name": "お東さんフリーマーケット（なでしこフリマ）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "なでしこふれあいマーケット協会",
+      "url": "https://www.nadeshikofurima.com/ohigasisan.html"
+    },
+    "venue": {
+      "name": "お東さん広場（東本願寺前市民緑地）",
+      "pref": "26",
+      "city": "京都市下京区",
+      "cityCode": "26106",
+      "address": "京都府京都市下京区烏丸通七条上る"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-04",
+        "2026-12-09"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜15:00（11月〜3月の開催時間）"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://www.nadeshikofurima.com/ohigasisan.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "nadeshiko-okazaki-park-flea",
+    "name": "岡崎公園フリーマーケット（なでしこフリマ）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "なでしこふれあいマーケット協会",
+      "url": "https://www.nadeshikofurima.com/custom29.html"
+    },
+    "venue": {
+      "name": "岡崎公園",
+      "pref": "26",
+      "city": "京都市左京区",
+      "cityCode": "26103",
+      "address": "京都府京都市左京区岡崎最勝寺町"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-13"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜16:00",
+      "start": "10:00",
+      "end": "16:00"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://www.nadeshikofurima.com/custom29.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "kitty-mashis-bigrib-mikawaanjo-flea",
+    "name": "ビッグリブ三河安城店フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "キティ＆マーシーズ",
+      "url": "http://www.hm.aitai.ne.jp/~ma-shi-s/profile4018.html"
+    },
+    "venue": {
+      "name": "ビッグリブ三河安城店 店舗駐車場",
+      "pref": "23",
+      "city": "安城市",
+      "cityCode": "23212",
+      "address": "愛知県安城市三河安城町2-22-3"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-18",
+        "2026-12-02",
+        "2026-12-16"
+      ],
+      "text": "毎月第1・第3水曜日"
+    },
+    "time": {
+      "text": "8:00頃（販売開始）〜12:00"
+    },
+    "visitor": {
+      "rain": "雨天中止（当日朝に決定。小雨・雨が上がる予報の場合は開催することあり）"
+    },
+    "sources": [
+      {
+        "url": "http://www.hm.aitai.ne.jp/~ma-shi-s/profile4018.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "kitty-mashis-aeon-matepia-flea",
+    "name": "イオンメイトピア店 屋上駐車場フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "キティ＆マーシーズ",
+      "url": "https://www.hm.aitai.ne.jp/~ma-shi-s/profile4048.html"
+    },
+    "venue": {
+      "name": "イオンメイトピア店 屋上駐車場",
+      "pref": "23",
+      "city": "名古屋市名東区",
+      "cityCode": "23112",
+      "address": "愛知県名古屋市名東区高間町501-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21",
+        "2026-12-13"
+      ],
+      "text": "月1回（通常は土曜日。2026年12月のみ第2日曜日）"
+    },
+    "time": {
+      "text": "10:00〜14:00",
+      "start": "10:00",
+      "end": "14:00"
+    },
+    "visitor": {
+      "rain": "雨天中止（基本は当日朝に決定）"
+    },
+    "sources": [
+      {
+        "url": "https://www.hm.aitai.ne.jp/~ma-shi-s/profile4048.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "kamifusen-apita-okazaki-kita-flea",
+    "name": "アピタ岡崎北店フリーマーケット（Sundayフリマ）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "紙ふうせん",
+      "url": "https://www.instagram.com/furimakamihusen/"
+    },
+    "venue": {
+      "name": "アピタ岡崎北店（11/22は1F平面駐車場東側、12/7は立体駐車場4F）",
+      "pref": "23",
+      "city": "岡崎市",
+      "cityCode": "23202",
+      "address": "愛知県岡崎市日名北町4-46"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-12-07"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "11/22は10:00〜13:00、12/7は10:30〜13:00"
+    },
+    "visitor": {
+      "rain": "11/22は雨天中止（前日18:00の予報で判断し、中止の案内は公式Instagramのみ）。12/7は屋根付きのため雨天決行"
+    },
+    "sources": [
+      {
+        "url": "https://www.instagram.com/furimakamihusen/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "hohoemiaichi-apita-anjo-minami-flea",
+    "name": "アピタ安城南店「アピタdeフリマ」",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "ほほえみあいち",
+      "url": "https://www.instagram.com/hohoemiaichi/"
+    },
+    "venue": {
+      "name": "アピタ安城南店 1F駐車場前スペース",
+      "pref": "23",
+      "city": "安城市",
+      "cityCode": "23212",
+      "address": "愛知県安城市桜井町城向二丁目9-36"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-25"
+      ],
+      "text": "毎月第4水曜日"
+    },
+    "time": {
+      "text": "10:00〜13:00",
+      "start": "10:00",
+      "end": "13:00"
+    },
+    "visitor": {
+      "rain": "原則中止なし（中止時は公式Instagramで告知）"
+    },
+    "sources": [
+      {
+        "url": "https://www.instagram.com/hohoemiaichi/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "kanayoshi-place-marche-flea",
+    "name": "カネヨシプレイス フリーマーケット（カネヨシマルシェ内）",
+    "kinds": [
+      "flea",
+      "marche"
+    ],
+    "organizer": {
+      "name": "紙ふうせん",
+      "url": "https://www.miyoshi-culturehall.jp/news/p230/"
+    },
+    "venue": {
+      "name": "カネヨシプレイス（みよし市勤労文化会館）レセプションホール",
+      "pref": "23",
+      "city": "みよし市",
+      "cityCode": "23233",
+      "address": "愛知県みよし市三好町大慈山1-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-24"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜11:15（カネヨシマルシェ全体は10:00〜12:00）"
+    },
+    "visitor": {
+      "rain": "屋内開催のため天候の影響なし"
+    },
+    "sources": [
+      {
+        "url": "https://www.miyoshi-culturehall.jp/news/p230/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "rokkenmichi-detatoko-market",
+    "name": "駒ヶ林でたとこマーケット ろっけんみち",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "神戸フリーマーケット協会",
+      "url": "https://www.kobe-frema.com/wordpress/rokkenmiti/"
+    },
+    "venue": {
+      "name": "六間道商店街アーケード",
+      "pref": "28",
+      "city": "神戸市長田区",
+      "cityCode": "28107",
+      "address": "兵庫県神戸市長田区二葉町5丁目付近"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-29"
+      ],
+      "text": "毎月最終日曜日（商店街行事等の都合で変更の場合あり）"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "雨天決行（アーケード内開催）"
+    },
+    "sources": [
+      {
+        "url": "https://www.kobe-frema.com/wordpress/rokkenmiti/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "mayasan-rucksack-market",
+    "name": "摩耶山リュックサックマーケット",
+    "kinds": [
+      "flea",
+      "handmade"
+    ],
+    "organizer": {
+      "name": "摩耶山再生の会",
+      "url": "https://www.mayasan.jp/rucksack/"
+    },
+    "venue": {
+      "name": "摩耶山掬星台",
+      "pref": "28",
+      "city": "神戸市灘区",
+      "cityCode": "28110",
+      "address": "兵庫県神戸市灘区摩耶山町2-2"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21"
+      ],
+      "text": "毎年4月〜11月の毎月第3土曜日（11/21は今シーズン最終回）"
+    },
+    "time": {
+      "text": "11:00〜16:00",
+      "start": "11:00",
+      "end": "16:00"
+    },
+    "visitor": {
+      "rain": "荒天中止"
+    },
+    "sources": [
+      {
+        "url": "https://www.mayasan.jp/rucksack/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "tomioka-hachimangu-aozora-nominoichi",
+    "name": "富岡八幡宮 青空蚤の市（フリーマーケット）",
+    "kinds": [
+      "flea",
+      "nomi"
+    ],
+    "organizer": {
+      "name": "富岡八幡宮",
+      "url": "http://www.tomiokahachimangu.or.jp/annai/mgyoji/mgyoji.html"
+    },
+    "venue": {
+      "name": "富岡八幡宮 境内",
+      "pref": "13",
+      "city": "江東区",
+      "cityCode": "13108",
+      "address": "東京都江東区富岡1-20-3"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-28",
+        "2026-12-15"
+      ],
+      "text": "毎月15日・28日（28日が日曜と重なる場合は骨董市を行わず、フリーマーケットを優先して開催）"
+    },
+    "time": {
+      "text": "早朝から日没まで"
+    },
+    "sources": [
+      {
+        "url": "http://www.tomiokahachimangu.or.jp/annai/mgyoji/mgyoji.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://www.instagram.com/tomioka_aozoranominoichi/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "tmc-fujimori-park-flea",
+    "name": "富士森公園フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "タイムマシーンカンパニー",
+      "url": "https://www.tmc-dx.org/area/fujimori.html"
+    },
+    "venue": {
+      "name": "富士森公園",
+      "pref": "13",
+      "city": "八王子市",
+      "cityCode": "13201",
+      "address": "東京都八王子市台町2-2"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21",
+        "2026-12-13"
+      ],
+      "text": "毎月1回（開催日は公式ページに一覧掲載）"
+    },
+    "time": {
+      "text": "9:00〜15:00",
+      "start": "09:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://www.tmc-dx.org/area/fujimori.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "otegami-flea-kitte-museum",
+    "name": "Otegamiフリマ2026 WINTERコレクション",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "切手の博物館",
+      "url": "https://kitte-museum.jp/otegami/"
+    },
+    "venue": {
+      "name": "切手の博物館 3階スペース1・2",
+      "pref": "13",
+      "city": "豊島区",
+      "cityCode": "13116",
+      "address": "東京都豊島区目白1-4-23"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-20",
+        "2026-11-21"
+      ],
+      "text": "年4回（各回は金曜・土曜の2日間）"
+    },
+    "time": {
+      "text": "10:30〜17:00",
+      "start": "10:30",
+      "end": "17:00"
+    },
+    "sources": [
+      {
+        "url": "https://kitte-museum.jp/otegami/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "maebashi-market-lyrica",
+    "name": "前橋マーケット in 前橋リリカ",
+    "kinds": [
+      "flea",
+      "handmade"
+    ],
+    "organizer": {
+      "name": "ハンドメイド Rocca",
+      "url": "https://www.instagram.com/rocca.handmade/"
+    },
+    "venue": {
+      "name": "前橋リリカ 2F",
+      "pref": "10",
+      "city": "前橋市",
+      "cityCode": "10201",
+      "address": "群馬県前橋市国領町2-14-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-28",
+        "2026-12-12"
+      ],
+      "text": "不定期の土曜開催（月1〜2回）"
+    },
+    "time": {
+      "text": "11:00〜15:00",
+      "start": "11:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "屋内開催"
+    },
+    "sources": [
+      {
+        "url": "https://www.instagram.com/p/De8aDw5mMSD/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "grandy21-flea",
+    "name": "グランディ21フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "みちのくフリーマーケット協会",
+      "url": "https://michinoku.info/"
+    },
+    "venue": {
+      "name": "グランディ21 第7駐車場",
+      "pref": "04",
+      "city": "利府町",
+      "cityCode": "04404",
+      "address": "宮城県宮城郡利府町菅谷字舘40-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-11-23",
+        "2026-12-05",
+        "2026-12-06"
+      ],
+      "text": "月2〜4回程度の土日（月ごとにチラシで日程告知）"
+    },
+    "time": {
+      "text": "9:00〜15:00",
+      "start": "09:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://michinoku.info/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://www.instagram.com/michinokufurima/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "york-benimaru-ishibashi-flea",
+    "name": "ヨークベニマル石橋店フリマ",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "ホリデープランニング",
+      "url": "https://sites.google.com/view/holidayplanning"
+    },
+    "venue": {
+      "name": "ヨークベニマル石橋店 屋上駐車場",
+      "pref": "09",
+      "city": "下野市",
+      "cityCode": "09211",
+      "address": "栃木県下野市下古山字北原3362-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-12-13"
+      ],
+      "text": "毎月第2・第4日曜日"
+    },
+    "time": {
+      "text": "9:00〜15:00",
+      "start": "09:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "悪天候・災害・感染症等の事情で中止の場合あり"
+    },
+    "sources": [
+      {
+        "url": "https://sites.google.com/view/holidayplanning",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "tozando-iouno-flea-starlight",
+    "name": "道の駅「東山道伊王野」フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "スターライト友の会",
+      "url": "http://blog.livedoor.jp/starlight2000/"
+    },
+    "venue": {
+      "name": "道の駅「東山道伊王野」",
+      "pref": "09",
+      "city": "那須町",
+      "cityCode": "09407",
+      "address": "栃木県那須郡那須町伊王野459"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-29"
+      ],
+      "text": "年内最終回"
+    },
+    "time": {
+      "text": "9:30〜15:00（受付8:30〜）"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "http://blog.livedoor.jp/starlight2000/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "shiramizu-amidado-flea-nominoichi",
+    "name": "白水阿弥陀堂前広場 フリーマーケット&蚤の市",
+    "kinds": [
+      "flea",
+      "nomi"
+    ],
+    "organizer": {
+      "name": "内郷まちづくり市民会議",
+      "url": "https://www.instagram.com/uchigo.coal_guide/"
+    },
+    "venue": {
+      "name": "白水阿弥陀堂前広場",
+      "pref": "07",
+      "city": "いわき市",
+      "cityCode": "07204",
+      "address": "福島県いわき市内郷白水町広畑221"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "text": "不定期（年1〜2回の複数日開催）"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://www.instagram.com/p/DfRJ_AuITgS/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "matsumoto-alps-park-flea-furimanet",
+    "name": "松本市立アルプス公園フリマ",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "フリマネット信州",
+      "url": "http://furimanet.com/"
+    },
+    "venue": {
+      "name": "松本市立アルプス公園 東入り口駐車場",
+      "pref": "20",
+      "city": "松本市",
+      "cityCode": "20202",
+      "address": "長野県松本市蟻ケ崎2455"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-29"
+      ],
+      "text": "春〜秋の土日を中心に月複数回（月ごとに日程告知）"
+    },
+    "time": {
+      "text": "10:00〜14:00",
+      "start": "10:00",
+      "end": "14:00"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "http://furimanet.com/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "http://furimanet.com/alpkouen.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "akita-yugakusha-flea",
+    "name": "遊学舎フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "NPO法人あきたパートナーシップ",
+      "url": "https://www.akita-kenmin.jp/yugakusha/attach/20260421-frmk20262nd.pdf"
+    },
+    "venue": {
+      "name": "秋田ゆとり生活創造センター「遊学舎」会議棟",
+      "pref": "05",
+      "city": "秋田市",
+      "cityCode": "05201",
+      "address": "秋田県秋田市上北手荒巻字堺切24-2"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-13"
+      ],
+      "text": "月1回程度の日曜開催（11〜3月は会議棟で開催）"
+    },
+    "time": {
+      "text": "10:00〜14:00",
+      "start": "10:00",
+      "end": "14:00"
+    },
+    "visitor": {
+      "rain": "天候により中止の場合あり（当日8:30から電話で問い合わせ可）"
+    },
+    "sources": [
+      {
+        "url": "https://www.akita-kenmin.jp/yugakusha/attach/20260421-frmk20262nd.pdf",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "yamagata-niconico-flea-kajo-central",
+    "name": "山形市ニコニコフリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "フリマサークルニコ＋霞城セントラルフリマ実行委員会",
+      "url": "https://www.kajocentral.com/fleamarket/"
+    },
+    "venue": {
+      "name": "霞城セントラル 1階アトリウム",
+      "pref": "06",
+      "city": "山形市",
+      "cityCode": "06201",
+      "address": "山形県山形市城南町1-1-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-13"
+      ],
+      "text": "毎月第2日曜開催"
+    },
+    "time": {
+      "text": "10:30〜15:00",
+      "start": "10:30",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "屋内（アトリウム）開催"
+    },
+    "sources": [
+      {
+        "url": "https://www.kajocentral.com/fleamarket/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "trial-isesaki-flea-fudankyo",
+    "name": "メガセンタートライアル伊勢崎中央店フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "フ団協（NPO法人フリーマーケット主催団体協議会）",
+      "url": "https://fleamarket.or.jp/isesaki.html"
+    },
+    "venue": {
+      "name": "メガセンタートライアル伊勢崎中央店 屋根付き4F駐車場",
+      "pref": "10",
+      "city": "伊勢崎市",
+      "cityCode": "10205",
+      "address": "群馬県伊勢崎市連取町1507"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22"
+      ],
+      "text": "概ね毎週日曜開催"
+    },
+    "time": {
+      "text": "9:00〜14:00",
+      "start": "09:00",
+      "end": "14:00"
+    },
+    "visitor": {
+      "rain": "原則開催（屋根付き駐車場）"
+    },
+    "sources": [
+      {
+        "url": "https://fleamarket.or.jp/isesaki.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://www.instagram.com/npofleamarket/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "hikone-eco-market-yumehata",
+    "name": "彦根エコマーケット 夢畑",
+    "kinds": [
+      "flea",
+      "marche"
+    ],
+    "organizer": {
+      "name": "夢畑実行委員会",
+      "url": "https://www.fmhikone.jp/sumple/4367/"
+    },
+    "venue": {
+      "name": "彦根城内 保存用地（大手前公園第2保存用地）",
+      "pref": "25",
+      "city": "彦根市",
+      "cityCode": "25206",
+      "address": "滋賀県彦根市金亀町5-10"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-29"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "9:30〜13:00",
+      "start": "09:30",
+      "end": "13:00"
+    },
+    "sources": [
+      {
+        "url": "https://www.fmhikone.jp/sumple/4367/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "smile-tanabe-flea",
+    "name": "スマイルフリーマーケット（田辺）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "スマイル",
+      "url": "https://www.instagram.com/smilefurima91/"
+    },
+    "venue": {
+      "name": "田辺市新庄総合公園",
+      "pref": "30",
+      "city": "田辺市",
+      "cityCode": "30204",
+      "address": "和歌山県田辺市新庄町"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "text": "不定期（年数回、2日間連続開催が多い）"
+    },
+    "time": {
+      "text": "9:00〜15:30",
+      "start": "09:00",
+      "end": "15:30"
+    },
+    "visitor": {
+      "rain": "予備日なし（中止の場合は当日朝5〜6時に公式InstagramとLINEオープンチャットで告知）"
+    },
+    "sources": [
+      {
+        "url": "https://www.instagram.com/smilefurima91/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "fukui-power-center-wasse-flea",
+    "name": "フリーマーケット in パワーセンターワッセ",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "鯖江市リサイクル市民の会",
+      "url": "https://www.pref.fukui.lg.jp/doc/junkan/reuse.html"
+    },
+    "venue": {
+      "name": "パワーセンターワッセ アーケード",
+      "pref": "18",
+      "city": "福井市",
+      "cityCode": "18201",
+      "address": "福井県福井市久喜津町55-15"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-06"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜15:00",
+      "start": "10:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "雨天決行"
+    },
+    "sources": [
+      {
+        "url": "https://www.pref.fukui.lg.jp/doc/junkan/reuse.html",
+        "type": "municipality",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "south-village-okayama-flea",
+    "name": "サウスヴィレッジ フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "岡山市サウスヴィレッジ",
+      "url": "https://www.southvillage.jp/"
+    },
+    "venue": {
+      "name": "岡山市サウスヴィレッジ 芝生広場",
+      "pref": "33",
+      "city": "岡山市南区",
+      "cityCode": "33104",
+      "address": "岡山県岡山市南区片岡2468"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-29",
+        "2026-12-06",
+        "2026-12-13"
+      ],
+      "text": "基本日程は毎月第1・第3・第5日曜日（12月は第1・第2日曜日の特別日程）"
+    },
+    "time": {
+      "text": "8:00〜12:00",
+      "start": "08:00",
+      "end": "12:00"
+    },
+    "visitor": {
+      "rain": "雨天中止（公式サイトのお知らせ欄で開催回ごとに中止を告知）"
+    },
+    "sources": [
+      {
+        "url": "https://www.southvillage.jp/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://www.southvillage.jp/cms/wp-content/uploads/2025/05/rule2025.pdf",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "kojima-sanpakuichi-flea",
+    "name": "児島駅前三白市（フリーマーケットコーナー）",
+    "kinds": [
+      "flea",
+      "marche"
+    ],
+    "organizer": {
+      "name": "児島駅前商店街連盟",
+      "url": "https://kojima-sanpakuichi.com/"
+    },
+    "venue": {
+      "name": "児島駅前商店街（7番街・パティオ・天満屋トピア周辺）",
+      "pref": "33",
+      "city": "倉敷市",
+      "cityCode": "33202",
+      "address": "岡山県倉敷市児島駅前"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-29"
+      ],
+      "text": "毎月最終日曜日"
+    },
+    "time": {
+      "text": "9:00〜15:00",
+      "start": "09:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "三白市は雨天決行。フリーマーケットコーナーは公式チラシで雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://kojima-sanpakuichi.com/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "saidaiji-asaichi-okayama",
+    "name": "西大寺朝市",
+    "kinds": [
+      "marche"
+    ],
+    "organizer": {
+      "name": "西大寺朝市実行委員会",
+      "url": "https://www.city.okayama.jp/higashiku/0000011850.html"
+    },
+    "venue": {
+      "name": "西大寺緑花公園 多目的広場",
+      "pref": "33",
+      "city": "岡山市東区",
+      "cityCode": "33103",
+      "address": "岡山県岡山市東区西大寺南一丁目2番3号"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-13"
+      ],
+      "text": "年4回（5月・9月・12月・3月）"
+    },
+    "time": {
+      "text": "8:00〜11:00",
+      "start": "08:00",
+      "end": "11:00"
+    },
+    "sources": [
+      {
+        "url": "https://www.city.okayama.jp/higashiku/0000011850.html",
+        "type": "municipality",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "hiroshima-ujina-minato-flea",
+    "name": "広島うじなみなとフリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "広島うじなみなとフリマプロジェクト",
+      "url": "https://humfp.net/"
+    },
+    "venue": {
+      "name": "宇品御幸松地区広場",
+      "pref": "34",
+      "city": "広島市南区",
+      "cityCode": "34103",
+      "address": "広島県広島市南区宇品海岸2丁目23-22"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-12-13"
+      ],
+      "text": "毎月第2・第4日曜日"
+    },
+    "time": {
+      "text": "8:00〜15:00",
+      "start": "08:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "悪天候の場合は中止（最新情報は公式LINEで配信）"
+    },
+    "sources": [
+      {
+        "url": "https://humfp.net/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "fugenji-konjakuichi",
+    "name": "普賢寺今昔市",
+    "kinds": [
+      "flea",
+      "nomi"
+    ],
+    "organizer": {
+      "name": "普賢寺今昔市実行委員会",
+      "url": "https://www.city.hikari.lg.jp/soshiki/3/kankyo_jigyo/recycle/threer/2325.html"
+    },
+    "venue": {
+      "name": "普賢寺境内",
+      "pref": "35",
+      "city": "光市",
+      "address": "山口県光市室積8丁目6-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-12-13"
+      ],
+      "text": "毎月第2・第4日曜日"
+    },
+    "time": {
+      "text": "日の出〜12:00"
+    },
+    "sources": [
+      {
+        "url": "https://www.city.hikari.lg.jp/soshiki/3/kankyo_jigyo/recycle/threer/2325.html",
+        "type": "municipality",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://www.instagram.com/fugenji_konjyakuichi/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "hofu-flea-auction-hajima",
+    "name": "防府市フリーマーケット&オークション",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "株式会社羽嶋松翠園",
+      "url": "https://hajima-s.com/"
+    },
+    "venue": {
+      "name": "笑顔ステーション・右田",
+      "pref": "35",
+      "city": "防府市",
+      "address": "山口県防府市下右田647"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-28",
+        "2026-12-12"
+      ],
+      "text": "毎月第2・第4土曜日"
+    },
+    "time": {
+      "text": "9:00〜（終了時刻は要確認。オークションは11:00〜）"
+    },
+    "sources": [
+      {
+        "url": "https://hajima-s.com/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "tokushima-bikkuri-nichiyoichi-flea",
+    "name": "徳島びっくり日曜市フリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "協同組合徳島繊維卸団地",
+      "url": "https://www.nichiyouichi.com/"
+    },
+    "venue": {
+      "name": "徳島繊維卸団地",
+      "pref": "36",
+      "city": "徳島市",
+      "cityCode": "36201",
+      "address": "徳島県徳島市問屋町60"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-11-29",
+        "2026-12-06",
+        "2026-12-13"
+      ],
+      "text": "毎週日曜日"
+    },
+    "time": {
+      "text": "早朝〜14:00（出店者は7:00までに入場）"
+    },
+    "visitor": {
+      "rain": "雨天決行"
+    },
+    "sources": [
+      {
+        "url": "https://www.nichiyouichi.com/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "tokushima-fureai-kenkokan-flea",
+    "name": "徳島ふれあいフリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "ふれあい健康館（徳島市生涯福祉センター）",
+      "url": "https://www.instagram.com/fure_1113ok/"
+    },
+    "venue": {
+      "name": "ふれあい健康館 1F きっかけ空間",
+      "pref": "36",
+      "city": "徳島市",
+      "cityCode": "36201",
+      "address": "徳島県徳島市沖浜東2丁目16"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-12-05"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "9:00〜15:00",
+      "start": "09:00",
+      "end": "15:00"
+    },
+    "visitor": {
+      "rain": "屋内開催"
+    },
+    "sources": [
+      {
+        "url": "https://www.instagram.com/fure_1113ok/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "yonago-ou-land-flea",
+    "name": "米子おーゆ・ランドフリーマーケット",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "皆生温泉 おーゆ・ランド／おーゆホテル",
+      "url": "https://ou-kaike.co.jp/archives/371"
+    },
+    "venue": {
+      "name": "OUランド前芝生",
+      "pref": "31",
+      "city": "米子市",
+      "cityCode": "31202",
+      "address": "鳥取県米子市皆生温泉1丁目18番1号"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-12"
+      ],
+      "text": "毎月第2土曜日"
+    },
+    "time": {
+      "text": "10:00〜日没"
+    },
+    "visitor": {
+      "rain": "基本中止（小雨でテント持参の場合は出店可）"
+    },
+    "sources": [
+      {
+        "url": "https://ou-kaike.co.jp/archives/371",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "tenjin-hokoten-flea",
+    "name": "天神ほこてんフリマ",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "Fukuoka City Market",
+      "url": "https://www.instagram.com/fukuoka_city_market/"
+    },
+    "venue": {
+      "name": "天神4号線（福岡市役所正面の道路）",
+      "pref": "40",
+      "city": "福岡市中央区",
+      "cityCode": "40131",
+      "address": "福岡県福岡市中央区天神1丁目"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-11-29",
+        "2026-12-06"
+      ],
+      "text": "2026年11月8日から12月6日まで毎週日曜（5週連続の歩行者天国）"
+    },
+    "time": {
+      "text": "10:00〜21:00（フリマ・個人出店は16:00以降順次終了の場合あり）"
+    },
+    "visitor": {
+      "rain": "小雨決行・荒天中止"
+    },
+    "sources": [
+      {
+        "url": "https://www.instagram.com/p/DegyI4pzYfm/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "tojinmachi-flea-fukuoka-city-market",
+    "name": "唐人町フリマ（唐人町にぎわい市）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "Fukuoka City Market × 唐人町にぎわい市（唐人町商店街連合会）",
+      "url": "https://fukuokacitymarket.com/events/toujin-nigiwaiichi/"
+    },
+    "venue": {
+      "name": "唐人町商店街アーケード内",
+      "pref": "40",
+      "city": "福岡市中央区",
+      "cityCode": "40131"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-22",
+        "2026-11-23",
+        "2026-11-29",
+        "2026-12-06",
+        "2026-12-13"
+      ],
+      "text": "11〜12月は毎週日曜（11/23のみ月・祝の追加開催）"
+    },
+    "time": {
+      "text": "11:00〜17:00",
+      "start": "11:00",
+      "end": "17:00"
+    },
+    "sources": [
+      {
+        "url": "https://fukuokacitymarket.com/events/toujin-nigiwaiichi/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      },
+      {
+        "url": "https://fukuokacitymarket.com/events/toujin-arcade/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "maizuru-park-flea-fukuoka-city-market",
+    "name": "舞鶴公園フリマ（Fukuoka City Market）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "Fukuoka City Market",
+      "url": "https://fukuokacitymarket.com/events/3900/"
+    },
+    "venue": {
+      "name": "舞鶴公園 三の丸広場",
+      "pref": "40",
+      "city": "福岡市中央区",
+      "cityCode": "40131",
+      "address": "福岡県福岡市中央区城内"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-13"
+      ],
+      "text": "不定期（月1回程度）"
+    },
+    "time": {
+      "text": "10:00〜16:00",
+      "start": "10:00",
+      "end": "16:00"
+    },
+    "visitor": {
+      "rain": "雨天・荒天時は中止の場合あり（開催前日の予報で判断）"
+    },
+    "sources": [
+      {
+        "url": "https://fukuokacitymarket.com/events/3900/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "nogata-bikkuri-ichi-flea",
+    "name": "直方びっくり市 フリーマーケット（月末フリーマーケット）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "イベント運営事務局 To-wild office",
+      "url": "https://wild1-isi.com/free.html"
+    },
+    "venue": {
+      "name": "直方びっくり市 屋根付駐車場・お肉舘横",
+      "pref": "40",
+      "city": "直方市",
+      "cityCode": "40203",
+      "address": "福岡県直方市感田一丁田611"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-27",
+        "2026-11-28",
+        "2026-11-29"
+      ],
+      "text": "月末の金・土・日（市場の営業日と同じ週末）"
+    },
+    "time": {
+      "text": "9:00〜16:30（受付7:00〜）"
+    },
+    "sources": [
+      {
+        "url": "https://wild1-isi.com/free.html",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "sasebo-port-car-boot-5",
+    "name": "第5回佐世保港カーブーツ",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "日本カーブーツ協会（JCBA）佐世保",
+      "url": "https://www.instagram.com/carboots.sasebo/"
+    },
+    "venue": {
+      "name": "新みなとイベント広場（佐世保駅みなと口前）",
+      "pref": "42",
+      "city": "佐世保市",
+      "cityCode": "42202",
+      "address": "長崎県佐世保市新港町"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-28",
+        "2026-11-29"
+      ],
+      "text": "主催者の公式情報による開催日"
+    },
+    "time": {
+      "text": "10:00〜17:00",
+      "start": "10:00",
+      "end": "17:00"
+    },
+    "sources": [
+      {
+        "url": "https://www.instagram.com/p/DfPAkAPnaxZ/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "mizube-plaza-kamoto-flea",
+    "name": "水辺プラザかもとフリーマーケット（水辺フリマ）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "道の駅 水辺プラザかもと",
+      "url": "https://mizube-plaza.co.jp/events/sample-events1/"
+    },
+    "venue": {
+      "name": "道の駅 水辺プラザかもと 芝生広場",
+      "pref": "43",
+      "city": "山鹿市",
+      "cityCode": "43204",
+      "address": "熊本県山鹿市鹿本町梶屋1257"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-11-21",
+        "2026-11-22"
+      ],
+      "text": "毎月第3土曜日・日曜日（変更の場合あり）"
+    },
+    "time": {
+      "text": "9:30〜16:00（受付9:00〜）"
+    },
+    "visitor": {
+      "rain": "雨天中止"
+    },
+    "sources": [
+      {
+        "url": "https://mizube-plaza.co.jp/events/sample-events1/",
+        "type": "organizer",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "setouchi-flea-amami",
+    "name": "セトウチフリーマーケット（奄美大島）",
+    "kinds": [
+      "flea"
+    ],
+    "organizer": {
+      "name": "セトウチフリーマーケット",
+      "url": "https://www.instagram.com/setouchi_fleamarket/"
+    },
+    "venue": {
+      "name": "瀬戸内町きゅら島交流館",
+      "pref": "46",
+      "city": "瀬戸内町",
+      "address": "鹿児島県大島郡瀬戸内町古仁屋船津33-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-05"
+      ],
+      "text": "不定期開催（第5回）"
+    },
+    "time": {
+      "text": "11:00〜14:00",
+      "start": "11:00",
+      "end": "14:00"
+    },
+    "visitor": {
+      "rain": "屋内施設が会場"
+    },
+    "sources": [
+      {
+        "url": "https://www.instagram.com/setouchi_fleamarket/",
+        "type": "organizer-sns",
+        "checkedAt": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "id": "kamibashira-nominoichi-flea",
+    "name": "神柱蚤の市フリーマーケット",
+    "kinds": [
+      "flea",
+      "nomi"
+    ],
+    "organizer": {
+      "name": "都城フリーマーケットの会",
+      "url": "https://www.kamibashira-furima.com/"
+    },
+    "venue": {
+      "name": "神柱公園",
+      "pref": "45",
+      "city": "都城市",
+      "cityCode": "45201",
+      "address": "宮崎県都城市前田町1330-1"
+    },
+    "recurrence": {
+      "type": "dates",
+      "dates": [
+        "2026-12-06"
+      ],
+      "text": "毎月第1日曜日（雨天時は第2日曜日へ順延）"
+    },
+    "time": {
+      "text": "8:00〜15:00",
+      "start": "08:00",
+      "end": "15:00"
+    },
+    "sources": [
+      {
+        "url": "https://www.kamibashira-furima.com/",
+        "type": "organizer",
         "checkedAt": "2026-11-18"
       }
     ]

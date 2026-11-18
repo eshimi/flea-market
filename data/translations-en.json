@@ -2588,6 +2588,568 @@
       "rule": "Dates listed in Obihiro City's flea market information (Nov 29 and Dec 13)",
       "time": "10:00–13:30",
       "address": "17-1 Kino-nishi-dori, Otofuke-cho, Kato-gun, Hokkaido"
+    },
+    "free-flea-market-shimotsuma": {
+      "name": "FREE FLEA Market (Shimotsuma)",
+      "venue": "Kona-kuri Dome Shimotsuma (formerly WaiWai Dome Shimotsuma)",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–15:00",
+      "rain": "Held in the rain (indoor dome venue)",
+      "address": "91 Shimotsuma-cho, Shimotsuma-shi, Ibaraki"
+    },
+    "warehouse-market-tsukimidori": {
+      "name": "Warehouse Market TSUKIMIDORI",
+      "venue": "TSUKIMIDORI RV Park Ibaraki",
+      "rule": "Held once a month",
+      "time": "10:00–16:00",
+      "rain": "Held indoors in a warehouse, so it goes ahead in the rain",
+      "address": "1708-1 Miyagasaki, Ibaraki-machi, Higashiibaraki-gun, Ibaraki"
+    },
+    "ushiku-gottaichi": {
+      "name": "Ushiku Gottaichi",
+      "venue": "Ushiku City Central Lifelong Learning Center parking lot",
+      "rule": "5 times a year (the 2nd Sunday of months 2, 4, 6, 10 and 12)",
+      "time": "9:00–14:00",
+      "address": "1606-1 Kashiwada-cho, Ushiku-shi, Ibaraki"
+    },
+    "nagara-dam-friday-flea-kottou": {
+      "name": "Friday Flea & Antique Market at Nagara Dam",
+      "venue": "Nagara Town Urban-Rural Exchange Center (Wakuwaku Nagara)",
+      "rule": "Every Friday",
+      "time": "9:00–14:00 (Venue 2: 8:00–14:00)",
+      "rain": "Cancelled in the rain",
+      "address": "70-15 Yamanogo, Nagara-machi, Chosei-gun, Chiba"
+    },
+    "gyotoku-station-park-flea": {
+      "name": "Gyotoku Station Park Flea Market",
+      "venue": "Gyotoku Station Park",
+      "rule": "Saturdays (about 2 to 4 times a month)",
+      "time": "9:00–14:00",
+      "rain": "Cancelled in the rain",
+      "address": "2-4-1 Minato-shinden, Ichikawa-shi, Chiba"
+    },
+    "milk-kashiwanoha-park-flea": {
+      "name": "Kashiwanoha Park Flea Market (Milk no Kai)",
+      "venue": "Kashiwanoha Park, 1st parking lot service yard",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–15:00",
+      "address": "4-1 Kashiwanoha, Kashiwa-shi, Chiba"
+    },
+    "milk-akebonoyama-park-flea": {
+      "name": "Akebonoyama Park Flea Market (Milk no Kai, vol. 3)",
+      "venue": "Akebonoyama Agricultural Park",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–15:00",
+      "rain": "Cancelled in the rain",
+      "address": "2005-2 Fuse, Kashiwa-shi, Chiba"
+    },
+    "unomi-park-flea-recycler-kanagawa": {
+      "name": "Umi-no-Koen Flea Market",
+      "venue": "Umi-no-Koen Shibaguchi parking lot",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–16:00",
+      "rain": "Cancelled in the rain, no rain date (any cancellation is announced by 7:00 a.m. on the day on the organizer’s website and X)",
+      "address": "10 Umi-no-Koen, Kanazawa-ku, Yokohama-shi, Kanagawa"
+    },
+    "kodomonokuni-tanpopo-flea": {
+      "name": "Kodomo-no-Kuni Flea Market (Tanpopo Flea Market)",
+      "venue": "Kodomo-no-Kuni, Central Plaza",
+      "rule": "Dates published by the organizer",
+      "time": "9:30–16:00",
+      "rain": "Cancelled in the rain (the official page advises calling on the day to check)",
+      "address": "700 Nara-cho, Aoba-ku, Yokohama-shi, Kanagawa"
+    },
+    "apita-terrace-tsunashima-flea": {
+      "name": "Apita Terrace Tsunashima Rooftop Parking Flea Market",
+      "venue": "Apita Terrace Yokohama Tsunashima, rooftop parking lot",
+      "rule": "1st and 3rd Sunday of every month, plus one Saturday a month",
+      "time": "9:00–14:00",
+      "rain": "Cancelled in the rain",
+      "address": "4-3-17 Tsunashima-higashi, Kohoku-ku, Yokohama-shi, Kanagawa"
+    },
+    "apita-kanazawabunko-flea": {
+      "name": "Apita Kanazawa-Bunko Rooftop Parking Flea Market",
+      "venue": "Apita Kanazawa-Bunko, rooftop",
+      "rule": "Dates published by the organizer",
+      "time": "9:00–14:00 (may end earlier depending on the number of sellers)",
+      "rain": "Cancelled in bad weather or when rain is forecast",
+      "address": "2-1-1 Kamariya-higashi, Kanazawa-ku, Yokohama-shi, Kanagawa"
+    },
+    "kaede-walk-nagatsuta-flea": {
+      "name": "Kaede Walk Nagatsuta Rooftop Parking Flea Market",
+      "venue": "Kaede Walk Nagatsuta, rooftop parking lot",
+      "rule": "Dates published by the organizer",
+      "time": "9:00–14:00",
+      "rain": "Cancelled in the rain (any cancellation is posted on the organizer’s website by 7:00 a.m. on the day)",
+      "address": "4-7-1 Nagatsuta-minamidai, Midori-ku, Yokohama-shi, Kanagawa"
+    },
+    "ito-yokado-kawasaki-oda-flea": {
+      "name": "Ito-Yokado Oda-sakae (Kawasaki) Rooftop Parking Flea Market",
+      "venue": "Ito-Yokado Kawasaki, rooftop parking lot (5th-floor parking lot in bad weather)",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–15:00",
+      "rain": "Held in the rain (moved to the covered 5th-floor parking lot in bad weather; the location is announced on the association’s website by 7:30 a.m.)",
+      "address": "2-2-1 Oda-sakae, Kawasaki-ku, Kawasaki-shi, Kanagawa"
+    },
+    "osc-shonan-city-flea": {
+      "name": "OSC Shonan City Flea Market",
+      "venue": "OSC Shonan City, Open Mall",
+      "rule": "Planned for the 2nd and 4th Saturday of every month",
+      "time": "10:00–16:00",
+      "rain": "In principle cancelled in the rain (any cancellation is announced by 7:00 a.m. on the day on the organizer’s website and X)",
+      "address": "33-1 Daikan-cho, Hiratsuka-shi, Kanagawa"
+    },
+    "zushi-fureai-flea-kameoka-hachiman": {
+      "name": "Zushi Fureai Flea Market (Kameoka Hachimangu)",
+      "venue": "Kameoka Hachimangu Shrine grounds",
+      "rule": "The last Friday of every month (for December 2026, 12/11)",
+      "time": "8:00–14:30",
+      "address": "5-2-13 Zushi, Zushi-shi, Kanagawa"
+    },
+    "ikuta-ryokuchi-flea-tmc": {
+      "name": "Kawasaki Ikuta Ryokuchi Flea Market",
+      "venue": "Ikuta Ryokuchi (near the east entrance, in front of Shobu Pond, in front of the east parking lot)",
+      "rule": "2nd and 4th Sunday of every month",
+      "time": "10:00–15:00",
+      "rain": "Cancelled in the rain",
+      "address": "7-1 Masugata, Tama-ku, Kawasaki-shi, Kanagawa"
+    },
+    "agripark-yumesugito-flea": {
+      "name": "Agripark Yumesugito Flea Market",
+      "venue": "Michi-no-Eki Agripark Yumesugito (entrance and event plaza)",
+      "rule": "A standing arrangement: registered sellers may set up on any day except closure days (every Wednesday and others) and facility-use days (in practice mostly weekends and holidays)",
+      "time": "9:00–16:30",
+      "address": "823-2 Saiba, Sugito-machi, Kitakatsushika-gun, Saitama"
+    },
+    "milk-kazo-hanasaki-flea": {
+      "name": "Kazo Hanasaki Water Park Flea Market (Milk no Kai)",
+      "venue": "Kazo Hanasaki Water Park",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–15:00 (reception 8:00–9:00)",
+      "address": "1722 Mizufuka, Kazo-shi, Saitama"
+    },
+    "saitama-shintoshin-keyaki-flea": {
+      "name": "Saitama Shintoshin Keyaki Hiroba Flea Market",
+      "venue": "Saitama Shintoshin Keyaki Hiroba",
+      "rule": "Includes weekdays (about 50 stalls on weekdays, about 100 on weekends and holidays)",
+      "time": "10:00–15:00",
+      "rain": "No explicit rain cancellation is stated, but whether it goes ahead is checked from 8:00 a.m. on weekdays and 7:00 a.m. on weekends and holidays (decided by the weather)",
+      "address": "10 Shintoshin, Chuo-ku, Saitama-shi, Saitama"
+    },
+    "saitama-tokorozawa-aviation-park-flea": {
+      "name": "Tokorozawa Aviation Memorial Park Flea Market (Recycle Movement Citizens’ Association, Saitama)",
+      "venue": "Tokorozawa Aviation Memorial Park, south of the broadcast tower",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–15:00",
+      "address": "1-13 Namiki, Tokorozawa-shi, Saitama"
+    },
+    "ecopa-coco-flea": {
+      "name": "Ecopa Coco Flea Market",
+      "venue": "Ecopa Stadium (outer ring and entrance plaza)",
+      "rule": "Several times a year (an Ecopa in-house event)",
+      "time": "10:00–14:00",
+      "rain": "Cancelled in the rain",
+      "address": "2300-1 Aino, Fukuroi-shi, Shizuoka"
+    },
+    "fuji-iwamotoyama-park-flea": {
+      "name": "Fuji Iwamotoyama Park Flea Market (Tamageta Flea Market)",
+      "venue": "Iwamotoyama Park",
+      "rule": "Dates published by the organizer",
+      "time": "9:00–12:00",
+      "rain": "Cancelled in the rain",
+      "address": "1605 Iwamoto, Fuji-shi, Shizuoka"
+    },
+    "shizuoka-waiwai-yumeichi-flea": {
+      "name": "Shizuoka Waiwai Yumeichi Flea Market",
+      "venue": "Aoba Symbol Road",
+      "rule": "Held a few times a year over 2 days (Saturday and Sunday)",
+      "time": "9:30–15:00",
+      "rain": "Cancelled in the rain"
+    },
+    "fujikawa-rakuza-fuji-style-flea": {
+      "name": "Michi-no-Eki Fujikawa Rakuza “Fuji Style” Flea Market",
+      "venue": "Michi-no-Eki Fujikawa Rakuza, 3F outdoor event plaza",
+      "rule": "About once a month over 2 days (Saturday and Sunday)",
+      "time": "10:00–15:00",
+      "address": "1488-1 Iwabuchi, Fuji-shi, Shizuoka"
+    },
+    "fujikawa-rakuza-kottou-flea": {
+      "name": "Michi-no-Eki Fujikawa Rakuza Antique Flea Market",
+      "venue": "Michi-no-Eki Fujikawa Rakuza, 3F outdoor event plaza",
+      "rule": "About once a month over 2 days (Saturday and Sunday)",
+      "time": "10:00–15:00",
+      "address": "1488-1 Iwabuchi, Fuji-shi, Shizuoka"
+    },
+    "shizumall-nishigaya-flea": {
+      "name": "Shizumall Flea Market (Shizumall Nishigaya)",
+      "venue": "Shizuoka City Nishigaya Resource Recycling Experience Plaza “Shizumall Nishigaya”, parking lot",
+      "rule": "Dates published by the organizer",
+      "time": "9:00–12:00",
+      "rain": "Cancelled in the rain (decided from the rain probability around noon the day before and announced on the website)",
+      "address": "553-2 Nishigaya, Aoi-ku, Shizuoka-shi, Shizuoka"
+    },
+    "garage-sale-sunday-ecopa": {
+      "name": "GARAGE SALE SUNDAY",
+      "venue": "Ecopa, P9 parking lot (9th parking lot)",
+      "rule": "Irregular (the venue changes from event to event)",
+      "time": "9:00–15:00",
+      "address": "2300-1 Aino, Fukuroi-shi, Shizuoka"
+    },
+    "swapmeet-hanahaku": {
+      "name": "Swapmeet in Hanahaku Park",
+      "venue": "Expo Commemorative Park Tsurumi Ryokuchi, Hanamizuki Hall and annex exhibition hall",
+      "rule": "Regular days (11/22 and 12/5) and Special days (11/23 and 12/6)",
+      "time": "10:00–15:00",
+      "rain": "Postponed in the rain (the Special days are cancelled entirely, indoors and outdoors, with a substitute date)",
+      "address": "2-163 Ryokuchi-koen, Tsurumi-ku, Osaka-shi, Osaka"
+    },
+    "nadeshiko-amaiseki-park-flea": {
+      "name": "Amaiseki Park Nadeshiko Flea Market",
+      "venue": "Amaiseki Park, Sunstar Plaza",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–15:00",
+      "rain": "May be cancelled in the rain (in principle moved to the next scheduled date; no substitute for the 12th month, December)",
+      "address": "12-3 Hacchonawate-cho, Takatsuki-shi, Osaka"
+    },
+    "sojiji-honmichi-shotengai-flea": {
+      "name": "Soji-ji Honmichi Shopping Street Flea Market",
+      "venue": "Soji-ji Honmichi shopping street area",
+      "rule": "4th Saturday of every month (2nd Saturday in December (12) only)",
+      "time": "11:00–16:00",
+      "rain": "Cancelled in the rain",
+      "address": "4-5 Naka-sojiji, Ibaraki-shi, Osaka"
+    },
+    "toyokuni-omoshiro-ichi": {
+      "name": "Toyokuni-san Omoshiro Market",
+      "venue": "Toyokuni Shrine approach",
+      "rule": "The 8th, 18th and 28th of every month (8th: old cloth and antiques; 18th: flea market; 28th: handmade goods and craft materials)",
+      "time": "10:00–15:00",
+      "address": "530 Daibutsu-mae Chaya-machi, Yamato-oji, Higashiyama-ku, Kyoto-shi, Kyoto"
+    },
+    "kyoto-city-hall-plusone-flea": {
+      "name": "Kyoto City Hall Plaza Flea Market (Plus One)",
+      "venue": "Kyoto City Hall Plaza",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–16:00",
+      "rain": "Decided on the day (announced in the organizer’s same-day information)",
+      "address": "488 Kamihonnoji-mae-cho, Teramachi-dori Oike-agaru, Nakagyo-ku, Kyoto-shi, Kyoto"
+    },
+    "nadeshiko-ohigashisan-flea": {
+      "name": "Ohigashi-san Flea Market (Nadeshiko Flea)",
+      "venue": "Ohigashi-san Plaza (Higashi Hongan-ji public green space)",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–15:00 (hours from November (11) to March (3))",
+      "rain": "Cancelled in the rain",
+      "address": "Karasuma-dori Shichijo-agaru, Shimogyo-ku, Kyoto-shi, Kyoto"
+    },
+    "nadeshiko-okazaki-park-flea": {
+      "name": "Okazaki Park Flea Market (Nadeshiko Flea)",
+      "venue": "Okazaki Park",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–16:00",
+      "rain": "Cancelled in the rain",
+      "address": "Okazaki Saisho-ji-cho, Sakyo-ku, Kyoto-shi, Kyoto"
+    },
+    "kitty-mashis-bigrib-mikawaanjo-flea": {
+      "name": "Big Rib Mikawa-Anjo Flea Market",
+      "venue": "Big Rib Mikawa-Anjo, store parking lot",
+      "rule": "1st and 3rd Wednesday of every month",
+      "time": "From about 8:00 (sales start) to 12:00",
+      "rain": "Cancelled in the rain (decided on the morning of the day; may go ahead in light rain or if the rain is forecast to stop)",
+      "address": "2-22-3 Mikawa-Anjo-cho, Anjo-shi, Aichi"
+    },
+    "kitty-mashis-aeon-matepia-flea": {
+      "name": "AEON Matepia Rooftop Parking Flea Market",
+      "venue": "AEON Matepia, rooftop parking lot",
+      "rule": "Once a month (usually Saturday; the 2nd Sunday in December (12) 2026 only)",
+      "time": "10:00–14:00",
+      "rain": "Cancelled in the rain (in principle decided on the morning of the day)",
+      "address": "501-1 Takama-cho, Meito-ku, Nagoya-shi, Aichi"
+    },
+    "kamifusen-apita-okazaki-kita-flea": {
+      "name": "Apita Okazaki-Kita Flea Market (Sunday Flea)",
+      "venue": "Apita Okazaki-Kita (11/22: east side of the 1F flat parking lot; 12/7: 4F of the multi-story parking lot)",
+      "rule": "Dates published by the organizer",
+      "time": "11/22: 10:00–13:00; 12/7: 10:30–13:00",
+      "rain": "11/22: cancelled in the rain (decided from the 18:00 forecast the day before; any cancellation is announced only on the official Instagram). 12/7: held in the rain because the venue is covered",
+      "address": "4-46 Hina-kita-machi, Okazaki-shi, Aichi"
+    },
+    "hohoemiaichi-apita-anjo-minami-flea": {
+      "name": "Apita Anjo-Minami “Apita de Flea”",
+      "venue": "Apita Anjo-Minami, space in front of the 1F parking lot",
+      "rule": "4th Wednesday of every month",
+      "time": "10:00–13:00",
+      "rain": "In principle not cancelled (any cancellation is announced on the official Instagram)",
+      "address": "2-9-36 Sakurai-cho Shiromukai, Anjo-shi, Aichi"
+    },
+    "kanayoshi-place-marche-flea": {
+      "name": "Kaneyoshi Place Flea Market (within Kaneyoshi Marche)",
+      "venue": "Kaneyoshi Place (Miyoshi City Labor and Cultural Hall), reception hall",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–11:15 (the whole Kaneyoshi Marche runs 10:00–12:00)",
+      "rain": "Held indoors, so the weather does not matter",
+      "address": "1-1 Daijisan, Miyoshi-cho, Miyoshi-shi, Aichi"
+    },
+    "rokkenmichi-detatoko-market": {
+      "name": "Komagabayashi Detatoko Market Rokkenmichi",
+      "venue": "Rokkenmichi shopping street arcade",
+      "rule": "The last Sunday of every month (may change depending on shopping street events)",
+      "time": "10:00–15:00",
+      "rain": "Held in the rain (inside the arcade)",
+      "address": "Near 5-chome Futaba-cho, Nagata-ku, Kobe-shi, Hyogo"
+    },
+    "mayasan-rucksack-market": {
+      "name": "Mayasan Rucksack Market",
+      "venue": "Mayasan Kikuseidai",
+      "rule": "3rd Saturday of every month from April (4) to November (11) (11/21 is the last one this season)",
+      "time": "11:00–16:00",
+      "rain": "Cancelled in bad weather",
+      "address": "2-2 Mayasan-cho, Nada-ku, Kobe-shi, Hyogo"
+    },
+    "tomioka-hachimangu-aozora-nominoichi": {
+      "name": "Tomioka Hachimangu Aozora Flea Market",
+      "venue": "Tomioka Hachimangu Shrine grounds",
+      "rule": "The 15th and 28th of every month (when the 28th falls on a Sunday, the flea market is held in place of the antique market)",
+      "time": "From early morning until sunset",
+      "address": "1-20-3 Tomioka, Koto-ku, Tokyo"
+    },
+    "tmc-fujimori-park-flea": {
+      "name": "Fujimori Park Flea Market",
+      "venue": "Fujimori Park",
+      "rule": "Once a month (the dates are listed on the official page)",
+      "time": "9:00–15:00",
+      "rain": "Cancelled in the rain",
+      "address": "2-2 Daimachi, Hachioji-shi, Tokyo"
+    },
+    "otegami-flea-kitte-museum": {
+      "name": "Otegami Flea Market 2026 WINTER Collection",
+      "venue": "The Postage Stamp Museum, 3F Spaces 1 and 2",
+      "rule": "4 times a year (each over 2 days: a Friday and a Saturday)",
+      "time": "10:30–17:00",
+      "address": "1-4-23 Mejiro, Toshima-ku, Tokyo"
+    },
+    "maebashi-market-lyrica": {
+      "name": "Maebashi Market in Maebashi Lyrica",
+      "venue": "Maebashi Lyrica, 2F",
+      "rule": "Irregular Saturdays (1 to 2 times a month)",
+      "time": "11:00–15:00",
+      "rain": "Held indoors",
+      "address": "2-14-1 Kokuryo-machi, Maebashi-shi, Gunma"
+    },
+    "grandy21-flea": {
+      "name": "Grandy 21 Flea Market",
+      "venue": "Grandy 21, 7th parking lot",
+      "rule": "About 2 to 4 weekend days a month (the dates are announced by flyer each month)",
+      "time": "9:00–15:00",
+      "rain": "Cancelled in the rain",
+      "address": "40-1 Sugaya Tate, Rifu-cho, Miyagi-gun, Miyagi"
+    },
+    "york-benimaru-ishibashi-flea": {
+      "name": "York Benimaru Ishibashi Flea Market",
+      "venue": "York Benimaru Ishibashi, rooftop parking lot",
+      "rule": "2nd and 4th Sunday of every month",
+      "time": "9:00–15:00",
+      "rain": "May be cancelled because of bad weather, disasters or infectious disease",
+      "address": "3362-1 Kitahara, Shimofuruyama, Shimotsuke-shi, Tochigi"
+    },
+    "tozando-iouno-flea-starlight": {
+      "name": "Michi-no-Eki Tosando Iouno Flea Market",
+      "venue": "Michi-no-Eki “Tosando Iouno”",
+      "rule": "The last one this year",
+      "time": "9:30–15:00 (reception from 8:30)",
+      "rain": "Cancelled in the rain",
+      "address": "459 Iouno, Nasu-machi, Nasu-gun, Tochigi"
+    },
+    "shiramizu-amidado-flea-nominoichi": {
+      "name": "Shiramizu Amidado Plaza Flea Market & Nominoichi",
+      "venue": "Plaza in front of Shiramizu Amidado",
+      "rule": "Irregular (1 to 2 multi-day events a year)",
+      "time": "10:00–15:00",
+      "rain": "Cancelled in the rain",
+      "address": "221 Hirohata, Shiramizu-machi, Uchigo, Iwaki-shi, Fukushima"
+    },
+    "matsumoto-alps-park-flea-furimanet": {
+      "name": "Matsumoto Alps Park Flea Market",
+      "venue": "Matsumoto City Alps Park, east entrance parking lot",
+      "rule": "Several times a month, mostly on weekends from spring to autumn (dates are announced each month)",
+      "time": "10:00–14:00",
+      "rain": "Cancelled in the rain",
+      "address": "2455 Arigasaki, Matsumoto-shi, Nagano"
+    },
+    "akita-yugakusha-flea": {
+      "name": "Yugakusha Flea Market",
+      "venue": "Akita Yutori Life Creation Center “Yugakusha”, conference building",
+      "rule": "About once a month on Sundays (held in the conference building from November (11) to March (3))",
+      "time": "10:00–14:00",
+      "rain": "May be cancelled depending on the weather (you can call from 8:30 a.m. on the day)",
+      "address": "24-2 Sakaikiri, Aramaki, Kamikitate, Akita-shi, Akita"
+    },
+    "yamagata-niconico-flea-kajo-central": {
+      "name": "Yamagata Niconico Flea Market",
+      "venue": "Kajo Central, 1F atrium",
+      "rule": "2nd Sunday of every month",
+      "time": "10:30–15:00",
+      "rain": "Held indoors (atrium)",
+      "address": "1-1-1 Jonan-machi, Yamagata-shi, Yamagata"
+    },
+    "trial-isesaki-flea-fudankyo": {
+      "name": "Mega Center Trial Isesaki Chuo Flea Market",
+      "venue": "Mega Center Trial Isesaki Chuo, covered 4F parking lot",
+      "rule": "Roughly every Sunday",
+      "time": "9:00–14:00",
+      "rain": "In principle held (covered parking lot)",
+      "address": "1507 Tsunatori-machi, Isesaki-shi, Gunma"
+    },
+    "hikone-eco-market-yumehata": {
+      "name": "Hikone Eco Market Yumehata",
+      "venue": "Inside Hikone Castle, preservation land (Otemae Park, 2nd preservation land)",
+      "rule": "Dates published by the organizer",
+      "time": "9:30–13:00",
+      "address": "5-10 Konki-cho, Hikone-shi, Shiga"
+    },
+    "smile-tanabe-flea": {
+      "name": "Smile Flea Market (Tanabe)",
+      "venue": "Tanabe City Shinjo General Park",
+      "rule": "Irregular (a few times a year, often over 2 consecutive days)",
+      "time": "9:00–15:30",
+      "rain": "No rain date (any cancellation is announced between 5 and 6 a.m. on the day on the official Instagram and LINE Open Chat)",
+      "address": "Shinjo-cho, Tanabe-shi, Wakayama"
+    },
+    "fukui-power-center-wasse-flea": {
+      "name": "Flea Market in Power Center Wasse",
+      "venue": "Power Center Wasse, arcade",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–15:00",
+      "rain": "Held in the rain",
+      "address": "55-15 Kukitsu-cho, Fukui-shi, Fukui"
+    },
+    "south-village-okayama-flea": {
+      "name": "South Village Flea Market",
+      "venue": "Okayama South Village, lawn plaza",
+      "rule": "Normally the 1st, 3rd and 5th Sunday of every month (a special schedule of the 1st and 2nd Sunday in December (12))",
+      "time": "8:00–12:00",
+      "rain": "Cancelled in the rain (cancellations are announced for each date in the news section of the official website)",
+      "address": "2468 Kataoka, Minami-ku, Okayama-shi, Okayama"
+    },
+    "kojima-sanpakuichi-flea": {
+      "name": "Kojima Station Sanpakuichi (Flea Market Corner)",
+      "venue": "Kojima Station shopping street (around Shichibangai (7th Street), Patio and Tenmaya Topia)",
+      "rule": "The last Sunday of every month",
+      "time": "9:00–15:00",
+      "rain": "The Sanpakuichi market is held in the rain; the flea market corner is cancelled in the rain according to the official flyer",
+      "address": "Kojima Ekimae, Kurashiki-shi, Okayama"
+    },
+    "saidaiji-asaichi-okayama": {
+      "name": "Saidaiji Morning Market",
+      "venue": "Saidaiji Ryokka Park, multipurpose plaza",
+      "rule": "4 times a year (May (5), September (9), December (12) and March (3))",
+      "time": "8:00–11:00",
+      "address": "1-2-3 Saidaiji-minami, Higashi-ku, Okayama-shi, Okayama"
+    },
+    "hiroshima-ujina-minato-flea": {
+      "name": "Hiroshima Ujina Minato Flea Market",
+      "venue": "Ujina Miyukimatsu district plaza",
+      "rule": "2nd and 4th Sunday of every month",
+      "time": "8:00–15:00",
+      "rain": "Cancelled in bad weather (the latest information is sent on the official LINE)",
+      "address": "2-23-22 Ujina-kaigan, Minami-ku, Hiroshima-shi, Hiroshima"
+    },
+    "fugenji-konjakuichi": {
+      "name": "Fugenji Konjakuichi",
+      "venue": "Fugenji Temple grounds",
+      "rule": "2nd and 4th Sunday of every month",
+      "time": "Sunrise to 12:00",
+      "address": "8-6-1 Murozumi, Hikari-shi, Yamaguchi"
+    },
+    "hofu-flea-auction-hajima": {
+      "name": "Hofu Flea Market & Auction",
+      "venue": "Egao Station Migita",
+      "rule": "2nd and 4th Saturday of every month",
+      "time": "From 9:00 (end time to be confirmed; the auction starts at 11:00)",
+      "address": "647 Shimomigita, Hofu-shi, Yamaguchi"
+    },
+    "tokushima-bikkuri-nichiyoichi-flea": {
+      "name": "Tokushima Bikkuri Sunday Market Flea Market",
+      "venue": "Tokushima Textile Wholesale Complex",
+      "rule": "Every Sunday",
+      "time": "Early morning to 14:00 (sellers enter by 7:00)",
+      "rain": "Held in the rain",
+      "address": "60 Tonya-machi, Tokushima-shi, Tokushima"
+    },
+    "tokushima-fureai-kenkokan-flea": {
+      "name": "Tokushima Fureai Flea Market",
+      "venue": "Fureai Kenkokan, 1F Kikkake Space",
+      "rule": "Dates published by the organizer",
+      "time": "9:00–15:00",
+      "rain": "Held indoors",
+      "address": "2-16 Okihama-higashi, Tokushima-shi, Tokushima"
+    },
+    "yonago-ou-land-flea": {
+      "name": "Yonago Ou Land Flea Market",
+      "venue": "Lawn in front of OU Land",
+      "rule": "2nd Saturday of every month",
+      "time": "10:00 to sunset",
+      "rain": "Basically cancelled in the rain (sellers may set up in light rain if they bring a tent)",
+      "address": "1-18-1 Kaike-onsen, Yonago-shi, Tottori"
+    },
+    "tenjin-hokoten-flea": {
+      "name": "Tenjin Hokoten Flea Market",
+      "venue": "Tenjin Route 4 (the road in front of Fukuoka City Hall)",
+      "rule": "Every Sunday from November 8 (11/8) to December 6 (12/6), 2026 (5 consecutive weeks of a pedestrian zone)",
+      "time": "10:00–21:00 (the flea market and individual stalls may close one by one after 16:00)",
+      "rain": "Held in light rain, cancelled in severe weather",
+      "address": "1-chome Tenjin, Chuo-ku, Fukuoka-shi, Fukuoka"
+    },
+    "tojinmachi-flea-fukuoka-city-market": {
+      "name": "Tojinmachi Flea Market (Tojinmachi Nigiwai-ichi)",
+      "venue": "Inside the Tojinmachi shopping street arcade",
+      "rule": "Every Sunday in November and December (11 and 12), with an additional holiday Monday on 11/23",
+      "time": "11:00–17:00"
+    },
+    "maizuru-park-flea-fukuoka-city-market": {
+      "name": "Maizuru Park Flea Market (Fukuoka City Market)",
+      "venue": "Maizuru Park, Sannomaru Plaza",
+      "rule": "Irregular (about once a month)",
+      "time": "10:00–16:00",
+      "rain": "May be cancelled in rain or severe weather (decided from the forecast the day before)",
+      "address": "Jonai, Chuo-ku, Fukuoka-shi, Fukuoka"
+    },
+    "nogata-bikkuri-ichi-flea": {
+      "name": "Nogata Bikkuri-ichi Flea Market (End-of-Month Flea Market)",
+      "venue": "Nogata Bikkuri-ichi, covered parking lot next to the meat hall",
+      "rule": "Friday, Saturday and Sunday at the end of the month (the same weekend as the market’s business days)",
+      "time": "9:00–16:30 (reception from 7:00)",
+      "address": "611 Ichome-ta, Kanda, Nogata-shi, Fukuoka"
+    },
+    "sasebo-port-car-boot-5": {
+      "name": "5th Sasebo Port Car Boot",
+      "venue": "Shin-Minato Event Plaza (in front of Sasebo Station, Minato exit)",
+      "rule": "Dates published by the organizer",
+      "time": "10:00–17:00",
+      "address": "Shinko-cho, Sasebo-shi, Nagasaki"
+    },
+    "mizube-plaza-kamoto-flea": {
+      "name": "Mizube Plaza Kamoto Flea Market (Mizube Flea)",
+      "venue": "Michi-no-Eki Mizube Plaza Kamoto, lawn plaza",
+      "rule": "3rd Saturday and Sunday of every month (may change)",
+      "time": "9:30–16:00 (reception from 9:00)",
+      "rain": "Cancelled in the rain",
+      "address": "1257 Kajiya, Kamoto-machi, Yamaga-shi, Kumamoto"
+    },
+    "setouchi-flea-amami": {
+      "name": "Setouchi Flea Market (Amami Oshima)",
+      "venue": "Setouchi Town Kyura-jima Exchange Center",
+      "rule": "Irregular (5th edition)",
+      "time": "11:00–14:00",
+      "rain": "Held at an indoor facility",
+      "address": "33-1 Funatsu, Koniya, Setouchi-cho, Oshima-gun, Kagoshima"
+    },
+    "kamibashira-nominoichi-flea": {
+      "name": "Kamibashira Flea Market",
+      "venue": "Kamibashira Park",
+      "rule": "1st Sunday of every month (postponed to the 2nd Sunday in case of rain)",
+      "time": "8:00–15:00",
+      "address": "1330-1 Maeda-cho, Miyakonojo-shi, Miyazaki"
     }
   },
   "organizers": {
@@ -2752,7 +3314,64 @@
     "浜松アートフェスティバル（主催者のInstagram：@hamamatsu.artfes）": "浜松アートフェスティバル（organizer’s Instagram：@hamamatsu.artfes）",
     "笹塚フリーマーケット事務局": "Sasazuka Flea Market Secretariat",
     "一般社団法人東銀座エリアマネジメント": "Higashi-Ginza Area Management Association",
-    "帯広フリマ": "Obihiro Flea Market (contact)"
+    "帯広フリマ": "Obihiro Flea Market (contact)",
+    "Shimotsuma FREEpER": "Shimotsuma FREEpER",
+    "TSUKIMIDORI RVパーク茨城": "TSUKIMIDORI RV Park Ibaraki",
+    "うしくゴッ多市組合": "Ushiku Gottaichi Association",
+    "外房フリマ実行委員会": "Sotobo Flea Market Executive Committee",
+    "里彩くるカエル倶楽部": "Risai Kuru Kaeru Club",
+    "ミルクの会（NPO法人地域活性化リサイクル活動ミルクの会）": "Milk no Kai (NPO Regional Revitalization Recycling Activities Milk no Kai)",
+    "リサイクル運動市民の会 神奈川本部": "Recycle Movement Citizens’ Association, Kanagawa Headquarters",
+    "たんぽぽフリーマーケット": "Tanpopo Flea Market",
+    "全国GILフリーマーケット協会": "National GIL Flea Market Association",
+    "リサイクル運動推進事業協会（第4支部）": "Recycle Movement Promotion Association (4th Branch)",
+    "逗子ふれあいフリーマーケット実行委員": "Zushi Fureai Flea Market Executive Committee",
+    "有限会社アグリパークゆめすぎと": "Agripark Yumesugito Ltd.",
+    "リサイクル運動市民の会・埼玉本部": "Recycle Movement Citizens’ Association, Saitama Headquarters",
+    "エコパハウス": "Ecopa House",
+    "NPO法人静岡リサイクル協会": "NPO Shizuoka Recycle Association",
+    "しずおか市消費者協会": "Shizuoka City Consumers’ Association",
+    "道の駅富士川楽座": "Michi-no-Eki Fujikawa Rakuza",
+    "静岡市環境公社（しずもーる西ケ谷）": "Shizuoka City Environmental Corporation (Shizumall Nishigaya)",
+    "SPACE": "SPACE",
+    "日本スワップミート協会": "Japan Swap Meet Association",
+    "総持寺本通商店街振興組合": "Soji-ji Honmichi Shopping Street Promotion Association",
+    "おもしろ市（京都おもしろ市）": "Omoshiro Ichi (Kyoto Omoshiro Ichi)",
+    "NPO法人プラスワンネットワーク": "NPO Plus One Network",
+    "キティ＆マーシーズ": "Kitty & Mash’s",
+    "紙ふうせん": "Kamifusen",
+    "ほほえみあいち": "Hohoemi Aichi",
+    "神戸フリーマーケット協会": "Kobe Flea Market Association",
+    "摩耶山再生の会": "Mayasan Revival Association",
+    "富岡八幡宮": "Tomioka Hachimangu",
+    "切手の博物館": "The Postage Stamp Museum",
+    "ハンドメイド Rocca": "Handmade Rocca",
+    "みちのくフリーマーケット協会": "Michinoku Flea Market Association",
+    "ホリデープランニング": "Holiday Planning",
+    "スターライト友の会": "Starlight Friends",
+    "内郷まちづくり市民会議": "Uchigo Community Development Citizens’ Council",
+    "フリマネット信州": "Furima Net Shinshu",
+    "NPO法人あきたパートナーシップ": "NPO Akita Partnership",
+    "フリマサークルニコ＋霞城セントラルフリマ実行委員会": "Furima Circle Niko and Kajo Central Flea Market Executive Committee",
+    "フ団協（NPO法人フリーマーケット主催団体協議会）": "Fudankyo (NPO Flea Market Organizers Council)",
+    "夢畑実行委員会": "Yumehata Executive Committee",
+    "鯖江市リサイクル市民の会": "Sabae City Recycle Citizens’ Association",
+    "岡山市サウスヴィレッジ": "Okayama South Village",
+    "児島駅前商店街連盟": "Kojima Station Shopping Street Federation",
+    "西大寺朝市実行委員会": "Saidaiji Morning Market Executive Committee",
+    "広島うじなみなとフリマプロジェクト": "Hiroshima Ujina Minato Flea Market Project",
+    "普賢寺今昔市実行委員会": "Fugenji Konjakuichi Executive Committee",
+    "株式会社羽嶋松翠園": "Hajima Shosuien Co., Ltd.",
+    "協同組合徳島繊維卸団地": "Tokushima Textile Wholesale Complex Cooperative",
+    "ふれあい健康館（徳島市生涯福祉センター）": "Fureai Kenkokan (Tokushima City Lifelong Welfare Center)",
+    "皆生温泉 おーゆ・ランド／おーゆホテル": "Kaike Onsen Ou Land / Ou Hotel",
+    "Fukuoka City Market": "Fukuoka City Market",
+    "Fukuoka City Market × 唐人町にぎわい市（唐人町商店街連合会）": "Fukuoka City Market × Tojinmachi Nigiwai-ichi (Tojinmachi Shopping Street Federation)",
+    "イベント運営事務局 To-wild office": "Event Operations Office To-wild office",
+    "日本カーブーツ協会（JCBA）佐世保": "Japan Car Boots Association (JCBA) Sasebo",
+    "道の駅 水辺プラザかもと": "Michi-no-Eki Mizube Plaza Kamoto",
+    "セトウチフリーマーケット": "Setouchi Flea Market",
+    "都城フリーマーケットの会": "Miyakonojo Flea Market Association"
   },
   "labels": {
     "問い合わせ先": "Contact",
@@ -2945,7 +3564,53 @@
     "つくば市": "Tsukuba City",
     "石岡市": "Ishioka City",
     "浜松市": "Hamamatsu City",
-    "音更町": "Otofuke Town"
+    "音更町": "Otofuke Town",
+    "下妻市": "Shimotsuma City",
+    "茨城町": "Ibaraki Town",
+    "牛久市": "Ushiku City",
+    "長柄町": "Nagara Town",
+    "市川市": "Ichikawa City",
+    "横浜市青葉区": "Aoba Ward, Yokohama",
+    "横浜市港北区": "Kohoku Ward, Yokohama",
+    "横浜市緑区": "Midori Ward, Yokohama",
+    "川崎市川崎区": "Kawasaki Ward, Kawasaki",
+    "逗子市": "Zushi City",
+    "杉戸町": "Sugito Town",
+    "さいたま市中央区": "Chuo Ward, Saitama",
+    "袋井市": "Fukuroi City",
+    "富士市": "Fuji City",
+    "静岡市葵区": "Aoi Ward, Shizuoka",
+    "京都市東山区": "Higashiyama Ward, Kyoto",
+    "京都市中京区": "Nakagyo Ward, Kyoto",
+    "安城市": "Anjo City",
+    "名古屋市名東区": "Meito Ward, Nagoya",
+    "岡崎市": "Okazaki City",
+    "みよし市": "Miyoshi City",
+    "神戸市長田区": "Nagata Ward, Kobe",
+    "神戸市灘区": "Nada Ward, Kobe",
+    "前橋市": "Maebashi City",
+    "利府町": "Rifu Town",
+    "下野市": "Shimotsuke City",
+    "那須町": "Nasu Town",
+    "いわき市": "Iwaki City",
+    "松本市": "Matsumoto City",
+    "秋田市": "Akita City",
+    "山形市": "Yamagata City",
+    "伊勢崎市": "Isesaki City",
+    "田辺市": "Tanabe City",
+    "福井市": "Fukui City",
+    "岡山市南区": "Minami Ward, Okayama",
+    "倉敷市": "Kurashiki City",
+    "岡山市東区": "Higashi Ward, Okayama",
+    "広島市南区": "Minami Ward, Hiroshima",
+    "光市": "Hikari City",
+    "防府市": "Hofu City",
+    "徳島市": "Tokushima City",
+    "米子市": "Yonago City",
+    "直方市": "Nogata City",
+    "佐世保市": "Sasebo City",
+    "山鹿市": "Yamaga City",
+    "瀬戸内町": "Setouchi Town"
   },
   "notes": {
     "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",
@@ -3047,7 +3712,8 @@
     "hachinohe-tatehana-ganpeki-asaichi|2026-12-30": "Special morning market: 12/30 (Tue) (per the official top page)",
     "kawanishi-toshi-ryokkasai-green-flea|2026-10-24": "Cancelled because of rain, according to the Kawanishi City page (updated Reiwa 8, Oct 22, 2026)",
     "bia-iwashikincyaku|2026-11-23": "Cancelled because the venue cannot be used (additional construction work after renovation), as stated in the organizer’s notice",
-    "frma-nakameguro-funeiriba-flea|2026-11-29": "The Nakameguro Funeiriba venue is no longer listed in the organizer’s top-page schedule (whether it will be held is TBC)"
+    "frma-nakameguro-funeiriba-flea|2026-11-29": "The Nakameguro Funeiriba venue is no longer listed in the organizer’s top-page schedule (whether it will be held is TBC)",
+    "nanbu-fleamarket|2026-11-21": "Cancelled because the number of sellers did not reach the capacity (the organizer’s official announcement)"
   },
   "venues": {
     "komazawa-olympic-park": {

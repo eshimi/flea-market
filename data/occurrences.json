@@ -1,858 +1,866 @@
 [
- {
-  "series": "takahata-fudoson-gozareichi",
-  "date": "2026-10-18",
-  "status": "confirmed",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.takahatafudoson.or.jp/"
- },
- {
-  "series": "takahata-fudoson-gozareichi",
-  "date": "2026-11-15",
-  "status": "confirmed",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.takahatafudoson.or.jp/"
- },
- {
-  "series": "takahata-fudoson-recycle-market",
-  "date": "2026-11-08",
-  "status": "confirmed",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.takahatafudoson.or.jp/"
- },
- {
-  "series": "takahata-fudoson-gozareichi",
-  "date": "2027-01-17",
-  "status": "unknown",
-  "reason": "「迎春期間（令和８年末から令和９年）諸行事休止のお知らせ」あり。休止する行事は公式の画像で案内されているため要確認",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.takahatafudoson.or.jp/?p=10545"
- },
- {
-  "series": "takahata-fudoson-recycle-market",
-  "date": "2027-01-10",
-  "status": "unknown",
-  "reason": "「迎春期間（令和８年末から令和９年）諸行事休止のお知らせ」あり。休止する行事は公式の画像で案内されているため要確認",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.takahatafudoson.or.jp/?p=10545"
- },
- {
-  "series": "zoshigaya-tezukuriichi",
-  "date": "2026-11-15",
-  "status": "confirmed",
-  "reason": "大鳥神社の会場はお休み（酉の市のため）",
-  "checkedAt": "2026-10-18",
-  "source": "https://tezukuriichi.com/home.html"
- },
- {
-  "series": "zoshigaya-tezukuriichi",
-  "date": "2026-12-20",
-  "status": "confirmed",
-  "checkedAt": "2026-10-18",
-  "source": "https://tezukuriichi.com/home.html"
- },
- {
-  "series": "setagaya-park-flea",
-  "date": "2026-10-25",
-  "status": "confirmed",
-  "reason": "主催団体：リサイクル推進友の会（問い合わせ先は区の一覧に掲載）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.setagaya.lg.jp/02241/375.html"
- },
- {
-  "series": "setagaya-park-flea",
-  "date": "2026-11-29",
-  "status": "confirmed",
-  "reason": "主催団体：一般社団法人ORS（問い合わせ先は区の一覧に掲載）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.setagaya.lg.jp/02241/375.html"
- },
- {
-  "series": "setagaya-park-flea",
-  "date": "2026-12-13",
-  "status": "confirmed",
-  "reason": "主催団体：フリーマーケット推進ネットワーク（問い合わせ先は区の一覧に掲載）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.setagaya.lg.jp/02241/375.html"
- },
- {
-  "series": "setagaya-park-flea",
-  "date": "2026-12-20",
-  "status": "confirmed",
-  "reason": "主催団体：リサイクル運動市民の会（問い合わせ先は区の一覧に掲載）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.setagaya.lg.jp/02241/375.html"
- },
- {
-  "series": "setagaya-park-flea",
-  "date": "2026-12-27",
-  "status": "confirmed",
-  "reason": "主催団体：リサイクル推進友の会（問い合わせ先は区の一覧に掲載）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.setagaya.lg.jp/02241/375.html"
- },
- {
-  "series": "setagaya-park-flea",
-  "date": "2027-01-11",
-  "status": "confirmed",
-  "reason": "主催団体：リサイクル推進友の会（問い合わせ先は区の一覧に掲載）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.setagaya.lg.jp/02241/375.html"
- },
- {
-  "series": "setagaya-park-flea",
-  "date": "2027-01-24",
-  "status": "confirmed",
-  "reason": "主催団体：フリーマーケット主催団体協議会（問い合わせ先は区の一覧に掲載）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.setagaya.lg.jp/02241/375.html"
- },
- {
-  "series": "setagaya-park-flea",
-  "date": "2027-02-14",
-  "status": "confirmed",
-  "reason": "主催団体：リサイクル運動市民の会（問い合わせ先は区の一覧に掲載）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.setagaya.lg.jp/02241/375.html"
- },
- {
-  "series": "setagaya-park-flea",
-  "date": "2027-02-28",
-  "status": "confirmed",
-  "reason": "主催団体：タイムマシーンカンパニー（問い合わせ先は区の一覧に掲載）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.setagaya.lg.jp/02241/375.html"
- },
- {
-  "series": "setagaya-park-flea",
-  "date": "2027-03-14",
-  "status": "confirmed",
-  "reason": "主催団体：一般社団法人ORS（問い合わせ先は区の一覧に掲載）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.setagaya.lg.jp/02241/375.html"
- },
- {
-  "series": "setagaya-park-flea",
-  "date": "2027-03-28",
-  "status": "confirmed",
-  "reason": "主催団体：フリーマーケット推進ネットワーク（問い合わせ先は区の一覧に掲載）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.setagaya.lg.jp/02241/375.html"
- },
- {
-  "series": "kitano-tenjin-ennichi",
-  "date": "2026-12-25",
-  "status": "confirmed",
-  "reason": "終い天神：例月より多い、約千軒の露店（公式の案内）",
-  "checkedAt": "2026-10-18",
-  "source": "https://kitanotenmangu.or.jp/event/"
- },
- {
-  "series": "kitano-tenjin-ennichi",
-  "date": "2027-01-25",
-  "status": "confirmed",
-  "reason": "初天神：例月より多い、約千軒の露店（公式の案内）",
-  "checkedAt": "2026-10-18",
-  "source": "https://kitanotenmangu.or.jp/event/"
- },
- {
-  "series": "sapporo-nakajima-park-flea",
-  "date": "2026-10-31",
-  "status": "confirmed",
-  "reason": "10時〜13時／主催団体：日本リサイクルネットワーク北海道",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.sapporo.jp/seiso/hurima.html"
- },
- {
-  "series": "sumida-yokojikkawa-kinshicho-flea",
-  "date": "2026-10-25",
-  "status": "confirmed",
-  "reason": "雨天予備日：11月8日（日）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
- },
- {
-  "series": "sumida-yokojikkawa-kinshicho-flea",
-  "date": "2026-11-15",
-  "status": "confirmed",
-  "reason": "雨天予備日：11月29日（日）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
- },
- {
-  "series": "sumida-yokojikkawa-kinshicho-flea",
-  "date": "2026-12-13",
-  "status": "confirmed",
-  "reason": "雨天予備日：12月20日（日）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
- },
- {
-  "series": "sumida-yokojikkawa-kinshicho-flea",
-  "date": "2027-01-24",
-  "status": "confirmed",
-  "reason": "雨天予備日：1月31日（日）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
- },
- {
-  "series": "sumida-yokojikkawa-kinshicho-flea",
-  "date": "2027-02-14",
-  "status": "confirmed",
-  "reason": "雨天予備日：2月28日（日）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
- },
- {
-  "series": "sumida-yokojikkawa-kinshicho-flea",
-  "date": "2027-03-14",
-  "status": "confirmed",
-  "reason": "雨天予備日：3月28日（日）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
- },
- {
-  "series": "shibuya-recycle-bazaar",
-  "date": "2026-10-25",
-  "status": "confirmed",
-  "reason": "会場：初台区民会館・初台青年館／10:00〜14:00／出店25店",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
- },
- {
-  "series": "shibuya-recycle-bazaar",
-  "date": "2026-11-15",
-  "status": "confirmed",
-  "reason": "会場：上原社会教育館／11:00〜14:00／出店20店",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
- },
- {
-  "series": "shibuya-recycle-bazaar",
-  "date": "2026-11-22",
-  "status": "confirmed",
-  "reason": "会場：リフレッシュ氷川／10:00〜13:30／出店24店",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
- },
- {
-  "series": "shibuya-recycle-bazaar",
-  "date": "2027-02-28",
-  "status": "confirmed",
-  "reason": "会場：幡ヶ谷区民会館／10:00〜14:00／出店28店",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
- },
- {
-  "series": "shibuya-recycle-bazaar",
-  "date": "2027-03-14",
-  "status": "confirmed",
-  "reason": "会場：初台区民会館・初台青年館／10:00〜14:00／出店25店",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
- },
- {
-  "series": "taito-hanakawado-park-flea",
-  "date": "2026-10-31",
-  "status": "confirmed",
-  "reason": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
- },
- {
-  "series": "taito-hanakawado-park-flea",
-  "date": "2026-11-08",
-  "status": "confirmed",
-  "reason": "主催団体：フリーマーケット推進ネットワーク／10:00〜15:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
- },
- {
-  "series": "taito-hanakawado-park-flea",
-  "date": "2026-11-28",
-  "status": "confirmed",
-  "reason": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円／11月21日から変更",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
- },
- {
-  "series": "taito-hanakawado-park-flea",
-  "date": "2026-12-06",
-  "status": "confirmed",
-  "reason": "主催団体：フリーマーケット推進ネットワーク／10:00〜15:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
- },
- {
-  "series": "taito-hanakawado-park-flea",
-  "date": "2026-12-26",
-  "status": "confirmed",
-  "reason": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
- },
- {
-  "series": "taito-hanakawado-park-flea",
-  "date": "2027-01-02",
-  "status": "confirmed",
-  "reason": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
- },
- {
-  "series": "taito-hanakawado-park-flea",
-  "date": "2027-01-10",
-  "status": "confirmed",
-  "reason": "主催団体：フリーマーケット推進ネットワーク／10:00〜15:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
- },
- {
-  "series": "taito-hanakawado-park-flea",
-  "date": "2027-02-07",
-  "status": "confirmed",
-  "reason": "主催団体：フリーマーケット推進ネットワーク／10:00〜15:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
- },
- {
-  "series": "taito-hanakawado-park-flea",
-  "date": "2027-02-27",
-  "status": "confirmed",
-  "reason": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
- },
- {
-  "series": "taito-hanakawado-park-flea",
-  "date": "2027-03-07",
-  "status": "confirmed",
-  "reason": "主催団体：フリーマーケット推進ネットワーク／10:00〜15:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
- },
- {
-  "series": "taito-hanakawado-park-flea",
-  "date": "2027-03-27",
-  "status": "confirmed",
-  "reason": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
- },
- {
-  "series": "arakawa-park-flea-2027-03",
-  "date": "2027-03-07",
-  "status": "confirmed",
-  "reason": "順延日：3月21日（日）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.arakawa.tokyo.jp/a025/recycle/shigen/fleamarket.html"
- },
- {
-  "series": "frma-akatsuka-park-flea",
-  "date": "2026-11-03",
-  "status": "confirmed",
-  "reason": "お祭り同時開催",
-  "checkedAt": "2026-10-18",
-  "source": "http://www.frma.jp/"
- },
- {
-  "series": "frma-akabane-park-flea",
-  "date": "2026-11-15",
-  "status": "confirmed",
-  "reason": "振替日：11月21日（土）",
-  "checkedAt": "2026-10-18",
-  "source": "http://www.frma.jp/"
- },
- {
-  "series": "machida-tenmangu-garakuta-kottoichi",
-  "date": "2026-11-02",
-  "status": "confirmed",
-  "checkedAt": "2026-10-18",
-  "source": "https://kanagawa-antique-market.crayonsite.net/",
-  "reason": "11月は会場の都合で、1日ではなく11月2日（月）に開催（公式のお知らせ）"
- },
- {
-  "series": "kita-akabane-park-flea-smile-2026-10",
-  "date": "2026-10-18",
-  "status": "confirmed",
-  "reason": "雨天の場合は10月25日（日）に延期",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.city.kita.lg.jp/living/bins/1002093/1026571.html"
- },
- {
-  "series": "recycler-sumida-live-fes-2026-winter-flea",
-  "date": "2026-12-12",
-  "status": "confirmed",
-  "reason": "すみだライブフェス（一般社団法人ピースライブ主催・墨田区後援）とのコラボ企画。定例の錦糸公園のフリマとは別",
-  "checkedAt": "2026-10-18",
-  "source": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=040"
- },
- {
-  "series": "yuyu-marche-plant6",
-  "date": "2026-11-03",
-  "status": "confirmed",
-  "reason": "10/18の予定から11/3に変更（公式のお知らせ）。延期日は11/14（土）または11/15（日）",
-  "checkedAt": "2026-10-18",
-  "source": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/"
- },
- {
-  "series": "hyakumanben-tedukuri-ichi",
-  "date": "2026-11-15",
-  "status": "confirmed",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.tedukuri-ichi.com/"
- },
- {
-  "series": "umekoji-park-tedukuri-ichi",
-  "date": "2026-11-07",
-  "status": "confirmed",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.tedukuri-ichi.com/"
- },
- {
-  "series": "fmj-amaiseki-park",
-  "date": "2026-12-26",
-  "status": "confirmed",
-  "reason": "10:00〜16:00・にぎわい祭り（フリマ＆マルシェ＆キッチンカ―イベント）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/amaiseki12-26/"
- },
- {
-  "series": "fmj-amaiseki-park",
-  "date": "2026-12-27",
-  "status": "confirmed",
-  "reason": "10:00〜15:30・にぎわい祭り（フリマ＆マルシェ＆キッチンカ―イベント）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/amaiseki12-27/"
- },
- {
-  "series": "fmj-amaiseki-park",
-  "date": "2026-11-14",
-  "status": "confirmed",
-  "reason": "11:00〜17:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/enama11-14/"
- },
- {
-  "series": "fmj-apia-higashiomi",
-  "date": "2026-10-31",
-  "status": "confirmed",
-  "reason": "みんなのファミリーフェスタ",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/apia10-31/"
- },
- {
-  "series": "fmj-kirarie-kusatsu",
-  "date": "2026-10-18",
-  "status": "confirmed",
-  "reason": "みんなのファミリーフェスタ",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/kirarie10-18/"
- },
- {
-  "series": "fmj-nara-city-hall-lawn",
-  "date": "2026-10-31",
-  "status": "confirmed",
-  "reason": "ランタンナイト・フリーマーケット・マルシェ・キッチンカ―",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/ennara10-31-1/"
- },
- {
-  "series": "fmj-nara-city-hall-lawn",
-  "date": "2026-11-01",
-  "status": "confirmed",
-  "reason": "ランタンナイト・フリーマーケット・マルシェ・キッチンカ―",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/ennara10-31-1/"
- },
- {
-  "series": "fmj-fukakita-ryokuchi",
-  "date": "2026-10-24",
-  "status": "confirmed",
-  "reason": "11:00〜16:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/fukakita10-24/"
- },
- {
-  "series": "fmj-fukakita-ryokuchi",
-  "date": "2026-11-08",
-  "status": "confirmed",
-  "reason": "11:00〜16:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/fuka11-8/"
- },
- {
-  "series": "fmj-fukakita-ryokuchi",
-  "date": "2026-11-23",
-  "status": "confirmed",
-  "reason": "11:00〜16:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/fukakita11-23/"
- },
- {
-  "series": "fmj-fukakita-ryokuchi",
-  "date": "2026-12-19",
-  "status": "confirmed",
-  "reason": "10:00〜15:30・【にぎわい祭り】フリマ＆マルシェイベント＆グルメキッチンカー",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/fukakitamaturi12-19-20/"
- },
- {
-  "series": "fmj-fukakita-ryokuchi",
-  "date": "2026-12-20",
-  "status": "confirmed",
-  "reason": "10:00〜15:30・【にぎわい祭り】フリマ＆マルシェイベント＆グルメキッチンカー",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/fukakitamaturi12-19-20/"
- },
- {
-  "series": "fmj-ohigashi-hiroba",
-  "date": "2026-10-20",
-  "status": "confirmed",
-  "reason": "10:00〜16:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/higashi10-20/"
- },
- {
-  "series": "fmj-ohigashi-hiroba",
-  "date": "2026-11-10",
-  "status": "confirmed",
-  "reason": "9:00〜17:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/fukuhigashi11-10/"
- },
- {
-  "series": "fmj-ohigashi-hiroba",
-  "date": "2026-11-16",
-  "status": "confirmed",
-  "reason": "10:00〜16:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/ohigashi11-16/"
- },
- {
-  "series": "fmj-ohigashi-hiroba",
-  "date": "2026-12-23",
-  "status": "confirmed",
-  "reason": "10:00〜16:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/ohigashi12-23/"
- },
- {
-  "series": "fmj-ohigashi-hiroba",
-  "date": "2027-01-05",
-  "status": "confirmed",
-  "reason": "10:00〜16:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/ohigashi1-5/"
- },
- {
-  "series": "fmj-okazaki-park",
-  "date": "2026-11-04",
-  "status": "confirmed",
-  "reason": "9:00〜17:00・フリマ＆マルシェイベント（福猫マルシェコラボ企画）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/fukuoka11-4/"
- },
- {
-  "series": "fmj-okazaki-park",
-  "date": "2026-12-29",
-  "status": "confirmed",
-  "reason": "10:00〜16:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/okazaki12-29-30/"
- },
- {
-  "series": "fmj-okazaki-park",
-  "date": "2026-12-30",
-  "status": "confirmed",
-  "reason": "10:00〜16:00",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/okazaki12-29-30/"
- },
- {
-  "series": "fmj-cainz-hikone",
-  "date": "2026-11-07",
-  "status": "confirmed",
-  "reason": "彦根・にぎわい秋まつり",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/hikone11-7-8/"
- },
- {
-  "series": "fmj-cainz-hikone",
-  "date": "2026-11-08",
-  "status": "confirmed",
-  "reason": "彦根・にぎわい秋まつり",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/hikone11-7-8/"
- },
- {
-  "series": "fmj-mie-sogo-bunka-center",
-  "date": "2026-12-26",
-  "status": "confirmed",
-  "reason": "にぎわいまつり",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/kenbunmaturi12-26-27/"
- },
- {
-  "series": "fmj-mie-sogo-bunka-center",
-  "date": "2026-12-27",
-  "status": "confirmed",
-  "reason": "にぎわいまつり",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/kenbunmaturi12-26-27/"
- },
- {
-  "series": "fmj-plant-kizugawa",
-  "date": "2026-10-31",
-  "status": "confirmed",
-  "reason": "木津川にぎわい祭り",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/kidugawa10-31-1/"
- },
- {
-  "series": "fmj-plant-kizugawa",
-  "date": "2026-11-01",
-  "status": "confirmed",
-  "reason": "木津川にぎわい祭り",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/kidugawa10-31-1/"
- },
- {
-  "series": "fmj-notogawa-community-center",
-  "date": "2026-10-25",
-  "status": "confirmed",
-  "reason": "能登川ふれあいフェスタ2026",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/notogawa10-25/"
- },
- {
-  "series": "fmj-a-square-kusatsu",
-  "date": "2026-11-21",
-  "status": "confirmed",
-  "reason": "おでかけマルシェ",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/odekake11-21/"
- },
- {
-  "series": "fmj-ritto-sakira",
-  "date": "2026-11-14",
-  "status": "confirmed",
-  "reason": "栗東にぎわいまつり",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/sakira11-14-15/"
- },
- {
-  "series": "fmj-ritto-sakira",
-  "date": "2026-11-15",
-  "status": "confirmed",
-  "reason": "栗東にぎわいまつり",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/sakira11-14-15/"
- },
- {
-  "series": "fmj-suzuka-sakura-no-mori",
-  "date": "2026-11-21",
-  "status": "confirmed",
-  "reason": "にぎわい祭り",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/sakura11-21-22-23/"
- },
- {
-  "series": "fmj-suzuka-sakura-no-mori",
-  "date": "2026-11-22",
-  "status": "confirmed",
-  "reason": "にぎわい祭り",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/sakura11-21-22-23/"
- },
- {
-  "series": "fmj-suzuka-sakura-no-mori",
-  "date": "2026-11-23",
-  "status": "confirmed",
-  "reason": "にぎわい祭り",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/sakura11-21-22-23/"
- },
- {
-  "series": "fmj-suzuka-sakura-no-mori",
-  "date": "2026-12-05",
-  "status": "confirmed",
-  "reason": "にぎわい祭り",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/suzuka12-5-6/"
- },
- {
-  "series": "fmj-suzuka-sakura-no-mori",
-  "date": "2026-12-06",
-  "status": "confirmed",
-  "reason": "にぎわい祭り",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/suzuka12-5-6/"
- },
- {
-  "series": "fmj-yasugawa-shinsui-park",
-  "date": "2026-12-19",
-  "status": "confirmed",
-  "reason": "親水公園・にぎわいまつり",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/shinsui12-19-20/"
- },
- {
-  "series": "fmj-yasugawa-shinsui-park",
-  "date": "2026-12-20",
-  "status": "confirmed",
-  "reason": "親水公園・にぎわいまつり",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/shinsui12-19-20/"
- },
- {
-  "series": "fmj-yamada-ike-park",
-  "date": "2026-12-19",
-  "status": "confirmed",
-  "reason": "にぎわい祭り（フリマ＆マルシェ＆キッチンカ―イベント）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/yamada12-19-20/"
- },
- {
-  "series": "fmj-yamada-ike-park",
-  "date": "2026-12-20",
-  "status": "confirmed",
-  "reason": "にぎわい祭り（フリマ＆マルシェ＆キッチンカ―イベント）",
-  "checkedAt": "2026-10-18",
-  "source": "https://www.fmfm-king.com/yamada12-19-20/"
- },
- {
-  "series": "komazawa-park-flea-tokyo-park",
-  "date": "2027-01-17",
-  "status": "confirmed",
-  "reason": "主催団体：オタカラネット",
-  "checkedAt": "2026-10-19",
-  "source": "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html"
- },
- {
-  "series": "komazawa-park-flea-tokyo-park",
-  "date": "2027-02-07",
-  "status": "confirmed",
-  "reason": "主催団体：タイムマシーンカンパニー",
-  "checkedAt": "2026-10-19",
-  "source": "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html"
- },
- {
-  "series": "komazawa-park-flea-tokyo-park",
-  "date": "2027-03-07",
-  "status": "confirmed",
-  "reason": "主催団体：東京リサイクル運動市民の会",
-  "checkedAt": "2026-10-19",
-  "source": "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html"
- },
- {
-  "series": "hikarigaoka-park-flea-tokyo-park",
-  "date": "2026-11-08",
-  "status": "confirmed",
-  "reason": "主催団体：ミルクの会",
-  "checkedAt": "2026-10-19",
-  "source": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html"
- },
- {
-  "series": "hikarigaoka-park-flea-tokyo-park",
-  "date": "2026-11-29",
-  "status": "confirmed",
-  "reason": "主催団体：エコロジーネットワーク ラズベリー",
-  "checkedAt": "2026-10-19",
-  "source": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html"
- },
- {
-  "series": "rbf-koshigaya-shirakobato-park",
-  "date": "2026-11-29",
-  "status": "confirmed",
-  "reason": "オタカラ主催（開催日程ページに「オタカラ」と表記）",
-  "checkedAt": "2026-10-20",
-  "source": "https://www.rbf.jp/nittei.html"
- },
- {
-  "series": "rbf-koshigaya-shirakobato-park",
-  "date": "2026-12-27",
-  "status": "confirmed",
-  "reason": "オタカラ主催（開催日程ページに「オタカラ」と表記）",
-  "checkedAt": "2026-10-20",
-  "source": "https://www.rbf.jp/nittei.html"
- },
- {
-  "series": "rbf-kawagoe-suijo-park",
-  "date": "2026-11-21",
-  "status": "confirmed",
-  "reason": "オタカラ主催（開催日程ページに「オタカラ」と表記）",
-  "checkedAt": "2026-10-20",
-  "source": "https://www.rbf.jp/nittei.html"
- },
- {
-  "series": "rbf-kawagoe-suijo-park",
-  "date": "2026-12-13",
-  "status": "confirmed",
-  "reason": "オタカラ主催（開催日程ページに「オタカラ」と表記）",
-  "checkedAt": "2026-10-20",
-  "source": "https://www.rbf.jp/nittei.html"
- },
- {
-  "series": "rbf-kazo-hanasaki-park",
-  "date": "2026-10-31",
-  "status": "confirmed",
-  "reason": "加須はなさき水上公園まつり（わくわく公園まつり）内の開催",
-  "checkedAt": "2026-10-20",
-  "source": "https://www.rbf.jp/nittei.html"
- },
- {
-  "series": "rbf-kazo-hanasaki-park",
-  "date": "2026-11-01",
-  "status": "confirmed",
-  "reason": "加須はなさき水上公園まつり（わくわく公園まつり）内の開催",
-  "checkedAt": "2026-10-20",
-  "source": "https://www.rbf.jp/nittei.html"
- },
- {
-  "series": "murakami-jurinji-enma-kottou",
-  "date": "2026-10-25",
-  "status": "confirmed",
-  "checkedAt": "2026-10-20",
-  "source": "https://www.sake3.com/event/16210"
- },
- {
-  "series": "hachinohe-tatehana-ganpeki-asaichi",
-  "date": "2026-10-25",
-  "status": "confirmed",
-  "checkedAt": "2026-10-20",
-  "source": "https://minatonichiyouasaichikai.com/"
- },
- {
-  "series": "hachinohe-tatehana-ganpeki-asaichi",
-  "date": "2026-12-30",
-  "status": "confirmed",
-  "checkedAt": "2026-10-20",
-  "reason": "臨時朝市（公式のトップページに「臨時朝市：12月30日(火)」）",
-  "source": "https://minatonichiyouasaichikai.com/"
- },
- {
-  "series": "kawanishi-toshi-ryokkasai-green-flea",
-  "date": "2026-10-24",
-  "status": "cancelled",
-  "checkedAt": "2026-10-23",
-  "source": "https://www.city.kawanishi.hyogo.jp/kurashi/1017490/midori/1014067.html",
-  "reason": "川西市の案内ページ（令和8年10月22日更新）。雨天のため中止"
- },
- {
-  "series": "bia-iwashikincyaku",
-  "date": "2026-11-23",
-  "status": "cancelled",
-  "checkedAt": "2026-11-01",
-  "source": "https://b-i-a.jp/reserve/iwashikincyaku/",
-  "reason": "会場の都合（リニューアル後の一部追加工事）により開催中止（主催者のお詫びの記載）"
- },
- {
-  "series": "frma-nakameguro-funeiriba-flea",
-  "date": "2026-11-29",
-  "status": "unknown",
-  "checkedAt": "2026-11-02",
-  "source": "http://www.frma.jp/",
-  "reason": "主催団体のトップページの日程から、中目黒船入場の記載がなくなった（開催の有無は要確認）"
- }
+  {
+    "series": "takahata-fudoson-gozareichi",
+    "date": "2026-10-18",
+    "status": "confirmed",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.takahatafudoson.or.jp/"
+  },
+  {
+    "series": "takahata-fudoson-gozareichi",
+    "date": "2026-11-15",
+    "status": "confirmed",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.takahatafudoson.or.jp/"
+  },
+  {
+    "series": "takahata-fudoson-recycle-market",
+    "date": "2026-11-08",
+    "status": "confirmed",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.takahatafudoson.or.jp/"
+  },
+  {
+    "series": "takahata-fudoson-gozareichi",
+    "date": "2027-01-17",
+    "status": "unknown",
+    "reason": "「迎春期間（令和８年末から令和９年）諸行事休止のお知らせ」あり。休止する行事は公式の画像で案内されているため要確認",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.takahatafudoson.or.jp/?p=10545"
+  },
+  {
+    "series": "takahata-fudoson-recycle-market",
+    "date": "2027-01-10",
+    "status": "unknown",
+    "reason": "「迎春期間（令和８年末から令和９年）諸行事休止のお知らせ」あり。休止する行事は公式の画像で案内されているため要確認",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.takahatafudoson.or.jp/?p=10545"
+  },
+  {
+    "series": "zoshigaya-tezukuriichi",
+    "date": "2026-11-15",
+    "status": "confirmed",
+    "reason": "大鳥神社の会場はお休み（酉の市のため）",
+    "checkedAt": "2026-10-18",
+    "source": "https://tezukuriichi.com/home.html"
+  },
+  {
+    "series": "zoshigaya-tezukuriichi",
+    "date": "2026-12-20",
+    "status": "confirmed",
+    "checkedAt": "2026-10-18",
+    "source": "https://tezukuriichi.com/home.html"
+  },
+  {
+    "series": "setagaya-park-flea",
+    "date": "2026-10-25",
+    "status": "confirmed",
+    "reason": "主催団体：リサイクル推進友の会（問い合わせ先は区の一覧に掲載）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.setagaya.lg.jp/02241/375.html"
+  },
+  {
+    "series": "setagaya-park-flea",
+    "date": "2026-11-29",
+    "status": "confirmed",
+    "reason": "主催団体：一般社団法人ORS（問い合わせ先は区の一覧に掲載）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.setagaya.lg.jp/02241/375.html"
+  },
+  {
+    "series": "setagaya-park-flea",
+    "date": "2026-12-13",
+    "status": "confirmed",
+    "reason": "主催団体：フリーマーケット推進ネットワーク（問い合わせ先は区の一覧に掲載）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.setagaya.lg.jp/02241/375.html"
+  },
+  {
+    "series": "setagaya-park-flea",
+    "date": "2026-12-20",
+    "status": "confirmed",
+    "reason": "主催団体：リサイクル運動市民の会（問い合わせ先は区の一覧に掲載）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.setagaya.lg.jp/02241/375.html"
+  },
+  {
+    "series": "setagaya-park-flea",
+    "date": "2026-12-27",
+    "status": "confirmed",
+    "reason": "主催団体：リサイクル推進友の会（問い合わせ先は区の一覧に掲載）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.setagaya.lg.jp/02241/375.html"
+  },
+  {
+    "series": "setagaya-park-flea",
+    "date": "2027-01-11",
+    "status": "confirmed",
+    "reason": "主催団体：リサイクル推進友の会（問い合わせ先は区の一覧に掲載）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.setagaya.lg.jp/02241/375.html"
+  },
+  {
+    "series": "setagaya-park-flea",
+    "date": "2027-01-24",
+    "status": "confirmed",
+    "reason": "主催団体：フリーマーケット主催団体協議会（問い合わせ先は区の一覧に掲載）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.setagaya.lg.jp/02241/375.html"
+  },
+  {
+    "series": "setagaya-park-flea",
+    "date": "2027-02-14",
+    "status": "confirmed",
+    "reason": "主催団体：リサイクル運動市民の会（問い合わせ先は区の一覧に掲載）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.setagaya.lg.jp/02241/375.html"
+  },
+  {
+    "series": "setagaya-park-flea",
+    "date": "2027-02-28",
+    "status": "confirmed",
+    "reason": "主催団体：タイムマシーンカンパニー（問い合わせ先は区の一覧に掲載）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.setagaya.lg.jp/02241/375.html"
+  },
+  {
+    "series": "setagaya-park-flea",
+    "date": "2027-03-14",
+    "status": "confirmed",
+    "reason": "主催団体：一般社団法人ORS（問い合わせ先は区の一覧に掲載）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.setagaya.lg.jp/02241/375.html"
+  },
+  {
+    "series": "setagaya-park-flea",
+    "date": "2027-03-28",
+    "status": "confirmed",
+    "reason": "主催団体：フリーマーケット推進ネットワーク（問い合わせ先は区の一覧に掲載）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.setagaya.lg.jp/02241/375.html"
+  },
+  {
+    "series": "kitano-tenjin-ennichi",
+    "date": "2026-12-25",
+    "status": "confirmed",
+    "reason": "終い天神：例月より多い、約千軒の露店（公式の案内）",
+    "checkedAt": "2026-10-18",
+    "source": "https://kitanotenmangu.or.jp/event/"
+  },
+  {
+    "series": "kitano-tenjin-ennichi",
+    "date": "2027-01-25",
+    "status": "confirmed",
+    "reason": "初天神：例月より多い、約千軒の露店（公式の案内）",
+    "checkedAt": "2026-10-18",
+    "source": "https://kitanotenmangu.or.jp/event/"
+  },
+  {
+    "series": "sapporo-nakajima-park-flea",
+    "date": "2026-10-31",
+    "status": "confirmed",
+    "reason": "10時〜13時／主催団体：日本リサイクルネットワーク北海道",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.sapporo.jp/seiso/hurima.html"
+  },
+  {
+    "series": "sumida-yokojikkawa-kinshicho-flea",
+    "date": "2026-10-25",
+    "status": "confirmed",
+    "reason": "雨天予備日：11月8日（日）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+  },
+  {
+    "series": "sumida-yokojikkawa-kinshicho-flea",
+    "date": "2026-11-15",
+    "status": "confirmed",
+    "reason": "雨天予備日：11月29日（日）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+  },
+  {
+    "series": "sumida-yokojikkawa-kinshicho-flea",
+    "date": "2026-12-13",
+    "status": "confirmed",
+    "reason": "雨天予備日：12月20日（日）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+  },
+  {
+    "series": "sumida-yokojikkawa-kinshicho-flea",
+    "date": "2027-01-24",
+    "status": "confirmed",
+    "reason": "雨天予備日：1月31日（日）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+  },
+  {
+    "series": "sumida-yokojikkawa-kinshicho-flea",
+    "date": "2027-02-14",
+    "status": "confirmed",
+    "reason": "雨天予備日：2月28日（日）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+  },
+  {
+    "series": "sumida-yokojikkawa-kinshicho-flea",
+    "date": "2027-03-14",
+    "status": "confirmed",
+    "reason": "雨天予備日：3月28日（日）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+  },
+  {
+    "series": "shibuya-recycle-bazaar",
+    "date": "2026-10-25",
+    "status": "confirmed",
+    "reason": "会場：初台区民会館・初台青年館／10:00〜14:00／出店25店",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+  },
+  {
+    "series": "shibuya-recycle-bazaar",
+    "date": "2026-11-15",
+    "status": "confirmed",
+    "reason": "会場：上原社会教育館／11:00〜14:00／出店20店",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+  },
+  {
+    "series": "shibuya-recycle-bazaar",
+    "date": "2026-11-22",
+    "status": "confirmed",
+    "reason": "会場：リフレッシュ氷川／10:00〜13:30／出店24店",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+  },
+  {
+    "series": "shibuya-recycle-bazaar",
+    "date": "2027-02-28",
+    "status": "confirmed",
+    "reason": "会場：幡ヶ谷区民会館／10:00〜14:00／出店28店",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+  },
+  {
+    "series": "shibuya-recycle-bazaar",
+    "date": "2027-03-14",
+    "status": "confirmed",
+    "reason": "会場：初台区民会館・初台青年館／10:00〜14:00／出店25店",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+  },
+  {
+    "series": "taito-hanakawado-park-flea",
+    "date": "2026-10-31",
+    "status": "confirmed",
+    "reason": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+    "series": "taito-hanakawado-park-flea",
+    "date": "2026-11-08",
+    "status": "confirmed",
+    "reason": "主催団体：フリーマーケット推進ネットワーク／10:00〜15:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+    "series": "taito-hanakawado-park-flea",
+    "date": "2026-11-28",
+    "status": "confirmed",
+    "reason": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円／11月21日から変更",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+    "series": "taito-hanakawado-park-flea",
+    "date": "2026-12-06",
+    "status": "confirmed",
+    "reason": "主催団体：フリーマーケット推進ネットワーク／10:00〜15:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+    "series": "taito-hanakawado-park-flea",
+    "date": "2026-12-26",
+    "status": "confirmed",
+    "reason": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+    "series": "taito-hanakawado-park-flea",
+    "date": "2027-01-02",
+    "status": "confirmed",
+    "reason": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+    "series": "taito-hanakawado-park-flea",
+    "date": "2027-01-10",
+    "status": "confirmed",
+    "reason": "主催団体：フリーマーケット推進ネットワーク／10:00〜15:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+    "series": "taito-hanakawado-park-flea",
+    "date": "2027-02-07",
+    "status": "confirmed",
+    "reason": "主催団体：フリーマーケット推進ネットワーク／10:00〜15:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+    "series": "taito-hanakawado-park-flea",
+    "date": "2027-02-27",
+    "status": "confirmed",
+    "reason": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+    "series": "taito-hanakawado-park-flea",
+    "date": "2027-03-07",
+    "status": "confirmed",
+    "reason": "主催団体：フリーマーケット推進ネットワーク／10:00〜15:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+    "series": "taito-hanakawado-park-flea",
+    "date": "2027-03-27",
+    "status": "confirmed",
+    "reason": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+    "series": "arakawa-park-flea-2027-03",
+    "date": "2027-03-07",
+    "status": "confirmed",
+    "reason": "順延日：3月21日（日）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.arakawa.tokyo.jp/a025/recycle/shigen/fleamarket.html"
+  },
+  {
+    "series": "frma-akatsuka-park-flea",
+    "date": "2026-11-03",
+    "status": "confirmed",
+    "reason": "お祭り同時開催",
+    "checkedAt": "2026-10-18",
+    "source": "http://www.frma.jp/"
+  },
+  {
+    "series": "frma-akabane-park-flea",
+    "date": "2026-11-15",
+    "status": "confirmed",
+    "reason": "振替日：11月21日（土）",
+    "checkedAt": "2026-10-18",
+    "source": "http://www.frma.jp/"
+  },
+  {
+    "series": "machida-tenmangu-garakuta-kottoichi",
+    "date": "2026-11-02",
+    "status": "confirmed",
+    "checkedAt": "2026-10-18",
+    "source": "https://kanagawa-antique-market.crayonsite.net/",
+    "reason": "11月は会場の都合で、1日ではなく11月2日（月）に開催（公式のお知らせ）"
+  },
+  {
+    "series": "kita-akabane-park-flea-smile-2026-10",
+    "date": "2026-10-18",
+    "status": "confirmed",
+    "reason": "雨天の場合は10月25日（日）に延期",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.city.kita.lg.jp/living/bins/1002093/1026571.html"
+  },
+  {
+    "series": "recycler-sumida-live-fes-2026-winter-flea",
+    "date": "2026-12-12",
+    "status": "confirmed",
+    "reason": "すみだライブフェス（一般社団法人ピースライブ主催・墨田区後援）とのコラボ企画。定例の錦糸公園のフリマとは別",
+    "checkedAt": "2026-10-18",
+    "source": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=040"
+  },
+  {
+    "series": "yuyu-marche-plant6",
+    "date": "2026-11-03",
+    "status": "confirmed",
+    "reason": "10/18の予定から11/3に変更（公式のお知らせ）。延期日は11/14（土）または11/15（日）",
+    "checkedAt": "2026-10-18",
+    "source": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/"
+  },
+  {
+    "series": "hyakumanben-tedukuri-ichi",
+    "date": "2026-11-15",
+    "status": "confirmed",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.tedukuri-ichi.com/"
+  },
+  {
+    "series": "umekoji-park-tedukuri-ichi",
+    "date": "2026-11-07",
+    "status": "confirmed",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.tedukuri-ichi.com/"
+  },
+  {
+    "series": "fmj-amaiseki-park",
+    "date": "2026-12-26",
+    "status": "confirmed",
+    "reason": "10:00〜16:00・にぎわい祭り（フリマ＆マルシェ＆キッチンカ―イベント）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/amaiseki12-26/"
+  },
+  {
+    "series": "fmj-amaiseki-park",
+    "date": "2026-12-27",
+    "status": "confirmed",
+    "reason": "10:00〜15:30・にぎわい祭り（フリマ＆マルシェ＆キッチンカ―イベント）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/amaiseki12-27/"
+  },
+  {
+    "series": "fmj-amaiseki-park",
+    "date": "2026-11-14",
+    "status": "confirmed",
+    "reason": "11:00〜17:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/enama11-14/"
+  },
+  {
+    "series": "fmj-apia-higashiomi",
+    "date": "2026-10-31",
+    "status": "confirmed",
+    "reason": "みんなのファミリーフェスタ",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/apia10-31/"
+  },
+  {
+    "series": "fmj-kirarie-kusatsu",
+    "date": "2026-10-18",
+    "status": "confirmed",
+    "reason": "みんなのファミリーフェスタ",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/kirarie10-18/"
+  },
+  {
+    "series": "fmj-nara-city-hall-lawn",
+    "date": "2026-10-31",
+    "status": "confirmed",
+    "reason": "ランタンナイト・フリーマーケット・マルシェ・キッチンカ―",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/ennara10-31-1/"
+  },
+  {
+    "series": "fmj-nara-city-hall-lawn",
+    "date": "2026-11-01",
+    "status": "confirmed",
+    "reason": "ランタンナイト・フリーマーケット・マルシェ・キッチンカ―",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/ennara10-31-1/"
+  },
+  {
+    "series": "fmj-fukakita-ryokuchi",
+    "date": "2026-10-24",
+    "status": "confirmed",
+    "reason": "11:00〜16:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/fukakita10-24/"
+  },
+  {
+    "series": "fmj-fukakita-ryokuchi",
+    "date": "2026-11-08",
+    "status": "confirmed",
+    "reason": "11:00〜16:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/fuka11-8/"
+  },
+  {
+    "series": "fmj-fukakita-ryokuchi",
+    "date": "2026-11-23",
+    "status": "confirmed",
+    "reason": "11:00〜16:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/fukakita11-23/"
+  },
+  {
+    "series": "fmj-fukakita-ryokuchi",
+    "date": "2026-12-19",
+    "status": "confirmed",
+    "reason": "10:00〜15:30・【にぎわい祭り】フリマ＆マルシェイベント＆グルメキッチンカー",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/fukakitamaturi12-19-20/"
+  },
+  {
+    "series": "fmj-fukakita-ryokuchi",
+    "date": "2026-12-20",
+    "status": "confirmed",
+    "reason": "10:00〜15:30・【にぎわい祭り】フリマ＆マルシェイベント＆グルメキッチンカー",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/fukakitamaturi12-19-20/"
+  },
+  {
+    "series": "fmj-ohigashi-hiroba",
+    "date": "2026-10-20",
+    "status": "confirmed",
+    "reason": "10:00〜16:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/higashi10-20/"
+  },
+  {
+    "series": "fmj-ohigashi-hiroba",
+    "date": "2026-11-10",
+    "status": "confirmed",
+    "reason": "9:00〜17:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/fukuhigashi11-10/"
+  },
+  {
+    "series": "fmj-ohigashi-hiroba",
+    "date": "2026-11-16",
+    "status": "confirmed",
+    "reason": "10:00〜16:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/ohigashi11-16/"
+  },
+  {
+    "series": "fmj-ohigashi-hiroba",
+    "date": "2026-12-23",
+    "status": "confirmed",
+    "reason": "10:00〜16:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/ohigashi12-23/"
+  },
+  {
+    "series": "fmj-ohigashi-hiroba",
+    "date": "2027-01-05",
+    "status": "confirmed",
+    "reason": "10:00〜16:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/ohigashi1-5/"
+  },
+  {
+    "series": "fmj-okazaki-park",
+    "date": "2026-11-04",
+    "status": "confirmed",
+    "reason": "9:00〜17:00・フリマ＆マルシェイベント（福猫マルシェコラボ企画）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/fukuoka11-4/"
+  },
+  {
+    "series": "fmj-okazaki-park",
+    "date": "2026-12-29",
+    "status": "confirmed",
+    "reason": "10:00〜16:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/okazaki12-29-30/"
+  },
+  {
+    "series": "fmj-okazaki-park",
+    "date": "2026-12-30",
+    "status": "confirmed",
+    "reason": "10:00〜16:00",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/okazaki12-29-30/"
+  },
+  {
+    "series": "fmj-cainz-hikone",
+    "date": "2026-11-07",
+    "status": "confirmed",
+    "reason": "彦根・にぎわい秋まつり",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/hikone11-7-8/"
+  },
+  {
+    "series": "fmj-cainz-hikone",
+    "date": "2026-11-08",
+    "status": "confirmed",
+    "reason": "彦根・にぎわい秋まつり",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/hikone11-7-8/"
+  },
+  {
+    "series": "fmj-mie-sogo-bunka-center",
+    "date": "2026-12-26",
+    "status": "confirmed",
+    "reason": "にぎわいまつり",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/kenbunmaturi12-26-27/"
+  },
+  {
+    "series": "fmj-mie-sogo-bunka-center",
+    "date": "2026-12-27",
+    "status": "confirmed",
+    "reason": "にぎわいまつり",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/kenbunmaturi12-26-27/"
+  },
+  {
+    "series": "fmj-plant-kizugawa",
+    "date": "2026-10-31",
+    "status": "confirmed",
+    "reason": "木津川にぎわい祭り",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/kidugawa10-31-1/"
+  },
+  {
+    "series": "fmj-plant-kizugawa",
+    "date": "2026-11-01",
+    "status": "confirmed",
+    "reason": "木津川にぎわい祭り",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/kidugawa10-31-1/"
+  },
+  {
+    "series": "fmj-notogawa-community-center",
+    "date": "2026-10-25",
+    "status": "confirmed",
+    "reason": "能登川ふれあいフェスタ2026",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/notogawa10-25/"
+  },
+  {
+    "series": "fmj-a-square-kusatsu",
+    "date": "2026-11-21",
+    "status": "confirmed",
+    "reason": "おでかけマルシェ",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/odekake11-21/"
+  },
+  {
+    "series": "fmj-ritto-sakira",
+    "date": "2026-11-14",
+    "status": "confirmed",
+    "reason": "栗東にぎわいまつり",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/sakira11-14-15/"
+  },
+  {
+    "series": "fmj-ritto-sakira",
+    "date": "2026-11-15",
+    "status": "confirmed",
+    "reason": "栗東にぎわいまつり",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/sakira11-14-15/"
+  },
+  {
+    "series": "fmj-suzuka-sakura-no-mori",
+    "date": "2026-11-21",
+    "status": "confirmed",
+    "reason": "にぎわい祭り",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/sakura11-21-22-23/"
+  },
+  {
+    "series": "fmj-suzuka-sakura-no-mori",
+    "date": "2026-11-22",
+    "status": "confirmed",
+    "reason": "にぎわい祭り",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/sakura11-21-22-23/"
+  },
+  {
+    "series": "fmj-suzuka-sakura-no-mori",
+    "date": "2026-11-23",
+    "status": "confirmed",
+    "reason": "にぎわい祭り",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/sakura11-21-22-23/"
+  },
+  {
+    "series": "fmj-suzuka-sakura-no-mori",
+    "date": "2026-12-05",
+    "status": "confirmed",
+    "reason": "にぎわい祭り",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/suzuka12-5-6/"
+  },
+  {
+    "series": "fmj-suzuka-sakura-no-mori",
+    "date": "2026-12-06",
+    "status": "confirmed",
+    "reason": "にぎわい祭り",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/suzuka12-5-6/"
+  },
+  {
+    "series": "fmj-yasugawa-shinsui-park",
+    "date": "2026-12-19",
+    "status": "confirmed",
+    "reason": "親水公園・にぎわいまつり",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/shinsui12-19-20/"
+  },
+  {
+    "series": "fmj-yasugawa-shinsui-park",
+    "date": "2026-12-20",
+    "status": "confirmed",
+    "reason": "親水公園・にぎわいまつり",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/shinsui12-19-20/"
+  },
+  {
+    "series": "fmj-yamada-ike-park",
+    "date": "2026-12-19",
+    "status": "confirmed",
+    "reason": "にぎわい祭り（フリマ＆マルシェ＆キッチンカ―イベント）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/yamada12-19-20/"
+  },
+  {
+    "series": "fmj-yamada-ike-park",
+    "date": "2026-12-20",
+    "status": "confirmed",
+    "reason": "にぎわい祭り（フリマ＆マルシェ＆キッチンカ―イベント）",
+    "checkedAt": "2026-10-18",
+    "source": "https://www.fmfm-king.com/yamada12-19-20/"
+  },
+  {
+    "series": "komazawa-park-flea-tokyo-park",
+    "date": "2027-01-17",
+    "status": "confirmed",
+    "reason": "主催団体：オタカラネット",
+    "checkedAt": "2026-10-19",
+    "source": "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html"
+  },
+  {
+    "series": "komazawa-park-flea-tokyo-park",
+    "date": "2027-02-07",
+    "status": "confirmed",
+    "reason": "主催団体：タイムマシーンカンパニー",
+    "checkedAt": "2026-10-19",
+    "source": "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html"
+  },
+  {
+    "series": "komazawa-park-flea-tokyo-park",
+    "date": "2027-03-07",
+    "status": "confirmed",
+    "reason": "主催団体：東京リサイクル運動市民の会",
+    "checkedAt": "2026-10-19",
+    "source": "https://www.tokyo-park.or.jp/park/komazawa-olympic/news/2026/2026.html"
+  },
+  {
+    "series": "hikarigaoka-park-flea-tokyo-park",
+    "date": "2026-11-08",
+    "status": "confirmed",
+    "reason": "主催団体：ミルクの会",
+    "checkedAt": "2026-10-19",
+    "source": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html"
+  },
+  {
+    "series": "hikarigaoka-park-flea-tokyo-park",
+    "date": "2026-11-29",
+    "status": "confirmed",
+    "reason": "主催団体：エコロジーネットワーク ラズベリー",
+    "checkedAt": "2026-10-19",
+    "source": "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html"
+  },
+  {
+    "series": "rbf-koshigaya-shirakobato-park",
+    "date": "2026-11-29",
+    "status": "confirmed",
+    "reason": "オタカラ主催（開催日程ページに「オタカラ」と表記）",
+    "checkedAt": "2026-10-20",
+    "source": "https://www.rbf.jp/nittei.html"
+  },
+  {
+    "series": "rbf-koshigaya-shirakobato-park",
+    "date": "2026-12-27",
+    "status": "confirmed",
+    "reason": "オタカラ主催（開催日程ページに「オタカラ」と表記）",
+    "checkedAt": "2026-10-20",
+    "source": "https://www.rbf.jp/nittei.html"
+  },
+  {
+    "series": "rbf-kawagoe-suijo-park",
+    "date": "2026-11-21",
+    "status": "confirmed",
+    "reason": "オタカラ主催（開催日程ページに「オタカラ」と表記）",
+    "checkedAt": "2026-10-20",
+    "source": "https://www.rbf.jp/nittei.html"
+  },
+  {
+    "series": "rbf-kawagoe-suijo-park",
+    "date": "2026-12-13",
+    "status": "confirmed",
+    "reason": "オタカラ主催（開催日程ページに「オタカラ」と表記）",
+    "checkedAt": "2026-10-20",
+    "source": "https://www.rbf.jp/nittei.html"
+  },
+  {
+    "series": "rbf-kazo-hanasaki-park",
+    "date": "2026-10-31",
+    "status": "confirmed",
+    "reason": "加須はなさき水上公園まつり（わくわく公園まつり）内の開催",
+    "checkedAt": "2026-10-20",
+    "source": "https://www.rbf.jp/nittei.html"
+  },
+  {
+    "series": "rbf-kazo-hanasaki-park",
+    "date": "2026-11-01",
+    "status": "confirmed",
+    "reason": "加須はなさき水上公園まつり（わくわく公園まつり）内の開催",
+    "checkedAt": "2026-10-20",
+    "source": "https://www.rbf.jp/nittei.html"
+  },
+  {
+    "series": "murakami-jurinji-enma-kottou",
+    "date": "2026-10-25",
+    "status": "confirmed",
+    "checkedAt": "2026-10-20",
+    "source": "https://www.sake3.com/event/16210"
+  },
+  {
+    "series": "hachinohe-tatehana-ganpeki-asaichi",
+    "date": "2026-10-25",
+    "status": "confirmed",
+    "checkedAt": "2026-10-20",
+    "source": "https://minatonichiyouasaichikai.com/"
+  },
+  {
+    "series": "hachinohe-tatehana-ganpeki-asaichi",
+    "date": "2026-12-30",
+    "status": "confirmed",
+    "checkedAt": "2026-10-20",
+    "reason": "臨時朝市（公式のトップページに「臨時朝市：12月30日(火)」）",
+    "source": "https://minatonichiyouasaichikai.com/"
+  },
+  {
+    "series": "kawanishi-toshi-ryokkasai-green-flea",
+    "date": "2026-10-24",
+    "status": "cancelled",
+    "checkedAt": "2026-10-23",
+    "source": "https://www.city.kawanishi.hyogo.jp/kurashi/1017490/midori/1014067.html",
+    "reason": "川西市の案内ページ（令和8年10月22日更新）。雨天のため中止"
+  },
+  {
+    "series": "bia-iwashikincyaku",
+    "date": "2026-11-23",
+    "status": "cancelled",
+    "checkedAt": "2026-11-01",
+    "source": "https://b-i-a.jp/reserve/iwashikincyaku/",
+    "reason": "会場の都合（リニューアル後の一部追加工事）により開催中止（主催者のお詫びの記載）"
+  },
+  {
+    "series": "frma-nakameguro-funeiriba-flea",
+    "date": "2026-11-29",
+    "status": "unknown",
+    "checkedAt": "2026-11-02",
+    "source": "http://www.frma.jp/",
+    "reason": "主催団体のトップページの日程から、中目黒船入場の記載がなくなった（開催の有無は要確認）"
+  },
+  {
+    "series": "nanbu-fleamarket",
+    "date": "2026-11-21",
+    "status": "cancelled",
+    "checkedAt": "2026-11-18",
+    "source": "https://www.instagram.com/p/DfS_hknkrCY/",
+    "reason": "出店者数が定員に満たないため中止（主催者の公式発表）"
+  }
 ]
