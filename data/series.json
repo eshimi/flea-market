@@ -20957,12 +20957,22 @@
       {
         "url": "https://fukuokacitymarket.com/events/toujin-nigiwaiichi/",
         "type": "organizer",
-        "checkedAt": "2026-11-18"
+        "checkedAt": "2026-11-18",
+        "evidence": [
+          "11:00〜17:00",
+          "唐人町商店街アーケード内",
+          "23日（月・祝）・29日"
+        ]
       },
       {
         "url": "https://fukuokacitymarket.com/events/toujin-arcade/",
         "type": "organizer",
-        "checkedAt": "2026-11-18"
+        "checkedAt": "2026-11-18",
+        "evidence": [
+          "2026年12月6日・13日・20日・27日",
+          "11:00〜17:00",
+          "唐人町商店街アーケード内"
+        ]
       }
     ]
   },
@@ -21002,7 +21012,11 @@
       {
         "url": "https://fukuokacitymarket.com/events/3900/",
         "type": "organizer",
-        "checkedAt": "2026-11-18"
+        "checkedAt": "2026-11-18",
+        "evidence": [
+          "2026年12月13日（日）10:00〜16:00",
+          "舞鶴公園 三の丸広場"
+        ]
       }
     ]
   },
