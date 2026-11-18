@@ -1,0 +1,71 @@
+{
+ "slug": "area-20-2026-11",
+ "date": "2026-11-18",
+ "cat": "area",
+ "tags": {
+  "ja": [
+   "20",
+   "フリマ"
+  ],
+  "en": [
+   "Nagano",
+   "flea market"
+  ]
+ },
+ "en": {
+  "title": "Flea markets and antique fairs in Nagano (next 120 days: 4 events)",
+  "summary": "Markets in Nagano over the next 120 days, in date order, built only from the listing data and its official sources.",
+  "points": [
+   "4 events in the next 120 days (confirmed on official sources: 3; from the regular schedule: 1)",
+   "Types: Flea Markets 3, Handmade Markets 1",
+   "Venue pages: none yet"
+  ],
+  "blocks": [
+   {
+    "h2": "Coming up"
+   },
+   {
+    "ul": [
+     "[Matsumoto Alps Park Flea Market](/e/matsumoto-alps-park-flea-furimanet/): Matsumoto City, Matsumoto City Alps Park, east entrance parking lot / 10:00–14:00 — Confirmed (official)",
+     "[Matsumoto Alps Park Flea Market](/e/matsumoto-alps-park-flea-furimanet/): Matsumoto City, Matsumoto City Alps Park, east entrance parking lot / 10:00–14:00 — Confirmed (official)",
+     "[Matsumoto Alps Park Flea Market](/e/matsumoto-alps-park-flea-furimanet/): Matsumoto City, Matsumoto City Alps Park, east entrance parking lot / 10:00–14:00 — Confirmed (official)",
+     "[Zenkoji Binzuru Market](/e/nagano-zenkoji-binzuru-ichi/): Nagano City, Zenkoji East Park, Shiroyama Park fountain plaza / 10:00–16:00 — Scheduled (from recurring rule)"
+    ]
+   },
+   {
+    "h2": "Before you go"
+   },
+   {
+    "p": "Each listing links to its page with the official source. Rules for rain and cancellations differ from market to market: see [Rain and cancellations](/blog/rain-and-cancellations/) and the [guide](/guide/). “Scheduled” dates are calculated from an official recurring rule and have not been confirmed individually."
+   }
+  ]
+ },
+ "ja": {
+  "title": "長野県のフリマ・骨董市・マルシェ（今後120日：4件）",
+  "summary": "長野県の今後120日の開催を、近い日程から並べました。掲載データの事実だけで作っています。",
+  "points": [
+   "今後120日に4件（公式で確認した回 3件、きまりから算出した回 1件）",
+   "種類：フリーマーケット 3件、手作り市 1件",
+   "会場の案内（スポット）：まだありません"
+  ],
+  "blocks": [
+   {
+    "h2": "近い日程"
+   },
+   {
+    "ul": [
+     "[松本市立アルプス公園フリマ](/e/matsumoto-alps-park-flea-furimanet/)：松本市・松本市立アルプス公園 東入り口駐車場／10:00〜14:00（公式で確認）",
+     "[松本市立アルプス公園フリマ](/e/matsumoto-alps-park-flea-furimanet/)：松本市・松本市立アルプス公園 東入り口駐車場／10:00〜14:00（公式で確認）",
+     "[松本市立アルプス公園フリマ](/e/matsumoto-alps-park-flea-furimanet/)：松本市・松本市立アルプス公園 東入り口駐車場／10:00〜14:00（公式で確認）",
+     "[善光寺びんずる市](/e/nagano-zenkoji-binzuru-ichi/)：長野市・善光寺東公園、城山公園噴水広場／10:00〜16:00（予定（きまりから算出））"
+    ]
+   },
+   {
+    "h2": "お出かけの前に"
+   },
+   {
+    "p": "各開催のページに、公式の出典があります。雨天・中止の扱いはマーケットごとに違います。[雨天・中止：公式ページの書き方](/blog/rain-and-cancellations/)と[使い方](/guide/)をご覧ください。「予定」の日は、公式のきまりから計算した日で、その回の個別の確認はありません。"
+   }
+  ]
+ }
+}
