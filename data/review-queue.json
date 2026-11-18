@@ -4359,9 +4359,9 @@
   "id": "frma-4cbdde",
   "url": "http://www.frma.jp/",
   "name": "リサイクル推進友の会",
-  "detectedAt": "2026-11-16",
+  "detectedAt": "2026-11-19",
   "reason": "changed",
-  "hash": "ea9bd502871efc62",
+  "hash": "5d77c266557ade2e",
   "status": "pending"
  },
  {
@@ -5363,5 +5363,428 @@
   "hash": "751bbf40a3320efb",
   "status": "done",
   "processedAt": "2026-11-18"
+ },
+ {
+  "id": "nihon-freemarket-kyokai",
+  "url": "http://freemarket-go.com/",
+  "name": "日本フリーマーケット協会（関西）",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "4eb5013edde0d91f",
+  "status": "pending"
+ },
+ {
+  "id": "recycler-jp-schedule",
+  "url": "https://www2.recycler.jp/sm/index.php",
+  "name": "リサイクル運動市民の会（開催スケジュール）",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "ce973f8d321cb9ed",
+  "status": "pending"
+ },
+ {
+  "id": "garagesale-top",
+  "url": "https://garagesale.co.jp/",
+  "name": "日本ガレージセール協会（大阪のガレージセール）",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "ec715d6c9c389c30",
+  "status": "pending"
+ },
+ {
+  "id": "furimatairiku-0c5a28",
+  "url": "http://furimatairiku.jp/Kawati/index.html",
+  "name": "フリマ大陸",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "6d089cc758ce20a2",
+  "status": "pending"
+ },
+ {
+  "id": "www2-4d38aa",
+  "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=004",
+  "name": "リサイクル運動市民の会",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "b1de1706fbfcf566",
+  "status": "pending"
+ },
+ {
+  "id": "shitennoji-9c908f",
+  "url": "https://www.shitennoji.or.jp/event/index.html",
+  "name": "四天王寺",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "cc405faa146fff3f",
+  "status": "pending"
+ },
+ {
+  "id": "www2-bcd746",
+  "url": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=044",
+  "name": "リサイクル運動市民の会",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "b743b1519bbd6ce1",
+  "status": "pending"
+ },
+ {
+  "id": "b-i-a-a3581d",
+  "url": "https://b-i-a.jp/reserve/sunshine/",
+  "name": "商業インキュベータ協会",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "7c3cf8a0f8e8cb62",
+  "status": "pending"
+ },
+ {
+  "id": "earth-garden-44cb54",
+  "url": "https://www.earth-garden.jp/festival/83598/",
+  "name": "アースガーデン",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "0dfd43d7a3fefd66",
+  "status": "pending"
+ },
+ {
+  "id": "trx-f98cdd",
+  "url": "https://trx.jp/schejule",
+  "name": "東京リサイクル",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "984581b37a524c6a",
+  "status": "pending"
+ },
+ {
+  "id": "tokyo-eastpark-38aa31",
+  "url": "https://tokyo-eastpark.com/parksearch/ohjima",
+  "name": "tokyo-eastpark.com",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "fce94d79a162381b",
+  "status": "pending"
+ },
+ {
+  "id": "rbf-5d5178",
+  "url": "https://www.rbf.jp/nittei.html",
+  "name": "エコロジーネットワーク・ラズベリー",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "ed2727cb181d5df7",
+  "status": "pending"
+ },
+ {
+  "id": "tokyo-park-b56fab",
+  "url": "https://www.tokyo-park.or.jp/park/komazawa-olympic/index.html",
+  "name": "東京都公園協会",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "392964f05feb6f19",
+  "status": "pending"
+ },
+ {
+  "id": "ficbase-531b7c",
+  "url": "https://ficbase.jp/project/nominoichi",
+  "name": "FICベース株式会社（茨木のまちづくり会社",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "15ab48dbb34d2bde",
+  "status": "pending"
+ },
+ {
+  "id": "kamigamo-tedukuriichi-75c1a6",
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/141/",
+  "name": "株式会社クラフト",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "ca4c552f4f724ccc",
+  "status": "pending"
+ },
+ {
+  "id": "2525furima-286ccc",
+  "url": "https://2525furima.hp.peraichi.com/",
+  "name": "2525フリマ滋賀（ニコニコフリマ滋賀",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "4b57e7961733f46f",
+  "status": "pending"
+ },
+ {
+  "id": "lohas-park-5b1062",
+  "url": "https://lohas-park.jp/event/kiji5935/",
+  "name": "ロハスパーク川西実行委員会",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "3728a4f0323fdbed",
+  "status": "pending"
+ },
+ {
+  "id": "kamigamo-tedukuriichi-598310",
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/142/",
+  "name": "株式会社クラフト",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "bbca632078c867e7",
+  "status": "pending"
+ },
+ {
+  "id": "lohas-park-5f0e4c",
+  "url": "https://lohas-park.jp/event/kiji5937/",
+  "name": "ロハスパーク（公式サイト",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "e10a64cdc44f9783",
+  "status": "pending"
+ },
+ {
+  "id": "ficbase-c1ef6a",
+  "url": "https://ficbase.jp/project/ekimaemarche/32th",
+  "name": "FICベース株式会社",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "da13ffaca53348b7",
+  "status": "pending"
+ },
+ {
+  "id": "kamigamo-tedukuriichi-c472b2",
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/144/",
+  "name": "株式会社クラフト",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "4a0209173e710ea1",
+  "status": "pending"
+ },
+ {
+  "id": "lohas-park-67c7b4",
+  "url": "https://lohas-park.jp/event/kiji5944/",
+  "name": "ロハスパーク伊丹実行委員会",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "e5dfe9b961c14bbf",
+  "status": "pending"
+ },
+ {
+  "id": "ficbase-9d3c7f",
+  "url": "https://ficbase.jp/base/ekimaebase",
+  "name": "FICベース株式会社",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "d51731d17d6f2da7",
+  "status": "pending"
+ },
+ {
+  "id": "tokyo-park-b1f385",
+  "url": "https://www.tokyo-park.or.jp/park/yoyogi/index.html",
+  "name": "www.tokyo-park.or.jp",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "2daf515fd5802190",
+  "status": "pending"
+ },
+ {
+  "id": "kamigamo-tedukuriichi-ae38cd",
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/143/",
+  "name": "株式会社クラフト",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "b065a3aee57a24d8",
+  "status": "pending"
+ },
+ {
+  "id": "lohas-park-cfb1f9",
+  "url": "https://lohas-park.jp/event/kiji5467/",
+  "name": "ロハスパーク（公式サイト",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "b174ff8257417bda",
+  "status": "pending"
+ },
+ {
+  "id": "kamigamo-tedukuriichi-22f597",
+  "url": "https://kamigamo-tedukuriichi.com/publics/index/145/",
+  "name": "株式会社クラフト",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "c802d2c9a1a77bdc",
+  "status": "pending"
+ },
+ {
+  "id": "pearlroad-5701e3",
+  "url": "https://pearlroad.jp/2025%E5%B9%B4%E5%BA%A6%E3%80%80%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1/",
+  "name": "紅谷パールロード商店街",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "37622df7d89bb3c3",
+  "status": "pending"
+ },
+ {
+  "id": "lohas-park-7df715",
+  "url": "https://lohas-park.jp/event/kiji5647/",
+  "name": "ロハスパーク（公式サイト",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "e4b9150eba758fdb",
+  "status": "pending"
+ },
+ {
+  "id": "nagoya-info-de5af8",
+  "url": "https://www.nagoya-info.jp/event/detail/695/",
+  "name": "徳川園事務所",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "0cc18bd546b101b2",
+  "status": "pending"
+ },
+ {
+  "id": "tokyo-park-316038",
+  "url": "https://www.tokyo-park.or.jp/park/hikarigaoka/index.html",
+  "name": "www.tokyo-park.or.jp",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "b0f5ba7c8a044182",
+  "status": "pending"
+ },
+ {
+  "id": "sake3-30b3d7",
+  "url": "https://www.sake3.com/event/16210",
+  "name": "大町振興会",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "ebabf6ad3065d61e",
+  "status": "pending"
+ },
+ {
+  "id": "lohas-park-a01c9e",
+  "url": "https://lohas-park.jp/event/kiji5630/",
+  "name": "ロハスパーク豊中実行委員会",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "9f032c89388b300f",
+  "status": "pending"
+ },
+ {
+  "id": "minatonichiyouasaichikai-86109c",
+  "url": "https://minatonichiyouasaichikai.com/",
+  "name": "湊日曜朝市会",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "21974b52ee0765f5",
+  "status": "pending"
+ },
+ {
+  "id": "tokyo-park-f8a56d",
+  "url": "https://www.tokyo-park.or.jp/park/koganei/index.html",
+  "name": "www.tokyo-park.or.jp",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "f56b63c7724b8161",
+  "status": "pending"
+ },
+ {
+  "id": "ishikawagokoku-783c67",
+  "url": "https://www.ishikawagokoku.or.jp/",
+  "name": "石川護國神社",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "2c547c9886568b73",
+  "status": "pending"
+ },
+ {
+  "id": "lohas-park-f40263",
+  "url": "https://lohas-park.jp/event/kiji5594/",
+  "name": "ロハスパーク（公式サイト",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "86bee7278c67f304",
+  "status": "pending"
+ },
+ {
+  "id": "lohas-park-2570dd",
+  "url": "https://lohas-park.jp/event/kiji5799/",
+  "name": "ロハスパーク実行委員会",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "3a31e4c6ad14b901",
+  "status": "pending"
+ },
+ {
+  "id": "fmfm-king-cd46c6",
+  "url": "https://www.fmfm-king.com/fukakitamaturi12-19-20/",
+  "name": "フリマジャパン",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "70a349890391050e",
+  "status": "pending"
+ },
+ {
+  "id": "lohas-park-40e61d",
+  "url": "https://lohas-park.jp/event/kiji6066/",
+  "name": "ロハスパーク（公式サイト",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "557f40242bb16ea1",
+  "status": "pending"
+ },
+ {
+  "id": "tokyo-park-98dd04",
+  "url": "https://www.tokyo-park.or.jp/park/akatsuka/index.html",
+  "name": "www.tokyo-park.or.jp",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "d2cf84dbcdbf2ef2",
+  "status": "pending"
+ },
+ {
+  "id": "lohas-park-6798db",
+  "url": "https://lohas-park.jp/event/kiji5931/",
+  "name": "ロハスパーク（公式サイト",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "172ce479a15221d1",
+  "status": "pending"
+ },
+ {
+  "id": "fmfm-king-f87c32",
+  "url": "https://www.fmfm-king.com/turu12-23/",
+  "name": "フリマジャパン",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "f4e5715dcfc5a60a",
+  "status": "pending"
+ },
+ {
+  "id": "fmfm-king-4e3101",
+  "url": "https://www.fmfm-king.com/sakura11-21-22-23/",
+  "name": "フリマジャパン",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "3e31673a09c80ea4",
+  "status": "pending"
+ },
+ {
+  "id": "fmfm-king-5a1178",
+  "url": "https://www.fmfm-king.com/suzuka12-5-6/",
+  "name": "フリマジャパン",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "3cee4fd9c5a2016d",
+  "status": "pending"
+ },
+ {
+  "id": "fmfm-king-030343",
+  "url": "https://www.fmfm-king.com/yamada12-19-20/",
+  "name": "フリマジャパン",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "ec6391f7de456dd6",
+  "status": "pending"
+ },
+ {
+  "id": "fmfm-king-fdefb4",
+  "url": "https://www.fmfm-king.com/osaka/",
+  "name": "フリマジャパン",
+  "detectedAt": "2026-11-19",
+  "reason": "changed",
+  "hash": "cd088159af078c13",
+  "status": "pending"
  }
 ]

@@ -1,6 +1,41 @@
 {
- "lastDate": "2026-11-17",
+ "lastDate": "2026-11-18",
  "items": [
+  {
+   "series": "bia-sunshine",
+   "date": "2026-11-18",
+   "status": "confirmed",
+   "checkedAt": "2026-11-13",
+   "source": "https://b-i-a.jp/reserve/sunshine/"
+  },
+  {
+   "series": "fmj-tsurumi-ryokuchi",
+   "date": "2026-11-18",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://www.fmfm-king.com/turu11-4/"
+  },
+  {
+   "series": "kitty-mashis-bigrib-mikawaanjo-flea",
+   "date": "2026-11-18",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "http://www.hm.aitai.ne.jp/~ma-shi-s/profile4018.html"
+  },
+  {
+   "series": "saitama-shintoshin-keyaki-flea",
+   "date": "2026-11-18",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://www.saitama-arena.co.jp/schedule/2026/11/"
+  },
+  {
+   "series": "toyokuni-omoshiro-ichi",
+   "date": "2026-11-18",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "http://www.omosiro1.com/"
+  },
   {
    "series": "fmj-ohigashi-hiroba",
    "date": "2026-11-16",
