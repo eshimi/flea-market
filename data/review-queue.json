@@ -5786,5 +5786,14 @@
   "reason": "changed",
   "hash": "cd088159af078c13",
   "status": "pending"
+ },
+ {
+  "id": "showakinen-koen-3bf349",
+  "url": "https://www.showakinen-koen.jp/",
+  "name": "www.showakinen-koen.jp",
+  "detectedAt": "2026-11-20",
+  "reason": "changed",
+  "hash": "fe4ff8834edf671c",
+  "status": "pending"
  }
 ]
