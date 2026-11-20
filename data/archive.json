@@ -1,6 +1,20 @@
 {
- "lastDate": "2026-11-19",
+ "lastDate": "2026-11-20",
  "items": [
+  {
+   "series": "nagara-dam-friday-flea-kottou",
+   "date": "2026-11-20",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://mykoho.jp/article/124265/9869438/10101785"
+  },
+  {
+   "series": "otegami-flea-kitte-museum",
+   "date": "2026-11-20",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://kitte-museum.jp/otegami/"
+  },
   {
    "series": "lohas-park-fukinuke-marche-hyogo-eki",
    "date": "2026-11-19",
