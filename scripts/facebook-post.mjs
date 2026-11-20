@@ -1,4 +1,4 @@
-// 今週末の予定を、Facebook ページに英語・日本語で投稿する（毎週金曜の朝 8:00 JST。.github/workflows/facebook-weekly.yml）。
+// 今週末の予定を、Facebook ページに英語・日本語で投稿する（毎週木曜の朝 8:00 JST。.github/workflows/facebook-weekly.yml）。
 // 本文は、掲載データの事実だけを型にはめて作る（AI が自由に書かない）。開催がない週は投稿しない。
 // 使い方: node scripts/facebook-post.mjs [--lang=en|ja|both] [--today=YYYY-MM-DD] [--dry-run]
 //   FB_PAGE_ID と FB_PAGE_TOKEN（GitHub の Secrets）が両方あり、--dry-run でなければ投稿する。なければ本文を表示するだけ。
@@ -105,7 +105,7 @@ export function buildMail(data, today) {
     '----------------------------------------',
     bare(ja),
     '',
-    '※ページ（公式）への自動投稿は、同じ金曜の朝8時ごろに別に行われます。件数は、そのときのデータで少し変わることがあります。',
+    '※ページ（公式）への自動投稿は、同じ木曜の朝8時ごろに別に行われます。件数は、そのときのデータで少し変わることがあります。',
   ].join('\n');
   return { subject, text };
 }

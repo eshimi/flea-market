@@ -1,11 +1,11 @@
-# 毎週金曜の朝 5:19 JST（＝木曜 20:19 UTC）に、Facebook グループ（英語・日本語）へ手動で貼る投稿文を、運営者へメールで送る。
+# 毎週木曜の朝 5:19 JST（＝水曜 20:19 UTC）に、Facebook グループ（英語・日本語）へ手動で貼る投稿文を、運営者へメールで送る。
 # グループへの自動投稿は Facebook の API で不可のため、文面だけを用意する。メールは Worker（/api/admin/mail）が、MAIL_TO（サイト専用メール）へ送る。
 # Secrets: ADMIN_TOKEN（Worker の ADMIN_TOKEN と同じ値）。なければ本文を表示するだけ。
 # 手動実行（workflow_dispatch）は、既定で試運転（送らない）。
 name: FBグループ投稿文をメールで送る
 on:
   schedule:
-    - cron: '19 20 * * 4'
+    - cron: '19 20 * * 3'
   workflow_dispatch:
     inputs:
       dry_run:

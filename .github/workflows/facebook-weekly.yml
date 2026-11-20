@@ -1,10 +1,10 @@
-# 毎週金曜の朝 8:00 JST（＝木曜 23:00 UTC）に、今週末の予定を Facebook ページへ英語・日本語の順に投稿する。
+# 毎週木曜の朝 8:00 JST（＝水曜 23:00 UTC）に、今週末の予定を Facebook ページへ英語・日本語の順に投稿する。
 # Secrets: FB_PAGE_ID（ページの ID）、FB_PAGE_TOKEN（ページのアクセストークン）。どちらかがなければ、本文を表示するだけ（投稿しない）。
 # 手動実行（workflow_dispatch）は、既定で試運転（投稿しない）。言語は lang（both・en・ja）で選ぶ。
 name: 週末の予定を Facebook に投稿
 on:
   schedule:
-    - cron: '0 23 * * 4'
+    - cron: '0 23 * * 3'
   workflow_dispatch:
     inputs:
       dry_run:
