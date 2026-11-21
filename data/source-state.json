@@ -1,6 +1,6 @@
 {
  "https://www.antique-market.jp/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {
@@ -19,7 +19,7 @@
   }
  },
  "https://www.antique-market.jp/%E5%87%BA%E5%BA%97%E3%81%8A%E7%94%B3%E8%BE%BC%E3%81%BF/%E5%87%BA%E5%BA%97%E8%A6%8F%E7%B4%84/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -106,7 +106,7 @@
   }
  },
  "https://www.city.setagaya.lg.jp/02241/375.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "W/\"6552-65da5f72b6b42\"",
@@ -138,7 +138,7 @@
   }
  },
  "https://kitanotenmangu.or.jp/event/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -211,10 +211,10 @@
   }
  },
  "https://www.city.edogawa.tokyo.jp/e036/kurashi/chiikicommunity/johokyoku/tobu/event/recycleworld.html": {
-  "fetchedAt": "2026-11-16",
-  "httpStatus": 200,
+  "fetchedAt": "2026-11-22",
+  "httpStatus": 304,
   "failCount": 0,
-  "etag": "W/\"41d9-65fe7774af7fd\"",
+  "etag": "\"41d9-65fe7774af7fd\"",
   "lastModified": "Tue, 10 Nov 2026 08:00:03 GMT",
   "mismatch": {},
   "evidenceOk": {
@@ -222,10 +222,10 @@
   }
  },
  "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Fri, 20 Nov 2026 01:01:13 GMT",
+  "lastModified": "Sat, 21 Nov 2026 01:01:29 GMT",
   "mismatch": {},
   "evidenceOk": {
    "sumida-kinshi-park-flea": true,
@@ -269,7 +269,7 @@
   }
  },
  "https://www.city.edogawa.tokyo.jp/e034/kurashi/chiikicommunity/johokyoku/kasai/event/funaborimatsuri.html": {
-  "fetchedAt": "2026-11-15",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"4bff-65eb733ee09c5\"",
@@ -280,7 +280,7 @@
   }
  },
  "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -301,8 +301,8 @@
   }
  },
  "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html": {
-  "fetchedAt": "2026-11-21",
-  "httpStatus": 200,
+  "fetchedAt": "2026-11-22",
+  "httpStatus": 304,
   "failCount": 0,
   "etag": "W/\"6d60-660843d0e45d5\"",
   "lastModified": "Wed, 18 Nov 2026 03:02:16 GMT",
@@ -375,7 +375,7 @@
   }
  },
  "http://www.frma.jp/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Thu, 19 Nov 2026 06:15:58 GMT",
@@ -447,7 +447,7 @@
   }
  },
  "http://www.frma.jp/ukima.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Wed, 08 Jul 2026 05:52:11 GMT",
@@ -460,7 +460,7 @@
   }
  },
  "http://www.frma.jp/koganei.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Fri, 29 Aug 2025 08:36:38 GMT",
@@ -480,7 +480,7 @@
   }
  },
  "http://www.frma.jp/hunairiba.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Tue, 08 Sep 2026 23:34:50 GMT",
@@ -553,7 +553,7 @@
   }
  },
  "https://www.teshigoro.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -585,7 +585,7 @@
   }
  },
  "https://www.eko-hirobakan.jp/fujimibashi/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -594,7 +594,7 @@
   }
  },
  "https://www.tama-seisokojo.or.jp/econico/market": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -603,7 +603,7 @@
   }
  },
  "https://www.tama-seisokojo.or.jp/center_top": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -783,7 +783,7 @@
   }
  },
  "https://trx.jp/schejule": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {
@@ -832,7 +832,7 @@
   }
  },
  "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {
@@ -871,7 +871,7 @@
   }
  },
  "https://rpa.flima.net/%e5%87%ba%e5%ba%97%e3%81%ae%e3%83%ab%e3%83%bc%e3%83%ab/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -977,7 +977,7 @@
   }
  },
  "http://freemarket-go.com/shousai_osaka_001.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1082,7 +1082,7 @@
   }
  },
  "https://www.fmfm-king.com/kirarie10-18/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1091,7 +1091,7 @@
   }
  },
  "https://www.fmfm-king.com/enmino10-25/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1100,7 +1100,7 @@
   }
  },
  "https://www.fmfm-king.com/mino11-22/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1109,7 +1109,7 @@
   }
  },
  "https://www.fmfm-king.com/mino12-13/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1127,7 +1127,7 @@
   }
  },
  "https://www.fmfm-king.com/fukakita10-24/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1136,7 +1136,7 @@
   }
  },
  "https://www.fmfm-king.com/fuka11-8/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1145,7 +1145,7 @@
   }
  },
  "https://www.fmfm-king.com/fukakita11-23/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1154,7 +1154,7 @@
   }
  },
  "https://www.fmfm-king.com/fukakitamaturi12-19-20/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1316,7 +1316,7 @@
   }
  },
  "https://www.fmfm-king.com/saidaiji10-25/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1325,7 +1325,7 @@
   }
  },
  "https://www.fmfm-king.com/saidaiji11-7/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1334,7 +1334,7 @@
   }
  },
  "https://www.fmfm-king.com/saidaiji11-22/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1343,7 +1343,7 @@
   }
  },
  "https://www.fmfm-king.com/saidaiji12-12/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1352,7 +1352,7 @@
   }
  },
  "https://www.fmfm-king.com/saidaiji12-20/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1370,7 +1370,7 @@
   }
  },
  "https://www.fmfm-king.com/sakura11-21-22-23/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1379,7 +1379,7 @@
   }
  },
  "https://www.fmfm-king.com/suzuka12-5-6/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1406,7 +1406,7 @@
   }
  },
  "https://www.fmfm-king.com/yasu11-22/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1415,7 +1415,7 @@
   }
  },
  "https://www.fmfm-king.com/yasu12-6/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -1469,7 +1469,7 @@
   }
  },
  "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=004": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {
@@ -1497,7 +1497,7 @@
   }
  },
  "https://www2.recycler.jp/sm/index.php": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {
@@ -1629,7 +1629,7 @@
   }
  },
  "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_10.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"f52bd02d6117d6ab412b4756896b72cb\"",
@@ -1685,11 +1685,11 @@
   }
  },
  "https://www.tokyo-park.or.jp/park/koganei/index.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"25f15a34c24b586cc698d37d5f2b4ae7\"",
-  "lastModified": "Tue, 17 Nov 2026 09:09:11 GMT",
+  "etag": "\"3bf6ce493e40fd050f4f6c7321a78287\"",
+  "lastModified": "Sat, 21 Nov 2026 09:09:12 GMT",
   "mismatch": {},
   "evidenceOk": {
    "venue:koganei-park": true,
@@ -1745,8 +1745,8 @@
   }
  },
  "https://www.city.setagaya.lg.jp/02075/9095.html": {
-  "fetchedAt": "2026-11-18",
-  "httpStatus": 200,
+  "fetchedAt": "2026-11-22",
+  "httpStatus": 304,
   "failCount": 0,
   "etag": "W/\"8786-6605f53ad7a21\"",
   "lastModified": "Mon, 16 Nov 2026 07:00:02 GMT",
@@ -1860,11 +1860,11 @@
   }
  },
  "https://www.city.kita.lg.jp/culture-tourism-sports/tourism/1010756/1010759/1010765.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "W/\"c297-660b6aa0eed59\"",
-  "lastModified": "Fri, 20 Nov 2026 15:11:53 GMT",
+  "etag": "W/\"c297-660cac7caeabe\"",
+  "lastModified": "Sat, 21 Nov 2026 15:11:51 GMT",
   "mismatch": {},
   "evidenceOk": {
    "venue:ukima-park": true,
@@ -1963,8 +1963,8 @@
   }
  },
  "https://trx.jp/faq": {
-  "fetchedAt": "2026-11-21",
-  "httpStatus": 200,
+  "fetchedAt": "2026-11-22",
+  "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Fri, 20 Nov 2026 08:22:29 GMT",
   "mismatch": {},
@@ -1997,7 +1997,7 @@
   }
  },
  "http://freemarket-go.com/schedule_shop.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {
@@ -2014,12 +2014,16 @@
   }
  },
  "https://b-i-a.jp/reserve/osaka-bay-tower/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "mismatch": {},
+  "mismatch": {
+   "bia-osaka-bay-tower": [
+    "2026/11/22（日）"
+   ]
+  },
   "evidenceOk": {
-   "bia-osaka-bay-tower": true
+   "bia-osaka-bay-tower": false
   }
  },
  "https://b-i-a.jp/reserve/sevenpark/": {
@@ -2050,7 +2054,7 @@
   }
  },
  "https://b-i-a.jp/reserve/iwashikincyaku/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {
@@ -2077,7 +2081,7 @@
   }
  },
  "https://b-i-a.jp/reserve/tsurumiryokuchi/": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2086,7 +2090,7 @@
   }
  },
  "https://b-i-a.jp/reserve/sunshine/": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {
@@ -2122,7 +2126,7 @@
   }
  },
  "https://b-i-a.jp/reserve/izumiyakoryo/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2153,7 +2157,7 @@
   }
  },
  "http://furimatairiku.jp/AEON-m/index.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"6aeab9f4-7f3f\"",
@@ -2189,7 +2193,7 @@
   }
  },
  "https://tokyo-romantic.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {
@@ -2212,10 +2216,10 @@
   }
  },
  "https://www.rbf.jp/nittei.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "W/\"3a197fff7abd0f101bfa6ce3ce0c5b0b\"",
+  "etag": "W/\"24d2232ddb0d49d1b087e49dd5a17914\"",
   "lastModified": "Sun, 25 Oct 2026 13:10:49 GMT",
   "mismatch": {
    "rbf-kawagoe-suijo-park": [
@@ -2255,9 +2259,9 @@
   }
  },
  "https://www.rbf.jp/kaijyou.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 404,
-  "failCount": 26,
+  "failCount": 27,
   "etag": "\"428a-5ebc7a30b4f80\"",
   "lastModified": "Mon, 24 Oct 2022 13:19:10 GMT",
   "mismatch": {},
@@ -2271,9 +2275,9 @@
   }
  },
  "https://www.rbf.jp/laketown2.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 404,
-  "failCount": 10,
+  "failCount": 11,
   "etag": "\"30d2-65a64f1400cc0\"",
   "lastModified": "Tue, 01 Sep 2026 05:10:51 GMT",
   "mismatch": {},
@@ -2282,9 +2286,9 @@
   }
  },
  "https://www.rbf.jp/kazo.wakuwaku.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 404,
-  "failCount": 14,
+  "failCount": 15,
   "etag": "\"2e5e-65e44502a4b00\"",
   "lastModified": "Tue, 20 Oct 2026 11:55:56 GMT",
   "mismatch": {},
@@ -2348,10 +2352,10 @@
   }
  },
  "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Fri, 20 Nov 2026 15:16:21 GMT",
+  "lastModified": "Sat, 21 Nov 2026 15:16:37 GMT",
   "mismatch": {},
   "evidenceOk": {
    "osaka-garagesale-higashiyodogawa": true,
@@ -2472,7 +2476,7 @@
   }
  },
  "https://kamigamo-tedukuriichi.com/publics/index/141/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2490,7 +2494,7 @@
   }
  },
  "https://kamigamo-tedukuriichi.com/publics/index/144/": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2508,7 +2512,7 @@
   }
  },
  "https://kamigamo-tedukuriichi.com/publics/index/145/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2590,7 +2594,7 @@
   }
  },
  "https://lohas-park.jp/event/kiji5944/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2626,7 +2630,7 @@
   }
  },
  "https://lohas-park.jp/event/kiji5594/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2653,9 +2657,9 @@
   }
  },
  "https://lohas-park.jp/event/kiji6160/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 404,
-  "failCount": 19,
+  "failCount": 20,
   "mismatch": {},
   "evidenceOk": {
    "lohas-park-fukinuke-marche-hyogo-eki": true
@@ -2704,7 +2708,7 @@
   }
  },
  "https://www.cpm-gifu.jp/rakuraku/schedule/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2722,7 +2726,7 @@
   }
  },
  "https://www.nagoya-info.jp/spot/detail/13/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2758,7 +2762,7 @@
   }
  },
  "https://suwacent.com/event/9-27%e3%81%aa%e3%82%93%e3%81%a7%e3%82%82%e5%9b%9b%e6%97%a5%e3%81%ae%e5%b8%82/": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2767,22 +2771,23 @@
   }
  },
  "https://www.city.obihiro.hokkaido.jp/kurashi/gomi/information/1002806.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"a20d-6607a44c06500\"",
-  "lastModified": "Tue, 17 Nov 2026 15:08:36 GMT",
+  "etag": "\"a20d-660cabc3c6980\"",
+  "lastModified": "Sat, 21 Nov 2026 15:08:38 GMT",
   "mismatch": {
    "obihiro-wakuwaku-flea": [
     "10月21日（水曜日）、10月28日（水曜日）※年内最終日"
    ]
   },
   "evidenceOk": {
-   "obihiro-wakuwaku-flea": false
+   "obihiro-wakuwaku-flea": false,
+   "otofuke-eco-recycle-ichi": true
   }
  },
  "https://www.city.kitakyushu.lg.jp/contents/924_12034.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {
@@ -2830,7 +2835,7 @@
   }
  },
  "https://pearlroad.jp/2025%E5%B9%B4%E5%BA%A6%E3%80%80%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2839,7 +2844,7 @@
   }
  },
  "https://cgi.city.yokohama.lg.jp/common/event2/event_detail.html?id=64965": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2859,10 +2864,10 @@
   }
  },
  "https://www.city.kawasaki.jp/500/page/0000190814.html": {
-  "fetchedAt": "2026-11-15",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Fri, 13 Nov 2026 15:35:46 GMT",
+  "lastModified": "Sat, 21 Nov 2026 15:38:19 GMT",
   "mismatch": {},
   "evidenceOk": {
    "noborito-challenge-street-2026": true
@@ -2888,7 +2893,7 @@
   }
  },
  "http://ichigoichie.moo.jp/furusato.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Thu, 10 Oct 2024 02:40:00 GMT",
@@ -2964,7 +2969,7 @@
   }
  },
  "https://www.town.fujikawa.yamanashi.jp/kanko/docs_kanko/2023090700245/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"6af541db-12087\"",
@@ -2975,7 +2980,7 @@
   }
  },
  "https://minatonichiyouasaichikai.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -2984,7 +2989,7 @@
   }
  },
  "https://minatonichiyouasaichikai.com/map/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -3127,7 +3132,7 @@
   }
  },
  "https://creatorsland.studio.site/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -3260,7 +3265,7 @@
   }
  },
  "https://www.pref.saitama.lg.jp/spo-navi/shisetsu/saitamaken/alnethome.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"42ec-65c8715e12b33\"",
@@ -3272,10 +3277,10 @@
   }
  },
  "https://www.city.toda.saitama.jp/soshiki/192/community-sakura-introgaiyo.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Fri, 20 Nov 2026 16:00:08 GMT",
+  "lastModified": "Sat, 21 Nov 2026 16:00:08 GMT",
   "mismatch": {},
   "evidenceOk": {
    "fmpn-toda-sakura-pal": true
@@ -3304,11 +3309,11 @@
   "etag": "\"4c78aa79\""
  },
  "https://www.city.ichinomiya.aichi.jp/shisetsu/kouen/1017179/1017417/1009340.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"85fa-6608231d10024\"",
-  "lastModified": "Wed, 18 Nov 2026 00:35:58 GMT",
+  "etag": "\"85fa-660cb1c2da7a1\"",
+  "lastModified": "Sat, 21 Nov 2026 15:35:27 GMT",
   "mismatch": {},
   "evidenceOk": {
    "yuyu-marche-ichinomiya-riverside-ono-gokurakuji": true
@@ -3374,7 +3379,7 @@
   }
  },
  "https://www.city.edogawa.tokyo.jp/e036/kuseijoho/gaiyo/shisetsuguide/bunya/kuyakusho/c_toubu/guide.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"58ca-64f516756169a\"",
@@ -3406,11 +3411,11 @@
   }
  },
  "https://www.city.tokai.aichi.jp/shisetsu/1005655/1005664/1003654.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"6d3c-660b69eee5dc0\"",
-  "lastModified": "Fri, 20 Nov 2026 15:08:47 GMT",
+  "etag": "\"6d3c-660cabcd50000\"",
+  "lastModified": "Sat, 21 Nov 2026 15:08:48 GMT",
   "mismatch": {},
   "evidenceOk": {
    "yuyu-marche-motohama-park": true
@@ -3487,7 +3492,7 @@
   }
  },
  "https://sundome.sankan.jp/access-map/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -3535,17 +3540,17 @@
   }
  },
  "https://www.city.osaka.lg.jp/sumiyoshi/page/0000158918.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Fri, 20 Nov 2026 15:05:30 GMT",
+  "lastModified": "Sat, 21 Nov 2026 15:05:26 GMT",
   "mismatch": {},
   "evidenceOk": {
    "osaka-garagesale-sumiyoshi": true
   }
  },
  "https://baytower.jp/contact/": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -3643,7 +3648,7 @@
   }
  },
  "https://tokyo-romantic.com/access/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -3672,10 +3677,10 @@
   }
  },
  "https://www.city.osaka.lg.jp/shimin/page/0000016622.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Fri, 20 Nov 2026 15:10:43 GMT",
+  "lastModified": "Sat, 21 Nov 2026 15:10:58 GMT",
   "mismatch": {},
   "evidenceOk": {
    "osaka-garagesale-nishiyodogawa": true
@@ -3762,7 +3767,7 @@
   }
  },
  "https://www.teshigoro.com/%E5%87%BA%E5%B1%95%E8%80%85%E5%8B%9F%E9%9B%86": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -3793,7 +3798,7 @@
   }
  },
  "https://www.eko-hirobakan.jp/fujimibashi/pdf/freemarket_20260401.pdf": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"45c72-64e4e142a5c40\"",
@@ -3804,7 +3809,7 @@
   }
  },
  "https://www.tama-seisokojo.or.jp/access": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -3853,7 +3858,7 @@
   }
  },
  "http://freemarket-go.com/faq.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -3914,8 +3919,8 @@
   }
  },
  "http://furimatairiku.jp/": {
-  "fetchedAt": "2026-11-18",
-  "httpStatus": 200,
+  "fetchedAt": "2026-11-22",
+  "httpStatus": 304,
   "failCount": 0,
   "etag": "\"6afa6b67-f041\"",
   "lastModified": "Mon, 16 Nov 2026 02:33:11 GMT",
@@ -3928,7 +3933,7 @@
   }
  },
  "http://furimatairiku.jp/Agreement/index.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"6a62c588-c131\"",
@@ -3942,9 +3947,9 @@
   }
  },
  "https://www.rbf.jp/shirakobato.html": {
-  "fetchedAt": "2026-11-18",
-  "httpStatus": 400,
-  "failCount": 4,
+  "fetchedAt": "2026-11-22",
+  "httpStatus": 404,
+  "failCount": 5,
   "etag": "\"4dc5-5f5decbb90b40\"",
   "lastModified": "Wed, 01 Mar 2023 23:08:53 GMT",
   "mismatch": {},
@@ -3964,9 +3969,9 @@
   }
  },
  "https://www.rbf.jp/laketown.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 404,
-  "failCount": 10,
+  "failCount": 11,
   "etag": "\"44fa-5cd0be42c5c00\"",
   "lastModified": "Tue, 28 Sep 2021 10:44:00 GMT",
   "mismatch": {},
@@ -3995,20 +4000,20 @@
   }
  },
  "https://www.city.osaka.lg.jp/kankyo/page/0000687754.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Fri, 20 Nov 2026 15:16:39 GMT",
+  "lastModified": "Sat, 21 Nov 2026 15:16:54 GMT",
   "mismatch": {},
   "evidenceOk": {
    "osaka-garagesale-higashinari": true
   }
  },
  "https://www.city.osaka.lg.jp/kankyo/page/0000489331.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Fri, 20 Nov 2026 15:16:26 GMT",
+  "lastModified": "Sat, 21 Nov 2026 15:16:42 GMT",
   "mismatch": {
    "osaka-garagesale-sumiyoshi": [
     "出店料 無料",
@@ -4021,19 +4026,19 @@
   }
  },
  "https://www.city.osaka.lg.jp/kankyo/page/0000606700.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Fri, 20 Nov 2026 15:16:32 GMT",
+  "lastModified": "Sat, 21 Nov 2026 15:16:47 GMT",
   "mismatch": {},
   "evidenceOk": {
    "osaka-garagesale-nishiyodogawa": true
   }
  },
  "https://www.city.osaka.lg.jp/kankyo/page/0000687562.html": {
-  "fetchedAt": "2026-11-18",
-  "httpStatus": 408,
-  "failCount": 4,
+  "fetchedAt": "2026-11-22",
+  "httpStatus": 404,
+  "failCount": 5,
   "lastModified": "Wed, 21 Oct 2026 15:19:38 GMT",
   "mismatch": {},
   "evidenceOk": {
@@ -4051,7 +4056,7 @@
   }
  },
  "https://kamigamo-tedukuriichi.com/publics/index/78/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4093,7 +4098,7 @@
   }
  },
  "https://lohas-park.jp/faq/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4111,7 +4116,7 @@
   }
  },
  "https://pearlroad.jp/antiquefair/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4120,7 +4125,7 @@
   }
  },
  "http://pearlroad.jp/wp/wp-content/uploads/2018/04/kaisaigaiyou.pdf": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Fri, 06 Apr 2018 10:27:28 GMT",
@@ -4147,7 +4152,7 @@
   "mismatch": {}
  },
  "https://www.tokyo-park.or.jp/park/hikarigaoka/news/2026/event2026_11.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"04ac0cfc49aa47c004fe759f5cc11406\"",
@@ -4239,17 +4244,21 @@
   }
  },
  "https://bon.haleinc.co.jp/event/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {
    "bon-dimanche-chofu-parco": [
     "開催日:2026年10月31日(土)"
+   ],
+   "bon-dimanche-oimachi-tracks": [
+    "開催日:2026年11月22日(日)",
+    "大井町トラックス Bon Dimanche Market《選考制》"
    ]
   },
   "evidenceOk": {
    "bon-dimanche-chofu-parco": false,
-   "bon-dimanche-oimachi-tracks": true
+   "bon-dimanche-oimachi-tracks": false
   }
  },
  "https://bon.haleinc.co.jp/venue/8474/": {
@@ -4271,7 +4280,7 @@
   }
  },
  "https://bon.haleinc.co.jp/venue/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4280,9 +4289,9 @@
   }
  },
  "https://ooi20261107.peatix.com/": {
-  "fetchedAt": "2026-11-21",
-  "httpStatus": 200,
-  "failCount": 0,
+  "fetchedAt": "2026-11-22",
+  "httpStatus": 0,
+  "failCount": 1,
   "mismatch": {},
   "evidenceOk": {
    "trx-oi-keibajo-tokyo-city-flea": true
@@ -4335,7 +4344,7 @@
   }
  },
  "https://ooi20261108.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4344,7 +4353,7 @@
   }
  },
  "https://ooi20261101.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4362,7 +4371,7 @@
   }
  },
  "https://ooi20261114.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4371,7 +4380,7 @@
   }
  },
  "https://ooi20261115.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4380,16 +4389,16 @@
   }
  },
  "https://ooi20261121.peatix.com/": {
-  "fetchedAt": "2026-11-21",
-  "httpStatus": 0,
-  "failCount": 1,
+  "fetchedAt": "2026-11-22",
+  "httpStatus": 200,
+  "failCount": 0,
   "mismatch": {},
   "evidenceOk": {
    "trx-oi-keibajo-tokyo-city-flea": true
   }
  },
  "https://ooi20261122.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4398,7 +4407,7 @@
   }
  },
  "https://ooi20261123.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4407,7 +4416,7 @@
   }
  },
  "https://ooi20261128.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4416,7 +4425,7 @@
   }
  },
  "https://ooi20261129.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4425,7 +4434,7 @@
   }
  },
  "https://ooi20261205.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4434,7 +4443,7 @@
   }
  },
  "https://ooi20261206.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4443,7 +4452,7 @@
   }
  },
  "https://ooi20261212.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4452,7 +4461,7 @@
   }
  },
  "https://ooi20261213.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4461,7 +4470,7 @@
   }
  },
  "https://ooi20261219.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4470,7 +4479,7 @@
   }
  },
  "https://ooi20261220.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4479,7 +4488,7 @@
   }
  },
  "https://ooi20261226.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4488,7 +4497,7 @@
   }
  },
  "https://ooi20261227.peatix.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4625,7 +4634,7 @@
   }
  },
  "http://www.shinjuku-rc.org/nishiwaseda/furima.htm": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"1599-65ef09aa60f00\"",
@@ -4690,7 +4699,7 @@
   }
  },
  "https://www.pref.saitama.lg.jp/shisetsu/koen/028.html": {
-  "fetchedAt": "2026-11-18",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"3f00-64f65bb70c574\"",
@@ -4701,7 +4710,7 @@
   }
  },
  "http://www.shinjuku-rc.org/nishiwaseda/event/e_news.htm": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"1a40-65ef0a1cd1d00\"",
@@ -4743,7 +4752,7 @@
   }
  },
  "https://www.fmfm-king.com/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4755,7 +4764,7 @@
   }
  },
  "https://lohas-park.jp/event/kiji6263/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4782,7 +4791,7 @@
   }
  },
  "https://fukuokacitymarket.com/events/toujin-nigiwaiichi/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4791,7 +4800,7 @@
   }
  },
  "https://fukuokacitymarket.com/events/toujin-arcade/": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 200,
   "failCount": 0,
   "mismatch": {},
@@ -4809,7 +4818,7 @@
   }
  },
  "https://www.nadeshikofurima.com/amaiseki.html": {
-  "fetchedAt": "2026-11-21",
+  "fetchedAt": "2026-11-22",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"4904-6605aa8f08cd8\"",
