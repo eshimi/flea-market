@@ -5377,9 +5377,9 @@
   "id": "recycler-jp-schedule",
   "url": "https://www2.recycler.jp/sm/index.php",
   "name": "リサイクル運動市民の会（開催スケジュール）",
-  "detectedAt": "2026-11-22",
+  "detectedAt": "2026-11-23",
   "reason": "changed",
-  "hash": "784a8075919970cf",
+  "hash": "3893e28ad412f7c5",
   "status": "pending"
  },
  {
@@ -5791,9 +5791,9 @@
   "id": "showakinen-koen-3bf349",
   "url": "https://www.showakinen-koen.jp/",
   "name": "www.showakinen-koen.jp",
-  "detectedAt": "2026-11-20",
+  "detectedAt": "2026-11-23",
   "reason": "changed",
-  "hash": "fe4ff8834edf671c",
+  "hash": "73e949206222d269",
   "status": "pending"
  },
  {
@@ -5965,6 +5965,51 @@
   "detectedAt": "2026-11-22",
   "reason": "changed",
   "hash": "53a671cdc13fa096",
+  "status": "pending"
+ },
+ {
+  "id": "furima-japan",
+  "url": "https://www.fmfm-king.com/",
+  "name": "フリマジャパン（滋賀・京都・大阪・三重など）",
+  "detectedAt": "2026-11-23",
+  "reason": "changed",
+  "hash": "1ed45e87fc9bc919",
+  "status": "pending"
+ },
+ {
+  "id": "recycle-undo-hokkaido",
+  "url": "https://www.recyclefmd.gr.jp/",
+  "name": "リサイクル運動市民の会 北海道本部（フリーマーケット北海道）",
+  "detectedAt": "2026-11-23",
+  "reason": "changed",
+  "hash": "c62a767815824a79",
+  "status": "pending"
+ },
+ {
+  "id": "trx-tokyo-recycle",
+  "url": "https://trx.jp/",
+  "name": "東京リサイクル（フリーマーケット情報。大井競馬場フリマなど）",
+  "detectedAt": "2026-11-23",
+  "reason": "changed",
+  "hash": "f89059d5a23d38f4",
+  "status": "pending"
+ },
+ {
+  "id": "hyakumanben-tedukuri-ichi",
+  "url": "https://www.tedukuri-ichi.com/",
+  "name": "手づくり市.com（京都 百万遍さんの手づくり市・梅小路公園手づくり市）",
+  "detectedAt": "2026-11-23",
+  "reason": "changed",
+  "hash": "6e0bd8566b1dd3c8",
+  "status": "pending"
+ },
+ {
+  "id": "rpa-yuyu-marche",
+  "url": "https://rpa.flima.net/",
+  "name": "リサイクル運動推進の会・友遊（ゆうゆう）マルシェ（愛知）",
+  "detectedAt": "2026-11-23",
+  "reason": "changed",
+  "hash": "f8c5545921aeb843",
   "status": "pending"
  }
 ]

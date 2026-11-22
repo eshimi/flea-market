@@ -1,6 +1,302 @@
 {
- "lastDate": "2026-11-21",
+ "lastDate": "2026-11-22",
  "items": [
+  {
+   "series": "agripark-yumesugito-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "http://www.pikaru.co.jp/event.html"
+  },
+  {
+   "series": "bia-osaka-bay-tower",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-21",
+   "source": "https://b-i-a.jp/reserve/osaka-bay-tower/"
+  },
+  {
+   "series": "bon-dimanche-oimachi-tracks",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-22",
+   "source": "https://bon.haleinc.co.jp/event/"
+  },
+  {
+   "series": "cpm-rakuraku-ichi-tajimi",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-22",
+   "source": "https://www.cpm-gifu.jp/rakuraku/schedule/"
+  },
+  {
+   "series": "fmj-alplaza-yasu",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-22",
+   "source": "https://www.fmfm-king.com/yasu11-22/"
+  },
+  {
+   "series": "fmj-kirarie-kusatsu",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-22",
+   "source": "https://www.fmfm-king.com/kirarie10-18/"
+  },
+  {
+   "series": "fmj-minoh-cues-mall",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-22",
+   "source": "https://www.fmfm-king.com/enmino10-25/"
+  },
+  {
+   "series": "fmj-suzuka-sakura-no-mori",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-23",
+   "note": "にぎわい祭り",
+   "source": "https://www.fmfm-king.com/sakura11-21-22-23/"
+  },
+  {
+   "series": "fmj-yamato-saidaiji-ekimae",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-22",
+   "source": "https://www.fmfm-king.com/saidaiji10-25/"
+  },
+  {
+   "series": "fmpn-toda-sakura-pal",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-22",
+   "source": "https://recycle-man.or.jp/"
+  },
+  {
+   "series": "frma-ukima-park-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-22",
+   "source": "http://www.frma.jp/"
+  },
+  {
+   "series": "fugenji-konjakuichi",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://www.city.hikari.lg.jp/soshiki/3/kankyo_jigyo/recycle/threer/2325.html"
+  },
+  {
+   "series": "fujikawa-rakuza-kottou-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://fujikawarakuza.co.jp/event"
+  },
+  {
+   "series": "grandy21-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://michinoku.info/"
+  },
+  {
+   "series": "hiroshima-ujina-minato-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://humfp.net/"
+  },
+  {
+   "series": "ikuta-ryokuchi-flea-tmc",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://tmc-dx.org/area/ikuta.html"
+  },
+  {
+   "series": "kamigamo-tedukuri-ichi",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-23",
+   "source": "https://kamigamo-tedukuriichi.com/publics/index/145/"
+  },
+  {
+   "series": "kamiyabe-free-market",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-22",
+   "source": "https://cgi.city.yokohama.lg.jp/common/event2/event_detail.html?id=64965"
+  },
+  {
+   "series": "kodomonokuni-tanpopo-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://kodomonokuni.org/event_topics/detail.html?id=50"
+  },
+  {
+   "series": "kyoto-city-hall-plusone-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "http://www.plusone.ne.jp/?cat=4"
+  },
+  {
+   "series": "lohas-park-itami",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-23",
+   "source": "https://lohas-park.jp/event/kiji5944/"
+  },
+  {
+   "series": "matsumoto-alps-park-flea-furimanet",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "http://furimanet.com/"
+  },
+  {
+   "series": "milk-akebonoyama-park-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "http://flma.jp/"
+  },
+  {
+   "series": "mizube-plaza-kamoto-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://mizube-plaza.co.jp/events/sample-events1/"
+  },
+  {
+   "series": "nadeshiko-amaiseki-park-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://www.nadeshikofurima.com/amaiseki.html"
+  },
+  {
+   "series": "osaka-garagesale-higashinari",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-23",
+   "source": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  {
+   "series": "rbf-koshigaya-laketown",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-08",
+   "source": "https://www.rbf.jp/laketown2.html"
+  },
+  {
+   "series": "recycler-ajinomoto-stadium-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-22",
+   "source": "https://www2.recycler.jp/sm/hall_detail.php?eventkbncode=004"
+  },
+  {
+   "series": "saitama-tokorozawa-aviation-park-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://furima-s.com/kaijouannai/tokorozawa.htm"
+  },
+  {
+   "series": "shibuya-recycle-bazaar",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-22",
+   "note": "会場：リフレッシュ氷川／10:00〜13:30／出店24店",
+   "source": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/bazzar.html"
+  },
+  {
+   "series": "shizumall-nishigaya-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://www.shizuoka4r.jp/nishigaya/"
+  },
+  {
+   "series": "shizuoka-waiwai-yumeichi-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://shizuokashi-sk.com/free/freemarket"
+  },
+  {
+   "series": "sumida-kinshi-park-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-22",
+   "source": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/3r_torikumi/3r_jissen/20220125.html"
+  },
+  {
+   "series": "swapmeet-hanahaku",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://swapmeet.ne.jp/info/hanahaku"
+  },
+  {
+   "series": "tojinmachi-flea-fukuoka-city-market",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-23",
+   "source": "https://fukuokacitymarket.com/events/toujin-nigiwaiichi/"
+  },
+  {
+   "series": "tokushima-bikkuri-nichiyoichi-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://www.nichiyouichi.com/"
+  },
+  {
+   "series": "tokyo-romantic-shibuya",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-22",
+   "source": "https://tokyo-romantic.com/"
+  },
+  {
+   "series": "trial-isesaki-flea-fudankyo",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://fleamarket.or.jp/isesaki.html"
+  },
+  {
+   "series": "trx-oi-keibajo-tokyo-city-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-23",
+   "source": "https://trx.jp/schejule"
+  },
+  {
+   "series": "unomi-park-flea-recycler-kanagawa",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://www.hama-midorinokyokai.or.jp/park/uminokouen/details/111111.php"
+  },
+  {
+   "series": "york-benimaru-ishibashi-flea",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://sites.google.com/view/holidayplanning"
+  },
+  {
+   "series": "yuyu-marche-motohama-park",
+   "date": "2026-11-22",
+   "status": "confirmed",
+   "checkedAt": "2026-11-23",
+   "source": "https://rpa.flima.net/%e9%96%8b%e5%82%ac%e6%97%a5%e7%a8%8b/"
+  },
   {
    "series": "agripark-yumesugito-flea",
    "date": "2026-11-21",
