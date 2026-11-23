@@ -1,6 +1,107 @@
 {
- "lastDate": "2026-11-22",
+ "lastDate": "2026-11-23",
  "items": [
+  {
+   "series": "agripark-yumesugito-flea",
+   "date": "2026-11-23",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "http://www.pikaru.co.jp/event.html"
+  },
+  {
+   "series": "bia-iwashikincyaku",
+   "date": "2026-11-23",
+   "status": "cancelled",
+   "checkedAt": "2026-11-10",
+   "note": "会場の都合（リニューアル後の一部追加工事）により開催中止（主催者のお詫びの記載）",
+   "source": "https://b-i-a.jp/reserve/iwashikincyaku/"
+  },
+  {
+   "series": "fmj-fukakita-ryokuchi",
+   "date": "2026-11-23",
+   "status": "confirmed",
+   "checkedAt": "2026-11-23",
+   "note": "11:00〜16:00",
+   "source": "https://www.fmfm-king.com/fukakita11-23/"
+  },
+  {
+   "series": "fmj-suzuka-sakura-no-mori",
+   "date": "2026-11-23",
+   "status": "confirmed",
+   "checkedAt": "2026-11-23",
+   "note": "にぎわい祭り",
+   "source": "https://www.fmfm-king.com/sakura11-21-22-23/"
+  },
+  {
+   "series": "fmpn-nagareyama-otakanomori",
+   "date": "2026-11-23",
+   "status": "confirmed",
+   "checkedAt": "2026-11-13",
+   "source": "https://recycle-man.or.jp/"
+  },
+  {
+   "series": "frma-kawagoe-suijo-park-flea",
+   "date": "2026-11-23",
+   "status": "confirmed",
+   "checkedAt": "2026-11-24",
+   "source": "http://www.frma.jp/"
+  },
+  {
+   "series": "grandy21-flea",
+   "date": "2026-11-23",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://michinoku.info/"
+  },
+  {
+   "series": "kodomonokuni-tanpopo-flea",
+   "date": "2026-11-23",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://kodomonokuni.org/event_topics/detail.html?id=50"
+  },
+  {
+   "series": "lohas-park-itami",
+   "date": "2026-11-23",
+   "status": "confirmed",
+   "checkedAt": "2026-11-24",
+   "source": "https://lohas-park.jp/event/kiji5944/"
+  },
+  {
+   "series": "oedo-antique-market-tokyo-international-forum",
+   "date": "2026-11-23",
+   "status": "confirmed",
+   "checkedAt": "2026-11-23",
+   "source": "https://www.antique-market.jp/"
+  },
+  {
+   "series": "rbf-kazo-hanasaki-park",
+   "date": "2026-11-23",
+   "status": "confirmed",
+   "checkedAt": "2026-11-23",
+   "source": "https://www.rbf.jp/kazo.wakuwaku.html"
+  },
+  {
+   "series": "swapmeet-hanahaku",
+   "date": "2026-11-23",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://swapmeet.ne.jp/info/hanahaku"
+  },
+  {
+   "series": "tojinmachi-flea-fukuoka-city-market",
+   "date": "2026-11-23",
+   "status": "confirmed",
+   "checkedAt": "2026-11-24",
+   "source": "https://fukuokacitymarket.com/events/toujin-nigiwaiichi/"
+  },
+  {
+   "series": "trx-oi-keibajo-tokyo-city-flea",
+   "date": "2026-11-23",
+   "status": "confirmed",
+   "checkedAt": "2026-11-24",
+   "source": "https://trx.jp/schejule"
+  },
   {
    "series": "agripark-yumesugito-flea",
    "date": "2026-11-22",
