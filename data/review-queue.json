@@ -5368,18 +5368,18 @@
   "id": "nihon-freemarket-kyokai",
   "url": "http://freemarket-go.com/",
   "name": "日本フリーマーケット協会（関西）",
-  "detectedAt": "2026-11-19",
+  "detectedAt": "2026-11-26",
   "reason": "changed",
-  "hash": "4eb5013edde0d91f",
+  "hash": "35825c01911121bf",
   "status": "pending"
  },
  {
   "id": "recycler-jp-schedule",
   "url": "https://www2.recycler.jp/sm/index.php",
   "name": "リサイクル運動市民の会（開催スケジュール）",
-  "detectedAt": "2026-11-25",
+  "detectedAt": "2026-11-26",
   "reason": "changed",
-  "hash": "a7636d647cec278a",
+  "hash": "52d71058c0ed39bd",
   "status": "pending"
  },
  {
@@ -5791,9 +5791,9 @@
   "id": "showakinen-koen-3bf349",
   "url": "https://www.showakinen-koen.jp/",
   "name": "www.showakinen-koen.jp",
-  "detectedAt": "2026-11-23",
+  "detectedAt": "2026-11-26",
   "reason": "changed",
-  "hash": "73e949206222d269",
+  "hash": "8a92c86c2fd9905b",
   "status": "pending"
  },
  {
@@ -6226,6 +6226,15 @@
   "detectedAt": "2026-11-25",
   "reason": "changed",
   "hash": "a12c62f2bffd83ef",
+  "status": "pending"
+ },
+ {
+  "id": "nihon-freemarket-kyokai-schedule",
+  "url": "http://freemarket-go.com/schedule_shop.html",
+  "name": "日本フリーマーケット協会（出店受付スケジュール。大阪・兵庫・奈良・滋賀）",
+  "detectedAt": "2026-11-26",
+  "reason": "changed",
+  "hash": "c7a0afa5c6b02db9",
   "status": "pending"
  }
 ]
