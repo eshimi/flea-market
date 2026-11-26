@@ -574,7 +574,7 @@ function kindSection(ctx, lang, k) {
   const cal = (occ, title) => renderCalendar(ctx, lang, { occ, title, area: true });
   const out = listPaged(lang, `/kind/${k}/`, [{ href: '/kind/', label: K.crumb }, { label: kn }], K.listH1(kn), kindDesc(k, lang), lst,
     cal(lst, lang === 'en' ? `${kn} by date` : `${kn}の開催カレンダー`) + hubBlock(ctx, lang, 'kind', k, kn), nav(null),
-    { after: kindFaq(ctx, k, lang, ser, act), scripts: ['/kind-redir.js'] }).map((x) => ({ ...x, bannerArt: `/img/kind-banner/${k}.webp` }));
+    { after: kindFaq(ctx, k, lang, ser, act), scripts: ['/kind-redir.js'], noindex: !hasActive(lst) }).map((x) => ({ ...x, bannerArt: `/img/kind-banner/${k}.webp` }));
   for (const [p] of combos) {
     const pn = prefLabel(p, lang);
     const cl = lst.filter((o) => o.series.venue.pref === p);
@@ -589,7 +589,7 @@ function kindSection(ctx, lang, k) {
       ? `${kn} in ${pn}: ${ca.length} events in the next ${WINDOW_DAYS} days, from official organizer and municipal pages, updated every morning.`
       : `${pn}の${kn}：今後${WINDOW_DAYS}日で${ca.length}件。主催者・自治体の公式情報をもとに、毎朝更新しています。`;
     out.push(...listPaged(lang, `/kind/${k}/${p}/`, [{ href: '/kind/', label: K.crumb }, { href: `/kind/${k}/`, label: kn }, { label: pn }], h1, lead, cl,
-      cal(cl, lang === 'en' ? `${kn} in ${pn} by date` : `${pn}の${kn}カレンダー`), nav(p), { title: h1, description: desc })
+      cal(cl, lang === 'en' ? `${kn} in ${pn} by date` : `${pn}の${kn}カレンダー`), nav(p), { title: h1, description: desc, noindex: !hasActive(cl) })
       .map((x) => ({ ...x, bannerArt: `/img/kind-banner/${k}.webp` })));
   }
   return out;

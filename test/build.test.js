@@ -1117,6 +1117,22 @@ test('hreflang の双方向と、動的な noindex：両言語の組が揃い、
     }
   }
   assert.ok(empty > 0, '開催が0件の市区町村のページが、テストの日付にはある');
+  // 種類のページ（と、種類×県のページ）：今後の開催が0件なら noindex
+  for (const k of Object.keys(KINDS)) {
+    const kp = byPath.get(`/kind/${k}/`);
+    const want = !hasOcc((x) => x.kinds.includes(k));
+    assert.equal(robots(kp), want, kp.path);
+  }
+  for (const p of pages.filter((x) => /^\/(ja\/)?kind\/[a-z]+\/\d{2}\/$/.test(x.path))) {
+    const [, k, pref] = /kind\/([a-z]+)\/(\d{2})\//.exec(p.path);
+    assert.equal(robots(p), !hasOcc((x) => x.kinds.includes(k) && x.venue.pref === pref), p.path);
+  }
+  // 開催が0件の種類（その種類のシリーズを除いたデータ）：英語・日本語とも noindex。ほかの種類は index のまま
+  const noEngi = { ...real, series: real.series.filter((s) => !s.kinds.includes('engi')) };
+  noEngi.occurrences = real.occurrences.filter((o) => noEngi.series.some((s) => s.id === o.series));
+  const alt = new Map(buildPages(noEngi, today).pages.map((p) => [p.path, p]));
+  for (const path of ['/kind/engi/', '/ja/kind/engi/']) assert.ok(robots(alt.get(path)), `${path}: 開催が0件の種類は noindex`);
+  for (const path of ['/kind/flea/', '/ja/kind/flea/']) assert.ok(!robots(alt.get(path)), `${path}: 開催がある種類は index`);
   // 月別のブログ記事
   const months = pages.filter((p) => /^\/(ja\/)?blog\/month-/.test(p.path));
   assert.ok(months.length >= 2);
