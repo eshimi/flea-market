@@ -73,6 +73,10 @@ const orig = (en, ja) => `${esc(en)}<small class="orig" lang="ja">${esc(ja)}</sm
 const ORIG_KEYS = new Set(['address', 'venue', 'name']);
 const tv = (s, key, ja, lang) => (!ja ? TBC(lang) : lang === 'en' && fieldEn(s, key) ? (ORIG_KEYS.has(key) ? orig(fieldEn(s, key), ja) : esc(fieldEn(s, key))) : esc(ja));
 const pg = (lang, base, x) => ({ path: langPath(base, lang), lang, ...x });
+// 動的な noindex：条件に当てはまるページだけ、検索結果に載せない（リンクはたどらせる）。条件がなくなれば、次のビルドで自動的に外れる。
+// サイトマップ（pages.json）は、head に noindex があるページを除く（下の writeFileSync）
+const NOINDEX = '<meta name="robots" content="noindex,follow">\n';
+const hasActive = (list) => list.some(isActive);
 
 function dayStrip(occ, today, current, lang) {
   const counts = new Map();
@@ -136,7 +140,7 @@ function listPaged(lang, base, crumbs, h1, lead, list0, extra = '', filterHtml =
     const path = n === 1 ? base : `${base}page/${n}/`;
     const cr = n === 1 ? crumbs : [...crumbs.slice(0, -1), { href: base, label: crumbs[crumbs.length - 1].label }, { label: x.page(n) }];
     const rel = (k, m) => `<link rel="${k}" href="${SITE.url}${langPath(m === 1 ? base : `${base}page/${m}/`, lang)}">\n`;
-    const head = `${listLd(h1, slice.map((g) => g[0]), lang)}${n > 1 ? rel('prev', n - 1) : ''}${n < total ? rel('next', n + 1) : ''}${n > 1 ? '<meta name="robots" content="noindex,follow">\n' : ''}`;
+    const head = `${listLd(h1, slice.map((g) => g[0]), lang)}${n > 1 ? rel('prev', n - 1) : ''}${n < total ? rel('next', n + 1) : ''}${n > 1 || seo.noindex ? NOINDEX : ''}`;
     const title = n === 1 ? (seo.title || h1) : `${seo.title || h1} (${x.page(n)})`;
     const first = n === 1;
     return listPage(lang, path, cr, first ? h1 : `${h1} (${x.page(n)})`, first ? lead : '', slice, first ? extra + filterHtml : '', false, { title, description: first ? seo.description : undefined, head, scripts: first ? seo.scripts : [], after: pager(base, n, total, lang) + (first ? seo.after || '' : ''), group: true });
@@ -470,10 +474,10 @@ function areaPages(ctx, lang) {
     const calP = renderCalendar(ctx, lang, { occ: ctx.occ.filter((o) => o.series.venue.pref === p), hash: `#pref=${p}`, title: lang === 'en' ? `Markets by date: ${pn}` : `${pn}の開催カレンダー`, area: true });
     const mp = monthPrefs(ctx, p);
     const extra = areaFacts(ctx.occ.filter((o) => o.series.venue.pref === p), lang) + calP + monthNav(mp, p, null, lang) + (hubText(ctx.hub, 'area', p, lang) ? hubBlock(ctx, lang, 'area', p, pn) : '') + ov.html + (cityLinks ? `<h2 class="sec-h">${esc(A.byCity)}</h2><ul class="grid-links">${cityLinks}</ul><h2 class="sec-h">${esc(A.list)}</h2>` : '');
-    pages.push(...listPaged(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), ov.lead, ctx.occ.filter((o) => o.series.venue.pref === p), extra).map((x) => ({ ...x, bannerArt: `/img/pref/${p}.webp` })));
+    pages.push(...listPaged(lang, `/area/${p}/`, [{ href: '/area/', label: A.crumb }, { label: pn }], A.prefH1(pn), ov.lead, ctx.occ.filter((o) => o.series.venue.pref === p), extra, '', { noindex: !hasActive(ctx.occ.filter((o) => o.series.venue.pref === p)) }).map((x) => ({ ...x, bannerArt: `/img/pref/${p}.webp` })));
     for (const ym of mp.keys()) pages.push(...monthPages(ctx, lang, p, pn, ym, mp, A));
     for (const [c, name] of cities) {
-      pages.push(...listPaged(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c), areaFacts(ctx.occ.filter((o) => o.series.venue.cityCode === c), lang) + renderCalendar(ctx, lang, { occ: ctx.occ.filter((o) => o.series.venue.cityCode === c), title: lang === 'en' ? `Markets by date: ${cityL(name, lang)}` : `${cityL(name, lang)}の開催カレンダー`, area: true }) + hubBlock(ctx, lang, 'city', c, `${cityL(name, lang)}, ${pn}`)));
+      pages.push(...listPaged(lang, `/area/${p}/${c}/`, [{ href: '/area/', label: A.crumb }, { href: `/area/${p}/`, label: pn }, { label: cityL(name, lang) }], A.cityH1(cityL(name, lang), pn), '', ctx.occ.filter((o) => o.series.venue.cityCode === c), areaFacts(ctx.occ.filter((o) => o.series.venue.cityCode === c), lang) + renderCalendar(ctx, lang, { occ: ctx.occ.filter((o) => o.series.venue.cityCode === c), title: lang === 'en' ? `Markets by date: ${cityL(name, lang)}` : `${cityL(name, lang)}の開催カレンダー`, area: true }) + hubBlock(ctx, lang, 'city', c, `${cityL(name, lang)}, ${pn}`), '', { noindex: !hasActive(ctx.occ.filter((o) => o.series.venue.cityCode === c)) }));
     }
   }
   return pages;
@@ -791,7 +795,7 @@ ${reviewsSection(s.id, lang)}
   const dsc = nx ? (lang === 'ja'
     ? `${nameL(s, lang)}の次回は${dlabel(nx.date, lang)}（${PREFS[v.pref]}${v.city || ''}${v.name ? `・${v.name}` : ''}）。開催のきまり：${s.recurrence.text}。${tm ? `時間：${tm}。` : ''}${s.scale?.stalls ? `出店数：${s.scale.stalls}店。` : ''}主催者・自治体の公式情報をもとに掲載（最終確認 ${lastChecked(s)}）。`
     : `Next: ${dlabel(nx.date, lang)} — ${nameL(s, lang)} (${[cityL(v.city, lang), pn].filter(Boolean).join(', ')}). ${recurEn(s.recurrence) ? `${recurEn(s.recurrence)}. ` : ''}${s.scale?.stalls ? `About ${s.scale.stalls} stalls. ` : ''}Listed from official organizer information (last checked ${lastChecked(s)}).`) : p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s));
-  return pg(lang, `/e/${s.id}/`, { title: ttl, description: dsc, body, head: eventLd(s, list, lang, p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s))), scripts: ['/weather.js', '/map.js', '/vote.js', '/copy.js', ...(REVIEWS_ON ? ['/review.js'] : [])], css: ['/review.css', '/poll.css'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
+  return pg(lang, `/e/${s.id}/`, { title: ttl, description: dsc, body, head: (hasActive(list) ? '' : NOINDEX) + eventLd(s, list, lang, p.desc(nameL(s, lang), lang === 'ja' ? s.recurrence.text : recurEn(s.recurrence) || s.recurrence.text, lastChecked(s))), scripts: ['/weather.js', '/map.js', '/vote.js', '/copy.js', ...(REVIEWS_ON ? ['/review.js'] : [])], css: ['/review.css', '/poll.css'], keywords: [nameL(s, lang), prefLabel(s.venue.pref, lang), cityL(v.city, lang), ...s.kinds.map((k) => kindName(k, lang))].filter(Boolean) });
 }
 
 function shutenPage(ctx, lang) {
@@ -1047,7 +1051,7 @@ function blogPost(post, lang) {
   if (post.faq?.[lang]?.length) extra.push({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: post.faq[lang].map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1') } })) });
   const ldAll = [ld, ...extra].map((x) => `<script type="application/ld+json">${JSON.stringify(x).replace(/</g, '\\u003c')}</script>\n`).join('');
   const sq = post.seo?.[lang];
-  return pg(lang, `/blog/${post.slug}/`, { title: sq ? sq.title : c.title, description: sq ? sq.lead + c.summary : c.summary, body: renderPost(post, posts(), lang), css: ART_CSS, keywords: [...(c.tags || []), c.title], head: `${feedLink(lang)}${ldAll}` });
+  return pg(lang, `/blog/${post.slug}/`, { title: sq ? sq.title : c.title, description: sq ? sq.lead + c.summary : c.summary, body: renderPost(post, posts(), lang), css: ART_CSS, keywords: [...(c.tags || []), c.title], head: `${post.slug.startsWith('month-') ? NOINDEX : ''}${feedLink(lang)}${ldAll}` });
 }
 
 // RSS（/blog/feed.xml、/ja/blog/feed.xml）
