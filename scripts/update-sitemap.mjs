@@ -18,6 +18,24 @@ export function mainHash(html) {
   return 'v1:' + createHash('sha256').update(body).digest('hex').slice(0, 16);
 }
 
+// サイトマップに入れないページ（検索に載せる価値のないもの）。ふだんは build-site.mjs が pages.json に入れないが、念のためここでも除く：
+//  .html（404 など）、.ics（カレンダー追加のファイル）、検索（/search/）、マイリスト（/saved/）、管理画面（/admin/）。
+//  noindex のページ（開催が0件の地域・終わった催し・月別ブログ・2ページ目以降の一覧など）は、build-site.mjs が pages.json から除いている
+export const SITEMAP_EXCLUDE = [/\.(html|ics)$/, /\/ics\//, /^\/(ja\/)?(search|saved|admin)\//];
+export const sitemapPaths = (paths) => paths.filter((p) => !SITEMAP_EXCLUDE.some((re) => re.test(p)));
+
+// 1件分の <url>。hreflang（en・ja・x-default）は、相手の言語のページも、サイトマップにあるときだけ出す（なければ、ないページを示さない）
+export function sitemapUrl(p, lastmod, inMap, siteUrl = SITE.url) {
+  const { base } = splitPath(p);
+  const en = langPath(base, 'en');
+  const ja = langPath(base, 'ja');
+  const alt = inMap.has(en) && inMap.has(ja)
+    ? [['en', en], ['ja', ja], ['x-default', en]].map(([l, h]) => `<xhtml:link rel="alternate" hreflang="${l}" href="${siteUrl}${h}"/>`).join('')
+    : '';
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(lastmod)) throw new Error(`lastmod の形式が不正: ${p} ${lastmod}`);
+  return `<url><loc>${siteUrl}${p}</loc><lastmod>${lastmod}</lastmod>${alt}</url>`;
+}
+
 export function updateLastmod(state, pages, today) {
   const next = {};
   for (const [path, hash] of pages) {
@@ -32,17 +50,14 @@ function main() {
   const today = arg('today') || todayJst();
   const stateFile = join(ROOT, 'data', 'sitemap-lastmod.json');
   const state = existsSync(stateFile) ? JSON.parse(readFileSync(stateFile, 'utf8')) : {};
-  const paths = JSON.parse(readFileSync(join(out, 'pages.json'), 'utf8'));
+  const paths = sitemapPaths(JSON.parse(readFileSync(join(out, 'pages.json'), 'utf8')));
   const next = updateLastmod(state, paths.map((p) => [p, mainHash(readFileSync(join(out, p, 'index.html'), 'utf8'))]), today);
   writeFileSync(stateFile, JSON.stringify(next, null, 1) + '\n');
   // 英語（既定）と日本語は、お互いを hreflang で示す
-  const urls = paths.map((p) => {
-    const { base } = splitPath(p);
-    const alt = [['en', langPath(base, 'en')], ['ja', langPath(base, 'ja')], ['x-default', langPath(base, 'en')]].map(([l, h]) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE.url}${h}"/>`).join('');
-    return `<url><loc>${SITE.url}${p}</loc><lastmod>${next[p].lastmod}</lastmod>${alt}</url>`;
-  }).join('\n');
+  const inMap = new Set(paths);
+  const urls = paths.map((p) => sitemapUrl(p, next[p].lastmod, inMap)).join('\n');
   writeFileSync(join(out, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls}\n</urlset>\n`);
-  writeFileSync(join(out, 'robots.txt'), INDEXABLE ? `User-agent: *\nAllow: /\nDisallow: /admin/\nSitemap: ${SITE.url}/sitemap.xml\n` : 'User-agent: *\nDisallow: /\n');
+  writeFileSync(join(out, 'robots.txt'), INDEXABLE ? `User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /ics/\nDisallow: /ja/ics/\nSitemap: ${SITE.url}/sitemap.xml\n` : 'User-agent: *\nDisallow: /\n');
   console.log(`sitemap.xml：${paths.length} ページ`);
 }
 

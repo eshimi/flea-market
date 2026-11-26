@@ -8,7 +8,7 @@ import { SITE, ADSENSE_CLIENT } from '../scripts/lib/nav.mjs';
 import { langPath, splitPath } from '../scripts/lib/l10n.mjs';
 import { PREFS } from '../scripts/lib/areas.mjs';
 import { KINDS } from '../scripts/lib/kinds.mjs';
-import { mainHash, updateLastmod } from '../scripts/update-sitemap.mjs';
+import { mainHash, sitemapPaths, sitemapUrl, updateLastmod } from '../scripts/update-sitemap.mjs';
 import { REVIEWS_ON } from '../scripts/lib/reviews-view.mjs';
 
 // 管理画面（静的ファイル static/admin/reviews.html。Cloudflare が .html を外して配る）。フッターの「©」が隠しリンク
@@ -1061,4 +1061,15 @@ test('主要都市の週末ページ：両言語・今週末と来週末。開�
   }
   assert.match(page('/ja/weekend/13/').title, /^東京の週末フリマ情報/);
   assert.match(page('/weekend/13/').title, /Tokyo/);
+});
+
+test('サイトマップ：.ics・検索・マイリスト・管理画面は除き、hreflang は両言語のページがあるときだけ出し、lastmod は日付の形', () => {
+  const paths = ['/', '/ja/', '/404.html', '/ics/a-2026-11-01.ics', '/ja/ics/a-2026-11-01.ics', '/search/', '/ja/search/', '/saved/', '/admin/reviews/', '/e/x/', '/ja/e/x/', '/only-en/'];
+  const kept = sitemapPaths(paths);
+  assert.deepEqual(kept, ['/', '/ja/', '/e/x/', '/ja/e/x/', '/only-en/']);
+  const inMap = new Set(kept);
+  const pair = sitemapUrl('/e/x/', '2026-11-01', inMap, 'https://s.example');
+  assert.ok(pair.includes('hreflang="en" href="https://s.example/e/x/"') && pair.includes('hreflang="ja" href="https://s.example/ja/e/x/"') && pair.includes('hreflang="x-default" href="https://s.example/e/x/"'));
+  assert.ok(!sitemapUrl('/only-en/', '2026-11-01', inMap, 'https://s.example').includes('hreflang'), '相手の言語のページがないときは、hreflang を出さない');
+  assert.throws(() => sitemapUrl('/', '2026/11/01', inMap), /lastmod/);
 });
