@@ -10,6 +10,7 @@ import { PREFS } from '../scripts/lib/areas.mjs';
 import { KINDS } from '../scripts/lib/kinds.mjs';
 import { mainHash, sitemapPaths, sitemapUrl, updateLastmod } from '../scripts/update-sitemap.mjs';
 import { REVIEWS_ON } from '../scripts/lib/reviews-view.mjs';
+import { buildOccurrences, isActive } from '../scripts/lib/events.mjs';
 
 // 管理画面（静的ファイル static/admin/reviews.html。Cloudflare が .html を外して配る）。フッターの「©」が隠しリンク
 const ADMIN_PAGE = '/admin/reviews';
@@ -1072,4 +1073,54 @@ test('サイトマップ：.ics・検索・マイリスト・管理画面は除�
   assert.ok(pair.includes('hreflang="en" href="https://s.example/e/x/"') && pair.includes('hreflang="ja" href="https://s.example/ja/e/x/"') && pair.includes('hreflang="x-default" href="https://s.example/e/x/"'));
   assert.ok(!sitemapUrl('/only-en/', '2026-11-01', inMap, 'https://s.example').includes('hreflang'), '相手の言語のページがないときは、hreflang を出さない');
   assert.throws(() => sitemapUrl('/', '2026/11/01', inMap), /lastmod/);
+});
+
+test('hreflang の双方向と、動的な noindex：両言語の組が揃い、noindex が言語でそろい、開催が0件の地域・終わった催し・月別ブログだけが noindex', () => {
+  const real = loadData();
+  const today = '2026-11-27';
+  const { pages } = buildPages(real, today);
+  const byPath = new Map(pages.map((p) => [p.path, p]));
+  // ページごとの noindex（head に足すもの）。テスト環境では、サイト全体の noindex,nofollow（公開前の安全装置）が layout に入るので、それは見ない
+  const robots = (p) => (p.head || '').includes('name="robots" content="noindex,follow"');
+  const occ = buildOccurrences(real.series, real.occurrences, today).filter(isActive);
+  const hasOcc = (f) => occ.some((o) => f(o.series));
+  let n = 0;
+  for (const p of pages) {
+    if (p.path.endsWith('404.html')) continue;
+    const { base } = splitPath(p.path);
+    // 双方向：反対の言語のページがあり、そちらも同じ組を示し、noindex も同じ
+    const other = byPath.get(langPath(base, p.lang === 'ja' ? 'en' : 'ja'));
+    assert.ok(other, `${p.path}: 反対の言語のページがありません`);
+    assert.equal(robots(other), robots(p), `${p.path}: noindex が言語でそろっていません`);
+    const h = layout(p); const o = layout(other);
+    for (const code of ['en', 'ja', 'x-default']) {
+      const re = new RegExp(`hreflang="${code}" href="([^"]+)"`);
+      assert.equal(re.exec(h)[1], re.exec(o)[1], `${p.path}: hreflang ${code} が両言語で違います`);
+    }
+    n++;
+  }
+  assert.ok(n > 500);
+  // 開催が終わった催しの詳細ページ：今後の（中止・延期でない）開催がなければ noindex、あれば index
+  const series = real.series.filter((s) => byPath.has(`/e/${s.id}/`));
+  assert.ok(series.length > 100);
+  for (const s of series) assert.equal(robots(byPath.get(`/e/${s.id}/`)), !hasOcc((x) => x.id === s.id), `/e/${s.id}/`);
+  // 地域ページ（県・市区町村の1ページ目）：今後の開催が0件なら noindex
+  let empty = 0;
+  for (const s of real.series) {
+    const pref = byPath.get(`/area/${s.venue.pref}/`);
+    assert.equal(robots(pref), !hasOcc((x) => x.venue.pref === s.venue.pref), pref.path);
+    if (s.venue.cityCode) {
+      const city = byPath.get(`/area/${s.venue.pref}/${s.venue.cityCode}/`);
+      const want = !hasOcc((x) => x.venue.cityCode === s.venue.cityCode);
+      assert.equal(robots(city), want, city.path);
+      if (want) empty++;
+    }
+  }
+  assert.ok(empty > 0, '開催が0件の市区町村のページが、テストの日付にはある');
+  // 月別のブログ記事
+  const months = pages.filter((p) => /^\/(ja\/)?blog\/month-/.test(p.path));
+  assert.ok(months.length >= 2);
+  for (const p of months) assert.ok(robots(p), p.path);
+  // 通常の記事・トップは index
+  assert.ok(!robots(byPath.get('/')) && !robots(byPath.get('/ja/')) && !robots(byPath.get('/blog/')));
 });
