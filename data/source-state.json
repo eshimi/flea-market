@@ -4914,5 +4914,35 @@
   "evidenceOk": {
    "nadeshiko-okazaki-park-flea": false
   }
+ },
+ "https://kitte-museum.jp/bazaar/": {
+  "fetchedAt": "2026-11-27",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "\"4fd2-660827ba6f7a7\"",
+  "lastModified": "Wed, 18 Nov 2026 00:56:36 GMT",
+  "mismatch": {},
+  "evidenceOk": {
+   "kitte-stamp-bazaar": true
+  }
+ },
+ "https://haveagood.market/": {
+  "fetchedAt": "2026-11-27",
+  "httpStatus": 200,
+  "failCount": 0,
+  "mismatch": {},
+  "evidenceOk": {
+   "have-a-goood-market": true
+  }
+ },
+ "https://vintage-artisan-market.com/en": {
+  "fetchedAt": "2026-11-27",
+  "httpStatus": 200,
+  "failCount": 0,
+  "etag": "W/\"2elia6ap9r1g4i\"",
+  "mismatch": {},
+  "evidenceOk": {
+   "shibuya-vintage-artisan-market": true
+  }
  }
 }
