@@ -3176,6 +3176,33 @@
       "rain": "Cancelled in rain",
       "summary": "An open-air market of vintage clothing, antiques, retro goods and handmade work (sellers are selected by the organizers)",
       "address": "1-7-3 Jinnan, Shibuya City, Tokyo"
+    },
+    "shirasasa-inari-kottoichi": {
+      "name": "Shirasasa Inari Antique and Flea Market",
+      "venue": "Shirasasa Inari Shrine, approach path",
+      "rule": "Date in the November notice on the shrine’s official page (Nov 3, 23 and 29; the 29th is the fifth Sunday). Later dates are in the “2026 schedule” image on the official page (to be confirmed)",
+      "time": "About 7:00–15:00",
+      "rain": "Held in rain, cancelled in stormy weather (check the shrine’s X and Instagram the day before and on the day)",
+      "address": "1089 Imaizumi, Hadano City, Kanagawa"
+    },
+    "bashamichi-ekinaka-flea": {
+      "name": "Bashamichi Station Flea Market (Recycle Undo Shimin no Kai, Kanagawa Headquarters)",
+      "venue": "Minatomirai Line Bashamichi Station, basement level 1",
+      "rule": "Dates on the official page of Recycle Undo Shimin no Kai, Kanagawa Headquarters (booking status is not shown here)",
+      "time": "10:00–15:00",
+      "rain": "Held in rain (fully indoors)",
+      "fee": "3,000 yen per booth (bring your own goods; 3 m × 1.5 m)",
+      "notes": "Up to 60 stalls",
+      "address": "5-49 Honcho, Naka-ku, Yokohama, basement level 1",
+      "access": "Right at Bashamichi Station (Minatomirai Line)"
+    },
+    "yokoyama-autumn-festa-2026": {
+      "name": "Yokoyama Autumn Festa 2026",
+      "venue": "Yokoyama Park, Metasequoia avenue (beside the Jurin Hiroba)",
+      "rule": "Dates in the official notice of Yokoyama Park",
+      "time": "10:00–16:00",
+      "notes": "About 70 stalls of food trucks and handmade goods",
+      "summary": "Food trucks and handmade stalls, outdoor activities and local concerts"
     }
   },
   "organizers": {
@@ -3347,7 +3374,7 @@
     "外房フリマ実行委員会": "Sotobo Flea Market Executive Committee",
     "里彩くるカエル倶楽部": "Risai Kuru Kaeru Club",
     "ミルクの会（NPO法人地域活性化リサイクル活動ミルクの会）": "Milk no Kai (NPO Regional Revitalization Recycling Activities Milk no Kai)",
-    "リサイクル運動市民の会 神奈川本部": "Recycle Movement Citizens’ Association, Kanagawa Headquarters",
+    "リサイクル運動市民の会 神奈川本部": "Recycle Undo Shimin no Kai, Kanagawa Headquarters",
     "たんぽぽフリーマーケット": "Tanpopo Flea Market",
     "全国GILフリーマーケット協会": "National GIL Flea Market Association",
     "リサイクル運動推進事業協会（第4支部）": "Recycle Movement Promotion Association (4th Branch)",
@@ -3400,7 +3427,9 @@
     "都城フリーマーケットの会": "Miyakonojo Flea Market Association",
     "切手の博物館（日本郵趣協会 普及・流通委員会が出店）": "Postage Stamp Museum (the Japan Philatelic Society’s promotion committee exhibits)",
     "三茶ワークカンパニー株式会社（後援：世田谷区）": "Sancha Work Company Co., Ltd. (supported by Setagaya Ward)",
-    "Vintage & Artisan Market": "Vintage & Artisan Market"
+    "Vintage & Artisan Market": "Vintage & Artisan Market",
+    "白笹稲荷神社": "Shirasasa Inari Shrine",
+    "横山公園グループパートナーズ（横山公園の指定管理者）": "Yokoyama Park Group Partners (designated manager of Yokoyama Park)"
   },
   "labels": {
     "問い合わせ先": "Contact",
@@ -3639,7 +3668,10 @@
     "直方市": "Nogata City",
     "佐世保市": "Sasebo City",
     "山鹿市": "Yamaga City",
-    "瀬戸内町": "Setouchi Town"
+    "瀬戸内町": "Setouchi Town",
+    "秦野市": "Hadano City",
+    "横浜市中区": "Naka Ward, Yokohama",
+    "相模原市中央区": "Chuo Ward, Sagamihara"
   },
   "notes": {
     "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",

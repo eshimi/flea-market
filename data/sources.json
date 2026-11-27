@@ -6502,5 +6502,38 @@
       "checkedAt": "2026-11-27",
       "note": "利用規約のページは見つからず（プライバシーポリシーのみ）。robots.txt は許可（200）。日付・時間・会場・入場料・雨天の事実だけを掲載し、文章・画像は転載しない"
     }
+  },
+  {
+    "url": "https://shirasasa.or.jp/ja/",
+    "series": [
+      "shirasasa-inari-kottoichi"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-27",
+      "note": "利用規約・著作権のページは見つからず。robots.txt は 404（制限なし）。日付・時間・場所・雨天の事実だけを掲載し、文章・画像は転載しない。神社の電話番号は載せない。お知らせは次の告知で置き換わり、日が過ぎた日付の文は消える"
+    }
+  },
+  {
+    "url": "https://recyclekanagawa.com/place/%E9%A6%AC%E8%BB%8A%E9%81%93/",
+    "series": [
+      "bashamichi-ekinaka-flea"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-27",
+      "note": "利用規約（/terms/）に、取得・転載を禁じる文言は見つからず（出店者の投稿物などの規定のみ）。robots.txt は許可（200）。日付・時間・会場・出店数・出店料の事実だけを掲載し、文章・画像は転載しない。受付状態（受付中）は載せない"
+    }
+  },
+  {
+    "url": "https://www.kanagawaparks.com/yokoyama/news/202608100931405452.html",
+    "series": [
+      "yokoyama-autumn-festa-2026"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-27",
+      "note": "利用規約のページは見つからず。robots.txt は許可（200）。日付・時間・場所・出店数の事実だけを掲載し、文章・画像は転載しない"
+    }
   }
 ]

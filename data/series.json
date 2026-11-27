@@ -21375,5 +21375,162 @@
     ]
    }
   ]
+ },
+ {
+  "id": "shirasasa-inari-kottoichi",
+  "name": "白笹稲荷骨董蚤の市",
+  "kinds": [
+   "kotto"
+  ],
+  "organizer": {
+   "name": "白笹稲荷神社",
+   "url": "https://shirasasa.or.jp/ja/"
+  },
+  "venue": {
+   "name": "白笹稲荷神社 参道",
+   "pref": "14",
+   "city": "秦野市",
+   "cityCode": "14211",
+   "address": "神奈川県秦野市今泉1089番地"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-29"
+   ],
+   "text": "白笹稲荷神社の公式ページのお知らせにある11月の開催日（11/3・23・29。第五日曜日の29日）。今後の日程は、公式の「令和8年開催予定」の画像で確認（要確認）"
+  },
+  "time": {
+   "text": "7:00〜15:00頃",
+   "start": "07:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天決行・荒天中止（開催状況は、前日と当日に神社のX・Instagramで確認）"
+  },
+  "sources": [
+   {
+    "url": "https://shirasasa.or.jp/ja/",
+    "type": "organizer",
+    "checkedAt": "2026-11-27",
+    "evidence": [
+     "２９日（日・第五日曜日）午前７時～午後３時頃 まで、参道にて骨董市が開催されます。（雨天決行・荒天中止）",
+     "〒257-0014 神奈川県秦野市 今泉1089番地"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "bashamichi-ekinaka-flea",
+  "name": "馬車道エキナカフリマ（リサイクル運動市民の会 神奈川本部）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "リサイクル運動市民の会 神奈川本部",
+   "url": "https://recyclekanagawa.com/place/%E9%A6%AC%E8%BB%8A%E9%81%93/"
+  },
+  "venue": {
+   "name": "みなとみらい線 馬車道駅 地下1階",
+   "pref": "14",
+   "city": "横浜市中区",
+   "cityCode": "14104",
+   "address": "横浜市中区本町5-49 地下1F",
+   "access": "みなとみらい線「馬車道駅」下車すぐ"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-29",
+    "2027-01-16"
+   ],
+   "text": "リサイクル運動市民の会 神奈川本部の公式ページに載っている開催日（受付状態は載せない）"
+  },
+  "time": {
+   "text": "10:00〜15:00",
+   "start": "10:00",
+   "end": "15:00"
+  },
+  "visitor": {
+   "rain": "雨天決行（完全屋内）"
+  },
+  "exhibitor": {
+   "fee": "1ブース 3,000円（手持ち出店。区画 3m×1.5m）",
+   "notes": "出店数は最大60店舗"
+  },
+  "scale": {
+   "stalls": 60,
+   "quote": "最大60店舗"
+  },
+  "sources": [
+   {
+    "url": "https://recyclekanagawa.com/place/%E9%A6%AC%E8%BB%8A%E9%81%93/",
+    "type": "organizer",
+    "checkedAt": "2026-11-27",
+    "evidence": [
+     "１１/２９（日）",
+     "１/１６（土）",
+     "※雨天決行！",
+     "〒231-0005 神奈川県横浜市中区本町5-49 地下１F",
+     "10：00～15：00",
+     "出店数は最大60店舗！",
+     "1ブース／3,000 円",
+     "3m × 1.5m",
+     "完全屋内のため雨風の心配はございません"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "yokoyama-autumn-festa-2026",
+  "name": "よこやま オータム フェスタ 2026",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "横山公園グループパートナーズ（横山公園の指定管理者）",
+   "url": "https://www.kanagawaparks.com/yokoyama/news/202608100931405452.html"
+  },
+  "venue": {
+   "name": "横山公園 メタセコイア並木（樹林広場横の大通り）",
+   "pref": "14",
+   "city": "相模原市中央区",
+   "cityCode": "14152"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "text": "横山公園の公式のお知らせにある開催日"
+  },
+  "time": {
+   "text": "10:00〜16:00",
+   "start": "10:00",
+   "end": "16:00"
+  },
+  "exhibitor": {
+   "notes": "約70店舗のキッチンカー・ハンドメイドの出店"
+  },
+  "scale": {
+   "stalls": 70,
+   "quote": "約70店舗"
+  },
+  "summary": "キッチンカー・ハンドメイドの出店、野外アクティビティ、地域コンサート",
+  "sources": [
+   {
+    "url": "https://www.kanagawaparks.com/yokoyama/news/202608100931405452.html",
+    "type": "organizer",
+    "checkedAt": "2026-11-27",
+    "evidence": [
+     "日程：2026年11月28日土曜日・29日日曜日",
+     "時間：両日10:00～16:00",
+     "場所：メタセコイア並木（樹林広場横の大通り）",
+     "約70店舗ものキッチンカーやハンドメイドの出店",
+     "主催：横山公園グループパートナーズ"
+    ]
+   }
+  ]
  }
 ]
