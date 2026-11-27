@@ -6469,5 +6469,38 @@
       "ok": null,
       "note": "ユーザーの指示書（2026-11-18）の調査結果をもとに、人が読んで確かめた情報として登録した。この環境から自動では取得せず、本文の突き合わせもしない。利用規約は未確認（要確認）。掲載は事実の項目（日付・時間・会場・雨天）だけ。最終確認日が14日を超えると「要確認」の表示になる"
     }
+  },
+  {
+    "url": "https://kitte-museum.jp/bazaar/",
+    "series": [
+      "kitte-stamp-bazaar"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-27",
+      "note": "利用規約・著作権のページは確認できていない（要確認）。robots.txt は許可（200）。日付・時間・会場・入場料の事実だけを掲載し、文章・画像は転載しない。出店者の一覧は載せない。問い合わせ先の電話は載せない"
+    }
+  },
+  {
+    "url": "https://haveagood.market/",
+    "series": [
+      "have-a-goood-market"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-27",
+      "note": "利用規約のページは見つからず。robots.txt は許可（200）。日付・会場・主催者名の事実だけを掲載し、文章・画像は転載しない"
+    }
+  },
+  {
+    "url": "https://vintage-artisan-market.com/en",
+    "series": [
+      "shibuya-vintage-artisan-market"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-27",
+      "note": "利用規約のページは見つからず（プライバシーポリシーのみ）。robots.txt は許可（200）。日付・時間・会場・入場料・雨天の事実だけを掲載し、文章・画像は転載しない"
+    }
   }
 ]

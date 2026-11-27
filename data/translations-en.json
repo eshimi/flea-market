@@ -3150,6 +3150,32 @@
       "rule": "1st Sunday of every month (postponed to the 2nd Sunday in case of rain)",
       "time": "8:00–15:00",
       "address": "1330-1 Maeda-cho, Miyakonojo-shi, Miyazaki"
+    },
+    "kitte-stamp-bazaar": {
+      "name": "Stamp Bazaar (Postage Stamp Museum)",
+      "venue": "Postage Stamp Museum, 3rd floor, Spaces 1 and 2",
+      "rule": "Dates on the museum’s official page (150th: Nov 28–29, New Year Special: Jan 16–17, 151st: Feb 27–28, 152nd: Mar 27–28)",
+      "time": "150th event: Saturday 10:30–17:00 / Sunday 10:30–16:00 (other events to be confirmed)",
+      "admission": "Free admission",
+      "summary": "The Postage Stamp Museum’s “Stamp Bazaar”, selling stamps and related goods",
+      "address": "1-4-23 Mejiro, Toshima-ku, Tokyo"
+    },
+    "have-a-goood-market": {
+      "name": "HAVE A GOOOD MARKET (Sangenjaya)",
+      "venue": "Sangenjaya Fureai Hiroba",
+      "rule": "Dates in the 2026 schedule on the official site (no time is given on the site)",
+      "summary": "A local indie market of food, clothing, crafts, play and music",
+      "address": "2-17-1 Taishido, Setagaya-ku, Tokyo"
+    },
+    "shibuya-vintage-artisan-market": {
+      "name": "Vintage & Artisan Market in SHIBUYA KITAYA PARK",
+      "venue": "Shibuya Ward Kitaya Park",
+      "rule": "Dates in “Upcoming dates” on the official site",
+      "time": "Opens at 12:00, closes between 17:00 and 18:00 depending on the season",
+      "admission": "Free (no reservation needed)",
+      "rain": "Cancelled in rain",
+      "summary": "An open-air market of vintage clothing, antiques, retro goods and handmade work (sellers are selected by the organizers)",
+      "address": "1-7-3 Jinnan, Shibuya City, Tokyo"
     }
   },
   "organizers": {
@@ -3371,7 +3397,10 @@
     "日本カーブーツ協会（JCBA）佐世保": "Japan Car Boots Association (JCBA) Sasebo",
     "道の駅 水辺プラザかもと": "Michi-no-Eki Mizube Plaza Kamoto",
     "セトウチフリーマーケット": "Setouchi Flea Market",
-    "都城フリーマーケットの会": "Miyakonojo Flea Market Association"
+    "都城フリーマーケットの会": "Miyakonojo Flea Market Association",
+    "切手の博物館（日本郵趣協会 普及・流通委員会が出店）": "Postage Stamp Museum (the Japan Philatelic Society’s promotion committee exhibits)",
+    "三茶ワークカンパニー株式会社（後援：世田谷区）": "Sancha Work Company Co., Ltd. (supported by Setagaya Ward)",
+    "Vintage & Artisan Market": "Vintage & Artisan Market"
   },
   "labels": {
     "問い合わせ先": "Contact",

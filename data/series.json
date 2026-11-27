@@ -21215,5 +21215,165 @@
     "checkedAt": "2026-11-18"
    }
   ]
+ },
+ {
+  "id": "kitte-stamp-bazaar",
+  "name": "切手バザール（切手の博物館）",
+  "kinds": [
+   "flea"
+  ],
+  "organizer": {
+   "name": "切手の博物館（日本郵趣協会 普及・流通委員会が出店）",
+   "url": "https://kitte-museum.jp/bazaar/"
+  },
+  "venue": {
+   "name": "切手の博物館 3階 スペース1・2",
+   "pref": "13",
+   "city": "豊島区",
+   "cityCode": "13116",
+   "address": "東京都豊島区目白1-4-23"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-28",
+    "2026-11-29",
+    "2027-01-16",
+    "2027-01-17",
+    "2027-02-27",
+    "2027-02-28",
+    "2027-03-27",
+    "2027-03-28"
+   ],
+   "text": "切手の博物館の公式ページに載っている開催日（第150回 11/28・29、新春スペシャル 1/16・17、第151回 2/27・28、第152回 3/27・28）"
+  },
+  "time": {
+   "text": "第150回：土曜 10:30〜17:00／日曜 10:30〜16:00（ほかの回は要確認）"
+  },
+  "visitor": {
+   "admission": "入場無料"
+  },
+  "summary": "切手や関連グッズを販売する、切手の博物館の「切手バザール」",
+  "sources": [
+   {
+    "url": "https://kitte-museum.jp/bazaar/",
+    "type": "organizer",
+    "checkedAt": "2026-11-27",
+    "evidence": [
+     "第150回切手バザール",
+     "2026年11月28日 (土)",
+     "10:30～17:00",
+     "2026年11月29日 (日)",
+     "10:30～ 16:00",
+     "会場： 切手の博物館3階 スペース1・2",
+     "入場無料",
+     "新春スペシャル切手バザール2027 2027年 1月16日 (土) ・17日 (日)",
+     "2027年 2月27日 (土) ・28日 (日)",
+     "2027年 3月27日 (土) ・28日 (日)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "have-a-goood-market",
+  "name": "HAVE A GOOOD MARKET（三軒茶屋）",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "三茶ワークカンパニー株式会社（後援：世田谷区）",
+   "url": "https://haveagood.market/"
+  },
+  "venue": {
+   "name": "三軒茶屋 ふれあい広場",
+   "pref": "13",
+   "city": "世田谷区",
+   "cityCode": "13112",
+   "address": "東京都世田谷区太子堂2丁目17-1"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "text": "公式サイトの2026年のスケジュールにある開催日（時間は公式サイトに記載なし）"
+  },
+  "summary": "食・衣・工藝・遊び・音楽が集まる、ローカル・インディー・マーケット",
+  "sources": [
+   {
+    "url": "https://haveagood.market/",
+    "type": "organizer",
+    "checkedAt": "2026-11-27",
+    "evidence": [
+     "11/28-29（土日）",
+     "三軒茶屋 ふれあい広場",
+     "〒154-0004 東京都世田谷区太子堂２丁目１７－１",
+     "主催 三茶ワークカンパニー株式会社",
+     "後援 世田谷区"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "shibuya-vintage-artisan-market",
+  "name": "Vintage & Artisan Market in SHIBUYA KITAYA PARK",
+  "kinds": [
+   "marche"
+  ],
+  "organizer": {
+   "name": "Vintage & Artisan Market",
+   "url": "https://vintage-artisan-market.com/en"
+  },
+  "venue": {
+   "name": "渋谷区立北谷公園（Kitaya Park）",
+   "pref": "13",
+   "city": "渋谷区",
+   "cityCode": "13113",
+   "address": "渋谷区神南1-7-3"
+  },
+  "recurrence": {
+   "type": "dates",
+   "dates": [
+    "2026-11-28",
+    "2026-12-12",
+    "2026-12-13",
+    "2026-12-20",
+    "2026-12-26",
+    "2026-12-27",
+    "2027-01-02",
+    "2027-01-03"
+   ],
+   "text": "公式サイトの「Upcoming dates」にある開催日"
+  },
+  "time": {
+   "text": "12:00開場、閉場は季節により17:00〜18:00",
+   "start": "12:00"
+  },
+  "visitor": {
+   "admission": "無料（予約不要）",
+   "rain": "雨天中止"
+  },
+  "summary": "古着・アンティーク・レトロ雑貨・ハンドメイドの屋外マーケット（出店者は主催者が選ぶ）",
+  "sources": [
+   {
+    "url": "https://vintage-artisan-market.com/en",
+    "type": "organizer",
+    "checkedAt": "2026-11-27",
+    "evidence": [
+     "Saturday, 28 November 2026",
+     "Saturday, 12 December 2026",
+     "Sunday, 13 December 2026",
+     "Sunday, 20 December 2026",
+     "Saturday, 26 December 2026",
+     "Sunday, 27 December 2026",
+     "Saturday, 2 January 2027",
+     "Sunday, 3 January 2027",
+     "The market opens at 12:00 and closes between 17:00 and 18:00 depending on the season. It is cancelled if it rains.",
+     "Entry is free for visitors and no booking is needed",
+     "1-7-3 Jinnan, Shibuya City, Tokyo 150-0041"
+    ]
+   }
+  ]
  }
 ]
