@@ -3216,6 +3216,22 @@
       "rule": "Date in the event overview on the official site (postponed to Dec 6 in case of rain; cancelled if both days are rainy)",
       "time": "10:00–16:00",
       "rain": "Postponed to Sunday, Dec 6, 2026 in rain. Cancelled if both days are rainy (the official site and social media announce whether it is held)"
+    },
+    "tenoichi-kashiwa": {
+      "name": "Tezukuri Teno-ichi & Jimoto Wakazo Vegetable Market (Kashiwa)",
+      "venue": "Kashiwa Shrine and Howdy Mall",
+      "rule": "Date of the 124th event in the news on the official site (backup date in case of rain: Dec 6)",
+      "time": "10:00–16:00",
+      "rain": "The backup date in case of rain is Sunday, Dec 6, 2026, 10:00–16:00 (the Sora-ichi market is not held together on that day)",
+      "summary": "Sale of handmade goods, workshops and food. The Jimoto Wakazo Vegetable Market is held together"
+    },
+    "kawasato-festival-flea": {
+      "name": "Kawasato Festival (flea market)",
+      "venue": "Kawasato Chuo Park and Kawasato Agricultural Training Center",
+      "rule": "Date of the Kawasato Festival on the Konosu City Tourism Association’s event page",
+      "time": "10:00–15:00",
+      "summary": "Food stalls by citizens’ groups, farm produce sales, stage shows, a mini steam train, an animal contact corner and a flea market",
+      "address": "1800 Sekishinden, Konosu City, Saitama"
     }
   },
   "organizers": {
@@ -3444,7 +3460,9 @@
     "白笹稲荷神社": "Shirasasa Inari Shrine",
     "横山公園グループパートナーズ（横山公園の指定管理者）": "Yokoyama Park Group Partners (designated manager of Yokoyama Park)",
     "メイプルホール": "Maple Hall",
-    "中央林間手づくりマルシェ実行委員会（後援：大和市・大和市観光協会）": "Chuo-Rinkan Handmade Marche Executive Committee (supported by Yamato City and the Yamato City Tourist Association)"
+    "中央林間手づくりマルシェ実行委員会（後援：大和市・大和市観光協会）": "Chuo-Rinkan Handmade Marche Executive Committee (supported by Yamato City and the Yamato City Tourist Association)",
+    "手づくりての市事務局": "Tezukuri Teno-ichi Office",
+    "かわさとフェスティバル実行委員会（鴻巣市観光協会の掲載）": "Kawasato Festival Executive Committee (listed by the Konosu City Tourism Association)"
   },
   "labels": {
     "問い合わせ先": "Contact",
@@ -3687,7 +3705,8 @@
     "秦野市": "Hadano City",
     "横浜市中区": "Naka Ward, Yokohama",
     "相模原市中央区": "Chuo Ward, Sagamihara",
-    "大和市": "Yamato City"
+    "大和市": "Yamato City",
+    "鴻巣市": "Konosu City"
   },
   "notes": {
     "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",
