@@ -1,0 +1,67 @@
+{
+ "slug": "new-2026-11-27",
+ "date": "2026-11-27",
+ "cat": "new",
+ "tags": {
+  "en": [
+   "Tokyo",
+   "flea market"
+  ],
+  "ja": [
+   "東京",
+   "フリマ"
+  ]
+ },
+ "en": {
+  "title": "New on Flea Market JP (Nov 27): 3 new listings",
+  "summary": "Markets added to the site. Each page shows the official rule and its source.",
+  "points": [
+   "3 new listings",
+   "Dates, times and venues are shown on each page as stated officially"
+  ],
+  "blocks": [
+   {
+    "h2": "Newly listed markets"
+   },
+   {
+    "ul": [
+     "[Stamp Bazaar (Postage Stamp Museum)](/e/kitte-stamp-bazaar/): Toshima Ward, Postage Stamp Museum, 3rd floor, Spaces 1 and 2 (Dates on the museum’s official page (150th: Nov 28–29, New Year Special: Jan 16–17, 151st: Feb 27–28, 152nd: Mar 27–28))",
+     "[HAVE A GOOOD MARKET (Sangenjaya)](/e/have-a-goood-market/): Setagaya City, Sangenjaya Fureai Hiroba (Dates in the 2026 schedule on the official site (no time is given on the site))",
+     "[Vintage & Artisan Market in SHIBUYA KITAYA PARK](/e/shibuya-vintage-artisan-market/): Shibuya Ward, Shibuya Ward Kitaya Park (Dates in “Upcoming dates” on the official site)"
+    ]
+   },
+   {
+    "h2": "Before you go"
+   },
+   {
+    "p": "Each listing links to its page with the official source. Rules for rain and cancellations differ from market to market: see [Rain and cancellations](/blog/rain-and-cancellations/) and the [guide](/guide/). “Scheduled” dates are calculated from an official recurring rule and have not been confirmed individually."
+   }
+  ]
+ },
+ "ja": {
+  "title": "新しく載せた開催（11月27日）：3件",
+  "summary": "新しく掲載したマーケットです。公式ページのきまりと出典は、各ページにあります。",
+  "points": [
+   "新しい掲載は3件",
+   "開催日・時間・会場は、各ページに公式の記載のまま載せています"
+  ],
+  "blocks": [
+   {
+    "h2": "新しく載せたマーケット"
+   },
+   {
+    "ul": [
+     "[切手バザール（切手の博物館）](/e/kitte-stamp-bazaar/)：豊島区・切手の博物館 3階 スペース1・2（切手の博物館の公式ページに載っている開催日（第150回 11/28・29、新春スペシャル 1/16・17、第151回 2/27・28、第152回 3/27・28））",
+     "[HAVE A GOOOD MARKET（三軒茶屋）](/e/have-a-goood-market/)：世田谷区・三軒茶屋 ふれあい広場（公式サイトの2026年のスケジュールにある開催日（時間は公式サイトに記載なし））",
+     "[Vintage & Artisan Market in SHIBUYA KITAYA PARK](/e/shibuya-vintage-artisan-market/)：渋谷区・渋谷区立北谷公園（公式サイトの「Upcoming dates」にある開催日）"
+    ]
+   },
+   {
+    "h2": "お出かけの前に"
+   },
+   {
+    "p": "各開催のページに、公式の出典があります。雨天・中止の扱いはマーケットごとに違います。[雨天・中止：公式ページの書き方](/blog/rain-and-cancellations/)と[使い方](/guide/)をご覧ください。「予定」の日は、公式のきまりから計算した日で、その回の個別の確認はありません。"
+   }
+  ]
+ }
+}
