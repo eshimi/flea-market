@@ -6535,5 +6535,27 @@
       "checkedAt": "2026-11-27",
       "note": "利用規約のページは見つからず。robots.txt は許可（200）。日付・時間・場所・出店数の事実だけを掲載し、文章・画像は転載しない"
     }
+  },
+  {
+    "url": "https://maplehall1990.storeinfo.jp/posts/59226165",
+    "series": [
+      "maple-hall-flea"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-27",
+      "note": "利用規約のページは見つからず。robots.txt は許可（200）。日付・時間の事実だけを掲載し、文章・画像は転載しない。ホールの電話番号は載せない。公式サイトは移行中（現在のHPは更新なしの閲覧のみ。月間スケジュール欄だけ更新）のため、お知らせの内容が変わることがある"
+    }
+  },
+  {
+    "url": "https://www.craftmarche.com/guide/",
+    "series": [
+      "chuorinkan-tezukuri-marche-2026-aw"
+    ],
+    "terms": {
+      "ok": true,
+      "checkedAt": "2026-11-27",
+      "note": "利用規約のページは見つからず。robots.txt は許可（200）。日付・時間・会場・雨天の事実だけを掲載し、出店料・出店者の情報・問い合わせ先は載せない。文章・画像は転載しない"
+    }
   }
 ]

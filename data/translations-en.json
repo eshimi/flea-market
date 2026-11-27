@@ -3203,6 +3203,19 @@
       "time": "10:00–16:00",
       "notes": "About 70 stalls of food trucks and handmade goods",
       "summary": "Food trucks and handmade stalls, outdoor activities and local concerts"
+    },
+    "maple-hall-flea": {
+      "name": "Maple Flea Market (Maple Hall)",
+      "venue": "Maple Hall (courtyard of the Maple Building)",
+      "rule": "Dates in the official notice of Maple Hall (held once a month; the last one of 2026 is Nov 29; in 2027 there is no event on Jan 31 and a regular one on Feb 28; March and later are not decided)",
+      "time": "10:00–15:00 (everything cleared by 15:30)"
+    },
+    "chuorinkan-tezukuri-marche-2026-aw": {
+      "name": "Chuo-Rinkan Handmade Marche 2026 Autumn-Winter Collection",
+      "venue": "Around Chuo-Rinkan Station (from around Chuo-Rinkan Tokyu Square to Kakinoki-dori Park)",
+      "rule": "Date in the event overview on the official site (postponed to Dec 6 in case of rain; cancelled if both days are rainy)",
+      "time": "10:00–16:00",
+      "rain": "Postponed to Sunday, Dec 6, 2026 in rain. Cancelled if both days are rainy (the official site and social media announce whether it is held)"
     }
   },
   "organizers": {
@@ -3429,7 +3442,9 @@
     "三茶ワークカンパニー株式会社（後援：世田谷区）": "Sancha Work Company Co., Ltd. (supported by Setagaya Ward)",
     "Vintage & Artisan Market": "Vintage & Artisan Market",
     "白笹稲荷神社": "Shirasasa Inari Shrine",
-    "横山公園グループパートナーズ（横山公園の指定管理者）": "Yokoyama Park Group Partners (designated manager of Yokoyama Park)"
+    "横山公園グループパートナーズ（横山公園の指定管理者）": "Yokoyama Park Group Partners (designated manager of Yokoyama Park)",
+    "メイプルホール": "Maple Hall",
+    "中央林間手づくりマルシェ実行委員会（後援：大和市・大和市観光協会）": "Chuo-Rinkan Handmade Marche Executive Committee (supported by Yamato City and the Yamato City Tourist Association)"
   },
   "labels": {
     "問い合わせ先": "Contact",
@@ -3671,7 +3686,8 @@
     "瀬戸内町": "Setouchi Town",
     "秦野市": "Hadano City",
     "横浜市中区": "Naka Ward, Yokohama",
-    "相模原市中央区": "Chuo Ward, Sagamihara"
+    "相模原市中央区": "Chuo Ward, Sagamihara",
+    "大和市": "Yamato City"
   },
   "notes": {
     "takahata-fudoson-gozareichi|2027-01-17": "Notice of “suspension of events during the New Year period (from the end of Reiwa 8 into Reiwa 9)”. The events to be suspended are shown in an image on the official page, so TBC",
