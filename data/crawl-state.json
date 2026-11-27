@@ -89,15 +89,15 @@
   "hash": "467025b9a547119f"
  },
  "recycler-jp-schedule": {
-  "fetchedAt": "2026-11-27",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 3882,
-  "hash": "0def9eed4c8da271",
-  "changedAt": "2026-11-27"
+  "hash": "52d71058c0ed39bd",
+  "changedAt": "2026-11-28"
  },
  "bia-furima-go": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 3471,
@@ -105,7 +105,7 @@
   "changedAt": "2026-11-22"
  },
  "furimatairiku": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"6ad5b5f9-b5bd\"",
@@ -114,7 +114,7 @@
   "hash": "709c099d8d305426"
  },
  "nihon-freemarket-kyokai-schedule": {
-  "fetchedAt": "2026-11-27",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 3643,
@@ -122,7 +122,7 @@
   "changedAt": "2026-11-26"
  },
  "garagesale-top": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 5926,
@@ -130,7 +130,7 @@
   "changedAt": "2026-11-19"
  },
  "nadeshiko-furima-schedule": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"3810-5aeb709d8bac0\"",
@@ -148,45 +148,45 @@
   "changedAt": "2026-10-31"
  },
  "antique-market-58fc6b": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 3197,
-  "hash": "ceb07e64439ac8c6",
-  "changedAt": "2026-11-22"
+  "len": 3173,
+  "hash": "c3fe325b8b94c3f2",
+  "changedAt": "2026-11-28"
  },
  "antique-market-a5e2ab": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 11364,
-  "hash": "994096dae3bcdcfd",
-  "changedAt": "2026-11-10"
+  "len": 11341,
+  "hash": "3931d09331cdb056",
+  "changedAt": "2026-11-28"
  },
  "takahatafudoson-622002": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 4891,
   "hash": "f53069cb6c7d0d5f"
  },
  "takahatafudoson-6e9ee1": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 14405,
-  "hash": "01815ce54007bd10",
-  "changedAt": "2026-11-16"
+  "len": 14403,
+  "hash": "4fb3ec0ec564c299",
+  "changedAt": "2026-11-28"
  },
  "tokyonominoichi-784f8b": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 8532,
   "hash": "72f929ba10d15c21"
  },
  "tezukuriichi-2dfbbc": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "etag": "\"36d1-65ace778176c0-gzip\"",
@@ -195,7 +195,7 @@
   "hash": "20ac5ede2eb3b118"
  },
  "tezukuriichi-c9f6b5": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "etag": "\"609b-65ace793bf800-gzip\"",
@@ -204,7 +204,7 @@
   "hash": "9d2962d4a8d7ad16"
  },
  "tokyonominoichi-89b37b": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 5071,
@@ -230,21 +230,21 @@
   "hash": "4d85791f93a45944"
  },
  "toji-a86569": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 3015,
   "hash": "1359935c4fb03d4d"
  },
  "toji-762abe": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 4334,
   "hash": "9d55bc8d05fa8c01"
  },
  "kitanotenmangu-5d3153": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 22095,
@@ -252,12 +252,12 @@
   "changedAt": "2026-11-16"
  },
  "shitennoji-9c908f": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 15802,
-  "hash": "cc405faa146fff3f",
-  "changedAt": "2026-11-19"
+  "len": 15808,
+  "hash": "d4521fc34d3be9c6",
+  "changedAt": "2026-11-28"
  },
  "city-47908e": {
   "fetchedAt": "2026-11-24",
@@ -438,16 +438,16 @@
   "hash": "4aca6c17bde81e79"
  },
  "frma-4cbdde": {
-  "fetchedAt": "2026-11-25",
-  "httpStatus": 304,
+  "fetchedAt": "2026-11-28",
+  "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Thu, 19 Nov 2026 06:15:58 GMT",
-  "len": 9226,
-  "hash": "846560e2edbc6778",
-  "changedAt": "2026-11-22"
+  "lastModified": "Thu, 26 Nov 2026 02:53:48 GMT",
+  "len": 9506,
+  "hash": "46ca9c0a79770b80",
+  "changedAt": "2026-11-28"
  },
  "frma-541914": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Tue, 23 Jan 2024 03:25:44 GMT",
@@ -455,7 +455,7 @@
   "hash": "56346f781a2665d5"
  },
  "frma-4835f1": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Fri, 03 Jul 2026 10:34:43 GMT",
@@ -463,7 +463,7 @@
   "hash": "ed02492765558974"
  },
  "frma-4bd22e": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Tue, 21 Apr 2026 02:52:28 GMT",
@@ -471,7 +471,7 @@
   "hash": "205bc99b1262dbe0"
  },
  "frma-011d16": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Wed, 08 Jul 2026 05:52:11 GMT",
@@ -479,23 +479,25 @@
   "hash": "23511b00622138b7"
  },
  "frma-71f34e": {
-  "fetchedAt": "2026-11-25",
-  "httpStatus": 304,
+  "fetchedAt": "2026-11-28",
+  "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Fri, 29 Aug 2025 08:36:38 GMT",
-  "len": 4700,
-  "hash": "801d2a6bd64693a9"
+  "lastModified": "Wed, 22 Jul 2026 05:07:50 GMT",
+  "len": 4125,
+  "hash": "80eb2f7261338c06",
+  "changedAt": "2026-11-28"
  },
  "frma-1224d8": {
-  "fetchedAt": "2026-11-25",
-  "httpStatus": 304,
+  "fetchedAt": "2026-11-28",
+  "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Mon, 26 May 2025 22:08:50 GMT",
-  "len": 4536,
-  "hash": "efd4b6b09e82baa6"
+  "lastModified": "Sat, 04 Oct 2025 05:46:24 GMT",
+  "len": 3874,
+  "hash": "5066b078d7b53dd6",
+  "changedAt": "2026-11-28"
  },
  "frma-cefcbe": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Tue, 08 Sep 2026 23:34:50 GMT",
@@ -503,28 +505,28 @@
   "hash": "2476046ef86bafa3"
  },
  "7fukuadachi-27ce99": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1424,
   "hash": "765a1b6fb07c5920"
  },
  "7fukuadachi-c15266": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1486,
   "hash": "f3ac38f8b7a74e41"
  },
  "7fukuadachi-18a918": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1213,
   "hash": "019aeb32147f5cc8"
  },
  "kanagawa-antique-market-3ca3a0": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1938,
@@ -532,7 +534,7 @@
   "changedAt": "2026-11-10"
  },
  "kottou-rakuichi-973cde": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "W/\"3f7b-65eef545506c4\"",
@@ -542,15 +544,15 @@
   "changedAt": "2026-10-29"
  },
  "teshigoro-bc53a5": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 2090,
-  "hash": "c658b2efae92a8d5",
-  "changedAt": "2026-11-07"
+  "len": 2085,
+  "hash": "8f43600d3c5c73bd",
+  "changedAt": "2026-11-28"
  },
  "mottainai-1b3bfe": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 3865,
@@ -558,7 +560,7 @@
   "changedAt": "2026-11-04"
  },
  "eko-hirobakan-bc3ce7": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 3353,
@@ -580,7 +582,7 @@
   "hash": "d29f68a300bc8d3e"
  },
  "ikeshoren-c529cc": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 7011,
@@ -588,7 +590,7 @@
   "changedAt": "2026-11-13"
  },
  "ikeshoren-939ca9": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 3862,
@@ -596,10 +598,10 @@
   "changedAt": "2026-11-13"
  },
  "chuo-kanko-190b2f": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"sfr:computation:v2:80cff0fac3f11e2242651f7acc63457e346aa8ee660f45fa45f7dcb3e190cbd5:75a9de68d54e4d327ff8715c575e3841\"",
+  "etag": "\"sfr:computation:v2:ab4d3ae8279bd93e4f3699588d45dc3838289cf96495125a3f34da1f30773831:1e4872be236f38780272315dc08a5672\"",
   "len": 7460,
   "hash": "c87653de067779e6",
   "changedAt": "2026-10-23"
@@ -678,7 +680,7 @@
   "changedAt": "2026-11-24"
  },
  "hino-artfestival-88d6e1": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"44-1795279688;br\"",
@@ -697,30 +699,30 @@
   "changedAt": "2026-10-27"
  },
  "earth-garden-44cb54": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 4275,
-  "hash": "95c35652920bf09e",
-  "changedAt": "2026-11-25"
+  "len": 4263,
+  "hash": "f0c071243ccac3f8",
+  "changedAt": "2026-11-28"
  },
  "trx-f98cdd": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 20566,
-  "hash": "32b97a46c91c6bba",
-  "changedAt": "2026-11-25"
+  "len": 20970,
+  "hash": "eed7e4df82174d69",
+  "changedAt": "2026-11-28"
  },
  "www2-56844d": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2719,
   "hash": "52a212e73c932872"
  },
  "rpa-fb6d35": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1484,
@@ -728,35 +730,35 @@
   "changedAt": "2026-11-25"
  },
  "rpa-de38ac": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2571,
   "hash": "1ec0b65c7176ebf2"
  },
  "tedukuri-ichi-a1094b": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 6779,
   "hash": "867e1dbccfeb4421"
  },
  "tedukuri-ichi-f25f13": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 5861,
   "hash": "a6fae08bd4905cc5"
  },
  "tedukuri-ichi-958aa1": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 5587,
   "hash": "ee09e218b5b0685c"
  },
  "freemarket-go-f73bf2": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1955,
@@ -764,7 +766,7 @@
   "changedAt": "2026-10-29"
  },
  "freemarket-go-c53aec": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1861,
@@ -772,7 +774,7 @@
   "changedAt": "2026-11-16"
  },
  "freemarket-go-a5f4fe": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1469,
@@ -780,7 +782,7 @@
   "changedAt": "2026-11-16"
  },
  "freemarket-go-d78a19": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1892,
@@ -788,7 +790,7 @@
   "changedAt": "2026-11-16"
  },
  "freemarket-go-d77887": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1714,
@@ -796,7 +798,7 @@
   "changedAt": "2026-11-16"
  },
  "freemarket-go-7a7eff": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2588,
@@ -804,7 +806,7 @@
   "changedAt": "2026-11-16"
  },
  "freemarket-go-d2754e": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2278,
@@ -812,15 +814,15 @@
   "changedAt": "2026-11-22"
  },
  "freemarket-go-35f243": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 2509,
-  "hash": "c6678dc4dfcdf40f",
-  "changedAt": "2026-11-16"
+  "len": 2849,
+  "hash": "2465b10b7e8f8fd8",
+  "changedAt": "2026-11-28"
  },
  "freemarket-go-8ac437": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1926,
@@ -828,7 +830,7 @@
   "changedAt": "2026-11-16"
  },
  "fmfm-king-5230af": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 17504,
@@ -836,7 +838,7 @@
   "changedAt": "2026-11-22"
  },
  "fmfm-king-2866b6": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 19319,
@@ -844,7 +846,7 @@
   "changedAt": "2026-10-23"
  },
  "fmfm-king-a5eaba": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 19333,
@@ -852,7 +854,7 @@
   "changedAt": "2026-11-25"
  },
  "fmfm-king-d4915f": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 17688,
@@ -860,21 +862,21 @@
   "changedAt": "2026-11-13"
  },
  "fmfm-king-89dfb1": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 13649,
   "hash": "5e331dca5097e286"
  },
  "fmfm-king-d8c57c": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 13541,
   "hash": "0b1f959715b8efe8"
  },
  "fmfm-king-4e9c84": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 19017,
@@ -882,7 +884,7 @@
   "changedAt": "2026-10-26"
  },
  "fmfm-king-b88c8a": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 18773,
@@ -890,7 +892,7 @@
   "changedAt": "2026-11-22"
  },
  "fmfm-king-956224": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 18779,
@@ -898,14 +900,14 @@
   "changedAt": "2026-11-07"
  },
  "fmfm-king-47d123": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 14428,
   "hash": "ab62c77bd6d2e19b"
  },
  "fmfm-king-3572c9": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 15970,
@@ -913,7 +915,7 @@
   "changedAt": "2026-10-26"
  },
  "fmfm-king-27e5bc": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 15895,
@@ -921,7 +923,7 @@
   "changedAt": "2026-11-07"
  },
  "fmfm-king-f947b2": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 15899,
@@ -929,50 +931,50 @@
   "changedAt": "2026-11-22"
  },
  "fmfm-king-cd46c6": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 18314,
-  "hash": "55fa769de6c2846f",
-  "changedAt": "2026-11-22"
+  "len": 18318,
+  "hash": "8019930ba6a510c3",
+  "changedAt": "2026-11-28"
  },
  "fmfm-king-697e50": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 16856,
   "hash": "de77504ba1ee6480"
  },
  "fmfm-king-99276a": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 18413,
   "hash": "33e29fc9c8af0cfc"
  },
  "fmfm-king-1a59df": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 16808,
   "hash": "587e6586a34ae184"
  },
  "fmfm-king-e0d67c": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 16810,
   "hash": "97c3043ab37dfe57"
  },
  "fmfm-king-7aa5a0": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 16806,
   "hash": "45342d19bee15dcd"
  },
  "fmfm-king-fb2ccc": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 16784,
@@ -980,14 +982,14 @@
   "changedAt": "2026-11-01"
  },
  "fmfm-king-edc243": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 17412,
   "hash": "3fba58332e180c33"
  },
  "fmfm-king-432871": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 18745,
@@ -995,7 +997,7 @@
   "changedAt": "2026-10-26"
  },
  "fmfm-king-b56cdb": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 18741,
@@ -1003,7 +1005,7 @@
   "changedAt": "2026-11-04"
  },
  "fmfm-king-6d1b41": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 18739,
@@ -1011,7 +1013,7 @@
   "changedAt": "2026-11-01"
  },
  "fmfm-king-f87c32": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 18770,
@@ -1019,7 +1021,7 @@
   "changedAt": "2026-11-19"
  },
  "fmfm-king-da9730": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 18737,
@@ -1027,7 +1029,7 @@
   "changedAt": "2026-11-13"
  },
  "fmfm-king-1f9c9d": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 17141,
@@ -1035,22 +1037,22 @@
   "changedAt": "2026-11-07"
  },
  "fmfm-king-3e53fc": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 16961,
-  "hash": "67b366497c5e33d4",
-  "changedAt": "2026-11-01"
+  "len": 16957,
+  "hash": "fbb3cea88052934f",
+  "changedAt": "2026-11-28"
  },
  "fmfm-king-3f9df8": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 16532,
   "hash": "1ab375ab0bd3d0da"
  },
  "fmfm-king-4bac94": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 13937,
@@ -1058,7 +1060,7 @@
   "changedAt": "2026-10-26"
  },
  "fmfm-king-af91f3": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 15437,
@@ -1066,7 +1068,7 @@
   "changedAt": "2026-11-16"
  },
  "fmfm-king-86c527": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 14529,
@@ -1074,35 +1076,35 @@
   "changedAt": "2026-10-26"
  },
  "fmfm-king-2b4902": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 14898,
   "hash": "ecd5b9e059c65ca9"
  },
  "fmfm-king-c1420a": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 14899,
   "hash": "eca0b50fa5cc956a"
  },
  "fmfm-king-6a1c85": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 14897,
   "hash": "85fcd327bbb70d17"
  },
  "fmfm-king-0472d6": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 14899,
   "hash": "6971fef9da1e822c"
  },
  "fmfm-king-70c9a2": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 18989,
@@ -1110,7 +1112,7 @@
   "changedAt": "2026-11-16"
  },
  "fmfm-king-4e3101": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 17417,
@@ -1118,7 +1120,7 @@
   "changedAt": "2026-11-19"
  },
  "fmfm-king-5a1178": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 16628,
@@ -1126,7 +1128,7 @@
   "changedAt": "2026-11-25"
  },
  "fmfm-king-8309dc": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 17247,
@@ -1134,7 +1136,7 @@
   "changedAt": "2026-11-25"
  },
  "fmfm-king-030343": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 19026,
@@ -1142,7 +1144,7 @@
   "changedAt": "2026-11-19"
  },
  "fmfm-king-3ea795": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 14864,
@@ -1150,14 +1152,14 @@
   "changedAt": "2026-11-22"
  },
  "fmfm-king-7ec99a": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 14881,
   "hash": "848496a19c591d8d"
  },
  "fmfm-king-5ab2a6": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 14927,
@@ -1165,28 +1167,28 @@
   "changedAt": "2026-10-26"
  },
  "fmfm-king-e12b3d": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 14887,
   "hash": "72afab56ca406af5"
  },
  "fmfm-king-742837": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 14898,
   "hash": "7847dd4d5ca435ae"
  },
  "fmfm-king-062ab3": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 14900,
   "hash": "b83b2e92f44a11da"
  },
  "fmfm-king-1aa1d8": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 14919,
@@ -1194,23 +1196,23 @@
   "changedAt": "2026-11-13"
  },
  "www2-4d38aa": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 5174,
-  "hash": "5f5d478cf34cc902",
-  "changedAt": "2026-11-22"
+  "len": 5035,
+  "hash": "d96f6de942a581b8",
+  "changedAt": "2026-11-28"
  },
  "www2-410121": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 3613,
-  "hash": "1d47b4a01402e46c",
-  "changedAt": "2026-11-13"
+  "len": 3538,
+  "hash": "62a1321c382bc64a",
+  "changedAt": "2026-11-28"
  },
  "www2-3e63da": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1712,
@@ -1218,15 +1220,15 @@
   "changedAt": "2026-11-25"
  },
  "www2-bcd746": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 2507,
-  "hash": "b0af91577770e922",
-  "changedAt": "2026-11-25"
+  "len": 2271,
+  "hash": "fcac823a4911c329",
+  "changedAt": "2026-11-28"
  },
  "www2-b38954": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1949,
@@ -1234,14 +1236,14 @@
   "changedAt": "2026-11-25"
  },
  "www2-06273e": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1608,
   "hash": "1afb90dd711f0263"
  },
  "www2-6c3d26": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1911,
@@ -1256,7 +1258,7 @@
   "changedAt": "2026-11-03"
  },
  "souq-319cbd": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1525,
@@ -1264,7 +1266,7 @@
   "changedAt": "2026-11-04"
  },
  "tokyo-park-69051f": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"c70de3a7d3b52a19759c1afbed857a73\"",
@@ -1274,17 +1276,17 @@
   "changedAt": "2026-11-13"
  },
  "tokyo-park-b56fab": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"5d3577319160c302817f661bc778dcc9\"",
-  "lastModified": "Tue, 24 Nov 2026 09:06:05 GMT",
-  "len": 19595,
-  "hash": "d5c0b46febedb045",
-  "changedAt": "2026-11-25"
+  "etag": "\"5929dc4cfc78238d06d518103491222b\"",
+  "lastModified": "Fri, 27 Nov 2026 09:46:33 GMT",
+  "len": 19587,
+  "hash": "827f399f5216063b",
+  "changedAt": "2026-11-28"
  },
  "tokyo-park-206df7": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"f52bd02d6117d6ab412b4756896b72cb\"",
@@ -1294,17 +1296,17 @@
   "changedAt": "2026-10-29"
  },
  "tokyo-park-b1f385": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"d03c3d3dfbd84197e0c37c2c894feae7\"",
-  "lastModified": "Tue, 24 Nov 2026 09:09:09 GMT",
+  "etag": "\"d9d35e083a63d6ed2c7fd2d019ff05a0\"",
+  "lastModified": "Fri, 27 Nov 2026 09:09:11 GMT",
   "len": 22954,
   "hash": "543ca0d2d1066ff9",
   "changedAt": "2026-11-25"
  },
  "tokyo-park-e2b8ff": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"fd0f6dd610397020b777b464e10cb568\"",
@@ -1322,21 +1324,21 @@
   "changedAt": "2026-11-24"
  },
  "tokyo-park-316038": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"83867e0d41fc2598538df75b8cc6e16d\"",
-  "lastModified": "Tue, 24 Nov 2026 09:06:08 GMT",
+  "etag": "\"1ab4a569c740a7797975ef93dff057ce\"",
+  "lastModified": "Fri, 27 Nov 2026 09:06:12 GMT",
   "len": 22328,
   "hash": "daa4bc69e8c95005",
   "changedAt": "2026-11-25"
  },
  "tokyo-park-f8a56d": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"f47926d6b155eee210803894f8bdd716\"",
-  "lastModified": "Tue, 24 Nov 2026 09:09:10 GMT",
+  "etag": "\"6abbfda7ea79aacec5cc88a73ff2f633\"",
+  "lastModified": "Fri, 27 Nov 2026 09:09:12 GMT",
   "len": 24406,
   "hash": "f56b63c7724b8161",
   "changedAt": "2026-11-19"
@@ -1365,14 +1367,14 @@
   "hash": "76a8961f7c52d0b3"
  },
  "nishiaraidaishi-330cca": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 8995,
   "hash": "7001b2e5da93e326"
  },
  "nishiaraidaishi-6cae1f": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "etag": "\"709f-64c5144e23000-gzip\"",
@@ -1391,11 +1393,11 @@
   "changedAt": "2026-11-17"
  },
  "tokyo-park-b42635": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"ddfca9d97f227944d783804eaef84129\"",
-  "lastModified": "Tue, 24 Nov 2026 09:09:09 GMT",
+  "etag": "\"c53f49bab618164b5e4e1ab601105e25\"",
+  "lastModified": "Fri, 27 Nov 2026 09:09:11 GMT",
   "len": 21870,
   "hash": "ce1103cdf417e42f",
   "changedAt": "2026-11-22"
@@ -1479,22 +1481,22 @@
   "hash": "956c95c78423439c"
  },
  "tokyo-park-98dd04": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "\"66ed97293684fbe80dd6cad4adaedf8b\"",
-  "lastModified": "Tue, 24 Nov 2026 09:03:08 GMT",
+  "etag": "\"532f8c760de2f40d120188818166e2c7\"",
+  "lastModified": "Fri, 27 Nov 2026 09:03:10 GMT",
   "len": 20322,
   "hash": "d2cf84dbcdbf2ef2",
   "changedAt": "2026-11-19"
  },
  "tokyo-eastpark-38aa31": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 9546,
-  "hash": "5b3dd881566480fb",
-  "changedAt": "2026-11-25"
+  "len": 9553,
+  "hash": "b776416f95f0d12d",
+  "changedAt": "2026-11-28"
  },
  "city-6ca764": {
   "fetchedAt": "2026-11-24",
@@ -1507,12 +1509,12 @@
   "changedAt": "2026-11-10"
  },
  "kichijoji-d7f720": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 14590,
-  "hash": "5fe60a603935ffd7",
-  "changedAt": "2026-11-10"
+  "len": 14429,
+  "hash": "d4eb038f86089f28",
+  "changedAt": "2026-11-28"
  },
  "city-edbe8e": {
   "fetchedAt": "2026-11-24",
@@ -1524,7 +1526,7 @@
   "hash": "2fdeef5b8ecbc2b1"
  },
  "honmonji-340821": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "W/\"6ae68929-a6f2\"",
@@ -1534,7 +1536,7 @@
   "changedAt": "2026-11-01"
  },
  "honmonji-a4ba1b": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "W/\"6978787e-692a\"",
@@ -1552,31 +1554,31 @@
   "hash": "a81600d6c0332f74"
  },
  "trx-e0a01a": {
-  "fetchedAt": "2026-11-25",
-  "httpStatus": 304,
+  "fetchedAt": "2026-11-28",
+  "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Fri, 20 Nov 2026 08:22:29 GMT",
+  "lastModified": "Thu, 26 Nov 2026 03:49:50 GMT",
   "len": 11359,
   "hash": "38c0fb5b9f65ecb4",
   "changedAt": "2026-11-22"
  },
  "trx-5589f9": {
-  "fetchedAt": "2026-11-25",
-  "httpStatus": 304,
+  "fetchedAt": "2026-11-28",
+  "httpStatus": 200,
   "failCount": 0,
-  "lastModified": "Fri, 20 Nov 2026 07:44:23 GMT",
+  "lastModified": "Thu, 26 Nov 2026 02:08:48 GMT",
   "len": 1883,
   "hash": "ab03ecd705c51190"
  },
  "www2-982505": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1818,
   "hash": "21428c3c66f4a5a5"
  },
  "b-i-a-a40795": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2213,
@@ -1584,7 +1586,7 @@
   "changedAt": "2026-11-25"
  },
  "b-i-a-5e0067": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2205,
@@ -1592,7 +1594,7 @@
   "changedAt": "2026-11-22"
  },
  "b-i-a-9bd731": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2278,
@@ -1600,15 +1602,15 @@
   "changedAt": "2026-11-25"
  },
  "b-i-a-7e255e": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 2240,
-  "hash": "b0adf5899fa7d0f8",
-  "changedAt": "2026-11-25"
+  "len": 2261,
+  "hash": "754c6e2ca68b7bb5",
+  "changedAt": "2026-11-28"
  },
  "b-i-a-e5b0f2": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2253,
@@ -1616,23 +1618,23 @@
   "changedAt": "2026-11-22"
  },
  "b-i-a-625211": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 2255,
-  "hash": "9ca051f4c2d707ca",
-  "changedAt": "2026-11-25"
+  "len": 2254,
+  "hash": "d3e1496cf42f2fd9",
+  "changedAt": "2026-11-28"
  },
  "b-i-a-a3581d": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 2581,
-  "hash": "764f4c4f1ed249ba",
-  "changedAt": "2026-11-22"
+  "len": 2602,
+  "hash": "6ad0109d3f928cea",
+  "changedAt": "2026-11-28"
  },
  "b-i-a-f791e1": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2261,
@@ -1640,22 +1642,22 @@
   "changedAt": "2026-11-22"
  },
  "b-i-a-bb472f": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2204,
   "hash": "9bc7ae50a271a75c"
  },
  "b-i-a-5ad4b1": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 2253,
-  "hash": "f34d397e1af32689",
-  "changedAt": "2026-11-25"
+  "len": 2231,
+  "hash": "98a4426765195e0e",
+  "changedAt": "2026-11-28"
  },
  "furimatairiku-6d8387": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"6ad5b5f9-b5bd\"",
@@ -1664,7 +1666,7 @@
   "hash": "709c099d8d305426"
  },
  "furimatairiku-0c5a28": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"6afa6be3-9f7b\"",
@@ -1674,7 +1676,7 @@
   "changedAt": "2026-11-19"
  },
  "furimatairiku-5b141c": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"6aeab9f4-7f3f\"",
@@ -1684,7 +1686,7 @@
   "changedAt": "2026-11-07"
  },
  "furimatairiku-653c30": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"6aeaba4e-8181\"",
@@ -1694,15 +1696,15 @@
   "changedAt": "2026-11-07"
  },
  "fmfm-king-fdefb4": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 18997,
-  "hash": "51992ba1bd46d315",
-  "changedAt": "2026-11-25"
+  "len": 20561,
+  "hash": "1348ae870d14247a",
+  "changedAt": "2026-11-28"
  },
  "tokyo-romantic-03da84": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1814,
@@ -1719,27 +1721,27 @@
   "changedAt": "2026-10-31"
  },
  "rbf-5d5178": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "etag": "W/\"6224ec5eb12c51723acc1952f7791d6c\"",
-  "len": 12115,
-  "hash": "13e48dbad5f2c5f6",
-  "changedAt": "2026-11-25"
+  "etag": "W/\"5128f5e56311e72c0ade1fd378a776f7\"",
+  "len": 12744,
+  "hash": "d76092fe310c9f8f",
+  "changedAt": "2026-11-28"
  },
  "rbf-945520": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 404,
-  "failCount": 10,
+  "failCount": 11,
   "etag": "\"428a-5ebc7a30b4f80\"",
   "lastModified": "Mon, 24 Oct 2022 13:19:10 GMT",
   "len": 7207,
   "hash": "b8857ba4b1c00b05"
  },
  "rbf-0ce9de": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 404,
-  "failCount": 10,
+  "failCount": 11,
   "etag": "\"32bd-65e795d156180\"",
   "lastModified": "Fri, 23 Oct 2026 03:13:26 GMT",
   "len": 3634,
@@ -1747,9 +1749,9 @@
   "changedAt": "2026-10-26"
  },
  "rbf-17764f": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 404,
-  "failCount": 10,
+  "failCount": 11,
   "etag": "\"2e5e-65e44502a4b00\"",
   "lastModified": "Tue, 20 Oct 2026 11:55:56 GMT",
   "len": 3411,
@@ -1757,18 +1759,18 @@
   "changedAt": "2026-10-23"
  },
  "rbf-3e9b61": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 404,
-  "failCount": 10,
+  "failCount": 11,
   "etag": "\"2ba8-65a6528ebc240\"",
   "lastModified": "Tue, 01 Sep 2026 05:26:25 GMT",
   "len": 3090,
   "hash": "b47019d749e60640"
  },
  "rbf-e09b85": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 404,
-  "failCount": 10,
+  "failCount": 11,
   "etag": "\"2a62-65e7907d95000\"",
   "lastModified": "Fri, 23 Oct 2026 02:49:36 GMT",
   "len": 3666,
@@ -1785,18 +1787,18 @@
   "hash": "6f51df010670afa5"
  },
  "rbf-3eae42": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 404,
-  "failCount": 10,
+  "failCount": 11,
   "etag": "\"3d5d-65d4b4329b0c0\"",
   "lastModified": "Thu, 08 Oct 2026 02:48:11 GMT",
   "len": 5433,
   "hash": "c4ac63def8fb8dbe"
  },
  "rbf-c71d5d": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 404,
-  "failCount": 10,
+  "failCount": 11,
   "etag": "\"4bbe-65d4b3c5e3040\"",
   "lastModified": "Thu, 08 Oct 2026 02:46:17 GMT",
   "len": 5406,
@@ -1850,31 +1852,31 @@
   "hash": "dfdc934661bebd64"
  },
  "ficbase-531b7c": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 8538,
-  "hash": "9022e635e6d5ba1c",
-  "changedAt": "2026-11-25"
+  "hash": "f58e533d545e8596",
+  "changedAt": "2026-11-28"
  },
  "ficbase-283fb8": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 2343,
-  "hash": "488c18bfb38aa0b6",
-  "changedAt": "2026-11-25"
+  "len": 2365,
+  "hash": "a91134c423ee9b15",
+  "changedAt": "2026-11-28"
  },
  "ficbase-c1ef6a": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 3290,
-  "hash": "da13ffaca53348b7",
-  "changedAt": "2026-11-19"
+  "len": 3298,
+  "hash": "32a0cfe25209ebef",
+  "changedAt": "2026-11-28"
  },
  "ficbase-9d3c7f": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 3988,
@@ -1900,44 +1902,44 @@
   "hash": "4aae2192c32813f5"
  },
  "kamigamo-tedukuriichi-75c1a6": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 15107,
-  "hash": "d61f90d6000a7dc8",
-  "changedAt": "2026-11-25"
+  "hash": "ba759f1bf4baf7b8",
+  "changedAt": "2026-11-28"
  },
  "kamigamo-tedukuriichi-598310": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 15677,
-  "hash": "9fd037a114131062",
-  "changedAt": "2026-11-25"
+  "len": 17638,
+  "hash": "5ee5ed7ddb13b929",
+  "changedAt": "2026-11-28"
  },
  "kamigamo-tedukuriichi-c472b2": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 17836,
-  "hash": "a1f68a01cd1773c3",
-  "changedAt": "2026-11-25"
+  "len": 17838,
+  "hash": "ba817b94e291fa26",
+  "changedAt": "2026-11-28"
  },
  "kamigamo-tedukuriichi-ae38cd": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 16434,
-  "hash": "5f18e0d7f9b42062",
-  "changedAt": "2026-11-25"
+  "hash": "18f108e5da4e9f60",
+  "changedAt": "2026-11-28"
  },
  "kamigamo-tedukuriichi-22f597": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 9880,
-  "hash": "420eca437a0153e7",
-  "changedAt": "2026-11-25"
+  "hash": "818c37fae7d228d2",
+  "changedAt": "2026-11-28"
  },
  "city-0443eb": {
   "fetchedAt": "2026-11-24",
@@ -1950,7 +1952,7 @@
   "changedAt": "2026-11-03"
  },
  "2525furima-286ccc": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 32614,
@@ -1977,95 +1979,95 @@
   "changedAt": "2026-11-24"
  },
  "lohas-park-5b1062": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 6122,
-  "hash": "34a4603fb6313add",
-  "changedAt": "2026-11-25"
+  "len": 6202,
+  "hash": "f3547f2aa90761c0",
+  "changedAt": "2026-11-28"
  },
  "lohas-park-5f0e4c": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 6016,
-  "hash": "267cea43233cf5d8",
-  "changedAt": "2026-11-25"
+  "len": 6054,
+  "hash": "84d801dedcd02288",
+  "changedAt": "2026-11-28"
  },
  "lohas-park-67c7b4": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 6089,
-  "hash": "88d36b8928ae2272",
-  "changedAt": "2026-11-25"
+  "len": 6071,
+  "hash": "52e84fbc576f3192",
+  "changedAt": "2026-11-28"
  },
  "lohas-park-cfb1f9": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 4726,
-  "hash": "57d5fcd5012cb56a",
-  "changedAt": "2026-11-25"
+  "len": 4757,
+  "hash": "eda4dc587327e0fb",
+  "changedAt": "2026-11-28"
  },
  "lohas-park-7df715": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 4933,
-  "hash": "43d8ebbe10e6d53d",
-  "changedAt": "2026-11-25"
+  "len": 4940,
+  "hash": "a97d0b688cb386c8",
+  "changedAt": "2026-11-28"
  },
  "lohas-park-a01c9e": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 4719,
-  "hash": "19991d1cade86077",
-  "changedAt": "2026-11-25"
+  "len": 4745,
+  "hash": "d59c8ce3aaebfb91",
+  "changedAt": "2026-11-28"
  },
  "lohas-park-f40263": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 4948,
-  "hash": "3d0516f20826e57b",
-  "changedAt": "2026-11-25"
+  "len": 4926,
+  "hash": "79c6835e458d3a1f",
+  "changedAt": "2026-11-28"
  },
  "lohas-park-2570dd": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 5071,
-  "hash": "1f37cd34334ab90b",
-  "changedAt": "2026-11-25"
+  "len": 5118,
+  "hash": "65c04fad996ecd03",
+  "changedAt": "2026-11-28"
  },
  "lohas-park-40e61d": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 5955,
-  "hash": "573cb660fe148da4",
-  "changedAt": "2026-11-25"
+  "len": 6037,
+  "hash": "207ed75a965ac743",
+  "changedAt": "2026-11-28"
  },
  "lohas-park-7fc1a2": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 404,
-  "failCount": 8,
+  "failCount": 9,
   "len": 4342,
   "hash": "9128f900d3647cb2",
   "changedAt": "2026-11-01"
  },
  "lohas-park-6798db": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 4489,
-  "hash": "2d026134f05c5648",
-  "changedAt": "2026-11-25"
+  "len": 4539,
+  "hash": "1103b2e5e717500d",
+  "changedAt": "2026-11-28"
  },
  "nadeshikofurima-cd7d21": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"47db-6605aabc9b4ba\"",
@@ -2074,7 +2076,7 @@
   "hash": "dcd61fbe8dc92038"
  },
  "nadeshikofurima-631b5f": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"427b-6605aa8f1ef71\"",
@@ -2083,7 +2085,7 @@
   "hash": "c604015f9496eed9"
  },
  "nadeshikofurima-1dda8f": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "etag": "\"435b-6605aab985901\"",
@@ -2092,26 +2094,26 @@
   "hash": "e216e1d9ba8d2b3d"
  },
  "cpm-gifu-70fa70": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2962,
   "hash": "591e121056235d43"
  },
  "kasugai-kanko-049f1a": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2566,
   "hash": "4ad8ed2d729a30ea"
  },
  "nagoya-info-eb2599": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 54193,
-  "hash": "3868f1beae9e6960",
-  "changedAt": "2026-10-29"
+  "len": 54192,
+  "hash": "0257223d29d33879",
+  "changedAt": "2026-11-28"
  },
  "aichinow-ab6826": {
   "fetchedAt": "2026-11-24",
@@ -2122,15 +2124,15 @@
   "changedAt": "2026-11-24"
  },
  "nagoya-info-de5af8": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 153147,
-  "hash": "7793d356b476275e",
-  "changedAt": "2026-11-25"
+  "len": 155797,
+  "hash": "176143f1f6c02c8b",
+  "changedAt": "2026-11-28"
  },
  "suwacent-978a03": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1656,
@@ -2173,12 +2175,12 @@
   "changedAt": "2026-11-03"
  },
  "pearlroad-5701e3": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 2389,
-  "hash": "4fd1314c84e86bdc",
-  "changedAt": "2026-11-25"
+  "hash": "062747410f77f0ae",
+  "changedAt": "2026-11-28"
  },
  "cgi-d93ee9": {
   "fetchedAt": "2026-11-24",
@@ -2214,7 +2216,7 @@
   "changedAt": "2026-11-03"
  },
  "ichigoichie-ea5ca7": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Mon, 13 Feb 2023 06:54:00 GMT",
@@ -2222,7 +2224,7 @@
   "hash": "53676ba0fa136b26"
  },
  "ichigoichie-693a78": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 304,
   "failCount": 0,
   "lastModified": "Thu, 10 Oct 2024 02:40:00 GMT",
@@ -2230,7 +2232,7 @@
   "hash": "20a4d998b0272575"
  },
  "katorijinja-702c5e": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 4017,
@@ -2258,12 +2260,12 @@
   "changedAt": "2026-11-10"
  },
  "sake3-30b3d7": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 8951,
-  "hash": "cd9818f52996164d",
-  "changedAt": "2026-11-25"
+  "len": 8884,
+  "hash": "85cba6b53090f2a1",
+  "changedAt": "2026-11-28"
  },
  "nagano-cvb-a86a0d": {
   "fetchedAt": "2026-11-27",
@@ -2275,12 +2277,13 @@
   "changedAt": "2026-11-15"
  },
  "binzuru-ichi-17b2eb": {
-  "fetchedAt": "2026-11-25",
-  "httpStatus": 304,
+  "fetchedAt": "2026-11-28",
+  "httpStatus": 200,
   "failCount": 0,
-  "etag": "W/\"e7ef4fb12ed9d25e3c96cf88b71c3251-ssl\"",
-  "len": 980,
-  "hash": "912a0da0df0c3486"
+  "etag": "W/\"42803cda586e449a6a5b78882d00ef78-ssl\"",
+  "len": 973,
+  "hash": "83f2ef655935584f",
+  "changedAt": "2026-11-28"
  },
  "town-2c25d3": {
   "fetchedAt": "2026-11-24",
@@ -2293,7 +2296,7 @@
   "changedAt": "2026-11-17"
  },
  "minatonichiyouasaichikai-86109c": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 5166,
@@ -2301,7 +2304,7 @@
   "changedAt": "2026-11-25"
  },
  "minatonichiyouasaichikai-c80acb": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "len": 1619,
@@ -2364,7 +2367,7 @@
   "hash": "110f3ba192b967c5"
  },
  "ishikawagokoku-783c67": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "etag": "\"485d-6605e7d311497-gzip\"",
@@ -2374,7 +2377,7 @@
   "changedAt": "2026-11-19"
  },
  "ishikawagokoku-a9a695": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
   "etag": "\"6c47e-621a0b20dd980-gzip\"",
@@ -2383,11 +2386,11 @@
   "hash": "91c1ca0a7e5fd399"
  },
  "toyama-gokoku-00a3e3": {
-  "fetchedAt": "2026-11-25",
-  "httpStatus": 304,
+  "fetchedAt": "2026-11-28",
+  "httpStatus": 200,
   "failCount": 0,
-  "etag": "W/\"4c3c-65e79ca2eab65\"",
-  "lastModified": "Fri, 23 Oct 2026 03:43:56 GMT",
+  "etag": "W/\"4c3c-66128443579db\"",
+  "lastModified": "Thu, 26 Nov 2026 06:43:51 GMT",
   "len": 2706,
   "hash": "23b15cfd39b930bd"
  },
@@ -2418,10 +2421,10 @@
   "hash": "3b7cf2eddbbd7f5d"
  },
  "creatorsland-5144e7": {
-  "fetchedAt": "2026-11-25",
+  "fetchedAt": "2026-11-28",
   "httpStatus": 200,
   "failCount": 0,
-  "len": 120,
+  "len": 135,
   "hash": "9802eb98e06a7439"
  },
  "lohasfesta-tokyo-1": {
