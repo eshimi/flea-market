@@ -1,6 +1,175 @@
 {
- "lastDate": "2026-11-27",
+ "lastDate": "2026-11-28",
  "items": [
+  {
+   "series": "agripark-yumesugito-flea",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "http://www.pikaru.co.jp/event.html"
+  },
+  {
+   "series": "bia-izumiyakoryo",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-27",
+   "source": "https://b-i-a.jp/reserve/izumiyakoryo/"
+  },
+  {
+   "series": "creatorsland-2026-sandome-fukui",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-29",
+   "source": "https://creatorsland.studio.site/"
+  },
+  {
+   "series": "gyotoku-station-park-flea",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://timetreeapp.com/public_calendars/kaeruclub2oo2"
+  },
+  {
+   "series": "have-a-goood-market",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-29",
+   "source": "https://haveagood.market/"
+  },
+  {
+   "series": "hiratsuka-ekimae-kottoichi",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-28",
+   "source": "https://pearlroad.jp/2025%E5%B9%B4%E5%BA%A6%E3%80%80%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1/"
+  },
+  {
+   "series": "hofu-flea-auction-hajima",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://hajima-s.com/"
+  },
+  {
+   "series": "kaede-walk-nagatsuta-flea",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://walk-uny.com/kaede-walk/event/entry-39537.html"
+  },
+  {
+   "series": "kitte-stamp-bazaar",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-29",
+   "source": "https://kitte-museum.jp/bazaar/"
+  },
+  {
+   "series": "lohas-park-higashisumiyoshi-nagai",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-29",
+   "source": "https://lohas-park.jp/event/kiji5594/"
+  },
+  {
+   "series": "milk-kashiwanoha-park-flea",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "http://flma.jp/"
+  },
+  {
+   "series": "nishiwaseda-recycle-center-flea",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-28",
+   "source": "http://www.shinjuku-rc.org/nishiwaseda/furima.htm"
+  },
+  {
+   "series": "nogata-bikkuri-ichi-flea",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://wild1-isi.com/free.html"
+  },
+  {
+   "series": "osaka-garagesale-nishiyodogawa",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-29",
+   "source": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  {
+   "series": "osaka-garagesale-sumiyoshi",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-29",
+   "source": "https://www.city.osaka.lg.jp/kankyo/page/0000278038.html"
+  },
+  {
+   "series": "osc-shonan-city-flea",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://recyclekanagawa.com/place/osc/"
+  },
+  {
+   "series": "shibuya-vintage-artisan-market",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-28",
+   "source": "https://vintage-artisan-market.com/en"
+  },
+  {
+   "series": "sojiji-honmichi-shotengai-flea",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "https://www.city.ibaraki.osaka.jp/koho/kohohtml/1612/12/22.html"
+  },
+  {
+   "series": "taito-hanakawado-park-flea",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-29",
+   "note": "主催団体：リサイクル推進友の会／9:00〜15:00／区民の方は、会のホームページから振込予約で2,000円／11月21日から変更",
+   "source": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/20180808093701330.html"
+  },
+  {
+   "series": "tama-econico-market",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-29",
+   "source": "https://www.tama-seisokojo.or.jp/econico/market"
+  },
+  {
+   "series": "tomioka-hachimangu-aozora-nominoichi",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "http://www.tomiokahachimangu.or.jp/annai/mgyoji/mgyoji.html"
+  },
+  {
+   "series": "toyokuni-omoshiro-ichi",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-18",
+   "source": "http://www.omosiro1.com/"
+  },
+  {
+   "series": "trx-oi-keibajo-tokyo-city-flea",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-29",
+   "source": "https://trx.jp/schejule"
+  },
+  {
+   "series": "yokoyama-autumn-festa-2026",
+   "date": "2026-11-28",
+   "status": "confirmed",
+   "checkedAt": "2026-11-29",
+   "source": "https://www.kanagawaparks.com/yokoyama/news/202608100931405452.html"
+  },
   {
    "series": "nagara-dam-friday-flea-kottou",
    "date": "2026-11-27",
